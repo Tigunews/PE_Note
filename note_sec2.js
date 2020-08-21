@@ -560,7 +560,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 2. Gate way <br/>\
 - Proxy : 모든 IP 경유 방식 <br/>\
 - In-Line : Server - Client Network 사이, 중소형 적절 <br/>\
-- Snipping : Test Access Port 장비, 미러링 통한 패킷 분석 <br/><br/>\
+3. Snipping : Test Access Port 장비, 미러링 통한 패킷 분석 <br/><br/>\
 # DB 암호화 방식 <br/>\
 1. API <br/>\
 <img src = "./img/DB_Solution1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
