@@ -28,6 +28,7 @@ var question = question.concat(
 'Web Crawling',
 'ISO/IEC 27017',
 'SDP',
+'DB 보호 솔루션',
 );
 
 var answer = answer.concat(
@@ -551,5 +552,25 @@ EAL : 펑스매매세세포 <br/><br/>\
 - VPN : Black List, IP 기반 정적 설정 <br/>\
 - SDP : White List, ID 기반 동적 설정 <br/><br/>\
 * KPC 95회 1교시 2번\
+',
+  
+// DB 보호 솔루션
+'# 접근제어 시스템 <br/>\
+1. Agent : DB 서버 자체 설치 (접근 제어, 로깅) <br/>\
+2. Gate way <br/>\
+- Proxy : 모든 IP 경유 방식 <br/>\
+- In-Line : Server - Client Network 사이, 중소형 적절 <br/>\
+- Snipping : Test Access Port 장비, 미러링 통한 패킷 분석 <br/><br/>\
+# DB 암호화 방식 <br/>\
+1. API <br/>\
+<img src = "./img/DB_Solution1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+2. Plug in <br/>\
+<img src = "./img/DB_Solution2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+3. TDE <br/>\
+<img src = "./img/DB_Solution3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+4. OS 암호화 <br/>\
+<img src = "./img/DB_Solution4.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 암호화 방식 비교 <br/>\
+<img src = "./img/DB_Solution5.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 ',
 );
