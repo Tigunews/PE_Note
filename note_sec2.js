@@ -566,7 +566,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/DB_Solution1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 2. Plug in <br/>\
 <img src = "./img/DB_Solution2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-3. TDE <br/>\
+3. TDE(Transfer Data Encryption) <br/>\
 <img src = "./img/DB_Solution3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 4. OS 암호화 <br/>\
 <img src = "./img/DB_Solution4.png" style = "max-width: 100%; height: auto;"><br/><br/>\
