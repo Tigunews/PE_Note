@@ -1,0 +1,62 @@
+<head>
+<script src = "note_0.js"></script>
+<script type= "text/javascript" src="note_ca.js"></script>
+</head>
+<script type = "text/javascript">
+// varation
+  var index = new Array();
+
+  for( i = 0; i<question.length; i++)
+  {
+    index.push(i);
+  }
+
+  var current;
+  var bInit = 0;
+
+// function 
+  function next()
+  {
+    if ( bInit != 0 )
+    {
+      index.splice( current, 1);
+      question.splice( current, 1);
+      answer.splice( current, 1);
+    }
+    else
+    {
+      bInit = 1;
+    }
+
+    if( index.length == 0 )
+    {
+      alert("All question resolved!");
+    }
+    else
+    {
+      drawScreen()
+    }
+  }
+
+  function getAnswer()
+  {
+    document.write('Answer : <br/>' + answer[current] + '<br/><br/>');
+  }
+
+  function drawScreen()
+  {
+    document.body.innerHTML = "";
+    document.write('** [All TEST] Memorization Note 1 **' + '<br /><br />');
+    document.write('<button id="next" onclick="next();">Next</button>' + ' ');
+    document.write('<button id="answer" onclick="getAnswer();">Answer</button>' + '<br /><br />');
+
+    document.write( 'Left Questions : ' + index.length + '<br /><br />');
+    current = Math.floor(Math.random() * index.length)
+    document.write( 'Question : ' + question[current] + '<br /><br />');
+  }
+
+  document.write('<head> <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" </head>');
+  document.write('** [All TEST] Memorization Note 1 **' + '<br /><br />');
+  document.write('<button id="next" onclick="next();">Next</button>');
+
+</script>

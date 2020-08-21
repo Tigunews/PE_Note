@@ -1,0 +1,65 @@
+<head>
+<script src = 'note_0.js'></script>
+<script src = 'note_db.js'></script>
+</head>
+<script type = "text/javascript">
+// varation
+  var index = new Array();
+
+  for( i = 0; i<question.length; i++)
+  {
+    index.push(i);
+  }
+  
+  for( i = 0; i<question.length; i++)
+  {
+    document.write(i + '. ' + question[i] + '<br/>');
+  }
+
+  var current = -1;
+  var bInit = 0;
+
+// function 
+  function next()
+  {
+    current++;
+    drawScreen()
+  }
+
+  function ne10()
+  {
+    current = current + 10;
+    drawScreen()
+  }
+
+  function prev()
+  {
+    current--;
+    drawScreen()
+  }
+
+  function pr10()
+  {
+    current = current - 10;
+    drawScreen()
+  }
+
+  function getAnswer()
+  {
+    document.write('Answer : <br/>' + answer[current] + '<br/><br/>');
+  }
+
+  function drawScreen()
+  {
+    document.body.innerHTML = "";
+    document.write('** [All TEST] Memorization Note 1 **' + '<br /><br />');
+    document.write('<button id="next" onclick="next();">Next</button>' + ' ');
+    document.write('<button id="ne10" onclick="ne10();">+10</button>' + ' ');
+    document.write('<button id="prev" onclick="prev();">Prev</button>' +' ');
+    document.write('<button id="pr10" onclick="pr10();">-10</button>' + ' ');
+    document.write('<button id="answer" onclick="getAnswer();">Answer</button>' + '<br /><br />');
+
+    document.write( 'Left Questions : ' + (index.length - current) + '<br /><br />');
+    document.write( 'Question : ' + question[current] + '<br /><br/>');
+  }
+</script>
