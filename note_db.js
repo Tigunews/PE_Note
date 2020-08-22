@@ -1009,6 +1009,13 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 2. Query내 병렬 처리 : 동시에 단일 처리r/>\
 - Partition내 병렬 처리 : 단일 데이터베이스 작업 세분화 <br/>\
 - Partition간 병렬 처리 : 복수개 머신 세분화 <br/><br/>\
+# 사용방법 <br/>\
+1. 생성시 정의 <br/>\
+- Create index item_index on line_item(item) <b>parallel 20;</b> <br/><br/>\
+2. Table 수정 정의 <br/>\
+- Alter Table line_item <b/>parallel 20;</b><br/><br/>\
+3. Hint 기능 사용 <br/>\
+- Select <b/>parallel(line_item, 20)</b> From line_item; <br/><br/>\
 * 라이지움 86회 4교시 5번\
 ',
 
