@@ -44,7 +44,8 @@ var question = question.concat(
 '데이터 표준화',
 '데이터 표준 관리도구',
 '재현정보, 차등정보보호',
-'Optimizer',
+'[DBMS 최적화]- Optimizer',
+'[DBMS 최적화]- Data Block Access',
 'ERD',
 '관계형 데이터 모델', 
 );
@@ -981,6 +982,22 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 비용 : 쿼리를 수행하는데 소요되는 일량 또는 시간 <br/>\
 - CBO가 실행계획을 수립할때 판단 기준 <br/>\
 - 예산비용산정(테이블,인덱스에대한 통계정보 기초) -> 총비용이 낮은 실행계획 선택 <br/><br/>\
+* 라이지움 86회 4교시 5번\
+',
+  
+// Data Block Access
+'# 정의 : Optimizer Data Scan 방식 <br/><br/>\
+# 종류 <br/>\
+1. Full Table Scan <br/>\
+- 순차적 액세스 <br/>\
+- 멀티 블록 I/O, 병렬화 가능 <br/><br/>\
+2. Index Scan <br/>\
+- Index Block Access 후 Rowid 통한 획득 <br/>\
+- 비 순차적 액세스 <br/><br/>\
+3. Fast Full index scan <br/>\
+- 질의에 필요한 모든 컬럼이 인덱스에 포함된 경우 <br/>\
+- 멀티 블록 I/O 및 병렬화 가능 <br/><br/>\
+<img src = "./img/DataBlockAccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 4교시 5번\
 ',
 
