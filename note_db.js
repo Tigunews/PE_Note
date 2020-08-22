@@ -1006,7 +1006,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 '# 정의 : 하나의 SQL을 여러개 CPU가 처리하는 방법 <br/><br/>\
 # 종류 <br/>\
 1. Query간 병렬 처리 : 동시에 복수 처리 <br/><br/>\
-2. Query내 병렬 처리 : 동시에 단일 처리r/>\
+2. Query내 병렬 처리 : 동시에 단일 처리 <br/>\
 - Partition내 병렬 처리 : 단일 데이터베이스 작업 세분화 <br/>\
 - Partition간 병렬 처리 : 복수개 머신 세분화 <br/><br/>\
 # 사용방법 <br/>\
