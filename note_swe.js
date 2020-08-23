@@ -7,6 +7,7 @@ var question = question.concat(
 '[계획단계][비용산정]- COCOMO',
 '[계획단계][비용산정]- COCOMO II',
 '[계획단계][비용산정]- 기능점수법(FP, Function Point)',
+'[계획단계][비용산정][FP]- 정통법 사례',
 '[계획단계][비용산정]- EVM',
 '[계획단계][비용산정]- 델파이 기법',
 '[계획단계][비용산정]- 소프트웨어사업 대가산정 가이드',
@@ -374,6 +375,10 @@ var answer = answer.concat(
 <img src = "./img/FP_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/FP_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SWE_1.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 정통법 사례
+'<img src = "./img/정통법사례.png" style = "max-width:100%; height:auto;">\
 ',
 
 // EVM
