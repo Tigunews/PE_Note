@@ -180,7 +180,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 외부 신호 : Time slice, Keyboard <br/>\
 - 입출력 : 입출력 데이터 오류, 이상현상 <br/><br/>\
 2. 내부 <br/>\
-- 프로그램 검사 : div 0, Overflow, Underflow <br/>\
+- 프로그램 검사 : div 0, Overflow, Underflow <br/><br/>\
 3. SW <br/>\
 - SVC(SuperVisorCall) : 명령 요청 발생, 복잡한 입/출력, 기억장치 할당 <br/><br/>\
 # 우선순위 처리방식 <br/>\
