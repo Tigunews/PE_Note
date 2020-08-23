@@ -163,37 +163,35 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // Interrupt 
-'# 정의 : 선처리 매커니즘 / MCU 프로그램 실행 / 예외상황 대응  <br/>\
-- 마이크로 컨트롤 유닛(MCU)이 프로그램을 실행하고 있을 때, 입출력 HW 등의 장치 및 예외상황 대응 위해 우선순위 따라 선처리하기 위한 메커니즘 <br/><br/>\
-# 암기 <br/>\
-1. 유형 <br/>\
-- HW(외내)SW(S) <br/>\
-- 전기외입내시소 <br/>\
-2. 동작 <br/>\
-- 요(IVT)처(ISR)완 <br/>\
-3. 우선순위 처리 <br/>\
-- SW(폴)HW(데병) <br/><br/>\
-# 유형 <br/>\
-1. HW <br/>\
-- 외부 : 전원이상, 기계착오, 외부신호, 입출력 <br/>\
-- 내부 : 시스템 오류 (0나누기, OverFlow, UnderFlow, 잘못된 명령어, 잘못된 주소 참조) <br/>\
-2. SW <br/>\
-- SVC(명령요청) : 사용자가 SVC호출, 복잡한 입/출력 처리, 기억장치 할당 <br/>\
-3. 종류별 우선 순위 <br/>\
-- 외부 > 내부 > SW <br/>\
-- 전원이상 > 기계착오 > 외부신호 > 입출력 > 내부 > SW <br/><br/>\
-# 동작과정(인터럽트 사이클) <br/>\
-1. 인터럽트 요청 : 인터럽트 발생 > IVT 조회(인터럽트 ID 조회) > 분기 <br/>\
-2. 인터럽트 처리 : 인터럽트 금지(ISR 진입 후 상호배제) > 프로세스 상태 저장(Context Switch) > 서비스 루틴(ISR) 처리 <br/>\
-3. 인터럽트 완료 : 프로세스 상태 복구(Context Switch) > 인터럽트 허용(임계 자원 반납 후 ISR 종료) <br/><br/>\
+'# 정의 : 특별한 제어 신호\
+- 컴퓨터의 제어를 현 상태로부터 특수한 사건이나 환경으로 보내는 특별한 제어 신호 <br/>\
+- 프로그램 제어 신호를 보낸 원인에 해당되는 특수 서브루틴 <br/><br/>\
+# 발생원인 <br/>\
+1. 외부 <br/>\
+- 기계적 문제 : 정전, 자료전달과정 오류 <br/>\
+- 의도적 중단 : Power Off, 작업취소 <br/>\
+- 주변장치 작동 : Keyboard, Mouse 처리 요구 <br/><br/>\
+2. 내부 <br/>\
+- 프로그램상 문제 : 보호된 Memory 접근 시도 <br/><br/>\
+# 우선순위 (전기외입 프 S)<br/>\
+1. 외부 <br/>\
+- 전원 이상 <br/>\
+- 기계 착오 : CPU 기능적 오류 <br/>\
+- 외부 신호 : Time slice, Keyboard <br/>\
+- 입출력 : 입출력 데이터 오류, 이상현상 <br/><br/>\
+2. 내부 <br/>\
+- 프로그램 검사 : div 0, Overflow, Underflow <br/>\
+3. SW <br/>\
+- SVC(SuperVisorCall) : 명령 요청 발생, 복잡한 입/출력, 기억장치 할당 <br/><br/>\
 # 우선순위 처리방식 <br/>\
-1. 단일 회선 인터럽트 <br/>\
-- SW적(Polling) : PGM 의해 우선순위 검사 (+)경제적 (-)저속 <br/>\
-- HW적(Display Chain) : 우선순위 직렬연결 (+) 고속, HW구조 단순 (-) 추가 HW 필요 <br/>\
-2. 혼잡 회선 <br/>\
-- HW적(병렬연결 Multi Interrupt) : 인터럽트 발생 장치 개별 회선 연결, 회선 대응 Mask Register 사용, Mask Register 비트 위치 의해 결정 (0:인터럽트가능 1:불가)<br/>\
-3. 다중 회선 <br/>\
-- HW적(병렬우선) : 모든 장치 개별 회선(IRQ)연결 (+) 고속 (-) 추가HW필요 <br/><br/>\
+1. 단일 회선 <br/>\
+- Polling : 가장 높은 우선순위 (SW) <br/>\
+- Interrupt Requesst Chain : 낮은 순위 요청 불가 (HW) <br/>\
+- Interrupt Priority Chain : 낮은 순위 버스 불가 (HW) <br/><br/>\
+2. 다중 회선 <br/>\
+- 우선순위 판단 : 인터럽트 레지스터 추가 관리 <br/><br/>\
+3. 혼잡 회선 <br/>\
+- 단일,다중 혼합 : 장치별 고유, 그룹내 공통 연결 <br/><br/>\
 <img src = "./img/Interrupt_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
