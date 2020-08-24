@@ -49,6 +49,7 @@ var question = question.concat(
 '[DBMS 최적화]- Parallel Operation',
 'ERD',
 '관계형 데이터 모델', 
+'[BigData]- BigData 분석 방법론',
 );
 
 var answer = answer.concat(
@@ -1038,6 +1039,19 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 
 // 관계형 데이터 모델
 '<img src = "./img/RelationDataModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+  
+// BigData 분석 방법론
+'# 정의 : 계층적 프로세스 모델\
+- Phase-Task-Step의 3계층으로 구성된 계층적 프로세스 모델 <br/>\
+- 비즈니스 도메인과 문제점을 인식하고 비즈니스 요구사항과 데이터 분석에 필요한 원천 데이터 확보하고 분석 수행 <br/><br/>\
+# 프로세스 <br/>\
+<img src = "./img/BigData분석방법론프로세스.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 빅데이터 분석 활용 기법 <br/>\
+- 플랫폼 : 빅데이터 분석 플랫폼 HW / SW 구축 <br/>\
+- 분석도구 : R언어, BigQuery, Presto <br/>\
+- 분석기법 : 통계적분석(상관/회귀/분산), 데이터 마이닝, 텍스트 마이닝 <br/><br/>\
+* KPC 94회 1교시 1번\
 ',
 
 );
