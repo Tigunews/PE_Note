@@ -1167,10 +1167,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 패킷의 DS(Differentiated Service) 필드에 DSCP(DS Code Point)를 마킹하여 서비스 클래스별 PHB(Per Hop Behavior) 우선순위를 정하여 QoS를 보장하는 서비스 모델 <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/차등서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 절차 <br/>\
-1. Classifier : 비슷한 성질의 트래픽으로 분류 <br/>\
-2. Conditioner : 임계값 초과 경우 처리 (Shaping/Policing) <br/>\
-3. Metrering : 유입되는 트래픽 분류 <br/><br/>\
 # 통합, 차등 서비스 비교 <br/>\
 <img src = "./img/통합차등비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
