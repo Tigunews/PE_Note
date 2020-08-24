@@ -49,6 +49,8 @@ var question = question.concat(
 'Netowrk Storage',
 '자가망 구축 가이드라인',
 '6G',
+'[QOS]- 통합 서비스',
+'[QOS]- 차등 서비스',
 );
 
 var answer = answer.concat(
@@ -1143,5 +1145,32 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 주파수 공유 기술 <br/>\
 - AI 적용 통신 기술 <br/><br/>\
 * 이동통신 기술의 한세대를 통상 10년으로 칭함 \
+',
+ 
+// 통합 서비스
+'# 정의 : RSVP를 이용한 통합서비스 모델 <br/>\
+- 개별 종단간 개별 트래픽 흐름단위로 경로상의 라우터 자원을 미리 예약함으로써 종단간 QoS를 보장하는 모델<br/><br/>\
+# 구조 <br/>\
+<img src = "./img/통합서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작 원리 <br/>\
+1. 송신 호스트 PATH 전달 (트래픽 요구사항) <br/>\
+2. 라우터 PATH 메시지 지나가는 경로상태 기록 <br/>\
+3. 수신 호스트 RESV 메시지 전송 <br/>\
+4. 망 노드, 요구사항 가능여부 결정 <br/>\
+5. 불가능시, 수신자에게 전송후 종료 <br/><br/>\
+* KPC 94회 1교시 3번\
+',
+ 
+// 차등 서비스
+'# 정의 : DSCP 마킹 통한 서비스 차별화 모델 <br/>\
+- 패킷의 DS(Differentiated Service) 필드에 DSCP(DS Code Point)를 마킹하여 서비스 클래스별 PHB(Per Hop Behavior) 우선순위를 정하여 QoS를 보장하는 서비스 모델 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/차등서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+1. Classifier : 비슷한 성질의 트래픽으로 분류 <br/>\
+2. Conditioner : 임계값 초과 경우 처리 (Shaping/Policing) <br/>\
+3. Metrering : 유입되는 트래픽 분류 <br/><br/>\
+# 통합, 차등 서비스 비교 <br/>\
+<img src = "./img/통합차등비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
 );
