@@ -1047,7 +1047,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 비즈니스 도메인과 문제점을 인식하고 비즈니스 요구사항과 데이터 분석에 필요한 원천 데이터 확보하고 분석 수행 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/BigData분석방법론프로세스.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 빅데이터 분석 활용 기법 <br/>\
+# 빅데이터 분석 활용 기법 (플도기)<br/>\
 - 플랫폼 : 빅데이터 분석 플랫폼 HW / SW 구축 <br/>\
 - 분석도구 : R언어, BigQuery, Presto <br/>\
 - 분석기법 : 통계적분석(상관/회귀/분산), 데이터 마이닝, 텍스트 마이닝 <br/><br/>\
