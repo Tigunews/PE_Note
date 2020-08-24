@@ -1,5 +1,5 @@
 var question = question.concat(
-'보안 이슈, 대응방안',
+'보안이슈, 대응방안',
 '[랜섬웨어]- 종류',
 '[랜섬웨어]- DBD',
 '[랜섬웨어]- 드라이브 바이 크립토마이닝(drive-by cryptomining)',
