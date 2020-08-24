@@ -1151,6 +1151,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : RSVP를 이용한 통합서비스 모델 <br/>\
 - 개별 종단간 개별 트래픽 흐름단위로 경로상의 라우터 자원을 미리 예약함으로써 종단간 QoS를 보장하는 모델<br/><br/>\
 # 구조 <br/>\
+* RSVP : Resource Reservation Protocol<br/>\
 <img src = "./img/통합서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 동작 원리 <br/>\
 1. 송신 호스트 PATH 전달 (트래픽 요구사항) <br/>\
