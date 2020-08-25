@@ -25,6 +25,7 @@ var question = question.concat(
 'Tiny OS',
 'Nano Qplus',
 'NAND Flash Memory',
+'CPU',
 'CPU Scheduling',
 '[CPU Scheduling]- 비선점 스케줄링',
 '[CPU Scheduling]- 선점 스케줄링',
@@ -705,6 +706,10 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 소형화, 대용량화 -> 모바일 및 전자제품 저장기기로 사용 <br/>\
 - 속도 느림 (NOR Flash Memory는 속도 빠름) <br/><br/>\
 <img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;">\
+',
+  
+// CPU
+'<img src = "./img/CPU.png" style = "max-width:100%; height:auto;">\
 ',
 
 // CPU Scheduling
