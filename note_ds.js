@@ -228,6 +228,7 @@ var answer = answer.concat(
 <img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 3. CEE (교차엔트로피) <br/>\
 - 원-핫 인코딩 경우 사용 <br/>\
+- y : 신경망 출력, t : 정답 레이블 <br/>\
 <img src = "./img/CEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 4. Mini-Batch <br/>\
 - 무작위 뽑아 학습 <br/>\
