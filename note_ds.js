@@ -8,6 +8,7 @@ var question = question.concat(
 '[AI][지식표현]- 프레임',
 '[AI]- 클라우드 활용 AI구축 모델',
 '[AI]- AI 프로젝트',
+'[AI]- Loss Function',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
@@ -211,6 +212,26 @@ var answer = answer.concat(
 - 모델링 : 자원 투입시기, 업무분장, 소통관리 <br/>\
 - 평가 : 결과평가, 프로세스 재검토 <br/>\
 - 배포 : 전개계획, 모니터링, 유지보수 계획 \
+',
+  
+// Loss Function
+'# 정의 : 최적 매게변수 탐색 <br/>\
+- 신경망 성능의 나쁨을 나타내는 지표로, 알고리즘이 얼마나 잘못하고 있는지를 표현하는 지표 <br/><br/>\
+# 개요도 <br/>\
+<img src = "./img/LossFunction.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 종류 <br/>\
+1. MSE (평균제곱오차) <br/>\
+<img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+2. RMSE (평균제곱근오차) <br/>\
+- 속도 향상 <br/>\
+<img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+3. CEE (교차엔트로피) <br/>\
+- 원-핫 인코딩 경우 사용 <br/>\
+<img src = "./img/CEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+4. Mini-Batch <br/>\
+- 무작위 뽑아 학습 <br/>\
+<img src = "./img/MiniBatch.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* KPC 94회 1교시 2번\
 ',
 
 // Flipped Learning
