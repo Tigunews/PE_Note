@@ -104,7 +104,7 @@ var answer = answer.concat(
 - Policies & Procedures : 보안 정책, 절차 규정<br/>\
 - System : 기본적 요구사항 (FR 1~7) 설계, 구현<br/>\
 - Component : 보증, 기능 요구사항 규정<br/><br/>\
-# 기본 보안 요구사항 <br/>\
+# 기본 보안 요구사항 (IUSDRTR)<br/>\
 - FR1 (IAC, 식별 및 인증) : 접근 허용전 모든 상요자 식별, 인증 <br/>\
 - FR2 (UC, 사용 통제) : 요청된 작업 수행, 권한 모니터링 <br/>\
 - FR3 (SI, 시스템 무결성) : 인가 <br/>\
