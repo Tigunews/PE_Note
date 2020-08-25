@@ -727,7 +727,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/ExecuteCycle.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Interrupt : PC 저장, 제어순서 옮김 <br/>\
 <img src = "./img/InterruptCycle.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/MicroOperation_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/MicroOperation_1.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 2교시 8번\
 ',
 
