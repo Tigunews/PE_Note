@@ -719,9 +719,13 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 현재 CPU가 무엇을 하고 있는가를 나타내는 상태 <br/><br/>\
 # 단계 <br/>\
 - Fetch : 명령어 해독 <br/>\
+<img src = "./img/FetchCycle.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Indirect : Fetch 단계 간접 주소일 경우 수행 <br/>\
+<img src = "./img/IndirectCycle.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Execute : 명령 실행 <br/>\
+<img src = "./img/ExecuteCycle.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Interrupt : PC 저장, 제어순서 옮김 <br/>\
+<img src = "./img/InterruptCycle.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/MajorState.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 2교시 8번\
 ',
