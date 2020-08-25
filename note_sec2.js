@@ -105,13 +105,20 @@ var answer = answer.concat(
 - System : 기본적 요구사항 (FR 1~7) 설계, 구현<br/>\
 - Component : 보증, 기능 요구사항 규정<br/><br/>\
 # 기본 보안 요구사항 (IUSDRTR)<br/>\
-- FR1 (IAC, 식별 및 인증) : 접근 허용전 모든 상요자 식별, 인증 <br/>\
-- FR2 (UC, 사용 통제) : 요청된 작업 수행, 권한 모니터링 <br/>\
-- FR3 (SI, 시스템 무결성) : 인가 <br/>\
-- FR4 (DC, 데이터 기밀성) : 공개 방지 <br/>\
-- FR5 (RDF, 데이터 흐름 제한) : 불필요한 데이터 흐름 제한 <br/>\
-- FR6 (TRE, 이벤트 적시 대응) : 적시 보안 위반 대응 <br/>\
-- FR7 (RA, 자원 가용성) : 컴포넌트 가용성 보장 <br/><br/>\
+1. FR1 : Identification and Authentication Control <br/>\
+- (IAC, 식별 및 인증) : 접근 허용전 모든 상요자 식별, 인증 <br/><br/>\
+2. FR2 : Use Control<br/>\
+- (UC, 사용 통제) : 요청된 작업 수행, 권한 모니터링 <br/><br/>\
+3. FR3 : System Integrity <br/>\
+- (SI, 시스템 무결성) : 인가 <br/><br/>\
+4. FR4 : Data Confidentially <br/>\
+- (DC, 데이터 기밀성) : 공개 방지 <br/><br/>\
+5. FR5 : Restricted Data Flow <br/>\
+- (RDF, 데이터 흐름 제한) : 불필요한 데이터 흐름 제한 <br/><br/>\
+6. FR6 : Timely Response to Events <br/>\
+- (TRE, 이벤트 적시 대응) : 적시 보안 위반 대응 <br/><br/>\
+7. FR7 : Resource Availability <br/>\
+- (RA, 자원 가용성) : 컴포넌트 가용성 보장 <br/><br/>\
 # 보안 등급 <br/>\
 - SL1 : 고의는 아니지만 허가되지 않은 액세스 보호 <br/>\
 - SL2 : 해커에 의한 사이버 위협 <br/>\
