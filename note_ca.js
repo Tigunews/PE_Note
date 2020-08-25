@@ -26,6 +26,7 @@ var question = question.concat(
 'Nano Qplus',
 'NAND Flash Memory',
 'CPU',
+'[CPU]- MajorState',
 'CPU Scheduling',
 '[CPU Scheduling]- 비선점 스케줄링',
 '[CPU Scheduling]- 선점 스케줄링',
@@ -712,6 +713,14 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 '<img src = "./img/CPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 2교시 8번\
 ',
+  
+// Major State
+'# 정의 : Fetch, Indirect, Execute, Interrupt <br/>\
+- 현재 CPU가 무엇을 하고 있는가를 나타내는 상태 <br/><br/>\
+<img src = "./img/MajorState.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 94회 2교시 8번\
+',
+
 
 // CPU Scheduling
 '# 정의 : Process CPU 할당 결정 작업<br/>\
