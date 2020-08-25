@@ -709,7 +709,8 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 ',
   
 // CPU
-'<img src = "./img/CPU.png" style = "max-width:100%; height:auto;">\
+'<img src = "./img/CPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 94회 2교시 8번\
 ',
 
 // CPU Scheduling
