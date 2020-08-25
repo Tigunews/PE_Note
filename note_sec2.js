@@ -97,12 +97,26 @@ var answer = answer.concat(
 
 // ISA/IEC 62443
 '# 정의 : 범용적인 제어 시스템 보안 관련 국제 표준 규격 <br/>\
-- 범용적인 제어 시스템 보안과 관련된 국제표준규격<br/><br/>\
+- 전사적으로 보안적인 산업용 자동화 및 제어 시스템(IACS ; Industrial Automation and Control Systems)을 구현하기 위한 일련의 표준, 보고서 및 부속 문서들을 표준하는 국제 표준 <br/>\
+- IEC 62443 표준의 가이드라인을 준수한다면 네트워크에 대한 사이버 공격 위험성 낮춤 효과 <br/><br/>\
 # 구성요소 (GPSC) <br/>\
-- General<br/>\
-- Policies & Procedures<br/>\
-- System<br/>\
-- Component \
+- General : 개념 모델, 용어, 일반사항<br/>\
+- Policies & Procedures : 보안 정책, 절차 규정<br/>\
+- System : 기본적 요구사항 (FR 1~7) 설계, 구현<br/>\
+- Component : 보증, 기능 요구사항 규정<br/><br/>\
+# 기본 보안 요구사항 <br/>\
+- FR1 (IAC, 식별 및 인증) : 접근 허용전 모든 상요자 식별, 인증 <br/>\
+- FR2 (UC, 사용 통제) : 요청된 작업 수행, 권한 모니터링 <br/>\
+- FR3 (SI, 시스템 무결성) : 인가 <br/>\
+- FR4 (DC, 데이터 기밀성) : 공개 방지 <br/>\
+- FR5 (RDF, 데이터 흐름 제한) : 불필요한 데이터 흐름 제한 <br/>\
+- FR6 (TRE, 이벤트 적시 대응) : 적시 보안 위반 대응 <br/>\
+- FR7 (RA, 자원 가용성) : 컴포넌트 가용성 보장 <br/><br/>\
+# 보안 등급 <br/>\
+- SL1 : 고의는 아니지만 허가되지 않은 액세스 보호 <br/>\
+- SL2 : 해커에 의한 사이버 위협 <br/>\
+- SL3,4 : 특수한 기술과 도구 방어 <br/><br/>\
+* KPC 94회 2교시 3번\
 ',
 
 // ISO/IEC 15408
