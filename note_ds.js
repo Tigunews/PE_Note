@@ -221,7 +221,8 @@ var answer = answer.concat(
 <img src = "./img/LossFunction.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 종류 <br/>\
 1. MSE (평균제곱오차) <br/>\
-<img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+<img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/>\
+*Pi 실제값, Yi 예측값<br/><br/>\
 2. RMSE (평균제곱근오차) <br/>\
 - 속도 향상 <br/>\
 <img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
