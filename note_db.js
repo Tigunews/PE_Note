@@ -1064,7 +1064,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Data Set : Resource 클래스 상속, 정보 <br/>\
 - Data Service : Resource 클래스 상속, 속성 정보<br/>\
 - Distribution : 배포저장 형식 <br/>\
-- Catalog : Dataset, Data Service의 각 목록의 속성 정보 <br/><br/>\
+- Catalog : Data set, Data Service의 각 목록의 속성 정보 <br/><br/>\
 # 참조모델 <br/>\
 <img src = "./img/OpenDataPlatformReferenceModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유통 플랫폼 연계 <br/>\
