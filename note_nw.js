@@ -1025,7 +1025,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : 학장 가능 통합 IT 프레임 워크 / 모든 요소 SDI로 적용 <br/>\
 - Hyper Converaged Infrastructor <br/>\
 - 가상화 컴퓨팅 기능에 스토리지와 네트워킹을 단일 시스템으로 결합하기 위해 모든 요소를 Software-Defined Infrastructure(SDI)로 적용하여 Scale-Out 확장이 가능한 통합 IT 프레임워크 <br/><br/>\
-# 통합 IT 인프라의 변화 <br/><br/>\
+# 통합 IT 인프라의 변화 <br/>\
 - 전통적 IT 인프라 : 개별 장비로 물리적 구성  <br/>\
 - CI : 다수의 IT장비를 Rack단위 통합 시스템 구성 <br/>\
 - HCI : SDI 통합 <br/><br/>\
