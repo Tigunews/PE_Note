@@ -57,6 +57,7 @@ var question = question.concat(
 '[가상화]- 하이퍼바이저(Hypervisor)',
 '[가상화]- 도커(Docker)',
 '[가상화]- 쿠버네티스(Kubernetes)',
+'[가상화]- HCI',
 );
 
 var answer = answer.concat(
@@ -1129,5 +1130,16 @@ var answer = answer.concat(
 - Kubelet : 마스터 API와 통신하는 Agent <br/>\
 - Kube-Proxy : 컨테이너 간 네트워킹 및 로드 밸런싱 - IPVS(IP Virtual Server) <br/><br/>\
 <img src = "./img/Kubernetes.png" style = "max-width:100%; hegiht:auto;">\
+',
+  
+// HCI
+'# 정의 : 차세대 데이터센터 플랫폼 <br/>\
+- Hyper Converaged Infrastructor <br/>\
+- X86 머신에 가상 컴퓨팅기능을 적용하고 스토리지와 네트워킹을 단일 시스템으로 결합하여 데이터 센터의 모든 요소를 Software Defined IT Infrastructure (SDI)로 구축, Scale-Out, 벤더 Lock-in 탈피한 통합 IT 프레임워크 <br/><br/>\
+# 배경 <br/>\
+- 분리,개별 장비 > CI (다수장비 Rack) > HCI (SDC+SDS+SDN)<br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/HCI_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 94회 3교시 2번\
 ',
 );
