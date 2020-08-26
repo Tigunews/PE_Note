@@ -44,7 +44,6 @@ var question = question.concat(
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'RTLS(Real-Time Locating System)',
 'Wi-Fi 6',
-'HCI',
 'eMTC',
 'Netowrk Storage',
 '자가망 구축 가이드라인',
@@ -1020,54 +1019,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - MU-MIMO(Multi User Multibple Input Multiple Output) : 한번에 많은 데이터 전송, 하나의 AP에서 더 많은 동시 클라이언트 지원<br/>\
 - 공간 제어용(Spatial Reuse) : 다른 단말의 통신을 방해하지 않는다면 통신 허용\
 ', 
-
-// HCI
-'# 정의 : 학장 가능 통합 IT 프레임 워크 / 모든 요소 SDI로 적용 <br/>\
-- Hyper Converaged Infrastructor <br/>\
-- 가상화 컴퓨팅 기능에 스토리지와 네트워킹을 단일 시스템으로 결합하기 위해 모든 요소를 Software-Defined Infrastructure(SDI)로 적용하여 Scale-Out 확장이 가능한 통합 IT 프레임워크 <br/><br/>\
-# 통합 IT 인프라의 변화 <br/>\
-- 전통적 IT 인프라 : 개별 장비로 물리적 구성  <br/>\
-- CI : 다수의 IT장비를 Rack단위 통합 시스템 구성 <br/>\
-- HCI : SDI 통합 <br/><br/>\
-# 구성요소 <br/>\
-- CPU <br/>\
-- SDS : Software Define Storage <br/>\
-- x86 server : x86 CPU를 기반으로 하는 서버 <br/><br/>\
-# 특징 <br/>\
-1. 구성 <br/>\
-- 가상화, HW 통합 : x86 서버에 서버, 스토리지 가상화로 통합 관리 <br/>\
-- Scale-Out : 가상화 컴퓨팅 기술을 활용한 서버 및 스토리지 분산 <br/>\
-- Rack 절감 : Appliance 장비 대체 <br/><br/>\
-2. 운영 <br/>\
-- TCO 절감 : 경제적 표준 x86서버 사용 <br/>\
-- 데이터 효율성 : 실시간 중복 제거 기술 <br/><br/>\
-3. 도입상황 <br/>\
-- IaaS : 개발 및 테스트 <br/>\
-- DR Center : 원격 데이터 복제 및 백업 <br/>\
-- IDC : 코어 데이터 센터VDI 가상화 <br/>\
-- Private Cloud : VDI 가상화 <br/><br/>\
-# HCI 서비스 제공 <br/>\
-1. HW <br/>\
-- 형태 : 통합 어플라이언스 HW/SW 패키지 판매 <br/>\
-- 구현 : 완성된 솔루션 <br/>\
-- 업체 : DELL EMC, HPE Simplivity <br/>\
-- 비용 : 자바 어플라이언스 기반 적은 인력으로 TCO 절약 <br/>\
-- 장점 : 단일 창구 지원으로 인한 운영, 문제 해결 및 성능 최적화 <br/>\
-- 단점 : 특정 벤더 의존도, 블랙박스로 인한 단점 <br/><br/>\
-2. SW <br/>\
-- 형태 : 소프트웨어 구입 <br/>\
-- 구현 : 고객 자체 기술 이용 <br/>\
-- 업체 : Maxta, VM Ware(vSAN) <br/>\
-- 비용 : 하드웨어 갱신시 소프트웨어 비용 절약 <br/>\
-- 장점 : 벤더 종속 없음, SW 라이선스 소유 <br/>\
-- 단점 : 초기 설정 작업 난이도 높음, 하드웨어 호환성 확보 필요 <br/><br/>\
-# 고려사항 <br/>\
-- 벤더 마찰 : HW, SW 파트너십 <br/>\
-- 커스터마이징 : 신속한 시장 대응 <br/>\
-- 데이터 용량 : 성능, 디스크 용량 <br/>\
-- HCI 내장 디스크 : 내구성 안전성 낮음 <br/>\
-- 기능 확장성 : SW + HW 결합 HCI 도입시 기능 확장 어려움\
-',
 
 // eMTC
 '# 정의 : IoT 전용 통신 기술 / 이동성 / 지속성 <br/>\
