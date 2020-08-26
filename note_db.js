@@ -50,6 +50,7 @@ var question = question.concat(
 'ERD',
 '관계형 데이터 모델', 
 '[BigData]- BigData 분석 방법론',
+'[BigData]- DCAT',
 );
 
 var answer = answer.concat(
@@ -1054,4 +1055,19 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 * KPC 94회 1교시 1번\
 ',
 
+// DCAT
+'# 정의 : 다양한 업종 빅데이터 플랫폼 <br/>\
+- W3C가 주도하여 웹에 게시된 데이터 카탈로그 간의 상호 운용이 용이하도록 설계된 카탈로그 표준 모델과 데이터 속성을 표현하는 어휘의 집합(Ontology) <br/><br/>\
+# 구성요소 <br/>\
+- Resource : 공통 속성 <br/>\
+- Data Set : Resource 클래스 상속, 정보 <br/>\
+- Data Service : Resource 클래스 상속, 속성 정보<br/>\
+- Distribution : 배포저장 형식 <br/>\
+- Catalog : Dataset, Data Service의 각 목록의 속성 정보 <br/><br/>\
+# 참조모델 <br/>\
+<img src = "./img/OpenDataPlatformReferenceModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유통 플랫폼 연계 <br/>\
+<img src = "./img/OpenDataPlatformReferenceModel_CirculationModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 94회 3교시 3번\
+',
 );
