@@ -7,6 +7,7 @@ var question = question.concat(
 '[동시성제어]- 트랜잭션 직렬화',
 '[동시성제어]- Timestamp',
 '[동시성제어]- Locking',
+'[동시성제어]- Phantom Conflict',
 '회복기법',
 '[회복기법]- WAL정책',
 '정규화',
@@ -225,8 +226,28 @@ var answer = answer.concat(
 - IX (Intension Exclusive) : 자손 S, X <br/>\
 - SIX (Shared and Intension Exclusive) : 서브트리 S, 자손 X <br/><br/>\
 # Lock 양립성 <br/>\
-<img src = "./img/Lock양립성.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/IsolationLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
+  
+// Phantom Conflict
+'# 정의 : 가상 튜플에 의한 충돌 <br/>\
+- 두 개 이상의 트랜잭션이 실제 데이터베이스에 저장되어 있는 튜플이 아니라, 데이터베이스에 삽입되려고 하는 가상의 튜플, 즉 팬텀 튜플에 의해 트랜잭션이 충돌되어 일관성/무결성이 보장되지 않는 현상 <br/><br/>\
+# 영향 <br/>\
+- 읽기 : 다른 Tx 삽입 / 없었던 행 출현 <br/>\
+- 쓰기 : 다른 Tx 삭제 / 행 사라짐 <br/><br/>\
+# 해결방법 <br/>\
+- Locking 단위 확대 : 튜플 -> 릴레이션 <br/>\
+- Index Locking : 릴레이션 갱신 <br/>\
+- 고립성 수준 높임 : 3단계, Serializable 설정 <br/><br/>\
+# 고립성 수준 <br/>\
+- Read Uncommitted : 처리중 데이터 허용 <br/>\
+- Read Committed : commit 후 허용 <br/>\
+- Repeatable Read : 타 Tx Update 금지, Insert 허용 <br/>\
+- Serializable : 동시 수행 금지 <br/>\
+<img src = "./img/Lock양립성.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 94회 1교시 11번\
+',
+  
 // 회복기법
 '# 정의 : 복원 기법 / DB 장애시 / 발생이전 <br/>\
 - DB에 장애 발생시 발생 이전의 일관된 상태(Consistent State)로 복원하는 기법 <br/><br/>\
