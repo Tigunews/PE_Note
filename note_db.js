@@ -226,7 +226,7 @@ var answer = answer.concat(
 - IX (Intension Exclusive) : 자손 S, X <br/>\
 - SIX (Shared and Intension Exclusive) : 서브트리 S, 자손 X <br/><br/>\
 # Lock 양립성 <br/>\
-<img src = "./img/IsolationLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Lock양립성.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
   
 // Phantom Conflict
@@ -244,7 +244,7 @@ var answer = answer.concat(
 - Read Committed : commit 후 허용 <br/>\
 - Repeatable Read : 타 Tx Update 금지, Insert 허용 <br/>\
 - Serializable : 동시 수행 금지 <br/>\
-<img src = "./img/Lock양립성.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/IsolationLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 1교시 11번\
 ',
   
