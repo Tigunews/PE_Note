@@ -444,7 +444,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 3. Translation (G/W 관점) : 연동 / 듀얼스택x / 특성반영한계 <br/>\
 <img src = "./img/Translation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주소변환 측면 IPv6 전환 기술 (헤전응)<br/>\
-1. 헤더변환 방식 : 변환 / 속도 / 별도 <br/>\
+1. 헤더변환 방식 : 변환 / 속도 / 별도 G/W <br/>\
 2. 전송계층 릴레이 방식 : 세션 중간 / Fragment, ICMP 변환 용이 / 내장 IP 변환 <br/>\
 3. 응용계층 Gateway 방식 : ALG 은닉, 성능 향상 / 헤더변환 단점 해소 / ALG 모드 별도 실행 <br/>\
 * KPC 94회 4교시 6번\
