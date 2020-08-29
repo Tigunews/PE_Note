@@ -452,7 +452,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 // [IPv6]- 보안취약성 및 대응방안
 '<a href = "./doc/IPv6SEC.pdf">참고문헌</a><br/><br/>\
-# Dual Stack (상터라페)<br/>\
+# Dual Stack (상터라패)<br/>\
 - 보안수준 상이 / 스니핑 / 인증기술<br/>\
 - 의도않은 터널링 유도 / 스푸핑 / 접근제어 <br/>\
 - 라우팅 위장 공격 / 스푸핑 / 접근제어 <br/>\
