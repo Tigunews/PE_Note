@@ -437,33 +437,33 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 // [IPv6]- 전환기술
 '# 구현망 측면 IPv6 전환기술 (듀터트)<br/>\
-1. Dual Stack (라우팅 관점) <br/>\
+1. Dual Stack (라우팅 관점) : 모두처리 / 호환성 / 주소고갈 <br/>\
 <img src = "./img/DualStack.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 정의 : 시스템에서 IPv4와 IPv6 프로토콜을 모두 처리하는 기술 <br/>\
 - 장점 : 장비와 가장 쉽게 호환성 유지 <br/>\
 - 단점 <br/>\
 1) IP계층 프로토콜 수정 필요 <br/>\
 2) 주소 고갈 문제 해결 불가능 <br/><br/>\
-2. Tunneling (NW 관점) <br/>\
+2. Tunneling (NW 관점) : 터널 통과 / 익명 / 구현 복잡 <br/>\
 <img src = "./img/Tunneling.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 정의 : IPv4 망에 터널을 만들어 IPv6 패킷을 통과시키는 기술 <br/>\
 - 장점 : 사용 익명 사례 다수 <br/>\
 - 단점 : 구현 복잡, 보안 위협 증가 <br/><br/>\
-3. Translation (G/W 관점) <br/>\
+3. Translation (G/W 관점) : 변환 기술 연동 / 듀얼스택x / 특성반영 한계 <br/>\
 <img src = "./img/Translation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 정의 : IPv4망과 IPv6망 사이에 변환 기술을 사용하여 연동시키는 기술 <br/>\
 - 장점 : 듀얼 스택 없이 통신 가능 <br/>\
 - 단점 : 특성반영 한계 및 보안 취약 <br/><br/>\
 # 주소변환 측면 IPv6 전환 기술 (헤전응)<br/>\
-1. 헤더변환 방식 <br/>\
+1. 헤더변환 방식 : 변환 / 속도 / 별도 <br/>\
 - 정의 : IP 계층에서 IPv6 패킷 헤더를 IPv4 패킷 헤더로 또는 그 반대로 변환하는 방식 <br/>\
 - 장점 : 속도 매우 빠름 <br/>\
 - 단점 : 별도 게이트웨이 필요할 수 있음 <br/><br/>\
-2. 전송계층 릴레이 방식 <br/>\
+2. 전송계층 릴레이 방식 : 세션 중간 릴레이 / Framnet, ICMP 변환 용이 / 내장 IP 변환 <br/>\
 - 정의 : TCP,UDP / IPv4 세션과 TCP, UDP/IPv6 세션을 중간에서 릴레이 하는 방식 <br/>\
 - 장점 : Fragments, ICMP 변환 용이 <br/>\
 - 단점 : 프로토콜내장 IP주소변환 문제 <br/><br/>\
-3. 응용계층 Gateway 방식 <br/>\
+3. 응용계층 Gateway 방식 : ALG 은닉, 성능 향상 / 헤더변환 단점 해소 / ALG 모드 별도 실행 <br/>\
 - 정의 : 트랜잭션 서비스를 위한 ALG로 사이트 정보를 숨기고 캐시 매커니즘으로 서비스의 성능을 향상시키기 위한 방법 <br/>\
 - 장점 : 헤더변환 단점 해소 <br/>\
 - 단점 : 서비스를 위한 ALG 모드 실행 <br/><br/>\
