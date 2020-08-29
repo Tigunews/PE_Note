@@ -404,7 +404,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 구성 <br/>\
 - 128비트 = 16 * 8 <br/>\
 - 16진수 표현, ":" 구분 <br/>\
-- Ex) 01DA : FF01 : 0000 : 0000 : 0000 : 00FF : FA21 : 3C5A <br/>\
+- Ex) 01DA : FF01 : 0000 : 0000 : 0000 : 00FF : FA21 : 3C5A <br/><br/>\
 # 주소체계 <br/>\
 - 유니캐스트 : 1:1 통신 <br/>\
 - 멀티캐스트 : 1:N 통신 <br/>\
