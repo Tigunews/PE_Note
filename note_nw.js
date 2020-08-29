@@ -454,7 +454,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 정의 : IPv4망과 IPv6망 사이에 변환 기술을 사용하여 연동시키는 기술 <br/>\
 - 장점 : 듀얼 스택 없이 통신 가능 <br/>\
 - 단점 : 특성반영 한계 및 보안 취약 <br/><br/>\
-# 주소변환 측면 IPv6 전환 기술 <br/>\
+# 주소변환 측면 IPv6 전환 기술 (헤전응)<br/>\
 1. 헤더변환 방식 <br/>\
 - 정의 : IP 계층에서 IPv6 패킷 헤더를 IPv4 패킷 헤더로 또는 그 반대로 변환하는 방식 <br/>\
 - 장점 : 속도 매우 빠름 <br/>\
