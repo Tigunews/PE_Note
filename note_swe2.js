@@ -68,6 +68,7 @@ var question = question.concat(
 '옵저버 패턴',
 'PMO',
 'PMBOK 6th 주요개정 내용',
+'지식영역별 세부 프로세스 49개',
 );
 
 var answer = answer.concat(
@@ -1100,5 +1101,8 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 3. 애자일 관련 내용. 비즈니스 문서, 조직구조 유형에 대한 내용 강화 <br/><br/>\
 4. 각 지식영역에 대해 최근 추세 및 실무 사례, 테일러링시 고려사항 애자일/적응형 환경을 위한 고려사항에 대한 설명 추가 \
 ',
+  
+// 지식영역 세부프로세스 49개
+'<img src = "./img/KA49.png" style = "max-width:100%; height:auto;">',
 
 );
