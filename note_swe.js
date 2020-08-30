@@ -3282,7 +3282,8 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 - 기획 : 계획 수립 <br/>\
 - 이행/실행 : 프로젝트 작업지시 <br/>\
 - 통제 : 프로젝트 작업통제 <br/>\
-- 종료 : 교훈 수집 \
+- 종료 : 교훈 수집 <br/>\
+<img src = "./img/ISO21500_ProcessGroup.png" style = "max-width:100%; height:auto;">\
 ',
 
 // [ISO 21500]- ISO 15504(SPICE)
