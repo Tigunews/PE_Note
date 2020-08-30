@@ -2895,7 +2895,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
   
 // 프로젝트 관리 계획서
 '<img src = "./img/ProjectAdminReport.png" style = "max-width:100%; height:auto;"><br/>\
-- 개업일인교통품인측\
+- 개범일인교통품인측\
 ',
 
 // 통합관리
