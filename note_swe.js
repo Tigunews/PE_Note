@@ -574,7 +574,7 @@ var answer = answer.concat(
 - Attainable (기술적 타당성) <br/>\
 - Realizable <br/>\
 - Traceable <br/><br/>\
-# 평가기준(TTA 표준) : 완전명일검수추이 <br/>\
+# 평가기준(TTA 표준) : 완정명일검수추이 <br/>\
 - 완전성 <br/>\
 - 정확성 <br/>\
 - 명확성 <br/>\
