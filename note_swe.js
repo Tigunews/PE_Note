@@ -155,6 +155,7 @@ var question = question.concat(
 '[운영유지보수단계]- ISO/IEC 14764',
 '[운영유지보수단계][ISO/IEC 14764]- PERT/CPM, CCM, CCPM',
 '[운영유지보수단계][ISO/IEC 14764]- 일정관리',
+'프로젝트 관리계획서',
 '[관리표준][PMBOK]- 통합관리',
 '[관리표준][PMBOK]- 범위관리',
 '[관리표준][PMBOK]- WBS',
@@ -2890,6 +2891,11 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 - Contigency Reservers : 우발적 예비-사전파악 위험버퍼<br/>\
 - Management Reservers : 관리적 예비비-일정기준선 포함x, 사전파악x, 위험 버퍼 <br/><br/>\
 * 고려사항 : PODB \
+',
+  
+// 프로젝트 관리 계획서
+'<img src = "./img/ProjectAdminReport.png" style = "max-width:100%; height:auto;"><br/>\
+- 개업일인교통품인측\
 ',
 
 // 통합관리
