@@ -391,23 +391,22 @@ var answer = answer.concat(
 ',
 
 // [기계학습]- 앙상블 학습법
-'# 정의 : 다수 학습 알고리즘 사용 학습법 <br/>\
-- 통계학과 기계 학습에서 앙상블 학습법(영어 : ensemble learning method)은 학습 AL(learning algorithm)들을 따로 쓰는 경우에 비해 더 좋은 예측 성능을 얻기 위해 다수의 학습 AL을 사용하는 방법 <br/><br/>\
-# 암기 <br/>\
-- 방법 : 알모데필리가 <br/><br/>\
-# 필요성 : 단일 알고리즘의 한계, 과적합 발생 우려 => 간단한 알고리즘 복수개 학습 결과 결합 <br/><br/>\
-# 절차 <br/>\
-- 서로 다른 복수개의 분류기로 학습(간단, 차별성 존재 분류기 선택) <br/>\
-- 결과 결합(병렬적 결합, 순차적 결합(선행분류기 결과가 후행에 영향) <br/><br/>\
-# 방법 <br/>\
-- 학습알고리즘 차별화 : 베이즈분류기 & K-NN, 신경망 & SVM <br/>\
-- 모델 선택과 관련 파라미터 차별화 (k-NN, 다층 퍼셉트론) <br/>\
-- 학습데이터의 차별화 <br/>\
-- 필터링 <br/>\
-- 리샘플링 (배깅, MadaBoost) <br/>\
-- 가중치 조정(AdaBoost(Advanced Boost)) <br/><br/>\
-# 예시 : Bagging, Boosting<br/><br/>\
-<img src = "./img/AL_16_1.PNG" style = "max-width:100%; height:auto;">\
+'# 정의 : 단일 학습모델 성능보완 <br/>\
+- 주어진 데이터로부터 여러개의 모델을 학습한 다음, 예측시 여러 모델의 예측 결과들을 종합해 사용하여 정확도를 높이는 방법 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/AL_16_1.PNG" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/EnsembleOverView.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. Voting : 학습결과 종합 <br/>\
+<img src = "./img/EnsembleVoting.png" style = "max-width:100%; height:auto;"><br/>\
+* KNN : K-Nearest Neighbor <br/>\
+* SVM : Support Vector Machine <br/><br/>\
+2. Bagging : 반복적 샘플링 투표 <br/>\
+<img src = "./img/EnsembleBagging.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/EnsembleRandomForest.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Boosting : 오분류 데이터 가중치 <br/>\
+<img src = "./img/EnsembleBoosting.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 아이리포 23회 1교시 3번\
 ',
 
 // [기계학습]- 과대적합
