@@ -21,6 +21,7 @@ var question = question.concat(
 '[블록체인]- 블록체인 오라클 문제',
 '[블록체인]- 타원곡선 암호화 알고리즘(ECDSA)',
 '[블록체인]- 스마트시티 활용',
+'[블록체인]- Off Chain',
 'MaaS',
 'BERT',
 '자율주행자동차',
@@ -499,7 +500,7 @@ var answer = answer.concat(
 * 86회 라이지움 1교시 7번 \
 ',
 
-// 스마트 시티 블록체인
+// 스마트시티 블록체인
 '# 활용 방안 <br/>\
 1. 스마트 시티 공간정보 분야 <br/>\
 - Digital Twin 스마트시티 계획 운영관리 모델 <br/>\
@@ -520,6 +521,18 @@ var answer = answer.concat(
 - 운영,관리 주체 명확 <br/>\
 - 제도 구축 정비 <br/><br/>\
 * 스마트 시티 3계층 : 인프라, 데이터, 서비스 \
+',
+  
+// Off Chain
+'# 정의 : On-Chain 기능 확장 <br/>\
+- 메인 블록체인 네트워크의 속도 향상 및 확장성을 확보하기 위해, 메인 블록체인 외부에서 트랜잭션을 처리 및 저장하는 별도의 체인 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/OffChain.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형 <br/>\
+- Side Chain : 빠르게 수행, Main 반영 / DappCoins <br/>\
+- Child Chain : 분산/병렬 처리, 하위 / Plasma <br/>\
+- Lightning Network : 개별 처리, 결과만 기록 / 아마존 상품권 <br/><br/>\
+* 아이리포 23회 1교시 1번\
 ',
 
 // MaaS
