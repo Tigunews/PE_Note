@@ -395,7 +395,7 @@ var answer = answer.concat(
 - 주어진 데이터로부터 여러개의 모델을 학습한 다음, 예측시 여러 모델의 예측 결과들을 종합해 사용하여 정확도를 높이는 방법 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/AL_16_1.PNG" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/EnsembleOverView.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/EnsembleOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 종류 <br/>\
 1. Voting : 학습결과 종합 <br/>\
 <img src = "./img/EnsembleVoting.png" style = "max-width:100%; height:auto;"><br/>\
