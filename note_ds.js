@@ -1080,28 +1080,16 @@ var answer = answer.concat(
 ',
 
 // [가상화]- Docker
-'# 정의 : LXC 기반 격리 가상화 기술 <br/>\
-- 리눅스 컨테이너(Linux Container, LXC) 기술을 바탕으로 애플리케이션을 격리된 상태에서 실행하는 가상화 기술 <br/><br/>\
-# 암기 <br/>\
-- 특징(4) : 컨ID호 <br/>\
-- 구성(5) : 도엔파호레컨 <br/><br/>\
-# 특징 <br/>\
-- 컨테이너 런타임 : 실행파일 호스트 직접실행 <br/>\
-- Immutable Infra : 운영환경 이미지 생성후 바로 서버배포 <br/>\
-- DevOps <br/>\
-- 이미지 공유 : 서비스 운영환경 이미지 개발자 환경실행 <br/>\
-- 동일환경 구성 용이 <br/>\
-- 호스트OS 공유<br/><br/>\
+'# 정의 : 컨테이너 기반 가상화 기법 <br/>\
+- 리눅스 컨테이너 기술을 바탕으로 애플리케이션을 격리된 상태에서 실행하는 가상화 기술 <br/>\
+<img src = "./img/VM_Containor.pngg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 구성 <br/>\
-- 도커엔진 : 컨테이너제어, 생성 <br/>\
-- 호스트 OS(리소스 공유) <br/>\
-- 도커파일(이미지 설정) <br/>\
-- 이미지 Repository : 패키징, 허브, DevOps수행 <br/>\
-- 컨테이너 : 이미지 실행 <br/><br/>\
+- 도커 엔진 : 컨테이너 제어, 생성 <br/>\
+- 호스트 OS : 리소스 공유 <br/>\
+- 도커파일 : 이미지 설정 <br/>\
+- 이미지 Repository : 패키징, 허브 <br/>\
+- 컨테이너 : 이미지 실행 <br/>\
 <img src = "./img/Docker_1.jpg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Docker_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Docker_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Docker_4.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 ',
 
 // [가상화]- 쿠버네티스(Kubernetes)
