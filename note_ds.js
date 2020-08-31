@@ -1082,7 +1082,7 @@ var answer = answer.concat(
 // [가상화]- Docker
 '# 정의 : 컨테이너 기반 가상화 기법 <br/>\
 - 리눅스 컨테이너 기술을 바탕으로 애플리케이션을 격리된 상태에서 실행하는 가상화 기술 <br/>\
-<img src = "./img/VM_Containor.pngg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/VM_Containor.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 구성 <br/>\
 - 도커 엔진 : 컨테이너 제어, 생성 <br/>\
 - 호스트 OS : 리소스 공유 <br/>\
