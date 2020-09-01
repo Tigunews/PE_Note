@@ -2941,6 +2941,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 - Work Breakdown Structure<br/>\
 - 프로젝트 목표를 달성하고 필요한 인도물을 산출하기 위하여 프로젝트 팀이 실행할 작업을 인도물 중심으로 분할한 계층구조 체계 <br/><br/>\
 # 구성 <br/>\
+<img src = "./img/WBS.png" style = "max-width:100%; height:auto;"><br/>\
 - Work Package : 최하단위 <br/>\
 - Code of Account : WBS ID <br/>\
 - WBS Dictionary : WP 상세내용 <br/><br/>\
