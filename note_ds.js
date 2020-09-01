@@ -1026,56 +1026,15 @@ var answer = answer.concat(
 ',
 
 // [가상화]- 하이퍼바이저
-'# 정의 : SW 가상화 플랫폼 / HW OS 사이 얇은 / 다수 OS 구동<br/>\
-- Hypervisor - VMM(Virtual Machine Monitor)라고도 함 <br/>\
-- 하나의 호스트 컴퓨터상에서 동시에 다수의 운영체제(OS)를 구동시킬 수 있는 HW와 OS사이의 얇은 SW 가상화 플랫폼 <br/><br/>\
-# 암기 <br/>\
-- Type1 : 하하호 <br/>\
-- Type2 : 하오하오 <br/>\
-- 도커 : 하오도 <br/><br/>\
-# 특징 <br/>\
-1. 2진 전환 <br/>\
-- 시스템 상태에 끼치는 영향을 피하기 위해 실행되는 코드를 동적으로 변경 <br/>\
-- 호스트형 가상화 소프트웨어는 일반적으로 2진 전환을 사용 <br/><br/>\
-2. 하드웨어 보조 <br/>\
-- 실행되는 동안 VM 코드를 변경하는 대신, 특권 명령에 대한 시스템 상태 변경을 피하기 위해 특수 프로세서 기술을 사용 <br/><br/>\
-3. Para-Virtualization <br/>\
-- 운영체제를 명시적으로 변경함으로써 가상화 되고 있음을 인식하도록하고 기본 VMM이 필요할 때 자동 호출하도록 함 <br/>\
-- VMM이 반드시 호출되어야 하는 횟수를 최소화함으로써 성능을 대폭 향상할 수 있지만, OS 소스 코드로의 접근을 확보해야함 <br/><br/>\
-# 위치별 분류 <br/>\
-- Type1(HW-Hypervisor-GuestOS) : 물리 컴퓨터의 HW 직접 동작 / 성능 Up, 호환성 Down <br/>\
-- Type2 : 물리 컴퓨터의 호스트 OS 위에서 동작 / 성능 Down, 호환성 Up <br/><br/>\
-# 기술별 분류 <br/>\
-1. Monolithic <br/>\
-- 개념 : 드라이버가 하이퍼바이저에 위치 <br/>\
-- 장점 : 단일체, 구현간단, 효율적 자원관리 <br/>\
-- 단점 : 드라이버 문제시 전체 영향, 다양한 환경적용 어려움 <br/>\
-- 예시 : VMware <br/>\
-2. Microkernel <br/>\
-- 개념 : 드라이버 관리를 부모파티션에서, 기본기능만 제공 <br/>\
-- 장점 : 재사용, 모듈교체 가능 <br/>\
-- 단점 : 통신오버헤드 증가<br/>\
-- 예시 : Window Server 2008 <br/><br/>\
-# 가상화 방식 분류 <br/>\
-1. 반가상화 <br/>\
-- 개념 : Para.HW완전 가상화X ,Guest OS가 직접 HW 제어 불가, 하이퍼~ 통해서만 가능 <br/>\
-- 장점 : 높은 성능 <br/>\
-- 단점 : Guest OS 수정필요 <br/>\
-- 예시 : XEN(Open Source) <br/>\
-2. 전가상화 <br/>\
-- 개념 : Full,HW모두 가상화 <br/>\
-- 장점 : Guest OS 수정 불필요, 제약 작음 <br/>\
-- 단점 : 오버헤드 큼, CPU의 Inter-VT나 AMD-V기능 필수 <br/>\
-- 예시 : KVM <br/><br/>\
-# 호스트 타입별 분류 <br/>\
-1. Bare-metal (native) <br/>\
-- 호스트 OS 없어 리소스 할당 불필요 <br/>\
-- 물리 컴퓨터 리소스 관리가 비교적 유연 <br/>\
-- 별도의 관리 콘솔이나 관리 컴퓨터 필요 <br/><br/>\
-2. Hosted <br/>\
-- 호스트 OS 실행 및 호스트 OS에 의해 운영체제 관리 <br/>\
-- Guest OS의 종류 제약이 적고, 도입이 쉬운 장점 <br/><br/>\
-<img src = "./img/Hypervisor_0.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+'# 정의 : 멀티프로그래밍 시스템 문제 해결 <br/>\
+- 하나의 호스트 컴퓨터에서 다수의 운영체제를 동시에 실행하기 위한 논리적인 소프트웨어 가상화 플랫폼 <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/HypervisorOverview.png" style = "max-width:100%; height:auto;"><br/>\
+1. Type 1 : HW 직접 설치 / 오버헤드 적음, 리소스 관리 유연 <br/>\
+- 전가상화 : 명령 해석 전달 / Guest OS 수정 x <br/>\
+- 반가상화 : API 통해 OS 제어 / Guset OS 수정 o <br/><br/>\
+2. Type 2 : OS 위에 설치 / 오버헤드 큼, 별도 관리모듈 x <br/><br/>\
+* 아이리포 23회 1교시 4번\
 * 122회 1교시 8번\
 ',
 
