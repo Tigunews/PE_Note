@@ -555,10 +555,10 @@ var answer = answer.concat(
 - 기능 : 기능, 자료, IF, 사용자 <br/>\
 - 비기능 : 자원, 성능, 보안, 품질<br/><br/>\
 # 프레임워크 (SWEBOK) : 추분명검변<br/>\
-- 추출 : Interview, Scenario, Prototype, Observation, Brainstorming, JAD, 관점 <br/>\
-- 분석 : Classification, Conceptual Modeling, Concert Modeling, Architecting, Trade Off <br/>\
-- 명세 : 정형명세, UML, 자연어, ERD, User Story, IEEE 830 <br/>\
-- 검증 : Walkthrough, Inspection, Review, 프로토타이핑, 정형검증 <br/>\
+- 추출 : 요구사항 식별,수집,구체화 / 인터뷰, 브레인스토밍 <br/>\
+- 분석 : 도메인/행위 분석, 구조화 / 시스템 모델(UML, ERD, 시나리오)<br/>\
+- 명세 : 수행될 기능 정확기 기술 / SRS <br/>\
+- 검증 : 합의된 요구사항 검토 및 증명 / 요구사항 문서, V&V, 리뷰, 인스펙션 <br/>\
 - 변경관리 : 협상, 기준선, 변경관리, 확인(V&V) <br/><br/>\
 # CMMi <br/>\
 - 요구사항 개발 : 요구사항 추출, 분석, 병세화, 검증 <br/>\
