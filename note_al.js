@@ -15,6 +15,7 @@ var question = question.concat(
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
 'AVL 트리',
+'기계학습 종류',
 '[기계학습]- 유전자 알고리즘',
 '[기계학습]- 신경망 알고리즘',
 '[기계학습]- Feed Forward Neural Network',
@@ -24,6 +25,8 @@ var question = question.concat(
 '[기계학습]- 과대적합(Overfitting)',
 '[기계학습]- 과소적합(underfitting)',
 '[기계학습]- TensorFlow',
+'[기계학습][비지도 학습]- GAN',
+'[기계학습][비지도 학습]- DCGAN',
 '연합학습',
 '딥러닝',
 '[딥러닝]- 한계점',
@@ -277,6 +280,11 @@ var answer = answer.concat(
 <img src = "./img/AVL_LR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
+  
+// 기계학습 종류
+'<img src = "./img/ML_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 아이리포 23회 3교시 6번\
+',
 
 // [기계학습]- 유전자 알고리즘
 '# 정의 : 자연계 진화 현상 모방 최적해 탐색 알고리즘 <br/>\
@@ -463,6 +471,41 @@ var answer = answer.concat(
 - 이슈2 : 데이터와 디바이스의 커뮤니케이션 바운더리 결정 <br/>\
 <img src = "./img/TensorFlow_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 1교시 6번\
+',
+  
+// GAN
+'# 정의 : 대립 통한 훈련학습 모델 <br/>\
+- 서로 대립하는 Generator, Discriminator 두 개의 네트워크를 생성하여 대립 과정 통해 성능을 강화하는 비지도 학습 모델 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/GAN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 신경망 <br/>\
+- 생성자 : 샘플 Data 생성 <br/>\
+- 구별자 : 입력된 Data Fake, Real 판별<br/><br/>\
+2. 이론 <br/>\
+- 내쉬 균형 : 수학적 균형점 <br/><br/>\
+3. 학습 설명 <br/>\
+- 반복 학습 : 확률 분포에 맞춰 반복<br/>\
+- 판별 불가 모델 생성 : 확률분포 차이x -> 분류모델 학습 모델 반복 진행 <br/><br/>\
+4. 기초자료 <br/>\
+- Real Images : 생성, 실제 비교 <br/><br/>\
+* 아이리포 23회 3교시 6번\
+',
+  
+// DCGAN
+'# 정의 : 안정적 학습을 위한 GAN <br/>\
+- Deep Convolution GAN <br/>\
+- GAN의 Fully Connected layer를 제거하고 Convolution Layer와 배치 정규화 구조를 사용하여 안정적인 학습이 가능한 GAN 알고리즘 <br/><br/>\
+# 구성요소 <br/>\
+1. 네트워크 구조 <br/>\
+- Convolution : 특징 추출 합성곱 / Feature Map, stride, padding <br/>\
+- Fractional-Strieded Convolution : Input Padding 이후 Convolution 수행 <br/>\
+- 배치 정규화 : 활성화 함수 값 정규분포화 (평균 0, 분산 1) <br/><br/>\
+2. 활성화 함수 <br/>\
+- ReLu : 생성자 모든층 / y = max(0,z) <br/>\
+- Tanh : 마지막 결과 도출 <br/>\
+- Leaky ReLu : 판별자 모든층 / f(x) = max(0,01x, x) <br/><br/>\
+* 아이리포 23회 3교시 6번\
 ',
 
 // 연합학습
