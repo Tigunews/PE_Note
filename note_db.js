@@ -33,9 +33,6 @@ var question = question.concat(
 'DQM3',
 'ISO/IEC 20943-5',
 'DQC',
-'[DB 보안]-벨-라파듈라(Bell-Lapadula) 모델',
-'[DB 보안]-비바(Biba) 모델',
-'[DB 보안]-클락-윌슨(Clack and Wilson) 모델',
 '[인덱스]- 인덱스 구조(B,R,T-Tree)',
 'Clustering Factor',
 'NewSQL DBMS',
@@ -766,41 +763,6 @@ var answer = answer.concat(
 - 데이터보안인증(DQC-S) : 접근제어, 암호화, 작업결재, 취약점분석 -> 접압작취(1~4Level)<br/><br/>\
 <img src = "./img/DQC_M.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 78회 3교시 6번\
-',
-
-// 25
-'# 정의 : 군사용 Formal 모델 / 유한 상태머신 모델 근간 <br/>\
-- 기밀성 강조, 군사적 모델, TCSEC 근간, 유한상태머신(Finite State Machine) 모델 근간 둔 Formal 모델 <br/>\
-- 군사용 보안구조의 요구사항을 충족시키기 위하여 1973년 미국 MITRE 연구소에서 Bell과 Lapadula 가 개발한 최초의 수학적 모델, 정보의 불법적 파괴나 변조보다는 기밀성(Confidentiality) 유지에만 초점을 두고 있음. 정보를 극비(Top Secret), 비밀(Secret), 미분류(Unclassified)로 분류 <br/><br/>\
-# 정책 <br/>\
-- Simple Property : No Read UP <br/>\
-- *-Property : 스타 무결성 규칙, No Write Down <br/><br/>\
-# 문제점 <br/>\
-- Subject와 Object의 Security level을 모두 다운 시키면 모든 Subject는 모든 Object에 접근 가능하며 Write Down할 수 있는 은닉 채널(Convert Channel) 존재 (McLean 주장)\
-',
-
-// 26
-'# 정의 : 무결성 모델 / Bell-Lapadula + (불법 수정 방지) <br/>\
-- 무결성 강조, 무결성 3원칙 모드 적용 모델 <br/>\
-- Biba Integrity 모델이라고도 하며, Bell-Lapadula 모델에서 불법 수정방지 내용을 추가로 정의한 무결성(Integrity) 모델 <br/><br/>\
-# 정책 <br/>\
-- Simple Property : No-Write-up Policy <br/>\
-- *-Property : No-Read-dwon Policy\
-',
-
-// 27
-'# 정의 : 보안 접근 통제 모델 / 불법 수정 방지 / 금융, 회계 <br/>\
-- 무결성 중식 상업적 모델 <br/>\
-- 최초의 상업환경에 적합하게 개발된 불법 수정 방지를 위한 보안 접근 통제 모델, 금융자산의 관리, 회계등의 분야에 주로 적용 <br/><br/>\
-# 정책 <br/>\
-- Well-Formed Transactions <br/>\
-- Separation of Duties : 임의 분리 원칙; 모든 운영과정에서 여러 사람이 각 부문별로 나누어 처리하게 하는 정책 <br/><br/>\
-# 무결성 3원칙 <br/>\
-- 비인가자에 의한 데이터 변형 방지 <br/>\
-- 인가자에 의한 데이터의 부적절한 변형 방지 <br/>\
-- 데이터 내/외부 일관성 유지 <br/><br/>\
-# Access Tripe : 주체, 객체, 프로그램 <br/><br/>\
-<img src = "./img/CW_Model.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 33
