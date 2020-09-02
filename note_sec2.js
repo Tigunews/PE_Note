@@ -29,8 +29,8 @@ var question = question.concat(
 'ISO/IEC 27017',
 'SDP',
 '[DB 보안]- DB 보호 솔루션',
-'[DB 보안]- 벨-라파듈라(Bell-Lapadula) 모델',
-'[DB 보안]- 비바(Biba) 모델',
+'[DB 보안][Role Based]- Bell LaPadula',
+'[DB 보안][Role Based]- Biba',
 '[DB 보안]- 클락-윌슨(Clack and Wilson) 모델',
 );
 
@@ -599,23 +599,21 @@ EAL : 펑스매매세세포 <br/><br/>\
 ',
   
 // Bell-Lapadula
-'# 정의 : 군사용 Formal 모델 / 유한 상태머신 모델 근간 <br/>\
-- 기밀성 강조, 군사적 모델, TCSEC 근간, 유한상태머신(Finite State Machine) 모델 근간 둔 Formal 모델 <br/>\
-- 군사용 보안구조의 요구사항을 충족시키기 위하여 1973년 미국 MITRE 연구소에서 Bell과 Lapadula 가 개발한 최초의 수학적 모델, 정보의 불법적 파괴나 변조보다는 기밀성(Confidentiality) 유지에만 초점을 두고 있음. 정보를 극비(Top Secret), 비밀(Secret), 미분류(Unclassified)로 분류 <br/><br/>\
-# 정책 <br/>\
-- Simple Property : No Read UP <br/>\
-- *-Property : 스타 무결성 규칙, No Write Down <br/><br/>\
-# 문제점 <br/>\
-- Subject와 Object의 Security level을 모두 다운 시키면 모든 Subject는 모든 Object에 접근 가능하며 Write Down할 수 있는 은닉 채널(Convert Channel) 존재 (McLean 주장)\
+'# 정의 : 기밀성 중점 모델 <br/>\
+- 정보를 극비, 비밀, 미분류로 분류하여, 접근 통제하는 모델 <br/><br/>\
+# 권한 <br/>\
+- Read : 상 x / 하 o <br/>\
+- Write : 상 o / 하 x <br/><br/>\
+* 아이리포 23회 1교시 8번 \
 ',
 
 // Biba
-'# 정의 : 무결성 모델 / Bell-Lapadula + (불법 수정 방지) <br/>\
-- 무결성 강조, 무결성 3원칙 모드 적용 모델 <br/>\
-- Biba Integrity 모델이라고도 하며, Bell-Lapadula 모델에서 불법 수정방지 내용을 추가로 정의한 무결성(Integrity) 모델 <br/><br/>\
-# 정책 <br/>\
-- Simple Property : No-Write-up Policy <br/>\
-- *-Property : No-Read-dwon Policy\
+'# 정의 : Bell LaPadula + 불법 수정 방지 / 무결성 중점 모델 <br/>\
+- Bell LaPadula 모델에서 불법 수정 방지 내용을 추가로 정의한 접근 통제 모델 <br/><br/>\
+# 권한 <br/>\
+- Read : 상 o / 하 x <br/>\
+- Write : 상 x / 하 o <br/><br/>\
+* 아이리포 23회 1교시 8번\
 ',
 
 // Clock and Wilson
