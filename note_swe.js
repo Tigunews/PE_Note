@@ -2894,7 +2894,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 2. 액티비티 수행기간 설정 <br/>\
 3. 네트워크 다이어그램 작성 <br/>\
 4. Forward (ES, EF 계산) <br/>\
-5. Backward (LS, LF 계산) <ㅠr/>\
+5. Backward (LS, LF 계산) <br/>\
 6. Float 계산 <br/>\
 7. 주경로 분석 <br/>\
 8. 프로젝트 수행기간 추정 <br/><br/>\
