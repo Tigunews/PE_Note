@@ -1122,13 +1122,20 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/교착상태.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 비교 <br/>\
 <img src = "./img/교착상태_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# DeadLock 발생조건 <br/>\
+- 상호배제 : p -> 자원 <br/>\
+- 점유와 대기 : 자원 -> p -> 자원 <br/>\
+- 비선점 : 자원 -> p <br/>\
+- 환형대기 : 자원 -> p -> 자원 -> p <br/><br/>\
 # 해결기법 <br/>\
 1. Live lock <br/>\
 - Interrupt Coalescing : 인위적 인터럽트 <br/><br/>\
 2. Dead lock <br/>\
-- 은행가 알고리즘 : Safe, Unsafe State <br/>\
-- Detection : Process kill <br/>\
-- CheckPoint and Resume : 상태 저장 <br/><br/>\
+- 예방 : 상호배제 제외 나머지 조건 위배 / 자원 해제 후 요청 <br/>\
+- 회피 : 안전한 상태 유지할 수 있는 요구만 수락 / 은행가 알고리즘 <br/>\
+- 발견 : 시스템 감시 알고리즘 통한 검사 / 자원할당 그래프 <br/>\
+- 회복 : 순차적 Kill / Process Kill, 자원선점 <br/><br/>\
+* 아이리포 23회 1교시 2번\
 * 라이지움 86회 1교시 2번\
 ',
 );
