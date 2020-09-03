@@ -9,6 +9,7 @@ var question = question.concat(
 '[AI]- 클라우드 활용 AI구축 모델',
 '[AI]- AI 프로젝트',
 '[AI]- Loss Function',
+'[AI]- 규범 동향',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
@@ -235,6 +236,16 @@ var answer = answer.concat(
 - 무작위 뽑아 학습 <br/>\
 <img src = "./img/MiniBatch.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 * KPC 94회 1교시 2번\
+',
+  
+// 규범동향
+'# 규범 동향 <br/>\
+- EU : 전자인간 인정 <br/>\
+- 미국 : 학계중심, 정부, 기술자 공동 설계 <br/>\
+- 영국 : 정부 위원회 구성 촉구 <br/>\
+- 일본 : 창작물 저작권 인정 <br/>\
+- 한국 : 로봇윤리헌장 제정 위원회, 로봇윤리헌장 발표 <br/><br/>\
+* 아이리포 23회 4교시 3번\
 ',
 
 // Flipped Learning
