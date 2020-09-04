@@ -407,13 +407,8 @@ var answer = answer.concat(
 // Agile 방법론
 '# 정의 : 사람 중심 효율적 시스템 개발 방법론 / 유연성 / 신속성<br/>\
 - 절차보다는 사람이 중심이 되어 변화에 유연하고 신속하게 적응하면서 효율적으로 시스템을 개발할 수 있는 방법론<br/><br/>\
-# 특징 : 사람 중심, 고객참여, 변경수용, 점증적인도, PM역할변화 <br/><br/>\
-# 장점 : 기업 or 사상 선택해서 쓰기좋음 <br/><br/>\
-# 단점 : 방법론 자체로 프로세스 적립부족, 대형프로젝트 적합x 감리대응 어려움, 관리방법 가이드라인 부족 <br/><br/>\
-<img src = "./img/Agile_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Agile_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Agile_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Agile_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 4대 가치 (개변동고)<br/>\
+<img src = "./img/Agile_1.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // xp
