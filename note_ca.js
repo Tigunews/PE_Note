@@ -38,8 +38,7 @@ var question = question.concat(
 '[Disk 스케줄링]- 알고리즘 유형',
 '리소스 공유방법 동기화방법',
 '[리소스 공유방법 동기화방법]- 상호배제',
-'[리소스 공유방법 동기화방법][상호배제]- 모니터',
-'[리소스 공유방법 동기화방법][상호배제]- 세마포어',
+'[리소스 공유방법 동기화방법][상호배제]- 세마포어, 모니터',
 '[리소스 공유방법 동기화방법][상호배제]- Swap Test & Set()',
 '[리소스 공유방법 동기화방법][상호배제]- 데커 피터슨 램포드',
 '[리소스 공유방법 동기화방법]- 운영체제의 크리티컬섹션',
@@ -987,57 +986,11 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/상호배제.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 모니터
-'# 정의 : 프로그래밍 언어 수준 상호 배제 기법 <br/>\
-- 프로그래밍 언어 수준에서 동시성을 제어하여 타이밍 오류를 해결한 상호 배제 기법 <br/><br/>\
-# 특징 <br/>\
-- 세마포어의 이론적 기반 제공, 타이밍 오류와 P/V 연산 코드 구현 <br/>\
-- 순차적으로만 사용할 수 있는 공유 자원 및 그룹 할당 <br/>\
-- 데이터, 프로시저를 포함하는 병행성 구조 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/Monitor_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 (변수, 프로시저, 큐)<br/>\
-- 지역변수 : 모니터 내부에서만 접근 가능 <br/>\
-- 조건변수 : 동기화의 부수적 메커니즘 제공 <br/>\
-- cwait(c) : 호출 프로세스를 조건 c에서 일시 중지 <br/>\
-- csignal(c) : cwait에 의해 중지된 프로세스 재개 <br/>\
-- Next Queue : 다른 프로세스가 모니터 내부에 있어서 잠시 대기하는 큐 <br/><br/>\
-<img src = "./img/Monitor_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+// 세마포어, 모니터
+'# 세마포어 : 운영체계 또는 프로그램 작성내에서 상호배제를 지원하는 매커니즘 <br/><br/>\
+# 모니터 : Concurrent-Pascal, JAVA등 프로그래밍 언어 수준에서 세마포어처럼 상호배제 기능을 제공하는 소프트웨어 모듈 <br/><br/>\
 <img src = "./img/Monitor_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SemaphoreMonitor.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 122회 1교시 1번\
-',
-
-// [리소스 공유방법 동기화방법]- 세마포어
-'# 정의 : 공유 자원 접근용 신호 <br/>\
-- 운영체제나 프로그램 내에서 공유 자원에 대한 접근을 제어하기 위해 사용되는 신호 <br/>\
-- 세마포어 s는 정수값을 가지며, 초기화 및 P와 V연산에 의해서만 접근되는 정수형 공용 변수<br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/Semaphore_6.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 동작원리 <br/>\
-1. P 연산(Wait) <br/>\
-- 의미 : 세마포어 s가 1 -> 0 변경 <br/>\
-- 코드 : if(s>0) then s--; else 현재 프로세스 대기 <br/><br/>\
-2. V 연산(Signal) <br/>\
-- 의미 : 세마포어 s가 0-> 1변경 <br/>\
-- 코드 : if(프로세스 대기중) then 1개 프로세스만 진행; else s++;<br/><br/>\
-# 유형<br/>\
-1. Binary Semaphore <br/>\
-- 목적 : 상호배제, 프로세스 동기화 <br/>\
-- 세마포어, 플래그 (0 or 1) <br/><br/>\
-2. Count Semaphore <br/>\
-- 목적 : 초기에 동시 진행 가능한 프로세스 개수 정의 가능 <br/>\
-- 내용 : 0,1,2, .. <br/><br/>\
-* Semaphore Mutex <br/>\
-1. 원리 <br/>\
-- Semaphore : 접근 가능 최대 허용치만큼 동시 사용자 접근 제어 <br/>\
-- Mutex : 대기열(큐)를 통한 접근 제어 <br/><br/>\
-2. 목적 <br/>\
-- Semaphore : DeadLock 회피 <br/>\
-- Mutex : Critical Section Thread Running Time 제어 <br/><br/>\
-3. 특징 <br/>\
-- Semaphore : 동기화 대상 여러개일 경우 사용 <br/>\
-- Mutex : 하나의 Thread만 허용 <br/><br/>\
 * 122회 1교시 1번\
 ',
 
