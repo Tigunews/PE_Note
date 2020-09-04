@@ -2899,7 +2899,9 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 7. 주경로 분석 <br/>\
 8. 프로젝트 수행기간 추정 <br/><br/>\
 # 경로 도출 방법 <br/>\
-<img src = "./img/CPM_Calc.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/CPM_Calc.png" style = "max-width:100%; height:auto;"><br/>\
+- Total Float : LS-EF or LS-ES <br/>\
+- Free Float : 후행 ES - EF -1\
 ',
   
 // CCM
