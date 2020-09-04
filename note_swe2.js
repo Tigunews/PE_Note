@@ -428,10 +428,12 @@ var answer = answer.concat(
 - 미팅 : 일일스크럼, 스프린트 계획, 스프린트 리뷰 <br/>\
 - 산출물 : 제품 백로그, 스프린트 백로그, 소멸차트 <br/><br/>\
 # 프로세스 <br/>\
+<img src = "./img/Scrum.png" style = "max-width:100%; height:auto;"><br/>\
 - 요구정의 : 린스타트업, 디자인 싱킹 <br/>\
 - 프로젝트 준비 : 제품 백로그 <br/>\
 - 스프린트 수행 : 스프린트 계획 회의, 일일 스크럼, 스프린트, 스프린트 종료 데모, 스프린트 회고 <br/>\
-- 프로젝트 종료 : 프로젝트 교훈 미팅 \
+- 프로젝트 종료 : 프로젝트 교훈 미팅 <br/>\
+<img src = "./img/ScrumMeeting.png" style = "max-width:100%; height:auto;"><br/>\
 ',
 
 // Burn down Chart
