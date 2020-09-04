@@ -630,15 +630,15 @@ var answer = answer.concat(
 - 비용과 편익을 측정하고 이에 따라 경제성 수익을 계산함으로써 그 타당성 여부를 결정하는 분석방식 <br/><br/>\
 # 유형 <br/>\
 1. 타당성 분석 <br/>\
-- BCR : 비용 편익 비율 (수익/비율) <br/>\
-- PP : 자본 회수 기간 <br/>\
-- IRR : 내부 수익율, 시장 이자율보다 높아야 함 <br/>\
-- NPV : 순 현재 가치, 0보다 크면 투자 가치 있음 <br/><br/>\
+- BCR(Benefit Cost Ratio) : 비용 편익 비율 (수익/비율) <br/>\
+- PP(Paybak Period) : 자본 회수 기간 <br/>\
+- IRR(Internal Rate of Return) : 내부 수익율, 시장 이자율보다 높아야 함 <br/>\
+- NPV(Net Present Value) : 순 현재 가치, 0보다 크면 투자 가치 있음 <br/><br/>\
 2. 효율성 분석 <br/>\
-- TCO : 총 소요비용 <br/><br/>\
+- TCO(Total Cost of Ownership) : 총 소요비용 <br/><br/>\
 3. 효과성 분석 <br/>\
-- ROI : 투자 수익율, 순이익 / 투자자본 <br/>\
-- BSC : 재무, 고객, 내부프로세스, 학습과정\
+- ROI(Return On Invetment) : 투자 수익율, 순이익 / 투자자본 <br/>\
+- BSC(Balence Score Card) : 재무, 고객, 내부프로세스, 학습과정\
 ',
 
 // 모듈화
