@@ -10,6 +10,7 @@ var question = question.concat(
 '[AI]- AI 프로젝트',
 '[AI]- Loss Function',
 '[AI]- 규범 동향',
+'[AI]- Python',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
@@ -246,6 +247,23 @@ var answer = answer.concat(
 - 일본 : 창작물 저작권 인정 <br/>\
 - 한국 : 로봇윤리헌장 제정 위원회, 로봇윤리헌장 발표 <br/><br/>\
 * 아이리포 23회 4교시 3번\
+',
+  
+// Python
+'# 정의 : 인공지능 시대에 최적화된 인터프리터 언어 <br/>\
+- 1990년 암스테르담의 귀도 반 로섬에 의해 만들어진 인터프리터 언어 <br/><br/>\
+# 특징 <br/>\
+- 장점 : 인터프리터 언어, 플랫폼 독립적, 오픈소스 <br/>\
+- 단점 : 느린 속도, 모바일,웹 취약, 설계 제약 <br/><br/>\
+# 자료형 <br/>\
+- int, float, str, bool <br/>\
+- complex : 실수 + 허수 / -7 + 2j<br/>\
+- List : 여러가지 Object 데이터 집합 / [1,2,3] <br/>\
+- Tuple : 불변 Object 집합 (1,2,3) <br/>\
+- Dictionary : Key, Value / {\'name\' : \'Hong\', \'Phone\' : 010} <br/>\
+- Set : 유일값 집합 / set("Hello") <br/>\
+- 자료형 확인 : type() <br/><br/>\
+* 122회 2교시 1번\
 ',
 
 // Flipped Learning
