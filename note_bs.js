@@ -69,6 +69,7 @@ var question = question.concat(
 var answer = answer.concat(
 // ITSM
 '# 정의 : IT 서비스 수준관리 위한 프레임워크 <br/>\
+- Information Technology Service Management <br/>\
 - 고객과 합의된 SLA 수준에 맞게 품질 유지하도록 프로세스, 조직, 자원, 기술의 종합적 관리 위한 선진 IT 서비스 관리 기법 <br/><br/>\
 # ITSM Framework <br/>\
 <img src = "./img/ITSM_Framework.png" style = "max-width:100%; height:auto;">\
