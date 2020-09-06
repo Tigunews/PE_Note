@@ -1,5 +1,8 @@
 var question = question.concat(
 'ITSM',
+'[ITSM]- SoW/SLA/SLM',
+'[ITSM]- SLA',
+'[ITSM]- SLM',
 '플랫폼 경제',
 'RTE',
 '[RTE]- 사이클론모델',
@@ -33,8 +36,6 @@ var question = question.concat(
 'PI',
 'TOC',
 'Open Shift',
-'[ITIL]- SLA',
-'[ITIL]- SLM',
 'D-Commerce',
 '빅블러 현상',
 '옴니채널(Omni-Channel)',
@@ -63,7 +64,52 @@ var answer = answer.concat(
 # ITSM Framework <br/>\
 <img src = "./img/ITSM_Framework.png" style = "max-width:100%; height:auto;">\
 ',
+
+// SoW/SLA/SLM
+'<img src = "./img/SOW_SLA_SLM.png" style = "max-width:100%; height:auto;">\
+',
  
+// [ITIL]- SLA
+'# 정의 : 사용자 공급자간 서비스 명시 문서<br/>\
+- Service Level Agreement <br/>\
+- 정보시스템 사용자 공급자 간 서비스 수준을 정량적으로 측정하여 상호 동의한 일정수준의 서비스를 명시한 문서<br/><br/>\
+# 암기 : WMOMPRS <br/><br/>\
+# 구성 : WMOMPRS <br/>\
+- SOW, SLM(Metrics), SLO(Objective), SLM(Measurement), Penalty & Reward, SLR(Reports) <br/><br/>\
+# SLA 측정 지표 <br/>\
+- 어플리케이션 운영 : CSR 납기 준수율, CSR 처리율, CSR 고객 만족도 <br/>\
+- 데이터센터 운영 : 서버 가동율, 중복 장애관리, 데이터 Backup / Restore 이행율, 시스템 변경작업 이행율 <br/>\
+- NW 운영 : WAN 가동율, 인터넷 가동율, LAN 가용성, LAN 사용동향, 고객만족도 <br/><br/>\
+# 개발절차 : SOW -> SLM -> SLO -> PR <br/><br/>\
+# 도입 절차 <br/>\
+- SLA 정의 : SLM 선정, 측정/평가/보고 <br/>\
+- SLA 관리체계 수립 : 평가 Frame, 보상/패널티 방안, 예외사항 처리 방안, 보고방안 <br/>\
+- SLA 프로세스 정립 : Flow, R&R, KPI, 리뷰/확정 <br/>\
+- 이행 및 변화 관리 : 변화 관리제 도출, 이행과제 상세정의 <br/><br/>\
+* 일반계약서 비교, 법적 효력 미흡 <br/><br/>\
+<img src = "./img/SLA.png" style = "max-width:100%; height:auto;">\
+',
+
+// [ITIL]- SLM
+'# 정의 : 프로세스 관리 활동 / 고객 신뢰 증진 및 서비스 향상 <br/>\
+- Service Level Management <br/>\
+- 고객과 합의된 품질 수준의 서비스가 제공되는 것을 보장함으로써 고객신뢰 증진 및 서비스 수준향상을 위한 프로세스 관리활동 <br/><br/>\
+# 암기 : SC, SLA, OLA, UC, SQ <br/><br/>\
+# 구조 : SOW -> SLA -> SLM <br/><br/>\
+# 구성  <br/>\
+- Service Catalog, SLA, OLA(내부부서간 합의서) <br/>\
+- UC : Underpinning Contract 외부협력업체간 계약 <br/>\
+- Service Quality : 서비스 수준 보장 위한 모든 내용 기술 <br/>\
+- SLM 엔진 : 지표별 측정치 산출, 보고서 작성 자동화, 서비스 모니터링 <br/>\
+- Service Report <br/><br/>\
+# 기술요소 <br/>\
+- 서비스 카탈로그 관리도구 <br/>\
+- 서비스 모니터링 도구 : SMS, MMS, APM <br/>\
+- SLM 시스템 <br/>\
+- 서비스 측정도구 : 사용량 과금 <br/>\
+- 서비스 프로비저닝 \
+',
+
 // 플랫폼 경제
 '# 정의 : 플랫폼 기반 경제 활동 / 인터넷 기술 / 기업 소비자 연결 <br/>\
 - 인터넷 기술의 발전으로 네트워크 상에서 기업과 소비자를 연결하는 디지털 플랫폼을 기반으로 상품 및 서비스의 공급자와 수요자가 거래하는 경제활동',
@@ -696,47 +742,6 @@ var answer = answer.concat(
 # 라이선스 : Apache 2.0 <br/><br/>\
 <img src = "./img/OpenShift_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/OpenShift_2.png" style = "max-width:100%; height:auto;">\
-',
-
-// [ITIL]- SLA
-'# 정의 : 사용자 공급자간 서비스 명시 문서<br/>\
-- Service Level Agreement <br/>\
-- 정보시스템 사용자 공급자 간 서비스 수준을 정량적으로 측정하여 상호 동의한 일정수준의 서비스를 명시한 문서<br/><br/>\
-# 암기 : WMOMPRS <br/><br/>\
-# 구성 : WMOMPRS <br/>\
-- SOW, SLM(Metrics), SLO(Objective), SLM(Measurement), Penalty & Reward, SLR(Reports) <br/><br/>\
-# SLA 측정 지표 <br/>\
-- 어플리케이션 운영 : CSR 납기 준수율, CSR 처리율, CSR 고객 만족도 <br/>\
-- 데이터센터 운영 : 서버 가동율, 중복 장애관리, 데이터 Backup / Restore 이행율, 시스템 변경작업 이행율 <br/>\
-- NW 운영 : WAN 가동율, 인터넷 가동율, LAN 가용성, LAN 사용동향, 고객만족도 <br/><br/>\
-# 개발절차 : SOW -> SLM -> SLO -> PR <br/><br/>\
-# 도입 절차 <br/>\
-- SLA 정의 : SLM 선정, 측정/평가/보고 <br/>\
-- SLA 관리체계 수립 : 평가 Frame, 보상/패널티 방안, 예외사항 처리 방안, 보고방안 <br/>\
-- SLA 프로세스 정립 : Flow, R&R, KPI, 리뷰/확정 <br/>\
-- 이행 및 변화 관리 : 변화 관리제 도출, 이행과제 상세정의 <br/><br/>\
-* 일반계약서 비교, 법적 효력 미흡 <br/><br/>\
-<img src = "./img/SLA.png" style = "max-width:100%; height:auto;">\
-',
-
-// [ITIL]- SLM
-'# 정의 : 프로세스 관리 활동 / 고객 신뢰 증진 및 서비스 향상 <br/>\
-- Service Level Management <br/>\
-- 고객과 합의된 품질 수준의 서비스가 제공되는 것을 보장함으로써 고객신뢰 증진 및 서비스 수준향상을 위한 프로세스 관리활동 <br/><br/>\
-# 암기 : SC, SLA, OLA, UC, SQ <br/><br/>\
-# 구조 : SOW -> SLA -> SLM <br/><br/>\
-# 구성  <br/>\
-- Service Catalog, SLA, OLA(내부부서간 합의서) <br/>\
-- UC : Underpinning Contract 외부협력업체간 계약 <br/>\
-- Service Quality : 서비스 수준 보장 위한 모든 내용 기술 <br/>\
-- SLM 엔진 : 지표별 측정치 산출, 보고서 작성 자동화, 서비스 모니터링 <br/>\
-- Service Report <br/><br/>\
-# 기술요소 <br/>\
-- 서비스 카탈로그 관리도구 <br/>\
-- 서비스 모니터링 도구 : SMS, MMS, APM <br/>\
-- SLM 시스템 <br/>\
-- 서비스 측정도구 : 사용량 과금 <br/>\
-- 서비스 프로비저닝 \
 ',
 
 // D-Commerce
