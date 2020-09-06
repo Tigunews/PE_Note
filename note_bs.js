@@ -124,7 +124,8 @@ var answer = answer.concat(
 '# 정의 : 정보 도출 방법 / 데이터 집합 / 사용자 요구 /<br/>\
 - 데이터 집합에서 사용자 요구 따라 유용 가능성 있는 정보 도출 방법 <br/><br/>\
 # 개념도 <br/>\
-<img src = "./img/DataMining_OLAP.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DataMining_OLAP.png" style = "max-width:100%; height:auto;"><br/>\
+* ETT : Extension, Transformation, Transportation <br/><br/>\
 # 절차 <br/>\
 1. Sampling : 표본 추출 <br/>\
 2. Cleansing : 전처리(Pre-Processing) <br/>\
