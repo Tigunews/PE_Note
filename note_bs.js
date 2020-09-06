@@ -246,6 +246,22 @@ var answer = answer.concat(
 <img src = "./img/OpinionMining_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 1교시 11번\
 ',
+ 
+// System Dynamics 
+'# 정의 : 사회 현상을 구성요소로 분해하여, 요소 간의 인과 관계를 표현하는 기법 <br/>\
+- 동태적, 순환적 인과관계의 시각적으로 현상 이해하고 설명하거나 컴퓨터상에서 실험해 보는 방법론이자 현상을 바라보는 프레임워크 <br/><br/>\
+# 특징 <br/>\
+- 집중(초점) : 변수들 간의 영향관계 집중 <br/>\
+- 인과관계 기초 : 순환적 인과관계 <br/>\
+- 데이터 분석 : 동태적 데이터 분석 <br/><br/>\
+# 구성요소 <br/>\
+- 시스템 : 특정 목표를 공유하는 요소 집합 <br/>\
+- 인과관계 : 한 요소의 변화가 다른 요소에 영향을 미치는 의미 <br/>\
+<img src = "./img/SystemDynamics_1.png" style = "max-width:100%; height:auto;"><br/>\
+- 피드백 : 강화 루프, 균형 루프 <br/>\
+- 레벨과 레이트 : 피드백 루프요소를 시뮬레이션 모델로 표현 <br/>\
+<img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
 
 // 플랫폼 경제
 '# 정의 : 플랫폼 기반 경제 활동 / 인터넷 기술 / 기업 소비자 연결 <br/>\
