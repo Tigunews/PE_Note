@@ -132,7 +132,7 @@ var answer = answer.concat(
 5. Modeling : 알고리즘 선정 및 적용하여 마이닝 수행, 지도학습 알고리즘(의사결정, 신경망), 자율학습(연관성, 군집) <br/>\
 6. Reporting : 결과 분석/ 평가, 반복수행 여부 결정 <br/>\
 7. FeedBack <br/><br/>\
-# 연관성 규칙 평가기준<br/>\
+# Apriori Algorithm <br/>\
 - 지지도 P(A∩B)<br/>\
 - 신뢰도 P(B|A)= P(A∩B)/P(A) <br/>\
 - 향상도 P(B|A)/P(B) = P(A∩B)/P(A)*P(B)\
