@@ -1,4 +1,5 @@
 var question = question.concat(
+'ITSM',
 '플랫폼 경제',
 'RTE',
 '[RTE]- 사이클론모델',
@@ -56,6 +57,13 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
+// ITSM
+'# 정의 : IT 서비스 수준관리 위한 프레임워크 <br/>\
+- 고객과 합의된 SLA 수준에 맞게 품질 유지하도록 프로세스, 조직, 자원, 기술의 종합적 관리 위한 선진 IT 서비스 관리 기법 <br/><br/>\
+# ITSM Framework <br/>\
+<img src = "./img/ITSM_Framework.png" style = "max-width:100%; height:auto;">\
+',
+ 
 // 플랫폼 경제
 '# 정의 : 플랫폼 기반 경제 활동 / 인터넷 기술 / 기업 소비자 연결 <br/>\
 - 인터넷 기술의 발전으로 네트워크 상에서 기업과 소비자를 연결하는 디지털 플랫폼을 기반으로 상품 및 서비스의 공급자와 수요자가 거래하는 경제활동',
