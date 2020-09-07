@@ -1135,7 +1135,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 // 지식영역 세부프로세스 49개
 '[Y] 통범일원품자의위조이<br/>\
 [X] 착기실감통종<br/>\
-- 기 : 프/범요정W/일정순산일/원산예/품/자활/의/리식정량대/조/이 <br/><br/>\
+- 기 : 프/범요정W/일정순기일/원산예/품/자활/의/리식정량대/조/이 <br/><br/>\
 <img src = "./img/KA49.png" style = "max-width:100%; height:auto;">\
 ',
 
