@@ -3,6 +3,8 @@ var question = question.concat(
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
 '[ITSM]- SLM',
+'ITIL 3.0',
+'ITIL 4.0',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining]- 단어구름(Word Cloud)',
@@ -120,6 +122,35 @@ var answer = answer.concat(
 - SLM 시스템 <br/>\
 - 서비스 측정도구 : 사용량 과금 <br/>\
 - 서비스 프로비저닝 \
+',
+ 
+// ITIL 3.0
+'# 정의 : ITSM을 위한 Best Practice 모음집 <br/>\
+- IT Infrastructure Library <br/>\
+- 비즈니스의 영속성을 위해 안정적인 서비스 자원과, 서비스 이행 및 제공, ICT 관리의 "Best Practice" 모음집 <br/><br/>\
+# 특징 <br/>\
+- 생명주기 관점 <br/>\
+- IT Governance 지원 <br/>\
+- 정량적 ROI 분석 <br/>\
+- CMDB(Configuraton Managemnet Databse) -> SKMS(Service Knowledge Management System) <br/><br/>\
+# 구성요소 (전설이운개) <br/>\
+- 서비스 전략 : 고객 이해, 투자 우선순위 <br/>\
+- 서비스 설계 : 요구사항 분석 <br/>\
+- 서비스 이행 : 전환 계획, 검증, 테스트 <br/>\
+- 서비스 운영 : 모니터링 및 통제 <br/>\
+- 지속적 서비스 개선 : 리포트, Trend 파악 \
+', 
+ 
+// ITIL 4.0
+'# 정의 : ITSM을 위한 Practice 모음집 <br/>\
+- ITIL 3.0 + Agile, Devops <br/><br/>\
+# 구성요소 (조정파가) <br/>\
+- 조직과 사람들 : 고객, 이해관계자 중요성 <br/>\
+- 정보 및 기술 : 정보, 기술의 중요성, 가용성 <br/>\
+- 파트너 및 공급 업체 : 협력 가치 창출 <br/>\
+- 가치 흐름과 프로세스 : 가치 창출 위한 프로세스 관리 <br/><br/>\
+# 3.0, 4.0 비교<br/>\
+<img src = "./img/ITIL.png" style = "max-width:100%; height:auto;">\
 ',
  
 // DataMining
