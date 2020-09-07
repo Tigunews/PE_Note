@@ -728,23 +728,12 @@ var answer = answer.concat(
 - BIA(Business Impact Analysis) : 장애 가정 손실 평가 <br/>\
 - Backup : 데이터 보관 정합성 유지 방법 <br/>\
 - Planning  : 계획서 작성 통한 혼선 방지<br/><br/>\
-# CSF <br/>\
-- 모의훈련, 전사적 공유 및 참여, 대상의 명확화 <br/><br/>\
 # 구축 절차 <br/>\
-1. BCP 착수 <br/>\
-- 현행 비즈니스 체계 및 인프라 분석 <br/>\
-2. 위험요소 분석 <br/>\
-- 업무특성에 따른 위험요인 파악 <br/>\
-3. BIA <br/>\
-- 업무 영향도 측정 및 분석 <br/>\
-4. BCP 전략 개발 <br/>\
-- DR Center 구축 전략 개발 <br/>\
-5. BCP 수립 <br/>\
-- DR System 구축 계획 (비상, 운영, 훈련) <br/>\
-6. BCP 구현 <br/>\
-- DR Center 구축 작업 및 완료 <br/>\
-7. 훈련 및 교육 <br/>\
-- 관련자 교육, 모의훈련 (연1회) <br/>\
+- BCP 착수 : 현행 분석 <br/>\
+- BIA : 업무 영향도 분석 <br/>\
+- BCP 수행 : DR Center 운영 <br/>\
+- 교육 : 담당자 교육 <br/>\
+- 운영 : DR Center 운영 <br/><br/>\
 8. 운영 <br/>\
 - DR Center 운영 <br/><br/>\
 # FW <br/>\
