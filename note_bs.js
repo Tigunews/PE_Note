@@ -783,11 +783,16 @@ var answer = answer.concat(
 '# 정의 : 업무 연속성을 유지할 수 있는 체계 <br/>\
 - Disaster Recovery System <br/>\
 - 정보시스템에 대한 비상대비체계 유지와 업무 조직별 비상사태에 대비한 복구계획 수립을 통한 업무 연속성을 유지할 수 있는 체제 <br/><br/>\
-# DRS 구성도 <br/>\
-<img src = "./img/DRS.png" style = "max-width:100%; height:auto;">\
+# 구성도 <br/>\
+<img src = "./img/DRS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- HA : Clustering or Stand-By <br/>\
+- FT : Dual System <br/>\
+- IP-SAN : SAN Traffic 을 IP Packet에 실어 전송 <br/>\
+- DWDM (Dense Wavelength Division Multiplexing) : 고밀도 파장 분할 다중화 \
 ',
 
-// 24
+// DRP
 '# 정의 : 복구 업무 영향 최소화 계획 <br/>\
 - Disaster Recovery Planning <br/>\
 - 정보기술서비스기반에 대해 재해가 발생하는 경우를 대비하여, 이를 빠른 복구를 통해 업무에 대한 영향을 최소화 하기 위한 제반 계획<br/><br/>\
