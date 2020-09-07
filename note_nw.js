@@ -36,9 +36,10 @@ var question = question.concat(
 'IEEE 802.15.x',
 'USB4.0',
 '5G 이동통신',
-'[5G 이동통신]- MEC(Mobile Edge Computing)',
-'[5G 이동통신]- 5GX',
-'[5G 이동통신]- Open Lan',
+'[5G]- 3GPP Release 16',
+'[5G]- MEC(Mobile Edge Computing)',
+'[5G]- 5GX',
+'[5G]- Open Lan',
 '재난안전통신망(Disaster Security Communication Network, 재난망)',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
@@ -857,6 +858,24 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 과기정통부, 시범서비스 모델 발굴 <br/>\
 - 실증 통해 통신속도-활용도 확인 <br/>\
 - 성공 땐 5G B2G-B2B 글로벌 시장 진출\
+',
+ 
+// 3GPP Release 16
+'# 기술 진화 <br/>\
+- Release 15(2017하 ~ 2019상) : 5G 세대전환 <br/>\
+- Release 16(2018하 ~ 2020상) : 5G 서비스 확장 <br/>\
+- Release 17(2020상 ~ 2021_1) : 5G 서비스 고도화 <br/>\
+- Release 18(2021하 ~ 2023하) : 6G 이행 단계 <br/><br/>\
+# 주요 성능개선 <br/>\
+- 초고신뢰, 초저지연 통신 개선 : 기지국간 협력 통신(CoMP) 지원 <br/>\
+- MU-MIMO : 멀티안테나 통한 안정성, 커버리지 <br/>\
+- 주파수 활용 기술 개선 : CA(carrier aggregation), 주파수 2개 1개처럼 <br/>\
+- 모빌리티 기능 개선 : 핸드오버 성능 개선 <br/><br/>\
+# 주요 기능 확장 <br/>\
+- TSN(시간 민감형 네트워킹) : 정확한 시간 동기화 개선 <br/>\
+- 5G-V2X : 자율주행 통신 성능 표준화 <br/>\
+- 5G GPS : 80%시간, 실내3미터, 실외 10미터 오차범위 <br/>\
+- 5G 방송(enTV) : 시속 250Km 방송시청 신뢰성 \
 ',
 
 // MEC
