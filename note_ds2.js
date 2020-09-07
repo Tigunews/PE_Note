@@ -1008,7 +1008,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 링크정보 부여 : 발전된 시맨틱 웹 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/LOD.png" style = "max-width:100%; height:auto;"><br/>\
-- URI : 인터넷에 존재하는 객체 표현 <br/>\
+- URI(Uniform Resource Identifier) : 인터넷에 존재하는 객체 표현 <br/>\
 - XML : 메타언어 <br/>\
 - RDF(Resource Descriptiono Framework) : 정보 자원, 구조 표현 언어 <br/>\
 - RDFS : RDF의 Schma 정보 <br/>\
