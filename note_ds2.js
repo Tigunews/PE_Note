@@ -378,77 +378,24 @@ var answer = answer.concat(
 
 // 합의알고리즘
 '# 정의 : P2P에서 하나의 블록체인 유지하기 위한 기술 <br/><br/>\
-# 분산 네트워크 신뢰성 문제 <br/>\
-- Dobule Spent : 단일 화폐 단위가 2중 결제 문제 <br/>\
-- Byzantine General Problem : 악의적으로 데이터를 조작하여 조작된 정보를 전달할 수 있는 문제 <br/><br/>\
-# 목적 <br/>\
-- 동일한 데이터 제공 : 이중 결제 발생 제거 <br/>\
-- 거래의 무결성 : 정보에 대한 변경 없도록 <br/>\
-- 조작 방지 : 모든 노드와의 공유를 통한 조작 방지 <br/><br/>\
 # 원리 <br/>\
-1. 거래의 독립적 검증 <br/>\
-- 모든 풀 노드 각 거래마다 독립적 검증 실시 <br/>\
-- 유효한 거래만 네트워크로 전파 <br/><br/>\
-2. 작업증명 및 신규 블록 추가 <br/>\
-- 작업증명 알고리즘, 증명된 계산법 사용 <br/>\
-- 채굴 노드들이 검증된 거래들을 새로운 블록에 독립적으로 추가 <br/><br/>\
-3. 신규 블록 검증 <br/>\
-- 신규 블록 각각 독립적으로 검증 <br/>\
-- 테스트를 통해서 유효한 블록만이 네트워크로 전파 <br/><br/>\
-4. 수집 및 선택 <br/>\
-- 모든 노드가 작업증명을 통해 이루어진 최고 누적 연산 체인을 독립적으로 선택 <br/>\
-- 누적 연산 불일치시 작업증명이 추가로 발생하며 최종적으로 대상이 선택 <br/><br/>\
-# Public Block Chain 방식 종류 <br/>\
-1. PoW (Proof of Work) <br/>\
-- 모든 노드들의 승인 필요 <br/>\
-- 마이닝 증명으로 블록생성 및 보상 <br/>\
-- 컴퓨터 파워기반 해시 값 계산 경쟁 <br/>\
-- 처리속도 늦으며, 채굴에 필요한 에너지 소비과다 발생 <br/>\
-- Bitcoin, Ethereum <br/><br/>\
-2. PoS (Proof of Stake) <br/>\
-- 모든 노드들의 승인 불필요 <br/>\
-- 지분율에 비례하여 의사결정 권한 부여 <br/>\
-- PoW 에너지 낭비, Nothing at Stake 해결 <br/>\
-- Qtum, NEO, Stratis <br/><br/>\
-3. PoI (Proof of Importance) <br/>\
-- 네트워크 참여도에 따른 보상 지급 <br/>\
-- 블록체인에 기여한 노드 보상 <br/>\
-- NEM <br/><br/>\
-4. Casfer <br/>\
-- 예치금 걸고 Finality 투표 참여 <br/>\
-- 악의적 행동시 예치금 몰수 <br/>\
-- Ethereum <br/><br/>\
-# Private Block Chain 방식 종류 <br/>\
-1. PBFT (Practical Byzantine Fault Tolerance) <br/>\
-- 참여 노드의 다수결 투표기반 합의 <br/>\
-- (n-1) / 3 개 이하의 노드가 악의적인 노드일 경우 네트워크 보호 가능 <br/>\
-- Hyperledger, R3 <br/><br/>\
-2. Slive <br/>\
-- 합의 형성 전 결과가 같은 경우 중지 <br/>\
-- 실행 결과 조기 탐지 가능 <br/>\
-- Hyperledger <br/><br/>\
-3. PoET (Proof of Elapsed Time) <br/>\
-- 작업 경과시간 증명 기반 리더 선출 <br/>\
-- 모듈형 솔루션, 위조방지 합의 <br/>\
-- Sawtooth Lake <br/><br/>\
-4. PoA (Proof of Authority) <br/>\
-- 개인 신원을 이용한 블록 유효성 검사 <br/>\
-- 보상받을 권리 대신 개인 신원 확인 <br/>\
-- Luniverse <br/><br/>\
-5. Raft <br/>\
-- 분산 처리 작업에서 시스템의 신뢰성 제공 <br/>\
-- 리더의 실패 발생 시, 새 리더 선출 <br/>\
-- RAMCloud <br/><br/>\
-# 한계 및 대안 <br/>\
-1. 한계 <br/>\
-- 51% Attack <br/>\
-- 서비스 거부 <br/>\
-1) 다수의 채굴 파워를 가지고 있는 공격자가 특정 거래를 무시 <br/>\
-2) 의도적으로 블록에 대한 분기를 만들고 해당 블록을 다시 채굴해서 특정 거래를 제외 처리 <br/><br/>\
-2. 대안 <br/>\
-- 컨펌수 증가 : 이중지불 여부를 확인할 때까지 거래 확정을 늦추는 방법 <br/>\
-- 지연 기능 : 거래의 지연을 통해 공격을 감행해도 수익보다 비용을 더 들게 하여 공격의도를 차단하는 방법 <br/>\
-- 온라인 증명 : 새로운 블록의 전파 과정에서 해당 블록이 온라인상에서 생성된 것인지 검증하는 과정을 추가하여 블록 보류 공격을 원천적으로 차단 <br/><br/>\
+<img src = "./img/ConsensusAlgorithm.png" style = "max-width:100%; height:auto;"><br/>\
+- 거래의 독립적 검증 : 유효 전파, 무효 폐기<br/>\
+- 작업증명 및 신규 블록 추가 : 증명된 계산법, 검증 거래<br/>\
+- 신규 블록 검증 : 모든 신규블록 검사 <br/>\
+- 수집 및 선택 : 누적 연산 체인 독립적 선택 <br/><br/>\
+# 종류 <br/>\
+1. 경쟁 합의(Public) 방식 <br/>\
+- PoW (Proof of Work) : 모든 노드 승인 / Bitcoin, Ethereum <br/>\
+- PoS (Proof of Stake) : 일부 노드 승인 / Qtum, NEO <br/>\
+- PoI (Proof of Importance) : 참여도 보상 지급 / NEM <br/>\
+- Casfer : 예치금 걸고 투표 참여 / Ethereum <br/><br/>\
+2. 비경쟁 합의(Private) 방식 <br/>\
+- PBFT (Practial Byzantine Fault Tolerance) : 참여 노드의 다수결 / Hyperledger, R3 <br/>\
+- Slive : 합의 형성전 결과 같은 경우 중지 / Hyperledger <br/>\
+- PoET (Proof of Elapsed Time) : 작업 경과시간 증명 기반 리더 선출 / Sawtooth Lake <br/>\
+- PoA (Proof of Authority) : 개인 신원 이용 검사 / Luniverse <br/><br/>\
+# 한계 : 51% 공격, 서비스 거부 <br/><br/>\
 * 122회 2교시 2번\
 ',
 
