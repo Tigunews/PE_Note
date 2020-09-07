@@ -41,6 +41,7 @@ var question = question.concat(
 'BCP',
 '[BCP]- BIA',
 '[BCP]- ISO22301-BCMS',
+'[BCP]- DRS',
 'DRP',
 'BPR',
 'PI',
@@ -776,6 +777,14 @@ var answer = answer.concat(
 - 개선 : 부적합 시정조치, 개선 <br/>\
 <img src = "./img/BCMS_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/BCMS_2.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// DRS
+'# 정의 : 업무 연속성을 유지할 수 있는 체계 <br/>\
+- Disaster Recovery System <br/>\
+- 정보시스템에 대한 비상대비체계 유지와 업무 조직별 비상사태에 대비한 복구계획 수립을 통한 업무 연속성을 유지할 수 있는 체제 <br/><br/>\
+# DRS 구성도 <br/>\
+<img src = "./img/DRS.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 24
