@@ -998,21 +998,25 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 ',
 
 // LOD
-'# 정의 : 연결을 통한 혁신의 시작, LOD <br/>\
+'# 정의 : 공공데이터의 개방형 플랫폼 <br/>\
 - Linked Open Data <br/>\
-- 데이터를 서로 연결하여 의미있는 데이터로 발행하는 서비스 <br/><br/>\
-# 특징 <br/>\
-- 산재 데이터 연결 -> 진화 <br/>\
-- 정확한 데이터 제공 <br/>\
-- 연관데이터 접근 용이 <br/><br/>\
+- 웹 상에 존재하는 데이터를 개별 URI로 식별하고, 각 URI에 링크 정보를 부여함으로써 상호 연결된 웹을 지향하는 모형 <br/><br/>\
+# 4원칙 <br/>\
+- URI 사용 : 개별객체 ID 부여 <br/>\
+- HTTP URI 사용 : 데이터 접근성 강화 <br/>\
+- RDF 사용 : 정횽화, 연계 <br/>\
+- 링크정보 부여 : 발전된 시맨틱 웹 <br/><br/>\
 # 구성요소 <br/>\
-- Machine Readable Data : html, rdf, json, xml, tsv, csv <br/>\
-- Open API <br/>\
-- Service <br/><br/>\
-# 기대효과 <br/>\
-- 문화 서비스 <br/>\
-- 미디어 서비스 <br/>\
-- 인공지능 학습 <br/><br/>\
+<img src = "./img/LOD.png" style = "max-width:100%; height:auto;"><br/>\
+- URI : 인터넷에 존재하는 객체 표현 <br/>\
+- RDF(Resource Descriptiono Framework) : 정보 자원, 구조 표현 언어 <br/>\
+- RDFS : RDF의 Schma 정보 <br/>\
+- OWL : DAML + OIL, Web ontology 언어 <br/>\
+- SPARQL : 온톨로지 질의 언어 <br/>\
+- RIF(Rule Interchange Format) : 규칙 정의, 교환 위한 계층 <br/><br/>\
+# 사례 <br/>\
+- 해외 : DB pedia, BBC <br/>\
+- 국내 : 공공 Wifi 정보, 국가서지 <br/><br/>\
 * 122회 1교시 3번\
 ',
 
