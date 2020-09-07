@@ -1024,32 +1024,15 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // Open API
 '# 정의 : 공개 API <br/>\
 - 개발자에게 사유 응용 소프트웨어나 웹 서비스에 프로그래밍적인 권한을 제공하는 누구나 사용할 수 있도록 공개된 API <br/><br/>\
-# 필요성 <br/>\
-- 새로운 서비스의 요구 증대 <br/>\
-- 인증 취약점의 해결 필요 <br/>\
-- 사용자의 증대 대응 필요 <br/>\
-- 빠른 환경의 변화 <br/>\
-- 다양한 컨텐츠의 증가 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/OpenAPI.png" style = "max-width:100%; height:auto;"><br/><br/>\
-1. API Gateway <br/>\
-- 다양한 API를 통합하여 하나의 API를 통한 제공 및 모니터링과 트래픽 제어 <br/>\
-- Third Party에 API 서버 은닉 및 이용자 식별을 위한 인증처리 <br/><br/>\
-2. API Manager Portal <br/>\
-- Open API 관련 제휴사의 정보 관리 <br/>\
-- 대상자들에게 키 발급 및 API 사용 관리 <br/><br/>\
-3. API Support & Analysis <br/>\
-- API 이용 로그 데이터 추출 <br/>\
-- 통계데이터 생성 및 API 대시 보드 개발 <br/><br/>\
-4. Cache <br/>\
-- API에 대해서 빠른 서비스 속도를 위한 캐싱 수행 <br/><br/>\
-5. Authentication <br/>\
-- API에 접근에 대한 인증 정보 검증 <br/><br/>\
-6. API Developer Portal <br/>\
-- API 문서화, 샘플코드 및 어플리케이션 제공 <br/>\
-- API 검색을 위한 다양한 검색 방법 제공 <br/><br/>\
-7. Third-Party Developer Community <br/>\
-- API 개발에 대한 개발자 간의 정보 교류 <br/><br/>\
+<img src = "./img/OpenAPI.png" style = "max-width:100%; height:auto;"><br/>\
+- API Gateway : 제공, 모니터링, 트래픽 제어 <br/>\
+- API Manager Portal : 제휴사 정보 관리 <br/>\
+- API Support & Analysis : 로그 데이터 추출 <br/>\
+- Cache : 빠른 액세스 <br/>\
+- Authentication : 인증 정보 검증 <br/>\
+- API Developer Portal : 문서화, 샘플코드, 어플리케이션 제공 <br/>\
+- Third-Party Developer Community : 정보 교류 <br/><br/>\
 * 122회 2교시 3번\
 ',
 
