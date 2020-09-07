@@ -12,6 +12,7 @@ var question = question.concat(
 '[Data Mining]- 토픽 모델링',
 '[Data Mining]- 연관규칙(지지도,신뢰도,향상도)',
 '[Data Mining]- Opinion Mining',
+'[Data Mining]- System Dynamics',
 '플랫폼 경제',
 'RTE',
 '[RTE]- 사이클론모델',
