@@ -15,7 +15,7 @@ var question = question.concat(
 'YOLO',
 'IoMT',
 '블록체인',
-'[블록체인]- 합의알고리즘',
+'[블록체인]- 합의 알고리즘',
 '[블록체인]- UTXO',
 '[블록체인]- 머클트리(Merkle Tree)',
 '[블록체인]- 블록체인 오라클 문제',
@@ -376,7 +376,7 @@ var answer = answer.concat(
 * 그리타\
 ',
 
-// 합의알고리즘
+// 합의 알고리즘
 '# 정의 : P2P에서 하나의 블록체인 유지하기 위한 기술 <br/><br/>\
 # 원리 <br/>\
 <img src = "./img/ConsensusAlgorithm.png" style = "max-width:100%; height:auto;"><br/>\
