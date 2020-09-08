@@ -132,17 +132,16 @@ var answer = answer.concat(
 - 생명주기 관점 <br/>\
 - IT Governance 지원 <br/>\
 - 정량적 ROI 분석 <br/>\
-- CMDB(Configuraton Managemnet Databse) -> SKMS(Service Knowledge Management System)\
+- CMDB(Configuraton Managemnet Databse) -> SKMS(Service Knowledge Management System)<br/><br/>\
+# 프로세스 : 전설이운개 <br/>\
+# 구성요소 : 4P\
 ', 
  
 // ITIL 4.0
 '# 정의 : ITSM을 위한 Practice 모음집 <br/>\
 - ITIL 3.0 + Agile, Devops <br/><br/>\
-# 구성요소 (조정파가) <br/>\
-- 조직과 사람들 : 고객, 이해관계자 중요성 <br/>\
-- 정보 및 기술 : 정보, 기술의 중요성, 가용성 <br/>\
-- 파트너 및 공급 업체 : 협력 가치 창출 <br/>\
-- 가치 흐름과 프로세스 : 가치 창출 위한 프로세스 관리 <br/><br/>\
+# 프로세스 : 계참설획수개 <br/>\
+# 구성요소 : 조정파가
 # 3.0, 4.0 비교<br/>\
 <img src = "./img/ITIL.png" style = "max-width:100%; height:auto;">\
 ',
