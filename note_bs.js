@@ -21,6 +21,7 @@ var question = question.concat(
 '플랫폼 경제',
 'RTE',
 '[RTE]- 사이클론모델',
+'Chasm',
 '[CPS]- 디지털트윈(Digital Twin)',
 ' 디지털 변혁 (Digital Transformation)',
 '[경영환경분석]- Horizon Scanning(이슈탐지)',
@@ -377,6 +378,16 @@ var answer = answer.concat(
 - Manage(4) : 시장위협 대응전략, 목표달성 조직개편, 마케팅~양산화, 자료수집~보고<br/>\
 - Operation(4) : 구매~대금, 주문~판매, 수요~자원, 고객수요~서비스<br/><br/>\
 * 수요에서 자원배분 고객 수요에 따른 서비스 제공\
+',
+ 
+// Chasm 
+'# 정의 : 첨단 제품의 기술수용시기를 바탕으로 제품이 확산되는 과정에서 초기시장에서 주류시장으로 넘어가는 지점에 신제품 확산이 실패하거나 일시적인 판매 정체 현상이 일어나는 저항이 발생되는 현상 <br/><br/>\
+# 특징 <br/>\
+- 기술 수용주기 세분화 : 초기, 중기, 말기 <br/>\
+- 소비자 분류 : 혁신, 선각, 전기, 후기, 지각 <br/>\
+- 캐즘 극복 전략 : 주류 진입 전략, 완전완비 집중공략, 거점 영역 확장 <br/><br/>\
+# Graoh <br/>\
+<img src = "./img/Chasm.png" style = "max-width:100%; height:auto;">\
 ',
 
 // [CPS]- 디지털트윈
