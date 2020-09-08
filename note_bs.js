@@ -7,6 +7,7 @@ var question = question.concat(
 '[ITIL]- ITIL 4.0',
 '[ITIL]- SKMS',
 'OLAP',
+'ISP',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining]- 단어구름(Word Cloud)',
@@ -178,6 +179,16 @@ var answer = answer.concat(
 * Extract, Transform and Load <br/>\
 * Exttracton, Transformation, Transportation <br/>\
 * Operational Data Store \
+',
+ 
+// ISP
+'# 정의 : 조직의 목표 달성을 위한 계획 수립 <br/>\
+- Information Stragey Planning <br/>\
+- 조직의 중장기 마스터 플랜을 지원하기 위한 저보시스템을 계획하고 전략을 수립하는 활동 <br/><br/>\
+# 순서 <br/>\
+<img src = "./img/ISP_Order.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 산출물 <br/>\
+<img src = "./img/ISP_Output.png" style = "max-width:100%; height:auto;">\
 ',
  
 // DataMining
