@@ -132,13 +132,7 @@ var answer = answer.concat(
 - 생명주기 관점 <br/>\
 - IT Governance 지원 <br/>\
 - 정량적 ROI 분석 <br/>\
-- CMDB(Configuraton Managemnet Databse) -> SKMS(Service Knowledge Management System) <br/><br/>\
-# 구성요소 (전설이운개) <br/>\
-- 서비스 전략 : 고객 이해, 투자 우선순위 <br/>\
-- 서비스 설계 : 요구사항 분석 <br/>\
-- 서비스 이행 : 전환 계획, 검증, 테스트 <br/>\
-- 서비스 운영 : 모니터링 및 통제 <br/>\
-- 지속적 서비스 개선 : 리포트, Trend 파악 \
+- CMDB(Configuraton Managemnet Databse) -> SKMS(Service Knowledge Management System)\
 ', 
  
 // ITIL 4.0
