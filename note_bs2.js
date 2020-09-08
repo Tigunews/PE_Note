@@ -245,8 +245,8 @@ var answer = answer.concat(
 - 평가 : 신뢰성, 타당성 <br/><br/>\
 # 군집의 유형 <br/>\
 1. 거리 중심 <br/>\
-- 계층적 군집 : Hierachial <br/>\
-- K-means : 두 개체 Top-Down <br/>\
+- 계층적 군집 : 중복 허용x  <br/>\
+- K-means : 개채간 유사성 <br/>\
 - SOM(Self Oragnizing Map) : 저차원 뉴런, 지도 형상화 <br/><br/>\
 2. 자원축소 <br/>\
 - 주성분분석(PCA) : 새로운 변수 창출 <br/>\
