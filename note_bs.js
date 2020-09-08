@@ -3,8 +3,9 @@ var question = question.concat(
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
 '[ITSM]- SLM',
-'ITIL 3.0',
-'ITIL 4.0',
+'[ITIL]- ITIL 3.0',
+'[ITIL]- ITIL 4.0',
+'[ITIL]- SKMS',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining]- 단어구름(Word Cloud)',
@@ -141,9 +142,19 @@ var answer = answer.concat(
 '# 정의 : ITSM을 위한 Practice 모음집 <br/>\
 - ITIL 3.0 + Agile, Devops <br/><br/>\
 # 프로세스 : 계참설획수개 <br/>\
-# 구성요소 : 조정파가
+# 구성요소 : 조정파가 <br/>\
 # 3.0, 4.0 비교<br/>\
 <img src = "./img/ITIL.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// SKMS
+'# 정의 : ITIL 3.0 CMDB 대체 시스템 <br/>\
+- IT 서비스 구성관리를 포함한 수집 및 처리된 지식을 기반으로 하는 IT 서비스에 대한 조직의 의사결정 촉진 관리 시스템 <br/><br/>\
+# 구성 (P,KP,II,DI)<br/>\
+- Presentation <br/>\
+- Knowledge Processing <br/>\
+- Information Integration <br/>\
+- Data&Information\
 ',
  
 // DataMining
