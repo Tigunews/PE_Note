@@ -1105,6 +1105,16 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 웹 브라우저와 별개로 동작하며, 웹페이지 또는 사용자 상호작용이 필요하지 않는 백그라운드로 실행되는 스크립트 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/ServiceWorker.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 생명주기 <br/>\
+- Installing : 서비스 워커 URL 등록 <br/>\
+- Installed/Waiting : 등록, 대기 <br/>\
+- Activating : Trigger <br/>\
+- Activated : 페이지 제어, 이벤트 수신 <br/>\
+- Redundant : 실패, 새로운 서비스 워커 활성화 <br/><br/>\
+# 활용분야 <br/>\
+- Caching Strtegies : 캐시 DB 로딩 <br/>\
+- Web Push : 웹 통제 <br/>\
+- Offline : 오프라인 컨텐츠 <br/><br/>\
 * 122회 2교시 4번\
 ',
 
