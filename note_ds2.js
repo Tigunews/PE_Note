@@ -1103,44 +1103,8 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - PWA(Progressive Web Application)의 핵심 Building Block <br/>\
 - Event에 대해서 반응 하는 역할, 서비스 워커 만의 다양한 기능 제공 <br/>\
 - 웹 브라우저와 별개로 동작하며, 웹페이지 또는 사용자 상호작용이 필요하지 않는 백그라운드로 실행되는 스크립트 <br/><br/>\
-# 주요기능 <br/>\
-1. Offline Access <br/>\
-- 이전 AppCache API의 문제점 방지 설계 <br/>\
-- 사용자에 의한 요청이 Service Worker에게 인터셉트 되어 오프라인 상태에서도 웹 어플리케이션을 서비스 할 수 있음 <br/>\
-- 오프라인 환경을 완벽히 통제할 수 있는 권한을 개발자에게 부여 <br/><br/>\
-2. Push Notification <br/>\
-- 푸시 서버로부터 데이터를 수신하며 알림 시스템 또는 다른 매커니즘으로 이를 노출하는 방법 <br/><br/>\
-3. Background Synchronization <br/>\
-- 오프라인 상황에서 특정 처리가 완료가 되지 못한 후 , 온라인 상태 시 자동 처리 완료되는 기술 <br/><br/>\
-# 구현 기술 <br/>\
-1. Network 측면 <br/>\
-- HTTPS : 어떤 Request든 intercept 가능, Secure Deploy 환경 요구 <br/>\
-- Proxy : 페이지의 네트워크 요청 처리 방법 제어 <br/><br/>\
-2. Language 측면 <br/>\
-- Promise : ES6 Promise를 광범위하게 사용하여 작성 <br/>\
-- JavaScript : DOM에 직접 액세스 불가, Post Message <br/><br/>\
-3. Process 측면 <br/>\
-- Single Thread : 독립된 Thread 작동 <br/>\
-- Decoupling : 등록 후 html 파일과 Decopling 되어 독립적으로 구동 <br/>\
-- Background : index.html에서 load 되는 app.js 등록 <br/><br/>\
-# Service Worker Life Cycle <br/>\
-1. Installing <br/>\
-- 처음 접속시 다운로드 후 서비스 워커 URL을 지정해서 등록 <br/><br/>\
-2. Installed/Waiting <br/>\
-- 등록 성공시 Installed 상태 <br/>\
-- 동작중인 서비스 워커 부재시 Activation 상태 <br/>\
-- 다른 서비스 존재시 Waiting 상태 <br/><br/>\
-3. Activating <br/>\
-- 서비스 워커가 활성화되어 앱 제어하기 전에 activate 이벤트 트리거 <br/><br/>\
-4. Activated <br/>\
-- 서비스 워커가 활성화되면 페이지를 제어하고 기능 이벤트 수신 가능 <br/><br/>\
-5. Redundant <br/>\
-- 등록 또는 설치 중 실패한 경우 <br/>\
-- 새로운 서비스 워커가 활성화된 경우 <br/><br/>\
-* 서비스 워커의 활용 분야 <br/>\
-- Caching Strategies <br/>\
-- Web Push <br/>\
-- Offline <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ServiceWorker.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 2교시 4번\
 ',
 
