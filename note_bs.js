@@ -6,6 +6,7 @@ var question = question.concat(
 '[ITIL]- ITIL 3.0',
 '[ITIL]- ITIL 4.0',
 '[ITIL]- SKMS',
+'OLAP',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining]- 단어구름(Word Cloud)',
@@ -155,6 +156,28 @@ var answer = answer.concat(
 - Knowledge Processing <br/>\
 - Information Integration <br/>\
 - Data&Information\
+',
+ 
+// OLAP
+'# 정의 : 직접 접근, 대화식 정보 분석 기법 <br/>\
+- On-Line Analytical Processing <br/>\
+- 최종사용자가 다차원 정보에 직접 접근하여 대화식으로 정보를 분석하고 의사결정에 활용하는 과정 및 도구 <br/><br/>\
+# 구성요소 <br/>\
+- DW : 의사결정 자원정보 통합 DB <br/>\
+- ETL/ETT : 데이터 처리 전과정 <br/>\
+- ODS : OS 데이터 추출 <br/>\
+- Metadata : Data 요약정보 저장관리 <br/>\
+- Data Mart : 소규모 데이터 추출 <br/>\
+- Reporting Toool : 질의 결과 Chart, Report 변환 <br/><br/>\
+# 유형 <br/>\
+- ROLAP : RDB 저장, 분석 <br/>\
+- MOLAP : 다차원 DB 사용 <br/>\
+- HOLAP : R + M <br/>\
+- DOLAP : 서버 없이 Data Warehouse 연결 <br/>\
+- Web OLAP : Web 사용 <br/><br/>\
+* Extract, Transform and Load <br/>\
+* Exttracton, Transformation, Transportation <br/>\
+* Operational Data Store \
 ',
  
 // DataMining
