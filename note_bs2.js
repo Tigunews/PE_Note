@@ -14,6 +14,7 @@ var question = question.concat(
 'IT 투자 평가 항목',
 '정보시스템 계약 체결',
 '[Agile]- InnerSource',
+'EAI',
 );
 
 var answer = answer.concat(
@@ -341,5 +342,12 @@ var answer = answer.concat(
 - 개발문화 : Agile, CI/CD <br/>\
 - 지식관리 : Wiki <br/><br/>\
 * 아이리포 23회 1교시 13번\
+',
+  
+// EAI
+'# 정의 : E-비지니스를 위한 기본 인프라 <br/>\
+- 기존 Point to point Interface의 한계를 극복하여, 기업 내 상호 연관된 모든 어플리케이션을 손쉬운 확장성으로 연결하여 필요 정보를 중앙 집중적으로 통합, 사용할 수 있는 환경을 구축하기 위한 방법 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/EAI.png" style = "max-width:100%; height:auto;">\
 ',
 );
