@@ -1182,9 +1182,9 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - BFS : 자체 웹을 포괄하는 크롤링 검색 알고리즘 <br/>\
 - Fish School Search : 지정된 쿼리와 일치하는 내용의 페이지만 검색 <br/>\
 - Crawling through URL Ordering : URL이 있는 큐에서 중요 페이지 우선 검색 <br/>\
-- Crawling the Large Sites First : 대기 중 페이지 많은 사이트 우선 크롤링 <br/>\
+- Crawling the Large Sites First : 대기 중 페이지 많은 사이트 우선 크롤링 <br/><br/>\
 # 개선된 알고리즘 <br/>\
-- Enhanced BFS : P2P 네트워크의 웹크롤링 트래픽 측정, 분석 <br/><br/>\
+- Enhanced BFS : P2P 네트워크의 웹크롤링 트래픽 측정, 분석 <br/>\
 - Less Invasive Crawling Algorithm : 기존 DFS, BFS 방식의 웹 크롤링 단점 개선 <br/>\
 - N-gram Based BFS : 검색 텍스트 단위 말뭉치(N-Gram)로 확장 <br/>\
 - Sentiment-aware Web Crawledr : 긍/부정 어휘 기반 크롤링시 필터링 <br/><br/>\
