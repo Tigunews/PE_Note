@@ -348,6 +348,12 @@ var answer = answer.concat(
 '# 정의 : E-비지니스를 위한 기본 인프라 <br/>\
 - 기존 Point to point Interface의 한계를 극복하여, 기업 내 상호 연관된 모든 어플리케이션을 손쉬운 확장성으로 연결하여 필요 정보를 중앙 집중적으로 통합, 사용할 수 있는 환경을 구축하기 위한 방법 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/EAI.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 통합유형 <br/>\
+- Point to Point : 1:1 통합 <br/>\
+- Hub & Spoke : 중앙집중형 <br/>\
+- Messaging Bus : Middleware <br/>\
+- Hybrid : Hub&Spoke + Messaging Bus 혼합 <br/>\
+- Peer to Peer : 각 어플리케이션 Peer Seerverr P2P \
 ',
 );
