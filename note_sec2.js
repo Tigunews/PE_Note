@@ -26,7 +26,6 @@ var question = question.concat(
 'XSS',
 '개발보안 방법론',
 'Privacy By Design',
-'Web Crawling',
 'ISO/IEC 27017',
 'SDP',
 '[DB 보안]- DB 보호 솔루션',
@@ -515,54 +514,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 서비스 개발 전단계 프라이버시 강조 <br/>\
 - 실체적 원칙과 절차적 원칙 제시 <br/><br/>\
 * KPC 94회 4교시 2번\
-',
-
-// Web Crawling 
-'# 정의 : 웹크롤러 이용, Web Data 자동 수집 검색 기술 <br/>\
-- 인터넷 웹사이트의 URL 주소를 통해 HTML 페이지를 웹크롤러 이용 접속해서 HTML/CSS 파싱하고 Web Data를 자동으로 수집하는 검색 기술 <br/><br/>\
-# 특징 : 자동화, API 연계 수집 가능 <br/><br/>\
-# 기술요소 <br/>\
-1. Master(Frontier) <br/>\
-- URL Filtering : URL 패턴, 중복, 국가 코드, 외부 필터 수행, 함정 피하기 <br/>\
-- HTTP Module : Resource URL, Extracted URL, 그룹 Seed 지정 <br/>\
-- Tracking Module : 특정 Main/Sub URL 대상 지정 크롤링 <br/><br/>\
-2. Slave(Agent) <br/>\
-- URL 정규화 : URL 표현의 일관된 형태로 변환, URL 인코딩 적용 <br/>\
-- 로봇 배제 표준 : 웹 사이트 로봇 접근 거부 규약 (Robots.txt) <br/>\
-- HTML 파싱 : HTML 소스, 헤더 분석 및 링크 추출 <br/><br/>\
-3. Monitor <br/>\
-- Anomaly 확인 : Frontier, Agent의 검색 이상 감지 및 사용자 알림 <br/>\
-- Realtime Control : URL 서버의 과다 트래픽 탐지 및 검색 우선순위 변경 <br/><br/>\
-# 기본 알고리즘 <br/>\
-1. BFS <br/>\
-- 깊이 우선 탐색 : 저체 웹을 포괄하는 크롤링 검색 알고리즘 <br/>\
-- 동일 레벨 수준 : SNS 친구의 친구 찾기에 활용 <br/>\
-- URL 먼저 탐색 : 트리의 가지가 넓을 경우 검색 시간 소요 단점 존재 <br/><br/>\
-2. Fish School Search : 지정된 쿼리와 일치하는 내용의 페이지만 검색 <br/>\
-- 특정 URL의 토픽에 대해 탐색시 사용 <br/>\
-- 고정된 깊이로만 탐색하는 단점 존재 <br/><br/>\
-3. Crawling through URL Ordering : URL이 있는 큐에서 중요 페이지 우선 검색 <br/>\
-- 웹의 일부 부분 크롤링시 유용 <br/>\
-- 대량의 클러스터 웹사이트 존재시에 성능 저하 <br/><br/>\
-4. Crawling the Large Sites First : 대기 중 페이지 많은 사이트 우선 크롤링 <br/>\
-- 큰 웹 사이트 최우선 크롤링 수행 <br/>\
-- 중요한 웹 페이지더라도 작은 웹 사이트 속하면 후순위 크롤링 단점 <br/><br/>\
-# 개선된 알고리즘 <br/>\
-1. Enhanced BFS <br/>\
-- Multi Thread 기반 : Send, Receive, Analyze, Write Thread <br/>\
-- LCrawler 측정도구 : P2P 네트워크의 웹크롤링 트래픽 측정, 분석 <br/><br/>\
-2. Less Invasive Crawling Algorithm <br/>\
-- Bot 크롤링 탐지 회피 : 기존 DFS, BFS 방식의 웹 크롤링 단점 개선 <br/>\
-- 매개변수 제한 탐색 : 크롤링 학습 곡선 제공 및 임계값 t 이하일때 검색 종료 <br/><br/>\
-3. N-gram Based BFS : 검색 텍스트 단위 말뭉치(N-Gram)로 확장 <br/>\
-- TF-IDF 모델 채택으로 번역간의 관계 평가 <br/>\
-- 벡터 구성요소의 N-Gram 연결강도의 기초 <br/><br/>\
-4. Sentiment-aware Web Crawledr : 긍/부정 어휘 기반 크롤링시 필터링 <br/>\
-- 블룸 필터 기반 감성 반응 웹크롤링 수행 <br/>\
-- m개의 bit 배열, k개의 해시 함수 이용 중복 판단 <br/><br/>\
-* 웹크롤링, 스크래핑 비교 <br/>\
-<img src = "./img/WebCrawlingScraping.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-* 122회 3교시 1번\
 ',
 
 // ISO/IEC 27017
