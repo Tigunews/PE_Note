@@ -18,7 +18,13 @@
 
   function search()
   {
-    refresh();
+    document.body.innerHTML = "";
+    document.write('<head> <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" </head>');
+    document.write('** All Search **' + '<br /><br />');
+    document.write('<input type = "text" id = "search" onkeyup="enterkey();"/> ');
+    document.write('<button id="b_search" onclick="search();">Search</button>');
+    document.write('<button id="b_refresh" onclick="refresh();">Refresh</button>');
+	  
     var data = document.getElementById("search");
     	  
     if( data != null)
