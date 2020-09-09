@@ -425,7 +425,8 @@ var answer = answer.concat(
 
 // TensorFlow 
 '# 정의 : 머신러닝 오픈소스 라이브러리 <br/>\
-- Google에서 만든, 딥러닝 프로그램을 쉽게 구현할 수 있도록 다양한 기능을 제공해주는 라이브러리 <br/><br/>\
+- Google에서 만든, 딥러닝 프로그램을 쉽게 구현할 수 있도록 다양한 기능을 제공해주는 라이브러리 <br/>\
+<img src = "./img/TensorFlowAPI.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - Tensor : 다차원 배열 데이터 표현 방식 <br/>\
 - Dataflow Graph : 텐서 형태 데이터 딥러닝 연산 <br/>\
