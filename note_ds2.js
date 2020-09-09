@@ -61,6 +61,7 @@ var question = question.concat(
 '스마트 팩토리',
 'Edge Computing',
 '서버리스 컴퓨팅',
+'Web Crawling',
 );
 
 var answer = answer.concat(
@@ -1159,5 +1160,36 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 보안/액세스 제어 : 로깅, 변화추적, 액세스 제어, 암호화 / AWS I AM VPC <br/>\
 - 안정성 : 확장 가능한 고가용성 서비스 / AWS Lambda <br/><br/>\
 * 아이리포 23회 1교시 7번\
+',
+  
+// Web Crawling 
+'# 정의 : 웹크롤러 이용, Web Data 자동 수집 검색 기술 <br/>\
+- 인터넷 웹사이트의 URL 주소를 통해 HTML 페이지를 웹크롤러 이용 접속해서 HTML/CSS 파싱하고 Web Data를 자동으로 수집하는 검색 기술 <br/><br/>\
+# 특징 : 자동화, API 연계 수집 가능 <br/><br/>\
+# 기술요소 <br/>\
+1. Master(Frontier) <br/>\
+- URL Filtering : URL 패턴, 중복, 국가 코드, 외부 필터 수행, 함정 피하기 <br/>\
+- HTTP Module : Resource URL, Extracted URL, 그룹 Seed 지정 <br/>\
+- Tracking Module : 특정 Main/Sub URL 대상 지정 크롤링 <br/><br/>\
+2. Slave(Agent) <br/>\
+- URL 정규화 : URL 표현의 일관된 형태로 변환, URL 인코딩 적용 <br/>\
+- 로봇 배제 표준 : 웹 사이트 로봇 접근 거부 규약 (Robots.txt) <br/>\
+- HTML 파싱 : HTML 소스, 헤더 분석 및 링크 추출 <br/><br/>\
+3. Monitor <br/>\
+- Anomaly 확인 : Frontier, Agent의 검색 이상 감지 및 사용자 알림 <br/>\
+- Realtime Control : URL 서버의 과다 트래픽 탐지 및 검색 우선순위 변경 <br/><br/>\
+# 기본 알고리즘 <br/>\
+- BFS : 자체 웹을 포괄하는 크롤링 검색 알고리즘 <br/>\
+- Fish School Search : 지정된 쿼리와 일치하는 내용의 페이지만 검색 <br/>\
+- Crawling through URL Ordering : URL이 있는 큐에서 중요 페이지 우선 검색 <br/>\
+- Crawling the Large Sites First : 대기 중 페이지 많은 사이트 우선 크롤링 <br/>\
+# 개선된 알고리즘 <br/>\
+- Enhanced BFS : P2P 네트워크의 웹크롤링 트래픽 측정, 분석 <br/><br/>\
+- Less Invasive Crawling Algorithm : 기존 DFS, BFS 방식의 웹 크롤링 단점 개선 <br/>\
+- N-gram Based BFS : 검색 텍스트 단위 말뭉치(N-Gram)로 확장 <br/>\
+- Sentiment-aware Web Crawledr : 긍/부정 어휘 기반 크롤링시 필터링 <br/><br/>\
+* 웹크롤링, 스크래핑 비교 <br/>\
+<img src = "./img/WebCrawlingScraping.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* 122회 3교시 1번\
 ',
 );
