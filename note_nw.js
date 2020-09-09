@@ -46,7 +46,7 @@ var question = question.concat(
 'RTLS(Real-Time Locating System)',
 'Wi-Fi 6',
 'eMTC',
-'Netowrk Storage',
+'Network Storage',
 '자가망 구축 가이드라인',
 '6G',
 '[QOS]- 통합 서비스',
