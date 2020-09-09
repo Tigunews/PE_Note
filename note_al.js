@@ -425,51 +425,12 @@ var answer = answer.concat(
 
 // TensorFlow 
 '# 정의 : 머신러닝 오픈소스 라이브러리 <br/>\
-- 2015년 11월 구글이 공개한 연산을 데이터 흐름 그래프로 표현하는 머신러닝을 위한 오픈소스 라이브러리 <br/>\
-- 머신러닝과 DNN 연구를 목적으로 데이터 플로우 그래프를 사용하여 수치 연산을 하는 오픈소스 소프트웨어 라이브러리 <br/><br/>\
-# 특징 <br/>\
-- 확장성 : Android, iOS, Linux, OS X, 여러 CPU, GPU(CUDA) 활용 가능 <br/>\
-- 쉬운 API : Python API 제공 (Apache 2.0 라이센스) <br/>\
-- Data flow graph : 데이터 흐름 그래프 이용한 연산 표현 <br/>\
-- 방향성 그래프 : 클라이언트 종류에 따라 프론트엔드 언어로 개발 가능 <br/><br/>\
+- Google에서 만든, 딥러닝 프로그램을 쉽게 구현할 수 있도록 다양한 기능을 제공해주는 라이브러리 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/TensorFlow_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
-1. Tensors <br/>\
-- 그래프의 모서리들이 갖는 일반적인 값 <br/>\
-- 다양한 요소 값을 가질 수 있음 <br/>\
-- 선언되거나 선언되지 않은 부호를 가질 수 있음 <br/>\
-- 8bits 에서 64bits float, int, string <br/><br/>\
-2. Operation <br/>\
-- 임의의 계산을 수행하는 것으로 다양한 속성 값을 가짐 <br/>\
-- 속성을 가질 수 있음 <br/><br/>\
-3. Kernel <br/>\
-- Opeartion을 디바이스 별로 실제 구현한 것으로 가속화를 위해 다양한 분산 최적화 알고리즘을 활용 <br/>\
-- CPU, GPU 에 따라 다른 구현 <br/><br/>\
-4. Variable <br/>\
-- 학습을 통해 변화하는 배열 값을 저장하기 위한 operation <br/>\
-- 명시적으로 type 지정 <br/><br/>\
-5. Session <br/>\
-- 다양한 실행 환경(CPU, CPU/GPU, 원격 분산처리) 하에서 처리하기 위해서 Client에서 Session을 만들어 전달함 <br/>\
-- TensorFlow 그래프 구성후 실제 수행시 <br/><br/>\
-6. Node <br/>\
-- 방향성 그래프에 연결되어 있는 구조체 <br/>\
-- 각각의 노드는 0이나 그 이상의 in/output 가지며 실행명령을 나타냄 <br/>\
-- 0 혹은 그 이상의 입력물과 출력물 <br/><br/>\
-7. Control dependencies <br/>\
-- 그래프에 존재하는 특별한 모서리 <br/>\
-- 제어 종속성으로 인해 목적지 노드에 도착하기 전에 종료되어야 함 <br/>\
-- 제어 종속 <br/><br/>\
-# 동작 <br/>\
-1. Single-device execution <br/>\
-- 하나의 워커가 하나의 디바이스 수행 <br/>\
-<img src = "./img/TensorFlow_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. Multi-device execution <br/>\
-- 하나의 시스템에서 여러 디바이스를 갖는 경우 <br/>\
-- 노드 배치와 Cross-Device Communication 지원 <br/>\
-- TCP/RDMA 같은 원격 메커니즘 사용 <br/>\
-- 이슈1 : 그래프의 각각의 노드에 어떤 디바이스를 매치할 지 결정해야 함 <br/>\
-- 이슈2 : 데이터와 디바이스의 커뮤니케이션 바운더리 결정 <br/>\
-<img src = "./img/TensorFlow_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Tensor : 다차원 배열 데이터 표현 방식 <br/>\
+- Dataflow Graph : 텐서 형태 데이터 딥러닝 연산 <br/>\
+- Tensor Board : 딥러닝 학습과정 추적 <br/>\
+- Data Model : 미리 학습된 데이터 목록 <br/><br/>\
 * 122회 1교시 6번\
 ',
   
