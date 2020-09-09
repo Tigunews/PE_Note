@@ -19,8 +19,8 @@
   function search()
   {
     var data = document.getElementById("search");
-    document.write('<button onClick="referesh()">Refresh</button>');
-
+    document.write('<input type = "text" id = "Refresh" onkeyup="refresh();"/> ');
+	  
     if( data != null)
     {
       for(var i = 0; i<question.length ; i++)
@@ -39,6 +39,7 @@
 	
   function refersh()
 	{
+  document.clear();
   document.write('<head> <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" </head>');
   document.write('** All Search **' + '<br /><br />');
   document.write('<input type = "text" id = "search" onkeyup="enterkey();"/> ');
