@@ -1097,7 +1097,10 @@ var answer = answer.concat(
 - Supply Chain Management <br/>\
 - 원자재 공급업체, 제조업체, 도매상, 소매상에 연결되는 자원과 정보를 원활하고 경쟁력 있는 흐름이 되도록 보장하는 공급망 관리 시스템 <br/><br/>\
 # 암기 : 구성(3) IPE <br/><br/>\
-# 구성요소 : SCI(Intelligent), SCP(Planning), SCE(Execution) <br/><br/>\
+# 구성요소 <br/>\
+- SCP(Supply Chain Planning) : 의사결정, 계획 업무 <br/>\
+- SCE(Supply Chain Execution) : 실제 공급망 행위 <br/>\
+- SCI(Supply Chain Integration) : Planning, Execution 사이 Gap 통합 <br/><br/>\
 # 요소기술 <br/>\
 - ERP <br/>\
 - EC : 전자상거래 <br/>\
