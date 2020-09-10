@@ -139,6 +139,7 @@ var answer = answer.concat(
  
 // SKMS
 '# 정의 : ITIL 3.0 CMDB 대체 시스템 <br/>\
+- Service Knowledge Management System <br/>\
 - IT 서비스 구성관리를 포함한 수집 및 처리된 지식을 기반으로 하는 IT 서비스에 대한 조직의 의사결정 촉진 관리 시스템 <br/><br/>\
 # 구성 (P,KP,II,DI)<br/>\
 - Presentation <br/>\
