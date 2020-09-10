@@ -359,8 +359,7 @@ var answer = answer.concat(
 ',
   
 // COBIT 5.0
-'# 정의 : Enterprise IT Governance 프레임워크 BP <br/>\
-- Enterprise Application Integration <br/>\
+'# 정의: Enter Prise Application Integration <br/>\
 - 조직이 IT 거버넌스와 관리를 위한 자신들의 목적을 달성하는 것을 지원하는 Cobit 4.1을 계승하고 Risk IT와 Val IT를 통합하는 종합적인 프레임워크 <br/><br/>\
 # 원칙 (통이비인거) <br/>\
 - 통합 프레임워크 : Best Practice 연계 <br/>\
