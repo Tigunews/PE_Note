@@ -86,7 +86,7 @@ var answer = answer.concat(
 '<img src = "./img/SOW_SLA_SLM.png" style = "max-width:100%; height:auto;">\
 ',
  
-// [ITIL]- SLA
+// SLA
 '# 정의 : 사용자 공급자간 서비스 명시 문서<br/>\
 - Service Level Agreement <br/>\
 - 정보시스템 사용자 공급자 간 서비스 수준을 정량적으로 측정하여 상호 동의한 일정수준의 서비스를 명시한 문서<br/><br/>\
@@ -107,7 +107,7 @@ var answer = answer.concat(
 <img src = "./img/SLA.png" style = "max-width:100%; height:auto;">\
 ',
 
-// [ITIL]- SLM
+// SLM
 '# 정의 : 프로세스 관리 활동 / 고객 신뢰 증진 및 서비스 향상 <br/>\
 - Service Level Management <br/>\
 - 고객과 합의된 품질 수준의 서비스가 제공되는 것을 보장함으로써 고객신뢰 증진 및 서비스 수준향상을 위한 프로세스 관리활동 <br/><br/>\
@@ -129,7 +129,8 @@ var answer = answer.concat(
  
 // ITIL 
 '# 정의 : ITSM을 위한 Practice 모음집 <br/>\
-- ITIL 3.0 + Agile, Devops <br/><br/>\
+- IT Infrastructure Library <br/>\
+- IT 서비스 관리에 대한 프레임워크 구현을 돕기 위한 문서들의 집합 <br/><br/>\
 # 프로세스 : 계참설획수개 <br/>\
 # 구성요소 : 조정파가 <br/>\
 # 3.0, 4.0 비교<br/>\
