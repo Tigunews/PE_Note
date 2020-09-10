@@ -368,7 +368,7 @@ var answer = answer.concat(
 - 인에이블러 기반 : Enabler 총체적 접근 방법 <br/>\
 - 거버넌스와 관리 분리 : 다른 구조, 목적 <br/><br/>\
 # 핵심영역 <br/>\
-<img src = "./img/COBIT5.png" style = "max-width:100%; height:auto;">\ 
+<img src = "./img/COBIT5.png" style = "max-width:100%; height:auto;">\
 ',
   
 );
