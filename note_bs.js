@@ -3,8 +3,7 @@ var question = question.concat(
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
 '[ITSM]- SLM',
-'[ITIL]- ITIL 3.0',
-'[ITIL]- ITIL 4.0',
+'ITIL',
 '[ITIL]- SKMS',
 'OLAP',
 'ISP',
@@ -128,25 +127,13 @@ var answer = answer.concat(
 - 서비스 프로비저닝 \
 ',
  
-// ITIL 3.0
-'# 정의 : ITSM을 위한 Best Practice 모음집 <br/>\
-- IT Infrastructure Library <br/>\
-- 비즈니스의 영속성을 위해 안정적인 서비스 자원과, 서비스 이행 및 제공, ICT 관리의 "Best Practice" 모음집 <br/><br/>\
-# 특징 <br/>\
-- 생명주기 관점 <br/>\
-- IT Governance 지원 <br/>\
-- 정량적 ROI 분석 <br/>\
-- CMDB(Configuraton Managemnet Databse) -> SKMS(Service Knowledge Management System)<br/><br/>\
-# 프로세스 : 전설이운개 <br/>\
-# 구성요소 : 4P\
-', 
- 
-// ITIL 4.0
+// ITIL 
 '# 정의 : ITSM을 위한 Practice 모음집 <br/>\
 - ITIL 3.0 + Agile, Devops <br/><br/>\
 # 프로세스 : 계참설획수개 <br/>\
 # 구성요소 : 조정파가 <br/>\
 # 3.0, 4.0 비교<br/>\
+- 전설전운지 / 계참설획수개 <br/>\
 <img src = "./img/ITIL.png" style = "max-width:100%; height:auto;">\
 ',
  
