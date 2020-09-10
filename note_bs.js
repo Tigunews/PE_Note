@@ -374,7 +374,7 @@ var answer = answer.concat(
 - 기술 수용주기 세분화 : 초기, 중기, 말기 <br/>\
 - 소비자 분류 : 혁신, 선각, 전기, 후기, 지각 <br/>\
 - 캐즘 극복 전략 : 주류 진입 전략, 완전완비 집중공략, 거점 영역 확장 <br/><br/>\
-# Graoh <br/>\
+# Graph <br/>\
 <img src = "./img/Chasm.png" style = "max-width:100%; height:auto;">\
 ',
 
