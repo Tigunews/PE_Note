@@ -347,6 +347,7 @@ var answer = answer.concat(
   
 // EAI
 '# 정의 : E-비지니스를 위한 기본 인프라 <br/>\
+- Enter Prise Application Integration <br/>\
 - 기존 Point to point Interface의 한계를 극복하여, 기업 내 상호 연관된 모든 어플리케이션을 손쉬운 확장성으로 연결하여 필요 정보를 중앙 집중적으로 통합, 사용할 수 있는 환경을 구축하기 위한 방법 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -359,7 +360,7 @@ var answer = answer.concat(
 ',
   
 // COBIT 5.0
-'# 정의: Enter Prise Application Integration <br/>\
+'# 정의: 전사적 IT 거버넌스 프레임워크 <br/>\
 - 조직이 IT 거버넌스와 관리를 위한 자신들의 목적을 달성하는 것을 지원하는 Cobit 4.1을 계승하고 Risk IT와 Val IT를 통합하는 종합적인 프레임워크 <br/><br/>\
 # 원칙 (통이비인거) <br/>\
 - 통합 프레임워크 : Best Practice 연계 <br/>\
