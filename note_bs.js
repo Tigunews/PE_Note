@@ -174,7 +174,7 @@ var answer = answer.concat(
 // ISP
 '# 정의 : 조직의 목표 달성을 위한 계획 수립 <br/>\
 - Information Stragey Planning <br/>\
-- 조직의 중장기 마스터 플랜을 지원하기 위한 저보시스템을 계획하고 전략을 수립하는 활동 <br/><br/>\
+- 조직의 중장기 마스터 플랜을 지원하기 위한 정보 시스템을 계획하고 전략을 수립하는 활동 <br/><br/>\
 # 순서 <br/>\
 <img src = "./img/ISP_Order.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 산출물 검토<br/>\
