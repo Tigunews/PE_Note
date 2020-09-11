@@ -90,6 +90,7 @@ var question = question.concat(
 'COBIT 5.0',
 'IT-Compliance',
 '규제 샌드박스',
+'매매 임치제도',
 );
 
 var answer = answer.concat(
@@ -1601,5 +1602,11 @@ var answer = answer.concat(
 - 실증(2년 이하) : 과기정통부 + 관계기관 <br/>\
 - 법령정비(필요시) : 관계기관의 장 <br/><br/>\
 <img src = "./img/SandBox.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// 매매 임치제도
+'# 정의 : SW 유지보수 지속 담보 보험 <br/>\
+- 저작권자가 소프트웨어의 유지보수를 계속 수행할 수 없는 경우를 대비하여 신뢰성 있는 제3기관에 소스코드와 정보기술을 임치해 두는 제도 <br/>\
+- 저작권법 제101조의 7 (프로그램의 임치) \
 ',
 );
