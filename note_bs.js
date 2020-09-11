@@ -1119,8 +1119,11 @@ var answer = answer.concat(
 # 암기 : 구성(3) IPE <br/><br/>\
 # 구성요소 <br/>\
 - SCP(Supply Chain Planning) : 의사결정, 계획 업무 <br/>\
+-> 제조계획, 수요계획, 유통계획, 운송계획 <br/>\
 - SCE(Supply Chain Execution) : 실제 공급망 행위 <br/>\
-- SCI(Supply Chain Integration) : Planning, Execution 사이 Gap 통합 <br/><br/>\
+-> 주문관리, 생산관리, 유통관리, 역물류관리 <br/>\
+- SCI(Supply Chain Integration) : Planning, Execution 사이 Gap 통합 <br/>\
+-> 모니터링, 성과측정, 프로세스 개선 <br/><br/>\
 # 요소기술 <br/>\
 - ERP <br/>\
 - EC : 전자상거래 <br/>\
