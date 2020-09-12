@@ -3645,7 +3645,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 ',
   
 // FRAND
-'# 정의 : Fair, Resonable And Non-Discriminatory Terms <br/>\
+'# 정의 : Fair, Reasonable And Non-Discriminatory Terms <br/>\
 - 공정하고 합리적이고 비차별적인 표준이 된 특허기술의 권리자가 이 특허 사용자 중 일부를 차별할 수 없도록 하는 개념적 용어 <br/>\
 - ETSI가 제정한 특허기술 사용에 관한 조항에 포함되면서 널리 쓰이게 됨 \
 ',
