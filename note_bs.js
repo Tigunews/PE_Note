@@ -1472,38 +1472,15 @@ var answer = answer.concat(
 
 // IT 투자 평가 항목 
 '# 정량적 평가 항목 <br/>\
-1. EVA (Economic Value Added) <br/>\
-- 정보화로 인한 수익 총합 - 정보화 투자 총합 <br/>\
-- 투자에 대한 장기적 가치 창출 관점에서 기업 성과 측정 <br/><br/>\
-2. TCO (Total Cost of Ownership) <br/>\
-- 기업의 IT 투자 직접 비용, 간접 비용을 통합하여 평가 <br/>\
-- 운영비, 기술 지원, 유지 보수 등 간접 비용 증가에 따라 도입 <br/><br/>\
-3. EVS (Economic Value Source) <br/>\
-- 기업 가치 창출 원천을 4가지로 한정 하고 원천별 효과 분ㅇ석 <br/>\
-- 시간과 위험의 가치를 명시적으로 고려, 측정 <br/><br/>\
-4. TEI (Total Economic Impact) <br/>\
-- 직접적인 비용, 효과 분석 및 미래의 잠재적 이익 추가 평가<br/>\
-- 비용, 이익, 유연성 3가지 핵심 여역 평가 및 위험 판단 <br/><br/>\
-5. TVO (Total Value of Opportunity) <br/>\
-- IT 조직, 경영진, 재무 조직 간 합의점 제공을 위한 평가 항목 <br/>\
-- 비용/수익 분석, 불확실성, 조직 진단, 선진 사례 분석 포함 <br/><br/>\
+- EVA (Economic Value Added) : IT(수익-투자) <br/>\
+- TCO (Total Cost Ownership) : 직접 + 간접 <br/>\
+- EVS (Economic Value Source) : 4가지 원천별 효과 <br/>\
+- TEI (Total Economic Impact) : 비용, 이익, 유연성 <br/>\
 # 정성적 평가 항목 <br/>\
-1. IO (Information Orientation) <br/>\
-- 정보행동/가치, 정보 관리 실행, 정보 기술 실행의 3역량 평가 <br/>\
-- 3역량의 상호 작용을 통한 시너지 효과 창출 통한 성과 향상 <br/><br/>\
-2. IPM (IT Portfolio Management) <br/>\
-- 기업의 IT 포트폴리오 관련 모든 활동을 가치, 효익으로 구분 <br/>\
-- IT 자원, 투자, 프로젝트의 우선순위 관리 통한 효율성 확보 <br/><br/>\
-3. IE (Information Economics) <br/>\
-- IT와 비즈니스 관리자의 합의 통하 전략적 우선 순위 부여 <br/>\
-- 양측 관리자간 우선 결정 요인 목록화 후 중요도, 위험 평가 <br/><br/>\
-4. BCG Matrix <br/>\
-- 시장의 성장률과 기업의 시장 점유율을 고려한 평가 <br/>\
-- Cach cow, Dog, Question mark, Star로 분류 하여 전략 수립 <br/><br/>\
-5. Value Chain <br/>\
-- 기업의 부가 가치 발생 활동을 주 활동, 보조활동으로 분류 <br/>\
-- 주활동(구매, 생산, 물류, 마케팅, A/S) <br/>\
-- 지원활동(기획, 조달, 개발) 등으로 분류, 구성 <br/><br/>\
+- IO (Information Orientation) : 행동, 관리, 기술 <br/>\
+- IPM (IT Portfolio Management) : 활동 가치 <br/>\
+- IE (Information Economics) : 양측 목록 <br/>\
+- BCG Matrix : 성장율, 점유율<br/>\
 # 복합 평가 <br/>\
 - 다중접근 : BSC, IT-BSC <br/>\
 - 통계산술 : ROV(Real Option Valuation), AIE(Applied Information Economics) <br/><br/>\
