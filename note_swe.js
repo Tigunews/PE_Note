@@ -3659,7 +3659,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 - 신지식재산권 : 첨단사업재산권(AI), 산업저작권(SW), 정보재산권(DB, 영업비밀) <br/><br/>\
 # 보호 기술 <br/>\
 - 난독화 : Reverse Engineering 방지 <br/>\
-- Fingerprinting : 저작권 정보 삽입 <br/>\
+- Finger printing : 저작권 정보 삽입 <br/>\
 - Watermark : 저작자 정보 삽입 <br/>\
 - Encryption : 전체 알고리즘 적용 \
 ',
