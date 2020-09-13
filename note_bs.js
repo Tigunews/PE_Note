@@ -91,6 +91,7 @@ var question = question.concat(
 'IT-Compliance',
 '규제 샌드박스',
 '매매 임치제도',
+'Desing Thinking',
 );
 
 var answer = answer.concat(
@@ -1588,5 +1589,17 @@ var answer = answer.concat(
 '# 정의 : SW 유지보수 지속 담보 보험 <br/>\
 - 저작권자가 소프트웨어의 유지보수를 계속 수행할 수 없는 경우를 대비하여 신뢰성 있는 제3기관에 소스코드와 정보기술을 임치해 두는 제도 <br/>\
 - 저작권법 제101조의 7 (프로그램의 임치) \
+',
+ 
+// Design Thinking
+'# 정의 : 공감적 관찰 통한 창의적 문제해결 <br/>\
+- "사람과 사물"에 대한 공감적 관찰 (Empathic Observation)을 통해 문제 재해석 (Reframing Issue) 하고, 시각적 아이디어 도출, 프로토 타입 제작 통해 솔루션 도출하는 통합적 사용자 중심 문제 해결 방법론 <br/.<br/>\
+# 특징 <br/>\
+- 인간 중심 디자인 방법론 <br/>\
+- 공감 통한 문제 맥락 접근 <br/>\
+- 감수성과 비즈니스 전략적 사고의 통합 통한 문제 접근 <br/><br/>\
+# 프로세스 (공정아프테)<br/>\
+<img src = "./img/DesignThinkingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 1교시\
 ',
 );
