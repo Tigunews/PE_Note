@@ -656,7 +656,14 @@ var answer = answer.concat(
 '# 정의 : 시민 주도 정보 개선 활동 <br/>\
 - Biz : 시민들이 신속하고 창의적으로 협업하여 공공의 문제를 해결하고 도시를 더 살기 좋은 곳으로 만들기 위한 운동 <br/>\
 - IT : 다양한 시민들이 모여 디지털 기술을 활용해 정부가 해결하지 못하는 공공의 문제를 풀어내자는 사회운동 <br/><br/>\
-# Key word : 공공Data, OpenAPI, OSS <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/CivicHackingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 참여주체 <br/>\
+- 개발자 : 시민 참여 도구 개발 <br/>\
+- 기획자 : 아이디어 구상, 의사소통 <br/>\
+- 디자이너 : 이해관점 UI/UX <br/>\
+- 일반 시민 : 참여, 피드백, 집단지성, 정보확상 <br/><br/>\
+# 기술요소 : 공공데이터, Open API, OpenSource<br/><br/>\
 # 사례 <br/>\
 1. 국내 <br/>\
 - 코드나무 : 공공데이터 이용한 해커톤 대회, 공공데이터 시각화 <br/>\
