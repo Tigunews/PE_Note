@@ -109,6 +109,7 @@ var question = question.concat(
 '[클라우드 컴퓨팅]- Kafka',
 '엣지컴퓨팅',
 '레그테크',
+'섭테크',
 '[HPC]- Singularity',
 '2020년 하반기 경제정책 방향',
 '지능형CCTV',
@@ -2000,6 +2001,20 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 표준화 개발 필요 <br/>\
 - 법규 준수 여부 검토 필요 <br/><br/>\
 <img src = "./img/RegTech.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 섭테크
+'# 정의 : 금융감독 업무전환 <br/>\
+- 감독(Supervisor)과 기술(Technology)의 합성어로 공유감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/>\
+- 금융감독기관의 데이터 접근성 향상, 추출 정보의 총합 관리에 응용 <br/><br/>\
+# 주요기술 <br/>\
+<img src = "./img/SubTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 적용사례 <br/>\
+- AI 약관 심사 <br/>\
+- 전자금융사기방지시스템 : 보이스피싱 경고 <br/>\
+- 금융감독 챗봇 : AI가 금융회사 및 소비자 질의에 답변제공 <br/>\
+# 레그테크, 섭테크 비교 <br/>\
+<img src = "./img/RegTechSubTech.png" style = "max-width:100%; height:auto;">\
 ',
 
 // [HPC]- Singularity
