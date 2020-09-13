@@ -288,13 +288,13 @@ var answer = answer.concat(
 # 개요도 <br/>\
 <img src = "./img/LossFunction.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 종류 <br/>\
-1. MSE (평균제곱오차) <br/>\
+1. MSE (평균제곱오차) Mean Squared Error <br/>\
 <img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/>\
 *Pi 실제값, Yi 예측값<br/><br/>\
-2. RMSE (평균제곱근오차) <br/>\
+2. RMSE (평균제곱근오차) Root MSE<br/>\
 - 속도 향상 <br/>\
 <img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-3. CEE (교차엔트로피) <br/>\
+3. CEE (교차엔트로피) Cross Entropy Error <br/>\
 - 원-핫 인코딩 경우 사용 <br/>\
 - y : 신경망 출력, t : 정답 레이블 <br/>\
 <img src = "./img/CEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
