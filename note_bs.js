@@ -93,6 +93,7 @@ var question = question.concat(
 '매매 임치제도',
 'Design Thinking',
 '구독 경제',
+'Servitization',
 );
 
 var answer = answer.concat(
@@ -1612,5 +1613,17 @@ var answer = answer.concat(
 - 무기한 이용 모델 : 무제한 / Netplex, Melon <br/>\
 - 정기배송 모델 : 정기배송 / 면도날, 칫솔, 화장품, 소모품 <br/>\
 - 랜털 모델 : 원하는 품목 바꿔가며 이용 / 자동차, 가구, 가방, 명품옷 \
+',
+ 
+// Servitization
+'# 정의 : 제품과 서비스의 결합 <br/>\
+- 기존 제품 판매에서 제품 서비스를 판매하는 시스템의 변화를 통해 부가가치를 창출하는 기업의 경쟁력 개선에 대한 혁신 및 기업 전략 <br/><br/>\
+# 등장 배경 <br/>\
+<img src = "./img/ServitizationBackground.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/Servitization.png" style = "max-width:100%; height:auto;"><br/>\
+- 제품과 서비스의 결합 : 새로운 형태 비즈니스 <br/>\
+- 서비스의 상품화 : 서비스가 대량생산되는 제조업화 <br/>\
+- PSS(Product Service System) : 제품, 서비스 통합 제공 비즈니스 모델 \
 ',
 );
