@@ -588,7 +588,7 @@ var answer = answer.concat(
 - SW : Open API, 금융 SI(인터넷 전문 은행) <br/>\
 - Data 분석 : Big Data(감시) <br/>\
 - 인증 : IC Tagging (IC 카드에 인증정보 입력 후 스마트폰으로 인증), FIDO (생체정보) <br/>\
-- 데이터 보호 : TEE(단말보안), 토큰화 <br/>\
+- 데이터 보호 : TEE(단말보안, Trust Execution Environment ), 토큰화 <br/>\
 - 모니터링 : FDS(이상거래 탐지시스템) \
 ',
 
