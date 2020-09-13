@@ -91,7 +91,8 @@ var question = question.concat(
 'IT-Compliance',
 '규제 샌드박스',
 '매매 임치제도',
-'Desing Thinking',
+'Design Thinking',
+'구독 경제',
 );
 
 var answer = answer.concat(
@@ -1601,5 +1602,15 @@ var answer = answer.concat(
 # 프로세스 (공정아프테)<br/>\
 <img src = "./img/DesignThinkingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 1교시\
+',
+ 
+// 구독 경제
+'# 정의 : 무소유 사용시대 <br/>\
+- 소비자가 기업에 회원가입 및 구독을 하면 정기적으로 원하는 상품을 배송받거나, 필요한 서비스를 언제든지 이용할 수 있는 경제모델 <br/><br/>\
+# 발전 과정 : 상품경제 -> 공유경제 -> 이용경제 <br/><br/>\
+# 모델 <br/>\
+- 무기한 이용 모델 : 무제한 / Netplex, Melon <br/>\
+- 정기배송 모델 : 정기배송 / 면도날, 칫솔, 화장품, 소모품 <br/>\
+- 랜털 모델 : 원하는 품목 바꿔가며 이용 / 자동차, 가구, 가방, 명품옷 \
 ',
 );
