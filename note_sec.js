@@ -1098,7 +1098,7 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - Component : 보증, 기능 요구사항 규정<br/><br/>\
 # 기본 보안 요구사항 (IUSDRTR / 아유스드르트르)<br/>\
 1. FR1 : Identification and Authentication Control <br/>\
-- (IAC, 식별 및 인증) : 접근 허용전 모든 상요자 식별, 인증 <br/><br/>\
+- (IAC, 식별 및 인증) : 접근 허용전 모든 사용자 식별, 인증 <br/><br/>\
 2. FR2 : Use Control<br/>\
 - (UC, 사용 통제) : 요청된 작업 수행, 권한 모니터링 <br/><br/>\
 3. FR3 : System Integrity <br/>\
