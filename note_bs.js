@@ -1602,7 +1602,7 @@ var answer = answer.concat(
  
 // Design Thinking
 '# 정의 : 공감적 관찰 통한 창의적 문제해결 <br/>\
-- "사람과 사물"에 대한 공감적 관찰 (Empathic Observation)을 통해 문제 재해석 (Reframing Issue) 하고, 시각적 아이디어 도출, 프로토 타입 제작 통해 솔루션 도출하는 통합적 사용자 중심 문제 해결 방법론 <br/.<br/>\
+- "사람과 사물"에 대한 공감적 관찰 (Empathic Observation)을 통해 문제 재해석 (Reframing Issue) 하고, 시각적 아이디어 도출, 프로토 타입 제작 통해 솔루션 도출하는 통합적 사용자 중심 문제 해결 방법론 <br/><br/>\
 # 특징 <br/>\
 - 인간 중심 디자인 방법론 <br/>\
 - 공감 통한 문제 맥락 접근 <br/>\
