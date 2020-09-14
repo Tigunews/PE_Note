@@ -164,7 +164,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // Interrupt 
-'# 정의 : 특별한 제어 신호\
+'# 정의 : 특별한 제어 신호<br/>\
 - 컴퓨터의 제어를 현 상태로부터 특수한 사건이나 환경으로 보내는 특별한 제어 신호 <br/>\
 - 프로그램 제어 신호를 보낸 원인에 해당되는 특수 서브루틴 <br/><br/>\
 # 발생원인 (기의주)<br/>\
