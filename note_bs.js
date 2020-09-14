@@ -1628,9 +1628,9 @@ var answer = answer.concat(
 # 등장 배경 <br/>\
 <img src = "./img/ServitizationBackground.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/Servitization.png" style = "max-width:100%; height:auto;"><br/>\
-- 제품과 서비스의 결합 : 새로운 형태 비즈니스 <br/>\
-- 서비스의 상품화 : 서비스가 대량생산되는 제조업화 <br/>\
-- PSS(Product Service System) : 제품, 서비스 통합 제공 비즈니스 모델 \
+<img src = "./img/Servitization.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 사례 <br/>\
+- 제품의 서비스화 : 정수기 판매시 필터 관리 서비스 <br/>\
+- 서비스의 제품화 : 검색 O/S 서비스 완벽함 위해 넥서스 폰 제공 \
 ',
 );
