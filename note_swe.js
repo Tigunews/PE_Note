@@ -3842,7 +3842,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 <img src = "./img/SWE_52.PNG" style = "max-width:100%; hegiht:auto;">\
 ',
 
-// 53
+// 반복적개발모델
 '# 정의 : 반복 개발 완성 모델 / 핵심 요구사항 /<br/>\
 - Iterative 모델 <br/>\
 - 핵심 요구사항 일부분 혹은 제품의 일부분을 반복적으로 개발하여 최종 시스템으로 완성하는 모델<br/><br/>\
@@ -3857,7 +3857,8 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 # 진화<br/>\
 - 특징(3) : 릴리즈 버전관리, 요구사항 명확화, 재사용 <br/><br/>\
 <img src = "./img/Iterative_1.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Iterative_2.png" style = "max-width:100%; hegiht:auto;">\
+<img src = "./img/Iterative_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/EveloutionalModelCompare.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // RAD
