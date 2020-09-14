@@ -1485,12 +1485,12 @@ var answer = answer.concat(
 - EVA (Economic Value Added) : IT(수익-투자) <br/>\
 - TCO (Total Cost Ownership) : 직접 + 간접 <br/>\
 - EVS (Economic Value Source) : 4가지 원천별 효과 <br/>\
-- TEI (Total Economic Impact) : 비용, 이익, 유연성 <br/>\
+- TEI (Total Economic Impact) : 비용, 이익, 유연성 <br/><br/>\
 # 정성적 평가 항목 <br/>\
 - IO (Information Orientation) : 행동, 관리, 기술 <br/>\
 - IPM (IT Portfolio Management) : 활동 가치 <br/>\
 - IE (Information Economics) : 양측 목록 <br/>\
-- BCG Matrix : 성장율, 점유율<br/>\
+- BCG Matrix : 성장율, 점유율<br/><br/>\
 # 복합 평가 <br/>\
 - 다중접근 : BSC, IT-BSC <br/>\
 - 통계산술 : ROV(Real Option Valuation), AIE(Applied Information Economics) <br/><br/>\
