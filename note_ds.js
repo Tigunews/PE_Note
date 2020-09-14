@@ -2033,7 +2033,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # 적용사례 <br/>\
 - AI 약관 심사 <br/>\
 - 전자금융사기방지시스템 : 보이스피싱 경고 <br/>\
-- 금융감독 챗봇 : AI가 금융회사 및 소비자 질의에 답변제공 <br/>\
+- 금융감독 챗봇 : AI가 금융회사 및 소비자 질의에 답변제공 <br/><\
 # 레그테크, 섭테크 비교 <br/>\
 <img src = "./img/RegTechSubTech.png" style = "max-width:100%; height:auto;">\
 ',
