@@ -49,8 +49,9 @@ var question = question.concat(
 'Network Storage',
 '자가망 구축 가이드라인',
 '6G',
-'[QOS]- 통합 서비스',
-'[QOS]- 차등 서비스',
+'QoS',
+'[QoS]- 통합 서비스',
+'[QoS]- 차등 서비스',
 );
 
 var answer = answer.concat(
@@ -1092,6 +1093,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 주파수 공유 기술 <br/>\
 - AI 적용 통신 기술 <br/><br/>\
 * 이동통신 기술의 한세대를 통상 10년으로 칭함 \
+',
+ 
+// QoS
+'# 정의 : Quality of Service <br/>\
+- 다른 응용 프로그램, 사용자, 데이터 흐름 등에 우선순위를 정하여, 데이터 전송에 특정 수준의 성능을 보장하기 위한 능력 \
 ',
  
 // 통합 서비스
