@@ -85,6 +85,7 @@ var question = question.concat(
 '[DB 보안][Role Based]- Bell LaPadula',
 '[DB 보안][Role Based]- Biba',
 '[DB 보안]- 클락-윌슨(Clack and Wilson) 모델',
+'BEC(Business  E-mail Compromise)',
 );
 
 var answer = answer.concat(
@@ -1615,5 +1616,27 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 데이터 내/외부 일관성 유지 <br/><br/>\
 # Access Tripe : 주체, 객체, 프로그램 <br/><br/>\
 <img src = "./img/CW_Model.png" style = "max-width:100%; height:auto;">\
+',
+  
+// BEC
+'# 정의 : CEO 사칭 공격 <br/>\
+- CEO 등 고위 경영진을 사칭하여 직원에게 자금을 요청하거나 잘못된 송금을 유도하는 공격 <br/><br/>\
+# 프로세스 <br/>\
+- E-Mail 해킹후 기업간 내용확인 <br/>\
+- 유사 E-Mail Addreess로 위조된 인보이스 송부 <br/>\
+- 계좌 송금 <br/><br/>\
+# 핵심 기술 <br/>\
+1. 기업 업무 환경 추적 <br/>\
+- Fishing : Watering Hole, Open Directory 공격, Spam E-mail <br/>\
+- Key Logging : E-Mail Server Hacking, Spoofing, Sniffing <br/>\
+2. 후속 공격 수행 <br/>\
+- 악성 코드 설치 : DBD, XSS, URL Redirection <br/>\
+- 자금 탈취 : 사회공학 공격, CryptoCracking <br/><br/>\
+# 대응 기술 <br/>\
+- CDR(Content Disarm and Reconstruction) : 컨텐츠 재조립 <br/>\
+- DKIM(DomainKeys Identified Mail) : 도메인 인증 사칭 여부 및 위변조 탐지 <br/>\
+- SPF(Sender Policy Framework) : 메일 서버 등록제 <br/>\
+- DMARC(Domain-based Message Authentication, Reportin and Conformance) : 도메인 기반 메시지 인증/보고/검증 <br/><br/>\
+* KPC 93회 1교시 4번\
 ',
 );
