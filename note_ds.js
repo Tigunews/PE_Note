@@ -1732,11 +1732,19 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 ',
 
 // RPA 
-'# 정의 : 컴퓨터 소프트웨어 통한 자동화 기술 <br/>\
+'# 정의 : 사무 업무 자동화 기술 <br/>\
 - Robotic Process Automation<br/>\
-- 수작업, 혹은 반복적이면서 규칙적인 인간활동 일부, 혹은 전체를 컴퓨터 소프트웨어를 통해 자동화하는 기술 <br/><br/>\
-# 수준별 구분 : Basic / Intelligent / Congitive Automation <br/><br/>\
-* 사례 : LG U plus, NW부문 도입 \
+- 반복적인 사무 업무를 프로세스 마이닝으로 추출하여 이를 자동화 하는 기술 <br/><br/>\
+# RPA 흐름도 <br/>\
+<img src = "./img/RPA_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요기술 설명 <br/>\
+- 인식기술 : 이미지 인식, OCR(광학문자 판독기술) <br/>\
+- 분석기술 : WorkFlow, 백필(데이터 지속적재) <br/>\
+- 활용기술 : 라이브러리(단일 프로세스 경량화) <br/><br/>\
+# RPA 적용 사례 <br/>\
+- 제조 : 검사 업무 (물건 검증/검사) <br/>\
+- 금융 : 언더라이팅 (상품 보류/구분 업무) <br/><br/>\
+* KPC 93회 1교시 5번\
 ',
 
 // Process Mining
