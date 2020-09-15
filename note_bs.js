@@ -85,7 +85,6 @@ var question = question.concat(
 '군집분석',
 'IT 투자 평가 항목',
 '정보시스템 계약 체결',
-'[Agile]- InnerSource',
 'EAI',
 'COBIT 5.0',
 'IT-Compliance',
@@ -1527,22 +1526,6 @@ var answer = answer.concat(
 - 낙찰자 결정 : 개찰일 10일 이내 결정 <br/><br/>\
 <img src = "./img/나라장터.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 4교시 2번\
-',
-  
-// InnerSource
-'# 정의 : 사내 소프트웨어 오픈소스 개발 방법론 <br/>\
-- 어느 부서에 속해 있든지 상관없이 협력할 수 있는 사람들과 커뮤니티를 만들어, 소스 코드의 공개범위를 확대해 협업하는 개발문화 <br/><br/>\
-# 구성요소 <br/>\
-- Contributor : 소스코드 외부 반영 <br/>\
-- Community Manager : 시스템 관리 감독 <br/>\
-- Project Manager : 사내 개발자 <br/>\
-- Control System : Source 관리 시스템 <br/><br/>\
-# 기술요소 <br/>\
-- 인프라 : Git, SVN <br/>\
-- 보안 : DRM, VPN <br/>\
-- 개발문화 : Agile, CI/CD <br/>\
-- 지식관리 : Wiki <br/><br/>\
-* 아이리포 23회 1교시 13번\
 ',
   
 // EAI
