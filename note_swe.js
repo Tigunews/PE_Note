@@ -1148,18 +1148,23 @@ var answer = answer.concat(
 1. SRP(Single Responsibility Priciple) 단일 책임 원칙 : 하나의 역할만 수행 토록 Class 설계<br/>\
 - 위반사례 : God Class, Big Class <br/>\
 - 목적 : 응집도 강화 <br/>\
+<img src = "./img/SingleResponsePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. OCP(Open/Closed) 개방폐쇄의 원칙 : 확장에 개방, 변경에 폐쇄, 기능 추가시 영향도 없도록 설계 <br/>\
 - 위반사례 : 구현상속, 구현클래스 의존 <br/>\
 - 목적 : 재사용, 확장성 <br/>\
+<img src = "./img/OpenClosedPrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
 3. LSP(Liskov Subsitution) 리스코프의 치환원칙 : Sub Type은 언제나 자신의 Base Type으로 교체가능 <br/>\
 - 위반 사례 : 무분별한 기능 재정의 <br/>\
 - 목적 : 동적바인딩(다형성) <br/>\
+<img src = "./img/LiskovSubstitution.png" style = "max-width:100%; height:auto;"><br/><br/>\
 4. ISP(Interface Segregation) 인터페이스 분리 원칙 : 인터페이스도 SRP 준수 <br/>\
 - 위반 사례 : 구현상속, 여러기능 수행 메소드 <br/>\
 - 목적 : 결합도 최소화(정보은닉, 다형성) <br/>\
+<img src = "./img/InterfaceSegregation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 5. DIP(Dependency Inversion) 의존성 역전원칙 : 상위레벨 모듈은 하위레벨 의존금지, 추상화된 상위레벨모듈에 의존 <br/>\
 - 위반 사례 : 구현상속, 구현클래스 의존 <br/>\
-- 목적 : 결합도 최소화 <br/><br/>\
+- 목적 : 결합도 최소화 <br/>\
+<img src = "./img/DependancyInversion.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * DRY(Don\'t Repeat Yourself)\
 ',
 
