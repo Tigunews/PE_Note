@@ -17,6 +17,7 @@ var question = question.concat(
 '[Virtual Memory]- Mapping',
 'Cache Memory',
 'FeRAM',
+'Cloud GPU',
 'GPGPU',
 '[GPGPU]-CUDA',
 'Fabric Computing',
@@ -547,6 +548,17 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 '정의 : 차세대 비휘발성 메모리 / 강유전체 <br/>\
 - DRAM과 비슷한 구조를 갖고 있으나 강유전체를 가지고 있어 비휘발성을 가지며 기존 메모리에 비해 빠른 속도, 높은 쓰기/지우기 횟수, 낮은 전력을 사용하는 차세대 비휘발성 메모리',
 
+// Cloud GPU
+'# 종류 <br/>\
+- API 리모팅 : 벤더가 가상화 지원 x <br/>\
+<img src = "./img/CloudGPU_API.png" style = "max-width:100%; height:auto;"><br/>\
+- 반가상화 및 전 가상화 : GPU 드라이버 조정 <br/>\
+<img src = "./img/CloudGPU_Driver.png" style = "max-width:100%; height:auto;"><br/>\
+- 하드웨어 지원 가상화 : 벤더 가상화 지원 o <br/>\
+<img src = "./img/CloudGPU_HW.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 2교시 8변\
+',
+  
 // GPGPU
 '# 정의 : 병렬 처리 기술 / GPU 활용 / <br/>\
 - GPU를 그래픽 연산뿐 아니라 일반 컴퓨팅 영역에도 활용하고자 하는 컴퓨팅 체계 <br/>\
