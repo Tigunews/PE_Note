@@ -2042,7 +2042,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
   
 // 섭테크
 '# 정의 : 금융감독 업무전환 <br/>\
-- 감독(Supervisor)과 기술(Technology)의 합성어로 공유감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/>\
+- 감독(Supervisor)과 기술(Technology)의 합성어로 금융감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/>\
 - 금융감독기관의 데이터 접근성 향상, 추출 정보의 총합 관리에 응용 <br/><br/>\
 # 주요기술 <br/>\
 <img src = "./img/SubTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
