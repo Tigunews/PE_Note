@@ -1012,7 +1012,9 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - 안전조치(28-4) : 기술,관리,물리 <br/>\
 - 처리시 금지의무(28-5) : 처리 = 식별 <br/>\
 - 처리에대한 과징금(28-6) : 매출 3% 이하, 산정곤란 -> 4억 이하 or 매출 3% 이하 <br/><br/>\
-<a href = "./doc/가명정보.pdf">참고문헌</a><br/><br/>\
+<a href = "./doc/가명정보.pdf">참고문헌</a><br/>\
+<img src = "./img/가명처리절차.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/가명처리절차상세.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 1교시 8번\
 ',
 
