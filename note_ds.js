@@ -2312,6 +2312,11 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '# 정의 : 자동화 + 지능화 공장 <br/>\
 - ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
 <img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 스마트공장 보안 감사 <br/>\
+- 면담조사 <br/>\
+- 문서검토 <br/>\
+- 현장조사 <br/>\
+- 재실시 \
 ',
 
 // Edge Computing
