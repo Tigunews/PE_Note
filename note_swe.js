@@ -1165,6 +1165,7 @@ var answer = answer.concat(
 - 위반 사례 : 구현상속, 구현클래스 의존 <br/>\
 - 목적 : 결합도 최소화 <br/>\
 <img src = "./img/DependancyInversion.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SOLID_ALL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * DRY(Don\'t Repeat Yourself)\
 ',
 
