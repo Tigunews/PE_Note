@@ -828,37 +828,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 
 // 5G 이동통신
 '# 정의 : 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
-# 암기 <br/>\
-- 스펙 : 1ms, 20Gps, 3배 100배, 500Km/h, 10Mbps/m^2 <br/>\
-- 기술 : 전자성 <br/>\
--> 전 : 고미슈 <br/>\
--> 자 : 풀노수 <br/>\
--> 성 : 저단슬 <br/><br/>\
-# 기술 <br/>\
-- 전송용량 확대 : NW 고밀도화, M-MIMO, Supper Wide Band(6Ghz 이상 무선 대역 사용) <br/>\
-- 자원효율성 : In band Full Duplex, NOMA(동시간/주파수 두대 단말기) <br/>\
-- Small Cell : 펨토세르 피코셀, 마이크로셀 <br/>\
-- 성능향상 : 저 지연 무선 통신 기술, 단말 직접 통신, NW Slicing <br/><br/>\
-# 적용가능 기계학습 알고리즘 종류 <br/>\
-1. 무선전송접속 <br/>\
-- KNN : MIMO-OFDM 채널 상태정보, 최적변조 및 부호 레벨 매칭) <br/>\
-- SVM : 무선랜, 지그비등 섞인 통신 분류 <br/>\
-- CNN : 비면허대역 무선통신 신호 추정/예측 <br/><br/>\
-2. 이중망 제어/관리 <br/>\
-- 강화학습 : 커버리지, 전송전력, 동작방식 등 따라 망구성 /관리 최적화 <br/>\
-- Q-Learning : 동적자원할당 <br/>\
-- 인공신경망 : 사용자 최적 파라미터 결정 <br/><br/>\
-3. 네트워크 및 보안 <br/>\
-- 분류알고리즘 : 분산 QoS 관리, 트래픽 분류기법 적용 <br/>\
-- 교차방향승산기법 : 반복적 최소화 <br/>\
-- Hybrid Learning : 여러가지 기계학습 복합 적용 <br/><br/>\
-<img src = "./img/5G_1.png" style = "width:100%; height:auto;"><br/><br/>\
-<img src = "./img/5G_2.jpg" style = "width:100%; height:auto;"><br/><br/>\
-# 동향 <br/>\
-- 한국판 뉴딜 일환, 5G 인프라 조기 구축 <br/>\
-- 과기정통부, 시범서비스 모델 발굴 <br/>\
-- 실증 통해 통신속도-활용도 확인 <br/>\
-- 성공 땐 5G B2G-B2B 글로벌 시장 진출\
+<img src = "./img/5G_2.jpg" style = "width:100%; height:auto;">\
 ',
  
 // 3GPP Release 16
