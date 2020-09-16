@@ -1440,7 +1440,9 @@ var answer = answer.concat(
 - EU PSD2 : EU내 은행이 핀테크 업체에게 오픈 API 제공 -> 유럽 핀테크사 경쟁력 강화 <br/>\
 - 영국 오픈뱅킹 : 9대 주요 은행 계좌에 적용, 단일 API를 핀테크 업체에 제공 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/오픈뱅킹구성요소.PNG" style = "max-width:100%; height:auto;">\
+<img src = "./img/오픈뱅킹구성요소.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OpenBankingSEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 1교시 8번\
 ',
 
 // ISO 19626
