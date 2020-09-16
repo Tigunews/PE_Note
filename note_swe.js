@@ -3952,25 +3952,18 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 ', 
 
 // CBD
-'# 정의 : 컴포넌트 기반 방법론 / 재사용 가능 / 상용 컴포넌트 조합 / 최소화 혁신  <br/>\
-- 재사용 가능한 컴포넌트의 개발 또는 상용 컴포넌트를 조합하여 어플리케이션 개발 생산성, 품질향상, 유지보수 비용 최소화를 위한 혁신 개발방법론<br/><br/>\
-# 암기 <br/>\
-- 절차(2) CD(도컴구) CBD(요컴응) <br/>\
-- 종류(5) : MCSAR <br/><br/>\
-# 특징 : 생산성, 변경용이성, 관리용이성, 재사용성, UML 사용, Arch 중심 <br/><br/>\
-# 절차 <br/>\
-- CD : 도메인분석, 설계->컴포넌트 추출 및 설계 -> 컴포넌트 구현및 인증 <br/>\
-- Repository <br/>\
-- CBD : 요구사항 정의 및 영역분석 -> 컴포넌트 기반 설계,조립 -> 응용 시스템 <br/><br/>\
-# 종류 : 마르미2, Catalysis, Select Perspective, Advisor, RUP <br/><br/>\
-# CBD의 발전형태 : MDA/MDD, PL, SOA <br/><br/>\
+'# 정의 : 소프트웨어 민첩성(생산성 확보)과 품질향상을 위한 방법론 <br/>\
+- 기 개개발된 SW 컴포넌트를 조립, 새로운 시스템을 구축한느 방식으로 객체지향의 단점인 SW 재사용성을 극대화한 개발방법론 <br/><br/>\
+# 특징 (생고재편기관사) <br/>\
+- 생산성 : 시간 단축 <br/>\
+- 고품질 : 품질 검증 컴포넌트 사용 <br/>\
+- 재사용성과 대치성 : 실행기반의 재사용 <br/>\
+- 변경 용이성 : 요구사항 변화 수용 안정적 <br/>\
+- 기술 집약석 : 기술 숙련에 대한 집중 <br/>\
+- 관리 용이성 : 독립적인 컴포넌트 단위의 관리로 복잡성 최소 <br/>\
+- 사용자 중심 <br/><br/>\
 <img src = "./img/CBD_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/CBD_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 미르미2 : 국내방법론, UML기반 점진적 개발 <br/>\
-* Catalysis : 아키텍처 FW, 패턴 재사용 <br/>\
-* Select Perspective : 개발 초기 Biz 프로세스 강조 <br/>\
-* Advisor : 컴포넌트 기반 개발, Biz Pro 개선 초점 <br/>\
-* RUP : SDLC 지원 프로세스 FW \
+<img src = "./img/AgileCBD.png" style = "max-width:100%; height:auto;">\
 ',
 
 // SOA
