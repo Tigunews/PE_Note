@@ -1125,24 +1125,15 @@ var answer = answer.concat(
 // 객체지향방법론
 '# 정의 : 추상화 생성 개념 기반 방법론 / 구체 -> 추상 <br/>\
 - 구체적인 대상들에서 공통적인 특징을 추출하여 추상화 후 생성된 객체 위주로 SW를 개발하는 방법론<br/><br/>\
-# 암기 <br/>\
-- 원리(5) : 캡추상다정 <br/>\
-- 요소(3) : 객메클 <br/>\
-- 절차(4) : 요객설테 <br/>\
-- 모델(3) : JRB <br/><br/>\
 # 특성/목적 : 캡추다정상 <br/>\
 - 캡슐화 : 접근통제 <br/>\
 - 추상화 : 일반화 <br/>\
 - 다형성 : 동적바인딩 <br/>\
 - 정보은닉 : 변경 통제 <br/>\
 - 상속성 : 개발 편리성 <br/><br/>\
-# 구성 : class, object, method, attributge, message(object간 통신), relation(class간 연관) <br/><br/>\
 # 절차 : 요-객동기-시객구-테패평 <br/><br/>\
 <img src = "./img/객체지향방법론_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/객체지향방법론_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* Jacobson-OOSE : 기능적요구사항 중심의 시스템 <br/>\
-* Rumbough-OMT : 기업업무모델링 편리 / 의사소통 편리 <br/>\
-* Booch-OOD : 디자인중심 / 다이어그램 중심개발 - 설계 중심 \
+<img src = "./img/객체지향방법론_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // [객체지향방법론]- SOILD
