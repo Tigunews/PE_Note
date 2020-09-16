@@ -3836,7 +3836,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 // SW 개발 방법론 <br/>\
 '# 정의 : SW공학원리 + SW개발생명주기 적용 개념 <br/>\
 - SW공학원리를 SW개발생명주기에 적용한 개념으로 작업활동, 절차, 산출물, 기법등을 체계적으로 정리한 이론 <br/><br/>\
-<img src = "./img/SW.png" style = "max-width:100%; hegiht:auto;">\
+<img src = "./img/SW개발방법론.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // 구조적 방법론
