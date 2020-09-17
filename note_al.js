@@ -144,7 +144,7 @@ var answer = answer.concat(
 - 데이터 집합이 하나될 때까지 재귀 <br/><br/>\
 # 코드 <br/>\
 <img src = "./img/MergeSortCode.png" style = "max-width:100%; height:auto;">\
-'.
+',
 
 // 최단경로 알고리즘
 '# 정의 : 두 정점사이 가장 짧은 경로<br/>\
