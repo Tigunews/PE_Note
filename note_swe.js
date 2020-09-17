@@ -1591,6 +1591,8 @@ var answer = answer.concat(
 - SW 동작시 : 특성 만족 여부를 자동화된 방식으로 검증 <br/>\
 - SMV, Ecosim, SpaceEX <br/><br/>\
 <img src = "./img/정형검증.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+<img src = "./img/정형검증절차.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 1교시 10번\
 ',
 
