@@ -6,6 +6,7 @@ var question = question.concat(
 '[정렬 알고리즘]- Bubble sort',
 '[정렬 알고리즘]- Insertion sort',
 '[정렬 알고리즘]- Shell sort',
+'[정렬 알고리즘]- Merge sort',
 '최단경로 알고리즘',
 '[최단경로 알고리즘]- 다익스트라(Dijkstra) 알고리즘',
 '[최단경로 알고리즘]- 플로이드(Floyd) 알고리즘',
@@ -127,6 +128,23 @@ var answer = answer.concat(
 '<img src = "./img/ShellSort.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/ShellSort_1.png" style = "max-width:100%; height:auto;">\
 ',
+  
+// Merge sort
+'# 정의 : 분할과 정복이용 정렬 <br/>\
+-  전체 원소를 하나의 단위로 분할한 후 분할한 원소를 다시 병합하는 정렬방식 <br/><br/>\
+# 특징 <br/>\
+- 시간복잡도 : O(nlogn) <br/>\
+- 공간복잡도 : 배열값 기준 O(n) <br/><br/>\
+# 절차 <br/>\
+1. 분할 <br/>\
+- 정렬 데이터를 반으로 나눔 <br/>\
+- 나누어진 하위 집합 크기가 2이상이면 재귀 실행 <br/>\
+2. 정복(병합) <br/>\
+- 같은 집합인 하위데이터 집합 병합 정렬 수행 <br/>\
+- 데이터 집합이 하나될 때까지 재귀 <br/><br/>\
+# 코드 <br/>\
+<img src = "./img/MergeSortCode.png" style = "max-width:100%; height:auto;">\
+'.
 
 // 최단경로 알고리즘
 '# 정의 : 두 정점사이 가장 짧은 경로<br/>\
