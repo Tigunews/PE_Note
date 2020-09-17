@@ -1583,6 +1583,15 @@ var answer = answer.concat(
 - 수학 및 논리학 : 오토마타를 활용, 수학모델 표현 <br/>\
 - 반복모델 및 검증 : 정형명세 기준 반복적 검증 <br/>\
 - 상태폭발 문제 : 규모에 따라 상태수 폭발적 증가 <br/><br/>\
+# 정형검증 유형 <br/>\
+1. 정리 증명 <br/>\
+- 검증목표 정리 증명 방법 <br/>\
+- PVS, HOL, Zeves <br/><br/>\
+2. 모델 체킹 <br/>\
+- SW 동작시 : 특성 만족 여부를 자동화된 방식으로 검증 <br/>\
+- SMV, Ecosim, SpaceEX <br/><br/>\
+<img src = "./img/정형검증.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 1교시 10번\
 ',
 
 // Mccabe 순환복잡도
