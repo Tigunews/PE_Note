@@ -90,20 +90,8 @@ var answer = answer.concat(
 
 // 정렬 알고리즘
 '# 정의 : 원소들을 번호순이나 사전 순서와 같이 일정한 순서대로 열거하는 알고리즘 <br/><br/>\
-# 암기 <br/>\
-- 비교 : 선버삽셀합퀵힙 <br/>\
-- 분포 : 계버기 <br/>\
-- 안정 : 위치고정 <br/>\
-- 제자리 : 공간고정 <br/><br/>\
-<img src = "./img/정렬알고리즘_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/정렬알고리즘_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/정렬알고리즘_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/정렬알고리즘_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/정렬알고리즘_5.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 안정적 정렬(Stable Sort) 예시 <br/>\
-- 모두 색이 다르고 같은 숫자의 카드를 숫자 크기순으로 정렬하는 경우, 입출력 데이터 동일 <br/>\
-- 즉, 색의 위치가 바뀌지 않음 <br/>\
-- 안정적이지 않으면 색 위치 바뀔 수 있다는 의미\
+<img src = "./img/SortAL_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/정렬알고리즘_5.png" style = "max-width:100%; height:auto;">\
 ',
 
 // Selection sort
