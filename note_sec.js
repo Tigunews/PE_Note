@@ -1646,7 +1646,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - CDR(Content Disarm and Reconstruction) : 컨텐츠 재조립 <br/>\
 - DKIM(DomainKeys Identified Mail) : 도메인 인증 사칭 여부 및 위변조 탐지 <br/>\
 - SPF(Sender Policy Framework) : 메일 서버 등록제 <br/>\
-- DMARC(Domain-based Message Authentication, Reportin and Conformance) : 도메인 기반 메시지 인증/보고/검증 <br/><br/>\
+- DMARC(Domain-based Message Authentication, Reporting and Conformance) : 도메인 기반 메시지 인증/보고/검증 <br/><br/>\
 * KPC 93회 1교시 4번\
 ',
 );
