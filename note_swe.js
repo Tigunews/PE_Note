@@ -43,6 +43,7 @@ var question = question.concat(
 '[설계단계][소프트웨어 아키텍처]- ARID',
 '[설계단계][소프트웨어 아키텍처]- 유틸리티 트리',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처 드라이버',
+'[설계단계][소프트웨어 아키텍처]- 아키텍처 평가모델',
 '[설계단계]IEEE 1471',
 '[설계단계]IEEE 42010',
 '[설계단계]SAD',
@@ -1051,6 +1052,10 @@ var answer = answer.concat(
 - 목표 Quality scenario, Use case 목록변환 <br/>\
 - 영향 큰 요구사항 선정 <br/>\
 - 아키텍처 설계 시작 \
+',
+  
+// 아키텍처 평가모델
+'<img src = "./img/SW_Architecture_평가모델.png" style = "max-width:100%; height:auto;">\
 ',
 
 // IEEE 1471
