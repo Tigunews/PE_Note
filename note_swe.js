@@ -4429,31 +4429,16 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 ',
 
 // MDA
-'# 정의 : 메타모델 정의  기반 아키텍처 / 호환성, 자동성 보장 <br/>\
-- 모든 컴포넌트 기술요소의 표준 메타모델을 정의하고 이를 기반으로 구성요소를 정의함으로써 호환성 및 시스템간 자동성을 보장하는 아키텍처<br/><br/>\
-# 암기 <br/>\
-- 모델(3) : ISC <br/>\
-- 표준(4) : UXCM <br/>\
-- UML(4) : MUUR <br/><br/>\
-# 표준 : MOF -> (instance of) -> UML -> (extends) -> CWMS -> (Mapping to) -> MOF, UML, CWMs <br/>\
-1. MOF (Meta Object Facilitator) : 다른 메타 모델 정의 의한 메타-메타 모델 <br/><br/>\
-2. UML 2.0 (UML Metamode 다이어그램 추가)<br/>\
-- Composite Structure<br/>\
-- Interaction Overview<br/>\
-- Timing<br/>\
-- Communication(Collaboration) 명칭 변경<br/>\
-- 메타모델 상세화 : OWG 4계층 모델 <br/>\
-- 프레임 제공 : SD/REF 상세화 <br/>\
-- 제약사항 정의 지원 : 확장 매커니즘 <br/><br/>\
-3. CWM(Common Warehouse Model DW) <br/>\
-- 아키텍처를 정의한 메타모델로 데이터 소스, 타킷, 영역간 데이터의 변환을 위한 표준 모델 <br/><br/>\
-4. XML : CML Mode Interface MOF 기반 모델을 XML로 매핑하기 위한 표준 사양, XML 기반의 데이터 표준 관리 언어 <br/><br/>\
-# UML 4계층 구조 : M3(MOF) > M2(UML) > M1(User model) > M0(runtime Instance) <br/><br/>\
-<img src = "./img/MDA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/MDA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/MDA_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/MDA_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/MDA_5.png" style = "max-width:100%; height:auto;">\
+'# 정의 : 모델기반의 SW 개발 아키텍처 <br/>\
+- Model Driven Architecture <br/>\
+- 모든 컴포넌트 기술 요소의 표준 메타모델을 정의하고 이를 기반으로 각 구성요소를 정의함으로써 호환성 및 시스템간 자동성을 보장하고자 하는 소프트웨어 개발 아키텍처 <br/><br/>\
+# 등장배경 <br/>\
+- 다양한 미들웨어 플랫폼 <br/>\
+- 다양한 컴포넌트 아키텍처의 등장 <br/>\
+- 개발 패러다임의 변화 <br/>\
+- CORBRA의 복잡성 : 개방형 객체표준, 무겁고 복잡한 표준규격, 외면 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MDA_Overview.png" style = "max-width: 100%; height: auto;">\
 ',
 
 // MDD
