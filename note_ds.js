@@ -60,6 +60,7 @@ var question = question.concat(
 '가상화',
 '[가상화]- 하이퍼바이저(Hypervisor)',
 '[가상화]- 도커(Docker)',
+'[가상화]- LXC, 도커', 
 '[가상화]- 쿠버네티스(Kubernetes)',
 '[가상화]- HCI',
 'VDI',
@@ -1172,6 +1173,15 @@ var answer = answer.concat(
 - 이미지 Repository : 패키징, 허브 <br/>\
 - 컨테이너 : 이미지 실행 <br/>\
 <img src = "./img/Docker_1.jpg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+',
+  
+// LXC, 도커
+'<img src = "./img/Docker_1.jpg" style = "max-width:100%; hegiht:auto;"><br/>\
+- Popularity : Linux 컨테이너 이용 / 개발자 커뮤니티 혜택 제공 <br/>\
+- Architecture : 주요 Linux 커널 기능 의존 / 자체 라이브러리(Docker Daemon, Images) <br/>\
+- 스토리지 관리 : 다양한 백엔드 / 정교한 솔루션 <br/>\
+- Client Tool : IT 운영자 중점 / 개발자 커뮤니티 <br/><br/>\
+* KPC 93회 3교시 5번\
 ',
 
 // [가상화]- 쿠버네티스(Kubernetes)
