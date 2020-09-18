@@ -55,6 +55,7 @@ var question = question.concat(
 '[설계단계][객체지향]- 다형성',
 '[설계단계][객체지향]- Demeter\'s Law',
 '[설계단계]- UML ',
+'[설계단계]- UML 관계',
 '[설계단계][UML]- UML 확장매커니즘',
 '[설계단계][UML]- Behavior Diagram',
 '[설계단계][UML][Behavior Diagram]- Activity Diagram',
@@ -1220,7 +1221,12 @@ var answer = answer.concat(
 // UML 
 '# 정의 : 통합된 모델링언어, IT + Biz 설계 <br/>\
 - 객체기술에 대한 표준화기구에서 인정한 객체지향 분석과 설계를 위한 표준화된 모델링 언어 <br/><br/>\
-<img src = "./img/UML_Overview.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/UMLDiagram.png" style = "max-width:100%; height:auto;">\
+',
+  
+// UML 관계
+'<img src = "./img/UML_Relation.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/UML_RelationDetail.png" style = "max-width:100%; height:auto;">\
 ',
 
 // UML 확장매커니즘 
