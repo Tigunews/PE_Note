@@ -19,6 +19,7 @@ var question = question.concat(
 '[계획단계][BMT]- Pilot test',
 '[계획단계]- 예비타당성 조사',
 '[분석단계]- 요구공학',
+'[분석단계]- 요구공학 프로세스',
 '[분석단계][요구공학]- SRS',
 '[분석단계][요구공학]- 요구사항추적성',
 '[분석단계][요구공학]- 요구사항도출',
@@ -651,6 +652,10 @@ var answer = answer.concat(
 - 요구사항 개발 : 요구사항 추출, 분석, 병세화, 검증 <br/>\
 - 요구사항 관리 : 변경관리, 협상, 기준선 관리 <br/><br/>\
 <img src = "./img/요구공학.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 요구공학 프로세스
+'<img src = "./img/RE_Overview.png" style = "max-width:100%; height:auto;">\
 ',
 
 // SRS
