@@ -54,8 +54,7 @@ var question = question.concat(
 '[설계단계][객체지향]- 추상클래스',
 '[설계단계][객체지향]- 다형성',
 '[설계단계][객체지향]- Demeter\'s Law',
-'[설계단계]- UML 1.x',
-'[설계단계]- UML 2.x',
+'[설계단계]- UML ',
 '[설계단계][UML]- UML 확장매커니즘',
 '[설계단계][UML]- Behavior Diagram',
 '[설계단계][UML][Behavior Diagram]- Activity Diagram',
@@ -1218,53 +1217,10 @@ var answer = answer.concat(
 5. 메소드의 스코프안에서 객체가 접근 가능한 전역변수 \
 ',
 
-// UML 1.x
+// UML 
 '# 정의 : 통합된 모델링언어, IT + Biz 설계 <br/>\
 - 객체기술에 대한 표준화기구에서 인정한 객체지향 분석과 설계를 위한 표준화된 모델링 언어 <br/><br/>\
-# 한계 <br/>\
-- 복잡성 <br/>\
-- 컴포넌트 개념지원 미흡 <br/>\
-- MDA 호환 x <br/>\
-- 모델-코드간 지원여부 x <br/><br/>\
-# 특징 <br/>\
-- 명세화 <br/>\
-- 문서화 <br/>\
-- 가시화 <br/>\
-- 구축언어 <br/><br/>\
-# 구성요소 <br/>\
-- 개념 <br/>\
-- 속성 <br/>\
-- 관계 <br/><br/>\
-# 종류 <br/>\
-1. 요구분석 <br/>\
-- Use case <br/><br/>\
-2. 정적 <br/>\
-- Class <br/>\
-- Object <br/>\
-- Package <br/>\
-- Component <br/>\
-- Deployment <br/>\
-- Composit Structure <br/><br/>\
-3. 동적 <br/>\
-- Timming <br/>\
-- Sequence <br/>\
-- Activity <br/>\
-- Communication <br/>\
-- State Machine <br/>\
-- Interaction Overview \
-',
-
-// UML 2.x
-'# 특징 <br/>\
-- 다이어그램 추가 (상호작용 강조) <br/>\
-- 메타모델 상세화 (OMG 4계층 모델) <br/>\
-- 확장 매커니즘 <br/>\
-- 프레임 제공 (SD/REF:상세화O) <br/><br/>\
-# 4계층 구조 <br/>\
-- M0~3 Run Time Instance <br/>\
-- User Model <br/>\
-- Meta Model (UML) <br/>\
-- Meta Meta Model (MOF) \
+<img src = "./img/UML_Overview.png" style = "max-width:100%; height:auto;">\
 ',
 
 // UML 확장매커니즘 
