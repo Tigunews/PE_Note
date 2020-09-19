@@ -183,6 +183,7 @@ var answer = answer.concat(
 - 모델 변형 (Deconvolution unpooling) : 역합성곱 이용, Label Data <br/>\
 - 모델 비교 (Pixcel Base Model) : 기존의 모델간 비교이용 <br/>\
 - 신규모델 (And Or Graph) : Tree 구조의 데이터 탐색 실험 <br/><br/>\
+* KPC 93회 1교시 8번 <br/><br/>\
 * KPC 94회 4교시 4번 \
 ',
 
