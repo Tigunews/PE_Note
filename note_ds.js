@@ -1121,7 +1121,7 @@ var answer = answer.concat(
 - 전가상화 : 명령 해석 전달 / Guest OS 수정 x <br/>\
 - 반가상화 : API 통해 OS 제어 / Guset OS 수정 o <br/><br/>\
 2. Type 2 : OS 위에 설치 / 오버헤드 큼, 별도 관리모듈 x <br/><br/>\
-* 아이리포 23회 1교시 4번\
+* 아이리포 23회 1교시 4번<br/>\
 * 122회 1교시 8번\
 ',
 
