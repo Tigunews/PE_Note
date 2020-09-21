@@ -1344,7 +1344,7 @@ EAL : 펑스매매세세포 <br/><br/>\
   
 // GDPR
 '# 정의 : EU의 일반개인정보보호 규정 <br/>\
-- General Data Protextion Regulation <br/>\
+- General Data Protection Regulation <br/>\
 - 1995년 EU 개인정보보호 지침 제정후 규정된 개인정보보호 법령 (2018.5.25. 시행) <br/><br/>\
 # 개요 (장/전문/본문)<br/>\
 - 정보보호 지령 : 1995.10.24. 채택/시행 7/72/34 <br/>\
