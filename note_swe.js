@@ -1168,7 +1168,7 @@ var answer = answer.concat(
 - 위반 사례 : 무분별한 기능 재정의 <br/>\
 - 목적 : 동적바인딩(다형성) <br/>\
 <img src = "./img/LiskovSubstitution.png" style = "max-width:100%; height:auto;"><br/><br/>\
-4. ISP(Interface Segregation) 인터페이스 분리 원칙 : 인터페이스도 SRP 준수 <br/>\
+4. ISP(Interface Segregation) 인터페이스 분리 원칙 : 다른 클래스 종속할 때, 최소한의 인터페이스 사용 <br/>\
 - 위반 사례 : 구현상속, 여러기능 수행 메소드 <br/>\
 - 목적 : 결합도 최소화(정보은닉, 다형성) <br/>\
 <img src = "./img/InterfaceSegregation.png" style = "max-width:100%; height:auto;"><br/><br/>\
