@@ -28,6 +28,7 @@ var question = question.concat(
 '[핀테크]- 핀테크 오픈플랫폼 보안가이드',
 '[핀테크]- 인슈어테크',
 '[핀테크]- 인터넷 전문 은행',
+'[IT 금융]- De-Fi',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
 '[이더리움] - 스마트계약(Smart Contract)',
@@ -618,6 +619,18 @@ var answer = answer.concat(
 - 신용카드 : 동일 허가기준<br/>\
 - 예금보험제도 : 동일 방식 사용<br/>\
 - 실명확인제도 : 다양한 비대면 인증\
+',
+  
+// De-Fi
+'# 정의 : Decentralized Finance <br/>\
+- 금융 산업에서 블록체인의 중요성이 강조됨에 따른 탈중앙화 금융 서비스 <br/><br/>\
+# 유형 <br/>\
+- 대출/대여 : 가장 인기 있는 유형의 App <br/>\
+- 통화은행 서비스 : 발행, 대출, 보험 포함 <br/>\
+- 탈중앙화 시장 : 탈중앙화 거래소가 대표적 <br/>\
+- 기타 : 파생 상품, 합성 자산, 탈중앙화 예측 시장 등 <br/><br/>\
+<img src = "./img/DeFi_Compare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 라이지움 84회 1교시 2번\
 ',
 
 // 아바커스 프로젝트
