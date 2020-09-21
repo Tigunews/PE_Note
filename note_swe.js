@@ -1180,7 +1180,7 @@ var answer = answer.concat(
 * DRY(Don\'t Repeat Yourself)\
 ',
 
-// 12
+// 인터페이스
 '# 정의 : Class / 추상 메소드 + Static 변수 <br/>\
 - 클래스간의 공통 기능을 정의할 때 사용하는 상수와 추상 메소드의 집합체 <br/><br/>\
 # 특징 <br/>\
@@ -1192,12 +1192,13 @@ var answer = answer.concat(
 # 사례 : Adapter 패턴 중 class Adapter\
 ',
 
-// 13
+// 추상클래스
 '# 정의 : Class / 추상 메소드 1개 이상 <br/>\
 - 하나 이상의 추상 메소드를 가지며 객체가 가지는 특성을 추상화 시켜 상속을 통해 새로운 클래스를 작성하는 실제 인스턴스를 생성할 수 없는 클래스 <br/><br/>\
 # 특징 : 추상 메소드 선언 가능, 다중 인터페이스 상속 불가, extends, 인스턴스 생성 불가 <br/><br/>\
 # UML 표현 : 이탤릭체, 화살표 <br/><br/>\
-# 사례 : Templete Method 패턴 \
+# 사례 : Templete Method 패턴 <br/><br/>\
+<img src = "./img/AbstractClass.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 다형성
