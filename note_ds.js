@@ -1990,15 +1990,15 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '1. MSA <br/>\
 - API Gateway : Rest API, 라우팅, 로드밸런스, 추상화 <br/>\
 - API Servers : 상호 독립적 배포/관리 <br/>\
-- Database : RDB, NoSQL, NewSQL, 데이터 지속성 계층 <br/>\
+- Database : RDB, NoSQL, NewSQL, 데이터 지속성 계층 <br/><br/>\
 2. DevOps <br/>\
 - 통합적 품질 보증 : 코드 인스펙션, 테스트 자동화 <br/>\
 - 개발 프로세스 : 지속적 향상 프로세스 <br/>\
-- 전영역 도구 사용 : 운영 관리 위한 Tool 사용 <br/>\
+- 전영역 도구 사용 : 운영 관리 위한 Tool 사용 <br/><br/>\
 3. CI/CD <br/>\
 - 지속적 통합 : 소스코드 지속적 통합, 빌드, 테스트 <br/>\
 - 지속적 서비스 : 모든 단계 코드 릴리즈 자동화 <br/>\
-- 지속적 배포 : 프로덕션 릴리즈 작업 자동화 <br/>\
+- 지속적 배포 : 프로덕션 릴리즈 작업 자동화 <br/><br/>\
 4. Cotnainer <br/>\
 - Cgroup(Control Group) : 컨테이너 자원 할당/제어, 우선순위 제어 <br/>\
 - Namespace : 독립 공간 <br/>\
