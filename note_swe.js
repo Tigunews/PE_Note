@@ -1189,7 +1189,9 @@ var answer = answer.concat(
 - Java 경우 다중 인터페이스 상속가능 <br/>\
 - Implements <br/><br/>\
 # UML 표현 : \<\< interfacae \>\>, 이텔릭체, 점선 화살표 <br/><br/>\
-# 사례 : Adapter 패턴 중 class Adapter\
+# 사례 : Adapter 패턴 중 class Adapter<br/><br/>\
+<img src = "./img/Interface.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/PublicclassInterface.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 추상클래스
