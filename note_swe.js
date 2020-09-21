@@ -1417,15 +1417,11 @@ var answer = answer.concat(
 '# 정의 : 개발 구조/문서 <br/>\
 - 개발시 자주 발생하는 구조상 문제를 해결하기 위한 구조/문서 <br/><br/>\
 # 종류 <br/>\
-1. 생성 <br/>\
-- Factory Method <br/>\
-- Abstract Factory, Build, Prototype, Sigleton <br/><br/>\
-2. 구조 <br/>\
-- Adapter <br/>\
-- Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy <br/><br/>\
-3. 행위 <br/>\
-- Interpreter, Template Method <br/>\
-- Memento, Iterator, Visitor, Chain of Responsibility, Command, Mediator, State, Observe, Strategy\
+- 생구행 <br/>\
+- 생 : 아바프로시파(ABProSiFa) <br/>\
+- 구 : ABCD파플로(ABCDFaFlro) <br/>\
+- 행 : CMI(CCMMII) 쏘티브(SSOTV) <br/>\
+<img src = "./img/DesignPattern.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 화이트박스 재사용
