@@ -4264,9 +4264,14 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 // TDD
 '# 정의 : Simple Code 추구 목적 Agile 개발 방법론 <br/>\
 - Simple code의 추구를 목적으로 Testcase를 먼저 개발하고 Testcase를 통과하는 실제코드를 나중에 개발하는 Agile 개발 방법<br/><br/>\
-# Keyword : 요구사항, Testcase, 테스트 자동화, Simple code, Agile, Refactoring, Red 막대, Green 막대, xUnit, 체크인<br/><br/>\
-# xUnit(테스트 프레임워크) 도구 : 여러가지 입력을 실행, Test 결과를 Red/Green 막대로 표현, Refactoring 수행 <br/><br/>\
-<img src = "./img/TDD.png" style = "max-width:100%; hegiht:auto;">\
+# 절차 <br/>\
+<img src = "./img/TDD.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 패턴 <br/>\
+- 빨간 막대 패턴 : 실패하는 작은 테스트 작성 <br/>\
+- 초록 막대 패턴 : 테스트에 통과할 만한 작은 코드 작성 <br/>\
+- 테스팅 패턴 : 테스트-모듈간 적합성 <br/>\
+- xUnit 패턴 : xUnit계열 테스트 프레임워크 <br/>\
+- 디자인 패턴 : 유사 도메인에서 발생하는 문제 해결 위한 Best Practice 모음 \
 ',
 
 // ATDD
