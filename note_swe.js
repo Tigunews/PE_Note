@@ -1705,39 +1705,7 @@ var answer = answer.concat(
 ',
 
 // 테스트 유형
-'# 단계별(단통시인설리) <br/>\
-- 단위 테스트 <br/>\
-- 통합 테스트 (상하샌빅) <br/>\
-- 시스템 테스트 (회안강성구보) <br/>\
-- 인수 테스트 <br/>\
-- 설치 테스트 <br/>\
-- 회귀(Regression) 테스트 <br/><br/>\
-# 목적별<br/>\
-- 기능(적정상보준) <br/>\
-- 비기능(신사효유이) <br/>\
-- 구조적 : Structual-Whitebox 접근 <br/>\
-- 회귀 <br/>\
-- 병행 <br/>\
-- 부하 <br/>\
-- 성능(루스티가, 단복임확) <br/>\
-- 유지보수 <br/><br/>\
-# 프로그램 실행 여부<br/>\
-- 동적 : White, Black <br/>\
-- 정적(리워인) : Peer Review, Techincal Review, Walkthrough, Inspection <br/><br/>\
-# 시각 <br/>\
-- 검증(Verification) : 개발과정 테스트 <br/>\
-- 검토(Validation) : 동작결과 테스트 <br/><br/>\
-# 정보획득 <br/>\
-- 화이트박스 : SW내부로직-제자루 <br/>\
-- 블랙박스 : SW외부명세, 데이터중심-동경원D상페도유 <br/><br/>\
-# 테스트기법 <br/>\
-- Record and Replay <br/>\
-- 테스트 오라클(참샘휴일) <br/>\
-- 리스크기반 테스트 <br/>\
-- Pairwise Testing <br/>\
-- 준거성 테스트 <br/>\
-- 실증성 테스트(Substantive Test) <br/><br/>\
-<img src = "./img/SWTest.png" style = "max-width:100%; height:auto;">\
+'<img src = "./img/TestTree.png" style = "max-width:100%; height:auto;">\
 ', 
 
 // 단계 
