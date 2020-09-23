@@ -1947,7 +1947,7 @@ var answer = answer.concat(
 * 라이지움 86회 2교시 4번\
 ',
 
-// [시험단계][테스트 유형][프로그램 실행여부][동적 테스트]- Black Box TEST
+// [시험단계][테스트 유형][프로그램 실행여부][동적 테스트]- Black Box TEST / 명세기반 테스트
 '# 정의 : 명세서 기반 테스트<br/>\
 - 명세기반 테스트 <br/>\
 - 분석 및 설계 명세서를 바탕, 테스트 케이스화 작성, 모델의 결함을 발견하는 테스트 <br/><br/>\
@@ -1961,13 +1961,15 @@ var answer = answer.concat(
 - 경계 값 주변 다수 결함 발생 원리 이용 <br/>\
 - 유효, 비유효 경계 값 고려한 케이스 설계 <br/>\
 - 경계치에 치중하며 출력 유형 고려 <br/><br/>\
-3. 원인결과 그래프 <br/><br/>\
+3. 원인결과 그래프 <br/>\
+<img src = "./img/CauseEffectGraph.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 4. Decision Table <br/>\
 <img src = "./img/BlackBox_3.png" style = "max-width:100%; hegiht:auto;"><br/>\
 - 조건에 따른 참/거짓 조합으로 케이스 작성 <br/>\
 - 조건과 상황기반 <br/>\
 - 비즈니스 규칙의 명세화 <br/><br/>\
 5. 상태전이 <br/>\
+<img src = "./img/StateTransitionTesting.png" style = "max-width:100%; hegiht:auto;"><br/>\
 - 상태 변화 요소들의 조합, 테스트 케이스 작성 <br/>\
 - 상태전이, 상태를 변하시키는 입력과 이벤트의 모든 조합을 포함하는 전이 테이블 정의 후 테스트 케이스를 설계 <br/><br/>\
 6. 페어와이즈 <br/>\
