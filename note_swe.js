@@ -2214,10 +2214,10 @@ var answer = answer.concat(
 - 범위와 세부내용의 유연성 (Extent and level of detail flexible) \
 ',
 
-// [시험단계]- Test Harness
+// [시험단계]- 테스트 하네스
 '# 정의 : 시험 지원 목적 코드, 데이터 <br/>\
 - 시스템 및 시스템 컴포넌트를 시험하는 환경의 일부분으로 시험을 지원하는 목적하에 생성된 코드와 데이터 <br/><br/>\
-# 구성 <br/>\
+# 구성 (스하드상) <br/>\
 - Test Stub : 가상의 하위 모듈, 하향식(Top Down), 호출되어 결과값을 리턴 <br/>\
 - Test Driver : 가상의 상위 모듈, 상향식(Bottom-Up)에 필요, 호출 기능만을 수행 <br/><br/>\
 # 활용 : TUD, 자산화하여 회귀테스트 자동화에 활용 \
