@@ -26,6 +26,9 @@ var question = question.concat(
 '[기계학습]- 과대적합(Overfitting)',
 '[기계학습]- 과소적합(underfitting)',
 '[기계학습]- TensorFlow',
+'[기계학습]- 강화학습',
+'[기계학습]- 역강화학습',
+'[기계학습]- 모방학습',
 '[기계학습][비지도 학습]- GAN',
 '[기계학습][비지도 학습]- DCGAN',
 '연합학습',
@@ -439,6 +442,40 @@ var answer = answer.concat(
 - Tensor Board : 딥러닝 학습과정 추적 <br/>\
 - Data Model : 미리 학습된 데이터 목록 <br/><br/>\
 * 122회 1교시 6번\
+',
+  
+// 강화학습
+'# 정의 : Reinforcement Learning <br/>\
+- Agent가 어떤 상태에서 행동을 수행할 때마다 그 성능에 대한 피드백을 제공하는 보상 함수를 통해 학습하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ReinforcementLearning.png" style = "max-width:100%; height:auto;"><br/>\
+- 주어진 보상 함수를 통해 최적 정책을 계산 <br/><br/>\
+* 라이지움 84회 4교시 4번\
+',
+  
+// 역강화학습
+'# 정의 : Inverse Reinforcement Learning <br/>\
+- Agent의 정책이나 행동 이력을 통해 그 행동을 설명하는 보상 함수를 구하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/InverseReinforcementLearning.png" style = "max-width:100%; height:auto;"><br/>\
+- 최선의 행동 이력(최적 정책)을 입력으로 보상 함수를 찾음 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/ReinforceInverseCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 84회 4교시 4번\
+',
+  
+// 모방학습
+'# 정의 : Imitation Learning <br/>\
+- 학습자로 하여금 최상의 성능을 달성하기 위해 전문가의 행동을 모방하려고 하는 순차적 작업 <br/><br/>\
+# 특징 <br/>\
+- 직접적 보상 요구 x <br/>\
+- 정책 직접적 설계 <br/><br/>\
+# 종류 <br/>\
+1. 행동복제 : 전문가를 통해 쌍으로 이뤄진 상태 및 동작 시퀀스 시연 궤적을 수집하여 정책을 지도하는 알고리즘 <br/>\
+<img src = "./img/BehaviorCloning.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 견습학습 : 전문가의 시연으로부터 보상 함수를 만들고 계산된 보상 함수를 통해 최적의 정책을 학습하는 알고리즘 <br/>\
+<img src = "./img/ApprenticeshipLearning.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 84회 4교시 4번\
 ',
   
 // GAN
