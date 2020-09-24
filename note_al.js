@@ -505,7 +505,7 @@ var answer = answer.concat(
 # 구성요소 <br/>\
 1. 네트워크 구조 <br/>\
 - Convolution : 특징 추출 합성곱 / Feature Map, stride, padding <br/>\
-- Fractional-Strieded Convolution : Input Padding 이후 Convolution 수행 <br/>\
+- 소수 줄무늬 Convolution : Input Padding 이후 Convolution 수행 <br/>\
 - 배치 정규화 : 활성화 함수 값 정규분포화 (평균 0, 분산 1) <br/><br/>\
 2. 활성화 함수 <br/>\
 - ReLu : 생성자 모든층 / y = max(0,z) <br/>\
