@@ -2688,7 +2688,9 @@ var answer = answer.concat(
 # 상세 설명 <br/>\
 - Reverese Eng : 기존 시스템 역 분석 <br/>\
 - Re-Eng : 기존 시스템 변환 <br/>\
-- Re-Use : 재사용 SW 파악 \
+- Re-Use : 재사용 SW 파악 <br/><br/>\
+# 관계도 <br/>\
+<img src = "./img/3R_Relation.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 역공학 (저작권 측면)
