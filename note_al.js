@@ -480,6 +480,7 @@ var answer = answer.concat(
   
 // GAN
 '# 정의 : 대립 통한 훈련학습 모델 <br/>\
+- Generative Adversarial Network <br/>\
 - 서로 대립하는 Generator, Discriminator 두 개의 네트워크를 생성하여 대립 과정 통해 성능을 강화하는 비지도 학습 모델 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/GAN.png" style = "max-width:100%; height:auto;"><br/><br/>\
