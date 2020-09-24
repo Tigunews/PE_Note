@@ -471,9 +471,9 @@ var answer = answer.concat(
 - 직접적 보상 요구 x <br/>\
 - 정책 직접적 설계 <br/><br/>\
 # 종류 <br/>\
-1. 행동복제 : 전문가를 통해 쌍으로 이뤄진 상태 및 동작 시퀀스 시연 궤적을 수집하여 정책을 지도하는 알고리즘 <br/>\
+1. 행동복제(시출정학생) : 전문가를 통해 쌍으로 이뤄진 상태 및 동작 시퀀스 시연 궤적을 수집하여 정책을 지도하는 알고리즘 <br/>\
 <img src = "./img/BehaviorCloning.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 견습학습 : 전문가의 시연으로부터 보상 함수를 만들고 계산된 보상 함수를 통해 최적의 정책을 학습하는 알고리즘 <br/>\
+2. 견습학습(기IRL기) : 전문가의 시연으로부터 보상 함수를 만들고 계산된 보상 함수를 통해 최적의 정책을 학습하는 알고리즘 <br/>\
 <img src = "./img/ApprenticeshipLearning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 84회 4교시 4번\
 ',
