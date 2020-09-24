@@ -2526,36 +2526,10 @@ var answer = answer.concat(
 ',
 
 // ISO/IEC/IEEE 29119
-'# 정의 : SW Testing 국제 표준 / V&V / 동적 테스팅 <br/>\
-- 검증 및 확인(Verification and Validation) 활동 중 동적 테스팅 (Dynamic Testing) 대한 절차와 기법을 주로 다루는 소프트웨어 테스팅 국제 표준 <br/><br/>\
-# 암기 <br/>\
-- 구성 : 컨,프,다,테,키 <br/><br/>\
-# 특징 <br/>\
-- 동적 테스팅 위주 <br/>\
-- 포괄적 지원 : 다양한 종류 애플리케이션/도메인 테스팅 지원 <br/>\
-- 다양한 유형의 SDLC 대응 <br/>\
-- 조직차원 테스팅 관점 반영 : 소규모 ~ 대규모 조직 <br/>\
-[참고] 정적테스팅은 IEEE 1028에서 다룸 <br/><br/>\
-# 구성 : CD ~ P,D,T,K <br/>\
-- ISO/IEC 29119-1 (Concepts & Definition) : (2013.09. 국제표준 출판) 전체 시리즈의 가이드 제공 <br/><br/>\
-- ISO/IEC 29119-2 (Test Processes) : (2013.09. 국제표준 출판) 핵심, 조직, 테스트관리, 공적 테스트 세가지 수준의 다계층 프로세스 모델 설명 <br/>\
--> 다계층 프로세스 모델 (Multi Layer Process Model) : 조직의 테스트 프로세스 (Organizational Test Process), 테스트 관리 프로세스 (Test Mgnt Process), 동적 테스트 프로세스(Dynamic Test Process) <br/>\
--> 프로세스 : 테스트 계획(계획서) -> 설계(명세서) -> 수행(결과서) -> 버그리포팅(이상보고서) -> 종료(테스트레벨 완료보고서) <br/>\
--> ISO/IEC 33063의 프로세스 차원 담당 <br/><br/>\
-- ISO/IEC 29119-3 (Test Documentation) : (2013.09. 국제표준 출판) 프로세스의 결과 기술, 테스트 문서의 견본/예시 제공, 단게별 산출문서 작성법 <br/>\
--> 조직의 테스트 프로세스 문서, 테스트 관리 프로세스 문서, 동적 테스트 프로세스 문서 <br/><br/>\
-- ISO/IEC 29119-4 (Test Techniques) : (2015.12. 국제출판) 프로세스별 기법 요구사항 기술 <br/>\
--> 테스트 설계 기법 : 명세기반 테스트 설계기법, 구조기반, 경험기반 <br/>\
--> 테스트 커버리지 측정 : 명세기반 테스트 설계 기법의 커버리지 측정, 구조~측정, 경험~측정 <br/><br/>\
-- ISO/IEC 29119-5 (Keyword Driven Testing) : (2016.07. 최종국제표준안 1단계 완료) 키워드 주도 테스팅 대한 소개와 접근 방법 제공, 키워드 주도 테스팅 위한 프레임워크 도구 대한 요구사항 <br/><br/>\
-<img src = "./img/ISOIEC29119_1.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/ISOIEC29119_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 관련 표준 <br/>\
-- P1 : BS 7925-1 <br/>\
-- P2 : BS 7925-2, IEEE 1008<br/>\
-- P3 : IEEE 829 <br/>\
-- P4 : BS 7925-2 <br/><br/>\
-* 키워드기반 테스트도구 : kUTAF \
+'# 정의 : SW Testing 국제 표준 <br/>\
+- SW개발 생명주기 전 과정에 걸쳐 있는 테스팅 프로세스와 관련 산출물에 대한 국제 표준 (표준적 테스트 기법 포함) <br/>\
+- 테스팅과 품질에 대한 인식 개선, 객관적 지표 수립 <br/><br/>\
+<img src = "./img/ISOIEC29119_2.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // ISO/IEC 33063
