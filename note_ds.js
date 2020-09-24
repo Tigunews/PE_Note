@@ -2414,7 +2414,8 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // 오픈소스 라이선스
 '# 정의 : 자유롭게 사용, 복제, 배포, 수정 가능한 소스코드가 공개되어 있는 SW 라이선스<br/><br/>\
 <img src = "./img/OpenSource_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/OpenSource_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OpenSource_0.png" style = "max-width:100%; height:auto;"><br/>\
+- 이허취수재결 <br/><br/>\
 * 세계 65% 이상의 기업이 오픈소스 활용중 <br/>\
 * ICT 산업에서 오픈소스의 비중이 갈수록 높아지는 추세 \
 ',
