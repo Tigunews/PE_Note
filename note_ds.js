@@ -11,6 +11,7 @@ var question = question.concat(
 '[AI]- Loss Function',
 '[AI]- 규범 동향',
 '[AI]- Python',
+'[AI]- AI국가전략',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
@@ -309,6 +310,23 @@ var answer = answer.concat(
 - Set : 유일값 집합 / set("Hello") <br/>\
 - 자료형 확인 : type() <br/><br/>\
 * 122회 2교시 1번\
+',
+  
+// AI 국가전략 
+'# 정의 : 2019년 12월 17일 경제,사회 전반의 혁신 프로젝트로서 과학기술정보통신부를 비롯한 전 부처가 참여해서 마련한 전략 <br/><br/>\
+# 내용 <br/>\
+1. 생태계 구축 <br/>\
+- AI 인프라 : 공공 민간데이터<br/>\
+- AI 기술 경쟁력 : 반도체 기술 중심<br/>\
+- 과감한 규제 혁신 : 포괄적 네거티브 규제<br/>\
+- AI 스타트업 : AI 올림픽 <br/><br/>\
+2. 활용 <br/>\
+- 교육 : 관련학과 증설 <br/>\
+- 전산업 활용 : 대형 AI 융합 프로젝트 <br/>\
+- 디지털 정부 : 차세대 지능정부 구현 <br/><br/>\
+3. 사람중심 구현 <br/>\
+- 포용적 일자리 안전망 : 취업 지원제도 <br/>\
+- AI 역기능 및 윤리 확립 : 사이버 침해 대응체계 고도화 \
 ',
 
 // Flipped Learning
