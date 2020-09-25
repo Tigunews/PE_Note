@@ -54,6 +54,7 @@ var question = question.concat(
 '[설계단계][객체지향]- 추상클래스',
 '[설계단계][객체지향]- 다형성',
 '[설계단계][객체지향]- Demeter\'s Law',
+'[설계단계][객체지향]- 상속,합성 비교',
 '[설계단계]- UML ',
 '[설계단계]- UML 관계',
 '[설계단계][UML]- UML 확장매커니즘',
@@ -1225,7 +1226,11 @@ var answer = answer.concat(
 4. 메소드가 포함하고 있는 객체의 메소드 <br/>\
 5. 메소드의 스코프안에서 객체가 접근 가능한 전역변수 \
 ',
-
+  
+// 상속 합성
+'<img src = "./img/InheritComposition.png" style = "max-width:100%; height:auto;">\
+',
+  
 // UML 
 '# 정의 : 통합된 모델링언어, IT + Biz 설계 <br/>\
 - 객체기술에 대한 표준화기구에서 인정한 객체지향 분석과 설계를 위한 표준화된 모델링 언어 <br/><br/>\
