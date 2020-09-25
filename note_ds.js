@@ -1365,25 +1365,7 @@ var answer = answer.concat(
 
 // ISO 61508
 '# 정의 : 기능안전에 대한 국제 규격 <br/><br/>\
-# 구성요소 : 안전 수명주기 / 하드웨어 / 소프트웨어 <br/><br/>\
-# Frame work : 요구사항 개발 / 요구사항 할당 / 시스템, SW 개발 / 설치 및 점검 / 운영 및 유지보수 <br/><br/>\
-# 상세 내용 <br/>\
-- Part 1 : 일반요구사항<br/>\
-- Part 2 : 전기/전자/프로그래머블 전자 안전 관련 시스템에 대한 요구사항 <br/>\
-- Part 3 : 소프트웨어 요구사항 <br/>\
-- Part 4 : 용어의 정의 및 약어 <br/>\
-- Part 5 : 안전도 수준 결정 방법의 사례 <br/>\
-- Part 6 : Part 2 및 Part 3 적용 지침 <br/>\
-- Part 7 : 기술 및 방법의 개관 <br/><br/>\
-# 임베디드 소프트웨어 품질관리 요구 특징 <br/>\
-- Mission Critical : 소프트웨어 기능 수행 결과의 정확성 <br/>\
-- Timing Critical : 정해진 시간내 수행해야 하는 신속성 <br/>\
-- Safety Critical : 어떠한 환경에서도 동작해야 하는 안전성 <br/><br/>\
-# 위험도 : R = FC(Risk, Frequency, Consequence(심각,중요도)) <br/>\
-- 심각도 평가 Tools : FTA, FMEA, FMEDA, FMECA <br/><br/>\
-# SIL : Safety Integrity Level ; 기능 안전이 요구되는 임베디드 시스템이 1년에 한번 오동작할 확률 10^-4라고 간주 <br/><br/>\
-<img src = "./img/SIL.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/ISO61508.PNG" style = "width:100%; height:auto;">\
+<img src = "./img/ISO61508.png" style = "width:100%; height:auto;">\
 ',
 
 // [ISO/IEC 61508]- SIL
