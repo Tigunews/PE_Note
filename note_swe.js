@@ -4036,9 +4036,9 @@ P 히스토그램 : Data 분포 <br/>\
 - Continuous Integration <br/>\
 - 지속적으로 Quality Control을 적용하는 프로세스 실행 Practice <br/><br/>\
 # 특징 <br/>\
-- 초기에 그리고 자주 통합하여 통합시 발생하는 여러가지 문제점을 조기에 발견<br/>\
-- 피드백 사이클 짧게 하여 소프트웨어 개발 품질과 생산성 향상 <br/>\
-- 빈번한 적용, 자동 빌드, 테스트 자동화 <br/><br/>\
+- 초기 발견<br/>\
+- 짧은 사이클 <br/>\
+- 빈번한 적용,빌드,자동화 <br/><br/>\
 # 기술요소 <br/>\
 - 버전관리 저장소 : CVS, Subversion, GIT <br/>\
 - CI 시스템 : Hudson, Jenkins <br/>\
