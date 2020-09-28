@@ -1365,7 +1365,7 @@ var answer = answer.concat(
 
 // ISO 61508
 '# 정의 : 기능안전에 대한 국제 규격 <br/><br/>\
-<img src = "./img/ISO61508.png" style = "width:100%; height:auto;">\
+<img src = "./img/IEC61508.png" style = "width:100%; height:auto;">\
 ',
 
 // [ISO/IEC 61508]- SIL
