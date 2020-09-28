@@ -2216,7 +2216,9 @@ var answer = answer.concat(
 # 구성 (스하드상) <br/>\
 - Test Stub : 가상의 하위 모듈, 하향식(Top Down), 호출되어 결과값을 리턴 <br/>\
 - Test Driver : 가상의 상위 모듈, 상향식(Bottom-Up)에 필요, 호출 기능만을 수행 <br/><br/>\
-# 활용 : TUD, 자산화하여 회귀테스트 자동화에 활용 \
+# 활용 : TUD, 자산화하여 회귀테스트 자동화에 활용 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/DriverStub.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // 테스트 더블
