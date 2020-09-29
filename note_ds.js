@@ -1806,7 +1806,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 ',
 
 // IaaS, PaaS, SaaS
-'# 개념도<br/>\
+'# 개념도 (adr mov ssn)<br/>\
 <img src = "./img/CloudType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # IaaS <br/>\
 - 물리자원 가상화 : Infra 가상화 <br/>\
