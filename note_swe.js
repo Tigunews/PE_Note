@@ -300,6 +300,7 @@ var question = question.concat(
 '지식영역별 세부 프로세스 49개',
 '분리발주',
 '분할발주',
+'난독화',
 );
 
 var answer = answer.concat(
@@ -4753,5 +4754,17 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 기능분할 : 공정에 상관 없이 기능별 분할 <br/>\
 - 부품분할 : 공정, 서브시스템 내 특정 부품, 패키지 (기존의 분리발주) <br/>\
 <img src = "./img/분할발주구성도.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 난독화
+'# 정의 : 역공학 방지의 기술 <br/>\
+- 프로그램 코드의 일부 또는 전체를 변경하는 방법 중 하나로, 코드의 가독성을 낮춰 역공학에 대한 대비책을 제공하는 방법 <br/><br/>\
+# 기술 분류 (구데제예)<br/>\
+- 구획 난독화 : 형식 변화, 주석제거 <br/>\
+- 데이터 난독화 : 변수 나누거나 합치기 <br/>\
+- 제어 난독화 : 문장 묶는 단위 조절 <br/>\
+- 예방 난독화 : 방법 봉쇄<br/><br/>\
+# 적용사례 <br/>\
+<img src = "./img/Obfuscation.png" style = "max-width:100%; height:auto;">\
 ',
 );
