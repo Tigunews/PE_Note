@@ -1532,7 +1532,7 @@ var answer = answer.concat(
 - PoI (Proof of Importance) : 참여도 보상 지급 / NEM <br/>\
 - Casfer : 예치금 걸고 투표 참여 / Ethereum <br/><br/>\
 2. 비경쟁 합의(Private) 방식 <br/>\
-- PBFT (Practial Byzantine Fault Tolerance) : 참여 노드의 다수결 / Hyperledger, R3 <br/>\
+- pBFT (practial Byzantine Fault Tolerance) : 참여 노드의 다수결 / Hyperledger, R3 <br/>\
 - Slive : 합의 형성전 결과 같은 경우 중지 / Hyperledger <br/>\
 - PoET (Proof of Elapsed Time) : 작업 경과시간 증명 기반 리더 선출 / Sawtooth Lake <br/>\
 - PoA (Proof of Authority) : 개인 신원 이용 검사 / Luniverse <br/><br/>\
