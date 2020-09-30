@@ -1525,18 +1525,19 @@ var answer = answer.concat(
 - 블록추가 : 증명된 계산법, 검증 거래<br/>\
 - 블록검증 : 모든 신규블록 검사 <br/>\
 - 수집 및 선택 : 누적 연산 체인 독립적 선택 <br/><br/>\
-# 종류 <br/>\
-1. 경쟁 합의(Public) 방식 <br/>\
-- PoW (Proof of Work) : 모든 노드 승인 / Bitcoin, Ethereum <br/>\
-- PoS (Proof of Stake) : 일부 노드 승인 / Qtum, NEO <br/>\
-- PoI (Proof of Importance) : 참여도 보상 지급 / NEM <br/>\
-- Casfer : 예치금 걸고 투표 참여 / Ethereum <br/><br/>\
-2. 비경쟁 합의(Private) 방식 <br/>\
-- pBFT (practial Byzantine Fault Tolerance) : 문제 3/1 미만 허용 / Hyperledger, R3 <br/>\
-- Slive : 합의 형성전 결과 같은 경우 중지 / Hyperledger <br/>\
-- PoET (Proof of Elapsed Time) : 작업 경과시간 증명 기반 리더 선출 / Sawtooth Lake <br/>\
-- PoA (Proof of Authority) : 개인 신원 이용 검사 / Luniverse <br/><br/>\
-# 한계 : 51% 공격, 서비스 거부 <br/><br/>\
+# 기본 합의 알고리즘 <br/>\
+- BFT : 악의적 노드가 네트워크 장악 방지 <br/>\
+- pBFT : 느린 문제점 해결 (n-1)/3 개 이하 노드 허용 <br/><br/>\
+# PoW 알고리즘 <br/>\
+- PoW : 목표값 이하 해시 찾는 과정 반복 통한 증명 <br/>\
+- ePoW (Equilibrium) : 채굴 성공한 노드 휴식 <br/>\
+- DPoW (Delayed) : 네트워크 보안 강화 <br/>\
+- PoET (Elapsed Time) : Intel 개발, 전기 소모작음 <br/><br/>\
+# PoS 알고리즘 <br/>\
+- PoS : 지분 비례 의사결정 권한 <br/>\
+- PoI(Importance) : 거래 활동량 의사결정 부여 <br/>\
+- PoA(Authority) : 권위 기관 노드 검색 <br/>\
+- PoS(Storage) : 하드디스크 여유공간 저장 <br/><br/>\
 * 122회 2교시 2번\
 ',
 
