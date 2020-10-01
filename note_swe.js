@@ -303,6 +303,7 @@ var question = question.concat(
 '난독화',
 '함수형 언어',
 '로우코드',
+'민간투자형 SW 사업(PPP)',
 );
 
 var answer = answer.concat(
@@ -4813,5 +4814,18 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - Appian : 인트라넷 내장 <br/>\
 - MS Power Apps : 사용자 친화적 UI <br/>\
 - Google App Maker : Drap and Drop \
+',
+  
+// 민간투자형 SW사업
+'# 정의 : 국민생활의 편익 증진을 위해 민간의 자본과 기술을 활용하여 민간과 공공이 협력, 추진하는 공공 SW 사업 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/PublicPrivatePartnership.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 사례 <br/>\
+1. 국내 <br/>\
+- 서울시 스마트 교통카드 시스템 : BTO 방식, 서울시-LG CNS 컨소시엄 <br/>\
+- 안산시 U-City 구축 : BTL 방식, 안산시-KT 컨소시엄 <br/><br/>\
+2. 해외 <br/>\
+- 싱가포르 전자 통관만 TradeNet : 서류 신고/납부 업무 통합 <br/>\
+- 뉴욕시 LinkNYC : 공중전화부스, 뉴욕시-CityBridge 협력 \
 ',
 );
