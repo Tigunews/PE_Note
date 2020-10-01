@@ -301,6 +301,7 @@ var question = question.concat(
 '분리발주',
 '분할발주',
 '난독화',
+'함수형 언어',
 );
 
 var answer = answer.concat(
@@ -4773,5 +4774,17 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 예방 난독화 : 방법 봉쇄<br/><br/>\
 # 적용사례 <br/>\
 <img src = "./img/Obfuscation.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 함수형 언어
+'# 개념 : 함수가 First Class 대상인 언어 <br/>\
+- 명령형 언어의 부작용을 제거하기 위해 참조 투명성을 제공하는 수학적 Pure 함수의 모듈화를 이용한 프로그래밍을 지원하는 언어 <br/>\
+<img src = "./img/FunctionalLanguageOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 필요성 <br/>\
+- 수학적 추상화 : 모듈의 재사용성 강화 <br/>\
+- 최적화 : 이전 계산 활용 <br/>\
+- 병렬화 : 경쟁 상태, DeadLock 해결 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/CommandFunction.png" style = "max-width:100%; height:auto;">\
 ',
 );
