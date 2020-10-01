@@ -4808,6 +4808,10 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 해외 솔루션 기술지원 한계 <br/><br/>\
 3. 관리관점 <br/>\
 - 보안이슈 존재 <br/>\
-- 밴더 의존성 높음 \
+- 밴더 의존성 높음 <br/><br/>\
+# 사례 <br/>\
+- Appian : 인트라넷 내장 <br/>\
+- MS Power Apps : 사용자 친화적 UI <br/>\
+- Google App Maker : Drap and Drop \
 ',
 );
