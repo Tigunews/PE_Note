@@ -1738,12 +1738,19 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // Dark Net
 '# 정의 : 폐쇄형 사설 분산 P2P 네트워크 <br/>\
 - 서로 신뢰하는 피어들 간 파일 공유를 위한 폐쇄형 사설 분산 P2P 네트워크 <br/><br/>\
+# 기술요소 <br/>\
+- OR : Tor 등 암호화된 브라우저로만 접속 가능 <br/>\
+- OP : 익명성, 폐쇄성 등의 특징을 이용하여 범죄에 활용 <br/>\
+- Circuit : 각각의 TCP Stream에 대한 한 번의 완전한 경로 <br/>\
+- Cell : TOR를 통과하는 고정된 크기의 패킷, 512Byte로 고정 <br/>\
+- 디렉토리 서버 : 각 노드 및 경로에 대한 정보 <br/><br/>\
 # 유형 <br/>\
 - Peer to Peer : Peer간 1:1 NW구축, F2F(Friend to Friend)<br/>\
 -> 사례 : Freenet, OneSwarm, RetroShare, GNUnet <br/>\
 - Privacy Network : Overlay NW 형태로 별도 은닉 서비스망 구축 ,TOR<br/>\
 -> 사례 : I2P, Decentralized NW 42, TOR <br/><br/>\
-# 참고 : Clearnet / Surface WEB > Deep Web(연구목적) > Dark Web (Dark net의 웹형태) \
+# 비교 <br/>\
+<img src = "./img/WebCompare.png" style = "max-width:100%; height:auto;">\
 ',
 
 // RPA 
