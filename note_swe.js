@@ -302,6 +302,7 @@ var question = question.concat(
 '분할발주',
 '난독화',
 '함수형 언어',
+'로우코드',
 );
 
 var answer = answer.concat(
@@ -4786,5 +4787,27 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 병렬화 : 경쟁 상태, DeadLock 해결 <br/><br/>\
 # 비교 <br/>\
 <img src = "./img/CommandFunction.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 로우코드
+'# 정의 : 코딩없는 프로그램 개발 <br/>\
+- 조직의 특정 프로세스 및 데이터 요구사항 처리를 위한 응용 프로그램을 신속하게 만들어 사용하기 위해 그래픽 사용자 인터페이스 및 기능 구성을 이용하여 응용 프로그램을 개발하는 환경 <br/><br/>\
+# 장점 <br/>\
+1. 개발관점 <br/>\
+- 개발속도 향상 : Drap and Drop <br/>\
+- 생산성 향상 : 오브젝트 연결 <br/><br/>\
+2. 운영관점 <br/>\
+- 저비용 관리 가능 : 개발 기간 단축 <br/>\
+- 라이프사이클 관리 : App Marketplace 지원 <br/><br/>\
+# 단점 <br/>\
+1. 개발관점 <br/>\
+- 제한된 커스터마이징 <br/>\
+- 기업용 시스템 통합 어려움 <br/><br/>\
+2. 운영관점 <br/>\
+- 레퍼런스 부족 <br/>\
+- 해외 솔루션 기술지원 한계 <br/><br/>\
+3. 관리관점 <br/>\
+- 보안이슈 존재 <br/>\
+- 밴더 의존성 높음 \
 ',
 );
