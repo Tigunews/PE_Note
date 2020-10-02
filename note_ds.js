@@ -2223,7 +2223,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # 4원칙 <br/>\
 - URI 사용 : 개별객체 ID 부여 <br/>\
 - HTTP URI 사용 : 데이터 접근성 강화 <br/>\
-- RDF 사용 : 정횽화, 연계 <br/>\
+- RDF 사용 : 정형화, 연계 <br/>\
 - 링크정보 부여 : 발전된 시맨틱 웹 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/LOD.png" style = "max-width:100%; height:auto;"><br/>\
