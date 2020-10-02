@@ -114,6 +114,7 @@ var question = question.concat(
 '[클라우드 컴퓨팅]- 멀티 클라우드',
 '[클라우드 컴퓨팅]- 차세대 방향성',
 '[클라우드 컴퓨팅]- 오픈 스택',
+'[클라우드 컴퓨팅][오픈스택]- Swift',
 '엣지컴퓨팅',
 '레그테크',
 '섭테크',
@@ -2032,6 +2033,22 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 3. 사용자 <br/>\
 - Horizon : 인터페이스 제공 <br/>\
 - Keystone : 중앙 집중식 인증\
+',
+  
+// Swift
+'# 정의 : 분산형 Object 스토리지 서비스를 위한 오픈소스 프로젝트 <br/>\
+- Swift-Proxy, account, container, object로 구성되며 REST기반 API와 Ring 호출구조로 데이터를 제어하는 Open Stack 오브젝트 스토리지 Core 프로젝트 <br/>,br/>\
+# 구성도 <br/>\
+<img src = "./img/Swift.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 요청처리 <br/>\
+- Swift-Proxy : 서버에 처리를 분산 <br/>\
+- Ring : 데이터의 논리위치와 물리위치간 매핑 제공 <br/>\
+- Swift-API : REST API, Keystone Auth를 사용해 Token 취득 <br/><br/>\
+2. 데이터 관리 <br/>\
+- Account : 계정 컨테이너 관리 데몬 구성 <br/>\
+- Container : 사용자 계정의 컨테이너 관리 데몬 구성 <br/>\
+- Object : 실제 데이터 저장 \
 ',
   
 // 엣지 컴퓨팅 
