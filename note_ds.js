@@ -2331,7 +2331,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - Activated : 페이지 제어, 이벤트 수신 <br/>\
 - Redundant : 실패, 새로운 서비스 워커 활성화 <br/><br/>\
 # 활용분야 <br/>\
-- Caching Strtegies : 캐시 DB 로딩 <br/>\
+- Caching : 캐시 DB 로딩 <br/>\
 - Web Push : 웹 통제 <br/>\
 - Offline : 오프라인 컨텐츠 <br/><br/>\
 * 122회 2교시 4번\
