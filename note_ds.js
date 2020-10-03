@@ -62,7 +62,7 @@ var question = question.concat(
 '가상화',
 '[가상화]- 하이퍼바이저(Hypervisor)',
 '[가상화]- 도커(Docker)',
-'[가상화]- LXC, 도커', 
+'[가상화][도커]- LXC', 
 '[가상화]- 쿠버네티스(Kubernetes)',
 '[가상화]- HCI',
 'VDI',
@@ -1173,12 +1173,21 @@ var answer = answer.concat(
 ',
   
 // LXC, 도커
-'<img src = "./img/Docker_1.jpg" style = "max-width:100%; hegiht:auto;"><br/>\
-- Popularity : Linux 컨테이너 이용 / 개발자 커뮤니티 혜택 제공 <br/>\
-- Architecture : 주요 Linux 커널 기능 의존 / 자체 라이브러리(Docker Daemon, Images) <br/>\
-- 스토리지 관리 : 다양한 백엔드 / 정교한 솔루션 <br/>\
-- Client Tool : IT 운영자 중점 / 개발자 커뮤니티 <br/><br/>\
-* KPC 93회 3교시 5번\
+'# 정의 : 경량(Light-Weight) 프로세스 가상화 기술 <br/>\
+- 하나의 리눅스 호스트상에서 namespace와 cgroups를 활용하여 여러개의 독립된 리눅스 컨테이너를 제공하는 운영체제 수준의 경량 프로세스 가상화 기술 <br/><br/>\
+# 특징 <br/>\
+- 적은 Footprint : 차지하는 공간 작음 <br/>\
+- 자원 가상화 : Namespace, cgroup을 활용 <br/>\
+- 낮은 오버헤드 : 하이퍼바이저 대비 낮은 오버헤드와 복잡성 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/LXC.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Linux Kernel : Core OS <br/>\
+- Cgroups : 시스템 자원 세밀한 할당 및 제어 <br/>\
+- Namespaces : 컨테이너별 고립된 View 제공 <br/>\
+- Container : Runtime 환경, Library 통합 패키징 <br/><br/>\
+# 하이퍼바이저 비교 <br/>\
+<img src = "./img/ContainorHypervisor.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // [가상화]- 쿠버네티스(Kubernetes)
