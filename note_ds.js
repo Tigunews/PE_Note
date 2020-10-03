@@ -102,7 +102,7 @@ var question = question.concat(
 '스마트 플랜트',
 '클라우드 컴퓨팅',
 '[클라우드 컴퓨팅]- IaaS, PaaS, Saas',
-'[클라우드 컴퓨팅]- SECaaS',
+'[클라우드 컴퓨팅]- 클라우드 보안이슈',
 '[클라우드 컴퓨팅]- 클라우드 컴퓨팅 정책',
 '[클라우드 컴퓨팅]- 정보자원등급 평가기준(2014.04.)',
 '[클라우드 컴퓨팅]- 클라우드 컴퓨팅 서비스 보안 인증 제도',
@@ -1990,21 +1990,20 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 
 // 멀티 클라우드
 '# 정의 : 연계, 상호 운용성, 탄력성 보장 클라우드 기술 <br/>\
-- 둘 이상의 퍼블릭 또는 프라이빗 클라우드 사업자의 컴퓨팅 및 스토리지 서비스를 사용하여 클라우드 간 연계와 상호 운용성, 탄력성을 보장하는 클라우드 기술 <br/><br/>\
-# 필요성 <br/>\
-- 기술 의존성 Lock in <br/>\
-- 이슈 자체 대응 불가 <br/>\
-- 조직별 다양한 특성 <br/><br/>\
-# Key words <br/>\
-- 라이선스, 구독 <br/>\
-- 표준기반 호환성 <br/>\
-- VM Snap shot <br/>\
-- 무중단 컨테이너 이동 (Orchastration)<br/>\
-- A/B Test <br/>\
-- 실시간 과금 <br/>\
-- RTO/RPO (Backup) <br/>\
-- Shadow IT 예방 <br/>\
-- Cross Compiler <br/><br/>\
+- 2개 이상의 CSP(Cloud Service Provider)가 제공하는 Public or Private 구성된 클라우드 운영 방식 <br/><br/>\
+# 특징 <br/>\
+- 고가용성 : SPOF 방지 <br/>\
+- 유연성 : 선택 옵션 <br/>\
+- 비용 효율성 : 가격경쟁, 종속성 탈피 <br/>\
+- Fail Over : 데이터, 워크플로우, 시스템 백업 가능 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/MultiCloud.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Public Cloud : 다양한 클라우드 환경에서 변화하는 가상 장치가 조직과 연결 <br/>\
+- Private Cloud : 서비스 오케스트레이션과 함께 작동하는 분석, SDN 및 운영 관리 <br/>\
+- End to End Connectivity : 안전한 이더넷 코어 스위치 및 무선 액세스 <br/>\
+- Data Center : Leaf, Spine, Core 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
+- Campus and branch : 데이터 센터, 공공/사설 ㅋ르라우드 라우팅 및 보안 정책과 원활하게 연계되는 sd-wan 라우팅 및 sd-branch 보안으로 액세스 \
 * KPC 93회 2교시 2번\
 ',
   
