@@ -2057,7 +2057,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
   
 // Swift
 '# 정의 : 분산형 Object 스토리지 서비스를 위한 오픈소스 프로젝트 <br/>\
-- Swift-Proxy, account, container, object로 구성되며 REST기반 API와 Ring 호출구조로 데이터를 제어하는 Open Stack 오브젝트 스토리지 Core 프로젝트 <br/>,br/>\
+- Swift-Proxy, account, container, object로 구성되며 REST기반 API와 Ring 호출구조로 데이터를 제어하는 Open Stack 오브젝트 스토리지 Core 프로젝트 <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/Swift.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
