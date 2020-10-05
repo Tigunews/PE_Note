@@ -150,8 +150,8 @@ var question = question.concat(
 'Web 4.0',
 'Smart City',
 'XR',
-'[XR]- AR',
 '[XR]- VR',
+'[XR]- AR',
 );
 
 var answer = answer.concat(
