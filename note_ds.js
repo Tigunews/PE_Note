@@ -101,6 +101,7 @@ var question = question.concat(
 'Process Mining',
 '스마트 플랜트',
 '클라우드 컴퓨팅',
+'[클라우드 컴퓨팅]- 클라우드 전환',
 '[클라우드 컴퓨팅]- IaaS, PaaS, Saas',
 '[클라우드 컴퓨팅]- 클라우드 보안이슈',
 '[클라우드 컴퓨팅]- 클라우드 컴퓨팅 정책',
@@ -1819,6 +1820,12 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - Provisioning Tool <br/>\
 - Monitoring <br/>\
 - SLA \
+',
+  
+// 클라우드 전환
+'<img src = "./img/CloudTrans_1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CloudTrans_2.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CloudTrans_3.png" style = "max-width:100%; height:auto;">\
 ',
 
 // IaaS, PaaS, SaaS
