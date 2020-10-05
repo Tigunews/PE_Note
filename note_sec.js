@@ -1659,9 +1659,9 @@ EAL : 펑스매매세세포 <br/><br/>\
 '# 정의 : CEO 사칭 공격 <br/>\
 - CEO 등 고위 경영진을 사칭하여 직원에게 자금을 요청하거나 잘못된 송금을 유도하는 공격 <br/><br/>\
 # 프로세스 <br/>\
-- E-Mail 해킹후 기업간 내용확인 <br/>\
-- 유사 E-Mail Addreess로 위조된 인보이스 송부 <br/>\
-- 계좌 송금 <br/><br/>\
+- 감염 : E-Mail 해킹후 기업간 내용확인 <br/>\
+- 전파 : 유사 E-Mail Addreess로 위조된 인보이스 송부 <br/>\
+- 피해 : 계좌 송금 <br/><br/>\
 # 핵심 기술 <br/>\
 1. 기업 업무 환경 추적 <br/>\
 - Fishing : Watering Hole, Open Directory 공격, Spam E-mail <br/>\
