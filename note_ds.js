@@ -2012,7 +2012,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - Private Cloud : 서비스 오케스트레이션과 함께 작동하는 분석, SDN 및 운영 관리 <br/>\
 - End to End Connectivity : 안전한 이더넷 코어 스위치 및 무선 액세스 <br/>\
 - Data Center : Leaf, Spine, Core 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
-- Campus and branch : 데이터 센터, 공공/사설 ㅋ르라우드 라우팅 및 보안 정책과 원활하게 연계되는 sd-wan 라우팅 및 sd-branch 보안으로 액세스 \
+- Campus and branch : sd-wan 라우팅, sd-branch 보안으로 액세스 <br/><br/>\
 * KPC 93회 2교시 2번\
 ',
   
