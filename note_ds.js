@@ -152,6 +152,8 @@ var question = question.concat(
 'XR',
 '[XR]- VR',
 '[XR]- AR',
+'E-Learning',
+'DOM SAX',
 );
 
 var answer = answer.concat(
@@ -2712,5 +2714,29 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 추적 : 객체 움직임 회전 정보 계산 / 광학 추적, Hybrid 삽입 <br/>\
 - 정합 : 원하는 위치에 객체 삽입 / Marker 기반, 가상 영상 삽입 <br/>\
 - 디스플레이 : 이동성, 간편성 증가 / HMD, HUD\
+',
+  
+// E-Learning
+'# 정의 : CBT 기반의 온라인 학습체제 <br/>\
+- 멀티미디어, 웹 등 여러 형태의 정보기술을 활용한 교육으로 학습자가 시간과 공간의 제약 없이 자유롭게 교육을 받을 수 있으며, 웹을 항해하면서 학습자원을 다양하게 활요할 수 있는 교육 시스템 <br/><br/>\
+# 활성화 방안 <br/>\
+- 제도 규정 : 이러닝 산업 기반 조성 <br/>\
+- 기술 발전 : 고도화된 Personalization 기술 요구 <br/>\
+- 비용 절감 : Onse Source-Multi Use, SCORM <br/>\
+- 컨텐츠 통합 : KMS와의 연계 <br/>\
+- 모바일 확장 : M-Learning 추진 <br/><br/>\
+# 발전 방향 <br/>\
+- 지속적 연구 : 학습조건과 환경 고민하는 조직 측명 <br/>\
+- 다양화 : 멀티미디어 이용, 정보원천, 학습전달 모드 <br/>\
+- 국가적 대응 : 지식기반 경제에 대응 <br/>\
+- 표준화 : 재사용, 질향상 위한 컨텐츠 표준화 \
+',
+  
+// DOM SAX
+'# DOM : Document Object Model <br/>\
+- XML 문서를 Root에서 트리 구조로 파싱하여 XML 문서 컨텐츠와 구조 전체를 메모렝 올려 놓고 해석하는 시스템 <br/><br/>\
+# SAX : Simple API for XML <br/>\
+- 이벤트 처리 기반으로, 자료 구조를 만들지 않고 XML 쿤서를 스캔해 가면서 특정 Element를 중심으로 이벤트를 발생시켜 XML 문서를 처리하는 방식 <br/><br/>\
+<img src = "./img/DOM_SAX.png" style = "max-width:100%; height:auto;">\
 ',
 );
