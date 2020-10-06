@@ -2784,7 +2784,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # 활성화 방안 <br/>\
 - 제도 규정 : 이러닝 산업 기반 조성 <br/>\
 - 기술 발전 : 고도화된 Personalization 기술 요구 <br/>\
-- 비용 절감 : Onse Source-Multi Use, SCORM <br/>\
+- 비용 절감 : One Source-Multi Use, SCORM <br/>\
 - 컨텐츠 통합 : KMS와의 연계 <br/>\
 - 모바일 확장 : M-Learning 추진 <br/><br/>\
 # 발전 방향 <br/>\
