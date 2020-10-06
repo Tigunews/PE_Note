@@ -2347,7 +2347,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # 주요기능 <br/>\
 - 3D Graphic : 다양한 2차원, 3차원 그래픽 제공 <br/>\
 - Connetivity : 서버 양방향 통신 가능 <br/>\
-- CSS3 : 스타일, 이팩트 기능 <br/>\
+- CSS3 : 스타일, 이펙트 기능 <br/>\
 - Device Access : 카메라, 동작센서 HW 직접제어 <br/>\
 - Multimedia : 비디오, 오디오 자체 기능 지원 <br/>\
 - Offline & Storage : 네트워크 미지원 환경 이용 가능 <br/>\
