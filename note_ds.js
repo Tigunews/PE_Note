@@ -126,7 +126,7 @@ var question = question.concat(
 'Data Lake',
 '컨테이너 오케스트레이션',
 '로보 어드바이저',
-'검색 엔진',
+'검색엔진',
 '[검색엔진]- 색인어 추출',
 '[검색엔진]- NLP',
 'HTML 5',
