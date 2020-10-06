@@ -129,6 +129,7 @@ var question = question.concat(
 '검색 엔진',
 '[검색엔진]- 색인어 추출',
 '[검색엔진]- NLP',
+'HTML 5',
 'LOD',
 'Open API',
 '[Open API]- SOAP API',
@@ -2337,6 +2338,20 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - NLG(Generation) : 다시 자연어로 변환 (NLP 일부분) <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;">\
+',
+  
+// HTML 5
+'# 정의 : Hyper Text Markup Langague <br/>\
+- 기존 텍스트와 하이퍼링크만 표시하던 HTML 언어의 푷녀상의 한계를 극복하고 플래시 등 추가적 플러그인 없이 멀티미디어 등 다양한 어플리케이션까지 표현, 제공하도록 진화한 "웹 프로그래밍 언어" <br/><br/>\
+# 주요기능 <br/>\
+- 3D Graphic : 다양한 2차원, 3차원 그래픽 제공 <br/>\
+- Connetivity : 서버 양방향 통신 가능 <br/>\
+- CSS3 : 스타일, 이팩트 기능 <br/>\
+- Device Access : 카메라, 동작센서 HW 직접제어 <br/>\
+- Multimedia : 비디오, 오디오 자체 기능 지원 <br/>\
+- Offline & Storage : 네트워크 미지원 환경 이용 가능 <br/>\
+- Performance & Integration : GPS 없이도 단말기 지리적 위치 제공 <br/>\
+- Semantics : 웹 자료 의미부여, 맞춤형 검색 제공 \
 ',
 
 // LOD
