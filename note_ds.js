@@ -126,6 +126,7 @@ var question = question.concat(
 'Data Lake',
 '컨테이너 오케스트레이션',
 '로보 어드바이저',
+'검색 엔진',
 'LOD',
 'Open API',
 '[Open API]- SOAP API',
@@ -2290,6 +2291,39 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - Advisor Executed Trades(사람판단도 자산운용 활용) : nutmeg(영국업체, 투자팀에 의한 Active 전략 병행), LearnVeset(자문만 제공, 통합관리서비스 제공) <br/><br/>\
 <img src = "./img/RoboAdvisor_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/RoboAdvisor_2.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 검색엔진 
+'# 정의 : 자료검색의 효율적인 도구 <br/>\
+- 데이터베이스에 저장된 방대한 양의 컨텐츠를 인터넷 상에서 쉽게 찾을 수 있도록 도와주는 소프트웨어 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/SearchEngineOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Crawler : 위치정보 수집 <br/>\
+- Indexer : 위치정보 저장, 색인데이터베이스 <br/>\
+- Searcher : 색인데이터베이스 검색 <br/>\
+- Query Manager : 검색 결과 전달 <br/>\
+- Filter 모듈 : 다양한 형태의 데이터 소스 처리 <br/>\
+- 언어처리 모듈 : 형태소 분석기와 같은 언어처리 모듈 <br/>\
+- 외부 솔루션 연동 : 인터페이스 모듈, 보안 모듈, 관리 모듈 추가 \
+',
+  
+// [검색엔진]- 색인어 추출
+'# 절차 <br/>\
+<img src = "./img/KeywordExtract.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# N-gram 방식을 통한 색인어 추출 <br/>\
+1. 방법 <br/>\
+- 개념 : 글자를 겹쳐서 색인어 추출하는 방법 <br/>\
+- 사례 : 정보검색 -> 정보/보검/검색 <br/><br/>\
+2. 장점 <br/>\
+- 완정성 : 신조어 색인 가능 <br/>\
+- 구성 용이 : 색인어 크기 일정 <br/><br/>\
+3. 단점 <br/>\
+- 노이즈 : 틀린 내용 다수 포함 <br/>\
+- 비효율 : 품질 저하, 색인어 리스트 커짐 <br/><br/>\
+4. 적용 <br/>\
+- 성능 향상 : 형태소분석의 오류로 인한 성능 저하시 사용 <br/>\
+- 소량 정확 : 문서의 건수가 적고, 재현율 최우선시 되는 경유 \
 ',
 
 // LOD
