@@ -2796,7 +2796,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
   
 // DOM SAX
 '# DOM : Document Object Model <br/>\
-- XML 문서를 Root에서 트리 구조로 파싱하여 XML 문서 컨텐츠와 구조 전체를 메모렝 올려 놓고 해석하는 시스템 <br/><br/>\
+- XML 문서를 Root에서 트리 구조로 파싱하여 XML 문서 컨텐츠와 구조 전체를 메모리에 올려 놓고 해석하는 시스템 <br/><br/>\
 # SAX : Simple API for XML <br/>\
 - 이벤트 처리 기반으로, 자료 구조를 만들지 않고 XML 쿤서를 스캔해 가면서 특정 Element를 중심으로 이벤트를 발생시켜 XML 문서를 처리하는 방식 <br/><br/>\
 <img src = "./img/DOM_SAX.png" style = "max-width:100%; height:auto;">\
