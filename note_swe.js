@@ -1312,7 +1312,8 @@ var answer = answer.concat(
 # 구성요소 <br/>\
 - 클래스 : 모델링 하고자 하는 시스템의 개념을 표현하여 이름, Attribute, Operation으로 구성 <br/>\
 - 스테레오 타입 : UML에서 제공하는 추가적인 확장 요소 (<< interface >>, << utility >>, << abstract >>, << enumeration >> <br/><br/>\
-<img src = "./img/ClassDiagram_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ClassDiagram_1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ClassDiagramDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/ClassDiagram_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 4교시 6번\
 ',
