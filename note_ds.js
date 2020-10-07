@@ -1183,8 +1183,8 @@ var answer = answer.concat(
 - Pid : 프로세스 공간 분리 <br/>\
 - Mnt : 독립적 마운트 <br/><br/>\
 3. 시스템 관련 구성 <br/>\
-- Chroot 기반 파일시스템 분리 : chroot 이용 root path 변경 <br/>\
-- 디바이스 제어 제한 : 필요 디바이스 lxc-device-add 필요 \
+- Chroot : 파일시스템 분리, root path 변경 <br/>\
+- 디바이스 추가 : lxc-device-add \
 ',
   
 // 컨테이너 오케스트레이션 
