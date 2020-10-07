@@ -1243,7 +1243,7 @@ var answer = answer.concat(
 // VDI 
 '# 정의 : Virtual Desktop Infrastructure; 가상데스크톱 인프라 <br/>\
 - 소프트웨어를 이용해 데스크탑을 가상화하고, 이를 중앙에서 사용자 환경으로 제공하는 기반기술 <br/><br/>\
-<img src = "./img/VDI.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/VDI.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - 단말기(Zero Client, Thin Client, PC) <br/>\
 - 세션 브로커 서버 : 사용자인증 등 정책적용 <br/>\
