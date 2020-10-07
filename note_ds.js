@@ -97,6 +97,7 @@ var question = question.concat(
 '[자율주행자동차]- 모랄머신',
 '[자율주행자동차]- 군집주행 (Platooning)',
 '[자율주행자동차]- LDM',
+'[자율주행자동차]- C-ITS',
 'Dark Net',
 'RPA',
 'Process Mining',
@@ -1768,6 +1769,22 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 차량-도로 자동화 패러다임 변화 <br/><br/>\
 <img src = "./img/LDM_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/LDM_2.PNG" style = "max-width:100%; height:auto;">\
+',
+  
+// C-ITS
+'# 정의 : 끊김 없는 양방향 통신으로 교통정보를 교환하는 ITS <br/>\
+- 안정성, 이동성, 지속가능성 (친환경,효율성)을 목표로 차량과 차량, 차량과 인프라간 양방향 통신으로 교통 정보를 교환 및 공유하여 오픈 플랫폼 기반에서 서비스를 제공하는 차세대 ITS <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CITS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- V2C(Center) : 교통정보 센터 <br/>\
+- V2R(Roadside) = V2I : 하이패스, 텔레메틱스 <br/>\
+- V2V(Vehicle) : 주변 차량 정보<br/>\
+- V2P(Personal Device) = V2N(Nomadic Device) : 휴대 단말, 차량 진단 및 제어 서비스 <br/>\
+- V2G(Grid) : 전기자동차 충천관련 통신범주 <br/>\
+- IVN(In-Vehicle Network) : 차량 내부의 차량 게이트웨이 통한 외부와 통신 <br/>\
+- DSRC(Dedicated Short-range Radio Communication) : 차량간 메시지 안전 전송 <br/>\
+- WAVE(IEEE 802.11.p) : 차량간 고속통신 지원 \
 ',
 
 // Dark Net
