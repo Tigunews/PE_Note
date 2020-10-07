@@ -1112,6 +1112,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
   
 // RAID
 '# 정의 : 데이터의 가용성 및 성능 향상을 위한 디스크 중복구조 <br/>\
+- Redundant Array of Independent Disks <br/>\
 - 다수의 디스크에 데이터를 중복으로 결합하여 가용성과 성능을 향상시키는 저장장치 기술 <br/><br/>\
 # 유형 <br/>\
 <img src = "./img/RAID_Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
