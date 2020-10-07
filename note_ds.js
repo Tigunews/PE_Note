@@ -61,6 +61,7 @@ var question = question.concat(
 '데이터브로커',
 '가상화',
 '[가상화]- 하이퍼바이저(Hypervisor)',
+'[가상화]- 컨테이너',
 '[가상화]- 도커(Docker)',
 '[가상화][도커]- LXC', 
 '[가상화]- 쿠버네티스(Kubernetes)',
@@ -1167,6 +1168,21 @@ var answer = answer.concat(
 2. Type 2 : OS 위에 설치 / 오버헤드 큼, 별도 관리모듈 x <br/><br/>\
 * 아이리포 23회 1교시 4번<br/>\
 * 122회 1교시 8번\
+',
+  
+// Containor
+'# 정의 : 커널 공유 프로세스 간 격리된 환경 제공 가상화 기술 <br/>\
+- 커널을 공유하는 프로세스간 Cgroup, namespace, Chroot등의 기능 이용 격리된 환경 제공 가상화 기술 <br/><br/>\
+#  기술요소 <br/>\
+1. Cgroup (HW 자원 가상화) <br/>\
+- Subsystem : Cgroup에서 제어 가능한 시스템 자원 <br/>\
+- Cgroup FS : 커널에서 제공하는 cgroup 인터페이스 <br/><br/>\
+2. Namespace (사용자 공간 분리) <br/>\
+- Pid : 프로세스 공간 분리 <br/>\
+- Mnt : 독립적 마운트 <br/><br/>\
+3. 시스템 관련 구성 <br/>\
+- Chroot 기반 파일시스템 분리 : chroot 이용 root path 변경 <br/>\
+- 디바이스 제어 제한 : 필요 디바이스 lxc-device-add 필요 \
 ',
 
 // [가상화]- Docker
