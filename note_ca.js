@@ -46,6 +46,7 @@ var question = question.concat(
 '[리소스 공유방법 동기화방법]- 뮤텍스',
 '[리소스 공유방법 동기화방법]- 스핀락',
 '[리소스 공유방법 동기화방법]- 교착상태',
+'RAID',
 );
 
 var answer = answer.concat(
@@ -1107,5 +1108,15 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 회복 : 순차적 Kill / Process Kill, 자원선점 <br/><br/>\
 * 아이리포 23회 1교시 2번<br/>\
 * 라이지움 86회 1교시 2번\
+',
+  
+// RAID
+'# 정의 : 데이터의 가용성 및 성능 향상을 위한 디스크 중복구조 <br/>\
+- 다수의 디스크에 데이터를 중복으로 결합하여 가용성과 성능을 향상시키는 저장장치 기술 <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/RAID_Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/RAID_Detail1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/RAID_Detail2.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/RAID_Detail3.png" style = "max-width:100%; height:auto;"><br/>\
 ',
 );
