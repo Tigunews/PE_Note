@@ -549,7 +549,11 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - DRAM과 비슷한 구조를 갖고 있으나 강유전체를 가지고 있어 비휘발성을 가지며 기존 메모리에 비해 빠른 속도, 높은 쓰기/지우기 횟수, 낮은 전력을 사용하는 차세대 비휘발성 메모리',
 
 // Cloud GPU
-'# 종류 <br/>\
+'# 암기 <br/>\
+- API 리모팅 : Lib <br/>\
+- 가상화 : Driver <br/>\
+- 하드웨어 지원 : Module <br/><br/>\
+# 종류 <br/>\
 - API 리모팅 : 벤더가 가상화 지원 x <br/>\
 <img src = "./img/CloudGPU_API.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 반가상화 및 전 가상화 : GPU 드라이버 조정 <br/>\
