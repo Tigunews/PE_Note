@@ -1177,8 +1177,8 @@ var answer = answer.concat(
 - 커널을 공유하는 프로세스간 Cgroup, namespace, Chroot등의 기능 이용 격리된 환경 제공 가상화 기술 <br/><br/>\
 #  기술요소 <br/>\
 1. Cgroup (HW 자원 가상화) <br/>\
-- Subsystem : Cgroup에서 제어 가능한 시스템 자원 <br/>\
-- Cgroup FS : 커널에서 제공하는 cgroup 인터페이스 <br/><br/>\
+- Subsystem : 제어 가능 시스템 자원 <br/>\
+- Cgroup FS : cgroup 인터페이스 <br/><br/>\
 2. Namespace (사용자 공간 분리) <br/>\
 - Pid : 프로세스 공간 분리 <br/>\
 - Mnt : 독립적 마운트 <br/><br/>\
