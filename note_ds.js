@@ -66,8 +66,9 @@ var question = question.concat(
 '[가상화][도커]- LXC', 
 '[가상화]- 쿠버네티스(Kubernetes)',
 '[가상화]- HCI',
-'VDI',
+'[가상화]- VDI',
 '[GIS]- OGC',
+'LDT',
 '마이크로 그리드(MicroGrid)',
 '[산업제어시스템]- SCADA',
 'ISO 26262',
@@ -1313,6 +1314,27 @@ var answer = answer.concat(
 * WCS : Web Coverage Service <br/>\
 * WPS : Web Processing Service <br/>\
 * CSW : Catalogue Service\
+',
+  
+// LBT
+'# 정의 : Location Determination Technology <br/>\
+- 위치기반 서비스 제공을 위해 모바일 단말의 위치를 측정하는 위치 확인 기술 <br/><br/>\
+# 종류 <br/>\
+- 네트워크 <br/>\
+- 위성신호 <br/>\
+- Wi-Fi <br/>\
+- 혼합 <br/><br/>\
+# 인프라 유형별 종류 <br/>\
+1. 네트워크 기반 <br/>\
+- Cell ID / Sector ID : 기지국 ~ 단말기 간의 거리 측정 <br/>\
+- AoA(Angle of Arrival) : 2개 이상의 기지국과 단말기간 도달 각 정보 측정 <br/>\
+- TDoA(Time Difference of Arrival) : 3개이상의 기지국과 단말 간의 도달시간 정보 측정 <br/><br/>\
+2. 위성 신호 기반 <br/>\
+- Standalne GPS : 독자적 위성 신호 <br/>\
+- MS-Based GPS : 최초 GPS 위성정보에서 독자적 <br/>\
+- MS-Assisted GPS : 최초 GPS 위성정보 + 위치측위 정보까지 서버 통해 전달 <br/><br/>\
+# 실내 측위 기술 <br/>\
+<img src = "./img/LDT_Tech.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 마이크로 그리드
