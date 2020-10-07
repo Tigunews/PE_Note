@@ -2302,10 +2302,12 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # 구성도 <br/>\
 <img src = "./img/SearchEngineOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
+1. 동작 <br/>\
 - Crawler : 위치정보 수집 <br/>\
 - Indexer : 위치정보 저장, 색인데이터베이스 저장<br/>\
 - Searcher : 색인데이터베이스 검색 <br/>\
-- Query Manager : 검색 결과 전달 <br/>\
+- Query Manager : 검색 결과 전달 <br/><br/>\
+2. Process <br/>\
 - Filter 모듈 : 다양한 형태의 데이터 소스 처리 <br/>\
 - 언어처리 모듈 : 형태소 분석기와 같은 언어처리 모듈 <br/>\
 - 외부 솔루션 연동 : 인터페이스 모듈, 보안 모듈, 관리 모듈 추가 \
