@@ -1349,7 +1349,7 @@ var answer = answer.concat(
 - AoA(Angle of Arrival) : 2개 이상의 기지국과 단말기간 도달 각 정보 측정 <br/>\
 - TDoA(Time Difference of Arrival) : 3개이상의 기지국과 단말 간의 도달시간 정보 측정 <br/><br/>\
 2. 위성 신호 기반 <br/>\
-- Standalne GPS : 독자적 위성 신호 <br/>\
+- StandAlone GPS : 독자적 위성 신호 <br/>\
 - MS-Based GPS : 최초 GPS 위성정보에서 독자적 <br/>\
 - MS-Assisted GPS : 최초 GPS 위성정보 + 위치측위 정보까지 서버 통해 전달 <br/><br/>\
 # 실내 측위 기술 <br/>\
