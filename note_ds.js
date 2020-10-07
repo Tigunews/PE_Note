@@ -62,6 +62,7 @@ var question = question.concat(
 '가상화',
 '[가상화]- 하이퍼바이저(Hypervisor)',
 '[가상화]- 컨테이너',
+'[가상화]- 컨테이너 오케스트레이션',
 '[가상화]- 도커(Docker)',
 '[가상화][도커]- LXC', 
 '[가상화]- 쿠버네티스(Kubernetes)',
@@ -127,7 +128,6 @@ var question = question.concat(
 '2020년 하반기 경제정책 방향',
 '지능형CCTV',
 'Data Lake',
-'컨테이너 오케스트레이션',
 '로보 어드바이저',
 '검색엔진',
 '[검색엔진]- 색인어 추출',
@@ -1172,7 +1172,7 @@ var answer = answer.concat(
 * 122회 1교시 8번\
 ',
   
-// Containor
+// 컨테이너
 '# 정의 : 커널 공유 프로세스 간 격리된 환경 제공 가상화 기술 <br/>\
 - 커널을 공유하는 프로세스간 Cgroup, namespace, Chroot등의 기능 이용 격리된 환경 제공 가상화 기술 <br/><br/>\
 #  기술요소 <br/>\
@@ -1185,6 +1185,25 @@ var answer = answer.concat(
 3. 시스템 관련 구성 <br/>\
 - Chroot 기반 파일시스템 분리 : chroot 이용 root path 변경 <br/>\
 - 디바이스 제어 제한 : 필요 디바이스 lxc-device-add 필요 \
+',
+  
+// 컨테이너 오케스트레이션 
+'# 정의 : 반복적인 애플리케이션의 배포, 확장 및 운영을 자동화 하는 행위 <br/><br/>\
+# 필요성<br/>\
+- Composition : 다종 컨테이너 구성 서비스의 설정 및 연동 <br/>\
+- Replication : Scalability, FT, HA위한 복제 <br/>\
+- Write Once Run Anywhere <br/><br/>\
+# 기능 <br/>\
+- 프로비저닝 <br/>\
+- 구성 스크립팅(Scripting) : 스크립트 작성 <br/>\
+- 모니터링 <br/>\
+- 업그레이드와 롤백 <br/>\
+- 롤링(Rolling) <br/>\
+- 서비스 탐색(Service Discovery) <br/>\
+- 컨테이너 정책관리<br/>\
+- 상호운영성<br/><br/>\
+<img src = "./img/ContainerOrchestration_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ContainerOrchestration_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // [가상화]- Docker
@@ -2287,25 +2306,6 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # Data Lake / DW <br/>\
 <img src = "./img/DataLake_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 2교시 6번 \
-',
-
-// 컨테이너 오케스트레이션 
-'# 정의 : 반복적인 애플리케이션의 배포, 확장 및 운영을 자동화 하는 행위 <br/><br/>\
-# 필요성<br/>\
-- Composition : 다종 컨테이너 구성 서비스의 설정 및 연동 <br/>\
-- Replication : Scalability, FT, HA위한 복제 <br/>\
-- Write Once Run Anywhere <br/><br/>\
-# 기능 <br/>\
-- 프로비저닝 <br/>\
-- 구성 스크립팅(Scripting) : 스크립트 작성 <br/>\
-- 모니터링 <br/>\
-- 업그레이드와 롤백 <br/>\
-- 롤링(Rolling) <br/>\
-- 서비스 탐색(Service Discovery) <br/>\
-- 컨테이너 정책관리<br/>\
-- 상호운영성<br/><br/>\
-<img src = "./img/ContainerOrchestration_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/ContainerOrchestration_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 로보 어드바이저
