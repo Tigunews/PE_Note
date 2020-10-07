@@ -1351,7 +1351,8 @@ var answer = answer.concat(
 2. 위성 신호 기반 <br/>\
 - StandAlone GPS : 독자적 위성 신호 <br/>\
 - MS-Based GPS : 최초 GPS 위성정보에서 독자적 <br/>\
-- MS-Assisted GPS : 최초 GPS 위성정보 + 위치측위 정보까지 서버 통해 전달 <br/><br/>\
+- MS-Assisted GPS : 최초 GPS 위성정보 + 위치측위 정보까지 서버 통해 전달 <br/>\
+* MS : Mobile Station <br/><br/>\
 # 실내 측위 기술 <br/>\
 <img src = "./img/LDT_Tech.png" style = "max-width:100%; height:auto;">\
 ',
