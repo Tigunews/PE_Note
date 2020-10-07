@@ -551,9 +551,10 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 // Cloud GPU
 '# 종류 <br/>\
 - API 리모팅 : 벤더가 가상화 지원 x <br/>\
-<img src = "./img/CloudGPU_API.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CloudGPU_API.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 반가상화 및 전 가상화 : GPU 드라이버 조정 <br/>\
 <img src = "./img/CloudGPU_Driver.png" style = "max-width:100%; height:auto;"><br/>\
+* QEMU (Quick EMUlator) : Hardware 가상화의 기능을 갖춘 오픈소스 CPU 에뮬레이터 <br/><br/>\
 - 하드웨어 지원 가상화 : 벤더 가상화 지원 o <br/>\
 <img src = "./img/CloudGPU_HW.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 2교시 8변\
