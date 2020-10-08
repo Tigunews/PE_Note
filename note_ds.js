@@ -69,7 +69,8 @@ var question = question.concat(
 '[가상화]- HCI',
 '[가상화]- VDI',
 '[GIS]- OGC',
-'LDT',
+'[측위기술]- LDT',
+'[측위기술]- GPS',
 '마이크로 그리드(MicroGrid)',
 '[산업제어시스템]- SCADA',
 'ISO 26262',
@@ -1355,6 +1356,21 @@ var answer = answer.concat(
 * MS : Mobile Station <br/><br/>\
 # 실내 측위 기술 <br/>\
 <img src = "./img/LDT_Tech.png" style = "max-width:100%; height:auto;">\
+',
+  
+// GPS
+'# 정의 : 인공위성을 이용한 정확한 위치파악 시스템 <br/>\
+- Global Positioning System <br/>\
+- 지구상의 어느곳에나 인공위성에서 보내는 정보를 수신하여 정지 또는 이동하는 물체의 위치를 측정할 수 있는 전천후 위치측정 시스템 <br/><br/>\
+# 구성요소 <br/>\
+- 우주부분 : GPS 위성, 원자 시계 <br/>\
+- 제어부분 : 관제국, 송신 시스템 <br/>\
+- 사용자 부분 : 안테나, 수신기, 소프트웨어 <br/><br/>\
+# 종류 <br/>\
+- Stand-alne GPS : 수신기 하나만으로 측정 <br/>\
+- D-GPS(Differential) : 일정영역별 측정 <br/>\
+- LAD-GPS(Local Area) : 좁은 영역 높은 정확도 <br/>\
+- WAD-GPS(Wide Area) : 지역적, 비용적 한계 극복 \
 ',
 
 // 마이크로 그리드
