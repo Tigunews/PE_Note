@@ -2577,10 +2577,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
 <img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 분류 <br/>\
-- 기초 : 생산 모니터링이 가능 <br/>\
-- 중간1 : 수집정보를 바탕으로 기본적 제어 가능 <br/>\
-- 중간2 : 사전 시뮬레이션 통해 공장 최적화 <br/>\
-- 고도화 : 인공지능 통한 자율 운영 가능 <br/><br/>\
+<img src = "./img/SmartFactory5Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 스마트공장 보안 감사 <br/>\
 - 면담조사 <br/>\
 - 문서검토 <br/>\
