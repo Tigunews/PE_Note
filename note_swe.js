@@ -1581,6 +1581,10 @@ var answer = answer.concat(
 <img src = "./img/정형검증.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
 <img src = "./img/정형검증절차.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 상태폭발문제 해결방안 <br/>\
+- 기호적 모델 체킹 : 너비 우선 탐색 <br/>\
+- 추상화 기법 : 모델 경량화 <br/>\
+- 릴레이 모델 체킹 : 수량 나누어 검사 \
 * KPC 93회 1교시 10번\
 ',
 
