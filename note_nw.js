@@ -264,12 +264,14 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 //[패킷데이터 네트워크 계층 오류]- 해밍코드
-'# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류 정정까지 가능한 코드 <br/><br/>\
+'# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
 # 암기 : 2^p >= d + p + 1 <br/><br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
 # 특징 : 해밍거리(Hamming Distance) = 송신 데이터와 수신 데이터의 각 대응 비트가 서로 다른 비트 수 <br/><br/>\
 <img src = "./img/Hamming_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Hamming_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 빅,리틀 엔디언 차이 <br/>\
+<img src = "./img/BigLittle.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 오류비트 2비트까지 검출가능, 1만 수정가능\
 ',
 
