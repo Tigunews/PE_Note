@@ -142,6 +142,7 @@ var question = question.concat(
 'Service Worker',
 'Ontact',
 '스마트 팩토리',
+'[스마트 팩토리]- CPS',
 'Edge Computing',
 '서버리스 컴퓨팅',
 'Web Crawling',
@@ -2583,6 +2584,35 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 문서검토 <br/>\
 - 현장조사 <br/>\
 - 재실시 \
+',
+  
+// CPS
+'# 정의 : Smart Factory의 핵심 기반 기술 <br/>\
+- Cyber Physical System <br/>\
+- 인간의 개입없이 대규모 센서/엑츄에이터를 가지는 물리적인 요소들과 통신기술, 응용 소프트웨어 및 시스템 소프트웨어 기술을 활용하여 실시간으로 물리적 요소들을 제어하는 복합 시스템 <br/><br/>\
+# 핵심 특성 <br/>\
+- Computation : 정보/데이터/기능 통합 <br/>\
+- Control : 통합 접근 제어 <br/>\
+- Communication : 물리, 사이버 세계 연결 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CPS_Structor.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. HW <br/>\
+- Controller : 센서 장애 탐지 <br/>\
+- Actuator : 시스템 제어 <br/>\
+- Sensor : 외부 자극 감지 <br/><br/>\
+2. SW <br/>\
+- 모델링 : 실제 동작 기본 개념 (이산/연속/도메인)<br/>\
+- 자율 컴퓨팅 : 자가 치유 <br/>\
+- 실시간 미들웨어 : 분산 환경 로드 밸런싱 (CORBRA, JMS) <br/>\
+- 검증기술 : 모델링 결과 통한 소스코드 검증 <br/><br/>\
+3. NW <br/>\
+- 유/무선 통신 : 고속 통신 (IPv6, WPAN)<br/><br/>\
+# 구현 위한 해결 과제 <br/>\
+- 데이터 관리 : 실시간 정보 분석 인프라 <br/>\
+- 신뢰성 확보 : 정형검증 요구 <br/>\
+- 프라이버시 : 과도한 정보 수집 금지 <br/>\
+- 종보보안 : 산업 기밀 유출 방지 \
 ',
 
 // Edge Computing
