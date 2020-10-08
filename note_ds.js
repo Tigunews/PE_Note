@@ -42,7 +42,6 @@ var question = question.concat(
 'Semantic Web',
 '앱접근성(Mobile App Accessibility)',
 '시선통신기술(Line of Sight Communications)',
-'CPS(Cyber Physical System)',
 '[음성인식]- 하이퍼보이스(Hypervioice)',
 '모바일 컨시어지(Mobile Concierge)',
 '엑사스케일(Exascale) 컴퓨팅 시스템',
@@ -143,6 +142,7 @@ var question = question.concat(
 'Ontact',
 '스마트 팩토리',
 '[스마트 팩토리]- CPS',
+'[스마트 팩토리]- 디지털트윈',
 'Edge Computing',
 '서버리스 컴퓨팅',
 'Web Crawling',
@@ -816,32 +816,6 @@ var answer = answer.concat(
 - 객체 구분형 이미지 특성 매칭 : 객체 타입에 따른 이미지 특성 추출 <br/>\
 - 통신 대상 인식 프로토콜 : 10도 이내 대상 단말의 탐색 응답 수신 <br/>\
 - Wifi P2P 기반 시선 통신 프로토콜 : PAM(Pre-Association Messaging ; 사전 소용량 통신) <br/>\
-',
-
-// CPS
-'# 정의 : 실시간 제어 컴퓨터 요소 결합 복합 시스템 <br/>\
-- 대규모 센서/액츄에이터 가지는 physical 요소, 실시간 제어 컴퓨터 요소 결합 복합 시스템 <br/><br/>\
-# 암기 <br/>\
-- 핵심요소(3) : CCC <br/>\
-- 구성요소(4) : SCAN <br/>\
-- 요소기술(4) : 모소실자 <br/>\
-- 요구속성(5) : 신실안자보 <br/>\
-- 차별점(3) : 복오합 <br/><br/>\
-# 핵심요소 : Communication, Computing, Control <br/><br/>\
-# 구성 : 센서, 엑츄에이터, 컨트롤러, NW <br/><br/>\
-# 기술 : 모델링, SW 검증, 실시간NW, 자율컴퓨팅 <br/><br/>\
-# 요구속성 : 고신뢰성, 실시간성, 안전성, 자율성, 보안성 <br/><br/>\
-# ICT와 차별점 : 복잡함, 오픈성(물리세계), 합의형성 어려움(이해관계자) <br/><br/>\
-# 국가별 추진 사례 <br/>\
-- 독일 : Agenda CPS 프로젝트 : 2025년 까지 에너지, 모빌리티, 헬스, 산업 등 4개 주요 응용분야 연구 추진 <br/>\
-- 미국 : Smart America Challenge Pjt : 안전, 지속가능성, 효율성, 의료 등 CPS의 미래 사회 대한 가치 제시 <br/>\
-- 일본 : 데이터 구동형 사회 : 전산업 분야 데이터 중심 산업간 경계 초월 국가 전략 수립 <br/>\
-- 중국 : 물리망정책 : 각종 센서 데이터와 NW융합으로 스마트시티 추진 <br/><br/>\
-# 민간 추진 사례 <br/>\
-- GE 일렉트릭 : 산업 인터넷 <br/>\
-- IBM : CPS기반 비즈니스(애널리틱스 사업) 추진 <br/><br/>\
-  <img src = "./img/CPS_1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-  <img src = "./img/CPS_2.png" style = "max-width: 100%; height: auto;">\
 ',
 
 // 하이퍼보이스
@@ -2613,6 +2587,30 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 신뢰성 확보 : 정형검증 요구 <br/>\
 - 프라이버시 : 과도한 정보 수집 금지 <br/>\
 - 종보보안 : 산업 기밀 유출 방지 \
+',
+  
+// [CPS]- 디지털트윈
+'# 정의 : 동일 표현 가상 모델 <br/>\
+- 물리적인 사물과 컴퓨터에 동일하게 표현되는 가상 모델 <br/>\
+- 개별 산업자산에 대한 통찰을 지속적으로 증진시켜, 특정 사업 측면에서 성과를 도출하는 공학적인 모델 <br/><br/>\
+# 암기 <br/>\
+- 구성 : 인클풋 <br/>\
+- 기술 : 도피인 <br/><br/>\
+# 구성 <br/>\
+- Input : 빅데이터/센싱정보 <br/>\
+- Cleansing&Processing : 인공지능 <br/>\
+- Output : Digital Twin <= Predix(클라우드 플랫폼,디지털 트윈의 플랫폼)<br/>\
+- 물리세계 : 센서 데이터, 메타데이터, 조건/상태, 이벤트(시계열)데이터, 애널리틱스(알고리즘 규칙) <br/>\
+- 가상세계 : 물리자산의 디지털 자산 표현, VR 가상현실 연계, 3D 모델링, 가상현실에서 디지털자산의 설계, 구현, Digital Thread 관리 <br/>\
+- 물리/가상 통합 : 물리 자산과 디지털 자산의 연결, AR 증강현실 연결, 2 ways connection, 공정제어, 시뮬레이션 <br/><br/>\
+# 기술 <br/>\
+- Domain Data Capability : 사업 분야에 대한 전문적인 데이터 역량 => 데이터 전처리(Pre-Processing)의 자동화, 검사 역량, 디지털 스레드 <br/>\
+- Physical + Digital Engineering Models : 공학적인 물리 모델과 디지털 모델을 도출하는 역량 => Life&Operational Behavior, Performance, Model Management <br/>\
+- Industrial Analytics : 지식 추출 역량 -> 대규모 데이터들을 산업분야에서 요구하는 수준까지 분석하는 능력 -> Model Generation & Automation, Knwledge Extraction <br/><br/>\
+# 사례 : GE엔진, GE 디지털 풍력단지 (항공기 제트엔진, 풍력 발전용 터빈, 발전소) <br/><br/>\
+* GE는 디지털 트윈 이니셔티브를 통해, GE가 생산하는 모든 산업 기계의 프로필을 구축하고 있으며, 기계에 대한 공학적 모델을 획득 중 <br/>\
+* 디지털 트윈 모델에서 얻은 운항 데이터를 GE90엔진에 실제 적용한 결과, 고객 기업은 불필요한 수백만 달러의 서비스 정비 비용을 절감 <br/>\
+* 마이다스 IT : 건축/설계 업계 1위 업체, 요기에서 활용할 듯 함 \
 ',
 
 // Edge Computing
