@@ -71,6 +71,7 @@ var question = question.concat(
 '[GIS]- OGC',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
+'[측위기술]- SBAS',
 '마이크로 그리드(MicroGrid)',
 '[산업제어시스템]- SCADA',
 'ISO 26262',
@@ -1367,10 +1368,18 @@ var answer = answer.concat(
 - 제어부분 : 관제국, 송신 시스템 <br/>\
 - 사용자 부분 : 안테나, 수신기, 소프트웨어 <br/><br/>\
 # 종류 <br/>\
-- Stand-alne GPS : 수신기 하나만으로 측정 <br/>\
+- Stand-alone GPS : 수신기 하나만으로 측정 <br/>\
 - D-GPS(Differential) : 일정영역별 측정 <br/>\
 - LAD-GPS(Local Area) : 좁은 영역 높은 정확도 <br/>\
 - WAD-GPS(Wide Area) : 지역적, 비용적 한계 극복 \
+',
+  
+// SBAS
+'# 정의 : 초정밀 GPS 보정 시스템 <br/>\
+- Satelite based Augment System <br/>\
+- 기존의 GPS 오차(17~37m)를 1m 이내로 보정하여 항공기에 정밀 위치 정보를 제공하는 위성 기반 항법 시스템 <br/><br/>\
+# DGPS 비교 <br/>\
+<img src = "./img/SBAS_DGPS.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 마이크로 그리드
