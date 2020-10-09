@@ -391,34 +391,12 @@ var answer = answer.concat(
 // Stuxnet
 '# 정의 : 산업시설을 파괴하는 슈퍼 바이러스 웜 <br/>\
 - 국가 및 산업의 중요 기반 시설의 공정을 감시하고 제어하는 SCADA(Supervisory Control And Data Acquisition) 시스템을 대상으로 한, 극도로 정교하고 군사적 수준의 첫 사이버 무기로 지칭되는 웜(Worm) <br/><br/>\
-# 암기 <br/>\
-- 절차 : 침전명변공장 <br/>\
-- 공격 : U공프윈7<br/><br/>\
-# 특징(4) : Target, Worm, 컴포넌트, 은닉성 <br/><br/>\
-# 공격 시나리오 <br/>\
-- 침투 : 스턱스넷 전파 <br/>\
-- 감염 PC에서 C&C서버로 감염 정보 전송 <br/>\
-- 네트워크 유포 <br/>\
-- 해커 공격 명령 생성 및 전송 <br/>\
-- 관리자의 PLC 제어 명령 생성 및 변조 <br/>\
-- 타킷 공격 <br/>\
-- PLC 장비 감염 설비 제어 장애 발생 <br/>\
-- 스턱스넷 핵심 모듈 파일을 생성하는 드롭퍼를 실행하여 PLC(Programmable Logic Controller) 코드 블럭을 변조하여 은닉 <br/>\
-- Step 7이 호출될 때 마다 은닉된 변조 코드 블럭 실행 <br/><br/>\
-# 전파 방법 <br/>\
-- USB : autorun.inf 파일 이용, 윈도우 쉘 LINK 취약점 이용(MS10-046, CEV-2010-2568) <br/>\
-- NW 공유 : 원격시스템 상 c$, Admin$ 네트워크 공유 여부 탐색, 발견시 쓰기권한 보유 폴더에 DEFRAGxxx.TMP 이름으로 자신을 복제 <br/>\
-- 프린터 Spooler 취약점 이용 : 게스트 계정에 쓰기 허용, MS10-0691, CEV-2010-2719 <br/>\
-- Step7프로젝트 파일 이용 : .s7p파일 감염 <br/><br/>\
-# 대응(2) <br/>\
-- 기술적(3) : 저장매체 보안관리, Sys 패치, 보안 Auditing<br/>\
-- 관리적(3) : 전용백신, 보안교육, 보안정책 <br/><br/>\
-# 기능 <br/>\
-- 관리자 권한 획득 : Win32k.sys 키보드 레이아웃 취약점 MS10-073, CVE2010-2743 <br/>\
-- 디바이스 드라이버 설치 : MrxCls, MrxNet 커널모드 컴포넌트 설치 <br/>\
-- 명령 및 제어 기능 : C&C 통신 위해 windowsupdate.com, msn.com 대한 DNS 질의 통해 인터넷 연결 여부 확인 <br/>\
-- PLC 감염 : s7tgtopx.exe CCProjectMgr.exe같은 Step6/WinCC 프로세스들 내로 스턱스넷 코드 주입하는 것으로 감염. 이 SW들은 SIMANTIC PLC 디바이스에 연결) <br/><br/>\
-<img src = "./img/stuxnet.png" style = "max-width:100%; height:auto;">\
+# 특징 <br/>\
+- 명확성 : 목표물, 실행환경 조건 <br/>\
+- Window 취약점 : Zeroday, Server Message Block <br/>\
+- Warm : 네트워크 공유를 통한 원격 컴퓨터 감염 <br/><br/>\
+# 시나리오 <br/>\
+<img src = "./img/StuxnetScenario.jpg" style = "max-width:100%; height:auto;">\
 ',
 
 
