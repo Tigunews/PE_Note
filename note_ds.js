@@ -17,6 +17,7 @@ var question = question.concat(
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린 프로젝트(Open Screen Project)',
+'의료기술',
 '[의료기술]- ISO 62304',
 '[의료기술]- ISO 25237',
 'OTT(Over the top)',
@@ -431,6 +432,11 @@ var answer = answer.concat(
 # 주요 참여 기업 : 인터넷 TV로 어도비, 삼성전자, LG전자, 인텔, 시스코, 모토로라등\
 ',
 
+// 의료기술 
+'# 기술종류 <br/>\
+<img src = "./img/MediTech.png" style = "max-width: 100%; height: auto;">\
+',
+  
 // [의료기술]- IEC 62304
 '# 정의 : 의료기기 소프트웨어 수명주기 프로세스 표준 규격<br/>\
 - (ISO 12207, 소프트웨어 수명주기 프로세스) <br/>\
