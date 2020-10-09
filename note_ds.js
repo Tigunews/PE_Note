@@ -1407,11 +1407,13 @@ var answer = answer.concat(
 '# 정의 : 중앙 제어 시스템 원격 감시,제어 시스템 / 통신 경로상 신호 사용 <br/>\
 - Supervisiory Cotnrol And DataAcquisition <br/>\
 - 통신 경로상의 아날로그 또는 디지털 신호를 사용하여 원격장치의 상태정보 데이터를 RTU로 수집/수신/기록/표시하여 중앙 제어 시스템에 원격 장치를 감시 제어하는 시스템 <br/><br/>\
-# 암기 <br/>\
-- 구성(5) : H감NRP <br/>\
-- 기능 : 지누경감 <br/><br/>\
-# 구성 : HMI, 감시시스템, RTU(Remote Terminal Unit), PLC(Programmable Logic Controller) / PAC, 통신 N/W <br/><br/>\
-# 기능 <br/>\
+# 구성요소 <br/>\
+- HMI : 기계 데이터 친숙 형태 변환 <br/>\
+- PLC(Programmable Logic Controller) : 실제 현장에 배치되는 기기 <br/>\
+- RTU(Remote Turminal Unit) : 공정에 설치된 센서와 직접 연결 <br/><br/>\
+# SCADA DCS 비교 <br/>\
+<img src = "./img/SCADA_DCS.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 기능 (지누경감)<br/>\
 - 지시/표시 : PLCs가 수집한 상태정보를 수신/기록/표시 <br/>\
 - 누산기능 : 정보를 용도에 맞게 계산 <br/>\
 - 경보기능 : 상태변화에 따라 알람 <br/>\
