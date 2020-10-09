@@ -1034,6 +1034,8 @@ var answer = answer.concat(
 - 해외 인소싱 -> 국내 아웃소싱 : 해외투자 회수필수 <br/>\
 - 해외 아웃소싱 -> 국내 인소싱 : 국내투자 수반필수 <br/>\
 - 해외 아웃소싱 -> 국내 아웃소싱 : 투자변경 없음 <br/><br/>\
+# 리쇼어링 오프쇼어링 비교 <br/>\
+<img src = "./img/ReshoringOffshoring.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 1교시 12 \
 ',
 
