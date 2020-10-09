@@ -12,6 +12,7 @@ var question = question.concat(
 '[AI]- 규범 동향',
 '[AI]- Python',
 '[AI]- AI국가전략',
+'음성비서',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
@@ -348,6 +349,20 @@ var answer = answer.concat(
 3. 사람중심 구현 <br/>\
 - 포용적 일자리 안전망 : 취업 지원제도 <br/>\
 - AI 역기능 및 윤리 확립 : 사이버 침해 대응체계 고도화 \
+',
+  
+// 음성비서
+'# 정의 : 머신 러닝, 음성 인식, 문장 분석, 상황인지 등 인공지능 기술과 첨단 기술의 결합으로 사용자의 언어를 이해하고 사용자가 원하는 지시 사항을 수행하는 기능을 자동으로 제공하는 AI 비서 서비스 <br/><br/>\
+# 기반기술 <br/>\
+1. 음성인식 디바이스 <br/>\
+- Zero UI : 사용자 Interaction, Interface <br/>\
+- STT(Speech to Text) : HMM, DNN, RNN <br/><br/>\
+2. AI Flatform <br/>\
+- 머신러닝 : 빅데이터 기반 문장 학습 <br/>\
+- 자연어 분석 : 형태소 단위로 잘라 의존관계 파악 <br/><br/>\
+3. Third Service <br/>\
+- 공유 서비스 인터페이스 표준 : W3C SOAP, REST, RSS 표준 <br/>\
+- 교환 데이터 표준 : W3C XML, JSON 표준 \
 ',
 
 // Flipped Learning
