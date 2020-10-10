@@ -168,6 +168,7 @@ var question = question.concat(
 '[XR]- AR',
 'E-Learning',
 'DOM SAX',
+'[로봇]- URC',
 );
 
 var answer = answer.concat(
@@ -2977,5 +2978,22 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # SAX : Simple API for XML <br/>\
 - 이벤트 처리 기반으로, 자료 구조를 만들지 않고 XML 문서를 스캔해 가면서 특정 Element를 중심으로 이벤트를 발생시켜 XML 문서를 처리하는 방식 <br/><br/>\
 <img src = "./img/DOM_SAX.png" style = "max-width:100%; height:auto;">\
+',
+  
+// URC
+'# 정의 : IT 기반 지능형 로봇의 새로운 패러다임 <br/>\
+- Ubiquitous Robotic Companion <br/>\
+- IT 기반 지능형 서비스 로봇의 패러다임 <br/><br/>\
+# 특징 <br/>\
+- 외부 센싱 활용 <br/\
+- 판단의 전가 <br/>\
+- 능동적 행동 <br/><br/>\
+# 로봇 소프트웨어 기술 <br/>\
+1. 인간/로봇 상호작용 기술 <br/>\
+- 영상기반 컴포넌트 : 사용자인식, 제스처인식, 표정인식 <br/>\
+- 음성기반 컴포넌트 : 음성인식, 음성합성, 음성 추적 <br/><br/>\
+2. Smart Action 기술 <br/>\
+- 지능형 주행 : 위치결정기술, 지도형성기술, 경로작성기술 <br/>\
+- 지능형 조작 : 호나경/객체 인지기술, 조작제어기술 \
 ',
 );
