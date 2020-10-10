@@ -1121,7 +1121,9 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - Need : 프로세스별 남아있는 자원 수 <br/>\
 - Request : 요청한 자원 수 <br/><br/>\
 # 구현 <br/>\
-<img src = "./img/BaknkerAlogorithm.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/BangkerAlogorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Understand <br/>\
+<img src = "./img/BangkerAlgorithmUnderstand.png" style = "max-width:100%; height:auto;">\
 ',
 
 // RAID
