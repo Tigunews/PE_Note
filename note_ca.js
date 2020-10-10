@@ -1115,10 +1115,10 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 '# 정의 : 교착상태 해결 방안중 회피기법의 중요한 알고리즘 <br/>\
 - 안전상태와 불안전 상태로 구분하고 운영체제는 안전상태를 유지할 수 있는 요구만을 수락하고 불안전 상태를 야기하는 요구는 거절 <br/><br/>\
 # 구성요소 <br/>\
-- Available(j=Resource) : 유형별 가용자원 <br/>\
-- MAX : 최대 자원 요구 수 <br/>\
-- Allocation : 할당되어 있는 자원 수 <br/>\
-- Need : 향후 요청 가능한 자원 수 <br/>\
+- Available(j=Resource) : 사용 가능 자원 수 <br/>\
+- MAX : 프로세스별 최대 자원의 요구 <br/>\
+- Allocation : 현재 프로세스별 할당 자원 수 <br/>\
+- Need : 프로세스별 남아있는 자원 수 <br/>\
 - Request : 요청한 자원 수 <br/><br/>\
 # 구현 <br/>\
 <img src = "./img/BaknkerAlogorithm.png" style = "max-width:100%; height:auto;">\
