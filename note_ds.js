@@ -434,7 +434,9 @@ var answer = answer.concat(
 
 // 의료기술 
 '# 기술종류 <br/>\
-<img src = "./img/MediTech.png" style = "max-width: 100%; height: auto;">\
+<img src = "./img/MediTech.png" style = "max-width: 100%; height: auto;"><br/>\
+* IHE : Integrating the Healthcare Enterprise <br/>\
+* HL7 : Health Level 7\
 ',
   
 // [의료기술]- IEC 62304
