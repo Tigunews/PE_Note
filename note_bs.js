@@ -20,6 +20,7 @@ var question = question.concat(
 '플랫폼 경제',
 'RTE',
 '[RTE]- 사이클론모델',
+'기술수명주기',
 'Chasm',
 ' 디지털 변혁 (Digital Transformation)',
 '[경영환경분석]- Horizon Scanning(이슈탐지)',
@@ -386,6 +387,18 @@ var answer = answer.concat(
 - Manage(4) : 시장위협 대응전략, 목표달성 조직개편, 마케팅~양산화, 자료수집~보고<br/>\
 - Operation(4) : 구매~대금, 주문~판매, 수요~자원, 고객수요~서비스<br/><br/>\
 * 수요에서 자원배분 고객 수요에 따른 서비스 제공\
+',
+ 
+// 기술 수명주기 이론
+'# S-Curve 이론 <br/>\
+<img src = "./img/SCurve.png" style = "max-width:100%; height:auto;"><br/>\
+- 성장, 성숙기, 쇠퇴 <br/><br/>\
+# 기술수용주기 이론 (혁선다수지) <br/>\
+<img src = "./img/TechnologyAdaption.png" style = "max-width:100%; height:auto;"><br/>\
+- 혁신수용자, 선각수용자, 전기다수수용자, 후기다수수용자, 지각수용자 <br/><br/>\
+# Gatner\'s HyperCycle <br/>\
+<img src = "./img/GatnersHyperCycle.png" style = "max-width:100%; height:auto;"><br/>\
+- 기술촉발, 기대, 환멸, 계몽, 생산성 안정 \
 ',
  
 // Chasm 
