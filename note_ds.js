@@ -358,7 +358,7 @@ var answer = answer.concat(
 1. 음성인식 디바이스 <br/>\
 - Zero UI : 사용자 Interaction, Interface <br/>\
 - STT(Speech to Text) : HMM, DNN, RNN <br/><br/>\
-2. AI Flatform <br/>\
+2. AI Platform <br/>\
 - 머신러닝 : 빅데이터 기반 문장 학습 <br/>\
 - 자연어 분석 : 형태소 단위로 잘라 의존관계 파악 <br/><br/>\
 3. Third Service <br/>\
