@@ -73,6 +73,7 @@ var question = question.concat(
 '[측위기술]- LDT',
 '[측위기술]- GPS',
 '[측위기술]- SBAS',
+'[스마트 그리드]- AMI',
 '마이크로 그리드(MicroGrid)',
 '[산업제어시스템]- SCADA',
 'ISO 26262',
@@ -1378,6 +1379,22 @@ var answer = answer.concat(
 - 기존의 GPS 오차(17~37m)를 1m 이내로 보정하여 항공기에 정밀 위치 정보를 제공하는 위성 기반 항법 시스템 <br/><br/>\
 # DGPS 비교 <br/>\
 <img src = "./img/SBAS_DGPS.png" style = "max-width:100%; height:auto;">\
+',
+  
+// AMI
+'# 정의 : 최종 소비자와 전력 회사 사이의 양방향 원격지침 인프라 <br/>\
+- Advanced Metering Infrastructure <br/>\
+- 에너지를 효율적으로 관리할 수 있는 시스템 및 서비스로, 소비자에게 실시간으로 에너지 사용량에 대한 정보가 제공되어 소비자 스스로 혹은 자동화된 기기 제어를 통해 에너지 사용을 제어하는 인프라 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/AMI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 상위 시스템 <br/>\
+- MDMS (Meter Data Management System) : 미터링 데이터 관리 <br/>\
+- CIS (Customer Information System) : 고객이 관리와 과금의 주체가 되는 시스템 <br/><br/>\
+2. 통신시스템 <br/>\
+- WAN (Wide Area Network) : CDMA, 광통신망 등 공중망 사용 <br/>\
+- NAN (Neighborhood Area Network) : 중계기와 미터 사이의 영역 <br/>\
+- HAN (Home Arae Network) : 수용가 내부 통신 네트워크 (PLC, ZigBee)\
 ',
 
 // 마이크로 그리드
