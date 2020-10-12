@@ -244,8 +244,6 @@ var answer = answer.concat(
 
 // [최소신장트리]- 크루스칼 알고리즘
 '# 정의 : 최초의 정점 없이, 최소간선을 하나씩 추가하여 MST를 생성해 나가는 알고리즘 <br/><br/>\
-# 코드 <br/><br/>\
-<img src = "./img/Kruskal_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Kruscal_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Kruscal_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 : 욕심쟁이 기법, 시간복잡도 O(|V|^2)\
@@ -253,8 +251,6 @@ var answer = answer.concat(
 
 // [최소신장트리]- 프림 알고리즘
 '# 정의 : 시작 정점에서 부터 출발하여 비용간선트리 집합을 단계적으로 확장하는 방식<br/><br/>\
-# 코드 <br/>\
-<img src = "./img/Prim_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 (E = 간선수, V = 정점수)<br/>\
 1. 욕심쟁이 기법 <br/>\
 2. 평균복잡도 <br/>\
