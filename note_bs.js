@@ -396,7 +396,7 @@ var answer = answer.concat(
 # 기술수용주기 이론 (혁선다수지) <br/>\
 <img src = "./img/TechnologyAdaption.png" style = "max-width:100%; height:auto;"><br/>\
 - 혁신수용자, 선각수용자, 전기다수수용자, 후기다수수용자, 지각수용자 <br/><br/>\
-# Gatner\'s HyperCycle <br/>\
+# Gatner\'s HypeCycle <br/>\
 <img src = "./img/GatnersHyperCycle.png" style = "max-width:100%; height:auto;"><br/>\
 - 기술촉발, 기대, 환멸, 계몽, 생산성 안정 \
 ',
