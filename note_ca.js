@@ -210,6 +210,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 상태변화 : (준비) Dispatch, Timeout (실행) Wakeup (대기) <br/>\
 - X축 : Job, CPU Scheduler <br/>\
 - Y축 : 활동상태(주기억장치), 중단상태(보조기억장치), 중단,재시작(Swap in, Swap out)<br/><br/>\
+# 프로세스 상태변화 사례 <br/>\
+- 인터럽트, 시스템콜 / PCB1에 P1문맥 저장 / PCB2에서 P2 문맥복구 <br/><br/>\
 # Process Thread 비교 <br/>\
 <img src = "./img/Process_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Process_2.png" style = "max-width:100%; height:auto;"><br/>\
