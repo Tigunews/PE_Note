@@ -827,6 +827,7 @@ var answer = answer.concat(
 // Hash Function
 '# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
 - Input : Hash Key / Output : Bucket home address <br/><br/>\
+# 특징 : 단방향, 충돌저항, 압축, 효율 <br/><br/>\
 # Algorithm <br/>\
 - 제산법 : 나머지 값 <br/>\
 - 기수변환법 : 임의의 기수로 변환 <br/>\
