@@ -52,6 +52,9 @@ var question = question.concat(
 'QoS',
 '[QoS]- 통합 서비스',
 '[QoS]- 차등 서비스',
+'FTP',
+'[FTP]- FTPS',
+'[FTP]- SFTP',
 );
 
 var answer = answer.concat(
@@ -1100,5 +1103,41 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/차등서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 통합, 차등 서비스 비교 <br/>\
 <img src = "./img/통합차등비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+ 
+// FTP
+'# 정의 : File Transfer Protocol <br/>\
+- TCP/IP 프로토콜을 기반으로 서버, 클라이언트 사이에서 파일 송수신을 하기 위한 프로토콜 <br/><br/>\
+# 전송구조 : Control Channel, Data Channel <br/><br/>\
+# 전송모드 <br/>\
+<img src = "./img/FTP_Mode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# FTP, FTPS, SFTP 비교 <br/>\
+<img src = "./img/FTP_FTPS_SFTP.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 2교시 2번\
+',
+ 
+// FTPS
+'# 정의 : FTP Secure <br/>\
+- FTP(App) + SSL(Trans) <br/>\
+- TCP/IP 프로토콜을 기반으로 하는 FTP 프로토콜의 확장으로 SSL 보안 소켓 계층을 추가하여 데이터의 안전한 전송을 가능하게 하는 파일 전송 프로토콜 <br/><br/>\
+# 특징 <br/>\
+- 주요요소 : 공개키기반, 3가지 인증모드, 다양한 암호 알고리즘 / RSA, x.509 <br/>\
+- Stack 구조 <br/>\
+<img src = "./img/FTPS_Stack.png" style = "max-width:100%; height:auto;"><br/>\
+- 보안성 : End to End 보안 / RFC 2246 취약 <br/><br/>\
+* 116회 2교시 2번\
+',
+ 
+// SFTP
+'# 정의 : SSH FTP <br/>\
+- FTP + Tunneling <br/>\
+- TCP 보안 채널(터널링)을 형성하여, 데이터의 안전한 전송을 가능하게 하는 파일 전송 프로토콜 <br/><br/>\
+# 특징 <br/>\
+- 주요요소 : 인증, 기밀성유지, 무결성 / BlowFish, 3DES <br/>\
+- SSH 형식 : length(4) / padding(1~8), type(1), data, crc(4) <br/>\
+- 키 구성 : 호스트키(공개키,개인키), 세션키(공유키(복사키)) <br/>\
+- Stack 구조 <br/>\
+<img src = "./img/SFTP_Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 2교시 2번\
 ',
 );
