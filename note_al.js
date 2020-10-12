@@ -228,16 +228,9 @@ var answer = answer.concat(
 // 최소신장트리
 '# 정의 : Minimum Spanning Tree, MST <br/>\
 - 신장트리, 그래프내의 모든 정점이 사이클이 없이 연결되어 있는 트리<br/><br/>\
-# 원칙 <br/>\
-- 비용 값이 적은 간선부터 우선 선택하여 트리를 구성 <br/>\
-- 사이클 형성 금지, 간선수가 n-1개가 되면 중단 (모든 정점 1회방문) <br/><br/>\
-# 활용 <br/>\
-- 도로건설 : 도시모두 연결하면서 길이 최소<br/>\
-- 통신 : 전화 케이블망 <br/>\
-- 배관 : 파이프 총 길이 최소 <br/><br/>\
 # 유형 <br/>\
-- 프림 : 선택 정점 집합과 연결된 최소 간선 선택 <br/>\
-- 크루스칼 <br/><br/>\
+- kruskal(간선) : 정렬, 비교, 선택, 검증 <br/>\
+- Prim(정점) : 임의선택, 인접선택, 비교, 검증 <br/><br/>\
 <img src = "./img/최소신장트리_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/최소신장트리_2.png" style = "max-width:100%; height:auto;">\
 ',
