@@ -205,28 +205,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // Process
 '# 정의 : 작업 실행 단위 / CDHS 영역 독립 <br/>\
 - 프로그램을 구동하여 메모리에 적재된 상태로 실행되는 하나의 작업 단위, CDHS(CODE, DATA, HEAP, STACK) 영역 독립 <br/><br/>\
-# 프로세스 상태 : 생성, 준비, 실행, 대기, 종료, 지연준비, 지연대기 <br/><br/>\
-# 프로세스 상태전이 <br/>\
-- Dispatch <br/>\
-- Timeout <br/>\
-- Block <br/>\
-- Wakeup <br/>\
-- Swap-out(suspend) <br/>\
-- Swap-in(resume) <br/><br/>\
-# 프로세스 스케줄러 유형 <br/>\
-1. 장기<br/>\
-- Job Scheduler<br/>\
-- High Levl Scheduluer<br/>\
-- 위치 : 프로세스 생성(디스크 스케줄링 큐) <br/><br/>\
-2. 중기<br/>\
-- Process Scheduler<br/>\
-- Intermidate Level Scheduler<br/>\
-- 위치 : 메인메모리 할당(디스크(중단상태) <-> 메인메모리) <br/><br/>\
-3. 단기<br/>\
-- Process Scheduler<br/>\
-- Low Level Scheduler<br/>\
-- 위치 : CPU 할당 (메인메모리 <-> 프로세서) <br/><br/>\
-<img src = "./img/Process_0.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+# 프로세스 상태 <br/>\
+<img src = "./img/Process_0.jpg" style = "max-width:100%; height:auto;"><br/>\
+- 상태변화 : (준비) Dispatch, Timeout (실행) Wakeup (대기) <br/>\
+- X축 : Job, CPU Scheduler <br/>\
+- Y축 : 활동상태(주기억장치), 중단상태(보조기억장치), 중단,재시작(Swap in, Swap out)<br/><br/>\
+# Process Thread 비교 <br/>\
 <img src = "./img/Process_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Process_2.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Process_3.png" style = "max-width:100%; height:auto;">\
