@@ -245,7 +245,7 @@ var answer = answer.concat(
 // [최소신장트리]- 크루스칼 알고리즘
 '# 정의 : 최초의 정점 없이, 최소간선을 하나씩 추가하여 MST를 생성해 나가는 알고리즘 <br/><br/>\
 # 코드 <br/><br/>\
-<img src = "./img/Kruscal_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Kruskal_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Kruscal_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Kruscal_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 : 욕심쟁이 기법, 시간복잡도 O(|V|^2)\
