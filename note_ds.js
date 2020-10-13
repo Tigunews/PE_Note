@@ -1,4 +1,6 @@
 var question = question.concat(
+'4차산업 혁명',
+'디지털 뉴딜&혁신 4개분요 12개요소',
 '인공지능 서비스 플랫폼',
 '[AI]- AI Flow',
 '[AI]- XAI',
@@ -173,6 +175,24 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
+// 4차 산업혁명
+'# 정의 : 기술의 융합을 통한 창조적 파괴 혁신 <br/>\
+- 다보스포럼 : 모든 기술 융합, 파괴적 혁신 <br/>\
+- 정보통신 기술 협회 : 사회전반 융합, 혁신적 변화 <br/>\
+- 기획재정부 : 기존 산업 + 인공지능 융합 통한 혁신 <br/><br/>\
+# 국내 4차 산업혁명 정책 <br/>\
+- 제조업 3.0 : 스마트 공장 1만개 <br/>\
+- 미래성장동력 종합실천계획 : 신사업 발굴, 일자리 창출 <br/>\
+- 신산업 육성 투자 활성화 : 중소벤처 <br/><br/>\
+# 주요국 4차 산업혁명 정책 및 현황 <br/>\
+<img src = "./img/Industry_World.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 2교시 3번\
+',
+  
+// 디지털 뉴딜&혁신 4개 분야 12개 요소 
+'<img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">\
+',
+  
 // 인공지능 서비스 플랫폼 
 '# 정의 : 인공지능 활용 서비스 개발 도구 <br/>\
 - AI as a Service <br/>\
