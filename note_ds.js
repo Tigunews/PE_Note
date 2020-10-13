@@ -34,6 +34,7 @@ var question = question.concat(
 '[핀테크]- 핀테크 오픈플랫폼 보안가이드',
 '[핀테크]- 인슈어테크',
 '[핀테크]- 인터넷 전문 은행',
+'[핀테크]- FDS',
 '[IT 금융]- De-Fi',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
@@ -716,6 +717,16 @@ var answer = answer.concat(
 - 신용카드 : 동일 허가기준<br/>\
 - 예금보험제도 : 동일 방식 사용<br/>\
 - 실명확인제도 : 다양한 비대면 인증\
+',
+  
+// FDS
+'# 정의 : Fraud Detection System <br/>\
+- 전자 금융거래에서 사용되는 단말기 정보,접속정보,거래내용 등을 종합적으로 분석, 의심거래를 탐지하고 이상 금융거래를 차단하는 시스템 <br/><br/>\
+# 주요기능(수분대감) <br/>\
+<img src = "./img/FDS_Function.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 판정방식 유형 <br/>\
+<img src = "./img/FDS_Type.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 116회 3교시 1번\
 ',
   
 // De-Fi
