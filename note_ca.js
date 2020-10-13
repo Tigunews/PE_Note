@@ -1082,8 +1082,8 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/교착상태_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # DeadLock 발생조건 (상P비자)<br/>\
 - 상호배제 : p -> 자원 <br/>\
-- 점유와 대기 : 자원 -> p -> 자원 <br/>\
 - 비선점 : 자원 -> p <br/>\
+- 점유와 대기 : 자원 -> p -> 자원 <br/>\
 - 환형대기 : 자원 -> p -> 자원 -> p <br/><br/>\
 # 해결기법 <br/>\
 1. Live lock <br/>\
