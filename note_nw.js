@@ -142,11 +142,20 @@ var answer = answer.concat(
 - SSL(Security Socket Layer)가 표준화 되면서 바뀐 이름 <br/><br/>\
 # 특징 <br/>\
 - 전송계층 종단간 보안과 데이터 무결성 확보 <br/>\
-- 웹브라우징, 전자메일, 인스턴트 메신저, VoIP 적용 <br/><br/>\
+- 웹브라우징, 전자메일, 인스턴트 메신저, VoIP 적용 <br/>\
 - 패킷 암호화로 인한 정보 탈취부분 강점 <br/>\
 - 기밀성 우선이므로 스니핑 공격 강점 <br/>\
 - 송신자간 데이터 교환 Event 약점 <br/>\
 - 개인정보유출, 기밀정보유출, DDoS, APT, 악성공격 무력화 <br/><br/>\
+# 구성요소 <br/>\
+0. Stack <br/>\
+- 하위 레코드 계층 : 단편화, 압축, 무결성 보호, 암호화 <br/>\
+- 상위 계층 : Handshake 관련 프로토콜 <br/><br/>\
+1. Protocol <br/>\
+- Handshake : 서버, 클라이언트 상호 인증 <br/>\
+- Change Chiper Spec : 현재 동작중인 보안 매개변수 변경 <br/>\
+- Alert : Handshake 과정중 상대방 암호 방식 지원 불가 알람 <br/>\
+- Record : 메시지 수납하여 TLS record 단위로 운반 <br/><br/>\
 # 절차 <br/>\
 - 지원 가능한 알고리즘 서로 교환 <br/>\
 - 키 교환, 인증 <br/>\
