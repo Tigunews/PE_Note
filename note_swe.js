@@ -638,7 +638,12 @@ var answer = answer.concat(
 # 조사 대상 사업 <br/>\
 - 사업비 규모 : 총사업비 500억원 이상, 국가의 재정지원 규모 300억원 이상 신규사업 <br/>\
 - 정보화 사업대상 : 국가정보화 기본법 15-1 <br/>\
-- 신규사업 : 타당성 조사비, 설계비등 국고지원이 없었던 사업 \
+- 신규사업 : 타당성 조사비, 설계비등 국고지원이 없었던 사업 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/PreFeasibility.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 선정기준, 수행흐름도<br/>\
+<img src = "./img/PreFeasibilityFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 2교시 4번\
 ',
   
 // 요구공학
