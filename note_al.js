@@ -828,7 +828,7 @@ var answer = answer.concat(
 '# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
 - Input : Hash Key / Output : Bucket home address <br/><br/>\
 # 특징 : 단방향, 충돌저항, 압축, 효율 <br/><br/>\
-# Algorithm <br/>\
+# Algorithm (제기폴제)<br/>\
 - 제산법 : 나머지 값 <br/>\
 - 기수변환법 : 임의의 기수로 변환 <br/>\
 - 폴딩법 : 여러조각 나눔후 임의 연산 <br/>\
