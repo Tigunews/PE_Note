@@ -643,6 +643,13 @@ var answer = answer.concat(
 <img src = "./img/PreFeasibility.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 선정기준, 수행흐름도<br/>\
 <img src = "./img/PreFeasibilityFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 문제점 <br/>\
+- 제도적 : 사업선정, 규모변경, 평가 <br/>\
+- 현행이슈 : 기술성 평가 연계, 조사대상 사업 확대, 낙후지역 평가 반영 상향 <br/><br/>\
+# 개선방향 <br/>\
+- 사업계획적정성 검토의 법적근거 마련 <br/>\
+- 대상 기준금액의 변경 논의 <br/>\
+- 사후평가제도 도입 <br/><br/>\
 * 116회 2교시 4번\
 ',
   
