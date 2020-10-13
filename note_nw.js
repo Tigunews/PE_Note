@@ -1108,7 +1108,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // FTP
 '# 정의 : File Transfer Protocol <br/>\
 - TCP/IP 프로토콜을 기반으로 서버, 클라이언트 사이에서 파일 송수신을 하기 위한 프로토콜 <br/><br/>\
-# 전송구조 : Control Channel, Data Channel <br/><br/>\
+# 전송구조 : Command Channel, Data Channel <br/><br/>\
 # 전송모드 <br/>\
 <img src = "./img/FTP_Mode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # FTP, FTPS, SFTP 비교 <br/>\
