@@ -1406,6 +1406,7 @@ var answer = answer.concat(
 # 필요성 <br/>\
 <img src = "./img/ITComplianceOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 요구사항 (공보보통책)<br/>\
+<img src = "./img/ITComplianceNeeds.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 공개 : 투명성 제고 <br/>\
 - 보존 : 이력 추적 <br/>\
 - 보호 : 암호화, 접근 제어 요구 <br/>\
