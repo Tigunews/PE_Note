@@ -408,7 +408,7 @@ var answer = answer.concat(
 # 공격단계(4) : 침투 > 검색 > 수집 > 유출<br/>\
 1. 관리적 <br/>\
 - 침투 : 사회공학기법(피싱, 스미싱, 파밍) <br/>\
-- 검색 : 관리자권한 탈취(RootKit, Bot, Backdoor), 내부시스템 감염(리소스 갈취, 고의족 파괴, 서비스 거부, 제로데이)<br/><br/>\
+- 검색 : 관리자권한 탈취(RootKit, Bot, Backdoor), 내부시스템 감염(리소스 갈취, 고의적 파괴, 서비스 거부, 제로데이)<br/><br/>\
 2. 기술적 <br/>\
 - 수집 : 행동형(트로이목마, Keylogger, Spyware), 제어용(Bot, Root-kit, Backdoor) <br/>\
 - 유출 : 데이터 유출, 공격중단 <br/><br/>\
