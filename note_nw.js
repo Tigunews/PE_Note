@@ -55,6 +55,7 @@ var question = question.concat(
 'FTP',
 '[FTP]- FTPS',
 '[FTP]- SFTP',
+'Socket',
 );
 
 var answer = answer.concat(
@@ -1148,5 +1149,19 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Stack 구조 <br/>\
 <img src = "./img/SFTP_Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 2교시 2번\
+',
+ 
+// Socket
+'# 정의 : 응용프로그램간의 실시간 정보의 교환 기술 <br/>\
+- 소프트웨어로 작성된 추상적인 개념의 통신 접속점을 이용하여 데이터 송수신하는 통신 기술<br/><br/>\
+# 유형 <br/>\
+- TCP : 양방향, 실시간, 연결지향, 신뢰성 <br/>\
+- UDP : 단방향, 대용량, 비연결성, 비신뢰적 <br/>\
+- Web : Browser Interface TCP 라인, 실시간, HTML5 API <br/><br/>\
+# Process <br/>\
+<img src = "./img/SocketProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술 <br/>\
+<img src = "./img/SocketFunction.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 3교시 6번\
 ',
 );
