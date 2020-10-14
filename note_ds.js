@@ -101,7 +101,7 @@ var question = question.concat(
 '[블록체인]- 스마트시티 활용',
 '[블록체인]- Off Chain',
 '[블록체인]- 블록체인 거버넌스',
-'[블록체인]- 보안',
+'[블록체인]- 플랫폼 보안',
 'MaaS',
 'BERT',
 '자율주행자동차',
@@ -1812,7 +1812,7 @@ var answer = answer.concat(
 * KPC 93회 1교시 7번\
 ',
 
-// 블록체인 보안
+// 블록체인 플랫폼 보안
 '<img src = "./img/BlockchainSEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 3교시 3번\
 ',
