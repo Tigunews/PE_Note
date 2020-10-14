@@ -323,13 +323,20 @@ var answer = answer.concat(
 //[피싱(Phshing)]- 스피어 피싱
 '# 정의 : 지인 사칭 정보 획득 기법 <br/>\
 - 직장동료나 친구, 가족을 사칭한 사기 기법으로 ID, PassWord를 획득하여 정보를 획득하는 해킹 기법 <br/><br/>\
+# Keyword : APT공격, 표적성, 정교성, 사회공학기법, 악성코드, 이메일, 제로데이공격, SPF(Sender Policy Framework) <br/><br/>\
 # 암기 : 특징-표심정 <br/><br/>\
 # 특징(3) : 표적성, 심각성, 정교성 <br/><br/>\
-# 대응방안 : 사전,사후 <br/><br/>\
+# 대응방안 <br/>\
+- 관리적 : 교육, 훈련, 대응프로세스 <br/>\
+- 기술적 : 메일서버, 웹서버, 패치 <br/>\
+- 사용자 : 이메일, 패치, 대응 솔루션 <br/><br/>\
 # 절차 <br/>\
 - 표적 설정/정보수집 <br/>\
 - 이메일 전송 <br/>\
-- 첨부파일 통한 악성코드 감염\
+- 첨부파일 통한 악성코드 감염<br/><br/>\
+# 스피어피싱, 워터링홀 비교(사회공학적기법) <br/>\
+<img src = "./img/SpearPhishingWateringHole.png" style = "max-width:100%; height:auto;">\
+*116회 1교시 7번\
 ',
   
 // Pharming
