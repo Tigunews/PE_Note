@@ -229,6 +229,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 구현시 고려사항 <br/>\
 - 단일 : 신호전달(불법접근시), 종료(제거시점 신중결정), 마스킹(종료전) <br/>\
 - 멀티 : 동기화(임계영역, 스핀락, 세마포어) <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/ThreadProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 3교시 4번\
 ',
 
