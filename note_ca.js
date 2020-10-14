@@ -222,10 +222,10 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 단위 명령 집합 / 프로세스내 / 리소스 공유(SCDH)<br/>\
 - 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합, STACK 외의 CODE, DATA, HEAP영역 공유 <br/><br/>\
 # Keyword : 사용자모드(임계,스핀락), 커널모드(세마포어), TCB, Light Weight, 멀티스레드, 공유(힙/데이터/코드), 독립(레지스터/스택), PCB <br/><br/>\
-<img src = "./img/ThreadType.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 원리 (P/T)<br/>\
+# 종류<br/>\
 - 단일 : 1:1 <br/>\
-- 멀티 : 1:n <br/><br/>\
+- 멀티 : 1:n <br/>\
+<img src = "./img/ThreadType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구현시 고려사항 <br/>\
 - 단일 : 신호전달(불법접근시), 종료(제거시점 신중결정), 마스킹(종료전) <br/>\
 - 멀티 : 동기화(임계영역, 스핀락, 세마포어) <br/><br/>\
