@@ -1067,10 +1067,10 @@ var answer = answer.concat(
 - 품질요구 <br/>\
 - 제약사항 <br/><br/>\
 # 절차 <br/>\
-- 최우선 목표 설정 : 개수 최소화 <br/>\
-- 목표 Quality scenario, Use case 목록변환 <br/>\
-- 영향 큰 요구사항 선정 <br/>\
-- 아키텍처 설계 시작 <br/><br/>\
+- 목표 설정 : 최우선 목표 설정(개수 최소화) <br/>\
+- 요구사항 변환 : 목표 Quality scenario, Use case 목록변환 <br/>\
+- 요구사항 정제 : 영향 큰 요구사항 선정 <br/>\
+- 설계 시작 : 아키텍처 설계 시작 <br/><br/>\
 # 아키텍처 설계뷰 작성 과정 <br/>\
 <img src = "./img/ArchitectureDesignView.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 84회 1교시 1번\
