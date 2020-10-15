@@ -1386,14 +1386,11 @@ var answer = answer.concat(
 # 분류 <br/>\
 - 위치정보 사업 : 위치정보 수집해 위치기반 서비스 사업자에게 제공 <br/>\
 - 위치정보기반서비스 사업 : 위치정보를 이용한 서비스를 제공 <br/><br/>\
-# 기술요소 <br/>\
-1. 위치정보 기술요소 <br/>\
-- LDT : 모바일 단말 위치 측정 / GPS, Cell ID <br/>\
-- LEP(Location Enable Platform) : 이동통신망, LBS응용 사이 미들웨어 / MMDB, 공간인덱싱 <br/>\
-- LAP(Location Application Program) : 정보서비스, 네비게이션, 위치기반 상거래 / L-CRM, Location Trigger Marketing <br/><br/>\
-2. 측위기술 <br/>\
-- 단일 측위 : NW, GPS, Wifi <br/>\
-- 복합 측위 : XPS <br/><br/>\
+# 위치정보 사업 > LBS (LDT, LEP, LAP) / 측위기술 (NW, GPS, Wifi / XPS) <br/><br/>\
+* LBS(Location Based Service) : 위치기반 기술 <br/>\
+- LDT(Location Determin Technology) : 위치 결정 기술 <br/>\
+- LEP(Location Enabled Platform) : 위치 처리 플랫폼 <br/>\
+- LAP(Location Application Program) : 위치 응용 프로그램 <br/><br/>\
 * 116회 응용 2교시 3번\
 ',
 
