@@ -855,7 +855,7 @@ var answer = answer.concat(
 // 소프트웨어 아키텍처 모델 
 '# 정의 : 아키텍처 설계의 해법 제시 <br/>\
 - 프로그램/System의 컴포넌트, 컴포넌트 간의 상호 관계의 구조이며, 이들을 설계하고 전개하기 위한 지침과 원리 <br/><br/>\
-# 주요유형 <br/><br/>\
+# 주요 유형 <br/><br/>\
 <img src = "./img/ArchitectureModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 4교시 4번\
 ',
