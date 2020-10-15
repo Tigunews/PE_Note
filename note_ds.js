@@ -74,6 +74,7 @@ var question = question.concat(
 '[가상화]- HCI',
 '[가상화]- VDI',
 '[GIS]- OGC',
+'위치정보, 위치기반서비스',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
 '[측위기술]- SBAS',
@@ -1379,8 +1380,24 @@ var answer = answer.concat(
 * WPS : Web Processing Service <br/>\
 * CSW : Catalogue Service\
 ',
-  
-// LBT
+    
+// 위치정보, 위치기반 
+'# 정의 : 이동성이 있는 사물 또는 개인이 특정한 시간에 존재했던 장소에 관한 정보 <br/><br/>\
+# 분류 <br/>\
+- 위치정보 사업 : 위치정보 수집해 위치기반 서비스 사업자에게 제공 <br/>\
+- 위치정보기반서비스 사업 : 위치정보를 이용한 서비스를 제공 <br/><br/>\
+# 기술요소 <br/>\
+1. 위치정보 기술요소 <br/>\
+- LDT : 모바일 단말 위치 측정 / GPS, Cell ID <br/>\
+- LEP(Location Enable Platform) : 이동통신망, LBS응용 사이 미들웨어 / MMDB, 공간인덱싱 <br/>\
+- LAP(Location Application Program) : 정보서비스, 네비게이션, 위치기반 상거래 / L-CRM, Location Trigger Marketing <br/><br/>\
+2. 측위기술 <br/>\
+- 단일 측위 : NW, GPS, Wifi <br/>\
+- 복합 측위 : XPS <br/><br/>\
+* 116회 응용 2교시 3번\
+',
+
+// LDT
 '# 정의 : Location Determination Technology <br/>\
 - 위치기반 서비스 제공을 위해 모바일 단말의 위치를 측정하는 위치 확인 기술 <br/><br/>\
 # 종류 <br/>\
