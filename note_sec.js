@@ -89,6 +89,7 @@ var question = question.concat(
 '[CPU 보안]- 스펙터(Spectre)',
 '[CPU 보안]- Meltdown',
 '[DDOS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
+'FIDO',
 );
 
 var answer = answer.concat(
@@ -1712,56 +1713,31 @@ EAL : 펑스매매세세포 <br/><br/>\
   
 // DDOS - 스크러빙 센터, 컨텐츠 전송 네트워크 
 '# 스크러빙 센터 개념 : 디도스 공격방어 전용 서비스 제공 시설 <br/><br/>\
-# 대응방법 <br/>\
-1. Flooding <br/>\
-- 스크러빙 센터 : Cloud로 라우팅 분산 <br/>\
-- CDN : GSLB 공격패킷 전달 <br/><br/>\
-2. Connection <br/>\
-- 스크러빙 센터 : Packet inspection, 연결 우회 <br/>\
-- CDN : 클라우드 기반 구현 <br/><br/>\
-3. Application <br/>\
-- 스크러빙 센터 : Flow Monitoring, Cahce Control 공격 탐지 <br/>\
-- CDN : DNS 정보 변경, 우회 <br/><br/>\
-# 대응규모 <br/>\
-1. 네트워크 <br/>\
-- 스크러빙 센터 : 글로벌, 로컬 클라우드 연계 <br/>\
-- CDN : 엣지 서버, 캐시 서버, 부하분산 <br/><br/>\
-2. Appliance <br/>\
-- 스크러빙 센터 : 가상화 서버, 오버레이 라우터 구축 <br/>\
-- CDN : Edge Cache, SDN <br/><br/>\
-3. SW <br/>\
-- 스크러빙 센터 : 모니터링 및 분산 솔루션 구축 <br/>\
-- CDN : SDN OpenFlow, Control Plane에서 제어 <br/><br/>\
-# 대응시점 <br/>\
-1. 탐지 <br/>\
-- 스크러빙 센터 : 패킷 모니터링, 검사 <br/>\
-- CDN : Malicious 패킷 판단 <br/><br/>\
-2. 차단 <br/>\
-- 스크러빙 센터 : BGP Routing, DNS A Record 설정변경, 우회 차단 <br/>\
-- CDN : 3,4,7 계층 수준 공격차단 <br/><br/>\
-3. 복구 <br/>\
-- 스크러빙 센터 : 악성패킷 Drop, 정상 패킷 서버 전달 <br/>\
-- CDN : DDoS공격시간에 Inbound된 정상 패킷 복구 불가 <br/><br/>\
-# 암호화 트래픽 방어여부 <br/>\
-1. 복호화 여부 <br/>\
-- 스크러빙 센터 : SSL기반, 복호화 없이 탐지가능 <br/>\
-- CDN : 데이터 복호화 하지 않음 <br/><br/>\
-2. Inspection <br/>\
-- 스크러빙 센터 : 패킷의 Payload 검사 수행 <br/>\
-- CDN : 암호화 패킷 검사 하지 않음 <br/><br/>\
-3. 트래픽 처리 <br/>\
-- 스크러빙 센터 : 패킷 재암호화 코어 서버 전달 <br/>\
-- CDN : DDoS 암호화 패킷 탐지 불가 <br/><br/>\
-# 기존 시스템 활용 관점 <br/>\
-1. 보안장비 <br/>\
-- 스크러빙 센터 : 클라우드 + On-Premise 융합, 보안강화 <br/>\
-- CDN : SSL 복호화 수행 보안장비 필요 <br/><br/>\
-2. 보안솔루션 <br/>\
-- 스크러빙 센터 : SaaS기반 솔루션 추가 활용 <br/>\
-- CDN : DNS 싱크홀, Blackhole처리 SW <br/><br/>\
-3. 네트워크 장비 <br/>\
-- 스크러빙 센터 : 사설망 통해 정상 트래픽 전송 <br/>\
-- CDN : uRPF 적용 IP Spoofing 차단 활용 <br/><br/>\
+# 스크러빙 센터, CDN 비교 관점 <br/>\
+- 대응방법 : Flooding / Connection / Application <br/>\
+- 대응규모 : 네트워크 / Appliance / SW <br/>\
+- 대응시점 : 탐지 / 차단 / 복구 <br/>\
+- 트래픽 방어 여부 : 복호화 여부 / Inspection / 트래픽 처리 <br/>\
+- 기존장비 활용 : 보안 장비 / 보안 솔루션 / 네트워크 장비 <br/><br/>\
 * 116회 4교시 2번\
+',
+   
+// FIDO
+'# 정의 : Fast Identify Online <br/>\
+- 스카트폰 등의 인증절차를 이용하여 정보를 수집한 후, 인증자를 통해 인증 결과 값을 생성하여 서버로 전송하고 서버에서 인증 결과 값을 검증하는 인증기술 <br/><br/>\
+# 이력 <br/>\
+- 1.0 (2014.12.) : UAF, U2F <br/>\
+- 2.0 (2018.05.) : 모바일 포함, 비밀번호 없이 인증 <br/><br/>\
+# 구성요소 <br/>\
+- FIDO Server : 키 등록 관리 검증 <br/>\
+- FIDO Client : 인증자 필터링, ASM RP Client 중계 <br/>\
+- ASM(Authenticator Specific Module) : Client 요청 인증자 전달 중계 <br/>\
+- 인증자 : 생체 인증, 사용자 단말 로컬 인증 <br/><br/>\
+# Fido 1.0, 2.0 구조비교 <br/>\
+<img src = "./img/FIDO_Struct.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 비교 <br/>\
+<img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 4교시 3번\
 ',
 );
