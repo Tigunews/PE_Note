@@ -175,7 +175,7 @@ var question = question.concat(
 'E-Learning',
 'DOM SAX',
 '[로봇]- URC',
-'[IoT]- 객체식별자 기반 사물인터넷 디바이스 식별체계(TTAK.KO-06.0365/RI)',
+'[IoT]- 객체 식별자 기반 사물인터넷 디바이스 식별체계(TTAK.KO-06.0365/RI)',
 );
 
 var answer = answer.concat(
