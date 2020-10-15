@@ -86,6 +86,7 @@ var question = question.concat(
 '[DB 보안][Role Based]- Biba',
 '[DB 보안]- 클락-윌슨(Clack and Wilson) 모델',
 'BEC(Business  E-mail Compromise)',
+'[CPU 보안]- 스펙터(Spectre)',
 );
 
 var answer = answer.concat(
@@ -1677,5 +1678,21 @@ EAL : 펑스매매세세포 <br/><br/>\
 - SPF(Sender Policy Framework) : 메일 서버 등록제 <br/>\
 - DMARC(Domain-based Message Authentication, Reporting and Conformance) : 도메인 기반 메시지 인증/보고/검증 <br/><br/>\
 * KPC 93회 1교시 4번\
+',
+   
+// Spectre
+'# 정의 : 다른 사용자 프로그램의 메모리 열람이 가능한 CPU 취약점 <br/>\
+- 프로세서로 하여금 실행해서는 안되는 코드를 실행하도록 유도해 다른 어플리케이션 메모리 공간에 존재하는 정보를 유출시킬 수 있는 CPU 취약점 <br/><br/>\
+# Keyword : 추측실행, 분기예측, Bound Check Bypass, Branch Target Injection <br/><br/>\
+# 유형 <br/>\
+1. Spectre 1 (CVE-2017-5753) <br/>\
+- Over Range Read <br/>\
+- Bound Check Bypass 취약점 <br/><br/>\
+2. Spectre 2 (CVE-2017-5715) <br/>\
+- 해커 원하는 위치 분기 <br/>\
+- Branch Target Injection <br/><br/>\
+# Meltdown Spectre 비교 <br/>\
+<img src = "./img/MeltdownSpectre.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 1교시 9번\
 ',
 );
