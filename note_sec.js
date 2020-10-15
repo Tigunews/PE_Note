@@ -87,6 +87,8 @@ var question = question.concat(
 '[DB 보안]- 클락-윌슨(Clack and Wilson) 모델',
 'BEC(Business  E-mail Compromise)',
 '[CPU 보안]- 스펙터(Spectre)',
+'[CPU 보안]- Meltdown',
+'[DDOS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
 );
 
 var answer = answer.concat(
@@ -1696,8 +1698,8 @@ EAL : 펑스매매세세포 <br/><br/>\
 * 116회 1교시 9번\
 ',
    
- // Meltdown
- '# 정의 : CPU 권한상승 공격 <br/>\
+// Meltdown
+'# 정의 : CPU 권한상승 공격 <br/>\
 - Intel x86 아키텍처 컴퓨터 메모리 데이터 보안의 공격으로 비순차적 명령어 처리 OoOE(Out-of-order execution) 기술을 악용하여 사용자 어플리케이션을 통해 운영체제의 시스템 메모리에 접근할 수 있는 취약점 <br/><br/>\
 # 유형 <br/>\
 - CVE-2017-5754 : 불량데이터캐시 적재 <br/><br/>\
@@ -1707,4 +1709,49 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 일반 사용자 작업정보 습득 <br/><br/>\
 * KPC 관리 114회 합숙 2일차 1교시 3번\
  ',
+  
+// DDOS - 스크러빙 센터, 컨텐츠 전송 네트워크 
+'# 스크러빙 센터 개념 : 디도스 공격방어 전용 서비스 제공 시설 <br/><br/>\
+# 대응방법 <br/>\
+1. Flooding <br/>\
+- 스크러빙 센터 : Cloud로 라우팅 분산 <br/>\
+- CDN : GSLB 공격패킷 전달 <br/><br/>\
+2. Connection <br/>\
+- 스크러빙 센터 : Packet inspection, 연결 우회 <br/>\
+- CDN : 클라우드 기반 구현 <br/><br/>\
+3. Application <br/>\
+- 스크러빙 센터 : Flow Monitoring, Cahce Control 공격 탐지 <br/>\
+- CDN : DNS 정보 변경, 우회 <br/><br/>\
+# 대응규모 <br/>\
+1. 네트워크 <br/>\
+- 스크러빙 센터 : 글로벌, 로컬 클라우드 연계 <br/>\
+- CDN : 엣지 서버, 캐시 서버, 부하분산 <br/><br/>\
+2. Appliance <br/>\
+- 스크러빙 센터 : 가상화 서버, 오버레이 라우터 구축 <br/>\
+- CDN : Edge Cache, SDN <br/><br/>\
+3. SW <br/>\
+- 스크러빙 센터 : 모니터링 및 분산 솔루션 구축 <br/>\
+- CDN : SDN OpenFlow, Control Plane에서 제어 <br/><br/>\
+# 대응시점 <br/>\
+1. 탐지 <br/>\
+- 스크러빙 센터 : 패킷 모니터링, 검사 <br/>\
+- CDN : Malicious 패킷 판단 <br/><br/>\
+2. 차단 <br/>\
+- 스크러빙 센터 : BGP Routing, DNS A Record 설정변경, 우회 차단 <br/>\
+- CDN : 3,4,7 계층 수준 공격차단 <br/><br/>\
+3. 복구 <br/>\
+- 스크러빙 센터 : 악성패킷 Drop, 정상 패킷 서버 전달 <br/>\
+- CDN : DDoS공격시간에 Inbound된 정상 패킷 복구 불가 <br/><br/>\
+# 암호화 트래픽 방어여부 <br/>\
+1. 복호화 여부 <br/>\
+- 스크러빙 센터 : SSL기반, 복호화 없이 탐지가능 <br/>\
+- CDN : 데이터 복호화 하지 않음 <br/><br/>\
+2. Inspection <br/>\
+- 스크러빙 센터 : 패킷의 Payload 검사 수행 <br/>\
+- CDN : 암호화 패킷 검사 하지 않음 <br/><br/>\
+3. 트래픽 처리 <br/>\
+- 스크러빙 센터 : 패킷 재암호화 코어 서버 전달 <br/>\
+- CDN : DDoS 암호화 패킷 탐지 불가 <br/><br/>\
+* 116회 4교시 2번\
+',
 );
