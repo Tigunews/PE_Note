@@ -23,6 +23,7 @@ var question = question.concat(
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
+'포맷 스트링 공격',
 '카멜레온 바이러스',
 '스테이지 프라이트(Stage Fright)',
 '널 포인터 디레퍼런스(Null Pointer Dereference)',
@@ -507,6 +508,19 @@ var answer = answer.concat(
 # 사례 <br/>\
 - Bluepill루트킷 : 최초의 HVM(Hardware Virtual Machine) 루트킷, 드라이버로 적재되며 OS상태를 게이트 운영체제로 이동시킴 <br/><br/>\
 * 시스템 부팅 시작단계부터 보안활동 시작 필요\
+',
+   
+// 포맷 스트링 공격
+'# 정의 : 데이터 형태의 불명확 정의를 이용한 공격 <br/>\
+- 출력문에서 올바르지 못한 방법을 악용하여 크래커들이 실제 메모리 번지를 공격하여 원하는 값으로 변경하거나 시스템의 루트 권한을 획득하는 공격 <br/><br/>\
+# 공격원리 <br/>\
+- 취약점이 있는 포맷스트링 / Print(buffer); <br/>\
+- 주소값 확인하기 <br/>\
+- 포맷 스트링 변조 / %x대입 <br/><br/>\
+# 대응방법 <br/>\
+- 철저한 검사 : fprintf, printf, sprintf, vfprintf <br/>\
+- 정상 함수 사용 : printf("%s\n", buffer); / print(buffer); <br/><br/>\
+* 116회 1교시 12번\
 ',
 
 // 카멜레온 바이러스
