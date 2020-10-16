@@ -42,6 +42,7 @@ var question = question.concat(
 '[BigData]- BigData 분석 방법론',
 '[BigData]- DCAT',
 'In-Memory Database',
+'[R-Tree]- Hillbert R-Tree',
 );
 
 var answer = answer.concat(
@@ -947,5 +948,19 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Database 구축 : 인메모리 데이터베이스 구축 / Project 기반 <br/>\
 - Database 적용 : Data 성능, DBMS 모니터링 / 성능 모니터링 <br/><br/>\
 * 아이리포 23회 1교시 12번\
+',
+  
+// Hillbert R-Tree
+'# 정의 : 힐버트 곡선을 활용한 대용량의 공간데이터베이스 구축 <br/>\
+- 공간 챙무 곡선인 Hillbert 곡선을 이용해서 대용량의 데이터를 고비용의 분할 과정 없이 R-Tree를 구성하는 기법 <br/><br/>\
+# 특징 <br/>\
+- MBR군집화 : 일정 개수 군집화후 다른 차원 데이터 정렬 <br/>\
+- 겹침최소화 : Hillbert 곡선 사용, 성능 향상 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/HillbertRTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용 <br/>\
+- 벌크 로딩 : 고속화, 공간활용도 증가 <br/>\
+- 효율적 질의 : 인덱스 성능 향상 <br/><br/>\
+* 116회 1교시 13번\
 ',
 );
