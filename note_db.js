@@ -42,7 +42,7 @@ var question = question.concat(
 '[BigData]- BigData 분석 방법론',
 '[BigData]- DCAT',
 'In-Memory Database',
-'[R-Tree]- Hillbert R-Tree',
+'[R-Tree]- Hilbert R-Tree',
 );
 
 var answer = answer.concat(
@@ -950,7 +950,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 * 아이리포 23회 1교시 12번\
 ',
   
-// Hillbert R-Tree
+// Hilbert R-Tree
 '# 정의 : 힐버트 곡선을 활용한 대용량의 공간데이터베이스 구축 <br/>\
 - 공간 챙무 곡선인 Hillbert 곡선을 이용해서 대용량의 데이터를 고비용의 분할 과정 없이 R-Tree를 구성하는 기법 <br/><br/>\
 # 특징 <br/>\
