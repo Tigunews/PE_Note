@@ -156,22 +156,20 @@ var answer = answer.concat(
 // 병행제어 = 동시성제어
 '# 정의 : 직렬 가능성 보장 기법 / 트랜잭션 / 동시 접근 / 무결성 / 성공 실행 <br/>\
 - 동일 데이터에 여러 트랜잭션 동시 접근시 데이터 무결성을 확보하고, 성공/실행지원하는 직렬가능성 보장기법 <br/><br/>\
-# 암기 <br/>\
-- 문제 : 갱현모연회<br/>\
-- 기법 : 락타낙다 <br/><br/>\
-# 문제 <br/>\
-- 갱신손실 : DW-덮어쓰기 <br/>\
-- 현황파악 오류 : DR-읽어갔는데 롤백 <br/>\
-- 모순성 : NRR-Sum 하는 중 일부 값 바뀜 <br/>\
-- 연쇄복기 <br/>\
+# 문제 (갱읽모연회)<br/>\
+- 갱신손실(Lost Update) : W-트랜잭션 덮어 씌움 <br/>\
+- 읽기오류(Dirty Read) : R-트랜잭션 수행전 읽음 <br/>\
+- 모순성(Inconsistency) : 트랜잭션 중첩 갱신 모순성 발생 <br/>\
+- 연쇄복기(Cascading Rollback) : 다른 트랜잭션 부분 Rollback 불가 <br/>\
 - 회복 불능 <br/><br/>\
-# 기법 <br/>\
-- 락킹 : 상호배제 기능 제공, 2PL, 공유락, 전용락, Lock Escalation-연쇄복귀 <br/>\
-- 타임스탬프 : 시스템 시계, 논리적 계수기 <br/>\
-- 낙관적 기법 <br/>\
-- 다중버전 <br/><br/>\
+# 기법 (락타낙다)<br/>\
+- 락킹(Locking) : 상호배제 기능 제공, 2PL, 공유락, 전용락, Lock Escalation-연쇄복귀 <br/>\
+- 타임스탬프(Timestamp) : 시스템 시계, 논리적 계수기 <br/>\
+- 낙관적 기법(Validation Verification) : 트랜잭션 제어 x, 갱신시 사본 저장<br/>\
+- 다중버전 동시성제어(MVCC) : 여러버전 타임스탬프 비교, 직렬성 보장 버전 선택<br/><br/>\
 <img src = "./img/병행제어_1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/병행제어_2.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/병행제어_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 응용 2교시 5번\
 ',
 
 // 트랜잭션 직렬화
