@@ -1,6 +1,7 @@
 var question = question.concat(
 '데이터 무결성',
 'ACID',
+'상태전이도',
 '데이터 독립성',
 '[데이터 독립성]- ANSI SPARC 3계층',
 '병행제어 = 동시성제어',
@@ -103,6 +104,16 @@ var answer = answer.concat(
 - 예시 : 시스템 문제, DB 일관성 체크등을 하더라도 유지되어야 함을 의미<br/>\
 <img src = "./img/ACID_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 4교시 5번\
+',
+  
+// DB 상태전이도
+'<img src = "./img/DB_State_move.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Activity : 정상적 실행 상태 <br/>\
+- Partially Committed : 트랜잭션에 정의된 모든 연산 실행 완료 <br/>\
+- Failed : 더 이상 진행될 수 없는 상태 <br/>\
+- Aborted : Fail이후 실행되기 이전으로 복귀 <br/>\
+- Committed : 성공적 완료, 데이터 저장 <br/><br/>\
+* 116회 응용 2교시 5번\
 ',
 
 // 데이터 독립성
