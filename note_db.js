@@ -89,17 +89,17 @@ var answer = answer.concat(
 <img src = "./img/ACID_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. Consistency (일관성) <br/>\
 - 개념 : 일관딘 상태의 데이터베이스에서 하나의 트랜잭션 정확히 수행시 또 다른 일관된 상태 유지 <br/>\
-- 구현 기법 : 도메인 무결성, 릴레이션 무결성 <br/>\
+- 구현 기법 : 도메인 무결성, 동시성 제어 <br/>\
 - 예시 : 모든 계좌는 잔고가 있어야 한다면 이를 위반하는 트랜잭션은 중단됨 <br/><br/>\
 <img src = "./img/ACID_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 3. Isolation (고립성) <br/>\
 - 개념 : 하나의 트랜잭션이 완료되기전까지는 갱신중인 데이터에 다른 트랜잭션이 접근하지 못하도록 제한 <br/>\
-- 구현 기법 : SQL-92, Isolation Level <br/>\
+- 구현 기법 : Locking, Isolation Level <br/>\
 - 예시 : 은행 관리자는 이체 작업을 하는 도중에 쿼리를 실행하더라도 특정 계좌간 이체하는 양쪽을 볼 수 없다. <br/>\
 <img src = "./img/ACID_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 4. Duarability (지속성) <br/>\
 - 개념 : 하나의 트래잭션이 완료된 이후에는 장애가 발생해도 갱신한 데이터 손실 방지 <br/>\
-- 구현 기법 : Archive, Log, Redo/Undo 기반 회복 <br/>\
+- 구현 기법 : 회복기법 <br/>\
 - 예시 : 시스템 문제, DB 일관성 체크등을 하더라도 유지되어야 함을 의미<br/>\
 <img src = "./img/ACID_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 4교시 5번\
