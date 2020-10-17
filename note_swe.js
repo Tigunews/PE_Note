@@ -254,6 +254,7 @@ var question = question.concat(
 '[방법론]- Agile 방법론',
 '[방법론][Agile]- xp',
 '[방법론][Agile]- Scrum',
+'[방법론]
 '[방법론][Agile]- Burn down Chart',
 '[방법론][Agile]- SafeScrum',
 '[방법론][Agile]- 회고',
@@ -4084,6 +4085,16 @@ P 히스토그램 : Data 분포 <br/>\
 - 스프린트 수행 : 스프린트 계획 회의, 일일 스크럼, 스프린트, 스프린트 종료 데모, 스프린트 회고 <br/>\
 - 프로젝트 종료 : 프로젝트 교훈 미팅 <br/>\
 <img src = "./img/ScrumMeeting.png" style = "max-width:100%; height:auto;"><br/>\
+',
+  
+// Product Backlog
+'# 정의 : 소프트웨어 제품의 기능 목록 <br/>\
+- 소프트웨어 제품의 모든 요구사항에 대한 우선 순위화된 목록으로서, 모든 변경 요구사항을 포함하는 개발해야 할 우선순위가 정의된 제품의 기능 목록 <br/><br/>\
+# Keyword : 우선순위화, 요구사항, 기능목록, Sprint Backlog <br/><br/>\
+# 특징 <br/>\
+- 초기 제품의 요구사항 기능 목록 <br/>\
+- 스프린트 백로그에 개발할 분량 할당 <br/><br/>\
+* 116회 응용 1교시 9번\
 ',
 
 // Burn down Chart
