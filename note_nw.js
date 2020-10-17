@@ -22,13 +22,14 @@ var question = question.concat(
 'Modbus',
 '필드버스(Fieldbus)',
 '[필드버스(Fieldbus)]- IEEE802.11i, IEEE 802.11ac, IEEE 802.11ah(M2M-Wifi), IEEE 803.af(Super Wifi)',
-'Wi-SUN',
-'Wi-Fi Positioning System',
-'와이파이 헤일로(W-Fi HaLow)',
-'와이파이 콜링 서비스(Wi-Fi calling Service)',
-'패시브 와이파이(Passive wifi)',
-'인지무선(Cognitive Radio)',
-'IEEE 802.11p',
+'[무선통신]- Wi-SUN',
+'[무선통신]- Wi-Fi Positioning System',
+'[무선통신]- 와이파이 헤일로(W-Fi HaLow)',
+'[무선통신]- 와이파이 콜링 서비스(Wi-Fi calling Service)',
+'[무선통신]- 패시브 와이파이(Passive wifi)',
+'[무선통신]- 인지무선(Cognitive Radio)',
+'[무선통신]- IEEE 802.11p',
+'[무선통신]- Gigabit WLAN',
 '라이파이(Li-Fi)',
 'SON',
 'BcN',
@@ -718,6 +719,35 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 3) 최대 전송거리 : 1 Km <br/>\
 4) 최대 대역폭 : 27 Mbps / 54 Mpbs <br/><br/>\
 * 86회 라이지움 모의고사 1교시 1번\
+',
+ 
+// Gigabit WLAN
+'# 정의 : IEEE 802.11n 초고속 무선랜 후속으로 Gigabit 수준의 무선 전송 서비스 <br/><br/>\
+# 키워드 : QAM, MU-MIMO, OBSS Management, Channel Bounding, Beamforming <br/><br/>\
+# 기술요소 <br/>\
+1. 운용성 향상 <br/>\
+- 무선전송 향상 : High order, 제한된 Channel Feedback, Cooperative MU-MIMO <br/>\
+- 무선접속 제어향상 : 멀티유저 전송 MAC, MU-MIMO Protection <br/><br/>\
+- Overlapping BSS Management : 각 AP지원하는 STA에게 데이터 송신 및 QoS보장 기술 <br/>\
+- Interoperability : Collision 회피 Protection 방안 <br/><br/>\
+2. 성능향상 <br/>\
+- 변조방식 향상 : 64QAM -> 264QAM <br/>\
+- 채널향상 기술 : Channel Coding, BCH부호당 300->600Mbps 처리 <br/>\
+- Multi Channel : 호환성 위한 40MHz 전송, 최대 160MHz 까지 확장 <br/>\
+- Channel Access : Sub-Channel 효율성, 호환성, 연동성 <br/><br/>\
+# 발전 동향 <br/>\
+- IEEE P802.11ah : IOT <br/>\
+- IEEE P802.11ax : 고집적 환경 <br/>\
+- IEEE P802.11ay : 부스터 통한 단거리 <br/>\
+- IEEE P802.11az : 실내 위치 측위 <br/><br/>\
+* STA : Station <br/>\
+* BSS(Basic Service Set) : 기본적 무선랜 환경 <br/>\
+* SDMA(Space Division Multiple Access) : 공간분할 다중 액세스 <br/>\
+* MAC(Medium Access Control) : Datalink Layer 단위 <br/>\
+* CCA(Clear Channel Assessment) : 무선 LAN 채널 감지기능 <br/>\
+* QAM(Quadrature Amplitude Modulation) : 직교 진폭 변조(제한범위 고속신호) <br/>\
+* BCH(Bitcoin Cash) <br/>\
+* 122회 응용 4교시 5번\
 ',
 
 // Li-Fi
