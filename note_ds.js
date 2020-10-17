@@ -1847,49 +1847,26 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // 자율주행자동차
 '# 정의 : 최첨단 자동차 / 상황인식 / 정보파악 / 기계제어 / 스스로 주행 <br/>\
 - 센서를 통한 상황인식, 전자제어장치 등에서 그 상황에 대한 정보를 파악,판단 기계장치들을 제어,스스로 주어진 목적지까지 주행하는 기능을 가진 최첨단 자동차 <br/><br/>\
-# 암기 <br/>\
-- 분류(3) : 완인운 <br/>\
-- 센서기술(4) : GRL카 <br/>\
-- Level5 : 비기조제완 <br/>\
-- 기술표준(4) : 혼고주차 <br/><br/>\
-# 분류 : 완전, 인프라, 운전자보조 <br/><br/>\
-# 기술 <br/>\
-- 자동차 제어 기술 : X-by-wire, Break-by-wire, Steer-by-wire, Shfit-by-wire <br/>\
-- 차량용 센서 기술 : LIDAR센서, 레이더, 영상, 초음파센서, GPS <br/>\
-- 차량 통신 기술 : WAVE, V2X <br/>\
-- 판단 기술 : 상황인식, 기계학습, 최단경로 알고리즘 <br/>\
-- 서비스 기술 : Head-up Display, TTS, 음성인식, HVI <br/><br/>\
-# 센서 기술 <br/>\
-- RADAR(Radio Detection and Ranging) : 차량, 도로시설물 감지, 크루즈 컨트롤, 전방충돌경보 <br/>\
-- LIDAR : 전자기파 대신 빛, 정밀센서, 360도, 3D, 보행자 감지, 자동주차 <br/>\
-- 카메라 : 차선,보행자-광학계 영상 취득처리, 운전자 상태감지, 동작인지 <br/>\
-- GPS : 현 차량 정확 측위위해 위성신호 수신 <br/>\
-- AGPS : 재 기동시 빠른위치 정보수집 <br/>\
-- DGPS : 수십 cm내의 오차 <br/><br/>\
-# 멀티미디어 플랫폼 <br/>\
-- 인포테인먼트 : Embedded Linux <br/>\
-- QNX : 개발, NewTrino커널 내장 프로세스 기반 RTOS <br/>\
-- WindowCE(Win32 API, 세마포어 및 256 단계 우선순위 지원) <br/>\
-- Android : 구글 개방형 모바일 플랫폼 <br/><br/>\
-# MiddleWare <br/>\
-- AutoSAR : SW 컴포넌트(응용SW는 Comp로 구성) <br/>\
-- Runtime 환경 : ECU, 정보교환 <br/>\
-- Basic SW : 표준화된 SW계층으로 SW컴포넌트 서비스 제공 <br/><br/>\
-# OS <br/>\
-- OSEK : 선점형 커널, 스케줄러(16대기 큐 FIFO) <br/>\
-- 이벤트와 자원관리 <br/>\
-- 응용 PGM개발 : 파일관리, API호출 <br/><br/>\
-# 현황 : 트럭 플래투닝 - GPS,INS,라이더 <br/>\
-- 2016.11. LG 전자 : 자동차 SW 개발 표준 ASPICE 레벨 3인증과 SW 프로젝트 역량 평가모델 CMMI 레벨 3 재인증 <br/>\
-- 미 교통국(DOT) 산하 도로교통안전국(NHTSA) 자율주행자동차 가이드 라인 발표 (2016.09.) <br/>\
-- 네이버 국토 교통부에 자율주행 임시 운행 허가 신청(2016.12.) -> 임시 허가 받아도 운전자 두명 탑승 필요 <br/>\
-- 레벨4 수준, 고가 센서 장착, 구글 무인차 처럼 벨로다인의 라이다 탑재, 전면부 비디오 카메라 설치, 전면 레이다 전후측방 울트라 소닉 센서 부착 <br/>\
-- 미래부 자율주행차 탑재될 레이더 센서 용 주파수로 77~81GHz 대역 4GHz 폭 분배 확정 (2106.12.) <br/><br/>\
-# 기술표준 운전 추진 <br/>\
-1) 혼잡구간 주행지원(TTJ) <br/>\
-2) 고속도로 자동조종(HAP) <br/>\
-3) 자동주차 (PAPS) <br/>\
-4) 자동 차로 변경 (ALS) <br/><br/>\
+# 기술요소 <br/>\
+1. 상황인지 <br/>\
+- 내외부상황인지 : Ultrasonic Wave, 스마트 카메라, 레이더, 라이다 <br/>\
+- 내부 정보교환 통신 : CAN, Flexlay, LIN, MOST <br/>\
+- 외부정보교환 통신 : Wifi, LTE, DSRC, WAVE(5.9Ghz, IEEE1609) <br/><br/>\
+2. 상황판단 측면의 자율주행 핵심기술 <br/>\
+- 수집정보해석, 상황판단 : ECU, DSP, MCU, AI <br/>\
+- 정밀위치기반 경로생성 : HD Map, MMS, GPS<br/><br/>\
+3. 차량제어 <br/>\
+- 관리 및 제어 : OS, FS, DB <br/>\
+- 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
+* LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
+* MOST(Media Oriented Systems Transort) : 자동차 산업 최적화 고속 멀티미디어 네트워크 기술 <br/>\
+* DSRC(Dedicated Short Range Communication) : 차량 노변기지국간 통신, 근거리 전송 고속 패킷통신 <br/>\
+* ECU : Engine Control Unit <br/>\
+* DSP : Digital Signal Processor <br/>\
+* MCU : Micro Control Unit <br/>\
+* MMS : Mobile Mapping System <br/>\
+* ESC(Electronic Stability Control) : 차체 자세제어 장치 <br/>\
+* MDPS(Motor Driven Power Steering) : 조향장치 <br/>\
 * ISO26262, AutoSAR <br/>\
 * HAP : Highway Auto Pilot <br/>\
 * PAPS : Patraly Automated Parking System <br/>\
@@ -1898,6 +1875,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 * 스마트더스트 c-its 연계 가능 <br/>\
 <img src = "./img/자율주행자동차_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/자율주행자동차_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 응용 3교시 6번\
 ',
 
 // [자율주행자동차]- 트롤리 딜레마 
