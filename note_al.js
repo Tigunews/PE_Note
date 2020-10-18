@@ -50,8 +50,9 @@ var question = question.concat(
 '모라벡의 역설(Moravec\'s Paradox)',
 '몬테 카를로 트리 탐색(MCTS)',
 '튜링테스트',
-'Hashing',
-'[Hashing]- Hash Function',
+'Hash Function',
+'[Hash Function]- Hashing',
+'[Hash Function]- Hash Algorithm',
 '추정이론(estimation theory)',
 '가설검정 (Statistical Hypothesis Testing)',
 '[가설검정]- 혼동행렬(오차행렬)',
@@ -791,9 +792,24 @@ var answer = answer.concat(
 3. 격리된 다수의 심사원이 A,B중 어느 쪽이 사람인지에 대한 평가를 함 <br/>\
 4. 어느쪽이 사람인지 구분할 수 없을 경우, A,B 둘다 인간 수준의 사고능력 가진것으로 판정\
 ',
+ 
+// Hash Function
+'# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
+- Input : Hash Key / Output : Bucket home address <br/><br/>\
+# 특징 : 단방향, 충돌저항, 압축, 효율 <br/><br/>\
+# Algorithm (제기폴제)<br/>\
+- 제산법 : 나머지 값 <br/>\
+- 기수변환법 : 임의의 기수로 변환 <br/>\
+- 폴딩법 : 여러조각 나눔후 임의 연산 <br/>\
+- 제곱법 : 키값 제곱후 중간부분 사용 <br/><br/>\
+# SHA 알고리즘 종류 <br/>\
+<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 116회 관리 1교시 3번\
+',
 
 // Hashing
 '# 정의 : 저장, 검색 수행기법 / Table / Function <br/>\
+- Hash Function + Indexing <br/>\
 - Hash Table 저장공간에 Hash Function 을 이용하여 저장과 검색을 수행하는 기법 <br/><br/>\
 # 특징 <br/>\
 - 검색속도 빠름, 기억공간 소모 많음 <br/>\
@@ -823,19 +839,16 @@ var answer = answer.concat(
 3. 재해싱 : 새로운 해싱함수를 이용하여 새로운 홈 주소 추출 <br/><br/>\
 * 그리타 \
 ',
-  
-// Hash Function
-'# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
-- Input : Hash Key / Output : Bucket home address <br/><br/>\
-# 특징 : 단방향, 충돌저항, 압축, 효율 <br/><br/>\
-# Algorithm (제기폴제)<br/>\
-- 제산법 : 나머지 값 <br/>\
-- 기수변환법 : 임의의 기수로 변환 <br/>\
-- 폴딩법 : 여러조각 나눔후 임의 연산 <br/>\
-- 제곱법 : 키값 제곱후 중간부분 사용 <br/><br/>\
-# SHA 알고리즘 종류 <br/>\
-<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 116회 관리 1교시 3번\
+
+// Hash Algorithm
+'# 정의 : Hash function + Encyrpthion <br/>\
+- 임의의 길이의 메시지를 일정 고정길이의 해쉬 값으로 변환시켜주는 단방향성 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- 단방향성 <br/>\
+- 충돌저항성 <br/>\
+- 압축성 <br/>\
+- 효율성 <br/><br/>\
+* 116회 1교시 3번\
 ',
 
 // 추정이론
