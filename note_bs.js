@@ -922,33 +922,26 @@ var answer = answer.concat(
 ',
 
 // TOC
-'# 정의 : 경영 혁신 기법 / 엘릿 골드렛 박사 / 제약 사항 관리 <br/>\
+'# 정의 : 목적 달성 저해 제약조건 찾고, 통제 / 전체 최적화 / 의사결정 지원 경영과학 이론 <br/>\
 - Theory Of Constraints <br/>\
-- 제약이론<br/>\
 - 엘릿 골드렛 박사가 개발한 목적(Goal)달성을 방해하는 제약 사항을 관리하여, 시스템이 목적을 달성할 수 있도록 하는 경영혁신 기법<br/>\
 - 기업 전략을 방해하는 제약사항을 발견하여 이를 제거하기 위한 기법으로 시스템의 목적 달성을 저해하는 제약조건(병목)을 찾아내 극복하기 위한 시스템 개선방법<br/><br/>\
-# 암기 : 회T, 물D, 정T, 프C<br/><br/>\
-# 특징 : 제약전제, 전체 최적화, 제약사항 고려, 집중개선(병목개선)<br/><br/>\
+# 특징 <br/>\
+- 전체 최적화 <br/>\
+- 제약사항 고려 <br/>\
+- 집중개선 <br/><br/>\
 # 절차 <br/>\
-1. 제약조건 발견 <br/>\
-2. 제약조건 활용 <br/>\
-3. 제약조건 활용에 종속 <br/>\
-4. 2,3 실행 후 제약조건 향상 <br/>\
-5. 1로 돌아감 <br/><br/>\
+1. 요인 발견 <br/>\
+2. 방법 모색 <br/>\
+3. 결정 종속 <br/>\
+4. 요인 향상 <br/>\
+5. 원복 <br/><br/>\
 # 구성 <br/>\
-1. 회계관리 : Throughput Accounting : Throughput, Investment, Operating Expense <br/>\
-2. 물리적 제약(생산/물류) : DBR - Drume(제약조건), Buffer(완충), Rope(자원) <br/>\
-3. 정책적 제약 : TOC Thingking(제약자원 개선절차) - 핵심문제도출(CRT) -> 방안탐색, 개선후 모습(FRT) -> 개선유도(PT, TT) <br/>\
-4. 프로젝트 관리 : CCPM(Critical Chain Project Mgmt) : 제약자원관점 버퍼활용 <br/><br/>\
-# 사례 <br/>\
-- Proctor and Gamble : 재고 6억불 감소 <br/>\
-- Ford : 자동차 전자사업부(재고 1억불 감소) <br/>\
-- Harris 반도체 : 사이클 타임 50% 감소, 재고 40% 감소, 수익 28% 향상 <br/>\
-- Lucent Technology : 납기 준수율 100% 달성 <br/><br/>\
-* CRT : Current Reality Tree <br/>\
-* FTR : Future Reality Tree <br/>\
-* PT : Prerequesite Tree <br/>\
-* TT : Transition Tree \
+- 물리적 제약 : DBR <br/>\
+- 정책적 제약 : TOC Thinking Process <br/>\
+- 프로젝트 관리 : Critical Chain <br/>\
+- 회계 관리 : Throughput Accounting <br/><br/>\
+* 119회 관리 1교시 3번\
 ',
 
 // Open Shift
