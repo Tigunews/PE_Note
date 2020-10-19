@@ -28,6 +28,7 @@ var question = question.concat(
 '[인증기술]- 바이오 인증',
 '[인증기술]- 얼굴인식 알고리즘',
 '[인증기술]- 자기주권형 신원증명',
+'[인증기술]- DID',
 '핀테크',
 '[핀테크]- 서비스',
 '[핀테크]- 핀테크 오픈플랫폼(FinTech Open Platform) / 핀테크 오픈 API 플랫폼',
@@ -648,6 +649,19 @@ var answer = answer.concat(
 - 아이콘루프 : 블록체인 기반 자기주권형 신원 인증 서비스 DPASS 출시 <br/>\
 - 경찰청 : 이동통신 3사의 공통 본인인증 PASS 이용<br/>\
 - LG CNS, 캐나다 "애버님"과 블록체인 기반 신분인증체게 구현 <br/><br/>\
+',
+  
+// DID
+'# 정의 : Decentralized Identity <br/>\
+- 분산원장을 기반으로 사용자가 스스로 신원 등에 대한 증명 관리, 신원정보 제출 범위 및 제출 대상 통제 등을 수행할 수 있도록 하는 신원관리 체계 <br/><br/>\
+# Keyword : 분산원장, 블록체인기반 <br/><br/>\
+# 특징 : Decentralized, Digital Hub(개인이 소유), Cryptographically-verifiable(암호화 인증) <br/><br/>\
+# 기술요소 <br/>\
+- Verifiable Credentials : 증명서 / W3C<br/>\
+- DID Auth : 사설키 제어 증명 인증 / DIF<br/>\
+- DKMS(Decentralized Key Management System) : 키관리 표준 / OASIS<br/>\
+- DIDs(Decentralized Identifiers) : 탈중앙 식별자 / W3C <br/><br/>\
+* 119회 관리 1교시 4번\
 ',
   
 // 핀테크
