@@ -7,7 +7,6 @@ var question = question.concat(
 '[계획단계][비용산정]- COCOMO',
 '[계획단계][비용산정]- COCOMO II',
 '[계획단계][비용산정]- 기능점수법(FP, Function Point)',
-'[계획단계][FP]- 개발비 구성요소',
 '[계획단계][FP]- 정통법 사례',
 '[계획단계][비용산정]- EVM',
 '[계획단계][비용산정]- 델파이 기법',
@@ -428,15 +427,12 @@ var answer = answer.concat(
 '# 정의 : ISO 14143 / SW 규모측정 방법 / 사용자관점 / 양,질 <br/>\
 - 사용자관점에서 소프트웨어의 양과 질을 동시에 고려한 소프트웨어 규모 측정방법, ISO14143<br/><br/>\
 # 특징 : 양적/질적 측면 고려, 수학적 기법, 간이법/정규법, 간이법으로 초기 사업규모 예측가능, 복잡도 산정에 주간 개입 가능 <br/><br/>\
+# 개발비 : 보정 개발원가 + 직접경비 + 이윤(25%) <br/><br/>\
 <img src = "./img/FP_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/FP_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SWE_1.png" style = "max-width:100%; height:auto;">\
 ',
-  
-// SW 개발비 
-'<img src = "./img/SW_Coast.png" style = "max-width:100%; height:auto;">\
-',
-  
+ 
 // 정통법 사례
 '<img src = "./img/정통법사례.png" style = "max-width:100%; height:auto;">\
 ',
