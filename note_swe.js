@@ -4083,10 +4083,15 @@ P 히스토그램 : Data 분포 <br/>\
 ',
 
 // Burn down Chart
-'# 정의 : 시간대비 할일 그래프 <br/>\
-- 시간 대비 할일을 그래프로 표현한 것, 팀원 모두 적정한 속도로 작업 중인지 시각화 <br/>\
-- 요구사항의 중요도, 난이도를 바탕으로 점수(Story Point)를 부여하고, 그 점수를 스프린트 기간내에 추이를 분석하는 작업 진척율 차트 <br/><br/>\
-# 특징 : Y축 잔여 예측 시간 or 남은기능 X축 날짜 \
+'# 정의 : Scrum의 Sprint 일정관리 도구 <br/>\
+- Agile 프로젝트기반 조직에서 점수(Story Point)를 산정하여 Sprint 계획대비 현재 진행을 파악할 수 있는 차트 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/BurnDownChart.png" style = "max-width:100%; height:auto;"><br/>\
+- x축 : 시간, 스프린트 반복 주기 <br/>\
+- y축 : 완료된 작업의 추정 일수 (Story Point) <br/>\
+- 계획 그래프 <br/>\
+- 실제 그래프 <br/><br/>\
+* 119회 관리 2교시 5번\
 ',
 
 // SafeScrum
