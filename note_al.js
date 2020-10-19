@@ -841,7 +841,7 @@ var answer = answer.concat(
 ',
 
 // Hash Algorithm
-'# 정의 : Hash function + Encyrpthion <br/>\
+'# 정의 : Hash function + Encryption <br/>\
 - 임의의 길이의 메시지를 일정 고정길이의 해쉬 값으로 변환시켜주는 단방향성 알고리즘 <br/><br/>\
 # 특징 <br/>\
 - 단방향성 <br/>\
