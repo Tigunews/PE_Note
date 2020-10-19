@@ -71,7 +71,8 @@ var question = question.concat(
 'ISO 20547',
 'SW사업저장소',
 '군집분석',
-'IT 투자 평가 항목',
+'[IT-BS]- IT 투자성과 평가',
+'[IT-BS]- IT 투자 평가 항목',
 '나라장터 ',
 'EAI',
 'COBIT 5.0',
@@ -1188,9 +1189,20 @@ var answer = answer.concat(
 - 주성분분석(PCA) : 새로운 변수 창출 <br/>\
 - MDS(MultiDimensional Scaling) : 다차원 척도법 <br/><br/>\
 <img src = "./img/판별군집비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 122회 1교시 5번\
+* 122회 관리 1교시 5번\
 ',
 
+  
+// IT 투자성과 평가
+'# 정의 : 투자/품질/이용/효과, 전략적, 정성적 타당성 평가 <br/>\
+ - 조직의 투자에 대한 목표 달성 기여도를 투자/품질/이용/효과 측면에서 전략적, 정성적으로 타당성을 평가하는 활동 <br/><br/>\
+# 주요지표 <br/>\
+<img src = "./img/IT_Metric.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 경제성 분석기법 <br/>\
+<img src = "./img/IT_Economic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 2교시 3번\
+',
+ 
 // IT 투자 평가 항목 
 '# 정량적 평가 항목 <br/>\
 - EVA (Economic Value Added) : IT(수익-투자) <br/>\
@@ -1205,7 +1217,7 @@ var answer = answer.concat(
 # 복합 평가 <br/>\
 - 다중접근 : BSC, IT-BSC <br/>\
 - 통계산술 : ROV(Real Option Valuation), AIE(Applied Information Economics) <br/><br/>\
-* 122회 3교시 5번\
+* 122회 관리 3교시 5번\
 ',
 
 // 나라장터 절차
