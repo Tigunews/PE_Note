@@ -43,6 +43,16 @@ var question = question.concat(
 '[BigData]- DCAT',
 'In-Memory Database',
 '[R-Tree]- Hilbert R-Tree',
+'Data Mining',
+'[Data Mining]- Text Mining',
+'[Data Mining]- 단어구름(Word Cloud)',
+'[Data Mining]- Co-Word Analysis',
+'[Data Mining]- 탐색적 데이터 분석(Exploratory Data Analysis)',
+'[Data Mining]- 확증적 데이터 분석(Confimatory Data Analysis)',
+'[Data Mining]- 토픽 모델링',
+'[Data Mining]- 연관규칙(지지도,신뢰도,향상도)',
+'[Data Mining]- Opinion Mining',
+'[Data Mining]- System Dynamics',
 );
 
 var answer = answer.concat(
@@ -962,5 +972,148 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 벌크 로딩 : 고속화, 공간활용도 증가 <br/>\
 - 효율적 질의 : 인덱스 성능 향상 <br/><br/>\
 * 116회 1교시 13번\
+',
+  
+// DataMining
+'# 정의 : 정보 도출 방법 / 데이터 집합 / 사용자 요구 /<br/>\
+- 데이터 집합에서 사용자 요구 따라 유용 가능성 있는 정보 도출 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DataMining_OLAP.png" style = "max-width:100%; height:auto;"><br/>\
+* ETT : Extension, Transformation, Transportation <br/><br/>\
+# 절차 <br/>\
+1. Sampling : 표본 추출 <br/>\
+2. Cleansing : 전처리(Pre-Processing) <br/>\
+3. 오류 제거 <br/>\
+4. Exploration : 자료의 탐색을 통해 기본정보 획득 및 분석 <br/>\
+5. Modeling : 알고리즘 선정 및 적용하여 마이닝 수행, 지도학습 알고리즘(의사결정, 신경망), 자율학습(연관성, 군집) <br/>\
+6. Reporting : 결과 분석/ 평가, 반복수행 여부 결정 <br/>\
+7. FeedBack <br/><br/>\
+# Apriori Algorithm <br/>\
+- 지지도 P(A∩B)<br/>\
+- 신뢰도 P(B|A)= P(A∩B)/P(A) <br/>\
+- 향상도 P(B|A)/P(B) = P(A∩B)/P(A)*P(B)\
+',
+
+// TextMining 
+'# 정의 : 정보 도출 기법 / 비 조화 텍스트 문서 <br/>\
+- 비 조화된 텍스트 문서에서 가치있는 정보를 도출하는 기법 <br/><br/>\
+# 암기 <br/>\
+- 기법 : 분클토질컨듀 <br/><br/>\
+# 절차 : 데이터 수집 > 전처리 > 정보추출 > 클러스터링/범주화 > 요약/검색 <br/><br/>\
+# 기법 : 문서분류, 문서클러스터링, 토픽 트래킹, 질의응답(NLP), Concept Linkage(문서간 의미적 연결성), 듀오 마이닝(Data Mining, Text Mining 동시 적용)\
+',
+
+// Word Cloud
+'# 정의 : 시각적 표시 방법 / 메타데이터 / 태그 분석 / <br/>\
+- 메타데이터에서 얻어진 태그들을 분석하여 중요도나 인기도 등을 고려하여 시각적으로 늘어 놓아 웹사이트에 표시하는 방법 <br/><br/>\
+# 암기 <br/>\
+- 유형 : 문데 <br/>\
+- 도구 : 워A두 <br/><br/>\
+# 유형 <br/>\
+- 문서 구름 : Text Cloud - 문서 포함 단어의 시각적 표현 <br/>\
+- 데이터 구름 : Data Cloud - 단어대신 숫자 정보를 크기와 색깔로 표현 <br/><br/>\
+# 도구 : Wordle, ABCya, DoodleBuz\
+',
+
+// Co-Word Analysis
+'# 정의 : 내용 분석 기법 / 문장 / 단어 규칙 / 핵심개념 / 관계식별<br/>\
+- 문장 안에서 함께 사용되는 단어 규칙을 조사해서 문서의 주제와 관련된 핵심 개념이 무엇이고 이들의 관계가 어떤지 식별하는 내용 분석 기법 <br/><br/>\
+# 암기 <br/>\
+- 절차 : 수전동 <br/><br/>\
+# 절차 <br/>\
+1. 데이터 수집 <br/>\
+2. 데이터 전처리 과정 : 텍스트 마이닝, 불용어 제거, 품사 태깅, 주석 통해 제시된 명사구 선택 <br/>\
+3. 동시 출현 단어 분석 과정 \
+',
+
+// Exploratory Data Analysis
+'# 정의 : 분석 기법 / 관찰, 가설 / 필요한 데이터 형태 추출 <br/>\
+- 관찰한 현상을 보고 가설을 설정하고 필요한 데이터의 형태를 추출하는 분석 기법',
+
+// Confimatory Data Analysis
+'# 정의 : 분석 기법 / 의사결정 / 수집, 분석, 활용 <br/>\
+- 의사결정을 하기 위해 목적에 적합한 데이터를 수집하고 분석하여 결과를 활용하는 분석기법',
+
+// Topic Modeling
+'# 정의 : 추론 모델 / 비정형 문서 집단 / 주제 찾기 알고리즘 / 맥락, 단어 이용 / 유사 의미 단어 클러스터링 <br/>\
+- 구조화 되지 않은 방대한 문서 집단으로 주제를 찾아내기 위한 알고리즘으로 맥락과 관련된 단어들을 이용하여 유사한 의미를 가진 단어들을 클러스터링하는 방식으로 추론하는 모델 <br/><br/>\
+# 절차 <br/>\
+1. 비 단어 제거 : 특수기호, 불용어 제거/정제 <br/>\
+2. 사전에 정의된 단어만으로 발췌 <br/>\
+3. DTM(Dcoument-Term Matrix) 생성 <br/>\
+4. 알고리즘 적용 : 백터기반 or 확률 기반 <br/><br/>\
+# 알고리즘 유형 <br/>\
+1. 백터 기반 <br/>\
+- LSA(Latent Semantic-Analysis) : 고차원 데이터 공간에 대해 축 변경해 새로운 축을 찾아내는 가변량 통계 분석 방법 <br/>\
+2. 확률 기반 <br/>\
+- pLSA(Probailistic LSA) : 데이터셋과 선별된 토픽 K간의 가장 잘 맵핑되는 토픽과 단어, 단어와 문서간의 조합 찾는 방법, 기존 LSA를 확률적 접근 <br/>\
+- LDA(Latent Dirichlet Allocation) : 주어진 문서 대해 각 문서에 어떤 주제들이 존재하는지에 대한 확률 모형\
+',
+
+// 연관규칙
+'# 정의 : Assotication, 연관성 분석하기 위한 판단 기준 <br/><br/>\
+# 암기 <br/>\
+- 관련 알고리즘 : A,D,F <br/><br/>\
+# 연관성 : 특정 거래에서 하나의 아이템에 대한 거래가 발생하면 다른 특정 아이템의 거래가 연쇄적으로 발생하는 현상 <br/><br/>\
+# 지지도(Support) : 전체 거래 품목 A,B가 동시에 포함될 확률, 두 품목의 동시구매가 얼마나 자주 일어나는지를 분석 <br/>\
+- Support = P(A∩B) = (AB동시/전체거래) = (A거래수 * B거래수) / 전체거래수<br/><br/>\
+# 신뢰도(Confidence) : A->B 연관규칙에서, 품목 A포함 거래중 A,B 동시 포함 거래 확률 -> 두 품목간 연관성의 강도를 분석 <br/>\
+- Confidence = P(B|A) = 지지도/P(A) = P(A∩B)/P(A)<br/><br/>\
+# 향상도(Lift) : A->B 연관규칙에서, 임의의 B가 구매되는 경우 대비, A와 관계되어 구매되는 비율 => A와 B의 상관관계 분석 <br/>\
+- 향상도 = 1 (독립적 관계) : A,B 구매시 상호 연관 없음 <br/>\
+- 향상도 > 1 (양의 상관 관계) : A 구매시 B 구매 예상 <br/>\
+- 향상도 < 1 (음의 상관 관계) : A 구매시 B 구매 감소 <br/>\
+- Lift =  P(B|A)/P(B) = 신뢰도/P(B) = (P(A∩B)/P(A))/P(B)<br/><br/>\
+# 관련 알고리즘 <br/>\
+- Apriori Algorithm : 항목집합 줄이기 <br/>\
+- DHP Algorithm : Transaction 줄이기 <br/>\
+- FP-growth Algorithm : 비교횟수 줄이기 <br/><br/>\
+<img src = "./img/연관규칙.png" style = "max-width:100%; height:auto;">\
+',
+
+// Opinion Mining
+'# 정의 : 사용자 의견분석 기술 <br/>\
+- SNS 대량 리뷰로 사용자가 원하는 정보를 분석해 유의미한 정보를 지능적으로 유추해내는 Mining 기술 <br/><br/>\
+# 특징 <br/>\
+- 1단계 : 팩트와 의견 문장 구분 <br/>\
+- 2단계 : 의견이 들어간 문장을 긍정과 부정으로 구분 <br/>\
+- 3단계 : 긍정과 부정 표현 수 및 유용한 문장 추출후 분석 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/OpinionMining.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. 도메인 지식 추출 <br/>\
+- 전처리 : 객관적인 문장인지 주관적인 문장인지 분리 <br/>\
+- 도메인 의존적 단어 : 특정 단어의 도메인 발생 빈도와 일반 도메인 신문기사 발생 빈도 비교 <br/>\
+- 문장 정보 : Likelihood ratio(우도: 발생가능비율)를 평가 척도로 활용 <br/>\
+- 단서 단어 : 개체명 인식에서 단서 단어를 찾는데 활용 <br/><br/>\
+2. Opinion 추출 <br/>\
+- 개체명 인식 : 평가요소 및 오피니언에 해당하는 단어 열 인식 <br/>\
+- 관계 추출 : 평가요소-오피니언 관계 중 관련성 존재 연결 인식 <br/><br/>\
+# 사례 제시 <br/>\
+1. 1단계 <br/>\
+- 긍정/부정 표현 어휘 정보 추출 <br/>\
+- 사례 : 각 부착한 레이블이 갖는 값이 범위는 0.0~1.0 이며 synset 별로 점수의 총합은 1.0 리소스들은 영어에 국한 <br/><br/>\
+2. 2단계 <br/>\
+- 긍정/부정 표현 수 검출 및 리뷰 요약 <br/>\
+- 사례 : Naiv Bayes, Maximum Entropy(ME) mode, SVM과 같은 알고리즘을 적용하여 기계학습 수행 <br/><br/>\
+3. 3단계 <br/>\
+- 세부 평가요소와 관련된 오피니언을 포함하는 문장들 중 유의미한 문장들을 긍정/부정 평가별로 추출 후 중요 문장으로 구성된 리뷰 요약 생성 <br/>\
+<img src = "./img/OpinionMining_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 122회 1교시 11번\
+',
+ 
+// System Dynamics 
+'# 정의 : 사회 현상을 구성요소로 분해하여, 요소 간의 인과 관계를 표현하는 기법 <br/>\
+- 동태적, 순환적 인과관계의 시각적으로 현상 이해하고 설명하거나 컴퓨터상에서 실험해 보는 방법론이자 현상을 바라보는 프레임워크 <br/><br/>\
+# 특징 <br/>\
+- 집중(초점) : 변수들 간의 영향관계 집중 <br/>\
+- 인과관계 기초 : 순환적 인과관계 <br/>\
+- 데이터 분석 : 동태적 데이터 분석 <br/><br/>\
+# 구성요소 <br/>\
+- 시스템 : 특정 목표를 공유하는 요소 집합 <br/>\
+- 인과관계 : 한 요소의 변화가 다른 요소에 영향을 미치는 의미 <br/>\
+<img src = "./img/SystemDynamics_1.png" style = "max-width:100%; height:auto;"><br/>\
+- 피드백 : 강화 루프, 균형 루프 <br/>\
+- 레벨과 레이트 : 피드백 루프요소를 시뮬레이션 모델로 표현 <br/>\
+<img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
 );
