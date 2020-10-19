@@ -704,7 +704,8 @@ var answer = answer.concat(
 - 수정용이성 : 쉽게 수정<br/>\
 - 추적성 : 상호참조<br/>\
 - 이해가능성 <br/><br/>\
-# 구성 : 시스템 개요, 개발, 운용 환경, 외부 IF와 자료흐름, 기능 명세, 성능 요구사항, 예외처리(용량제한, 시스템 고장), 변경 및 개선 예정 사항, 인수기준 및 문서화, 설계지침, 참고자료 <br/><br/>\
+# 이행방안 <br/>\
+<img src = "./img/SRS_GuideLine.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 목차 예시 <br/>\
 1. 개요 <br/>\
 2. 전체설명 <br/>\
