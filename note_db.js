@@ -51,6 +51,7 @@ var question = question.concat(
 '[Data Mining]- 확증적 데이터 분석(Confimatory Data Analysis)',
 '[Data Mining]- 토픽 모델링',
 '[Data Mining]- 연관규칙(지지도,신뢰도,향상도)',
+'[Data Mining][연관규칙]- Apriori Algorithm',
 '[Data Mining]- Opinion Mining',
 '[Data Mining]- System Dynamics',
 );
@@ -1069,6 +1070,16 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - DHP Algorithm : Transaction 줄이기 <br/>\
 - FP-growth Algorithm : 비교횟수 줄이기 <br/><br/>\
 <img src = "./img/연관규칙.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Apriori Algorithm
+'# 정의 : 선험적 알고리즘 (사전지식 활용)<br/>\
+- 데이터 발생빈도를 기반으로 데이터 간의 연관관계를 유추하기 위한 기법 <br/><br/>\
+# Keyword : 빈발항목집합, 항목집합, 발생빈도, 연관관계, 최소지지도, 최소신뢰도 <br/><br/>\
+# 절차 <br/>\
+- 후보군 선정 : 빈발항목집합 -> Candidate Itemset <br/>\
+- 빈발항목 선정 : 계산 / 평가1(지지도) / 평가2(신뢰도) / 반복 -> Large Itemset <br/><br/>\
+* 119회 2교시 1번\
 ',
 
 // Opinion Mining
