@@ -657,10 +657,10 @@ var answer = answer.concat(
 # Keyword : 분산원장, 블록체인기반 <br/><br/>\
 # 특징 : Decentralized, Digital Hub(개인이 소유), Cryptographically-verifiable(암호화 인증) <br/><br/>\
 # 기술요소 <br/>\
-- Verifiable Credentials : 증명서 / W3C<br/>\
-- DID Auth : 사설키 제어 증명 인증 / DIF<br/>\
+- DIDs(Decentralized Identifiers) : 탈중앙 식별자 / W3C <br/>\
 - DKMS(Decentralized Key Management System) : 키관리 표준 / OASIS<br/>\
-- DIDs(Decentralized Identifiers) : 탈중앙 식별자 / W3C <br/><br/>\
+- DID Auth : 사설키 제어 증명 인증 / DIF<br/>\
+- Verifiable Credentials : 증명서 / W3C<br/><br/>\
 * 119회 관리 1교시 4번\
 ',
   
