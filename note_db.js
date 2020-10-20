@@ -54,6 +54,7 @@ var question = question.concat(
 '[Data Mining][연관규칙]- Apriori Algorithm',
 '[Data Mining]- Opinion Mining',
 '[Data Mining]- System Dynamics',
+'Database Shard',
 );
 
 var answer = answer.concat(
@@ -1126,5 +1127,17 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 피드백 : 강화 루프, 균형 루프 <br/>\
 - 레벨과 레이트 : 피드백 루프요소를 시뮬레이션 모델로 표현 <br/>\
 <img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+  
+// DB 확장성 확보 방안
+'<img src = "./img/DB_AddScale.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Database Shard
+'# 정의 : 대용량 데이터베이스 처리를 위한 파티셔닝 단위 <br/>\
+- 대용량 데이터베이스를 가용성, 확장성, 성능향상 처리를 위해 데이터베이스를 분할하는(파티셔닝) 분할 단위 또는 개별 파티션 <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/DatabaseShardType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 1교시 8번\
 ',
 );
