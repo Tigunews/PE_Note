@@ -76,6 +76,7 @@ var question = question.concat(
 '[가상화]- VDI',
 '[GIS]- OGC',
 '위치정보, 위치기반서비스',
+'IPS',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
 '[측위기술]- SBAS',
@@ -1393,6 +1394,18 @@ var answer = answer.concat(
 * WCS : Web Coverage Service <br/>\
 * WPS : Web Processing Service <br/>\
 * CSW : Catalogue Service\
+',
+  
+// IPS
+'# 정의 : GPS 실내용 버전 <br/>\
+- Indoor Positioning System <br/>\
+- 실내에서 모바일이 수신하는 센서,전파로 건물 내 위치와 이동경로를 측정하는 시스템 <br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/IPS_Tech.png" style = "max-width:100%; height:auto;">\
+* WPS (Wifi Positioning System) <br/>\
+* RSSI (Received Signal Strength Indicator) : 수신 신호 세기/강도 <br/>\
+* UWB (Ultra Wideband) : 3.1~10.6GHz 넓은 주파수 대역 <br/><br/>\
+* 119회 관리 4교시 1번\
 ',
     
 // 위치정보, 위치기반 
