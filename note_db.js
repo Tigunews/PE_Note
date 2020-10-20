@@ -54,7 +54,8 @@ var question = question.concat(
 '[Data Mining][연관규칙]- Apriori Algorithm',
 '[Data Mining]- Opinion Mining',
 '[Data Mining]- System Dynamics',
-'Database Shard',
+'DB 확장성 확보 방안',
+'[DB확장]- Database Shard',
 );
 
 var answer = answer.concat(
