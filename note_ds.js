@@ -2707,27 +2707,18 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 ',
   
 // [CPS]- 디지털트윈
-'# 정의 : 동일 표현 가상 모델 <br/>\
-- 물리적인 사물과 컴퓨터에 동일하게 표현되는 가상 모델 <br/>\
-- 개별 산업자산에 대한 통찰을 지속적으로 증진시켜, 특정 사업 측면에서 성과를 도출하는 공학적인 모델 <br/><br/>\
-# 암기 <br/>\
-- 구성 : 인클풋 <br/>\
-- 기술 : 도피인 <br/><br/>\
-# 구성 <br/>\
-- Input : 빅데이터/센싱정보 <br/>\
-- Cleansing&Processing : 인공지능 <br/>\
-- Output : Digital Twin <= Predix(클라우드 플랫폼,디지털 트윈의 플랫폼)<br/>\
-- 물리세계 : 센서 데이터, 메타데이터, 조건/상태, 이벤트(시계열)데이터, 애널리틱스(알고리즘 규칙) <br/>\
-- 가상세계 : 물리자산의 디지털 자산 표현, VR 가상현실 연계, 3D 모델링, 가상현실에서 디지털자산의 설계, 구현, Digital Thread 관리 <br/>\
-- 물리/가상 통합 : 물리 자산과 디지털 자산의 연결, AR 증강현실 연결, 2 ways connection, 공정제어, 시뮬레이션 <br/><br/>\
-# 기술 <br/>\
-- Domain Data Capability : 사업 분야에 대한 전문적인 데이터 역량 => 데이터 전처리(Pre-Processing)의 자동화, 검사 역량, 디지털 스레드 <br/>\
-- Physical + Digital Engineering Models : 공학적인 물리 모델과 디지털 모델을 도출하는 역량 => Life&Operational Behavior, Performance, Model Management <br/>\
-- Industrial Analytics : 지식 추출 역량 -> 대규모 데이터들을 산업분야에서 요구하는 수준까지 분석하는 능력 -> Model Generation & Automation, Knwledge Extraction <br/><br/>\
-# 사례 : GE엔진, GE 디지털 풍력단지 (항공기 제트엔진, 풍력 발전용 터빈, 발전소) <br/><br/>\
-* GE는 디지털 트윈 이니셔티브를 통해, GE가 생산하는 모든 산업 기계의 프로필을 구축하고 있으며, 기계에 대한 공학적 모델을 획득 중 <br/>\
-* 디지털 트윈 모델에서 얻은 운항 데이터를 GE90엔진에 실제 적용한 결과, 고객 기업은 불필요한 수백만 달러의 서비스 정비 비용을 절감 <br/>\
-* 마이다스 IT : 건축/설계 업계 1위 업체, 요기에서 활용할 듯 함 \
+'# 정의 : 현실세계의 물리적 사물을 가상화한 모델 <br/>\
+- 현실 세계에서 사람이 쉽게 접근할 수 없는 공간이나 물건 등 여러 부분들에 대해 가상모델링화 하여 지속적인 관찰과 보수가 가능하게끔 하는 기술 모델 <br/><br/>\
+# 특징 <br/>\
+- 디지털정보종합 <br/>\
+- <font color = "red">디지털스레드</font> : 정보기반으로 서비스 활용 <br/>\
+- 가상시뮬레이션 <br/>\
+- 통합제어 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/DigitalTwinTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 3교시 1번\
 ',
 
 // Edge Computing
