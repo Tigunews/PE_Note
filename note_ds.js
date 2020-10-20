@@ -151,9 +151,9 @@ var question = question.concat(
 '[Open API]- REST API',
 'Service Worker',
 'Ontact',
+'디지털트윈',
 '스마트 팩토리',
 '[스마트 팩토리]- CPS',
-'[스마트 팩토리]- 디지털트윈',
 'Edge Computing',
 '서버리스 컴퓨팅',
 'Web Crawling',
@@ -2664,6 +2664,21 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 상시 + 수동 : 보안 서비스 \
 ',
 
+// 디지털트윈
+'# 정의 : 현실세계의 물리적 사물을 가상화한 모델 <br/>\
+- 현실 세계에서 사람이 쉽게 접근할 수 없는 공간이나 물건 등 여러 부분들에 대해 가상모델링화 하여 지속적인 관찰과 보수가 가능하게끔 하는 기술 모델 <br/><br/>\
+# 특징 <br/>\
+- 디지털정보종합 <br/>\
+- <font color = "red">디지털스레드</font> : 정보기반으로 서비스 활용 <br/>\
+- 가상시뮬레이션 <br/>\
+- 통합제어 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/DigitalTwinTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 3교시 1번\
+',
+  
 // 스마트 팩토리
 '# 정의 : 자동화 + 지능화 공장 <br/>\
 - ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
@@ -2704,21 +2719,6 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 신뢰성 확보 : 정형검증 요구 <br/>\
 - 프라이버시 : 과도한 정보 수집 금지 <br/>\
 - 정보보안 : 산업 기밀 유출 방지 \
-',
-  
-// [CPS]- 디지털트윈
-'# 정의 : 현실세계의 물리적 사물을 가상화한 모델 <br/>\
-- 현실 세계에서 사람이 쉽게 접근할 수 없는 공간이나 물건 등 여러 부분들에 대해 가상모델링화 하여 지속적인 관찰과 보수가 가능하게끔 하는 기술 모델 <br/><br/>\
-# 특징 <br/>\
-- 디지털정보종합 <br/>\
-- <font color = "red">디지털스레드</font> : 정보기반으로 서비스 활용 <br/>\
-- 가상시뮬레이션 <br/>\
-- 통합제어 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
-<img src = "./img/DigitalTwinTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 119회 관리 3교시 1번\
 ',
 
 // Edge Computing
