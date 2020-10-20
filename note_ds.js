@@ -1843,7 +1843,10 @@ var answer = answer.concat(
 
 // 블록체인 플랫폼 보안
 '<img src = "./img/BlockchainSEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 116회 3교시 3번\
+<img src = "./img/BlockChainThreaten.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/BlockChainAction.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 2교시 6번\
+* 116회 관리 3교시 3번\
 ',
   
 // MaaS
