@@ -4707,6 +4707,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 장점 : 창조적 생각 도출 가능 <br/>\
 - 단점 : 실제 요구사항보다 확대 해석 될 수 있음 <br/><br/>\
 <img src = "./img/Persona.png" style = "max-width:100%; height:auto;">\
+',
 
 // Open Seed 
 '# 정의 : ETRI 개설 사이트 / 멀티코어용 임베디드 SW 플랫폼 / 개발자, 중소기업 공개 <br/>\
