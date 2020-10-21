@@ -590,10 +590,15 @@ var answer = answer.concat(
 '# 정의 : 다층 퍼셉트론 학습에 사용되는 통계적 기법 <br/><br/>\
 # 특징 : 지도 학습을 이용, 출력층의 오차를 역전파하여 은닉층을 학습함으로써 다층 퍼셉트론 문제 해결 <br/><br/>\
 # 절차 <br/>\
-- 학습 벡터로부터 실제 출력값을 출력 <br/>\
-- 목적값과 실제 출력값의 차이인 오차를 계산하여 각 층에 전달하는 전파(Propagation) <br/>\
-- 전파된 오차이용 가중치 수정 <br/><br/>\
-<img src = "./img/역전파AL.png" style = "max-width:100%; height:auto;">\
+- 피드포워드 <br/>\
+- 오류 역전파 계산 <br/>\
+- 가중치 조정 <br/>\
+- 반복수행 <br/><br/>\
+# 문제점, 해결방안 <br/>\
+- 문제점 : Sigmoid 함수 문제(기울기 문제) <br/>\
+- 해결방안 : ReLU사용 (min max 조정) <br/><br/>\
+<img src = "./img/역전파AL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 응용 2번\
 ',
 
 // [딥러닝]- 경사감소법
