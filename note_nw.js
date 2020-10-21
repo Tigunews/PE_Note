@@ -11,6 +11,7 @@ var question = question.concat(
 '[패킷데이터 네트워크 계층 오류]- Check Sum',
 '인터넷 프로토콜 3단계 주소체계',
 'HTTP/2.0',
+'HTTP/3.0',
 'IPSec',
 'IPv6',
 '[IPv6]- 헤더구성',
@@ -327,11 +328,11 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Physical address : 물리적 망에 접속된 각 장치에 대한 유일한 물리적 하드웨어 주소, Ethernet 주소 또는 하드웨어 주소 -> 제조사 코드 (3byte) + 일련번호(3byte) <br/><br/>\
 <img src = "./img/인터넷프로토콜3단계주소체계_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/인터넷프로토콜3단계주소체계_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/인터넷프로토콜3단계주소체계_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/인터넷프로토콜3단계주소체계_3.png" style = "max-width:100%; height:auto;">\
 ',
 
 // HTTP/2.0
-'# 정의 : HTTP 차세대 표준 / 보안 개선 / IETF <br/>\
+'# 정의 : 보안 개선 / IETF <br/>\
 - WWW(World Wide Web)의 네트워크 프로토콜인 HTTP의 차세대 표준 (RFC 7540)<br/>\
 - HTTP 1.1 의 성능 및 보안 문제점을 개선하여 국제 인터넷 표준화 기구(IETF)에서 개발한 차세대 웹 통신 표준 프로토콜<br/><br/>\
 # 등장배경(HTTP 1.1문제점) <br/>\
@@ -349,6 +350,16 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * HPACK : Binary 형태, 헤더 명과 헤더 값을 쌍으로 갖는 테이블 구조를 Dictionary에 저장하는 형태로 구성, 동적으로 개인됨 <br/>\
 * Dictionary에 저장되는 문자열은 허프만 코딩 압축방식이 사용됨 <br/>\
 * 스트림 우선순위 기준 : 의존성(Dependency), 가중치(Weight)\
+',
+ 
+// HTTP 3.0
+'# 정의 : HTTP-over-QUIC <br/>\
+- HTTP 연결 및 전송 지연을 최소화 하기 위해 TCP+TLS 조합 대신 UDP+TLS 조합을 이용하는 보안 및 향상된 성능을 제공하는 UDP 기반 전송 계층 프로토콜 <br/><br/>\
+# 스택구조 <br/>\
+<img src = "./img/HTTP3Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작과정 <br/>\
+<img src = "./img/HTTP3Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 1교시 4번\
 ',
 
 // IPSec
