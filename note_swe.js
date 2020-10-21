@@ -2767,7 +2767,10 @@ var answer = answer.concat(
 - Re-Eng : 기존 시스템 변환 <br/>\
 - Re-Use : 재사용 SW 파악 <br/><br/>\
 # 관계도 <br/>\
-<img src = "./img/3R_Relation.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/3R_Relation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 실무사례 <br/>\
+<img src = "./img/3R_Stragetic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 4교시 2번\
 ',
 
 // Reverse Engineering (저작권)
