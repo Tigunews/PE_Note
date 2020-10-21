@@ -1164,10 +1164,14 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 수평 : Row 기준 / 데이터 규모 감소 / Join 증가 <br/>\
 - 수직 : Column 기준 / 자주사용하는 칼럼 위주 성능 향상 / 파티션 키 값 별도 관리 필요 <br/><br/>\
 # 분할기준 <br/>\
-- Range Patitioning : 범위 분할 <br/>\
-- List Partitioning : Data grouping <br/>\
-- Hash Partitioning : Hash Function 적용 <br/>\
-- Composite Partitioning : List(column, row), Range(row), Hash 장점 결합 <br/><br/>\
+1. 기본 <br/>\
+- Range : 범위 분할 <br/>\
+- List : Data grouping <br/>\
+- Hash : Hash Function 적용 <br/>\
+- Composite : List(column, row), Range(row), Hash 장점 결합 <br/><br/>\
+2. 고급(DML) <br/>\
+- Interval : 사전 정의 기준 <br/>\
+- Reference : 부모 테이블 Reference Key <br/>\
 * 119회 응용 3교시 5번\
 ',
 );
