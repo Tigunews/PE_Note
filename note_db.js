@@ -1,6 +1,8 @@
 var question = question.concat(
 '데이터 무결성',
 'ACID',
+'Isolation Level',
+'읽기 이상현상',
 '상태전이도',
 '데이터 독립성',
 '[데이터 독립성]- ANSI SPARC 3계층',
@@ -118,6 +120,23 @@ var answer = answer.concat(
 - 예시 : 시스템 문제, DB 일관성 체크등을 하더라도 유지되어야 함을 의미<br/>\
 <img src = "./img/ACID_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 4교시 5번\
+',
+  
+// Isolation Level
+'# 정의 : 트랜잭션 ACID 속성 보장위한 기법 <br/>\
+- 트랜잭션 실행 중 결과에 대한 다른 트랜잭션의 접근가능 영부를 정의한 수준 <br/>\
+# 특징 : ANSI/ISO Standard, ACID속성보장, Locking 기법 <br/><br/>\
+# level <br/>\
+1) Read Uncommitted : 처리중 데이터 허용 / Oracle 미지원<br/>\
+2) Read Committed : commit 후 허용 / DBMS 기본<br/>\
+3) Repeatable Read : 타 Tx Update 금지, Insert 허용 / Phantom Read 발생<br/>\
+4) Serializable : 동시 수행 금지 / 완벽 일관성 모드<br/>\
+<img src = "./img/IsolationLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 1교시 13번\
+',
+  
+// 읽기 이상현상
+'<img src = "./img/ReadPhenomena.png" style = "max-width:100%; height:auto;">\
 ',
   
 // DB 상태전이도
@@ -251,12 +270,6 @@ var answer = answer.concat(
 - Locking 단위 확대 : 튜플 -> 릴레이션 <br/>\
 - Index Locking : 릴레이션 갱신 <br/>\
 - 고립성 수준 높임 : 3단계, Serializable 설정 <br/><br/>\
-# 고립성 수준 <br/>\
-- Read Uncommitted : 처리중 데이터 허용 <br/>\
-- Read Committed : commit 후 허용 <br/>\
-- Repeatable Read : 타 Tx Update 금지, Insert 허용 <br/>\
-- Serializable : 동시 수행 금지 <br/>\
-<img src = "./img/IsolationLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 1교시 11번\
 ',
   
