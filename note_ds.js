@@ -1782,8 +1782,10 @@ var answer = answer.concat(
 - 머클 트리는 수많은 Tx(트랜잭션)을 각각 Hashing 하여  2개씩 짝 지어서 또 해싱하고 반복하여 최종적으로 하나가 남을 때까지 해싱을 한 트리<br/>\
 - 해시트리의 일종으로 Ralphmerkle이 고안한 모든 비 리프노드의 이름이 자식들의 해시로 구성된 트리 <br/>\
 블록체인 내 다수의 거래내역을 각각 해싱하고 합치는 과정을 반복하여 최종적으로 하나가 남을 때까지 해싱하 이진트리 <br/><br/>\
+# 특징 : 무결성 보장, 동일값 길이, 빠른 검증(O(LogN)) <br/><br/>\
 <img src = "./img/DS2_20_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DS2_20_2.PNG" style = "max-width:100%; height:auto;">\
+<img src = "./img/DS2_20_2.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 1교시 11번\
 ',
 
 // [블록체인]- 블록체인 오라클 문제 
