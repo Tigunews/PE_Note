@@ -1619,15 +1619,25 @@ var answer = answer.concat(
 // 소프트웨어 안전성 분석
 '# 정의 : 안전성 만족 확인 활동 / 안전 필수 시스템 개발시 <br/>\
 - 안전 필수 시스템 개발시 시스템이 만족해야 할 안전성을 만족하는지 확인하는 활동<br/><br/>\
-# 유형 <br/>\
-- 귀납적/정성적 방법(FMEA(이상위험도분석), HAZOP(위험과 운전분석), 연역적/정량적방법(FTA(결함수분석)) <br/>\
-- FHA(Functional Hazard Assesment) : Failure를 유발하는 기능(function)을 찾아내는는 기법 <br/>\
-- PHA(Preliminary Hazard Analysis) : 위험 식별과 원인, 영향 등을 밝혀낼 수 있는 안전성 분석 기법 <br/>\
-- STAMP(System-Theoretic Accident Model and Processes) : 단순한 컴포넌트 고장 외에도 컴포넌트간의 상호작용도 포함하여 고장의 원인을 분석하는 기법 <br/>\
-- STPA(System theoretic process analysis) : STAMP를 기반으로 하는 모델의 안전성 분석을 위해 개발된 기법 <br/>\
-- TFT(Temporal Fault Tree) : FTA 기법에 Temporal Gates를 추가하여 시간 변화에 따른 안전성을 분석하는 기법 <br/><br/>\
+# 안전성 분석 절차 (IEC 61508) <br/>\
+<img src = "./img/SSA_Order.png", style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SSA_1.png", style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/SSA_2.png", style = "max-width:100%; height:auto;">\
+# 유형 <br/>\
+1. 요구분석/설계 단계 <br/>\
+- FMEA(Failure Mode and Effects Analysis) : 고장 영향 정량적 분석 <br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 도출 된 행위 안전 영향 분석 <br/>\
+- FTA(Fault Tree Analysis) : 연역적 해석 (대전제를 세우고 개별적용) <br/><br/>\
+2. 개발단계 <br/>\
+- White box : 구조기반<br/>\
+- Black box : 명세기반<br/><br/>\
+3. 요건 충족 단계 <br/>\
+- 정형명세 : 수학적 표기, 가시화 도구 <br/>\
+- 정형검증 : 정리 증명, 모델 체킹 <br/><br/>\
+4. 산출물 검토 단계 <br/>\
+- 명세서 검증 : DFD, DD, Mini-Spec <br/>\
+- 디자인 검증 : 전문가 참여, 브레인 스토밍 / 라이팅 <br/><br/>\
+* DFD(Data Flow Diagram) <br/><br/>\
+* 119회 관리 4교시 4번\
 ',
 
 // 문자 인코딩 
