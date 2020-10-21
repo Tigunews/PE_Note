@@ -1050,8 +1050,8 @@ var answer = answer.concat(
 ',
 
 // 정보시스템 하드웨어 규모산정 지침
-'# 정의 : 하드웨어에 대한 예산 수립 지침 <br/>\
-- TTA(한국 정보통신기술협회)에서 공개한 지침. 하드웨어에 대한 예산 수립시 필요<br/><br/>\
+'# 정의 : TTA 기반 하드웨어에 대한 예산 수립 지침 <br/>\
+- 기본적인 용량과 성능, 요구사항이 제시되었을 때, 그것을 시스템 요구사항으로 변화하는 기법<br/><br/>\
 # 유형 <br/>\
 1. 수치계산법 : 사용자수등 요소로 규모산정 후 보정치 적용 <br/>\
 - 장점 : 근거 명확, 간단 산정 <br/>\
@@ -1063,11 +1063,19 @@ var answer = answer.concat(
 3. 시뮬레이션법 : 작업부하 모델링 후 시뮬레이션 <br/>\
 - 장점 : 상대적 정확한 값 <br/>\
 - 단점 : 시간, 비용 많이 소요 <br/><br/>\
-# CPU 규모산정 : {시스템영역(System Area) + (사용자당 필요 메모리 * 동시사용자수)} * 버퍼 캐쉬보정 * 시스템 여유율 <br/><br/>\
-# 디스크 규모 산정 (내장디스크) : (시스템 OS영역 + 응용프로그램 영역 + SWAP 영역) * 파일 시스템 오버헤드 * 시스템 디스크 여유율 <br/><br/>\
-# 디스크 규모 산정 (외장디스크) : (데어텽역+ 백업영역) * 파일 시스템 오버헤드 * RAID 여유율 * 데이터 디스크 여유율 <br/><br/>\
-<img src = "./img/하드웨어규모산정_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/하드웨어규모산정_2.png" style = "max-width:100%; height:auto;">\
+# 규모산정 대상 <br/>\
+<img src = "./img/HW_Calc_Scale_Target.png" style = "max-width:100%; height:auto;"><br/>\
+- CPU : 업무 처리<br/>\
+- 메모리 : CPU 규모산정, 시스템 S/W, App <br/>\
+- 디스크 : CPU 규모산정, 시스템 S/W, DB 사용량 <br/>\
+- 스토리지 : CPU 규모산정 <br/><br/>\
+# CPU 및 스토리지 성능 기준치 <br/>\
+<img src = "./img/CPU_Spec_Standard.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# CPU 및 스토리지 성능 기준치 측정방법 <br/>\
+- TPC-C : 분당 트랜잭션 측정 / tpmC (Translation Per Minute) <br/>\
+- SPECjbb2015 : Java App 기반 시나리오 / max-jOPS (Fail발생 직전 최대부하) <br/>\
+- SPC-1 : 비휘발성 스토리 표시 실제 환경 시뮬레이션 / Input Output Per Second (In 40, Out 60) <br/><br/>\
+* 119회 응용 2교시 5번\
 ',
 
 // Philip Crosby의 품질경영 성숙도 모델 5단계 
