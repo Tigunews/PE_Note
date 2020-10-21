@@ -58,6 +58,7 @@ var question = question.concat(
 '[Data Mining]- System Dynamics',
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
+'[DB확장]- Database Partitioning',
 );
 
 var answer = answer.concat(
@@ -1153,5 +1154,20 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 유형 <br/>\
 <img src = "./img/DatabaseShardType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 1교시 8번\
+',
+  
+// Database Partitioning
+'# 정의 : 대용량 데이터 처리 성능 향상기법 <br/>\
+- SQL 문이나 어플리케이션 수정없이, 큰 테이블이나 인덱스를 관리하기 쉬운 작은 단위로 분할하여 관리하기 위한 물리적인 분할 관리 기법 <br/><br/>\
+# 목적 : 관리적(용이성, 가용성), 성능적(부하분산, 수행시간 단축) <br/><br/>\
+# 종류 <br/>\
+- 수평 : Row 기준 / 데이터 규모 감소 / Join 증가 <br/>\
+- 수직 : Column 기준 / 자주사용하는 칼럼 위주 성능 향상 / 파티션 키 값 별도 관리 필요 <br/><br/>\
+# 분할기준 <br/>\
+- Range Patitioning : 범위 분할 <br/>\
+- List Partitioning : Data grouping <br/>\
+- Hash Partitioning : Hash Function 적용 <br/>\
+- Composite Partitioning : List(column, row), Range(row), Hash 장점 결합 <br/><br/>\
+* 119회 응용 3교시 5번\
 ',
 );
