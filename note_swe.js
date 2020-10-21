@@ -162,6 +162,9 @@ var question = question.concat(
 '[운영유지보수]- Refactoring',
 '[운영유지보수]- 3R',
 '[운영유지보수][3R]- 역공학(저작권 측면)',
+'[운영유지보수][3R]- Reverse Engineering',
+'[운영유지보수][3R]- Re Engineering',
+'[운영유지보수][3R]- Re use',
 '[운영유지보수]- Anti-Reversing',
 '[운영유지보수][Anti-Reversing]- 코드가상화',
 '[운영유지보수]- ISO/IEC 14764',
@@ -2767,13 +2770,35 @@ var answer = answer.concat(
 <img src = "./img/3R_Relation.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 역공학 (저작권 측면)
+// Reverse Engineering (저작권)
 '# 정의 : 호환성 확보 <br/>\
 - 일반적인 역공학은 디컴파일, 실행, 조사하는 행위로 부터 원시 프로그램을 추출하여 분석하는 일련의 과정으로 이해되는 반면, 저작권 측면에서의 역공학이란 호환성 확보를 위한 목적 <br/><br/>\
 # 규정 <br/>\
 - 허가 : 저작권기반(정당한 권리), 기술향상(호환에 필요한 부분해석), 고객 needs확보(대체 가능성) <br/>\
 - 제한 : 무단복제, 변환/개작/재배포, 계약위반 <br/><br/>\
 # 기술적 보호조치 : 디지털 저작물 확인/증명, 위변조 방지, 추적기술 \
+',
+ 
+// Reverse Engineering 
+'# 정의 : 자동화된 도구(CASE)의 도움으로 물리적 수준의 소프트웨어 정보를 논리적인 소프트웨어 정보의 서술로 추출하는 프로세스 <br/><br/>\
+# 특징 : 기존 SW 분석 지원, 유지보수성 향상, CASE 사용 용이 <br/>\
+<img src = "./img/ReverseEngineering.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* CASE(Computer aided software engineering) : 컴퓨터 지원 시스템 공학 <br/><br/>\
+* 119회 관리 4교시 2번\
+',
+ 
+// Re Engineering
+'# 정의 : 자동화된 도구로 현존하는 시스템을 점검 또는 수정하는 프로세스로 시스템의 재설계, 교체를 CASE 도구로 사요하도록 순공학을 준비하는 과정 <br/><br/>\
+# 특징 : 유지보수성 향상, 표준 준수 <br/><br/>\
+<img src = "./img/ReEngineering.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 4교시 2번\
+',
+ 
+// Re use
+'# 정의 : 이미 개발 완료된 결과물을 신규 개발 SW에 적용하는 Process <br/><br/>\
+# 특징 <br/>\
+<img src = "./img/ReUse.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 4교시 2번\
 ',
 
 // Anti-Reversing
