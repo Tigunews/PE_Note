@@ -2180,6 +2180,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // [클라우드 컴퓨팅]- Fog Computing 
 '# 정의 : 노드 기지국 추가 클라우드 컴퓨팅 <br/>\
 - 기기에서 생성된 데이터 실시간 처리가능 노드를 기지국처럼 두고 컴퓨팅 파워 필요 데이터만 클라우드로 처리하는 시스코의 사물인터넷 구현방법 <br/><br/>\
+# Keyword : IEEE 1394, Location Awareness, Low Latency, Heterogeneity SUpport <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/FogComputing.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
