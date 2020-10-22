@@ -1050,18 +1050,17 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 
 // 연관규칙
 '# 정의 : Assotication, 연관성 분석하기 위한 판단 기준 <br/><br/>\
-# 암기 <br/>\
-- 관련 알고리즘 : A,D,F <br/><br/>\
 # 연관성 : 특정 거래에서 하나의 아이템에 대한 거래가 발생하면 다른 특정 아이템의 거래가 연쇄적으로 발생하는 현상 <br/><br/>\
-# 지지도(Support) : 전체 거래 품목 A,B가 동시에 포함될 확률, 두 품목의 동시구매가 얼마나 자주 일어나는지를 분석 <br/>\
+# 지지도(Support) : <font color="red">전체 거래 품목 A,B가 동시에 포함될 확률</font>, 두 품목의 동시구매가 얼마나 자주 일어나는지를 분석 <br/>\
 - Support = P(A∩B) = (AB동시/전체거래) = (A거래수 * B거래수) / 전체거래수<br/><br/>\
-# 신뢰도(Confidence) : A->B 연관규칙에서, 품목 A포함 거래중 A,B 동시 포함 거래 확률 -> 두 품목간 연관성의 강도를 분석 <br/>\
+# 신뢰도(Confidence) : A->B 연관규칙에서, <font color="red">품목 A포함 거래중 A,B 동시 포함 거래 확률</font> -> 두 품목간 연관성의 강도를 분석 <br/>\
 - Confidence = P(B|A) = 지지도/P(A) = P(A∩B)/P(A)<br/><br/>\
-# 향상도(Lift) : A->B 연관규칙에서, 임의의 B가 구매되는 경우 대비, A와 관계되어 구매되는 비율 => A와 B의 상관관계 분석 <br/>\
+# 향상도(Lift) : A->B 연관규칙에서, <font color="red">임의의 B가 구매되는 경우 대비, A와 관계되어 구매되는 비율</font> => A와 B의 상관관계 분석 <br/>\
 - 향상도 = 1 (독립적 관계) : A,B 구매시 상호 연관 없음 <br/>\
 - 향상도 > 1 (양의 상관 관계) : A 구매시 B 구매 예상 <br/>\
 - 향상도 < 1 (음의 상관 관계) : A 구매시 B 구매 감소 <br/>\
 - Lift =  P(B|A)/P(B) = 신뢰도/P(B) = (P(A∩B)/P(A))/P(B)<br/><br/>\
+* <font color="red">지지도 신뢰도 향상도 : 빈도 / 연관성 / 상관관메 </font><br/><br/>\
 # 관련 알고리즘 <br/>\
 - Apriori Algorithm : 항목집합 줄이기 <br/>\
 - DHP Algorithm : Transaction 줄이기 <br/>\
