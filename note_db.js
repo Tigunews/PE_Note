@@ -1131,7 +1131,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 // Database Shard
 '# 정의 : 대용량 데이터베이스 처리를 위한 파티셔닝 단위 <br/>\
 - 대용량 데이터베이스를 가용성, 확장성, 성능향상 처리를 위해 데이터베이스를 분할하는(파티셔닝) 분할 단위 또는 개별 파티션 <br/><br/>\
-# 유형 <br/>\
+# 유형 (헤다엔하)<br/>\
 <img src = "./img/DatabaseShardType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 1교시 8번\
 ',
@@ -1151,7 +1151,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Composite : List(column, row), Range(row), Hash 장점 결합 <br/><br/>\
 2. 고급(DML) <br/>\
 - Interval : 사전 정의 기준 <br/>\
-- Reference : 부모 테이블 Reference Key <br/>\
+- Reference : 부모 테이블 Reference Key <br/><\
 * 119회 응용 3교시 5번\
 ',
 );
