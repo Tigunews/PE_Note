@@ -1416,6 +1416,19 @@ var answer = answer.concat(
 * WPS : Web Processing Service <br/>\
 * CSW : Catalogue Service\
 ',
+    
+// 위치정보, 위치기반 서비스
+'# 정의 : 이동성이 있는 사물 또는 개인이 특정한 시간에 존재했던 장소에 관한 정보 <br/><br/>\
+# 분류 <br/>\
+- 위치정보 사업 : 위치정보 수집해 위치기반 서비스 사업자에게 제공 <br/>\
+- 위치정보기반서비스 사업 : 위치정보를 이용한 서비스를 제공 <br/><br/>\
+# 위치정보 사업 > LBS (LDT, LEP, LAP) / 측위기술 (NW, GPS, Wifi / XPS) <br/><br/>\
+* LBS(Location Based Service) : 위치기반 기술 <br/>\
+- LDT(Location Determin Technology) : 위치 결정 기술 <br/>\
+- LEP(Location Enabled Platform) : 위치 처리 플랫폼 <br/>\
+- LAP(Location Application Program) : 위치 응용 프로그램 <br/><br/>\
+* 116회 응용 2교시 3번\
+',
   
 // IPS
 '# 정의 : GPS 실내용 버전 <br/>\
@@ -1427,19 +1440,6 @@ var answer = answer.concat(
 * RSSI (Received Signal Strength Indicator) : 수신 신호 세기/강도 <br/>\
 * UWB (Ultra Wideband) : 3.1~10.6GHz 넓은 주파수 대역 <br/><br/>\
 * 119회 관리 4교시 1번\
-',
-    
-// 위치정보, 위치기반 
-'# 정의 : 이동성이 있는 사물 또는 개인이 특정한 시간에 존재했던 장소에 관한 정보 <br/><br/>\
-# 분류 <br/>\
-- 위치정보 사업 : 위치정보 수집해 위치기반 서비스 사업자에게 제공 <br/>\
-- 위치정보기반서비스 사업 : 위치정보를 이용한 서비스를 제공 <br/><br/>\
-# 위치정보 사업 > LBS (LDT, LEP, LAP) / 측위기술 (NW, GPS, Wifi / XPS) <br/><br/>\
-* LBS(Location Based Service) : 위치기반 기술 <br/>\
-- LDT(Location Determin Technology) : 위치 결정 기술 <br/>\
-- LEP(Location Enabled Platform) : 위치 처리 플랫폼 <br/>\
-- LAP(Location Application Program) : 위치 응용 프로그램 <br/><br/>\
-* 116회 응용 2교시 3번\
 ',
 
 // LDT
