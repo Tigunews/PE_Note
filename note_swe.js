@@ -4711,7 +4711,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 
 // Design Thinking
 '# 정의 : 창의적 문제해결 UX 기법 <br/>\
-- 현장과 지속적인 소통을 통해 수요를 파악하며 가능한 모든 대안을 상상, 발굴하고 이를 적용,개선하는 법을 반복함으로써 혁신적 결과를 도출하는 창의적 문제 해결기법 <br/><b/r>\
+- 현장과 지속적인 소통을 통해 수요를 파악하며 가능한 모든 대안을 상상, 발굴하고 이를 적용,개선하는 법을 반복함으로써 혁신적 결과를 도출하는 창의적 문제 해결기법 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/DesignThinking.png" style = "max-width:100%; height:auto;"><br/>\
 ',
