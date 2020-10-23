@@ -1148,10 +1148,12 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Range : 범위 분할 <br/>\
 - List : Data grouping <br/>\
 - Hash : Hash Function 적용 <br/>\
-- Composite : List(column, row), Range(row), Hash 장점 결합 <br/><br/>\
+- Composite : List(column, row), Range(row), Hash 장점 결합 <br/>\
+<img src = "./img/BasicDataPartitioning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. 고급(DML) <br/>\
 - Interval : 사전 정의 기준 <br/>\
-- Reference : 부모 테이블 Reference Key <br/><br/>\
+- Reference : 부모 테이블 Reference Key <br/>\
+<img src = "./img/ProDataPartitioning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 응용 3교시 5번\
 ',
 );
