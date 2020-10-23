@@ -2791,7 +2791,7 @@ var answer = answer.concat(
 ',
  
 // Re Engineering
-'# 정의 : 자동화된 도구로 현존하는 시스템을 점검 또는 수정하는 프로세스로 시스템의 재설계, 교체를 CASE 도구로 사요하도록 순공학을 준비하는 과정 <br/><br/>\
+'# 정의 : 자동화된 도구로 현존하는 시스템을 점검 또는 수정하는 프로세스로 시스템의 재설계, 교체를 CASE 도구로 사하도록 순공학을 준비하는 과정 <br/><br/>\
 # 특징 : 유지보수성 향상, 표준 준수 <br/><br/>\
 <img src = "./img/ReEngineering.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 4교시 2번\
