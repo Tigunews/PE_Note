@@ -2585,7 +2585,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '# 정의 : 공공데이터의 개방형 플랫폼 <br/>\
 - Linked Open Data <br/>\
 - 웹 상에 존재하는 데이터를 개별 URI로 식별하고, 각 URI에 링크 정보를 부여함으로써 상호 연결된 웹을 지향하는 모형 <br/><br/>\
-# 팀 버너스리 Four Rules <br/>\
+# 팀 버너스리 Four Rules (UHR링)<br/>\
 - URI 사용 : 개별객체 ID 부여 <br/>\
 - HTTP URI 사용 : 데이터 접근성 강화 <br/>\
 - RDF 사용 : 정형화, 연계 <br/>\
