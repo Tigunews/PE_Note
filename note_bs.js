@@ -1069,7 +1069,7 @@ var answer = answer.concat(
 - 메모리 : CPU 규모산정, 시스템 S/W, App <br/>\
 - 디스크 : CPU 규모산정, 시스템 S/W, DB 사용량 <br/>\
 - 스토리지 : CPU 규모산정 <br/><br/>\
-# CPU 및 스토리지 성능 기준치 <br/>\
+# CPU 및 스토리지 성능 기준치 (tTMSIS) <br/>\
 <img src = "./img/CPU_Spec_Standard.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # CPU 및 스토리지 성능 기준치 측정방법 <br/>\
 - TPC-C : 분당 트랜잭션 측정 / tpmC (Translation Per Minute) <br/>\
