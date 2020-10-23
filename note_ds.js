@@ -1567,12 +1567,12 @@ var answer = answer.concat(
 
 // [산업제어스템]- SCADA
 '# 정의 : 중앙 제어 시스템 원격 감시,제어 시스템 / 통신 경로상 신호 사용 <br/>\
-- Supervisiory Cotnrol And Data Acquisition <br/>\
+- Supervisiory Control And Data Acquisition <br/>\
 - 통신 경로상의 아날로그 또는 디지털 신호를 사용하여 원격장치의 상태정보 데이터를 RTU로 수집/수신/기록/표시하여 중앙 제어 시스템에 원격 장치를 감시 제어하는 시스템 <br/><br/>\
 # 구성요소 <br/>\
 - HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
 - PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
-- RTU(Remote Turminal Unit) : 공정에 설치된 센서와 직접 연결장치<br/><br/>\
+- RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치<br/><br/>\
 # SCADA DCS 비교 <br/>\
 <img src = "./img/SCADA_DCS.png", style = "max-width:100%; height:auto;"><br/><br/>\
 # 기능 (지누경감)<br/>\
