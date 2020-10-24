@@ -528,7 +528,7 @@ var answer = answer.concat(
 - 데이터 발생빈도를 기반으로 데이터 간의 연관관계를 유추하기 위한 기법 <br/><br/>\
 # Keyword : 빈발항목집합, 항목집합, 발생빈도, 연관관계, 최소지지도, 최소신뢰도 <br/><br/>\
 # 절차 <br/>\
-- Support 값 선정 <br/>\
+- 최소값 설정(Support, Confidence) <br/>\
 - 후보군 선정 : 빈발항목집합 -> Candidate Itemset <br/>\
 - 빈발항목 선정 : 계산 / 평가1(지지도) / 평가2(신뢰도) / 반복 -> Large Itemset <br/><br/>\
 * 119회 2교시 1번\
