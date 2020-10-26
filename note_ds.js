@@ -43,6 +43,7 @@ var question = question.concat(
 '[인증기술]- 얼굴인식 알고리즘',
 '[인증기술]- 자기주권형 신원증명',
 '[인증기술]- DID',
+'[인증기술]- 바이오정보 분산관리',
 '핀테크',
 '[핀테크]- 서비스',
 '[핀테크]- 핀테크 오픈플랫폼(FinTech Open Platform) / 핀테크 오픈 API 플랫폼',
@@ -891,6 +892,13 @@ var answer = answer.concat(
 - DID Auth : 사설키 제어 증명 인증 / DIF<br/>\
 - Verifiable Credentials : 증명서 / W3C<br/><br/>\
 * 119회 관리 1교시 4번\
+',
+  
+// 바이오정보 분산관리
+'# 개념 : 금융 이용자의 지문, 정맥등 바이오 정보를 분산관리센터와 금융기관에 분산 저장하여 보안 강화한 인증기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BioDistribute.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 120회 관리 2교시 1번\
 ',
   
 // 핀테크
