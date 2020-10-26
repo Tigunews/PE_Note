@@ -1424,6 +1424,7 @@ var answer = answer.concat(
 // MSA
 '# 정의 : 작은, 변경 조합 가능 아키텍처 <br/>\
 - 하나의 큰 어플리케이션을 여러개의 작은 마이크로 서비스 단위로 나누어 변경과 조합이 가능하도록 구성된 아키텍처 <br/><br/>\
+# Keyword : Loosely Coupled, 분산트랜잭션, Ripple Efeect <br/><br/>\
 # 부각 배경 <br/>\
 1. 모놀리틱 아키텍처 <br/>\
 - 전통적 단일체 구조 <br/>\
@@ -1448,8 +1449,11 @@ var answer = answer.concat(
 3. Back-end Tier <br/>\
 - NoSQL DB : Document, Graph, Key/value 수평적 확장 가능한 DB <br/>\
 - RDB : ACID DB <br/><br/>\
+# 제언 <br/>\
+<img src = "./img/DevOpsComment.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * MSA SOA 비교표 <br/>\
 <img src = "./img/MSASOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 2교시 3번<br/><br/>\
 * KPC 91회 2교시 4번\
 ',
 
