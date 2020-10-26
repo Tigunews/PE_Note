@@ -670,15 +670,17 @@ var answer = answer.concat(
 # 특징 <br/>\
 - 연속 입력 데이터 적용 용이 (음성,언어인식)<br/>\
 - 연속 정보 흐름 반양 : 과거 학습 정보 지식이 후행 영향(전행 히든 노드 값 저장 후 후행 입력값으로 사용)<br/><br/>\
+# 구성도, 구성요소 <br/>\
+<img src = "./img/RNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 절차 <br/>\
 - Recurrent Weight : 진행결과 후행 활용<br/>\
 - Sequential data 학습 : 문맥 이해 <br/>\
 - BPTT(Back-Propagation Through Time) : 오류 역전파<br/><br/>\
-# 한계 <br/>\
+# 문제점 <br/>\
 - 장기 의존성 문제(Problem of Long-Term Dependencies) <br/>\
-- 오류역전파 거리 늘어나면서 Grant값 폭증/사라짐(사라지는 경사현상)<br/><br/>\
-# 대응 : LSTM(Long Short Term Memory) 및 GRU(Gated Recurrent Unit)<br/><br/>\
-<img src = "./img/RNN.png" style = "max-width:100%; hegiht:auto;">\
+- 사라지는 경사 현상 : 오류역전파 거리 늘어나면서 Grant값 폭증/사라짐<br/><br/>\
+# 극복방안 : LSTM(Long Short Term Memory), GRU(Gated Recurrent Unit)<br/><br/>\
+* 120회 응용 1교시 2번\
 ',
 
 // LSTM
@@ -691,7 +693,8 @@ var answer = answer.concat(
 - 연관/복사(Concatenate/Copy) <br/><br/>\
 # 동작방식 : 4개의 층간 gate구조로 정보를 수정(시그모이드 함수)하거나 그냥 흘러 보내 정보 장기간 보관 가능 <br/>\
 => 셀 스테이트(cell state), forget gate layer, input gate layer, update cell state, output gate layer <br/><br/>\
-<img src = "./img/LSTM.png" style = "max-width:100%; hegiht:auto;">\
+<img src = "./img/LSTM.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/LSTM_Detail.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // [딥러닝(Deep Learning)]- GRUs
