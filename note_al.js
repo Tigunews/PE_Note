@@ -679,7 +679,9 @@ var answer = answer.concat(
 # 문제점 <br/>\
 - 장기 의존성 문제(Problem of Long-Term Dependencies) <br/>\
 - 사라지는 경사 현상 : 오류역전파 거리 늘어나면서 Grant값 폭증/사라짐<br/><br/>\
-# 극복방안 : LSTM(Long Short Term Memory), GRU(Gated Recurrent Unit)<br/><br/>\
+# 극복방안 <br/>\
+- LSTM(Long Short Term Memory)<br/>\
+- GRU(Gated Recurrent Unit) : OutputGate 생략 간소화 버전 <br/><br/>\
 * 120회 응용 1교시 2번\
 ',
 
