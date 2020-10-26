@@ -288,6 +288,7 @@ var question = question.concat(
 '[방법론]- ASD',
 '[방법론]- EDA',
 '[방법론]- 데브옵스(DevOps)',
+'DataOps',
 '[방법론]- 시각적 분석 (Visual Analytics)',
 '[방법론]- 시각화 분석 (Visualization Analysis)',
 '[방법론]- 데이터 시각화 (Data Visualization)',
@@ -4598,6 +4599,17 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 <img src = "./img/DevOps_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/DevOps_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/DevOps_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+ 
+// Data Ops
+'# 정의 : 데이터 생성자와 데이터 소비자를 연결하는 능력 <br/>\
+- 기업내 논의를 통해 데이터 유형을 분류하고 다양한 데이터 세트에 목적을 달성하는 과정 <br/><br/>\
+# 5가지 과제 <br/>\
+- 가용 : 수집된 데이터 사용 가능하게 만들기 <br/>\
+- 관리 : 데이터 스토리지 관리 <br/>\
+- 검토 : 필요한 데이터 수집됐는지 확인 <br/>\
+- 보안 : 데이터 보안 보장 <br/>\
+- 사일로 : 사용가능한 데이터 사일로 만들기 \
 ',
 
 // 시각적 분석
