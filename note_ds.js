@@ -51,6 +51,7 @@ var question = question.concat(
 '[핀테크]- 인슈어테크',
 '[핀테크]- 인터넷 전문 은행',
 '[핀테크]- FDS',
+'[핀테크]- My Data 산업',
 '[IT 금융]- De-Fi',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
@@ -981,6 +982,14 @@ var answer = answer.concat(
 # 판정방식 유형 <br/>\
 <img src = "./img/FDS_Type.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 116회 3교시 1번\
+',
+  
+// My Data 산업
+'# 개념 <br/>\
+<img src = "./img/MyDataConcept.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 주체별 역할, 처리흐름 <br/>\
+<img src = "./img/MyDataSpecification.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 120회 2교시 2번\
 ',
   
 // De-Fi
