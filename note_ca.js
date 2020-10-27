@@ -564,28 +564,13 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 ',
   
 // GPGPU
-'# 정의 : 병렬 처리 기술 / GPU 활용 / <br/>\
-- GPU를 그래픽 연산뿐 아니라 일반 컴퓨팅 영역에도 활용하고자 하는 컴퓨팅 체계 <br/>\
-- 그래픽 처리 장치(GPU)의 고성능 병렬처리 기술을 이용해서, 중앙처리장치(CPU)가 수행했던 연산에 사용하는 병렬처리 기술 <br/><br/>\
-# 암기 <br/>\
-- 특징 : 범병플 <br/>\
-- 아키 : 호인스지로글 <br/>\
-- 고려 : 도-통비벤 / 운-병의 <br/><br/>\
-# 특징 <br/>\
-- 범용연산처리 : GPU도 활용 <br/>\
-- 고성능 병렬화 : 다수 ALU, Many Core 아키텍처, 처리 성능(테라플롭스)극대화, 부동소수점 기반 고속 벡터와 행렬연산 병렬처리<br/>\
-- 프로그래밍 플랫폼 : CUDA, OpenCL, C++ AMP, Open ACC 등 병렬처리 플랫폼 등장 <br/><br/>\
-# Architecture : Host > Input Assembler > Thread execution mgr > GPUs(SM(Streamming Multi-Processor) + SP(Streamming Processor)) > Load/Store > Global Memory <br/><br/>\
-# 고려사항 <br/>\
-- 도입측면 : 시스템 통합, 도입 비용, 벤더종속성 (CUDA-NVIDIA종속)<br/>\
-- 운영측면 : 병목현상(GPU 성능 제한, 주요요소인 글로벌 메모리 접근의 병목 해결 필요), 데이터간 의존성(제어 의존성 존재시 성능저하 가능) <br/><br/>\
+'# 정의 : 프로그래밍이 가능한 병렬처리장치 <br/>\
+- 기존 그래픽 처리만 가능한 GPU에서 CPU처럼 프로그래밍, 행렬, 벡터 연산 및 병렬 처리가 가능한 처리장치 <br/><br/>\
 <img src = "./img/GPGPU_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/GPGPU_6.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/GPGPU_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/GPGPU_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/GPGPU_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/GPGPU_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/GPGPU_5.png" style = "max-width:100%; height:auto;">\
+# GPU 플랫폼 유형 <br/>\
+<img src = "./img/GPU_PlatformType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용 분야 : 과학(행렬,벡터), 인공지능(자연어처리, 실시간 데이터 관계), Simulation(실시간 통계/예측, 실시간 3D 전자/자기장 분석) <br/><br/>\
+* 120회 응용 1교시 5번\
 ',
 
 // [GPGPU]- CUDA
