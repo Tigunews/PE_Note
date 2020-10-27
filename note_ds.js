@@ -81,6 +81,7 @@ var question = question.concat(
 '[빅데이터]- 빅데이터 개인정보보호 가이드라인',
 '[빅데이터]- HDFS',
 '[빅데이터]- 하둡 에코시스템',
+'[빅데이터]- ISO 20547',
 '데이터브로커',
 '가상화',
 '[가상화]- 하이퍼바이저(Hypervisor)',
@@ -1412,6 +1413,17 @@ var answer = answer.concat(
 - HCatalog : 빅데이터 메타정보 관리 <br/><br/>\
 <img src = "./img/HadoopEcoSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 4교시 6번\
+',
+  
+// ISO 20547
+'# 개요 <br/>\
+<img src = "./img/ISO20547Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성체계 <br/>\
+<img src = "./img/ISO20547Contents.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동향 <br/>\
+- 국외 : ITU-T-3600, 클라우드 기반 빅데이터 기능 및 요구사항 <br/>\
+- 국내 : ISO 20546, 빅데이터 개요 및 용어, 과기정통부 참여 중 <br/><br/>\
+* 120회 응용 1교시 4번\  
 ',
 
 // 데이터브로커
