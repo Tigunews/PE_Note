@@ -34,6 +34,8 @@ var question = question.concat(
 '[아키텍처]- 클라이언트-서버 모델',
 '[아키텍처]- 계층형 모델',
 '[아키텍처]- MVC 모델',
+'[아키텍처]- Pipe & Filter',
+'[아키텍처]- Batch Process',
 '[설계단계][소프트웨어 아키텍처]- 품질속성',
 '[설계단계][소프트웨어 아키텍처]- 품질속성 시나리오',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처뷰',
@@ -850,8 +852,13 @@ var answer = answer.concat(
 '# 정의 : 아키텍처 설계의 해법 제시 <br/>\
 - 프로그램/System의 컴포넌트, 컴포넌트 간의 상호 관계의 구조이며, 이들을 설계하고 전개하기 위한 지침과 원리 <br/><br/>\
 # 주요 유형 <br/><br/>\
-<img src = "./img/ArchitectureModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 116회 4교시 4번\
+<img src = "./img/ArchitectureModel.png" style = "max-width:100%; height:auto;"><br/>\
+- 데이터 중심 : 칠판형, 저장소형 <br/>\
+- 데이터 흐름 : Batch Sequence, Pipes and Filters <br/>\
+- 가상머신 : 번역기, 규칙기반 <br/>\
+- 호출과 리턴 : 주 프로그램과 서브루틴, RPC, Layered <br/><br/>\
+* 120회 관리 3교시 5번\
+* 116회 관리 4교시 4번\
 ',
   
 // 데이터 중심형 모델
@@ -882,7 +889,7 @@ var answer = answer.concat(
 # 모델구조 <br/>\
 <img src = "./img/HireachyArcitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
-- 장점 : Lossely Coubled, 모듈 재사용성, 유지보수성, 이식성 <br/>\
+- 장점 : Lossely Coupled, 모듈 재사용성, 유지보수성, 이식성 <br/>\
 - 단점 : 성능저하, 계층별 분리 따른 설계수정 발생 <br/>\
 - 사례 : OSI7 Layer, 가상머신 <br/><br/>\
 * 116회 4교시 4번\
@@ -897,6 +904,23 @@ var answer = answer.concat(
 - 단점 : 개발자간의 협력필요, 복잡성 증가, 성능저하 <br/>\
 - 사례 : 웹개발 서비스, IOS Application 서비스 <br/><br/>\
 * 116회 4교시 4번\
+',
+ 
+// Pipe&Filter Model
+'# 정의 : 프로세스뷰 기반 아키텍처 다이어그램 <br/>\
+- 연속 컴포넌트들에 의한 데이터의 점진적 변형 구조 <br/><br/>\
+# 특징 <br/>\
+- 파이프 : 필터간 단순한 데이터 이동 <br/>\
+- 필터 : 데이터 스트림 변환기 <br/><br/>\
+<img src = "./img/PipeFilter.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 3교시 5번\
+',
+ 
+// Batch Process Model
+'# 정의 : 컴포넌트들이 독립적인 프로그램으로 구성 <br/>\
+- 한 컴포넌트가 수행 완료후 다음 컴포넌트 수행하여 전통적 데이터 처리 응용분야에 사용되는 아키텍처 모델 <br/><br/>\
+<img src = "./img/BatchProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 3교시 5번\
 ',
 
 // [소프트웨어 아키텍처]- 품질속성
