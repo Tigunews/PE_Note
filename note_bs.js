@@ -81,6 +81,7 @@ var question = question.concat(
 '구독 경제',
 'Servitization',
 '대기행렬이론',
+'[대기행렬]- 대기행렬 시스템',
 );
 
 var answer = answer.concat(
@@ -1290,10 +1291,7 @@ var answer = answer.concat(
 * SIRO(Service in Random Order), PR(Priority) <br/><br/>\
 # 처리기법 <br/>\
 1. 채널과 단계별 처리기법 <br/>\
-- 단일채널 단일단계 : 주먹밥 <br/>\
-- 단일채널 다중단계 : 반찬추가 <br/>\
-- 다중채널 단일단계 : 주먹밥 or 김밥 <br/>\
-- 다중채널 다중단계 : 한식, 양식 + 교차반찬 <br/><br/>\
+<img src = "./img/WaitQueingType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 개방/폐쇄형 네트워크 처리기법 <br/>\
 - 개방형 : 입력 내,외부 <br/>\
 - 폐쇄형 : 입력 외부 <br/>\
@@ -1302,5 +1300,21 @@ var answer = answer.concat(
 # 대기행렬이론 목표 <br/><br/>\
 <img src = "./img/QueingTheoryTarget.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 3교시 5번 \
+',
+ 
+// 대기행렬 시스템
+'# 정의 : 서비스를 제공하는 서비스제공자와 서비스를 받기 위한 대기행렬이 존재하는 시스템 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/WaitQueingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 처리기법 <br/>\
+1. 성능 테스트 (리틀법칙) <br/>\
+<img src = "./img/WaitQueingSpecTEST.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. CPU <br/>\
+<img src = "./img/WaitQueingCPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. QoS <br/>\
+<img src = "./img/WaitQueingQoS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. Web <br/>\
+<img src = "./img/WaitQueingWeb.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 2교시 6번\
 ',
 );
