@@ -400,20 +400,28 @@ var answer = answer.concat(
 
 // [기계학습]- 앙상블 학습법
 '# 정의 : 단일 학습모델 성능보완 <br/>\
-- 주어진 데이터로부터 여러개의 모델을 학습한 다음, 예측시 여러 모델의 예측 결과들을 종합해 사용하여 정확도를 높이는 방법 <br/><br/>\
+- 여러개의 학습 분류기의 예측결과를 결합하여 예측 성능을 높이는 머신러닝 기법 <br/><br/>\
 # Overview <br/>\
-<img src = "./img/AL_16_1.PNG" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/EnsembleOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 학습방식 <br/>\
+- 학습방식 : 학습데이터, 모델링, 투표, 모델평가 <br/>\
+- 수행절차 : 앙상블 생성, 선택, 결합 <br/><br/>\
 # 종류 <br/>\
 1. Voting : 학습결과 종합 <br/>\
 <img src = "./img/EnsembleVoting.png" style = "max-width:100%; height:auto;"><br/>\
 * KNN : K-Nearest Neighbor <br/>\
 * SVM : Support Vector Machine <br/><br/>\
 2. Bagging : 반복적 샘플링 투표 <br/>\
+- Bagging <br/>\
 <img src = "./img/EnsembleBagging.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/EnsembleRandomForest.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 결측치가 존재할 경우 우수 <br/><br/>\
+- Random Forest <br/>\
+<img src = "./img/EnsembleRandomForest.png" style = "max-width:100%; height:auto;"><br/>\
+* 중간에 에러 발생시 다음단계로 에러가 전파되는 의사결정트리 한계 극복 <br/><br/>\
 3. Boosting : 오분류 데이터 가중치 <br/>\
-<img src = "./img/EnsembleBoosting.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/EnsembleBoosting.png" style = "max-width:100%; height:auto;"><br/>\
+* 데이터 많은 경우 유용 <br/><br/>\
+* 120회 관리 3교시 3번<br/><br/>\
 * 아이리포 23회 1교시 3번\
 ',
 
