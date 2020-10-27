@@ -52,6 +52,7 @@ var question = question.concat(
 '[핀테크]- 인터넷 전문 은행',
 '[핀테크]- FDS',
 '[핀테크]- My Data 산업',
+'[핀테므]- QR코드 기반 결제',
 '[IT 금융]- De-Fi',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
@@ -990,6 +991,15 @@ var answer = answer.concat(
 # 주체별 역할, 처리흐름 <br/>\
 <img src = "./img/MyDataSpecification.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 2교시 2번\
+',
+  
+// QR 코드 기반 결제 
+'# 정의 : QR 코드 기반 결제하여 소상공인 경제 향상위한 결제 방식 <br/><br/>\
+# Keyword : MPM, CPM, 고정형, 변동형, QR코드 변조, 악성 QR 코드, 소상공인 지원, 결제수수료 인하 <br/><br/>\
+# 유형 <br/>\
+- MPM(Merchant Presented Mode) <br/>\
+- CPM(Customer Presented Mode) <br/><br/>\
+* 120회 관리 3교시 1번\
 ',
   
 // De-Fi
