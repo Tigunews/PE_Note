@@ -58,6 +58,7 @@ var question = question.concat(
 '[FTP]- FTPS',
 '[FTP]- SFTP',
 'Socket',
+'공공무선 통신망',
 );
 
 var answer = answer.concat(
@@ -1204,5 +1205,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 기술 <br/>\
 <img src = "./img/SocketFunction.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 3교시 6번\
+',
+ 
+// 공공무선 통신망
+'# 정의: 국김 편의 및 안전 확보 위안 LTE 기반 공공 무선통신망 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PublicWirelessCommunication.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# PS-LTE <br/>\
+<img src = "./img/PS-LTE_OverView.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# LTE-R <br/>\
+<img src = "./img/LTE-R_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# LTE-M <br/>\
+<img src = "./img/LTE-M_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 1교시 3번\
 ',
 );
