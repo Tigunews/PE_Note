@@ -2935,7 +2935,12 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 면담조사 <br/>\
 - 문서검토 <br/>\
 - 현장조사 <br/>\
-- 재실시 \
+- 재실시 <br/><br/>\
+# 고도화 방법론 제언 <br/>\
+<img src = "./img/SmartFactoryHighlevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 핵심 성과지표 <br/>\
+<img src = "./img/SmartFactoryIndex.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 2교시 5번\
 ',
   
 // CPS
