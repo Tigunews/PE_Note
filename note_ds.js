@@ -2632,7 +2632,13 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 금융당국 등 이해관계자 협업 필요 <br/>\
 - 표준화 개발 필요 <br/>\
 - 법규 준수 여부 검토 필요 <br/><br/>\
-<img src = "./img/RegTech.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/RegTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 국내외 동향 <br/>\
+1. 해외 <br/>\
+<img src = "./img/RegTechOversea.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 국내 <br/>\
+<img src = "./img/RegTechLocal.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 3교시 2번\
 ',
   
 // 섭테크
