@@ -19,7 +19,8 @@ var question = question.concat(
 '스니핑(Sniffing)',
 '스푸핑(Spoofing)',
 '스턱스넷(stuxnet)',
-'APT(Advanced Persistent Threat) ',
+'APT',
+'[APT]- 래터럴 무브먼트',
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
@@ -434,6 +435,21 @@ var answer = answer.concat(
 - 엔드포인트 : 매체제어, 침입탐지 <br/>\
 - 데이터 : 암호화솔루션(API, Plugin, 암호화키), 접근제어(로그인, SQL통제) <br/><br/>\
 * 116회 2교시 1번\
+',
+   
+// 래터럴 무브먼트
+'# 정의 : APT 내부망 이동 공격 기법 <br/>\
+- Lateral Movement <br/>\
+- 지능형 위협 공격(APT) 과정 중 공격자가 조직 내 최초 시스템 해킹에 성공후 내부망에서 사용되는 계정 정보를 획득하여 내부망의 시스템으로 이동하는 방식 <br/><br/>\
+# 공격기법 <br/>\
+- 1단계 : 인증정보 탈취 <br/>\
+- 2단계 : 확산 <br/>\
+- 3단계 : 유출 <br/>\
+- 4단계 : 의도적 흔적 삭제 <br/><br/>\
+# 대응방안 <br/>\
+- 예방 단계 : xp_cmeshell procedure 삭제, SSL 활성화 <br/>\
+- 사후 단계 : 허니팟 시스템(모니터링), 머신러닝(이상여부), 문자,메일(인증) <br/><br/>\
+* 120회 응용 1교시 9번\
 ',
 
 // SQL Injection
