@@ -4538,7 +4538,9 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 // MDD
 '# 정의 : 소스코드 자동생성 개발 방식  <br/>\
 - 프로그래밍 언어로 직접코딩하는 방식이 아닌 SW 설계모델을 통해 소스코드를 자동생성하는 개발방식<br/><br/>\
-# Keyword : 메타모델, CIM, PIM, PSM, 도메인 전문가, MDD 도구 개발자, 프레임워크 담당자 <br/><br/>\
+# Keyword : 메타모델, CIM, PIM, PSM, 도메인 전문가, MDD 도구 개발자, 프레임워크 담당자 <br/>\
+* PIM : Platform Independent Model <br/>\
+* PSM : Platform Specefic Model <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/MDD_Concept.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 개발 참여자 <br/>\
