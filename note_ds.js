@@ -83,6 +83,7 @@ var question = question.concat(
 '[빅데이터]- 하둡 에코시스템',
 '[빅데이터]- ISO 20547',
 '데이터브로커',
+'가상머신, 컨테이너',
 '가상화',
 '[가상화]- 하이퍼바이저(Hypervisor)',
 '[가상화]- 컨테이너',
@@ -1450,6 +1451,16 @@ var answer = answer.concat(
 - 데이터 스토어 / DB 진흥원 : API 상품과 데이터 상품으로 나누어 등록 관리 <br/>\
 - 공공데이터포털 / 한국정보화진흥원 : 공공데이터를 오픈 API, 파일 데이터, 표준 데이터로 제공, 시각화 등 다양한 방식 제공/유통, 국민 편의 제공 <br/>\
 - 보건의료빅데이터개방시스템 / 건강보험심사평가원 : 민간기업, 프로그램 개발자, 인터넷 이용자 대상으로 병원, 약국정보, 서비스 등 의료데이터 지원\
+',
+  
+// 가상머신, 컨테이너
+'# 개념 <br/>\
+<img src = "./img/VM_Container_Concept.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구동원리 <br/>\
+<img src = "./img/VM_Container_Mechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 배포방식 <br/>\
+<img src = "./img/VM_Container_Delivery.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 2교시 4번\
 ',
 
 // 가상화 
