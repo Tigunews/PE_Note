@@ -1243,6 +1243,5 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 주파수도약 (Freqency Hopping) : +주파수합성기 / Bluetooth (802.15.1) <br/>\
 - 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/><br/>\
 * 120회 응용 1교시 8번\
-
 ',
 );
