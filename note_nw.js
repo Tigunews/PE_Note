@@ -59,6 +59,7 @@ var question = question.concat(
 '[FTP]- SFTP',
 'Socket',
 '공공무선 통신망',
+'NOS',
 );
 
 var answer = answer.concat(
@@ -1218,5 +1219,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # LTE-M <br/>\
 <img src = "./img/LTE-M_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 응용 1교시 3번\
+',
+ 
+// NOS
+'# 정의 : NW 환경에서 원활한 통신 보장위한 운영체제 <br/>\
+- 네트워크 환경에서 서버와 클라이언트간의 원활한 통신을 보장하기 위해 자원 공유 서비스 및 클라이언트의 관리 기능을 제공하는 운영체제 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/NOS_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/NOS_Specefication.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동향 <br/>\
+- 개방형 네트워킹 기술 구현 : 포워딩 기능과 제어 기능 분리 <br/>\
+- 소프트웨어 중심 네트워킹 기술 구현 : 개방형 인터페이스 제공 구조 <br/><br/>\
+* 120회 응용 1교시 6번\
 ',
 );
