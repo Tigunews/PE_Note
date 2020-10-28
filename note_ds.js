@@ -1927,21 +1927,13 @@ var answer = answer.concat(
 - 객체의 심도 정보(Depth Information)를 파악할 수 있는 입체적 센싱 기술',
 
 // 오픈뱅킹
-'# 정의 : 은행 금융 서비스 표준화 형태 제공 인프라 <br/>\
+'# 정의 : Open API + Test BED <br/>\
 - 핀테크 기업이 금융 서비스를 편리하게 개발할 수 있도록 은행의 금융 서비스를 표준화된 형태로 제공하는 인프라 <br/><br/>\
-# 등장 배경 <br/>\
-1. 데이터 주권 강화 <br/>\
-- 마이데이터 도입 : API 정보제공 필요 <br/>\
-- 개인화 서비스 : 핀테크사, 개인정보 활용, 서비스 제공 <br/>\
-2. 개방형 혁신 <br/>\
-- 금융산업 경쟁촉진 : 금융거래 API 개방 / Baas <br/>\
-- 신규 비즈니스 : 오픈플랫폼 생태계 / 핀테크 비즈니스 진출 <br/>\
-3. 대외환경 변화 <br/>\
-- EU PSD2 : EU내 은행이 핀테크 업체에게 오픈 API 제공 -> 유럽 핀테크사 경쟁력 강화 <br/>\
-- 영국 오픈뱅킹 : 9대 주요 은행 계좌에 적용, 단일 API를 핀테크 업체에 제공 <br/><br/>\
+# 등장 배경 : 전산표준 호환성, 은행간 협약, 핀테크 서비스 개발 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/오픈뱅킹구성요소.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OpenBankingComponent.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/OpenBankingSEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 4교시 2번 <br/><br/>\
 * KPC 93회 1교시 8번\
 ',
 
