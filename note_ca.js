@@ -22,7 +22,6 @@ var question = question.concat(
 '[GPGPU]-CUDA',
 'Fabric Computing',
 '양자컴퓨팅(Quantum Computing)',
-'NOS',
 'Tiny OS',
 'Nano Qplus',
 'NAND Flash Memory',
@@ -656,10 +655,6 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 양자암호통신 : 유럽, 미국 일본, 중극 등 활발한 연구 진행 <br/><br/>\
 <img src = "./img/QuantumComputing.png" style = "max-width:100%; height:auto;">\
 ',
-
-// NOS
-'# 정의 : Network OS / 장치 특화 네트워크 / 제어, 접근, 보안, 관리<br/>\
-- 네트워크 운영체제는 라우터, 스위치, 방화벽과 같은 네트워크 장치를 위한 특화된 운영 체제 네트워크와 네트워크 메시지를 (이를테면 패킷) 트래픽과 대기열(큐)을 제어하고, 여러명의 사용자가 파일과 같은 네트워크 리소스에 접근할 수 있게 해주며, 보안을 포함한 특정한 관리자 기능을 제공하는 소프트웨어',
 
 // Tiny OS 
 '# 정의 : 임베디드 초소형 운영체제 / Smart Dust Project / CBD <br/>\
