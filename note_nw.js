@@ -60,6 +60,7 @@ var question = question.concat(
 'Socket',
 '공공무선 통신망',
 'NOS',
+'대역확산',
 );
 
 var answer = answer.concat(
@@ -1232,5 +1233,16 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 개방형 네트워킹 기술 구현 : 포워딩 기능과 제어 기능 분리 <br/>\
 - 소프트웨어 중심 네트워킹 기술 구현 : 개방형 인터페이스 제공 구조 <br/><br/>\
 * 120회 응용 1교시 6번\
+',
+ 
+// 대역확산
+'# 정의 : 샤논 정리의 핵심 <br/>\
+- 정보 신호를 더 넓은 주파수 대역에 확산시켜 전송하는 전송방식 <br/><br/>\
+# 유형 <br/>\
+- 직접확산 (Direct Sequence) : PN Code / CDMA (802.11b) <br/>\
+- 주파수도약 (Freqency Hopping) : +주파수합성기 / Bluetooth (802.15.1) <br/>\
+- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/><br/>\
+* 120회 응용 1교시 8번\
+
 ',
 );
