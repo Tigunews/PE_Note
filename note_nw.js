@@ -368,6 +368,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/HTTP3Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 동작과정 <br/>\
 <img src = "./img/HTTP3ProtocolAction.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/HTTP3ProtocolConnection.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 1교시 4번\
 ',
 
