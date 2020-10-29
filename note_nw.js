@@ -1207,6 +1207,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 네트워크 토폴리지 혁신 기술 : 유연한 네트워크 구성, 위성 활용 <br/>\
 - 주파수 공유 기술 <br/>\
 - AI 적용 통신 기술 <br/><br/>\
+# 5G 비교 <br/>\
+<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;">\
 * 이동통신 기술의 한세대를 통상 10년으로 칭함 \
 ',
  
@@ -1317,11 +1319,13 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
  
 // 대역확산
 '# 정의 : 샤논 정리의 핵심 <br/>\
-- 정보 신호를 더 넓은 주파수 대역에 확산시켜 전송하는 전송방식 <br/><br/>\
+- 무선 채널에서 여러 신호가 경쟁하면서 공유할 때 외부의 전파 잡음에 강하도록 넓은 주파수 대역으로 분산시키는 일종의 변조 방식 <br/><br/>\
 # 유형 <br/>\
 - 직접확산 (Direct Sequence) : PN Code / CDMA (802.11b) <br/>\
 - 주파수도약 (Freqency Hopping) : +주파수합성기 / Bluetooth (802.15.1) <br/>\
-- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/><br/>\
+- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/>\
+<img src = "./img/DSSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/FHSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 응용 1교시 8번\
 ',
 );
