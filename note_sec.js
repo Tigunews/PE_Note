@@ -90,6 +90,7 @@ var question = question.concat(
 '[CPU 보안]- Meltdown',
 '[DDOS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
 'FIDO',
+'[Gartner 2021]- 개인정보보호 강화 컴퓨팅',
 );
 
 var answer = answer.concat(
@@ -1767,5 +1768,14 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 4교시 3번\
+',
+   
+// 개인정보보호 강화 컴퓨팅
+'# 정의 : Privacy-enhancing computation <br/>\
+- 보안성을 유지하면서 데이터를 공유해야하는 필요성에 의해 특별히 설계된 컴퓨팅 방식<br/><br/>\
+# 보호기술 <br/>\
+- 환경 제공 : 민감한 데이터 처리, 분석할 수 있는 신뢰성 환경 <br/>\
+- 분산 수행 : Decentralize 방식으로 처리 및 분석 <br/>\
+- 암호화 : 처리 또는 분석 <font color="red">전에</font> 데이터와 알고리즘 암호화 \
 ',
 );
