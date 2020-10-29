@@ -48,6 +48,8 @@ var question = question.concat(
 '[리소스 공유방법 동기화방법]- 교착상태',
 '[교착상태]- 은행가알고리즘',
 'RAID',
+'[InMemory]- In-Memory Computing',
+'[InMemory]- In-Memory Database',
 );
 
 var answer = answer.concat(
@@ -1118,4 +1120,30 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/RAID_Detail2.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/RAID_Detail3.png" style = "max-width:100%; height:auto;"><br/>\
 ',
+  
+// In-Memory Computing 
+'# 정의 : 어플리케이션을 구동하는 컴퓨터의 메인 메모리에 DB 데이터와 같은 주요 데이터를 저장하고 처리하는 컴퓨팅 기술 <br/><br/>\
+# 특징 : 메인메모리 DB구축, 직접 저장 관리, 디스크 관리 최소화 <br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/InMemoryComputingTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 4교시 6번\
+',
+  
+// In-Memory Database
+'# 정의 : 익스트림 트랜잭션의 고성능 처리 지원 <br/>\
+- 데이터를 저장하는 주된 공간이 디스크가 아닌 메인 메모리인 데이터베이스 <br/>\
+- 즉각적인 응답시간과 높은 처리량을 요구하는 환경에서 사용 <br/>\
+<img src = "./img/InMemoryDB.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 데이터 모델 : 테이블, 빈 미리 정의 x / 유연성 <br/>\
+- 비공유 구조 : 용량에 대한 확장성 / 겹치지 않게 분할 <br/>\
+- 데이터 분할 : 데이터 자체 분할 / 라운드로빈, 키-값 기반 해싱 <br/><br/>\
+# 적용방법 <br/>\
+- 응용 분석 : 인메모리 가용 App / ROI 확인 <br/>\
+- Data 확인 : Data 용량 예측치 확인 / 미래 사용량 <br/>\
+- 압축 성능 : 압축 비율 확인 / 압축 성능 예측 <br/>\
+- Database 구축 : 인메모리 데이터베이스 구축 / Project 기반 <br/>\
+- Database 적용 : Data 성능, DBMS 모니터링 / 성능 모니터링 <br/><br/>\
+* 아이리포 23회 1교시 12번\
+',  
 );
