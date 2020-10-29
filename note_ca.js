@@ -1032,19 +1032,16 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 
 // [리소스 공유방법 동기화방법]- 뮤텍스
 '# 정의 : 커널모드 동기화 객체 / 프로세스 스레드 사이 동기화 기법<br/>\
-- 커널모드 동기화 객체로 크리티컬 섹션보다 느리지만 다른 프로세스의 스레드 사이 동기화 기법 <br/><br/>\
+- 다중 프로세스들의 공유 리소스에 대한 접근을 조율하기 위해 Locking과 Unlocking을 사용하는 상호배제기법 <br/><br/>\
 # 특징<br/>\
 - 락 사용기간이 긴 경우 유용 <br/>\
 - 락을 얻은 상태에서 수면(sleep)할 필요가 있는 경우 뮤텍스 사용 <br/>\
 - 프로세스 범위 가지는 객체 <br/>\
-- lock / unlock 상태 <br/><br/>\
+- lock / unlock 상태 <br/>\
+<img src = "./img/Mutex.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 뮤텍스와 세마포어 차이 <br/>\
-- 뮤텍스는 카운트가 1인 바이너리 세마포어 <br/>\
-- 세마포어는 뮤텍스 될 수 있지만, 역은 성립되지 않음 <br/>\
-- 뮤텍스는 락 소유 스레드가 직접해제해야 하지만 세마포어는 외부에서 조정 가능 <br/>\
-- 세마포어는 일반적으로 공유 자원을 프로세스 단위 접근관리 위해 사용 <br/>\
-- 뮤텍스는 스레드 단위 접근관리 위해 사용 <br/><br/>\
-<img src = "./img/Mutex.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/SemaphoreMutex.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 1교시 12번\
 ',
 
 // [리소스 공유방법 동기화방법]- 스핀락
