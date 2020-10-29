@@ -99,7 +99,7 @@ var question = question.concat(
 '[구현단계]- Javascript',
 '[시험단계]- 테스트원리 7가지',
 '[시험단계]- 테스트 유형',
-'[시험단계][테스트]- 단계',
+'[시험단계][테스트]- V-Model',
 '[시험단계][태스트]- 단위 테스트',
 '[시험단계][테스트]- 통합 테스트',
 '[시험단계][테스트]- 시스템 테스트',
@@ -1827,7 +1827,7 @@ var answer = answer.concat(
 '<img src = "./img/TestTree.png" style = "max-width:100%; height:auto;">\
 ', 
 
-// 단계 
+// V-Model 
 '# 정의 : 숨어있는 결함 찾기위한 SW 작동 행위,절차 <br/><br/>\
 # 절차 <br/>\
 - 테스트 계획 : 목표,대상,범위선정 <br/>\
