@@ -46,6 +46,7 @@ var question = question.concat(
 '[딥러닝]- R-CNN',
 '[딥러닝]- 경량 딥러닝 기술',
 '[딥러닝]- 알고리즘 경량화',
+'[딥러닝]- Hyper Parameter',
 'Q-러닝',
 '모라벡의 역설(Moravec\'s Paradox)',
 '몬테 카를로 트리 탐색(MCTS)',
@@ -762,6 +763,16 @@ var answer = answer.concat(
 3. 하드웨어 가속화 기술 <br/>\
 - TPU, VPU, GPU : 벡터/행렬 연산 병렬 처리 연산 전용 하드웨어 기술 <br/><br/>\
 * KPC 91회 2교시 2번\
+',
+  
+// 하이퍼 파라미터
+'# 정의 : 의도적 설정 파라미터 <br/>\
+- 딥러닝에서 모델링할 시 사용자의 선험적 지식을 이용하여 설정하는 변수 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/ParameterHyperParameter.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 튜닝방법 <br/>\
+<img src = "./img/HyperParameterTunning.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 120회 관리 4교시 3번\
 ',
 
 // Q-러닝 
