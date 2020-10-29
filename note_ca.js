@@ -5,6 +5,7 @@ var question = question.concat(
 'Dispatcher',
 '[Dispatcher]- 운영체제 문맥, 문맥교환',
 'Interrupt',
+'Memory 영역',
 'Process',
 'Thread',
 'Buffering / Spooling',
@@ -199,6 +200,14 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 4교시 6번\
+',
+  
+// Memory 영역
+'# 종류 <br/>\
+- Code : 코드자체 구성 / Hex, Bin <br/>\
+- Data : 전역변수, 정적변수, 배열, 구조체 / global, static, array, structure <br/>\
+- Heap : 동적 메모리 / maaloc(), new() <br/>\
+- Stack : 지역변수, 매개변수, 리턴 값 / 
 ',
 
 // Process
