@@ -449,7 +449,7 @@ var answer = answer.concat(
 '# 정의 : 인공지능을 통한 예방 구현 <br/>\
 - 다양한 치안 데이터 수집 및 딥러닝 통한 분석을 통해 범죄가 일어나기 전 사건을 예측하여 범죄자를 식별, 추적, 차단하는 최첨단 치안 시스템 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/PreCrime.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/PreCrime.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 사례 <br/>\
 - 국내 : 음란물 차단, 전자발찌, 범죄분석, 주가조작 <br/>\
 - 해외 : 미국(PrePol;자동출동), 영국(OASys;재범), 일본(CCTV+행위분석;절도행위에측,범죄자 추적), 중국(AI+안면인식;안면인식 AI선글라스, 범죄자예측) <br/><br/>\
