@@ -31,6 +31,7 @@ var question = question.concat(
 '[무선통신]- 인지무선(Cognitive Radio)',
 '[무선통신]- IEEE 802.11p',
 '[무선통신]- Gigabit WLAN',
+'[무선통신]- 저전력 무선통신 비교',
 '[측위기술]- IPS',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
@@ -767,6 +768,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * QAM(Quadrature Amplitude Modulation) : 직교 진폭 변조(제한범위 고속신호) <br/>\
 * BCH(Bitcoin Cash) <br/>\
 * 122회 응용 4교시 5번\
+',
+ 
+// 저전력 무선통신
+'<img src = "./img/LowPowerWireless.png" style = "max-width:100%; height:auto;">\
 ',
 
 // IPS
