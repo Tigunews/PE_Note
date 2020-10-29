@@ -2,6 +2,7 @@ var question = question.concat(
 '4차산업 혁명',
 '디지털 뉴딜&혁신 4개분야 12개요소',
 '인공지능 서비스 플랫폼',
+'[AI]- 인공지능 소프트웨어 보안 취약성',
 '[AI]- AI Flow',
 '[AI]- XAI',
 '[AI][지식표현]- 생성규칙',
@@ -233,6 +234,12 @@ var answer = answer.concat(
 - Amazon : Alexsa Voice Service 클라우드 기반 생활 맞춤형 : 블루투스 스피커 echo 내 탑재됨 <br/>\
 - IBM Waton Health Platform : 의료 전문 지능형 플랫폼 길병원 온콜로지 <br/>\
 - GE Predix Platform : 산업현장 정보 분석, 산업 현장 데이터 + 기존 사업 경험 노하우\
+',
+  
+// 인공지능 소프트웨어 보안 취약성
+'# 인공지는 소프트웨어 보안 취약성 <br/>\
+<img src = "./img/AI_SW_Week.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 3교시 4번\
 ',
 
 // [AI]- AI Flow
