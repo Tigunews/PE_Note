@@ -4,11 +4,11 @@ var question = question.concat(
 '[TCP-Protocol]- TLS',
 '서비스 프리미티브(Service Primitive)',
 '패킷데이터 네트워크 계층 오류',
-'[패킷데이터 네트워크 계층 오류]- 오류제어',
-'[패킷데이터 네트워크 계층 오류]- CRC',
-'[패킷데이터 네트워크 계층 오류]- 해밍코드',
-'[패킷데이터 네트워크 계층 오류]- Parity Check',
-'[패킷데이터 네트워크 계층 오류]- Check Sum',
+'[전송오류]- 오류제어',
+'[전송오류]- CRC',
+'[전송오류]- 해밍코드',
+'[전송오류]- Parity Check',
+'[전송오류]- Check Sum',
 '인터넷 프로토콜 3단계 주소체계',
 'HTTP/2.0',
 'HTTP/3.0',
@@ -31,6 +31,11 @@ var question = question.concat(
 '[무선통신]- 인지무선(Cognitive Radio)',
 '[무선통신]- IEEE 802.11p',
 '[무선통신]- Gigabit WLAN',
+'[측위기술]- IPS',
+'[측위기술]- LDT',
+'[측위기술]- GPS',
+'[측위기술]- SBAS',
+'[측위기술]- RTLS',
 '라이파이(Li-Fi)',
 'SON',
 'BcN',
@@ -764,6 +769,74 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * 122회 응용 4교시 5번\
 ',
 
+// IPS
+'# 정의 : GPS 실내용 버전 <br/>\
+- Indoor Positioning System <br/>\
+- 실내에서 모바일이 수신하는 센서,전파로 건물 내 위치와 이동경로를 측정하는 시스템 <br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/IPS_Tech.png" style = "max-width:100%; height:auto;">\
+* WPS (Wifi Positioning System) <br/>\
+* RSSI (Received Signal Strength Indicator) : 수신 신호 세기/강도 <br/>\
+* UWB (Ultra Wideband) : 3.1~10.6GHz 넓은 주파수 대역 <br/><br/>\
+* 119회 관리 4교시 1번\
+',
+
+// LDT
+'# 정의 : Location Determination Technology <br/>\
+- 위치기반 서비스 제공을 위해 모바일 단말의 위치를 측정하는 위치 확인 기술 <br/><br/>\
+# 종류 <br/>\
+- 네트워크 <br/>\
+- 위성신호 <br/>\
+- Wi-Fi <br/>\
+- 혼합 <br/><br/>\
+# 인프라 유형별 종류 <br/>\
+1. 네트워크 기반 <br/>\
+- Cell ID / Sector ID : 기지국 ~ 단말기 간의 거리 측정 <br/>\
+- AoA(Angle of Arrival) : 2개 이상의 기지국과 단말기간 도달 각 정보 측정 <br/>\
+- TDoA(Time Difference of Arrival) : 3개이상의 기지국과 단말 간의 도달시간 정보 측정 <br/><br/>\
+2. 위성 신호 기반 <br/>\
+- StandAlone GPS : 독자적 위성 신호 <br/>\
+- MS-Based GPS : 최초 GPS 위성정보에서 독자적 <br/>\
+- MS-Assisted GPS : 최초 GPS 위성정보 + 위치측위 정보까지 서버 통해 전달 <br/>\
+* MS : Mobile Station <br/><br/>\
+# 실내 측위 기술 <br/>\
+<img src = "./img/LDT_Tech.png" style = "max-width:100%; height:auto;">\
+',
+  
+// GPS
+'# 정의 : 인공위성을 이용한 정확한 위치파악 시스템 <br/>\
+- Global Positioning System <br/>\
+- 지구상의 어느곳에나 인공위성에서 보내는 정보를 수신하여 정지 또는 이동하는 물체의 위치를 측정할 수 있는 전천후 위치측정 시스템 <br/><br/>\
+# 구성요소 <br/>\
+- 우주부분 : GPS 위성, 원자 시계 <br/>\
+- 제어부분 : 관제국, 송신 시스템 <br/>\
+- 사용자 부분 : 안테나, 수신기, 소프트웨어 <br/><br/>\
+# 종류 <br/>\
+- Stand-alone GPS : 수신기 하나만으로 측정 <br/>\
+- D-GPS(Differential) : 일정영역별 측정 <br/>\
+- LAD-GPS(Local Area) : 좁은 영역 높은 정확도 <br/>\
+- WAD-GPS(Wide Area) : 지역적, 비용적 한계 극복 \
+',
+  
+// SBAS
+'# 정의 : 초정밀 GPS 보정 시스템 <br/>\
+- Satelite based Augment System <br/>\
+- 기존의 GPS 오차(17~37m)를 1m 이내로 보정하여 항공기에 정밀 위치 정보를 제공하는 위성 기반 항법 시스템 <br/><br/>\
+# DGPS 비교 <br/>\
+<img src = "./img/SBAS_DGPS.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// RTLS
+'# 정의 : 실시간 위치추적 기술 <br/>\
+- 제한적인 범위의 실내 또는 실외에서 특정 사물이나 사람에 대한 인식 및 위치를 실시간으로 추적하여 위치정보기반의 서비스를 제공하는 기술 <br/><br/>\
+# 구현기술 <br/>\
+<img src = "./img/RTLS_Tech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분야별 서비스 <br/>\
+- 사물 : 고가물품 관리, 화물 및 장비 추적 <br/>\
+- 생물 : 애완동물관리, 성범죄자 추적 <br/><br/>\
+* 120회 응용 1교시 13번\
+',
+ 
 // Li-Fi
 '# 정의 : 광원 신호기반 통신 기술 <br/>\
 - Light Fidelity <br/>\
