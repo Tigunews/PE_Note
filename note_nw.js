@@ -886,7 +886,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : Thunderbolt 3 호환 및 Double bandwidth 를 사용하여 40 Gbp 의 전송 대역폭을 지원하는 USB 기술',
 
 // 5G 이동통신
-'# 정의 : 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
+'# 정의 : 대한민국 퍼스트 무버 <br/>\
+- 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
 <img src = "./img/5G_2.jpg" style = "width:100%; height:auto;">\
 ',
  
