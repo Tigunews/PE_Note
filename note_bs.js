@@ -80,7 +80,6 @@ var question = question.concat(
 'Servitization',
 '대기행렬이론',
 '[대기행렬]- 대기행렬 시스템',
-'[Gartner 2021]- 지능형 구성 가능한 비즈니스',
 );
 
 var answer = answer.concat(
@@ -1307,15 +1306,5 @@ var answer = answer.concat(
 4. Web <br/>\
 <img src = "./img/WaitQueingWeb.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 2교시 6번\
-',
- 
-// 지능형 구성 가능한 비즈니스
-'# 정의 : Intelligent Composable Business <br/>\
-- 현재 상황에 따라 적응하고 근본적으로 재 정렬할 수 있는 비즈니스 <br/><br/>\
-# 속성 (현재 사용 가능 기반, 신속한 비즈니스 결정)<br/>\
-- Modularity <br/>\
-- Autonomy <br/>\
-- Orchestration <br/>\
-- Discovery \
 ',
 );
