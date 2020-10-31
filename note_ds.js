@@ -234,8 +234,8 @@ var answer = answer.concat(
 ',
   
 // 인공지능 소프트웨어 보안 취약성
-'# 인공지는 소프트웨어 보안 취약성 <br/>\
-<img src = "./img/AI_SW_Week.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+'# 인공지능 소프트웨어 보안 취약성 <br/>\
+<img src = "./img/AI_SW_Week.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 응용 3교시 4번\
 ',
 
