@@ -1,6 +1,7 @@
 var question = question.concat(
 '4차산업 혁명',
 '디지털 뉴딜&혁신 4개분야 12개요소',
+'[K뉴딜]- 데이터댐',
 '인공지능 서비스 플랫폼',
 '[AI]- 인공지능 소프트웨어 보안 취약성',
 '[AI]- AI Flow',
@@ -211,7 +212,25 @@ var answer = answer.concat(
 ',
   
 // 디지털 뉴딜&혁신 4개 분야 12개 요소 
-'<img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">\
+'# K-New Deal 추진체계 <br/>\
+<img src = "./img/KNewDealSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Digital New Deal <br/>\
+<img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">
+',
+  
+// 데이터댐
+'# 정의 : 디지털 뉴딜 핵심 <br/>\
+- 디지털 기술의 기본이 되는 데이터를 수집하여 모아서 적재적소에 활용할 수 있도록 하는 것 <br/><br/>\
+# Keyword : 디지털 뉴딜, DNA, 인공지능, 클라우드, 바우처, 빅데이터 <br/><br/>\
+# 데이터 댐의 7대 사업 <br/>\
+- 인공지능 학습용 데이터 구축 <br/>\
+- 인공지능 바우처 <br/>\
+- 인공지능 데이터 가공바우처 사업 <br/>\
+- 인공지능 융합 프로젝트 (AI+X) <br/>\
+- 클라우드 플래그십 프로젝트 <br/>\
+- 클라우드 이용바우처 사업 <br/>\
+- 빅데이터 플랫폼 및 센터 구축 <br/><br/>\
+* 라이지움 87회 관리 1교시 3번\
 ',
   
 // 인공지능 서비스 플랫폼 
