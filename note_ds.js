@@ -215,7 +215,7 @@ var answer = answer.concat(
 '# K-New Deal 추진체계 <br/>\
 <img src = "./img/KNewDealSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Digital New Deal <br/>\
-<img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">
+<img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 데이터댐
