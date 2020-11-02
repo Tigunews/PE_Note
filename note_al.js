@@ -637,7 +637,7 @@ var answer = answer.concat(
 # 절차 <br/>\
 <img src = "./img/CoastFunctionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 관리 1교시 6번 <br/>\
-<hr color = "blue"></hr><br/>\
+<hr color = "blue"></hr>\
 # 정의 : 최적 매게변수 탐색 <br/>\
 - 신경망 성능의 나쁨을 나타내는 지표로, 알고리즘이 얼마나 잘못하고 있는지를 표현하는 지표 <br/><br/>\
 # 개요도 <br/>\
