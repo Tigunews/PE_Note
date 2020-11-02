@@ -36,7 +36,7 @@ var question = question.concat(
 '[딥러닝]- 한계점',
 '[딥러닝]- 역전파 알고리즘',
 '[딥러닝]- 경사감소법',
-'[딥러닝]- 비용함수',
+'[딥러닝]- 비용함수, 손실함수',
 '[딥러닝]- 컨텍스트 딥러닝',
 '[딥러닝]- ANN',
 '[딥러닝]- CNN(Convolutional Neural Networks)',
@@ -630,13 +630,33 @@ var answer = answer.concat(
 * 119회 1교시 9번\
 ',
   
-// 비용함수
+// 비용함수, 손실함수
 '# 정의 : 인공지능 학습원리 <br/>\
 - 선형 회귀식에서 학습데이터가 주어지면 w,b 값을 조정하여 최소화 시키기 위한 함수 <br/><br/>\
 # 특징 : 제곱(양수), 최소화(합 최소), 경사하강법(비용 최소) <br/><br/>\
 # 공식 <br/>\
 <img src = "./img/CoastFunctionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 87회 관리 1교시 6번\
+* 라이지움 87회 관리 1교시 6번 <br/>\
+<hr color = "blue"></hr><br/>\
+# 정의 : 최적 매게변수 탐색 <br/>\
+- 신경망 성능의 나쁨을 나타내는 지표로, 알고리즘이 얼마나 잘못하고 있는지를 표현하는 지표 <br/><br/>\
+# 개요도 <br/>\
+<img src = "./img/LossFunction.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 종류 <br/>\
+1. MSE (평균제곱오차) Mean Squared Error <br/>\
+<img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/>\
+*Pi 실제값, Yi 예측값<br/><br/>\
+2. RMSE (평균제곱근오차) Root MSE<br/>\
+- 속도 향상 <br/>\
+<img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+3. CEE (교차엔트로피) Cross Entropy Error <br/>\
+- 원-핫 인코딩 경우 사용 <br/>\
+- y : 신경망 출력, t : 정답 레이블 <br/>\
+<img src = "./img/CEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+4. Mini-Batch <br/>\
+- 무작위 뽑아 학습 <br/>\
+<img src = "./img/MiniBatch.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* KPC 94회 1교시 2번\
 ',
 
 // [딥러닝]- 컨텍스트 딥러닝
