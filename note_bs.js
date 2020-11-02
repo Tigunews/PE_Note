@@ -35,7 +35,7 @@ var question = question.concat(
 '[IT-컴플라이언스] - ISO 31000',
 'BCP',
 '[BCP]- BIA',
-'[BCP]- ISO22301-BCMS',
+'[BCP]- ISO22301',
 '[BCP]- DRS',
 'DRP',
 'BPR',
@@ -693,20 +693,24 @@ var answer = answer.concat(
 <img src = "./img/BIA.png" style = "max-width:100%; height:auto;">\
 ',
 
-// [BCP]- ISO22301-BCMS 
+// [BCP]- ISO22301
 '# 정의 : 재난 상황 업무 연속성 관리 체계 <br/>\
 - Business Continuity Management System <br/>\
+- BS 25999-2 대체 <br/>\
 - 기업의 비즈니스를 보호할 수 있도록 경영시스템 요구사항을 명시/역할,책임,교육을 통한 기업 경영의 연속성을 유지할 수 있는 경영 국제인증 <br/><br/>\
+# Keyword : PDCA, 조직현황, 리더쉽, 계획, 지원, 운영, 수행평가, 개선, 인증, 비즈니스 연속성 <br/><br/>\
 # 주요 내용 (조리계지운성개) <br/>\
-- 조직의 상황 : BCM 관리 상황<br/>\
-- 리더십 : 경영진 방침 <br/>\
-- 계획수립 : 업무 연속성 목적 제시<br/>\
-- 지원 : 정보의 문서화<br/>\
-- 운영 : 운영계획 수립 및 통제 관리 <br/>\
-- 성과평가 : 감시,측정,분석<br/>\
-- 개선 : 부적합 시정조치, 개선 <br/>\
+P(4) 조직의 상황 : BCM 관리 상황<br/>\
+P(5) 리더십 : 경영진 방침 <br/>\
+P(6) 계획수립 : 업무 연속성 목적 제시<br/>\
+P(7) 지원 : 정보의 문서화<br/>\
+D(8) 운영 : 운영계획 수립 및 통제 관리 <br/>\
+C(9) 성과평가 : 감시,측정,분석<br/>\
+A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 <img src = "./img/BCMS_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/BCMS_2.png" style = "max-width:100%; height:auto;">\
+# Time Graph <br/>\
+<img src = "./img/BCMS_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 1교시 8번\
 ',
  
 // DRS
