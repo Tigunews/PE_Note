@@ -3092,19 +3092,21 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 - 프로젝트 목표를 달성하고 필요한 인도물을 산출하기 위하여 프로젝트 팀이 실행할 작업을 인도물 중심으로 분할한 계층구조 체계 <br/><br/>\
 # 구성 <br/>\
 <img src = "./img/WBS.png" style = "max-width:100%; height:auto;"><br/>\
-- Work Package : 최하위 구성요소, 80시간 내외 <br/>\
-- Planning Package : 계획중 Package <br/>\
-- WBS Dictionary : Work Package 설명 요소 <br/>\
-- Code of Account : WBS ID <br/>\
-- Control Account : Work Package 묶음 <br/>\
-- RAM(Responsibilites Assignment Matrix) : 패키지별 담당자 정의 <br/><br/>\
+- 프로젝트 : 시간, 예산기반 요구사항 점진적 구현 작업 <br/>\
+- 단계 : 프로젝트 공정 단계 (요구분석, 설계, 구현, 시험) <br/>\
+- 작업 : 산출물 활동 단위 <br/>\
+- 작업 패키지 : 산출물, 4~80H <br/>\
+- 소요 공수 : 수행 위한 작업시간(M/D, M/H) <br/><br/>\
 # 특징 <br/>\
 - 산출물 중심 <br/>\
 - 8/80 법칙 : 8~80 사이 WP 크기 <br/>\
 - Report 법칙 : Report 크기 따라 WP 크기 정의 <br/>\
 - 유용성 법칙 : 세분화 <br/>\
 - 연동기획 : Rolling Waver Planning 가까운 미래만 상세히 작성 <br/>\
-- 100% Rule \
+- 100% Rule <br/><br/>\
+# 사례 <br/>\
+<img src = "./img/WBS_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 1교시 7번\
 ',
 
 // Gold Plating
