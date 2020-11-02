@@ -35,8 +35,9 @@ var question = question.concat(
 '딥러닝',
 '[딥러닝]- 한계점',
 '[딥러닝]- 역전파 알고리즘',
-'[딥러닝]- 경사감소법(Gradient Descent)',
-'[딥러닝]- 컨텍스트 딥러닝(Context Based Deep Learning)',
+'[딥러닝]- 경사감소법',
+'[딥러닝]- 비용함수',
+'[딥러닝]- 컨텍스트 딥러닝',
 '[딥러닝]- ANN',
 '[딥러닝]- CNN(Convolutional Neural Networks)',
 '[딥러닝]- RNN(Recurrent Neural Networks)',
@@ -614,6 +615,7 @@ var answer = answer.concat(
 '# 정의 : 신경망의 연결 가중치 최적화를 위한 알고리즘 <br/>\
 - 기계학습시 예측 오류를 줄이고 모델을 최적화하기 위해 현재상태의 기울기를 구해 손실값을 줄이는 방향으로 정해진 스텝량만큼 이동하여 신경망 파라미터를 최적화하는 알고리즘 <br/><br/>\
 # 주요변수 <br/>\
+<img src = "./img/GradientDescentXY.png" style = "max-width:100%; height:auto;"><br/>\
 - 가중치(x) : 각 신경망 연결의 Weight / 구하고자 하는 값<br/>\
 - 손실함수(y) : (예측값-실제값)^2 <br/>\
 - 기울기 : 손실함수 미분값 <br/>\
@@ -626,6 +628,15 @@ var answer = answer.concat(
 # 경사하강법 유형 <br/>\
 <img src = "./img/GradientDescentType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 1교시 9번\
+',
+  
+// 비용함수
+'# 정의 : 인공지능 학습원리 <br/>\
+- 선형 회귀식에서 학습데이터가 주어지면 w,b 값을 조정하여 최소화 시키기 위한 함수 <br/><br/>\
+# 특징 : 제곱(양수), 최소화(합 최소), 경사하강법(비용 최소) <br/><br/>\
+# 공식 <br/>\
+<img src = "./img/CoastFunctionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 1교시 6번\
 ',
 
 // [딥러닝]- 컨텍스트 딥러닝
