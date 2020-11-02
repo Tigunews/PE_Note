@@ -2190,13 +2190,13 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '# 정의 : 클라우드 안전 이용 지원 제도 <br/>\
 - 클라우드 서비스 제공자가 제공하는 서비스에 대해 클라우드 컴퓨팅 발전 및 이용자 보호에 관한 <font color="red">법률 제23조 2항</font>에 따라 정보보호 기준의 준수여부 확인을 인증기관에 요청하는 경우 인증기관이 평가, 인증하여 이용자들이 안심하고 클라우드 서비스를 이용하도록 지원하는 제도 <br/><br/>\
 # 근거 <br/>\
-- 클라우드 컴퓨팅 발전 및 이용자 보호에 관한 법률 제23조 2항 <br/>\
+- 클라우드 컴퓨팅 발전 및 이용자 보호에 관한 법률 제5조 <br/>\
 - 클라우드 컴퓨팅 서비스 정보보호에 관한 기준 미래부 고시 제7조 (2016-41호) <br/><br/>\
 # 인증대상 : <font color="red">클라우드 컴퓨팅법 제20조</font>에 따라 공공기관의 업무를 위해 클라우드 컴퓨팅 서비스를 제공하는 사업자 <br/><br/>\
 # 인증평가 종류 <br/>\
 <img src = "./img/PublicCloudType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 조직 <br/>\
-<img src = "./img/CloudSecGroup.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/CloudSECStandard.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 인증 기준 <br/>\
 <img src = "./img/CloudSecStandard.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 인증 절차 <br/>\
