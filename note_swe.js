@@ -290,8 +290,9 @@ var question = question.concat(
 '[방법론]- MDD',
 '[방법론]- ASD',
 '[방법론]- EDA',
-'[방법론]- 데브옵스(DevOps)',
-'DataOps',
+'[방법론][Ops]- DevOps',
+'[방법론][Ops]- DataOps',
+'[방법론][Ops]- GitOps
 '[방법론]- 시각적 분석 (Visual Analytics)',
 '[방법론]- 시각화 분석 (Visualization Analysis)',
 '[방법론]- 데이터 시각화 (Data Visualization)',
@@ -4638,10 +4639,10 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 * CI : Continuous Integration : 지속적 품질통제 적용 프로세스 수행 Agile 비교, MSA 활용 <br/><br/>\
 <img src = "./img/DevOps_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/DevOps_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DevOps_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DevOps_3.png" style = "max-width:100%; height:auto;">\
 ',
  
-// Data Ops
+// DataOps
 '# 정의 : 데이터 생성자와 데이터 소비자를 연결하는 능력 <br/>\
 - 기업내 논의를 통해 데이터 유형을 분류하고 다양한 데이터 세트에 목적을 달성하는 과정 <br/><br/>\
 # 5가지 과제 <br/>\
@@ -4651,6 +4652,25 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 보안 : 데이터 보안 보장 <br/>\
 - 극복 : 사용가능한 데이터 사일로 만들기 <br/><br/>\
 * Silo : 각부서, 사업단위나 브랜치별로 데이터가 ㅇ리치하지 않는 증상 \
+',
+ 
+// GitOps
+'# 정의 : Weaveworks라는 회사에서 처음 쓰기 시작한, CI/CD 파이프라인 중 특별히 Delivery에 초점을 가지고 탄생한 개념 <br/>\
+- 쿠버네티스 클러스터 관리, 어플리케이션 배포하는 방법론 중 하나 <br/>\
+- 어플리케이션 소스 뿐만 아니라 배포 설정까지 깃 저장소를 통해 관리 <br/><br/>\
+# 필요성 <br/>\
+- 빠른 배포 <br/>\
+- 빠른 복구 <br/>\
+- 쉬운 자격증명 관리 <br/>\
+- 자체 문서화 배포 <br/>\
+- 팀 공유 지식 <br/><br/>\
+# 작동방식 <br/>\
+- Git Repository <br/>\
+- Push 배포 : 실제환경 비슷 <br/>\
+- Pull 배포 : Operator 존재 <br/><br/>\
+# IaS, GitOPS 비교 <br/>\
+<img src = "./img/IaCGitOPS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 87회 라이지움 관리 1교시 2번\
 ',
 
 // 시각적 분석
