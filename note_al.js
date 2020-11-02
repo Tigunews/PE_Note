@@ -634,7 +634,7 @@ var answer = answer.concat(
 '# 정의 : 인공지능 학습원리 <br/>\
 - 선형 회귀식에서 학습데이터가 주어지면 w,b 값을 조정하여 최소화 시키기 위한 함수 <br/><br/>\
 # 특징 : 제곱(양수), 최소화(합 최소), 경사하강법(비용 최소) <br/><br/>\
-# 공식 <br/>\
+# 절차 <br/>\
 <img src = "./img/CoastFunctionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 관리 1교시 6번 <br/>\
 <hr color = "blue"></hr><br/>\
