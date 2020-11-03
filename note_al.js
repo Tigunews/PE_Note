@@ -20,10 +20,10 @@ var question = question.concat(
 '[AI]- 유전자 알고리즘',
 '[AI]- Feed Forward Neural Network',
 '[AI]- 분석모델평가',
+'[AI][분석모델평가]- Cross Validation',
 '[AI]- 분류모델생성알고리즘',
 '[AI]- 앙상블 학습법',
-'[AI]- 과대적합(Overfitting)',
-'[AI]- 과소적합(underfitting)',
+'[AI]- Fitting',
 '[AI]- TensorFlow',
 '[AI]- 강화학습',
 '[AI]- 역강화학습',
@@ -352,6 +352,26 @@ var answer = answer.concat(
 -> Bootstrap Sample T회(중복허용) 반복 측정 후 평균값으로 최종평가, Training Set(오류예측) <br/><br/>\
 <img src = "./img/분석모델평가.png" style = "max-width:100%; height:auto;">\
 ',
+  
+// Cross Validation
+'# 정의 : Train Dataset을 나누어 검증하는 방법 <br/><br/>\
+# 필요성 <br/>\
+- Test Set Data 고정 <br/>\
+- Test Set Overfitting 문제점 발생 <br/><br/>\
+# 특징 <br/>\
+1. 장점 <br/>\
+- 평가 활용 : 데이터 편중 방지, 일반화 모델 생성 <br/>\
+- 훈련 활용 : 정확도 향상, 데이터 부족 Underfitting 방지 <br/><br/>\
+2. 단점 : Iteration 횟수 증가, 분석 시간 증가 <br/><br/>\
+# 기법 <br/>\
+1. Hold Out <br/>\
+- 정의 : labeled 데이터 세트 중 일정 부분을 검증/테스트 세트로 분리하고 학습모델을 검증하는 방법 <br/>\
+- 구성 : Train set(모델 학습 목적), Validation set(성능 검증), Test set(최종 성능 평가) <br/><br/>\
+2. Resampling <br/>\
+- 정의 : 부족한 데이터를 사용하여 모델 학습 성능 향상 및 검증을 목적으로 학습데이터를 반복으로 샘플링하는 방법 <br/>\
+- 주요 검증 기법 : 교차 검증(0---,-0--,--0-,---0), 부트스트래핑(Random select, length) <br/><br/>\
+* 라이지움 87회 관리 2교시 2번\
+',
 
 // [기계학습]- 분류모델생성알고리즘
 '# Bagging : Bootstrap 결합 예측 모형 알고리즘 <br/>\
@@ -401,11 +421,8 @@ var answer = answer.concat(
 * 아이리포 23회 1교시 3번\
 ',
 
-// [기계학습]- 과대적합
-'# 정의 : 모델이 훈련 데이터에 너무 잘 맞지만 일반성이 떨어지는 경우 발생',
-
-// [기계학습]- 과소적합
-'# 정의 : 모델이 너무 단순해서 데이터의 내재된 구조를 학습하지 못할 때 발생',
+// [기계학습]- Fitting
+'<img src = "./img/Fitting.png" style = "max-width:100%; height:auto;"><br/><br/>\',
 
 // TensorFlow 
 '# 정의 : 머신러닝 오픈소스 라이브러리 <br/>\
