@@ -10,6 +10,7 @@ var question = question.concat(
 '[전송오류]- Parity Check',
 '[전송오류]- Check Sum',
 '[Layer2]- Collison Domain',
+'DNS',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
 '[Internet]- HTTP/3.0',
@@ -334,6 +335,26 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Collison Detection : 충돌 검출시, 재전송 -> <font color = "Red">충돌 줄이기 위한 Collison Domain 분할 필요</font><br/>\
 - BackOff Algorithm : 재전송(랜덤 시간 대기), 포기(15회) <br/><br/>\
 * 라이지움 87회 응용 1교시 11번\
+',
+ 
+// DNS
+'# 정의 : 호스트의 도메인 이름을 IP 주소로 전환하는 분산형 이름 질의 시스템 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/DNSStruct.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 리소스 레코드 종류 <br/>\
+- NS : 네임서버 위치 <br/>\
+- A : Host -> IP <br/>\
+- PTR : IP -> Host <br/>\
+- MX : 메일을 MX 레코드로 지정한 호스트로 전송 <br/>\
+- CNAME : 별칭 도메인 이름을 실제 도메인 이름에 매핑함 <br/><br/>\
+# 재귀 쿼리, 반복 쿼리 <br/>\
+1. 재귀 쿼리 <br/>\
+- 응밥 못할 경우 다른 서버에게 질의 <br/>\
+- example.microsoft.com 예시 : Root DNS -> .com DNS -> microsoft.com Server <br/><br/>\
+2. 반복 쿼리 <br/>\
+- 다른 네임 서버 목록 전달 방식 <br/>\
+- 다른 DNS 서버에게 같은 질의 반복 <br/><br/>\
+* 라이지움 87회 응용 2교시 5번\
 ',
 
 // 인터넷 프로토콜 3단계 주소체계
