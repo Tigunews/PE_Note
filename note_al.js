@@ -365,11 +365,23 @@ var answer = answer.concat(
 2. 단점 : Iteration 횟수 증가, 분석 시간 증가 <br/><br/>\
 # 기법 <br/>\
 1. Hold Out <br/>\
-- 정의 : labeled 데이터 세트 중 일정 부분을 검증/테스트 세트로 분리하고 학습모델을 검증하는 방법 <br/>\
-- 구성 : Train set(모델 학습 목적), Validation set(성능 검증), Test set(최종 성능 평가) <br/><br/>\
-2. Resampling <br/>\
-- 정의 : 부족한 데이터를 사용하여 모델 학습 성능 향상 및 검증을 목적으로 학습데이터를 반복으로 샘플링하는 방법 <br/>\
-- 주요 검증 기법 : 교차 검증(0---,-0--,--0-,---0), 부트스트래핑(Random select, length) <br/><br/>\
+- 정의 : 임의 비율로 Train set, Test set 분할 (9:1, 7:3)<br/>\
+- 장점 : 계산 시간 부담 경감 <br/>\
+- 단점 : Overfit 가능성 <br/><br/>\
+2. K-fold Cross Validation <br/>\
+- 정의 : 일반적, K개의 데이터 폴드 <br/>\
+- 각 데이터 폴드 세트에 대해서 나온 검증 결과들을 평균내어 최종 검증 결과 도출 <br/><br/>\
+3. Leave-p-out Cross Validation<br/>\
+- 전체 데이터 중에서 p개 샘플 선택 (nCp) <br/>\
+- 각 세트 평균 <br/>\
+- 세트의 경우의 수, 비용 부담 큰 방법 <br/><br/>\
+4. Leave-one-out Cross Validation <br/>\
+- LPOCV p=1인 경우 <br/>\
+- 계산 시간 부담 경감, 좋은 결과 도출 <br/>\
+- 1개 제외 모든 데이터 모델 훈련 사용 가능 <br/><br/>\
+5. Stratified k-fold Cross Validation <br/>\
+- Label 분포 클래스 별로 불균형일 때 유용하게 사용 <br/>\
+- 각 훈련 또는 검증 폴드의 분포 = 전체 데이터셋 분포 근사 <br/><br/>\
 * 라이지움 87회 관리 2교시 2번\
 ',
 
