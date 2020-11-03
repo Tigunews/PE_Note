@@ -6,7 +6,8 @@ var question = question.concat(
 '[계획단계][비용산정]- LOC',
 '[계획단계][비용산정]- COCOMO',
 '[계획단계][비용산정]- COCOMO II',
-'[계획단계][비용산정]- 기능점수법(FP, Function Point)',
+'[계획단계][비용산정]- FP',
+'[계획단계][FP]- 측정유형',
 '[계획단계][FP]- 정통법 사례',
 '[계획단계][비용산정]- EVM',
 '[계획단계][비용산정]- 델파이 기법',
@@ -466,6 +467,16 @@ var answer = answer.concat(
 <img src = "./img/FP_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/FP_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SWE_1.png" style = "max-width:100%; height:auto;">\
+',
+
+// 측정유형
+'# 유형 <br/>\
+- 개발 프로젝트 : 최초 설치 소프트웨어 기능 측정 <br/>\
+- 개선 프로젝트 : 변경 부분 측정 <br/>\
+- 어플리케이션 : 설치되어 있는 어플리케이션 베이스라인 <br/><br/>\
+# 유형별 조정 기능 점수 <br/>\
+<img src = "./img/FP_Type_Point.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 1교시 11번\
 ',
  
 // 정통법 사례
