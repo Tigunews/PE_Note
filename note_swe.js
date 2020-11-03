@@ -71,7 +71,8 @@ var question = question.concat(
 '[설계단계][UML][Behavior Diagram]- Activity Diagram',
 '[설계단계][UML][Behavior Diagram]- Statement Diagram',
 '[설계단계][UML][Behavior Diagram]- Usecase Diagram',
-'[설계단계][UML]- Class Diagram',
+'[설계단계][UML][Interaction Diagram]- Sequence Diagram',
+'[설계단계][UML][Structure Diagram]- Class Diagram',
 '[설계단계]- Usecase Test',
 '[설계단계]- 모델기반 테스트',
 '[설계단계]- 마이크로서비스 아키텍처(MSA)',
@@ -1412,6 +1413,15 @@ var answer = answer.concat(
 - 일반화관계 : 시스템의 기능, 외부요소 사이에 추상화 혹은 구체화 관계가 존재함을 표시 <br/>\
 - include : 중복적인 기능을 추출하여 별도의 유즈케이스로 표현 <br/>\
 - extend : 유즈케이스내의 특정 시점에서 여러 형태로 분류될 경우 표현 \
+',
+ 
+// Sequence Diagram
+'# 정의 : 문제 해결에 필요한 객체간 메시지 순서를 시간 흐름에 따라 보여주는 UML 다이어그램 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/SequenceDiagram.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 예시 <br/>\
+<img src = "./img/SequenceDiagramExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 1번\
 ',
 
 // Class Diagram
