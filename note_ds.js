@@ -1802,6 +1802,9 @@ var answer = answer.concat(
 - 리더 노드의 결정이 다른 노드에게 전파, 2/3 이상의 동의 얻으면 합의 <br/><br/>\
 # 합의 알고리즘 표준화 기술 <br/>\
 <img src = "./img/ConsensusAlgorithmExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 표준화 동향 <br/>\
+- ISO TC 307 : 국제 기준 표준화 <br/>\
+- IEEE : 블록체인 프레임워크 표준화 <br/><br/>\
 * 라이지움 87회 관리 1교시 12번<br/>\
 * 122회 2교시 2번\
 ',
