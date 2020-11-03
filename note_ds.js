@@ -1288,7 +1288,7 @@ var answer = answer.concat(
 <img src = "./img/VM_Container_Mechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 배포방식 <br/>\
 <img src = "./img/VM_Container_Delivery.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 120회 응용 2교시 4번\
+* 120회 관리 2교시 4번\
 ',
 
 // 가상화 
