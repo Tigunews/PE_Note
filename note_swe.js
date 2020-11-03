@@ -226,6 +226,7 @@ var question = question.concat(
 '[품질평가][프로세스 품질]- ISO 12207',
 '[품질평가][프로세스 품질]- ISO 15504',
 '[품질평가][프로세스 품질]- CMMI',
+'[품질평가][프로세스 품질]- CMMI V2.0',
 '[프로세스 품질]- ASPICE(Automotive SPICE)',
 '[프로세스 품질]- CAR',
 '[프로세스 품질]- SP 인증',
@@ -3654,13 +3655,19 @@ P 히스토그램 : Data 분포 <br/>\
 - MAN(Management) : 프로젝트 관리, 품질관리, 위험관리 <br/>\
 - ORG(Organization) : 조직배치, 개선활동, 인력관리, 측정도구, 재사용 <br/><br/>\
 <img src = "./img/ISO15504_4.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* ISO 33000으로 표준 Family화 진행 <br/><br/>\
 * 라이지움 87회 관리 2교시 1번\
 ',
  
 // CMMI
-'# 정의 : 기업 능력수준 지표 모델 <br/>\
+'# 정의 : 기업 능력수준 지표 모델 (de facto)<br/>\
 - Capability Maturity Model Integration <br/>\
 - SW 및 시스템 품질인증 수행하여 정보시스템 구축하는 기업의 능력수준 나타내기 위해 SW-CMM과 SE-CMM을 통합해 개발한 모델 <br/><br/>\
+# 연혁 <br/>\
+- V1.0(1999) : 미국 개발 <br/>\
+- V1.1(2002) : SW-CMM의 발전된 형태 <br/>\
+- V1.3(2010) <br/>\
+- V2.0(2018) : 2020년 10월부터 V2.0 심사만 허용<br/><br/>\
 # 심사단계 <br/>\
 - 예비심사(문서위주) <br/>\
 - 본심사(문서,인터뷰,실제활동) <br/><br/>\
@@ -3668,6 +3675,28 @@ P 히스토그램 : Data 분포 <br/>\
 # 성숙도 <br/>\
 <img src = "./img/CMMI_Level.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 라이지움 87회 관리 2교시 1번\
+',
+ 
+// CMMI V2.0
+'# 정의 : 성과에 대한 비즈니스적 가치입증에 중점을 두고, 비즈니스의 동향 반영을 통해 사용자 친화적인 모델로 진화한 CMMI 1.x 후속 모델 <br/><br/>\
+# 변화 방향 <br/>\
+1. CMMI 적용의 ROI와 Value 강조 <br/>\
+2. 유연한 통합 모델로 개선 <br/>\
+3. 쉽고, 사용하기 편리한 모델 <br/>\
+4. CMMI 벤치마킹 및 심사 Value 증대 <br/><br/>\
+# 특징 <br/>\
+- 최종 심사 이후 성과보고서 제출, 성과 개선 강조 <br/>\
+- 보안, 안전 등의 최신 트랜드 추가 <br/>\
+- 현재의 모범 사례들을 활용한 모델 구조 변경 <br/><br/>\
+# 심사방법 <br/>\
+<img src = "./img/CMMI_Appraisal.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 전문가 의견 <br/>\
+- 변화 방향 : 긍정적 <br/>\
+- 심사 방향 : 부정적 <br/><br/>\
+# 해결 과제 <br/>\
+- 신규 프랙티스 대한 정기적 측정 및 경영평가 도입 <br/>\
+- 프로세스 단계별 이행 <br/>\
+- 정량적 관리, 개선성과 가시화 필요 \
 ',
  
 // ASPICE
