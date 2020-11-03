@@ -54,6 +54,7 @@ var question = question.concat(
 '[빅데이터]- ISO 20547',
 '[빅데이터]- BigData 분석 방법론',
 '[빅데이터]- DCAT',
+'[빅데이터][통계]- 특이정보',
 '[R-Tree]- Hilbert R-Tree',
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
@@ -1141,6 +1142,17 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 유통 플랫폼 연계 <br/>\
 <img src = "./img/OpenDataPlatformReferenceModel_CirculationModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 3교시 3번\
+',
+  
+// 특이정보
+'# 정의 : 아주 작은 or 큰 값 <br/>\
+- 통계적 자료분석의 결과를 왜곡시키거나, 자료 분석의 적절성을 위협하는 변수값 또는 사례 <br/>\
+- (기술통계학) : 분포 집중경향치의 값을 왜곡시키거나, 상관계수 추정치의 값을 왜곡시키는 개체 또는 변수 값 <br/>\
+- (추론통계학) : 모수추정치의 값을 왜곡시키는 개체 또는 변수의 값 <br/><br/>\
+# 유형 <br/>\
+- 비합리적 특이정보 : <font color = "red">입력 오류등 자료의 오염</font>으로 인해 발생한 이상치 <br/>\
+- 합리적 특이정보 : <font color = "red">정확하게 측정</font>되었으나 다른 자료들과 전혀 다른 경향이나 특성을 보이는 이상치 <br/><br/>\
+* 라이지움 87회 응용 1교시 13번\
 ',
   
 // Hilbert R-Tree
