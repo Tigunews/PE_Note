@@ -368,7 +368,7 @@ var answer = answer.concat(
 - 정의 : 임의 비율로 Train set, Test set 분할 (9:1, 7:3)<br/>\
 - 장점 : 계산 시간 부담 경감 <br/>\
 - 단점 : Overfit 가능성 <br/><br/>\
-2. K-fold Cross Validation <br/>\
+2. K겹 교차 검증(K-fold Cross Validation) <br/>\
 - 정의 : 일반적, K개의 데이터 폴드 <br/>\
 - 각 데이터 폴드 세트에 대해서 나온 검증 결과들을 평균내어 최종 검증 결과 도출 <br/><br/>\
 3. Leave-p-out Cross Validation<br/>\
@@ -379,7 +379,7 @@ var answer = answer.concat(
 - LPOCV p=1인 경우 <br/>\
 - 계산 시간 부담 경감, 좋은 결과 도출 <br/>\
 - 1개 제외 모든 데이터 모델 훈련 사용 가능 <br/><br/>\
-5. Stratified k-fold Cross Validation <br/>\
+5. 계층별 k-겹 교차검증(Stratified k-fold Cross Validation) <br/>\
 - Label 분포 클래스 별로 불균형일 때 유용하게 사용 <br/>\
 - 각 훈련 또는 검증 폴드의 분포 = 전체 데이터셋 분포 근사 <br/><br/>\
 * 라이지움 87회 관리 2교시 2번\
