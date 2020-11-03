@@ -44,6 +44,7 @@ var question = question.concat(
 '[빅데이터]- Edge Analytics',
 '[빅데이터]- R-HIVE',
 '[빅데이터]- NoSQL',
+'[빅데이터][NoSQL]- 데이터 모델링 패턴',
 '[빅데이터][NoSQL]- CAP 이론',
 '[빅데이터][NoSQL]- NoSQL RDBMS 비교',
 '[빅데이터][NoSQL]- BASE',
@@ -963,7 +964,11 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 확장 : 오인컴인 <br/>\
 - 계층 : TAN <br/><br/>\
 # 특징 : 테이블간 관계정의를 안함, 분산환경지원, 저비용처리(오픈소스), 확장성, 다양 형태 저장구조 <br/><br/>\
-# 데이터모델 유형 <br/>\
+* 117회 1교시 9번 \
+',
+  
+// NoSQL 데이터 모델링 패턴
+'# 데이터모델 유형 <br/>\
 1. Key/Value Stores <br/>\
 - 개념 : Unique한 Key에 하나의 Value를 가지고 Key 기반의 Get, put, delete 기능 제공 <br/>\
 - 주요 DB : Redis, Raiak, Dynamo <br/><br/>\
@@ -989,20 +994,20 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 4. 기능 최적화(모델 구체화) <br/>\
 5. 후보 NoSQL 선정 <br/>\
 6. 완성된 데이터 모델을 NoSQL에 최적화 및 하드웨어 디자인 <br/><br/>\
-# 기본적인 데이터 모델링 기법 <br/>\
-- Denormalization(중복저장) <br/>\
-- Aggregation(데이터 모델 통합) <br/>\
-- Application Side Join <br/><br/>\
-# 확장된 데이터 모델링 기법 <br/>\
-- Automic Aggregation : 하나의 테이블에 대해 Automic Operation 보장 <br/>\
-- Index Table <br/>\
-- Composite Key : 하나 이상 필드를 구분자 이용 <br/>\
-- Inverted Search Key : Key, Value 값 교차 변환 <br/><br/>\
-# 계층구조 데이터 모델링 기법 <br/>\
-- Tree Aggregation : Tree 구조 자체를 하나의 Value 저장 <br/>\
-- Adjacent List : Linked List 개념 적용 <br/>\
-- Materialized Path : Tree 계층 키 전체를 Key로 <br/><br/>\
-* 117회 1교시 9번 \
+# 데이터 모델링 패턴 <br/>\
+1 Conceptual Techniques <br/>\
+- Denormalization : 같은 데이터 중복해서 저장 <br/>\
+- Aggregation : Schema-less 이용, 데이터 모델 합성 가능 <br/>\
+- Application Side Join : N:M관계 Join 필요하므로, Application Level 구현 <br/><br/>\
+2. General Modeling Techniques <br/>\
+- Atomic Aggregates : Entity -> Ke-Value 저장 -> 원자적 업데이트 <br/>\
+- Index Table : Ke-Value Store Index 활용, 직관적 모델링 패턴 <br/>\
+- Composite Key Index : 결합키 구성, 다중 Key 구성 <br/><br/>\
+3. Hierachy Modeling Techniques <br/>\
+- Tree Aggregation : Tree, 임의 Graph <br/>\
+- Adjacent List : Linked List 자료구조 <br/>\
+- Materialized Path : Root에서 현재 노드까지 전체 경로를 Key로 저장 <br/><br/>\
+* 라이지움 87회 응용 2교시 6번\
 ',
 
 /// [빅데이터][NoSQL]- CAP 이론
