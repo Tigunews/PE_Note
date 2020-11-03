@@ -1796,19 +1796,13 @@ var answer = answer.concat(
 - 블록추가 : 증명된 계산법, 검증 거래<br/>\
 - 블록검증 : 모든 신규블록 검사 <br/>\
 - 수집 및 선택 : 누적 연산 체인 독립적 선택 <br/><br/>\
-# 기본 합의 알고리즘 <br/>\
-- BFT : 악의적 노드가 네트워크 장악 방지 <br/>\
-- pBFT : 느린 문제점 해결 (n-1)/3 개 이하 노드 허용 <br/><br/>\
-# PoW 알고리즘 <br/>\
-- PoW : 목표값 이하 해시 찾는 과정 반복 통한 증명 <br/>\
-- ePoW (Equilibrium) : 채굴 성공한 노드 휴식 <br/>\
-- DPoW (Delayed) : 네트워크 보안 강화 <br/>\
-- PoET (Elapsed Time) : Intel 개발, 전기 소모작음 <br/><br/>\
-# PoS 알고리즘 <br/>\
-- PoS : 지분 비례 의사결정 권한 <br/>\
-- PoI(Importance) : 거래 활동량 의사결정 부여 <br/>\
-- PoA(Authority) : 권위 기관 노드 검색 <br/>\
-- PoS(Storage) : 하드디스크 여유공간 저장 <br/><br/>\
+# BFT <br/>\
+- 블록체인 알고리즘 신뢰성 원리 <br/>\
+- 51% 승리 법칙 <br/>\
+- 리더 노드의 결정이 다른 노드에게 전파, 2/3 이상의 동의 얻으면 합의 <br/><br/>\
+# 합의 알고리즘 표준화 기술 <br/>\
+<img src = "./img/ConsensusAlgorithmExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 1교시 12번<br/>\
 * 122회 2교시 2번\
 ',
 
