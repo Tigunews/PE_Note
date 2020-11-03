@@ -9,6 +9,7 @@ var question = question.concat(
 '[전송오류]- 해밍코드',
 '[전송오류]- Parity Check',
 '[전송오류]- Check Sum',
+'[Layer2]- Collison Domain',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
 '[Internet]- HTTP/3.0',
@@ -322,6 +323,17 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 수신 측에서 같은 합을 해보아 오류를 검출하는 방식, 간단하나 워드 순서 바뀌는 오류 검출X, 점차 CRC로 대체중 <br/><br/>\
 <img src = "./img/CheckSum_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CheckSum_2.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// Collison Domain
+'# 정의 : 이더넷 통신 원리로서 CSMA/CD 동작 중 Level2 계층 통신 단위인 Frame 전송하게 되면 반드시 발생하는 Collision을 적절히 논리적으로 분할하는 영역 <br/><br/>\
+# CSMA/CD 작동방식과 Collison Domain 관계 <br/>\
++ CSMA/CD : IEEE 802.3, LAN Ethernet, Detection <br/>\
+- Carrier Sense : 공통 통신 회선 사용 여부 확인 <br/>\
+- Multiple Access : 평등 송신, 우선권 없음 <br/>\
+- Collison Detection : 충돌 검출시, 재전송 -> <font color = "Red">충돌 줄이기 위한 Collison Domain 분할 필요</font><br/>\
+- BackOff Algorithm : 재전송(랜덤 시간 대기), 포기(15회) <br/><br/>\
+* 라이지움 87회 응용 1교시 11번\
 ',
 
 // 인터넷 프로토콜 3단계 주소체계
