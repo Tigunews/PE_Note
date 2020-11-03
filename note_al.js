@@ -422,7 +422,7 @@ var answer = answer.concat(
 ',
 
 // [기계학습]- Fitting
-'<img src = "./img/Fitting.png" style = "max-width:100%; height:auto;"><br/><br/>\',
+'<img src = "./img/Fitting.png" style = "max-width:100%; height:auto;">',
 
 // TensorFlow 
 '# 정의 : 머신러닝 오픈소스 라이브러리 <br/>\
