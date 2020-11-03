@@ -37,11 +37,12 @@ var question = question.concat(
 'CVE',
 '암호화 기술',
 '[암호화 기술]- 양자암호통신',
-'[암호화 기술]- 양자내성암호',
-'검색가능암호화(Searchable Encryption)',
+'[양자 보안]- QKD',
+'[양자 보안]- PQC',
+'검색가능암호화',
 '[검색가능암호화]- PSES',
-'프라이버시 보존형 데이터 마이닝 (Privacy Preserving Data Mining, PPDM)',
-'형태 보존 암호화(FPE: Format-Preserving Encryption)',
+'프라이버시 보존형 데이터 마이닝',
+'형태 보존 암호화',
 'OWASP Top 10',
 'OWASP Mobile Top 10',
 'OWASP IoT Top 10',
@@ -679,11 +680,13 @@ var answer = answer.concat(
 # 해시 : 별도 키 없음, 길이에 따라 충돌회피성 증가 n비트 해시 -> 약한 충돌 회피 n-1 -> 강한 충돌 회피 n/2 <br/><br/>\
 # 보안강도 컴플라이언스 <br/>\
 - 80bit (~2010) SEED, HEIGHT, ARIA, AES / 112 bit(2011~2030) / 128bit(2030 이후)<br/><br/>\
+# 암호화 기술 동향 <br/>\
+<img src = "./img/EncryptionFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/암호화기술_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/암호화기술_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/암호화기술_3.png" style = "max-width:100%; height:auto;">\
 ',
-
+   
 // [암호화기술]- 양자암호통신
 '# 정의 : 양자속성 암호화 기법 <br/>\
 - Quantum Cryptography Communication <br/>\
@@ -694,17 +697,7 @@ var answer = answer.concat(
 - 효율성 : 전달효율 최대 보장 <br/>\
 - 투명성 : 필요한 양자키 쉽게 획득, 개방형 인터페이스 제공 <br/>\
 - 강건성 : 장애 관리 및 제어 요구사항 고려 <br/><br/>\
-# 양자암호 통신 기술 특징 <br/>\
-- 양자 중첩 (Quantum Superposition) : 여러 상태가 동시에 존재, 측정 전까지 상태를 알 수 업음 <br/>\
-- 양자 얽힘 (Quantum Entanglement) : 둘 이상의 양자가 멀리 떨어져 있어도 존재 <br/>\
-- 불확정성 (Uncertainty Principle) : 서로다른 물리량 동시에 정확하게 측정 불가 -> 복제 불가 \
-',
-
-// 양자내성암호
-'# 정의 : 양자 알고리즘 대응 암호화 <br/>\
-- Post-Quantum Cryptography <br/>\
-- 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
-# 양자 알고리즘 <br/>\
+# 기존 암호 통신 한계 <br/>\
 1. Shore <br/>\
 - 특징 : 인수분해 문제 해결 속도 감소 <br/>\
 - 공개키 : 안전하지 않음 <br/><br/>\
@@ -712,22 +705,40 @@ var answer = answer.concat(
 - 특징 : 정렬되지 않은 DB 원소 검색속도 향상 <br/>\
 - 대칭키 : 키사이즈 증가 필요 <br/>\
 - 해시 : 암호 알고리즘 출력길이 증가 필요 <br/><br/>\
+# 양자암호 통신 기술 특징 <br/>\
+- 양자 중첩 (Quantum Superposition) : 여러 상태가 동시에 존재, 측정 전까지 상태를 알 수 업음 <br/>\
+- 양자 얽힘 (Quantum Entanglement) : 둘 이상의 양자가 멀리 떨어져 있어도 존재 <br/>\
+- 불확정성 (Uncertainty Principle) : 서로다른 물리량 동시에 정확하게 측정 불가 -> 복제 불가 \
+',
+   
+// QKD
+'# 정의 : Quantum Key Distribution <br/>\
+- 양자역학에서 말하는 복제 불가능성 원리 및 파동함수 붕괴 현상을 이용해 두 사용자 간 암호 통신에 필요한 키를 서로 공유할 수 있도록 해주는 기술 <br/><br/>\
+# 특징 <br/>\
+- 도청 불가능 (물리적 자연현상) <br/>\
+- 광자 민감성 (통신 어려움) <br/>\
+- 중간자 공격 취약 (인증 기능x) <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/QKD_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 양자 광학계 : 양자광원, 간섭계, 변조기(PM), 검출기(APD) <br/>\
+- QRNG(Quantum Random Number Generator) : 양자난수발생기 <br/>\
+- 전자제어부 : 구동회로부, 신호처리부, 외부시스템과의 연결 인터페이스, 제어 회로부 <br/><br/>\
+# 키분배 프로토콜 (BB84 Protocol) <br/>\
+1. 편광 약속 후 전송 <br/>\
+2. 편광기저 랜덤하게 측정 수행 (100%/50%)<br/>\
+3. 각자의 기저 정보 기존 통신망 이용 공유 <br/>\
+4. 편광기저 같은 경우에 측정된 결과만 비밀키 생성 <br/><br/>\
+* 라이지움 87회 관리 2교시 6번\
+',
+   
+// PQC
+'# 정의 : 양자 알고리즘 대응 암호화 <br/>\
+- Post-Quantum Cryptography <br/>\
+- 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
 # 양자내성암호 유형 <br/>\
-1. 다변수 기반 <br/>\
-- 설명 : 다항식 계산 이용 <br/>\
-- 알고리즘 : HFE, ZHFE, Rainbow <br/><br/>\
-2. 코드기반 암호 <br/>\
-- 설명 : 행렬연산, 속도빠름 <br/>\
-- 알고리즘 : McEliece, McBits <br/><br/>\
-3. 격자기반 암호 <br/>\
-- 설명 : Learning with Errors, 어려운 문제 기반 설계 <br/>\
-- 알고리즘 : NTRU, SS-NTRU <br/><br/>\
-4. 아이소제니기반 <br/>\
-- 설명 : 타원곡선 아이소제니 관계 문제 <br/>\
-- 알고리즘 : Diffie-Hellman like protocl <br/><br/>\
-5. 해시기반 <br/>\
-- 설명 : 출력길이 증가 암호화 보장 <br/>\
-- 알고리즘 : W-OTS, W-OTS+ <br/><br/>\
+<img src = "./img/PQC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 2교시 6번 <br/>\
 * KPC 95회 1교시 13번\
 ',
 
