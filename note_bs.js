@@ -112,8 +112,20 @@ var answer = answer.concat(
 - SLA 관리체계 수립 : 평가 Frame, 보상/패널티 방안, 예외사항 처리 방안, 보고방안 <br/>\
 - SLA 프로세스 정립 : Flow, R&R, KPI, 리뷰/확정 <br/>\
 - 이행 및 변화 관리 : 변화 관리제 도출, 이행과제 상세정의 <br/><br/>\
+# SLA 사례 <br/>\
+1. Cloud <br/>\
+- IaaS : 프로세스 자동화, 부하관리, 사용량 기반 과금 <br/>\
+- PaaS : 개발 라이프사이클 지원, SW 라이선스 관리, 서비스 실행 플랫폼, 프로세스 자동화, 부하관리, 사용량 기반 과금 <br/>\
+- SaaS : 접근성, 확장성, 가용성, 사용량기반 과금 <br/><br/>\
+2. Legacy <br/>\
+- HW : 서비스 가동율, 동일 장애 발생율 <br/>\
+- SW : 장애 및 오류 건수, SR 적기 처리율(요청 완료일 이내에 서비스를 제공해준 비율) <br/>\
+- NW : 가동율, 장애건수 <br/><br/>\
 * 일반계약서 비교, 법적 효력 미흡 <br/><br/>\
-<img src = "./img/SLA.png" style = "max-width:100%; height:auto;">\
+# 사례 <br/>\
+<img src = "./img/SLA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/CloudSLAPractice.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 5번\
 ',
 
 // SLM
