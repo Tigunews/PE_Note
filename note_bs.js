@@ -1135,6 +1135,30 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 <img src = "./img/판별군집비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 관리 1교시 5번\
 ',
+ 
+// 계층적 군집분석
+'# 정의 : 군집화 하는 과정에서 여러개의 내포된 군집으로 군집을 형성하는 기법 <br/><br/>\
+# 방법 <br/>\
+- 병합적 방법 : 가까운 관찰 단위까지 군집을 만들어가는 방법 <br/>\
+- 분할적 방법 : 거리가 먼 관찰 단위들을 나누어가는 방법 <br/><br/>\
+# 종류 <br/>\
+- 최단 연결법 : 가장 가까이 있는 두 관측치 사이의 거리 기반 군집 형성 <br/>\
+- 최장 연결법 : 가장 멀리 떨어진 두 관측치 사이의 거리 기반 군집 형성 <br/>\
+- 중심 연결법 : 두 군집의 중심간의 거리를 측정하여 군집 형성 <br/>\
+- 와드 연결법 : 군집내의 오차제곱합에 기초하여 군집 형성 <br/><br/>\
+# 거리 정의 <br/>\
+<img src = "./img/HireachyClusterAnalyzeDistance.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 4번\
+',
+ 
+// 비 계층적 군집분석
+'# 정의 : 랜덤으로 데이터를 군집화하고 군집 과정에서 중앙값의 변화에 따라 각 데이터들을 적절한 클러스터로 이동시켜 군집을 형성하여 분석하는 기법 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/NonHireachyClusterAnalyzeType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분석 알고리즘 <br/>\
+<img src = "./img/NonHireachyClusterAnalyzeAlgorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 4번\
+',
 
   
 // IT 투자성과 평가
