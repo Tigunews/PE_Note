@@ -1361,7 +1361,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 관보개 <br/>\
 - 관 : 기위운점 <br/>\
 - 보 : 정조자 인외물 <br/>\
-- 개 : 수집, 이용, 제공, 파기 <br/>\
+- 개 : 수이제파 <br/>\
 <img src = "./img/ISMS_P_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요개정사항 <br/>\
 <img src = "./img/ISMS_P_Change.png" style = "max-width:100%; height:auto;"><br/><br/>\
