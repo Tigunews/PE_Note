@@ -4,11 +4,16 @@ var question = question.concat(
 '[TCP-Protocol]- TLS',
 '서비스 프리미티브(Service Primitive)',
 '패킷데이터 네트워크 계층 오류',
-'[전송오류]- 오류제어',
-'[전송오류]- CRC',
-'[전송오류]- 해밍코드',
-'[전송오류]- Parity Check',
-'[전송오류]- Check Sum',
+'[Layer2]- Service',
+'[Layer2]- 오류제어',
+'[Layer2][오류제어][FEC]- 해밍코드',
+'[Layer2][오류제어][BEC]- CRC',
+'[Layer2][오류제어][BEC]- Parity Check',
+'[Layer2][오류제어][BEC]- Check Sum',
+'[Layer2][흐름제어]- Sliding Window',
+'[Layer2][흐름제어]- Stop and Wait',
+'[Layer2][접근제어]- CSMA/CD',
+'[Layer2][접근제어]- CSMA/CA',
 '[Layer2]- Collison Domain',
 'DNS',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
@@ -248,6 +253,22 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 순서제어 기법 활용 <br/><br/>\
 * 그리타\
 ',
+  
+// Layer 2 Service
+'# 오류제어 : 통신 에러 보정기술 <br/>\
+- FEC : Hamming Code, Read-Solomon Code, Convolutional Code, Turbo Code <br/>\
+- BEC : (검출) Parity Check, Block Sum, CRC / (재전송) Stop N Wait, Go Back N, Selective Repeat <br/><br/>\
+# 흐름제어 <br/>\
+- Sliding Window : 윈도우 크기 기반 여러 패킷 일괄 ACK <br/>\
+- Stop and Wait : 1 Frame 단위 통신 <br/><br/>\
+# 주소지정 <br/>\
+- MAC : 상호 통신을 위해 할당하는 이름 <br/>\
+- LLC : 두 장비간의 링크 설정, 프레임 송수신 방식과 상위 레이어 프로토콜 종류 알리는 역할 <br/><br/>\
+# 접근제어 <br/>\
+- CSMA/CD : 이더넷 환경에서 채널 사용중인지 확인하고 점유 기법 <br/>\
+- CSMA/CA : 충돌 미리 예측 후 가능성 최소화 액세스 방법 <br/><br/>\
+* 라이지움 87회 관리 3교시 6번\
+',
 
 // [패킷데이터 네트워크 계층 오류]- 오류제어
 '# 정의 : 신뢰성 확보 위한 통신 에러 제어 기법 <br/>\
@@ -274,6 +295,18 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 그리타\
 ',
 
+//[패킷데이터 네트워크 계층 오류]- 해밍코드
+'# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
+# 암기 : 2^p >= d + p + 1 <br/><br/>\
+# 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
+# 특징 : 해밍거리(Hamming Distance) = 송신 데이터와 수신 데이터의 각 대응 비트가 서로 다른 비트 수 <br/><br/>\
+<img src = "./img/Hamming_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Hamming_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 빅,리틀 엔디언 차이 <br/>\
+<img src = "./img/BigLittle.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 오류비트 2비트까지 검출가능, 1만 수정가능\
+',
+
 // [패킷 데이터 네트워크 계층 오류]- CRC
 '# 정의 : Modulo-2 연산(XOR)을 기반으로 오류를 검출하는 방식 <br/>\
 - Cyclic Redundancy Check <br/><br/>\
@@ -287,18 +320,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/CRC_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CRC_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CRC_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-',
-
-//[패킷데이터 네트워크 계층 오류]- 해밍코드
-'# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
-# 암기 : 2^p >= d + p + 1 <br/><br/>\
-# 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
-# 특징 : 해밍거리(Hamming Distance) = 송신 데이터와 수신 데이터의 각 대응 비트가 서로 다른 비트 수 <br/><br/>\
-<img src = "./img/Hamming_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Hamming_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 빅,리틀 엔디언 차이 <br/>\
-<img src = "./img/BigLittle.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 오류비트 2비트까지 검출가능, 1만 수정가능\
 ',
 
 // [패킷데이터 네트워크 계층 오류]- Parity Check
@@ -324,6 +345,52 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 수신 측에서 같은 합을 해보아 오류를 검출하는 방식, 간단하나 워드 순서 바뀌는 오류 검출X, 점차 CRC로 대체중 <br/><br/>\
 <img src = "./img/CheckSum_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CheckSum_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// Sliding Window
+'# 정의 : 일정한 윈도우 크기 이내에서 한번에 여러 패킷을 송신하고, 이들 패킷에 대하여 단지 한 번의 ACK 로써 수신 확인을 하며, 윈도우 크기를 변경시키며 흐름제어를 하는 기법 <br/><br/>\
+# 특징 <br/>\
+- 전송크기 : Window 크기 <br/>\
+- 장점 : 전송 효율 좋음 <br/>\
+- 단점 : 오류발생이 가능하므로 Go-Back-N, Selective 재전송등 해결방안 필요 <br/><br/>\
+* 라이지움 87회 관리 3교시 6번\
+',
+ 
+// Stop and Wait
+'# 정의 : 송신측에서 한번에 1개의 Frame을 송신후 수신측에서 Frame 검사후 ACK 혹은 NAK 전송하여 송신측은 수신측의 회신 올떄까지 기다리고 ACK 오면 다음 Frame 전송, NAK면 재전송 기법 <br/><br/>\
+# 특징 <br/>\
+- 전송크기 : 1 Frame <br/>\
+- 장점 : 구현용이, 한 개의 버퍼만 필요 <br/>\
+- 단점 : 전송 효율이 떨어짐 <br/><br/>\
+* 라이지움 87회 관리 3교시 6번\
+',
+ 
+// CSMA/CD
+'# 정의 : 이더넷(유선)환경에서 Signal 전압의 강도를 통해 채널이 사용중인지 확인하고 트래픽이 없으면 패킷을 송출하는 LAN의 매체 점유 기법 <br/><br/>\
+# 특징 <br/>\
+- 동작원리 <br/>\
+<img src = "./img/CSMACD_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 표준 : IEEE 802.3 <br/>\
+- 구조 : 버스형, 트리형 <br/>\
+- 주요 원리 : 충돌 회피 전략 <br/>\
+- 특징 : 충돌시 일정시간 대기, 이더넷 기반 널리사용 <br/>\
+- 장점 : 간단, 견고, 대역폭 효율 <br/>\
+- 단점 : 부하시 지연시간 급증, 빈도 따른 충돌 발생 <br/><br/>\
+* 라이지움 87회 관리 3교시 6번\
+',
+ 
+// CSMA/CA
+'# 정의 : 무선 환경에서 물리층에서 충돌이 일어날 것을 미리 예측하고 충돌발생 가능성을 송신전에 최소화하는 액세스 방법 <br/><br/>\
+# 특징 <br/>\
+- 동작원리 <br/>\
+<img src = "./img/CSMACA_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 표준 : IEEE 802.11 <br/>\
+- 구조 : 무선, 한개의 버퍼만 필요 <br/>\
+- 주요 원리 : 신호 확인 후 데이터 전송 <br/>\
+- 특징 : 경쟁 방식, 구조 단순, 무선 인프라 사용 <br/>\
+- 장점 : 충돌한 패킷 낭비 감소, 에러 제어 용이 <br/>\
+- 단점 : 고속 부적합, 전송효율 저하, 속도 느림 <br/><br/>\
+* 라이지움 87회 관리 3교시 6번\
 ',
  
 // Collison Domain
