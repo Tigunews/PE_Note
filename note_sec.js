@@ -1358,6 +1358,10 @@ EAL : 펑스매매세세포 <br/><br/>\
 - ISMS + PIMS (18.11) <br/>\
 - 정보보호 및 개인정보보호를 위한 일련의 조치와 활동이 인증기준에 적합함을 인터넷진흥원 또는 인증기관이 증명하는 제도<br/><br/>\
 # 인증기준 <br/>\
+- 관보개 <br/>\
+- 관 : 기위운점 <br/>\
+- 보 : 정조자 인외물 <br/>\
+- 개 : 수집, 이용, 제공, 파기 <br/>\
 <img src = "./img/ISMS_P_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요개정사항 <br/>\
 <img src = "./img/ISMS_P_Change.png" style = "max-width:100%; height:auto;"><br/><br/>\
