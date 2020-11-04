@@ -67,6 +67,8 @@ var question = question.concat(
 '마세라티 문제(Maserati Problem)',
 'SW사업저장소',
 '군집분석',
+'[군집분석]- 계층적 군집분석',
+'[군집분석]- 비계층적 군집분석',
 '[IT-BS]- IT 투자성과 평가',
 '[IT-BS]- IT 투자 평가 항목',
 '나라장터 ',
@@ -1171,7 +1173,6 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 <img src = "./img/NonHireachyClusterAnalyzeAlgorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 관리 3교시 4번\
 ',
-
   
 // IT 투자성과 평가
 '# 정의 : 투자/품질/이용/효과, 전략적, 정성적 타당성 평가 <br/>\
