@@ -61,6 +61,7 @@ var question = question.concat(
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
 '[DB확장]- Database Partitioning',
+'Data File Structure',
 );
 
 var answer = answer.concat(
@@ -1230,5 +1231,10 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Reference : 부모 테이블 Reference Key <br/>\
 <img src = "./img/ProDataPartitioning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 응용 3교시 5번\
+',
+  
+// Data File Structure
+'<img src = "./img/DataFileStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 응용 3교시 6번\
 ',
 );
