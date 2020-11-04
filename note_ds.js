@@ -112,6 +112,7 @@ var question = question.concat(
 '[블록체인][Off Chain]- 라이트닝 네트워크',
 '[블록체인]- 블록체인 거버넌스',
 '[블록체인]- 플랫폼 보안',
+'[블록체인]- BaaS',
 'MaaS',
 'BERT',
 '자율주행자동차',
@@ -1926,6 +1927,17 @@ var answer = answer.concat(
 <img src = "./img/BlockChainAction.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 2교시 6번\
 * 116회 관리 3교시 3번\
+',
+  
+// BaaS
+'# 정의 : BSaaS + BPaaS <br/>\
+- 블록체인 개발 및 구축을 쉽고 빠르게 할 수 있도록 필요한 기능을 인터넷으로 제공하는 블록체인 클라우드 서비스 <br/><br/>\
+# 사업 현황 <br/>\
+<img src = "./img/BaaS_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 시사점 <br/>\
+- 아이디어 서비스 구축 시간 단축 핵심 인프라 도구 <br/>\
+- 클라우드지원 사업과 연계 필요 <br/><br/>\
+* 라이지움 87회 응용 3교시 5번\
 ',
   
 // MaaS
