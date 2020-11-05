@@ -1,6 +1,7 @@
 var question = question.concat(
 '보안이슈, 대응방안',
 'SW 보안 약점',
+'XSS',
 '[랜섬웨어]- 종류',
 '[랜섬웨어]- DBD',
 '[랜섬웨어]- 드라이브 바이 크립토마이닝(drive-by cryptomining)',
@@ -80,7 +81,6 @@ var question = question.concat(
 '2020 정부 전자서명법 개정',
 '전자서명,전자봉투',
 '재현데이터, 차등정보보호',
-'XSS',
 '개발보안 방법론',
 'Privacy By Design',
 'ISO/IEC 27017',
@@ -155,6 +155,39 @@ var answer = answer.concat(
 4. 세션 통제 <br/>\
 - 잘못된 세션에 의한 데이터 정보 노출 <br/><br/>\
 * 라이지움 87회 관리 4교시 2번\
+',
+  
+// XSS
+'# 정의 : Web Script 게시물 기반 공격 기법 <br/>\
+- 웹기반 게시판 등에 등록된 Scrpit 게시물을 조회한 사용자를 대상으로 공격하는 기법 <br/>\
+- Cross-Site Scripting <br/>\
+- 게시판, 웹 메일 등에 삽입된 악의적인 스크립트에 의해 페이지가 깨지거나 다른 사용자의 사용을 방해하거나 쿠키 및 기타 개인 정보를 특정 사이트로 전송시키는 공격 <br/><br/>\
+# 절차 <br/>\
+- 저장 : SQL Injection과 같이 사용자의 입력값에 대한 Script 검증 없이 DB에 저장 <br/>\
+- 노출 : 사용자가 게시글 조회시 DB에 저장된 스크립트가 웹페이지에 노출 <br/>\
+- 동작 : 브라우저에 의해 스크립트가 실행되어 동작 <br/>\
+- 유출 : 사용자 PC의 쿠키정보 등의 개인정보 유출 <br/><br/>\
+# 공격유형 <br/>\
+1. Stored XSS <br/>\
+- Persistence 방식 <br/>\
+- Server Application 취약점 <br/>\
+<img src = "./img/XSS_1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+2. Refelective XSS <br/>\
+- Non Persistence 방식 <br/>\
+- Server Application 취약점 <br/>\
+<img src = "./img/XSS_2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+3. DOM Based <br/>\
+- Document Object Model Based XSS <br/>\
+- html Browser단 실행 <br/>\
+- Client Browser 취약점 <br/>\
+- 주기억 장치 메모리로 코드가 올라간 다음에 DOM 환경에서 악성 코드가 실행되는 형태 <br/>\
+<img src = "./img/XSS_3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 공격 방지 방법 <br/>\
+- 문자열 치환 함수 사용 <br/>\
+- \& \< \> 등을 &amp; &lt; &gt; 로 치환 <br/><br/>\
+* 라이지움 87회 관리 4교시 2번<br/>\
+* 라이지움 86회 1교시 8번 <br/>\
+* 그리타 \
 ',
 
 // 랜섬웨어 종류 
@@ -1572,35 +1605,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Differential Privacy <br/>\
 - 입력에서 작은 차이가 출력에서 중대한 차이를 줄 수 있는 자료 생성 과정을 제어하여 정보보호를 구현하려는 개념 <br/><br/>\
 * 라이지움 86회 1교시 3번 \
-',
-
-// XSS
-'# 정의 : Web Script 게시물 기반 공격 기법 <br/>\
-- 웹기반 게시판 등에 등록된 Scrpit 게시물을 조회한 사용자를 대상으로 공격하는 기법 <br/>\
-- Cross-Site Scripting <br/>\
-- 게시판, 웹 메일 등에 삽입된 악의적인 스크립트에 의해 페이지가 깨지거나 다른 사용자의 사용을 방해하거나 쿠키 및 기타 개인 정보를 특정 사이트로 전송시키는 공격 <br/><br/>\
-# 절차 <br/>\
-- 저장 : SQL Injection과 같이 사용자의 입력값에 대한 Script 검증 없이 DB에 저장 <br/>\
-- 노출 : 사용자가 게시글 조회시 DB에 저장된 스크립트가 웹페이지에 노출 <br/>\
-- 동작 : 브라우저에 의해 스크립트가 실행되어 동작 <br/>\
-- 유출 : 사용자 PC의 쿠키정보 등의 개인정보 유출 <br/><br/>\
-# 공격유형 <br/>\
-1. Stored XSS <br/>\
-- Persistence 방식 <br/>\
-- Server Application 취약점 <br/>\
-<img src = "./img/XSS_1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-2. Refelective XSS <br/>\
-- Non Persistence 방식 <br/>\
-- Server Application 취약점 <br/>\
-<img src = "./img/XSS_2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-3. DOM Based <br/>\
-- Document Object Model Based XSS <br/>\
-- html Browser단 실행 <br/>\
-- Client Browser 취약점 <br/>\
-- 주기억 장치 메모리로 코드가 올라간 다음에 DOM 환경에서 악성 코드가 실행되는 형태 <br/>\
-<img src = "./img/XSS_3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-* 라이지움 86회 1교시 8번 <br/>\
-* 그리타 \
 ',
 
 // 개발보안 방법론
