@@ -993,8 +993,17 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - 개인정보파일 연계사업 : 50만명 이상 <br/>\
 - 개인정보파일 사업 : 100만명 이상, 시스템 변경분 <br/>\
 - 민감기관 <br/><br/>\
+# 체계 <br/>\
 <img src = "./img/PIA.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/PIA_Flow.png" style = "max-width:100%; height:auto;">\
+# 절차 <br/>\
+- 사전준비 : 예산확보, 평가기관 선정 <br/>\
+- 수행 : 영향평가서 작성 <br/>\
+- 이행 : 개선계획 반영, 점검 <br/><br/>\
+# 흐름표 예시 <br/>\
+<img src = "./img/PIA_Practice.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+# 흐름도 예시 <br/>\
+<img src = "./img/PIA_Flow_Practice.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 4교시 4번\
 ',
 
 // ISO/IEC 29134
