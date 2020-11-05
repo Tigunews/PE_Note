@@ -74,6 +74,7 @@ var question = question.concat(
 '공공무선 통신망',
 'NOS',
 '대역확산',
+'NW 가상화',
 );
 
 var answer = answer.concat(
@@ -1427,5 +1428,27 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/DSSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/FHSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 응용 1교시 8번\
+',
+  
+// NW 가상화
+'# 정의 : 자원 활용 극대화 <br/>\
+- 물리적인 네트워크를 하나 이상의 논리적인 네트워크로 세분화하는 기술 <br/><br/>\
+# VLAN (1~2)<br/>\
+- 정의 : 단일 물리적 네트워크를 복수의 논리적 네트워크로 분할하여 서로 다른 Broadcast 도메인을 형성하는 가상화 기술 <br/>\
+- 구성요소 : 스위치, 라우터, Access Port, Trunk Port, Broadcast Domain <br/><br/>\
+# VPN (2~7)<br/>\
+- 정의 : Public망에서 암호화 기술을 이용하여 전용선 망과 같은 회선 서비스를 제공하는 기술 <br/>\
+- 구성요소 : 공중망, 터널링, 암호화, MPLS(2), IPSEC(3), SSL(4) <br/><br/>\
+# NFV (7)<br/>\
+- NW 장비에서 제공하는 기능을 추상화 하여 범용서버에서 네트워크 기능을 구현하는 기술 <br/>\
+- OSS/BSS, VNFs, NFVI, MANO, E2E 네트워킹 <br/>\
+<img src = "./img/NFV_Structure.png" style = "max-width:100%; height:auto;"><br/>\
+* OSS/BSS(Operations Support Systems) : 네트워크 재고, 서비스 프로비저닝, 네트워크 구성, 장애관리 <br/><br/>\
+# 비교 <br/>\
+1. 기술 비교 <br/>\
+<img src = "./img/NWVirutlaizationTechCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 서비스 비교 <br/>\
+<img src = "./img/NWVirutlaizationServiceCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 응용 4교시 5번\
 ',
 );
