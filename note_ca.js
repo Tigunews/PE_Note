@@ -31,7 +31,9 @@ var question = question.concat(
 'CPU Scheduling',
 '[CPU Scheduling]- 비선점 스케줄링',
 '[CPU Scheduling]- 선점 스케줄링',
-'[CPU Scheduling]- Process Aging 기아현상',
+'[CPU Scheduling]- Process Aging',
+'[RTOS Scheduling]- RM',
+'[RTOS Scheduling]- EDF',
 '가상 메모리 페이지 교체 알고리즘',
 '[가상 메모리 페이지 교체 알고리즘]- 벨라디 변이(Belady\'s Anomaly)',
 '[가상 메모리 페이지 교체 알고리즘]- 스레싱(Thrashing)',
@@ -797,7 +799,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/MLFQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
 
-// [CPU Scheduling]- Process Aging 기아현상
+// [CPU Scheduling]- Process Aging 
 '# Process Aging : 대기시간 오래된 프로세스 해결 기법 <br/>\
 - Starvation을 방지하기 위해서 대기 시간이 오래된 프로세스에 대해 Priority를 높여주어 처리 보장하는 CPU 스케줄링 기법 <br/><br/>\
 # 기아현상 : 시스템 부하가 많아서 낮은 등급에 있는 준비 큐에 있는 프로세스가 무한정 기다리는 현상 <br/><br/>\
@@ -812,6 +814,27 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 비선점형 : HRN, Priority_Aging(오래 대기 프로세스 우선순위 증가), FIFO<br/>\
 - 선점형 : MLFQ(오래 실행 프로세스 하위큐 이동) + Aging, RR <br/><br/>\
 * 기아 미유발 알고리즘 사용 or 기존 알고리즘에 Aging 수행 \
+',
+  
+// RM
+'# 개념 : Rate-Monotonic Scheduling <br/>\
+- 독립적인 개별 프로세스 주기를 기준으로 주기가 짧을 수록 높은 우선순위를 부여하는 정적 방식의 스케줄링 기법 <br/><br/>\
+# 절차 <br/>\
+- Task 진입시 우선순위 지정 <br/>\
+- 짧은 Task 순으로 우선순위 부여 <br/>\
+- Task 마감 시간 = 동작 주기 <br/><br/>\
+# 충분조건 <br/>\
+<img src = "./img/RM_Condition.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 예시 <br/>\
+<img src = "./img/RM_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 응용 4교시 6번\
+',
+  
+// EDF
+'# 정의 : Earliest Deadline First Scheduling <br/>\
+- 실시간 운영체제에서 사용되는 동적 CPU 스케줄링 알고리즘중 하나 <br/><br/>\
+# 예시 <br/>\
+<img src = "./img/EDF_Example.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 가상 메모리 페이지 교체 알고리즘
