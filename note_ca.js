@@ -741,42 +741,18 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 // CPU Scheduling
 '# 정의 : Process CPU 할당 결정 작업<br/>\
 - Process 작업 수행을 위해 언제, 어느 Process에 CPU를 할당할 것인지를 결정하는 작업 <br/><br/>\
-# 암기 <br/>\
-- 필요 : 턴스효<br/>\
-- 원칙 : 공우<br/>\
-- 스케줄러 : 장잡,중프,단프<br/>\
-- 평가 : 사처응대반<br/><br/>\
-# 필요성 <br/>\
-- Turnaround time 최소화 <br/>\
-- Thoughput 최대화<br/>\
-- CPU 효율 극대화<br/><br/>\
-# 원칙<br/>\
-- 공평함 : 특정 프로세스 실행 무한대기X 보장 <br/>\
-- 우선순위 부여 : I/O와 CPU중심 프로세스 들에게 우선권을 주어 CPU처리량을 극대화<br/><br/>\
-# 스케줄러 유형<br/>\
-1. 장기 스케줄러(Job Scheduler) <br/>\
-- 스케줄링 위치 : 디스크스케줄링 큐<br/>\
-- 상태 : 생성->준비, 생성->지연준비, 메인 메모리 사용공간 확인과 자원확인, 분 단위 실행<br/><br/>\
-2. 중기 스케줄러(Process Scheduler) <br/>\
-- 위치 : 디스크(중단상태) <-> 메인메모리(활동상태) <br/>\
-- 상태 : 지연준비 <-> 준비, 지연대기 <-> 대기, MM에 프로세스 부분 객체<br/><br/>\
-3. 단기 스케줄러(Process Scheduler) <br/>\
-- 위치 : 메인메모리 <-> 프로세서 <br/>\
-- 상태 : 준비 <-> 실행 <-> 대기(문맥교환이 일어나는 부분)<br/>\
-- 100만분의 수 초 단위 <br/><br/>\
-# 종류 <br/>\
-- 선점 : RR, SRT, MLQ, MLFQ <br/>\
-- 비선점 : FCFS, SJF, HRN, 우선순위, DS <br/><br/>\
 # 평가기준 <br/>\
 1) CPU 사용률(CPU Utilization) : 전체 시간중 CPU 작업 처리시간 비중<br/>\
 2) 처리량(Throughput) : 단위 시간당 처리하는 프로세스 개수 <br/>\
 3) 응답시간(Response Time) : 대화식시스템에서 요청후 응답까지 시간 <br/>\
 4) 대기시간(Wating TIme) : 프로세스가 준비 큐 내에서 대기하는 시간<br/>\
 5) 반환시간(Turnarround Time) : 프로세스가 시작해서 끝날때까지 시간<br/><br/>\
-<img src = "./img/CPU_Scheduling_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CPU_Scheduling_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CPU_Scheduling_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 4단락에 평가기준 관련 내용 기재 : 평균 대기시간, 평균 반환시간 꼭 쓸것\
+# 비교 <br/>\
+<img src = "./img/CPUSchedulingCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 4단락에 평가기준 관련 내용 기재 : 평균 대기시간, 평균 반환시간 꼭 쓸것<br/><br/>\
+* 라이지움 87회 관리 4교시 6번\
 ',
 
 // [CPU Scheduling]- 비선점 스케줄링
