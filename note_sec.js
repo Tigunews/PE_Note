@@ -59,6 +59,8 @@ var question = question.concat(
 '[개인정보]- 가명정보',
 '[개인정보]- 가명처리 (ISO/IEC 20889 기준)',
 '[개인정보]- 식별자',
+'[개인정보]- ISMS',
+'[개인정보]- ISMS-P',
 '[정보처리자유형]- 개인정보 유출사고 대응 매뉴얼',
 '정보보호산업진흥법(15.12 시행)',
 'ISO/IEC 27014',
@@ -71,8 +73,6 @@ var question = question.concat(
 '동형암호',
 '[동형암호]- 준 동형암호',
 '[동형암호]- 완전 동형암호',
-'ISMS',
-'ISMS-P',
 'WAF',
 'X.509',
 '라이트 커맨드(Light Commands) 취약점',
@@ -95,6 +95,7 @@ var question = question.concat(
 '[CPU 보안]- Meltdown',
 '[DDOS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
 'FIDO',
+'[Android]- Deeplink',
 );
 
 var answer = answer.concat(
@@ -1187,6 +1188,34 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - 적대자가 알 수 있어야 하며, 적대자가 정보주체의 지인 여부에 달려있음 <br/><br/>\
 * 라이지움 86회 3교시 3번 \
 ',
+    
+// ISMS
+'# 정의 : Information Security Management System <br/>\
+- 정보의 기밀성, 무결성, 가용성을 실현하기 위한 일련의 정보보호 활동 <br/><br/>\
+# 의무대상 (정보통신망법 제47조 2항) <br/>\
+- 정보통신망서비스 제공자(ISP) : 전기통신사업법 제6조 1항<br/>\
+- 집적정보통신시설 사업자(IDC) : 정보통신망법 제46조 <br/>\
+- 연간 매출액 세입 1,500억 이상 <br/>\
+- 정보통신서비스 부문 전년도 매출액 100억원 이상 <br/>\
+- 일일평균 이용자수 100만명 이상 <br/><br/>\
+* 119회 관리 3교시 3번\
+',
+  
+// ISMS-P 
+'# 정의 : 정보보호 적합성 증명 제도 <br/>\
+- Information Security Management System - Personal<br/>\
+- ISMS + PIMS (18.11) <br/>\
+- 정보보호 및 개인정보보호를 위한 일련의 조치와 활동이 인증기준에 적합함을 인터넷진흥원 또는 인증기관이 증명하는 제도<br/><br/>\
+# 인증기준 <br/>\
+- 관보개 <br/>\
+- 관 : 기위운점 <br/>\
+- 보 : 정조자 인외물 <br/>\
+- 개 : 수이제파 <br/>\
+<img src = "./img/ISMS_P_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요개정사항 <br/>\
+<img src = "./img/ISMS_P_Change.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 3교시 3번\
+',
 
 // [개인정보 보호법]- 개인정보 유출사고 대응 메뉴얼
 '# 정의 : 개인정보 유출 사고 대응 최소 사항 제시 메뉴얼<br/>\
@@ -1418,34 +1447,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Fully Homomorhpic Encryption <br/>\
 - 암호화된 상태 그대로 원문 정보에 대한 연산이나 검색이 가능한 4세대 암호 (기본적인 준동형성에 모든 임의 논리 연산을 보존하는 준동형 암호) <br/><br/>\
 * IBM 연구원 Craig Gentry에 의해 2009년 개발 됨 \
-',
-  
-// ISMS
-'# 정의 : Information Security Management System <br/>\
-- 정보의 기밀성, 무결성, 가용성을 실현하기 위한 일련의 정보보호 활동 <br/><br/>\
-# 의무대상 (정보통신망법 제47조 2항) <br/>\
-- 정보통신망서비스 제공자(ISP) : 전기통신사업법 제6조 1항<br/>\
-- 집적정보통신시설 사업자(IDC) : 정보통신망법 제46조 <br/>\
-- 연간 매출액 세입 1,500억 이상 <br/>\
-- 정보통신서비스 부문 전년도 매출액 100억원 이상 <br/>\
-- 일일평균 이용자수 100만명 이상 <br/><br/>\
-* 119회 관리 3교시 3번\
-',
-  
-// ISMS-P 
-'# 정의 : 정보보호 적합성 증명 제도 <br/>\
-- Information Security Management System - Personal<br/>\
-- ISMS + PIMS (18.11) <br/>\
-- 정보보호 및 개인정보보호를 위한 일련의 조치와 활동이 인증기준에 적합함을 인터넷진흥원 또는 인증기관이 증명하는 제도<br/><br/>\
-# 인증기준 <br/>\
-- 관보개 <br/>\
-- 관 : 기위운점 <br/>\
-- 보 : 정조자 인외물 <br/>\
-- 개 : 수이제파 <br/>\
-<img src = "./img/ISMS_P_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 주요개정사항 <br/>\
-<img src = "./img/ISMS_P_Change.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 119회 관리 3교시 3번\
 ',
 
 // WAF
@@ -1859,5 +1860,26 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 4교시 3번\
+',
+  
+// DeepLink
+'# 정의 : 모바일 웹상에 있는 그림을 클릭할 경우 기기 내 관련 앱이나 사전에 정의된 특정 웹페이지가 실행되는 모바일 기술 <br/><br/>\
+# 취약점 <br/>\
+- 검증부재 URL 링크 접속 <br/>\
+- 앱 자바 스크립트 권한 인증 부재 <br/><br/>\
+# 공격 방식 <br/>\
+- 조작한 링크 접속 <br/>\
+- Origin App 실행, 앱내 자바스크립트 권한 부여 <br/>\
+- 공격자 사이트에 개인정보 전달 <br/><br/>\
+# 대응방안 <br/>\
+1. URI 파싱시 취약점 함수 사용 금지 <br/>\
+- getQueryParameter("type"); <br/><br/>\
+2. 인가된 URI에만 자바인터페이스 권한 부여 <br/>\
+<img src = "./img/DeepLinkAction2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 도메인 검증을 이용한 우회 방지 <br/>\
+<img src = "./img/DeepLinkAction3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. URI.parse 함수 사용시 특수문자 필터링 필요 <br/>\
+<img src = "./img/DeepLinkAction4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 4교시 5번\
 ',
 );
