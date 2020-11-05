@@ -184,7 +184,9 @@ var answer = answer.concat(
 <img src = "./img/XSS_3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 공격 방지 방법 <br/>\
 - 문자열 치환 함수 사용 <br/>\
-- \& \< \> 등을 &amp; &lt; &gt; 로 치환 <br/><br/>\
+- \& \< \> 등을 \&amp; \&lt; \&gt; 로 치환 <br/>\
+- XSS 방지 Lib 활용 (JSTL) <br/><br/>\
+# 실 코드 사례 <br/>\
 * 라이지움 87회 관리 4교시 2번<br/>\
 * 라이지움 86회 1교시 8번 <br/>\
 * 그리타 \
