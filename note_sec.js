@@ -2,6 +2,8 @@ var question = question.concat(
 '보안이슈, 대응방안',
 'SW 보안 약점',
 'XSS',
+'시큐어코딩',
+'[시큐어코딩]- TouchPoints 기법',
 '[랜섬웨어]- 종류',
 '[랜섬웨어]- DBD',
 '[랜섬웨어]- 드라이브 바이 크립토마이닝(drive-by cryptomining)',
@@ -76,7 +78,6 @@ var question = question.concat(
 '라이트 커맨드(Light Commands) 취약점',
 '무자각 지속 인증(Implicity Continuous Authentication)',
 '[암호화기술]- LEA',
-'[시큐어코딩]- TouchPoints 기법',
 'GDPR',
 '2020 정부 전자서명법 개정',
 '전자서명,전자봉투',
@@ -190,6 +191,27 @@ var answer = answer.concat(
 * 라이지움 87회 관리 4교시 2번<br/>\
 * 라이지움 86회 1교시 8번 <br/>\
 * 그리타 \
+',
+  
+// 시큐어 코딩
+'<img src = "./img/SecureCoding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 4교시 2번\
+',
+  
+// [시큐어 코딩]- TouchPoints 기법 
+'# 정의 : 보안관련 7가지 포인트 제시<br/>\
+- Gary McGraw - TouchPoints 기법 <br/>\
+- SW 개발시 보안과 관련된 중요 7가지 포인트를 제시하고 이를 개발 생명주기의 보안 강화 활동으로 제시 <br/><br/>\
+# Point (코아침위사요운)<br/>\
+- 코드검토(Code Review) <br/>\
+- 아키텍처 위험분석(Archtectural risk analysis) <br/>\
+- 침투테스트(Penetration testing) <br/>\
+- 위험기반 보안 테스트(risk based security tests)<br/>\
+- 악용사례(abuse cases)<br/>\
+- 보안요구(security requirement) <br/>\
+- 보안운영(security operation) <br/><br/>\
+<img src = "./img/SevenTouch_1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/SevenTouch_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 랜섬웨어 종류 
@@ -1488,22 +1510,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/LEA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/LEA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/LEA_3.png" style = "max-width:100%; height:auto;">\
-',
-
-// [시큐어 코딩]- TouchPoints 기법 
-'# 정의 : 보안관련 7가지 포인트 제시<br/>\
-- Gary McGraw - TouchPoints 기법 <br/>\
-- SW 개발시 보안과 관련된 중요 7가지 포인트를 제시하고 이를 개발 생명주기의 보안 강화 활동으로 제시 <br/><br/>\
-# Point (코아침위사요운)<br/>\
-- 코드검토(Code Review) <br/>\
-- 아키텍처 위험분석(Archtectural risk analysis) <br/>\
-- 침투테스트(Penetration testing) <br/>\
-- 위험기반 보안 테스트(risk based security tests)<br/>\
-- 악용사례(abuse cases)<br/>\
-- 보안요구(security requirement) <br/>\
-- 보안운영(security operation) <br/><br/>\
-<img src = "./img/SevenTouch_1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/SevenTouch_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // GDPR
