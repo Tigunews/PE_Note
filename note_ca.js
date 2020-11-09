@@ -1046,25 +1046,22 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 ',
 
 // [리소스 공유방법 동기화방법]- 스핀락
-'# 정의 : Lock 변수의 상태를 검사하여, 허가된 경우에만 임계 영역을 실행하도록 하는, 한번에 한 프로세스만 공유자원 사용하는 방식 <br/><br/>\
+'# 정의 : 프로세스가 사용하려는 Lock을 획득 할 때까지 명령어 루프를 돌며 계속 시도하는 Locking 기법 <br/><br/>\
 # 특징 <br/>\
-- busy waiting <br/>\
-- SMP 시스템에 유용 <br/>\
-- Spinning <br/>\
-- 짧은 크리티컬 섹션에 유용 <br/>\
-- 공유변수 활용 <br/>\
-- 인터럽트 사용 가능 <br/>\
-- context switching 불필요 <br/>\
-- 락 부담이 적어야 하는 경우, 락 사용 시간이 짧은 경우 유용 <br/>\
-- 장시간 크리티컬 섹션 사용시 무한대기 인한 기아 발생가능 (짧은 크리티컬섹션에 유용) <br/>\
-- 인터럽트 컨텍스트에서 락을 사용하는 경우, 반드시 스핀락 사용 <br/><br/>\
-# 원리 <br/>\
-- 스핀락 주소를 인자로 받음 <br/>\
-- *slp비트를 플래그로 복사, 1로 설정 <br/>\
-- 캐리플래그 검사 수행 <br/>\
-- 0 : 스핀락 미잠금 상태 (정상수행) <br/>\
-- 1 : 스핀락 잠긴 상태 <br/><br/>\
-<img src = "./img/Spinlock.png" style = "max-width:100%; height:auto;">\
+- SMP 시스템 : SMP 시스템 위한 락으로 단일 프로세스에서는 사용 안함 <br/>\
+- Busy Wating : 바쁜 대기의 한 종류의 동기화 기법 <br/>\
+- 짧은 크리티컬 섹션 유용 : 문맥교환 소요비용을 줄이는 대신 루프를 돌며 진입가능 여부 체크 <br/>\
+* 바쁜대기(Busy Waiting, Spinning) : 자원에 대해 무한 루프를 돌면서 조건문 체크하는 방식 <br/><br/>\
+# 주요함수 <br/>\
+- SPIN_LOCK() : LOCK 획득 (인터럽트 x) <br/>\
+- SPIN_UNLOCK() : LOCK 반환 <br/>\
+- SPIN_IS_LOCKED() : 0, 1 획득 <br/>\
+- SPIN_LOCK_IRQ : LOCK 획득 (인터럽트 o) <br/><br/>\
+# 수행절차 <br/>\
+<img src = "./img/SpinLockProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 스핀락, 세마포어 비교 <br/>\
+<img src = "./img/SpinLockSemaphore.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 3교시 4번\
 ',
 
 // 교착상태
