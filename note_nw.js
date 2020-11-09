@@ -307,12 +307,11 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 2. Big Endian <br/>\
 - Network Byte Order <br/>\
 - P0 P1 D P2 D D D <br/><br/>\
+<img src = "./img/BigLittleCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # LSB, MSB <br/>\
 - LSB : Least Significiant Bit <br/>\
 - MSB : Most Significiant Bit <br/><br/>\
 # 특징 : 해밍거리(Hamming Distance) = 송신 데이터와 수신 데이터의 각 대응 비트가 서로 다른 비트 수 <br/><br/>\
-<img src = "./img/Hamming_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Hamming_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 오류비트 2비트까지 검출가능, 1만 수정가능\
 ',
 
