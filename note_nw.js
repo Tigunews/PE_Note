@@ -52,7 +52,7 @@ var question = question.concat(
 'USB4.0',
 '5G 이동통신',
 '[5G]- 3GPP Release 16',
-'[5G]- MEC(Mobile Edge Computing)',
+'[5G]- MEC',
 '[5G]- 5GX',
 '[5G]- Open Lan',
 '재난안전통신망(Disaster Security Communication Network, 재난망)',
@@ -1114,6 +1114,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 어느지역에서나 MEC 구축 가능 <br/>\
 - 셀사이트 / 통신국사 / 기업빌딩내 구축 <br/>\
 * User Plane Function <br/><br/>\
+# 특징 <br/>\
+<img src = "./img/MEC_Characteristic.png" style = "max-width:100%; height:auto;"><br/>\
+- 시간/비용 감소 측면 : 초저지연성, 근접성 <br/>\
+- 서비스 활용 측면 : 네트워크 상태 인식성, 위치인식성 <br/><br/>\
 # 동향 및 기대효과 <br/>\
 - 미래의 네트워크 : 클라우드 컴퓨팅 기술의 전면적인 도입으로 분산 클라우드화가 될 것임 <br/>\
 - MEC : 모바일, 네트워크에 클라우드 컴퓨팅 기술을 도입하려는 시도 <br/>\
