@@ -2057,6 +2057,9 @@ var answer = answer.concat(
 // BaaS
 '# 정의 : BSaaS + BPaaS <br/>\
 - 블록체인 개발 및 구축을 쉽고 빠르게 할 수 있도록 필요한 기능을 인터넷으로 제공하는 블록체인 클라우드 서비스 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/BaaS_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* DApp(Decentralized Application) : Ethereum, 큐럼, 이오스 같은 플랫폼 코인 위에서 작동하는 탈중앙화 분산 어플리케이션 <br/><br/>\
 # 사업 현황 <br/>\
 <img src = "./img/BaaS_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 시사점 <br/>\
