@@ -1118,11 +1118,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/MEC_Characteristic.png" style = "max-width:100%; height:auto;"><br/>\
 - 시간/비용 감소 측면 : 초저지연성, 근접성 <br/>\
 - 서비스 활용 측면 : 네트워크 상태 인식성, 위치인식성 <br/><br/>\
-# 동향 및 기대효과 <br/>\
-- 미래의 네트워크 : 클라우드 컴퓨팅 기술의 전면적인 도입으로 분산 클라우드화가 될 것임 <br/>\
-- MEC : 모바일, 네트워크에 클라우드 컴퓨팅 기술을 도입하려는 시도 <br/>\
-- MEC 표준화 : ETSI가 주도하고 있으며 네트워크 산업계의 화두인 NFV와 더불어 MEC를 규격화 하기 위한 ISG를 구현하여 작업을 진행중<br/><br/>\
-* RINS : Radio Net. Informatin Service\
+* KPC 96회 관리 3교시 2번\
 ',
 
 // [5G 이동통신]- 5GX
