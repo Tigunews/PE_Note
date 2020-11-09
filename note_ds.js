@@ -1,7 +1,8 @@
 var question = question.concat(
 '4차산업 혁명',
-'[정책]- 디지털 뉴딜&혁신 4개분야 12개요소',
-'[정책]- 데이터댐',
+'[정책]- K뉴딜',
+'[정책]- 디지털 뉴딜',
+'[정책][디지털뉴딜]- 데이터댐',
 '인공지능 서비스 플랫폼',
 '[AI]- 인공지능 소프트웨어 보안 취약성',
 '[AI]- AI Flow',
@@ -21,6 +22,7 @@ var question = question.concat(
 '[AI]- 지능형CCTV',
 'Data Mining',
 '[Data Mining]- Text Mining',
+'[Data Mining][Text]- 로봇 저널리즘',
 '[Data Mining]- 단어구름(Word Cloud)',
 '[Data Mining]- Co-Word Analysis',
 '[Data Mining]- 탐색적 데이터 분석(Exploratory Data Analysis)',
@@ -218,10 +220,18 @@ var answer = answer.concat(
 * 116회 2교시 3번\
 ',
   
-// 디지털 뉴딜&혁신 4개 분야 12개 요소 
+// K뉴딜
 '# K-New Deal 추진체계 <br/>\
 <img src = "./img/KNewDealSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Digital New Deal <br/>\
+# 3대 프로젝트 <br/>\
+- 디지털 뉴딜 : 데이터 댐, 지능형 정부, 스마트 의료 <br/>\
+- 그린 뉴딜 : 그린 리모델링, 그린 에너지, 친환경 미래 모빌리티 <br/>\
+- 융복합 : 그린 스마트 스쿨, 디지털 트윈, SOC 디지털화, 스마트 그린산단 <br/><br/>\
+* KPC 96회 관리 2교시 6번\
+',
+  
+// 디지털 뉴딜
+'# Digital New Deal <br/>\
 <img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">\
 ',
   
@@ -238,6 +248,10 @@ var answer = answer.concat(
 - 클라우드 이용바우처 사업 <br/>\
 - 빅데이터 플랫폼 및 센터 구축 <br/><br/>\
 * 라이지움 87회 관리 1교시 3번\
+',
+  
+// 그린 뉴딜
+'<img src = "./img/GreenNewDeal.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 인공지능 서비스 플랫폼 
@@ -450,7 +464,7 @@ var answer = answer.concat(
 * 120회 응용 1교시1 번\
 ',
 
-// 지능형 CCTV
+// 지능형CCTV
 '# 정의 : 자동 이상행위 탐지 기술 <br/>\
 - CCTV에서 촬영된 영상정보를 분석하여 자동으로 이상행위를 탐지하는 기술 <br/>\
 - 배경영역과 객체를 분리 후 객체 식별, 객체 추적, 규칙 기반 이벤트 탐지 수행함 <br/><br/>\
@@ -501,13 +515,32 @@ var answer = answer.concat(
 - 향상도 P(B|A)/P(B) = P(A∩B)/P(A)*P(B)\
 ',
 
-// TextMining 
+// Text Mining 
 '# 정의 : 정보 도출 기법 / 비 조화 텍스트 문서 <br/>\
 - 비 조화된 텍스트 문서에서 가치있는 정보를 도출하는 기법 <br/><br/>\
 # 암기 <br/>\
 - 기법 : 분클토질컨듀 <br/><br/>\
 # 절차 : 데이터 수집 > 전처리 > 정보추출 > 클러스터링/범주화 > 요약/검색 <br/><br/>\
 # 기법 : 문서분류, 문서클러스터링, 토픽 트래킹, 질의응답(NLP), Concept Linkage(문서간 의미적 연결성), 듀오 마이닝(Data Mining, Text Mining 동시 적용)\
+',
+
+// 로봇 저널리즘
+'# 정의 : Robot + Journalism <br/>\
+- 로봇이 자체적으로 정보를 수집 및 분류한 후 의미를 해석해서 스스로 기사를 작성하는 저널리즘 기술 <br/><br/>\
+# 프레임워크 <br/>\
+<img src = "./img/RobotJournalismFramework.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 프로세스 <br/>\
+- 수집 : API, Web Crawling <br/>\
+- 추출 : Text Mining, Semantic Analyzing, ML <br/>\
+- 선별 : 이벤트 가중치, 스코어링 <br/>\
+- 결정 : NLU, 평판분석 <br/>\
+- 배포 : 워드 임베딩, 데이터 매칭 스코어 계산 <br/>\
+* Semantic Analyzing : 문장이나 단락에 기술된 주제 파악, 대상 검색 <br/>\
+* Word Embedding : 단어를 벡터로 표현하는 방법, 단어 밀집 표현으로 변환 <br/><br/>\
+# 순기능, 역기능 <br/>\
+- 순기능 : 언론 혁신, 개인화 서비스, 가치 창출 <br/>\
+- 역기능 : 일자리 감소, 적대적 공격, 알고리즘 담합 <br/><br/>\
+* KPC 96회 1교시 4번\
 ',
 
 // Word Cloud
