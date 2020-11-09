@@ -302,7 +302,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
 # Host Byte Order <br/>\
 1. Little Endian <br/>\
-- 사람 이해용도로 사용 <br/>\
+- Host Byte Order <br/>\
 - D D D P2 D P1 P0 <br/><br/>\
 2. Big Endian <br/>\
 - Network Byte Order <br/>\
