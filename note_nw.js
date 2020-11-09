@@ -298,7 +298,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 //[패킷데이터 네트워크 계층 오류]- 해밍코드
 '# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
-# 암기 : 2^p >= d + p + 1 <br/><br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
 # Host Byte Order <br/>\
 1. Little Endian <br/>\
