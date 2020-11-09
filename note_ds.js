@@ -26,8 +26,11 @@ var question = question.concat(
 '[Data Mining]- 탐색적 데이터 분석(Exploratory Data Analysis)',
 '[Data Mining]- 확증적 데이터 분석(Confimatory Data Analysis)',
 '[Data Mining]- 토픽 모델링',
-'[Data Mining]- 연관규칙(지지도,신뢰도,향상도)',
-'[Data Mining][연관규칙]- Apriori Algorithm',
+'[Data Mining][분석기법]- 군집분석',
+'[Data Mining][분석기법][군집분석]- 계층적 군집분석',
+'[Data Mining][분석기법][군집분석]- 비계층적 군집분석',
+'[Data Mining][분석기법]- 연관규칙',
+'[Data Mining][분석기법][연관규칙]- Apriori Algorithm',
 '[Data Mining]- Opinion Mining',
 '[Data Mining]- System Dynamics',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
@@ -537,7 +540,7 @@ var answer = answer.concat(
 '# 정의 : 분석 기법 / 의사결정 / 수집, 분석, 활용 <br/>\
 - 의사결정을 하기 위해 목적에 적합한 데이터를 수집하고 분석하여 결과를 활용하는 분석기법',
 
-// Topic Modeling
+// 토픽 모델링
 '# 정의 : 추론 모델 / 비정형 문서 집단 / 주제 찾기 알고리즘 / 맥락, 단어 이용 / 유사 의미 단어 클러스터링 <br/>\
 - 구조화 되지 않은 방대한 문서 집단으로 주제를 찾아내기 위한 알고리즘으로 맥락과 관련된 단어들을 이용하여 유사한 의미를 가진 단어들을 클러스터링하는 방식으로 추론하는 모델 <br/><br/>\
 # 절차 <br/>\
@@ -551,6 +554,57 @@ var answer = answer.concat(
 2. 확률 기반 <br/>\
 - pLSA(Probailistic LSA) : 데이터셋과 선별된 토픽 K간의 가장 잘 맵핑되는 토픽과 단어, 단어와 문서간의 조합 찾는 방법, 기존 LSA를 확률적 접근 <br/>\
 - LDA(Latent Dirichlet Allocation) : 주어진 문서 대해 각 문서에 어떤 주제들이 존재하는지에 대한 확률 모형\
+',
+  
+// 군집분석
+'# 정의 : 사전 정보 없는 경우 값 기반 유사성 이용 분석법 <br/>\
+- 모집단 또는 범주에 대한 사전 정보가 없는 경우 주어진 관측 값들 사이의 거리 또는 유사성을 이용하는 분석법 <br/>\
+- 전체 데이터를 집단으로 그룹화하여 각 집단의 성격 파악, 데이터 전체의 구조 이해 지원 분석법 <br/><br/>\
+# 특징 <br/>\
+- 탐색적인 기법 : 주어진 자료에 대한 사전 정보 없이 의미있는 자료 구조를 찾아낼 수 있음 <br/>\
+- 이식성 : 거리만 잘 정의되면 모든 종류의 자료에 적용할 수 있음 <br/>\
+- 초기 군집수 K 결정 : 초기 군집수 K의 결정이 어려움 <br/><br/>\
+# 군집분석의 과정 <br/>\
+- 거리측도 선택 : 유사성 판단 / 유클리디안 거리 <br/>\
+- 절차 선택 : 계층, 비계층 / 단일, K-Means <br/>\
+- 군집의 수 결정 : 계층, 비계층 / 결합 거리, 분산합계 <br/>\
+- 평가 : 신뢰성, 타당성 <br/><br/>\
+# 유형분류(1) <br/>\
+1. 거리 중심 <br/>\
+- 계층적 군집 : 중복 허용x  <br/>\
+- K-means : 개채간 유사성 <br/>\
+- SOM(Self Oragnizing Map) : 저차원 뉴런, 지도 형상화 <br/><br/>\
+2. 자원축소 <br/>\
+- 주성분분석(PCA) : 새로운 변수 창출 <br/>\
+- MDS(MultiDimensional Scaling) : 다차원 척도법 <br/><br/>\
+<img src = "./img/판별군집비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형분류(2) <br/>\
+<img src = "./img/ClusterAnalyzeCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 122회 관리 1교시 5번\
+',
+ 
+// 계층적 군집분석
+'# 정의 : 군집화 하는 과정에서 여러개의 내포된 군집으로 군집을 형성하는 기법 <br/><br/>\
+# 방법 <br/>\
+- 병합적 방법 : 가까운 관찰 단위까지 군집을 만들어가는 방법 <br/>\
+- 분할적 방법 : 거리가 먼 관찰 단위들을 나누어가는 방법 <br/><br/>\
+# 종류 <br/>\
+- 최단 연결법 : 가장 가까이 있는 두 관측치 사이의 거리 기반 군집 형성 <br/>\
+- 최장 연결법 : 가장 멀리 떨어진 두 관측치 사이의 거리 기반 군집 형성 <br/>\
+- 중심 연결법 : 두 군집의 중심간의 거리를 측정하여 군집 형성 <br/>\
+- 와드 연결법 : 군집내의 오차제곱합에 기초하여 군집 형성 <br/><br/>\
+# 거리 정의 <br/>\
+<img src = "./img/HireachyClusterAnalyzeDistance.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 4번\
+',
+ 
+// 비 계층적 군집분석
+'# 정의 : 랜덤으로 데이터를 군집화하고 군집 과정에서 중앙값의 변화에 따라 각 데이터들을 적절한 클러스터로 이동시켜 군집을 형성하여 분석하는 기법 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/NonHireachyClusterAnalyzeType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분석 알고리즘 <br/>\
+<img src = "./img/NonHireachyClusterAnalyzeAlgorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 4번\
 ',
 
 // 연관규칙
