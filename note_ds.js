@@ -100,7 +100,8 @@ var question = question.concat(
 'IEC 61508',
 '[ISO/IEC 61508]- SIL',
 'HILS, HIL 시뮬레이션',
-'소프트웨어 안전성 분석(Software Safety Analysis)',
+'소프트웨어 안전성 분석',
+'[안전성 분석]- FMEA, FTA, HAZOP',
 '문자 인코딩',
 '3D Sensing',
 '오픈뱅킹(Open Banking)',
@@ -1786,9 +1787,9 @@ var answer = answer.concat(
 <img src = "./img/SSA_1.png", style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
 1. 요구분석/설계 단계 <br/>\
-- FMEA(Failure Mode and Effects Analysis) : 고장 영향 정량적 분석 <br/>\
-- HAZOP(Hazard and Operatbility Analysis) : 도출 된 행위 안전 영향 분석 <br/>\
-- FTA(Fault Tree Analysis) : 연역적 해석 (대전제를 세우고 개별적용) <br/><br/>\
+- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 고장 발생 원인 사전 도출 <br/>\
+- FTA(Fault Tree Analysis) : 시스템의 문제 원인을 TopDown으로 도출하는 Tree 기반 <br/><br/>\
 2. 개발단계 <br/>\
 - White box : 구조기반<br/>\
 - Black box : 명세기반<br/><br/>\
@@ -1800,6 +1801,16 @@ var answer = answer.concat(
 - 디자인 검증 : 전문가 참여, 브레인 스토밍 / 라이팅 <br/><br/>\
 * DFD(Data Flow Diagram) <br/><br/>\
 * 119회 관리 4교시 4번\
+',
+  
+// FMEA, FTA, HAZOP
+'# 개념 <br/>\
+- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 고장 발생 원인 사전 도출 <br/>\
+- FTA(Fault Tree Analysis) : 시스템의 문제 원인을 TopDown으로 도출하는 Tree 기반 <br/><br/>\
+# 상세 비교 <br/>\
+<img src = "./img/FMEA_FTA_HAZOP.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 1교시 5번\
 ',
 
 // 문자 인코딩 
