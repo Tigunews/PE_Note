@@ -12,6 +12,11 @@ var question = question.concat(
 '[동시성제어]- Locking',
 '[동시성제어]- Phantom Conflict',
 '회복기법',
+'[회복기법]- Log 기반',
+'[회복기법]- 그림자 페이지',
+'[회복기법]- 체크포인트',
+'[회복기법]- 미디어',
+'[회복기법]- Aries',
 '[회복기법]- WAL정책',
 '정규화',
 '[정규화]-암스트롱 공리, 함수폐포, 자기참조관계',
@@ -280,11 +285,7 @@ var answer = answer.concat(
 // 회복기법
 '# 정의 : 복원 기법 / DB 장애시 / 발생이전 <br/>\
 - DB에 장애 발생시 발생 이전의 일관된 상태(Consistent State)로 복원하는 기법 <br/><br/>\
-# 암기 <br/>\
-- 장애종류(3) : 트시미사 <br/>\
-- 회복종류(2) : 원-덤로, 조-리언 <br/>\
-- 회 : 로체그A미 <br/><br/>\
-# 장애종류 <br/>\
+# 장애종류 (트시미사)<br/>\
 - 트랜잭션 : 논리오류, 잘못된 입력, 데이터 불량, 가용자원, 과다한 요구 <br/>\
 - 시스템 : HW 오동작, 전원고장 <br/>\
 - 미디어 : 디스크헤더 고장 <br/>\
@@ -300,10 +301,53 @@ var answer = answer.concat(
 - AERIS <br/>\
 - 미디어 기반 <br/><br/>\
 <img src = "./img/회복기법_1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/회복기법_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/회복기법_2.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Log 기반
+'<img src = "./img/회복기법_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 지연갱신 <br/>\
+- 트랜잭션의 부분 완료 상태에선 변경 내용을 로그 파일에만 저장 <br/>\
+- <font color = "red">커밋</font>이 발생하기 전까지 데이터베이스에 기록하지 않음 <br/>\
+- 중간에 장애가 생기더라도 데이터 베이스 기록되지 않았으므로 <font color = "red">UNDO 필요 없음</font> <br/><br/>\
+# 즉시갱신 <br/>\
+- 트랜잭션 수행 도중에도 변경 내용을 <font color = "red">즉시</font> 데이터베이스에 기록 <br/>\
+- 커밋 발생 이전의 갱신은 원자성이 보장되지 않는 미완료 갱신이므로 <font color = "red">UNDO 필요</font>\
+',
+  
+// 그림자 페이지
+'<img src = "./img/ShadowPaging.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 메모리상 Current Page Table과 동일한 Shadow Page Table 생성 <br/>\
+- Tx 성공할 경우 Shadow Page Table 삭제 <br/>\
+- Tx 실패할 경우 Shadow Page Table을 Current Page Table 로 복사 \
+',
+  
+// 체크포인트 회복기법
+'# 정의 : 장애발생시에 체크포인트 이후 처리된 트랜잭션에 대해서만 회복작업을 시행하는 방법 <br/><br/>\
+# 개념도 <br/>\
 <img src = "./img/회복기법_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/회복기법_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/회복기법_5.png" style = "max-width:100%; height:auto;">\
+* KPC 96회 관리 4교시 3번\
+',
+  
+// 미디어 회복기법
+'# 특징 <br/>\
+- 디스크와 같은 비휘발성 저장 장치가 손상되는 장애 발생 대비 <br/>\
+- 백업, 미러링, RAID등을 통해 별도 물리저장장치 덤프 <br/>\
+- 미디어 장애시 가장 최근 덤프로 복구, 로그 파일을 참조해 덤프 이후 작업 Redo <br/>\
+- Undo 수행 x \
+',
+  
+// Aries
+'# 정의 : Algorithms for Recovery and Isolation Exploiting Semantics <br/>\
+- STEAL-Non Force 버퍼관리 정책과 WAL 방식을 이용하여 Page에 대한 적은 Locking과 트랜잭션의 Partial Rollbacks를 지원하는 DB 회복기법 <br/><br/>\
+# 특징 <br/>\
+- STEAL : 수정된 page를 언제든지 디스크에 Write <br/>\
+- Non FORCE : Dirty Page를 Commit 시점에 미반영 <br/>\
+- WAL : DB 반영전 Log에 기록 <br/><br/>\
+# 복구 단계 설명 <br/>\
+<img src = "./img/AriesFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 4교시 3번\
 ',
 
 // [회복기법]- WAL 정책
