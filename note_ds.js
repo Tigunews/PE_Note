@@ -20,7 +20,9 @@ var question = question.concat(
 '[AI]- 적대적 공격',
 '[AI]- 음성비서',
 '[AI]- Pre-Crime',
-'[AI]- 지능형CCTV',
+'[AI]- 지능형 CCTV',
+'[AI]- NLP',
+'[AI][NLP]- 워드 임베딩',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining][Text]- 로봇 저널리즘',
@@ -163,7 +165,6 @@ var question = question.concat(
 '로보 어드바이저',
 '검색엔진',
 '[검색엔진]- 색인어 추출',
-'[검색엔진]- NLP',
 'HTML 5',
 'LOD',
 'Open API',
@@ -468,7 +469,7 @@ var answer = answer.concat(
 * 120회 응용 1교시1 번\
 ',
 
-// 지능형CCTV
+// 지능형 CCTV
 '# 정의 : 자동 이상행위 탐지 기술 <br/>\
 - CCTV에서 촬영된 영상정보를 분석하여 자동으로 이상행위를 탐지하는 기술 <br/>\
 - 배경영역과 객체를 분리 후 객체 식별, 객체 추적, 규칙 기반 이벤트 탐지 수행함 <br/><br/>\
@@ -497,6 +498,26 @@ var answer = answer.concat(
 - 영상 비식별화 : 촬영 영상에서 개인정보 비식별화 <br/>\
 - 영상 아이덴티티 : 최초로 생성한 영상의 아이덴티티 검측 기술<br/><br/>\
 * 86회 라이지움 2교시 1번 \
+',
+  
+// NLP
+'# 정의 : 인간의 언어를 컴퓨터로 이해, 해석하는 기술 <br/>\
+- Natural Language Processing <br/>\
+- 인간의 언어 현상을 기계적으로 분석해 컴퓨터가 이해 가능한 형태로 만드는 자연언어 이해/변환 과정 혹은 그러한 형태를 다시 인간이 이해 가능한 언어로 표현하는 제반기술 <br/><br/>\
+# 인공지능과 관계 <br/>\
+- NLP(Processing) : 음성 처리 <br/>\
+- NLU(Understanding) : 기계 이해 변환 (NLP 일부분) <br/>\
+- NLG(Generation) : 다시 자연어로 변환 (NLP 일부분) <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 워드 임베딩
+'# 정의 : 단어간 유사도 및 중요도 파악을 위해 단어 저차원의 실수 벡터로 맵핑하여 의미적으로 비슷한 단어를 가깝게 배치하는 자연어 처리 모델링 기술 <br/><br/>\
+# 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\
+# Dense Representation Embedding 유형 <br/>\
+<img src = "./img/DenseBasedEmbedding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 4교시 5번\
 ',
    
 // DataMining
@@ -2756,18 +2777,6 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 4. 적용 <br/>\
 - 성능 향상 : 형태소분석의 오류로 인한 성능 저하시 사용 <br/>\
 - 소량 정확 : 문서의 건수가 적고, 재현율 최우선시 되는 경유 \
-',
-  
-// NLP
-'# 정의 : 인간의 언어를 컴퓨터로 이해, 해석하는 기술 <br/>\
-- Natural Language Processing <br/>\
-- 인간의 언어 현상을 기계적으로 분석해 컴퓨터가 이해 가능한 형태로 만드는 자연언어 이해/변환 과정 혹은 그러한 형태를 다시 인간이 이해 가능한 언어로 표현하는 제반기술 <br/><br/>\
-# 인공지능과 관계 <br/>\
-- NLP(Processing) : 음성 처리 <br/>\
-- NLU(Understanding) : 기계 이해 변환 (NLP 일부분) <br/>\
-- NLG(Generation) : 다시 자연어로 변환 (NLP 일부분) <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;">\
 ',
   
 // HTML 5
