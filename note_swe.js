@@ -101,6 +101,7 @@ var question = question.concat(
 '[구현단계]- Javascript',
 '[시험단계]- 테스트원리 7가지',
 '[시험단계]- 테스트 유형',
+'[시험단계]- 테스트 절차',
 '[시험단계][테스트]- V-Model',
 '[시험단계][태스트]- 단위 테스트',
 '[시험단계][테스트]- 통합 테스트',
@@ -1852,6 +1853,10 @@ var answer = answer.concat(
 // 테스트 유형
 '<img src = "./img/TestTree.png" style = "max-width:100%; height:auto;">\
 ', 
+ 
+// 테스트 절차
+'<img src = "./img/TestProcessFlow.png" style = "max-width:100%; height:auto;">\
+', 
 
 // V-Model 
 '# 정의 : 숨어있는 결함 찾기위한 SW 작동 행위,절차 <br/><br/>\
@@ -3561,8 +3566,7 @@ P 히스토그램 : Data 분포 <br/>\
 
 // 품질평가
 '# 정의 : SW 제품이 요구사항과 일치하는지 확인하는 체계적이고 계획적인 작업 <br/><br/>\
-# 필요성 : 요구사항 검증, 생산성 향상, 품질 향상 <br/>\
-<img src = "./img/SWQualityTESTNeeds.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 필요성 : 요구사항 검증, 생산성 향상, 품질 향상 <br/><br/>\
 # 품질평가 모델 <br/>\
 <img src = "./img/SourceCodeQualityEvaluation.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 신뢰도 측정 방법 <br/>\
