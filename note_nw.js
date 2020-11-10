@@ -39,6 +39,7 @@ var question = question.concat(
 '[무선통신]- IEEE 802.11p',
 '[무선통신]- Gigabit WLAN',
 '[무선통신]- 저전력 무선통신 비교',
+'[무선통신][저전력]- 블루투스 5.0',
 '[측위기술]- IPS',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
@@ -880,6 +881,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
  
 // 저전력 무선통신
 '<img src = "./img/LowPowerWireless.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 블루투스 5.0
+'# 정의 : 기존 4세대 대비 4배 확장된 거리, 2배의 속도 향상, 8배 Broadcast 용량을 제공하는 통신 규격 <br/><br/>\
+# 기술 변화 <br/>\
+<img src = "./img/LowPowerWireless.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 기술 <br/>\
+- 고속 전송 기술(2Mbps) : 1Msym/s -> 2Msym/s (2배 개선) <br/>\
+- 원거리 전송 기술(1Km) : FEC 도입, 간섭 내성 강화 <br/>\
+- Advertising 개선 : 긴 패킷 Chaining <br/>\
+- 실내측위 : AoA, AoD, Beacon <br/><br/>\
+* KPC 96회 응용 3교시 8번\
 ',
 
 // IPS
