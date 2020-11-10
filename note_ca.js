@@ -49,6 +49,7 @@ var question = question.concat(
 '[리소스 공유방법 동기화방법]- 스핀락',
 '[리소스 공유방법 동기화방법]- 교착상태',
 '[교착상태]- 은행가알고리즘',
+'[교착상태]- 자원할당 그래프',
 'RAID',
 '[InMemory]- In-Memory Computing',
 '[InMemory]- In-Memory Database',
@@ -1103,6 +1104,18 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/BangkerAlogorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Understand <br/>\
 <img src = "./img/BangkerAlgorithmUnderstand.png" style = "max-width:100%; height:auto;">\
+',
+
+// 자원할당 그래프
+'# 정의 : 교착상태 탐지 <br/>\
+- 상태(Deadlock) 탐지를 목적으로 프로세스와 자원 간의 관계를 간선(Node)과 정점(Vertex)으로 표현한 그래프 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/ResourceAllocationGraph.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 교착상태 판별 <br/>\
+<img src = "./img/ResourceAllocationGraphDeadlockTest.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 판별 사례 <br/>\
+<img src = "./img/ResourceAllocationGraphDeadlockExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 응용 1교시 14번\
 ',
 
 // RAID
