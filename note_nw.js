@@ -56,6 +56,8 @@ var question = question.concat(
 '[5G]- MEC',
 '[5G]- 5GX',
 '[5G]- Open Lan',
+'6G',
+'[6G]- Wifi 7',
 '재난안전통신망(Disaster Security Communication Network, 재난망)',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
@@ -64,7 +66,6 @@ var question = question.concat(
 'eMTC',
 'Network Storage',
 '자가망 구축 가이드라인',
-'6G',
 'QoS',
 '[QoS]- 통합 서비스',
 '[QoS]- 차등 서비스',
@@ -1158,6 +1159,50 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 기업 현황 : 구글, MS, FaceBook <br/><br/>\
 <img src = "./img/OpenLan.jpg" style = "max-width:100%; height:auto;">\
 ',
+  
+// 6G
+'# 정의 : 6세대 네트워크 <br/><br/>\
+# 특징 (성대공정지현)<br/>\
+- 초성능 : 1Tbps <br/>\
+- 초대역,초공간 : 1THz, 10Km 이하 <br/>\
+- 초정밀 : 0.1 msec (1/10) <br/>\
+- 초지능,초현실 : 학습기반 이동통신 연결 <br/><br/>\
+# 주요 트랜드 <br/>\
+- 인공지능 활용 통신기술 확대 <br/>\
+- 개방형 협업을 통한 통신망 개발 <br/>\
+- 통신 기술을 활용한 사회적 격차 해소 <br/>\
+- 지속 가능한 발전 <br/><br/>\
+# 단말기 요구사항 <br/>\
+- 네트워크 구성요소 최적화 설계 <br/>\
+- 네이티브 AI <br/><br/>\
+# 요구 기술 <br/>\
+- 테라헤르츠(THz) 주파수 대역 활용 기술 <br/>\
+- 고주파 대역 커버리지 안테나 기술 <br/>\
+- 이중화 혁신 기술<br/>\
+- 네트워크 토폴리지 혁신 기술 : 유연한 네트워크 구성, 위성 활용 <br/>\
+- 주파수 공유 기술 <br/>\
+- AI 적용 통신 기술 <br/><br/>\
+# 5G 비교 <br/>\
+<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 이동통신 기술의 한세대를 통상 10년으로 칭함 \
+',
+  
+// Wifi 7
+'# 정의 : IEEE 802.11be <br/>\
+- 기존의 Wifi 6보다 3배 빠르고 초 실감 미디어 컨텐츠를 안정적으로 전송하는 차세대 무선통신 기술 <br/><br/>\
+# 특징 <br/>\
+- 5G 음영지역 해소 <br/>\
+- 초고속 / 초저지연 <br/>\
+- 비 면허 주파수 대역 확대 : 규제 완화, 6Ghz대역 (5,925 ~ 7,125 MHz) <br/><br/>\
+# 성능목표 <br/>\
+- 최대속도 : 30Gbps 이상 <br/>\
+- 최대 대역폭 : 320Mhz 이상 <br/>\
+- 지원 주파수 : 2.4Ghz, 5Ghz, 6Ghz <br/>\
+- 하위 호환성 : IEEE 802.11 장비 지원 <br/><br/>\
+# Wifi 6비교 <br/>\
+<img src = "./img/Wifi67.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 응용 1교시 16번\
+',
 
 // 재난안전통신망
 '# 정의 : 공공안전 재난 구조 (PPDR : Public Protection and Disaster Relief) 서비스를 제공하기 위해 사용되는 융합 통신망 기술 <br/>\
@@ -1303,33 +1348,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/자가망1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/자가망2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/자가망3.png" style = "max-width:100%; height:auto;">\
-',
-
-// 6G
-'# 정의 : 6세대 네트워크 <br/><br/>\
-# 특징 (성대공정지현)<br/>\
-- 초성능 : 1Tbps <br/>\
-- 초대역,초공간 : 1THz, 10Km 이하 <br/>\
-- 초정밀 : 0.1 msec (1/10) <br/>\
-- 초지능,초현실 : 학습기반 이동통신 연결 <br/><br/>\
-# 주요 트랜드 <br/>\
-- 인공지능 활용 통신기술 확대 <br/>\
-- 개방형 협업을 통한 통신망 개발 <br/>\
-- 통신 기술을 활용한 사회적 격차 해소 <br/>\
-- 지속 가능한 발전 <br/><br/>\
-# 단말기 요구사항 <br/>\
-- 네트워크 구성요소 최적화 설계 <br/>\
-- 네이티브 AI <br/><br/>\
-# 요구 기술 <br/>\
-- 테라헤르츠(THz) 주파수 대역 활용 기술 <br/>\
-- 고주파 대역 커버리지 안테나 기술 <br/>\
-- 이중화 혁신 기술<br/>\
-- 네트워크 토폴리지 혁신 기술 : 유연한 네트워크 구성, 위성 활용 <br/>\
-- 주파수 공유 기술 <br/>\
-- AI 적용 통신 기술 <br/><br/>\
-# 5G 비교 <br/>\
-<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;">\
-* 이동통신 기술의 한세대를 통상 10년으로 칭함 \
 ',
  
 // QoS
