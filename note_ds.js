@@ -356,13 +356,13 @@ var answer = answer.concat(
 ',
 
 // 클라우드 활용 AI구축 모델 
-'# LoB (Line of Business) <br/>\
+'# LoB (Line of Business) : MaaS<br/>\
 - 개발툴, 시각/음성/자연어 등 특화 솔루션 API 및 서비스 <br/><br/>\
-# 개발환경 <br/>\
+# 개발환경 : PaaS <br/>\
 - Workflow : 공유,협업 및 자동화 도구, Jupyter, Anaconda, GitHub, VSTS <br/>\
 - IDE : Open API, PyCharm, Microsoft VSCode <br/>\
 - 라이브러리 : 고급 수학연산(NumPy), 컴퓨터 비전(OpenCV), 언어번역(OpenNMT) <br/><br/>\
-# 인프라 <br/>\
+# 인프라 : IaaS <br/>\
 - ML 플랫폼 : Apache MXNet, TensorFlow, Caffe, CNTK, Keras <br/>\
 - 알고리즘 : 지도, 비지도, 강화학습 <br/>\
 - Data : 구조/비구조적 DB, 빅데이터 플랫폼, 클라우드 기반 DB <br/>\
