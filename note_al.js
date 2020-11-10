@@ -1,5 +1,6 @@
 var question = question.concat(
 '자료구조',
+'선형구조',
 '트라이(Trie)',
 '정렬 알고리즘',
 '[정렬 알고리즘]- Selection sort',
@@ -82,6 +83,11 @@ var answer = answer.concat(
 - 파일 : 순차파일, 색인, 직접 <br/><br/>\
 # 선형자료구조 : 데이터 저장시 연속적인 기억공간에 배정을 하는 자료구조 <br/><br/>\
 # 비선형 자료구조 : 데이터 저장시 비연속적인 기억공간에 배정을 하는 자료구조\
+',
+  
+// 선형구조
+'<img src = "./img/LineaerStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 3교시 6번\
 ',
 
 // Trie
