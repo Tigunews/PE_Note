@@ -38,6 +38,8 @@ var question = question.concat(
 '[아키텍처]- MVC 모델',
 '[아키텍처]- Pipe & Filter',
 '[아키텍처]- Batch Process',
+'[설계단계][아키텍처 표준]- IEEE 1471',
+'[설계단계][아키텍처 표준]- ISO/IEC/IEEE 42010',
 '[설계단계][소프트웨어 아키텍처]- 품질속성',
 '[설계단계][소프트웨어 아키텍처]- 품질속성 시나리오',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처뷰',
@@ -53,8 +55,6 @@ var question = question.concat(
 '[설계단계][소프트웨어 아키텍처]- 유틸리티 트리',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처 드라이버',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처 평가모델',
-'[설계단계]IEEE 1471',
-'[설계단계]IEEE 42010',
 '[설계단계]SAD',
 '[설계단계][SAD]- ADD (Attribute Driven Design)',
 '[설계단계]- 객체지향방법론',
@@ -951,6 +951,44 @@ var answer = answer.concat(
 <img src = "./img/BatchProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 3교시 5번\
 ',
+ 
+// IEEE 1471
+'# 정의 : SA가 표현해야 하는 내용, 관계정의 표준 프레임워크 IEEE 1471 <br/>\
+- SW 집약적인 시스템에서 아키텍처가 표현해야 하는 내용 및 이들간의 관계를 제공하는 아키텍처 명세를 위한 표준 메타 모델 <br/><br/>\
+# 구성 <br/>\
+- Mission <br/>\
+- Environment <br/>\
+- System <br/>\
+- Stakeholder <br/>\
+- Concern <br/>\
+- Viewpoint <br/>\
+- View <br/>\
+- Library Viewpoint <br/>\
+- Architecture Description <br/>\
+- Rational <br/>\
+- Model\
+',
+
+// ISO/IEC/IEEE 42010
+'# 정의 : 소프트웨어 아키텍퍼 표준 정립 <br/>\
+- 소프트웨어 집약적 시스템의 아키텍처 기술 요소와 행위를 표준화하여 다양한 소프트웨어를 설계 및 활용할 수 있게 하고, 이해관계자들이 의사소통이 용이하도록 만든 표준 메타 모델 <br/><br/>\
+# 채택 동향 <br/>\
+- 최초 표준 : IEEE Std 1471:2000 <br/>\
+- ISO 채택 : ISO/IEC 42010:2007 승인 <br/>\
+- 최종승인 : ISO/IEC/IEEE 42010:2011 2가지 표준 모두 수용함 <br/><br/>\
+# 중요성 <br/>\
+- 표준화 : 아키텍처와 관련된 용어 및 개념 통일 <br/>\
+- 중립성 : 모델링 언어, 개발 상위 레벨에서 표현 <br/>\
+- 의사소통 : 요구사항과 설계의 차이를 개선, 이해관계자 관점 표현 <br/><br/>\
+# 구성요소 <br/>\
+- 대상 시스템 : 시스템 아키텍처의 준비에 고려해야하는 시스템 <br/>\
+- 아키텍처 : 시스템이 가진구조 <br/>\
+- 아키텍처 기술 : 아키텍처를 이해, 분석 및 구축을 위한 청사진 <br/>\
+- 이해관계자 : 고객, 공급자, 소비자, CEO <br/><br/>\
+# IEEE 1471와 비교 설명 <br/>\
+<img src = "./img/IEEE1471ISOIECIEEE42010.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 응용 1교시 15번\
+',
 
 // [소프트웨어 아키텍처]- 품질속성
 '# 정의 : SW 아키텍처가 만족시키고자 하는 품질 요구사항 <br/><br/>\
@@ -1183,41 +1221,6 @@ var answer = answer.concat(
   
 // 아키텍처 평가모델
 '<img src = "./img/SW_Architecture_평가모델.png" style = "max-width:100%; height:auto;">\
-',
-
-// IEEE 1471
-'# 정의 : SA가 표현해야 하는 내용, 관계정의 표준 프레임워크 IEEE 1471 <br/>\
-- SW 집약적인 시스템에서 아키텍처가 표현해야 하는 내용 및 이들간의 관계를 제공하는 아키텍처 명세를 위한 표준 메타 모델 <br/><br/>\
-# 구성 <br/>\
-- Mission <br/>\
-- Environment <br/>\
-- System <br/>\
-- Stakeholder <br/>\
-- Concern <br/>\
-- Viewpoint <br/>\
-- View <br/>\
-- Library Viewpoint <br/>\
-- Architecture Description <br/>\
-- Rational <br/>\
-- Model\
-',
-
-// IEEE 42010
-'# 정의 : 아키텍처 최소요건 <br/>\
-- 아키텍처 기술, 프레임워크, 기술언어, 뷰포인트에 대한 최소요건 포함 <br/><br/>\
-# 구성 <br/>\
-- System of Interest <br/>\
-- Stakeholder <br/>\
-- Concern <br/>\
-- Architecture Viewpoint <br/>\
-- Architecture View <br/>\
-- Model Kind <br/>\
-- Architecture Model <br/>\
-- Architecture <br/>\
-- Architecture Design <br/>\
-- Architecture Rational <br/>\
-- Correspondent Rule <br/>\
-- Correspondence \
 ',
 
 // SAD 
