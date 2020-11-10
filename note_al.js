@@ -1,6 +1,7 @@
 var question = question.concat(
 '자료구조',
 '선형구조',
+'[선형]- Stack',
 '트라이(Trie)',
 '정렬 알고리즘',
 '[정렬 알고리즘]- Selection sort',
@@ -88,6 +89,20 @@ var answer = answer.concat(
 // 선형구조
 '<img src = "./img/LineaerStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 3교시 6번\
+',
+  
+// Stack
+'# 정의 : 선형리스트 구조의 특별한 형태로 데이터 삽입과 삭제가 한쪽 끝(Top)에서만 일어나는 선형구조 <br/><br/>\
+# 연산유형 <br/>\
+- 전위 유형 : A + B -> + A B <br/>\
+- 중위 유형 : A + B -> A + B <br/>\
+- 후위 유형 : A + B -> A B + <br/><br/>\
+# 후위 유형 연산 사례 <br/>\
+- 문제 : 4 5 + 2 3 * - <br/>\
+- 결과 : 4 / 4 5 / 4 5 + / 9 2 / 9 2 3 / 9 2 3 * / 9 6 - / 3 <br/><br/>\
+# 연산 표기 방법 <br/>\
+<img src = "./img/Mid2End.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 3교시 6번\
 ',
 
 // Trie
