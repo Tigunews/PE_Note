@@ -23,6 +23,8 @@ var question = question.concat(
 '[AI]- 지능형 CCTV',
 '[AI]- NLP',
 '[AI][NLP]- 워드 임베딩',
+'[AI][NLP]- TF-IDF',
+'[AI][NLP]- Word2Vec',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining][Text]- 로봇 저널리즘',
@@ -517,6 +519,28 @@ var answer = answer.concat(
 # 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\
 # Dense Representation Embedding 유형 <br/>\
 <img src = "./img/DenseBasedEmbedding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 4교시 5번\
+',
+  
+// TF-IDF
+'# 개념 <br/>\
+- TF-IDF : 핵심어 추출 및 검색 결과 순위 결정을 위해 단어의 특정 문서 내 중요도를 산출하는 통계적 가중치 알고리즘 <br/>\
+- TF : 단어의 문서 내 등장빈도 <br/>\
+- IDF : 단어 출현 문서 빈도수의 역수 <br/><br/>\
+# 산출기법 <br/>\
+<img src = "./img/TF_IDF.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 4교시 5번\
+',
+  
+// Word2Vec
+'# 개념 : 단어를 벡터 평면에 배치하여 컴퓨터가 인식할 수 있도록 문맥적 의미를 보존하는 워드 임베딩 기법 <br/><br/>\
+# 신경망 연산 <br/>\
+- 은닉 벡터(h) = 입력(x) x 입력 가중치 행렬(w) <br/>\
+- 출력(y) = 은닉 벡터(h) x 출력 가중치 행렬(w) <br/><br/>\
+# Word2Vec 학습 모델 <br/>\
+<img src = "./img/Word2VecLearningModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# TF-IDF, Word2Vec 비교 <br/>\
+<img src = "./img/TF_IDF_Word2Vec.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 4교시 5번\
 ',
    
