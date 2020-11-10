@@ -2324,25 +2324,20 @@ var answer = answer.concat(
 ',
 
 // [경험기반 테스트]- 탐색적 테스팅 
-'# 정의 : 휴리스틱 테스팅 / 익숙 경험 + / 테스트 설계 계획 <br/>\
+'# 정의 : 경험기반 테스트 <br/>\
 - Exploratory Testing <br/>\
-- 테스트 대상 제품을 실행하면서 익숙해지는 것과 동시에 테스트를 설계하고 테스트를 계획하는 휴리스틱(Heuristics) 테스팅<br/><br/>\
-# 암기 <br/>\
-- 특징(5) : 시창학구의 <br/>\
-- 구성요소(4) : 세차노요 PROOF <br/>\
-- 프로세스 : 렌디익어 <br/><br/>\
+- 직전의 테스트를 통해 얻은 통찰력을 다음 테스트에서 충분히 활용하면서 테스트 설계와 수행을 동시에 수행하는 휴리스틱 테스트 기법<br/><br/>\
 # 특징 : 시간제한, 창의적 접근, 학습과 진화, 구조화된 관리, 테스트 의존적 <br/><br/>\
 # 구성 <br/>\
-- 테스트세션 <br/>\
-- 세션차터 <br/>\
-- 테스트 노트 <br/>\
-- 요약회고 Debrief (PROOF : Past, Result, Obstacles, Outlook, Feelings) <br/>\
-- 테스팅기법 : 명세기반 <br/><br/>\
+- 테스트 차터 : 목표, 비전 / 테스트 설계서 <br/>\
+- 타임 박스(테스트 세션) : 테스트 시간 / Short (60), Normal (90), Long (120) <br/>\
+- 테스트 노트 : 최소한 설명 기록 / 목표, 특이사항, 수행시간 <br/>\
+- 요약 보고(회고) : 경험 공유 / 5 ~ 10분 진행 <br/><br/>\
 # 프로세스(Cycle) <br/>\
-- Learn : 제품연구, 스케줄링, 차터기획, 세션 설정 <br/>\
-- Test Design : 차터작성, 설계기법 적용 <br/>\
-- Test Execution : 차터배분, 수행/기록, 디브리핑, 세션정리 <br/>\
-- Analysis : 결함/이슈 확인 및 전체 테스트 보고\
+<img src = "./img/ExploratoryTestingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 테스트케이스 기반 테스트 비교 <br/>\
+<img src = "./img/ExploratoryCaseCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 아이리포 24회 관리 3교시 3번\
 ',
 
 // [시험단계][테스트 유형][프로그램 실행여부][동적 테스트][경험기반][탐색적 테스팅]- 테스트 차터
