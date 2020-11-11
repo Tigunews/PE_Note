@@ -34,6 +34,7 @@ var question = question.concat(
 '[ISO 26000]- CSR', 
 '[IT-컴플라이언스] - ISO 31000',
 'BCP',
+'[BCP]- RTO, RPO',
 '[BCP]- BIA',
 '[BCP]- ISO22301',
 '[BCP]- DRS',
@@ -657,34 +658,20 @@ var answer = answer.concat(
 ',
 
 // BCP 
-'# 정의 : 중단 대처 절차 및 방법 <br/>\
-- Business Continuity Planning <br/>\
-- ISO 22301 <br/>\
-- 주요 비즈니스 기능의 중단을 계획된 목표 수준이나 필수불가결한 변경 수준으로 제한하면서 조직이 상황에 대처할 수 있는 절차 및 방법 <br/><br/>\
-# 암기 <br/>\
-- 프로세스 (5) : RA>BIA>RS>PD>PT <br/>\
-- ISO 22301 <br/><br/>\
-# 구성 (DBBBP)<br/>\
-- DR(Disaster Recovery) : 조직별 비상사태 대비 복구 계획 <br/>\
-- BR(Business Recovery) : 기업의 연속성을 위한 중요업무 등을 복구하기 위한 개념 <br/>\
-- BIA(Business Impact Analysis) : 장애 가정 손실 평가 <br/>\
-- Backup : 데이터 보관 정합성 유지 방법 <br/>\
-- Planning  : 계획서 작성 통한 혼선 방지<br/><br/>\
-# 구축 절차 <br/>\
-- BCP 착수 : 현행 분석 <br/>\
-- BIA : 업무 영향도 분석 <br/>\
-- BCP 수행 : DR Center 운영 <br/>\
-- 교육 : 담당자 교육 <br/>\
-- 운영 : DR Center 운영 <br/><br/>\
-8. 운영 <br/>\
-- DR Center 운영 <br/><br/>\
-# FW <br/>\
-- input : 업무연속성 전략, 위험관리 정책 <br/>\
-- BCP : 비상계획, 위험관리계획, 업무복구계획 <br/>\
-- Output : 업무재개, 재해복구 <br/><br/>\
-# 표준 : ISO 22301 <br/><br/>\
+'# 정의 : 기업 내외부에 발생 가능한 모든 재해 및 장애에도 비즈니스의 중단없이 정상적 업무수행이 가능하도록 예방 및 복구활동을 포함하는 비즈니스 연속성 보장 체계 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/BCP_Process.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 <img src = "./img/BCP_0.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 <img src = "./img/BCP.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* 아이리포 24회 관리 4교시 1번\
+',
+ 
+// RTO, RPO
+'# RTO(복구목표시간) <br/>\
+<img src = "./img/RTO.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# RPO(복구목표지점) <br/>\
+<img src = "./img/RPO.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* 아이리포 24회 관리 4교시 1번\
 ',
 
 // [BCP]- BIA
