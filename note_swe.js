@@ -5131,6 +5131,8 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 자의적 예외기준 적용 : 기준 명확화, 위원회 개최 <br/>\
 - 초기 이해 부족시 진행 어려움 : 역량강화 <br/>\
 - 기획, 설계 역량 부족 : 협력체계 도입 강화 <br/><br/>\
+# 분리발주, 분할발주 비교 <br/>\
+<img src = "./img/SepDev.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 24회 관리 4교시 3번\
 ',
   
