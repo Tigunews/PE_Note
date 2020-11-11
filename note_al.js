@@ -24,7 +24,6 @@ var question = question.concat(
 '[AI]- 분석모델평가',
 '[AI][분석모델평가]- Cross Validation',
 '[AI]- 분류모델생성알고리즘',
-'[AI]- 단순 대치법',
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
 '[AI]- TensorFlow',
@@ -463,27 +462,6 @@ var answer = answer.concat(
 -> Boosting : 모오가반 <br/><br/>\
 <img src = "./img/분류모델생성알고리즘_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/분류모델생성알고리즘_2.png" style = "max-width:100%; height:auto;">\
-',
-  
-// 단순 대치법
-'# 정의 : Single Imputation <br/>\
-- 결측값을 가진 자료 분석에 사용하기 쉽고, 통계적 추론에 사용된 통계량의 효율성 및 일치성 등의 문제를 부분적으로 보완해 주기 위하여 결측값을 그럴듯한 값으로 대체하는 통계적 기법 <br/><br/>\
-# 유형 <br/>\
-1. 완전 분석법 <br/>\
-- 불완전 자료 무시 <br/>\
-- 효율성 상실, 통계적 추론 타당성 문제 <br/><br/>\
-2. 평균 대치법 <br/>\
-- 평균값으로 대치 <br/>\
-- 비 조건부 평균 대치법 : 결측값이 빠져있을 경우 대치 <br/>\
-- 조건부 평균 대치법 : 회귀 분석 활용, 결측값 대치 <br/><br/>\
-3. 단순 확률 대치법 <br/>\
-- 적절한 확률값 부여후 대치 <br/>\
-- 핫덱 대체 : 무응답 -> 비슷한 성향 응답자 <br/>\
-- 콜드덱 대체 : 외부 출처, 이전 비슷한 연구 <br/>\
-- 혼합 방법 : 회귀 대체 (예측값 얻기) + 핫덱 방법 이용 <br/><br/>\
-# 단순, 다중대치법 비교 <br/>\
-<img src = "./img/ImputationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 96회 관리 1교시 11번\
 ',
 
 // [기계학습]- 앙상블 학습법
