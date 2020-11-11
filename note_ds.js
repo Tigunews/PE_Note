@@ -3,7 +3,8 @@ var question = question.concat(
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
 '[정책][디지털뉴딜]- 데이터 댐',
-'[정책][뉴딜]- 그린뉴딜',
+'[정책][뉴딜]- 그린 뉴딜',
+'[정책]- 지능 정보화 기본법',
 'Flipped Learning(역순 학습, 플립트 러닝, 거꾸로 학습)',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린(Open Screen)',
@@ -222,6 +223,13 @@ var answer = answer.concat(
   
 // 그린 뉴딜
 '<img src = "./img/GreenNewDeal.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 지능 정보화 기본법
+'# 정의 : 지능 정보화 관련 정책의 수립, 추진에 필요한 사항을 규정함으로써 지능 정보화 사회의 구현에 이바지 하고 국가 경쟁력을 확보하며 국민의 삶의 질을 높이는 것을 목적으로 하는 법 <br/><br/>\
+# 등장배경 : 4차 산업 역기능 해소 <br/><br/>\
+# 개정안 주요사항 (2020.12.10. 시행)<br/>\
+<img src = "./img/SmartInfoRule.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
   
 // Flipped Learning
