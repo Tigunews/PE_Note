@@ -2337,10 +2337,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // OAuth 2.0
 '# 정의 : 웹 및 모바일 어플리케이션에서 제 3의 앱이 자원의 소유자인 서비스 이용자를 대신하여 서비스를 요청할 수 있도록 자원 접근 권한을 위임하는 기술 <br/><br/>\
 # 개선사항 <br/>\
-- 용어 변경 : Resource Owner(사용자), Resource Server(REST API Server), Authorization Server(인증서버, API), Client(App, Service) <br/>\
-- 직관적 변경 : Signature x, URL 인코딩 x <br/>\
-- 인증방법 지원 : Token <br/>\
-- 확장성 지원 : 대형 서비스(MSA 지원) <br/><br/>\
+<img src = "./img/OAuthCompare.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/OAuth2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 3교시 3번\
