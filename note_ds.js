@@ -2336,10 +2336,18 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
   
 // OAuth 2.0
 '# 정의 : 웹 및 모바일 어플리케이션에서 제 3의 앱이 자원의 소유자인 서비스 이용자를 대신하여 서비스를 요청할 수 있도록 자원 접근 권한을 위임하는 기술 <br/><br/>\
+# 버전 <br/>\
+- OAuth 1.0  <br/>\
+- OAuth 1.0a : Access Token (RFC 5849) <br/>\
+- OAuth 2.0 (RFC 6749, RFC6750(Bearer Token)) <br/><br/>\
 # 개선사항 <br/>\
 <img src = "./img/OAuthCompare.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/OAuth2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 3-legged model <br/>\
+- User : 사용자 (Naver 회원) <br/>\
+- Consumer : Third party App (Caffe app 개발사) <br/>\
+- Service Provider : 플랫폼 서비스 제공자 (Naver Service) <br/><br/>\
 * KPC 96회 관리 3교시 3번\
 ',
 
