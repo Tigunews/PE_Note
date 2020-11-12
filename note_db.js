@@ -299,7 +299,7 @@ var answer = answer.concat(
 - 로그기반 : 지연갱신, 즉시갱신 <br/>\
 - 그림자 페이징 <br/>\
 - 체크포인트 회복기법 <br/>\
-- AERIS <br/>\
+- ARIES <br/>\
 - 미디어 기반 <br/><br/>\
 <img src = "./img/회복기법_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/회복기법_2.png" style = "max-width:100%; height:auto;">\
