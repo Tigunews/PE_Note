@@ -887,7 +887,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 블루투스 5.0
 '# 정의 : 기존 4세대 대비 4배 확장된 거리, 2배의 속도 향상, 8배 Broadcast 용량을 제공하는 통신 규격 <br/><br/>\
 # 기술 변화 <br/>\
-<img src = "./img/LowPowerWireless.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/BlueToothSpecFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 기술 <br/>\
 - 고속 전송 기술(2Mbps) : 1Msym/s -> 2Msym/s (2배 개선) <br/>\
 - 원거리 전송 기술(1Km) : FEC 도입, 간섭 내성 강화 <br/>\
