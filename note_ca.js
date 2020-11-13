@@ -1096,8 +1096,10 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 안전상태와 불안전 상태로 구분하고 운영체제는 안전상태를 유지할 수 있는 요구만을 수락하고 불안전 상태를 야기하는 요구는 거절 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/BankersAlgorithmAttribute.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구현 <br/>\
-<img src = "./img/BangkerAlogorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 코드 <br/>\
+<img src = "./img/BankersAlgorithmPseudoCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 흐름도 <br/>\
+<img src = "./img/BankersAlgorithmFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Understand <br/>\
 <img src = "./img/BangkerAlgorithmUnderstand.png" style = "max-width:100%; height:auto;">\
 ',
