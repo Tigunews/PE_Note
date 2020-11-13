@@ -1100,6 +1100,11 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/BankersAlgorithmPseudoCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 흐름도 <br/>\
 <img src = "./img/BankersAlgorithmFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 실행순서 <br/>\
+1. 현재 사용 가능한 리소스 산정 : Available <br/>\
+2. 추가 요구량 상정 : Need Table<br/>\
+3. 수행 가능 프로세스 검사 : Available / Need 비교 <br/>\
+4. 프로세스 순서 산출 <br/><br/>\
 # Understand <br/>\
 <img src = "./img/BangkerAlgorithmUnderstand.png" style = "max-width:100%; height:auto;">\
 ',
