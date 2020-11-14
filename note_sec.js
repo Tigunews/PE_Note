@@ -1,7 +1,7 @@
 var question = question.concat(
 '보안이슈, 대응방안',
 'SW 보안 약점',
-'XSS',
+'[공격기법]- XSS',
 '시큐어코딩',
 '[시큐어코딩]- TouchPoints 기법',
 '[랜섬웨어]- 종류',
