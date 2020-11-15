@@ -301,13 +301,9 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 //[패킷데이터 네트워크 계층 오류]- 해밍코드
 '# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
-# Host Byte Order <br/>\
-1. Little Endian <br/>\
-- Host Byte Order <br/>\
-- D D D P2 D P1 P0 <br/><br/>\
-2. Big Endian <br/>\
-- Network Byte Order <br/>\
-- P0 P1 D P2 D D D <br/><br/>\
+# Byte Order <br/>\
+- Little Endian : Host Byte Order <br/>\
+- Big Endian : Network Byte Order <br/><br/>\
 <img src = "./img/BigLittleCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # LSB, MSB <br/>\
 - LSB : Least Significiant Bit <br/>\
