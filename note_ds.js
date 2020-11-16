@@ -2531,26 +2531,29 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
   
 // 서버리스 컴퓨팅
 '# 정의 : 이벤트 중심 처리 컴퓨팅 <br/>\
-- 서버 단에서 상태를 관리하지 않고 특정 이벤트에 반응하는 함수가 실행되는 구조 <br/>\
-- 저장하지 않고 실행하는애플리케이션<br/><br/>\
+- 컴퓨팅 자원의 고려와 관계 없이 어플리케이션 개발이 가능한 이벤트 기반 클라우드 컴퓨팅 기술 <br/><br/>\
 # 특징 <br/>\
-- 작업시간 단축, 비용절감, Side Effect 감소, 신속한 의사결정, 고품질 서비스 제공 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/ServerlessArchitecture.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 구성요소 <br/>\
-- 인증 : Legacy App 인증 로직 -> BaaS 서비스 교체 <br/>\
-- 제품 데이터베이스 : Client 단에서 DB 직접 접속 <br/>\
-- 클라이언트 : 로직 이동 / SPA 통한 UX 구조 <br/>\
-- 검색기능 : 클라이언트 서버단 같은 상품 데이터베이스 조회 <br/>\
-- 구매기능 : 서버단에서 처리(보안성), FaaS(Function)로 대체 가능 <br/><br/>\
-# 구현기술 <br/>\
-- 비즈니스 로직 관리 : 마이크로 서비스 정의 , 오케스트레이션 실행 / AWS Fargate <br/>\
-- 오케스트레이션 : 애플리케이션 구성요소, 마이크로 서비스 상태 관리 / AWS Step functions <br/>\
-- 보안/액세스 제어 : 로깅, 변화추적, 액세스 제어, 암호화 / AWS I AM VPC <br/>\
-- 안정성 : 확장 가능한 고가용성 서비스 / AWS Lambda <br/><br/>\
-# 오픈소스 프레임워크 함수 실행과정 <br/>\
-<img src = "./img/ServerlessComputingOpensourceFranework.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-* 아이리포 24회 관리 3교시 5번\
+- 인프라 운영 및 유지관리 불필요 <br/>\
+- App의 단위는 처리량, 메모리 크기로 용량 조절 <br/><br/>\
+# 클라우드 서비스 진화 <br/>\
+- DataCenter : H/W 추상화 <br/>\
+- IaaS : 서버자원 유연화 <br/>\
+- PaaS : OS 추상화 <br/>\
+- Serverless : 처리량 단위 조절 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/ServerlessArchitecture.png" style = "max-width: 100%; height: auto;"><br/>\
+- Front End : 사용자 연동 구간 <br/>\
+- Middle : FaaS 구간 <br/>\
+- Back End : 인증 등 내분 로직 (BaaS) <br/><br/>\
+# 주요기술 <br/>\
+- Client : SPA(Single Page App), Web App <br/>\
+- Front End : API G/W, RESTful API <br/>\
+- Function Service : FaaS, Container <br/>\
+- Back End : Event Router, BaaS <br/><br/>\
+# 한계점 및 고려사항 <br/>\
+- 한계점 : 낮은 성능, 고성능 부적합, 모니터링/디버깅 제한 <br/>\
+- 고려사항 : ROI 가치 두고 <font color = "red">그로스해킹 기반</font> 신기술 개발, 시장 개척등 활용 <br/><br/>\
+* 아이리포 24회 관리 3교시 5번<br/>\
 * 아이리포 23회 1교시 7번\
 ',
   
