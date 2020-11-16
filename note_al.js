@@ -18,6 +18,7 @@ var question = question.concat(
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
 'AVL 트리',
+'[AI]- 역기능',
 '[AI]- 기계학습 종류',
 '[AI]- 유전자 알고리즘',
 '[AI]- Feed Forward Neural Network',
@@ -340,6 +341,26 @@ var answer = answer.concat(
 <img src = "./img/AVL_RR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_LR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+  
+// 인공지능 역기능
+'# 사회적 문제 <br/>\
+- 가짜 뉴스 (로봇 저널리즘)<br/>\
+- Spam Mail / News <br/><br/>\
+# 개인화 부작용 <br/>\
+- Filter Bubble <br/>\
+- 강제적 맞춤 서비스 <br/><br/>\
+# 기술적 문제 <br/>\
+- AI 블랙박스 이슈 : 기술적 한계 <br/>\
+- AI 편향성 유입 : 훈련 데이터 사회/문화/정치 반영 <br/><br/>\
+# 강한인공지능 <br/>\
+- 인지, 자율성 판단, 제어 불가능 <br/>\
+- 트롤리 딜레마 <br/>\
+- 데이터 편향 <br/><br/>\
+# 양극화 확대 <br/>\
+- 화이트칼라 일자리 위협 <br/>\
+- 일자리 축소 실업율 증가 <br/><br/>\
+* 아이리포 23회 관리 4교시 4번\
 ',
   
 // 기계학습 종류
