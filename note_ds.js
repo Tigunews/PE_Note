@@ -232,19 +232,33 @@ var answer = answer.concat(
 '# 정의 : 시간과 장소에 얽매이지 않고 언제 어디서나 일할 수 있는 근무 방식 <br/><br/>\
 # 유형 : 모바일 오피스, 홈 오피스, 센터 근무, 원격 협업 <br/><br/>\
 # 요소기술 <br/>\
-1. Contents <br/>\
-- 미디어 처리 기술 : 오디오, 비디오, VR, AR, XR, MR <br/>\
-- CPI(Interaction) <br/>\
-- 가상공간 협업 : 공동문서 작업, 자료공유, 화면공유, 원격제어, 원격 협업 <br/><br/>\
-2. Platform <br/>\
-- UI : 스마트 워크 서비스, 제스처 기반 공간 인식형 <br/>\
-- Smart POT : 대화면, 센서 <br/><br/>\
-3. Network <br/>\
-- 네트워킹 : SDN, QoS, VPN, NFV <br/>\
-- 동적 그룹 : 실시간 회의 네트워크 <br/><br/>\
-4. Service <br/>\
-- 개인 서비스 : SNS, VDI ,br/>\
-- 그룹 서비스 : Workflow, Cloud, Appstore <br/><br/>\
+1. 모바일 오피스 측면 <br/>\
+- OS, Device : Mobile OS <br/>\
+- Mobile Server Platform : Mobile Connector, Mobile Gateway, PoC(사용자 단말, APP 관리), Store(버전 관리), Image Streaming, MDM(통합 보안), IDE <br/>\
+- Mobile Client Platform : Middleware App(범용화), Hybrid Client Platform <br/><br/>\
+2. 재택 근무 측면 <br/>\
+- 인프라 : PC, 복합기, 통신망 <br/>\
+- 보안 : Anti Virus, IPS, IDS, DB/Contents 보안, VPN <br/>\
+- 접근 : 전자결재, 메신저, 이메일, 파일공유 <br/>\
+- 운영 : DMS(DB Migration Service), PMS(Patch Management System), 백업 및 복구 <br/><br/>\
+3. 스마트워크센터 측면 <br/>\
+- IT 인프라 : 네트워크, 애플리케이션 <br/>\
+- 운영 인프라 : 관리시스템, 보안시스템(DRM, DLP, SIEM, CCTV) <br/>\
+* DRM : Digital Rights Management <br/>\
+* DLP : Data Loss Preventation <br/>\
+* SIEM : Security Information and Event Management <br/><br/>\
+4.직장근무시 영상회의 측면 <br/>\
+- 전송 기술 : H.323(인터넷 기반 전송), SIP(음성) <br/>\
+- 압축 기술 : H.254, H.265(동영상 압축/부호화), G.711,723(Audio) <br/><br/>\
+# 긍정 부정요소 <br/>\
+- 긍정요소 : 신기술 등장, 기반 기술 정립, 정부 정책, Life 패러다임 전환 <br/>\
+- 부정요소 : 도입 레퍼런스 부족, 센터 인프라 부족, 보안침해사고 증가 <br/><br/>\
+# 발전 방향 <br/>\
+- 법제도 : 모호성 개선, 지원정책 수립 <br/>\
+- 근무방식 : 신규근무방식 확산, 성과평가 개선 <br/>\
+- 인프라 확충 : 워크센터 호가충, 5G 네트워크 <br/>\
+- 정보보안 : 인증제(ISMS) 확산, 모바일 정보보호 <br/>\
+- 신규기술 : 바이오인증 활성화, Cloud 활성화 <br/><br/>\
 * 아이리포 23회 관리 2교시 1번\
 ',
   
