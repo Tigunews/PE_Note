@@ -1,4 +1,5 @@
 var question = question.concat(
+'Grouping Keyword',
 'ITSM',
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
@@ -83,6 +84,11 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
+// Grouping Keyword
+'- ABCD : Audience(대상), Behavior(행위), Condition(조건), Degree(기준) <br/>\
+- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) \
+',
+ 
 // ITSM
 '# 정의 : IT 서비스 수준관리 위한 프레임워크 <br/>\
 - Information Technology Service Management <br/>\
