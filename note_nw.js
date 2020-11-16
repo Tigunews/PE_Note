@@ -77,6 +77,7 @@ var question = question.concat(
 'NOS',
 '대역확산',
 'NW 가상화',
+'[NW 가상화]- NFV',
 );
 
 var answer = answer.concat(
@@ -1483,5 +1484,23 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 2. 서비스 비교 <br/>\
 <img src = "./img/NWVirutlaizationServiceCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 응용 4교시 5번\
+',
+  
+// NFV
+'# 정의 : 하나의 물리적인 네트워크 기능을 여러 사용자 및 장치가 사용 가능하도록 네트워크 기능을 가상화하는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/NFV_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 서비스체인 <br/>\
+- 가상화 인프라 Manager : 하드웨어 장비 및 가상화 레이어 제어 및 관리 <br/>\
+- VNF Manager : 가상화된 네트워크 제어 및 관리 <br/>\
+- Orchestrator : 리소스 제어 <br/><br/>\
+2. 하드웨어 장비 <br/>\
+- Device : 컴퓨팅, 네트워크, 스토리지 장비 등 하드웨어 리소스 <br/>\
+- 가상화 레이어 : 논리적 통합 <br/>\
+- VNF : 라우팅, 방화벽 등 네트워크 기능 제공 <br/><br/>\
+# SND NFV 비교 <br/>\
+<img src = "./img/SDN_NFV.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 아이리포 23회 관리 1교시 10번\
 ',
 );
