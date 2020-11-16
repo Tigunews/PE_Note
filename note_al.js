@@ -567,12 +567,17 @@ var answer = answer.concat(
 # 구성요소 <br/>\
 1. 네트워크 구조 <br/>\
 - Convolution : 특징 추출 합성곱 / Feature Map, stride, padding <br/>\
-- 소수 줄무늬 Convolution : Input Padding 이후 Convolution 수행 <br/>\
+- Fractional-Strided Convolution : Image Upsampling <br/>\
 - 배치 정규화 : 활성화 함수 값 정규분포화 (평균 0, 분산 1) <br/><br/>\
 2. 활성화 함수 <br/>\
 - ReLu : 생성자 모든층 / y = max(0,z) <br/>\
 - Tanh : 마지막 결과 도출 <br/>\
-- Leaky ReLu : 판별자 모든층 / f(x) = max(0,01x, x) <br/><br/>\
+- Leaky ReLu : 판별자 모든층 / f(x) = max(0.01x, x) <br/><br/>\
+# GAN 활용 모델 <br/>\
+- Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
+- Disco GAN : 이미지, 텍스트 매핑 / 객체간 특성 관계 파악<br/>\
+- Star GAN : 도메인 동시 변환 / 이미지 변환 특화<br/>\
+- Fusion GAN : 최소 패치 훈련 / 객체 -> 원하는 모양 <br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
 
