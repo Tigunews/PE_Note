@@ -2,6 +2,7 @@ var question = question.concat(
 '4차산업 혁명',
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
+'[4차산업]- Smart Energey',
 '[정책]- 데이터3법',
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
@@ -265,10 +266,24 @@ var answer = answer.concat(
 # 발전 방향 <br/>\
 - 법제도 : 모호성 개선, 지원정책 수립 <br/>\
 - 근무방식 : 신규근무방식 확산, 성과평가 개선 <br/>\
-- 인프라 확충 : 워크센터 호가충, 5G 네트워크 <br/>\
+- 인프라 확충 : 워크센터 확충 5G 네트워크 <br/>\
 - 정보보안 : 인증제(ISMS) 확산, 모바일 정보보호 <br/>\
 - 신규기술 : 바이오인증 활성화, Cloud 활성화 <br/><br/>\
 * 아이리포 23회 관리 2교시 1번\
+',
+  
+// Smart Enegery
+'# 에너지의 생산, 전달 및 소비 과정에서 다양한 첨단 ICT 기술과 융합되어 에너지 생산,전달,소비의 효율성,안전성,친환경성을 높여가는 서비스 <br/><br/>\
+# 기술요소 <br/>\
+- AMI : 스마트미터, MDMS / PLC, Wifi, Zigbee, M2M <br/\
+- ESS : 변환장치(PCS), 관리(PMS) / 전기 저장장치 <br/>\
+- EMS : BEMS, FEMS, HEMS / 에너지 흐름 사용 시각화 (빌딩, 공장, 주택)<br/>\
+- EV 충전 시스템 : 전력 공급 시스템, 충전 스테이션 <br/>\
+- 셀프 주유기, 충전기 : ODT(영수증발행), POS <br/>\
+- 댁내 에너지 기기 : IHD(In-Home Display), ESI, HEMS / HAN <br/><br/>\
+# 보안 : 비인가 / 취급정보 / SW, Device <br/>\
+<img src = "./img/SmartEnegerySecurity.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 관리 4교시 4번\
 ',
   
 // 데이터 3법 
