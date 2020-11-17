@@ -1,5 +1,6 @@
 var question = question.concat(
 '4차산업 혁명',
+'[4차산업]- 국내 스마트 챌린지 사업',
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[정책]- K뉴딜',
@@ -231,6 +232,8 @@ var answer = answer.concat(
 - 스마트 버스 정류장 : 운행 정보 제공, 폭염,혹한 상황 편리성 지원 <br/>\
 - 스마트 공유주차 : 민간, 공영주차장 정보 제공 <br/>\
 - 자율항행 드론 : 도시 현황 모니터링, 재해 예방, 물류 지원 서비스 <br/><br/>\
+# 챌린지 사업, 정책 변화 <br/>\
+<img src = "./img/KoreaSmartChallenge.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 117회 관리 1교시 13번\
 ',
   
