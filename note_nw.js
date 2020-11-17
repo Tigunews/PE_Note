@@ -78,6 +78,7 @@ var question = question.concat(
 '대역확산',
 'NW 가상화',
 '[NW 가상화]- NFV',
+'[SDN]- Open flow',
 );
 
 var answer = answer.concat(
@@ -1502,5 +1503,29 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # SND NFV 비교 <br/>\
 <img src = "./img/SDN_NFV.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 관리 1교시 10번\
+',
+  
+// Open flow
+'# 정의 : 망가상화 핵심 <br/>\
+- SDN의 제어 평면과 데이터 평면을 분리하고 이들을 연결하는 표준 인터페이스 프로토콜 <br/><br/>\
+# 모형 <br/>\
+<img src = "./img/OpenFlowModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/OpenFlowComponent.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- 등록된 경우 <br/>\
+<img src = "./img/OpenflowFlow1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 등록되지 않은 경우 <br/>\
+<img src = "./img/OpenflowFlow2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 라우팅 방식 <br/>\
+1. Hop by hop <br/>\
+- Controller 서비스별 계산 경로 파악 <br/>\
+- 구성 유연성, 효율 Up to 100% <br/>\
+- 확장성 문제 발생 <br/><br/>\
+2. Over Lay <br/>\
+- Controller 모든 경로 제어 x, 터널링 기술(L2,L3) 이용 <br/>\
+- 대규모 네트워크, 기존 IP 적용 가능 <br/>\
+- 기존 네트워크와 같은 효율 수준 <br/><br/>\
+* KPC 23회 관리 4교시 2번\
 ',
 );
