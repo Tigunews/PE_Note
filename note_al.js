@@ -93,6 +93,7 @@ var question = question.concat(
 '[AI][Data Mining][분석기법][연관규칙]- Apriori Algorithm',
 '[AI][Data Mining]- Opinion Mining',
 '[AI][Data Mining]- System Dynamics',
+'[AI][정책]- AI 조달 가이드라인',
 'Hash Function',
 '[Hash Function]- Hashing',
 '[Hash Function]- Hash Algorithm',
@@ -1531,7 +1532,21 @@ var answer = answer.concat(
 <img src = "./img/SystemDynamics_1.png" style = "max-width:100%; height:auto;"><br/>\
 - 피드백 : 강화 루프, 균형 루프 <br/>\
 - 레벨과 레이트 : 피드백 루프요소를 시뮬레이션 모델로 표현 <br/>\
-<img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// AI 조달 가이드라인
+'# Over view <br/>\
+<img src = "./img/AI_Support_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# SI, AI 조달 비교 <br/>\
+<img src = "./img/SIAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요이슈 <br/>\
+<img src = "./img/AI_Support_Issue.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개선방향 <br/>\
+- AI 특성 맞춤형 정책 <br/>\
+- 구축 모델에 대한 충분한 검토 <br/>\
+- 지속적, 신속한 유지보수, 위험관리 <br/><br/>\
+* KPC 93회 관리 4교시 6번\
 ',
   
 // Hash Function
