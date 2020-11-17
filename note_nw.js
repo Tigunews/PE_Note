@@ -78,7 +78,7 @@ var question = question.concat(
 '대역확산',
 'NW 가상화',
 '[NW 가상화]- NFV',
-'[SDN]- Open flow',
+'[NW 가상화]- Open flow',
 );
 
 var answer = answer.concat(
