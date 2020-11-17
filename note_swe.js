@@ -776,7 +776,16 @@ var answer = answer.concat(
 - 제안요청서 명확화에 대한 요구 <br/>\
 - 불명확한 요구사항이 업계 존폐에 영향 <br/>\
 - SW 선진화 기반 마련 <br/><br/>\
-# 내용 <br/>\
+# 변경 사항 <br/>\
+<img src = "./img/SRS_Specefication.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 대상 사업 <br/>\
+- 단계별 : 기획, 구현, 운영, 기타 <br/>\
+- 사업유형별 : 컨설팅, 개발, 유지관리, 공사 <br/><br/>\
+# 요구사항 명세 도출 과정 <br/>\
+<img src = "./img/SRS_Extract.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 요구사항 분류 <br/>\
+<img src = "./img/SRS_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 관리 2교시 5번\
 ',
  
 // 기술사양서 
