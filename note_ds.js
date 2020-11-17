@@ -1,6 +1,5 @@
 var question = question.concat(
 '4차산업 혁명',
-'[4차산업]- 국내 스마트 챌린지 사업',
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[정책]- K뉴딜',
