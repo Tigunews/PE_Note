@@ -1,4 +1,11 @@
 var question = question.concat(
+'[암호학]- 블록암호화 운영모드',
+'[블록암호]- ECB',
+'[블록암호]- CBC',
+'[블록암호]- PCBC',
+'[블록암호]- CFB',
+'[블록암호]- OFB',
+'[블록암호]- CTR',
 '보안이슈, 대응방안',
 'SW 보안 약점',
 '[공격기법]- XSS',
@@ -101,6 +108,97 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
+// 블록암호화 운영모드
+'# 정의 : 하나의 키 하에서 블록 암호를 반복적으로 안전하게 이용하는 절차 <br/><br/>\
+# 개요도 <br/>\
+<img src = "./img/BlockEncryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 비교 <br/>\
+<img src = "./img/BlockEncryptionCompare.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* KPC 93회 2교시 4번\
+',
+  
+// ECB 
+'# 정의 : Electronic Code Book <br/>\
+- 평문/암호문 블록 1:1관계 가진 기본적인 블록 암호화 모드 <br/><br/>\
+# 암호화 <br/>\
+<img src = "./img/ECB_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 복호화 <br/>\
+<img src = "./img/ECB_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- 가장 간단한 처리 <br/>\
+- 고속/병렬 처리 가능 <br/>\
+- 다른 운영 모드에 비해 기밀성 낮음 <br/><br/>\
+* KPC 93회 2교시 4번\
+',
+  
+// CBC
+'# 정의 : Chiper Block Channing <br/>\
+- 맨 첫 블록은 Initialization Vector(IV)를 통해 XOR 처리하여 암호화, 두번 째 블록은 이전 암호화 결과를 XOR 처리 암호화 <br/><br/>\
+# 암호화 <br/>\
+<img src = "./img/CBC_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 복호화 <br/>\
+<img src = "./img/CBC_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- 평문의 반복이 암호문에 반영되지 않음 <br/>\
+- 복호화만 병렬 처리 가능 <br/>\
+- 임의의 암호문 블록을 복호화 가능 <br/><br/>\
+* KPC 93회 2교시 4번\
+',
+  
+// PCBC
+'# 정의 : Chiper Block Channing <br/>\
+- 맨 첫 블록은 Initialization Vector(IV)를 통해 XOR 처리하여 암호화, 두번 째 블록은 이전 암호화 결과를 XOR 처리 암호화 <br/><br/>\
+# 암호화 <br/>\
+<img src = "./img/PCBC_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 복호화 <br/>\
+<img src = "./img/PCBC_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- 데이터와 암호화 결과를 한번 더 XOR 처리를 통해 복호화로 복잡도를 높인 암호화 <br/><br/>\
+* KPC 93회 2교시 4번\
+',
+
+// CFB
+'# 정의 : Cipher Feedback <br/>\
+- 데이터를 암호화하는 것이 아니라 IV를 암호화로, 블록 암호를 자기 동기 스트림 암호로 변환하는 방식 <br/><br/>\
+# 암호화 <br/>\
+<img src = "./img/CFB_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 복호화 <br/>\
+<img src = "./img/CFB_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- 패딩이 필요 없고, 복호화만 병렬처리 가능 <br/>\
+- 임의의 암호문 블록을 복호화 가능 <br/>\
+- 암호화에서 병렬 처리 불가능 <br/><br/>\
+* KPC 93회 2교시 4번\
+',
+
+// OFB
+'# 정의 : Output Feedback <br/>\
+- IV를 암호화하여 그 Key Stream을 생성해 두어 XOR 처리만 나중에 수행하여 성능을 향상시키는 암호화 운영모드 <br/><br/>\
+# 암호화 <br/>\
+<img src = "./img/CFB_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 복호화 <br/>\
+<img src = "./img/OFB_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- 패딩 필요 없음, 암/복호화 사전 준비 가능 <br/>\
+- 암/복호화가 같은 구조 <br/>\
+- 병렬 처리 불가능 <br/><br/>\
+* KPC 93회 2교시 4번\
+',
+
+// CTR
+'# 정의 : Counter <br/>\
+- Counter 처리를 추가하여 Key Stream을 생성해두어 XOR 처리를 통해 복잡도를 증가 시킨 암호화 운영모드 <br/><br/>\
+# 암호화 <br/>\
+<img src = "./img/CTR_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 복호화 <br/>\
+<img src = "./img/CTR_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- 패딩 필요 없음 <br/>\
+- 암/복호화 사전 준비 가능 <br/>\
+- 병렬 처리 가능 <br/><br/>\
+* KPC 93회 2교시 4번\
+',
+  
 // 보안이슈, 대응방안
 '# 보안 이슈<br/>\
 1. Device Level (센물위)<br/>\
