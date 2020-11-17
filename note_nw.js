@@ -79,6 +79,7 @@ var question = question.concat(
 'NW 가상화',
 '[NW 가상화]- NFV',
 '[NW 가상화]- Open flow',
+'유무선 전력전송',
 );
 
 var answer = answer.concat(
@@ -1527,5 +1528,23 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 대규모 네트워크, 기존 IP 적용 가능 <br/>\
 - 기존 네트워크와 같은 효율 수준 <br/><br/>\
 * KPC 23회 관리 4교시 2번\
+',
+  
+// 유무선 전력전송
+'# Overview <br/>\
+<img src = "./img/LienPowerOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# PoE(Power over Ethernet) 구성요소 <br/>\
+- 케이블 : CAT5e 이상 <br/>\
+- PoE 제품 : Switch, Router <br/>\
+- 전원수여기기 : 전원 + 데이터 필요 장치 <br/>\
+- 전원공급기기 : Ethernet 케이블 전력 공급 장치 <br/><br/>\
+# PoE Type <br/>\
+1. Spare Pair Feed : Spare Cable 사용, 모든 Lan 핀 사용 <br/>\
+<img src = "./img/PoESparePairFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Phantom Feed : Data Cable 사용 <br/>\
+<img src = "./img/PoEPhantomFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# WPT(Wireless Power Transfer) <br/>\
+<img src = "./img/WPT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 응용 4교시 8번\
 ',
 );
