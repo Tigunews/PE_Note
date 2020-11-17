@@ -6,6 +6,7 @@ var question = question.concat(
 '[블록암호]- CFB',
 '[블록암호]- OFB',
 '[블록암호]- CTR',
+'[공개키]- 디피헬만 알고리즘',
 '보안이슈, 대응방안',
 'SW 보안 약점',
 '[공격기법]- XSS',
@@ -197,6 +198,23 @@ var answer = answer.concat(
 - 암/복호화 사전 준비 가능 <br/>\
 - 병렬 처리 가능 <br/><br/>\
 * KPC 93회 2교시 4번\
+',
+  
+// 디피헬만 알고리즘
+'# 정의 : Diffie-Hellman Algorithm <br/>\
+- 두 사람이 암호되지 않은 통신망을 통해 공통의 비밀키를 공유할 수 있도록 암호키 교환 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- 공개키 사용 <br/>\
+- 이산대수 어려움 : 이산대수의 난해함 <br/>\
+- 비밀키 사용 : 암호문 생성 및 평문의 복구를 위한 복호화 키 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/DiffieHellmanAlgorithmMechanishm.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 상세절차 <br/>\
+<img src = "./img/DiffieHellmanAlgorithmMechanishmDetail.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 취약점, 대응방안 <br/>\
+- 취약점 : 이산대수 원리, 비밀키(공유키) 기반, MITM <br/>\
+- 대응방안 : RSA (소인수 분해 해독, 공개키/개인키 기반) <br/><br/>\
+* KPC 93회 관리 1교시 9번\
 ',
   
 // 보안이슈, 대응방안
