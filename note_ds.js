@@ -2058,10 +2058,13 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '# 정의 : 연계, 상호 운용성, 탄력성 보장 클라우드 기술 <br/>\
 - 2개 이상의 CSP(Cloud Service Provider)가 제공하는 Public or Private 구성된 클라우드 운영 방식 <br/><br/>\
 # 특징 <br/>\
-- 고가용성 : SPOF 방지 <br/>\
-- 유연성 : 선택 옵션 <br/>\
-- 비용 효율성 : 가격경쟁, 종속성 탈피 <br/>\
-- Fail Over : 데이터, 워크플로우, 시스템 백업 가능 <br/><br/>\
+1. 기술적 <br/>\
+- 독립성(Lockin) : 선택적 서비스(라이선스), 협상 경쟁력(ROI)<br/>\
+- 운용성 : 상호 운용(연계), 스냅샷<br/>\
+- 실시간성 : Kubernetes Orchestration, 그로스해킹 최적화(A/B Test) <br/><br/>\
+2. 비즈니스적 <br/>\
+- 탄력성 : 최소 비용, BCP(RTO/RPO)<br/>\
+- 다양성 : 최적 도구(Shadow IT 예방), Polyglot 환경(Cross Compiler) <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/MultiCloud.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
@@ -2070,6 +2073,13 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - End to End Connectivity : 안전한 이더넷 코어 스위치 및 무선 액세스 <br/>\
 - Data Center : Leaf, Spine, Core 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
 - Campus and branch : sd-wan 라우팅, sd-branch 보안으로 액세스 <br/><br/>\
+# 구축시 고려사항 <br/>\
+1. 클라우드 연계 <br/>\
+- 분산 App 서비스 연계 : 개체 위치 최적화/자동화(URL 기반 경로), 가상 멀티테넌시(오버레이 네트워크) <br/>\
+- XaaS 오퍼링 연계 : Contents as a Service (URI, RESTful), I/P/SaaS 연계(부하/배포/과금 기술) <br/><br/>\
+2. 멀티 클라우드 보안성 확보 <br/>\
+- 멀티레이어 보안성 확보 : 기초 데이터 암호화(AES, SHA-2, RSA), NFV(SECaaS 기반 CASE 연계) <br/>\
+- 데이터 보호 및 흐름 가시화 : 중요도별 Access 분리(Bell-Lapadula), 능동형 URI 감시 가시화(URI 경로 감시, vDPI 페이로드 분석) <br/><br/>\
 * KPC 93회 2교시 2번\
 ',
   
