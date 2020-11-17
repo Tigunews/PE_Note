@@ -12,9 +12,10 @@ var question = question.concat(
 '결함허용 시스템(FTS:Fault Tolerant System)',
 '고가용성(High Availability)',
 '[고가용성]-NUMA 시스템',
-'우선순위역전현상(Priority Inversion)',
-'WDT(Watch Dog Timer)',
-'Virtual Memory',
+'우선순위역전현상',
+'WDT',
+'[메모리 관리]- 할당 기법',
+'[할당기법]- Paging, Segment',
 '[Virtual Memory]- Mapping',
 'Cache Memory',
 'FeRAM',
@@ -431,37 +432,18 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 * 다단계 참고 <br/>\
 - Reset > Kick > Timeout > Enable > Timeout > Timeout되면 Trigger Correction Action \
 ',
-
-// Virtual Memory 
-'# 정의 : 주기억화된 보조기억장치<br/>\
-- 보조기억장치를 주기억장치처럼 활용하는 기술이며 보조기억장치를 연속된 주기억장치로 인식 <br/>\
-- 주기억장치 공간 확대가 목적이며, 소프트웨어적인 방법으로 구현 <br/>\
-- 이때 활용되는 보조기억장치는 "직접 접근 장치(DASD)" 만 가능 <br/><br/>\
-# 암기 <br/>\
-- 관리기법 : 할호교배 <br/>\
-1) 할 : 페,세,페세 <br/>\
-2) 호 : 디,프 <br/>\
-3) 교 : FLLSR <br/>\
-4) 배 : 퍼배워넥 <br/>\
-- 페이지 사상 : 직,연,직연 <br/>\
-- 문제 : 디페스 <br/><br/>\
-# 관리정책 <br/>\
-- 할당정책 : 페,세,페세 <br/>\
-- 호출정책 : Demand Fetch, Pre Fetch <br/>\
-- 교체정책 : FIFO, LRU, LFU, SCR, RANDOM <br/>\
-- 배치정책 : First Fit, Best Fit, Worst Fit, Next Fit(탐색후)<br/><br/>\
-# 할당기법 <br/>\
-- 페이징 기법 : PMT , page-in, page-out <br/>\
-- 세그멘테이션 기법 : SMT <br/>\
-- 페이지화 된 세그먼트(Page Segments) : 각 Segment 안에 있는 주소들은 고정 길이 Page로 분할 <br/><br/>\
-# 페이징vs세그먼테이션 비교 <br/>\
-- 할당 단위 : 고정 / 가변 <br/>\
-- 적재 단위 : 프로그램 일부 적재 / 프로그램 전체 적재 <br/>\
-- 장점 : 외부단편화x, 교체시간 짧음 / 코드,데이터 공유 용이 <br/>\
-- 단점 : Thrashing 문제 심각, 내부단편화 코드, 코드 데이터 공유 논란 / 외부 단편화 심각, MM이 커야함, 교체시간 Second Change(페이지 참조 비트 1이면 2차 기회), Counting Algorithm(LFU, MFU), Page Buffer Alogorithm(삭제전 가용 pool사용) <br/><br/>\
-# 문제점 : Demand Paging, Page Fault Trap, Thrashing(->Locality Model, Working set, PFF 조정) <br/><br/>\
-<img src = "./img/가상메모리_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/가상메모리_2.png" style = "max-width:100%; height:auto;">\
+  
+// 할당 기법
+'<img src = "./img/MemoryAdmin.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 응용 2교시 7번\
+',
+  
+// Paging Segment 
+'# Paging, Segment <br/>\
+<img src = "./img/PagingSegment.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Page화된 Segment <br/>\
+<img src = "./img/PagingerSegment.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 응용 2교시 7번\
 ',
 
 // [Virtual Memory]- Mapping 
