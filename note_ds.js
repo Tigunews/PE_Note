@@ -1153,15 +1153,18 @@ var answer = answer.concat(
 # 특징 <br/>\
 - Google GO언어로 구현 <br/>\
 - Linux 컨테이너 작업 자동화 하는 오픈소스 플랫폼 <br/>\
-- 다중 호스트의 컨테이너 일정관리 <br/><br/>\
-# 주요기능 (로롤배자듀스오) <br/>\
+- 다중 호스트의 컨테이너 일정관리 <br/>\
+- CNCF Graduated Project <br/><br/>\
+# 주요기능 (로롤배자듀스오토앤) <br/>\
 - 로드밸런싱 : POD에게 고유한 IP 주소와 POD 집합에 대한 단일 DNS 명 부여 / Service<br/>\
 - 자동화된 롤아웃, 롤백 : 애플리케이션 모니터링, 동시 종료 않도록 보장 / Deployment <br/>\
 - 배치 실행 : CI 워크로드 관리, 실패한 컨테이너 교체 / Deployment <br/>\
 - 자가치유 : 응답하지 않는 컨테이너 제거, 준비될 때까지 알리지 않음 / Deployment <br/>\
 - IPv4/IPv6 이중 스택 : POD 서비스에 IPv4,6 할당 / Dual Stack <br/>\
 - Horizontal 스케일링 : 간단한 명령어나 UI를 통해 Scale Up Down / Kubectl <br/>\
-- 오케스트레이션 : 여러 호스트 배포 및 업데이트 제어 자동화 / master <br/><br/>\
+- 오케스트레이션 : 여러 호스트 배포 및 업데이트 제어 자동화 / master <br/>\
+- 서비스 토폴로지 : 클러스터 토폴리지 라우팅 / Ingress <br/>\
+- 엔드포인트 슬라이스 : 확장 가능한 네트워크 추적 / Kube-Proxy <br/><br/>\
 # 구성요소 <br/>\
 1. Master Node : 노드관리, 스케줄링, 활동 조율<br/>\
 - API Server : 클러스터 노드와 통신 <br/>\
