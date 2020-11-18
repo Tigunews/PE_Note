@@ -600,6 +600,9 @@ var answer = answer.concat(
 - ReLu : 생성자 모든층 / y = max(0,z) <br/>\
 - Tanh : 마지막 결과 도출 <br/>\
 - Leaky ReLu : 판별자 모든층 / f(x) = max(0.01x, x) <br/><br/>\
+# 한계 <br/>\
+- 장기간 학습시 Oscilating mode 발생(핑퐁) <br/>\
+- 장기간 학습시 Collapse 문제 발생 <br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
 
