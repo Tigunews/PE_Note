@@ -3841,7 +3841,8 @@ P 히스토그램 : Data 분포 <br/>\
 # 인증제도 기준 <br/>\
 <img src = "./img/GS_Standard.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 절차 <br/>\
-<img src = "./img/GS_Process.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/GS_Process.png" style = "max-width:100%; hegiht:auto;"><br/>\
+<img src = "./img/GS_Process_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 효과 <br/>\
 <img src = "./img/GS_Effect.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * KPC 93회 관리 3교시 6번\
