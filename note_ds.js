@@ -90,6 +90,7 @@ var question = question.concat(
 '[블록체인]- 타원곡선 암호화 알고리즘(ECDSA)',
 '[블록체인]- 스마트시티 활용',
 '[블록체인]- Off Chain',
+'[블록체인][Off Chain]- Side Chain',
 '[블록체인][Off Chain]- 라이트닝 네트워크',
 '[블록체인]- 블록체인 거버넌스',
 '[블록체인]- 플랫폼 보안',
@@ -1637,10 +1638,20 @@ var answer = answer.concat(
 # 개념도 <br/>\
 <img src = "./img/OffChain.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
-- Side Chain : 빠르게 수행, Main 반영 / DappCoins <br/>\
+- Side Chain : 빠르게 수행, Main 반영 / 루트스탁, DappCoins <br/>\
 - Child Chain : 분산/병렬 처리, 하위 / Plasma <br/>\
 - Lightning Network : 개별 처리, 결과만 기록 / 아마존 상품권 <br/><br/>\
 * 아이리포 23회 1교시 1번\
+',
+  
+// Side Chain
+'# 정의 : 기존의 느린 비트코인을 잉요하지 않고 빠르고 쉽고 저렴하게 거래할 수 있는 별도 거래 공간 <br/><br/>\
+# 필요성 <br/>\
+- 비트코인 낮은 속도 <br/>\
+- 비트코인 비싼 트랜잭션 수수료 <br/>\
+- 비트코인 블록체인에서는 비트코인만 전송 가능 <br/><br/>\
+# 절차도 <br/>\
+<img src = "./img/SideChain.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 라이트닝 네트워크
