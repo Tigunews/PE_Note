@@ -152,7 +152,7 @@ var answer = answer.concat(
 ',
   
 // PCBC
-'# 정의 : Chiper Block Channing <br/>\
+'# 정의 : Propagation CBC <br/>\
 - 맨 첫 블록은 Initialization Vector(IV)를 통해 XOR 처리하여 암호화, 두번 째 블록은 이전 암호화 결과를 XOR 처리 암호화 <br/><br/>\
 # 암호화 <br/>\
 <img src = "./img/PCBC_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
