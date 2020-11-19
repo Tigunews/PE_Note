@@ -1,6 +1,6 @@
 var question = question.concat(
 '암호학',
-'[암호학]- 블록암호화 운영모드',
+'[암호학]- 블록암호화',
 '[블록암호]- ECB',
 '[블록암호]- CBC',
 '[블록암호]- PCBC',
@@ -138,7 +138,7 @@ var answer = answer.concat(
 ',
   
 // CBC
-'# 정의 : Chiper Block Channing <br/>\
+'# 정의 : Cipher Block Channing <br/>\
 - 맨 첫 블록은 Initialization Vector(IV)를 통해 XOR 처리하여 암호화, 두번 째 블록은 이전 암호화 결과를 XOR 처리 암호화 <br/><br/>\
 # 암호화 <br/>\
 <img src = "./img/CBC_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
