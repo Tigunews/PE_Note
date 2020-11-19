@@ -1,4 +1,5 @@
 var question = question.concat(
+'암호학',
 '[암호학]- 블록암호화 운영모드',
 '[블록암호]- ECB',
 '[블록암호]- CBC',
@@ -109,7 +110,11 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
-// 블록암호화 운영모드
+// 암호학
+'<img src = "./img/Encryption.png" style = "max-width: 100%; height: auto;">\
+',
+  
+// 블록암호화
 '# 정의 : 하나의 키 하에서 블록 암호를 반복적으로 안전하게 이용하는 절차 <br/><br/>\
 # 개요도 <br/>\
 <img src = "./img/BlockEncryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
