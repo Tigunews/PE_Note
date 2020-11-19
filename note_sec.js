@@ -181,7 +181,7 @@ var answer = answer.concat(
 '# 정의 : Output Feedback <br/>\
 - IV를 암호화하여 그 Key Stream을 생성해 두어 XOR 처리만 나중에 수행하여 성능을 향상시키는 암호화 운영모드 <br/><br/>\
 # 암호화 <br/>\
-<img src = "./img/CFB_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+<img src = "./img/OFB_Encryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 복호화 <br/>\
 <img src = "./img/OFB_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 특징 <br/>\
