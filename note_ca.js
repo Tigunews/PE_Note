@@ -14,8 +14,12 @@ var question = question.concat(
 '[고가용성]-NUMA 시스템',
 '우선순위역전현상',
 'WDT',
+'메모리 관리 기법',
 '[메모리 관리]- 할당 기법',
-'[메모리 관리][할당 기법]- Paging, Segment',
+'[메모리 관리][할당 기법][연속 로딩]- 단일 분할 할당',
+'[메모리 관리][할당 기법][연속 로딩]- 다중 분할 할당',
+'[메모리 관리][할당 기법]- 분산 로딩 기법(Virtual Memory, Paging, Segmentation)',
+'[메모리 관리][할당 기법]- 단편화',
 '[Virtual Memory]- Mapping',
 'Cache Memory',
 'FeRAM',
@@ -40,15 +44,15 @@ var question = question.concat(
 '[가상 메모리 페이지 교체 알고리즘]- 스레싱(Thrashing)',
 'Disk 스케줄링',
 '[Disk 스케줄링]- 알고리즘 유형',
-'리소스 공유방법 동기화방법',
-'[리소스 공유방법 동기화방법]- 상호배제',
-'[리소스 공유방법 동기화방법][상호배제]- 세마포어, 모니터',
-'[리소스 공유방법 동기화방법][상호배제]- Swap Test & Set()',
-'[리소스 공유방법 동기화방법][상호배제]- 데커 피터슨 램포드',
-'[리소스 공유방법 동기화방법]- 운영체제의 크리티컬섹션',
-'[리소스 공유방법 동기화방법]- 뮤텍스',
-'[리소스 공유방법 동기화방법]- 스핀락',
-'[리소스 공유방법 동기화방법]- 교착상태',
+'리소스 동기화',
+'[리소스 동기화]- 상호배제',
+'[리소스 동기화][상호배제]- 세마포어, 모니터',
+'[리소스 동기화][상호배제]- Swap Test & Set()',
+'[리소스 동기화][상호배제]- 데커 피터슨 램포드',
+'[리소스 동기화]- 운영체제의 크리티컬섹션',
+'[리소스 동기화]- 뮤텍스',
+'[리소스 동기화]- 스핀락',
+'[리소스 동기화]- 교착상태',
 '[교착상태]- 은행가알고리즘',
 '[교착상태]- 자원할당 그래프',
 'RAID',
@@ -433,17 +437,71 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - Reset > Kick > Timeout > Enable > Timeout > Timeout되면 Trigger Correction Action \
 ',
   
-// 할당 기법
+// 메모리 관리 기법
 '<img src = "./img/MemoryAdmin.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 응용 2교시 7번\
 ',
   
-// Paging Segment 
-'# Paging, Segment <br/>\
-<img src = "./img/PagingSegment.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Page화된 Segment <br/>\
-<img src = "./img/PagingerSegment.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 93회 응용 2교시 7번\
+// 할당기법
+'# 종류 <br/>\
+<img src = "./img/MemoryAllocationOverview.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 단일 분할 할당
+'# 개념 : 하나의 상용자만 주기억 장치의 사용자 영역 사용 기법 <br/><br/>\
+# 특징 <br/>\
+- 초기 운영체제 사용 기법 <br/>\
+- 경계 레지스터 사용 : OS(Kernel) / USER <br/>\
+# 종류 <br/>\
+- Overlay : 프로그램 조각화 후 적층 <br/>\
+- Swapping : 프로그램 전체 Swap in (보조->주) / 페이징 기법 발전\
+',
+  
+// 다중 분할 할당
+'# 고정 분할 할당 <br/>\
+1. 개념 : MFT, 정적 할당 <br/>\
+- 주기억장치의 사용자 영역을 여러개의 고정된 크기로 분할하여 사용하는 기법 <br/><br/>\
+2. 특징 <br/>\
+- 프로그램 전체 주기억장치 위치 <br/>\
+- 내부, 외부 단편화 발생 <br/>\
+- 초기 다중 프로그래밍 사용 <br/>\
+- 실행할 크기 미리 알고 있어야 함 <br/>\
+<font color = "red">* 내부 단편화 : 작을때 남은 공간 <br/>\
+* 외부 단편화 : 클때 넘친 공간 </font><br/><br/>\
+# 가변 분할 할당 <br/>\
+1. 개념 : MVT, 동적 할당 <br/>\
+- 프로그램을 주기억장치에 적재할 때 필요한 크기로 영역을 분할하는 기법 <br/><br/>\
+2. 특징 <br/>\
+- 고정분할 기법 단편화 해소 <br/>\
+- 주기억 장치 효율적 사용 <br/>\
+- 각 영역 사이 단편화 발생 가능\
+',
+  
+// 분산 로딩 기법
+'# 가상 기억 장치 : 주기억 장치 내 용량이 부족할 때 사용하지 않은 프로그램을 보조기억장치 내 특별한 영역으로 이동해서 해당 보조기억장치의 일부를 주기억 장치처럼 사용할 수 있는 기법 <br/><br/>\
+# 암기 <br/>\
+- Paging : 가PO / TPF / 물FO <br/>\
+- Segmentation : 가SO / TSBL / 물 BO <br/>\
+- Paged Segmentation : 가SPO / STSBL / PTPF / 물FO <br/><br/>\
+# Paging <br/>\
+<img src = "./img/Paging.png" style = "max-width:100%; height:auto;"><br/>\
+# Segment <br/>\
+<img src = "./img/Segmentation.png" style = "max-width:100%; height:auto;"><br/>\
+# Paged Segmentation <br/>\
+- 페이징 기법 : 메모리 관리 편의성, 외부 단편화 제거 <br/>\
+- 세그먼트 기법 : 논리적 프로그램 개체 보호, 확장성 자료 구조 처리 <br/>\
+<img src = "./img/PagedSegmentation.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 단편화
+'# 정의 : Fragmentation <br/>\
+- 주기억 장치에서 프로그램을 할당하고 반납하는 과정에서 발생하는 사용되지 않는 작은 조각 공간 <br/><br/>\
+# 종류 <br/>\
+- 내부 단편화 : 실행 프로그램 < 사용자 영역 <br/>\
+- 외부 단편화 : 실행 프로그램 > 사용자 영역 <br/><br/>\
+# 해결방법 (Relocation) <br/>\
+- 통합 기법 : 인접된 빈 분할 공간 통합 <br/>\
+- 압축 기법 : Garbage Collection \
 ',
 
 // [Virtual Memory]- Mapping 
