@@ -1882,7 +1882,7 @@ var answer = answer.concat(
 6.정황에 의존적 : 경험기반 테스트 활용 <br/><br/>\
 [검증] [요구사항]<br/>\
 7. 오류부재의 궤변 : 대규모 crowd sourcing test 수행 <br/><br/>\
-- 기타 : 마이어의 법칙, Test Case, 결과 Review, 경제성의 원리, 요르돈의 법칙 (Snow Ball Effect) < br/>\
+- 기타 : 마이어의 법칙, Test Case, 결과 Review, 경제성의 원리, 요르돈의 법칙 (Snow Ball Effect) <br/>\
 -> Test Case : 기대되는 표준 결과 포함(테스트 오라클), 예측오류, 기대되지 않은 결함이 있다는 가정 아래 Test Plan 수립 <br/>\
 -> 마이어 법칙 : 프로그램 어느부분에서 오류가 존재할 확률은 그 부분에서 발견된 오류수에 비례함 <br/><br/>\
 <img src = "./img/Test7.png" style = "max-width:100%; height:auto;">\
