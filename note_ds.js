@@ -2123,6 +2123,9 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 // 멀티 클라우드
 '# 정의 : 연계, 상호 운용성, 탄력성 보장 클라우드 기술 <br/>\
 - 2개 이상의 CSP(Cloud Service Provider)가 제공하는 Public or Private 구성된 클라우드 운영 방식 <br/><br/>\
+# Overview <br/>\
+- 비즈니스적 : 폭발적 성장, 스토리지량 증가 <br/>\
+- 기술적 : IoT 부상, NW 기술 제고 <br/><br/>\
 # 특징 <br/>\
 1. 기술적 <br/>\
 - 독립성(Lockin) : 선택적 서비스(라이선스), 협상 경쟁력(ROI)<br/>\
