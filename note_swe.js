@@ -1741,19 +1741,14 @@ var answer = answer.concat(
 - 반복모델 및 검증 : 정형명세 기준 반복적 검증 <br/>\
 - 상태폭발 문제 : 규모에 따라 상태수 폭발적 증가 <br/><br/>\
 # 정형검증 유형 <br/>\
-1. 정리 증명 <br/>\
-- SW정의 후 추론규칙을 기계적으로 적용하여 증명 <br/>\
-- PVS, HOL, Zeves <br/><br/>\
-2. 모델 체킹 <br/>\
-- SW 동작시 : 특성 만족 여부를 자동화된 방식으로 검증 <br/>\
-- SMV, Ecosim, SpaceEX <br/><br/>\
+<img src = "./img/FormalVerificationSpec.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/정형검증.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
 <img src = "./img/정형검증절차.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 상태폭발문제 해결방안 <br/>\
 - 기호적 모델 체킹 : 너비 우선 탐색 <br/>\
 - 추상화 기법 : 모델 경량화 <br/>\
-- 릴레이 모델 체킹 : 수량 나누어 검사 \
+- 릴레이 모델 체킹 : 수량 나누어 검사 <br/><br/>\
 * KPC 93회 1교시 10번\
 ',
 
