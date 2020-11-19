@@ -15,7 +15,7 @@ var question = question.concat(
 '우선순위역전현상',
 'WDT',
 '[메모리 관리]- 할당 기법',
-'[할당기법]- Paging, Segment',
+'[메모리 관리][할당 기법]- Paging, Segment',
 '[Virtual Memory]- Mapping',
 'Cache Memory',
 'FeRAM',
