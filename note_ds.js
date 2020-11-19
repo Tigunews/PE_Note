@@ -2,7 +2,7 @@ var question = question.concat(
 '4차산업 혁명',
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
-'[4차산업]- Smart Energey',
+'[4차산업]- Smart Energy',
 '[정책]- 데이터3법',
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
@@ -273,7 +273,7 @@ var answer = answer.concat(
 * 아이리포 23회 관리 2교시 1번\
 ',
   
-// Smart Enegery
+// Smart Energy
 '# 에너지의 생산, 전달 및 소비 과정에서 다양한 첨단 ICT 기술과 융합되어 에너지 생산,전달,소비의 효율성,안전성,친환경성을 높여가는 서비스 <br/><br/>\
 # 기술요소 <br/>\
 - AMI : 스마트미터, MDMS / PLC, Wifi, Zigbee, M2M <br/\
