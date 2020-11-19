@@ -216,7 +216,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 종류 <br/>\
 - Code : 코드자체 구성 / Hex, Bin <br/>\
 - Data : 전역변수, 정적변수, 배열, 구조체 / global, static, array, structure <br/>\
-- Heap : 동적 메모리 / maaloc(), new() <br/>\
+- Heap : 동적 메모리 / malloc(), new() <br/>\
 - Stack : 지역변수, 매개변수, 리턴 값 / \
 ',
 
