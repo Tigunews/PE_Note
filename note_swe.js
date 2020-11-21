@@ -1866,22 +1866,14 @@ var answer = answer.concat(
 // 테스트 7
 '# ISTQB의 SW테스트 7가지 원리 <br/><br/>\
 # 유형 : 발완초집살정부 <br/>\
-[테스트 일반] [한계] <br/>\
-1. 결함발견활동 <br/>\
-2. 불완전 :Tmmi, TPI등 인증 활용 <br/><br/>\
-[계획] [효율성] <br/>\
-3. 개발초기에 시작 <br/>\
-4. 결함집중(MC/DC) <br/><br/>\
-[검증/개발] [완성도] <br/>\
-5.살충제 패러독스 : 테스트 케이스 자동화 도구 이용 <br/>\
-6.정황에 의존적 : 경험기반 테스트 활용 <br/><br/>\
-[검증] [요구사항]<br/>\
-7. 오류부재의 궤변 : 대규모 crowd sourcing test 수행 <br/><br/>\
+<img src = "./img/Test7.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 기타 : 마이어의 법칙, Test Case, 결과 Review, 경제성의 원리, 요르돈의 법칙 (Snow Ball Effect) <br/>\
 -> Test Case : 기대되는 표준 결과 포함(테스트 오라클), 예측오류, 기대되지 않은 결함이 있다는 가정 아래 Test Plan 수립 <br/>\
 -> 마이어 법칙 : 프로그램 어느부분에서 오류가 존재할 확률은 그 부분에서 발견된 오류수에 비례함 <br/><br/>\
+# Grouping <br/>\
 <img src = "./img/Test7Rule.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Test7.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 테스트케이스 사례 <br/>\
+<img src = "./img/Test7RuleExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 4교시 1번\
 ',
 
