@@ -3824,10 +3824,10 @@ P 히스토그램 : Data 분포 <br/>\
 '# 정의 : 국내 품질인증제도 <br/>\
 - TTA가 국내 SW완성도, 기술력, 사용성, 신뢰성 평가하여 제품에 부여하는 품질인증제도 <br/><br/>\
 # Overview <br/>\
-<img src = "./img/GS_Target.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 인증 대상 <br/>\
 <img src = "./img/GS_Overview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 인증제도 기준 <br/>\
+# 인증 대상 <br/>\
+<img src = "./img/GS_Target.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 인증제도 기준 (측시평)<br/>\
 <img src = "./img/GS_Standard.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 절차 <br/>\
 <img src = "./img/GS_Process.png" style = "max-width:100%; hegiht:auto;"><br/>\
