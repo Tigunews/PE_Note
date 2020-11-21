@@ -511,7 +511,7 @@ var answer = answer.concat(
 3. Boosting : 오분류 데이터 가중치 <br/>\
 <img src = "./img/EnsembleBoosting.png" style = "max-width:100%; height:auto;"><br/>\
 * 데이터 많은 경우 유용 <br/><br/>\
-* 120회 관리 3교시 3번<br/><br/>\
+* 120회 관리 3교시 3번<br/>\
 * 아이리포 23회 1교시 3번\
 ',
 
