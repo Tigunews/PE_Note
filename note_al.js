@@ -585,7 +585,8 @@ var answer = answer.concat(
 - Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
 - Disco GAN : 이미지, 텍스트 매핑 / 객체간 특성 관계 파악<br/>\
 - Star GAN : 도메인 동시 변환 / 이미지 변환 특화<br/>\
-- Fusion GAN : 최소 패치 훈련 / 객체 -> 원하는 모양 <br/><br/>\
+- Fusion GAN : 최소 패치 훈련 / 객체 -> 원하는 모양 <br/>\
+<img src = "./img/GAN_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
   
