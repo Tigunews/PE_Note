@@ -1,6 +1,6 @@
 var question = question.concat(
 '암호학',
-'[암호학]- 블록암호화',
+'[암호학]- 블록 암호화',
 '[블록암호]- ECB',
 '[블록암호]- CBC',
 '[블록암호]- PCBC',
@@ -114,9 +114,9 @@ var answer = answer.concat(
 '<img src = "./img/Encryption.png" style = "max-width: 100%; height: auto;">\
 ',
   
-// 블록암호화
+// 블록 암호화
 '# 정의 : 하나의 키 하에서 블록 암호를 반복적으로 안전하게 이용하는 절차 <br/><br/>\
-# 개요도 <br/>\
+# 개요도 : 블록 암호화만 사용 / 자기 동기 스트림 <br/>\
 <img src = "./img/BlockEncryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 비교 <br/>\
 <img src = "./img/BlockEncryptionCompare.png" style = "max-width: 100%; height: auto;"><br/><br/>\
