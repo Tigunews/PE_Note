@@ -1,5 +1,6 @@
 var question = question.concat(
 'OS',
+'[OS]- Disk 할당 기법',
 'Unix OS', 
 '[Unix OS]- i-node Block',
 'Loader',
@@ -71,6 +72,20 @@ var answer = answer.concat(
 2. 분류 2 <br/>\
 - 주요기능 : 프로세스 관리, 보조기억장치관리, 파일관리, 장치관리, 메모리관리 <br/>\
 - 보조기능 : 시스템보호, 명령어해석, 네트워킹 <br/><br/>\
+* KPC 97회 응용 2교시 7번\
+',
+  
+// Disk 할당 기법
+'# 종류 <br/>\
+1. 연속 할당 <br/>\
+- 개념 : 파일들이 디스크내에 연속적으로 공간에 할당되는 방식 <br/>\
+- 특징 : 파일크기에 알맞은 연속된 공간이 없으면 할당 불가 <br/><br/>\
+2. 연결 할당 <br/>\
+- 개념 : 포인터 연결 <br/><br/>\
+3. 인덱스 할당 <br/>\
+- 개념 : 불연속 할당, 색인 유지 방식 <br/><br/>\
+# 기법들 간 관계 <br/>\
+<img src = "./img/DiskAllocation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 응용 2교시 7번\
 ',
   
