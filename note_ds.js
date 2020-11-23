@@ -1118,15 +1118,17 @@ var answer = answer.concat(
 // [가상화]- Docker
 '# 정의 : 컨테이너 기반 가상화 기법 <br/>\
 - 리눅스 컨테이너 기술을 바탕으로 애플리케이션을 격리된 상태에서 실행하는 가상화 기술 <br/>\
-- (애리바) <br/>\
 <img src = "./img/VM_Containor.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 구성 <br/>\
-- 도커 엔진 : 컨테이너 제어, 생성 <br/>\
-- 호스트 OS : 리소스 공유 <br/>\
-- 도커파일 : 이미지 설정 <br/>\
-- 이미지 Repository : 패키징, 허브 <br/>\
-- 컨테이너 : 이미지 실행 <br/>\
-<img src = "./img/Docker_1.jpg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/Docker.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Client : 도커 컨테이너 관리, 실행 Binary 파일 <br/>\
+- Image : 프로그램, 라이브러리, 소스 설치뒤 파일로 만든 것 <br/>\
+- Conatiner : 독립적 공간 할당 실행한 런타임 객체 <br/>\
+- Deamon : 호스트 설치, 클라이언트 상호작용, 컨테이너 관리 프로세스 <br/>\
+- Registry : 도커 이미지를 관리할 수 있게 제공된 저장공간 <br/>\
+- Network : 호스트 간, 컨테이너 간 데이터 전송 위한 네트워크<br/>\
+- Orchestration : 멀티 컨테이너 조직화  연결 기능, MSA 가용성, LB 구현 \
 ',
   
 // LXC, 도커
