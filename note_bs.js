@@ -274,6 +274,7 @@ var answer = answer.concat(
 - 조직 : 디지털 전담 조직, Cross Functional Team <br/>\
 - 전략 : 고객중심, 디지털 거버넌스 <br/>\
 - 프로세스 : 소규모 시도, Top-Down 리더쉽 <br/><br/>\
+# 추진 전략 : Vision > Organization > Governance > Business Model > Innovation <br/><br/>\
 * KPC 97회 2교시 4번\
 ',
 
