@@ -1127,7 +1127,7 @@ var answer = answer.concat(
 - Conatiner : 독립적 공간 할당 실행한 런타임 객체 <br/>\
 - Deamon : 호스트 설치, 클라이언트 상호작용, 컨테이너 관리 프로세스 <br/>\
 - Registry : 도커 이미지를 관리할 수 있게 제공된 저장공간 <br/>\
-- Network : 호스트 간, 컨테이너 간 데이터 전송 위한 네트워크<br/>\
+- Network : 네트워크 오버레이, 가상 네트워크 구성 <br/>\
 - Orchestration : 멀티 컨테이너 조직화  연결 기능, MSA 가용성, LB 구현 \
 ',
   
