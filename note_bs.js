@@ -6,7 +6,6 @@ var question = question.concat(
 '[ITSM]- SLM',
 'ITIL',
 '[ITIL]- SKMS',
-'OLAP',
 'ISP',
 '플랫폼 경제',
 'RTE',
@@ -86,7 +85,8 @@ var question = question.concat(
 var answer = answer.concat(
 // Grouping Keyword
 '- ABCD : Audience(대상), Behavior(행위), Condition(조건), Degree(기준) <br/>\
-- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) \
+- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) <br/>\
+- 기술,조직,전략,프로세스 \
 ',
  
 // ITSM
@@ -176,28 +176,6 @@ var answer = answer.concat(
 - Data&Information\
 ',
  
-// OLAP
-'# 정의 : 직접 접근, 대화식 정보 분석 기법 <br/>\
-- On-Line Analytical Processing <br/>\
-- 최종사용자가 다차원 정보에 직접 접근하여 대화식으로 정보를 분석하고 의사결정에 활용하는 과정 및 도구 <br/><br/>\
-# 구성요소 <br/>\
-- DW : 의사결정 자원정보 통합 DB <br/>\
-- ETL/ETT : 데이터 처리 전과정 <br/>\
-- ODS : OS 데이터 추출 <br/>\
-- Metadata : Data 요약정보 저장관리 <br/>\
-- Data Mart : 소규모 데이터 추출 <br/>\
-- Reporting Toool : 질의 결과 Chart, Report 변환 <br/><br/>\
-# 유형 <br/>\
-- ROLAP : RDB 저장, 분석 <br/>\
-- MOLAP : 다차원 DB 사용 <br/>\
-- HOLAP : R + M <br/>\
-- DOLAP : 서버 없이 Data Warehouse 연결 <br/>\
-- Web OLAP : Web 사용 <br/><br/>\
-* Extract, Transform and Load <br/>\
-* Exttracton, Transformation, Transportation <br/>\
-* Operational Data Store \
-',
- 
 // ISP
 '# 정의 : 조직의 목표 달성을 위한 계획 수립 <br/>\
 - Information Stragey Planning <br/>\
@@ -276,43 +254,27 @@ var answer = answer.concat(
 ',
 
 // Digital Transformation
-'# 정의 : 디지털 기업환경 패러다임 <br/>\
-- 기업/조직운영과 서비스를 향상시키고, 고객에게 제공하는 핵심 제품이나 서비스 개선부터 시작해 내부 프로세스를 개선 하고 고객과의 관계를 항상 시키는 모든 과정에 디지털 기술이 활용하는 기업환경 패러다임 <br/>\
-- 기업이 디지털과 물리적인 요소들을 통합하여 비즈니스 모델을 변화하고, 산업에 새로운 방향을 정립하는 것 <br/><br/>\
-# 암기 : 생제비 <br/><br/>\
-# 특징 <br/>\
-- 디지털 기술 활용 <br/>\
-- 내부 프로세스 개선 <br/>\
-- 고객 관계 향상 <br/><br/>\
-# 변화 <br/>\
-- Digitization : 아날로그 정보 -> 디지털 정보 전환 <br/>\
-- Digitalization : 음성, 영상, 데이터 등 다른 성질 정보를 종합 처리 <br/>\
-- Digital Transformation : 디지털화의 총체적 및 전체적 사회적 효과 <br/><br/>\
-# 구성 <br/>\
-- 애널리틱스 기술 : NLP, 웹로그 분석 <br/>\
-- API <br/>\
-- 클라우드 <br/>\
-- CIO 역할 <br/>\
-- 디지털 요소 : Innovation Accelerators(NG보안, AR/VR로봇) <br/>\
-- Third Platform : CBIMS, 모빌리티 <br/><br/>\
-# 추진전략 : 비전수립 > 조직정보 및 인재확보 > 거버넌스 체계 구축 > 비즈니스모델 개발 > 혁신 및 R&D 추진 <br/><br/>\
-# 유형 (생제비) <br/>\
-1. 생산성과 효율성을 중시하는 전환 : 디지털 전환을 통한 기존 공정의 축소와 효율화, 제조업의 리쇼어링(Re-shoring) 현상 등장 배경 <br/>\
-2. 제품혁신형 전환 : 로칼 모터스(Local Motors) 스트라티(Strati, 3차원 프린터 자동차), 슈즈 오브 프레이(Shoes of Prey, 온라인 맞춤 신발 제작 기업)<br/>\
-3. 비즈니스 모델 전환 : GE Digital Twin, 에어비앤비, 우버 <br/><br/>\
-# 전략 : M&A, In-House R&D등 자기주도형 지식획득 방식을 채택 <br/><br/>\
-# 저해요인 : 법제도적 요인, 경제사회적 요인 <br/><br/>\
-# 사례 <br/>\
-1. 항공 <br/>\
-- 롤스로이스 항공 엔진 경보 : 엔진에 센서 부착 실시간 정보 수집, 분석, 고장 가능성 예측, 유지보수 비용 절감, 신규 수익원 확보<br/>\
-2. 자동차 <br/>\
-- 테슬라 : 전기차 중심 라인업 <br/>\
-- 구글/우버/애플 : 자율차 적극 진입 <br/>\
-3. 식음료 <br/>\
-- 스타벅스 : 선불 충전카드 <br/>\
-- 인공지능 : 아마존 Echo, 구글 나우, 애플시리 <br/><br/>\
-* 사례 : 스마트 팩토리 <br/><br/>\
-<img src = "./img/DigitalTrans.png" style = "max-width:100%; hegiht:auto;">\
+'# 정의 : AI, Cloud, BigData 등의 디지털 기술을 활용하여 기업 비즈니스 모델을 혁신해 고객 중심의 개인화된 서비스를 제공하는 활동 <br/><br/>\
+# 필요성 <br/>\
+- 혁신성 : 고객중심 UX 제공(BlockChain, AI), 비즈니스 모델 혁신 <br/>\
+- 신속성 : 적시적 서비스 출시(Cloud, MSA), 초연결 서비스 제공(MEC, 5G) <br/>\
+- 효율성 : 업무 프로세스 효율화(RPA,AI), 비즈니스 스마트화(Factory, Farm) <br/><br/>\
+# 유형 <br/>\
+1. 비즈니스 모델 전환 <br/>\
+- 기업비즈니스 전체 전환 <br/>\
+- GE, 로켓 인터넷 <br/><br/>\
+2. 제품혁신형 전환 <br/>\
+- 기존 제품 혁신 <br/>\
+- 3D 프린터 자동차 <br/><br/>\
+3. 효율성 중시 전환 <br/>\
+- 프로세스 최적화 <br/>\
+- 스마트 팩토리, RPA <br/><br/>\
+# 고려사항 <br/>\
+- 기술 : 지능화 도입, 기술만능주의 탈피 <br/>\
+- 조직 : 디지털 전담 조직, Cross Functional Team <br/>\
+- 전략 : 고객중심, 디지털 거버넌스 <br/>\
+- 프로세스 : 소규모 시도, Top-Down 리더쉽 <br/><br/>\
+* KPC 97회 2교시 4번\
 ',
 
 // [경영환경분석]- Horizon Scanning
