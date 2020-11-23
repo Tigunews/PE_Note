@@ -1533,23 +1533,22 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 유무선 전력전송
 '# Overview <br/>\
 <img src = "./img/LienPowerOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# PoE(Power over Ethernet) 구성요소 <br/>\
-- 케이블 : CAT5e 이상 <br/>\
-- PoE 제품 : Switch, Router <br/>\
-- 전원수여기기 : 전원 + 데이터 필요 장치 <br/>\
-- 전원공급기기 : Ethernet 케이블 전력 공급 장치 <br/><br/>\
-# PoE Type <br/>\
-1. Spare Pair Feed : Spare Cable 사용, 모든 Lan 핀 사용 <br/>\
-<img src = "./img/PoESparePairFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. Phantom Feed : Data Cable 사용 <br/>\
-<img src = "./img/PoEPhantomFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# PoE 구성요소 <br/>\
+** POE(Power Over Ethernet) ** <br/>\
+# 정의 : 네트워크에 연결된 장비들에 별도 전원 공급 라인 없이, 이더넷 케이블 하나로 데이터와 전원을 동시에 공급하는 기술 <br/><br/>\
+# 구성요소 <br/>\
 - Injecter : 직류전압, 데이터 인가 <br/>\
 - Picker : 입력전원/데이터 구분 처리 <br/>\
 - Endspan : PoE 스위치 <br/>\
 - Midspan : 전력 공급 기능 없는 장치 <br/>\
 - Splitter : 케이블에서 전원/데이터 분리하여 Non-PoE 제품 지원 <br/><br/>\
-# WPT(Wireless Power Transfer) <br/>\
+# PoE Type <br/>\
+1. Spare Pair Feed : Spare Cable 사용, 모든 Lan 핀 사용 <br/>\
+<img src = "./img/PoESparePairFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Phantom Feed : Data Cable 사용 <br/>\
+<img src = "./img/PoEPhantomFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
+** WPT(Wireless Power Transfer) ** <br/>\
+# 정의 : 선이 없는 전기 에너지의 전송을 지칭 <br/><br/>\
+# 종류 <br/>\
 <img src = "./img/WPT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 응용 4교시 8번\
 ',
