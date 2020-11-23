@@ -1725,14 +1725,19 @@ var answer = answer.concat(
 // 베이즈 정리 
 '# 정의 : 조건부, 주변부 확률분포 연관 이론 <br/>\
 - 확률변수의 조건부(conditional) 확률분포와 주변부(marginal) 확률분포를 연관 짓는 확률이론<br/>\
-- 어떤 사건의 관측 전의 원인의 가능성과 관측 후의 원인의 가능성 사이의 고나계를 설명하는 확률이론 <br/>\
+- 어떤 사건의 관측 전의 원인의 가능성과 관측 후의 원인의 가능성 사이의 관계를 설명하는 확률이론 <br/>\
 - n개의 서로 배반인 사건 A1, A2, ... An 중 하나는 반드시 일어난다고 할 때, 임의의 사건 B에 의해 사건 A가 일어날 조건부 확률 <br/><br/>\
-<img src = "./img/베이즈_1.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/BayesTheoremBase.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 이론 <br/>\
+<img src = "./img/BayesTheoremDetail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/베이즈_6.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 예제 <br/>\
 <img src = "./img/베이즈_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 <img src = "./img/베이즈_4.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 <img src = "./img/베이즈_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 <img src = "./img/베이즈_5.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/베이즈_6.png" style = "max-width:100%; hegiht:auto;">\
+* KPC 97회 관리 1교시 6번\
 ',
 
 // CCW 알고리즘
