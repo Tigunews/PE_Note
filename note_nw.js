@@ -1543,6 +1543,12 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/PoESparePairFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. Phantom Feed : Data Cable 사용 <br/>\
 <img src = "./img/PoEPhantomFeed.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# PoE 구성요소 <br/>\
+- Injecter : 직류전압, 데이터 인가 <br/>\
+- Picker : 입력전원/데이터 구분 처리 <br/>\
+- Endspan : PoE 스위치 <br/>\
+- Midspan : 전력 공급 기능 없는 장치 <br/>\
+- Splitter : 케이블에서 전원/데이터 분리하여 Non-PoE 제품 지원 <br/><br/>\
 # WPT(Wireless Power Transfer) <br/>\
 <img src = "./img/WPT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 응용 4교시 8번\
