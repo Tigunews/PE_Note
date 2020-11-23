@@ -95,6 +95,7 @@ var question = question.concat(
 '[블록체인]- 블록체인 거버넌스',
 '[블록체인]- 플랫폼 보안',
 '[블록체인]- BaaS',
+'[블록체인]- NFT',
 'MaaS',
 'BERT',
 '자율주행자동차',
@@ -1748,6 +1749,19 @@ var answer = answer.concat(
 - 아이디어 서비스 구축 시간 단축 핵심 인프라 도구 <br/>\
 - 클라우드지원 사업과 연계 필요 <br/><br/>\
 * 라이지움 87회 응용 3교시 5번\
+',
+  
+// NFT
+'# 정의 : Non-Fungible Token <br/>\
+- 각각의 토큰이 각각의 고유한 가치를 지니고 있어 토큰 간 대체하는 것이 불가능한 암호화폐(ERC-721) <br/><br/>\
+# 특징 <br/>\
+- 대체불가 : ERC-721 사용 <br/>\
+- 부분 소유허용 : 부분 소유, 교환 가능 <br/>\
+- 영속성 : 서비스 종료되어도, 소유권 영속 <br/><br/>\
+# 활용 사례 : CryptoKitties, Decentraland <br/><br/>\
+# 생태계 발전 방안 <br/>\
+<img src = "./img/NFT_Future.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 97회 2교시 관리 6번\
 ',
   
 // MaaS
