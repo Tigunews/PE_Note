@@ -85,8 +85,8 @@ var question = question.concat(
 
 var answer = answer.concat(
 // Grouping Keyword
-'- ABCD : Audience(대상), Behavior(행위), Condition(조건), Degree(기준) <br/>\
-- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) <br/>\
+'- ABCD : Audience(대상), Behavior(행위), Condition(조건), Degree(기준) <br/><br/>\
+- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) <br/><br/>\
 - 기술,조직,전략,프로세스 \
 ',
  
