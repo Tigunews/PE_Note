@@ -932,13 +932,24 @@ var answer = answer.concat(
 * KPC 91회 2교시 2번\
 ',
   
-// 하이퍼 파라미터
+// Hyper Parameter
 '# 정의 : 의도적 설정 파라미터 <br/>\
-- 딥러닝에서 모델링할 시 사용자의 선험적 지식을 이용하여 설정하는 변수 <br/><br/>\
+- 신경망 학습을 통해서 튜닝 또는 최적화 해야 하는 주 변수가 아니라, 하습 진도율이나 Mini-batch 크기, 훈련 반복 횟수, 가중치 초기화 방법 등 인간의 선험적 지식으로 설정을 하는 변수 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/HyperParameterOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+- Learning Rate : gradient 방향 이동 속도 <br/>\
+- Cost function : MSE, RMSE <br/>\
+- Regulation Parameter : Overfitting 문제 피하기 위해 사용 <br/>\
+- Mini-batch 크기 : Data 나누는 크기 <br/>\
+- Training 반복 횟수 : 학습 조기 종료 결정 변수 <br/>\
+- Hidden Unit 개수 : 훈련 데이터 대한 학습 최적화 결정 변수 <br/>\
+- Weight initialization : 학습 성능 결정 변수 <br/><br/>\
 # 비교 <br/>\
 <img src = "./img/ParameterHyperParameter.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 튜닝방법 <br/>\
 <img src = "./img/HyperParameterTunning.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* KPC 97회 응용 1교시 16번<br/>\
 * 120회 관리 4교시 3번\
 ',
 
