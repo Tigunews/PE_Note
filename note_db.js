@@ -18,6 +18,7 @@ var question = question.concat(
 '[회복기법]- 미디어',
 '[회복기법]- Aries',
 '[회복기법]- WAL정책',
+'[일관성]- SAGA',
 '정규화',
 '[정규화]-암스트롱 공리, 함수폐포, 자기참조관계',
 '관계대수',
@@ -371,6 +372,33 @@ var answer = answer.concat(
 - 단 시스템 고장이 발생한 경우에도 성공적으로 커밋된 트랜잭션에 의한 데이터 변경을 보장하기 위해서 REDO 로깅이 필요함<br/><br/>\
 * NO STEAL/FORCE 정책 : 구현 Good 성능 Bad <br/>\
 * STEAL/NO FORCE 정책 : 성능 Good\
+',
+  
+// SAGA
+'# 정의 : 데이터 일관성 유지를 위해 비동기 메시징(버퍼링)을 이용하여 편성한 일련의 로컬 트랜잭션 <br/><br/>\
+# 특징 <br/>\
+- 이벤트 Trigger 기반 : 완료시 메시지 발행, SAGA 편성중 다음 단계 서비스 Trigger <br/>\
+- 보상 트랜잭션 활용 : 트랜잭션 실패시 Rollback 수행 필요, 정보 복원 보상 트랜잭션 사전 작성 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/SAGA_Example.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+1. 보상 가능 트랜잭션 : Rollback 지원해야하는 <br/>\
+-> 주문서비스 호출시 주문 데이터 임시 생성 <br/><br/>\
+2. 피봇 트랜잭션 : SAGA 진행, 중단 결정 트랜잭션 <br/>\
+-> 결재 승인 <br/><br/>\
+3. 재시도 가능 트랜잭션 : Rollback 필요 없이 완료 보장된 트랜잭션 <br/>\
+-> 임시 생성된 주문 확정 처리 <br/><br/>\
+4. 보상 트랜잭션 : 피봇 실패시 이전 단계 변경분 Undo <br/>\
+-> 주문 서비스 Rollback 시 cancelOrder() 트랜잭션 실행 <br/><br/>\
+# MSA 환경 Isolation 보장 방안 <br/>\
+1. Semantic Lock : Application 수준 Lock 통한 참조제어 <br/>\
+- 생성시 Pending, 완료시 Approve 상태값 관리 <br/>\
+- 승인된 데이터만 참조 <br/><br/>\
+2. ReRead Value : 최신 정보 확인 통한 Lost Update 방지 <br/>\
+- 데이터 쓰기 전 변경 여부 확인 <br/>\
+- 변경시 쓰기 작업 중단, 트랜잭션 재시작 <br/><br/>\
+3. Commutative Update : 업데이트 교환적 설계 통한 Lost Update 방지 <br/>\
+- dedit(), credit(), 업데이트 및 롤백을 상호 교환 작업으로 구성 <br/><br/>\
+* KPC 97회 3교시 관리 1번\
 ',
 
 // 정규화
