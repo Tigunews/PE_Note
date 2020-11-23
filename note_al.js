@@ -46,7 +46,7 @@ var question = question.concat(
 '[AI][AL]- CNN',
 '[AI][AL]- RNN',
 '[AI][AL]- LSTM',
-'[AI][AL]- GRUs',
+'[AI][AL]- GRU',
 '[AI][AL]- DNN',
 '[AI][AL]- R-CNN',
 '[AI][AL]- 경량 딥러닝 기술',
@@ -861,25 +861,27 @@ var answer = answer.concat(
 
 // LSTM
 '# 정의 : 장기 기억 가능 알고리즘 <br/>\
-- 장기 의존성 문제를 극복하고자 설계된 특별한 종류의 순환 신경망으로 오랫동안 정보를 기억 가능 알고리즘 <br/><br/>\
-# 구성 : 상호작용위한 4개층 포함 모듈 <br/>\
-- 신경망층(Neural Network Layer) <br/>\
-- 요소별 연산(Pointwise Operation) <br/>\
-- 벡터 전달(Vector Transfer) <br/>\
-- 연관/복사(Concatenate/Copy) <br/><br/>\
-# 동작방식 : 4개의 층간 gate구조로 정보를 수정(시그모이드 함수)하거나 그냥 흘러 보내 정보 장기간 보관 가능 <br/>\
-=> 셀 스테이트(cell state), forget gate layer, input gate layer, update cell state, output gate layer <br/><br/>\
-<img src = "./img/LSTM.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/LSTM_Detail.png" style = "max-width:100%; hegiht:auto;">\
+- RNN의 장기 의존성 문제를 해결하기 위해 Forget, Input, Output 3가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/LSTM_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Forget Gate : 장기 상태의 어느 부분을 삭제할지 제어 <br/>\
+- Input Gate : 현재 상태의 input을 얼마나 기억할 것인지 계산 <br/>\
+- Output Gate : 계산된 값중 얼마나 다음단계에 보낼 것인지 계산 <br/><br/>\
+* KPC 97회 1교시 3번\
 ',
 
-// [딥러닝(Deep Learning)]- GRUs
-'# 정의 : LSTM 변형 알고리즘 <br/><br/>\
-# 특징 : Update Gate, Reset Gate추가하여 과거의 정보를 어떻게 반영할 지 결정 <br/><br/>\
-# Update Gate : 과거 상태를 반영하는 Gate <br/><br/>\
-# Reset Gate : 현시점 정보와 과거시점 정보의 반영여부 결정 <br/><br/>\
-# 장점 : LSTM 한계 극복 <br/><br/>\
-# 단점 : 메모리와 결과값의 컨트롤이 불가능\
+// [딥러닝(Deep Learning)]- GRU
+'# 정의 : RNN의 장기 의존성 문제를 해겨하기 위해 Reset, Update 2가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Reset Gate <br/>\
+- 이전 Hidden state와 입력을 받아 Sigmoid 처리 <br/>\
+- 이전 Hidden state에서 얼마나 값을 반영할지 결정 <br/><br/>\
+2. Update Gate <br/>\
+- 이전 정보를 어느 정도만 유지하여 새로운 STate 계산하여 결정 <br/><br/>\
+* KPC 97회 1교시 3번\
 ',
 
 // [딥러닝]- DNN
