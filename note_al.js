@@ -29,6 +29,7 @@ var question = question.concat(
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
 '[AI]- TensorFlow',
+'[AI][지도학습]- 머신러닝 예측모델',
 '[AI]- 강화학습',
 '[AI]- 역강화학습',
 '[AI]- 모방학습',
@@ -397,7 +398,10 @@ var answer = answer.concat(
 ',
   
 // 기계학습 종류
-'<img src = "./img/ML_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+'# 종류 <br/>\
+<img src = "./img/ML_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용 <br/>\
+<img src = "./img/ML_Useage.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
 
@@ -559,6 +563,23 @@ var answer = answer.concat(
 - Data Model : 미리 학습된 데이터 목록 <br/><br/>\
 * 122회 1교시 6번\
 ',
+  
+// 머신러닝 예측모델
+'# 정의 : 라벨이 있는 훈련데이터로 모델을 학습하여 경험하지 못한 데이터나 미래의 데이터에 대한 예측하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MLPrevisonModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 일반적 절차 <br/>\
+<img src = "./img/MLPrevisonModelProcess.png" style = "max-width:100%; height:auto;"><br/>\
+- 전처리 : 결측값 다루기, 범주형 데이터 다루기, 샘플링, 피처 스케일링, 피처 선택, 차원 축소 <br/>\
+- 학습 : 교차검증, 성능메트릭, 하이퍼 파라미터 최적화, 모델 선택, 앙상블 학습 <br/>\
+- 평가, 예측 : 모델 성능 측정, 초기 테스트 데이터 사용, 성능 만족시 사용 <br/><br/>\
+# 전처리 기법 <br/>\
+- 결측값 다루기 : 샘플 및 피처 제거, 결측값 보정 <br/>\
+- 범주형 데이터 다루기 : 명목형/순위형 피처 매핑, 분류 라벨 인코딩, 명목형 피처 원핫 인코딩 <br/>\
+- 피처 스케일링 : 정규화, 표준화 <br/>\
+- 피처 선택 : L1 정규화가 있는 희소 솔루션 찾기, 그리드 서치 알고리즘, 랜덤 포레스트 <br/>\
+- 차원 축소 : PCA, LDA <br/><br/>\
+* KPC 97회 관리 3교시 6번\',
   
 // 강화학습
 '# 정의 : Reinforcement Learning <br/>\
