@@ -3,7 +3,7 @@ var question = question.concat(
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[4차산업]- Smart Energy',
-'[정책]- 데이터3법',
+'[정책]- 데이터 3법',
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
 '[정책][디지털뉴딜]- 데이터 댐',
@@ -311,7 +311,7 @@ var answer = answer.concat(
 - 정부 : 컨트롤 타워 일원화, 위원회 독립성 보장 <br/><br/>\
 * KPC 93회 응용 3교시 7번\
 ',
-  
+
 // K뉴딜
 '# K-New Deal 추진체계 <br/>\
 <img src = "./img/KNewDealSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
