@@ -579,7 +579,8 @@ var answer = answer.concat(
 - 피처 스케일링 : 정규화, 표준화 <br/>\
 - 피처 선택 : L1 정규화가 있는 희소 솔루션 찾기, 그리드 서치 알고리즘, 랜덤 포레스트 <br/>\
 - 차원 축소 : PCA, LDA <br/><br/>\
-* KPC 97회 관리 3교시 6번\',
+* KPC 97회 관리 3교시 6번\
+',
   
 // 강화학습
 '# 정의 : Reinforcement Learning <br/>\
