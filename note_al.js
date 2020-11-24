@@ -46,11 +46,11 @@ var question = question.concat(
 '[AI][AL]- 비용함수, 손실함수',
 '[AI][AL]- ANN',
 '[AI][AL]- CNN',
+'[AI][AL]- R-CNN',
 '[AI][AL]- RNN',
 '[AI][AL]- LSTM',
 '[AI][AL]- GRU',
 '[AI][AL]- DNN',
-'[AI][AL]- R-CNN',
 '[AI][AL]- 경량 딥러닝 기술',
 '[AI][AL]- 알고리즘 경량화',
 '[AI][AL]- Hyper Parameter',
@@ -888,7 +888,19 @@ var answer = answer.concat(
 2) Pooling Layer : Subsampling, 추상화, 자원 축소, Max pooling, Average Pooling <br/>\
 3) Feedforwad Layer : 분류, Fully Connected MLP <br/><br/>\
 # 사례 : 구글포토(검색DB + 오픈이미지데이터셋 활용, 초인간적 이미지 인식(Super Human Recognition) 연구방향)<br/><br/>\
-<img src = "./img/CNN.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/CNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 한계점 <br/>\
+- 영상 내 다중 객체 인식에 한계 <br/>\
+- 낮은 객체 인식 속도 <br/>\
+-> 극복방안 : R-CNN, YOLO \
+',
+  
+// [딥러닝]- R-CNN
+'# 정의 : 객체 탐색 기술 <br/>\
+- 입력 영상 내 사물 인식을 위해 사물의 영역 탐지 및 사물 특징 추출, 분류 CNN 기반 신경망 알고리즘 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/RCNN_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
 ',
 
 // [딥러닝]- RNN
@@ -941,10 +953,6 @@ var answer = answer.concat(
 '# 정의 : 여러개 은닉층 인공신경망 <br/>\
 - 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) <br/><br/>\
 ',
-
-// [딥러닝]- R-CNN
-'# 정의 : 객체 탐색 기술 <br/>\
-- Region CNN, 영상 속의 어떤 객체(Label)가 어디에(x, y) 어느 크기로(w, h) 존재하는지를 찾는 기술. 객체탐지 딥러닝 기술중의 하나. R-CNN, Fast R-CNN, Faster R-CNN, SSD가 있음.',
 
 // 경량 딥러닝
 '# 정의 : 알고리즘 효율화, 경량화 기술 <br/>\
