@@ -62,6 +62,7 @@ var question = question.concat(
 '[리소스 동기화]- 교착상태',
 '[교착상태]- 은행가알고리즘',
 '[교착상태]- 자원할당 그래프',
+'[교착상태]- Wait-Die Wound-Wait',
 'RAID',
 '[InMemory]- In-Memory Computing',
 '[InMemory]- In-Memory Database',
@@ -1279,6 +1280,13 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # 판별 사례 <br/>\
 <img src = "./img/ResourceAllocationGraphDeadlockExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 응용 1교시 14번\
+',
+  
+// Wait-Die Wound-Wait
+'# 정의 : ~~ <br/><br/>\
+# 구성요소 ~~~ <br/>\
+<img src = "./img/WaitDie.png" style = "max-width:100%; height:auto;"><br/><br/>
+* KPC 97회 응용 1교시 16번\
 ',
 
 // RAID
