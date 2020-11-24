@@ -230,6 +230,7 @@ var question = question.concat(
 '[품질평가][프로세스 품질]- ISO 15504',
 '[품질평가][프로세스 품질]- CMMI',
 '[품질평가][프로세스 품질]- CMMI V2.0',
+'[품질평가][프로세스 품질]- ISO/IEC 33000',
 '[프로세스 품질]- ASPICE(Automotive SPICE)',
 '[프로세스 품질]- CAR',
 '[프로세스 품질]- SP 인증',
@@ -3598,6 +3599,8 @@ P 히스토그램 : Data 분포 <br/>\
 - 준수성 : 목표 이행 능력 (정보제공, 준수율) <br/><br/>\
 # 프로세스 인증모델 개선 부각배경 <br/>\
 <img src = "./img/SWProductEvaluationBackground.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 대응전략 방안 <br/>\
+<img src = "./img/SW_Autheorization_Model_Change.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * KPC 97회 관리 4교시 3번 <br/>\
 * 라이지움 87회 2교시 1번 <br/>\
 * 119회 응용 4교시 4번\
@@ -3748,7 +3751,17 @@ P 히스토그램 : Data 분포 <br/>\
 # 해결 과제 <br/>\
 - 신규 프랙티스 대한 정기적 측정 및 경영평가 도입 <br/>\
 - 프로세스 단계별 이행 <br/>\
-- 정량적 관리, 개선성과 가시화 필요 \
+- 정량적 관리, 개선성과 가시화 필요 <br/><br/>\
+* KPC 97회 관리 4교시 3번\
+',
+ 
+// ISO/IEC 33000
+'# 정의 : 프로세스 능력 평가를 위한 프로세스 심사모델의 구성을 전체 Framework를 제공하는 ISO 국제 표준 <br/><br/>\
+# 구성 <br/>\
+<img src = "./img/ISOIEC33000Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 프로세스 수준 모델 <br/>\
+<img src = "./img/ISOIEC33000Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 97회 관리 4교시 3번\
 ',
  
 // ASPICE
