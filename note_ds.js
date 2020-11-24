@@ -1220,6 +1220,9 @@ var answer = answer.concat(
 <img src = "./img/HCI_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요기능 <br/>\
 <img src = "./img/HCI_Function.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 고려사항 <br/>\
+- 도입 전 : 벤더 마찰, 이슈 대응, HW 종속 <br/>\
+- 도입 후 : 데이터 용량 대응, 백업 정책 프로세스 확인 <br/><br/>\
 * KPC 94회 3교시 2번\
 ',
   
