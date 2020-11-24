@@ -1285,7 +1285,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 // Wait-Die Wound-Wait
 '# 정의 : ~~ <br/><br/>\
 # 구성요소 ~~~ <br/>\
-<img src = "./img/WaitDie.png" style = "max-width:100%; height:auto;"><br/><br/>
+<img src = "./img/WaitDie.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 응용 1교시 16번\
 ',
 
