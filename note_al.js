@@ -47,6 +47,8 @@ var question = question.concat(
 '[AI][AL]- ANN',
 '[AI][AL]- CNN',
 '[AI][AL]- R-CNN',
+'[AI][AL][R-CNN]- Fast RCNN',
+'[AI][AL][R-CNN]- Faster RCNN',
 '[AI][AL]- RNN',
 '[AI][AL]- LSTM',
 '[AI][AL]- GRU',
@@ -900,6 +902,16 @@ var answer = answer.concat(
 - 입력 영상 내 사물 인식을 위해 사물의 영역 탐지 및 사물 특징 추출, 분류 CNN 기반 신경망 알고리즘 <br/><br/>\
 # 절차 <br/>\
 <img src = "./img/RCNN_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+',
+  
+// Fast RCNN
+'<img src = "./img/FastRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+',
+  
+// Faster RCNN
+'<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 관리 3교시 5번\
 ',
 
