@@ -259,6 +259,8 @@ var answer = answer.concat(
 // Locking
 '# 정의 : 데이터 접근 제어 동시성 제어 기법 <br/>\
 - 두 개의 연산 lock와 unlock 연산으로 트랜잭션의 데이터 접근을 제어하는 동시성 제어기법 <br/><br/>\
+# 단위 <br/>\
+<img src = "./img/LockingScale.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Lock 종류 <br/>\
 1. 기본 Lock <br/>\
 - S (Shared) : R가능, 다른 S타입 Lock 설정 가능 <br/>\
@@ -269,6 +271,7 @@ var answer = answer.concat(
 - SIX (Shared and Intension Exclusive) : 서브트리 S, 자손 X <br/><br/>\
 # Lock 양립성 <br/>\
 <img src = "./img/Lock양립성.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 2교시 5번\
 ',
   
 // Phantom Conflict
