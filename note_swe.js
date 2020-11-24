@@ -3736,8 +3736,12 @@ P 히스토그램 : Data 분포 <br/>\
 - 최종 심사 이후 성과보고서 제출, 성과 개선 강조 <br/>\
 - 보안, 안전 등의 최신 트랜드 추가 <br/>\
 - 현재의 모범 사례들을 활용한 모델 구조 변경 <br/><br/>\
+# 구조도 <br/>\
+<img src = "./img/CMMI_Model.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 심사방법 <br/>\
 <img src = "./img/CMMI_Appraisal.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성 <br/>\
+<img src = "./img/CMMI_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 전문가 의견 <br/>\
 - 변화 방향 : 긍정적 <br/>\
 - 심사 방향 : 부정적 <br/><br/>\
