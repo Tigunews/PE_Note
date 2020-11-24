@@ -69,6 +69,7 @@ var question = question.concat(
 '[DB확장]- Database Shard',
 '[DB확장]- Database Partitioning',
 'Data File Structure',
+'[통계]- 데이터 분석 전처리',
 );
 
 var answer = answer.concat(
@@ -1333,5 +1334,20 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 // Data File Structure
 '<img src = "./img/DataFileStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 응용 3교시 6번\
+',
+  
+// 데이터 분석 전처리
+'# 개념 : 데이터를 특정 분석 목적에 맞게 분석 가능한 상태로 만드는 것 <br/><br/>\
+# 종류 : 정제(Cleansing), 누가치 대체(missing vlaue imputation), 날짜 파싱 <br/><br/>\
+# 데이터 다루는 목적 따른 기법 분류 <br/>\
+1. 기술 통계 (Descriptive Statistics) <br/>\
+- 개념 : 수집한 데이터를 묘사하고 설명하는 통계 기법 <br/>\
+- 종류 <br/>\
+-> Central Trendency(집중화 경향) : 평균(mean), 중앙값(medium), 최빈값(mode) <br/>\
+-> Variation(분산도) : 표준편차(standard deviation), 사분위(quartile) <br/><br/>\
+2. 추론 통계 (Inferential Statistics) <br/>\
+- 개념 : 수집한 데이터를 기반으로 어떠한 것을 추론하고 예측하는데 사용하는 통계기법 <br/>\
+- 종류 : 선거예측 <br/><br/>\
+* KPC 95회 관리 4교시 3번\
 ',
 );
