@@ -70,6 +70,7 @@ var question = question.concat(
 '[개인정보]- 가명정보',
 '[개인정보]- 가명처리 (ISO/IEC 20889 기준)',
 '[개인정보]- 식별자',
+'[개인정보]- 비식별수준 적정성평가',
 '[개인정보]- ISMS',
 '[개인정보]- ISMS-P',
 '[정보처리자유형]- 개인정보 유출사고 대응 매뉴얼',
@@ -1318,7 +1319,10 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 <a href = "./doc/가명정보.pdf">참고문헌</a><br/>\
 <img src = "./img/가명처리절차.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/가명처리절차상세.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 94회 1교시 8번\
+# 가명정보 결합 및 반출절차 <br/>\
+<img src = "./img/RenameInfoCombineProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 4번<br/>\
+* KPC 94회 관리 1교시 8번\
 ',
    
 // 가명처리 (ISO/IEC 20889 기준)
@@ -1342,6 +1346,11 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - 분석 및 사후 관리 <br/>\
 <img src = "./img/TimeLineDataCombine.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 관리 3교시 3번\
+',
+  
+// 비식별수준의 적정성 평가
+'<img src = "./img/RenamePrivacyInfoTest.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 4번\
 ',
    
 // [개인정보 비식별화]- 식별자 
