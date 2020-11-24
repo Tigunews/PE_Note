@@ -80,7 +80,6 @@ var question = question.concat(
 '3D Sensing',
 '오픈뱅킹(Open Banking)',
 'ISO 19626',
-'YOLO',
 'IoMT',
 '블록체인',
 '[블록체인]- 합의알고리즘',
@@ -1503,11 +1502,6 @@ var answer = answer.concat(
 // ISO 19626
 '# 정의 : 신뢰성 있는 통신 플랫폼 <br/>\
 - TCP는 개방되고 분산된 환경에서 상거래, 전자정부, 제조, 산업, 의료, 기타 업무에서 높은 신뢰성이 필요한 통신 관련 사항을 규약',
-
-// YOLO
-'# 정의 : 딥러닝 기반 객체 탐지 기술<br/>\
-- You Only Look Once\
-',
 
 // IoMT
 '# 정의 : 의료사물인터넷 / 의료중심 건강관리 시스템 구현 <br/>\
