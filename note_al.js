@@ -109,6 +109,7 @@ var question = question.concat(
 '[AL 종류]- 분할과정복',
 '[AL 종류]- Greedy',
 '[AL 종류]- 동적계획법',
+'[통계]- CLT',
 );
 
 var answer = answer.concat(
@@ -1807,5 +1808,18 @@ var answer = answer.concat(
 # 사례 <br/>\
 - 피보나치 수열 <br/><br/>\
 * 라이지움 86회 4교시 4번\
+',
+  
+// CLT
+'# 정의 : Central Limit Theorm (중심극한정리) <br/>\
+- 임의의 모집단에서 크기 n의 표본 k개를 복원추출을 할 때 n과 k가 충분히 크다면 각 표본의 평균 분포는 정규 분포로 수렴한다는 정리이론 <br/><br/>\
+# 수식 <br/>\
+<img src = "./img/CLT_Math.png" style = "max-width:100%; height:auto;"><br/>\
+# 활용 <br/>\
+- 적은 샘플수로 모집단의 평균을 정확하게 계산하는 경우 <br/>\
+- 적은 샘플수로 모집단의 분산을 정확하게 계산하는 경우 <br/>\
+- 모집단에 대한 정규 분포를 생성하는경우 <br/>\
+- 정규 분포를 활용한 통계적 가설검정 및 기법에 적용하는 경우 <br/><br/>\
+* KPC 97회 관리 1교시 7번\
 ',
 );
