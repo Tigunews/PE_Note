@@ -49,6 +49,7 @@ var question = question.concat(
 '[AI][AL]- R-CNN',
 '[AI][AL][R-CNN]- Fast RCNN',
 '[AI][AL][R-CNN]- Faster RCNN',
+'[AI][AL]- YOLO',
 '[AI][AL]- RNN',
 '[AI][AL]- LSTM',
 '[AI][AL]- GRU',
@@ -914,6 +915,12 @@ var answer = answer.concat(
 '<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 관리 3교시 5번\
 ',
+  
+// YOLO
+'# 정의 : 이미지 전체에서 다수의 Bounding box를 예측하고, 동시에 각 박스에 Class Probability를 계산하는 통합된 모델 사용 알고리즘 <br/><br/>\
+<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+', 
 
 // [딥러닝]- RNN
 '# 정의 : Directed Cycle 구성 신경망 <br/>\
