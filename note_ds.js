@@ -1216,7 +1216,10 @@ var answer = answer.concat(
 # 배경 <br/>\
 - 분리,개별 장비 > CI (다수장비 Rack) > HCI (SDC+SDS+SDN)<br/><br/>\
 # 아키텍처 <br/>\
+<img src = "./img/HCI_Architecture_Overview.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/HCI_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요기능 <br/>\
+<img src = "./img/HCI_Function.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 3교시 2번\
 ',
   
