@@ -11,6 +11,7 @@ var question = question.concat(
 '보안이슈, 대응방안',
 'SW 보안 약점',
 '[공격기법]- XSS',
+'[공격기법]- SSRF',
 '시큐어코딩',
 '[시큐어코딩]- TouchPoints 기법',
 '[랜섬웨어]- 종류',
@@ -316,6 +317,25 @@ var answer = answer.concat(
 * 라이지움 87회 관리 4교시 2번<br/>\
 * 라이지움 86회 1교시 8번 <br/>\
 * 그리타 \
+',
+  
+// SSRF
+'# 정의 : 신뢰하는 서버로부터의 공격 <br/>\
+- Server-Side Request Forgery <br/>\
+- URL Scheme를 활용하여 Internet 영역의 서버를 통해 공격자가 조작한 request 명령을 내부 네트워크에 존재하는 서버로 전달하여 데이터 유출 또는 제어하는 동작을 수행하는 공격 방식 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SSRF_Orverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 공격 기법 <br/>\
+- SSRF의 취약점 악용, 웹 서버에 요청 발송 <br/>\
+- Web Server, Local Network 서버에 요청 전달 <br/>\
+- Local Network, 요청한 데이터 응답 수행 <br/>\
+- 공격자에게 필요한 데이터 전송 <br/><br/>\
+# 대응 방안 <br/>\
+- 문자열 검증 : 정규식 활용, 입력 문자열 검증 <br/>\
+- IP 확인 : IPv4, IPv6 주소 체계 확인, 신뢰하는 IP 주소 여부 확인 <br/>\
+- DNS 검증 : 내부 허용 가능한 DNS 목록 검증 수행 <br/>\
+- 파라미터 제어 : 파라미터 값 URL 연동 인터페이스 지양 <br/><br/>\
+* KPC 97회 관리 1교시 9번\
 ',
   
 // 시큐어 코딩
