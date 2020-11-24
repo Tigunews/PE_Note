@@ -3,6 +3,11 @@ var question = question.concat(
 '[OS]- Disk 할당 기법',
 'Unix OS', 
 '[Unix OS]- i-node Block',
+'[Unix OS]- I/O Model',
+'[Unix OS][Synchronous I/O]- Blocking I/O',
+'[Unix OS][Synchronous I/O]- NonBlocking I/O',
+'[Unix OS][Synchronous I/O]- I/O Multiplexing',
+'[Unix OS]- Asynchronous I/O',
 'Loader',
 'Dispatcher',
 '[Dispatcher]- 운영체제 문맥, 문맥교환',
@@ -127,6 +132,93 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Dobule indirect : 2개의 레이어(인덱스 블록 포인터 / 실제 데이터 블록 포인터) 16MB~32GB <br/>\
 - Triple indirect : 3개의 레이어(1,2 다른 인덱스 블록 포인터 / 실제 데이터 블록 포인터) ~70TB <br/><br/>\
 * 라이지움 86회 1교시 4번 \
+',
+  
+// I/O Model
+'# I/O Model 개요도 <br/>\
+<img src = "./img/UnixIOModelOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 97회 응용 4교시 8번\
+',
+  
+// Blocking I/O
+'# 개념 : I/O 작업이 진행되는 동안 유저 프로세스는 자신의 작업을 중단한 채 대기하는 방식 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BlockingModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- 데이터 읽기 위한 System Call 호출 <br/>\
+- 프로세스 대기 상태 <br/>\
+- 커널에서 유저영역으로 데이터 복사 <br/>\
+- System Call 리턴 후, 데이터 처리 <br/><br/>\
+# 특징 <br/>\
+1. 설정 : 소켓 생성시, Blocking I/O 모드로 설정 <br/><br/>\
+2. 장점 <br/>\
+- 순차적 구조 이해 쉬움 <br/>\
+- 애플리케이션 구현 간단 <br/><br/>\
+3. 단점 <br/>\
+- 프로세스 동시성 처리 문제점 존재 <br/><br/>\
+* KPC 97회 응용 4교시 8번\
+',
+
+// NonBlocking I/O
+'# 개념 : I/O 작업이 진행되는 동안 유저 프로세스의 작업을 중단시키지 않는 방식 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/NonBlockingModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- Datagram 수신을 위한 Recvform 호출 <br/>\
+- 에러 수신 후 Polling(반복호출) <br/>\
+- System call 호출 시, 데이터 준비 <br/>\
+- 성공 수신 후 데이터 처리 <br/><br/>\
+# 특징 <br/>\
+1. 설정 <br/>\
+- 소켓 생성 후 System call을 통하여 설정 <br/>\
+- fnctl(fd, F_SETFL, O_NONBLOCK) <br/><br/>\
+2. 장점 <br/>\
+- 함수 호출 후 프로세스 대기 하지 않음 <br/>\
+- 다른 Job을 처리할 수 있음 <br/><br/>\
+3. 단점 <br/>\
+- 읽기 위해 계속적인 System call 요청시, Busy waiting 발생 <br/>\
+- CPU 사용 비효율 <br/><br/>\
+* KPC 97회 응용 4교시 8번\
+',
+  
+// I/O Multiplexing
+'# 개념 : 동시성 처리를 위해 다양한 System Call을 사용한 I/O 처리기법 <br/><br/>\
+# 필요성 <br/>\
+1. 문제점 <br/>\
+- Blocking I/O : Process 대기로 동시성 문제 <br/>\
+- NonBlocking I/O : CPU Busy Waiting 문제 <br/><br/>\
+2. 기대효과 <br/>\
+- Standard input, TCP, UDP 소켓등 동시 I/O 처리 가능 <br/>\
+- select, epoll system Call 사용 <br/>\
+- 동기적 이벤트 다중 처리 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/IOMultiplexing.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+1. 절차 <br/>\
+- Application은 여러 소켓 설정후, select system call 호출시 프로세스는 대기 상태 <br/>\
+- 커널은 특정 소켓이 읽기 가능 상태면, Application 으로 알림 리턴 <br/>\
+- Application 은 해당 소켓을 통해 데이터를 읽기 위해 recvform System call 호출 <br/>\
+- 커널은 데이터 유저 영역으로 복사 후, 성공 응답 시, Application은 데이터 처리 <br/><br/>\
+2. 장점 <br/>\
+- 동시성 지원 <br/>\
+- POSIX 표준인 select, eopll 함수를 통해 OS 호환성 제공 <br/><br/>\
+3. 단점 <br/>\
+- 복잡성 증가 <br/>\
+- select 함수도 Synchronous I/O로 성능 이슈 존재 <br/><br/>\
+* KPC 97회 응용 4교시 8번\
+',
+  
+// Asynchronous I/O Model
+'# 개념 : 비동기식 I/O Model <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/AsynchronousIO.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- Application은 aio_read system call 요청 후, 다른 처리 수행 <br/>\
+- 커널은 유저영역으로 데이터 복사 후, Application 으로 Callback을 통하여 알리고, Application은 데이터 처리 <br/><br/>\
+# 특징 <br/>\
+- 성능 향상 <br/>\
+- Callback 처리로 프로그램 복잡도 상승 고려 <br/><br/>\
+* KPC 97회 응요 4교시 8번\
 ',
 
 // Loader 
