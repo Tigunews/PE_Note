@@ -60,9 +60,9 @@ var question = question.concat(
 '[리소스 동기화]- 뮤텍스',
 '[리소스 동기화]- 스핀락',
 '[리소스 동기화]- 교착상태',
-'[교착상태]- 은행가알고리즘',
-'[교착상태]- 자원할당 그래프',
-'[교착상태]- Wait-Die Wound-Wait',
+'[교착상태][회피]- 은행가알고리즘',
+'[교착상태][회피]- Wait-Die, Wound-Wait',
+'[교착상태][발견]- 자원할당 그래프',
 'RAID',
 '[InMemory]- In-Memory Computing',
 '[InMemory]- In-Memory Database',
@@ -1269,6 +1269,16 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # Understand <br/>\
 <img src = "./img/BangkerAlgorithmUnderstand.png" style = "max-width:100%; height:auto;">\
 ',
+  
+// Wait-Die, Wound-Wait
+'# 개념 : 교착상태를 회피하기 위한 요청 시점 기반 매커니즘 <br/><br/>\
+# 동작비교 <br/>\
+- Wait-Die : 비선점 기반, Old 요청일 경우 Wait, Young 요청일 경우 Die <br/>\
+- Wound-Wait : 선점 기반, Old 요청일 경우 Wound, Young 요청일 경우 Wiat <br/><br/>\
+# 특징비교 <br/>\
+<img src = "./img/WaitDieWoundWaitCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 97회 응용 1교시 16번\
+',
 
 // 자원할당 그래프
 '# 정의 : 교착상태 탐지 <br/>\
@@ -1282,13 +1292,6 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 * KPC 96회 응용 1교시 14번\
 ',
   
-// Wait-Die Wound-Wait
-'# 정의 : ~~ <br/><br/>\
-# 구성요소 ~~~ <br/>\
-<img src = "./img/WaitDie.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 97회 응용 1교시 16번\
-',
-
 // RAID
 '# 정의 : 데이터의 가용성 및 성능 향상을 위한 디스크 중복구조 <br/>\
 - Redundant Array of Independent Disks <br/>\
