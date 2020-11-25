@@ -1902,15 +1902,19 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '# 정의 : 사무 업무 자동화 기술 <br/>\
 - Robotic Process Automation<br/>\
 - 반복적인 사무 업무를 프로세스 마이닝으로 추출하여 이를 자동화 하는 기술 <br/><br/>\
+# RPA Overview : ProcessMining > RPA > Digital Transformation <br/><br/>\
 # RPA 흐름도 <br/>\
 <img src = "./img/RPA_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요기술 설명 <br/>\
 - 인식기술 : 이미지 인식, OCR(광학문자 판독기술) <br/>\
 - 분석기술 : WorkFlow, 백필(데이터 지속적재) <br/>\
-- 활용기술 : 라이브러리(단일 프로세스 경량화) <br/><br/>\
+- 활용기술 : 라이브러리(단일 프로세스 경량화) <br/>\
+<img src = "./img/RPA_TechBase.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # RPA 적용 사례 <br/>\
 - 제조 : 검사 업무 (물건 검증/검사) <br/>\
-- 금융 : 언더라이팅 (상품 보류/구분 업무) <br/><br/>\
+- 금융 : 언더라이팅 (상품 보류/구분 업무) <br/>\
+<img src = "./img/RPA_Apply.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 4교시 4번 <br/>\
 * KPC 93회 1교시 5번\
 ',
 
