@@ -61,7 +61,6 @@ var question = question.concat(
 '[빅데이터]- ISO 20547',
 '[빅데이터]- BigData 분석 방법론',
 '[빅데이터]- DCAT',
-'[빅데이터][통계]- 특이정보',
 '[빅데이터]- 데이터 플래그십',
 '[빅데이터]- 단순 대치법',
 '[R-Tree]- Hilbert R-Tree',
@@ -71,6 +70,7 @@ var question = question.concat(
 'Data File Structure',
 '[통계]- 데이터 분석 전처리',
 '[통계]- 표본 추출 방법',
+'[통계]- 특이정보, Outlier',
 );
 
 var answer = answer.concat(
@@ -1229,17 +1229,6 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 * KPC 94회 3교시 3번\
 ',
   
-// 특이정보
-'# 정의 : 아주 작은 or 큰 값 <br/>\
-- 통계적 자료분석의 결과를 왜곡시키거나, 자료 분석의 적절성을 위협하는 변수값 또는 사례 <br/>\
-- (기술통계학) : 분포 집중경향치의 값을 왜곡시키거나, 상관계수 추정치의 값을 왜곡시키는 개체 또는 변수 값 <br/>\
-- (추론통계학) : 모수추정치의 값을 왜곡시키는 개체 또는 변수의 값 <br/><br/>\
-# 유형 <br/>\
-- 비합리적 특이정보 : <font color = "red">입력 오류등 자료의 오염</font>으로 인해 발생한 이상치 <br/>\
-- 합리적 특이정보 : <font color = "red">정확하게 측정</font>되었으나 다른 자료들과 전혀 다른 경향이나 특성을 보이는 이상치 <br/><br/>\
-* 라이지움 87회 응용 1교시 13번\
-',
-  
 // 데이터 플래그십
 '# 정의 : 빅데이터 산업 활성화 목적위한 정책 <br/>\
 - 인공지능, 딥러닝과 같은 지능정보 기술을 적용한 신 서비스를 개발하고, 교통, 의료, 환경, 안전 등 다양한 분야에서 국민이 체감할 수 있는 성공사례(Flagship) 확산 당을 통해 사회 현안 해결 도모하는 제도 <br/><br/>\
@@ -1373,5 +1362,22 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 편의 추출법(Convenience Sampling) : 정보 전혀 없는 경우, 표본 선정 편의성 기반 <br/>\
 - 눈덩이 추출법(Snowball Sampling) : 소수 응답자, 비슷한 사람 소개 <br/><br/>\
 * KPC 95회 관리 4교시 3번\
+',
+  
+// 특이정보
+'# 정의 : Outlier <br/>\
+- 아주 작은 or 큰 값 <br/>\
+- 통계적 자료분석의 결과를 왜곡시키거나, 자료 분석의 적절성을 위협하는 변수값 또는 사례 <br/>\
+- (기술 통계학) : 분포 집중경향치의 값을 왜곡시키거나, 상관계수 추정치의 값을 왜곡시키는 개체 또는 변수 값 <br/>\
+- (추론 통계학) : 모수추정치의 값을 왜곡시키는 개체 또는 변수의 값 <br/><br/>\
+# 유형 <br/>\
+- 비합리적 특이정보 : <font color = "red">입력 오류등 자료의 오염</font>으로 인해 발생한 이상치 <br/>\
+- 합리적 특이정보 : <font color = "red">정확하게 측정</font>되었으나 다른 자료들과 전혀 다른 경향이나 특성을 보이는 이상치 <br/><br/>\
+# 왜도(Skewness), 첨도(Kurtosis) <br/>\
+<img src = "./img/SkewnessKurtosis.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Percentile을 이용한 검출 방법 <br/>\
+<img src = "./img/PercentileOutlierDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 4교시 3번 <br/>\
+* 라이지움 87회 응용 1교시 13번\
 ',
 );
