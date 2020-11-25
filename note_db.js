@@ -1372,5 +1372,6 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 할당 추출법(Quota Sampling) : 특성 따라 층 구성, 직접 선정 조사 <br/>\
 - 편의 추출법(Convenience Sampling) : 정보 전혀 없는 경우, 표본 선정 편의성 기반 <br/>\
 - 눈덩이 추출법(Snowball Sampling) : 소수 응답자, 비슷한 사람 소개 <br/><br/>\
+* KPC 95회 관리 4교시 3번\
 ',
 );
