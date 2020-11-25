@@ -70,6 +70,7 @@ var question = question.concat(
 '[DB확장]- Database Partitioning',
 'Data File Structure',
 '[통계]- 데이터 분석 전처리',
+'[통계]- 표본 추출 방법',
 );
 
 var answer = answer.concat(
@@ -1348,6 +1349,28 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 2. 추론 통계 (Inferential Statistics) <br/>\
 - 개념 : 수집한 데이터를 기반으로 어떠한 것을 추론하고 예측하는데 사용하는 통계기법 <br/>\
 - 종류 : 선거예측 <br/><br/>\
+# 형태에 따른 데이터 구분 <br/>\
+1. 범주형 자료 <br/>\
+- 명목형 자료 : 측정 대상의 특성 분류 변수 (성별, 혈액형) <br/>\
+- 순서형 자료 : 범주 구분 + 범주 사이 순서 관계 성립 변수 (우선순위, 등수, 학점, 선호도) <br/><br/>\
+2. 수치형 자료 <br/>\
+- 이산형 자료 : Countable Data (멤버의 수) <br/>\
+- 연속형 자료 : 연속성 속성 가지는 자료 (신장, 체중) <br/><br/>\
 * KPC 95회 관리 4교시 3번\
+',
+  
+// 표본 추출 방법
+'# 개념 : 연구대상 전체에서 선택된 일부를 선택하는 과정 <br/><br/>\
+# 확률적 추출 방법 <br/>\
+- 단순임의 추출법(Simple Random Sampling) : 모든 표본 추출방법의 기본 <br/>\
+- 층화 추출법(Stratified Sampling) : 유사 단위 각 층 형성 후, 층간 단순임의 추출법 <br/>\
+- 계통 추출법(Systematic Sampling) : 동등분할 <br/>\
+- 군집 추출법(Cluster Sampling) : 추출된 일부 군집 통한 추출 <br/><br/>\
+# 비 확률적 추출 방법 <br/>\
+- 유의 추출법(Purposive Sampling) : 모집단 특성에 대해 알고 있는 경우 사용 <br/>\
+- 판단 추출법(Judgement Sampling) : 경험적 추출, 표본 크기가 작은 경우 <br/>\
+- 할당 추출법(Quota Sampling) : 특성 따라 층 구성, 직접 선정 조사 <br/>\
+- 편의 추출법(Convenience Sampling) : 정보 전혀 없는 경우, 표본 선정 편의성 기반 <br/>\
+- 눈덩이 추출법(Snowball Sampling) : 소수 응답자, 비슷한 사람 소개 <br/><br/>\
 ',
 );
