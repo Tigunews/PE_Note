@@ -17,6 +17,7 @@ var question = question.concat(
 '의료기술',
 '[의료기술]- ISO 62304',
 '[의료기술]- ISO 25237',
+'[의료기술]- 의료 AI',
 'OTT(Over the top)',
 '[OTT]- 웹인증 API',
 '인증기술',
@@ -491,6 +492,14 @@ var answer = answer.concat(
 - 외부데이터 조합 재식별 가능성 <br/>\
 - 완전보호X <br/>\
 - 현재 비식별 처리 But 미래 비식별 처리 X\
+',
+  
+// 의료 AI
+'<img src = "./img/MediAIIssue.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/MediAINation.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/MediAIProcessExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/MediAISubject.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* KPC 95회 관리 4교시 5번\
 ',
 
 // OTT
