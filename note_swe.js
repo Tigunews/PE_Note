@@ -3793,6 +3793,10 @@ P 히스토그램 : Data 분포 <br/>\
 # 구성 <br/>\
 <img src = "./img/ISOIEC33000Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 프로세스 수준 모델 <br/>\
+- 평P 측F 프M <br/>\
+- 원칙 / 요구사항 <br/>\
+- 표준 / 문 품 공프성 <br/>\
+- 가이드 / 가이드 <br/>\
 <img src = "./img/ISOIEC33000Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 관리 4교시 3번\
 ',
