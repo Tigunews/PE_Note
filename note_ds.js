@@ -1774,10 +1774,16 @@ var answer = answer.concat(
 // NFT
 '# 정의 : Non-Fungible Token <br/>\
 - 각각의 토큰이 각각의 고유한 가치를 지니고 있어 토큰 간 대체하는 것이 불가능한 암호화폐(ERC-721) <br/><br/>\
+# 구성요소 <br/>\
+- 토큰명 : ERC-721 기반 이더리움 토큰 / 제품이름 토큰 <br/>\
+- 토큰 가치 : 토큰에 매겨진 가치 / 100ETH <br/>\
+- 소유권 지분 : 해당 토큰 보유 비율 / 90% 소유 90ETH <br/><br/>\
 # 특징 <br/>\
 - 대체불가 : ERC-721 사용 <br/>\
 - 부분 소유허용 : 부분 소유, 교환 가능 <br/>\
-- 영속성 : 서비스 종료되어도, 소유권 영속 <br/><br/>\
+- 영속성 : 서비스 종료되어도, 소유권 영속 <br/>\
+- 장점 : 디지털 자산 안전 보호 권리 보장 <br/>\
+- 단점 : 확장성 한계, 과도한 수수료  <br/><br/>\
 # 활용 사례 : CryptoKitties, Decentraland <br/><br/>\
 # 생태계 발전 방안 <br/>\
 <img src = "./img/NFT_Future.png" style = "max-width:100%; height:auto;"><br/><br/>\
