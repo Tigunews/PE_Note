@@ -385,7 +385,7 @@ var answer = answer.concat(
 - 이벤트 Trigger 기반 : 완료시 메시지 발행, SAGA 편성중 다음 단계 서비스 Trigger <br/>\
 - 보상 트랜잭션 활용 : 트랜잭션 실패시 Rollback 수행 필요, 정보 복원 보상 트랜잭션 사전 작성 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/SAGA_Example.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SAGA_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 1. 보상 가능 트랜잭션 : Rollback 지원해야하는 <br/>\
 -> 주문서비스 호출시 주문 데이터 임시 생성 <br/><br/>\
 2. 피봇 트랜잭션 : SAGA 진행, 중단 결정 트랜잭션 <br/>\
