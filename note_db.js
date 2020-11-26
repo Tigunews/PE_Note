@@ -19,6 +19,8 @@ var question = question.concat(
 '[회복기법]- Aries',
 '[회복기법]- WAL정책',
 '[일관성]- SAGA',
+'[일관성][SAGA]- Choreography-Based Saga',
+'[일관성][SAGA]- Orchestration-Based Saga',
 '정규화',
 '[정규화]-암스트롱 공리, 함수폐포, 자기참조관계',
 '관계대수',
@@ -383,7 +385,15 @@ var answer = answer.concat(
 '# 정의 : 데이터 일관성 유지를 위해 비동기 메시징(버퍼링)을 이용하여 편성한 일련의 로컬 트랜잭션 <br/><br/>\
 # 특징 <br/>\
 - 이벤트 Trigger 기반 : 완료시 메시지 발행, SAGA 편성중 다음 단계 서비스 Trigger <br/>\
-- 보상 트랜잭션 활용 : 트랜잭션 실패시 Rollback 수행 필요, 정보 복원 보상 트랜잭션 사전 작성 <br/><br/>\
+- 순차적 단계 트랜잭션 : 연속적인 업데이트 연산 중심 <br/>\
+- 보상 트랜잭션 활용 : 트랜잭션 실패시 Rollback 수행 필요, 정보 복원 보상 트랜잭션 사전 작성 <br/>\
+- 장점 : 밴더 종속성 탈피 가능 <br/>\
+- 단점 : Atomicity 보장 하지 않음 <br/><br/>\
+# 절차도 <br/>\
+1. 성공시 <br/>\
+<img src = "./img/SAGA_Pattern_Sucess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 실패시 <br/>\
+<img src = "./img/SAGA_Pattern_Failure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/SAGA_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 1. 보상 가능 트랜잭션 : Rollback 지원해야하는 <br/>\
@@ -403,7 +413,37 @@ var answer = answer.concat(
 - 변경시 쓰기 작업 중단, 트랜잭션 재시작 <br/><br/>\
 3. Commutative Update : 업데이트 교환적 설계 통한 Lost Update 방지 <br/>\
 - dedit(), credit(), 업데이트 및 롤백을 상호 교환 작업으로 구성 <br/><br/>\
+# 종류 <br/>\
+- Choreography-Based Saga <br/>\
+- Orchestration-Based Saga <br/><br/>\
 * KPC 97회 3교시 관리 1번\
+',
+  
+// Choreography-Based Saga
+'# 정의 : 자신이 보유한 서비스내 Local 트랜잭선을 관리하며, 트랜잭션이 종료되면 완료 Event 발생하는 방식 <br/><br/>\
+# 성공 <br/>\
+<img src = "./img/SAGA_Pattern_Sucess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 실패 <br/>\
+<img src = "./img/SAGA_Pattern_Failure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- App에서 Event 수신 받고 다음 처리 (Kafka 메시지큐) <br/>\
+- App별로 트랜잭션 관리 로직 존재 <br/>\
+- 실패시 해당 트랜잭션 취소처리, 실패한 App에서 보상 Event 발행 Rollback 처리 시도 <br/>\
+- 장점 : 구축하기 쉬움 <br/>\
+- 단점 : 운영자 입장에서 트랜잭션 현재 상태 알기 어려움 \
+',
+  
+// Orchestration-Based Saga
+'# 정의 : 트랜잭션 처리를 위한 Saga 인스턴스(Manager)가 별도 존재하는 방식 <br/><br/>\
+# 성공 <br/>\
+<img src = "./img/OrchestrationBasedSagaSuccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 실패 <br/>\
+<img src = "./img/OrchestrationBasedSagaFailure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- Manager : 점진적 결과 전달, 일관성 유지, 중앙 집중화 <br/>\
+- 장점 : 복잡성 줄어들고, 테스트 상대적 쉬움, Rollback 용이 <br/>\
+- 단점 : 관리 위한 Orchestrator 서비스 추가, 인프라 구현 복잡성 증가 <br/><br/>\
+* 사례 : Axon Saga \
 ',
 
 // 정규화
