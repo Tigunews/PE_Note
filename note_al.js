@@ -941,6 +941,8 @@ var answer = answer.concat(
 # 극복방안 <br/>\
 - LSTM(Long Short Term Memory)<br/>\
 - GRU(Gated Recurrent Unit) : OutputGate 생략 간소화 버전 <br/><br/>\
+# RNN, LSTM, GRU 도식 <br/>\
+<img src = "./img/RNN_LSTM_GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 응용 1교시 2번\
 ',
 
