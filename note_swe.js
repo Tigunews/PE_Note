@@ -3756,7 +3756,7 @@ P 히스토그램 : Data 분포 <br/>\
 - 예비심사(문서위주) <br/>\
 - 본심사(문서,인터뷰,실제활동) <br/><br/>\
 # 수행절차 : 평가준비 > 평가수행 > 평가결과보고 <br/><br/>\
-# 성숙도 <br/>\
+# 성숙도 (IMDMO, IPMDMO)<br/>\
 <img src = "./img/CMMI_Level.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 라이지움 87회 관리 2교시 1번\
 ',
