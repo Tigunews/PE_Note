@@ -959,7 +959,7 @@ var answer = answer.concat(
 ',
 
 // [딥러닝(Deep Learning)]- GRU
-'# 정의 : RNN의 장기 의존성 문제를 해겨하기 위해 Reset, Update 2가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
+'# 정의 : RNN의 장기 의존성 문제를 해하기 위해 Reset, Update 2가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 구성요소 <br/>\
