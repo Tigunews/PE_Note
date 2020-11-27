@@ -1496,7 +1496,9 @@ var answer = answer.concat(
 // Sequence Diagram
 '# 정의 : 문제 해결에 필요한 객체간 메시지 순서를 시간 흐름에 따라 보여주는 UML 다이어그램 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/SequenceDiagram.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SequenceDiagram.png" style = "max-width:100%; height:auto;"><br/>\
+- Lifeline : 모델링 되는 개개의 인스턴스, 시간경과 표시<br/>\
+- Activations : 다른 인스턴스와 상호작용 위한 활성화 나타냄<br/><br/>\
 # 예시 <br/>\
 <img src = "./img/SequenceDiagramExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 관리 3교시 1번\
