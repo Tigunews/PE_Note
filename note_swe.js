@@ -3205,7 +3205,7 @@ CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<b
 - 유용성 법칙 : 세분화 <br/>\
 - 연동기획 : Rolling Waver Planning 가까운 미래만 상세히 작성 <br/>\
 - 100% Rule <br/><br/>\
-# 사례 <br/>\
+# 사례 (프단작패소)<br/>\
 <img src = "./img/WBS_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 관리 1교시 7번\
 ',
