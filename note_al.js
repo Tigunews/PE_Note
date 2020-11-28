@@ -9,6 +9,7 @@ var question = question.concat(
 '[정렬 알고리즘]- Insertion sort',
 '[정렬 알고리즘]- Shell sort',
 '[정렬 알고리즘]- Merge sort',
+'[정렬 알고리즘]- Quick sort',
 '최단경로 알고리즘',
 '[최단경로 알고리즘]- 다익스트라(Dijkstra) 알고리즘',
 '[최단경로 알고리즘]- 플로이드(Floyd) 알고리즘',
@@ -179,7 +180,19 @@ var answer = answer.concat(
 ',
 
 // Selection sort
-'<img src = "./img/SelectionSort.png" style = "max-width:100%; height:auto;">\
+'# 정의 : 현재 위치에 들어갈 값을 찾아서 자리바꿈하는 방식의 정렬 <br/><br/>\
+# 도식 <br/>\
+<img src = "./img/SelectionSortGraphic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 매커니즘 <br/>\
+1. 전체 데이터 중 가장 작은 데이터를 찾아서 첫 번째 데이터와 자리바꿈 <br/>\
+2. 1번에서 정렬한 데이터 외의 나머지 데이터들로 1번 과정 반복 <br/>\
+3. 모든 데이터의 정렬이 끝나면 종료 <br/><br/>\
+# 소스코드 <br/>\
+<img src = "./img/SelectionSortSourceCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 시간복잡도 : O(n^2) <br/>\
+- 공간복잡도 : O(n) <br/><br/>\
+* 122회 응용 4교시 2번\
 ',
 
 // [정렬 알고리즘]- Bubble sort
@@ -204,7 +217,19 @@ var answer = answer.concat(
 ',
 
 // Insertion sort
-'<img src = "./img/InsertionSort.png" style = "max-width:100%; height:auto;">\
+'# 정의 : 현재 위치에서, 그 이하의 배열들을 비교하여 자신이 들어갈 위치를 찾아, 그 위치에 삽입하는 알고리즘 <br/><br/>\
+# 도식 <br/>\
+<img src = "./img/InsertionSortGraphic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 매커니즘 <br/>\
+1. 정렬 되어 있는 부분집합에 새로운 데이터가 삽입될 위치를 확인 <br/>\
+2. 데이터를 삽입 후 정렬되어있는 부분집합을 확장 <br/>\
+3. 데이터가 정렬 시 종료 <br/><br/>\
+# 소스코드 <br/>\
+<img src = "./img/InsertionSortSourceCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 시간복잡도 : O(n^2) <br/>\
+- 공간복잡도 : O(n) <br/><br/>\
+* 122회 응용 4교시 2번\
 ',
 
 // Shell sort
@@ -227,6 +252,25 @@ var answer = answer.concat(
 - 데이터 집합이 하나될 때까지 재귀 <br/><br/>\
 # 코드 <br/>\
 <img src = "./img/MergeSortCode.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Quick Sort
+'# 정의 : 분할정복 알고리즘의 하나로, Pivot 중심 정렬 알고리즘 <br/><br/>\
+# 도식 <br/>\
+<img src = "./img/QuickSortGraphic1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/QuickSortGraphic2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 매커니즘 <br/>\
+1. pivot과 left(l), right(r) 플래그 설정 <br/>\
+2. pivot 기준으로 l은 증가, r은 감소시키며, pivot을 초가, 미만되는 숫자 발견 시 정지 <br/>\
+3. l, r 교체 <br/>\
+4. l이 r보다 클 경우 pivot과 r을 교체 <br/>\
+5. pivot 기준으로 좌/우 데이터를 1~4번 과정 반복 <br/><br/>\
+# 소스코드 <br/>\
+<img src = "./img/QuickSortSourceCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 시간복잡도 : O(nlogn) <br/>\
+- 공간복잡도 : O(n) <br/><br/>\
+* 122회 응용 4교시 2번\
 ',
 
 // 최단경로 알고리즘
