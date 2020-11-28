@@ -170,6 +170,8 @@ var answer = answer.concat(
 
 // 정렬 알고리즘
 '# 정의 : 원소들을 번호순이나 사전 순서와 같이 일정한 순서대로 열거하는 알고리즘 <br/><br/>\
+<img src = "./img/DataSort.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/StableNotStableSort.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SortAL_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/정렬알고리즘_5.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 시간복잡도 <br/>\
