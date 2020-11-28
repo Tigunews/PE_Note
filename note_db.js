@@ -1193,19 +1193,20 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 2. Data Node <br/>\
 - R/W 처리 : 읽기 쓰기 <br/>\
 - Block 처리 : Name Node 지시에 따라 생성, 삭제, 복제 수행 <br/><br/>\
-# 읽기 과정 <br/>\
-1. HDFS Client / File Search <br/>\
-2. Name Node / Block 위치 조회 요청 <br/>\
-3. Name Node / 가장 가까운 Data Node 목록 전송 <br/>\
-4. HDFS Client / Data Node Block 정보 요청 <br/>\
-5. Data Node / 전송, 읽기 <br/><br/>\
 # 쓰기 과정 <br/>\
-1. Data File / Block 단위로 구분 <br/>\
-2. Name Node / 파일 쓰기 요청 <br/>\
-3. Name Node / 유효 Data Node 전송, Meta data 별도 저장 <br/>\
-4. HDFS Client / Data Node에 쓰기 위한 Data Block 전송 <br/>\
-5. Data Node / 순차 쓰기 <br/>\
-6. 반복 <br/><br/>\
+<img src = "./img/HDFS_Read.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+0. File 크기 Block화 <br/>\
+1. Read 요청 <br/>\
+2. Data Node 분석 <br/>\
+3. 저장 Data 주소 전송 <br/>\
+4. Data 저장 (메인 - 동일 랙 - 다른 랙) <br/>\
+5. 완료 메시지 전송 <br/><br/>\
+# 읽기 과정 <br/>\
+<img src = "./img/HDFS_Write.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+1. Write 요청 <br/>\
+2. Data Node List 전송 <br/>\
+3. Data Node 저장 <br/>\
+4. 완료 메시지 전송 <br/><br/>\
 * KPC 95회 4교시 6번\
 ',
 
