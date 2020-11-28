@@ -919,7 +919,7 @@ var answer = answer.concat(
   
 // YOLO
 '# 정의 : 이미지 전체에서 다수의 Bounding box를 예측하고, 동시에 각 박스에 Class Probability를 계산하는 통합된 모델 사용 알고리즘 <br/><br/>\
-<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/YOLO.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 관리 3교시 5번\
 ', 
 
