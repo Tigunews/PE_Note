@@ -135,7 +135,7 @@ var question = question.concat(
 '[HPC]- Singularity',
 '2020년 하반기 경제정책 방향',
 'Data Lake',
-'[Data Lake]- Digital Catalogs',
+'[Data Lake]- Data Catalogs',
 '로보 어드바이저',
 '검색엔진',
 '[검색엔진]- 색인어 추출',
@@ -2401,7 +2401,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 * 라이지움 86회 2교시 6번 \
 ',
   
-// Digitla Catalogs
+// Data Catalogs
 '# 정의 : Data Lake 큐레이션 <br/>\
 - 데이터 관리 및 검색 도구가 결합된 메타데이터 모음으로, 기업 또는 기관이 보유한 데이터 자산의 효율적, 효과적 사요을 위해 사용 가능한 데이터 인벤토리를 제공하는 데이터 관리 플랫폼 <br/><br/>\
 # 구성요소 <br/>\
