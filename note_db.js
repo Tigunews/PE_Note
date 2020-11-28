@@ -1390,12 +1390,12 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
   
 // 표본 추출 방법
 '# 개념 : 연구대상 전체에서 선택된 일부를 선택하는 과정 <br/><br/>\
-# 확률적 추출 방법 <br/>\
+# 확률적 추출 방법 (단층계군) <br/>\
 - 단순임의 추출법(Simple Random Sampling) : 모든 표본 추출방법의 기본 <br/>\
 - 층화 추출법(Stratified Sampling) : 유사 단위 각 층 형성 후, 층간 단순임의 추출법 <br/>\
 - 계통 추출법(Systematic Sampling) : 동등분할 <br/>\
 - 군집 추출법(Cluster Sampling) : 추출된 일부 군집 통한 추출 <br/><br/>\
-# 비 확률적 추출 방법 <br/>\
+# 비 확률적 추출 방법 (유판할평눈 / 알작직없소) <br/>\
 - 유의 추출법(Purposive Sampling) : 모집단 특성에 대해 알고 있는 경우 사용 <br/>\
 - 판단 추출법(Judgement Sampling) : 경험적 추출, 표본 크기가 작은 경우 <br/>\
 - 할당 추출법(Quota Sampling) : 특성 따라 층 구성, 직접 선정 조사 <br/>\
