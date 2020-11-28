@@ -1232,6 +1232,8 @@ var answer = answer.concat(
 - Hyper Converaged Infrastructor <br/>\
 - X86 머신에 가상 컴퓨팅기능을 적용하고 스토리지와 네트워킹을 단일 시스템으로 결합하여 데이터 센터의 모든 요소를 Software Defined IT Infrastructure (SDI)로 구축, Scale-Out, 벤더 Lock-in 탈피한 통합 IT 프레임워크 <br/><br/>\
 # 배경 <br/>\
+- 3-Tier Architecture 한계 <br/>\
+- 복잡, 제어 어려움, DevOps, 규모 조정 불가 <br/>\
 - 분리,개별 장비 > CI (다수장비 Rack) > HCI (SDC+SDS+SDN)<br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/HCI_Architecture_Overview.png" style = "max-width:100%; height:auto;"><br/>\
