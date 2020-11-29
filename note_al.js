@@ -1827,6 +1827,7 @@ var answer = answer.concat(
 - 어떤 사건의 관측 전의 원인의 가능성과 관측 후의 원인의 가능성 사이의 관계를 설명하는 확률이론 <br/>\
 - n개의 서로 배반인 사건 A1, A2, ... An 중 하나는 반드시 일어난다고 할 때, 임의의 사건 B에 의해 사건 A가 일어날 조건부 확률 <br/><br/>\
 # 구성요소 <br/>\
+- 사전확률(P(A)), 우도확률(P(B|A)), 사후확률(P(A|B), 예측사전확률(P(B)) <br/>\
 <img src = "./img/BayesTheoremBase.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 이론 <br/>\
 <img src = "./img/BayesTheoremDetail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
