@@ -948,6 +948,8 @@ var answer = answer.concat(
 // [딥러닝]- R-CNN
 '# 정의 : 객체 탐색 기술 <br/>\
 - 입력 영상 내 사물 인식을 위해 사물의 영역 탐지 및 사물 특징 추출, 분류 CNN 기반 신경망 알고리즘 <br/><br/>\
+# 영상 객체인식 알고리즘 종류 <br/>\
+<img src = "./img/ObjectDetectionAlgorithms.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
 <img src = "./img/RCNN_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 관리 3교시 5번\
