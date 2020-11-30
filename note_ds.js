@@ -3,6 +3,8 @@ var question = question.concat(
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[4차산업]- Smart Energy',
+'[4차산업]- Smart Factory',
+'[4차산업][Smart Factory]- CPS',
 '[정책]- 데이터 3법',
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
@@ -148,8 +150,6 @@ var question = question.concat(
 'Service Worker',
 'Ontact',
 '디지털트윈',
-'스마트 팩토리',
-'[스마트 팩토리]- CPS',
 'Edge Computing',
 '서버리스 컴퓨팅',
 'Web Crawling',
@@ -288,6 +288,76 @@ var answer = answer.concat(
 # 보안 : 비인가 / 취급정보 / SW, Device <br/>\
 <img src = "./img/SmartEnegerySecurity.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 관리 4교시 4번\
+',
+  
+  
+// 스마트 팩토리
+'# 정의 : 자동화 + 지능화 공장 <br/>\
+- ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
+<img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 공장/현장 자동화 관리 <br/>\
+- PLC : 프로그램을 통한 외부장치 자동제어 및 감시 <br/>\
+- HMI : PLC등 제어 유닛 단위로 감시, 제어 기기 <br/><br/>\
+2. 공장운영관리 <br/>\
+- CPS : 사이버 시스템을 통해 물리 제어하는 시스템 <br/>\
+- Digital Twin : 현실 세계를 가상공간에 복제 및 시뮬레이션 기술 <br/><br/>\
+3. 제품개발 관리 <br/>\
+- 3D 프린팅 : 디지털 데이터를 이용, 3차원 물체를 제조하는 기술 <br/>\
+- VR/AR/XR : 객체 모델링, 공정 데이터, 예측, 제어 관리 기술 <br/><br/>\
+4. 공급 사슬 관리 <br/>\
+- SCM : SCP, SCE, APS등 수요 예측, 계획, 운영 등 공급망 관리 <br/>\
+- CRM : 고객 수요 예측, 피드백 반영한 제품 생산 <br/><br/>\
+5. 공통기술 <br/>\
+- 5G : 초저지연, 초연결, 초고속 5세대 이동통신 기술 <br/>\
+- Cloud Based App : 클라우드 기반 데이터 처리 및 분석 통한 공정 설계 실행 <br/>\
+- AI : 머신러닝, 딥러닝 등을 통한 데이터 수집,학습,분석 <br/>\
+- Big Data : NoSQL, Hadoop, Spark, Storm 활용 데이터 처리 <br/><br/>\
+# 분류 <br/>\
+<img src = "./img/SmartFactory5Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 스마트공장 보안 감사 <br/>\
+- 면담조사 <br/>\
+- 문서검토 <br/>\
+- 현장조사 <br/>\
+- 재실시 <br/><br/>\
+# 고도화 방법론 제언 <br/>\
+<img src = "./img/SmartFactoryHighlevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 핵심 성과지표 <br/>\
+<img src = "./img/SmartFactoryIndex.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 보안 취약점 <br/>\
+<img src = "./img/SmartFactorySecWeak.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 보안 기술 <br/>\
+<img src = "./img/SmartFactorySecTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 2교시 5번\
+',
+  
+// CPS
+'# 정의 : Smart Factory의 핵심 기반 기술 <br/>\
+- Cyber Physical System <br/>\
+- 인간의 개입없이 대규모 센서/엑츄에이터를 가지는 물리적인 요소들과 통신기술, 응용 소프트웨어 및 시스템 소프트웨어 기술을 활용하여 실시간으로 물리적 요소들을 제어하는 복합 시스템 <br/><br/>\
+# 핵심 특성 <br/>\
+- Computation : 정보/데이터/기능 통합 <br/>\
+- Control : 통합 접근 제어 <br/>\
+- Communication : 물리, 사이버 세계 연결 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CPS_Structor.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. HW <br/>\
+- Controller : 센서 장애 탐지 <br/>\
+- Actuator : 시스템 제어 <br/>\
+- Sensor : 외부 자극 감지 <br/><br/>\
+2. SW <br/>\
+- 모델링 : 실제 동작 기본 개념 (이산/연속/도메인)<br/>\
+- 자율 컴퓨팅 : 자가 치유 <br/>\
+- 실시간 미들웨어 : 분산 환경 로드 밸런싱 (CORBRA, JMS) <br/>\
+- 검증기술 : 모델링 결과 통한 소스코드 검증 <br/><br/>\
+3. NW <br/>\
+- 유/무선 통신 : 고속 통신 (IPv6, WPAN)<br/><br/>\
+# 구현 위한 해결 과제 <br/>\
+- 데이터 관리 : 실시간 정보 분석 인프라 <br/>\
+- 신뢰성 확보 : 정형검증 요구 <br/>\
+- 프라이버시 : 과도한 정보 수집 금지 <br/>\
+- 정보보안 : 산업 기밀 유출 방지 \
 ',
   
 // 데이터 3법 
@@ -2647,53 +2717,6 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 # 기술요소 <br/>\
 <img src = "./img/DigitalTwinTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 3교시 1번\
-',
-  
-// 스마트 팩토리
-'# 정의 : 자동화 + 지능화 공장 <br/>\
-- ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
-<img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 분류 <br/>\
-<img src = "./img/SmartFactory5Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 스마트공장 보안 감사 <br/>\
-- 면담조사 <br/>\
-- 문서검토 <br/>\
-- 현장조사 <br/>\
-- 재실시 <br/><br/>\
-# 고도화 방법론 제언 <br/>\
-<img src = "./img/SmartFactoryHighlevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 핵심 성과지표 <br/>\
-<img src = "./img/SmartFactoryIndex.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 120회 관리 2교시 5번\
-',
-  
-// CPS
-'# 정의 : Smart Factory의 핵심 기반 기술 <br/>\
-- Cyber Physical System <br/>\
-- 인간의 개입없이 대규모 센서/엑츄에이터를 가지는 물리적인 요소들과 통신기술, 응용 소프트웨어 및 시스템 소프트웨어 기술을 활용하여 실시간으로 물리적 요소들을 제어하는 복합 시스템 <br/><br/>\
-# 핵심 특성 <br/>\
-- Computation : 정보/데이터/기능 통합 <br/>\
-- Control : 통합 접근 제어 <br/>\
-- Communication : 물리, 사이버 세계 연결 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/CPS_Structor.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-1. HW <br/>\
-- Controller : 센서 장애 탐지 <br/>\
-- Actuator : 시스템 제어 <br/>\
-- Sensor : 외부 자극 감지 <br/><br/>\
-2. SW <br/>\
-- 모델링 : 실제 동작 기본 개념 (이산/연속/도메인)<br/>\
-- 자율 컴퓨팅 : 자가 치유 <br/>\
-- 실시간 미들웨어 : 분산 환경 로드 밸런싱 (CORBRA, JMS) <br/>\
-- 검증기술 : 모델링 결과 통한 소스코드 검증 <br/><br/>\
-3. NW <br/>\
-- 유/무선 통신 : 고속 통신 (IPv6, WPAN)<br/><br/>\
-# 구현 위한 해결 과제 <br/>\
-- 데이터 관리 : 실시간 정보 분석 인프라 <br/>\
-- 신뢰성 확보 : 정형검증 요구 <br/>\
-- 프라이버시 : 과도한 정보 수집 금지 <br/>\
-- 정보보안 : 산업 기밀 유출 방지 \
 ',
 
 // Edge Computing
