@@ -114,6 +114,7 @@ var question = question.concat(
 '클라우드 컴퓨팅',
 '[클라우드]- 클라우드 전환',
 '[클라우드]- IaaS, PaaS, Saas',
+'[클라우드]- IaC',
 '[클라우드]- PaaS-TA',
 '[클라우드]- 클라우드 보안이슈',
 '[클라우드][정책]- 클라우드 컴퓨팅 정책',
@@ -2062,6 +2063,31 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - Time to market : 소프트웨어의 즉시 사용 가능 <br/>\
 - 유지보수 간소화 : 클라우드 제공업체를 통한 기술적 문제 지원 <br/><br/>\
 * 122회 4교시 1번\
+',
+  
+// IaC
+'# 정의 : 코드 이용 인프라 관리 기술 <br/>\
+- Infrastructure as Code <br/>\
+- 클라우드 기반의 인프라를 애플리케이션과 API를 통해 구성하는 방법 <br/><br/>\
+# 구성요소 <br/>\
+- Agile Process : 신속한 개발 프로세스, XP, Scrum, Lean 등 <br/>\
+- DevOps : CI, CD, Release Automation, Provisioning, Test Automation <br/>\
+- Code Tools : Chef(DevOps 협력 언어), Puppet(인프라 구축 자동화) <br/><br/>\
+# 특징 <br/>\
+- 접근 유형 : 선언적(기능적)-What, 명령적(절차적)-How, 지능적(환경인식)-Why <br/>\
+- Method : Push, Pull / 제어서버, 대상 시스템 <br/><br/>\
+# 주요 기술 <br/>\
+1. Orchestration <br/>\
+- Jenkins + Fabric : Fabirc 결과 Jenkins 연동 <br/>\
+- Mcollective : 각 노드 요청 및 응답 관리 <br/><br/>\
+2. Configuration <br/>\
+- Chef : 레시피 기반 멱등성 제공 <br/>\
+- Ansible : 운영환경 설정 파일로 관리 <br/>\
+<font color = "red">* 멱등성 : 재차 연산 결과 동일</font><br/><br/>\
+3. Bootstrap <br/>\
+- Docker : App 구동 설정/파일 관리 <br/>\
+- Vagrant : VM 리소스, 스크립트 수행 <br/><br/>\
+* 라이지움 86회 \
 ',
   
 // PaaS-TA
