@@ -87,7 +87,8 @@ var answer = answer.concat(
 - PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) <br/><br/>\
 - 기술,조직,전략,프로세스 <br/><br/>\
 - 4P : 제품(Product), 가격(Price), 유통(Place), 촉진(Promotion) <br/><br/>\
-- 비용, 접근성, 품질 \
+- 비용, 접근성, 품질 <br/><br/>\
+- 비전, 목표, 전략, Item \
 ',
  
 // ITSM
