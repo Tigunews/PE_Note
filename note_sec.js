@@ -1376,7 +1376,10 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 ',
   
 // 식별자, 민감정보
-'<img src = "./img/ID_SA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+'# 개념 <br/>\
+<img src = "./img/ID_SA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 식별자 분류 <br/>\
+<img src = "./img/IdentifierClassification.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 관리 3교시 3번\
 ',
     
