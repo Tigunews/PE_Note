@@ -2398,6 +2398,8 @@ var answer = answer.concat(
 <img src = "./img/ExploratoryTestingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 테스트케이스 기반 테스트 비교 <br/>\
 <img src = "./img/ExploratoryCaseCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용 방안 : Risk 기반 테스팅, Agile 테스팅, 인수 테스트 <br/><br/>\
+* KPC 94회 관리 4교시 3번 <br/>\
 * 아이리포 24회 관리 3교시 3번\
 ',
 
