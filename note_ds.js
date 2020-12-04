@@ -3060,7 +3060,8 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 ',
   
 // 행동 인터넷
-'# 정의 : Internet of Behaviors(IoB) <br/>\
+'<a href = "./doc/Gartner2021.pdf">참고문헌</a><br/><br/>\
+# 정의 : Internet of Behaviors(IoB) <br/>\
 - 기업이 사용자의 행동에 영향을 미치기 위해 데이터를 활용하는 것 <br/><br/>\
 # 구성요소 <br/>\
 - 수집(Capture) : Digital Dust <br/>\
@@ -3084,7 +3085,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 다중 경험 : 디지털 키오스크 <br/>\
 - 고객 경험 : 약속 시스템 배포<br/>\
 - 직원 경험 : 개인 장비 사용<br/>\
-- 사용자 경험 : 사용자 장비 공동 탐색 <br/><br/>\
+- 사용자 경험 : 사용자 장비 공동 탐색 \
 ',
   
 // 개인정보보호 강화 컴퓨팅
