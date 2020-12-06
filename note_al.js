@@ -19,6 +19,7 @@ var question = question.concat(
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
 'AVL 트리',
+'[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
 '[AI]- 기계학습 종류',
@@ -373,7 +374,7 @@ var answer = answer.concat(
 # 원리 : 선택, 갱신, 비교, 반복\
 ',
 
-// AVL Tree
+// AVL 트리
 '# 정의 : 균형인수, 회전기법, 이진 탐색트리 <br/>\
 - AVL = Adelson-Velskii, Landis <br/>\
 - 1962년 G.M. Adelson-Velskii와 E.M. Landis가 논문 "An algorithm for organization of information"에서 발표 <br/>\
@@ -396,7 +397,23 @@ var answer = answer.concat(
 <img src = "./img/AVL_LL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_RR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_LR.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;">\
+',
+  
+// AutoML
+'# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
+- 머신러닝 파이프라인의 일부 또는 전체를 자동화하여 새로운 학습모델을 생성하는 기술 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/AutoMLMachanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- Feature Engineering Automation : Raw Data를 머신러닝 모델에 적합하게 변형 / 도메인 엔지니어링, PCA, EDA <br/>\
+- Hyper Parameter Optimization : 사용자 직접 설정 값, 훈련 제어 파라미터 / 그리드 탐색, 랜덤 탐색, 베이지안 최적화, 경사하강법 <br/>\
+- Neural Architecture Search : 가장 효과적 훈련할 수 있는 신경망 자동 탐색 방법 / 진화 알고리즘, 강화 학습 <br/><br/>\
+# 활용방안 <br/>\
+- 고품질 학습 데이터 생성 : 데이터 사이언티스트 개입 최소, 손실함수 및 교차 검증 오류 최소화 <br/>\
+- 커스텀 ML 모델 개발 : 신경망 알고리즘 자동적 개선, 고도화 모델 개발 <br/>\
+- AI 서비스 통합 : API 형태 내외부 공개, 데이터 분석서비스와 통합 인공지능 서비스 구축 <br/><br/>\
+* 라이지움 88회 1교시 관리 2번\
 ',
   
 // 인공지능 역기능
