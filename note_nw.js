@@ -80,6 +80,7 @@ var question = question.concat(
 '[NW 가상화]- NFV',
 '[NW 가상화]- Open flow',
 '유무선 전력전송',
+'망분리',
 );
 
 var answer = answer.concat(
@@ -1551,5 +1552,22 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 종류 <br/>\
 <img src = "./img/WPT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 응용 4교시 8번\
+',
+  
+// 망분리
+'# 정의 : 접근제어 / 유출차단 / 업무, 인터넷 망 차단 조치 <br/>\
+- 외부 인터넷망을 통한 불법적인 접근과 내부정보 유출을 차단하기 위해 업무망과 외부 인터넷망을 분리하는 망 차단 조치 <br/><br/>\
+# 관련 규정 <br/>\
+1. 개인정보의 기술적,관리적 보호조치 기준(방송통신위원회 고시) 제4조 접근 통제<br/>\
+- 직전 3개월간 개인정보 저장, 관리 되고 있는 이용자 수 일일 평균 100만명 이상 <br/>\
+- 매출액 100억원 이상 <br/><br/>\
+2. 전자금융감독규정(금융위원회고시) 제15조 해킹 등 방지 대책 <br/>\
+- 업무용 시스템 <br/>\
+- 정보처리시스템의 운영, 개발, 보안 목적으로 직접 접속하는 단말기 <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/NetDistribution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요현황 <br/>\
+<img src = "./img/NetDistributionCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 관리 1교시 4번\
 ',
 );
