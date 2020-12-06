@@ -34,7 +34,9 @@ var question = question.concat(
 '스푸핑(Spoofing)',
 '스턱스넷(stuxnet)',
 'APT',
-'[APT]- 래터럴 무브먼트',
+'[APT]- Leteral Movement',
+'[Leteral Movement]- IoA',
+'[Leteral Movement]- IoC',
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
@@ -665,7 +667,7 @@ var answer = answer.concat(
 * 116회 2교시 1번\
 ',
    
-// 래터럴 무브먼트
+// Leteral Movement
 '# 정의 : APT 내부망 이동 공격 기법 <br/>\
 - Lateral Movement <br/>\
 - 지능형 위협 공격(APT) 과정 중 공격자가 조직 내 최초 시스템 해킹에 성공후 내부망에서 사용되는 계정 정보를 획득하여 내부망의 시스템으로 이동하는 방식 <br/><br/>\
@@ -678,6 +680,30 @@ var answer = answer.concat(
 - 예방 단계 : xp_cmeshell procedure 삭제, SSL 활성화 <br/>\
 - 사후 단계 : 허니팟 시스템(모니터링), 머신러닝(이상여부), 문자,메일(인증) <br/><br/>\
 * 120회 응용 1교시 9번\
+',
+  
+// IoA
+'# 정의 : 공격 의도 파악 가능한 동적 지표 (공격지표)<br/>\
+- Indicators of Attack <br/>\
+- 코드 실행 여부, 지속성, 스텔스, C&C 서버, 네트워크 내 움직임에 대한 정보 등 공격 의도를 파악할 수 있는 동적인 지표 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/IOC_IOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 적용사례 <br/>\
+- 위협탐지 : Leteral Movement 등에 대한 행위기반 위협 탐지 <br/>\
+- 위협분석 : 다수의 시스템을 연계하여 이상 행위룰 분석 <br/>\
+- 대응 : 학습을 통한 비반복적, Zero Day 등 새로운 위협 대응 가능 <br/><br/>\
+* 라이지움 88회 관리 1교시 3번\
+',
+  
+// IoC
+'# 정의 : 방어자 대응 중심 관점 지표 (침해지표)<br/>\
+- Indicators of Compromise <br/>\
+- 시그니쳐 등과 같은 공격이 발생했음을 나타내는 방어자의 대응 중심적인 관점의 지표 <br/><br/>\
+# 적용사례 <br/>\
+- 위협탐지 : 시그니쳐 기반의 지푤르 통한 침입탐지 <br/>\
+- 위협분석 : 단일 시스템 중심의 지표 분석 <br/>\
+- 대응 : 반복적 공격에 대응 <br/><br/>\
+* 라이지움 88회 관리 1교시 3번\
 ',
 
 // SQL Injection
