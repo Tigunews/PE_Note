@@ -19,10 +19,11 @@ var question = question.concat(
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
 'AVL 트리',
+'[AI]- 기계학습',
+'[AI]- 지도학습',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
-'[AI]- 기계학습 종류',
 '[AI]- 유전자 알고리즘',
 '[AI]- Feed Forward Neural Network',
 '[AI]- 분석모델평가',
@@ -65,7 +66,7 @@ var question = question.concat(
 '[AI]- 모라벡의 역설(Moravec\'s Paradox)',
 '[AI]- 몬테 카를로 트리 탐색(MCTS)',
 '[AI]- 튜링테스트',
-'[인공지능 서비스 플랫폼',
+'[AI]- 인공지능 서비스 플랫폼',
 '[AI]- 인공지능 소프트웨어 보안 취약성',
 '[AI]- AI Flow',
 '[AI]- XAI',
@@ -402,6 +403,36 @@ var answer = answer.concat(
 <img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;">\
 ',
   
+// 기계학습
+'# 정의 : 인공지능 / 컴퓨터 학습 / 알고리즘 <br/>\
+- 인공지능의 한 분야로, 컴퓨터가 학습할 수 있도록 알고리즘과 기술을 개발하는 분야 <br/><br/>\
+# 근본 원리 <br/>\
+- 균등의 원리 : 데이터 관측전 불필요한 가정 최소화 <br/>\
+- 오캄의 원리 : 단순한 모델 우선순위 <br/>\
+- 양보의 원리 : 학습 성능 향상에 관계하는 원리, 이익이 있으면 손해를 보는 것도 있다. <br/><br/>\
+# 구성요소 : 입력 데이터, 출력 데이터, 학습 데이터, 기계학습 알고리즘, 예측 모델 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/ML_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용 <br/>\
+<img src = "./img/ML_Useage.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 아이리포 23회 3교시 6번\
+',
+  
+// 지도학습
+'# 정의 : 훈련데이터 / 하나의 함수 유추 <br/>\
+- 훈련데이터로부터 하나의 함수를 유추해내기 위한 기계학습의 한 방법 <br/><br/>\
+# 종류 <br/>\
+- 신경망 : 인간 두뇌 세포 모방 개념 <br/>\
+- 은닉 마르코프 모델 : 시스템이 관측될 수 없는 은닉된 상태의 직접적인 원인 + 관찰가능한 결과, 통계적 마르코프 모형중 하나 <br/>\
+- 결정 트리 : 의사 결정 규칙, 결과를 트리 구조로 도식화 <br/>\
+- 다층 신경망 : 입력층과 출력층 사이에 하나이상의 중간층이 존재하는 신경망 <br/>\
+- SVM : 데이터가 사상된 공간에서 경계선과 가장 근접한 데이터간의 거리가 가장 큰 경계를 식별하는 알고리즘 <br/>\
+<img src = "./img/SVM_Overview.png" style = "max-width:100%; height:auto;"><br/>\
+- 베이시안 망 : 주어진 의사결정 문제의 영역 지식을 확률적으로 표현 <br/>\
+- CNN : 컴퓨터 비전 위한 Convolution , Pooling, Fully Connected Layer 통한, 특징 추출, 차원 축소, 이미지 분류, 인식 가능한 신경망 알고리즘 <br/>\
+<font color = "red">* 컴퓨터 비전 : 기계의 시각에 해당하는 부분을 연구하는 컴퓨터 과학 분야 </font>\
+',
+  
 // AutoML
 '# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
 - 머신러닝 파이프라인의 일부 또는 전체를 자동화하여 새로운 학습모델을 생성하는 기술 <br/><br/>\
@@ -465,14 +496,6 @@ var answer = answer.concat(
 - 고객 지원 서비스 산업 : AI 면접, AI 콜센터<br/>\
 - 교육 산업 : 언어 학습, 개인 맞춤형 교육 시스템 <br/><br/>\
 * KPC 97회 관리 3교시 2번\
-',
-  
-// 기계학습 종류
-'# 종류 <br/>\
-<img src = "./img/ML_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 활용 <br/>\
-<img src = "./img/ML_Useage.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 아이리포 23회 3교시 6번\
 ',
 
 // [기계학습]- 유전자 알고리즘
