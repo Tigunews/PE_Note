@@ -967,9 +967,9 @@ var answer = answer.concat(
 - 대칭키 : 키사이즈 증가 필요 <br/>\
 - 해시 : 암호 알고리즘 출력길이 증가 필요 <br/><br/>\
 # 양자암호 통신 기술 특징 <br/>\
-- 양자 중첩 (Quantum Superposition) : 여러 상태가 동시에 존재, 측정 전까지 상태를 알 수 업음 <br/>\
-- 양자 얽힘 (Quantum Entanglement) : 둘 이상의 양자가 멀리 떨어져 있어도 존재 <br/>\
-- 불확정성 (Uncertainty Principle) : 서로다른 물리량 동시에 정확하게 측정 불가 -> 복제 불가 \
+- 양자 중첩 (Quantum Superposition) : 0,1이 동시 존재하여 해석이 난해 / (1|0)<br/>\
+- 양자 얽힘 (Quantum Entanglement) : 거리와 무관한 특수 상관관계 / 1 ~ 1 <br/>\
+- 불확정성 (Uncertainty Principle) : 관측시 상태값 변화하여 해독 불가 / 1?0 \
 ',
    
 // QKD
@@ -997,8 +997,23 @@ var answer = answer.concat(
 '# 정의 : 양자 알고리즘 대응 암호화 <br/>\
 - Post-Quantum Cryptography <br/>\
 - 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
-# 양자내성암호 유형 <br/>\
-<img src = "./img/PQC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 양자보안의 매커니즘 <br/>\
+<img src = "./img/QuntaumCryptographyMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. QED <br/>\
+- 광학역학계 : 변조기, 회선제어기 <br/>\
+- P&P : 광자 통한 상태 변경 <br/>\
+- One way : 거리 무관 암호 교환 <br/><br/>\
+2. QKD <br/>\
+- BB84 : 프로토콜 이용 키교환 <br/>\
+- QRNG : 난수 이용 생성 <br/>\
+- 보안 NW : Pure NW 이용 통신 <br/><br/>\
+# 양자보안 알고리즘 종류 <br/>\
+- 다변수 기반 : 다항식 활용 계산, 전자서명 주로 활용 / Rainbow, GUI<br/>\
+- 코드 기반 : 행렬 기반 알고리즘, 복잡한 계산 방식 / McBits, Eliece <br/>\
+- 격자 기반 : 코드의 격자화 활용, 계산시간 감소 / Newhope, BLISS <br/>\
+- 아이소제니 기반 : 다양한 활용가능, 변수 설정 난해 / SIDH<br/>\
+- 해시 기반 : 해시의 충돌 회피성, 무결성 활용 암호화 / XMSS, HORS <br/><br/>\
 * 라이지움 87회 관리 2교시 6번 <br/>\
 * KPC 95회 1교시 13번\
 ',
