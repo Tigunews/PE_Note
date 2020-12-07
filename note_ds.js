@@ -37,7 +37,9 @@ var question = question.concat(
 '[핀테크]- 인터넷 전문 은행',
 '[핀테크]- FDS',
 '[핀테크]- My Data 산업',
-'[핀테]- QR코드 기반 결제',
+'[핀테크]- Scraping',
+'[핀테크]- API',
+'[핀테크]- QR코드 기반 결제',
 '[IT 금융]- De-Fi',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
@@ -822,6 +824,45 @@ var answer = answer.concat(
 # 주체별 역할, 처리흐름 <br/>\
 <img src = "./img/MyDataSpecification.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 2교시 2번\
+',
+  
+// Scraping
+'# 정의 : 고객 인증정보 / 데이터 추출,가공,제공 <br/>\
+- 고객의 인증정보를 기반으로 시스템이나 웹사이트에 있는 데이터 중 필요한 데이터를 추출/가공하여 제공하는 기술 <br/><br/>\
+# 기술 유형 <br/>\
+- Protocol : 통신 모듈 통한 직접 수행, 독립적 <br/>\
+- Broweser : 브라우저 기반 방식 <br/><br/>\
+# 서비스 유형 <br/>\
+- Server : 서버 이용 인터넷 통한 제공 <br/>\
+- Client : 사용자 PC 이용, 저장 방식 <br/><br/>\
+# 활용사례 <br/>\
+- Bankslad, Tos : 자산관리 핀테크 서비스 <br/>\
+- Bomap : 서류 제출 없는 보험사 서비스 <br/>\
+- 네이버 지식쇼핑 : 상품 가격 정보 수집 <br/><br/>\
+* 라이지움 88회 관리 1교시 5번\
+',
+  
+// API
+'# 정의 : 표준화된 인터페이스 <br/>\
+- 단위 서비스를 표준화된 인터페이스로 제공하여 보다 안전하게 서비스를 사용하는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/API_Overview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 릴리즈 유형 <br/>\
+- Private API : 기업 내부 개발 표준화 <br/>\
+- Public API : 모두에게 공개, 혁신적 <br/>\
+- Partner API : 특정 비즈니스 파트너와 공유 <br/><br/>\
+# 처리방식 <br/>\
+- REST API : HTTP GET/PUT/POST/DELETE <br/>\
+- SOAP API : SOAP-Envelope, Body, Header <br/><br/>\
+# 보안 기술 <br/>\
+- Token : 서비스 접근 제어 방식 <br/>\
+- API Gateway : 단일 진입 지점 <br/>\
+- 암호화/서명 : TLS 방법, 데이터 암호화, 사용자 접근 서명 <br/>\
+- OpenID Connect : OAuth 프레임 워크 기반 Identiy Layer <br/><br/>\
+# 활용 사례 <br/>\
+- Public API : 기상청(기상정보), 금융권(오픈 뱅킹), 구글(지도) <br/>\
+- Private API : Amazon(Service Oriented), Netflix(고객 서비스용 시스템 <br/><br/>\
+* 라이지움 88회 관리 1교시 5번\
 ',
   
 // QR 코드 기반 결제 
