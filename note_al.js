@@ -21,6 +21,7 @@ var question = question.concat(
 'AVL 트리',
 '[AI]- 기계학습',
 '[AI]- 지도학습',
+'[AI]- Clustering',
 '[AI][지도학습]- 머신러닝 예측모델',
 '[AI][지도학습]- 분석모델평가',
 '[AI][지도학습][분석모델평가]- Cross Validation',
@@ -435,6 +436,15 @@ var answer = answer.concat(
 # 평가 <br/>\
 - Cross Validation : 훈련데이터로부터 하나의 함수가 유추되고 나면 함수에 대한 평가를 통해 파라미터를 최적화 (훈련, 검증, 테스트 집합) <br/>\
 - 정밀도(Precision), 재현율(Recall) 측정 : Precesion = tp / (tp+fp), Recall = tp / (tp+fn)\
+',
+  
+// Clustering 
+'# 정의 : 비지도 / 유사 특성 / 집단화 / 거리차이 최소화 <br/>\
+- 비지도 학습의 일종으로, 상호 간 유사 특성을 갖는 데이터들을 집단화로 묶고 중심과의 거리 차이를 최소화 하는 기법 <br/><br/>\
+# 유형 <br/>\
+- K-means Clustering : Centroid 기반 중심 찾아가는 방식 <br/>\
+- EM-Clustrering : Gaussian Mixture 모델 기반 / E-step, M-step / 반복 군집 형성 <br/>\
+- Dendrogram Clustering : 각 단계의 군집이 어떻게 형성되는지 확인하고 형성된 군집의 유사성 수준이 평가 가능한 다이어그램 \
 ',
   
 // 머신러닝 예측모델
