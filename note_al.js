@@ -446,6 +446,10 @@ var answer = answer.concat(
 - 고품질 학습 데이터 생성 : 데이터 사이언티스트 개입 최소, 손실함수 및 교차 검증 오류 최소화 <br/>\
 - 커스텀 ML 모델 개발 : 신경망 알고리즘 자동적 개선, 고도화 모델 개발 <br/>\
 - AI 서비스 통합 : API 형태 내외부 공개, 데이터 분석서비스와 통합 인공지능 서비스 구축 <br/><br/>\
+<font color = "red">* Google AI, H2O.Ai, Auto-Sklearn, ML Box, Auto-Keras, TPOT, Pycaret <br/>\
+같은게 있는 간글 키워드로 쓰심 좋을거 같고, <br/>\
+커뮤니티에선 H2O, Pycaret 가 좀 언급 되는거 같아요. <br/>\
+많이 쓰이는 기술이여서 관련된 주제에서 AutoML을 키워드로 쓰시는것도 좋을거 같아요. </font><br/><br/>\
 * 라이지움 88회 1교시 관리 2번\
 ',
   
