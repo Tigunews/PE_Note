@@ -32,6 +32,7 @@ var question = question.concat(
 '[AI]- 강화학습',
 '[AI][강화학습]- 심층강화학습',
 '[AI]- 역강화학습',
+'[AI]- 차원축소',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
@@ -630,6 +631,18 @@ var answer = answer.concat(
 # 비교 <br/>\
 <img src = "./img/ReinforceInverseCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 84회 4교시 4번\
+',
+  
+// 차원축소
+'개념 : 차원의 저주 <br/>\
+- 벡터의 차원이 높아짐에 따라 생길 수 있는 문제점 방지 위한 축소 기법 <br/><br/>\
+# 기법 <br/>\
+- PCA(Principal Component Analysis) : 데이터의 최적 표현 위한 데이터 축소, 분산 최대 축 <br/>\
+<img src = "./img/PCA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- ICA(Independent Component Analysis) : 독립성 최대가 되는 벡터 찾기 <br/>\
+<img src = "./img/ICA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- LDA(Linear Discriminant Analysis) : 데이터의 최적 분류의 견지에서 데이터 축소 \
+<img src = "./img/LDA.png" style = "max-width:100%; height:auto;">\
 ',
   
 // AutoML
