@@ -1771,6 +1771,8 @@ var answer = answer.concat(
 - 키교환 : ECDH <br/>\
 - 난수생성 : Dual-EC DRBG <br/>\
 - 암/복호화 : EC-KEM <br/><br/>\
+# ECC RSA 비교 <br/>\
+<img src = "./img/ECC_RSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 86회 라이지움 1교시 7번 \
 ',
 
