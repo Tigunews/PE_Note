@@ -28,6 +28,9 @@ var question = question.concat(
 '[AI]- 비지도 학습',
 '[AI][비지도 학습]- GAN',
 '[AI][비지도 학습]- DCGAN',
+'[AI]- 강화학습',
+'[AI][강화학습]- 심층강화학습',
+'[AI]- 역강화학습',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
@@ -36,9 +39,6 @@ var question = question.concat(
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
 '[AI]- TensorFlow',
-'[AI]- 강화학습',
-'[AI][강화학습]- 심층강화학습',
-'[AI]- 역강화학습',
 '[AI]- 모방학습',
 '[AI]- 연합학습',
 '[AI]- 딥러닝',
@@ -575,7 +575,53 @@ var answer = answer.concat(
 - 장기간 학습시 Collapse 문제 발생 <br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
-
+  
+// 강화학습
+'# 정의 : Agent, State, Action, Reward <br/>\
+- Reinforcement Learning <br/>\
+- Agent가 어떤 상태에서 행동을 수행할 때마다 그 성능에 대한 피드백을 제공하는 보상 함수를 통해 학습하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ReinforcementLearning.png" style = "max-width:100%; height:auto;"><br/>\
+- 주어진 보상 함수를 통해 최적 정책을 계산 <br/><br/>\
+# 주요기법 <br/>\
+- MDP(Markov Decision Process) : 강화학습의 문제를 표현하는 알고리즘 <br/>\
+- Markove Chain : MDP에서 액션과 상태가 없다고 가정, 상태에서 상태로 전이하는 Matrix 주어질 경우 무한대의 시간이 흐른후 모두 Sleep 하는 것 <br/>\
+- Q-Learning : Q함수는 어떤 상태 s에서 액션 a를 수행하고, 최적의 규칙에 따라 액션을 수행할 때 <font color = "red">미래에 예상되는 전체 보상의 최대값</font>을 나타내는 함수 <br/>\
+- DQN(Deep Q Network) : 구글이 딥마인드가 개발한 딥러닝과 강화학습의 Q러닝을 조합한 기법 <br/><br/>\
+# 활용 분야 : 게임, 로봇제어, 자율주행, 금융서비스(수익율) <br/><br/>\
+* 라이지움 84회 4교시 4번\
+',
+  
+// 심층강화학습
+'# 정의 : 시행 착오 알고리즘 / 누적 보상 함수 / 신경망 디자인 가속화 학습<br/>\
+- Deep Reinforcement Learning <br/>\
+- Deep Learning + Reifnorcement Learning <br/>\
+- 강화학습의 정책 또는 가치함수를 심층 신경망으로 구성하는 기법 <br/>\
+- 자율적 에이전트가 강화 학습의 시행 착오 알고리즘과 누적 보상 함수를 이용해 신경망 디자인을 가속화하는 방식의 인공지능 학습 <br/><br/>\
+# 유형 <br/>\
+1. 싱글 에이전트 <br/>\
+- Q-러닝 기반 : 매 상태,행동 pair에 대한 Q 값 기반 행동 결정 / DQM <br/>\
+- 정책경사기반 : 어떤 상태에서 어떤 행동을 취할지 결정하는 정책 직접 구함 / TRPO <br/><br/>\
+2. 멀티 에이전트 <br/>\
+- Q-러닝 기반 MARL 알고리즘 : 로컬 Q-함수 신경망, 전역 Q-함수 신경망을 최적의 공동행동 학습 목표로 종단간 학습 / QMIX <br/>\
+- 정책경사기반 MARL 알고리즘 : 에이전트가 해야하는 행동을 출력하는 정책 함수를 경사 상승법 통한 직접 학습 방식 / 액터-크리틱 알고리즘 <br/><br/>\
+3. 분산강화학습 <br/>\
+- IMPALA : 2018 딥마인드 발표, Actor, Learner 구성 구조 / IMPALA <br/>\
+- APE-X : 2018 구글 발표, 경험 공유 멀티 액터 / Ape-X DQN <br/><br/>\
+* 라이지움 88회 관리 1교시 13번\
+',
+  
+// 역강화학습
+'# 정의 : Inverse Reinforcement Learning <br/>\
+- Agent의 정책이나 행동 이력을 통해 그 행동을 설명하는 보상 함수를 구하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/InverseReinforcementLearning.png" style = "max-width:100%; height:auto;"><br/>\
+- 최선의 행동 이력(최적 정책)을 입력으로 보상 함수를 찾음 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/ReinforceInverseCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 84회 4교시 4번\
+',
+  
 // AutoML
 '# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
 - 머신러닝 파이프라인의 일부 또는 전체를 자동화하여 새로운 학습모델을 생성하는 기술 <br/><br/>\
@@ -737,52 +783,6 @@ var answer = answer.concat(
 - Tensor Board : 딥러닝 학습과정 추적 <br/>\
 - Data Model : 미리 학습된 데이터 목록 <br/><br/>\
 * 122회 1교시 6번\
-',
-  
-// 강화학습
-'# 정의 : Reinforcement Learning <br/>\
-- Agent가 어떤 상태에서 행동을 수행할 때마다 그 성능에 대한 피드백을 제공하는 보상 함수를 통해 학습하는 알고리즘 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/ReinforcementLearning.png" style = "max-width:100%; height:auto;"><br/>\
-- 주어진 보상 함수를 통해 최적 정책을 계산 <br/><br/>\
-# 기술요소 <br/>\
-1. 확률 시스템 <br/>\
-- 상태전이 확률 : [0,1] <br/>\
-- MDF : Markov Decision Process, 상태집합, 행동집합, 상태전이 확률, 보상함수, 감가율, 초기 상태 확률 <br/><br/>\
-2. 상호 작용 시스템 <br/>\
-- 정책과 보상 : 확률적 정책, 에어전트가 받는 보상 <br/>\
-- Markov 환경 Agent 상호작용 : 유한상태 마코브 특성 기반 환경, 에이전트 시행착오 통한 상호작용 시스템 <br/><br/>\
-* 라이지움 84회 4교시 4번\
-',
-  
-// 심층강화학습
-'# 정의 : 시행 착오 알고리즘 / 누적 보상 함수 / 신경망 디자인 가속화 학습<br/>\
-- Deep Reinforcement Learning <br/>\
-- Deep Learning + Reifnorcement Learning <br/>\
-- 강화학습의 정책 또는 가치함수를 심층 신경망으로 구성하는 기법 <br/>\
-- 자율적 에이전트가 강화 학습의 시행 착오 알고리즘과 누적 보상 함수를 이용해 신경망 디자인을 가속화하는 방식의 인공지능 학습 <br/><br/>\
-# 유형 <br/>\
-1. 싱글 에이전트 <br/>\
-- Q-러닝 기반 : 매 상태,행동 pair에 대한 Q 값 기반 행동 결정 / DQM <br/>\
-- 정책경사기반 : 어떤 상태에서 어떤 행동을 취할지 결정하는 정책 직접 구함 / TRPO <br/><br/>\
-2. 멀티 에이전트 <br/>\
-- Q-러닝 기반 MARL 알고리즘 : 로컬 Q-함수 신경망, 전역 Q-함수 신경망을 최적의 공동행동 학습 목표로 종단간 학습 / QMIX <br/>\
-- 정책경사기반 MARL 알고리즘 : 에이전트가 해야하는 행동을 출력하는 정책 함수를 경사 상승법 통한 직접 학습 방식 / 액터-크리틱 알고리즘 <br/><br/>\
-3. 분산강화학습 <br/>\
-- IMPALA : 2018 딥마인드 발표, Actor, Learner 구성 구조 / IMPALA <br/>\
-- APE-X : 2018 구글 발표, 경험 공유 멀티 액터 / Ape-X DQN <br/><br/>\
-* 라이지움 88회 관리 1교시 13번\
-',
-  
-// 역강화학습
-'# 정의 : Inverse Reinforcement Learning <br/>\
-- Agent의 정책이나 행동 이력을 통해 그 행동을 설명하는 보상 함수를 구하는 알고리즘 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/InverseReinforcementLearning.png" style = "max-width:100%; height:auto;"><br/>\
-- 최선의 행동 이력(최적 정책)을 입력으로 보상 함수를 찾음 <br/><br/>\
-# 비교 <br/>\
-<img src = "./img/ReinforceInverseCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 84회 4교시 4번\
 ',
   
 // 모방학습
