@@ -44,6 +44,7 @@ var question = question.concat(
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
 '[이더리움] - 스마트계약(Smart Contract)',
+'[Smart Contract]- Smart Contract Audit',
 '[3D 프린터]- 팝업팩토리(Pop-up Factory)',
 '오감기술',
 '모션기술',
@@ -945,6 +946,27 @@ var answer = answer.concat(
 - 정상행위 : State 설계 오류, 암호학 실수, 메시지 중첩 등 충돌 <br/>\
 - 악의적 행위 : Criminal Smart Contract등 익명성 악용 <br/><br/>\
 # 대응 : 프로그램 분석기법 이용 탐지, 안전한 작성 지원, 악의적 스마트 컨트랙트 탐지 및 차단\
+',
+  
+// Smart Contract Audit
+'# 정의 : 스마트 컨트랙트 코드 결함, 취약점 <br/>\
+- 스마트 컨트랙트가 가진 코드 결함 및 보안취약점을 찾아내어 개선방향을 제시하고 기능이 백서의 내용과 일치하게 구현되어 있는지 검증하는 활동 <br/><br/>\
+# 점검대상 <br/>\
+- 아키텍처 <br/>\
+- 코드결함 : Reentrancy, OverFlow, UnderFlow, Front-Running <br/>\
+- 보안취약점 <br/>\
+- 기능검토 : 기능, 백서 내용 일치 검증 <br/><br/>\
+# 감사기법 <br/>\
+- Code Design Patterns : 아키텍처, 안전 사용 검토 <br/>\
+- Statics Analysis : 보안 감사도구 사용하여 코드 결함, 백도어 및 악의적 코드 탐지 자동화 코드 검사 <br/>\
+- Unit Testing : 각 기능 작동 확인 <br/>\
+- Mannual Analysis : 경쟁 조건(Race Condition), 잠재적 문제점 발견, 라인 단위 코드 검사 <br/>\
+- BugBounties : 전문가 테스트통한 검증 (버그발견 보상지급) <br/><br/>\
+# 프로세스 <br/>\
+- 착수 : 소스코드, 백서 자료 받아 검토 / 감사 계획서, 백서, 소스코드 <br/>\
+- 감사 : 도구 이용한 자동화 및 수동 감사 수행 / 점검 결과서 <br/>\
+- 보고 : 보고서 작성 후 감사결과 고객에게 통보 / 감사 보고서 <br/><br/>\
+* 라이지움 88회 관리 1교시 12번\
 ',
 
 // [3D 프린터]- 팝업팩토리
