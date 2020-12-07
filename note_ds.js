@@ -1751,20 +1751,17 @@ var answer = answer.concat(
 - 블록체인 밖의 데이터를 오프체인(Off-Chain), 그 데이터가 블록체인 안으로 들어온 것을 온체인(On-Chain).',
 
 // [블록체인]- 타원곡선 암호화 알고리즘
-'# 정의 : 암호기술 / 유한체 / 타원 곡선 성질 <br/>\
+'# 정의 : 이산대수 / 짧은 / 빠른 / 공개키 / 유한체 / 대수적 구조 <br/>\
 - Elliptic Curve Cryptography <br/>\
-- 유한체(finite field) 상의 타원 곡선의 수학적 성질을 이용한 암호 기술 <br/><br/>\
-# 타원곡선 연산 <br/>\
-<img src = "./img/ECC_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 타원곡선 이산대수 기반으로 짧은 키 길이와 빠른 속도가 특징인 공개키 암호화 알고리즘 <br/><br/>\
 # 특징 <br/>\
 - 이산대수 문제 (ECDLP) 기반 암호체계 <br/>\
 - 선택성 : 유한체상 다양한 타원곡선 선택 가능 <br/>\
 - 설계 안전성 : 안전한 암호 시스템 설계 용이 <br/>\
 - 고효율성 : 256(ECC) / 3072(RSA) <br/><br/>\
-# 한계 <br/>\
-- 구현 어려움 <br/>\
-- 메시지 확장 2배 <br/><br/>\
-# 타원곡선 암호화 <br/>\
+# 타원곡선 연산 <br/>\
+<img src = "./img/ECC_Calc.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
 - 방정식 :  Q = x * G <br/>\
 - Q : 공개키, 개인키로부터 연산 <br/>\
 - x : 개인키, p보다 작은 소수로, 난수 생성기로 생성 <br/>\
