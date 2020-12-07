@@ -21,24 +21,25 @@ var question = question.concat(
 'AVL 트리',
 '[AI]- 기계학습',
 '[AI]- 지도학습',
+'[AI][지도학습]- 머신러닝 예측모델',
+'[AI][지도학습]- 분석모델평가',
+'[AI][지도학습][분석모델평가]- Cross Validation',
+'[AI][지도학습]- 분류모델생성알고리즘',
+'[AI]- 비지도 학습',
+'[AI][비지도 학습]- GAN',
+'[AI][비지도 학습]- DCGAN',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
 '[AI]- 유전자 알고리즘',
 '[AI]- Feed Forward Neural Network',
-'[AI]- 분석모델평가',
-'[AI][분석모델평가]- Cross Validation',
-'[AI]- 분류모델생성알고리즘',
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
 '[AI]- TensorFlow',
-'[AI][지도학습]- 머신러닝 예측모델',
 '[AI]- 강화학습',
 '[AI][강화학습]- 심층강화학습',
 '[AI]- 역강화학습',
 '[AI]- 모방학습',
-'[AI][비지도 학습]- GAN',
-'[AI][비지도 학습]- DCGAN',
 '[AI]- 연합학습',
 '[AI]- 딥러닝',
 '[AI]- 딥러닝 한계점',
@@ -436,6 +437,145 @@ var answer = answer.concat(
 - 정밀도(Precision), 재현율(Recall) 측정 : Precesion = tp / (tp+fp), Recall = tp / (tp+fn)\
 ',
   
+// 머신러닝 예측모델
+'# 정의 : 라벨이 있는 훈련데이터로 모델을 학습하여 경험하지 못한 데이터나 미래의 데이터에 대한 예측하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MLPrevisonModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 일반적 절차 <br/>\
+<img src = "./img/MLPrevisonModelProcess.png" style = "max-width:100%; height:auto;"><br/>\
+- 전처리 : 결측값 다루기, 범주형 데이터 다루기, 샘플링, 피처 스케일링, 피처 선택, 차원 축소 <br/>\
+- 학습 : 교차검증, 성능메트릭, 하이퍼 파라미터 최적화, 모델 선택, 앙상블 학습 <br/>\
+- 평가, 예측 : 모델 성능 측정, 초기 테스트 데이터 사용, 성능 만족시 사용 <br/><br/>\
+# 전처리 기법 <br/>\
+- 결측값 다루기 : 샘플 및 피처 제거, 결측값 보정 <br/>\
+- 범주형 데이터 다루기 : 명목형/순위형 피처 매핑, 분류 라벨 인코딩, 명목형 피처 원핫 인코딩 <br/>\
+- 피처 스케일링 : 정규화, 표준화 <br/>\
+- 피처 선택 : L1 정규화가 있는 희소 솔루션 찾기, 그리드 서치 알고리즘, 랜덤 포레스트 <br/>\
+- 차원 축소 : PCA, LDA <br/><br/>\
+* KPC 97회 관리 3교시 6번\
+',
+// [기계학습]- 분석모델평가
+'# 정의 : 데이터 마이닝 모델 타당성 평가 검증 방법 <br/>\
+- 데이터 마이닝 통해 생성된 모델의 에러율 예측 통해 모델의 타당성 평가 검증 방법 <br/><br/>\
+# 암기 : PCB <br/><br/>\
+# 유형 <br/>\
+- Train Validation : 훈련집합, 테스트집합, 검증집합 통해 정확도 검증하는 기법, Training Set(모델학습), Validation Set(모델선택), Test Set(모델평가) <br/>\
+- Cross Validation : 데이터를 K개의 집합으로 나누어 검증한 결과의 평균치로 모델 검증하는 방법, 재 샘플링기법, Training Set(모델학습), Test Set(모델평가) <br/>\
+- BootStrap : 전체 데이터에서 무작위 복원추출로 훈련집합 생성하여 검증하는 방법, 재 샘플링 기법 <br/>\
+-> Bootstrap Sample T회(중복허용) 반복 측정 후 평균값으로 최종평가, Training Set(오류예측) <br/><br/>\
+<img src = "./img/분석모델평가.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Cross Validation
+'# 정의 : Train Dataset을 나누어 검증하는 방법 <br/><br/>\
+# 필요성 <br/>\
+- Test Set Data 고정 <br/>\
+- Test Set Overfitting 문제점 발생 <br/><br/>\
+# 특징 <br/>\
+1. 장점 <br/>\
+- 평가 활용 : 데이터 편중 방지, 일반화 모델 생성 <br/>\
+- 훈련 활용 : 정확도 향상, 데이터 부족 Underfitting 방지 <br/><br/>\
+2. 단점 : Iteration 횟수 증가, 분석 시간 증가 <br/><br/>\
+# 기법 <br/>\
+1. Hold Out <br/>\
+- 정의 : 임의 비율로 Train set, Test set 분할 (9:1, 7:3)<br/>\
+- 장점 : 계산 시간 부담 경감 <br/>\
+- 단점 : Overfit 가능성 <br/><br/>\
+2. K겹 교차 검증(K-fold Cross Validation) <br/>\
+- 정의 : 일반적, K개의 데이터 폴드 <br/>\
+- 각 데이터 폴드 세트에 대해서 나온 검증 결과들을 평균내어 최종 검증 결과 도출 <br/><br/>\
+3. Leave-p-out Cross Validation<br/>\
+- 전체 데이터 중에서 p개 샘플 선택 (nCp) <br/>\
+- 각 세트 평균 <br/>\
+- 세트의 경우의 수, 비용 부담 큰 방법 <br/><br/>\
+4. Leave-one-out Cross Validation <br/>\
+- LPOCV p=1인 경우 <br/>\
+- 계산 시간 부담 경감, 좋은 결과 도출 <br/>\
+- 1개 제외 모든 데이터 모델 훈련 사용 가능 <br/><br/>\
+5. 계층별 k-겹 교차검증(Stratified k-fold Cross Validation) <br/>\
+- Label 분포 클래스 별로 불균형일 때 유용하게 사용 <br/>\
+- 각 훈련 또는 검증 폴드의 분포 = 전체 데이터셋 분포 근사 <br/><br/>\
+* 라이지움 87회 관리 2교시 2번\
+',
+
+// [기계학습]- 분류모델생성알고리즘
+'# Bagging : Bootstrap 결합 예측 모형 알고리즘 <br/>\
+- 주어진 데이터에서 여러개의 Bootstrap 자료를 생성하고, 각 자료를 모델링 한 후 결합(Bootstrap Aggregating)하여 최종 예측 모형을 만드는 알고리즘 <br/>\
+1) Row 데이터에서 Bootstrap 데이터 추출 <br/>\
+2) 추출 반복하여 n개의 데이터 생성 <br/>\
+3) 각 데이터 모델링하여 모델 생성 <br/>\
+4) 단일모델을 결합하여 bagging 모델 생성 <br/><br/>\
+# Boosting : 가중치 적용 예측모형 알고리즘<br/>\
+- 잘못 분류된 개체들에 가중치를 적용하여 새로운 분류 규칙을 만들고, 이 과정을 반복해 최종 예측 모형을 만드는 Boosting(변형) 알고리즘 <br/>\
+1) Row 데이터에 동일 가중치로 모델 생성 <br/>\
+2) 생성 모델 인한 오분류 데이터 수집 <br/>\
+3) 오분류 데이터에 높은 가중치 부여 <br/>\
+4) 이 과정을 반복해 모델의 정확성 향상 <br/><br/>\
+# 암기 <br/>\
+- 절차 <br/>\
+-> Bagging : 추데모결 <br/>\
+-> Boosting : 모오가반 <br/><br/>\
+<img src = "./img/분류모델생성알고리즘_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/분류모델생성알고리즘_2.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 비지도 학습
+'# 정의 : 데이터가 어떻게 구성 / 통계의 밀도 추정 / 클러스터링 / 독립 성분 분석 <br/>\
+- 입력 값에 대한 목표치가 주어지지 않으며, 데이터가 어떻게 구성되었는지를 알아내는 문제의 범주에 속하는 기계학습의 한 방법 <br/><br/>\
+# 알고리즘 <br/>\
+- 군집화 : 밀접하게 관련된 데이터들의 그룹을 찾는 기법 <br/>\
+- K-Means : 군집별 중심값에서 데이터의 거리를 측정하며 유사그룹 데이터를 분류 <br/>\
+- 계층적 군집화 : 전체 데이터를 계층 구조로 분할 <br/>\
+- SOM : 대뇌피질의 시각피질을 모델화 <br/>\
+- PCA : 분포된 데이터들의 주성분을 가장 잘 표현할 수 있는 벡터를 찾는 기법 <br/>\
+- ICA : 다변량의 신호를 통계적으로 독립된 하부 성분으로 분리 계산 방법 \
+',
+
+// GAN
+'# 정의 : 대립 통한 훈련학습 모델 <br/>\
+- Generative Adversarial Network <br/>\
+- 서로 대립하는 Generator, Discriminator 두 개의 네트워크를 생성하여 대립 과정 통해 성능을 강화하는 비지도 학습 모델 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/GAN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 신경망 <br/>\
+- 생성자 : 샘플 Data 생성 <br/>\
+- 구별자 : 입력된 Data Fake, Real 판별<br/><br/>\
+2. 이론 <br/>\
+- 내쉬 균형 : 수학적 균형점 <br/><br/>\
+3. 학습 설명 <br/>\
+- 반복 학습 : 확률 분포에 맞춰 반복<br/>\
+- 판별 불가 모델 생성 : 확률분포 차이x -> 분류모델 학습 모델 반복 진행 <br/><br/>\
+4. 기초자료 <br/>\
+- Real Images : 생성, 실제 비교 <br/><br/>\
+# GAN 활용 모델 <br/>\
+- Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
+- Disco GAN : 이미지, 텍스트 매핑 / 객체간 특성 관계 파악<br/>\
+- Star GAN : 도메인 동시 변환 / 이미지 변환 특화<br/>\
+- Fusion GAN : 최소 패치 훈련 / 객체 -> 원하는 모양 <br/>\
+<img src = "./img/GAN_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 아이리포 23회 3교시 6번\
+',
+  
+// DCGAN
+'# 정의 : 안정적 학습을 위한 GAN <br/>\
+- Deep Convolution GAN <br/>\
+- GAN의 Fully Connected layer를 제거하고 Convolution Layer와 배치 정규화 구조를 사용하여 안정적인 학습이 가능한 GAN 알고리즘 <br/><br/>\
+# 구성요소 <br/>\
+1. 네트워크 구조 <br/>\
+- Convolution : 특징 추출 합성곱 / Feature Map, stride, padding <br/>\
+- Fractional-Strided Convolution : Image Upsampling <br/>\
+- 배치 정규화 : 활성화 함수 값 정규분포화 (평균 0, 분산 1) <br/><br/>\
+2. 활성화 함수 <br/>\
+- ReLu : 생성자 모든층 / y = max(0,z) <br/>\
+- Tanh : 마지막 결과 도출 <br/>\
+- Leaky ReLu : 판별자 모든층 / f(x) = max(0.01x, x) <br/><br/>\
+# 한계 <br/>\
+- 장기간 학습시 Oscilating mode 발생(핑퐁) <br/>\
+- 장기간 학습시 Collapse 문제 발생 <br/><br/>\
+* 아이리포 23회 3교시 6번\
+',
+
 // AutoML
 '# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
 - 머신러닝 파이프라인의 일부 또는 전체를 자동화하여 새로운 학습모델을 생성하는 기술 <br/><br/>\
@@ -557,71 +697,6 @@ var answer = answer.concat(
 * 라이지움 86회 1교시 6번 \
 ',
 
-// [기계학습]- 분석모델평가
-'# 정의 : 데이터 마이닝 모델 타당성 평가 검증 방법 <br/>\
-- 데이터 마이닝 통해 생성된 모델의 에러율 예측 통해 모델의 타당성 평가 검증 방법 <br/><br/>\
-# 암기 : PCB <br/><br/>\
-# 유형 <br/>\
-- Train Validation : 훈련집합, 테스트집합, 검증집합 통해 정확도 검증하는 기법, Training Set(모델학습), Validation Set(모델선택), Test Set(모델평가) <br/>\
-- Cross Validation : 데이터를 K개의 집합으로 나누어 검증한 결과의 평균치로 모델 검증하는 방법, 재 샘플링기법, Training Set(모델학습), Test Set(모델평가) <br/>\
-- BootStrap : 전체 데이터에서 무작위 복원추출로 훈련집합 생성하여 검증하는 방법, 재 샘플링 기법 <br/>\
--> Bootstrap Sample T회(중복허용) 반복 측정 후 평균값으로 최종평가, Training Set(오류예측) <br/><br/>\
-<img src = "./img/분석모델평가.png" style = "max-width:100%; height:auto;">\
-',
-  
-// Cross Validation
-'# 정의 : Train Dataset을 나누어 검증하는 방법 <br/><br/>\
-# 필요성 <br/>\
-- Test Set Data 고정 <br/>\
-- Test Set Overfitting 문제점 발생 <br/><br/>\
-# 특징 <br/>\
-1. 장점 <br/>\
-- 평가 활용 : 데이터 편중 방지, 일반화 모델 생성 <br/>\
-- 훈련 활용 : 정확도 향상, 데이터 부족 Underfitting 방지 <br/><br/>\
-2. 단점 : Iteration 횟수 증가, 분석 시간 증가 <br/><br/>\
-# 기법 <br/>\
-1. Hold Out <br/>\
-- 정의 : 임의 비율로 Train set, Test set 분할 (9:1, 7:3)<br/>\
-- 장점 : 계산 시간 부담 경감 <br/>\
-- 단점 : Overfit 가능성 <br/><br/>\
-2. K겹 교차 검증(K-fold Cross Validation) <br/>\
-- 정의 : 일반적, K개의 데이터 폴드 <br/>\
-- 각 데이터 폴드 세트에 대해서 나온 검증 결과들을 평균내어 최종 검증 결과 도출 <br/><br/>\
-3. Leave-p-out Cross Validation<br/>\
-- 전체 데이터 중에서 p개 샘플 선택 (nCp) <br/>\
-- 각 세트 평균 <br/>\
-- 세트의 경우의 수, 비용 부담 큰 방법 <br/><br/>\
-4. Leave-one-out Cross Validation <br/>\
-- LPOCV p=1인 경우 <br/>\
-- 계산 시간 부담 경감, 좋은 결과 도출 <br/>\
-- 1개 제외 모든 데이터 모델 훈련 사용 가능 <br/><br/>\
-5. 계층별 k-겹 교차검증(Stratified k-fold Cross Validation) <br/>\
-- Label 분포 클래스 별로 불균형일 때 유용하게 사용 <br/>\
-- 각 훈련 또는 검증 폴드의 분포 = 전체 데이터셋 분포 근사 <br/><br/>\
-* 라이지움 87회 관리 2교시 2번\
-',
-
-// [기계학습]- 분류모델생성알고리즘
-'# Bagging : Bootstrap 결합 예측 모형 알고리즘 <br/>\
-- 주어진 데이터에서 여러개의 Bootstrap 자료를 생성하고, 각 자료를 모델링 한 후 결합(Bootstrap Aggregating)하여 최종 예측 모형을 만드는 알고리즘 <br/>\
-1) Row 데이터에서 Bootstrap 데이터 추출 <br/>\
-2) 추출 반복하여 n개의 데이터 생성 <br/>\
-3) 각 데이터 모델링하여 모델 생성 <br/>\
-4) 단일모델을 결합하여 bagging 모델 생성 <br/><br/>\
-# Boosting : 가중치 적용 예측모형 알고리즘<br/>\
-- 잘못 분류된 개체들에 가중치를 적용하여 새로운 분류 규칙을 만들고, 이 과정을 반복해 최종 예측 모형을 만드는 Boosting(변형) 알고리즘 <br/>\
-1) Row 데이터에 동일 가중치로 모델 생성 <br/>\
-2) 생성 모델 인한 오분류 데이터 수집 <br/>\
-3) 오분류 데이터에 높은 가중치 부여 <br/>\
-4) 이 과정을 반복해 모델의 정확성 향상 <br/><br/>\
-# 암기 <br/>\
-- 절차 <br/>\
--> Bagging : 추데모결 <br/>\
--> Boosting : 모오가반 <br/><br/>\
-<img src = "./img/분류모델생성알고리즘_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/분류모델생성알고리즘_2.png" style = "max-width:100%; height:auto;">\
-',
-
 // [기계학습]- 앙상블 학습법
 '# 정의 : 단일 학습모델 성능보완 <br/>\
 - 여러개의 학습 분류기의 예측결과를 결합하여 예측 성능을 높이는 머신러닝 기법 <br/><br/>\
@@ -662,24 +737,6 @@ var answer = answer.concat(
 - Tensor Board : 딥러닝 학습과정 추적 <br/>\
 - Data Model : 미리 학습된 데이터 목록 <br/><br/>\
 * 122회 1교시 6번\
-',
-  
-// 머신러닝 예측모델
-'# 정의 : 라벨이 있는 훈련데이터로 모델을 학습하여 경험하지 못한 데이터나 미래의 데이터에 대한 예측하는 기법 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/MLPrevisonModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 일반적 절차 <br/>\
-<img src = "./img/MLPrevisonModelProcess.png" style = "max-width:100%; height:auto;"><br/>\
-- 전처리 : 결측값 다루기, 범주형 데이터 다루기, 샘플링, 피처 스케일링, 피처 선택, 차원 축소 <br/>\
-- 학습 : 교차검증, 성능메트릭, 하이퍼 파라미터 최적화, 모델 선택, 앙상블 학습 <br/>\
-- 평가, 예측 : 모델 성능 측정, 초기 테스트 데이터 사용, 성능 만족시 사용 <br/><br/>\
-# 전처리 기법 <br/>\
-- 결측값 다루기 : 샘플 및 피처 제거, 결측값 보정 <br/>\
-- 범주형 데이터 다루기 : 명목형/순위형 피처 매핑, 분류 라벨 인코딩, 명목형 피처 원핫 인코딩 <br/>\
-- 피처 스케일링 : 정규화, 표준화 <br/>\
-- 피처 선택 : L1 정규화가 있는 희소 솔루션 찾기, 그리드 서치 알고리즘, 랜덤 포레스트 <br/>\
-- 차원 축소 : PCA, LDA <br/><br/>\
-* KPC 97회 관리 3교시 6번\
 ',
   
 // 강화학습
@@ -742,51 +799,6 @@ var answer = answer.concat(
 * 라이지움 84회 4교시 4번\
 ',
   
-// GAN
-'# 정의 : 대립 통한 훈련학습 모델 <br/>\
-- Generative Adversarial Network <br/>\
-- 서로 대립하는 Generator, Discriminator 두 개의 네트워크를 생성하여 대립 과정 통해 성능을 강화하는 비지도 학습 모델 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/GAN.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-1. 신경망 <br/>\
-- 생성자 : 샘플 Data 생성 <br/>\
-- 구별자 : 입력된 Data Fake, Real 판별<br/><br/>\
-2. 이론 <br/>\
-- 내쉬 균형 : 수학적 균형점 <br/><br/>\
-3. 학습 설명 <br/>\
-- 반복 학습 : 확률 분포에 맞춰 반복<br/>\
-- 판별 불가 모델 생성 : 확률분포 차이x -> 분류모델 학습 모델 반복 진행 <br/><br/>\
-4. 기초자료 <br/>\
-- Real Images : 생성, 실제 비교 <br/><br/>\
-# GAN 활용 모델 <br/>\
-- Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
-- Disco GAN : 이미지, 텍스트 매핑 / 객체간 특성 관계 파악<br/>\
-- Star GAN : 도메인 동시 변환 / 이미지 변환 특화<br/>\
-- Fusion GAN : 최소 패치 훈련 / 객체 -> 원하는 모양 <br/>\
-<img src = "./img/GAN_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 아이리포 23회 3교시 6번\
-',
-  
-// DCGAN
-'# 정의 : 안정적 학습을 위한 GAN <br/>\
-- Deep Convolution GAN <br/>\
-- GAN의 Fully Connected layer를 제거하고 Convolution Layer와 배치 정규화 구조를 사용하여 안정적인 학습이 가능한 GAN 알고리즘 <br/><br/>\
-# 구성요소 <br/>\
-1. 네트워크 구조 <br/>\
-- Convolution : 특징 추출 합성곱 / Feature Map, stride, padding <br/>\
-- Fractional-Strided Convolution : Image Upsampling <br/>\
-- 배치 정규화 : 활성화 함수 값 정규분포화 (평균 0, 분산 1) <br/><br/>\
-2. 활성화 함수 <br/>\
-- ReLu : 생성자 모든층 / y = max(0,z) <br/>\
-- Tanh : 마지막 결과 도출 <br/>\
-- Leaky ReLu : 판별자 모든층 / f(x) = max(0.01x, x) <br/><br/>\
-# 한계 <br/>\
-- 장기간 학습시 Oscilating mode 발생(핑퐁) <br/>\
-- 장기간 학습시 Collapse 문제 발생 <br/><br/>\
-* 아이리포 23회 3교시 6번\
-',
-
 // 연합학습
 '# 정의 : 데이터가 아닌 학습모델을 취합해 AI를 구현하는 방식 <br/>\
 - 구글이 처음 제시한 모델로, 사용자 단말기에서 데이터 학습이 이뤄지고, 이러한 학습 결과는 중앙에 모여져 학습 결과를 재취합해 AI를 구현하는 인공지능 기술 <br/>\
