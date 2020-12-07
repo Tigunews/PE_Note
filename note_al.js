@@ -53,6 +53,7 @@ var question = question.concat(
 '[AI][AL][R-CNN]- Faster RCNN',
 '[AI][AL]- YOLO',
 '[AI][AL]- RNN',
+'[AI][AL][RNN]- BRNN',
 '[AI][AL]- LSTM',
 '[AI][AL]- GRU',
 '[AI][AL]- DNN',
@@ -1009,6 +1010,22 @@ var answer = answer.concat(
 # RNN, LSTM, GRU 도식 <br/>\
 <img src = "./img/RNN_LSTM_GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 응용 1교시 2번\
+',
+  
+// BRNN
+'# 정의 : 역방향, 미래 시점 데이터 활용 <br/>\
+- RNN의 역방향의 연결이 존재하지 않아 미래 시점인 데이터는 추론 시 활용할 수 없는 점을 개선하여 양방향 연결을 구현한 RNN <br/><br/>\
+# 구조도 <br/>\
+<img src = "./img/BRNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Input Layer : 입력값을 Forward, Backword Hidden Layer 모두 전달 <br/>\
+- Hidden Layer(Forward) : 일반적인 RNN과 같이 입력값을 받아서 BPTT 수행 <br/>\
+- Hidden Layer(Backward) : Input Layer로부터 Forwad Layer와 동일한 입력값을 받아 방향만 반대로 BPTT를 수행 <br/>\
+- Output Layer : Forward, Backward Hidden Layer 모두를 반영하여 결과 출력 <br/><br/>\
+# 활용 <br/>\
+- 음성인식시 RNN 학습 속도 개선 <br/>\
+- 번역, 필기체 인식 등에서 미래시점의 데이터 추론 <br/><br/>\
+* 라이지움 88회 관리 1교시 10번\
 ',
 
 // LSTM
