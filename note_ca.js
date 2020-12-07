@@ -41,6 +41,7 @@ var question = question.concat(
 'Nano Qplus',
 'NAND Flash Memory',
 'CPU',
+'뉴로모픽',
 '[CPU]- MajorState',
 'CPU Scheduling',
 '[CPU Scheduling]- 비선점 스케줄링',
@@ -902,6 +903,14 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 // CPU
 '<img src = "./img/CPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 2교시 8번\
+',
+  
+// 뉴로모픽
+'# 정의 : 두뇌 방식 모사 <br/>\
+- 인간 두뇌의 동작방식을 모사한 차세대 컴퓨터칩 <br/><br/>\
+# 특징 <br/>\
+- 전도, 전력, 집적 측면에서 장점 존재 <br/>\
+- CPU, 메모리간 병렬 처리 / 뉴런 시냅스간 병렬 처리 \
 ',
   
 // Major State
