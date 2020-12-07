@@ -77,7 +77,8 @@ var question = question.concat(
 '[설계단계][UML][Structure Diagram]- Class Diagram',
 '[설계단계]- Usecase Test',
 '[설계단계]- 모델기반 테스트',
-'[설계단계]- 마이크로서비스 아키텍처(MSA)',
+'[설계단계]- MSA',
+'[MSA]- Service Mesh',
 '[설계단계]- Shared Nothing 아키텍쳐',
 '[설계단계]- Breadcrumbs',
 '[구현단계]- 디자인패턴',
@@ -1593,6 +1594,26 @@ var answer = answer.concat(
 <img src = "./img/MSASOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 2교시 3번<br/><br/>\
 * KPC 91회 2교시 4번\
+',
+ 
+// Service Mesh
+'# 정의 : 서비스 앞 단 / 경량화 프록시 배치 <br/>\
+- 서비스 앞 단에 경량화된 프록시를 배치하여 서비스 간의 통신을 제어하는 아키텍처 패턴 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/ServiceMeshControlPlane.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 아키텍처 구성 <br/>\
+- Control Plane : 중앙집중화된 컨트롤러에서 프록시 설정정보 통제 <br/>\
+- Data Plane : 트래픽을 설정에 따라 프록시를 통해 전달 <br/><br/>\
+2. 컴포넌트 배치 <br/>\
+- Sidecar Proxy : 애플리케이션 컨테이너와 별도로 추가적인 사이드카 컨테이너 배포 <br/>\
+- Service Discovery : 서비스 시작시 컨트롤러에 게시 <br/>\
+- Circuit Breaker : Destination Rule을 정의하여 연결 및 이상 감지 <br/><br/>\
+3. 비즈니스 정의 <br/>\
+- Busieness Logic : 마이크로서비스에서 수행되는 비즈니스 기능 및 데이터 입출력 <br/><br/>\
+# Service Meseh, MSA 비교 <br/>\
+<img src = "./img/ServiceMeshAPIGateway.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 응용 1교시 11번\
 ',
 
 // Shared Nothing Architecture
