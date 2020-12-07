@@ -430,7 +430,10 @@ var answer = answer.concat(
 <img src = "./img/SVM_Overview.png" style = "max-width:100%; height:auto;"><br/>\
 - 베이시안 망 : 주어진 의사결정 문제의 영역 지식을 확률적으로 표현 <br/>\
 - CNN : 컴퓨터 비전 위한 Convolution , Pooling, Fully Connected Layer 통한, 특징 추출, 차원 축소, 이미지 분류, 인식 가능한 신경망 알고리즘 <br/>\
-<font color = "red">* 컴퓨터 비전 : 기계의 시각에 해당하는 부분을 연구하는 컴퓨터 과학 분야 </font>\
+<font color = "red">* 컴퓨터 비전 : 기계의 시각에 해당하는 부분을 연구하는 컴퓨터 과학 분야 </font><br/><br/>\
+# 평가 <br/>\
+- Cross Validation : 훈련데이터로부터 하나의 함수가 유추되고 나면 함수에 대한 평가를 통해 파라미터를 최적화 (훈련, 검증, 테스트 집합) <br/>\
+- 정밀도(Precision), 재현율(Recall) 측정 : Precesion = tp / (tp+fp), Recall = tp / (tp+fn)\
 ',
   
 // AutoML
