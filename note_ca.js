@@ -27,6 +27,8 @@ var question = question.concat(
 '[메모리 관리][할당 기법][연속 로딩]- 다중 분할 할당',
 '[메모리 관리][할당 기법]- 분산 로딩 기법(Virtual Memory, Paging, Segmentation)',
 '[메모리 관리][할당 기법]- 단편화',
+'[커널 메모리 할당]- Buddy allocator',
+'[커널 메모리 할당]- Slab allocator',
 '[Virtual Memory]- Mapping',
 'Cache Memory',
 'FeRAM',
@@ -623,6 +625,24 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # 해결방법 (Relocation) <br/>\
 - 통합 기법 : 인접된 빈 분할 공간 통합 <br/>\
 - 압축 기법 : Garbage Collection \
+',
+  
+// Buddy allocator
+'# 정의 : 메모리 공간 2의 지수 쪼갬 <br/>\
+- 물리적으로 연속된 메모리 공간을 2의 지수로 쪼개어 할당하는 커널 메모리 할당기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BuddyAllocator.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 응용 1교시 12번\
+',
+    
+// Slab allocator
+'# 정의 : 물리적 연속 페이지 <br/>\
+- 물리적으로 연속된 페이지인 slab을 캐시를 통해 관리, 할당하는 커널 메모리 할당기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SlabAllocator.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 비교 <br/>\
+<img src = "./img/BuddySlab.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 응용 1교시 12번\
 ',
 
 // [Virtual Memory]- Mapping 
