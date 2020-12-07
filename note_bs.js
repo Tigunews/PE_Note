@@ -13,6 +13,7 @@ var question = question.concat(
 '[RTE]- 사이클론모델',
 '기술수명주기',
 'Chasm',
+'하이테크 마케팅',
 ' 디지털 변혁 (Digital Transformation)',
 '[경영환경분석]- Horizon Scanning(이슈탐지)',
 '[경영환경분석]- Backcasting',
@@ -269,7 +270,18 @@ var answer = answer.concat(
 - 소비자 분류 : 혁신, 선각, 전기, 후기, 지각 <br/>\
 - 캐즘 극복 전략 : 주류 진입 전략, 완전완비 집중공략, 거점 영역 확장 <br/><br/>\
 # Graph <br/>\
-<img src = "./img/Chasm.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/Chasm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 관리 1교시 8번\
+',
+ 
+// 하이테크 마케팅
+'# 정의 : 고객가치 창출 <br/>\
+- 하이테크 제품으로 고객가치를 창출하기 위해 제품을 알리고, 소통하고 전달하는 종합적인 활동 <br/><br/>\
+# 수행 활동 <br/>\
+- 전략적 활동 : 기업활덩에 지침을 제시하는 선제적 의사결정 / Segmentation, Targeting, Positioning <br/>\
+- 기능적 활동 : 마케팅의 기능적 책임주야, 제품/기술 개발기능 초점 / Product, Place, Promotion, Price <br/\
+- 전술적 활동 : 전략적, 기능적 의사결정 사항을 실행하기 위한 전술 개발 / 입소문, 틈새마케팅, 결합판매 <br/><br/>\
+* 라이지움 88회 관리 1교시 8번\
 ',
 
 // Digital Transformation
