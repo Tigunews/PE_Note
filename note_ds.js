@@ -140,13 +140,15 @@ var question = question.concat(
 '섭테크',
 '[HPC]- Singularity',
 '2020년 하반기 경제정책 방향',
-'Data Lake',
-'[Data Lake]- Data Catalogs',
 '로보 어드바이저',
 '검색엔진',
 '[검색엔진]- 색인어 추출',
 'HTML 5',
-'LOD',
+'[공공데이터]- Open Data Platform',
+'[공공데이터][Open Data]- LOD',
+'[공공데이터]- Data Lake',
+'[공공데이터][Data Lake]- Data Catalogs',
+'[공공데이터]- 공공데이터 품질관리 메뉴얼 V2.0',
 'Open API',
 '[Open API]- SOAP API',
 '[Open API]- REST API',
@@ -186,7 +188,6 @@ var question = question.concat(
 '[Gartner 2021][Resilient Delivery]- 지능형 구성 가능한 비즈니스',
 '[Gartner 2021][Resilient Delivery]- AI 엔지니어링',
 '[Gartner 2021][Resilient Delivery]- 초자동화',
-'[공공데이터]- 공공데이터 품질관리 메뉴얼 V2.0',
 );
 
 var answer = answer.concat(
@@ -2542,46 +2543,6 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 '<img src = "./img/KNewDeal.PNG" style = "max-width:100%; height:auto;">\
 ',
   
-// Data Lake
-'# 정의 : 원천 형태 데이터 저장소 / 다양한 목적 활용 / 내,외부 수집 데이터 <br/>\
-- 다양한 원천 출처들로부터 다양한 목적으로 활용하기 위해 수집된 원천형태의 데이터 저장소이며 조직 내/외부 수집 데이터의 저장소 <br/>\
-- 정형,반정형,비정형의 다양한 원형(Raw)데이터들을 실시간으로 수집,전처리,변환,저장,제공하는 통합 데이터 저장소 <br/><br/>\
-# 부각 배경 <br/>\
-<img src = "./img/DataLake_0.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-# 동향 변화 <br/>\
-<img src = "./img/DataLake_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-# Data Lake 구성요소 <br/>\
-<img src = "./img/DataLake_2.png" style = "max-width:100%; height:auto;"><br/>\
-- 자료 : 정형/비정형/반정형 데이터 원천 생성자 <br/>\
-- 수집 : 데이터 수집 프로시저 <br/>\
-- 저장 : 사전 정의된 형태 영구 저장 <br/>\
-- 처리 : 알고리즘 실행, 실시간 처리 <br/>\
-- 활용 : 시스템 모니터링, BI, 정책결정 <br/><br/>\
-# Data Lake / DW <br/>\
-<img src = "./img/DataLake_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 86회 2교시 6번 \
-',
-  
-// Data Catalogs
-'# 정의 : Data Lake 큐레이션 <br/>\
-- 데이터 관리 및 검색 도구가 결합된 메타데이터 모음으로, 기업 또는 기관이 보유한 데이터 자산의 효율적, 효과적 사용을 위해 사용 가능한 데이터 인벤토리를 제공하는 데이터 관리 플랫폼 <br/><br/>\
-# 구성요소 (PSPS/작검라사)<br/>\
-- People : 데이터 관련 작업자 설명 메타데이터 <br/>\
-- Search : 태그 및 키워드 지원으로 데이터 검색이 가능한 메타데이터 <br/>\
-- Processing : 데이터 소스에 대한 라이센싱 제약조건에 대한 메타데이터 <br/>\
-- Suppliers : 데이터 라이프 사이클에 대한 메타데이터 <br/><br/>\
-# 주요기능 <br/>\
-- 데이터 세트 검색 : 자연어, 연관어 검색 <br/>\
-- 데이터 품질 정보 제공 : 데이터 집합 뷰 제공 <br/>\
-- 데이터 액세스 : 데이터 공유, REST API <br/><br/>\
-# 데이터 카탈로그 활용 이점 <br/>\
-- 데이터 효율 향상 <br/>\
-- 향상된 데이터 Context 제공 <br/>\
-- 고품질 데이터 제공 및 유용성 향상 <br/>\
-- 사용을 하기 위한 사전 데이터 분석 제공 <br/><br/>\
-* KPC 97회 관리 1교시 8번\
-',
-
 // 로보 어드바이저
 '# 정의 : 금용자산관리용 인공지능<br/>\
 - 로봇과 어드바이저(투자 전문가)가 조합된 용어로서, 고도화된 AL과 빅데이터 기반으로 시장 환경에 따라 자산을 관리해주는 금융자산관리용 인공지능 <br/><br/>\
@@ -2677,6 +2638,23 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - Performance & Integration : GPS 없이도 단말기 지리적 위치 제공 <br/>\
 - Semantics : 웹 자료 의미부여, 맞춤형 검색 제공 \
 ',
+  
+// Open Data Platform
+'# 정의 : 공공데이터 / 표준, 검색, 시각화 / 데이터 인프라 <br/>\
+- 효율적인 공공데이터 활용을 위해 데이터 표준 제공, 검색 저장, 시각화 기능 제공하는 데이터 인프라 <br/><br/>\
+# 데이터 생명주기 <br/>\
+- 등록 : 저장, API, Web Interface <br/>\
+- 현황 : 데이터 카탈로그 <br/>\
+- 발행 : 보안, 시각화 <br/>\
+- 관리 : 품질관리 <br/><br/>\
+# 문서 개방 방식 <br/>\
+1. On-Line(OL) : image, PDF <br/>\
+2. Machine Readable(RE) : Excel <br/>\
+3. Open Foramt(OF) : CSV <br/>\
+4. URI Identification(URI) : RDF 인코딩 <br/>\
+5. Linked Data(LD) : Linked Data <br/><br/>\
+* 라이지움 88회 관리 2교시 3번\
+',
 
 // LOD
 '# 정의 : 공공데이터의 개방형 플랫폼 <br/>\
@@ -2695,17 +2673,73 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 연결/저장/발행/등록 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/LOD.png" style = "max-width:100%; height:auto;"><br/>\
-- URI(Uniform Resource Identifier) : 인터넷에 존재하는 객체 표현 <br/>\
-- XML : 메타언어 <br/>\
-- RDF(Resource Description Framework) : 정보 자원, 구조 표현 언어 <br/>\
-- RDFS : RDF의 Schma 정보 <br/>\
-- OWL : DAML + OIL, Web ontology 언어 <br/>\
-- SPARQL : 온톨로지 질의 언어 <br/>\
-- RIF(Rule Interchange Format) : 규칙 정의, 교환 위한 계층 <br/><br/>\
+<img src = "./img/LOD_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 사례 <br/>\
 - 해외 : DB pedia, BBC <br/>\
 - 국내 : 공공 Wifi 정보, 국가서지 <br/><br/>\
+* 라이지움 88회 관리 2교시 3번 <br/>\
 * 122회 1교시 3번\
+',
+  
+// Data Lake
+'# 정의 : 원천 형태 데이터 저장소 / 다양한 목적 활용 / 내,외부 수집 데이터 <br/>\
+- 다양한 원천 출처들로부터 다양한 목적으로 활용하기 위해 수집된 원천형태의 데이터 저장소이며 조직 내/외부 수집 데이터의 저장소 <br/>\
+- 정형,반정형,비정형의 다양한 원형(Raw)데이터들을 실시간으로 수집,전처리,변환,저장,제공하는 통합 데이터 저장소 <br/><br/>\
+# 부각 배경 <br/>\
+<img src = "./img/DataLake_0.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동향 변화 <br/>\
+<img src = "./img/DataLake_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+# Data Lake 구성요소 <br/>\
+<img src = "./img/DataLake_2.png" style = "max-width:100%; height:auto;"><br/>\
+- 자료 : 정형/비정형/반정형 데이터 원천 생성자 <br/>\
+- 수집 : 데이터 수집 프로시저 <br/>\
+- 저장 : 사전 정의된 형태 영구 저장 <br/>\
+- 처리 : 알고리즘 실행, 실시간 처리 <br/>\
+- 활용 : 시스템 모니터링, BI, 정책결정 <br/><br/>\
+# Data Lake / DW <br/>\
+<img src = "./img/DataLake_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 86회 2교시 6번 \
+',
+  
+// Data Catalogs
+'# 정의 : Data Lake 큐레이션 <br/>\
+- 데이터 관리 및 검색 도구가 결합된 메타데이터 모음으로, 기업 또는 기관이 보유한 데이터 자산의 효율적, 효과적 사용을 위해 사용 가능한 데이터 인벤토리를 제공하는 데이터 관리 플랫폼 <br/><br/>\
+# 구성요소 (PSPS/작검라사)<br/>\
+- People : 데이터 관련 작업자 설명 메타데이터 <br/>\
+- Search : 태그 및 키워드 지원으로 데이터 검색이 가능한 메타데이터 <br/>\
+- Processing : 데이터 소스에 대한 라이센싱 제약조건에 대한 메타데이터 <br/>\
+- Suppliers : 데이터 라이프 사이클에 대한 메타데이터 <br/><br/>\
+# 주요기능 <br/>\
+- 데이터 세트 검색 : 자연어, 연관어 검색 <br/>\
+- 데이터 품질 정보 제공 : 데이터 집합 뷰 제공 <br/>\
+- 데이터 액세스 : 데이터 공유, REST API <br/><br/>\
+# 데이터 카탈로그 활용 이점 <br/>\
+- 데이터 효율 향상 <br/>\
+- 향상된 데이터 Context 제공 <br/>\
+- 고품질 데이터 제공 및 유용성 향상 <br/>\
+- 사용을 하기 위한 사전 데이터 분석 제공 <br/><br/>\
+* KPC 97회 관리 1교시 8번\
+',
+    
+// 공공데이터 품질관리 메뉴얼 V2.0
+'# 총론 : 공공데이터 품질관리 메뉴얼 개발의 배경과 목적, 메뉴얼의 구성 체계 및 활용방안을 제시하고, 공공기관 실무자 중심의 데이터 품질관리에 대한 개념을 설명 <br/><br/>\
+# 품질관리 활동 <br/>\
+- 계획 : 품질관리 활동 위한 매년 수립/ 조직 구성, 목표 정의<br/>\
+- 구축 : 사전 예방적 품질관리 목표 / 데이터 표준화, 일관성 확보<br/>\
+- 운영 : 품질 이슈 중심의 선택,집중적 관리 통한 수준 제고 / 진단 및 개선, 최신성 확보<br/>\
+- 활용 : 성과 평가 통한 재조정 활동 / 신고 접수 처리, 조치 결과 통보 <br/>\
+* 오류 범위 <br/>\
+- 협의적 : 데이터 부정확 발생 오류 <br/>\
+- 광의적 : 사용자 측면 불편사항 <br/><br/>\
+# 품질 진단 (정의>실시>분석) (V1.1) <br/>\
+- 진단대상정의(Define) : 진단대상 선정, 요구 품질 부합 확인 위한 계획 수립<br/>\
+- 품질진단실시(Measure) : 진단 체크리스트 기법 통한 품질진단 실시<br/>\
+- 진단결과분석(Analyze) : 문제 식별, 원인 분석, 개선기회 도출<br/><br/>\
+# 개선 절차 (계획>개선>통제) (V2.0) <br/>\
+- 개선계획수립(Improvement Plan) : 개선과제 정의, 우선순위 결정, 품질개선 계획 수립<br/>\
+- 개선수행(Implement) : 관리체계, 표준화, 데이터 보정 수행<br/>\
+- 품질통제(Control) : 고품질 데이터 유지 위한 활동<br/><br/>\
+* KPC 96회 관리 3교시 1번\
 ',
 
 // Open API
@@ -3253,26 +3287,5 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - COVID19 인한 우선적 디지털화 필요성 증가 <br/>\
 - Patchwork 탈피(비효율적인 레거시 비즈니스 프로세스) <br/><br/>\
 2. 해결방안 : 효율성, 속도, 전문성의 민주화, 비즈니스 민첩성\
-',
-  
-// 공공데이터 품질관리 메뉴얼 V2.0
-'# 총론 : 공공데이터 품질관리 메뉴얼 개발의 배경과 목적, 메뉴얼의 구성 체계 및 활용방안을 제시하고, 공공기관 실무자 중심의 데이터 품질관리에 대한 개념을 설명 <br/><br/>\
-# 품질관리 활동 <br/>\
-- 계획 : 품질관리 활동 위한 매년 수립/ 조직 구성, 목표 정의<br/>\
-- 구축 : 사전 예방적 품질관리 목표 / 데이터 표준화, 일관성 확보<br/>\
-- 운영 : 품질 이슈 중심의 선택,집중적 관리 통한 수준 제고 / 진단 및 개선, 최신성 확보<br/>\
-- 활용 : 성과 평가 통한 재조정 활동 / 신고 접수 처리, 조치 결과 통보 <br/>\
-* 오류 범위 <br/>\
-- 협의적 : 데이터 부정확 발생 오류 <br/>\
-- 광의적 : 사용자 측면 불편사항 <br/><br/>\
-# 품질 진단 (정의>실시>분석) (V1.1) <br/>\
-- 진단대상정의(Define) : 진단대상 선정, 요구 품질 부합 확인 위한 계획 수립<br/>\
-- 품질진단실시(Measure) : 진단 체크리스트 기법 통한 품질진단 실시<br/>\
-- 진단결과분석(Analyze) : 문제 식별, 원인 분석, 개선기회 도출<br/><br/>\
-# 개선 절차 (계획>개선>통제) (V2.0) <br/>\
-- 개선계획수립(Improvement Plan) : 개선과제 정의, 우선순위 결정, 품질개선 계획 수립<br/>\
-- 개선수행(Implement) : 관리체계, 표준화, 데이터 보정 수행<br/>\
-- 품질통제(Control) : 고품질 데이터 유지 위한 활동<br/><br/>\
-* KPC 96회 관리 3교시 1번\
 ',
 );
