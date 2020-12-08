@@ -23,8 +23,9 @@ var question = question.concat(
 '[AI]- 지도학습',
 '[AI]- Clustering',
 '[AI][지도학습]- 머신러닝 예측모델',
-'[AI][지도학습]- 분석모델평가',
-'[AI][지도학습][분석모델평가]- Cross Validation',
+'[AI][지도학습]- 성능검증',
+'[AI][지도학습][성능검증]- Cross Validation',
+'[AI][지도학습][성능검증]- 혼동행렬(오차행렬)',
 '[AI][지도학습]- 분류모델생성알고리즘',
 '[AI]- 비지도 학습',
 '[AI][비지도 학습]- GAN',
@@ -113,7 +114,6 @@ var question = question.concat(
 '[Hash Function]- Hash Algorithm',
 '추정이론(estimation theory)',
 '가설검정 (Statistical Hypothesis Testing)',
-'[가설검정]- 혼동행렬(오차행렬)',
 '베이즈 정리',
 'CCW(CounterClockWise) 알고리즘',
 'BASE64',
@@ -465,16 +465,20 @@ var answer = answer.concat(
 - 차원 축소 : PCA, LDA <br/><br/>\
 * KPC 97회 관리 3교시 6번\
 ',
-// [기계학습]- 분석모델평가
-'# 정의 : 데이터 마이닝 모델 타당성 평가 검증 방법 <br/>\
-- 데이터 마이닝 통해 생성된 모델의 에러율 예측 통해 모델의 타당성 평가 검증 방법 <br/><br/>\
-# 암기 : PCB <br/><br/>\
+  
+// [기계학습]- 성능검증
+'# 정의 : 적합성, 경제성, 타당성 <br/>\
+- 머신러닝 모델의 적합성, 경제성, 타당성 판단을 위한 평가 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ML_Evaluation.png" style = "max-width:100%; height:auto;">\
 # 유형 <br/>\
-- Train Validation : 훈련집합, 테스트집합, 검증집합 통해 정확도 검증하는 기법, Training Set(모델학습), Validation Set(모델선택), Test Set(모델평가) <br/>\
-- Cross Validation : 데이터를 K개의 집합으로 나누어 검증한 결과의 평균치로 모델 검증하는 방법, 재 샘플링기법, Training Set(모델학습), Test Set(모델평가) <br/>\
-- BootStrap : 전체 데이터에서 무작위 복원추출로 훈련집합 생성하여 검증하는 방법, 재 샘플링 기법 <br/>\
--> Bootstrap Sample T회(중복허용) 반복 측정 후 평균값으로 최종평가, Training Set(오류예측) <br/><br/>\
-<img src = "./img/분석모델평가.png" style = "max-width:100%; height:auto;">\
+1. Overfit / Underfit 평가 방법 <br/>\
+- Hold out : 일정부분 분리, 학습 모델 검증 방법 <br/>\
+- Resampling : 데이터양 부족, 학습 데이터 세트를 반복적 샘플링 수행 방법 <br/>\
+-> Cross Validation, Bootstrap <br/><br/>\
+2. 주요 척도 <br/>\
+- Confusion Matrix : 예측, 실제 Value 비교로 이루어진 시각화 매트릭스 <br/><br/>\
+* 라이지움 85회 관리 2교시 2번\
 ',
   
 // Cross Validation
@@ -507,6 +511,30 @@ var answer = answer.concat(
 - Label 분포 클래스 별로 불균형일 때 유용하게 사용 <br/>\
 - 각 훈련 또는 검증 폴드의 분포 = 전체 데이터셋 분포 근사 <br/><br/>\
 * 라이지움 87회 관리 2교시 2번\
+',
+  
+// 혼동행렬(Confusion Matrix)
+'# 정의 : 예측값 일치여부 행렬 분류 모델 평가 기법<br/>\
+- 오류분포표 <br/>\
+- 데이터 분석에서 잘못된 예측의 영향을 간편하게 파악하기 위해 예측된 값과 실제 값이 일치하는지 여부를 행렬을 분류하는 모델 평가 기법 <br/><br/>\
+# 암기 <br/>\
+- 행실열예 <br/>\
+- TP FP(1종)FN(2종) TN <br/><br/>\
+- Percision <br/>\
+- Accuracy <br/>\
+- SFFS <br/><br/>\
+# 구성 <br/>\
+- 행 : 실제값 <br/>\
+- 열 : 모델의 예측값 <br/>\
+- 예측값 : Positive / Negative <br/>\
+- 비교결과 : True / False(예측한 값과 실제 값의 비교 결과) <br/><br/>\
+<img src = "./img/ConfusionMatrix_1.png" style = "max-width:100%; hegiht:auto;"><br/>\
+<img src = "./img/ConfusionMatrix_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* FN(1종 오류) : 알파 위험, 오탐 <br/>\
+* FP(2종 오류) : 베타 위험, 미탐 <br/>\
+* 한 알고리즘의 분석 : 혼동 행렬 <br/>\
+* 두개 알고리즘 비교분석 : ROC Curve <br/><br/>\
+<img src = "./img/ConfusionMatrix_3.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // [기계학습]- 분류모델생성알고리즘
@@ -1931,30 +1959,6 @@ var answer = answer.concat(
 - 1종 오류 (소비자/알파) : 음인데 양으로 (확진)<br/>\
 - 2종 오류 (소비자/배타) : 양인데 음으로 (정상)<br/><br/>\
 * KPC 94회 1교시 12번\
-',
-
-// [가설검정]- 혼동행렬(Confusion Matrix)
-'# 정의 : 예측값 일치여부 행렬 분류 모델 평가 기법<br/>\
-- 오류분포표 <br/>\
-- 데이터 분석에서 잘못된 예측의 영향을 간편하게 파악하기 위해 예측된 값과 실제 값이 일치하는지 여부를 행렬을 분류하는 모델 평가 기법 <br/><br/>\
-# 암기 <br/>\
-- 행실열예 <br/>\
-- TP FP(1종)FN(2종) TN <br/><br/>\
-- Percision <br/>\
-- Accuracy <br/>\
-- SFFS <br/><br/>\
-# 구성 <br/>\
-- 행 : 실제값 <br/>\
-- 열 : 모델의 예측값 <br/>\
-- 예측값 : Positive / Negative <br/>\
-- 비교결과 : True / False(예측한 값과 실제 값의 비교 결과) <br/><br/>\
-<img src = "./img/ConfusionMatrix_1.png" style = "max-width:100%; hegiht:auto;"><br/>\
-<img src = "./img/ConfusionMatrix_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* FN(1종 오류) : 알파 위험, 오탐 <br/>\
-* FP(2종 오류) : 베타 위험, 미탐 <br/>\
-* 한 알고리즘의 분석 : 혼동 행렬 <br/>\
-* 두개 알고리즘 비교분석 : ROC Curve <br/><br/>\
-<img src = "./img/ConfusionMatrix_3.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // 베이즈 정리 
