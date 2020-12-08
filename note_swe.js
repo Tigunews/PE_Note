@@ -28,6 +28,7 @@ var question = question.concat(
 '[분석단계][요구사항]- 요구사항 상세화 실무 가이드라인',
 '[분석단계]- 기술사양서',
 '[분석단계]- 경제성 분석기법',
+'[경제성 분석][타당성]- NPV',
 '[분석단계]- ISMP',
 '[설계단계]- 모듈화',
 '[설계단계][모듈화]- 응집도',
@@ -823,6 +824,15 @@ var answer = answer.concat(
 3. 효과성 분석 <br/>\
 - ROI(Return On Invetment) : 투자 수익율, 순이익 / 투자자본 <br/>\
 - BSC(Balence Score Card) : 재무, 고객, 내부프로세스, 학습과정\
+',
+ 
+// NPV
+'# 정의 : 수익율 할인 <br/>\
+- Net Present Value <br/>\
+- 순현금흐름을 적절 수익율로 할인하는 기법 <br/><br/>\
+# 계산방법 <br/>\
+<img src = "./img/NPV_Formal.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 관리 2교시 5번\
 ',
  
 // ISMP
