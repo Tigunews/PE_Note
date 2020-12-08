@@ -3,7 +3,6 @@ var question = question.concat(
 '[TCP-Protocol]- DTLS',
 '[TCP-Protocol]- TLS',
 '서비스 프리미티브(Service Primitive)',
-'패킷데이터 네트워크 계층 오류',
 '[Layer2]- Service',
 '[Layer2]- 오류제어',
 '[Layer2][오류제어][FEC]- 해밍코드',
@@ -15,6 +14,10 @@ var question = question.concat(
 '[Layer2][접근제어]- CSMA/CD',
 '[Layer2][접근제어]- CSMA/CA',
 '[Layer2]- Collison Domain',
+'[Layer3]- 공증교환 데이터망(PSDN) 방식',
+'[Layer3]- 회선교환',
+'[Layer3]- 패킷교환',
+'[Layer3]- 패킷데이터 네트워크 계층 오류',
 'DNS',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
@@ -191,7 +194,7 @@ var answer = answer.concat(
 - SSL 3.0(1996) : 2.0 버전 보안결함 <br/>\
 - TLS 1.0(1999) : SSL 3.0 기반 표준화 \
 ',
-
+  
 // 서비스 프리미티브
 '# 정의 : 개념적인 연동 규약 / 서비스만 주안점 <br/>\
 - OSI 기본 참조 모델에서, 서비스 이용자와 제공자간의 상호 동작시 제공하는 서비스만을 주안점으로 규정한 개념적인 연동 규약 <br/><br/>\
@@ -244,23 +247,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * KPC 85회 1교시 10번 \
 ',
 
-// 패킷데이터 네트워크 계층 오류 
-'# 패킷(Packet) : 데이터 비트의 덩어리, 데이터 전송단위, 데이터와 제어신호가 포함된 2진수의 비트그룹 <br/><br/>\
-# 오류제어 : 전송된 패킷의 부호적 오류를 검출하고 정확하게 재현하는 기법 <br/><br/>\
-# 패킷데이터 네트워크 계층오류 : 네트워크 상에 전송된 패킷(데이터)에 대하여 부호적 오류를 검출하고 오류를 보정하여 정확한 패킷을 재현하는 기법 <br/><br/>\
-# 오류발생 원인 <br/>\
-1. 지연 <br/>\
-- 개념 : NW 혼잡상황으로 인한 패킷지연 <br/>\
-- 혼잡제어 기술 활용, Slow Start, Fast retransmission, Fast Recovery <br/><br/>\
-2. 손실 <br/>\
-- 개념 : 패킷 도달하지 않는 현상 <br/>\
-- 오류검출기법, 오류복구기법 활용 <br/><br/>\
-3. 순서오류 <br/>\
-- 개념 : 의도와 순서 바뀌는 현상 <br/>\
-- 순서제어 기법 활용 <br/><br/>\
-* 그리타\
-',
-  
 // Layer 2 Service
 '# 오류제어 : 통신 에러 보정기술 <br/>\
 - FEC : Hamming Code, Read-Solomon Code, Convolutional Code, Turbo Code <br/>\
@@ -411,6 +397,52 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Collison Detection : 충돌 검출시, 재전송 -> <font color = "Red">충돌 줄이기 위한 Collison Domain 분할 필요</font><br/>\
 - BackOff Algorithm : 재전송(랜덤 시간 대기), 포기(15회) <br/><br/>\
 * 라이지움 87회 응용 1교시 11번\
+',
+  
+// 공증교환 데이터망(PSDN) 방식
+'<img src = "./img/PSDN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 응용 2교시 7번\
+',
+
+// 회선교환
+'# 정의 : 사전 수립<br/>\
+- 데이터 전송 시 통신 경로(회선)를 사전에 수립하여 전송하는 교환 방식 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CircuitSwitching.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작원리 <br/>\
+- 전송전 : 두 노드간 회선 수립 <br/>\
+- 전송중 : 회선 독점적 사용 <br/>\
+- 전송후 : 사용한 회선 자원 반납 <br/><br/>\
+* 라이지움 88회 응용 2교시 7번\
+',
+  
+// 패킷교환
+'# 정의 : <br/>\
+- 전송할 데이터를 일정한 크기의 블록(패킷)으로 분리하여 패킷별 통신 경로를 수립하여 전송하는 교환 방식 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/PacketSwitching.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작원리 <br/>\
+- 경로수립 : 중계노드에서 패킷별 최적 경로 수립하여 다음 노드로 전송 <br/>\
+- 트래픽 제어 : 효율, 안정 전송 위한 통제 <br/>\
+- 에러 제어 : 패킷 유실 최소화, 유실된 패킷 복구 위한 에러제어 <br/><br/>\
+* 라이지움 88회 응용 2교시 7번\
+',
+  
+// 패킷데이터 네트워크 계층 오류 
+'# 패킷(Packet) : 데이터 비트의 덩어리, 데이터 전송단위, 데이터와 제어신호가 포함된 2진수의 비트그룹 <br/><br/>\
+# 오류제어 : 전송된 패킷의 부호적 오류를 검출하고 정확하게 재현하는 기법 <br/><br/>\
+# 패킷데이터 네트워크 계층오류 : 네트워크 상에 전송된 패킷(데이터)에 대하여 부호적 오류를 검출하고 오류를 보정하여 정확한 패킷을 재현하는 기법 <br/><br/>\
+# 오류발생 원인 <br/>\
+1. 지연 <br/>\
+- 개념 : NW 혼잡상황으로 인한 패킷지연 <br/>\
+- 혼잡제어 기술 활용, Slow Start, Fast retransmission, Fast Recovery <br/><br/>\
+2. 손실 <br/>\
+- 개념 : 패킷 도달하지 않는 현상 <br/>\
+- 오류검출기법, 오류복구기법 활용 <br/><br/>\
+3. 순서오류 <br/>\
+- 개념 : 의도와 순서 바뀌는 현상 <br/>\
+- 순서제어 기법 활용 <br/><br/>\
+* 그리타\
 ',
  
 // DNS
