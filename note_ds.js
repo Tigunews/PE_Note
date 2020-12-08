@@ -2106,9 +2106,25 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 ',
   
 // 클라우드 전환
-'<img src = "./img/CloudTrans_1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/CloudTrans_2.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/CloudTrans_3.png" style = "max-width:100%; height:auto;">\
+'# 정의 : 컨설턴트, 아키텍트, 담당자 / 클라우드 도입 / 참조 <br/>\
+- 클라우드 컨설턴트, 아키텍트 및 현업 담당자들이 클라우드 도입을 위한 계획을 수립시 참조할 수 있는 절차와 항목을 제시한 방법론 <br/><br/>\
+# 방법론 <br/>\
+- 구현환경 : Hybrid Cloud, Multi cloud <br/>\
+- 구현절차 : 빅뱅방식, 점진적 방식 <br/><br/>\
+# 절차 <br/>\
+- 전환목적 수립 : Biz 전략, 목표수집, 디지털 전환, Agile <br/>\
+- 전환 환경 선정 : Hybrid, Multi cloud 선정 / IT Alignment <br/>\
+- 전환 방식 선정 : Bigbang 방식, 점진적 방식 / 서비스 유형 <br/>\
+- 백업 계획 수립 : Rollback Planning <br/>\
+- 이전 및 모니터링 : 결과 부하 모니터링 / 서비스 안정성 <br/><br/>\
+# 고려사항 <br/>\
+- 가용성 : 최대 허용시간, 자동화된 자원 적용 <br/>\
+- 성능 : 자원 확장성, 즉시 활용성 <br/>\
+- 보안성 : 취약점, 가상환경 보안 이슈 <br/>\
+- 운영 효율성 : Monitoring, Operation <br/>\
+- 접근제어 방안 : BLP, Biba, Clock&Willson, AWS IAM <br/>\
+- Compliance : SOX, K-SOX 고려, Audit 대응 <br/><br/>\
+* 라이지움 88회 관리 2교시 4번\
 ',
 
 // IaaS, PaaS, SaaS
