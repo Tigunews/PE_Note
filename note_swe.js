@@ -209,7 +209,7 @@ var question = question.concat(
 '[관리표준][PMBOK]- 프로젝트 위험',
 '[관리표준][PMBOK][위험]- 모의실험',
 '[관리표준][PMBOK][위험]- 민감도 분석(Sensitivity Analysis)',
-'[관리표준][PMBOK][위험]- 금전적 기대값 분석(Expected Monetary Value Analysis)',
+'[관리표준][PMBOK][위험]- EMV',
 '[관리표준][PMBOK]- 프로젝트 위험관리',
 '[관리표준][위험관리]- 위험분석',
 '[관리표준][PMBOK]- 조달관리(구매)',
