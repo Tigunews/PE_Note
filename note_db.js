@@ -1189,7 +1189,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 2. Data Node <br/>\
 - R/W 처리 : 읽기 쓰기 <br/>\
 - Block 처리 : Name Node 지시에 따라 생성, 삭제, 복제 수행 <br/><br/>\
-# 쓰기 과정 <br/>\
+# 쓰기 과정 (128MB) <br/>\
 <img src = "./img/HDFS_Read.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 0. File 크기 Block화 <br/>\
 1. Read 요청 <br/>\
