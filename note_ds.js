@@ -2367,7 +2367,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 영속성 : 수신한 데이터 디스크 유지 <br/>\
 - 유연성 : 시스템 연결 허브역할 <br/>\
 - 신뢰성 : 메시지 전달 보증 <br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (BMPCT) <br/>\
 - Broker : Producer, Consumer간 메시지 관리 <br/>\
 - Message : 데이터 최소 단위 <br/>\
 - Producer : 메시지 생성 프로세스 <br/>\
