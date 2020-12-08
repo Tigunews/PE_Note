@@ -27,17 +27,21 @@ var question = question.concat(
 '[AI][지도학습][성능검증]- Cross Validation',
 '[AI][지도학습][성능검증]- 혼동행렬(오차행렬)',
 '[AI][지도학습]- 분류모델생성알고리즘',
+'[AI][지도학습][AL]- ANN',
+'[AI][지도학습]- 차원축소',
+'[AI][지도학습][AL]- PCA Algorithm',
+'[AI][지도학습][AL]- SVM',
 '[AI]- 비지도 학습',
 '[AI][비지도 학습]- GAN',
 '[AI][비지도 학습]- DCGAN',
 '[AI]- 강화학습',
 '[AI][강화학습]- 심층강화학습',
 '[AI]- 역강화학습',
-'[AI]- 차원축소',
+'[AI]- 유전자 알고리즘',
+'[AI]- 전문가 시스템',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
-'[AI]- 유전자 알고리즘',
 '[AI]- Feed Forward Neural Network',
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
@@ -53,7 +57,6 @@ var question = question.concat(
 '[AI][AL]- Optimizer',
 '[AI][AL]- 로지스틱 회귀분석',
 '[AI][AL]- 비용함수, 손실함수',
-'[AI][AL]- ANN',
 '[AI][AL]- CNN',
 '[AI][AL]- R-CNN',
 '[AI][AL][R-CNN]- Fast RCNN',
@@ -559,6 +562,69 @@ var answer = answer.concat(
 <img src = "./img/분류모델생성알고리즘_2.png" style = "max-width:100%; height:auto;">\
 ',
   
+// [딥러닝]- ANN
+'# 정의 : 사람 신경망 모방 기계학습 알고리즘<br/>\
+- Artificial Neural Network <br/>\
+- 인공신경망, 사람의 신경망 원리와 구조를 모방하여 만든 기계학습 알고리즘 <br/><br/>\
+# 구성요소 : 자극,신호(Input Data) / 임계값(Weight) / 행동(Output)<br/><br/>\
+# 문제점<br/>\
+1) 학습과정에서 파라미터 최적값을 찾기 어려움. <br/>\
+2) Overfitting 에 따른 문제 (학습시간이 너무 느리다) <br/><br/>\
+# 학습유형 <br/>\
+1. 디지털 입력 <br/>\
+- 지도학습 : Hopfield NW : 훈련 데이터로 부터 올바르게 추측하는 것<br/>\
+- 자율학습 : Art Model : 입력값, 목표치 x, 데이터의 주요 특징 요약, 설명 <br/>\
+- 지도/자율학습 결합 : Carpenter NW : 목표값 표시 여부 상고나 없이 모두 훈련에 사용 <br/><br/>\
+2. 아날로그 입력 <br/>\
+- 지도학습 : Percetion, multilayer percetion <br/>\
+- 자율학습 : Competitive learning, SOM <br/><br/>\
+<img src = "./img/AL2_1_1.PNG" style = "max-width:100%; height:auto;">\
+',
+  
+// 차원축소
+'개념 : 차원의 저주 <br/>\
+- 벡터의 차원이 높아짐에 따라 생길 수 있는 문제점 방지 위한 축소 기법 <br/><br/>\
+# 기법 <br/>\
+- PCA(Principal Component Analysis) : 데이터의 최적 표현 위한 데이터 축소, 분산 최대 축 <br/>\
+<img src = "./img/PCA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- ICA(Independent Component Analysis) : 독립성 최대가 되는 벡터 찾기 <br/>\
+<img src = "./img/ICA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- LDA(Linear Discriminant Analysis) : 데이터의 최적 분류의 견지에서 데이터 축소 \
+<img src = "./img/LDA.png" style = "max-width:100%; height:auto;">\
+',
+  
+// PCA Algorithm
+'# 정의 : 주성분 표현 / 벡터 찾기 <br/>\
+- 분포된 데이터들의 주성분을 가장 잘 표현할 수 있는 벡터를 찾는 기법 <br/><br/>\
+# 프로세스 <br/>\
+- 공분산 계산 : 입력데이터 X의 평균, 공분산 계산 <br/>\
+- 고유벡터 계산 : 고유치 분석 통한 공분산의 고유치 행렬과 고유 벡터 행렬 계산 <br/>\
+- 고유치 선택 : 고유치 값이 큰 것부터 순서대로 선택 <br/>\
+- 변환행렬 생성 : 선택한 고유치에 대응되는 고유벡터를 열벡터로 가지는 변환 행렬 생성 <br/>\
+- 선형변환 : 선형변환에 의해 특정 데이터 얻음 <br/><br/>\
+# 응용사례 <br/>\
+- 얼굴인식, 지문인식 <br/><br/>\
+# 안면 인식 알고리즘 종류 비교 <br/>\
+- PCA(Principal Component Analysis) : 1차 얼굴 인식 <br/>\
+- ICA(Independent Component Analysis) : 2차 얼굴 인식 <br/>\
+- FDA(Fisher Discriminant Analysis) : 특징 분류 (ex. 남,여) \
+',
+  
+// SVM
+'# 정의 : 가장 근접한 데이터 / 가장 큰 경계 식별 <br/>\
+- 데이터가 사상된 공간에서 경계선과 가장 근접한 데이터(Support Vector)간의 거리가 가장 큰 경계를 식별하는 알고리즘(Maximum Margin Hyper plane)<br/><br/>\
+# 구성요소 <br/>\
+- Suppor Vector : 분류 경계에 가장 가까운곳에 위치한 데이터 <br/>\
+- Margin : 분류경계에 가장 가까운 데이터로부터 분류 경계까지의 거리 <br/>\
+- Hyperplane : 다차원의 공간의 구분을 위해 결정되는 n-1 평면 <br/>\
+- Kernel Trick : 비선형 패턴 분리 위한 차원확대 Feature Space 변환 하고 경계값 찾는 방법 <br/>\
+- Slack : 잘못 분류된 데이터 포인트를 본래 속하는 클래스로 비용을 들어 이동 시키는 값 <br/><br/>\
+# 장단점 <br/>\
+- 장점 : 높은 정확도, 범주,수치 예측 문제, 노이즈 영향x, Overfitting x, 신경망보다 사용 쉬움 <br/>\
+- 단점 : 최적 모델 찾기 어려움, 커널 함수 따라 성능 차이, 데이터셋 속성수 많으면 느림, 복잡한 해석 <br/><br/>\
+# 활용 사례 : 텍스트, 이미지, 의료정보, 문자 분류 \
+',
+  
 // 비지도 학습
 '# 정의 : 데이터가 어떻게 구성 / 통계의 밀도 추정 / 클러스터링 / 독립 성분 분석 <br/>\
 - 입력 값에 대한 목표치가 주어지지 않으며, 데이터가 어떻게 구성되었는지를 알아내는 문제의 범주에 속하는 기계학습의 한 방법 <br/><br/>\
@@ -662,16 +728,34 @@ var answer = answer.concat(
 * 라이지움 84회 4교시 4번\
 ',
   
-// 차원축소
-'개념 : 차원의 저주 <br/>\
-- 벡터의 차원이 높아짐에 따라 생길 수 있는 문제점 방지 위한 축소 기법 <br/><br/>\
-# 기법 <br/>\
-- PCA(Principal Component Analysis) : 데이터의 최적 표현 위한 데이터 축소, 분산 최대 축 <br/>\
-<img src = "./img/PCA.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- ICA(Independent Component Analysis) : 독립성 최대가 되는 벡터 찾기 <br/>\
-<img src = "./img/ICA.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- LDA(Linear Discriminant Analysis) : 데이터의 최적 분류의 견지에서 데이터 축소 \
-<img src = "./img/LDA.png" style = "max-width:100%; height:auto;">\
+// 유전자 알고리즘
+'# 정의 : 적응 탐색 / 최적화 문제 해결 <br/>\
+- 자연세계의 진화현상에 기반한 계산 모델로 진화론의 적자생존과 자연선택의 유전학에 근거한 적응 탐색과 최적화 문제 해결을 위한 알고리즘 <br/><br/>\
+# Darwin 이론기반 구성요소 <br/>\
+- 적응도(fitness) : 개체가 장래의 세대에 여향을 주는 범위 결정 <br/>\
+- 생식 오퍼레이터 : 개체가 다음세대에 자손을 생성 <br/>\
+- 유전자 오퍼레이터 : 부모의 유전자 정보로부터 자손의 유전자 정보 결정 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/GenericAlgorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 개체군 : 입력값들의 집합 / 이진 인코딩, value 인코딩 <br/>\
+- 적합도 함수 : 얼마나 적합할지 평가 위한 기준 함수 <br/>\
+- 선택 : 다음 세대의 개체군 형성 위한 염색체 선정 / 룰렛휠, Rank, 토너먼트 <br/>\
+- 교배 교차 : 새로운 자식을 형성 과정 / 단순, 이점, 균등교배 (80~95%) <br/>\
+- 돌연변이 : 자식에서 임의의 몇개 비트 값 변경 / 주요기법, 0.5~1% 낮은 값 \
+',
+  
+// 전문가 시스템
+'# 정의 : 전문가 지식 활용 / IF-THEN 구조 / 전방향, 역방향 질의 / 인공지능 시스템 <br/>\
+- 전문가가 가진 지식을 지식베이스 기반으로 축적하고 IF-THEN 구조의 전방향, 역방향 질의를 통해 전문가의 지식을 활용하는 인공지능 시스템 <br/><br/>\
+# 구성요소 <br/>\
+- 규칙추출 : if then else, 베이즈 정리 <br/>\
+- 추론기관 : 역방향 추론 기본 활용 (규칙 해석기 + 스케쥴러) <br/>\
+- 설명부 시스템 : 추론과정 타당성 설명 <br/>\
+- 지식 베이스 : 전문가의 지식 표현 <br/><br/>\
+# 추론기법 <br/>\
+- 전방향 추론 : 데이터 지향, 결과 항상 True, 추론의 건전성 <br/>\
+- 역방향 추론 : 목표 지향, 겨롸 false 가능, 유사추론, 휴리스틱\
 ',
   
 // AutoML
@@ -741,52 +825,6 @@ var answer = answer.concat(
 - 고객 지원 서비스 산업 : AI 면접, AI 콜센터<br/>\
 - 교육 산업 : 언어 학습, 개인 맞춤형 교육 시스템 <br/><br/>\
 * KPC 97회 관리 3교시 2번\
-',
-
-// [기계학습]- 유전자 알고리즘
-'# 정의 : 자연계 진화 현상 모방 최적해 탐색 알고리즘 <br/>\
-- 자연계의 진화 현상을 모방한 최적해 탐색 알고리즘으로써, 제한된 시간 안에서 효율적으로 복잡한 문제의 해결을 위해 사용되는 알고리즘.<br/><br/>\
-# 암기 <br/>\
-- 특징 : 집확적적성 <br/>\
-- 구성 : 개유세연적 <br/>\
-- 절차 : 선교돌대개적 <br/>\
--> 선 : 적순토엘 <br/>\
--> 교 : 단복일 <br/>\
--> 돌 : 정동 <br/><br/>\
-# 특징 <br/>\
-- 집합기반 <br/>\
-- 확률기반 <br/>\
-- 적합도함수만을 사용 <br/>\
-- 적용용이 <br/>\
-- 성능우수 <br/>\
-- 병렬성 : 개체군 안 여러개체들 동시 탐색 공간 다양한 방향 탐색 <br/>\
-- 비선형 문제 <br/><br/>\
-# 구성 <br/>\
-- 개체군(Initial Population) : 입력값 집합 > 이진인코딩, Value 인코딩, 트라인코딩 <br/>\
-- 유전자형(Gene) : 개체군의 유전정보 표현, 기호열 > 이진스트링, 상수 스트링, 실수 스트링 <br/>\
-- 세대(Generation) : 유전자들의 생성과 소멸을 담은 하나의 주기 <br/>\
-- 연산 : 최적해를 찾기 위한 유전자 조작 유전자 진화 과정 > 선택, 교배(교차), 돌연변이 <br/>\
-- 적합도 함수(Fitness Function) : 최적화하고자 하는 각 개체가 주어진 문제에서 얼마나 적합할지를 평가하기 위한 기준 함수 <br/><br/>\
-# 절차(Cycle) <br/>\
-- 선택(Selection) : 적합도 비례전략, 순위 전략, 토너먼트 선택 전략, 엘리트 보전 전략 <br/>\
-- 교배(Crossover) : 단순교차, 일점교차, 균등교차, 산술교차 <br/>\
-- 돌연변이(Mutation) : 정적변이, 동적변이 => 재생산 <br/>\
-- 대치(Subsitution) <br/>\
-- 개체군(Population) <br/>\
-- 적합도함수(Fitness Evaluation)<br/><br/>\
-# 유전자 알고리즘 흐름 <br/>\
-1. 초기 집합 생성 <br/>\
-2. 적합도 계산 <br/>\
-3. 자손생성 <br/>\
-4. 자손적합도 계산(선.교.변.대) <br/>\
-계산. 종료조건 판결(참/거짓) <br/>\
-6. 이동 <br/>\
-7. 종료 <br/><br/>\
-# 자손 적합도 계산에서 주로 사용하는 연산 <br/>\
-1. 선택 : 룰렛 휠 선택, 토너먼트 선택, 순위 기반 <br/>\
-2. 교차 : 1점교차, 다점교차, 균등교차, 싸이클 교차, 순서 교차, PMX(Partially Matched Crossover), 산술적교차, 휴리스틱 교차, 간선 재결합 <br/>\
-3. 변이 : 1/100, 0.5, 100 등 작은 확률로 발생시킴 <br/>\
-4. 대치 : 부모세대의 가장 우수한 해를 보존\
 ',
 
 // [기계학습]- Feed Forward Neural Network
@@ -1072,17 +1110,6 @@ var answer = answer.concat(
 - 무작위 뽑아 학습 <br/>\
 <img src = "./img/MiniBatch.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 * KPC 94회 1교시 2번\
-',
-
-// [딥러닝]- ANN
-'# 정의 : 사람 신경망 모방 기계학습 알고리즘<br/>\
-- Artificial Neural Network <br/>\
-- 인공신경망, 사람의 신경망 원리와 구조를 모방하여 만든 기계학습 알고리즘 <br/><br/>\
-# 구성요소 : 자극,신호(Input Data) / 임계값(Weight) / 행동(Output)<br/><br/>\
-# 문제점<br/>\
-1) 학습과정에서 파라미터 최적값을 찾기 어려움. <br/>\
-2) Overfitting 에 따른 문제 (학습시간이 너무 느리다) <br/>\
-<img src = "./img/AL2_1_1.PNG" style = "max-width:100%; height:auto;">\
 ',
 
 // [딥러닝]- CNN 
