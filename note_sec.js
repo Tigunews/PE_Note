@@ -45,6 +45,7 @@ var question = question.concat(
 '스테이지 프라이트(Stage Fright)',
 '널 포인터 디레퍼런스(Null Pointer Dereference)',
 '베놈(VENOM) 취약점',
+'크리덴셜 스터핑',
 'Atom Bombing',
 '컴퓨터 포렌식(Computer forensics) = 디지털 포렌식',
 'WNAC',
@@ -837,6 +838,28 @@ var answer = answer.concat(
 3. Host NW 통해 Exploit된 타 VM에 접속, 개인/민감정보 유출<br/><br/>\
 # 대응 : 보안패치, 최근 CVE 지속 모니터링 및 대응 <br/><br/>\
 <img src = "./img/VENOM.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 크리덴셜 스터핑
+'# 정의 : 무작위 대입공격 / ID / 계정 <br/>\
+- 유출된 정보 기반 무작위 대입 방식 공격기법 <br/><br/>\
+# 공격절차 <br/>\
+- 정보 확보 : 도난 당한 데이터 확보 <br/>\
+- 계정 대입 : 크리덴셜 대입 Tool 업로드 <br/>\
+- 계정 분석 및 추가 공격 : 로그인 성공 후 추가 공격 가능성 검토 <br/><br/>\
+# 탐지 방법 <br/>\
+1. 징조 <br/>\
+- 로그인 시도 트래픽 변화 탐지 <br/>\
+- 로그인 실패 빈도수 탐지 <br/>\
+- 사이트 다운타임 발생 <br/><br/>\
+2. 탐지 <br/>\
+- Bot Screening <br/>\
+- 실패횟수 증가, 비정상적 위치 시도, 비정상 패턴, 속도 탐지 <br/><br/>\
+# 대응방안 <br/>\
+- 봇차단 : 사람, 봇 트래픽 구분 / Captcha <br/>\
+- 다중 인증 : 해킹 난이도 상승 / 99.9% <br/>\
+- 비밀번호 규칙 : 소문자, 대문자, 특수문자, 자리수 <br/><br/>\
+* 라이지움 85회 관리 1교시 3번\
 ',
 
 // Atom Bombing
