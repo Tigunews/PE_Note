@@ -1732,23 +1732,32 @@ var answer = answer.concat(
 * 그리타\
 ',
 
-// 합의알고리즘
+// 합의 알고리즘
 '# 정의 : P2P에서 하나의 블록체인 유지하기 위한 기술 <br/><br/>\
 # 원리 <br/>\
 <img src = "./img/ConsensusAlgorithm.png" style = "max-width:100%; height:auto;"><br/>\
-- 독립적 검증 : 유효 전파, 무효 폐기<br/>\
-- 블록추가 : 증명된 계산법, 검증 거래<br/>\
-- 블록검증 : 모든 신규블록 검사 <br/>\
-- 수집 및 선택 : 누적 연산 체인 독립적 선택 <br/><br/>\
-# BFT <br/>\
-- 블록체인 알고리즘 신뢰성 원리 <br/>\
-- 51% 승리 법칙 <br/>\
-- 리더 노드의 결정이 다른 노드에게 전파, 2/3 이상의 동의 얻으면 합의 <br/><br/>\
+<img src = "./img/ConsensusAlgorithmDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. 경쟁방식 <br/>\
+- PoW : 특정 난이도의 작업 수행 증명 <br/>\
+- PoS : 화폐량 우선시 블록 생성 방식 <br/>\
+- DPoS : 지분량 대표자 선출, 순번 돌아가면서 블록 생성 <br/>\
+- PoET : 보안 모듈 기반, 리더 랜덤하게 선정 <br/><br/>\
+2. 비경쟁방식 <br/>\
+- PBFT : 악의적 노드 존재 내성 <br/>\
+- PAXOS : 고장 감내 분산 시스템에서 하나의 값에 동의 하기 위한 프로토콜 <br/>\
+- RAFT : 과반수 이상 투표 리더 선출, Log Replication 상호 합의 방식 <br/>\
+- Sieve : 합의 형성전 결과 검토 방식 <br/><br/>\
+<img src = "./img/ConsensusAlgorithmCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 목적 <br/>\
+- Double Spending 문제 : 블록생성 시간차 문제 / 단일 입력, 분산 시스템 동일 결정 <br/>\
+- Byzantine General 문제 : 일부 노드의 악의적 변경 문제 / 악의적 노드 참여시 신뢰도 확보 <br/><br/>\
 # 합의 알고리즘 표준화 기술 <br/>\
 <img src = "./img/ConsensusAlgorithmExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 표준화 동향 <br/>\
 - ISO TC 307 : 국제 기준 표준화 <br/>\
 - IEEE : 블록체인 프레임워크 표준화 <br/><br/>\
+* 라이지움 88회 관리 2교시 6번 <br/>\
 * 라이지움 87회 관리 1교시 12번<br/>\
 * 122회 2교시 2번\
 ',
