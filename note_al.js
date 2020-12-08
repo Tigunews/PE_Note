@@ -49,7 +49,8 @@ var question = question.concat(
 '[AI]- 컨텍스트 딥러닝',
 '[AI][AL]- 신경망 알고리즘',
 '[AI][AL]- 역전파 알고리즘',
-'[AI][AL]- 경사감소법',
+'[AI][AL]- Gradient Descent',
+'[AI][AL]- Optimizer',
 '[AI][AL]- 로지스틱 회귀분석',
 '[AI][AL]- 비용함수, 손실함수',
 '[AI][AL]- ANN',
@@ -989,23 +990,46 @@ var answer = answer.concat(
 * 119회 응용 2번\
 ',
 
-// [딥러닝]- 경사감소법
-'# 정의 : 신경망의 연결 가중치 최적화를 위한 알고리즘 <br/>\
-- 기계학습시 예측 오류를 줄이고 모델을 최적화하기 위해 현재상태의 기울기를 구해 손실값을 줄이는 방향으로 정해진 스텝량만큼 이동하여 신경망 파라미터를 최적화하는 알고리즘 <br/><br/>\
-# 주요변수 <br/>\
+// Gradient Descent
+'# 정의 : 신경망 학습 / 손실함수 / 편미분 / 최적점 탐색 <br/>\
+- 신경망 학습에서 손실함수의 편미분 통한 전역 국부 최적점 탐색 기법 <br/><br/>\
+# 구성요소 <br/>\
 <img src = "./img/GradientDescentXY.png" style = "max-width:100%; height:auto;"><br/>\
-- 가중치(x) : 각 신경망 연결의 Weight / 구하고자 하는 값<br/>\
-- 손실함수(y) : (예측값-실제값)^2 <br/>\
-- 기울기 : 손실함수 미분값 <br/>\
-- 학습율 : 발산방지, 기울기의 이동값 조정 <br/><br/>\
+- 초기값 : 경사하강 시작점 <br/>\
+- 손실함수 : 경사 하강법 대상 함수 <br/>\
+- 기울기 : 함수의 특정지점 미분값 <br/>\
+- 학습율 : 이동 보폭 결정 <br/>\
+- 모멘텀 : 경사하강 방향 결정 <br/><br/>\
 # 절차 <br/>\
-- 시작 : 특정 파라미터값으로 시작 <br/>\
-- 계산 : Cost function 계산 : 편미분 활용 <br/>\
-- 갱신 : 파라미터 값 업데이트 <br/>\
-- 반복 : 반복 학습 <br/><br/>\
+- 시작점 선택 : 초기 시작점 선택 / 초기 Weight, 하이퍼파라미터 <br/>\
+- 기울기 계산 : 특정지점 편미분 / ∂F(X)/∂x <br/>\
+- 가중치 갱신 : 학습율 반영 가중치 값 갱신 / W -∂F(X)/∂x <br/>\
+- 이동 : 모멘텀과 학습율 고려 이동 보폭 확정 <br/>\
+- 최소값 선택 : 전역 최소 지점 계산 및 결정 <br/><br/>\
 # 경사하강법 유형 <br/>\
 <img src = "./img/GradientDescentType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 관리 3교시 3번 <br/>\
 * 119회 1교시 9번\
+',
+
+// Optimizer
+'# Overview <br/>\
+<img src = "./img/Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. 기본 <br/>\
+- GD, SGD : 일반적인 경사 하강법 <br/><br/>\
+2. 관성 <br/>\
+- Momentum : 이동방향으로 관성을 적용하여 추가 이동 <br/>\
+- NAG : 이동방향으로 기울기 만큼 추가 이동 보정 <br/><br/>\
+3. Step Size <br/>\
+- Adagrad : 실제값과 멀면 Step size 증가 방식 <br/>\
+- Rmsprop : Step size 변동의 불완전성 해결 <br/><br/>\
+4. Hybrid <br/>\
+- Adam : Momentum + Adagrad / 기울기, Step size 모두 고려 <br/><br/>\
+# 개선방안 <br/>\
+- 조기 종료 : 수렴 하지 못하는 현상 방지 / 강제 수렴 <br/>\
+- 규제 강화 : 여러 파라미터 대한 규제 강화 / 과적합 감소 <br/><br/>\
+* 라이지움 88회 관리 3교시 3번\
 ',
   
 // 로지스틱 회기분석
