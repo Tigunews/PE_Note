@@ -69,6 +69,7 @@ var question = question.concat(
 'RAID',
 '[InMemory]- In-Memory Computing',
 '[InMemory]- In-Memory Database',
+'Auto Scale Up, Out',
 );
 
 var answer = answer.concat(
@@ -1357,5 +1358,15 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - Database 구축 : 인메모리 데이터베이스 구축 / Project 기반 <br/>\
 - Database 적용 : Data 성능, DBMS 모니터링 / 성능 모니터링 <br/><br/>\
 * 아이리포 23회 1교시 12번\
-',  
+',
+  
+// Auto Scale Up, Out
+'# Auto Scale Up : 수직적 확장, 비용 부담 큼, 확장성 제약, 단일 장비 한계, 심플한 구성, 변화 없음 <br/><br/>\
+# Auto Scale Out : 수평적 확장, 상대적 저렴, 용량 확장성 편리, L4등을 통해 확장, 상대적으로 복잡, 가용성 증가 <br/><br/>\
+# 시점 따른 기법 <br/>\
+- Schedule 기반 : 이벤트 일정 미리 알고 있는 경우 <br/>\
+- 부하 기반 : 모니터링, 일정 수준 넘을시 알람 통보, 수행 <br/><br/>\
+# 서비스 적용 방안 제언 : 사전검토 / 구축 / 운영 -> Capex, Opex 절감, 부하 분산, 빠른 서비스 제공 <br/><br/>\
+* 라이지움 88회 관리 2교시 1번\
+',
 );
