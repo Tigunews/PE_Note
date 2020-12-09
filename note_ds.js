@@ -188,6 +188,7 @@ var question = question.concat(
 '[Gartner 2021][Resilient Delivery]- 지능형 구성 가능한 비즈니스',
 '[Gartner 2021][Resilient Delivery]- AI 엔지니어링',
 '[Gartner 2021][Resilient Delivery]- 초자동화',
+'Ray Tracing',
 );
 
 var answer = answer.concat(
@@ -3346,5 +3347,21 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - COVID19 인한 우선적 디지털화 필요성 증가 <br/>\
 - Patchwork 탈피(비효율적인 레거시 비즈니스 프로세스) <br/><br/>\
 2. 해결방안 : 효율성, 속도, 전문성의 민주화, 비즈니스 민첩성\
+',
+  
+// Ray Tracing
+'# 정의 : 광원 인식 / 빛 반사 실시간 표현 <br/>\
+- 빛이 발생하는 광원을 인식하여 빛의 반사를 실시간으로 연산하여 표현하는 그래픽 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/RasterizationRayTracing.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 래스터화 기법, 레이 트레이싱 기법 <br/>\
+- 래스터화 기법 : Pixel 변환 후 가상의 광원으로부터 3차원 모델 생성 방식 <br/>\
+- 실제 카메라 관점에서 실시간 연산하여 3차원 모델 랜더링 <br/><br/>\
+# 응용사례 <br/>\
+- 3D 게임, 영화 CG <br/>\
+- 입체 실감 콘텐츠 : AR/VR Object Modeling <br/>\
+- 사실적 프로토타입 : CAD 응용, Prototype 모델링 활용 <br/>\
+- 과학 연구 : 소리 파형, 전자기파 파향 시각화 모델링 <br/><br/>\
+* 라이지움 85회 관리 1교시 1번\
 ',
 );
