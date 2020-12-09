@@ -37,8 +37,16 @@ var question = question.concat(
 '[AI]- 강화학습',
 '[AI][강화학습]- 심층강화학습',
 '[AI]- 역강화학습',
-'[AI]- 유전자 알고리즘',
+'[AI][AL]- 유전자 알고리즘',
 '[AI]- 전문가 시스템',
+'[AI][Classifier][AL]- Perceptron',
+'[AI][Classifier][AL]- Activation Function',
+'[AI][Classifier][AL]- Backpropagation',
+'[AI][Classifier][AL]- Gradient Descent',
+'[AI][Classifier][AL]- Optimizer',
+'[AI][Clustering][AL]- DBSCAN',
+'[AI][Clustering][AL]- EM Clustering',
+'[AI][Clustering][AL]- Dendrogram CLustering',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
@@ -52,9 +60,6 @@ var question = question.concat(
 '[AI]- 딥러닝 한계점',
 '[AI]- 컨텍스트 딥러닝',
 '[AI][AL]- 신경망 알고리즘',
-'[AI][AL]- 역전파 알고리즘',
-'[AI][AL]- Gradient Descent',
-'[AI][AL]- Optimizer',
 '[AI][AL]- 로지스틱 회귀분석',
 '[AI][AL]- 비용함수, 손실함수',
 '[AI][AL]- CNN',
@@ -758,6 +763,125 @@ var answer = answer.concat(
 - 역방향 추론 : 목표 지향, 겨롸 false 가능, 유사추론, 휴리스틱\
 ',
   
+// Perceptron
+'# 정의 : Pattern을 분류하기 위해 제안한 신경 회로망 모델 <br/><br/>\
+# 학습규칙 : 실제 출력물과 목표 출력 간의 차이 감소를 위한 가중치 조정 규칙 <br/><br/>\
+# 분류구조 <br/>\
+<img src = "./img/Perceptron.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Input Layer <br/>\
+- Input : 학습을 위한 기초데이터 입력계층 <br/><br/>\
+2. Hidden Layer <br/>\
+- Weights : 활성화 함수의 입력값으로 사용되는 뉴런간의 연결계수 <br/>\
+- Net Input Function : 입력값과 가중치의 곱을 모드 합한 값 <br/>\
+- Activation Function : 임계값을 이용 뉴런의 활성화 여부 결정하기 위해 사용 <br/>\
+- Criticl Point : 어떠한 갑싱 활성화 되기 위한 최소값 <br/><br/>\
+3. Output Layer <br/>\
+- Output : 학습을 통해 도출된 결과값을 출력하는 계층 \
+',
+  
+// Activation Function
+'# 정의 : input layer, output layer, thrshold, transfer function <br/>\
+- 신경망 알고리즘의 input layer의 값을 output node로 출력할 때, 출력값의 임계치(threshold)를 계산하여 output을 출력하는 일종의 전환 함수(transfer function) <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/ActivationFunction.png" style = "max-width:100%; height:auto;"><br/>\
+- Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 \
+',
+  
+// Backpropagation
+'# 정의 : 경사하강 관찰 / 가중치 이동 <br/>\
+- 가중치들 각각에 대해 별도의 경사하강을 관찰하고, 누적오차 감소에 가장 큰 기여를 하는 가중치 한 개 값을 이동시키는 방법을 반복하여 해를 찾아가는 알고리즘 <br/><br/>\
+# 특징 : 지도 학습을 이용, 출력층의 오차를 역전파하여 은닉층을 학습함으로써 다층 퍼셉트론 문제 해결 <br/><br/>\
+# 절차 <br/>\
+- 피드포워드 <br/>\
+- 오류 역전파 계산 <br/>\
+- 가중치 조정 <br/>\
+- 반복수행 <br/><br/>\
+# 문제점, 해결방안 <br/>\
+- 문제점 : Sigmoid 함수 문제(기울기 문제) <br/>\
+- 해결방안 : ReLU사용 (min max 조정) <br/><br/>\
+<img src = "./img/역전파AL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 응용 2번\
+',
+
+// Gradient Descent
+'# 정의 : 신경망 학습 / 손실함수 / 편미분 / 최적점 탐색 <br/>\
+- 신경망 학습에서 손실함수의 편미분 통한 전역 국부 최적점 탐색 기법 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/GradientDescentXY.png" style = "max-width:100%; height:auto;"><br/>\
+- 초기값 : 경사하강 시작점 <br/>\
+- 손실함수 : 경사 하강법 대상 함수 <br/>\
+- 기울기 : 함수의 특정지점 미분값 <br/>\
+- 학습율 : 이동 보폭 결정 <br/>\
+- 모멘텀 : 경사하강 방향 결정 <br/><br/>\
+# 절차 <br/>\
+- 시작점 선택 : 초기 시작점 선택 / 초기 Weight, 하이퍼파라미터 <br/>\
+- 기울기 계산 : 특정지점 편미분 / ∂F(X)/∂x <br/>\
+- 가중치 갱신 : 학습율 반영 가중치 값 갱신 / W -∂F(X)/∂x <br/>\
+- 이동 : 모멘텀과 학습율 고려 이동 보폭 확정 <br/>\
+- 최소값 선택 : 전역 최소 지점 계산 및 결정 <br/><br/>\
+# 경사하강법 유형 <br/>\
+<img src = "./img/GradientDescentType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 문제점 <br/>\
+1. Local, Global Minimum/Maximum 문제 <br/>\
+-> Initial Point 다양하게 설정 <br/><br/>\
+2. Gradient Vanishing Problem <br/>\
+- weight 변화 줄어들어, 학습 효과 감소 현상 <br/>\
+-> ReLU 사용 : 활성화 영역 항상 1의 도함수 값 <br/><br/>\
+* 라이지움 88회 관리 3교시 3번 <br/>\
+* 119회 1교시 9번\
+',
+
+// Optimizer
+'# Overview <br/>\
+<img src = "./img/Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. 기본 <br/>\
+- GD, SGD : 일반적인 경사 하강법 <br/><br/>\
+2. 관성 <br/>\
+- Momentum : 이동방향으로 관성을 적용하여 추가 이동 <br/>\
+- NAG : 이동방향으로 기울기 만큼 추가 이동 보정 <br/><br/>\
+3. Step Size <br/>\
+- Adagrad : 실제값과 멀면 Step size 증가 방식 <br/>\
+- Rmsprop : Step size 변동의 불완전성 해결 <br/><br/>\
+4. Hybrid <br/>\
+- Adam : Momentum + Adagrad / 기울기, Step size 모두 고려 <br/><br/>\
+# 개선방안 <br/>\
+- 조기 종료 : 수렴 하지 못하는 현상 방지 / 강제 수렴 <br/>\
+- 규제 강화 : 여러 파라미터 대한 규제 강화 / 과적합 감소 <br/><br/>\
+* 라이지움 88회 관리 3교시 3번\
+',
+  
+// DBSCAN
+'# 정의 : 반경 x / 점 n개 이상 <br/>\
+- Density Based Spatial Clustering of Application With Noise <br/>\
+- 어느 점을 기준으로 반경 x내에 점이 n개 이상 있으면 하나의 군집으로 인식하는 방식 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/DBSCAN.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/DBSCAN_Detail.png" style = "max-width:100%; height:auto;">\
+',
+  
+// EM Clustering
+'# 정의 : Gaussian Mixture / E-Step / M-Step <br/>\
+- Gaussian Mixture 모델을 기반으로 E-Step과 M-Step을 반복하여 군집형성 알고리즘 <br/><br/>\
+# 기술요소 <br/>\
+- Initialize : K개의 가우시안 분포 임의 형성 <br/>\
+- E-Step(Expectation) : 주어진 가우시안 분포에 대하여 각 샘플의 분포 소속 확률 추정 <br/>\
+- M-Stemp(Maximization) : x들의 부분에 대해 속할 확률 최대 되도록 각각 가우시안 분포 조정 <br/><br/>\
+# K-Means, EM 비교 <br/>\
+<img src = "./img/KMeansEM.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Dendrogram Clustering
+'# 정의 : 배타적 그룹 / 큰 군집 작은 군집 포함 <br/>\
+- 전체 데이터를 몇 개의 배타적 그룹으로 나누는 대신, 큰 군집이 작은 군집을 포함하는 형태로 계층을 이루도록 군집화를 수행하여 그 구조를 살펴보는 방법 <br/><br/>\
+# 방법 <br/>\
+- 병합적 방법 : 상향식 / N-1번 <br/>\
+- 분할적 방법 : 하향식 / 2^N-1 -1번<br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/Dendrogram.png" style = "max-width:100%; height:auto;">\
+',
+  
 // AutoML
 '# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
 - 머신러닝 파이프라인의 일부 또는 전체를 자동화하여 새로운 학습모델을 생성하는 기술 <br/><br/>\
@@ -1013,63 +1137,6 @@ var answer = answer.concat(
 - Context unit 부분 통해 hidden node 들과 양방향 통신 통해 output node 만듦\
 ',
 
-// [딥러닝]- 역전파 알고리즘
-'# 정의 : 다층 퍼셉트론 학습에 사용되는 통계적 기법 <br/><br/>\
-# 특징 : 지도 학습을 이용, 출력층의 오차를 역전파하여 은닉층을 학습함으로써 다층 퍼셉트론 문제 해결 <br/><br/>\
-# 절차 <br/>\
-- 피드포워드 <br/>\
-- 오류 역전파 계산 <br/>\
-- 가중치 조정 <br/>\
-- 반복수행 <br/><br/>\
-# 문제점, 해결방안 <br/>\
-- 문제점 : Sigmoid 함수 문제(기울기 문제) <br/>\
-- 해결방안 : ReLU사용 (min max 조정) <br/><br/>\
-<img src = "./img/역전파AL.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 119회 응용 2번\
-',
-
-// Gradient Descent
-'# 정의 : 신경망 학습 / 손실함수 / 편미분 / 최적점 탐색 <br/>\
-- 신경망 학습에서 손실함수의 편미분 통한 전역 국부 최적점 탐색 기법 <br/><br/>\
-# 구성요소 <br/>\
-<img src = "./img/GradientDescentXY.png" style = "max-width:100%; height:auto;"><br/>\
-- 초기값 : 경사하강 시작점 <br/>\
-- 손실함수 : 경사 하강법 대상 함수 <br/>\
-- 기울기 : 함수의 특정지점 미분값 <br/>\
-- 학습율 : 이동 보폭 결정 <br/>\
-- 모멘텀 : 경사하강 방향 결정 <br/><br/>\
-# 절차 <br/>\
-- 시작점 선택 : 초기 시작점 선택 / 초기 Weight, 하이퍼파라미터 <br/>\
-- 기울기 계산 : 특정지점 편미분 / ∂F(X)/∂x <br/>\
-- 가중치 갱신 : 학습율 반영 가중치 값 갱신 / W -∂F(X)/∂x <br/>\
-- 이동 : 모멘텀과 학습율 고려 이동 보폭 확정 <br/>\
-- 최소값 선택 : 전역 최소 지점 계산 및 결정 <br/><br/>\
-# 경사하강법 유형 <br/>\
-<img src = "./img/GradientDescentType.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 88회 관리 3교시 3번 <br/>\
-* 119회 1교시 9번\
-',
-
-// Optimizer
-'# Overview <br/>\
-<img src = "./img/Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 종류 <br/>\
-1. 기본 <br/>\
-- GD, SGD : 일반적인 경사 하강법 <br/><br/>\
-2. 관성 <br/>\
-- Momentum : 이동방향으로 관성을 적용하여 추가 이동 <br/>\
-- NAG : 이동방향으로 기울기 만큼 추가 이동 보정 <br/><br/>\
-3. Step Size <br/>\
-- Adagrad : 실제값과 멀면 Step size 증가 방식 <br/>\
-- Rmsprop : Step size 변동의 불완전성 해결 <br/><br/>\
-4. Hybrid <br/>\
-- Adam : Momentum + Adagrad / 기울기, Step size 모두 고려 <br/><br/>\
-# 개선방안 <br/>\
-- 조기 종료 : 수렴 하지 못하는 현상 방지 / 강제 수렴 <br/>\
-- 규제 강화 : 여러 파라미터 대한 규제 강화 / 과적합 감소 <br/><br/>\
-* 라이지움 88회 관리 3교시 3번\
-',
-  
 // 로지스틱 회기분석
 '# 개념 : 학습 데이터를 잘 설명하는 w와 b 값을 찾는 문제 <br/>\
 - 분석하고자 하는 대상들이 두 집단 혹은 그 이상의 집단으로 나누어진 경우에 개별 관측치들이 어느 집단에 분류될 수 있는가를 분석하고 이를 예측하는 모형을 개발하는데 사용되는 통계기법 <br/><br/>\
