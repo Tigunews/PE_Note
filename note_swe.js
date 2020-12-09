@@ -60,13 +60,6 @@ var question = question.concat(
 '[설계단계][소프트웨어 아키텍처]- 아키텍처 평가모델',
 '[설계단계]SAD',
 '[설계단계][SAD]- ADD (Attribute Driven Design)',
-'[설계단계]- 객체지향방법론',
-'[설계단계][객체지향]- SOLID',
-'[설계단계][객체지향]- 인터페이스',
-'[설계단계][객체지향]- 추상클래스',
-'[설계단계][객체지향]- 다형성',
-'[설계단계][객체지향]- Demeter\'s Law',
-'[설계단계][객체지향]- 상속,합성 비교',
 '[설계단계]- UML ',
 '[설계단계]- UML 관계',
 '[설계단계][UML]- UML 확장매커니즘',
@@ -267,6 +260,13 @@ var question = question.concat(
 '[방법론]- 정보공학방법론',
 '[방법론][정보공학방법론]- CRUD 매트릭스',
 '[방법론]- SW추상화',
+'[방법론]- 객체지향방법론',
+'[방법론][객체지향]- SOLID',
+'[방법론][객체지향]- 인터페이스',
+'[방법론][객체지향]- 추상클래스',
+'[방법론][객체지향]- 다형성',
+'[방법론][객체지향]- Demeter\'s Law',
+'[방법론][객체지향]- 상속,합성 비교',
 '[방법론]- CBD',
 '[방법론]- SOA',
 '[방법론]- Agile 방법론',
@@ -305,6 +305,7 @@ var question = question.concat(
 '[방법론][Ops]- DevOps',
 '[방법론][Ops]- DataOps',
 '[방법론][Ops]- GitOps',
+'[방법론]- Product Line 방법론',
 '[방법론]- 시각적 분석 (Visual Analytics)',
 '[방법론]- 시각화 분석 (Visualization Analysis)',
 '[방법론]- 데이터 시각화 (Data Visualization)',
@@ -1351,96 +1352,6 @@ var answer = answer.concat(
 <img src = "./img/ADD.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 객체지향방법론
-'# 정의 : 추상화 생성 개념 기반 방법론 / 구체 -> 추상 <br/>\
-- 구체적인 대상들에서 공통적인 특징을 추출하여 추상화 후 생성된 객체 위주로 SW를 개발하는 방법론<br/><br/>\
-# 특성/목적 : 캡추다정상 <br/>\
-- 캡슐화 : 접근통제 <br/>\
-- 추상화 : 본질적 문제 집중 (추상화,인스턴스화) <br/>\
-- 다형성 : 동적바인딩 <br/>\
-- 정보은닉 : 메시지 전달 (Getter, Setter) <br/>\
-- 상속성 : 개발 편리성 <br/><br/>\
-# 절차 : 요-객동기-시객구-테패평 <br/><br/>\
-<img src = "./img/객체지향방법론_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/객체지향방법론_2.png" style = "max-width:100%; height:auto;">\
-',
-
-// [객체지향방법론]- SOILD
-'# 정의 : 디자인 패턴 근본 원칙 / 객체지향 <br/>\
-- 객체지향 소프트웨어 설계의 근본 원칙, 디자인 패턴의 근본 원칙 <br/><br/>\
-# 주요내용 : SOLID <br/>\
-1. SRP(Single Responsibility Priciple) 단일 책임 원칙 : 하나의 역할만 수행 토록 Class 설계<br/>\
-- 위반사례 : God Class, Big Class <br/>\
-- 목적 : 응집도 강화 <br/>\
-<img src = "./img/SingleResponsePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. OCP(Open/Closed) 개방폐쇄의 원칙 : 확장에 개방, 변경에 폐쇄, 기능 추가시 영향도 없도록 설계 <br/>\
-- 위반사례 : 구현상속, 구현클래스 의존 <br/>\
-- 목적 : 재사용, 확장성 <br/>\
-<img src = "./img/OpenClosedPrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
-3. LSP(Liskov Subsitution) 리스코프의 치환원칙 : Sub Type은 언제나 자신의 Base Type으로 교체가능 <br/>\
-- 위반 사례 : 무분별한 기능 재정의 <br/>\
-- 목적 : 동적바인딩(다형성) <br/>\
-<img src = "./img/LiskovSubstitution.png" style = "max-width:100%; height:auto;"><br/><br/>\
-4. ISP(Interface Segregation) 인터페이스 분리 원칙 : 다른 클래스 종속할 때, 최소한의 인터페이스 사용 <br/>\
-- 위반 사례 : 구현상속, 여러기능 수행 메소드 <br/>\
-- 목적 : 결합도 최소화(정보은닉, 다형성) <br/>\
-<img src = "./img/InterfaceSegregation.png" style = "max-width:100%; height:auto;"><br/><br/>\
-5. DIP(Dependency Inversion) 의존성 역전원칙 : 상위레벨 모듈은 하위레벨 의존금지, 추상화된 상위레벨모듈에 의존 <br/>\
-- 위반 사례 : 구현상속, 구현클래스 의존 <br/>\
-- 목적 : 결합도 최소화 <br/>\
-<img src = "./img/DependancyInversion.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/SOLID_ALL.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* DRY(Don\'t Repeat Yourself)\
-',
-
-// 인터페이스
-'# 정의 : Class / 추상 메소드 + Static 변수 <br/>\
-- 클래스간의 공통 기능을 정의할 때 사용하는 상수와 추상 메소드의 집합체 <br/><br/>\
-# 특징 <br/>\
-- 멤버변수 public static final 만 선언가능<br/>\
-- 추상 메소드만 선언 가능 <br/>\
-- Java 경우 다중 인터페이스 상속가능 <br/>\
-- Implements <br/><br/>\
-# UML 표현 : \<\< interfacae \>\>, 이텔릭체, 점선 화살표 <br/><br/>\
-# 사례 : Adapter 패턴 중 class Adapter<br/><br/>\
-<img src = "./img/Interface.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/AbstractClassInterface.png" style = "max-width:100%; height:auto;">\
-',
-
-// 추상클래스
-'# 정의 : Class / 추상 메소드 1개 이상 <br/>\
-- 하나 이상의 추상 메소드를 가지며 객체가 가지는 특성을 추상화 시켜 상속을 통해 새로운 클래스를 작성하는 실제 인스턴스를 생성할 수 없는 클래스 <br/><br/>\
-# 특징 : 추상 메소드 선언 가능, 다중 인터페이스 상속 불가, extends, 인스턴스 생성 불가 <br/><br/>\
-# UML 표현 : 이탤릭체, 화살표 <br/><br/>\
-# 사례 : Templete Method 패턴 <br/><br/>\
-<img src = "./img/AbstractClass.png" style = "max-width:100%; height:auto;">\
-',
-
-// 다형성
-'# 정의 : 다른 처리 방식 구현 / 동일 인터페이스 <br/>\
-- 동일 인터페이스에 대해 서로 다른 처리 방식으로 구현 가능한 특성<br/><br/>\
-# 특징 : 확장성, 재사용성, 유지보수성 <br/><br/>\
-# 구현방법 : 오버로딩, 오버라이딩\
-',
-
-// Demeter's Law
-'# 정의 : 최소지식 원리 <br/>\
-- 오브젝트간 협력 설계시, 오브젝트가 주변 오브젝트에 대해 제한된 정보를 가지는 최소지식의 원리 <br/><br/>\
-# 특징 <br/>\
-- 미준수시 message chain 발생 <br/>\
-- 최소 지식 원칙 <br/><br/>\
-# 규칙 <br/>\
-1. 객체 자신의 메소드 <br/>\
-2. 매소드의 매개변수로 넘어온 인자의 메소드 <br/>\
-3. 메소드 내부에서 생성된 객체의 메소드 <br/>\
-4. 메소드가 포함하고 있는 객체의 메소드 <br/>\
-5. 메소드의 스코프안에서 객체가 접근 가능한 전역변수 \
-',
-  
-// 상속 합성
-'<img src = "./img/InheritComposition.png" style = "max-width:100%; height:auto;">\
-',
-  
 // UML 
 '# 정의 : 통합된 모델링언어, IT + Biz 설계 <br/>\
 - 객체기술에 대한 표준화기구에서 인정한 객체지향 분석과 설계를 위한 표준화된 모델링 언어 <br/><br/>\
@@ -4177,7 +4088,10 @@ P 히스토그램 : Data 분포 <br/>\
 // SW 개발 방법론 <br/>\
 '# 정의 : SW공학원리 + SW개발생명주기 적용 개념 <br/>\
 - SW공학원리를 SW개발생명주기에 적용한 개념으로 작업활동, 절차, 산출물, 기법등을 체계적으로 정리한 이론 <br/><br/>\
-<img src = "./img/SW개발방법론.png" style = "max-width:100%; hegiht:auto;">\
+# Over view <br/>\
+<img src = "./img/SW개발방법론.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 상세 설명 <br/>\
+<img src = "./img/SWDevType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 ',
 
 // 구조적 방법론
@@ -4290,7 +4204,98 @@ P 히스토그램 : Data 분포 <br/>\
 - 단위 추상화 <br/>\
 - 프로시저 추상화 <br/>\
 - 기능 추상화\
-', 
+',
+ 
+// 객체지향방법론
+'# 정의 : 추상화 생성 개념 기반 방법론 / 구체 -> 추상 <br/>\
+- 구체적인 대상들에서 공통적인 특징을 추출하여 추상화 후 생성된 객체 위주로 SW를 개발하는 방법론<br/><br/>\
+# 특성/목적 : 캡추다정상 <br/>\
+- 캡슐화 : 접근통제 <br/>\
+- 추상화 : 본질적 문제 집중 (추상화,인스턴스화) <br/>\
+- 다형성 : 동적바인딩 <br/>\
+- 정보은닉 : 메시지 전달 (Getter, Setter) <br/>\
+- 상속성 : 개발 편리성 <br/><br/>\
+# 절차 : 요-객동기-시객구-테패평 <br/><br/>\
+<img src = "./img/객체지향방법론_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/객체지향방법론_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// [객체지향방법론]- SOILD
+'# 정의 : 디자인 패턴 근본 원칙 / 객체지향 <br/>\
+- 객체지향 소프트웨어 설계의 근본 원칙, 디자인 패턴의 근본 원칙 <br/><br/>\
+# 주요내용 : SOLID <br/>\
+1. SRP(Single Responsibility Priciple) 단일 책임 원칙 : 하나의 역할만 수행 토록 Class 설계<br/>\
+- 위반사례 : God Class, Big Class <br/>\
+- 목적 : 응집도 강화 <br/>\
+<img src = "./img/SingleResponsePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. OCP(Open/Closed) 개방폐쇄의 원칙 : 확장에 개방, 변경에 폐쇄, 기능 추가시 영향도 없도록 설계 <br/>\
+- 위반사례 : 구현상속, 구현클래스 의존 <br/>\
+- 목적 : 재사용, 확장성 <br/>\
+<img src = "./img/OpenClosedPrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. LSP(Liskov Subsitution) 리스코프의 치환원칙 : Sub Type은 언제나 자신의 Base Type으로 교체가능 <br/>\
+- 위반 사례 : 무분별한 기능 재정의 <br/>\
+- 목적 : 동적바인딩(다형성) <br/>\
+<img src = "./img/LiskovSubstitution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. ISP(Interface Segregation) 인터페이스 분리 원칙 : 다른 클래스 종속할 때, 최소한의 인터페이스 사용 <br/>\
+- 위반 사례 : 구현상속, 여러기능 수행 메소드 <br/>\
+- 목적 : 결합도 최소화(정보은닉, 다형성) <br/>\
+<img src = "./img/InterfaceSegregation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+5. DIP(Dependency Inversion) 의존성 역전원칙 : 상위레벨 모듈은 하위레벨 의존금지, 추상화된 상위레벨모듈에 의존 <br/>\
+- 위반 사례 : 구현상속, 구현클래스 의존 <br/>\
+- 목적 : 결합도 최소화 <br/>\
+<img src = "./img/DependancyInversion.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SOLID_ALL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* DRY(Don\'t Repeat Yourself)\
+',
+
+// 인터페이스
+'# 정의 : Class / 추상 메소드 + Static 변수 <br/>\
+- 클래스간의 공통 기능을 정의할 때 사용하는 상수와 추상 메소드의 집합체 <br/><br/>\
+# 특징 <br/>\
+- 멤버변수 public static final 만 선언가능<br/>\
+- 추상 메소드만 선언 가능 <br/>\
+- Java 경우 다중 인터페이스 상속가능 <br/>\
+- Implements <br/><br/>\
+# UML 표현 : \<\< interfacae \>\>, 이텔릭체, 점선 화살표 <br/><br/>\
+# 사례 : Adapter 패턴 중 class Adapter<br/><br/>\
+<img src = "./img/Interface.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/AbstractClassInterface.png" style = "max-width:100%; height:auto;">\
+',
+
+// 추상클래스
+'# 정의 : Class / 추상 메소드 1개 이상 <br/>\
+- 하나 이상의 추상 메소드를 가지며 객체가 가지는 특성을 추상화 시켜 상속을 통해 새로운 클래스를 작성하는 실제 인스턴스를 생성할 수 없는 클래스 <br/><br/>\
+# 특징 : 추상 메소드 선언 가능, 다중 인터페이스 상속 불가, extends, 인스턴스 생성 불가 <br/><br/>\
+# UML 표현 : 이탤릭체, 화살표 <br/><br/>\
+# 사례 : Templete Method 패턴 <br/><br/>\
+<img src = "./img/AbstractClass.png" style = "max-width:100%; height:auto;">\
+',
+
+// 다형성
+'# 정의 : 다른 처리 방식 구현 / 동일 인터페이스 <br/>\
+- 동일 인터페이스에 대해 서로 다른 처리 방식으로 구현 가능한 특성<br/><br/>\
+# 특징 : 확장성, 재사용성, 유지보수성 <br/><br/>\
+# 구현방법 : 오버로딩, 오버라이딩\
+',
+
+// Demeter's Law
+'# 정의 : 최소지식 원리 <br/>\
+- 오브젝트간 협력 설계시, 오브젝트가 주변 오브젝트에 대해 제한된 정보를 가지는 최소지식의 원리 <br/><br/>\
+# 특징 <br/>\
+- 미준수시 message chain 발생 <br/>\
+- 최소 지식 원칙 <br/><br/>\
+# 규칙 <br/>\
+1. 객체 자신의 메소드 <br/>\
+2. 매소드의 매개변수로 넘어온 인자의 메소드 <br/>\
+3. 메소드 내부에서 생성된 객체의 메소드 <br/>\
+4. 메소드가 포함하고 있는 객체의 메소드 <br/>\
+5. 메소드의 스코프안에서 객체가 접근 가능한 전역변수 \
+',
+  
+// 상속 합성
+'<img src = "./img/InheritComposition.png" style = "max-width:100%; height:auto;">\
+',
+  
 
 // CBD
 '# 정의 : 소프트웨어 민첩성(생산성 확보)과 품질향상을 위한 방법론 <br/>\
@@ -4898,6 +4903,12 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 # IaC(Infra as Code)와 비교 <br/>\
 <img src = "./img/IaCGitOPS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 87회 라이지움 관리 1교시 2번\
+',
+ 
+// Product Line 방법론
+'# 정의 : 도메인 공학, 어플리케이션 공학, 다수 제품 맞춤개발 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/ProductlineDetail.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 시각적 분석
