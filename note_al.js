@@ -44,9 +44,21 @@ var question = question.concat(
 '[AI][Classifier][AL]- Backpropagation',
 '[AI][Classifier][AL]- Gradient Descent',
 '[AI][Classifier][AL]- Optimizer',
+'[AI][Classifier][AL]- KNN',
 '[AI][Clustering][AL]- DBSCAN',
 '[AI][Clustering][AL]- EM Clustering',
 '[AI][Clustering][AL]- Dendrogram CLustering',
+'[AI][Clustering][AL]- K-means',
+'[AI][AL]- MCTS',
+'[AI][AL]- CNN',
+'[AI][AL]- R-CNN',
+'[AI][AL][R-CNN]- Fast RCNN',
+'[AI][AL][R-CNN]- Faster RCNN',
+'[AI][AL]- YOLO',
+'[AI][AL]- RNN',
+'[AI][AL][RNN]- BRNN',
+'[AI][AL]- LSTM',
+'[AI][AL]- GRU',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
@@ -62,22 +74,12 @@ var question = question.concat(
 '[AI][AL]- 신경망 알고리즘',
 '[AI][AL]- 로지스틱 회귀분석',
 '[AI][AL]- 비용함수, 손실함수',
-'[AI][AL]- CNN',
-'[AI][AL]- R-CNN',
-'[AI][AL][R-CNN]- Fast RCNN',
-'[AI][AL][R-CNN]- Faster RCNN',
-'[AI][AL]- YOLO',
-'[AI][AL]- RNN',
-'[AI][AL][RNN]- BRNN',
-'[AI][AL]- LSTM',
-'[AI][AL]- GRU',
 '[AI][AL]- DNN',
 '[AI][AL]- 경량 딥러닝 기술',
 '[AI][AL]- 알고리즘 경량화',
 '[AI][AL]- Hyper Parameter',
 '[AI][AL]- Q-러닝',
 '[AI]- 모라벡의 역설(Moravec\'s Paradox)',
-'[AI]- 몬테 카를로 트리 탐색(MCTS)',
 '[AI]- 튜링테스트',
 '[AI]- 인공지능 서비스 플랫폼',
 '[AI]- 인공지능 소프트웨어 보안 취약성',
@@ -851,6 +853,38 @@ var answer = answer.concat(
 - 규제 강화 : 여러 파라미터 대한 규제 강화 / 과적합 감소 <br/><br/>\
 * 라이지움 88회 관리 3교시 3번\
 ',
+
+// KNN
+'# 정의 : Fingerprint / 기존 클러스터 / Instance 기반 거리 / 많은 속성 <br/>\
+- 새로운 Fingerprint를 기존 클러스터 내의 모든 데이터와 Instance 기반거리를 측정하여 가장 많은 속성을 가진 클러스터에 할당하는 분류 알고리즘 <br/><br/>\
+# 거리 <br/>\
+- 유클리디안 거리 : 점과 점의 최단 거리 <br/>\
+- 마할라노비스의 거리 : 확률분포 고려한 거리, 화이트닝 변환 사용 <br/>\
+- 코사인 유사도 : 내적 공간의 두 백터간 각도 코사인값 이용한 유사한 정도 <br/><br/>\
+# 동작 원리 <br/>\
+- FingerPrint 확인 : 새로운 입력 값 확인 <br/>\
+- 명목변수기반 그룹 분류 : 기존의 저장되어 있는 데이터 셋의 label화 <br/>\
+- 거리측정 : 유클리디안 거리 <br/>\
+- K값 선정 : 양의 정수값, 정렬된 거리 중 가장 가까운 K개 데이터 선정 <br/>\
+- 클러스터 매칭 : 명목 데이터의 경우 다수결 기반의 클러스터 매칭 수행 <br/><br/>\
+# 장단점 <br/>\
+1. 장점 <br/>\
+- 효율성 : 잡음 있는 경우 사용 가능 <br/>\
+- 결과 일관성 : 훈련데이터 크기가 클 경우 효율적 <br/>\
+- 간단한 학습 : 모형 단순, 쉬운 구현 <br/>\
+- 유연한 경계 : 거리의 변형, 가중치 적용 용이 <br/><br/>\
+2. 단점 <br/>\
+- 성능 가변성 : K값 선정에 따라 알고리즘의 성능이 좌우됨 <br/>\
+- 높은 자원 요구량 : 데이터 셋 전체를 읽어서 메모리에 기억 <br/>\
+- 고비용 : 모든 훈련 샘플과의 거리를 계산 <br/>\
+- 공간예측 부정확 : 영향변수 적용이 어려움 <br/><br/>\
+# 활용방안 <br/>\
+- 위치 측위 : 이동객체 위치에서 AP 신호 강도 측정 / RADAR <br/>\
+- 선호도 분류 : 사용자 추천정보 기반 성향 및 구매 패턴 분류 / 추천상품 연계 <br/>\
+- 데이터 필터링 : 포털의 중복, 유사 게시글 필터링 / 문서분류 (빈발 항목 집합, 빈발 단어 집합등) <br/>\
+- 고속도로 통행시간 예측 : TCS 교통량 및 DRSC 구간 통행시간의 실시간 자류 KNN기반 분석 / DRSC 활용, 통행시간 예측\
+
+',
   
 // DBSCAN
 '# 정의 : 반경 x / 점 n개 이상 <br/>\
@@ -881,6 +915,141 @@ var answer = answer.concat(
 # 개념도 <br/>\
 <img src = "./img/Dendrogram.png" style = "max-width:100%; height:auto;">\
 ',
+  
+// MCTS
+'# 정의 : 정책망(폭), 가치망(깊이) / 게임 시뮬레이션 <br/>\
+- 모든 트리 노드를 대상으로 하는 대신 게임 시뮬레이션을 통해 가장 가능성이 높아 보이는 방향으로 행동을 결정하는 탐색 방법 <br/><br/>\
+# 절차 <br/>\
+- 선택 : 현재 상태에서 특정 경로를 예측 <br/>\
+- 확장 : 경로 예측 후 해당 지점에서 게임 트리 확장 <br/>\
+- 시뮬레이션 : 시뮬레이션 종료 까지 임의 경로 예측 <br/>\
+- 역전파 : 노드 가치 역전파, 승산 가능성 예측 \
+',
+  
+// K-Means
+'# 정의 : n개 데이터 / k개 군집 / Clustering Algorithm <br/>\
+- n개의 데이터를 k개의 군집으로 분류하기 위해 거리 기반으로 반복적으로 계산해나가는 Clustering 알고리즘 <br/><br/>\
+# 절차 <br/>\
+- 시작 : 데이터 받아들임 (Lazy learning) <br/>\
+- Cluster K개 지정 <br/>\
+- 초기 평균값 선정 <br/>\
+- 초기 평균값 기준으로 데이터 선별 <br/>\
+- 최소 거리를 가진 데이터들로 그룹핑 <br/>\
+- 평균값 재조정 <br/>\
+- 알고리즘 종료 \
+',
+// [딥러닝]- CNN 
+'# 정의 : 영상 적용 인공신경망의 종류 <br/>\
+- Convolutional Neural Networks <br/>\
+- 컨볼루션 신경망은 영상에 적용이 용이하도록 만들어진 인공신경망의 종류이며, 컨볼루션 레이어와 폴링 레이어 구조를 가진 알고리즘 <br/>\
+- 하나 또는 여러개의 컨볼루션 레이어와 그 위에 올려진 일반적인 인공 신경망 레이어들로 이루어져 컨볼루션 레이어에서 전처리를 수행하는 구조를 가진 인공신경망 <br/><br/>\
+# 특징 <br/>\
+- 2차원 입력 데이터에 적합한 구조(영상, 음성) <br/>\
+- 3-tier Layer 구성 : Convolution Layer, Pooling Layer, Classifier <br/>\
+- 전처리(Pre-Processing) 중요 -> 최적의 Feature map 구성 위한 Convolution Filter 학습 모델 <br/>\
+- 최대한 작은 Complexity를 가지면서 우수한 filter를 표현하기 위한 CNN의 핵심 아이디어 -> Sparse interactions, Parameter sharing, Equivalent representation <br/><br/>\
+# 구성 (1,2 반복) <br/>\
+1) Convolution Layer : 특징추출, 다수필터 통과, 다수 특징맵(Featured Map)형성, Convolution 연산(합성곱), Relu(Rectified Linear Units)함수, Padding <br/>\
+2) Pooling Layer : Subsampling, 추상화, 자원 축소, Max pooling, Average Pooling <br/>\
+3) Feedforwad Layer : 분류, Fully Connected MLP <br/><br/>\
+# 사례 : 구글포토(검색DB + 오픈이미지데이터셋 활용, 초인간적 이미지 인식(Super Human Recognition) 연구방향)<br/><br/>\
+<img src = "./img/CNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 한계점 <br/>\
+- 영상 내 다중 객체 인식에 한계 <br/>\
+- 낮은 객체 인식 속도 <br/>\
+-> 극복방안 : R-CNN, YOLO \
+',
+  
+// [딥러닝]- R-CNN
+'# 정의 : 객체 탐색 기술 <br/>\
+- 입력 영상 내 사물 인식을 위해 사물의 영역 탐지 및 사물 특징 추출, 분류 CNN 기반 신경망 알고리즘 <br/><br/>\
+# 영상 객체인식 알고리즘 종류 <br/>\
+<img src = "./img/ObjectDetectionAlgorithms.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+<img src = "./img/RCNN_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+',
+  
+// Fast RCNN
+'<img src = "./img/FastRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+',
+  
+// Faster RCNN
+'<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+',
+  
+// YOLO
+'# 정의 : 이미지 전체에서 다수의 Bounding box를 예측하고, 동시에 각 박스에 Class Probability를 계산하는 통합된 모델 사용 알고리즘 <br/><br/>\
+<img src = "./img/YOLO.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 관리 3교시 5번\
+', 
+
+// [딥러닝]- RNN
+'# 정의 : Directed Cycle 구성 신경망 <br/>\
+- 인공신경망을 구성하는 유닛 사이의 연결이 Directed Cylce을 구성하는 신경망 <br/><br/>\
+# 특징 <br/>\
+- 연속 입력 데이터 적용 용이 (음성,언어인식)<br/>\
+- 연속 정보 흐름 반양 : 과거 학습 정보 지식이 후행 영향(전행 히든 노드 값 저장 후 후행 입력값으로 사용)<br/><br/>\
+# 구성도, 구성요소 <br/>\
+<img src = "./img/RNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 절차 <br/>\
+- Recurrent Weight : 진행결과 후행 활용<br/>\
+- Sequential data 학습 : 문맥 이해 <br/>\
+- BPTT(Back-Propagation Through Time) : 오류 역전파<br/><br/>\
+# 문제점 <br/>\
+- 장기 의존성 문제(Problem of Long-Term Dependencies) <br/>\
+- 사라지는 경사 현상 : 오류역전파 거리 늘어나면서 Grant값 폭증/사라짐<br/><br/>\
+# 극복방안 <br/>\
+- LSTM(Long Short Term Memory)<br/>\
+- GRU(Gated Recurrent Unit) : OutputGate 생략 간소화 버전 <br/><br/>\
+# RNN, LSTM, GRU 도식 <br/>\
+<img src = "./img/RNN_LSTM_GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 120회 응용 1교시 2번\
+',
+  
+// BRNN
+'# 정의 : 역방향, 미래 시점 데이터 활용 <br/>\
+- RNN의 역방향의 연결이 존재하지 않아 미래 시점인 데이터는 추론 시 활용할 수 없는 점을 개선하여 양방향 연결을 구현한 RNN <br/><br/>\
+# 구조도 <br/>\
+<img src = "./img/BRNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Input Layer : 입력값을 Forward, Backword Hidden Layer 모두 전달 <br/>\
+- Hidden Layer(Forward) : 일반적인 RNN과 같이 입력값을 받아서 BPTT 수행 <br/>\
+- Hidden Layer(Backward) : Input Layer로부터 Forwad Layer와 동일한 입력값을 받아 방향만 반대로 BPTT를 수행 <br/>\
+- Output Layer : Forward, Backward Hidden Layer 모두를 반영하여 결과 출력 <br/><br/>\
+# 활용 <br/>\
+- 음성인식시 RNN 학습 속도 개선 <br/>\
+- 번역, 필기체 인식 등에서 미래시점의 데이터 추론 <br/><br/>\
+* 라이지움 88회 관리 1교시 10번\
+',
+
+// LSTM
+'# 정의 : 장기 기억 가능 알고리즘 <br/>\
+- RNN의 장기 의존성 문제를 해결하기 위해 Forget, Input, Output 3가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/LSTM_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Forget Gate : 장기 상태의 어느 부분을 삭제할지 제어 <br/>\
+- Input Gate : 현재 상태의 input을 얼마나 기억할 것인지 계산 <br/>\
+- Output Gate : 계산된 값중 얼마나 다음단계에 보낼 것인지 계산 <br/><br/>\
+* KPC 97회 1교시 3번\
+',
+
+// [딥러닝(Deep Learning)]- GRU
+'# 정의 : RNN의 장기 의존성 문제를 해하기 위해 Reset, Update 2가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Reset Gate <br/>\
+- 이전 Hidden state와 입력을 받아 Sigmoid 처리 <br/>\
+- 이전 Hidden state에서 얼마나 값을 반영할지 결정 <br/><br/>\
+2. Update Gate <br/>\
+- 이전 정보를 어느 정도만 유지하여 새로운 STate 계산하여 결정 <br/><br/>\
+* KPC 97회 1교시 3번\
+',
+
   
 // AutoML
 '# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
@@ -1179,118 +1348,6 @@ var answer = answer.concat(
 * KPC 94회 1교시 2번\
 ',
 
-// [딥러닝]- CNN 
-'# 정의 : 영상 적용 인공신경망의 종류 <br/>\
-- Convolutional Neural Networks <br/>\
-- 컨볼루션 신경망은 영상에 적용이 용이하도록 만들어진 인공신경망의 종류이며, 컨볼루션 레이어와 폴링 레이어 구조를 가진 알고리즘 <br/>\
-- 하나 또는 여러개의 컨볼루션 레이어와 그 위에 올려진 일반적인 인공 신경망 레이어들로 이루어져 컨볼루션 레이어에서 전처리를 수행하는 구조를 가진 인공신경망 <br/><br/>\
-# 특징 <br/>\
-- 2차원 입력 데이터에 적합한 구조(영상, 음성) <br/>\
-- 3-tier Layer 구성 : Convolution Layer, Pooling Layer, Classifier <br/>\
-- 전처리(Pre-Processing) 중요 -> 최적의 Feature map 구성 위한 Convolution Filter 학습 모델 <br/>\
-- 최대한 작은 Complexity를 가지면서 우수한 filter를 표현하기 위한 CNN의 핵심 아이디어 -> Sparse interactions, Parameter sharing, Equivalent representation <br/><br/>\
-# 구성 (1,2 반복) <br/>\
-1) Convolution Layer : 특징추출, 다수필터 통과, 다수 특징맵(Featured Map)형성, Convolution 연산(합성곱), Relu(Rectified Linear Units)함수, Padding <br/>\
-2) Pooling Layer : Subsampling, 추상화, 자원 축소, Max pooling, Average Pooling <br/>\
-3) Feedforwad Layer : 분류, Fully Connected MLP <br/><br/>\
-# 사례 : 구글포토(검색DB + 오픈이미지데이터셋 활용, 초인간적 이미지 인식(Super Human Recognition) 연구방향)<br/><br/>\
-<img src = "./img/CNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 한계점 <br/>\
-- 영상 내 다중 객체 인식에 한계 <br/>\
-- 낮은 객체 인식 속도 <br/>\
--> 극복방안 : R-CNN, YOLO \
-',
-  
-// [딥러닝]- R-CNN
-'# 정의 : 객체 탐색 기술 <br/>\
-- 입력 영상 내 사물 인식을 위해 사물의 영역 탐지 및 사물 특징 추출, 분류 CNN 기반 신경망 알고리즘 <br/><br/>\
-# 영상 객체인식 알고리즘 종류 <br/>\
-<img src = "./img/ObjectDetectionAlgorithms.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 절차 <br/>\
-<img src = "./img/RCNN_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 95회 관리 3교시 5번\
-',
-  
-// Fast RCNN
-'<img src = "./img/FastRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 95회 관리 3교시 5번\
-',
-  
-// Faster RCNN
-'<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 95회 관리 3교시 5번\
-',
-  
-// YOLO
-'# 정의 : 이미지 전체에서 다수의 Bounding box를 예측하고, 동시에 각 박스에 Class Probability를 계산하는 통합된 모델 사용 알고리즘 <br/><br/>\
-<img src = "./img/YOLO.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 95회 관리 3교시 5번\
-', 
-
-// [딥러닝]- RNN
-'# 정의 : Directed Cycle 구성 신경망 <br/>\
-- 인공신경망을 구성하는 유닛 사이의 연결이 Directed Cylce을 구성하는 신경망 <br/><br/>\
-# 특징 <br/>\
-- 연속 입력 데이터 적용 용이 (음성,언어인식)<br/>\
-- 연속 정보 흐름 반양 : 과거 학습 정보 지식이 후행 영향(전행 히든 노드 값 저장 후 후행 입력값으로 사용)<br/><br/>\
-# 구성도, 구성요소 <br/>\
-<img src = "./img/RNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 절차 <br/>\
-- Recurrent Weight : 진행결과 후행 활용<br/>\
-- Sequential data 학습 : 문맥 이해 <br/>\
-- BPTT(Back-Propagation Through Time) : 오류 역전파<br/><br/>\
-# 문제점 <br/>\
-- 장기 의존성 문제(Problem of Long-Term Dependencies) <br/>\
-- 사라지는 경사 현상 : 오류역전파 거리 늘어나면서 Grant값 폭증/사라짐<br/><br/>\
-# 극복방안 <br/>\
-- LSTM(Long Short Term Memory)<br/>\
-- GRU(Gated Recurrent Unit) : OutputGate 생략 간소화 버전 <br/><br/>\
-# RNN, LSTM, GRU 도식 <br/>\
-<img src = "./img/RNN_LSTM_GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 120회 응용 1교시 2번\
-',
-  
-// BRNN
-'# 정의 : 역방향, 미래 시점 데이터 활용 <br/>\
-- RNN의 역방향의 연결이 존재하지 않아 미래 시점인 데이터는 추론 시 활용할 수 없는 점을 개선하여 양방향 연결을 구현한 RNN <br/><br/>\
-# 구조도 <br/>\
-<img src = "./img/BRNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 구성요소 <br/>\
-- Input Layer : 입력값을 Forward, Backword Hidden Layer 모두 전달 <br/>\
-- Hidden Layer(Forward) : 일반적인 RNN과 같이 입력값을 받아서 BPTT 수행 <br/>\
-- Hidden Layer(Backward) : Input Layer로부터 Forwad Layer와 동일한 입력값을 받아 방향만 반대로 BPTT를 수행 <br/>\
-- Output Layer : Forward, Backward Hidden Layer 모두를 반영하여 결과 출력 <br/><br/>\
-# 활용 <br/>\
-- 음성인식시 RNN 학습 속도 개선 <br/>\
-- 번역, 필기체 인식 등에서 미래시점의 데이터 추론 <br/><br/>\
-* 라이지움 88회 관리 1교시 10번\
-',
-
-// LSTM
-'# 정의 : 장기 기억 가능 알고리즘 <br/>\
-- RNN의 장기 의존성 문제를 해결하기 위해 Forget, Input, Output 3가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/LSTM_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 구성요소 <br/>\
-- Forget Gate : 장기 상태의 어느 부분을 삭제할지 제어 <br/>\
-- Input Gate : 현재 상태의 input을 얼마나 기억할 것인지 계산 <br/>\
-- Output Gate : 계산된 값중 얼마나 다음단계에 보낼 것인지 계산 <br/><br/>\
-* KPC 97회 1교시 3번\
-',
-
-// [딥러닝(Deep Learning)]- GRU
-'# 정의 : RNN의 장기 의존성 문제를 해하기 위해 Reset, Update 2가지의 Gate를 통해 데이터의 정보를 업데이트 하는 알고리즘 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/GRU.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 구성요소 <br/>\
-1. Reset Gate <br/>\
-- 이전 Hidden state와 입력을 받아 Sigmoid 처리 <br/>\
-- 이전 Hidden state에서 얼마나 값을 반영할지 결정 <br/><br/>\
-2. Update Gate <br/>\
-- 이전 정보를 어느 정도만 유지하여 새로운 STate 계산하여 결정 <br/><br/>\
-* KPC 97회 1교시 3번\
-',
-
 // [딥러닝]- DNN
 '# 정의 : 여러개 은닉층 인공신경망 <br/>\
 - 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) <br/><br/>\
@@ -1377,38 +1434,6 @@ var answer = answer.concat(
 # 극복 방안 <br/>\
 - Deep Learning <br/>\
 - Computing Power \
-',
-
-// 몬테 카를로 트리 탐색
-'# 정의 : 트리 시뮬레이션 선택 방법 <br/>\
-- 트리에서 무작위 시뮬레이션을 통해 최선의 선택(Optimal Decision)을 내리기 위한 방법 <br/>\
-- 소-최대 알고리즘의 성능을 개선하여 전체 경로 탐색이 불가능할 때 효율적 경로 탐색이 가능한 알고리즘 <br/><br/>\
-# 핵심개념 <br/>\
-- 정책(Policy) : 확장단계에서 가장 높은 승률을 예측, 트리 검색의 "폭"을 제한 <br/>\
-- 가치(Value) : 현재의 승산을 나타내는 역할, 트 검색의 "깊이"제한 역할 <br/><br/>\
-# 절차(Cycle) <br/>\
-1. 선택 <br/>\
-2. 확장 : 경로 예측 후 게임트리 확장 <br/>\
-3. 시뮬레이션 <br/>\
-4. 역전파 <br/><br/>\
-# 구글 알파고 <br/>\
-- 구성 : MCTS <br/>\
-- 정책(Policy) 망 : 자가학습 <br/>\
-- 가치(Value)망 : 최적 Output 도출 <br/>\
-- 강화학습 <br/>\
-- CPU 1202 개 <br/>\
-- GPU 176ro <br/>\
-- 분산 컴퓨팅 <br/>\
-- 인공지능 <br/><br/>\
-# 주요 정책 <br/>\
-- Tree Policy : 기존재 Search tree에서 Leaf 노드 선택/생성 <br/>\
-- Default Policy : 주어진 non-terminal state에서 value 추정 정책 <br/>\
-- Best Child Selection : 최선 승률 예측 자식 노드 선택 정책 <br/><br/>\
-# 적용 위한 3조건 <br/>\
-- 게임의 최대/최소 점수값 존재 <br/>\
-- 게임규칙 정해져있으며 완전 정보 게임이어야 함 <br/>\
-- 게임길이 제한되어 비교적 빨리 끝나야 함 <br/><br/>\
-<img src = "./img/MCTS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 ',
 
 // 튜링테스트
