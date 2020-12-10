@@ -248,6 +248,7 @@ var answer = answer.concat(
 - 암/복호화 : EC-KEM <br/><br/>\
 # ECDSA <br/>\
 <img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ECDSA_Graphic.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/ECDSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # ECDH <br/>\
 <img src = "./img/ECDH.png" style = "max-width:100%; height:auto;"><br/><br/>\
