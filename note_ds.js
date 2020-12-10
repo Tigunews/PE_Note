@@ -93,7 +93,6 @@ var question = question.concat(
 '[블록체인]- UTXO',
 '[블록체인]- 머클트리(Merkle Tree)',
 '[블록체인]- 블록체인 오라클 문제',
-'[블록체인]- 타원곡선 암호화 알고리즘(ECDSA)',
 '[블록체인]- 스마트시티 활용',
 '[블록체인]- Off Chain',
 '[블록체인][Off Chain]- Side Chain',
@@ -1796,32 +1795,6 @@ var answer = answer.concat(
 // [블록체인]- 블록체인 오라클 문제 
 '# 정의 : 블록체인 밖에 있는 데이터를 블록체인 안으로 가져올 때 발생하는 문제<br/>\
 - 블록체인 밖의 데이터를 오프체인(Off-Chain), 그 데이터가 블록체인 안으로 들어온 것을 온체인(On-Chain).',
-
-// [블록체인]- 타원곡선 암호화 알고리즘
-'# 정의 : 이산대수 / 짧은 / 빠른 / 공개키 / 유한체 / 대수적 구조 <br/>\
-- Elliptic Curve Cryptography <br/>\
-- 타원곡선 이산대수 기반으로 짧은 키 길이와 빠른 속도가 특징인 공개키 암호화 알고리즘 <br/><br/>\
-# 특징 <br/>\
-- 이산대수 문제 (ECDLP) 기반 암호체계 <br/>\
-- 선택성 : 유한체상 다양한 타원곡선 선택 가능 <br/>\
-- 설계 안전성 : 안전한 암호 시스템 설계 용이 <br/>\
-- 고효율성 : 256(ECC) / 3072(RSA) <br/><br/>\
-# 타원곡선 연산 <br/>\
-<img src = "./img/ECC_Calc.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
-- 방정식 :  Q = x * G <br/>\
-- Q : 공개키, 개인키로부터 연산 <br/>\
-- x : 개인키, p보다 작은 소수로, 난수 생성기로 생성 <br/>\
-- G : 생성자, 타원곡선 상의 임의의 점 <br/><br/>\
-# 적용분야 알고리즘 <br/>\
-- 디지털 서명 : ECDSA <br/>\
-- 키교환 : ECDH <br/>\
-- 난수생성 : Dual-EC DRBG <br/>\
-- 암/복호화 : EC-KEM <br/><br/>\
-# ECC RSA 비교 <br/>\
-<img src = "./img/ECC_RSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 86회 라이지움 1교시 7번 \
-',
 
 // 스마트시티 블록체인
 '# 활용 방안 <br/>\
