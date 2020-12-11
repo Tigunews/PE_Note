@@ -1017,11 +1017,11 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Partition간 병렬 처리 : 복수개 머신 세분화 <br/><br/>\
 # 사용방법 <br/>\
 1. 생성시 정의 <br/>\
-- Create index item_index on line_item(item) <u><b>parallel 20;</b></u> <br/><br/>\
+- Create index index_name on table_name(column) <u><b>parallel 20;</b></u> <br/><br/>\
 2. Table 수정 정의 <br/>\
-- Alter Table line_item <u><b/>parallel 20;</b></u><br/><br/>\
+- Alter Table table_name <u><b/>parallel 20;</b></u><br/><br/>\
 3. Hint 기능 사용 <br/>\
-- Select <u><b/>parallel(line_item, 20)</b></u> From line_item; <br/><br/>\
+- Select <u><b/>parallel(column, 20)</b></u> From table_name; <br/><br/>\
 * 라이지움 86회 4교시 5번\
 ',
 
