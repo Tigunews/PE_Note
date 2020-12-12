@@ -12,6 +12,9 @@ var question = question.concat(
 'Dispatcher',
 '[Dispatcher]- 운영체제 문맥, 문맥교환',
 'Interrupt',
+'[Interrupt]- Maskable Interrupt',
+'[Interrupt]- Non Maskable Interrupt',
+'[Interrupt]- Vectored Interrupt',
 'Memory 영역',
 'Process',
 'Thread',
@@ -302,9 +305,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // Interrupt 
-'# 정의 : 특별한 제어 신호<br/>\
-- 컴퓨터의 제어를 현 상태로부터 특수한 사건이나 환경으로 보내는 특별한 제어 신호 <br/>\
-- 프로그램 제어 신호를 보낸 원인에 해당되는 특수 서브루틴 <br/><br/>\
+'# 정의 : MCU / 예외상황 / 선 처리 매커니즘 <br/>\
+- MCU가 프로그램을 실행하고 있을 때, 입출력 HW 등의 장치 및 예외상황 대응 위해 우선순위에 따라 선 처리하기 위한 매커니즘 <br/><br/>\
 # 발생원인 (기의주)<br/>\
 1. 외부 <br/>\
 - 기계적 문제 : 정전, 자료전달과정 오류 <br/>\
@@ -335,6 +337,38 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 4교시 6번\
+',
+  
+// Maskable Interrupt
+'# 정의 : 처리할 인터럽트 <br/>\
+- 인터럽트 요인이 발생 하였을 경우 처리를 할 것인지 설정할 수 있는 인터럽트 <br/><br/>\
+# 특징 <br/>\
+- 사용 PIN : INTR(인터럽트 신호 접수) <br/>\
+- 제어 : 인터럽트 마스크 레지스터로 제어 <br/>\
+- 처리조건 : 인터럽트 처리 루틴 설정 필요 <br/>\
+- 사례 : 외부 신호 인터럽트, 파일 오류 <br/><br/>\
+* 라이지움 88회 관리 4교시 2번\
+',
+  
+// Non-Maskable Interrupt
+'# 정의 : CPU 처리 인터럽트 <br/>\
+- 인터럽트 요인이 발생 하면 CPU가 무조건 처리 해야 하는 인터럽트 <br/><br/>\
+# 특징 <br/>\
+- 사용 PIN : NMI(유보 불가한 인터럽트 접수) <br/>\
+- 제어 : 제어 불가능 <br/>\
+- 처리조건 : NMI 트리거 조건 설정 필요 <br/>\
+- 사례 : 전원 이상, 메모리 에러, I/O 이상 <br/><br/>\
+* 라이지움 88회 관리 4교시 2번\
+',
+  
+// Vectored Interrupt
+'# 정의 : ISR / 시작번지 <br/>\
+- 인터럽트 발생 원인에 따라 미리 지정된 서비스 루틴(ISR, Interrupt Service Routine)의 시작 번지(인터럽트 벡터)에서 처리하는 인터럽트 유형 <br/><br/>\
+# 동작 순서 <br/>\
+<img src = "./img/VectoredInterrupt.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# ISR 분기 과정 <br/>\
+<img src = "./img/MultiInterruptISR.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 관리 4교시 2번\
 ',
   
 // Memory 영역
