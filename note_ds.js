@@ -2956,8 +2956,19 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 <img src = "./img/OpenSource_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/OpenSource_0.png" style = "max-width:100%; height:auto;"><br/>\
 - 이배취수재결 <br/><br/>\
+# 의무사항 <br/>\
+<img src = "./img/OSS_Duty.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 공개 판단 기준 <br/>\
+- 상호허가권(반환의무) : Reciprocal(GPL 계열), Permissive(BSD 계열) <br/>\
+- 전염조항 : GPL(관련된 모든 소스 공개), LGPL(링크 형태로 사용시 공개의무 면제) <br/>\
+- 양립성 : 오픈소스 라이선스끼리 결합시 의무조항을 만족하지 못할 경우 발생 <br/><br/>\
+# 연동방식 별 공개 판단 <br/>\
+- System Call : Kernel 일 경우 GPL이라고 해도 System Exception에 따라 전염 조항 받지 않음 <br/>\
+- Dynamic Link : 결합방식에 무관하게 공개의무 적용 안됨 <br/>\
+- Command Line Argument : 실무적으로 독립된 프로그램으로 보아, 적용 제외 <br/><br/>\
 * 세계 65% 이상의 기업이 오픈소스 활용중 <br/>\
-* ICT 산업에서 오픈소스의 비중이 갈수록 높아지는 추세 \
+* ICT 산업에서 오픈소스의 비중이 갈수록 높아지는 추세 <br/><br/>\
+* 라이지움 88회 관리 4교시 1번\
 ',
 
 // 오픈소스 라이선스 분류
