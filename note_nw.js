@@ -81,6 +81,7 @@ var question = question.concat(
 '대역확산',
 'NW 가상화',
 '[NW 가상화]- NFV',
+'[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
 '유무선 전력전송',
 '망분리',
@@ -1536,9 +1537,19 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Device : 컴퓨팅, 네트워크, 스토리지 장비 등 하드웨어 리소스 <br/>\
 - 가상화 레이어 : 논리적 통합 <br/>\
 - VNF : 라우팅, 방화벽 등 네트워크 기능 제공 <br/><br/>\
-# SND NFV 비교 <br/>\
+# SDN NFV 비교 <br/>\
 <img src = "./img/SDN_NFV.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 관리 1교시 10번\
+',
+  
+// SDN
+'# 정의 : 제어부 / 데이터부 <br/>\
+- 네트워크 장비의 제어부와 데이터부를 분리하여 소프트웨어적으로 제어하는 네트워크 <br/><br/>\
+# 구성요소 <br/>\
+- Application : SDN 운영, 활용, 구동 레이어(4~7Layer) / NMS, Python <br/>\
+- Control plane : 공통부, 어플리케이션 구성되어 네트워크 제어 / SDN Controller, Southbound API <br/>\
+- Data Plane : Controller와 Application을 구동하기 위한 네트워크 장비 / SDN Switch, VXLAN <br/><br/>\
+* 라이지움 88회 응용 3교시 6번\
 ',
   
 // Open flow
