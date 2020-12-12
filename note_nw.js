@@ -1196,9 +1196,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : 6세대 네트워크 <br/><br/>\
 # 특징 (성대공정지현)<br/>\
 - 초성능 : 1Tbps <br/>\
-- 초대역,초공간 : 1THz, 10Km 이하 <br/>\
-- 초정밀 : 0.1 msec (1/10) <br/>\
-- 초지능,초현실 : 학습기반 이동통신 연결 <br/><br/>\
+- 초대역 : 1THz(지원대역), ~30GHz(대역폭)<br/>\
+- 초공간 : ~10Km(지원고도), 1,000km/h(이동속도) <br/>\
+- 초정밀 : 0.1 us(무선), ~5ms(유선) <br/>\
+- 초지능 : AI 기반 지능형 네트워크 <br/>\
+- 초현실 : 3차원 미디어, Tangible 미디어 <br/><br/>\
 # 주요 트랜드 <br/>\
 - 인공지능 활용 통신기술 확대 <br/>\
 - 개방형 협업을 통한 통신망 개발 <br/>\
@@ -1207,13 +1209,13 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 단말기 요구사항 <br/>\
 - 네트워크 구성요소 최적화 설계 <br/>\
 - 네이티브 AI <br/><br/>\
-# 요구 기술 <br/>\
-- 테라헤르츠(THz) 주파수 대역 활용 기술 <br/>\
-- 고주파 대역 커버리지 안테나 기술 <br/>\
-- 이중화 혁신 기술<br/>\
-- 네트워크 토폴리지 혁신 기술 : 유연한 네트워크 구성, 위성 활용 <br/>\
-- 주파수 공유 기술 <br/>\
-- AI 적용 통신 기술 <br/><br/>\
+# 주요기술 <br/>\
+- 주파수 기술 : THz, OFDM(New Waveform), 스펙트럼 공유(AI 동적공유) <br/>\
+- NW 토폴로지 기술 : 지상/비지상 NW, IAB(Integration of Access and Backhaul) <br/>\
+- 고신뢰성 기술 : HW 수준 보안/고신뢰 AI(Secure-by-Design, OSS 보안 강화, 적대적 머신러닝 대응 AI) <br/>\
+- Duplex 통신 기술 : 상호 배타적 통신(안테나) <br/>\
+- 최적화 기술 : Comprehensive AI <br/>\
+- 만물지은 인터넷 : SPlit Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
 # 5G 비교 <br/>\
 <img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 이동통신 기술의 한세대를 통상 10년으로 칭함 \
