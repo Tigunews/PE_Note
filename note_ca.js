@@ -277,9 +277,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Dispatcher_4.png" style = "max-width:100%; height:auto;">\
 ',
 
-//[Dispatcher]- 운영체제 문맥, 문맥 교환
-'# 문맥 : 작업 재개 정보 / 자원 재할당 시점<br/>\
-- 여러 프로세스가 함께 수행되는 시분할 시스템 환경에서 특정 프로세스의 처리를 위해 할당된 자원이 일시적으로 반환되어 다른 선점 프로세스를 처리하고 재할당 되었을 경우(이를 문맥교환이라 함), 기존 수행 중이었던 작업 시점부터 재현하기 위한 정보를 지칭 <br/><br/>\
+//[Dispatcher]- 운영체제 문맥, 문맥교환
+'# 문맥 : 프로세스, PCB, 커널, CPU <br/>\
+- 하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전의 프로세스의 상태(문맥)를 보관하고 새로운 프로세스의 상태를 적재하는 작업 <br/><br/>\
 # 유형 <br/>\
 - System Context : 커널할당자료구조, 페이지 테이블, 세그먼트 <br/>\
 - Memory Context : Text, Data, Heap, Swap 공간 <br/>\
