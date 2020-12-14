@@ -1269,7 +1269,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 '# 정의 : 다양한 업종 빅데이터 플랫폼 <br/>\
 - Data Category Vocabulary <br/>\
 - W3C가 주도하여 웹에 게시된 데이터 카탈로그 간의 상호 운용이 용이하도록 설계된 카탈로그 표준 모델과 데이터 속성을 표현하는 어휘의 집합(Ontology) <br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (리셋서디카)<br/>\
 - Resource : 공통 속성 <br/>\
 - Data Set : Resource 클래스 상속, 정보 <br/>\
 - Data Service : Resource 클래스 상속, 속성 정보<br/>\
