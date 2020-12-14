@@ -1491,19 +1491,11 @@ var answer = answer.concat(
 '# 정의 : 작은, 변경 조합 가능 아키텍처 <br/>\
 - 하나의 큰 어플리케이션을 여러개의 작은 마이크로 서비스 단위로 나누어 변경과 조합이 가능하도록 구성된 아키텍처 <br/><br/>\
 # Keyword : Loosely Coupled, 분산트랜잭션, Ripple Efeect <br/><br/>\
-# 부각 배경 <br/>\
-1. 모놀리틱 아키텍처 <br/>\
-- 전통적 단일체 구조 <br/>\
-- 긴 빌드 및 배포 시간 <br/>\
-- 환경변화 대처 어려움 <br/><br/>\
-2. SOA <br/>\
-- 서비스 지향 구조 <br/>\
-- 미들웨어(ESB)로 연결 <br/>\
-- 미들웨어 SPOF 문제 <br/><br/>\
-3. MSA <br/>\
-- Micro Service로 분할 <br/>\
-- 빠른 빌드 및 배포 가능 <br/>\
-- 기업 환경의 도입 확산 <br/><br/>\
+# 필요성 <br/>\
+- 시스템 확장성 : 컨테이너, Service Mesh <br/>\
+- 서비스 적시성 : CI/CD, Cross Functional Team <br/>\
+- 서비스 독립성 : Polyglot 아키텍처, RESTFul API <br/>\
+- 시스템 안정성 : Circuit Breaker, API G/W <br/><br/>\
 # MSA 구성요소 <br/>\
 <img src = "./img/SWE1_9_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 1. Front-end Tier <br/>\
@@ -1515,12 +1507,14 @@ var answer = answer.concat(
 3. Back-end Tier <br/>\
 - NoSQL DB : Document, Graph, Key/value 수평적 확장 가능한 DB <br/>\
 - RDB : ACID DB <br/><br/>\
+# 전환 고려사항 : 비즈니스 분해 효율성, DB 모델링 한계, 서비스 관리 포인트 증가 <br/><br/>\
 # 제언 <br/>\
 <img src = "./img/DevOpsComment.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * MSA SOA 비교표 <br/>\
 <img src = "./img/MSASOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 120회 관리 2교시 3번<br/><br/>\
-* KPC 91회 2교시 4번\
+* KPC 92회 관리 2교시 4번 <br/>\
+* 120회 관리 2교시 3번<br/>\
+* KPC 91회 관리 2교시 4번\
 ',
  
 // Service Mesh
