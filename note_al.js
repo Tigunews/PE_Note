@@ -66,6 +66,7 @@ var question = question.concat(
 '[AI][DeepLearning]- Vanishing Gradient Problem',
 '[AI][DeepLearning]- Drop Out',
 '[AI]- F1-Score',
+'[AI]- Bias',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
@@ -662,6 +663,8 @@ var answer = answer.concat(
 - 반복 학습 : 확률 분포에 맞춰 반복<br/>\
 - 판별 불가 모델 생성 : 확률분포 차이x -> 분류모델 학습 모델 반복 진행 <br/><br/>\
 4. 기초자료 <br/>\
+# 학습 원리 <br/>\
+<img src = "./img/GANDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Real Images : 생성, 실제 비교 <br/><br/>\
 # GAN 활용 모델 <br/>\
 - Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
@@ -1168,6 +1171,15 @@ var answer = answer.concat(
 - 최대값 = 1, 좋은모델 (Fall-out < Recall)일수록 1에 가까운 값 수렴 <br/><br/>\
 # 예상문제 <br/>\
 <img src = "./img/F1ScoreExample.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Bias
+'# 정의 : 편향된 데이터 학습, 최초 데이터의 디지털 가공 과정, 알고리즘 모델 자체 XAI <br/>\
+- 머신 러닝 인공지능에서 한쪽으로 치우쳐진 결과의 특성 <br/><br/>\
+# 원인 : 편향된 데이터 학습, 최초 데이터 디지털 가공 과정, 알고리즘 모델 자체 <br/>\
+# 대응방안 <br/>\
+- 정부 : 설명 요구할 권리 규정, 자동화된 의사결정 제한 권리 <br/>\
+- 기업 : 기업 AI 윤리 수립, 정보 품질 진단과 감리, 설명가능 AI의 개발 및 설계, Bias 인식 알고리즘 개발 \
 ',
   
 // AutoML
