@@ -70,7 +70,6 @@ var question = question.concat(
 '[IT-BS]- IT 투자 성과 평가',
 '[IT-BS]- IT 투자 평가 항목',
 '나라장터 ',
-'EAI',
 'COBIT 5.0',
 'IT-Compliance',
 '규제 샌드박스',
@@ -1137,20 +1136,6 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 
 // 나라장터 절차
 '<img src = "./img/나라장터.png" style = "max-width:100%; height:auto;">\
-',
-  
-// EAI
-'# 정의 : E-비지니스를 위한 기본 인프라 <br/>\
-- Enterprise Application Integration <br/>\
-- 기존 Point to point Interface의 한계를 극복하여, 기업 내 상호 연관된 모든 어플리케이션을 손쉬운 확장성으로 연결하여 필요 정보를 중앙 집중적으로 통합, 사용할 수 있는 환경을 구축하기 위한 방법 <br/><br/>\
-# 구성요소 <br/>\
-<img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 통합유형 <br/>\
-- Point to Point : 1:1 통합 <br/>\
-- Hub & Spoke : 중앙집중형 <br/>\
-- Messaging Bus : Middleware <br/>\
-- Hybrid : Hub&Spoke + Messaging Bus 혼합 <br/>\
-- Peer to Peer : 각 어플리케이션 Peer Seerverr P2P \
 ',
   
 // COBIT 5.0
