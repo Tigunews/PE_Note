@@ -67,6 +67,7 @@ var question = question.concat(
 '[AI][DeepLearning]- Drop Out',
 '[AI]- F1-Score',
 '[AI]- Bias',
+'[AI]- NPU',
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
@@ -1183,6 +1184,19 @@ var answer = answer.concat(
 # 대응방안 <br/>\
 - 정부 : 설명 요구할 권리 규정, 자동화된 의사결정 제한 권리 <br/>\
 - 기업 : 기업 AI 윤리 수립, 정보 품질 진단과 감리, 설명가능 AI의 개발 및 설계, Bias 인식 알고리즘 개발 \
+',
+  
+// NPU
+'# 정의 : 머신러닝 기반 차세대 반도체 / 저전력,고성능 <br/>\
+- 딥러닝 알고리즘 연산을 수행하는데 필요한 모든 제어 및 산술 논리를 구현하는 머신러닝 기반의 차세대 반도체 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/NPU_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Processing Engine : 머신러닝 데이터 입출력,연산을 처리하는 H/W <br/>\
+- 데이터 전송 : Process Engine간 데이터 통신 및 병렬 처리 <br/>\
+- 딥러닝 알고리즘 : 입력데이터를 딥러닝 알고리즘 활요하여 출력값 처리 <br/><br/>\
+# GPU NPU 비교 <br/>\
+<img src = "./img/GPUNPU.png" style = "max-width:100%; height:auto;">\
 ',
   
 // AutoML
