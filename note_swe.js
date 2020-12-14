@@ -72,6 +72,9 @@ var question = question.concat(
 '[설계단계]- Usecase Test',
 '[설계단계]- 모델기반 테스트',
 '[설계단계]- MSA',
+'[MSA]- EAI',
+'[MSA]- ESB',
+'[MSA]- API Gateway',
 '[MSA]- Service Mesh',
 '[설계단계]- Shared Nothing 아키텍쳐',
 '[설계단계]- Breadcrumbs',
@@ -1517,12 +1520,56 @@ var answer = answer.concat(
 * 120회 관리 2교시 3번<br/>\
 * KPC 91회 관리 2교시 4번\
 ',
+   
+// EAI
+'# 정의 : 이기종 연동, Adapter/EAI 허브 <br/>\
+- Enterprise Application Integration <br/>\
+- 기존 Point to point Interface의 한계를 극복하여, 기업 내 상호 연관된 모든 어플리케이션을 손쉬운 확장성으로 연결하여 필요 정보를 중앙 집중적으로 통합, 사용할 수 있는 환경을 구축하기 위한 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 통합유형 <br/>\
+- Point to Point : 1:1 통합 <br/>\
+- Hub & Spoke : 중앙집중형 <br/>\
+- Messaging Bus : Middleware <br/>\
+- Hybrid : Hub&Spoke + Messaging Bus 혼합 <br/>\
+- Peer to Peer : 각 어플리케이션 Peer Seerverr P2P <br/><br/>\
+* KPC 92회 관리 3교시 2번\
+',
+ 
+// ESB
+'# 정의 : SOAP 표준, HTTP/XML/WSDL/UDDI, SOA기반 <br/>\
+- Enterpriese Service Bus <br/>\
+- SOAP(XML/HTTP) Web Service 기술 이용, 내/외부 정보시스템 통합,관리, 사용 지원하는 SOA 지원 미들웨어 플랫폼 솔루션 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ESB.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- Interaction Link : 상호 메시지 저장 및 복원 기술 / 전송환경, 큐관리, 모니터링 <br/>\
+- SOAP : 서비스 통합 및 연결을 위한 통신 표준화 기술 / 서비스 요청 및 호출, 경로설정 <br/>\
+- Runner 기술 : 실행정보 교환 및 공통 환경 위한 경로 설정 기술 / 실행 환경 필요 정보 전달 <br/>\
+- ESB 패턴 : 일정 패턴 기반 솔루션 전개 기술 / 기반 솔루션 설계 및 개발 적용 <br/><br/>\
+* KPC 92회 관리 3교시 2번\
+',
+ 
+// API Gateway
+'# 정의 : 분산형 아키텍처, Proxy, MSA <br/>\
+- REST 기반 JSON 통신 활용, 단일 접점 API 라우팅 및 웹 서비스 Front End 제공, 서비스 통합 솔루션 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/APIGW.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- API Token : 클라이언트 인증 후 API 토큰 생성 및 발급 기술 / 통합 인증 관리 모듈 <br/>\
+- API Routing : 다수 엔드포인트/데이터 센터 환경 내 라우팅 기술 / 서비스 단일 접점 <br/>\
+- Mediation : JSON 기반 요청메시지 처리 및 프로토콜 변환 기술 / 메시징 패턴 변조 <br/>\
+- Logging & Metering : 다양한 루트 별 호출 로그 공통 관리 기술 / 운영 모니터링, 최적화 <br/><br/>\
+* KPC 92회 관리 3교시 2번\
+',
  
 // Service Mesh
 '# 정의 : 서비스 앞 단 / 경량화 프록시 배치 <br/>\
 - 서비스 앞 단에 경량화된 프록시를 배치하여 서비스 간의 통신을 제어하는 아키텍처 패턴 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/ServiceMeshControlPlane.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ServiceMesh.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. 아키텍처 구성 <br/>\
 - Control Plane : 중앙집중화된 컨트롤러에서 프록시 설정정보 통제 <br/>\
