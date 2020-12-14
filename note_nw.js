@@ -61,6 +61,7 @@ var question = question.concat(
 '[5G]- Open Lan',
 '6G',
 '[6G]- Wifi 7',
+'Wifi 6',
 '재난안전통신망(Disaster Security Communication Network, 재난망)',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
@@ -1223,7 +1224,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // Wifi 7
-'# 정의 : IEEE 802.11be <br/>\
+'# 정의 : IEEE 802.11be, 비면허대역, CA 기술적용, 30Gbps <br/>\
 - 기존의 Wifi 6보다 3배 빠르고 초 실감 미디어 컨텐츠를 안정적으로 전송하는 차세대 무선통신 기술 <br/><br/>\
 # 특징 <br/>\
 - 5G 음영지역 해소 <br/>\
@@ -1237,6 +1238,21 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # Wifi 6비교 <br/>\
 <img src = "./img/Wifi67.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 응용 1교시 16번\
+',
+  
+// Wifi 6
+'# 정의 : IEEE 802.11.ax(Wifi Alliance), High Efficiency Wireless <br/>\
+- IEEE 802.11.ac 대비 평균 Throughput 4배 이상 향상되어 밀집환경에서 더 많은 사용자에게 안정적인 Throughput을 제공하는 Wireless LAN 차세대 기술 <br/><br/>\
+# 기술요소 <br/>\
+1. PHY 매커니즘 <br/>\
+- 빔포밍 : 안테나의 빔이 특정 단말에게만 국한되게 하는 스마트 안테나의 한 방식 <br/>\
+- MU-MIMO : Trigger Frame 기반 정해진 시간 간경에 따라 전송하는 기술 <br/>\
+- OFDMA : 부반송파를 다중 사용자가 분할하여 사용하는 기술 <br/><br/>\
+2. MAC 매커니즘 <br/>\
+- BSS Color 기술 : Color 기반으로 공간 재사용, 단말기가 속한 AP 관할 BSS확인 <br/>\
+- CCA 레벨 제어 : 각 단말기에 전송되는 파워 조절 기술 <br/>\
+- Target Wake Time : Access Time 조절 및 절전을 통한 불필요 전송 방지 <br/><br/>\
+* KPC 92회 응용 1교시 15번\
 ',
 
 // 재난안전통신망
