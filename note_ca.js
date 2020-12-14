@@ -30,6 +30,7 @@ var question = question.concat(
 '[메모리 관리][할당 기법][연속 로딩]- 다중 분할 할당',
 '[메모리 관리][할당 기법]- 분산 로딩 기법(Virtual Memory, Paging, Segmentation)',
 '[메모리 관리][할당 기법]- 단편화',
+'메모리 인터리빙',
 '[커널 메모리 할당]- Buddy allocator',
 '[커널 메모리 할당]- Slab allocator',
 '[Virtual Memory]- Mapping',
@@ -661,6 +662,16 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # 해결방법 (Relocation) <br/>\
 - 통합 기법 : 인접된 빈 분할 공간 통합 <br/>\
 - 압축 기법 : Garbage Collection \
+',
+  
+// 메모리 인터리빙
+'# 정의 : 메모리 접근시간 최소화, 연속적인 주소 <br/>\
+- 메모리 접근시간 최소화를 위해 메모리를 복수개의 모듈로 분할하고 각 모듈별 연속적인 주소를 부여하여 동시 Access가 가능하게 하는 기법 <br/><br/>\
+# 방식 <br/>\
+<img src = "./img/MemoryInterleaving.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 액세스 방식 <br/>\
+<img src = "./img/MemoryInterleavingDataAccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 92회 응용 1교시 16번\
 ',
   
 // Buddy allocator
