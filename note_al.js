@@ -63,6 +63,7 @@ var question = question.concat(
 '[AI][DeepLearning]- 딥러닝 한계점',
 '[AI][DeepLearning]- 컨텍스트 딥러닝',
 '[AI][DeepLearning]- 튜링테스트',
+'[AI][DeepLearning]- Vanishing Gradient Problem',
 '[AI][DeepLearning]- Drop Out',
 '[AI]- F1-Score',
 '[AI]- AutoML',
@@ -1114,9 +1115,31 @@ var answer = answer.concat(
 4. 어느쪽이 사람인지 구분할 수 없을 경우, A,B 둘다 인간 수준의 사고능력 가진것으로 판정\
 ',
   
+// Vanishing Gradient Problem
+'# 정의 : 국부해, Sigmoid/Squash, ReLu/Leaky ReLu, DBN/Pre-Training <br/>\
+- 심층신경망의 역전파 알고리즘을 이용한 학습시 앞쪽의 은닉층으로 오차가 거의 전달되지 않는 현상 <br/><br/>\
+# 발생원인 <br/>\
+- Layer 깊이 측면 : 복잡한 문제 해결 위한 층 확장 / 국부해 수렴, 최적해 수렴시 반복 계산 증가 <br/>\
+- 활성함수 측면 : Sigmoid 함수의 "Squash"특성 / 역전파시 최대 미분값 0.25, 층 반복시 0 수렴 <br/>\
+<font color = "red">*Squash : Input을 매우 작은 범위의 Output Range로 매핑시키는 방식 </font><br/><br/>\
+# 해결방안 <br/>\
+1. 학습 효율 측면 <br/>\
+- LSTM 활용 : Forgot Gate, 장기의존성 문제 해결 <br/>\
+- DBN 활용 : 사전학습 기반, Fine Tuning 이전 Pre-Training 수행, 예측 값 정확성 개선 <br/><br/>\
+2. 활성함수 개선 측면 <br/>\
+- ReLU 함수 활용 : 미분값 보존, x > 0일 경우 역전파 값 상수(1) 유지 <br/>\
+- Leaky ReLU 활용 : 음의 값 활용, ReLU의 0 이하 값 손실, "Dying ReLU" 문제 개선 <br/><br/>\
+* KPC 92회 관리 3교시 5번\
+',
+  
 // Drop Out
-'# 정의 : 딥러닝 학습 / 오류 역전파 / 무작위 비활성화 <br/>\
-- 심층신경망 학습을 위해 오류역전파 수행시, 과적합 문제를 해결하기 위해 은닉층의 일부 노드를 무작위로 비활성화하는 기법 <br/><br/>\
+'# 정의 : Overfitting, Voting/Co-Adaption, 축소신경망, Mini-Batch 경사 감소법 <br/>\
+- 심층신경망의 입력층과 은닉층의 임의 확률 기준 노드 제거, 축소 신경망 학습 통한 공동적은(Co-Adaption) 문제 해결, 규제화(Regulation)기법 <br/><br/>\
+# 수행효과 : Voting 효과, 공동적응 방지 <br/><br/>\
+# 수행원리 <br/>\
+- 신경망 축소 : 입력, 은닉층 노드 제거 <br/>\
+- 신경망 복원 : 노드 제거된 축소 신경망 학습 <br/>\
+- 제거 노드 복원 후 테스트 수행 <br/><br/>\
 # 유형 <br/>\
 - Feed Forward : 초기 입력 노드 대상 <br/>\
 - Back Propagation : 출력 노드 대상 <br/>\
