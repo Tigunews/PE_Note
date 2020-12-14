@@ -1623,6 +1623,7 @@ var answer = answer.concat(
 # 안전성 분석 절차 (IEC 61508) <br/>\
 <img src = "./img/SSA_Order.png", style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SSA_1.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 필요성 : 시스템 변화, 사회 안전, 비용 절감 <br/><br/>\
 # 유형 <br/>\
 1. 요구분석/설계 단계 <br/>\
 - FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
