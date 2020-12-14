@@ -683,6 +683,8 @@ var answer = answer.concat(
 '# 정의 : 안정적 학습을 위한 GAN <br/>\
 - Deep Convolution GAN <br/>\
 - GAN의 Fully Connected layer를 제거하고 Convolution Layer와 배치 정규화 구조를 사용하여 안정적인 학습이 가능한 GAN 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DCGAN_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. 네트워크 구조 <br/>\
 - Convolution : 특징 추출 합성곱 / Feature Map, stride, padding <br/>\
@@ -1157,7 +1159,7 @@ var answer = answer.concat(
 '# 정의 : 분류성능 평가지표 측정 / 정밀도, 재현율 조화 평균<br/>\
 - 모델의 분류성능 평가지표를 측정하기 위한 정밀도와 재현율의 조화 평균의 값 <br/><br/>\
 # Precision, Recall<br/>\
-<img src = "./img/AutoMLMachanism.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/F1ScorePrecisionRecall.png" style = "max-width:100%; height:auto;"><br/>\
 - Precision(정밀도) = TP / (TP + FP) <br/>\
 - Recall(재현율) = TP / (TP + FN) <br/>\
 - Accuracy(정확도) = (TP + TN) / (TP + FN + FP + TN) <br/><br/>\
@@ -1197,6 +1199,11 @@ var answer = answer.concat(
 - 딥러닝 알고리즘 : 입력데이터를 딥러닝 알고리즘 활요하여 출력값 처리 <br/><br/>\
 # GPU NPU 비교 <br/>\
 <img src = "./img/GPUNPU.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Deep Fake
+'# 정의 : Latent Face, 학습(CNN,LSTM), 생성(GAN) 보정(가우시안필터)<br/>\
+- 딥러닝을 이용해 기존 영상에 다른 영상이나 이미지 정보를 합성하여 콘텐츠를 생성하는 기법 \
 ',
   
 // AutoML
