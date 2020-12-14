@@ -666,6 +666,9 @@ var answer = answer.concat(
 # 학습 원리 <br/>\
 <img src = "./img/GANDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Real Images : 생성, 실제 비교 <br/><br/>\
+# 문제점 <br/>\
+- 모드 진동 : Generator와 Discriminator 번갈아 학습 <br/>\
+- 모드 붕괴 : Generator가 Discriminator 속이는 것에만 집중, 전체 데이터 분포 학습하지 못하고 일부만 학습하게 되는 현상 <br/><br/>\
 # GAN 활용 모델 <br/>\
 - Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
 - Disco GAN : 이미지, 텍스트 매핑 / 객체간 특성 관계 파악<br/>\
