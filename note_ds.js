@@ -3076,7 +3076,7 @@ Mobility를 기반으로 오픈 API기반으로 다양한 서비스를 연계 �
 - 의무화 : 코드 작성후 문서화 의무 <br/>\
 - 코드 공개범위 : 본부,지사 단위까지 <br/>\
 - 보고체계 : 간소화, 속도향상 <br/>\
-- 모듈화 : 재사용, 통합 용이성 <br/><\
+- 모듈화 : 재사용, 통합 용이성 <br/><br/>\
 2. 도구 <br/>\
 <img src = "./img/InnerSourceTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 활용방안 <br/>\
