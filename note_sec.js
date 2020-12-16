@@ -102,6 +102,7 @@ var question = question.concat(
 '개발보안 방법론',
 'Privacy By Design',
 'ISO/IEC 27017',
+'ISO 27001',
 'SDP',
 '[DB 보안]- DB 보호 솔루션',
 '[DB 보안][Role Based]- Bell LaPadula',
@@ -2019,6 +2020,24 @@ EAL : 펑스매매세세포 <br/><br/>\
 - (17)연속성 관리 : 업무 연속성 요구사항 <br/>\
 - (18)법적준거성 : 국내외 법규, 계약 요구사항 파악 <br/><br/>\
 * 122회 3교시 2번\
+',
+  
+// ISO 27001
+'# 정의 : ISMS / BP<br/>\
+- Information Security Management System <br/>\
+- 정보보안경영시스템에 대한 국제적인 표준, 전세계 선진기업이 합의한 Best Practice를 활용하여 해당 조직이 정보보호경영을 실행하기 위한 Framework을 확인하고 이를 자사에 적용할 수 있는 지침을 제공 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/ISO27001Overview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성 도메인 <br/>\
+0. 도입부 : 일반사항, 프로세스 접근 방법, PDCA 모델 <br/>\
+1. 적용 범위 : 요구사항의 적용 범위 <br/>\
+2. 인용 규격 : ISO 9001, ISO 17799, ISO Guide 73의 인용내용 <br/>\
+3. 용어 정의 : 정보 / 기밀성 / 무결성 / 취약성 / 보호위험 / 위험평가 / 위험관리 <br/>\
+4. 정보보안 겸영 시스템 : 요구사항 및 문서화 요구사항 <br/>\
+5. 경영 책임 : 경영자 의지 강조, 자원 관리 <br/>\
+6. ISMS 내부 심사 : PDCA 모델을 통한 내부 심사 <br/>\
+7. ISMS 경영 검토 : ISMS 내부 심사 <br/>\
+8. ISMS 개선 : 지속적인 개선, 교정 조치사항, 예방 조치 사항 \
 ',
 
 // SDP
