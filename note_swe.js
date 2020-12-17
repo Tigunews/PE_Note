@@ -273,6 +273,7 @@ var question = question.concat(
 '[방법론][객체지향]- 상속,합성 비교',
 '[방법론]- CBD',
 '[방법론]- SOA',
+'[방법론]- Product Line 방법론',
 '[방법론]- Agile 방법론',
 '[방법론][Agile]- xp',
 '[방법론][Agile]- Scrum',
@@ -4404,6 +4405,27 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/SOA_4.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 <img src = "./img/SOA_5.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 사례 : 구글맵 \
+',
+ 
+// Product Line 방법론
+'# 개념 : 도메인 공학, 어플리케이션 공학, 다수 제품 맞춤 개발, CBD 한계 극복, Core Asset <br/>\
+- 제품/서비스 군 별로 SW 핵심자산(Core Asset)을 개발하고 이를 관리/조직적인 재사용을 통해 경제적인 S/W 제품을 생산하여 S/W Reusability 와 Productivity를 극대화하기 위한 개발 방법론 <br/><br/>\
+# 필요성 : 품질개선(52%), 비용절감(45%), 생산성 향상(39%), 제품출시기간(30%) 경쟁력 확보 (Carmegi Mellon Univ. SPL 기술보고서) <br/><br/>\
+# 구성요소 <br/>\
+1. Engineering 측면 <br/>\
+- Domain Engineering : 단일 제품군 내의 핵심 자산 식별하여 개발 / Core Asset 도출, 식별 <br/>\
+- Application Engineering : Core Asset 재사용하고 가변요소 선택적으로 집중 개발 / 회귀 테스트 <br/>\
+- Management : Repository 저장, 프로세스 관리, 진행상태 통제 / 형상, 품질관리, V&V <br/><br/>\
+2. Core Asset 측면 <br/>\
+- 실행 : 컴포넌트, 소스 코드 실행가능한 Core Asset 형태 자산 / CBD, TDD <br/>\
+- 지식 : 아키텍처, 실행결과, 디자인 패턴등 형식지 형태 자산 : UML Diagram, Profile <br/>\
+- 도메인 : Domain Specific 형태 요구사항, 비즈니스 모델 형태 자산 / MDA, MDD <br/><br/>\
+# 개발방식 선택 <br/>\
+- 선행적 : Core Asset 먼저 개발 후 제품 개발 / 새로운 제품 개발시 코드 개발 최소화<br/>\
+- 반응적 : 하나 또는 여러개 제품에서 Core Asset 도출 / 처음 적용시 효과<br/>\
+- 추출식 : 선제적 방식 대비 적용비용 필요 / 기존 개발 시스템 3R 기법 추출<br/>\
+- 점진적 : 선행적 방식과 반응적 방식 혼융 / 초기 Core Asset 기반 추가하는 반복적 방식 <br/><br/>\
+* 라이지움 88회 3교시 4번\
 ',
 
 // Agile 방법론
