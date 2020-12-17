@@ -459,7 +459,12 @@ var answer = answer.concat(
 <font color = "red">* 컴퓨터 비전 : 기계의 시각에 해당하는 부분을 연구하는 컴퓨터 과학 분야 </font><br/><br/>\
 # 평가 <br/>\
 - Cross Validation : 훈련데이터로부터 하나의 함수가 유추되고 나면 함수에 대한 평가를 통해 파라미터를 최적화 (훈련, 검증, 테스트 집합) <br/>\
-- 정밀도(Precision), 재현율(Recall) 측정 : Precesion = tp / (tp+fp), Recall = tp / (tp+fn)\
+- 정밀도(Precision), 재현율(Recall) 측정 : Precesion = tp / (tp+fp), Recall = tp / (tp+fn) <br/><br/>\
+# 활성화 함수 적용시 고려사항 <br/>\
+- 문제의 결과가 직선일 경우 : 선형 함수 <br/>\
+- 2개를 분류하는 문제일 경우 : ReLU와 그 변형된 활성화 함수 <br/>\
+- 3개 이상을 분류해야할 경우 : Softmax와 그 변형된 활성화 함수 <br/>\
+- 신경망에서 활성화 함수 적용할 경우 : 1개 이상의 비선형 함수 사용 \
 ',
   
 // Clustering 
