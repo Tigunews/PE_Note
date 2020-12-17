@@ -1386,6 +1386,10 @@ var answer = answer.concat(
 - 3-Tier Architecture 한계 <br/>\
 - 복잡, 제어 어려움, DevOps, 규모 조정 불가 <br/>\
 - 분리,개별 장비 > CI (다수장비 Rack) > HCI (SDC+SDS+SDN)<br/><br/>\
+# 특징 <br/>\
+- 인프라 측면 특징 : 인프라 통합, 유지관리 용이, 고가용성 <br/>\
+- 기능 측면 특징 : Sw 정의기반 구성, 인프라 통합 오케스트레이션, 자유로운 이동성 <br/>\
+- 활용 측면 특징 : IaC 기반 프로비저닝 자동화 용이, 서버리스 서비스 제공, 다양한 서비스 구성 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/HCI_Architecture_Overview.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/HCI_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -1394,7 +1398,8 @@ var answer = answer.concat(
 # 고려사항 <br/>\
 - 도입 전 : 벤더 마찰, 이슈 대응, HW 종속 <br/>\
 - 도입 후 : 데이터 용량 대응, 백업 정책 프로세스 확인 <br/><br/>\
-* KPC 94회 3교시 2번\
+* 라이지움 88회 응용 4교시 8번<br/>\
+* KPC 94회 관리 3교시 2번\
 ',
   
 // VDI 
