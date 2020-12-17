@@ -67,6 +67,8 @@ var question = question.concat(
 '[AI][DeepLearning]- Drop Out',
 '[AI]- F1-Score',
 '[AI]- Bias',
+'[AI]- One-Hot Encoding',
+'[AI]- Softmax 함수',
 '[AI]- NPU',
 '[AI]- Deep Fake',
 '[AI]- Hyper Prameter',
@@ -1188,10 +1190,26 @@ var answer = answer.concat(
 // Bias
 '# 정의 : 편향된 데이터 학습, 최초 데이터의 디지털 가공 과정, 알고리즘 모델 자체 XAI <br/>\
 - 머신 러닝 인공지능에서 한쪽으로 치우쳐진 결과의 특성 <br/><br/>\
-# 원인 : 편향된 데이터 학습, 최초 데이터 디지털 가공 과정, 알고리즘 모델 자체 <br/>\
+# 원인 : 편향된 데이터 학습, 최초 데이터 디지털 가공 과정, 알고리즘 모델 자체 <br/><br/>\
 # 대응방안 <br/>\
 - 정부 : 설명 요구할 권리 규정, 자동화된 의사결정 제한 권리 <br/>\
 - 기업 : 기업 AI 윤리 수립, 정보 품질 진단과 감리, 설명가능 AI의 개발 및 설계, Bias 인식 알고리즘 개발 \
+',
+  
+// One-Hot Encoding
+'# 정의 : 단 하나만 True <br/>\
+- 범주형 변수에 대해 단 하나의 값만 True이고 나머지는 모두 False인 인코딩 기법 <br/><br/>\
+# 동작원리 <br/>\
+<img src = "./img/OneHotEncodingMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 122회 응용 2교시 2번 <br/>\
+* 라이지움 88회 관리 4교시 4번\
+',
+  
+// Softmax 함수
+'# 정의 : 0~1 정규화 / 합 1<br/>\
+- 입력받은 값을 출력으로 0~1사이의 값으로 모두 정규화하며 출력 값들의 총합은 항상 1이 되는 특성을 가진 함수 <br/><br/>\
+* 122회 응용 2교시 2번 <br/>\
+* 라이지움 88회 관리 4교시 4번\
 ',
   
 // NPU
