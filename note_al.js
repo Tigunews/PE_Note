@@ -1752,6 +1752,8 @@ var answer = answer.concat(
 // 적대적 공격
 '# 정의 : 머신러닝 Noise 취약점 <br/>\
 - 머신러닝/딥러닝의 원본 이미지 혹은 데이터에 미세한 잡읍을 추가하여 전혀 다른 결과가 도출되게끔 하는 공격기법 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/AdversalAttackOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 공격유형 <br/>\
 - 중독공격 : 악의적인 학습 데이터 주입 / SVM Poisoning <br/>\
 - 회피공격 : 추론과정중 데이터 교란 / GAN <br/>\
