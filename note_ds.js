@@ -1628,8 +1628,8 @@ var answer = answer.concat(
 # 유형 <br/>\
 1. 요구분석/설계 단계 <br/>\
 - FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
-- HAZOP(Hazard and Operatbility Analysis) : 고장 발생 원인 사전 도출 <br/>\
-- FTA(Fault Tree Analysis) : 시스템의 문제 원인을 TopDown으로 도출하는 Tree 기반 <br/><br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
+- FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
 2. 개발단계 <br/>\
 - White box : 구조기반<br/>\
 - Black box : 명세기반<br/><br/>\
@@ -1646,11 +1646,28 @@ var answer = answer.concat(
 // FMEA, FTA, HAZOP
 '# 개념 <br/>\
 - FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
-- HAZOP(Hazard and Operatbility Analysis) : 고장 발생 원인 사전 도출 <br/>\
-- FTA(Fault Tree Analysis) : 시스템의 문제 원인을 TopDown으로 도출하는 Tree 기반 <br/><br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
+- FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
+# FMEA : 고장 발생의 원인 및 중대 사고에 영향 미치는 직접적인 원인 서브시스템이나 컴포넌트 잠재적 고장 유형 분석 기법 <br/>\
+- 시스템 영향 정량적 분석 : 심각도 / 발생도 / 검출도, 고장으로 인한 시스템 영향 <br/>\
+- 우선순위(RPN) 부여 : 분석결과 따라 우선순위 부여하여 대응방안 수립 <br/>\
+- 식별, 정의, 제거 : 고장, 문제, 오류 사용자단 도착전 찾고, 정의, 제거 <br/><br/>\
+# FTA : 특정 사고에 대한 연역적 해석 통한 사건 사고의 원인 파악, 설비결함, 작업 실수등 발견 및 분석 하는 기법 <br/>\
+- Scope 정의 : 소프트웨어 논리적 기능적 인터페이스 구조 확인 <br/>\
+- 위험 식별 : 결함 트리 구성 위한 취상위 위험, 근본 원인 결정 <br/>\
+- 결함트리 작성 : 고장에 대한 논리적 연결 <br/>\
+- 결함트리 분석 : 정성적(Minimal Cut-Set 분석), 정량적(빈도, 확률 기반 Minimal Cut-Set 분석) <br/><br/>\
+# HAZOP : 시스템을 검토하고 잠재적 위험을 찾는것이 목적, 브레인 스토밍 단게에서 Guide Word 이용 <br/>\
+- 분석대상 노드 선정 : 프로세스상 주요변화 발생하여 Hazard와 운영상의 문제점 발생 가능성 있는 부분 선정 / 열교환기 <br/>\
+- 프로세스 파라미터 선정 : 위험요인을 가진 시스템 구성요소의 물리적 특성 선정 / 온도 <br/>\
+- 가이드워드 적용 : 팀 멤버들이 프로세스 파라미터의 가능한 변이를 생각해 내는데 도움이 되는 짤막한 문구 <br/>\
+- Outlier 식별 : 변이 발생 이유 찾기 / Human Error, Equipment Failure, External events <br/>\
+- 변이로 인한 결과 파악 : 안전성, 경제성 분석 <br/>\
+- HAZOP 분석 프로세스 반복 및 결과 보고서 작성 : 변이의 안전책 고려, 프로세스 반복, 결과보고 <br/><br/>\
 # 상세 비교 <br/>\
 <img src = "./img/FMEA_FTA_HAZOP.png", style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 96회 1교시 5번\
+* 라이지움 88회 응용 4교시 5번 <br/>\
+* KPC 96회 관리 1교시 5번\
 ',
 
 // 문자 인코딩 
