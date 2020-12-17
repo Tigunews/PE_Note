@@ -1755,10 +1755,6 @@ var answer = answer.concat(
 # Overview <br/>\
 <img src = "./img/AdversalAttackOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 공격유형 <br/>\
-- 중독공격 : 악의적인 학습 데이터 주입 / SVM Poisoning <br/>\
-- 회피공격 : 추론과정중 데이터 교란 / GAN <br/>\
-- 탐색공격 : 모델 분석 통한 활용된 데이터 도출, 공개된 API 이용해 학습 모델의 정보 추출 / Model Inversion <br/><br/>\
-# 공격유형 <br/>\
 1. 회피 공격(Evasion Attack) <br/>\
 - 개념 : 최소한의 변조로 추론과정에서 데이터를 교란시켜 머신러닝 속이는 기법 <br/>\
 - 종류 : GAN based 기술 <br/><br/>\
