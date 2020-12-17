@@ -1856,7 +1856,29 @@ var answer = answer.concat(
 - NLU(Understanding) : 기계 이해 변환 (NLP 일부분) <br/>\
 - NLG(Generation) : 다시 자연어로 변환 (NLP 일부분) <br/><br/>\
 # 구성도 <br/>\
-<img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. NLU(형구분담) <br/>\
+- 형태소 분석(Morphological ANalysis) : 품사 정보 인식 <br/>\
+- 구문 분석(Syntax Analysis, Parsing) : 명사구, 동사구 등으로 그룹화, 그룹간 관계 분석 <br/>\
+- 의미 분석(Semantic Analysis) : 문장 성분간 의미관계 파악 <br/>\
+- 담론 분석(Disource Analysis) : 문맥 속에서 단어나 문장등에 어떤 의미 있는지 분석 <br/><br/>\
+2. NLG(담문어문형) <br/>\
+- 담론 생성 : 질문답변 위한 상황적합한 자연어로 변환 <br/>\
+- 문장 계획 : 질문에 적합한 자연어 문법 계획 및 생성 <br/>\
+- 어휘 선택 : 생성된 문장에서 구문(명사, 동사, 형용사 및 부사)을 선택 <br/>\
+- 문장 생성 : 구문 규칙 따라 올바른 문장 텍스트 생성 <br/>\
+- 형태 생성 : 문장 텍스트 상황 오류 검출, 최종 문장 확인 과정 <br/><br/>\
+# 기술요소 <br/>\
+1. NLU <br/>\
+- One-Hot Vector Encoding : 단어를 벡터화 <br/>\
+- Word Embedding : One-Hot Vector 보완 기술, CBOW(빈칸), SKIN-GRAM(주변단어) <br/><br/>\
+2. 대화 관리 <br/>\
+- 대화 관리 : Open Domain(다양한 형태 주제), Close Domain(한정적 주제) <br/>\
+- 답변 생성 : 검색기반 모델(기계학습 기반), 생성기반 모델(말뭉치 학습) <br/><br/>\
+3. NLG <br/>\
+- Discourse Generation : 적합한 자연어 변환 과정 <br/>\
+- Sentance Planning : 질문에 적합한 자연어 문법을 계획 및 생성 \
 ',
   
 // 워드 임베딩
