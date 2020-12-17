@@ -89,6 +89,7 @@ var question = question.concat(
 'ISO 19626',
 'IoMT',
 '블록체인',
+'[블록체인]- 블록체인 3.0',
 '[블록체인]- 합의알고리즘',
 '[블록체인]- UTXO',
 '[블록체인]- 머클트리(Merkle Tree)',
@@ -1681,16 +1682,8 @@ var answer = answer.concat(
 - 의료사물인터넷. 개인의 생활습관, 신체검진, 의료이용정보, 질병 이력, 유전체정보 등 다양한 데이터를 통해 환자의 증상 및 치료 관리 현황을 꾸준히 모니터링해 공백이 발생하지 않도록 하는 개인중심의 건강관리시스템을 구현',
 
 // 블록체인 
-'# 정의 : Block 기반 Cahining Data Record <br/>\
+'# 정의 : Block 기반 Chaning Data Record <br/>\
 - Block을 연속적으로 Chain한 다음, 지속적으로 성장하는 데이터 기록 연결 리스트 형태이며 분산 DB와 유사 <br/><br/>\
-# 특징 <br/>\
-- 이중지불방지를 위하여 작업증명(POW, Proof Of Work), 소유증명(POS, Proof Of Stake) 필요 <br/>\
-- 위,변조 불가 <br/>\
-- Ripple : 금융거래를 위한 인터넷 프로토콜 <br/>\
-- Ethereum : 클라우드 컴퓨팅 플랫폼 또는 프로그래밍 언어 <br/><br/>\
-# 블록체인 프로세스 <br/>\
-- 하나의 거래를 기본단위로 기록 <br/>\
-- 송,수신자, 내용으로 구성 + Alpha <br/><br/>\
 <img src = "./img/BlockChain_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 블록체인 연결구조 <br/>\
 <img src = "./img/BlockChain_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -1752,6 +1745,26 @@ var answer = answer.concat(
 - 삼성 SDS : Backend As a Service 활용방안 연구 <br/>\
 - LG CNS : 오픈 플랫ㅍ모 (모나체인) 개발, 플랫폼 적용 확산 <br/><br/>\
 * 그리타\
+',
+  
+// 블록체인 3.0
+'# 블록체인 1.0 <br/>\
+- 개념 : 통화/화폐로서 블록체인 <br/>\
+- 특징 : 공개분산원장, 합의알고리즘 <br/>\
+- 한계점 : 금융거래등 한정 분야 사용, 낮은 확장성, 느린 거래속도, 합의 도출 어려움 <br/>\
+- 사례 : Bitcoin <br/><br/>\
+# 블록체인 2.0 <br/>\
+- 개념 : 스마트 계약 플랫폼 제공 <br/>\
+- 특징 : 스마트 계약, 프로그래밍, 비즈니스 활용 DApp <br/>\
+- 한계점 : 의사결정 문제, Hard Fork 증명 방식 PoW, 트랜잭션 용량 제한 <br/>\
+- 사례 : Ethereum <br/><br/>\
+# 블록체인 3.0 <br/>\
+- 개념 : 의사 결정 및 업무영역 확대 <br/>\
+- 특징 <br/>\
+-> 내부 의사결정 기능 탑재 : 가상 통화 소유자들 간 내부 합의 도출 <br/>\
+-> 기술적 기능 향상 : PoS 합의 알고리즘, 전력소모 최소화, Tangle등 새로운 분산장부 기술 등장, Hard Fork 최소화 <br/>\
+-> 사회전반에 블록체인 적용 : 정부정책, 의료, 운성, 스포츠/예술, 사물인터넷, 초연결사회, 거버넌스 역할 <br/>\
+- 사례 : Ada, Eos \
 ',
 
 // 합의 알고리즘
