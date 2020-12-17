@@ -1758,22 +1758,28 @@ var answer = answer.concat(
 - 중독공격 : 악의적인 학습 데이터 주입 / SVM Poisoning <br/>\
 - 회피공격 : 추론과정중 데이터 교란 / GAN <br/>\
 - 탐색공격 : 모델 분석 통한 활용된 데이터 도출, 공개된 API 이용해 학습 모델의 정보 추출 / Model Inversion <br/><br/>\
-# 적대적 샘플 제작기법 <br/>\
-<img src = "./img/AdversarialAttacksMake.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 공격기법 <br/>\
-1. 학습 <br/>\
-- 데이터 주입 : 새로운 데이터를 추가하여 AI 손상 <br/>\
-- 데이터 수정 : 학습 데이터셋에 데이터를 수정하여 모델 손상 <br/>\
-- 논리 변형 : 학습 알고리즘을 변형시켜 공격자들이 학습논리를 제어 <br/><br/>\
-2. 테스트 <br/>\
-- 화이트 박스 : 알고리즘, 데이터 분포, 최종 모델등에 대한 정보를 알고 다양한 예제 만들어 시뮬레이션 후 공격 <br/>\
-- 블랙 박스 : 모델에 대한 정보 없이 제작된 값 입력, 출력된 결과를 관찰하여 모델의 취약성 분석 <br/><br/>\
-# 방어기법 <br/>\
-- 적대적 훈련 : 저항성 <br/>\
-- 결과값 은닉 : 노출, 변환 처리 <br/>\
-- 공격 탐지 : 모델 추가후 결과 비교 <br/>\
-- 쿼리 제한 : 반복적 시도 제한 <br/><br/>\
-* 라이지움 88회 응용 1교시 13번 <br/>\
+# 공격유형 <br/>\
+1. 회피 공격(Evasion Attack) <br/>\
+- 개념 : 최소한의 변조로 추론과정에서 데이터를 교란시켜 머신러닝 속이는 기법 <br/>\
+- 종류 : GAN based 기술 <br/><br/>\
+2. 중독 공격(Poisoning Attack) <br/>\
+- 개념 : 악의적 학습 데이터 이용한 모델 공격 기법 <br/>\
+- 종류 : SVM Poisoning, Anomaly Detection System <br/><br/>\
+3. 탐색적 공격(Exploratory Attacks) <br/>\
+- 전도 공격(Model Inversion Attack) : 입력, 결과값 통한 학습데이터 추출 <br/>\
+- 모델 추출 공격(Model Extraction Attack) : 입력, 결과값 통한 모델 추출 <br/>\
+- 종류 : Model Inversion, Model Extraction via APIs <br/><br/>\
+# 대응방안 <br/>\
+1. 회피 공격(Evasion Attack) <br/>\
+- 데이터 구별 이진분류기 이용한 판별 <br/>\
+- MagNet : 적대적 예제에서 신경망 분류기 보호 위한 프레임 워크 <br/>\
+- Highly Confident Near Neighbro(HCNN) 알고리즘 활용 <br/><br/>\
+2. 중독 공격(Poisoning Attack) <br/>\
+- 편향성 제거 위한 양질의 데이터 제공 <br/>\
+- Input Layer Black list 정책 적용 <br/><br/>\
+3. 탐색적 공격(Exploratory Attacks) <br/>\
+- 모델 역추적성 문제 대응 위한 XAI 적용 <br/>\
+- 모방모델 대안 필요 <br/><br/>\
 * 119회 응용 2교시 3번\
 ',
   
