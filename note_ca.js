@@ -1062,6 +1062,9 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - Task 마감 시간 = 동작 주기 <br/><br/>\
 # 충분조건 <br/>\
 <img src = "./img/RM_Condition.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Task, 실행시간, 주기, 우선순위 <br/>\
+- CPU 이용율 : sum(실행시간/주기) <br/><br/>\
 # 예시 <br/>\
 <img src = "./img/RM_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 응용 4교시 6번\
