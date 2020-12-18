@@ -1757,10 +1757,12 @@ var answer = answer.concat(
 # 공격유형 <br/>\
 1. 회피 공격(Evasion Attack) <br/>\
 - 개념 : 최소한의 변조로 추론과정에서 데이터를 교란시켜 머신러닝 속이는 기법 <br/>\
-- 종류 : GAN based 기술 <br/><br/>\
+- 종류 : GAN based 기술 <br/>\
+- 사례 : 자율주행 적대적 스티커 <br/><br/>\
 2. 중독 공격(Poisoning Attack) <br/>\
 - 개념 : 악의적 학습 데이터 이용한 모델 공격 기법 <br/>\
-- 종류 : SVM Poisoning, Anomaly Detection System <br/><br/>\
+- 종류 : SVM Poisoning, Anomaly Detection System <br/>\
+- 사례 : 챗봇 편향 데이터 중독 <br/><br/>\
 3. 탐색적 공격(Exploratory Attacks) <br/>\
 - 전도 공격(Model Inversion Attack) : 입력, 결과값 통한 학습데이터 추출 <br/>\
 - 모델 추출 공격(Model Extraction Attack) : 입력, 결과값 통한 모델 추출 <br/>\
