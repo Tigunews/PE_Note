@@ -3803,7 +3803,7 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/CMMI_Model.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 심사방법 <br/>\
 <img src = "./img/CMMI_Appraisal.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# Process Category ( D(만족) M(해결) E(명확) I(지속) ) <br/>\
+# Process Category (D(생산),M(계획),E(제공),I(유지)) <br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 전문가 의견 <br/>\
 - 변화 방향 : 긍정적 <br/>\
