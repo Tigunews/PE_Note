@@ -1650,7 +1650,7 @@ var answer = answer.concat(
 // 소프트웨어 안전성 분석
 '# 정의 : 안전성 만족 확인 활동 / 안전 필수 시스템 개발시 <br/>\
 - 안전 필수 시스템 개발시 시스템이 만족해야 할 안전성을 만족하는지 확인하는 활동<br/>\
-<font color = "red">* SW 안전성 : ISO/IEC GUIDE 51, 수용할 수 없는 위험이 없는 상태 <font/><br/><br/>\
+<font color = "red">* SW 안전성 : ISO/IEC GUIDE 51, 수용할 수 없는 위험이 없는 상태 </font><br/><br/>\
 # 안전성 분석 절차 (IEC 61508) <br/>\
 <img src = "./img/SSA_Order.png", style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SSA_1.png", style = "max-width:100%; height:auto;"><br/><br/>\
