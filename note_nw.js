@@ -1648,6 +1648,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 유형 <br/>\
 <img src = "./img/NetDistribution.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요현황 <br/>\
+- 전자금융감독규정 제 15조 1항 예외적용 완화 (2020.10 시행) <br/>\
 <img src = "./img/NetDistributionCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 관리 1교시 4번\
 ',
