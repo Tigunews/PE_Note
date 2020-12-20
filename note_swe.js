@@ -84,6 +84,7 @@ var question = question.concat(
 '[구현단계][디자인패턴]- 위임',
 '[구현단계][디자인패턴]- 전략패턴',
 '[구현단계][디자인패턴]- Observer Pattern',
+'[구현단계][디자인패턴]- Null Object Pattern',
 '[구현단계]- 연산생략기법',
 '[구현단계]- 정형기법',
 '[구현단계][정형기법]- 정형명세',
@@ -1676,6 +1677,14 @@ var answer = answer.concat(
 # 특징 <br/>\
 - 느슨한 결합 <br/>\
 - 일관성 보장 \
+',
+ 
+// Null Object Pattern
+'# 정의 : Null 정의 <br/>\
+- Null의 행위를 정의한 객체를 사용한 디자인 패턴 <br/><br/>\
+# 구현단계 : 추상 클래스 > 구체적 클래스 > Null 클래스 <br/>\
+<img src = "./img/NullObjectClassObject.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/NullObjectClassMain.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 연산생략기법
