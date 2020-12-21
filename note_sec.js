@@ -104,6 +104,7 @@ var question = question.concat(
 'ISO/IEC 27017',
 'ISO 27001',
 'SDP',
+'접근통제',
 '[DB 보안]- DB 보호 솔루션',
 '[DB 보안][Role Based]- Bell LaPadula',
 '[DB 보안][Role Based]- Biba',
@@ -2070,6 +2071,10 @@ EAL : 펑스매매세세포 <br/><br/>\
 - VPN : Black List, IP 기반 정적 설정 <br/>\
 - SDP : White List, ID 기반 동적 설정 <br/><br/>\
 * KPC 95회 1교시 2번\
+',
+  
+// 접근 통제
+'<img src = "./img/AccessControl.png" style = "max-width: 100%; height: auto;">\
 ',
   
 // DB 보호 솔루션
