@@ -107,7 +107,7 @@ var question = question.concat(
 '[DB 보안]- DB 보호 솔루션',
 '[DB 보안][Role Based]- Bell LaPadula',
 '[DB 보안][Role Based]- Biba',
-'[DB 보안]- 클락-윌슨(Clack and Wilson) 모델',
+'[DB 보안]- Clark-Wilson',
 'BEC(Business  E-mail Compromise)',
 '[CPU 보안]- 스펙터(Spectre)',
 '[CPU 보안]- Meltdown',
@@ -2093,34 +2093,36 @@ EAL : 펑스매매세세포 <br/><br/>\
 ',
   
 // Bell-Lapadula
-'# 정의 : 기밀성 중점 모델 <br/>\
+'# 정의 : 기밀성 중점 모델 / MAC 기반 <br/>\
 - 정보를 극비, 비밀, 미분류로 분류하여, 접근 통제하는 모델 <br/><br/>\
-# 권한 <br/>\
-- Read : 상 x / 하 o <br/>\
-- Write : 상 o / 하 x <br/><br/>\
+# 보안규칙 <br/>\
+<img src = "./img/NRDNWU.png" style = "max-width: 100%; height: auto;"><br/>\
+- 단순 보안 규칙 : No Read Up<br/>\
+- * Property Rule : No Write Down <br/>\
+- String * Property Rule : 동일 레벨에 대해서만 R/W 가능 <br/><br/>\
 * 아이리포 23회 1교시 8번 \
 ',
 
 // Biba
 '# 정의 : Bell LaPadula + 불법 수정 방지 / 무결성 중점 모델 <br/>\
 - Bell LaPadula 모델에서 불법 수정 방지 내용을 추가로 정의한 접근 통제 모델 <br/><br/>\
-# 권한 <br/>\
-- Read : 상 o / 하 x <br/>\
-- Write : 상 x / 하 o <br/><br/>\
+# 보안규칙 <br/>\
+<img src = "./img/NRUNWD.png" style = "max-width: 100%; height: auto;"><br/>\
+- 단순 무결성 규칙 : No Read-Down <br/>\
+- 스타 무결성 규칙(* Integrity Axiom) : No Write-Up <br/><br/>\
 * 아이리포 23회 1교시 8번\
 ',
 
-// Clock and Wilson
+// Clark and Wilson
 '# 정의 : 보안 접근 통제 모델 / 불법 수정 방지 / 금융, 회계 <br/>\
 - 무결성 중식 상업적 모델 <br/>\
 - 최초의 상업환경에 적합하게 개발된 불법 수정 방지를 위한 보안 접근 통제 모델, 금융자산의 관리, 회계등의 분야에 주로 적용 <br/><br/>\
-# 정책 <br/>\
-- Well-Formed Transactions <br/>\
-- Separation of Duties : 임의 분리 원칙; 모든 운영과정에서 여러 사람이 각 부문별로 나누어 처리하게 하는 정책 <br/><br/>\
-# 무결성 3원칙 <br/>\
-- 비인가자에 의한 데이터 변형 방지 <br/>\
-- 인가자에 의한 데이터의 부적절한 변형 방지 <br/>\
-- 데이터 내/외부 일관성 유지 <br/><br/>\
+# 특징 <br/>\
+- 상업적 응용 보다, 현실적인 무결성 보호 접근 제어 모델 <br/>\
+- 무결성이 유지되도록 제한된 방식으로 데이터 조작 <br/>\
+- 사용자간 임무를 확실하게 분리 (인증하는 사람은 해당 거래 참여 불가)<br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/CW_Deetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Access Tripe : 주체, 객체, 프로그램 <br/><br/>\
 <img src = "./img/CW_Model.png" style = "max-width:100%; height:auto;">\
 ',
