@@ -1646,6 +1646,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 업무용 시스템 <br/>\
 - 정보처리시스템의 운영, 개발, 보안 목적으로 직접 접속하는 단말기 <br/><br/>\
 # 유형 <br/>\
+<img src = "./img/NetworkDistributionDetail.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/NetDistribution.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요현황 <br/>\
 - 전자금융감독규정 제 15조 1항 예외적용 완화 (2020.10 시행) <br/>\
