@@ -74,6 +74,8 @@ var question = question.concat(
 'QoS',
 '[QoS]- 통합 서비스',
 '[QoS]- 차등 서비스',
+'[QoS][차등][Queuing]- Priority Queue',
+'[QoS][차등][Queuing]- Custom Queue',
 'FTP',
 '[FTP]- FTPS',
 '[FTP]- SFTP',
@@ -1453,6 +1455,26 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/차등서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 통합, 차등 서비스 비교 <br/>\
 <img src = "./img/통합차등비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+  
+// Priority Queue
+'# 정의 : 4개 구분 / 차등 서비스 / Starvation 발생 <br/>\
+- FIFO 큐잉 단점인 차등화된 서비스를 제공하지 못하는 문제를 해결하기 위해 4개의 트래픽 클래스로 구분하고 우선순위에 따라 서비스하는 큐잉 기법 <br/><br/>\
+# 동작 원리 <br/>\
+- High, Medium, Normal, Low 4개 큐 설정 (20,40,60,80) <br/>\
+- 높은 우선순위 처리 후 낮은 우선순위 패킷 처리 <br/>\
+- 높은 우선순위 도착시 선점 <br/><br/>\
+* KPC 91회 관리 1교시 5번\
+',
+  
+// Custom Queue
+'# 정의 : Starvation 해결 / 16개 트래픽 클래스 / RR / 공평, 패킷 <br/>\
+- Starvation 해결 위해 16개의 트래픽 클래스를 구분하고 각 클래스별 큐를 Round-Robin 방식으로 서비스 하는 큐잉 기법 <br/><br/>\
+# 동작 원리 <br/>\
+- PQ 보다 클래스 세분화, 최대 16개까지 사용가능 <br/>\
+- 클래스별로 사용할 Bandwidth 퍼센트 지정 <br/>\
+- 모든 큐 동일 우선순위 유지, 클래스별 순환 패킷 서비스 <br/><br/>\
+* KPC 91회 관리 1교시 5번\
 ',
  
 // FTP
