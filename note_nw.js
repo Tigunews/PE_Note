@@ -1185,7 +1185,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * 멀티태넌시 : 여러 사용자를 가진 아키텍처 <br/><br/>\
 3. MEC 응용 : 벤더, 통신사업자, 제3의 서비스 사업자들로부터 제공 <br/><br/>\
 # 4G, 5G MEC 망구성 비교 <br/>\
-<img src = "./img/4G5GMEC.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/4G5GMEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 5G 에서 엣지 컴퓨팅 구현 <br/>\
 - 5G Core User Plane인 UPF 분산화 <br/>\
 - 어느지역에서나 MEC 구축 가능 <br/>\
