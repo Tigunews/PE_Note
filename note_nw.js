@@ -1184,6 +1184,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 응용플랫폼 서비스 : 미들웨어 서비스, 인프라 서비스 <br/>\
 * 멀티태넌시 : 여러 사용자를 가진 아키텍처 <br/><br/>\
 3. MEC 응용 : 벤더, 통신사업자, 제3의 서비스 사업자들로부터 제공 <br/><br/>\
+# 4G, 5G MEC 망구성 비교 <br/>\
+<img src = "./img/4G5GMEC.png" style = "max-width:100%; height:auto;"><br/>\
 # 5G 에서 엣지 컴퓨팅 구현 <br/>\
 - 5G Core User Plane인 UPF 분산화 <br/>\
 - 어느지역에서나 MEC 구축 가능 <br/>\
@@ -1193,6 +1195,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/MEC_Characteristic.png" style = "max-width:100%; height:auto;"><br/>\
 - 시간/비용 감소 측면 : 초저지연성, 근접성 <br/>\
 - 서비스 활용 측면 : 네트워크 상태 인식성, 위치인식성 <br/><br/>\
+* KPC 91회 관리 2교시 1번 <br/>\
 * KPC 96회 관리 3교시 2번\
 ',
 
