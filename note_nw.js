@@ -1192,9 +1192,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 셀사이트 / 통신국사 / 기업빌딩내 구축 <br/>\
 * User Plane Function <br/><br/>\
 # 특징 <br/>\
-<img src = "./img/MEC_Characteristic.png" style = "max-width:100%; height:auto;"><br/>\
-- 시간/비용 감소 측면 : 초저지연성, 근접성 <br/>\
-- 서비스 활용 측면 : 네트워크 상태 인식성, 위치인식성 <br/><br/>\
+<img src = "./img/MEC_Characteristic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 표준화 현황 <br/>\
+- ETSI MEC : 통합 MEC App 서비스 제공 <br/>\
+- ITUT-T IEC : 보안 요구사항, 시험방법 정의 <br/>\
+- 3GPP : 5G 표준화 MEC 추가, Release 15에서 주요 스팩, 기능 정비 <br/><br/>\
 * KPC 91회 관리 2교시 1번 <br/>\
 * KPC 96회 관리 3교시 2번\
 ',
