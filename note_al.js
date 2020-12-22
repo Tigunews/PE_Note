@@ -88,8 +88,9 @@ var question = question.concat(
 '[AI][AL]- 로지스틱 회귀분석',
 '[AI][AL]- 비용함수, 손실함수',
 '[AI][AL]- DNN',
+'[AI]- 딥러닝 경량화',
 '[AI][딥러닝 경량화]- 경량 딥러닝 기술',
-'[AI][딥러닝 ]- 알고리즘 경량화',
+'[AI][딥러닝 경량화]- 알고리즘 경량화',
 '[AI][AL]- Hyper Parameter',
 '[AI][AL]- Q-러닝',
 '[AI]- 모라벡의 역설(Moravec\'s Paradox)',
@@ -1486,18 +1487,31 @@ var answer = answer.concat(
 '# 정의 : 여러개 은닉층 인공신경망 <br/>\
 - 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) <br/><br/>\
 ',
-
-// 경량 딥러닝
-'# 정의 : 알고리즘 효율화, 경량화 기술 <br/>\
--  알고리즘 자체를 적은 연산과 효율적인 구조로 설계하여, 기존 모델의 정확도는 최대한 유지하면서 기존 모델 대비 효율을 극대화하기 위한 딥러닝 경량화 기술 <br/><br/>\
-# 암기 <br/>\
-- 모(RSD): Res(파라x), Squeeze(합성곱 필터 감소), Dense(Feature Map 쌓기) <br/>\
-- 합(MS) : Mobile( 채널 합성곱 -> 픽셀 합성곱 나눔), Shuffle (입력부 개선) <br/>\
-- 자(NM) : NetAdapt(Budget 여러개,점진적), MNasNet(모바일, 정확 속도 균형) <br/><br/>\
+  
+// 딥러닝 경량화
+'# 정의 : 기존 모델 줄이는 분야 / 제거, 공유 <br/>\
+- 기존 알고리즘의 불필요한 파라미터를 제거하거나, 파라미터의 공통된 값을 가지고 공유하거나, 파라미터의 표현력을 잃지 않으면서 기존 모델의 크기를 줄이는 연구 분야 <br/><br/>\
 # 필요성 <br/>\
 - Need : IoT Device 확대, Edge Computing, 지능형 Device Needs 확대 <br/>\
 - Solution : 기존 학습의 정확도 유지, 연산 간소화 및 복잡도 감소 <br/>\
 - Effect : 학습 모델의 손쉬운 적용, 지연시간 감소, 네트워크 트래픽 감소 <br/><br/>\
+# 동향 <br/>\
+1. 국내 <br/>\
+- 하이퍼 커넥트(양자화 / 이미지 세그멘테이션) <br/>\
+- 한국 정보통신연구원(Mobile, Sqeeze / 엣지 분석 기술) <br/><br/>\
+2. 해외 <br/>\
+- 텐서플로(Mobile, MNasNet, Sqeeze / 양자화 경량화) <br/>\
+- NVIDIA(GPGPU, 고속 GPU 상호연결) <br/><br/>\
+* KPC 91회 2교시 2번\
+',
+
+// 경량 딥러닝
+'# 정의 : 알고리즘 효율화, 경량화 기술 <br/>\
+- 알고리즘 자체를 적은 연산과 효율적인 구조로 설계하여, 기존 모델의 정확도는 최대한 유지하면서 기존 모델 대비 효율을 극대화하기 위한 딥러닝 경량화 기술 <br/><br/>\
+# 암기 <br/>\
+- 모(RSD): Res(파라x), Squeeze(합성곱 필터 감소), Dense(Feature Map 쌓기) <br/>\
+- 합(MS) : Mobile( 채널 합성곱 -> 픽셀 합성곱 나눔), Shuffle (입력부 개선) <br/>\
+- 자(NM) : NetAdapt(Budget 여러개,점진적), MNasNet(모바일, 정확 속도 균형) <br/><br/>\
 # 종류 (모합자)<br/>\
 1. 모델 구조 변경 기술 <br/>\
 - ResNet : 문제의 정의를 바꾸어 파라미터 없이 바로 연결 <br/>\
