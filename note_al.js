@@ -810,6 +810,8 @@ var answer = answer.concat(
 // Activation Function
 '# 정의 : input layer, output layer, thrshold, transfer function <br/>\
 - 신경망 알고리즘의 input layer의 값을 output node로 출력할 때, 출력값의 임계치(threshold)를 계산하여 output을 출력하는 일종의 전환 함수(transfer function) <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
 <img src = "./img/ActivationFunction.png" style = "max-width:100%; height:auto;"><br/>\
 - Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 \
