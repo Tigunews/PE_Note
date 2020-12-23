@@ -16,7 +16,7 @@ var question = question.concat(
 '[회복기법]- 그림자 페이지',
 '[회복기법]- 체크포인트',
 '[회복기법]- 미디어',
-'[회복기법]- Aries',
+'[회복기법]- ARIES',
 '[회복기법]- WAL정책',
 '[일관성]- SAGA',
 '[일관성][SAGA]- Choreography-Based Saga',
@@ -352,13 +352,18 @@ var answer = answer.concat(
 - Undo 수행 x \
 ',
   
-// Aries
-'# 정의 : Algorithms for Recovery and Isolation Exploiting Semantics <br/>\
-- STEAL-Non Force 버퍼관리 정책과 WAL 방식을 이용하여 Page에 대한 적은 Locking과 트랜잭션의 Partial Rollbacks를 지원하는 DB 회복기법 <br/><br/>\
+// ARIES
+'# 정의 : WAL(로그선행법), LSN(로그순서번호) / 회복기법 <br/>\
+- Algorithms for Recovery and Isolation Exploiting Semantics <br/>\
+- 데이터 베이스의 장애 발생시 WAL을 통해 기록된 LSN을 이용하여 데이터베이스를 회복하는 기법 <br/><br/>\
 # 특징 <br/>\
-- STEAL : 수정된 page를 언제든지 디스크에 Write <br/>\
-- Non FORCE : Dirty Page를 Commit 시점에 미반영 <br/>\
-- WAL : DB 반영전 Log에 기록 <br/><br/>\
+- 원칙 : WAL(Write Ahead Logging), 로그 타입 관계 없이 DB 반영전 Log 기록 <br/>\
+- 정책 : Steal(커밋되지 않아도 기록가능), No-Force(커밋되어도 즉시 기록x) <br/><br/>\
+# 구성요소 <br/>\
+- Log : LSN 할당, Write,Commit,Abort,UNDO,end,LogNumber,Transaction ID,Page ID <br/>\
+- LSN(Log Sequence Number) : 로그 순차번호, 관계파악 <br/>\
+- Transaction Table : 진행 트랜잭션 정보 <br/>\
+- Dirty Page Table : 버퍼의 오손 페이지 정보 <br/><br/>\
 # 복구 단계 설명 <br/>\
 <img src = "./img/AriesFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 4교시 3번\
