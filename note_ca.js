@@ -952,11 +952,19 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 ',
   
 // 뉴로모픽
-'# 정의 : 두뇌 방식 모사 <br/>\
-- 인간 두뇌의 동작방식을 모사한 차세대 컴퓨터칩 <br/><br/>\
-# 특징 <br/>\
-- 전도, 전력, 집적 측면에서 장점 존재 <br/>\
-- CPU, 메모리간 병렬 처리 / 뉴런 시냅스간 병렬 처리 \
+'# 정의 : 뉴런 / Actino Potential 원리 <br/>\
+- 두뇌 뉴런에서 신호 전달방식인 Action Potential 원리 모방한 반도체 기술 <br/><br/>\
+# 구조도 <br/>\
+<img src = "./img/NeuromorphicChipStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Synaptic Core <br/>\
+- 입력 뉴런 : axon, 이전코어에서 신호 수신 <br/>\
+- 출력 뉴런 : dendrite, 다음 코어로 신호 전달 <br/>\
+- Synapse Crossbar : synapse, 입력과 출력 뉴런 연결 <br/><br/>\
+2. 처리신호 <br/>\
+- Weight : 출력 → 입력 신호 전달 활성화 <br/>\
+- spike : 뉴런 통해 전달되는 임계 전압 <br/>\
+- PRNG : 뉴런에 대한 의사 난수 가중치\
 ',
   
 // Major State
