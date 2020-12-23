@@ -99,6 +99,7 @@ var question = question.concat(
 '[GDPR]- GDPR 적정성 평가',
 '2020 정부 전자서명법 개정',
 '전자서명,전자봉투',
+'[전자서명,봉투]- 이중서명',
 '개발보안 방법론',
 'Privacy By Design',
 'ISO/IEC 27017',
@@ -1690,7 +1691,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/Codesign_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Codesign_2.png" style = "max-width:100%; height:auto;">\
 ',
-
+  
 // WPA3
 '# 정의 : 차세대 Wi-Fi 보안 프로토콜 <br/>\
 - Wi-Fi Protected Access <br/>\
@@ -1938,10 +1939,20 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 전자봉투 : 대칭키, 수신자 공개키 이용 비대칭 키 암호화 메시지<br/>\
 - 대칭키를 사용하여 문서의 내용을 암호화한 후 해당 키를 수신자의 공개키를 이용하여 비대칭키로 다시 암호화한 암호화 메시지 <br/><br/>\
 # 전자서명 생성과정 <br/><br/>\
-<img src = "./img/전자서명.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DigitalEnvelope.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DigitalSignature.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DigitalEnvelope.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 관련 동향 <br/>\
 - 정부는 공인인증서로 인한 사용자의 불편함을 해소하기 위해 전자서명간 차별을 폐지하는 전자서명법 전부개정법률 개정안 통과 (2020.05.)\
+',
+
+// 이중서명
+'# 정의 : 판매자 구매 정보만, 금융기관 결제 정보만<br/>\
+- SET(Secure Electronic Transaction)에서 고객의 프라이버시 보호 및 거래의 정당성 인증을 위해 고안된 전자서명 프로토콜 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DoubleAuthenticaiton.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+<img src = "./img/DualSignatureProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 82회 관리 2교시 6번\
 ',
 
 // 개발보안 방법론
