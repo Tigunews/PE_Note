@@ -1,4 +1,5 @@
 var question = question.concat(
+'공격 유형 Overview',
 '암호학',
 '[암호학]- 블록 암호화',
 '[블록암호]- ECB',
@@ -122,6 +123,26 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
+// 공격유형 Overview
+'# Cyber Kill Chain : 보안 구상 전략 <br/>\
+- 개념 : 군사적 목적, 공격흐름 프로세스 분석 <br/>\
+- 장점 : 공격흐름을 이해하기 쉬움 <br/>\
+- 단점 : 악성코드 감염, C2 접속 포커싱으로 구성되어 있기 때문에 최근 고도화 지능화된 공격기법과 Miss Match <br/>\
+- 대응방안 : TTP 분석기법 활용한 행위기반 분석대응 적용 <br/>\
+<img src = "./img/CyberKillChain.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# Web <br/>\
+- 기반 공격 : 워터링홀, DBD <br/>\
+- 공격 기법 : XSS, CSRF, SQL Injection, File Upload, File Download <br/>\
+- 대응 방안 : 시큐어코딩(정적), 모의해킹(동적) <br/>\
+- 네트워크 공격기법 : Spoofing(ARP, IP, DNS) <br/><br/>\
+# 공격 탐지 <br/>\
+1. IoC (Indicators of Compromise) <br/>\
+- 개념 : 해시, 블랙리스트 등의 공격정보를 이용하여 대응하는 방식 (사후대응) <br/>\
+- 사례 : IDS/IPS, FW, WAF, SIEM <br/><br/>\
+2. IoA (Indicators of Attack) <br/>\
+- 사례 : AI, 머신러닝, 위협헌팅(Threat Hunting)\
+',
+  
 // 암호학
 '<img src = "./img/Encryption.png" style = "max-width: 100%; height: auto;">\
 ',
