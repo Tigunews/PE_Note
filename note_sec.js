@@ -33,6 +33,7 @@ var question = question.concat(
 '스미싱(Smishing)',
 '스니핑(Sniffing)',
 '스푸핑(Spoofing)',
+'Sesion Hijacking',
 '스턱스넷(stuxnet)',
 'APT',
 '[APT]- Leteral Movement',
@@ -647,20 +648,47 @@ var answer = answer.concat(
 ',
 
 // Spoofing
-'# 정의 : TCP/IP 구조적 결함 이용 공격기법 <br/>\
-- 해커가 TCP/IP 프로토콜 구조적 결함 이용하여 시스템 권한 획득등 정보 탈취하는 공격기법<br/><br/>\
-# 종류(4)(IDEA) : IP스푸핑, DNS 스푸핑, 이메일 스푸핑, ARP 스푸핑(ARP Cash Posioning) <br/><br/>\
-# 절차(5) <br/>\
-- 패킷 내용 변경, 방화벽 우회 <br/>\
-- 소스 IP 주소 조작, 자신을 신뢰성 있는 호스트 ACK 전송 인식 <br/>\
-- 원하는 호스트 초기 시퀀스 번호get <br/>\
-- 트로이 목마 등 PGM 설치 <br/>\
-- 호스트 접근권한, 루트권한 get <br/><br/>\
-# 방어(4) <br/>\
-- 공격자에 RESET 보내 차단 <br/>\
-- 공격 클라이언트 차단 <br/>\
-- OS 패치 <br/>\
-- 방화벽 정책 \
+'# 정의 : 위장 / 허가된 주소 / 접근 제어 우회 <br/>\
+- 승인된 사용자로 위장하여 시스템에 접근 또는 네트워크상 허가된 주소로 가장하여 접근 제어를 우회하는 공격기법 <br/><br/>\
+# 종류 : ARP(2), IP(3), DNS(4), Email(7) <br/><br/>\
+# IP Spoofing : Trust 관계 공격 <br/>\
+0. 정의 : Trust 인증법 / 인증자 IP <br/>\
+- Trust 인증법의 IP 기반 인증 취약점 활용, DoS 공격 및 인증 사용자 IP 활용한 서버 접속 공격 기법 <br/><br/>\
+1. 절차 <br/>\
+- 공격 대상 선정 및 Freeze 공격 : Trust Client 확인, Sequence 번호 변화 모니터링<br/>\
+- IP 위조 통한 서버 접속 : 서버에 ACK 전달 <br/>\
+- 서버-공격자 연결 수립 : Client에 ACK/SYN 전송, 실제 Client Freeze 상태 <br/><br/>\
+2. 대응방안 <br/>\
+- Ingress, Egress Filtering : 외부 인입, 전송 내부망 IP 전송 패킷 필터<br/>\
+- SSH 사용 패킷 암호화 : RSA 기반, PKI 키 Pair 방식 사용 <br/><br/>\
+# DNS Spoofing : UDP 패킷 위조 <br/>\
+0. 정의 : UDP Sessionless / DNS Query <br/>\
+- UDP의 Sessionless 취약점 활용, FQDN의 IP 변환 위한 DNS Query 시 위조 IP 제공, 의도치 않은 주소 접근유도 공격 기법 <br/><br/>\
+1. 절차 <br/>\
+- Client의 DNS Query 전송 확인 : DNS Query Packet 전송 모니터링 <br/>\
+- DNS Response 패킷 Client에 전송 : IP 위조한 DNS Response 전송 <br/>\
+- 공격자 패킷 정상 인식, 위조 IP 접속 : 정상인식, 접속, UDP 특성상 이후 도착한 DNS 정상 Response 패킷 버림 <br/><br/>\
+2. 대응방안 <br/>\
+- Host 파일 무결성 검사 : 변조 여부 무결성 검사 수행 <br/>\
+- DNSSEC 솔루션 사용 : DNS 캐시 포이즈닝 대응, PKI 전자 서명기술 <br/><br/>\
+* KPC 92회 응용 3교시 7번\
+',
+  
+// Session Hijacking
+'# 정의 : 인가된 아이디 패스워드 x / 세션 정보 가로채기 / 3 Way HandShake 과정 취약점 악용 <br/>\
+- 접속하고자 하는 시스템의 접속하기 위한 인가된 아이디와 패스워드가 없을 경우 현재 접속된 시스템들의 세션 정보를 가로채는 공격기법 <br/><br/>\
+# 종류 <br/>\
+- 로컬 세션 하이재킹 : 시퀀스 넘버 알아낼 수 있는 상태 공격 <br/>\
+- 원격 세션 하이재킹 : 시퀀스 넘버 알아낼 수 없는 상태 공격 <br/><br/>\
+# 공격절차 <br/>\
+<img src = "./img/SessionHijacking.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 피해 <br/>\
+- ACK Storm : Client에서 Sever_Client_Seq, Client_My_Seq 불일치 / ACK Send 반복 <br/><br/>\
+# 대응 방안 <br/>\
+- 비동기화 탐지 : 서버, 시퀀스 넘버 주기적 체크, 비동기화 상태시 탐지 <br/>\
+- Ack Storm 탐지 : 급격한 Ack 비율 증가시 탐지 <br/>\
+- 패킷 유실, 재전송 증가 탐지 : 패킷 유실, 서버 응답시간 길어짐 탐지 <br/>\
+- 리셋 탐지 : 예상치 못한 리셋시, 세션이 멈추거나 리셋 탐지 \
 ',
 
 // Stuxnet
@@ -673,7 +701,6 @@ var answer = answer.concat(
 # 시나리오 <br/>\
 <img src = "./img/StuxnetScenario.jpg" style = "max-width:100%; height:auto;">\
 ',
-
 
 // APT
 '# 정의 : 장기간 은밀 진행 공격 기법 <br/>\
