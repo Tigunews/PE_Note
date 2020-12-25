@@ -592,7 +592,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/WDT_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/WDT_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/WDT_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/WDT_5.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/WDT_SourceCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 다단계 참고 <br/>\
 - Reset > Kick > Timeout > Enable > Timeout > Timeout되면 Trigger Correction Action \
 ',
