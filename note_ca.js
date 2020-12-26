@@ -1,7 +1,9 @@
 var question = question.concat(
 'OS',
 '[OS]- Disk 할당 기법',
-'Unix OS', 
+'Unix OS',
+'[Unix OS]- File System',
+'[Unix OS]- Permission',
 '[Unix OS]- i-node Block',
 '[Unix OS]- I/O Model',
 '[Unix OS][Synchronous I/O]- Blocking I/O',
@@ -118,9 +120,34 @@ var answer = answer.concat(
 # Boot Process <br/>\
 Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. Start<br/><br/>\
 <img src = "./img/Unix_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Unix_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Unix_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;">\
+',
+  
+// File System
+'# File System 구조 <br/>\
+<img src = "./img/Unix_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 고유 디스크 File System <br/>\
+<img src = "./img/LinuxOriginDiskFileSystem.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Permission
+'# 정의 : RWX 접근 허가 <br/>\
+- 사용자가 파일이나 디렉토리를 읽기, 쓰기, 실행할 수 있도록 자격 또는 접근 허가 의미 <br/>\
+<img src = "./img/LinuxPermission.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# UMASK <br/>\
+- 개념 : 응용 프로그램이 파일에 설정할 수 없는 권한 세트 <br/>\
+- 위치 : /etc/profile 경로에서 확인 가능 <br/>\
+- 기본값 : Root(022), Normal(002) <br/><br/>\
+# UID <br/>\
+- 개념 : User 마다 Assign 되는 id 형태 <br/>\
+- 위치 : /etc/passwd <br/>\
+- 값 : 0 ~32767 <br/><br/>\
+# GID <br/>\
+- 개념 : Group 마다 Assign 되는 id 형태 <br/>\
+- 위치 : /etc/group <br/>\
+- 내용 : group list, 해딩 그룹 속한 user 표시 <br/>\
+- 종류 : Primary group (최초 소속), Supplementrary (나머지) \
 ',
 
 // [Unix OS]- i-node Block
