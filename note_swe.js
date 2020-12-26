@@ -166,6 +166,7 @@ var question = question.concat(
 '[시험단계]- 테스팅 가이드',
 '[시험단계]- 테스트 케이스(IEEE 829)',
 '[시험단계]- Agile Test',
+'[시험단계]- Test 자동화 도구',
 '[운영유지보수]- 레만의 원리',
 '[운영유지보수]- Code Smell',
 '[운영유지보수]- Refactoring',
@@ -2849,6 +2850,10 @@ var answer = answer.concat(
 # Agile Test 기법 <br/>\
 <img src = "./img/AgileTestMethod.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 2교시 4번\
+',
+ 
+// Test 자동화 도구
+'<img src = "./img/TestAutomationTool.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 레만의 원리
