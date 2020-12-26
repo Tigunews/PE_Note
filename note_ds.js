@@ -3,10 +3,17 @@ var question = question.concat(
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[4차산업]- Smart Energy',
-'인터미턴트 컴퓨팅',
+'[Energy]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
 '[4차산업][Smart Factory]- CPS',
 '[4차산업]- Smart Hospital',
+'[4차산업]- Smart Car',
+'자율주행자동차',
+'[자율주행자동차]- 트롤리 딜레마',
+'[자율주행자동차]- 모랄머신',
+'[자율주행자동차]- 군집주행 (Platooning)',
+'[자율주행자동차]- LDM',
+'[자율주행자동차]- C-ITS',
 '[정책]- 데이터 3법',
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
@@ -107,12 +114,6 @@ var question = question.concat(
 '[블록체인]- NFT',
 'MaaS',
 'BERT',
-'자율주행자동차',
-'[자율주행자동차]- 트롤리 딜레마',
-'[자율주행자동차]- 모랄머신',
-'[자율주행자동차]- 군집주행 (Platooning)',
-'[자율주행자동차]- LDM',
-'[자율주행자동차]- C-ITS',
 'Dark Net',
 'RPA',
 'Process Mining',
@@ -407,6 +408,103 @@ var answer = answer.concat(
 - 원격 중환자실 : 통합관제, 비대면 협진 시스템 <br/>\
 - 스마트 감염관리 : 신속대응, 인공지능 기반 환자 관리<br/>\
 - 병원내 자원관리 : 실증형 스마트 병동 구축\
+',
+  
+// Smart Car
+'# 인포테인먼트 동향 <br/>\
+1. 국내 <br/>\
+- 현대 모비스 : 세계 최초 AR 네비게이션 <br/>\
+- KIA 모터스 : 감정반응 차량제어 시스템 <br/>\
+- 네이버 : 3D 지도, AR/VR 서비스, 자율주행차 3D 맵핑 기술 강화 (에피폴라 인수) <br/><br/>\
+2. 해외 <br/>\
+- 아우디 : 디즈니와 합작하여 VR 게임 "마블 어벤저스" <br/>\
+- 벤츠 : 마리오카트 게임 실감형 컨텐츠 개발 <br/>\
+- 구글 : 인공지능 기반 완전 자율주행 자동차 시범 서비스 <br/>\
+- 애플 : 실내 스크린, VR 헤드셋 사용 자율주행 차량용 VR 시스템 특허 \
+',
+  
+// 자율주행자동차
+'# 정의 : 최첨단 자동차 / 상황인식 / 정보파악 / 기계제어 / 스스로 주행 <br/>\
+- 센서를 통한 상황인식, 전자제어장치 등에서 그 상황에 대한 정보를 파악,판단 기계장치들을 제어,스스로 주어진 목적지까지 주행하는 기능을 가진 최첨단 자동차 <br/><br/>\
+# 기술요소 <br/>\
+1. 상황인지 <br/>\
+- 내외부상황인지 : Ultrasonic Wave, 스마트 카메라, 레이더, 라이다 <br/>\
+- 내부 정보교환 통신 : CAN, Flexlay, LIN, MOST <br/>\
+- 외부정보교환 통신 : Wifi, LTE, DSRC, WAVE(5.9Ghz, IEEE1609) <br/><br/>\
+2. 상황판단 측면의 자율주행 핵심기술 <br/>\
+- 수집정보해석, 상황판단 : ECU, DSP, MCU, AI <br/>\
+- 정밀위치기반 경로생성 : HD Map, MMS, GPS<br/><br/>\
+3. 차량제어 <br/>\
+- 관리 및 제어 : OS, FS, DB <br/>\
+- 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
+* LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
+* MOST(Media Oriented Systems Transort) : 자동차 산업 최적화 고속 멀티미디어 네트워크 기술 <br/>\
+* DSRC(Dedicated Short Range Communication) : 차량 노변기지국간 통신, 근거리 전송 고속 패킷통신 <br/>\
+* ECU : Engine Control Unit <br/>\
+* DSP : Digital Signal Processor <br/>\
+* MCU : Micro Control Unit <br/>\
+* MMS : Mobile Mapping System <br/>\
+* ESC(Electronic Stability Control) : 차체 자세제어 장치 <br/>\
+* MDPS(Motor Driven Power Steering) : 조향장치 <br/>\
+* ISO26262, AutoSAR <br/>\
+* HAP : Highway Auto Pilot <br/>\
+* PAPS : Patraly Automated Parking System <br/>\
+* ALC : Automatic Lane Change <br/>\
+* 아폴로 플랫폼 <br/>\
+* 스마트더스트 c-its 연계 가능 <br/>\
+<img src = "./img/자율주행자동차_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/자율주행자동차_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 응용 3교시 6번\
+',
+
+// [자율주행자동차]- 트롤리 딜레마 
+'# 정의 : 윤리학의 사고실험 / 필리파 푸트 제시 / 주디스 톰슨 분석 <br/>\
+- 필리파 푸트(Philippa Foot)가 제시하고 주디스 톰슨(Judith Thormson)이 체계적으로 분석한 윤리학의 사고실험  <br/><br/>\
+# 암기 <br/>\
+- 문제점 해결 : 사회적 합의, 법/제도 /정책 수립 <br/><br/>\
+# 이슈 : 운전자를 보호할 것인가, 보행자를 보호할 것인가, 다수를 보호할 것인가, 소수를 보호할 것인가 <br/><br/>\
+# Jean-Francois Bonnefon 연구팀의 Amazon 직원 대상 실험 결과 <br/>\
+- 여러 사람을 살릴 수 있도록 설계되어야 한다는 공리주의적인 응답이 지지를 받음 <br/>\
+- 그러나, 자기 자신과 가족들은 그 차에 타지 않겠다는 모순적 의견이 함께 나타남 (자기자신이 죽을 수 있기 때문에) <br/><br/>\
+<img src = "./img/트롤리딜레마_1.png" style = "max-width:100%; height:auto;">\
+',
+
+// [자율주행자동차]- 모랄 머신 
+'# 정의 : MIT 윤리적 딜레마 실험 <br/>\
+- MIT에서 인간의 윤리적인 딜레마를 실험한 것으로, 자율주행차에 인간적이고 도덕적인 지식을 부여하는 효과적인 방법을 찾아내는 실험방법(알고리즘) <br/>\
+<img src = "./img/MoralMachine.PNG" style = "max-width:100%; height:auto;">\
+',
+
+// [자율주행자동차]- 군집주행
+'# 정의 : V2X 통신 기반 그룹 주행 <br/>\
+- 차량간 통신과 차량과 인프라간 통신 환경을 기반으로 주행하는 차량간에 그룹 형성, 그룹 주행, 그리고 그룹 이탈 과정을 포함하는 서비스 (TTA)\
+',
+
+// [자율주행자동차]- LDM
+'# 정의 : 동적 공간 데이터 저장소 <br/>\
+- Local Dynamic Map <br/>\
+- 정보수집의 대상 범위내에 있는 고정 물체 또는 이동 물체에 관한 정적, 일시적, 동적 정보를 모두 관리할 수 있는 동적 공간 데이터 저장소 <br/><br/>\
+# 등장배경 <br/>\
+- ITS -> C-ITS <br/>\
+- 차량-도로 자동화 패러다임 변화 <br/><br/>\
+<img src = "./img/LDM_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/LDM_2.PNG" style = "max-width:100%; height:auto;">\
+',
+  
+// C-ITS
+'# 정의 : 끊김 없는 양방향 통신으로 교통정보를 교환하는 ITS <br/>\
+- 안정성, 이동성, 지속가능성 (친환경,효율성)을 목표로 차량과 차량, 차량과 인프라간 양방향 통신으로 교통 정보를 교환 및 공유하여 오픈 플랫폼 기반에서 서비스를 제공하는 차세대 ITS <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CITS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- V2C(Center) : 교통정보 센터 <br/>\
+- V2R(Roadside) = V2I : 하이패스, 텔레메틱스 <br/>\
+- V2V(Vehicle) : 주변 차량 정보<br/>\
+- V2P(Personal Device) = V2N(Nomadic Device) : 휴대 단말, 차량 진단 및 제어 서비스 <br/>\
+- V2G(Grid) : 전기자동차 충천관련 통신범주 <br/>\
+- IVN(In-Vehicle Network) : 차량 내부의 차량 게이트웨이 통한 외부와 통신 <br/>\
+- DSRC(Dedicated Short-range Radio Communication) : 차량간 메시지 안전 전송 <br/>\
+- WAVE(IEEE 802.11.p) : 차량간 고속통신 지원 \
 ',
   
 // 데이터 3법 
@@ -2061,90 +2159,6 @@ var answer = answer.concat(
 - Bidirectional Encoder Representations from Transformers <br/>\
 - 2018년 구글에서 공개한 Language Representation Model로 언어 표현을 사전 훈련하는 방법<br/>\
 큰 텍스트 모음(BooksCorpus 및 Wikipedia)에서 범용 "언어 이해"모델을 학습한 다음 해당 모델을 다운 스트림 NLP 작업(미세 조정)에 사용하는 모델',
-  
-// 자율주행자동차
-'# 정의 : 최첨단 자동차 / 상황인식 / 정보파악 / 기계제어 / 스스로 주행 <br/>\
-- 센서를 통한 상황인식, 전자제어장치 등에서 그 상황에 대한 정보를 파악,판단 기계장치들을 제어,스스로 주어진 목적지까지 주행하는 기능을 가진 최첨단 자동차 <br/><br/>\
-# 기술요소 <br/>\
-1. 상황인지 <br/>\
-- 내외부상황인지 : Ultrasonic Wave, 스마트 카메라, 레이더, 라이다 <br/>\
-- 내부 정보교환 통신 : CAN, Flexlay, LIN, MOST <br/>\
-- 외부정보교환 통신 : Wifi, LTE, DSRC, WAVE(5.9Ghz, IEEE1609) <br/><br/>\
-2. 상황판단 측면의 자율주행 핵심기술 <br/>\
-- 수집정보해석, 상황판단 : ECU, DSP, MCU, AI <br/>\
-- 정밀위치기반 경로생성 : HD Map, MMS, GPS<br/><br/>\
-3. 차량제어 <br/>\
-- 관리 및 제어 : OS, FS, DB <br/>\
-- 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
-* LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
-* MOST(Media Oriented Systems Transort) : 자동차 산업 최적화 고속 멀티미디어 네트워크 기술 <br/>\
-* DSRC(Dedicated Short Range Communication) : 차량 노변기지국간 통신, 근거리 전송 고속 패킷통신 <br/>\
-* ECU : Engine Control Unit <br/>\
-* DSP : Digital Signal Processor <br/>\
-* MCU : Micro Control Unit <br/>\
-* MMS : Mobile Mapping System <br/>\
-* ESC(Electronic Stability Control) : 차체 자세제어 장치 <br/>\
-* MDPS(Motor Driven Power Steering) : 조향장치 <br/>\
-* ISO26262, AutoSAR <br/>\
-* HAP : Highway Auto Pilot <br/>\
-* PAPS : Patraly Automated Parking System <br/>\
-* ALC : Automatic Lane Change <br/>\
-* 아폴로 플랫폼 <br/>\
-* 스마트더스트 c-its 연계 가능 <br/>\
-<img src = "./img/자율주행자동차_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/자율주행자동차_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 116회 응용 3교시 6번\
-',
-
-// [자율주행자동차]- 트롤리 딜레마 
-'# 정의 : 윤리학의 사고실험 / 필리파 푸트 제시 / 주디스 톰슨 분석 <br/>\
-- 필리파 푸트(Philippa Foot)가 제시하고 주디스 톰슨(Judith Thormson)이 체계적으로 분석한 윤리학의 사고실험  <br/><br/>\
-# 암기 <br/>\
-- 문제점 해결 : 사회적 합의, 법/제도 /정책 수립 <br/><br/>\
-# 이슈 : 운전자를 보호할 것인가, 보행자를 보호할 것인가, 다수를 보호할 것인가, 소수를 보호할 것인가 <br/><br/>\
-# Jean-Francois Bonnefon 연구팀의 Amazon 직원 대상 실험 결과 <br/>\
-- 여러 사람을 살릴 수 있도록 설계되어야 한다는 공리주의적인 응답이 지지를 받음 <br/>\
-- 그러나, 자기 자신과 가족들은 그 차에 타지 않겠다는 모순적 의견이 함께 나타남 (자기자신이 죽을 수 있기 때문에) <br/><br/>\
-<img src = "./img/트롤리딜레마_1.png" style = "max-width:100%; height:auto;">\
-',
-
-// [자율주행자동차]- 모랄 머신 
-'# 정의 : MIT 윤리적 딜레마 실험 <br/>\
-- MIT에서 인간의 윤리적인 딜레마를 실험한 것으로, 자율주행차에 인간적이고 도덕적인 지식을 부여하는 효과적인 방법을 찾아내는 실험방법(알고리즘) <br/>\
-<img src = "./img/MoralMachine.PNG" style = "max-width:100%; height:auto;">\
-',
-
-// [자율주행자동차]- 군집주행
-'# 정의 : V2X 통신 기반 그룹 주행 <br/>\
-- 차량간 통신과 차량과 인프라간 통신 환경을 기반으로 주행하는 차량간에 그룹 형성, 그룹 주행, 그리고 그룹 이탈 과정을 포함하는 서비스 (TTA)\
-',
-
-// [자율주행자동차]- LDM
-'# 정의 : 동적 공간 데이터 저장소 <br/>\
-- Local Dynamic Map <br/>\
-- 정보수집의 대상 범위내에 있는 고정 물체 또는 이동 물체에 관한 정적, 일시적, 동적 정보를 모두 관리할 수 있는 동적 공간 데이터 저장소 <br/><br/>\
-# 등장배경 <br/>\
-- ITS -> C-ITS <br/>\
-- 차량-도로 자동화 패러다임 변화 <br/><br/>\
-<img src = "./img/LDM_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/LDM_2.PNG" style = "max-width:100%; height:auto;">\
-',
-  
-// C-ITS
-'# 정의 : 끊김 없는 양방향 통신으로 교통정보를 교환하는 ITS <br/>\
-- 안정성, 이동성, 지속가능성 (친환경,효율성)을 목표로 차량과 차량, 차량과 인프라간 양방향 통신으로 교통 정보를 교환 및 공유하여 오픈 플랫폼 기반에서 서비스를 제공하는 차세대 ITS <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/CITS.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-- V2C(Center) : 교통정보 센터 <br/>\
-- V2R(Roadside) = V2I : 하이패스, 텔레메틱스 <br/>\
-- V2V(Vehicle) : 주변 차량 정보<br/>\
-- V2P(Personal Device) = V2N(Nomadic Device) : 휴대 단말, 차량 진단 및 제어 서비스 <br/>\
-- V2G(Grid) : 전기자동차 충천관련 통신범주 <br/>\
-- IVN(In-Vehicle Network) : 차량 내부의 차량 게이트웨이 통한 외부와 통신 <br/>\
-- DSRC(Dedicated Short-range Radio Communication) : 차량간 메시지 안전 전송 <br/>\
-- WAVE(IEEE 802.11.p) : 차량간 고속통신 지원 \
-',
 
 // Dark Net
 '# 정의 : 폐쇄형 사설 분산 P2P 네트워크 <br/>\
