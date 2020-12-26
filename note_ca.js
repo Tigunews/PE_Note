@@ -1008,7 +1008,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 ',
   
 // 뉴로모픽
-'# 정의 : 뉴런 / Actino Potential 원리 <br/>\
+'# 정의 : 뉴런 / Action Potential 원리 <br/>\
 - 두뇌 뉴런에서 신호 전달방식인 Action Potential 원리 모방한 반도체 기술 <br/><br/>\
 # 구조도 <br/>\
 <img src = "./img/NeuromorphicChipStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -1020,7 +1020,15 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 2. 처리신호 <br/>\
 - Weight : 출력 → 입력 신호 전달 활성화 <br/>\
 - spike : 뉴런 통해 전달되는 임계 전압 <br/>\
-- PRNG : 뉴런에 대한 의사 난수 가중치\
+- PRNG : 뉴런에 대한 의사 난수 가중치<br/><br/>\
+# 기술 선점 현황 <br/>\
+- 미국 : BRAIN Initiative / 백악관 / 뇌세포 유형, 뇌회로도 스케일, 신경활동 모델링 <br/>\
+- 유럽 : Human Brain Project / EU / 인간 두뇌 시뮬레이션 기반, 컴퓨팅 아키텍처 <br/>\
+- 중국 : China Brain Project / 정부 / 신경망칩 양산, 개방형 플랫폼 구축 <br/><br/>\
+# 기술 개발 현황 <br/>\
+- 미국 : Intel / 6천 2백만개 뉴런 시스템 구현 <br/>\
+- 유럽 : Brain Scales / 실시간 10,000 배에 달하는 뉴런 모델 구현 <br/>\
+- 중국 : Hybrid Tianjic Chip / Neuromorphic 컴퓨팅에 주류 딥러닝 기술 결합\
 ',
   
 // Major State
