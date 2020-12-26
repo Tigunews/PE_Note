@@ -1199,7 +1199,7 @@ var answer = answer.concat(
 3. AUC(Area Under Curve)<br/>\
 - ROC Curve 아래의 면적 값 이용 비교 <br/>\
 - 최대값 = 1, 좋은모델 (Fall-out < Recall)일수록 1에 가까운 값 수렴 <br/><br/>\
-# 예상문제 <br/>\
+# 예상 문제 <br/>\
 <img src = "./img/F1ScoreExample.png" style = "max-width:100%; height:auto;">\
 ',
   
