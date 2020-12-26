@@ -351,7 +351,8 @@ var question = question.concat(
 '정보시스템 운영 성과관리',
 '공공기관 사업자 선정',
 '[사업자 선정]- 협상 의한 계약체결',
-'[사업자 선정]- 낙찰자 결정방식',
+'[사업자 선정]- 낙찰자 결정방식'
+'Marshalling',
 );
 
 var answer = answer.concat(
@@ -5618,5 +5619,16 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 평가 항목 : 세부 기준 없음, 공고된 규격(기술)과의 적합성 평가 <br/><br/>\
 * 라이지움 88회 관리 2교시 2번<br/>\
 * 122회 관리 4교시 2번\
+',
+ 
+// Mashalling
+'# 정의 : App - Data - App <br/>\
+- 한 객체의 메모리에서 표현방식을 저장 또는 전송에 적합한 다른 데이터 형식으로 변환하는 과정 <br/><br/>\
+# 용도 <br/>\
+- RPC : 프로세스, 스레드간 데이터 전송 <br/>\
+- COM : COM 라이브러리 인스턴스들의 경계를 지날 때 <br/>\
+- .NET : P/Invoke 프로세스 관리되지 않은 타입과 CLR 타입간 변화 <br/>\
+- Mozilla Application Framework : XPCOM 기술을 이용하는 스크립트와 응요 프로그램내 활용 <br/><br/>\
+* 라이지움 82회 관리 1교시 9번\
 ',
 );
