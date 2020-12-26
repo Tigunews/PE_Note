@@ -809,6 +809,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # 프로토콜 상태 <br/>\
 <img src = "./img/MESI_ProtocolStatus.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 상세 설명 <br/>\
+<img src = "./img/MESI.png" style = "max-width:100%; height:auto;">\
 <img src = "./img/MESI_ProtocolDetail.png" style = "max-width:100%; height:auto;">\
 ',
 
