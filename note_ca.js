@@ -35,6 +35,8 @@ var question = question.concat(
 '[커널 메모리 할당]- Slab allocator',
 '[Virtual Memory]- Mapping',
 'Cache Memory',
+'[Cache]- Cache 일관성',
+'[Cache]- MESI',
 'FeRAM',
 'Cloud GPU',
 'GPGPU',
@@ -709,12 +711,6 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 // Cache Memory
 '# 정의 : 일시 저장 기억 장소 / CPU, Main Memory 속도 차이<br/>\
 - 고속의 중앙처리장치와 상대적 저속의 주기억 장치 사이의 속도 차이를 보완하기 위하여 데이터와 명령어를 일시적으로 저장하는 기억 장소 <br/><br/>\
-# 암기 <br/>\
-- 캐슬-메단 <br/>\
-- 캐 : 직연집 <br/>\
-- 직 : 태슬단 <br/>\
-- 연 : 태단 <br/>\
-- 집 : 태집단 <br/><br/>\
 # 특징 <br/>\
 - Locality : 시간,공간 <br/>\
 - Mapping : 직접,연관,집합연관 <br/>\
@@ -736,7 +732,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 장점 : 회로 구현 용이, 맵핑간단, 처리속도 빠름 <br/>\
 - 단점 : Miss Rate 높음 <br/>\
 - 메모리 주소 : 태그(8)슬롯주소(14)단어(2), 데이터(32) > 캐시 슬단 위치의 태그 비교 후 일치하면 hit 불일치면 Miss(메모리-> 캐시 적재 후 태그변경) <br/>\
-<img src = "./img/CacheMemory_1.PNG" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CacheMemory_1.png" style = "max-width:100%; height:auto;"><br/>\
 1) 00002 접근시 캐시메모리 Hit, Index(002), Tag(00) <br/>\
 2) 00003 접근시 캐시메모리 Miss <br/>\
 -> 주기억 장치 검색 <br/>\
@@ -748,7 +744,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 장점 : Hit rate 높음 <br/>\
 - 단점 : 태그 고속 탐색으로 회로 복잡, 전체 탐색으로 처리 속도 느림 <br/>\
 - 메모리 주소 : 태그(22)단어(2),데이터(32) > CPU 요청 주소의 태그부분 비교, 동일 태그 존재시 Hit, 미존재시 Miss(매->캐 적재후 태그 변경) <br/>\
-<img src = "./img/CacheMemory_2.PNG" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CacheMemory_2.png" style = "max-width:100%; height:auto;"><br/>\
 1) 01002 접근시, 캐시메모리의 주소 일치하면 Hit <br/>\
 2) 00002 접근시, 캐시메모리 Miss <br/>\
 -> 주기억장치 검색 <br/>\
@@ -775,6 +771,45 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - Conflict : 캐시 연관도 증가 <br/>\
 - Coherence : MESI, 스누피 프로토콜 <br/><br/>\
 <img src = "./img/CacheMemory_4.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Cache 일관성
+'# 정의 : <br/>\
+- 공유 메모리 시스템에서 개별 프로세서의 지역 캐시간의 일관성 <br/><br/>\
+# 발생원인 <br/>\
+1. 정책 <br/>\
+- Write Through : 완전 전파 안됨 <br/>\
+- Write Back : 동기화 이전 연산 <br/><br/>\
+2. 메모리 공유 <br/>\
+- 공유 메모리 : 멀티프로세서 메모리 공유 <br/>\
+- 변경가능한 데이터 공유 : 공유 데이터 불일치 <br/><br/>\
+3. 멀티 프로세서 환경 <br/>\
+- 프로세스 이주 : SMP(대칭적 다중 프로세서) 시스템에서 프로세스를 처리하던 프로세서가 변경되는 현상 <br/>\
+- 입출력 동작 : I/O 장치와 프로세서 캐시간의 일관성 <br/><br/>\
+# 유지기법 <br/>\
+1. Dir 기반 <br/>\
+- Full Map : 주기억 장치 저장 <br/>\
+- Limited : Full Map 오버헤드 감소 <br/>\
+- Chained : 연결 리스트 사용 <br/><br/>\
+2. Protocol 기반 <br/>\
+- Snoopy Protocol : Write Through(Update), Write Back(Invalid) <br/>\
+- MSI Protocol : Shared 상태가 없어 여러 프로세서가 같은 값 읽을 때 유리 <br/>\
+- MESI Protocol : 메모리가 가질 수 있는 4가지 상태 정의 <br/>\
+- MOESI Protocol : Owned(캐시간 만 동기화) 추가 <br/><br/>\
+3. SW 기반 <br/>\
+- 공유캐시 사용 : 모든 프로세스들이 하나의 캐시만 사용 <br/>\
+- 공유변수 관리 : 공유되는 변수에 캐시 저장 않음 <br/>\
+- 잠금변수 사용 : Locking 사용하여, 다른 프로세스 접근 못하도록 차단 <br/><br/>\
+* 라이지움 82회 관리 4교시 6번\
+',
+  
+// MESI
+'# 정의 : 캐시 일관성 유지 <br/>\
+- 멀티프로세서가 시스템에서 캐시의 일관성을 유지하기 위하여 메모리가 가질 수 있는 4가지 상태를 정의한 프로토콜 <br/><br/>\
+# 프로토콜 상태 <br/>\
+<img src = "./img/MESI_ProtocolStatus.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 상세 설명 <br/>\
+<img src = "./img/MESI_ProtocolDetail.png" style = "max-width:100%; height:auto;">\
 ',
 
 // FeRAM
