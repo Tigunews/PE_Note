@@ -90,6 +90,7 @@ var question = question.concat(
 '[NW 가상화]- Open flow',
 '유무선 전력전송',
 '망분리',
+'망연계',
 );
 
 var answer = answer.concat(
@@ -1703,5 +1704,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 전자금융감독규정 제 15조 1항 예외적용 완화 (2020.10 시행) <br/>\
 <img src = "./img/NetDistributionCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 관리 1교시 4번\
+',
+  
+// 망연계
+'# 개념 : 업무망 컴퓨터와 인터넷 컴퓨터간 안전한 데이터 전달 기술 <br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/NetConnection.png" style = "max-width:100%; height:auto;">\
 ',
 );
