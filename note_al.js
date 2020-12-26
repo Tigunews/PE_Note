@@ -811,6 +811,12 @@ var answer = answer.concat(
 // Activation Function
 '# 정의 : input layer, output layer, thrshold, transfer function <br/>\
 - 신경망 알고리즘의 input layer의 값을 output node로 출력할 때, 출력값의 임계치(threshold)를 계산하여 output을 출력하는 일종의 전환 함수(transfer function) <br/><br/>\
+# 구성요소 <br/>\
+- NET : 가중치 합 <br/>\
+- f(NET) : 결과 값 <br/>\
+- Weight <br/>\
+- x : input 값 <br/>\
+- Output : 최종 값 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
