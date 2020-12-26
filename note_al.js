@@ -1517,12 +1517,12 @@ var answer = answer.concat(
 - 자(NM) : NetAdapt(Budget 여러개,점진적), MNasNet(모바일, 정확 속도 균형) <br/><br/>\
 # 종류 (모합자)<br/>\
 1. 모델 구조 변경 기술 <br/>\
-- ResNet : 문제의 정의를 바꾸어 파라미터 없이 바로 연결 <br/>\
+- ResNet : Short Path 연결, 기울기 소실x, 계층을 깊이 개선 <br/>\
 - SqueezeNet : 합성곱 필터 감소, Fire Module 기법 <br/>\
-- DenseNet : Feature map 쌓아가는 기법 (기존 : 더하기) <br/><br/>\
+- DenseNet : ResNet 활용, Layer short path 극대화 <br/><br/>\
 2. 효율적 합성곱 필터 기술 <br/>\
-- MobileNet : 채널 단위 합성곱 후, 한 픽셀에 대해 합성곱 나눔 <br/>\
-- ShuffleNet : 입력부 정보 연산 및 흐름 개선 방법 <br/><br/>\
+- MobileNet : 채널 감소, 깊이우선 분할 컨볼루션, 증류와 압축으로 파라미터 수 줄여서 작은 신경망 만드는 기술 <br/>\
+- ShuffleNet : 채널의 그룹 Shuffle, 측정 영역의 채널만 참여, 연산량 줄임 <br/><br/>\
 3. 경량모델 자동탐색 기술 <br/>\
 - NetAdapt : Budget 여러개 나누어 일정만큼 만족하는 조건 점진적 탐색 방식 <br/>\
 - MNasNet : 모바일 환경 탐색, 속도 정보 명시적 포함, 정확도 속도 균형 탐색 <br/><br/>\
