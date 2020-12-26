@@ -20,6 +20,7 @@ var question = question.concat(
 '[Layer4][TCP]- DTLS',
 '[Layer4][TCP]- TLS',
 'DNS',
+'IP Tunneling',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
 '[Internet]- HTTP/3.0',
@@ -494,6 +495,29 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 다른 네임 서버 목록 전달 방식 <br/>\
 - 다른 DNS 서버에게 같은 질의 반복 <br/><br/>\
 * 라이지움 87회 응용 2교시 5번\
+',
+  
+// IP Tunneling
+'# 정의 : 개별 통신망, IP 통신 규약 / 캡슐화, 역 캡슐화<br/>\
+- 개별통신망 환경에서 사용하는 통신 규약을 IP 통신 규약으로 캡슐화/역캡슐화하여 가상의 터널을 형성하고 안전하게 데이터를 송수신 하는 기술 <br/><br/>\
+# 매커니즘 <br/>\
+1. 패킷 송신 <br/>\
+2. 캡슐화 : Router 에서 터널구간의 IP 헤더 삽입 <br/>\
+3. 터널 전송 : 인터넷 구간 가상 터널 내 전송 <br/>\
+4. 역캡슐화 : Router에서 터널 구간의 IP 헤더 제거 <br/>\
+5. 패킷 수신 <br/><br/>\
+# 기술유형 <br/>\
+1. Layer 2 <br/>\
+- PPTP : 사용자 인증, 캡슐화 제공 <br/>\
+- L2TP : 사용자 인증, 데이터 압축, 암호화 기능, UDP 사용 <br/><br/>\
+2. Layer 3 <br/>\
+- GRE : 종단 라우터간 가상 시리얼 링크 인터페이스 생성 필요 <br/>\
+- IPSec : AH, ESP, IKE 제공, VPN, 터널 모드 <br/><br/>\
+# 활용사례 <br/>\
+- VPN <br/>\
+- Handover <br/>\
+- IPv4,6 전환 <br/><br/>\
+* 라이지움 82회 응용 1교시 13번\
 ',
 
 // 인터넷 프로토콜 3단계 주소체계
