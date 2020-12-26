@@ -815,6 +815,7 @@ var answer = answer.concat(
 <img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
 <img src = "./img/ActivationFunction.png" style = "max-width:100%; height:auto;"><br/>\
+* NET : 입력과 ㅇ녀결 강도의 가중 합 <br/>\
 - Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 \
 ',
   
