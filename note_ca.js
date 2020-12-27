@@ -44,7 +44,7 @@ var question = question.concat(
 'GPGPU',
 '[GPGPU]-CUDA',
 'Fabric Computing',
-'양자컴퓨팅(Quantum Computing)',
+'양자컴퓨팅',
 'Tiny OS',
 'Nano Qplus',
 'NAND Flash Memory',
@@ -923,7 +923,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - PCIe : IO 장치에 대한 연결망으로 널리 사용되는 IO 버스 규격\
 ',
 
-// Quantum Computing 
+// 양자컴퓨팅
 '# 양자 : 물리량 최소 단위<br/>\
 - 물리학의 기본 이론인 영자 역학에서 유래한 것으로 물질의 입자성과 파동성 특성을 기술하는 물리량의 최소 단위 <br/><br/>\
 # 양자 컴퓨터 : 양자역학 연산 장치 / 상태중첩, 얽힘 <br/>\
@@ -940,7 +940,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 양자 병렬성 : 양자 얽힘 이용한 고유정보 처리 능력 <br/>\
 - 순간이동 : 양자 얽힘 이용 특성 <br/><br/>\
 # 알고리즘 <br/>\
-- Sho\'s Algorithm : QTF(Quantum Fourier Transform) 이용 함수 주기 구하는 알고리즘, 단시간 소인수 분해 가능, RSA 더이상 사용 X <br/>\
+- Shor\'s Algorithm : QTF(Quantum Fourier Transform) 이용 함수 주기 구하는 알고리즘, 단시간 소인수 분해 가능, RSA 더이상 사용 X <br/>\
 - Grover Algorithm : 소인수 분해하지 않고 1부터 대입해도 몇분이면 해독 가능 <br/><br/>\
 # 구조 <br/>\
 - Physical Device : 양자정보소자 구현/제어 물리계층 <br/>\
