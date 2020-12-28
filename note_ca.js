@@ -127,8 +127,19 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // File System
 '# File System 구조 <br/>\
 <img src = "./img/Unix_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 고유 디스크 File System <br/>\
-<img src = "./img/LinuxOriginDiskFileSystem.png" style = "max-width:100%; height:auto;">\
+# 표준 File System <br/>\
+<img src = "./img/LinuxOriginDiskFileSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 지원 File System <br/>\
+- msdos : MS-DOS 파티션 사용 <br/>\
+- nfs : Network File System, 원격 서버 디스크 연결 <br/>\
+- ufs : Unix File System, 유닉스 표준 파일 시스템 <br/>\
+-ntfs : 윈도우 NTFS 지원 위한 파일 시스템 <br/><br/>\
+# 가상 File System <br/>\
+- swap : 스왑 영역 관리 <br/>\
+- tmpfs : Temporary File System, 메모리에 임시 파일 저장 <br/>\
+- proc : 커널의 현재 상태를 나타내는 파일 <br/>\
+- ramfs : 램디스크 지원 파일시스템 <br/>\
+- rootfs : Root File System, 시스템 초기화와 관리에 필요한 내용 관리\
 ',
   
 // Permission
