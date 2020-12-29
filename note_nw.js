@@ -239,88 +239,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 그리타\
 ',
   
-// TCP
-'# 정의 : 신뢰성 데이터 전송 규격 <br/><br/>\
-# 연결수립 <br/>\
-<img src = "./img/TCP_Connection.png" style = "max-width:100%; height:auto;"><br/>\
-- SYN : 클라이언트가 요청을 위한 세그먼트 전송 / SYN-SENT (클라이언트) <br/>\
-- SYN+ACK : 서버에 연결허락 / SYN-RECEIVED (서버) <br/>\
-- ACK : 클라이언트에서 연결 설정 / ESTABLISHED (양단) <br/><br/>\
-# 연결종료 <br/>\
-<img src = "./img/TCP_Disconnection.png" style = "max-width:100%; height:auto;"><br/>\
-- FIN : 클라이언트 연결 종료 / FIN-WAIT1(클라이언트), CLOSE-WAIT(서버) <br/>\
-- ACK : 서버에서 연결종료 응답 / FIN-WIAT2(클라이언트), LASK-ACK(서버) <br/>\
-- FIN : 서버에서 종료 알림 / TIME-WAIT(클라이언트) <br/>\
-- ACK : 클라이언트에서 최종 종료 알림 / CLOSED(양단) <br/><br/>\
-# 연결 재설정 발생 유형 <br/>\
-1. TCP 연결 거부 (Deny Connection) <br/>\
-<img src = "./img/DenyConnection.png" style = "max-width:100%; height:auto;"><br/>\
-- 서버 해당 포트 Listen 아닐 경우, RST 전송 거부 <br/><br/>\
-2. TCP 연결 강제종료 (Abort Connection) <br/>\
-<img src = "./img/AbortConnection.png" style = "max-width:100%; height:auto;"><br/>\
-- 클라이언트 오류 발생, 특정 이벤트 시 연결 종료하지 않고 RST 전송하여 강제종료 <br/><br/>\
-3. TCP 유휴 세션종료 (Idle Connection) <br/>\
-<img src = "./img/IdleConnection.png" style = "max-width:100%; height:auto;"><br/>\
-- 기존 세션이 장기간 연결 유지할 경우, 반대편에서 세션 강제종료 <br/><br/>\
-* 라이지움 88회 관리 4교시 6번\
-',
-
-// [TCP-Protocol]- DTLS
-'# 정의 : 데이터그램 전송 프로토콜 <br/>\
-- Datagram Transport Layer Security <br/>\
-- 데이터그램 형식의 콘텐츠를 애플리케이션끼리 주고받을 때 안전하게 전송할 수 있도록 고안된 통신 프로토콜 <br/><br/>\
-# 특징 <br/>\
-- 무결성, 인증, 정보은닉 제공 <br/>\
-- 양쪽 종단간 네트워크에서 전송중인 데이터 악성행위 방지 <br/>\
-- SSL(Secure Socket Layer), TLS(Transport Layer Security) 기술 토대로 만들어짐 <br/>\
-- TLS와 유사한 보안 강도 제공 <br/>\
-- 일반적으로 UDP를 사용하기 떄문에 패킷 재조합에 대한 로직 구현 난이도 존재 <br/><br/>\
-# TCP 프로토콜 암호화 동향 <br/>\
-- 과거 SSL / 현재 TLS <br/>\
-- 웹브라우징, 인스턴트 메시징, VoIP 사용 <br/><br/>\
-# 데이터 그램 <br/>\
-- Header + Payload <br/>\
-- 빠른 전송이 필요하지만 신뢰성 까지는 필요 없는 통신에 주로 사용 <br/>\
-- UDP(User Datagram Protocol), 대표적인 데이터그램 <br/><br/>\
-# 활용 사례 <br/>\
-- 오픈 소스에 포함되어 사용 (GnuTLS, OpenSSL DTLS1.2 포함) <br/>\
-- VPN 클라이언트 <br/>\
-- WebRTC 지원 브라우저 <br/>\
-- VOIP 서비스 <br/>\
-- 게임 스트리밍 클라이언트 \
-',
-
-// [TCP-Protocol]- TLS
-'# 정의 <br/>\
-- Transport Layer Security <br/>\
-- 컴퓨터 네트워크에 통신 보안을 제공하기 위해 설계된 암호 규약 <br/>\
-- SSL(Security Socket Layer)가 표준화 되면서 바뀐 이름 <br/><br/>\
-# 특징 <br/>\
-- 전송계층 종단간 보안과 데이터 무결성 확보 <br/>\
-- 웹브라우징, 전자메일, 인스턴트 메신저, VoIP 적용 <br/>\
-- 패킷 암호화로 인한 정보 탈취부분 강점 <br/>\
-- 기밀성 우선이므로 스니핑 공격 강점 <br/>\
-- 송신자간 데이터 교환 Event 약점 <br/>\
-- 개인정보유출, 기밀정보유출, DDoS, APT, 악성공격 무력화 <br/><br/>\
-# 구성요소 <br/>\
-0. Stack <br/>\
-- 하위 레코드 계층 : 단편화, 압축, 무결성 보호, 암호화 <br/>\
-- 상위 계층 : Handshake 관련 프로토콜 <br/><br/>\
-1. Protocol <br/>\
-- Handshake : 서버, 클라이언트 상호 인증 <br/>\
-- Change Chiper Spec : 현재 동작중인 보안 매개변수 변경 <br/>\
-- Alert : Handshake 과정중 상대방 암호 방식 지원 불가 알람 <br/>\
-- Record : 메시지 수납하여 TLS record 단위로 운반 <br/><br/>\
-# 절차 <br/>\
-- 지원 가능한 알고리즘 서로 교환 <br/>\
-- 키 교환, 인증 <br/>\
-- 대칭키 암호로 암호화하고 메시지 인증 <br/><br/>\
-# 개발 역사 <br/>\
-- SSL 2.0(1995.2) : 넷스케이프 SSL 규악 만듦<br/>\
-- SSL 3.0(1996) : 2.0 버전 보안결함 <br/>\
-- TLS 1.0(1999) : SSL 3.0 기반 표준화 \
-',
-
 //[패킷데이터 네트워크 계층 오류]- 해밍코드
 '# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
@@ -477,6 +395,89 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 순서제어 기법 활용 <br/><br/>\
 * 그리타\
 ',
+  
+// TCP
+'# 정의 : 신뢰성 데이터 전송 규격 <br/><br/>\
+# 연결수립 <br/>\
+<img src = "./img/TCP_Connection.png" style = "max-width:100%; height:auto;"><br/>\
+- SYN : 클라이언트가 요청을 위한 세그먼트 전송 / SYN-SENT (클라이언트) <br/>\
+- SYN+ACK : 서버에 연결허락 / SYN-RECEIVED (서버) <br/>\
+- ACK : 클라이언트에서 연결 설정 / ESTABLISHED (양단) <br/><br/>\
+# 연결종료 <br/>\
+<img src = "./img/TCP_Disconnection.png" style = "max-width:100%; height:auto;"><br/>\
+- FIN : 클라이언트 연결 종료 / FIN-WAIT1(클라이언트), CLOSE-WAIT(서버) <br/>\
+- ACK : 서버에서 연결종료 응답 / FIN-WIAT2(클라이언트), LASK-ACK(서버) <br/>\
+- FIN : 서버에서 종료 알림 / TIME-WAIT(클라이언트) <br/>\
+- ACK : 클라이언트에서 최종 종료 알림 / CLOSED(양단) <br/><br/>\
+# 연결 재설정 발생 유형 <br/>\
+1. TCP 연결 거부 (Deny Connection) <br/>\
+<img src = "./img/DenyConnection.png" style = "max-width:100%; height:auto;"><br/>\
+- 서버 해당 포트 Listen 아닐 경우, RST 전송 거부 <br/><br/>\
+2. TCP 연결 강제종료 (Abort Connection) <br/>\
+<img src = "./img/AbortConnection.png" style = "max-width:100%; height:auto;"><br/>\
+- 클라이언트 오류 발생, 특정 이벤트 시 연결 종료하지 않고 RST 전송하여 강제종료 <br/><br/>\
+3. TCP 유휴 세션종료 (Idle Connection) <br/>\
+<img src = "./img/IdleConnection.png" style = "max-width:100%; height:auto;"><br/>\
+- 기존 세션이 장기간 연결 유지할 경우, 반대편에서 세션 강제종료 <br/><br/>\
+* 라이지움 88회 관리 4교시 6번\
+',
+
+// [TCP-Protocol]- DTLS
+'# 정의 : 데이터그램 전송 프로토콜 <br/>\
+- Datagram Transport Layer Security <br/>\
+- 데이터그램 형식의 콘텐츠를 애플리케이션끼리 주고받을 때 안전하게 전송할 수 있도록 고안된 통신 프로토콜 <br/><br/>\
+# 특징 <br/>\
+- 무결성, 인증, 정보은닉 제공 <br/>\
+- 양쪽 종단간 네트워크에서 전송중인 데이터 악성행위 방지 <br/>\
+- SSL(Secure Socket Layer), TLS(Transport Layer Security) 기술 토대로 만들어짐 <br/>\
+- TLS와 유사한 보안 강도 제공 <br/>\
+- 일반적으로 UDP를 사용하기 떄문에 패킷 재조합에 대한 로직 구현 난이도 존재 <br/><br/>\
+# TCP 프로토콜 암호화 동향 <br/>\
+- 과거 SSL / 현재 TLS <br/>\
+- 웹브라우징, 인스턴트 메시징, VoIP 사용 <br/><br/>\
+# 데이터 그램 <br/>\
+- Header + Payload <br/>\
+- 빠른 전송이 필요하지만 신뢰성 까지는 필요 없는 통신에 주로 사용 <br/>\
+- UDP(User Datagram Protocol), 대표적인 데이터그램 <br/><br/>\
+# 활용 사례 <br/>\
+- 오픈 소스에 포함되어 사용 (GnuTLS, OpenSSL DTLS1.2 포함) <br/>\
+- VPN 클라이언트 <br/>\
+- WebRTC 지원 브라우저 <br/>\
+- VOIP 서비스 <br/>\
+- 게임 스트리밍 클라이언트 \
+',
+
+// [TCP-Protocol]- TLS
+'# 정의 <br/>\
+- Transport Layer Security <br/>\
+- 컴퓨터 네트워크에 통신 보안을 제공하기 위해 설계된 암호 규약 <br/>\
+- SSL(Security Socket Layer)가 표준화 되면서 바뀐 이름 <br/><br/>\
+# 특징 <br/>\
+- 전송계층 종단간 보안과 데이터 무결성 확보 <br/>\
+- 웹브라우징, 전자메일, 인스턴트 메신저, VoIP 적용 <br/>\
+- 패킷 암호화로 인한 정보 탈취부분 강점 <br/>\
+- 기밀성 우선이므로 스니핑 공격 강점 <br/>\
+- 송신자간 데이터 교환 Event 약점 <br/>\
+- 개인정보유출, 기밀정보유출, DDoS, APT, 악성공격 무력화 <br/><br/>\
+# 구성요소 <br/>\
+0. Stack <br/>\
+- 하위 레코드 계층 : 단편화, 압축, 무결성 보호, 암호화 <br/>\
+- 상위 계층 : Handshake 관련 프로토콜 <br/><br/>\
+1. Protocol <br/>\
+- Handshake : 서버, 클라이언트 상호 인증 <br/>\
+- Change Chiper Spec : 현재 동작중인 보안 매개변수 변경 <br/>\
+- Alert : Handshake 과정중 상대방 암호 방식 지원 불가 알람 <br/>\
+- Record : 메시지 수납하여 TLS record 단위로 운반 <br/><br/>\
+# 절차 <br/>\
+- 지원 가능한 알고리즘 서로 교환 <br/>\
+- 키 교환, 인증 <br/>\
+- 대칭키 암호로 암호화하고 메시지 인증 <br/><br/>\
+# 개발 역사 <br/>\
+- SSL 2.0(1995.2) : 넷스케이프 SSL 규악 만듦<br/>\
+- SSL 3.0(1996) : 2.0 버전 보안결함 <br/>\
+- TLS 1.0(1999) : SSL 3.0 기반 표준화 \
+',
+
  
 // DNS
 '# 정의 : 호스트의 도메인 이름을 IP 주소로 전환하는 분산형 이름 질의 시스템 <br/><br/>\
