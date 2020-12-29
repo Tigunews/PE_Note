@@ -3507,7 +3507,13 @@ P 히스토그램 : Data 분포 <br/>\
 - 분석 (영민의모) : 영향도, 민감도 분석, 의사결정, 모의실험 <br/>\
 - 대인 : 촉진 <br/>\
 - 기타 (불전) : 불확실성 표현, 전문가 판단 <br/>\
-<img src = "./img/영민의모.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/영민의모.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 정량적 위험분석 용어 <br/>\
+- 노출계수(Exposure Factor) : 침해 발생시 손실 비율 / % 표현 <br/>\
+- SLE(Single Loss Expectancy) : 한번의 침해로 발생한 순실 / 자산가치 * 노출 계수 <br/>\
+- ARO(Annualized Rate of Occurrence) : 연간 발생율 / 0.0(발생x), 1.0(1년에 한번) <br/>\
+- ALE(Annual Loss Expectancy) : 단일예상 손실값 * 연간 발생율 / SLE * ARO <br/><br/>\
+* KPC 90회 관리 2교시 5번\
 ',
 
 // 조달관리(구매)
