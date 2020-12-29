@@ -1174,11 +1174,11 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 - IT 거버넌스 실행, 수준 진단 통해 IT 통제, 감사, 개선에 사용되는 IT 거버넌스 프레임워크 <br/><br/>\
 # 진화 과정(ACMIG) : Audit > Control > Management > IT Governance > Governance of Enterprise IT <br/><br/>\
 # 구성요소 <br/>\
-- EDM(Evaluate, Direct, Monitor) : 거버넌스 프레임워크 설정 및 유지관리, 효과제공, 위험 최적화, 자원 최적화 <br/>\
-- APO(Align, Plan, Organize) : 전략관리, 혁신관리, 포트폴리오 관리, 인적자원 관리, 품질관리, 보안관리 등 <br/>\
-- BAI(Build, Acquire, Implement) : 프로그램/프로젝트 관리, 요구사항 관리, 변경관리, 자산관리, 구성관리 등 <br/>\
-- DSS(Deliver, Service, Support) : 운영관리, 문제관리, 연속성 관리, 비즈니스 프로세스 통제 관리 등 <br/>\
-- MEA(Monitor, Evaluate, Assess) : 성과 및 준수 및 내부 통제 시스템 모니터링, 평가 및 진단 등 <br/><br/>\
+- EDM : Evaluate(평가), Direct(지휘), Monitor(모니터링) <br/>\
+- APO : Align(연계), Plan(기획), Organize(조직화)<br/>\
+- BAI : Build(구축), Acquire(도입), Implement(구현)<br/>\
+- DSS : Deliver(제공), Service(서비스), Support(지원)<br/>\
+- MEA : Monitor(모니터링), Evaluate(평가), Assess(진단)<br/><br/>\
 # 원칙 (통이비인거) <br/>\
 - 통합 프레임워크 : Best Practice 연계 <br/>\
 - 이해관계자의 가치제고 지향 : 가치 창출 위해 존재 <br/>\
