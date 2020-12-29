@@ -1171,15 +1171,31 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
   
 // COBIT 5.0
 '# 정의: 전사적 IT 거버넌스 프레임워크 <br/>\
-- 조직이 IT 거버넌스와 관리를 위한 자신들의 목적을 달성하는 것을 지원하는 Cobit 4.1을 계승하고 Risk IT와 Val IT를 통합하는 종합적인 프레임워크 <br/><br/>\
+- IT 거버넌스 실행, 수준 진단 통해 IT 통제, 감사, 개선에 사용되는 IT 거버넌스 프레임워크 <br/><br/>\
+# 진화 과정(ACMIG) : Audit > Control > Management > IT Governance > Governance of Enterprise IT <br/><br/>\
+# 구성요소 <br/>\
+- EDM(Evaluate, Direct, Monitor) : 거버넌스 프레임워크 설정 및 유지관리, 효과제공, 위험 최적화, 자원 최적화 <br/>\
+- APO(Align, Plan, Organize) : 전략관리, 혁신관리, 포트폴리오 관리, 인적자원 관리, 품질관리, 보안관리 등 <br/>\
+- BAI(Build, Acquire, Implement) : 프로그램/프로젝트 관리, 요구사항 관리, 변경관리, 자산관리, 구성관리 등 <br/>\
+- DSS(Deliver, Service, Support) : 운영관리, 문제관리, 연속성 관리, 비즈니스 프로세스 통제 관리 등 <br/>\
+- MEA(Monitor, Evaluate, Access) : 성과 및 준수 및 내부 통제 시스템 모니터링, 평가 및 진단 등 <br/><br/>\
 # 원칙 (통이비인거) <br/>\
 - 통합 프레임워크 : Best Practice 연계 <br/>\
 - 이해관계자의 가치제고 지향 : 가치 창출 위해 존재 <br/>\
 - 비즈니스 초점 : 거버넌스, 매니지먼트 의사결정 연계 <br/>\
 - 인에이블러 기반 : Enabler 총체적 접근 방법 <br/>\
 - 거버넌스와 관리 분리 : 다른 구조, 목적 <br/><br/>\
+# Enabler <br/>\
+- 원칙/정책/프레임워크 : IT 지침, 정책, 내부 규정 <br/>\
+- 프로세스 : 업무 수행 절차 및 수행 역할, 업무 간의 선/후행 관계 <br/>\
+- 조직구조 : IT 기능을 구현하는 조직체계, 의사결정 기구 <br/>\
+- 문화/윤리관/행동 : 개인적 및 집단적 행위를 규범 짓는 조직문화 <br/>\
+- 정보 : 조직에 의해 생산되고 사용되는 모든 정보 <br/>\
+- 서비스/인프라/애플리케이션 : IT 관련 서비스를 제공하는데 활용되는 애플리케이션, 인프라 <br/>\
+- 인력/스킬/전문성 : 모든 활동 및 의사결정을 수행하는 인적 역량 <br/><br/>\
 # 핵심영역 <br/>\
-<img src = "./img/COBIT5.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/COBIT5.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 90회 관리 1교시 7번\
 ',
  
 // IT-Compliance
