@@ -1642,16 +1642,16 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // Open flow
-'# 정의 : 망가상화 핵심 <br/>\
-- SDN의 제어 평면과 데이터 평면을 분리하고 이들을 연결하는 표준 인터페이스 프로토콜 <br/><br/>\
+'# 정의 : SDN 컨트롤러, 네트워크 장치간 인터페이스 / 프로그래밍 네트워크 제어 기술 <br/>\
+- SDN의 컨트롤러와 네트워크 장치간의 인터페이스 규격으로 패킷을 제어하는 기능과 전달하는 기능을 분리하고 프로그래밍을 통해 네트워크를 제어하는 기술 <br/><br/>\
 # 모형 <br/>\
 <img src = "./img/OpenFlowModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/OpenFlowComponent.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
-- 등록된 경우 <br/>\
+- Flow Entry 있는 경우 <br/>\
 <img src = "./img/OpenflowFlow1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- 등록되지 않은 경우 <br/>\
+- Flow Entry 없는 경우 <br/>\
 <img src = "./img/OpenflowFlow2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 라우팅 방식 <br/>\
 1. Hop by hop <br/>\
