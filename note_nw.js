@@ -59,6 +59,7 @@ var question = question.concat(
 '5G 이동통신',
 '[5G]- 3GPP Release 16',
 '[5G]- MEC',
+'[MEC]- SSL Offloading',
 '[5G]- 5GX',
 '[5G]- Open Lan',
 '6G',
@@ -1227,6 +1228,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 3GPP : 5G 표준화 MEC 추가, Release 15에서 주요 스팩, 기능 정비 <br/><br/>\
 * KPC 91회 관리 2교시 1번 <br/>\
 * KPC 96회 관리 3교시 2번\
+',
+  
+// SSL Offloading
+'# 정의 : SSL 인증서 로드 밸런서 배치 <br/>\
+- SSL 인증서를 로드 밸런서에 배치하여 백엔드 별 인증서 배포 및 암호화/복호화 수행을 최소화하여 서비스의 성능을 향상시키는 인프라 기술<br/>\
+# 구성요소 <br/>\
+- Public NW Layer : 인증서 배치, TLS Termination <br/>\
+- Private NW Layer : HTTP 통신, 클라우드 환경 변경시 관련 설정 불필요 <br/><br/>\
+# 효과 <br/>\
+- 인증서 관리 측면 : 간소화, 배치 최소화 <br/>\
+- 성능적 층면 : 암/복호 최소화, AutoScaling 유연성 증가 <br/><br/>\
+* KPC 90회 관리 1교시 9번\
 ',
 
 // [5G 이동통신]- 5GX
