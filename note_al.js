@@ -132,6 +132,7 @@ var question = question.concat(
 '[AI][Data Mining][분석기법][연관규칙]- Apriori Algorithm',
 '[AI][Data Mining]- Opinion Mining',
 '[AI][Data Mining]- System Dynamics',
+'[AI]- 추천 시스템',
 '[AI][정책]- AI 조달 가이드라인',
 '[AI][정책]- 한국판 AI 윤리기준', 
 'Hash Function',
@@ -2203,6 +2204,28 @@ var answer = answer.concat(
 - 피드백 : 강화 루프, 균형 루프 <br/>\
 - 레벨과 레이트 : 피드백 루프요소를 시뮬레이션 모델로 표현 <br/>\
 <img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 추천 시스템
+'# 정의 : 아이템 제공 시스템 / 정보 필터링 <br/>\
+- 정보 필터링을 사용하여 사용자에게 흥미로운 정보 아이템을 제공하는 시스템(TTA) <br/><br/>\
+# 유형 <br/>\
+1. CBF(Contents Based Filtering) <br/>\
+- 개념 : 비슷한 유형 추천 알고리즘 <br/>\
+- 종류 : User-based(사용자 프로필/사용자 프로필 수집 한계), Item-based(유사 상품/데이터 셋 구성 어려움) <br/><br/>\
+2. CF(Collaborate Filtering) <br/>\
+- 개념 : 사용자, 아이템 프로파일 데이터 없이 사용자의 과거 행동 데이터 가지고 유사도 측정, 추천하는 알고리즘 <br/>\
+- 종류 : Memory-based(사용자/아이템간 유사도), Model-based(기계학습, 베이시안, 클러스터링 + CF), Hybrid Filtering(CBF+CF) <br/>\
+- 한계점 : Cold Start 문제, 높은 계산량 <br/><br/>\
+# 문제점 <br/>\
+- Cold Start : 사전 데이터 없을 때 문제점 <br/>\
+- Sparsity Problem : 차원의 저주 <br/>\
+- Information Utilization Problem : Log Data 숨은 정보 이용 쉽지 않음 / 데이터 임퓨테이션(별점 결측치 평점으로 대체) <br/><br/>\
+# Cold Start 대응 <br/>\
+- Hybrid Filtering : 가용 데이터 중심, CBF,CF 혼용 <br/>\
+- CBF->CF 단계적 적용 : 초기(CBF), 축적후(CF) <br/>\
+- 인기 아이템 추천 : 초기(인기아이템), 축적후(재추천) <br/><br/>\
+* KPC 90회 관리 3교시 4번\
 ',
 
 // AI 조달 가이드라인
