@@ -30,7 +30,6 @@ var question = question.concat(
 '다차원 모델링',
 '[다차원 모델링]- 스타스키마',
 '[SNA]- 중심성(Centrality)',
-'추천시스템(recommendation systems)',
 'CKAN(Comprehensive Knowledge Archive Network)',
 'DQM',
 'DQM3',
@@ -654,31 +653,6 @@ var answer = answer.concat(
 <img src = "./img/Centrality_1.PNG" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Centrality_2.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Centrality.png" style = "max-width:100%; height:auto;">\
-',
-
-// 19
-'# 정의 : 아이템 제공 시스템 / 정보 필터링 <br/>\
-- 정보 필터링을 사용하여 사용자에게 흥미로운 정보 아이템을 제공하는 시스템 (TTA) <br/><br/>\
-# 암기 <br/>\
-- 유형 : 평순 <br/>\
-- 기법 : 컨협 <br/>\
-- 문제 : 콜스 <br/>\
-- 대응 : 범이소문 <br/><br/>\
-# 프로파일링 기법 <br/>\
-- 컨텐츠기반 필터링 : 상품, 사용자등 메타데이터 위주 <br/>\
-- 협업 필터링 : 사용자와 품목간의 과거 관계 -> 콜드스타트 문제 <br/>\
-- 그래프 랭킹 기반 추천 시스템 : 랜덤서퍼(Random Surfer)활용, 피자배달원 문제 <br/><br/>\
-# 문제 : Cold Start, Sparsity, Scalability <br/><br/>\
-# 대응 <br/>\
-1. Cold start 대응 <br/>\
-- 범주형 : 베이지안 확률 모형 <br/>\
-- 이미지 정보 : CNN, RNN <br/>\
-- 소셜 정보 : SNA <br/>\
-- 문서 정보 : 토픽모델링 <br/>\
-2. Sparsity 대응 <br/>\
-- 데이터 임퓨테이션 <br/><br/>\
-<img src = "./img/추천시스템_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/추천시스템_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
 
 // 20
