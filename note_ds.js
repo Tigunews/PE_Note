@@ -2148,7 +2148,7 @@ var answer = answer.concat(
 - Ledger : 변경불가한 Database <br/>\
 - Peer : Ledger 호스팅, Chain code 저장 독립체 <br/>\
 - Channel : 컨소시엄 내 그룹간 커뮤니케이션 <br/>\
-- Chain code : Ledger에 저장된 상태 Update Code <br/>\
+- Chain code : Ledger에 저장된 상태 Update Code <br/><br/>\
 3. Client Application : 외부에서 Chain code 호출, Network 결과 값 전송 받을 수 있는 프로그램 <br/><br/>\
 # 트랜잭션 처리 과정 <br/>\
 - 발생 : Client App SDK에서 트랜잭션 발생 <br/>\
