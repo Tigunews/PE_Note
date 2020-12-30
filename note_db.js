@@ -36,6 +36,7 @@ var question = question.concat(
 'DQM3',
 'ISO/IEC 20943-5',
 'DQC',
+'인덱스',
 '[인덱스]- 인덱스 구조(B,R,T-Tree)',
 'Clustering Factor',
 'NewSQL DBMS',
@@ -802,8 +803,32 @@ var answer = answer.concat(
 <img src = "./img/DQC_M.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 78회 3교시 6번\
 ',
+  
+// 인덱스
+'# 정의 : 별도 체계 저장 DB Object <br/>\
+- 데이터 검색속도 향상을 위하여 테이블에 저장된 로우를 식별 가능하도록 구조화된 형태의 테이블과 별도의 체계로 저장한 데이터베이스 오브젝트 <br/><br/>\
+# 구성요소 (B-Tree) <br/>\
+- Root Block <br/>\
+- Branch Block : 분기 목적<br/>\
+- Leaf Block : RID(Record Identifier) 구성 <br/><br/>\
+# 스캔방식 <br/>\
+- Index Range Scan : 수직적 탐색 후 리프블록 필요한 범위만 스캔 <br/>\
+- Index Full Scan : 리프 블록 수평적 탐색, 최적의 인덱스 없을 경우 차선 선택 <br/>\
+- Index Unique Scan : 수직적 탐색만 / Unique Index = 조건 검색 <br/>\
+- Index Skip Scan : Distinct Value 개수 적은 경우 / 가능성 있는 하위 블록만 <br/>\
+- Index Fast Full Scan : 트리구조 무시, 세그먼트 전체 Multiblock Read 방식 스캔 <br/>\
+- Index Range Scan Descending : Index Range Scan 역방향 스캔 <br/><br/>\
+# 종류 <br/>\
+- B*Tree Index : Root, Branmch, Leaf / Data Range Key, Block 찾는데 필요한 주소정보 <br/>\
+- Bitmap Index : 대용량 데이터, BIT 이용 Rowid 자동 생성 인덱스 <br/>\
+- Reverse Index : B*Tree 역방향 <br/>\
+- Function Base Index : 함수 적용, 추출된 값 생성 <br/>\
+- Cluster Index : 클러스터 내 데이터 유지 / Select 빠름, Insert 느림 <br/><br/>\
+# 인덱스 튜닝 : 선두 컬럼 조건절 가공, 묵시적 형변환 <br/><br/>\
+* KPC 90회 관리 3교시 2번\
+',
 
-// 33
+// 인덱스 구조
 '# B-Tree : 균등한 응답속도 유지를 위하여 Leaf Level의 좌우 균형을 유지하는 트리 <br/><br/>\
 # B+Tree : 링크드 리스트, Leaf에 모든 값 정렬 <br/><br/>\
 # B*Tree : 2/3 split overhead 감소 <br/><br/>\
