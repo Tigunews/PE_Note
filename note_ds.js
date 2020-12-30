@@ -112,6 +112,7 @@ var question = question.concat(
 '[블록체인]- 플랫폼 보안',
 '[블록체인]- BaaS',
 '[블록체인]- NFT',
+'[하이퍼레저]- 하이퍼레저 패브릭',
 'MaaS',
 'BERT',
 'Dark Net',
@@ -2129,6 +2130,34 @@ var answer = answer.concat(
 # 생태계 발전 방안 <br/>\
 <img src = "./img/NFT_Future.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 2교시 관리 6번\
+',
+  
+// 하이퍼레저 패브릭
+'# 정의 : 개발 위한 허가형 프라이빗 플랫폼 <br/>\
+- IBM 제공하는 모듈형 아키텍처로서, 블록체인 솔루션 및 어플리케이션을 개발하기 위한 허가형 프라이빗 플랫폼 <br/>\
+* 하이퍼레저 프로젝트 : 리눅스 재단에서 주도하는 엔터프라이즈용 블록체인 오픈소스 프로젝트 <br/><br/>\
+# 특징 : Private / 일반 Language / 병렬 처리 / 교체 가능한 합의 프로토콜 사용 가능 (SOLO, Kafka, PBFT) <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/HyperledgerFabric.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Network : Block Chain Admin Level <br/>\
+- Ordering Service : Tx 순서, 연결된 노드 전달 <br/>\
+- Network Configuration : 그룹별 네트워크 자원에 접근할 수 있는 권한 <br/>\
+- Certificate Authority : 참여자 ID 권한 관리할 주체 <br/><br/>\
+2. Consortium : 함께 협력하려고 동의한 집단 <br/>\
+- Ledger : 변경불가한 Database <br/>\
+- Peer : Ledger 호스팅, Chain code 저장 독립체 <br/>\
+- Channel : 컨소시엄 내 그룹간 커뮤니케이션 <br/>\
+- Chain code : Ledger에 저장된 상태 Update Code <br/>\
+3. Client Application : 외부에서 Chain code 호출, Network 결과 값 전송 받을 수 있는 프로그램 <br/><br/>\
+# 트랜잭션 처리 과정 <br/>\
+- 발생 : Client App SDK에서 트랜잭션 발생 <br/>\
+- 실행 : Chain code 보증 정책에 명시된 노드들 Chain code 실행 <br/>\
+- 전달 : Client App, Ordering Service, Peer 전달 <br/>\
+- 확인 : 모든 Peer, 보증 정책, 장부 상태, 트랜잭션 변경 여부 확인 <br/>\
+- 갱신 : 각 Peer, Block을 채널의 체인에 덧붙임, 장부 상태 업데이트 <br/>\
+* 보증 정책(Endorsing Policies) : 체인코드가 장부를 업데이트 하기 위해 필요한 서명 수 <br/><br/>\
+* KPC 90회 관리 3교시 6번\
 ',
   
 // MaaS
