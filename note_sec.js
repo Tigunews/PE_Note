@@ -1460,7 +1460,7 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 '# 정의 : 개인 식별 요소를 제거해 비식별화 된 개인정보에 대해 연결 공격, 동질성 공격, 배경지식 공격 등을 통해 식별이 가능한 것을 방지하기 위한 보호모델 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/PrivacyProtectionModelOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# K-익명성 <br/>\
+# K-익명성 : Feature가 늘어날수록 더 많은 데이터 삭제가 필요해 Curse of Dimensionality 이슈 발생 <br/>\
 - 개념 : 특정인임을 추론할 수 있는지 여부 검토 <br/>\
 - 발생원인 : 연결 공격 (준식별자 의한 추론, 민감정보 노출) <br/>\
 - 해결방안 : 동일 레코드 <font color = "red">K 이상</font> <br/>\
