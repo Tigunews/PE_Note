@@ -49,7 +49,8 @@ var question = question.concat(
 '[DBMS 최적화]- Data Block Access',
 '[DBMS 최적화]- Parallel Operation',
 'ERD',
-'관계형 데이터 모델', 
+'관계형 데이터 모델',
+'연결함정',
 '[빅데이터]- Edge Analytics',
 '[빅데이터]- R-HIVE',
 '[빅데이터]- NoSQL',
@@ -1078,9 +1079,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
 
 // 관계형 데이터 모델
-'<img src = "./img/RelationDataModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+'<img src = "./img/RelationDataModel.png" style = "max-width:100%; height:auto;">\
 ',
   
+// 연결함정
+'# 정의 : ER 모델 / 관계성 분실 현상<br/>\
+- ER 모델 상 관계가 연결되지만, 실제 관계 설정이 되지 않는 관계성 분실 현상 <br/><br/>\
+# 종류 <br/>\
+1. 부채꼴 함정 <br/>\
+- 개념 : 개체 집합 사이에 관계성 집합이 정의되어 있으나, 관계성 예시가 모호한 현상 <br/>\
+- 예시 <br/>\
+<img src = "./img/SectorformTrap.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 균열 함정 <br/>\
+- 개념 : 개체 집합 사이에 관계성 집합이 정의되어 있으나, 일부 개체의 관계성 미존재 현상 <br/>\
+- 예시 <br/>\
+<img src = "./img/CrashTrap.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 90회 응용 1교시 11번\
+',
 
 // [빅데이터]- Edge Analytics
 '# 정의 : 지역별 분석 기술<br/>\
