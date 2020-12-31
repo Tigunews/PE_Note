@@ -35,6 +35,8 @@ var question = question.concat(
 '스니핑(Sniffing)',
 '스푸핑(Spoofing)',
 'Sesion Hijacking',
+'산업제어시스템 보안',
+'[산업보안]- OPC UA',
 '스턱스넷(stuxnet)',
 'APT',
 '[APT]- Leteral Movement',
@@ -714,6 +716,46 @@ var answer = answer.concat(
 - Ack Storm 탐지 : 급격한 Ack 비율 증가시 탐지 <br/>\
 - 패킷 유실, 재전송 증가 탐지 : 패킷 유실, 서버 응답시간 길어짐 탐지 <br/>\
 - 리셋 탐지 : 예상치 못한 리셋시, 세션이 멈추거나 리셋 탐지 \
+',
+  
+// 산업제어시스템 보안
+'# 정의 : 산업 공정 / 제어, 계측 / <br/>\
+- 산업 공정 제어에 사용되는 여러 유형의 제어시스템 및 관련 계측 시스템 <br/><br/>\
+# 공격방법 <br/>\
+- 시스템 잠복, 정찰 <br/>\
+- 트래픽 모니터링, 패킷 스니핑, 취약점 식별 <br/>\
+- 공격 계획 <br/><br/>\
+# 산업용 보안 프로토콜 종류 <br/>\
+1. DNP 3.0 <br/>\
+- 개념 : 1993년 개발된 기기 통신 프로토콜 / 북미 중심 전력 분야 제어 시스템 <br/>\
+- 보안규격 : IEEE 1815, IEC 60870 5-7 <br/><br/>\
+2. IEC 61850 <br/>\
+- 개념 : 전력분야 제어시스템 제어 프로토콜 <br/>\
+- 보안규격 : IEC 62351 <br/><br/>\
+3. OPC UA <br/>\
+- 개념 : IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/>\
+- 보안규격 : IEC 62541-2 <br/><br/>\
+* 라이지움 81회 관리 2교시 4번\
+',
+  
+// OPC UA
+'# 정의 : <br/>\
+- Open Platform Communication Unified Architecture <br/>\
+- IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/><br/>\
+# 아키텍처 <br/>\
+- Session : 사용자 인증, 권한 확인 <br/>\
+- Secure Channel : 무결성, 기밀성 보장, X.509 v3 사용 <br/>\
+- Transport : 소켓 연결, 에러 복구 및 서비스 거부 공역 방어 <br/><br/>\
+# 통신보안 <br/>\
+1. 연결 성립 <br/>\
+- 보안설정 획득 : 보안 정책, 모드, 사용자 토큰 정책 <br/>\
+- 보안채널 생성 : Open Secure Channel 통한 생성<br/>\
+- 세션 생성 : 보안 채널 생성시, 난수 생성 통한 클라이언트 인증 <br/>\
+- 세션 활성화 : 사용자토큰, 클라이언트 소프트웨어 인증서 전송 <br/><br/>\
+2. 사용자 변경 <br/>\
+- 세션 종료전 변경시 기능 제공 <br/><br/>\
+3. 통신 보안 기능 구현 : SOAP, XML(WS_Secure Conversation) <br/><br/>\
+* 라이지움 81회 관리 2교시 4번\
 ',
 
 // Stuxnet
