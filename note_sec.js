@@ -10,6 +10,7 @@ var question = question.concat(
 '[블록암호]- CTR',
 '[공개키]- 디피헬만 알고리즘',
 'ECC',
+'[ECC]- ECDSA',
 '보안이슈, 대응방안',
 'SW 보안 약점',
 '[공격기법]- XSS',
@@ -279,14 +280,41 @@ var answer = answer.concat(
 - 암/복호화 : EC-KEM <br/><br/>\
 # ECDSA <br/>\
 <img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/ECDSA_Graphic.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/ECDSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ECDSA_Graphic.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # ECDH <br/>\
 <img src = "./img/ECDH.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # ECC RSA 비교 <br/>\
 <img src = "./img/ECC_RSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 86회 라이지움 1교시 7번 <br/>\
 * 88회 라이지움 1교시 7번 \
+',
+  
+// ECDSA
+'# 정의 : 타원곡선암호를 전자서명에 접목시킨 암호 알고리즘 <br/>\
+# 구성요소 <br/>\
+- 모듈로 p 타원 곡선 방정식 : y^2 mod p = (x^3 + ax + b) mod p (p;prime number) <br/>\
+-> secp256k1 표준 : a=0, b=7, p=D0364140 <br/>\
+- 생성자(G) : 표준에서 지정 <br/>\
+- 개인키(k) : 임의의 정수 <br/>\
+- 공개키(r) : (임의의 랜덤숫자) * G <br/>\
+- 메시지(m) : 전달할 Data <br/><br/>\
+# 송신 절차 <br/>\
+- 트랜잭션 만들기 : 타원곡선 생성 <br/>\
+- 개인키 정하기 : 1~D0364140 내 선택 <br/>\
+- 서명 r구하기 : k*G 연산 수행 결과값 <br/>\
+- 서명 s구하기 : k^-1(z+r*private key) mod n <br/>\
+-> k : 서명 r구할 때 고른 랜덤한 수 <br/>\
+-> z : 트랜잭션 정보를 직렬 정렬한 값 <br/>\
+-> r : 서명 r값 <br/>\
+-> private key : 개인키 값 <br/><br/>\
+# 수신 절차 <br/>\
+- p = U1 * G + U2 * Public key <br/>\
+-> U1 = z * w mod n <br/>\
+-> U2 = r * w mod n <br/>\
+-> w = s^ -1 mod n <br/>\
+-------------------- <br/>\
+- p의 x좌표 값, 서명 r 비교 <br/><br/>\
+* 81회 라이지움 응용 1교시 13번\
 ',
   
 // 보안이슈, 대응방안
