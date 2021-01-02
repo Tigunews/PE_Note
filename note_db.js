@@ -794,11 +794,21 @@ var answer = answer.concat(
 - Index Fast Full Scan : 트리구조 무시, 세그먼트 전체 Multiblock Read 방식 스캔 <br/>\
 - Index Range Scan Descending : Index Range Scan 역방향 스캔 <br/><br/>\
 # 종류 <br/>\
-- B*Tree Index : Root, Branmch, Leaf / Data Range Key, Block 찾는데 필요한 주소정보 <br/>\
-- Bitmap Index : 대용량 데이터, BIT 이용 Rowid 자동 생성 인덱스 <br/>\
-- Reverse Index : B*Tree 역방향 <br/>\
-- Function Base Index : 함수 적용, 추출된 값 생성 <br/>\
-- Cluster Index : 클러스터 내 데이터 유지 / Select 빠름, Insert 느림 <br/><br/>\
+1. 순서 인덱스 <br/>\
+- 밀집 인덱스 : 모든 검색키 1:1 연결 <br/>\
+- 희소 인덱스 : 몇 개의 검색키 연결 <br/>\
+- 다단계 인덱스 : 일부 메모리 적재, 일부 디스크 저장 <br/>\
+- B 트리 인덱스 : 좌우 균형 유지, O(logn) 성능 유지 <br/><br/>\
+2. 해시 인덱스 <br/>\
+- 정적 해싱 : 버킷 수 고정, 데이터 개수를 이미 알고 있는 경우 <br/>\
+- 동적 해싱 : 버킷 수 가변, 데이엍 증감 원활 위해 (Trie 자료구조 사용) <br/>\
+- 확장 해싱 : 해시 함수 동적 변경 허용 기술, 디렉토리 버킷으로 2단계 구조 <br/><br/>\
+3. 확장 인덱스 (특정 밴더) <br/>\
+- 군집 인덱스(MS) : 검색키의 순서와 파일의 순서가 순차적 연결 <br/>\
+- 비군집 인덱스(MS) : 검색키의 순서와 다르게 파일의 순서 연결 <br/>\
+- 함수 인덱스(Oracle) : 사용자 정의 함수 (데이터 타입 상이한 컬럼) <br/>\
+- 비트맵 인덱스(Oracle) : 비트 이용 컬럼값 저장, ROWID 자동 생성 <br/>\
+- 도메인 인덱스(Oracle) : 텍스트, 카테고리등 도메인 영역에 대한 사용자 정의 인덱스 <br/><br/>\
 # 인덱스 튜닝 : 선두 컬럼 조건절 가공, 묵시적 형변환 <br/><br/>\
 * KPC 90회 관리 3교시 2번\
 ',
