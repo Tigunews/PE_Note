@@ -333,6 +333,7 @@ var question = question.concat(
 'PMO',
 '공공 PMO',
 '정보시스템 감리',
+'[감리]- 시정조치 확인 보고서',
 '[감리]- PMO, 감리',
 '[감리]- 3단계 감리',
 '[감리]- 운영 감리',
@@ -5328,6 +5329,10 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 시정조치 확인 <br/>\
 - 확인보고서 작성/협의 <br/>\
 - 확인보고서 확정/제출\
+',
+ 
+// 시정조치 확인 
+'<img src = "./img/AuditResetCheck.png" style = "max-width:100%; height:auto;">\
 ',
 
 // PMO, 감리
