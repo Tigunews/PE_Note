@@ -109,9 +109,13 @@ var answer = answer.concat(
 '# 정의 : 사용자 공급자간 서비스 명시 문서<br/>\
 - Service Level Agreement <br/>\
 - 정보시스템 사용자 공급자 간 서비스 수준을 정량적으로 측정하여 상호 동의한 일정수준의 서비스를 명시한 문서<br/><br/>\
-# 암기 : WMOMPRS <br/><br/>\
-# 구성 : WMOMPRS <br/>\
-- SOW, SLM(Metrics), SLO(Objective), SLM(Measurement), Penalty & Reward, SLR(Reports) <br/><br/>\
+# 구성 : WMOMR <br/>\
+- SOW(Satement of Work) : 서비스 별 상세항목 업무 기술서 / 서비스, 대상 항목<br/>\
+- SLM(Service Level Metrics) : 서비스 수준 파악하기 위한 성과 지표 / 시스템 가동률 최소 98% <br/>\
+- SLO(Service Level Objectives) : 서비스 수준 관리지표별 목표치, 최소치 / 가용성 유지 99% <br/>\
+- 서비스 성과측정 기준(Measurement) : 관리지표를 정량적으로 측정하는 방법 / 측정주기, 방법 <br/>\
+- SLR(Service Level Reprots) : 서비스 모니터링, 개선방안 수립/전개 등 / 주간/월간보고 <br/>\
+- 보상체계 : 목표치 준수, 미준수시의 보상 및 벌칙금 산정 기준, 방법 / Penalty, Incentive <br/><br/>\
 # SLA 측정 지표 <br/>\
 - 어플리케이션 운영 : CSR 납기 준수율, CSR 처리율, CSR 고객 만족도 <br/>\
 - 데이터센터 운영 : 서버 가동율, 중복 장애관리, 데이터 Backup / Restore 이행율, 시스템 변경작업 이행율 <br/>\
