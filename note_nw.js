@@ -1128,21 +1128,30 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : 컨텐츠 전송 가상망<br/>\
 - Contents Delivery Network <br/>\
 - 컨텐츠 제공업자(CP)웹 서버 집중 용량이 크거나 사용자 요구 잦은 컨텐츠 ISP 측 설치 CDN 서버에 미리저장, CDN 서버로부터 최적 경로로 사용자 컨텐츠 전달 하기 위한 오버레이 NW: 컨텐츠 전송 가상망 <br/><br/>\
-# 암기 노트 <br/>\
-- 구성 : CCIU <br/>\
-- 기술 : 캐지로스콘동분 <br/><br/>\
-- GSLB : DHML <br/><br/>\
-# 구성 : CDN SP, CP(Conetnt Provider), ISP, User <br/><br/>\
+# 구성 : CDN SP, CP(Conetnt Provider), ISP, User <br/>\
+<img src = "./img/CDN_Tech.png" style = "width:100%; height:auto;">\
+# 효과 <br/>\
+1. CP 측면 <br/>\
+- 웹성능 향상 : 컨텐츠 분산 처리 <br/>\
+- 비용 절감 : Load Balancing인한 OPEX 절감 <br/><br/>\
+2. ISP 측면 <br/>\
+- 네트워크 성능 향상 : 병목현상 해결 인한 성능 향상 <br/>\
+- 보안 효율 향상 : 비용 절감, 보안 효율 향상, DDoS 공격 방어 <br/><br/>\
+3. 사용자 측면 <br/>\
+- 신속한 서비스 속도 : 사용자 근접거리 Cache 서버 <br/>\
+- 품질 및 비용 절약 : 품질 및 서비스 이용시 시간 절약 만족도 <br/><br/>\
 # 기술 <br/>\
+1. CP 측면 기술 <br/>\
+- 콘텐츠 배포 : 분산 저장, 동일 컨텐츠 정확히 배포 <br/>\
+- 동기화 기술 : 컨텐츠 변경시 즉각 반영 기술<br/><br/>\
+2. ISP 측면 기술 <br/>\
 - Caching : Pull 모델, Push 모델, Pull&Push 모델 <br/>\
-- GSLB <br/>\
-- 로드밸런싱 : Product-based 솔루션(기업소유) <br/>\
-- Service-based 솔루션 : OutSourcing <br/>\
-- 스트리밍 <br/>\
-- 콘텐츠 배포 <br/>\
-- 동기화 기술 <br/>\
-- 분산 <br/><br/>\
-# GSLB(redirection) 기능 <br/>\
+- GSLB : 클라이언트에게 컨텐츠 찾는 적절 서버 연결 <br/>\
+- LB : 서버별 트래픽 분산 통한 웹 고객 서비스 성능 향상 기술 (Product(기업), Service(Outsourcing))<br/>\
+- 분산 : 분산 데이터 처리 기술 요구 (Grid Computing, Virtualization) <br/><br/>\
+3. User 측면 기술 <br/>\
+- 스트리밍 : 대용량 멀티미디어 즉시 실행 (Multicasting, OnDemand)<br/><br/>\
+# GSLB(redirection) 기능 (DHML) <br/>\
 - DNS Redirection : DNS 질의에 대해 캐시서버IP 제공 <br/>\
 - HTTP Redirection : HTTP 302 응답에 캐시 서버 IP 제공 <br/>\
 - Meta Redirection : ASX 파일 요청시 위치 정보에 캐시서버IP 제공 <br/>\
