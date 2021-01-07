@@ -56,6 +56,7 @@ var question = question.concat(
 '[빅데이터]- NoSQL',
 '[빅데이터][NoSQL]- 데이터 모델링 패턴',
 '[빅데이터][NoSQL]- CAP 이론',
+'[빅데이터][NoSQL]- PACEL',
 '[빅데이터][NoSQL]- NoSQL RDBMS 비교',
 '[빅데이터][NoSQL]- BASE',
 '[빅데이터]- 그래프 데이터베이스(Graph Database)',
@@ -1130,14 +1131,13 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
 
 // [빅데이터]- NoSQL
-'# 정의 : 다수 서버 복제 및 분산 저장 가능 DBMS / 비정형, 비관계 / 읽기 보다 쓰기 <br/>\
-- 전통적인 RDBMS와 다른 DBMS를 지칭하기 위한 용어로 데이터 저장에 고정 Table-Schema가 필요하지 않고, Join 연산을 사용할 수 없으며, 수평적으로 확장 가능한 DBMS <br/>\
-- 비관계형 데이터, 비정형 데이터를 저장하기 위해, 데이터 읽기보다 쓰기에 중점을 둔, 수평적 확장 및 다수 서버들에 데이터 복제 및 분산 저장이 가능한 DBMS <br/><br/>\
-# 암기 <br/>\
-- 절차 : 도쿼패기후하 <br/>\
-- 기본모델 : 디애어 <br/>\
-- 확장 : 오인컴인 <br/>\
-- 계층 : TAN <br/><br/>\
+'# 정의 : 고용량, 비정형, 효율처리 / 분산 DBMS <br/>\
+- RDBMS 한계를 벗어나, 고용량의 비정형 데이터를 효율적으로 처리할 수 있는 구조와 유연성을 가진 분산 DBMS <br/><br/>\
+# 모델 구조 <br/>\
+- Key/Value Store : Unique, API 접근(Put(key,value), Value :=get(key)) / Redis, Dynamo <br/>\
+- Column Family Store : Column Value 묶음 / Cassandra, HBase <br/>\
+- Document Store : Type Document, XML, JSON / CouchDB, MongoDB <br/>\
+- Graph Store : Note, Vertex, Edge, 시맨틱, 온톨로지 / Neo4J, AllegroGraph <br/><br/>\
 # 데이터 모델링 절차(도쿼패기후하) <br/>\
 1. 도메인 모델 파악 : 개체 파악, 분석, ERD 도식화 <br/>\
 2. 쿼리 결과 디자인 : 데이터 출력 내용 기반 디자인 <br/>\
@@ -1150,26 +1150,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
   
 // NoSQL 데이터 모델링 패턴
-'# 데이터모델 유형 <br/>\
-1. Key/Value Stores <br/>\
-- 개념 : Unique한 Key에 하나의 Value를 가지고 Key 기반의 Get, put, delete 기능 제공 <br/>\
-- 주요 DB : Redis, Raiak, Dynamo <br/><br/>\
-2. Column Family Store <br/>\
-- 개념 : 한 Key에 한 value만을 두는 단점을 극복 <br/>\
-- 주요 DB : Cassandra, HBase <br/><br/>\
-3. Document Store <br/>\
-- 개념 : 저장되는 Value의 데이터 타입이 Document 타입 사용 <br/>\
-- 주요 DB : CouchDB, MongoDB, Hypertable <br/><br/>\
-4. Graph Store <br/>\
-- 개념 : 그래프로 데이터를 표현 <br/>\
-- 주요 DB : Neo4J, AllegroGraph <br/><br/>\
-# 데이터 모델링시 고려사항 <br/>\
-- 쿼리 결과 지향 모델링 <br/>\
-- 비 정규화 기반 모델링 <br/>\
-- 데이터 모델링 절차 이해 <br/>\
-- 데이터 구조와 알고리즘 이해 <br/>\
-- 사용자 측면 기능적 요구사항 대응력 <br/><br/>\
-# 데이터 모델링 패턴 <br/>\
+'# 데이터 모델링 패턴 <br/>\
 1 Conceptual Techniques <br/>\
 - Denormalization : 같은 데이터 중복해서 저장 <br/>\
 - Aggregation : Schema-less 이용, 데이터 모델 합성 가능 <br/>\
@@ -1193,6 +1174,32 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - A+P : 즉시는 아니더라도 데이터 일관성은 결국에는 유지 (Cassandra, Couchbase(XDCR), ScyllaDB)<br/>\
 - C+A : 데이터 발생, 변경시 수직적으로 확장된 시스템내에서 데이터 일관성을 즉각적으로 유지 (MySQL, Oracle)\
 ',
+  
+// PACEL
+'# 정의 : 장애, 정상 상황 고려 / CAP 한계 극복 / 분산 데이터베이스 시스템 분류 이론 <br/>\
+- 장애상황(Partition)과 정상상황(Else)을 모두 고려한 NoSQL 특성 설명 통한 CAP 이론의 한계점 극복, 분산 데이터베이스 시스템 분류 이론 <br/><br/>\
+# 유형 <br/>\
+1. PA / EL <br/>\
+- 장애 상황시 : 가용 노드만 반영, 복구시 전체 반영 <br/>\
+- 정상 상황시 : Lateyncy 우선 고려 <br/>\
+- Cassandra, DynamoDB <br/><br/>\
+2. PA / EC <br/>\
+- 장애 상황시 : 가용 노드만 반영, 복구시 전체 반영 <br/>\
+- 정상 상황시 : 모든 노드 동일 메시지 보장 <br/>\
+- Hazelcast IMDG <br/><br/>\
+3. PC / EL <br/>\
+- 장애 상황시 : Time Consistency 수준 보장 <br/>\
+- 정상 상황시 : Latency 우선 고려 <br/>\
+- PNUTS <br/><br/>\
+4. PC / EC <br/>\
+- 장애 상황시 : Time Consistency 수준 보장 <br/>\
+- 정상 상황시 : 모든 노드 동일 메시지 보장 <br/>\
+- VoltDB, HBase <br/><br/>\
+# NoSQL 모델링 원칙 <br/>\
+- 비정규화 : 데이터 중복 허용 설계 <br/>\
+- Aggregation : 1:N 고나계 Join 최소화, 유연한 스키마 구조 설계 <br/>\
+- Application Join : Application 데이터 활용방식 따른 직접 Join 구현 설계 \
+',
 
 // [빅데이터][NoSQL]- NoSQL RDBMS 비교
 '<img src = "./img/NoSQLRDBMS.png" style = "max-width: 100%; height: auto;">\
@@ -1203,15 +1210,12 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Basically Available, Soft state, Eventually Consistence <br/>\
 - 가용성과 성능을 중시하는 분산 시스템의 NoSQL 특성 <br/><br/>\
 # BASE 속성 <br/>\
-1. Basically Availabe <br/>\
-- 가용성 <br/>\
+1. BAsically Availabe <br/>\
 - 데이터는 항상 접근 가능 <br/>\
 - 다수 스토리지에 복사본 저장 <br/><br/>\
 2. Soft-State <br/>\
-- 독립성 <br/>\
 - 노드의 상태는 외부에서 전송된 정보를 통해 상태 결정 <br/><br/>\
 3. Eventually Consistency <br/>\
-- 일관성 <br/>\
 - 일정 시간 경과시 데이터의 일관성 유지되는 속성 <br/><br/>\
 # BASE ACID 비교 <br/>\
 <img src = "./img/BASEACID.png" style = "max-width: 100%; height: auto;">\
