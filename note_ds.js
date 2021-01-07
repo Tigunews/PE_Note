@@ -208,6 +208,8 @@ var answer = answer.concat(
 - 신산업 육성 투자 활성화 : 중소벤처 <br/><br/>\
 # 주요국 4차 산업혁명 정책 및 현황 <br/>\
 <img src = "./img/Industry_World.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Overview <br/>\
+<img src = "./img/Industry4.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 2교시 3번\
 ',
   
