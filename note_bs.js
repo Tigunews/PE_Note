@@ -1216,11 +1216,11 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 <img src = "./img/ITComplianceOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 요구사항 (공보보통책)<br/>\
 <img src = "./img/ITComplianceNeeds.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- 공개 : 투명성 제고 <br/>\
-- 보존 : 이력 추적 <br/>\
+- 공개 : 투명성 제고, 데이터 공개 요구 <br/>\
+- 보존 : 이력 추적, 데이터 보존 기한 준수 요구 <br/>\
 - 보호 : 암호화, 접근 제어 요구 <br/>\
 - 내부통제 : 감사에 대한 수준 요구 <br/>\
-- 책임성 : 라이프사이클 관점 <br/><br/>\
+- 책임성 : 수집,저장,활용,파기시 발생 변조,유출,침해사고 고지 및 책임요구 <br/><br/>\
 # 대응방안 <br/>\
 1. 인식전환 <br/>\
 - 조직 교육 : 조직 문화화, 정기적 교육, CSR 강화, 사례 공유 <br/>\
