@@ -54,6 +54,7 @@ var question = question.concat(
 'SON',
 'BcN',
 'CDN',
+'CDN, ADN',
 'IEEE 802.15.x',
 'USB4.0',
 '5G 이동통신',
@@ -1156,6 +1157,9 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - HTTP Redirection : HTTP 302 응답에 캐시 서버 IP 제공 <br/>\
 - Meta Redirection : ASX 파일 요청시 위치 정보에 캐시서버IP 제공 <br/>\
 - L4 Switch Redirection : 클라이언트가 근원 서버 연결 시도시 Edge Site의 L4 스위치가 캐시서버로 연결\
+',
+  
+'<img src = "./img/CDNADN.png" style = "width:100%; height:auto;">\
 ',
 
 // WPAN 
