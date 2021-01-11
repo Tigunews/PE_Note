@@ -327,7 +327,7 @@ var question = question.concat(
 'BPMN(Business Process Model and Notation)',
 '블랙보드(BlackBoard) 패턴',
 '연동계획(Rolling Wave Planning)',
-'SW 사업정보저장소',
+'SW 사업정보 저장소',
 'SW 사업 대가선정 가이드 (2019 개정판)',
 '옵저버 패턴',
 'PMO',
@@ -5213,7 +5213,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 * KPC 25회 3교시 2번\
 ',
 
-// SW 사업 저장소
+// SW 사업정보 저장소
 '# 정의 : 통계적 데이터 기반 SW 사업지식 데이터 베이스 <br/>\
 - 국가기관등에서 추진되는 SW사업(SW개발, 재개발, 유지보수 및 운영)의 수행실적 정보를 수집 및 분석하여 SW사업 추진시 예산수립, 비용산정, 요구사항도출 등을 위한 참조정보(사업규모, 사업금액, 사업기간 등)을 제공하는 객관적이고 정량적인 통계적 데이터 기반의 SW 사업지식 데이터베이스(Repository) <br/><br/>\
 # 암기 <br/>\
