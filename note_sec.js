@@ -124,6 +124,7 @@ var question = question.concat(
 '[시스템 보안]- Format String',
 '[DDOS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
 'FIDO',
+'SSO',
 '[Android]- Deeplink',
 '제로 트러스트 보안 모델',
 '재택,원격근무 정보보호 6대 실전 수칙',
@@ -2408,6 +2409,20 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 4교시 3번\
+',
+  
+// SSO
+'# 정의 : Single Sign-On <br/>\
+- 최초 사이트 로그인 이후 별도의 추가 인증 절차 없이 연동 시스템에서 자동 로그인되는 보안 서비스 <br/><br/>\
+# 유형 <br/>\
+- Delegation : 인증 대행 방식 (창 좌표 기억 자동 값 입력) <br/>\
+- Propagation : 인증정보 전달 방식 <br/><br/>\
+# 프로토콜 종류 <br/>\
+- Kerberos : DES 알고리즘, Ticket 기반 <br/>\
+- Open ID : 사용자 아이디/패스워드 관리 편의성 개선 프로토콜 <br/>\
+- SAML : Assertion 정보 교환 기반 프로토콜 <br/>\
+- OAuth : Resource Owner, Server 근간, Acccess Token 기반 프로토콜 <br/><br/>\
+* 라이지움 89회 관리 2교시 6번\
 ',
   
 // DeepLink
