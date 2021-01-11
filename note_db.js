@@ -477,11 +477,15 @@ var answer = answer.concat(
 - 데이터 중복을 해소하기 위해서 릴레이션을 분해하는 과정 <br/>\
 - 제1정규형 ~ 제5정규형, BCNF가 실무적으로 활용되며 나머지는 연구용<br/>\
 - 정규화는 논리적 설계 단계에서 수행 <br/><br/>\
-# 암기 <br/>\
-- 원칙(3) : 무중분 <br/><br/>\
-# 원칙(3) : 정보무손실, 중복성감소, 분리원칙 <br/><br/>\
+# 원칙(무중분) : 무손실분해, 중복성감소, 분리원칙 <br/><br/>\
 <img src="./img/DB_4.PNG" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/DB_4_2.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+<img src = "./img/DBNormalization.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 정규화 효과 <br/>\
+- 모델링 측면 : 이상현상 제거, 안전성 확보 <br/>\
+- 성능 측면 : 저장 공간 절약, 단순 쿼리 성능 향상 <br/>\
+- 개발 측면 : 테이블 명확화, 접근제어 강화 <br/>\
+- DB 운영 측면 : 확장성 용이, DB 설계 용이 <br/><br/>\
 # 설명 <br/>\
 <img src = "./img/123BCNF.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/5NF.png" style = "max-width:100%; height:auto;"><br/><br/>\
