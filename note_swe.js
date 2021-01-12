@@ -3036,15 +3036,16 @@ var answer = answer.concat(
 
 // [ISO/IEC 14764]- PERT/CPM, CCM, CCPM
 'ISO 14764 : 소프트웨어 유지보수 표준<br/><br/>\
-PERT/CPM : 불확실한 프로젝트의 일정, 비용등을 합리적으로 계획하고 관리하는 기법 <br/><br/>\
-PERT(Program Evaluation and Review Technique) <br/>\
-- 확률적인 추정치를 이용하여 단계중심의 확률적 모델을 전개 <br/>\
-- 최단기 기간에 목표를 달성하기 위함 <br/><br/>\
-CPM(Critical Path Method) <br/>\
-- 과거 실적이나 경험등의 확정적 결과값을 이용하여 활동중심의 확정적 모델을 전개 <br/>\
-- 목표기일 단축과 비용 최소화를 달성하기 위함. <br/><br/>\
-CCM: CPM에 자원가용성, 일정제약을 고려하고 버퍼관리를 통해 일정을 관리하는 기법<br/><br/>\
-CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<br/><br/>\
+# 정의 <br/>\
+- PERT(Program Evaluation and Review Technique) <br/>\
+- CPM(Critical Path Method) <br/>\
+- PERT/CPM : 작업의 선/후행관계를 고려하여 전체작업의 완료시간을 결정하고, 추가비용 투입을 고려하여 전체작업 완료시간을 단축하는 네트워크 분석 기법 <br/>\
+- CCM: CPM에 자원가용성, 일정제약을 고려하고 버퍼관리를 통해 일정을 관리하는 기법<br/>\
+- CCPM: 핵심자원의 자원경합을 해소하여 Critical Chain 관리기법<br/><br/>\
+# 구성요소 : ES, 기간, EF, 활동 이름, LS, 여유시간, LF <br/>\
+- 기간 : CPM(기존 자료), PERT(3점 추정 : (비관+(6*최빈)+낙관)/6) <br/><br/>\
+# 주경로 산출 절차 : 시간추정 > 전진경로계산 > 후진경로계산 > 여유시간계산 > 주경로도출 <br/><br/>\
+* 라이지움 89회 관리 2교시 2번\
 ',
   
 // 일정관리
