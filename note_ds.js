@@ -440,6 +440,8 @@ var answer = answer.concat(
 3. 차량제어 <br/>\
 - 관리 및 제어 : OS, FS, DB <br/>\
 - 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
+# Level <br/>\
+<img src = "./img/AutomationCarLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
 * MOST(Media Oriented Systems Transort) : 자동차 산업 최적화 고속 멀티미디어 네트워크 기술 <br/>\
 * DSRC(Dedicated Short Range Communication) : 차량 노변기지국간 통신, 근거리 전송 고속 패킷통신 <br/>\
