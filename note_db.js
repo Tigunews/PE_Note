@@ -11,6 +11,7 @@ var question = question.concat(
 '[동시성제어]- 트랜잭션 직렬화',
 '[동시성제어]- Timestamp',
 '[동시성제어]- Locking',
+'[동시성제어]- 2PL',
 '[동시성제어]- Phantom Conflict',
 '회복기법',
 '[회복기법]- Log 기반',
@@ -298,6 +299,16 @@ var answer = answer.concat(
 # Lock 양립성 <br/>\
 <img src = "./img/Lock양립성.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 관리 2교시 5번\
+',
+  
+// 2PL
+'# 정의 : 모든 트랜잭션들이 Lock과 Unlock 연산을 확장단계와 수축단계로 구분하여 수행하는 Locking 기법 <br/><br/>\
+# 변형 기법 <br/>\
+- Strict 2PL : 모든 독점로그(lock-X)는 그 트랜잭션이 완료될 때까지 unlock 하지 않고 유지 <br/>\
+- Rigorous 2PL : 모든 락(Lock-S,X)는 그 트랜잭션이 완료될 때까지 unlock 하지 않고 유지 <br/>\
+- Static : 트랜잭션이 수행 시작전에 모든 락(Lock-S,X)을 선언하여 완료될 때까지 unlock 하지 않고 유지 <br/>\
+<img src = "./img/2PL_Trans.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 89회 관리 3교시 6번\
 ',
   
 // Phantom Conflict
