@@ -35,7 +35,7 @@ var question = question.concat(
 '스미싱(Smishing)',
 '스니핑(Sniffing)',
 '스푸핑(Spoofing)',
-'Sesion Hijacking',
+'Session Hijacking',
 '산업제어시스템 보안',
 '[산업보안]- OPC UA',
 '스턱스넷(stuxnet)',
