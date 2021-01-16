@@ -2241,7 +2241,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 '# 정의 : 기밀성 중점 모델 / MAC 기반 <br/>\
 - 정보를 극비, 비밀, 미분류로 분류하여, 접근 통제하는 모델 <br/><br/>\
 # 보안규칙 <br/>\
-<img src = "./img/NRDNWU.png" style = "max-width: 100%; height: auto;"><br/>\
+<img src = "./img/NRUNWD.png" style = "max-width: 100%; height: auto;"><br/>\
 - 단순 보안 규칙 : No Read Up<br/>\
 - * Property Rule : No Write Down <br/>\
 - String * Property Rule : 동일 레벨에 대해서만 R/W 가능 <br/><br/>\
@@ -2252,7 +2252,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 '# 정의 : Bell LaPadula + 불법 수정 방지 / 무결성 중점 모델 <br/>\
 - Bell LaPadula 모델에서 불법 수정 방지 내용을 추가로 정의한 접근 통제 모델 <br/><br/>\
 # 보안규칙 <br/>\
-<img src = "./img/NRUNWD.png" style = "max-width: 100%; height: auto;"><br/>\
+<img src = "./img/NRDNWU.png" style = "max-width: 100%; height: auto;"><br/>\
 - 단순 무결성 규칙 : No Read-Down <br/>\
 - 스타 무결성 규칙(* Integrity Axiom) : No Write-Up <br/><br/>\
 * 아이리포 23회 1교시 8번\
