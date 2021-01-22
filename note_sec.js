@@ -660,7 +660,7 @@ var answer = answer.concat(
 - 이메일 전송 <br/>\
 - 첨부파일 통한 악성코드 감염<br/><br/>\
 # 스피어피싱, 워터링홀 비교(사회공학적기법) <br/>\
-<img src = "./img/SpearPhishingWateringHole.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/SpearPhishingWateringHole.png" style = "max-width:100%; height:auto;"><br/><br/>\
 *116회 1교시 7번\
 ',
   
