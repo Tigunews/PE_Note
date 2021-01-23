@@ -860,6 +860,8 @@ var answer = answer.concat(
 - 최소값 선택 : 전역 최소 지점 계산 및 결정 <br/><br/>\
 # 경사하강법 유형 <br/>\
 <img src = "./img/GradientDescentType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Gradient Descent 한계 극복 알고리즘 <br/>\
+<img src = "./img/GradientDescentOptimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 문제점 <br/>\
 1. Local, Global Minimum/Maximum 문제 <br/>\
 -> Initial Point 다양하게 설정 <br/><br/>\
