@@ -3830,29 +3830,30 @@ P 히스토그램 : Data 분포 <br/>\
 ',
  
 // CMMI V2.0
-'# 정의 : 성과에 대한 비즈니스적 가치입증에 중점을 두고, 비즈니스의 동향 반영을 통해 사용자 친화적인 모델로 진화한 CMMI 1.x 후속 모델 <br/><br/>\
-# 변화 방향 <br/>\
-1. CMMI 적용의 ROI와 Value 강조 <br/>\
-2. 유연한 통합 모델로 개선 <br/>\
-3. 쉽고, 사용하기 편리한 모델 <br/>\
-4. CMMI 벤치마킹 및 심사 Value 증대 <br/><br/>\
-# 특징 <br/>\
-- 최종 심사 이후 성과보고서 제출, 성과 개선 강조 <br/>\
-- 보안, 안전 등의 최신 트랜드 추가 <br/>\
-- 현재의 모범 사례들을 활용한 모델 구조 변경 <br/><br/>\
-# 구조도(P-CAGE, CAPLP) <br/>\
-<img src = "./img/CMMI_Model.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 심사방법 <br/>\
-<img src = "./img/CMMI_Appraisal.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# Process Category (D(생산),M(계획),E(제공),I(유지)) <br/>\
-<img src = "./img/CMMI_Detail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 전문가 의견 <br/>\
-- 변화 방향 : 긍정적 <br/>\
-- 심사 방향 : 부정적 <br/><br/>\
-# 해결 과제 <br/>\
-- 신규 프랙티스 대한 정기적 측정 및 경영평가 도입 <br/>\
-- 프로세스 단계별 이행 <br/>\
-- 정량적 관리, 개선성과 가시화 필요 <br/><br/>\
+'# 정의 : DevOps, Agile을 반영한 기업 성숙도 평가모델 <br/>\
+- 소프트웨어, 제품 및 서비스 개발 조직의 공정 및 관리 능력을 향상시키고, 생산성과 효율적 행동을 장려할 수 있도록 고안된 프로세스이자 모델 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/CMMI2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CMMI_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Model <br/>\
+- View : CMMI에 기정의된 모델 구성요소 중 사용자 입장에서 선택한 중요 요소 집합 <br/>\
+- Category : 보편적 문제를 다루는 영역의 논리적 그룹이나 뷰 <br/>\
+- Capability Area : 해당 PA에 정의된 가치 및 필수 정보 달성을 위한 행동 모음 <br/><br/>\
+2. Practice Area <br/>\
+- Required PA Info. : 정의된 목적, 가치 달성을 위한 필수 주요 활동 <br/>\
+- Explanatory PA Info. : 개별 프랙티스 요약 및 연관 프랙티스 정보 <br/>\
+- Practice Group : PA 내에서 프렉티스에 대해 구성된 구조로 성과 경로 개선 제공 <br/><br/>\
+3. Practice : 목표 충족을 위한 구체적이고 실질적인 활동 지침 <br/><br/>\
+# CMMI 심사 종류 <br/>\
+- Benchmark(공식/3년) : CMMI 심사 시스템(CAS)에서 무작위 추출, 입력 후 심사 진행 <br/>\
+- Sustainment(유지/2년) : 이전 심사 때와 동일한 조직, Sampling Factor 값 유지 여부 확인 <br/>\
+- Action Plan Reappraisal(재 심사) : 실패, 심사 목표 달성 확인, 60일 내 재심사, 동일 심사위원 진행 <br/>\
+- Evaluation(자체 심사) : 방침, 프로세스 모델 일치성 여부 점검 통한 개선 사항 식별 <br/><br/>\
+# Process Category (D(생산), M(계획), E(제공), I(유지)) <br/>\
+<img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 2회 1교시 9번 <br/>\
 * KPC 97회 관리 4교시 3번\
 ',
  
