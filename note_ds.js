@@ -2341,10 +2341,25 @@ var answer = answer.concat(
 ',
   
 // PaaS-TA
-'# 정의 : 한국정보화 진흥원이 개발한 전자정부 표준 프레임워크 기반, 오픈소스 기반 개방형 클라우드 플랫폼 <br/><br/>\
+'# 정의 : 개방형 클라우드 플랫폼 <br/>\
+- 오픈소스 기반의 클라우드 서비스 개발환경과 통합 모니터링 환경, 오토스케일링, 마켓플레이슺 ㅔ공 등의 기능이 추가된 개방형 클라우드 플랫폼 <br/><br/>\
 # 특징 : 오픈소스 기반, 아파치 라이선스 2.0 기반, Kubernetes, Cloud Foundry <br/><br/>\
 # 변천사 <br/>\
 <img src = "./img/PaaSTA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/PaaSTA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 변경사항 <br/>\
+1. 개발/서비스/실행/운영 환경 <br/>\
+- 풍부한 개발 운영 환경, 다양한 데브옵스 도구 지원 <br/>\
+- 편리한 사용자 UI 지원 <br/>\
+- Cloud Foundary, Kubernetes의 일관된 개발 프로세스 구현 <br/>\
+- 통합 모니터링 <br/>\
+- 마켓 플레이스 <br/>\
+- 전주기 라이프 사이클 관리 <br/><br/>\
+2. 인프라 제어 및 관리 환경 <br/>\
+- Auto Scaling <br/>\
+- 다양한 IaaS 지원 : Open Stack 최신 버전 까지 지원 <br/><br/>\
+* KPC 120회 합숙 4일차 1교시 9번 <br/>\
 * 라이지움 87회 관리 1교시 1번\
 ',
 
