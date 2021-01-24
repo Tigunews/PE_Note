@@ -501,7 +501,7 @@ var answer = answer.concat(
 '# 정의 : 적합성, 경제성, 타당성 <br/>\
 - 머신러닝 모델의 적합성, 경제성, 타당성 판단을 위한 평가 <br/><br/>\
 # 개념도 <br/>\
-<img src = "./img/ML_Evaluation.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/ML_Evaluation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
 1. Overfit / Underfit 평가 방법 <br/>\
 - Hold out : 일정부분 분리, 학습 모델 검증 방법 <br/>\
@@ -522,25 +522,21 @@ var answer = answer.concat(
 - 평가 활용 : 데이터 편중 방지, 일반화 모델 생성 <br/>\
 - 훈련 활용 : 정확도 향상, 데이터 부족 Underfitting 방지 <br/><br/>\
 2. 단점 : Iteration 횟수 증가, 분석 시간 증가 <br/><br/>\
-# 기법 <br/>\
-1. Hold Out <br/>\
-- 정의 : 임의 비율로 Train set, Test set 분할 (9:1, 7:3)<br/>\
-- 장점 : 계산 시간 부담 경감 <br/>\
-- 단점 : Overfit 가능성 <br/><br/>\
-2. K겹 교차 검증(K-fold Cross Validation) <br/>\
-- 정의 : 일반적, K개의 데이터 폴드 <br/>\
-- 각 데이터 폴드 세트에 대해서 나온 검증 결과들을 평균내어 최종 검증 결과 도출 <br/><br/>\
-3. Leave-p-out Cross Validation<br/>\
-- 전체 데이터 중에서 p개 샘플 선택 (nCp) <br/>\
-- 각 세트 평균 <br/>\
-- 세트의 경우의 수, 비용 부담 큰 방법 <br/><br/>\
-4. Leave-one-out Cross Validation <br/>\
-- LPOCV p=1인 경우 <br/>\
-- 계산 시간 부담 경감, 좋은 결과 도출 <br/>\
-- 1개 제외 모든 데이터 모델 훈련 사용 가능 <br/><br/>\
-5. 계층별 k-겹 교차검증(Stratified k-fold Cross Validation) <br/>\
-- Label 분포 클래스 별로 불균형일 때 유용하게 사용 <br/>\
-- 각 훈련 또는 검증 폴드의 분포 = 전체 데이터셋 분포 근사 <br/><br/>\
+# 기본 알고리즘 <br/>\
+- Hold Out Method : Training Set으로 훈련하고 빼놓았던 Validation Set으로 검증하는 기법 <br/><br/>\
+1. Exhaustive CV <br/>\
+- Leave-p-Out CV(LpOCV) : nCp 개 가능한 만큼 반복 (n:전체, p:Validation Set 데이터 수) <br/>\
+<img src = "./img/ML_Evaluation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Leave-One-Out CV(LOOCV) : 전체 샘플 수 만큼 반복 (LpOCV p = 1경우) <br/>\
+<img src = "./img/LOOCV.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Non-Exhaustive CV <br/>\
+- K-fold CV(KFCV) : Random, k개 subset 균등 분할(가장 널리 쓰임) <br/>\
+<img src = "./img/KFCV.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Repeated Learning-Testing(RLT) : Random, 비복원 추출(LpOCV 근사) <br/>\
+<font color = "red">* Exhaustive CV : 가능한 모든 경우의 수 만큼 수행 -> 연산 많아짐 <br/>\
+<img src = "./img/RLT.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* Non-Exhaustive CV : Random 부분 추출 기법, Exhaustive CV 근사치 <br/>\
+* RLT 에서 Random 복원 추출 (중복 허용)인 경우가 Monte-Carlo CV </font><br/><br/>\
 * 라이지움 87회 관리 2교시 2번\
 ',
   
