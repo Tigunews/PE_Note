@@ -299,7 +299,8 @@ var answer = answer.concat(
 4. l이 r보다 클 경우 pivot과 r을 교체 <br/>\
 5. pivot 기준으로 좌/우 데이터를 1~4번 과정 반복 <br/><br/>\
 # 소스코드 <br/>\
-<img src = "./img/QuickSortSourceCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/QuickSortSourceCode.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/QuicSortPartition.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - 시간복잡도 : O(nlogn) <br/>\
 - 공간복잡도 : O(n) <br/><br/>\
