@@ -849,41 +849,29 @@ var answer = answer.concat(
 '# 정의 : index, Column  저장 위치 유사 정도 <br/>\
 - 인덱스 컬럼값과 데이터 로우의 저장위치가 얼마나 비슷한 순서로 저장되는 지표',
 
-// 36
-'# 정의 : 확장성 + 가용성 RDBMS / SQL 지원, ACID 준수, 성능 개선 <br/>\
-- RDBMS관점에서 SQL지원, ACID준수, 성능 개선을 가지고 NoSQL의 특징인 확장성과 가용성을 갖춘 RDBMS <br/><br/>\
-# 특징 <br/>\
-- 주 인터페이스로 SQL 사용<br/>\
-- 트랜젝션에 대한 ACID 지원 <br/>\
-- 비공유 구조<br/>\
-- 비잠금 동시성 제어 : 락X, 단일 스케줄<br/>\
-- 샤딩/파티셔닝 : 공통X 분할<br/>\
-- Node 단위의 고성능을 갖춘 DBMS : 네트워크 통한 처리 없음, Node단위 확장하여 성능 향상<br/>\
-- I/O 연산 최소화 : 인메모리DB <br/>\
-- 멀티쓰레딩 오버헤드 최소화 : 멀티버전 동시성 통제(MVCC) <br/>\
-- 타임스탬프 오더링(Timestamp Ordering)사용<br/>\
-- 2PLX<br/>\
-- 보조인덱스 : 기본키X, 일반속성 서브셋, 각 노드는 인덱스 일부 저장, 복제<br/><br/>\
-# 종류 <br/>\
-- VoltDB : 데이터를 메모리에 적재하여 처리속도 극대화, Global Lock제거, 메모리기반으로 한계<br/>\
-- Clustric : SQL을 각 Data node에 맞게 잘라서 Local SQL로 수행(Global Lock 해결)<br/><br/>\
-# 유형 <br/>\
-1. 새로운 아키텍처 시스템 : Shared-nothing 자원들 위에 동작하는 분산 아키텍처 기반<br/>\
-- 다중 노드 병행제어(Concurrency control), 복제를 통한 결함 허용(Fault tolerance through replication)<br/>\
-- 흐름 제어 및 분산 질의 처리를 지원<br/>\
-- 장점 : 질의 최적화 노드들 간의 통신 프로토콜을 포함한 시스템의 모든 부분을 다중 노드 환경에 맞게 최적화 가능 <br/>\
-- 예시 : Clustrix, CockorachDB, Google Spanner, H-Store, HyPer, MemSL, NuoDB, SAP HANA, VoltDB<br/>\
-2. 투명한 샤딩 미들웨어(Transparent Sharding Middleware) : 샤딩 미들웨어를 제공하는 제품 <br/>\
-- 샤딩 특성 : 각노드가 동일한 DBMS를 실행, 전체 DB 일부분만 가지며, 별도의 응용 프로그램에 의해 독립적으로 액세스되고 업데이트 되지 않음<br/>\
-- 장점 : 단일노드 DBMS를 이미 사용하고 있는 응용 프로그램을 어떠한 코드도 변경하지 않고 대체 가능 <br/>\
-- 예시 : AgileData Scalable Cluster, MariaDB MaxScale, ScaleArc, ScaleBase <br/>\
-3. Daas(Database As A Service) : 클라우드 컴퓨팅 공급자가 제공하는 NewSQL<br/>\
-- DaaS 제공자가 시스템 튜닝(ex: 버퍼 풀), 복제 및 백업을 포함한 데이터베이스의 물리적 구성에 대한 책임 <br/>\
-- 고객들은 대시보드 또는 시스템을 제어하는 API와 함께 DBMS에 대한 연결 URL을 제공<br/>\
-- 예시 : Amazon Auroa, Clear DB <br/><br/>\
-<img src = "./img/NewSQL_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/NewSQL_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/NewSQL_3.png" style = "max-width:100%; height:auto;">\
+// NewSQL
+'# 정의 : ACID + NoSQL <br/>\
+- RDBMS 특성인 ACID를 보장하면서 OLTP 부하 패턴에 대해 NoSQL 수준의 성능을 제공하는 DBMS <br/><br/>\
+# 주요기능 <br/>\
+1. 데이터/트랜잭션 <br/>\
+- SQL 기반 상호작용 : App의 DBMs 연계시 SQL 사용해 통신 <br/>\
+- ACID 지원 : Commit 위한 필요속성인 ACID 지원해야 함 <br/>\
+- 비 잠금 동시성 제어 : 트랜잭션 동시성 제어 Non-Locking 구조 <br/><br/>\
+2. Infra <br/>\
+- 노드 단위 고성능 : 단일 DBMS 서버 노드 단위 확장, 고성능 보장 <br/>\
+- 병령/비 공유 아키텍처 : 병렬 수행시 고성능 처리, 분산 처리시 독립적 존재 <br/><br/>\
+# 핵심 기술 <br/>\
+1. 스토리지 관리 <br/>\
+- Main Memory Storage : In Memory DB / Paging(VoltDB), Column Store(MemSQL) <br/>\
+- Sharding : 물리적 타 DBMS 간 파티셔닝 수평분할, 분산 저장/조회 <br/><br/>\
+2. 트랜잭션/성능관리 <br/>\
+- 병행제어 : 2PL 대신 Time stamp Ordering(MVCC) 사용 <br/>\
+- Secondary Index : 기본키 x, 일반 속성들 서브셋으로 만들어진 인덱스 <br/>\
+- Replication : 쓰기 연산시, 복제본에서 승인되어 실행 <br/><br/>\
+<img src = "./img/NewSQL_1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/NewSQL_2.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/NewSQL_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 119회 합숙 3일차 관리 1교시 12번 \
 ',
 
 // 디지털 리터러시
