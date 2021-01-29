@@ -527,15 +527,14 @@ var answer = answer.concat(
 - Hold Out Method : Training Set으로 훈련하고 빼놓았던 Validation Set으로 검증하는 기법 <br/><br/>\
 1. Exhaustive CV <br/>\
 - Leave-p-Out CV(LpOCV) : nCp 개 가능한 만큼 반복 (n:전체, p:Validation Set 데이터 수) <br/>\
-<img src = "./img/ML_Evaluation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Leave-One-Out CV(LOOCV) : 전체 샘플 수 만큼 반복 (LpOCV p = 1경우) <br/>\
 <img src = "./img/LOOCV.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. Non-Exhaustive CV <br/>\
 - K-fold CV(KFCV) : Random, k개 subset 균등 분할(가장 널리 쓰임) <br/>\
 <img src = "./img/KFCV.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Repeated Learning-Testing(RLT) : Random, 비복원 추출(LpOCV 근사) <br/>\
-<font color = "red">* Exhaustive CV : 가능한 모든 경우의 수 만큼 수행 -> 연산 많아짐 <br/>\
 <img src = "./img/RLT.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<font color = "red">* Exhaustive CV : 가능한 모든 경우의 수 만큼 수행 -> 연산 많아짐 <br/>\
 * Non-Exhaustive CV : Random 부분 추출 기법, Exhaustive CV 근사치 <br/>\
 * RLT 에서 Random 복원 추출 (중복 허용)인 경우가 Monte-Carlo CV </font><br/><br/>\
 * 라이지움 87회 관리 2교시 2번\
