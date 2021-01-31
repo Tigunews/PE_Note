@@ -4502,13 +4502,18 @@ P 히스토그램 : Data 분포 <br/>\
 - 기간 : 스프린트 <br/>\
 - 미팅 : 일일스크럼, 스프린트 계획, 스프린트 리뷰 <br/>\
 - 산출물 : 제품 백로그, 스프린트 백로그, 소멸차트 <br/><br/>\
+# 팀 구성 <br/>\
+- 제품 책임자 : 제품 기능 목록 작성, 스프린트 운영관여 x <br/>\
+- 스크럼 마스터 : 조력자 역할, 에자일 촉진자, 개발 방해 요소 제거 <br/>\
+- 스크럼 팀 : 요구사항 구현, 제품 시연, 스크럼 회의 진행 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/Scrum.png" style = "max-width:100%; height:auto;"><br/>\
 - 요구정의 : 린스타트업, 디자인 싱킹 <br/>\
 - 프로젝트 준비 : 제품 백로그 <br/>\
 - 스프린트 수행 : 스프린트 계획 회의, 일일 스크럼, 스프린트, 스프린트 종료 데모, 스프린트 회고 <br/>\
 - 프로젝트 종료 : 프로젝트 교훈 미팅 <br/>\
-<img src = "./img/ScrumMeeting.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ScrumMeeting.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 1교시 1번\
 ',
   
 // Product Backlog
