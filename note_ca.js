@@ -77,6 +77,7 @@ var question = question.concat(
 '[InMemory]- In-Memory Computing',
 '[InMemory]- In-Memory Database',
 'Auto Scale Up, Out',
+'Library',
 );
 
 var answer = answer.concat(
@@ -1486,5 +1487,21 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 부하 기반 : 모니터링, 일정 수준 넘을시 알람 통보, 수행 <br/><br/>\
 # 서비스 적용 방안 제언 : 사전검토 / 구축 / 운영 -> Capex, Opex 절감, 부하 분산, 빠른 서비스 제공 <br/><br/>\
 * 라이지움 88회 관리 2교시 1번\
+',
+  
+// Library 
+'# 정의 : 함수, 데이터 타입 집합 <br/>\
+- 소프트웨어 개발에서 자주 쓰고 기초적인 함수 중복 개발을 피하기 위해 표준화된 함수 및 데이터 타입을 만들어 모아 놓은 집합 <br/>\
+# 종류 <br/>\
+- 정적(SLL) : 컴파일 시점에서 연결 <br/>\
+- 동적(DLL) : 실행 파일에서 라이브러리 기능 가능시에만 참조 및 호출 <br/><br/>\
+# DLL 장점 <br/>\
+- 리소스 절감 : 코드 모듈화 <br/>\
+- 배포 설치 : DLL 독립적 수정, 배포 가능 <br/>\
+- 개발 효율 : 분담 작업 인한 효율성 제고 <br/><br/>\
+# 유의 사항 <br/>\
+- DLL 선점 상황일 시, 프로그램 치명적 오류 발생 가능성 <br/>\
+- DLL 종속성 : 프로그램, DLL이 다른 DLL 함수 사용하는 경우 유의 <br/><br/>\
+* 123회 응용 1교시 3번\
 ',
 );
