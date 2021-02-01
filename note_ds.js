@@ -194,6 +194,7 @@ var question = question.concat(
 '[Gartner 2021][Resilient Delivery]- AI 엔지니어링',
 '[Gartner 2021][Resilient Delivery]- 초자동화',
 'Ray Tracing',
+'GADI',
 );
 
 var answer = answer.concat(
@@ -3547,5 +3548,24 @@ var answer = answer.concat(
 - 사실적 프로토타입 : CAD 응용, Prototype 모델링 활용 <br/>\
 - 과학 연구 : 소리 파형, 전자기파 파향 시각화 모델링 <br/><br/>\
 * 라이지움 85회 관리 1교시 1번\
+',
+  
+// GADI
+'# 정의 : Digital User 신원 신뢰 보장 플랫폼 <br/>\
+- Service Provicer가 어떠한 Digital Address Provider(디지털 주소 공급자)를 이용하더라도 User의 신원을 신뢰할 수 있도록 보장하는 플랫폼 <br/><br/>\
+# 구성요소 <br/>\
+1. 기능 <br/>\
+- 사용자 경험 : 신뢰할 수 있는 Issuer들의 다양한 Credentials <br/>\
+- 완성도 : 생태계에서 고유한 Digital Address <br/>\
+- 에코시스템 : 발급자가 검증한 Digital Address 통한 신뢰할 수 있는 신원 <br/><br/>\
+2. 기술 <br/>\
+- 블록체인 : 탈중앙화, 데이터 연결 <br/>\
+- DID : 분산형 Digital Identity 식별자 한 유형 <br/>\
+- Zero Knowledge Proof : 보유 여부 증명 <br/>\
+- 신뢰기반 프레임 워크 <br/>\
+- 이기종 플랫폼 호환성 : DID 관련 거래 교환 플랫폼 <br/>\
+- Inclusiveness 포용성 : User, DID 시스템간 상호 작용 일련 프로토콜 제공 <br/>\
+- Digital Address : 출생 증명서와 동등한 디지털 주소 <br/><br/>\
+* 123회 관리 1교시 12번\
 ',
 );
