@@ -130,6 +130,7 @@ var question = question.concat(
 '[Android]- Deeplink',
 '제로 트러스트 보안 모델',
 '재택,원격근무 정보보호 6대 실전 수칙',
+'CDR',
 );
 
 var answer = answer.concat(
@@ -2504,5 +2505,20 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 원격 접속 모니터링 강화 <br/>\
 - 개인정보, 기업정보 등 데이터 보안 <br/><br/>\
 * 라이지움 88회 관리 1교시 10번\
+',
+  
+// CDR
+'# 정의 : Active Content 위협 봉쇄 기술 <br/>\
+- Contents Disarm & Reconstruction <br/>\
+- 파일 내 실행 가능한 Active Content를 제거하거나 비활성화하여, Active Content를 통해 발생할 수 있는 잠재적 위협 원천 봉쇄 기술 <br/><br/>\
+# 절차 <br/>\
+- 문서 포맷 확인 : 확장자, 헤더 검사 <br/>\
+- 백신 검사 : 구조 분석, 컨텐츠 검사 <br/>\
+- 컨텐츠 분해 : Visible Contents, Macro, Embedded Object 추출 <br/>\
+- 컨텐츠 재구성 : 원본과 동일 포맷 문서 생성 <br/><br/>\
+# 기술 수행 방식 <br/>\
+- 변경 : 파일 내부 구조 변경 <br/>\
+- 제거 : 액티브 컨텐츠 제거 <br/>\
+- 전환 : 파일을 다른 형식으로 전환 \
 ',
 );
