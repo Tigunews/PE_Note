@@ -1821,6 +1821,7 @@ var answer = answer.concat(
 - HAZOP 분석 프로세스 반복 및 결과 보고서 작성 : 변이의 안전책 고려, 프로세스 반복, 결과보고 <br/><br/>\
 # 상세 비교 <br/>\
 <img src = "./img/FMEA_FTA_HAZOP.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 1교시 10번 <br/>\
 * 라이지움 88회 응용 4교시 5번 <br/>\
 * KPC 96회 관리 1교시 5번\
 ',
