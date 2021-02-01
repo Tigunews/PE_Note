@@ -22,6 +22,7 @@ var question = question.concat(
 '[AI]- 기계학습',
 '[AI]- 지도학습',
 '[AI]- Clustering',
+'[AI]- 지식 증류',
 '[AI][지도학습]- 머신러닝 예측모델',
 '[AI][지도학습]- 성능검증',
 '[AI][지도학습][성능검증]- Cross Validation',
@@ -479,6 +480,22 @@ var answer = answer.concat(
 - K-means Clustering : Centroid 기반 중심 찾아가는 방식 <br/>\
 - EM-Clustrering : Gaussian Mixture 모델 기반 / E-step, M-step / 반복 군집 형성 <br/>\
 - Dendrogram Clustering : 각 단계의 군집이 어떻게 형성되는지 확인하고 형성된 군집의 유사성 수준이 평가 가능한 다이어그램 \
+',
+  
+// 지식 증류
+'# 정의 : 큰 모델 파라미터 활용 학습 <br/>\
+- Knowledge Distillation <br/>\
+- 미리 학습된 큰 모델(Teacher Network)을 통해 새로운 모델(Student Network) 생성시 파라미터를 활용해 학습시간을 줄이는 기법 <br/><br/>\
+# 등장배경 <br/>\
+- 환경 최적화 : 딥러닝 모델 환경 <> 실제 적용 환경 <br/>\
+- 앙상블 측면 : 다량 유저 배포 어려움, 새로운 방식 앙상블 제시 <br/><br/>\
+# 구성요소 <br/>\
+- Teacher Network : 복잡한 고도 학습 모델 <br/>\
+- Student Network : 단순한 적용 학습 모델 <br/>\
+# 동작원리 <br/>\
+- Soft Label : 출력값의 분포 Soft화 (10^-6, 0.9, 0.1, 10^9 -> 0.05, 0.3, 0.2, 0.005) <br/>\
+- Distilliation Loss : Teacher Network 학습 후 Student Network 학습 <br/><br/>\
+* 123회 응용 1교시 9번\
 ',
   
 // 머신러닝 예측모델
