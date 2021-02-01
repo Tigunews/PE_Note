@@ -43,6 +43,7 @@ var question = question.concat(
 'Cloud GPU',
 'GPGPU',
 '[GPGPU]-CUDA',
+'Many core CPU',
 'Fabric Computing',
 '양자컴퓨팅',
 'Tiny OS',
@@ -908,6 +909,21 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/CUDA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CUDA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CUDA_3.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Many core CPU
+'# 정의 : 코어 집적, 극한 병렬화 프로세서 <br/>\
+- CPU에 수십개에서 수백개의 코어를 집적하여 극한의 병렬화된 실행을 목적으로 하는 프로세서 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ManycoreCPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용 : 머신러닝, 클라우드, 5G <br/><br/>\
+* NoC : 멀티 코어 스위치 연결 구조 <br/>\
+* CG : Core Group <br/>\
+* CPE : Computing Processing Elements <br/>\
+* MPE : Management Processing Element <br/>\
+* MC : Memory Controller <br/>\
+* LDM : Logical Disk Manager <br/><br/>\
+* 123회 응용 1교시 5번\
 ',
 
 // Fabric Computing 
