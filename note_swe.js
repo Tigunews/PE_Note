@@ -356,6 +356,7 @@ var question = question.concat(
 '[사업자 선정]- 협상 의한 계약체결',
 '[사업자 선정]- 낙찰자 결정방식',
 'Marshalling',
+'오픈소스 프로젝트관리 소프트웨어',
 );
 
 var answer = answer.concat(
@@ -5668,5 +5669,19 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - .NET : P/Invoke 프로세스 관리되지 않은 타입과 CLR 타입간 변화 <br/>\
 - Mozilla Application Framework : XPCOM 기술을 이용하는 스크립트와 응요 프로그램내 활용 <br/><br/>\
 * 라이지움 82회 관리 1교시 9번\
+',
+ 
+// 오픈소스 프로젝트관리 소프트웨어
+'# 정의 : 프로젝트 효율적 관리 오픈소스 소프트웨어 <br/>\
+- 프로젝트 계획, 조직, 성과측정 등 프로젝트를 효율적으로 관리하는것을 지원해주는 오픈소스 기반의 소프트웨어 <br/><br/>\
+# 종류 <br/>\
+- 계몽 도입 : Redmin, Trello <br/>\
+- Agile 관리 적용 : Jenkins, Jira <br/>\
+- 개발 적용 : SonarCube, Junit <br/>\
+- 개발 운영 : SVN, Git-Hub <br/><br/>\
+# 장단점 <br/>\
+- 장점 : Time To Market, 품질향상, ROI 증대, 생산성 향상 <br/>\
+- 단점 : 명세화 부족, 요구사항 잦은 변경, 사업관리 미흡, 대ㅔ형프로젝트 도입 어려움 <br/><br/>\
+* 123회 관리 1교시 8번\
 ',
 );
