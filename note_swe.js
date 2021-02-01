@@ -5573,7 +5573,8 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 # 사례 <br/>\
 - Appian : 인트라넷 내장 <br/>\
 - MS Power Apps : 사용자 친화적 UI <br/>\
-- Google App Maker : Drap and Drop \
+- Google App Maker : Drap and Drop <br/><br/>\
+* 123회 관리 1교시 6번\
 ',
   
 // 민간투자형 SW사업
