@@ -87,7 +87,7 @@ var question = question.concat(
 '[산업제어시스템]- SCADA',
 'ISO 26262',
 'IEC 61508',
-'[ISO/IEC 61508]- SIL',
+'[ISO/IEC 61508]- IEC 6150 (SIL)',
 'HILS, HIL 시뮬레이션',
 '소프트웨어 안전성 보증 프로세스',
 '소프트웨어 안전성 분석',
@@ -1705,7 +1705,7 @@ var answer = answer.concat(
 <img src = "./img/IEC61508.png" style = "width:100%; height:auto;">\
 ',
 
-// [ISO/IEC 61508]- SIL
+// [ISO/IEC 61508]- IEC 6150 SIL
 '# 정의 : ISO/IEC 61508 안전 무결성 수준 <br/>\
 - Safety Integrity Level <br/>\
 - Risk 정보에 따라 안전관련 시스템의 기능이 갖추어야할 사항을 규정한 등급 <br/><br/>\
