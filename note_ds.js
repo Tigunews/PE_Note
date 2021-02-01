@@ -49,7 +49,6 @@ var question = question.concat(
 '[핀테크]- Scraping',
 '[핀테크]- API',
 '[핀테크]- QR코드 기반 결제',
-'[IT 금융]- De-Fi',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
 '[이더리움] - 스마트계약(Smart Contract)',
@@ -112,6 +111,7 @@ var question = question.concat(
 '[블록체인]- 플랫폼 보안',
 '[블록체인]- BaaS',
 '[블록체인]- NFT',
+'[블록체인]- De-Fi',
 '[하이퍼레저]- 하이퍼레저 패브릭',
 'MaaS',
 'BERT',
@@ -1037,43 +1037,6 @@ var answer = answer.concat(
 * 120회 관리 3교시 1번\
 ',
   
-// De-Fi
-'# 정의 : Decentralized Finance <br/>\
-- 주로 암호화 화폐를 담보를 걸고 거래하는 탈중앙화된 분산금융 또는 분산재정 <br/><br/>\
-# 특징 <br/>\
-- 이더리움 기반 스마트 컨트랙트 <br/>\
-- 대출시 담보 150% <br/>\
-- 랜딩수익, 유동성 <br/><br/>\
-# 동작 절차 <br/>\
-<img src = "./img/DeFiFlow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 구성요소 <br/>\
-1. 프로그래밍 측면 <br/>\
-- Smart Contract <br/>\
-- Block Chain <br/>\
-- Solidity : Ethereum 기반 스마트 컨트랙트와 디앱 개발언어 <br/><br/>\
-2. 플랫폼 측면 <br/>\
-- MakerDAO : 자산 담보 Stable Coin 발행 프로젝트 <br/>\
-- Compound : 플랫폼 투자자 자산 대출, 이자 구조 <br/>\
-- Synthetix : 다양한 자산 거래 플랫폼 <br/><br/>\
-3. 암호화폐 측면 <br/>\
-- DEX : 탈중앙화 분산형 암호화폐 거래소 <br/>\
-- DeFi Coin : 디파이 생태계 발행 토큰 <br/>\
-- Stable Coin : 실물 자산 연동 안정성 보장 암호화폐 <br/><br/>\
-# Defi 이슈 및 해결방안 <br/>\
-1. 이슈 <br/>\
-- Smart Cotract 취약점 <br/>\
-- KYC 없이 자금세탁 이용 <br/>\
-- 미숙한 생태계 <br/><br/>\
-2. 해결방안 <br/>\
-- Smart Contract 검사 <br/>\
-- KYC(고객인증제도) 제도 적용 <br/>\
-- 네트워크 상호운용성 구축 <br/><br/>\
-# 기존금융 비교 <br/>\
-<img src = "./img/DeFi_Compare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* KPC 97회 1교시 2번 <br/>\
-* 라이지움 84회 1교시 2번\
-',
-
 // 아바커스 프로젝트
 '# 정의 : 사용자 지속 인증 Trust API / 구글 / 비밀번호 대체<br/>\
 - 구글이 진행하는 비밀번호 대체해 사용자를 지속 인증하는 트러스트 API<br/>\
@@ -2153,6 +2116,45 @@ var answer = answer.concat(
 <img src = "./img/NFT_Future.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 2교시 관리 6번\
 ',
+  
+// De-Fi
+'# 정의 : Decentralized Finance <br/>\
+- 주로 암호화 화폐를 담보를 걸고 거래하는 탈중앙화된 분산금융 또는 분산재정 <br/><br/>\
+# 특징 <br/>\
+- 이더리움 기반 스마트 컨트랙트 <br/>\
+- 대출시 담보 150% <br/>\
+- 랜딩수익, 유동성 <br/><br/>\
+# 동작 절차 <br/>\
+<img src = "./img/DeFiFlow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 프로그래밍 측면 <br/>\
+- Smart Contract <br/>\
+- Block Chain <br/>\
+- Solidity : Ethereum 기반 스마트 컨트랙트와 디앱 개발언어 <br/><br/>\
+2. 플랫폼 측면 <br/>\
+- MakerDAO : 자산 담보 Stable Coin 발행 프로젝트 <br/>\
+- Compound : 플랫폼 투자자 자산 대출, 이자 구조 <br/>\
+- Synthetix : 다양한 자산 거래 플랫폼 <br/><br/>\
+3. 암호화폐 측면 <br/>\
+- DEX : 탈중앙화 분산형 암호화폐 거래소 <br/>\
+- DeFi Coin : 디파이 생태계 발행 토큰 <br/>\
+- Stable Coin : 실물 자산 연동 안정성 보장 암호화폐 <br/><br/>\
+# Defi 이슈 및 해결방안 <br/>\
+1. 이슈 <br/>\
+- Smart Cotract 취약점 <br/>\
+- KYC 없이 자금세탁 이용 <br/>\
+- 미숙한 생태계 <br/><br/>\
+2. 해결방안 <br/>\
+- Smart Contract 검사 <br/>\
+- KYC(고객인증제도) 제도 적용 <br/>\
+- 네트워크 상호운용성 구축 <br/><br/>\
+# 기존금융 비교 <br/>\
+<img src = "./img/DeFi_Compare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 123회 관리 1교시 4번 <br/>\
+* KPC 97회 1교시 2번 <br/>\
+* 라이지움 84회 1교시 2번\
+',
+
   
 // 하이퍼레저 패브릭
 '# 정의 : 개발 위한 허가형 프라이빗 플랫폼 <br/>\
