@@ -1330,6 +1330,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - BSS Color 기술 : Color 기반으로 공간 재사용, 단말기가 속한 AP 관할 BSS확인 <br/>\
 - CCA 레벨 제어 : 각 단말기에 전송되는 파워 조절 기술 <br/>\
 - Target Wake Time : Access Time 조절 및 절전을 통한 불필요 전송 방지 <br/><br/>\
+* 123회 응용 1교시 7번 <br/>\
 * KPC 92회 응용 1교시 15번\
 ',
 
