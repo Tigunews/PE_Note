@@ -70,7 +70,6 @@ var question = question.concat(
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'RTLS(Real-Time Locating System)',
-'Wi-Fi 6',
 'eMTC',
 'Network Storage',
 '자가망 구축 가이드라인',
@@ -1417,15 +1416,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - AoA, ToA, TDoA, RSS(Received Signal Strength, 전파강도) <br/><br/>\
 <img src = "./img/RTLS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
-
-// Wi-Fi 6
-'# 정의 : 다중접속 환경에 최적화된 Wifi <br/><br/>\
-# 기술요소 <br/>\
-- 핸드오버 기술 : 기지국 간 통신 서비스 끊김 현상을 최소화 <br/>\
-- 직교주파수분할다중액세스(OFDMA;Orthogonal Frequency Division Multiple Access) : 원하는 신호만 취하는 방식으로 최소 대역폭을 확보하면서 통신이 가능한 기술 <br/>\
-- MU-MIMO(Multi User Multibple Input Multiple Output) : 한번에 많은 데이터 전송, 하나의 AP에서 더 많은 동시 클라이언트 지원<br/>\
-- 공간 제어용(Spatial Reuse) : 다른 단말의 통신을 방해하지 않는다면 통신 허용\
-', 
 
 // eMTC
 '# 정의 : IoT 전용 통신 기술 / 이동성 / 지속성 <br/>\
