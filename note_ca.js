@@ -18,6 +18,7 @@ var question = question.concat(
 '[Interrupt]- Non Maskable Interrupt',
 '[Interrupt]- Vectored Interrupt',
 'Memory 영역',
+'Memory Leak',
 'Process',
 'Thread',
 'Buffering / Spooling',
@@ -419,6 +420,19 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Data : 전역변수, 정적변수, 배열, 구조체 / global, static, array, structure <br/>\
 - Heap : 동적 메모리 / malloc(), new() <br/>\
 - Stack : 지역변수, 매개변수, 리턴 값 / \
+',
+  
+// Memory Leak
+'# 정의 : 메모리 비반환 점유 현상 <br/>\
+- 컴퓨터 프로그램이 메모리를 할당된 메모리를 사용한 다음 반환하지 않아 메모리를 계속 점유하고 있는 현상 <br/><br/>\
+# 문제점 <br/>\
+- 성능 : 프로그램 성능저하 문제 <br/>\
+- 오류 : 메모리 부족으로 인한 시스템 오류 <br/>\
+- 보안 : 버퍼 오버플로우 <br/><br/>\
+# 해결방법 <br/>\
+- 디버깅 : 메모리 모니터링 <br/>\
+- 코드 : 프로그램 Code Inspection 수행 <br/><br/>\
+* 123회 응용 1교시 11번\
 ',
 
 // Process
