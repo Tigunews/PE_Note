@@ -87,7 +87,6 @@ var question = question.concat(
 '마이크로 그리드(MicroGrid)',
 '[산업제어시스템]- SCADA',
 'ISO 26262',
-'IEC 6150',
 'IEC 61508',
 '[ISO/IEC 61508]- SIL',
 'HILS, HIL 시뮬레이션',
@@ -1757,15 +1756,19 @@ var answer = answer.concat(
 ',
 
 // [ISO/IEC 61508]- SIL
-'# 정의 : ISO/IEC 61508 안전성 보전 등급<br/>\
+'# 정의 : ISO/IEC 61508 안전 무결성 수준 <br/>\
 - Safety Integrity Level <br/>\
 - Risk 정보에 따라 안전관련 시스템의 기능이 갖추어야할 사항을 규정한 등급 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/SoftwareSaftyStatus.png" style = "width:100%; height:auto;"><br/><br/>\
-# 구성 <br/>\
+# 유형 <br/>\
+- 하드웨어 안전 무결성 : Random Failure, 환경적 요소, 부품 제작상 허용 오차<br/>\
+- 시스템 안전 무결성 : Systematic Failure, 인적 오류(안전 요구사항 명세, 설계, 구현)<br/><br/>\
+# 결정 방법 <br/>\
 - High demanded rate : 안전 관련 기능 대한 사용이 계속적으로 발생시 적용 (ex: 센서) <br/>\
 - Low demand rate : 사용빈도수 대략 년 회 미만시 (ex: 에어백) <br/><br/>\
-<img src = "./img/SIL.png", style = "max-width:100%; height:auto;">\
+<img src = "./img/SIL.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 1교시 13번\
 ',
 
 // HILS
