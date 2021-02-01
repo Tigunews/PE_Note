@@ -87,6 +87,7 @@ var question = question.concat(
 '마이크로 그리드(MicroGrid)',
 '[산업제어시스템]- SCADA',
 'ISO 26262',
+'IEC 6150',
 'IEC 61508',
 '[ISO/IEC 61508]- SIL',
 'HILS, HIL 시뮬레이션',
@@ -1735,6 +1736,19 @@ var answer = answer.concat(
 11. ISO 26262 반도체 적용 가이드라인(반도체 아날로그, 디지털 부품대한 적용 지침 및 고장 분석 방법 등) <br/>\
 12. 모터사이클 적용(적용방법)<br/><br/>\
 * Second Edition 11, 12 추가 \
+',
+  
+// IEC 6150
+'# 정의 : IEC-61508 안전 무결성 수준 (SIL;Safety Integrity Level) <br/>\
+- 주어진 조건하에 있는 안전 관련 시스템이 주어진 시간 내에 요구되는 안전 기능을 만족스럽게 수행할 수 있는 확률 <br/><br/>\
+# 유형 <br/>\
+- 하드웨어 안전 무결성 : Random Failure, 환경적 요소, 부품 제작상 허용 오차 <br/>\
+- 시스템 안전 무결성 : Systematic Failure, 인적 오류(안전 요구사항 명세, 설계, 구현) <br/><br/>\
+# 안전 무결성 결정 방법 <br/>\
+<img src = "./img/SIL.png" style = "width:100%; height:auto;"><br/>\
+- Low Demand Rate : 연간 1회 이하 (에어벡, 비상 정지 시스템) <br/>\
+- High Demand Rate : 연간 1회 이상 (고요구 : 브레이크, 연속 작동 : 가스 감지기) <br/><br/>\
+* 123회 응용 1교시 13번\
 ',
 
 // ISO 61508
