@@ -33,6 +33,7 @@ var question = question.concat(
 '[메모리 관리][할당 기법][연속 로딩]- 다중 분할 할당',
 '[메모리 관리][할당 기법]- 분산 로딩 기법(Virtual Memory, Paging, Segmentation)',
 '[메모리 관리][할당 기법]- 단편화',
+'[메모리 관리]- Page Fault',
 '메모리 인터리빙',
 '[커널 메모리 할당]- Buddy allocator',
 '[커널 메모리 할당]- Slab allocator',
@@ -363,7 +364,10 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 기계 착오 : CPU 기능적 오류 <br/>\
 - 외부 신호 : Time slice, Keyboard <br/>\
 - 입출력 : 입출력 데이터 오류, 이상현상 <br/><br/>\
-2. 내부 <br/>\
+2. 내부 : 안정된 시스템 동작 위해 사전 정의 발생 <br/>\
+- Clock Interrupt <br/>\
+└ CPU 모니터링(특정 프로세스 집중 방지)<br/>\
+└ 문맥 교환(문맥 교환 타이밍) <br/>\
 - 프로그램 검사 : div 0, Overflow, Underflow <br/><br/>\
 3. SW <br/>\
 - SVC(SuperVisorCall) : 명령 요청 발생, 복잡한 입/출력, 기억장치 할당 <br/><br/>\
@@ -379,6 +383,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Interrupt_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 2교시 1번 <br/>\
 * 라이지움 86회 4교시 6번\
 ',
   
@@ -710,6 +715,17 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # 해결방법 (Relocation) <br/>\
 - 통합 기법 : 인접된 빈 분할 공간 통합 <br/>\
 - 압축 기법 : Garbage Collection \
+',
+  
+// Page Fault
+'# 정의 : 가상 메모리 접근 에러 <br/>\
+- 자신의 주소 공간에는 존재하지만 시스템 RAM에는 현재 없는 데이터나 코드에 접근 시도하였을 경우 발생하는 현상 <br/><br/>\
+# 운영체제 동작 <br/>\
+- 검색 : 원하는 페이지 디스크 위치 Load <br/>\
+- 재설정 : MMU 주소 검색 재설정 <br/>\
+- 할당 : 특수 페이지경우 새 Page 할당 (Copy On Write Page) <br/>\
+- 주소 수령 : 원하는 주소 다른곳에서 가져오기 <br/><br/>\
+* 123회 응용 2교시 1번\
 ',
   
 // 메모리 인터리빙
