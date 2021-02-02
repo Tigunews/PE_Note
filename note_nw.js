@@ -727,6 +727,8 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 // Subnetting 
 '# 정의 : 하나의 NW를 여러개의 서브넷으로 분할하는 주소 이용의 효율화 기법 <br/>\
 - Subnet Mask를 통해 2단계 계층(Classful)에서 3단계 계층(Classless)구조로 변화 적용 <br/><br/>\
+# 공식 <br/>\
+- 이용자수(y) = 2^x -2 <br/><br/>\
 <img src = "./img/Subnetting_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Subnetting_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Subnetting_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
