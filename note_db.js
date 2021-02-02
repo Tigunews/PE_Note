@@ -82,6 +82,8 @@ var question = question.concat(
 '[통계]- 차등정보보호',
 '[통계]- 회귀 분석',
 '[통계]- 판별 분석',
+'[통계][분석기법]- 주성분 분석',
+'[통계][분석기법]- 다차원 척도법',
 '[통계]- 타당도',
 '[통계]- 신뢰도',
 '데이터 사이언스',
@@ -1556,6 +1558,9 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 추정 : 모델 추정 <br/>\
 - 검증 : 모델 검증 <br/>\
 - 예측 : 목적 변수 예측 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/RegressionModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 2교시 4번 <br/>\
 * KPC 91회 3교시 1번\
 ',
   
