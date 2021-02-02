@@ -2228,20 +2228,15 @@ var answer = answer.concat(
 '# 정의 : 6단계 구성 데이터 마이닝 방법론 <br/>\
 - 유럽에서 시작되어 비즈니스의 이해를 바탕으로 데이터 분석 목적의 6단계로 진행되는 데이터 마이닝 방법론 <br/><br/>\
 # 구성도 <br/>\
-<img src = "./img/CRISP-DM-Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/CRISP_DM_Struct.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성 <br/>\
 - Phases : 기획, 수집, 분석 <br/>\
 - Generic Tasks : 단일 프로세스 완벽 수행 단위(데이터 정제) <br/>\
 - Specialized Tasks : Generic Tasks 구체적으로 나눈 단계 <br/>\
 - Process Instances : 데이터 마이닝 위한 구체적 실행 <br/><br/>\
 # 프로세스 <br/>\
-<img src = "./img/CRISP-DM-Process.png" style = "max-width:100%; height:auto;"><br/>\
-- 비즈니스 이해 : 참고자료, 커뮤니케이션 통한 이해 단계 / 업무 목적 파악, 상황 파악<br/>\
-- 데이터 이해 : 데이터 수집 및 속성 이해, 문제점 식별 인사이트 발견 / 초기 데이터 수집, 데이터 품질 확인 <br/>\
-- 데이터 준비 : 정제, 생성 등 분석 가능한 상태로 만드는 단계 / 분석용 데이터 셋 선택, 정제, 통합, Training/Test 데이터 분리 <br/>\
-- 모델링 : 모델링 기법, 알고리즘 선택, 파라미터 최적화 단계 / 모델링 기법 선택, 테스트 계획 설계, 모델작성, 평가 <br/>\
-- 평가 : 목적 부합 평가, 결과 수용 판단 / 분석결과 평가, 모델링 과정 평가, 모델 적용성 평가 <br/>\
-- 전개 : 완성된 모델 업무 적용 위한 계획 수립 / 전개 계획 수립, 모니터링 유지보수 계획, 프로젝트 종료 보고서 작성, 리뷰\
+<img src = "./img/CRISP_DM_Process.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CRISP_DM_Detail.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 추천 시스템
