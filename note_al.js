@@ -1819,6 +1819,7 @@ var answer = answer.concat(
 3. 탐색적 공격(Exploratory Attacks) <br/>\
 - 모델 역추적성 문제 대응 위한 XAI 적용 <br/>\
 - 모방모델 대안 필요 <br/><br/>\
+* 123회 관리 2교시 2번 <br/>\
 * 119회 응용 2교시 3번\
 ',
   
