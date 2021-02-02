@@ -221,6 +221,20 @@ var answer = answer.concat(
 <img src = "./img/ISP_Output.png" style = "max-width:100%; height:auto;">\
 ',
  
+// ISP 수립 공통가이드(제4판)
+'# 주요 개정사항 <br/>\
+<img src = "./img/ISP4NewContents.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 내용 <br/>\
+- 규정사항 : ISP 수립 절차 및 준수사항 등 <br/>\
+- 적용대상 : 각 중앙관서 모든 ISP, 정보화 이외 일반재정, R&D 분야 ISP <br/>\
+- 결과활용 : 사압 타당성, 실현 가능성, 규모 적정성, 예산 편성 <br/><br/>\
+# 추진 및 검토 절차 <br/>\
+<img src = "./img/ISP_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기본 구성 내용 <br/>\
+<img src = "./img/ISP_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 2교시 6번\
+',
+ 
 // 플랫폼 경제
 '# 정의 : 플랫폼 기반 경제 활동 / 인터넷 기술 / 기업 소비자 연결 <br/>\
 - 인터넷 기술의 발전으로 네트워크 상에서 기업과 소비자를 연결하는 디지털 플랫폼을 기반으로 상품 및 서비스의 공급자와 수요자가 거래하는 경제활동\
