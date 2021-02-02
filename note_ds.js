@@ -259,6 +259,7 @@ var answer = answer.concat(
 - BOM(Build Operate Manage) : 구축,유지,제공 계약 월단위 지불 <br/>\
 - BOT(Build Operate Transfer) : 아웃소싱 후 직접 유지관리 <br/>\
 - BOO(Build Own Operate) : 직접 모든 인프라 구축 및 소유 <br/><br/>\
+* 123회 응용 2교시 3번 <br/>\
 * 117회 관리 1교시 13번\
 ',
   
