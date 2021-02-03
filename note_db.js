@@ -1393,15 +1393,21 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
   
 // Hilbert R-Tree
 '# 정의 : 힐버트 곡선을 활용한 대용량의 공간데이터베이스 구축 <br/>\
-- 공간 챙무 곡선인 Hillbert 곡선을 이용해서 대용량의 데이터를 고비용의 분할 과정 없이 R-Tree를 구성하는 기법 <br/><br/>\
+- Hilbert 곡선을 이용해서 대용량의 데이터를 고비용의 분할 과정 없이 R-Tree를 구성하는 기법 <br/><br/>\
 # 특징 <br/>\
-- MBR군집화 : 일정 개수 군집화후 다른 차원 데이터 정렬 <br/>\
-- 겹침최소화 : Hillbert 곡선 사용, 성능 향상 <br/><br/>\
+- 고속 연산 : 고비용 분할 과정 없이 R-Tree 구성 <br/>\
+- GPU 활용 : Hilbert 매핑 병렬화, 벌크로딩 고속화 / 45배 향상 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/HillbertRTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Hilbert Cell : 공간의 차수가 1인 경우의 Hilbert 곡선 <br/>\
+- Hiblert Gene : 이전 차수 곡선 통한 다음 차수 생성 정보 <br/>\
+- GPGPU : 일반 연산 가능 설계 GPU <br/><br/>\
 # 활용 <br/>\
 - 벌크 로딩 : 고속화, 공간활용도 증가 <br/>\
 - 효율적 질의 : 인덱스 성능 향상 <br/><br/>\
+# R-Tree 비교 <br/>\
+<img src = "./img/Hilbert_RTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 1교시 13번\
 ',
   
