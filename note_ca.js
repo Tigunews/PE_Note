@@ -42,6 +42,7 @@ var question = question.concat(
 'Cache Memory',
 '[Cache]- Cache 일관성',
 '[Cache]- MESI',
+'DMA',
 'FeRAM',
 'Cloud GPU',
 'GPGPU',
@@ -900,6 +901,29 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # 상세 설명 <br/>\
 <img src = "./img/MESI.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/MESI_ProtocolDetail.png" style = "max-width:100%; height:auto;">\
+',
+  
+// DMA
+'# 정의 : 주변장치, 주기억장치 데이터 전송 장치 <br/>\
+- CPU를 통하지 않고 주변장치(I/O)와 주기억장치 사이의 데이터 전송을 담당하는 장치 <br/><br/>\
+# 특징 <br/>\
+- CPU Utilization 향상 : CPU 다른 작업 수행 가능 <br/>\
+- Multi Process 환경 유리 : 프로세스 CPU 작업 병렬화 <br/>\
+- Process 응답시간 향상 : 프로세스 대기 시간 감소 <br/><br/>\
+# 동작원리 <br/>\
+<img src = "./img/DMA_Overview.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/DMA_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작 모드 <br/>\
+1. 전송 방식 <br/>\
+- Burst Mode(Block Mode) : 블록 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
+- Word Mode(Cyucle Stealing) : 워드 단위, Memory Cycle 훔쳐서 수행, CPU 보다 우선 <br/>\
+- Demand Trasnfer Mode : 바이트 단위, 단일 프로그램 채널 사용 <br/><br/>\
+2. 연결 방식 <br/>\
+- 단일 버스 : CPU, RAM, I/O, DMAC 단일 버스 연결 / 1회 연결 2번 사용 <br/>\
+- 단일 버스 통합 방식 : 여러 I/O 가 DMA 연결 / 1회 연결 1번 사용 <br/>\
+- 입출력 버스 방식 : 시스템, 입출력 버스 분리, 다양한 속도 I/O 처리, DMAC가 복잡 <br/>\
+* DMAC : Direct Memory Access Controller <br/><br/>\
+* 123회 응용 4교시 1번\
 ',
 
 // FeRAM
