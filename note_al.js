@@ -114,6 +114,7 @@ var question = question.concat(
 '[AI]- 지능형 CCTV',
 '[AI]- 지능형 로봇',
 '[AI]- NLP',
+'[AI][NLP]- NER',
 '[AI][NLP]- 워드 임베딩',
 '[AI][NLP]- TF-IDF',
 '[AI][NLP]- Word2Vec',
@@ -1930,11 +1931,37 @@ var answer = answer.concat(
 - Sentance Planning : 질문에 적합한 자연어 문법을 계획 및 생성 \
 ',
   
+// NER
+'# 정의 : 엔티티 인식 추출 분류 기법 <br/>\
+- Named Entity Recognition <br/>\
+- 문자열 안에서 NE의 위치를 알아내고, 사전 정의한 카테고리에 다라 알맞게 분류하는 작업 <br/><br/>\
+# 유형 <br/>\
+- Generic NEs : 인물, 장소, 명칭 해당 <br/>\
+- Domain-specific NEs : 단백질, 효소, 유전자 등 전문 분야 용어 해당 <br/><br/>\
+# Tagging System (BIESO, BIO(자주쓰임))<br/>\
+- Begin : 개체명이 시작 <br/>\
+- Inside : 토큰이 개체명 중간에 존재 <br/>\
+- End : 개체명의 마지막 위치 <br/>\
+- Singleton : 하나의 토큰이 하나의 개체명일 때 <br/>\
+- Outside : 개체명이 아닐 경우 <br/>\
+<img src = "./img/BEISO_System.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구현 방법 <br/>\
+- 규칙기반 : Domain-specific 사전 적용, 패턴 적용 접근 (높은 정확도, 낮은 재현율) <br/>\
+- 비지도 학습 : 문맥유사도 기반 Clustering (지도학습 비교 얕은 지식 의존) <br/>\
+- 변수 기반 지도학습 : Feature base 지도학습 <br/><br/>\
+# 구조 <br/>\
+- 입력 분산 표현 : Pre-trained Word embedding <br/>\
+- Context Encoder : CNN, RNN <br/>\
+- Tag Decoder : Softmax, RNN <br/><br/>\
+* 123회 관리 4교시 4번\
+',
+  
 // 워드 임베딩
 '# 정의 : 단어간 유사도 및 중요도 파악을 위해 단어 저차원의 실수 벡터로 맵핑하여 의미적으로 비슷한 단어를 가깝게 배치하는 자연어 처리 모델링 기술 <br/><br/>\
 # 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\
 # Dense Representation Embedding 유형 <br/>\
 <img src = "./img/DenseBasedEmbedding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 4번\
 * KPC 96회 관리 4교시 5번\
 ',
   
