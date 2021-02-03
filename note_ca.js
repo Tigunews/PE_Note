@@ -27,6 +27,7 @@ var question = question.concat(
 '[고가용성]-NUMA 시스템',
 '우선순위역전현상',
 'WDT',
+'반도체 종류',
 '메모리 관리 기법',
 '[메모리 관리]- 할당 기법',
 '[메모리 관리][할당 기법][연속 로딩]- 단일 분할 할당',
@@ -648,6 +649,21 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/WDT_SourceCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 다단계 참고 <br/>\
 - Reset > Kick > Timeout > Enable > Timeout > Timeout되면 Trigger Correction Action \
+',
+  
+// 반도체 종류
+'# Overview <br/>\
+<img src = "./img/SemiConductorType.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+# 메모리 반도체 <br/>\
+- 개념 : 정보를 저장하는 용도로 사용되는 반도체 <br/>\
+- 종류 <br/>\
+1) RAM : DRAM,SDRAM,RDRAM,DDR SDRAM / SRAM <br/>\
+2) ROM : EPROM, EEPROM, FLASH(NAND, NOR) <br/><br/>\
+# 비메모리 반도체 <br/>\
+- 개념 : 데이터 연산,제어 등 정보처리 역할을 수행하는 반도체 <br/>\
+- 종류 <br/>\
+1) 시스템 판도체 : 판단,연산 기능(CPU, AP), 통신 기능(모뎀), 수집 기능(이미지,라이다 센서) <br/>\
+2) 광,개별 소재 : LED 등과 같이 회로를 구성하는 각각의 소자 \
 ',
   
 // 메모리 관리 기법
