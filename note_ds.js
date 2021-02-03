@@ -195,6 +195,7 @@ var question = question.concat(
 '[Gartner 2021][Resilient Delivery]- 초자동화',
 'Ray Tracing',
 'GADI',
+'MPEG',
 );
 
 var answer = answer.concat(
@@ -884,6 +885,25 @@ var answer = answer.concat(
 - DID Auth : 사설키 제어 증명 인증 / DIF<br/>\
 - Verifiable Credentials : 증명서 / W3C<br/><br/>\
 * 119회 관리 1교시 4번\
+',
+  
+// GADI
+'# 정의 : Digital User 신원 신뢰 보장 플랫폼 <br/>\
+- Service Provicer가 어떠한 Digital Address Provider(디지털 주소 공급자)를 이용하더라도 User의 신원을 신뢰할 수 있도록 보장하는 플랫폼 <br/><br/>\
+# 구성요소 <br/>\
+1. 기능 <br/>\
+- 사용자 경험 : 신뢰할 수 있는 Issuer들의 다양한 Credentials <br/>\
+- 완성도 : 생태계에서 고유한 Digital Address <br/>\
+- 에코시스템 : 발급자가 검증한 Digital Address 통한 신뢰할 수 있는 신원 <br/><br/>\
+2. 기술 <br/>\
+- 블록체인 : 탈중앙화, 데이터 연결 <br/>\
+- DID : 분산형 Digital Identity 식별자 한 유형 <br/>\
+- Zero Knowledge Proof : 보유 여부 증명 <br/>\
+- 신뢰기반 프레임 워크 <br/>\
+- 이기종 플랫폼 호환성 : DID 관련 거래 교환 플랫폼 <br/>\
+- Inclusiveness 포용성 : User, DID 시스템간 상호 작용 일련 프로토콜 제공 <br/>\
+- Digital Address : 출생 증명서와 동등한 디지털 주소 <br/><br/>\
+* 123회 관리 1교시 12번\
 ',
   
 // 바이오정보 분산관리
@@ -3564,22 +3584,33 @@ var answer = answer.concat(
 * 라이지움 85회 관리 1교시 1번\
 ',
   
-// GADI
-'# 정의 : Digital User 신원 신뢰 보장 플랫폼 <br/>\
-- Service Provicer가 어떠한 Digital Address Provider(디지털 주소 공급자)를 이용하더라도 User의 신원을 신뢰할 수 있도록 보장하는 플랫폼 <br/><br/>\
-# 구성요소 <br/>\
-1. 기능 <br/>\
-- 사용자 경험 : 신뢰할 수 있는 Issuer들의 다양한 Credentials <br/>\
-- 완성도 : 생태계에서 고유한 Digital Address <br/>\
-- 에코시스템 : 발급자가 검증한 Digital Address 통한 신뢰할 수 있는 신원 <br/><br/>\
-2. 기술 <br/>\
-- 블록체인 : 탈중앙화, 데이터 연결 <br/>\
-- DID : 분산형 Digital Identity 식별자 한 유형 <br/>\
-- Zero Knowledge Proof : 보유 여부 증명 <br/>\
-- 신뢰기반 프레임 워크 <br/>\
-- 이기종 플랫폼 호환성 : DID 관련 거래 교환 플랫폼 <br/>\
-- Inclusiveness 포용성 : User, DID 시스템간 상호 작용 일련 프로토콜 제공 <br/>\
-- Digital Address : 출생 증명서와 동등한 디지털 주소 <br/><br/>\
-* 123회 관리 1교시 12번\
+// MPEG
+'# 정의 : 공간/시간적 동영상 압축 알고리즘 <br/>\
+- 정지영상의 압축/복원인 JPEG를 동영상에 적용시켜 공간적 압축 뿐만이 아니라 시간적 압축 기법을 적용한 표준 동영상 압축 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- 공간 : 화면내 압축 <br/>\
+- 시간 : 화면간 압축 <br/><br/>\
+# 공간적 압축기법 <br/>\
+1. 색차, 공간주파수 연관성 : 상관도, 색차 비례 관계 <br/><br/>\
+2. 적용 알고리즘 <br/>\
+- DCT(Discrete Cosine Transform) : 이산 코사인 변환으로 높은 공간 주파수 필터링 <br/>\
+- 양자화 : 인간이 구별하기 힘든 범위내에서 DCT 계수 반올림 <br/>\
+3. 절차 <br/>\
+- 분할 : 기존 영상 분할 구성 <br/>\
+- 변환 : 2차원 평면 공간의 컬러 정보 -> 2차원 주파수 정보 (푸리에 변환) <br/>\
+- 처리 : 인간이 구별하기 힘든 범위내 DCT 계수 반올림 <br/>\
+<font color = "red">\
+* 푸리에 변환(Fourier Transform) : 시간, 공간에 대한 함수를 주파수 성분으로 분환하는 변환 <br/><br/>\
+</font>\
+# 시간적 압축기법 <br/>\
+1. Motion Estimation <br/>\
+- 메크로 블록 설정 : 16*16 분할 <br/>\
+- 메크로 블록 검색 : 동일 매크로 블럭 검색 및 확인 <br/>\
+- Motion Vector 산출 : 변화 블록 움직임 Vector 화 <br/><br/>\
+2. Motion Compensation <br/>\
+- 매크로 블록 복사 : 프레임 이동 위치 공지 및 보상 영상 구성 <br/>\
+- 움직임 보상 : 모든 매크로 블록 모션 벡터 근거, 복사되어 보상 영상 구성 <br/>\
+- 부호화 : 보상 영상, 원래 프레임 통한 움직임 좌표 저장(데이터양 적음) <br/><br/>\
+* 116회 응용 4교시 6번\
 ',
 );
