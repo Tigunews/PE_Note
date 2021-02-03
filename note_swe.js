@@ -1594,6 +1594,10 @@ var answer = answer.concat(
 - API Routing : 다수 엔드포인트/데이터 센터 환경 내 라우팅 기술 / 서비스 단일 접점 <br/>\
 - Mediation : JSON 기반 요청메시지 처리 및 프로토콜 변환 기술 / 메시징 패턴 변조 <br/>\
 - Logging & Metering : 다양한 루트 별 호출 로그 공통 관리 기술 / 운영 모니터링, 최적화 <br/><br/>\
+# 주요기능 <br/>\
+- 인증 및 보안, 라우팅 및 로드밸런싱, 마이크로 서비스별 관리, API 로깅 통계 <br/><br/>\
+# 사례 : 아마존 AWS, Netflix Ribbon, MS Azure, Kong 등 <br/><br/>\
+* 123회 관리 3교시 4번 <br/>\
 * KPC 92회 관리 3교시 2번\
 ',
  
