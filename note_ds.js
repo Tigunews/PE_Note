@@ -115,7 +115,6 @@ var question = question.concat(
 '[블록체인]- De-Fi',
 '[하이퍼레저]- 하이퍼레저 패브릭',
 'MaaS',
-'BERT',
 'Dark Net',
 'RPA',
 'Process Mining',
@@ -2222,12 +2221,6 @@ var answer = answer.concat(
 4. 정책의 통합 : 도시 계획, 인프라 정비, 인센티브 시책, 정책 입안 <br/><br/>\
 * KPC 91회 관리 1교시 1번\
 ',
-
-// BERT
-'# 정의 : 언어표현 사전 훈련 방법 / 2018년 구글 <br/>\
-- Bidirectional Encoder Representations from Transformers <br/>\
-- 2018년 구글에서 공개한 Language Representation Model로 언어 표현을 사전 훈련하는 방법<br/>\
-큰 텍스트 모음(BooksCorpus 및 Wikipedia)에서 범용 "언어 이해"모델을 학습한 다음 해당 모델을 다운 스트림 NLP 작업(미세 조정)에 사용하는 모델',
 
 // Dark Net
 '# 정의 : 폐쇄형 사설 분산 P2P 네트워크 <br/>\
