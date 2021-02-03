@@ -118,6 +118,7 @@ var question = question.concat(
 '[AI][NLP]- 워드 임베딩',
 '[AI][NLP]- TF-IDF',
 '[AI][NLP]- Word2Vec',
+'[AI][NLP]- BERT',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining][Text]- 로봇 저널리즘',
@@ -1985,6 +1986,23 @@ var answer = answer.concat(
 # TF-IDF, Word2Vec 비교 <br/>\
 <img src = "./img/TF_IDF_Word2Vec.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 4교시 5번\
+',
+  
+// BERT
+'# 정의 : 언어 표현 사전 훈련 방법 <br/>\
+- 2018년 구글에서 공개한 Language Representation Model로 언어 표현을 사전 훈련하는 방법 <br/><br/>\
+# 특징 <br/>\
+- 양방향 속성 : Masked Language Model 사용 <br/>\
+- 다이나믹 임베딩 : 동일 단어 다른 임베딩, 중의성 해소 <br/>\
+- 활성화 함수 : LeRu 대신 GELU(Geussian Error Linear Units) 사용 <br/>\
+- Fin Tuning : Task의 Sate of the art 달성 <br/><br/>\
+# 구조 <br/>\
+- Token Embedding : Char 단위 임베딩, Sub-Word 생성 <br/>\
+- Segment Embedding : 토큰 시킨 단어 다시 하나의 문장 생성 <br/>\
+- Position Embedding : 토큰을 순서대로 인코딩 <br/><br/>\
+# 이전 모델 비교 <br/>\
+<img src = "./img/BERT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 2교시 4번\
 ',
    
 // DataMining
