@@ -2038,6 +2038,25 @@ var answer = answer.concat(
 // 성능 테스트
 '# 정의 : 비기능 목표치 달성 시험 <br/>\
 - 소프트웨어 프로그램이 주어진 환경하에서 응답속도, 처리량, 처리속도 등의 항목에 대하여 요구 되어진 목표치를 달성하는지를 확인하는 시험 <br/><br/>\
+# 시험 목적 <br/>\
+- 성능 측정 : 오픈전 사이트 테스트 <br/>\
+- 병목 구간 : 시스템 병목구간 점검 <br/>\
+- 사용자수 산정 : 최대 수용가능 동시단말 사용자수 산정 <br/><br/>\
+# 시험 범위 <br/>\
+- 내부 성능 테스트 : 예상되는 최대 수용 가능 동시 단말 사용자 서버처리 검증 <br/>\
+- 외부 성능 테스트 : 예상되는 최대 부하에 대한 네트워크 처리 인프라 능력 검증 <br/><br/>\
+# 절차 <br/>\
+- Workload Modeling : Web Log, 시스템 사용 현황, Current, Target 분석 <br/>\
+- Performance Modleing : 환경 구축, Model 선정, 테스트 대상 선정<br/>\
+- Scripting & Execution : 시나리오 구현, Execution, 장애 분석/수정, 실행결과 분석 <br/><br/>\
+# 목차 예시 <br/>\
+1. 성능시험 개요 <br/>\
+2. 성능 평가 기준 <br/>\
+3. 성능 시험 진행 순서 <br/>\
+4. 테스트 사이트 구성 현황 <br/>\
+5. Workload 모델링 (Weblog, Current Workload, Target Workload) <br/>\
+6. Performance 모델링 (단위 App, 혼합 BP, 모니터링 항목) <br/>\
+7. Performance Test Results (단위 테스트 결과, 권고안, 혼합 BP 테스트 결과 권고안) <br/><br/>\
 # 유형<br/>\
 1. 방법 (루스티가) <br/>\
 - 루프백 : 업무별 병목지점 <br/>\
@@ -2050,7 +2069,8 @@ var answer = answer.concat(
 - 임계성능 : 임계도달 <br/>\
 - 확장성 : 증설전후 성능 <br/><br/>\
 * Little\'s Law : 공간 내에 머무는 객체수(L)는 객체의 공간 유입량(A)과 객체가 머무는 시간(W)에 비례한다 <br/>\
-- L = AW \
+- L = AW <br/><br/>\
+* 123회 응용 3교시 5번\
 ',
 
 // TPC
