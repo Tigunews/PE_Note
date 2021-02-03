@@ -3440,7 +3440,8 @@ var answer = answer.concat(
 - 펜데믹 : Mask Protocol, 열화상 카메라 <br/><br/>\
 # 비즈니스 사례 <br/>\
 - IoB : Knowledge, Wisdom <br/>\
-- IoT : Data, Information \
+- IoT : Data, Information <br/><br/>\
+* 123회 관리 2교시 6번\
 ',
   
 // 전체 경험
