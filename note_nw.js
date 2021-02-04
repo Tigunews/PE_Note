@@ -66,6 +66,7 @@ var question = question.concat(
 '6G',
 '[6G]- Wifi 7',
 'Wifi 6',
+'Wifi 6e',
 '재난안전통신망(Disaster Security Communication Network, 재난망)',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
@@ -1334,6 +1335,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Target Wake Time : Access Time 조절 및 절전을 통한 불필요 전송 방지 <br/><br/>\
 * 123회 응용 1교시 7번 <br/>\
 * KPC 92회 응용 1교시 15번\
+',
+  
+// Wifi 6e
+'# 정의 : 6GHz 추가 Wifi 6 <br/>\
+- IEEE 802.11.ax 규격을 바탕으로 Wifi 6의 2.4GHz와 5GHz 대역에 추가적으로 6GHz 대역을 포함한 무선통신 표준 <br/><br/>\
+# 6GHz 대역 장점 <br/>\
+- 가용 채널 수 증가 <br/>\
+- 160MHz 대역폭을 실질 활용 <br/>\
+- 다른 무선기기에 의한 간섭영향 감소 <br/>\
+- Gbps급 체감속도를 실현, 5G 이동통신에 가까운 지연 특성 지원 <br/>\
+- OFDMA를 활용한 초연결 특성 확보 <br/><br/>\
+* 123회 응용 1교시 7번 <br/>\
 ',
 
 // 재난안전통신망
