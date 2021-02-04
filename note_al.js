@@ -494,7 +494,7 @@ var answer = answer.concat(
 - 앙상블 측면 : 다량 유저 배포 어려움, 새로운 방식 앙상블 제시 <br/><br/>\
 # 구성요소 <br/>\
 - Teacher Network : 복잡한 고도 학습 모델 <br/>\
-- Student Network : 단순한 적용 학습 모델 <br/>\
+- Student Network : 단순한 적용 학습 모델 <br/><br/>\
 # 동작원리 <br/>\
 - Soft Label : 출력값의 분포 Soft화 (10^-6, 0.9, 0.1, 10^9 -> 0.05, 0.3, 0.2, 0.005) <br/>\
 - Distilliation Loss : Teacher Network 학습 후 Student Network 학습 <br/><br/>\
