@@ -1193,7 +1193,9 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 5G 이동통신
 '# 정의 : 대한민국 퍼스트 무버 <br/>\
 - 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
-<img src = "./img/5G_2.jpg" style = "width:100%; height:auto;">\
+<img src = "./img/5G_2.jpg" style = "width:100%; height:auto;"><br/><br/>\
+# 주파수 분류 <br/>\
+<img src = "./img/5GFR1FR2.png" style = "width:100%; height:auto;">\
 ',
  
 // 3GPP Release 16
