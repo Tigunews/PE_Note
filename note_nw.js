@@ -1195,7 +1195,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
 <img src = "./img/5G_2.jpg" style = "width:100%; height:auto;"><br/><br/>\
 # 주파수 분류 <br/>\
-<img src = "./img/5GFR1FR2.png" style = "width:100%; height:auto;">\
+<img src = "./img/5GFR1FR2.png" style = "width:100%; height:auto;"><br/><br/>\
+* FR2 커버리지 극복방안 <br/>\
+- 셀의 개수 증가 <br/>\
+- 빔포밍 기술 적용 (건물, 빌딩, 구조물 많을 경우 커버리지 안정성 저하)\
 ',
  
 // 3GPP Release 16
