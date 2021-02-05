@@ -13,6 +13,7 @@ var question = question.concat(
 '[동시성제어]- Locking',
 '[동시성제어]- 2PL',
 '[동시성제어]- Phantom Conflict',
+'[동시성제어]- MVCC',
 '회복기법',
 '[회복기법]- Log 기반',
 '[회복기법]- 그림자 페이지',
@@ -328,6 +329,30 @@ var answer = answer.concat(
 - Index Locking : 릴레이션 갱신 <br/>\
 - 고립성 수준 높임 : 3단계, Serializable 설정 <br/><br/>\
 * KPC 94회 1교시 11번\
+',
+  
+// MVCC
+'# 정의 : SCN(System Change Number) 기반 직렬가능성 보장 적절 버전 선택 접근 기법 <br/>\
+- 트랜잭션 접근시 여러 버전 타임스탬프 비교, 직렬가능성 보장 적절한 버전 선택 접근 기법 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/MVCC_Undeerstand.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형 <br/>\
+1. Multiversion Timestamp Ordering <br/>\
+- 개념 : Timestamp를 시간 순서에 따라 트랜잭션 부여 기법 <br/>\
+- 알고리즘 : 읽기(가장큰 값 반환), 쓰기(낮은 값 존재시 거부) <br/><br/>\
+2. Multiversion Two-Phase Locking <br/>\
+- 개념 : R,W,C(보증) 잠금 모드 사용 제어 <br/>\
+- RWC 호환성 테이블 <br/>\
+<img src = "./img/MTPL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 정책 <br/>\
+1. 다중버전 읽기 일관성 정책 <br/>\
+- 갱신 방식 : 기존 값 롤백 세그먼트 기록, Commit 전까지 이용 <br/>\
+- SCN : 이전 데이터 얻기위한 내부적 Commit 마다 증가 <br/><br/>\
+2. Isolation Level 정책 <br/>\
+- Read Committed : 오라클 Default <br/>\
+- Serializable : Commit 데이터 변경사항, 자신의 insert, update, delete 변경 데이터 열람 <br/>\
+- Read Only : Commit된 변경사항만 열람 가능, insert, update, delete 허용않음 <br/><br/>\
+* 111회 관리 \
 ',
   
 // 회복기법
