@@ -14,6 +14,7 @@ var question = question.concat(
 '[동시성제어]- 2PL',
 '[동시성제어]- Phantom Conflict',
 '[동시성제어]- MVCC',
+'[동시성제어]- 낙관적 검증',
 '회복기법',
 '[회복기법]- Log 기반',
 '[회복기법]- 그림자 페이지',
@@ -353,6 +354,25 @@ var answer = answer.concat(
 - Serializable : Commit 데이터 변경사항, 자신의 insert, update, delete 변경 데이터 열람 <br/>\
 - Read Only : Commit된 변경사항만 열람 가능, insert, update, delete 허용않음 <br/><br/>\
 * 111회 관리 \
+',
+  
+// 낙관적 검증
+'# 정의 : <br/>\
+- 트랜잭션 수행 동안은 어떠한 검사도 하지 않고, 트랜잭션 종료 시에 일괄적으로 검사하는 방법 <br/><br/>\
+# 특징 <br/>\
+- No Deadlock <br/>\
+- No Cascading Rollback<br/>\
+- Cyclic resart, starvation <br/>\
+- 데이터 지역 사본 갱신(트랜잭션 수행 중일 경우) <br/>\
+- 일시 반영(트랜잭션 종료시) <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ValidationOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 처리 단계 설명 <br/>\
+- (R)ead Phase : 모든 갱신은 사본에서만 수행 <br/>\
+- (V)alidation Phase : 실제 반영 전 직렬 가능성 위반여부 확인 <br/>\
+- (W)rite Phase : 실행 결과 데이터베이스 반영 <br/><br/>\
+# 유효성 검사 <br/>\
+<img src = "./img/ValidationCheck.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 회복기법
