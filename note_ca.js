@@ -20,6 +20,7 @@ var question = question.concat(
 'Memory 영역',
 'Memory Leak',
 'Process',
+'PCB',
 'Thread',
 'Buffering / Spooling',
 '결함허용 시스템(FTS:Fault Tolerant System)',
@@ -456,6 +457,17 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Process_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Process_2.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Process_3.png" style = "max-width:100%; height:auto;">\
+',
+  
+// PCB
+'# 정의 : 프로 그램 실행 자료, 자료구조 <br/>\
+- 운영체제가 프로그램 실행을 위해 필요한 자료를 담고 있는 자료구조 <br/><br/>\
+# 구성요소 <br/>\
+- PID :  각 프로세스에 대한 고유 식별자 <br/>\
+- 프로세스 상태 : 생성, 준비, 실행, 대기, 중단 등의 상태 <br/>\
+- 프로그램 카운터 : 다음 명령 주소 표시 <br/>\
+- 레지스터 저장 영역 : 인터럽트 발생시 PC와 함께 저장, 재 실행시 복귀 <br/>\
+- 기타 정보 : 스케줄링 정보, 계정 정보, 입출력 상태 정보, 메모리 관리 정보 \
 ',
 
 // Thread 
