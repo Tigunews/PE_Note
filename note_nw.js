@@ -24,6 +24,7 @@ var question = question.concat(
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
 '[Internet]- HTTP/3.0',
+'[HTTP/3.0]- QUIC',
 '[Internet]- IPSec',
 '[Internet]- IPv6',
 '[IPv6]- 헤더구성',
@@ -570,6 +571,22 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/HTTP3ProtocolAction.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/HTTP3ProtocolConnection.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 1교시 4번\
+',
+  
+// QUIC
+'# 정의 : UDP 스트림 기반 다중화 전달 프로토콜 <br/>\
+- 구글에서 제안한 UDP 상에서 동작하는 스트림기반 다중화 서비스 제공하는 전달 프로토콜 <br/><br/>\
+# 손실방지 기법 유형 <br/>\
+1. ACK <br/>\
+<img src = "./img/QUIC_ACK.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Timeout <br/>\
+<img src = "./img/QUIC_Timeout.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 손실감지 및 복구 설명 <br/>\
+<img src = "./img/QUIC_Process.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# BBR 알고리즘 <br/>\
+- Bottleneck Bandwidth and RTT <br/>\
+- QUIC에서의 혼잡 제어 방식, 손실될 패킷 이동경로, 미리 예측한 트래픽 의한 속도 저하 방지 알고리즘 <br/>\
+<img src = "./img/BBR.png" style = "max-width:100%; height:auto;">\
 ',
 
 // IPSec
