@@ -158,6 +158,7 @@ var question = question.concat(
 '[Open API]- SOAP API',
 '[Open API]- REST API',
 '[Open API]- OAuth2.0',
+'[Open API]- OAS',
 'Service Worker',
 'Ontact',
 '디지털 트윈',
@@ -3028,6 +3029,24 @@ var answer = answer.concat(
 - Consumer : Third party App (Caffe app 개발사) <br/>\
 - Service Provider : 플랫폼 서비스 제공자 (Naver Service) <br/><br/>\
 * KPC 96회 관리 3교시 3번\
+',
+  
+// OAS
+'# 정의 : Open API Specification <br/>\
+- API 정확한 호출 결과 해석 필요정보 일관된 형식 기술 명세서 <br/><br/>\
+# 구성요소 <br/>\
+- Open API <br/>\
+- Servers <br/>\
+- Paths <br/>\
+- Component <br/>\
+- Security <br/><br/>\
+# 인증 방법 <br/>\
+- HTTP 기본인증 <br/>\
+- API 키 인증 <br/>\
+- OpenID Connect 기반 인증 <br/>\
+- OAuth 플로우 기반 인증 <br/><br/>\
+* 성능요건, 적용가능 버전, CORS 제한 대응 <br/><br/>\
+* 123회 관리 1교시 7번 \
 ',
 
 // Service Worker 
