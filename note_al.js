@@ -52,6 +52,7 @@ var question = question.concat(
 '[AI][Clustering][AL]- K-means',
 '[AI][AL]- MCTS',
 '[AI][AL]- CNN',
+'[AI][CNN]- Efficient NET, DET',
 '[AI][AL]- R-CNN',
 '[AI][AL][R-CNN]- Fast RCNN',
 '[AI][AL][R-CNN]- Faster RCNN',
@@ -992,6 +993,7 @@ var answer = answer.concat(
 - 평균값 재조정 <br/>\
 - 알고리즘 종료 \
 ',
+  
 // [딥러닝]- CNN 
 '# 정의 : 영상 적용 인공신경망의 종류 <br/>\
 - Convolutional Neural Networks <br/>\
@@ -1012,6 +1014,14 @@ var answer = answer.concat(
 - 영상 내 다중 객체 인식에 한계 <br/>\
 - 낮은 객체 인식 속도 <br/>\
 -> 극복방안 : R-CNN, YOLO \
+',
+  
+// Efficient Net, Det
+'# 정의 : CNN 성능화 효율 향상 모델 <br/><br/>\
+# Efficient Net : Compound Scaling 통해 적은 파라미터수 가지고 정확성, 효율성 향상시킨 Image Classification Model <br/>\
+-> Efficient Det : Efficient Net을 Backbone으로 하고, BiFPN과 Compound Scaling을 조합하여 적은 파라미터수로 더욱 좋은 성능을 보여주는 Object Detection 모델 <br/>\
+-> Efficient Seg : Semantic Segmentation <br/><br/>\
+* 123회 관리 1교시 3번 \
 ',
   
 // [딥러닝]- R-CNN
