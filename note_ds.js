@@ -609,6 +609,7 @@ var answer = answer.concat(
 <img src = "./img/SmartInfoRule.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 상세내용 <br/>\
 <img src = "./img/SmartInfoRuleSpecefication.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 1교시 5번 <br/>\
 * 아이리포 24회 관리 3교시 6번\
 ',
   
