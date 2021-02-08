@@ -1150,20 +1150,21 @@ var answer = answer.concat(
 - 음성, 비디오 엔진 <br/>\
 - 전송, 음성/영상 캡처 <br/>\
 - Network I/O 모듈 <br/><br/>\
-# 기술 <br/>\
-- GUESTMEDIA <br/>\
-- SDP : Session Desciption Protocol <br/>\
-- JSEP : Java Session Establishment Protocol <br/>\
-- ICE : Interactive Connectivity Establishment <br/>\
-- STUN : Session Traversal Utilits for NAT <br/>\
-- TRUN : Traversal Using Relays arount NAT <br/>\
-- NAT <br/><br/>\
+# 기술 요소 <br/>\
+- API : Media Stream, RTCPeerConnection, RTCDataChannel <br/>\
+- 통신 : STUN, TURN, ICE, SDP, STRP, JSEP <br/>\
+- 보안 : TLS/SSL <br/>\
+- 코덱 : llbc, Isac, Opus, VP8 <br/>\
+- 지터 : NetEQ, 비디오 지터 버퍼 <br/><br/>\
 # 동향 <br/>\
 - MS : Skype for Web Messagin Service (WebRTC 수용) <br/>\
 - Amazon : 태블릿 PC 킨들 파이어에 WebRTC 세션을 통한 기술지원담당자 연결기능 제공 <br/>\
 - FaceBook Linkedin : 기존 FaceBook에서 메신저 분리 <br/>\
 - 하이퍼커넥트 : 국내벤처, 전세계 무료 메시지, 무료 영상 통화<br/>\
-<img src = "./img/WebRTC.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/WebRTC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 통신 유형 <br/>\
+<img src = "./img/WebRTC_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 1교시 9번 \
 ',
 
 // [Web 3.0]- React.js
