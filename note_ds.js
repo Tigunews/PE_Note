@@ -135,8 +135,9 @@ var question = question.concat(
 '[클라우드]- Fog Computing',
 '[클라우드]- CSB',
 '[클라우드]- 인터클라우드',
-'[클라우드]- Kafka',
 '[클라우드]- 멀티 클라우드',
+'[클라우드]- 메시지 큐잉',
+'[메시지 큐잉]- Kafka',
 '[클라우드]- 차세대 방향성',
 '[클라우드]- 오픈 스택',
 '[클라우드][오픈스택]- Swift',
@@ -1584,7 +1585,7 @@ var answer = answer.concat(
 * BMT : Bench Marking TEST <br/>\
 * POC : 새로운 솔루션을 현장에서 검증 받는 것 <br/>\
 ',
-
+  
 // OGC
 '# 정의 : 지리정보 상호 운용성 제고 비영리 단체 / 미국 / 1994 / 이질적 환경 <br/>\
 - Open GIS Consortium <br/>\
@@ -2568,29 +2569,6 @@ var answer = answer.concat(
 * PNSC : Private and Public Services\
 ',
 
-// Kafka
-'# 정의 : 데이터 스트림 실시간 관리 오픈소스 시스템 (링크드인)<br/>\
-- 웹사이트, 애플리케이션, 센서 등에서 취합한 데이터 스트림을 실시간으로 관리하기 위한 오픈소스 시스템 <br/><br/>\
-<img src = "./img/Kafka.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 특징 <br/>\
-- 확장성 : Scale-out 가능 <br/>\
-- 영속성 : 수신한 데이터 디스크 유지 <br/>\
-- 유연성 : 시스템 연결 허브역할 <br/>\
-- 신뢰성 : 메시지 전달 보증 <br/><br/>\
-# 구성요소 (BMPCT) <br/>\
-- Broker : Producer, Consumer간 메시지 관리 <br/>\
-- Message : 데이터 최소 단위 <br/>\
-- Producer : 메시지 생성 프로세스 <br/>\
-- Consumer : 메시지 사용 프로세스 <br/>\
-- Topic : Publish된 메시지 카테고리 <br/><br/>\
-# 활용 <br/>\
-- Kafka Connect : 데이터 허브 <br/>\
-- Kafka Streams : 로그 수집 <br/>\
-- Event Sourcing : CQRS <br/>\
--> CQRS (Command and Query Responsibility Segregation) : 명령과 조회의 책임 분리 <br/><br/>\
-* KPC 95회 1교시 15번\
-',
-
 // 멀티 클라우드
 '# 정의 : 연계, 상호 운용성, 탄력성 보장 클라우드 기술 <br/>\
 - 2개 이상의 CSP(Cloud Service Provider)가 제공하는 Public or Private 구성된 클라우드 운영 방식 <br/><br/>\
@@ -2621,6 +2599,53 @@ var answer = answer.concat(
 - 멀티레이어 보안성 확보 : 기초 데이터 암호화(AES, SHA-2, RSA), NFV(SECaaS 기반 CASE 연계) <br/>\
 - 데이터 보호 및 흐름 가시화 : 중요도별 Access 분리(Bell-Lapadula), 능동형 URI 감시 가시화(URI 경로 감시, vDPI 페이로드 분석) <br/><br/>\
 * KPC 93회 2교시 2번\
+',
+  
+// 메시지 큐잉
+'# 정의 : Message Oriented Middleware (MOM) <br/>\
+- 비동기 메시지를 사용하여 데이터 송수신을 위한 메시지 지향 미들웨어를 구현한 시스템 <br/><br/>\
+# 관련 개념 <br/>\
+- MOM : 분산 시스템간 메시지 기능 지원 인프라 <br/>\
+- MQ : MOM 구현한 시스템 <br/>\
+- Broker : MQ 시스템 <br/>\
+- AMQP(Advanced Message Queueing Protocol) : 메시지 지향 미들웨어 위한 프로토콜 <br/><br/>\
+# 필요성 : 확장성(모듈분리), 데이터 영속성(디스크 저장), 고가용성(지연시간 희생), 장애 복원력(SPOF 해소) <br/><br/>\
+# 종류 <br/>\
+1. RabbitMQ : 생성자에게 메시지 받아 소비자에게 전달 하는 AMQP 프로토콜 구현한 메시지 브로커 <br/>\
+- 구성요소 : Producer(생성,발송주체), Consumer(수신주체), Queue(보관 장소), Exchange(라우팅), Binding(라우팅 규칙 지정) <br/>\
+- 주요기능 : 메시지 분배(병렬처리), 공평한 분배(prefetchCount 1 ack), 메시지 수신 통보(ACK) <br/><br/>\
+2. Active MQ : 아파치, 기업 연동 작업 구현 고기능 Java 메시지 기반 MOM 통합 패턴 서버 <br/>\
+- 구성요소 : JMS(Java Message Service)-Enterprise Edition 기반, 메시지 생성, 송수신, 읽기, 비동기, 신뢰 통신 허용 <br/><br/>\
+- 주요기능 <br/>\
+-> JMS 준수 : 1:1 메시지 전달<br/>\
+-> 연결성 : 넓은 연결 옵션-HTTP/S, IP Multicast, SSL, STOMP<br/>\
+-> 다양성 : WAS, Active MQ, 저장매체 <br/>\
+-> 확장성 : 브로커 클러스터링 동작 <br/><br/>\
+* 123회 관리 3교시 1번\
+',
+
+// Kafka
+'# 정의 : 데이터 스트림 실시간 관리 오픈소스 시스템 (링크드인 개발, 아파치 오픈소스)<br/>\
+- 웹사이트, 애플리케이션, 센서 등에서 취합한 데이터 스트림을 실시간으로 관리하기 위한 오픈소스 시스템 <br/><br/>\
+<img src = "./img/Kafka.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 확장성 : Scale-out 가능 <br/>\
+- 영속성 : 수신한 데이터 디스크 유지 <br/>\
+- 유연성 : 시스템 연결 허브역할 <br/>\
+- 신뢰성 : 메시지 전달 보증 <br/><br/>\
+# 구성요소 (BMPCT) <br/>\
+- Broker : Producer, Consumer간 메시지 관리 <br/>\
+- Message : 데이터 최소 단위 <br/>\
+- Producer : 메시지 생성 프로세스 <br/>\
+- Consumer : 메시지 사용 프로세스 <br/>\
+- Topic : Publish된 메시지 카테고리 <br/><br/>\
+# 활용 <br/>\
+- Kafka Connect : 데이터 허브 <br/>\
+- Kafka Streams : 로그 수집 <br/>\
+- Event Sourcing : CQRS <br/>\
+-> CQRS (Command and Query Responsibility Segregation) : 명령과 조회의 책임 분리 <br/><br/>\
+* 123회 관리 3교시 1번 <br/>\
+* KPC 95회 1교시 15번\
 ',
   
 // 차세대 방향성
