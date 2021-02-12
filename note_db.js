@@ -1525,6 +1525,11 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 라이지움 86회 1교시 13번\
 ',
   
+// 통계 Overview
+'<img src = "./img/StaticsUnderstand.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 3교시 3번\
+',
+  
 // 기술통계
 '# 정의 : 변수, 자료 체계적 조직화 / 요약 기술 / 통계 방법 <br/>\
 - 하나의 변수나 집단 수량적 자료 체계적 조직화, 요약 기술해주는 통계적 방법 <br/><br/>\
