@@ -78,6 +78,8 @@ var question = question.concat(
 '[DB확장]- Database Partitioning',
 'Data File Structure',
 '[통계]- 통계 관련 데이터',
+'[통계]- 기술통계',
+'[통계]- 추론통계',
 '[통계]- 데이터 분석 전처리',
 '[통계]- 표본 추출 방법',
 '[통계]- 특이정보, Outlier',
@@ -1521,6 +1523,28 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 표본추출 <br/>\
 - 재현자료 <br/><br/>\
 라이지움 86회 1교시 13번\
+',
+  
+// 기술통계
+'# 정의 : 변수, 자료 체계적 조직화 / 요약 기술 / 통계 방법 <br/>\
+- 하나의 변수나 집단 수량적 자료 체계적 조직화, 요약 기술해주는 통계적 방법 <br/><br/>\
+# 사용기술 <br/>\
+- 중앙화 경향(Central Tendency) : 평균(mean), 중앙값(median), 최빈값(mode) 등 <br/>\
+- 분산도(Variation) : 범위, 표준편차(standard deviation), 사분위수(quantile) <br/>\
+- 분포(Distribution) : 왜도, 첨도 <br/>\
+- 빈도(frequency)와 백분율(percent) : 빈도, 빈도분포, 백분위 <br/><br/>\
+* 123회 관리 3교시 3번\
+',
+  
+// 추론통계
+'# 정의 : 표본 통계치 / 추정 가설검증 / 통계 방법 <br/>\
+- 표본에서 나온 통계치로부터 모든 추정 가설검증하는데 사용하는 통계적 방법 <br/><br/>\
+# 사용기술 <br/>\
+- 점추정(Point Estimation) : 적률법, 최대가능도추정법, 최소제곱법 <br/>\
+- 구간추정(Interval Estimation) : 표준정규분포, t분포 <br/>\
+- 가설검정/차이검정 : t-검정(t-test), 분산분석(ANOVA) <br/>\
+- 관계검정 : 교차분석(Chi Square), 상관분석(Correlation), 회귀분석(Regression) <br/><br/>\
+* 123회 관리 3교시 3번\
 ',
   
 // 데이터 분석 전처리
