@@ -78,6 +78,7 @@ var question = question.concat(
 '[DB확장]- Database Partitioning',
 'Data File Structure',
 '[통계]- 통계 관련 데이터',
+'[통계]- 통계 Overview',
 '[통계]- 기술통계',
 '[통계]- 추론통계',
 '[통계]- 데이터 분석 전처리',
