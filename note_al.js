@@ -1972,7 +1972,7 @@ var answer = answer.concat(
 # 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\
 # Dense Representation Embedding 유형 <br/>\
 <img src = "./img/DenseBasedEmbedding.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 4교시 4번\
+* 123회 관리 4교시 4번<br/>\
 * KPC 96회 관리 4교시 5번\
 ',
   
