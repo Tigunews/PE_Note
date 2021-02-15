@@ -2012,7 +2012,7 @@ var answer = answer.concat(
 - Position Embedding : 토큰을 순서대로 인코딩 <br/><br/>\
 # 이전 모델 비교 <br/>\
 <img src = "./img/BERT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 2교시 4번\
+* 123회 관리 4교시 4번\
 ',
    
 // DataMining
