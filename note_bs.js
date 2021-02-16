@@ -178,8 +178,25 @@ var answer = answer.concat(
 # 장단점 <br/>\
 - 장점 : 비용절감, 전문인력 및 전물기술 활용, 정확한 비용 예측, 핵심역량 강화 <br/>\
 - 단점 : 비용증가 가능성, 우수인력 상실, 공급업체 종속 가능성, 통제력 상실, 보안유지 어려움 <br/><br/>\
-# 형태 <br/>\
+# 형태 1 <br/>\
 <img src = "./img/OutSourcingType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 형태 2(토셀자코) <br/>\
+1. Total Outsourcing <br/>\
+- 정의 : IT 기능 전체 Single Vendor 위탁 <br/>\
+- 장점 : 업무 효율성 증대, 책임소재 명확 <br/>\
+- 단점 : 독점적 선택 문제, 가격경쟁 어려움 <br/><br/>\
+2. Selective Outsourcing <br/>\
+- 정의 : 특정 기능 Vendor에게 위탁 <br/>\
+- 장점 : 경쟁 통한 서비스 품질 향상, 효율적 가격 하락 <br/>\
+- 단점 : 책임소재 불명확, 고객 요구 파악 어려움 <br/><br/>\
+3. IT 자회사 Outsourcing <br/>\
+- 정의 : 전문 법인 설립 후에 위탁 서비스 <br/>\
+- 장점 : 기업문화, 의사소통 및 단결감 조성 <br/>\
+- 단점 : 관계성인한 비용 증가, 나태함 <br/><br/>\
+4. Co-Sourcing <br/>\
+- 정의 : 기획 총괄과 수행 분리하여 운영하는 형태 <br/>\
+- 장점 : 급변하는 환경에 적합, Total Outsourcing 문제점 해결 <br/>\
+- 단점 : 전략과 수행의 갈등 발생 가능 구조, 위화감 조성등 <br/><br/>\
 # 의사결정 <br/>\
 <img src = "./img/OutSourcingDecision.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 수행방안 <br/>\
