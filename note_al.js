@@ -1939,7 +1939,10 @@ var answer = answer.concat(
 - 답변 생성 : 검색기반 모델(기계학습 기반), 생성기반 모델(말뭉치 학습) <br/><br/>\
 3. NLG <br/>\
 - Discourse Generation : 적합한 자연어 변환 과정 <br/>\
-- Sentance Planning : 질문에 적합한 자연어 문법을 계획 및 생성 \
+- Sentance Planning : 질문에 적합한 자연어 문법을 계획 및 생성 <br/><br/>\
+# 처리 분야 <br/>\
+<img src = "./img/NLP_ProcessArea.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 4번\
 ',
   
 // NER
