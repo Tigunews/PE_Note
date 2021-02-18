@@ -90,9 +90,6 @@ var question = question.concat(
 'IEC 61508',
 '[ISO/IEC 61508]- IEC 6150 (SIL)',
 'HILS, HIL 시뮬레이션',
-'소프트웨어 안전성 보증 프로세스',
-'소프트웨어 안전성 분석',
-'[안전성 분석]- FMEA, FTA, HAZOP',
 '문자 인코딩',
 '3D Sensing',
 '오픈뱅킹(Open Banking)',
@@ -1769,81 +1766,6 @@ var answer = answer.concat(
 <img src = "./img/HILS_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/HILS_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 국내의 경우, HILS 기술을 상용화하여 실적을 가진 기업이 없음\
-',
-
-// 안전성 보증 프로세스
-'# 개념 : 안전성 분석, 개발 프로세스 확인, 시각화 절차 <br/>\
-- SW 개발시 안전성 분석, 개발 프로세스 Verification, 시각화 절차를 기준으로 SW 안전성을 보증하는 프로세스 <br/><br/>\
-# 절차 <br/>\
-1. 안전성 분석 <br/>\
-- 사고원인 모델링 : Chain of Event, STAMP <br/>\
-- Hazard 분석 : 위험상황 미리 예측, 예방 (FTA, FMEA, HAZOP) <br/><br/>\
-2. 안전성 보증 개발 프로세스 <br/>\
-- 안전성 확보 설계 : Layere Architecture, 임베디드 SOLID, 의존성 제약 <br/>\
-- 소스코드 품질 확보 : 높은 응집도, 낮은 결합도, 적절한 컴포넌트 크기 <br/><br/>\
-3. 안전성 Gate <br/>\
-- SGM(Software Gate Model) : 안전성 보증 통합 모델 (CMMI, A-SPICE등) <br/><br/>\
-4. SW 시각화 <br/>\
-- 개발초기 시각화 : 초기 가시화 통한 실패비용 절감 <br/>\
-- 시각화 툴 사용 : Jenkins, JIRA <br/><br/>\
-5. 안전성 Verification <br/>\
-- 안전성 검증 테스트 체계 : 안전성 요구사항, 우선순위 따른 수행 <br/>\
-- 정형 검증 기법 : 수학적, 논리학적 분석 <br/><br/>\
-* KPC 92회 응용 2교시 8번\
-',
-  
-// 소프트웨어 안전성 분석
-'# 정의 : 안전성 만족 확인 활동 / 안전 필수 시스템 개발시 <br/>\
-- 안전 필수 시스템 개발시 시스템이 만족해야 할 안전성을 만족하는지 확인하는 활동<br/>\
-<font color = "red">* SW 안전성 : ISO/IEC GUIDE 51, 수용할 수 없는 위험이 없는 상태 </font><br/><br/>\
-# 안전성 분석 절차 (IEC 61508) <br/>\
-<img src = "./img/SSA_Order.png", style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/SSA_1.png", style = "max-width:100%; height:auto;"><br/><br/>\
-# 필요성 : 시스템 변화, 사회 안전, 비용 절감 <br/><br/>\
-# 유형 <br/>\
-1. 요구분석/설계 단계 <br/>\
-- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
-- HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
-- FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
-2. 개발단계 <br/>\
-- White box : 구조기반<br/>\
-- Black box : 명세기반<br/><br/>\
-3. 요건 충족 단계 <br/>\
-- 정형명세 : 수학적 표기, 가시화 도구 <br/>\
-- 정형검증 : 정리 증명, 모델 체킹 <br/><br/>\
-4. 산출물 검토 단계 <br/>\
-- 명세서 검증 : DFD, DD, Mini-Spec <br/>\
-- 디자인 검증 : 전문가 참여, 브레인 스토밍 / 라이팅 <br/><br/>\
-* DFD(Data Flow Diagram) <br/><br/>\
-* 119회 관리 4교시 4번\
-',
-  
-// FMEA, FTA, HAZOP
-'# 개념 <br/>\
-- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
-- HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
-- FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
-# FMEA : 고장 발생의 원인 및 중대 사고에 영향 미치는 직접적인 원인 서브시스템이나 컴포넌트 잠재적 고장 유형 분석 기법 <br/>\
-- 시스템 영향 정량적 분석 : 심각도 / 발생도 / 검출도, 고장으로 인한 시스템 영향 <br/>\
-- 우선순위(RPN) 부여 : 분석결과 따라 우선순위 부여하여 대응방안 수립 <br/>\
-- 식별, 정의, 제거 : 고장, 문제, 오류 사용자단 도착전 찾고, 정의, 제거 <br/><br/>\
-# FTA : 특정 사고에 대한 연역적 해석 통한 사건 사고의 원인 파악, 설비결함, 작업 실수등 발견 및 분석 하는 기법 <br/>\
-- Scope 정의 : 소프트웨어 논리적 기능적 인터페이스 구조 확인 <br/>\
-- 위험 식별 : 결함 트리 구성 위한 취상위 위험, 근본 원인 결정 <br/>\
-- 결함트리 작성 : 고장에 대한 논리적 연결 <br/>\
-- 결함트리 분석 : 정성적(Minimal Cut-Set 분석), 정량적(빈도, 확률 기반 Minimal Cut-Set 분석) <br/><br/>\
-# HAZOP : 시스템을 검토하고 잠재적 위험을 찾는것이 목적, 브레인 스토밍 단게에서 Guide Word 이용 <br/>\
-- 분석대상 노드 선정 : 프로세스상 주요변화 발생하여 Hazard와 운영상의 문제점 발생 가능성 있는 부분 선정 / 열교환기 <br/>\
-- 프로세스 파라미터 선정 : 위험요인을 가진 시스템 구성요소의 물리적 특성 선정 / 온도 <br/>\
-- 가이드워드 적용 : 팀 멤버들이 프로세스 파라미터의 가능한 변이를 생각해 내는데 도움이 되는 짤막한 문구 <br/>\
-- Outlier 식별 : 변이 발생 이유 찾기 / Human Error, Equipment Failure, External events <br/>\
-- 변이로 인한 결과 파악 : 안전성, 경제성 분석 <br/>\
-- HAZOP 분석 프로세스 반복 및 결과 보고서 작성 : 변이의 안전책 고려, 프로세스 반복, 결과보고 <br/><br/>\
-# 상세 비교 <br/>\
-<img src = "./img/FMEA_FTA_HAZOP.png", style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 1교시 10번 <br/>\
-* 라이지움 88회 응용 4교시 5번 <br/>\
-* KPC 96회 관리 1교시 5번\
 ',
 
 // 문자 인코딩 
