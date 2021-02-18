@@ -2286,6 +2286,8 @@ var answer = answer.concat(
 - 페트리넷 기반 퍼포먼스 : 수행시간, 병목점 도출 <br/>\
 - 시퀀스 패턴 : 업무 수행 패턴 분석 <br/>\
 - 도티드 차트 분석 : 이벤트 로그 패턴 파악 <br/><br/>\
+# Process Mining, BPM, RPA <br/>\
+<img src = "./img/ProcessMiningBPMRPA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 4교시 4번\
 ',
 
