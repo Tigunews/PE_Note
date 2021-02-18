@@ -30,6 +30,10 @@ var question = question.concat(
 '[분석단계]- 경제성 분석기법',
 '[경제성 분석][타당성]- NPV',
 '[분석단계]- ISMP',
+'소프트웨어 안전성 보증 프로세스',
+'소프트웨어 안전성 분석',
+'[안전성 분석]- FMEA, FTA, HAZOP',
+'[안전성 분석]- HAZOP',
 '[설계단계]- 모듈화',
 '[설계단계][모듈화]- 응집도',
 '[설계단계][모듈화]- 결합도',
@@ -905,6 +909,97 @@ var answer = answer.concat(
 # EA, ISP, ISMP 비교 설명 <br/>\
 <img src = "./img/EA_ISP_ISMP.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 응용 1교시 14번\
+',
+ 
+// 안전성 보증 프로세스
+'# 개념 : 안전성 분석, 개발 프로세스 확인, 시각화 절차 <br/>\
+- SW 개발시 안전성 분석, 개발 프로세스 Verification, 시각화 절차를 기준으로 SW 안전성을 보증하는 프로세스 <br/><br/>\
+# 절차 <br/>\
+1. 안전성 분석 <br/>\
+- 사고원인 모델링 : Chain of Event, STAMP <br/>\
+- Hazard 분석 : 위험상황 미리 예측, 예방 (FTA, FMEA, HAZOP) <br/><br/>\
+2. 안전성 보증 개발 프로세스 <br/>\
+- 안전성 확보 설계 : Layere Architecture, 임베디드 SOLID, 의존성 제약 <br/>\
+- 소스코드 품질 확보 : 높은 응집도, 낮은 결합도, 적절한 컴포넌트 크기 <br/><br/>\
+3. 안전성 Gate <br/>\
+- SGM(Software Gate Model) : 안전성 보증 통합 모델 (CMMI, A-SPICE등) <br/><br/>\
+4. SW 시각화 <br/>\
+- 개발초기 시각화 : 초기 가시화 통한 실패비용 절감 <br/>\
+- 시각화 툴 사용 : Jenkins, JIRA <br/><br/>\
+5. 안전성 Verification <br/>\
+- 안전성 검증 테스트 체계 : 안전성 요구사항, 우선순위 따른 수행 <br/>\
+- 정형 검증 기법 : 수학적, 논리학적 분석 <br/><br/>\
+* KPC 92회 응용 2교시 8번\
+',
+  
+// 소프트웨어 안전성 분석
+'# 정의 : 안전성 만족 확인 활동 / 안전 필수 시스템 개발시 <br/>\
+- 안전 필수 시스템 개발시 시스템이 만족해야 할 안전성을 만족하는지 확인하는 활동<br/>\
+<font color = "red">* SW 안전성 : ISO/IEC GUIDE 51, 수용할 수 없는 위험이 없는 상태 </font><br/><br/>\
+# 안전성 분석 절차 (IEC 61508) <br/>\
+<img src = "./img/SSA_Order.png", style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SSA_1.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 필요성 : 시스템 변화, 사회 안전, 비용 절감 <br/><br/>\
+# 유형 <br/>\
+1. 요구분석/설계 단계 <br/>\
+- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
+- FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
+2. 개발단계 <br/>\
+- White box : 구조기반<br/>\
+- Black box : 명세기반<br/><br/>\
+3. 요건 충족 단계 <br/>\
+- 정형명세 : 수학적 표기, 가시화 도구 <br/>\
+- 정형검증 : 정리 증명, 모델 체킹 <br/><br/>\
+4. 산출물 검토 단계 <br/>\
+- 명세서 검증 : DFD, DD, Mini-Spec <br/>\
+- 디자인 검증 : 전문가 참여, 브레인 스토밍 / 라이팅 <br/><br/>\
+* DFD(Data Flow Diagram) <br/><br/>\
+* 119회 관리 4교시 4번\
+',
+  
+// FMEA, FTA, HAZOP
+'# 개념 <br/>\
+- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
+- HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
+- FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
+# FMEA : 고장 발생의 원인 및 중대 사고에 영향 미치는 직접적인 원인 서브시스템이나 컴포넌트 잠재적 고장 유형 분석 기법 <br/>\
+- 시스템 영향 정량적 분석 : 심각도 / 발생도 / 검출도, 고장으로 인한 시스템 영향 <br/>\
+- 우선순위(RPN) 부여 : 분석결과 따라 우선순위 부여하여 대응방안 수립 <br/>\
+- 식별, 정의, 제거 : 고장, 문제, 오류 사용자단 도착전 찾고, 정의, 제거 <br/><br/>\
+# FTA : 특정 사고에 대한 연역적 해석 통한 사건 사고의 원인 파악, 설비결함, 작업 실수등 발견 및 분석 하는 기법 <br/>\
+- Scope 정의 : 소프트웨어 논리적 기능적 인터페이스 구조 확인 <br/>\
+- 위험 식별 : 결함 트리 구성 위한 취상위 위험, 근본 원인 결정 <br/>\
+- 결함트리 작성 : 고장에 대한 논리적 연결 <br/>\
+- 결함트리 분석 : 정성적(Minimal Cut-Set 분석), 정량적(빈도, 확률 기반 Minimal Cut-Set 분석) <br/><br/>\
+# 상세 비교 <br/>\
+<img src = "./img/FMEA_FTA_HAZOP.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 1교시 10번 <br/>\
+* 라이지움 88회 응용 4교시 5번 <br/>\
+* KPC 96회 관리 1교시 5번\
+',
+
+// HAZOP
+'# 정의 : 전문가 모여 / 공정변수 / 가이드 워드 / 이탈원인 / 영향 분석 / 안전성 분석기법 <br/>\
+- HAZard and OPerability analysis <br/>\
+- 대상에 관련된 전문가들이 모여 공정변수와 가이드워드의 조합을 통해 이탈의 원인 및 영향을 분석하는 안전성 분석기법 <br/><br/>\
+# 유형 <br/>\
+- 프로세스 HAZOP : 공장 시설, 프로세스 시스템 평가 <br/>\
+- 휴먼 HAZOP : 특화된 HAZOPs 한 계열, 기술적 실패 보다 인적 에러 더 집중 <br/>\
+- 프로시저 HAZOP : 절차 또는 운용 시퀀스 검토 / SAFOP(SAFe Operation Study) 로 표기 <br/>\
+- 소프트웨어 HAZOP : 소프트웨어 개발에서의 가능한 에러 식별 <br/><br/>\
+# 구성요소 <br/>\
+- 평가 방식 : 이탈 = 공정변수 * 가이드 워드 <br/>\
+- 이탈 : 설계 의도에서 벗어난 상태 (사람, 장비, 외부) <br/>\
+- 공정변수 : 특정변수(가이드 워드와 조합), 일반변수(단독 이탈 발생) <br/>\
+- 가이드워드 : 설계 의도, 변수 관계 정도 (없음, 증가, 감소, 반대, 부가, 부분, 기타) <br/><br/>\
+# 절차 <br/>\
+- 목적, 범위 설정 : 분석 목적, 검토 범위 설정 <br/>\
+- 분석 팀 구성 : 관련 전문가 팀 구성(리더, 팀원) <br/>\
+- 예비 조사 : 자료 수집, 분석 절차 수립 <br/>\
+- 토론 및 검토 : Study Node, 공정변수, 가이드워드 조합, 브레인 스토밍 <br/>\
+- 분석 결과 기록 : 이탈 원인, 결과 개선 권고사항등 기록 <br/>,br/>\
+* 123회 관리 1교시 10번\
 ',
 
 // 모듈화
