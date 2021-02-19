@@ -45,10 +45,12 @@ var question = question.concat(
 '[BCP]- BIA',
 '[BCP]- ISO22301',
 '[BCP]- DRS',
-'DRP',
-'BPR',
-'PI',
+'[BDP]- DRP',
+'[BCP]- BPR',
+'[BCP]- PI',
 'TOC',
+'[환경분석]- 5 Force',
+'[환경분석]- 7S',
 'Open Shift',
 'D-Commerce',
 '빅블러 현상',
@@ -918,6 +920,38 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 - 프로젝트 관리 : Critical Chain <br/>\
 - 회계 관리 : Throughput Accounting <br/><br/>\
 * 119회 관리 1교시 3번\
+',
+ 
+// 5 Force
+'# 정의 : 조직 외부환경 분석 기법 <br/>\
+- 조직의 외부환경을 경쟁사를 중심으로 잠재적 경쟁자, 대체제, 공급업자, 구매자 관점에서 분석하는 기법 <br/><br/>\
+# 개념도(공대잠구) <br/>\
+<img src = "./img/5ForceOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 기존 경쟁사 : 고정비용, 산업성장률, 과잉설비, 교체비용, 철수 장벽 <br/>\
+- 공급자 협상력 : 공급물량비중, 공급제품의 중요도, 원재료 차별화 <br/>\
+- 구매자 협상력 : 구매비중, 구매자 가격민감도, 제품 차별화 <br/>\
+- 대체제 위협 : 대체제의 구매자 성향, 교체비용, 대체제가격 및 효능 <br/>\
+- 잠재적 경쟁자 진입 : 규모의 경제, 제품 차별화, 자본투자요구수준, 전환비용 <br/><br/>\
+# CSF 도출 Overview <br/>\
+<img src = "./img/5ForceCSF.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// 7S
+'# 정의 : 조직 내부 상황 평가, 모니터링 하는 분석 도구 <br/>\
+- 조직이 잘 수행하기 위해 일곱 가지 요소가 서로 조화되고 상호 보강되어야 한다는 이론에 근거한 내부 상황 변화 평가, 모니터링하는 조직 분석 도구 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/7S.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분석내용 <br/>\
+1. Hard Elements <br/>\
+- Strategy : 기업의 운용&사업 전략 수립, 고객 가치 부여 <br/>\
+- Structure : 부가가치 형성을 위한 조직 구조나 직무 분류, 역할과 책임등 분석 <br/>\
+- System : 매출/이익 증대 프로세스 설정 <br/><br/>\
+2. Soft Elements <br/>\
+- Shared Value : 공유가치 정착화, CEO의 공유가치 공감 <br/>\
+- Skills : 전문화된 기술 숙련도 분석 <br/>\
+- Staff : 평가와 보상제도, 급여 등 계획 및 실천 <br/>\
+- Style : 기업의 고유한 기업 문화 수립 \
 ',
 
 // Open Shift
