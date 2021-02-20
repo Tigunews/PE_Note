@@ -5528,7 +5528,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 제외대상 : 구체적이지 않거나 검사환경 구성 제약 된 경우 <br/><br/>\
 # 비기능 요구사항 검사기준서 예시 <br/>\
 <img src = "./img/NonFunctionalRequirementTest.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 1교시 5번\
+* 123회 2교시 5번\
 ',
  
 // 기능/비기능 요구사항 점검
