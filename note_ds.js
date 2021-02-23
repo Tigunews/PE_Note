@@ -188,7 +188,7 @@ var question = question.concat(
 '[로봇]- URC',
 '[로봇]- SLAM',
 '[IoT]- 객체 식별자 기반 사물인터넷 디바이스 식별체계(TTAK.KO-06.0365/RI)',
-'[Gartner 2021][People Centricity]- 행동 인터넷',
+'[Gartner 2021][People Centricity]- IoB',
 '[Gartner 2021][People Centricity]- 전체 경험',
 '[Gartner 2021][People Centricity]- 개인정보보호 강화 컴퓨팅',
 '[Gartner 2021][Location Independence]- 분산 클라우드',
@@ -3497,7 +3497,7 @@ var answer = answer.concat(
 * 116회 1교시 11번\
 ',
   
-// 행동 인터넷
+// IoB
 '<a href = "./doc/Gartner2021.pdf">참고문헌</a><br/><br/>\
 # 정의 : Internet of Behaviors(IoB) <br/>\
 - 사람의 행동 유도 기술 <br/>\
@@ -3513,6 +3513,8 @@ var answer = answer.concat(
 # 비즈니스 사례 <br/>\
 - IoB : Knowledge, Wisdom <br/>\
 - IoT : Data, Information <br/><br/>\
+# IoT 비교 <br/>\
+<img src = "./img/IoBIoT.png" style = "max-width:100%; height:auto;">\
 * 123회 관리 2교시 6번\
 ',
   
