@@ -2888,9 +2888,9 @@ var answer = answer.concat(
 ',
 
 // LOD
-'# 정의 : 공공데이터의 개방형 플랫폼 <br/>\
+'# 정의 : 공공데이터의 개방형 데이터 <br/>\
 - Linked Open Data <br/>\
-- 웹 상에 존재하는 데이터를 개별 URI로 식별하고, 각 URI에 링크 정보를 부여함으로써 상호 연결된 웹을 지향하는 모형 <br/><br/>\
+- 웹 상에 존재하는 데이터를 개별 URI로 식별하고, 각 URI에 링크 정보를 부여함으로써 상호 연결된 웹을 지향하는 모형 오픈 데이터<br/><br/>\
 # 팀 버너스리 Four Rules (UHR링)<br/>\
 - URI 사용 : 개별객체 ID 부여 <br/>\
 - HTTP URI 사용 : 데이터 접근성 강화 <br/>\
@@ -2903,7 +2903,7 @@ var answer = answer.concat(
 - 데이터 변환(RDF) <br/>\
 - 연결/저장/발행/등록 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/LOD.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/LodArchitecture.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/LOD_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 사례 <br/>\
 - 해외 : DB pedia, BBC <br/>\
