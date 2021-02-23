@@ -111,6 +111,7 @@ var question = question.concat(
 '[블록체인]- BaaS',
 '[블록체인]- NFT',
 '[블록체인]- De-Fi',
+'[블록체인]- ICO',
 '[하이퍼레저]- 하이퍼레저 패브릭',
 'MaaS',
 'Dark Net',
@@ -2107,7 +2108,20 @@ var answer = answer.concat(
 * KPC 97회 1교시 2번 <br/>\
 * 라이지움 84회 1교시 2번\
 ',
-
+  
+// ICO
+'# 정의 : 기업 자금 마련 / 암호화폐 투자금 확보 방식<br/>\
+- Initial Coin Offering <br/>\
+- 기업(일반적으로 스타트업)이 기업 운영에 필요한 자금을 마련하기 위해 블록체인 기반으로 디지털 토큰을 판매하여 암호화화폐 형태의 투자금을 확보하는 방식 <br/><br/>\
+# 자금확보 절차 <br/>\
+<img src = "./img/ICO_Flow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 자금유치 방법 <br/>\
+- Pre-Sale : 지지자, 대중에게 판매하는 자금 조달 방식 <br/>\
+- Pre-Pre-Sale : Pre-Sale 이전에 선별된 소수의 개인 또는 기관에게 먼저 판매하는 방식 <br/>\
+- Pre-Allocation : 일정량을 미리 발행하여 파운더와 파운데이션 팀에게 선분배 <br/>\
+- Pre-Minded : 프로토콜을 공개하기 전 선 채굴하여 거래소 상장시 판매하는 방식 <br/><br/>\
+* KPC 80회 관리 3교시 4번\
+',
   
 // 하이퍼레저 패브릭
 '# 정의 : 개발 위한 허가형 프라이빗 플랫폼 <br/>\
