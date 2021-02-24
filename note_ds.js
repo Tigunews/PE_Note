@@ -3087,6 +3087,10 @@ var answer = answer.concat(
 - 통합제어 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 진화 과정 <br/>\
+<img src = "./img/DigitalTwinFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 발전 모델 <br/>\
+<img src = "./img/DigitalTwinEvolution.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
 <img src = "./img/DigitalTwinTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 산업분야 적용 <br/>\
@@ -3107,6 +3111,8 @@ var answer = answer.concat(
 - IoT Edge 장치 <br/>\
 - 빅데이터 분석 인프라 <br/><br/>\
 # 모델링 절차 : 실제 모델 > 가상화 모델 > 가상화 모델 분석 > 오류 탐지 <br/><br/>\
+# 국내외 동향 <br/>\
+<img src = "./img/DigitalTwinCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 관리 3교시 1번 <br/>\
 * 119회 관리 3교시 1번\
 ',
