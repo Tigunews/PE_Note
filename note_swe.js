@@ -318,6 +318,7 @@ var question = question.concat(
 '[방법론][Ops]- DevOps',
 '[방법론][Ops]- DataOps',
 '[방법론][Ops]- GitOps',
+'[방법론][Ops]- MLOps',
 '[방법론]- Product Line 방법론',
 '[방법론]- 시각적 분석 (Visual Analytics)',
 '[방법론]- 시각화 분석 (Visualization Analysis)',
@@ -5202,6 +5203,25 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 # IaC(Infra as Code)와 비교 <br/>\
 <img src = "./img/IaCGitOPS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 87회 라이지움 관리 1교시 2번\
+',
+ 
+// MLOps
+'# 정의 : Meachine Laerning + DevOps <br/>\
+- 데이터 과학 및 기계 학습의 솔루션 개발과 DevOps 기반의 전주기 운영통합 문화 기술 인프라 개념 결합 <br/><br/>\
+# 특징 <br/>\
+- ML 프로젝트 오해 : ML 프로젝트에서 모델링(Coding)은 비율상 작은 범위 <br/>\
+- 기술 부채 발생 : 모델 개발 과도 집중 <br/>\
+- 예측 불가능성 : 학습, 생산데이터 일치성 예측 불가 <br/>\
+- 수정 불가능성 : ML 수행 도중 수정 불가능 <br/><br/>\
+# MLOps 활용한 DSML 프로젝트 실행단계 <br/>\
+<img src = "./img/MLOpsDSML.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 제언 <br/>\
+1. ML 측면 <br/>\
+- 학습보단 생산 데이터 중점 <br/>\
+- 드리프트(시간 변화), 발생시 파이프라인 과정이 아닌 전체 수정 필요 <br/><br/>\
+2. DevOps 측면 <br/>\
+- 데이터 Silo 해체 <br/>\
+- 협업, 소통 중시문화 \
 ',
  
 // Product Line 방법론
