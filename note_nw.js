@@ -26,6 +26,7 @@ var question = question.concat(
 '[Internet]- HTTP/3.0',
 '[HTTP/3.0]- QUIC',
 '[Internet]- IPSec',
+'Network IP(Subnetting, Supernetting)',
 '[Internet]- IPv6',
 '[IPv6]- 헤더구성',
 '[IPv6]- 전환기술',
@@ -643,6 +644,24 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 사례 <br/>\
 <img src = "./img/IPSec_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 정보관리 104회 2교시 3번 \
+',
+  
+// Networ IP
+'# 정의 : 효율적 라우팅, 물리 주소 일치 주소 <br/>\
+- 인터넷 상에서 라우팅을 효율적으로 하기 위해 물리적인 네트워크 주소와 일치하는 32비트(IPv4) 혹은 128비트(IPv6) 주소체계 <br/><br/>\
+# 할당기법 <br/>\
+<img src = "./img/NetworkIPOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 세부설명 <br/>\
+1. IP 네트워크 구성 <br/>\
+- 슈퍼네팅 : 두개 이상의 네트워크 하나의 네트워크로 합치는 기법 <br/>\
+- 서브네팅 : 고정된 크기의 Subnet Mask를 사용하여 네트워크 그룹을 나누어 IP를 할당하는 기법 <br/><br/>\
+2. IP 주소 할당 <br/>\
+- VLSM : 고정길이가 아닌 다양한 길이의 서브넷 마스크를 만드는 기술 <br/>\
+- CIDR : 부족한 IP 주소를 해결하기 위해 만들어진 주소 지정 시스템 <br/><br/>\
+3. 할당기술 <br/>\
+- 고정할당 : 특정 IP를 임의의 기준에 따라 할당 방법 <br/>\
+- 유동할당 : DHCP, 일정시간동안 유호하도록 하는 임대개념의 IP 주소 할당 관리 프로토콜 <br/><br/>\
+* 아이리포 18회 컴퓨터시스템응용 \
 ',
 
 // IPv6
