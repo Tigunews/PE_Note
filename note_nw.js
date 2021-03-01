@@ -1382,6 +1382,17 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // Wifi 6e
 '# 정의 : 6GHz 추가 Wifi 6 <br/>\
 - IEEE 802.11.ax 규격을 바탕으로 Wifi 6의 2.4GHz와 5GHz 대역에 추가적으로 6GHz 대역을 포함한 무선통신 표준 <br/><br/>\
+# Stack <br/>\
+<img src = "./img/Wifi6EStack.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. PHY <br/>\
+- OFDMA : 부반송파를 분할하여 다수의 단말이 동시에 사용 <br/>\
+- MU-MIMO : 제각기 하나 이상의 안테나를 갖춘 무선 단말들이 서로 통신 <br/>\
+- Beam Forming : 안테나가 특정 단말에 국한되게 하는 전송 기술 <br/><br/>\
+2. MAC <br/>\
+- BSS Color : Color 코드를 사용해 공간을 재사용, AP 충돌 방지 <br/>\
+- CCA 레벨 제어 : 각 단말기에 전송되는 파워를 조절 <br/>\
+- Target Wake Time : Access Time 조절 및 단말간의 무선 경쟁 회피 <br/><br/>\
 # 6GHz 대역 장점 <br/>\
 - 가용 채널 수 증가 <br/>\
 - 160MHz 대역폭을 실질 활용 <br/>\
