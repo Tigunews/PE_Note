@@ -123,7 +123,7 @@ var question = question.concat(
 'BEC(Business  E-mail Compromise)',
 '[CPU 보안]- 스펙터(Spectre)',
 '[CPU 보안]- Meltdown',
-'[시스템 보안]- BufferOverflow',
+'[시스템 보안]- Buffer Overflow',
 '[시스템 보안]- Race Condition',
 '[시스템 보안]- Format String',
 'FIDO',
@@ -2383,11 +2383,14 @@ EAL : 펑스매매세세포 <br/><br/>\
 3. /bin/sh 호출 악성 쉘코드 삽입 <br/><br/>\
 # 대응 방안 <br/>\
 1. 컴파일 시간 방어 <br/>\
+- MS /GS 옵선 : 스택 영역과 데이터 영역에 쿠키(임의값) 삽입 <br/>\
+- 리눅스 Canary(검사기능) : 버퍼 오버플로우 발생시, CANARY DATA가 변조되어 오버플로우 경고 후 프로그램 종료 <br/>\
 - 시큐어 코딩 : strncat(), strncpy(), fgets(), fscanf(), vfscanf(), snprintf(), vnsprintf() / 메모리 사이즈 할당 가능한 라이브러리 사용 <br/><br/>\
 2. 스택보호 매커니즘 <br/>\
 - Stack Guard : 함수 호출시 RET 앞에 canary 값 주입, 종료시 변조 여부 확인 <br/>\
 - Stack Shield : 함수 시작시 복귀 주소를 Global RET라는 특수 스택에 저장, 종료시 저장된 값과 스택의 RET 값 비교 <br/><br/>\
 3. 실행시간 방어 <br/>\
+- NO Execure : 데이터 실행시간 방어, AMD NX(Never eXecute bit), MS DEP(Data Execution Prevention), Intel eXecution Disable(XD) 등은 세그먼트에서 실행방지 <br/>\
 - ASLR(Address Space Layout Randomization) : 각 프로세스의 내부 스택이 임의의 다른 곳에 위치하도록 변경 <br/>\
 - NOP Sled : 스택 버퍼 맨 끝부분 쉘코드 위치, 버퍼 앞 부분에 의도적으로 NOP(No Operation) 기계어 연속 배치 <br/><br/>\
 * KPC 90회 응용 2교시 2번\
