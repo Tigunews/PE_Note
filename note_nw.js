@@ -1382,6 +1382,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // Wifi 6e
 '# 정의 : 6GHz 추가 Wifi 6 <br/>\
 - IEEE 802.11.ax 규격을 바탕으로 Wifi 6의 2.4GHz와 5GHz 대역에 추가적으로 6GHz 대역을 포함한 무선통신 표준 <br/><br/>\
+# 6GHz 확장 배경 <br/>\
+- 전 세계 여러나라들 비면허 사용 위해 6GHz 개방 <br/><br/>\
 # Stack <br/>\
 <img src = "./img/Wifi6EStack.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
