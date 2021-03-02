@@ -141,7 +141,6 @@ var question = question.concat(
 '[AI][정책]- AI 조달 가이드라인',
 '[AI][정책]- 한국판 AI 윤리기준', 
 'Hash Function',
-'[Hash Function]- Hashing',
 '[Hash Function]- Hash Algorithm',
 '추정이론(estimation theory)',
 '가설검정 (Statistical Hypothesis Testing)',
@@ -2369,44 +2368,6 @@ var answer = answer.concat(
 <img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 관리 1교시 9번 <br/>\
 * 116회 관리 1교시 3번\
-',
-
-// Hashing
-'# 정의 : 저장, 검색 수행기법 / Table / Function <br/>\
-- Hash Function + Indexing <br/>\
-- Hash Table 저장공간에 Hash Function 을 이용하여 저장과 검색을 수행하는 기법 <br/><br/>\
-# 특징 <br/>\
-- 검색속도 빠름, 기억공간 소모 많음 <br/>\
-- 키-주소 변환 필요 (DAM-직접접근 파일 구성시 사용) <br/><br/>\
-# 구성요소 <br/>\
-- Keys <br/>\
-- Hash Function <br/>\
-- Buckets <br/><br/>\
-# Hash Table <br/>\
-1. 개념 : Bucket으로 구성된 기억공간 <br/><br/>\
-2. 구성요소 <br/>\
-- Bucket : 한 개 이상 데이터 저장 공간 / 한 개 Address <br/>\
-- Slot : 한 개 데이터 저장 공간 <br/>\
-- Collision : Home addredss 동일 현상 <br/>\
-- Synoyms : 동일한 홈 주소 데이터 집합 <br/>\
-- Overflow : Bucket 범위 <br/><br/>\
-# Overflow 처리기법 <br/>\
-1. 개방주소법 : 다른 주소도 개방 <br/>\
-- 선형 검색법 <br/>\
-- 2차 검색법 <br/>\
-- 무작위 검색법 <br/>\
-- 이중해싱 <br/><br/>\
-2. 폐쇄주소법 : 다른 주소 개방 안하니 Chaining으로 해결 <br/>\
-- 해시 체이닝 <br/>\
-- 동거자 <br/>\
-- 독립 오버플로 구역 <br/><br/>\
-3. 재해싱 : 새로운 해싱함수를 이용하여 새로운 홈 주소 추출 <br/><br/>\
-# Hashing Function (제기폴제)<br/>\
-- 제산법 : 나머지 값 <br/>\
-- 기수변환법 : 임의의 기수로 변환 <br/>\
-- 폴딩법 : 여러조각 나눔후 임의 연산 <br/>\
-- 제곱법 : 키값 제곱후 중간부분 사용 <br/><br/>\
-* 그리타 \
 ',
 
 // Hash Algorithm
