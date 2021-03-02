@@ -1340,7 +1340,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 고신뢰성 기술 : HW 수준 보안/고신뢰 AI(Secure-by-Design, OSS 보안 강화, 적대적 머신러닝 대응 AI) <br/>\
 - Duplex 통신 기술 : 상호 배타적 통신(안테나) <br/>\
 - 최적화 기술 : Comprehensive AI <br/>\
-- 만물지은 인터넷 : SPlit Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
+- 만물지능 인터넷 : SPlit Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
 # 5G 비교 <br/>\
 <img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 이동통신 기술의 한세대를 통상 10년으로 칭함 \
