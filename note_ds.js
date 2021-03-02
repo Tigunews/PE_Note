@@ -112,6 +112,7 @@ var question = question.concat(
 '[블록체인]- NFT',
 '[블록체인]- De-Fi',
 '[블록체인]- ICO',
+'[블록체인]- KYC',
 '[하이퍼레저]- 하이퍼레저 패브릭',
 'MaaS',
 'Dark Net',
@@ -2105,6 +2106,23 @@ var answer = answer.concat(
 - Pre-Allocation : 일정량을 미리 발행하여 파운더와 파운데이션 팀에게 선분배 <br/>\
 - Pre-Minded : 프로토콜을 공개하기 전 선 채굴하여 거래소 상장시 판매하는 방식 <br/><br/>\
 * KPC 80회 관리 3교시 4번\
+',
+ 
+// KYC
+'# 정의 : Know Your Customer <br/>\
+- 금융회사가 제공하는 서비스가 자금세탁과 같은 불법행위에 이용되지 않도록 고객정보 파악, 검증에 불법자금 차단을 위해 계좌와 고객의 신원을 검증하는 절차 <br/><br/>\
+# 필요성 : 규정준수, 개인의 보호, 특금법개정안 <br/><br/>\
+# 프로세스 <br/>\
+<img src = "./img/KYCProcess.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 자금세탁 방지제도 구성요소 <br/>\
+- KYC : 고객 신원 검증 인증 절차 <br/>\
+- 제재목록 스크리닝 : 위험인물, 주요리스트 등 가능성 검색 <br/>\
+- 의심거래보고(STR) : 의심스러운 금융거래 보고 제도 <br/>\
+- 고액현금거래보고(CTR) : 일정 거래액 초과 현금 거래 보고 제도 <br/>\
+<font color = "red">\
+* STR : Suspicious Transaction Report <br/>\
+* CTR : Currency Transaction Report <br/><br/></font>\
+* 122회 관리 1교시 10번 \
 ',
   
 // 하이퍼레저 패브릭
