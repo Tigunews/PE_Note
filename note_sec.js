@@ -1497,6 +1497,7 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 # Overview <br/>\
 <img src = "./img/Data3RuleOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 개정안 <br/>\
+<img src = "./img/Data3RuleChange.png" style = "max-width:100%; height:auto;"><br/>\
 - 개인정보보호법 : 가명정보 도입, 보호체계 일원화 <br/>\
 - 정보통신망법 : 개인정보보호법 및 위원회 이관 <br/>\
 - 신용정보법 : 데이터 활용 법적 근거 명확화, 개인정보보호위원회 기능 강화 <br/><br/>\
