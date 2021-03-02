@@ -64,6 +64,8 @@ var question = question.concat(
 '암호화 기술',
 'Hash Function',
 '[Hash Function]- Hash Algorithm',
+'[Hash Algorithm]- MDC',
+'[Hash Algorithm]- MAC',
 '[암호화 기술]- 양자암호통신',
 '[양자 보안]- QKD',
 '[양자 보안]- PQC',
@@ -1211,11 +1213,54 @@ var answer = answer.concat(
 # 원리 <br/>\
 <img src = "./img/HashAlgorithMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 종류 <br/>\
-<img src = "./img/HashAlgorithmType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+1. MDC(Modification Detection Code) <br/>\
+- MD5 : 임의 메시지 128비트 암호화 알고리즘 <br/>\
+- SHA-1 : 임의 메시지 160 비트 암호화 알고리즘 <br/>\
+- HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
+- Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
+- HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
+2. MAC <br/>\
+- Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
+- HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
+- CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
+- CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
 # SHA 알고리즘 종류 <br/>\
 <img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 보안성 확보방안 <br/>\
+- Hash Salt : 다이제스트 생성할 때 임의 문자열을 추가하는 방식 <br/>\
+- Key Stretching : 다이제스트 생성 후 이를 N번 반복하는 방법 <br/>\
+- PBKDF2(Password-Based Key Derivation Function) : 미국 정부 시스템 다이제스트 생성 알고리즘 <br/><br/>\
 * 120회 관리 1교시 9번 <br/>\
 * 116회 1교시 3번\
+',
+  
+// MDC
+'# 정의 : 무결성 보장, MDC 비교 알고리즘 <br/>\
+- Modification Detection Code <br/>\
+- 메시지의 무결성 보장 위해 수신한 메시지의 MDC를 계산하고 송신 측이 보내준 MDC와 동일하지 비교하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MDCFLow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+- MD5 : 임의 메시지 128비트 암호화 알고리즘 <br/>\
+- SHA-1 : 임의 메시지 160 비트 암호화 알고리즘 <br/>\
+- HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
+- Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
+- HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
+* 120회 관리 1교시 9번 \
+',
+  
+// MAC
+'# 정의 : 대칭키 이용, 인증 알고리즘 <br/>\
+- Message Authentication Code <br/>\
+- 해시함수와 대칭키를 이용하여 메시지 무결성을 확인하고 메시지에 대한 인증을 하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MACFlow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+- Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
+- HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
+- CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
+- CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
+* 120회 관리 1교시 9번\
 ',
    
 // [암호화기술]- 양자암호통신
