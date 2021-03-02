@@ -140,8 +140,6 @@ var question = question.concat(
 '[AI]- 추천 시스템',
 '[AI][정책]- AI 조달 가이드라인',
 '[AI][정책]- 한국판 AI 윤리기준', 
-'Hash Function',
-'[Hash Function]- Hash Algorithm',
 '추정이론(estimation theory)',
 '가설검정 (Statistical Hypothesis Testing)',
 '베이즈 정리',
@@ -2352,35 +2350,6 @@ var answer = answer.concat(
 - 투명성 : 설명 가능성, 활용 내용 및 유의사항 사전 교체 \
 ',
   
-// Hash Function
-'# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
-- 임의의 길이의 데이터를 "해시 알고리즘을 이용하여" 고정된 길이 데이터로 매핑하는 함수 <br/>\
-- Input : Hash Key / Output : Bucket home address <br/><br/>\
-# 특징 <br/>\
-- 고정된 길이의 값 출력 <br/>\
-- 입력 값 일부 변경 되더라도 전혀다른 결과값 출력 (Snow ball) <br/>\
-- 출력값 토대로 입력값 유추 불가능(역상 저항성) <br/>\
-- 입력값은 항상 동일한 해시값 출력 <br/><br/>\
-# 종류 <br/>\
-- 암호학적 : MD5, SHA 계열 <br/>\
-- 비 암호학적 : CRC32 <br/><br/>\
-# SHA 알고리즘 종류 <br/>\
-<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 120회 관리 1교시 9번 <br/>\
-* 116회 관리 1교시 3번\
-',
-
-// Hash Algorithm
-'# 정의 : Hash function + Encryption <br/>\
-- 임의의 길이의 메시지를 일정 고정길이의 해쉬 값으로 변환시켜주는 단방향성 알고리즘 <br/><br/>\
-# 조건 <br/>\
-<img src = "./img/HashAlgorithmCondition.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 원리 <br/>\
-<img src = "./img/HashAlgorithMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 120회 관리 1교시 9번 <br/>\
-* 116회 1교시 3번\
-',
-
 // 추정이론
 '# 정의 : 모집단 성질 유추 방법<br/>\
 - 표본에 들어있는 정보에 의거해서 모집단의 성질을 유추하는 통계적 추론 방법 <br/><br/>\
