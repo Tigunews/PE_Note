@@ -2362,10 +2362,6 @@ var answer = answer.concat(
 - 입력 값 일부 변경 되더라도 전혀다른 결과값 출력 (Snow ball) <br/>\
 - 출력값 토대로 입력값 유추 불가능(역상 저항성) <br/>\
 - 입력값은 항상 동일한 해시값 출력 <br/><br/>\
-# 특성 <br/>\
-- 역상 저항성 : 해시값으로 원본 유추 불가능 <br/>\
-- 2역상 저항성 : 동일 해시값으로 다른 입력값 유추 불가능 <br/>\
-- 충돌 저항성 : 동일 해시값 지닌 입력값 쌍 유추 불가능 <br/><br/>\
 # 종류 <br/>\
 - 암호학적 : MD5, SHA 계열 <br/>\
 - 비 암호학적 : CRC32 <br/><br/>\
@@ -2405,22 +2401,21 @@ var answer = answer.concat(
 - 동거자 <br/>\
 - 독립 오버플로 구역 <br/><br/>\
 3. 재해싱 : 새로운 해싱함수를 이용하여 새로운 홈 주소 추출 <br/><br/>\
+# Hashing Function (제기폴제)<br/>\
+- 제산법 : 나머지 값 <br/>\
+- 기수변환법 : 임의의 기수로 변환 <br/>\
+- 폴딩법 : 여러조각 나눔후 임의 연산 <br/>\
+- 제곱법 : 키값 제곱후 중간부분 사용 <br/><br/>\
 * 그리타 \
 ',
 
 // Hash Algorithm
 '# 정의 : Hash function + Encryption <br/>\
 - 임의의 길이의 메시지를 일정 고정길이의 해쉬 값으로 변환시켜주는 단방향성 알고리즘 <br/><br/>\
-# 특징 <br/>\
-- 단방향성 <br/>\
-- 충돌저항성 <br/>\
-- 압축성 <br/>\
-- 효율성 <br/><br/>\
-# Algorithm (제기폴제)<br/>\
-- 제산법 : 나머지 값 <br/>\
-- 기수변환법 : 임의의 기수로 변환 <br/>\
-- 폴딩법 : 여러조각 나눔후 임의 연산 <br/>\
-- 제곱법 : 키값 제곱후 중간부분 사용 <br/><br/>\
+# 조건 <br/>\
+<img src = "./img/HashAlgorithmCondition.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 원리 <br/>\
+<img src = "./img/HashAlgorithMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 관리 1교시 9번 <br/>\
 * 116회 1교시 3번\
 ',
