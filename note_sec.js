@@ -1199,8 +1199,6 @@ var answer = answer.concat(
 # 종류 <br/>\
 - 암호학적 : MD5, SHA 계열 <br/>\
 - 비 암호학적 : CRC32 <br/><br/>\
-# SHA 알고리즘 종류 <br/>\
-<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 관리 1교시 9번 <br/>\
 * 116회 관리 1교시 3번\
 ',
@@ -1212,6 +1210,10 @@ var answer = answer.concat(
 <img src = "./img/HashAlgorithmCondition.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 원리 <br/>\
 <img src = "./img/HashAlgorithMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+<img src = "./img/HashAlgorithmType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# SHA 알고리즘 종류 <br/>\
+<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 관리 1교시 9번 <br/>\
 * 116회 1교시 3번\
 ',
