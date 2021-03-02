@@ -1801,8 +1801,8 @@ var answer = answer.concat(
 ',
   
 // 적대적 공격
-'# 정의 : 머신러닝 Noise 취약점 <br/>\
-- 머신러닝/딥러닝의 원본 이미지 혹은 데이터에 미세한 잡읍을 추가하여 전혀 다른 결과가 도출되게끔 하는 공격기법 <br/><br/>\
+'# 정의 : 적대적 교란, 오분류 발생, 공격기술 <br/>\
+- 머신러닝의 심층신경망을 이용한 모델에 적대적 교란을 적용하여 오분류를 발생시키는 공격 기술 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/AdversalAttackOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 공격유형 <br/>\
