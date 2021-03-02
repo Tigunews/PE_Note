@@ -806,6 +806,9 @@ var answer = answer.concat(
 3. OPC UA <br/>\
 - 개념 : IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/>\
 - 보안규격 : IEC 62541-2 <br/><br/>\
+# ICT 시스템 보안 구조 비교 <br/>\
+<img src = "./img/ICS_ICT_SEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 1교시 8번 <br/>\
 * 라이지움 81회 관리 2교시 4번\
 ',
   
