@@ -1819,6 +1819,7 @@ var answer = answer.concat(
 - 모델 추출 공격(Model Extraction Attack) : 입력, 결과값 통한 모델 추출 <br/>\
 - 종류 : Model Inversion, Model Extraction via APIs <br/><br/>\
 # 대응방안 <br/>\
+<img src = "./img/AdversalPortect.png" style = "max-width: 100%; height: auto;"><br/>\
 1. 회피 공격(Evasion Attack) <br/>\
 - 데이터 구별 이진분류기 이용한 판별 <br/>\
 - MagNet : 적대적 예제에서 신경망 분류기 보호 위한 프레임 워크 <br/>\
