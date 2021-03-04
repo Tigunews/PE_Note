@@ -1024,7 +1024,7 @@ var answer = answer.concat(
 - 통합인증 : 다수 정보제공자가 공통 인증수단 이용 동시 인증방식 <br/>\
 - 마이데이터 지원센터 : 개인신용정보의 범위, 전송규격, 표준화, 중계기관 운영, 수수료 기준, 권리보호 등 지원 기관 <br/>\
 - 마이데이터 종합포털 : 마이데이터 지원센터가 제공하는 웹 기반 서비스 <br/>\
-<hr width = "100%" color = "blue"  noshade/><br/><br/>\
+<hr width = "100%" color = "blue"  noshade/>\
 # 2장 마이데이터 산업 <br/>\
 * 마이데이터산업 : 고객의 전송요구권 행사에 따라 분산되어 있는 개인신용 정보를 제공받아 해당 고객에게 통합조회 서비스를 제공하는 산업 <br/><br/>\
 * 마이데이터산업에 해당하지 않는 영업의 예시(허가 불필요) <br/>\
@@ -1055,7 +1055,7 @@ var answer = answer.concat(
 * 정보제공자 및 중계기관의 의무 <br/>\
 - 정보제공자 API 정보전송 의무 : API 방식으로 고객 신용정보를 본인 신용정보관리회사에 직접 전송 <br/>\
 - 정보제공자 및 중계기관의 전송내역 기록 작성 및 보관 <br/><br/>\
-<hr width = "100%" color = "blue"  noshade/><br/><br/>\
+<hr width = "100%" color = "blue"  noshade/>\
 # 3장 개인신용정보의 전송요구 <br/>\
 * 제공동의, 전송요구 <br/>\
 <img src = "./img/InfoGetAgreeRequire.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
@@ -1102,7 +1102,7 @@ var answer = answer.concat(
 <img src = "./img/info2Etc.png" style = "max-width:100%; hegiht:auto;"><br/>\
 3. 마이데이터 사업자 전송 <br/>\
 <img src = "./img/info2MydataBusiness.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<hr width = "100%" color = "blue"  noshade/><br/><br/>\
+<hr width = "100%" color = "blue"  noshade/>\
 # 4장 마이데이터 지원센터 <br/>\
 * 개요 : 마이데이터산업이 원활이 운영될 수 있도록 지원하는 역할을 하는 기구로 종합신용정보집중기관인 한국신용정보원이 수행 <br/><br/>\
 * 마이데이터 생태계와 참여주체 <br/>\
