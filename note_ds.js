@@ -1007,7 +1007,8 @@ var answer = answer.concat(
 ',
   
 // My Data 산업
-'# 개념 <br/>\
+'# 개념 : 전송요구권 행사 / 분산 / 통합조회 서비스 제공 산업 <br/>\
+- My Data 산업 : (본인신용정보관리업); 고객의 전송요구권 행사에 따라 분산되어 있는 개인신용정보를 제공받아 해당 고객에게 통합조회 서비스를 제공하는 산업 <br/>\
 <img src = "./img/MyDataConcept.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 주체별 역할, 처리흐름 <br/>\
 <img src = "./img/MyDataSpecification.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
