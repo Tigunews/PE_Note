@@ -19,6 +19,7 @@ var question = question.concat(
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
 'AVL 트리',
+'[AI]- 인공지능 특이점',
 '[AI]- 기계학습',
 '[AI]- 지도학습',
 '[AI]- Clustering',
@@ -434,6 +435,25 @@ var answer = answer.concat(
 <img src = "./img/AVL_RR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_LR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;">\
+',
+  
+// 인공지능 특이점
+'# 정의 : 인공지능 > 인간 시점 <br/>\
+- 인간이 스스로 만든 인공지능 기술을 이해하거나 따라잡지 못하는 미래의 한계점, 즉 인공지능이 인가의 두뇌를 뛰어넘는 시점 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SingularityGraph.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 방향성 <br/>\
+- 인공지능 기술의 진보 : 튜링 테스트 통과 <br/>\
+- 인공지능 확장 : Brain 대체 <br/>\
+- 데이터베이스 : 데이터기반 인공지능 결합 진보 <br/>\
+- 유전자 기술 : 단백질 접힘 시뮬레이션, DNA 서열 분석 <br/><br/>\
+# 엑소브레인 SW <br/>\
+- 개념 : 내 몸 바깥에 있는 인공두뇌, 기계가 자연어를 이해하고 지식을 학습해 생산하는 인간과 기계와의 의사소통을 뛰어넘어 지식 소통이 가능한 인공지능 SW <br/>\
+- 기술요소 : NLU 및 응답(ETRI), 자가학습 KB 및 추론(솔트록스), 인간모사 학습 지능 원천(KAIST), 자율 협업 지능(ETRI) <br/><br/>\
+# Deppview <br/>\
+- 개념 : 대규모 이미지,영상을 분석하여 내용 이해 및 상황 예측을 실시간으로 수행, 대규모 시각 빅데이터의 분석 및 예측 가능한 컴퓨터 비전 기술 <br/>\
+- 기술요소 : 수집관리 기술(DB Bank), 대규모 처리 기술(처리 파이프라인), 내용 분석 기술(다차원 시각데이터 분석 및 이해 SW) <br/><br/>\
+* 108회 관리 3교시 6번\
 ',
   
 // 기계학습
