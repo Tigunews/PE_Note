@@ -219,6 +219,8 @@ var answer = answer.concat(
 <img src = "./img/Industry_World.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Overview <br/>\
 <img src = "./img/Industry4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Computing Power <br/>\
+<img src = "./img/Industry4.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 2교시 3번\
 ',
   
