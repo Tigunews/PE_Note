@@ -1,6 +1,0 @@
-var question =
-[
-];
-var answer = 
-[
-];
