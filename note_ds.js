@@ -59,6 +59,15 @@ var question = question.concat(
 '[3D 프린터]- 팝업팩토리(Pop-up Factory)',
 '오감기술',
 '모션기술',
+'Web 2.0',
+'[Web2.0]- Ajax', 
+'[Web2.0]- CCL',
+'[Web2.0]- Folksonomy',
+'[Web2.0]- Enterprise 2.0',
+'[Web2.0]- Web Syndication',
+'[Web2.0]- SPA',
+'[Web3.0]- PWA',
+'[Web3.0]- Service Worker',
 '[Web 3.0]- WebRTC',
 '[Web 3.0]- React.js',
 '[Web 3.0]- REST',
@@ -162,7 +171,6 @@ var question = question.concat(
 '[Open API]- REST API',
 '[Open API]- OAuth2.0',
 '[Open API]- OAS',
-'Service Worker',
 'Ontact',
 '디지털 트윈',
 'Edge Computing',
@@ -1241,6 +1249,116 @@ var answer = answer.concat(
 // 모션기술
 '# 정의 : 모션 제공 사실 체험 극대화 기술 <br/>\
 - 가상현실과 접목되어 적절한 모션을 제공하여 사실적인 체험을 극대화 할 수 있는 기술',
+  
+// Web 2.0
+'# 정의 : 공유,참여,개방 / 참여 중심의 웹 플랫폼 <br/>\
+- 공유, 참여, 개방이라는 개념하에 데이터의 소유자나 독점자 없이 누구나 데이터를 생산하고 인터넷에 공유할 수 있도록 한 사용자 참여 중심의 웹 플랫폼 <br/><br/>\
+# 구성요소 <br/>\
+- 컨텐츠 : 참여(블로그, UCC), 개방(웹신디케이션, RSS), 분산(롱테일, 추천) <br/>\
+- 플랫폼 : 클라이언트(아작스, 위젯), 서버(애자일, 루비), 컨텐츠(XML, RSS) <br/><br/>\
+# 주요기술 <br/>\
+- Rest, LAMP, Ajax, Wiki, RSs/Atom, Tagging, Folksonmy, RIA, XHTML, Flex, Widget, Gadget <br/><br/>\
+# 주요서비스 <br/>\
+- Ajax, UCC, Wiki, Metaverse, SNS, Social SW, Enterprise 2.0, Mashup<br/><br/>\
+# SOA 차이점 <br/>\
+1. Web 2.0 <br/>\
+- 모델 : 웹서비스 <br/>\
+- 기술 : Ajax, API, LAMP <br/>\
+- 역량 : SaaS, 데이터소스 통제, 가벼운 UI <br/>\
+- 유연성 ; 단순 데이터 포맷 <br/><br/>\
+2. SOA <br/>\
+- 모델 : 웹서비스 <br/>\
+- 기술 : WSDL, UDDI, SOAP <br/>\
+- 역량 : 시스템-데이터 통합, 비용절감/Agile, 개방형 표준 <br/>\
+- 유연성 : 개방형 표준 기반 유연성 제공  \
+',
+  
+// Ajax
+'# 정의 : XMLHttpRequest, JavaScript 특정 부분 비동기 교환 처리 웹 기술 <br/>\
+- Asychronous Javascript And XML <br/>\
+- XMLHttpRequest, JavaScript 등을 이용하여 웹페이지 전체가 아닌 특정 부분의 데이터만을 비동기적으로 교환하고 처리하는 웹 기술 <br/><br/>\
+# 주요기술 : XML, CSS, DOM, XHTML, XSLT, XMLHttpRequest <br/><br/>\
+# 취약점 : Ajax Bridge/Worm, XSS, 자바스크립트 소스 노출, 클라이언트 사이드 보안, 웹 플랫폼 취약성 <br/><br/>\
+# 대응방안 <br/>\
+- 최소권한(Xross Site간) <br/>\
+- 웹 취약점 최소화 <br/>\
+- 특수문자 처리 <br/>\
+- 토큰 사용 <br/>\
+- 문자열 암호화, 인증과정, 보안 통신 \
+',
+  
+// CCL
+'# 정의 : 저작물 이용 허락 표시 제도 <br/>\
+- Creative Commons License) <br/>\
+- 저작권자가 자신의 저작물에 대한 이용방법 및 조건을 표시하는 일종의 표준 약관이자 저작물 이용허락 표시 <br/><br/>\
+# 구성요소(저비변동) : 저작권자 표시, 비영리, 변경금지, 동일조건 변경허락 \
+',
+  
+// Folksonomy
+'# 정의 : 웹페이지 정보 Tag 분류 체계 <br/>\
+- 웹 페이지에 공개되는 정보나 관련 주체를 기존 분류학 기술인 디렉토리로 나누는 것이 아닌 태그에 따라 구분하는 분류 체계 <br/><br/>\
+# 구성요소(URT) <br/>\
+- User : 아이디, 이메일 <br/>\
+- Resource : 내용, 주체, 문서타입, 업무, 의견, 목적 <br/>\
+- Tagging : 링크주소, 글, 비디오 사진 <br/><br/>\
+# Taxnomy 비교 <br/>\
+- 분류주체, 구조, 적용분야, 변경, 형태 \
+',
+  
+// Enterprise 2.0
+'# 정의 : Web 2.0 개념 확장 / Social NW, Social SW / 가치 공유 협업 패러다임 <br/>\
+- Web 2.0의 기술과 개념을 비즈니스 및 기업으로 확장하여 Social Network 및 Soical Software를 활용한 가치 공유 및 협업의 패러다임 <br/><br/>\
+# 기본원칙 : 용이성, 개방성, 호환성, 잠재성, 참여성 <br/><br/>\
+# 전제조건 : 열린문화, 통합 플랫폼, 단계적 적용, 경영진 지원 <br/><br/>\
+# 구성요소 : Search, Link, Authoring, Tag, Extension, Signals <br/><br/>\
+# 기반기술 : Web 2.0 \
+',
+  
+// Web Syndication 
+'# 정의 : XML 제공 기술 <br/>\
+- 웹 사이트의 컨텐츠를 XML 파일 형태로 외부에 제공하는 기술 <br/><br/>\
+# 구현기술 <br/>\
+- RSS : Feed, Reatder, Aggrgator, Podcastion, OPML <br/>\
+- Atom : Syndication Format, Publishing, Protocol(App) <br/><br/>\
+# RSS, Atom 비교 <br/>\
+- 제공방식, 확인, 데이터 정보, 저장방식 \
+',
+  
+// SPA
+'# 정의 : 새로고침 없는 단일 페이지 구성 <br/>\
+- Single Page Application <br/>\
+- 브라우저에서 페이지 간 이동 없이 자바스크립트를 이용해서 동적으로 페이지를 변경할 수 있는 웹 어플리케이션 <br/><br/>\
+# 기술요소 <br/>\
+- Server : RESTful Service <br/>\
+- 통신 : Ajax, Web Socket, JSON <br/>\
+- Client : Javascript, HTML 5, JS Library \
+',
+  
+// PWA 
+'# 정의 : 웹, 앱 장점 / Native App 수준 사용자 경험 / 제공 기술 <br/>\
+- Progressive Web Apps <br/>\
+- 웹과 앱의 장점을 결합하여 웹브라우저에서 실행하며 Native App 수준의 사용자 경험을 제공하는 웹 기술 \
+',
+  
+// Service Worker 
+'# 정의 : 웹 페이지 백그라운드 스크립트 <br/>\
+- PWA(Progressive Web Application)의 핵심 Building Block <br/>\
+- Event에 대해서 반응 하는 역할, 서비스 워커 만의 다양한 기능 제공 <br/>\
+- 웹 브라우저와 별개로 동작하며, 웹페이지 또는 사용자 상호작용이 필요하지 않는 백그라운드로 실행되는 스크립트 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ServiceWorker.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 생명주기 <br/>\
+- Installing : 서비스 워커 URL 등록 <br/>\
+- Installed/Waiting : 등록, 대기 <br/>\
+- Activating : Trigger <br/>\
+- Activated : 페이지 제어, 이벤트 수신 <br/>\
+- Redundant : 실패, 새로운 서비스 워커 활성화 <br/><br/>\
+# 활용분야 <br/>\
+- Caching : 캐시 DB 로딩 <br/>\
+- Web Push : 웹 통제 <br/>\
+- Offline : 오프라인 컨텐츠 <br/><br/>\
+* 122회 2교시 4번\
+',
 
 // [Web 3.0]- WebRTC
 '# 정의 : No Plugin Service <br/>\
@@ -3151,26 +3269,6 @@ var answer = answer.concat(
 - OAuth 플로우 기반 인증 <br/><br/>\
 * 성능요건, 적용가능 버전, CORS 제한 대응 <br/><br/>\
 * 123회 관리 1교시 7번 \
-',
-
-// Service Worker 
-'# 정의 : 웹 페이지 백그라운드 스크립트 <br/>\
-- PWA(Progressive Web Application)의 핵심 Building Block <br/>\
-- Event에 대해서 반응 하는 역할, 서비스 워커 만의 다양한 기능 제공 <br/>\
-- 웹 브라우저와 별개로 동작하며, 웹페이지 또는 사용자 상호작용이 필요하지 않는 백그라운드로 실행되는 스크립트 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/ServiceWorker.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 생명주기 <br/>\
-- Installing : 서비스 워커 URL 등록 <br/>\
-- Installed/Waiting : 등록, 대기 <br/>\
-- Activating : Trigger <br/>\
-- Activated : 페이지 제어, 이벤트 수신 <br/>\
-- Redundant : 실패, 새로운 서비스 워커 활성화 <br/><br/>\
-# 활용분야 <br/>\
-- Caching : 캐시 DB 로딩 <br/>\
-- Web Push : 웹 통제 <br/>\
-- Offline : 오프라인 컨텐츠 <br/><br/>\
-* 122회 2교시 4번\
 ',
 
 // Ontact
