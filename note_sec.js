@@ -1803,7 +1803,8 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 <img src = "./img/ISOIEC20889_Tech.png" style = "max-width:100%; height:auto;"><br/>\
 <font color = "red">* ISO/IEC 20889 : 비식별 처리 표준 기준 </font><br/><br/>\
 # 가명처리 절차 <br/>\
-<img src = "./img/PseudonymizationProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/PseudonymizationProcess.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/PseudonymizationProcessDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 결합, 반출 절차 <br/>\
 - 결합키 생성 : 일련번호 생성, 관리기관 합의하 결합키 생성 <br/>\
 - 결합키연계정보 및 시계열 분석키 생성 <br/>\
