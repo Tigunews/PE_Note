@@ -99,7 +99,7 @@ var question = question.concat(
 '[산업제어시스템]- SCADA',
 'ISO 26262',
 'IEC 61508',
-'[ISO/IEC 61508]- IEC 6150 (SIL)',
+'[ISO/IEC 61508]- SIL',
 'HILS, HIL 시뮬레이션',
 '문자 인코딩',
 '3D Sensing',
@@ -1960,10 +1960,10 @@ var answer = answer.concat(
 <img src = "./img/IEC61508.png" style = "width:100%; height:auto;">\
 ',
 
-// [ISO/IEC 61508]- IEC 6150 SIL
+// [ISO/IEC 61508]- SIL
 '# 정의 : ISO/IEC 61508 안전 무결성 수준 <br/>\
 - Safety Integrity Level <br/>\
-- Risk 정보에 따라 안전관련 시스템의 기능이 갖추어야할 사항을 규정한 등급 <br/><br/>\
+- 주어진 조건하에 있는 안전 관련 시스템이 주어진 시간 내에 요구되는 안전 기능을 만족스럽게 수행할 수 있는 확률의 등급 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/SoftwareSaftyStatus.png" style = "width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
@@ -1971,8 +1971,12 @@ var answer = answer.concat(
 - 시스템 안전 무결성 : Systematic Failure, 인적 오류(안전 요구사항 명세, 설계, 구현)<br/><br/>\
 # 결정 방법 <br/>\
 - High demanded rate : 안전 관련 기능 대한 사용이 계속적으로 발생시 적용 (ex: 센서) <br/>\
-- Low demand rate : 사용빈도수 대략 년 회 미만시 (ex: 에어백) <br/><br/>\
+- Low demand rate : 사용빈도수 대략 년 1회 미만시 (ex: 에어백) <br/><br/>\
+1. 정량적 <br/>\
 <img src = "./img/SIL.png", style = "max-width:100%; height:auto;"><br/><br/>\
+2. 정성적 <br/>\
+<img src = "./img/SIL_Qualitative.png", style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SIL_QualitativeExample.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 13번\
 ',
 
