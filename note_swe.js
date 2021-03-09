@@ -4646,22 +4646,50 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/Agile_1.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
-// xp
+// XP
 '# 정의 : 유연하고 신속한 개발 방법론 <br/>\
+- eXtreme Programming <br/>\
 - 의사소통과 TDD를 기반으로 짧은 개발 주기를 통해 소프트웨어를 생산하는 Agile 개발 프로세스의 대표적 개발 방법론 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/XPOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 핵심 가치 (용단커피존) <br/>\
-- 용기 : 요구사항 능동대처 <br/>\
-- 단순성 : 부가 기능 배제 <br/>\
-- 의사소통 : 이해관계자 <br/>\
-- 피드백 : 빠른 피드백, 일처리 <br/>\
-- 존중 : 상호간 존중 <br/><br/>\
+- 용기(Courage) : 요구사항 능동대처 <br/>\
+- 단순성(Simplicity) : 부가 기능 배제 <br/>\
+- 의사소통(Communication) : 이해관계자 <br/>\
+- 피드백(Feed Back) : 빠른 피드백, 일처리 <br/>\
+- 존중(Respect) : 상호간 존중 <br/><br/>\
 # 단계 (유릴사스)<br/>\
 <img src = "./img/XP.png" style = "max-width:100%; hegiht:auto;"><br/>\
 - User story : 요구사항 수집 <br/>\
 - Release Planning : 전체 배포 계획 <br/>\
 - Spike : 핵심 기능 프로토타입 <br/>\
 - Acceptance Test : 고객 진척 확인 <br/>\
-- Small Release : 짧은 사이클, 빠른 피드백 \
+- Small Release : 짧은 사이클, 빠른 피드백 <br/><br/>\
+# 원칙 <br/>\
+- Baby Steps : 단계 세분화 분하 < 큰 변화 시도 했다가 실패해서 돌아갈때드는 비용 <br/>\
+- Flow : 개발의 모든 단계 동시 진행, 가치 잇는 SW 물흐르듯 끊임 없이 제공 <br/>\
+- Reflection : 실수에서 배움 <br/>\
+- Improvement : SW 완벽해지기 위해 노력 <br/>\
+- Mutual Benefits : 모든 활동은 관련된 사람에게 이익 되어야 함 <br/>\
+- Failure : 성공하는데 어려움 겪는 다면 실패해라 <br/>\
+- Redundancy : 핵심적이면서 해결하기 어려운 문제는 보험을 들어라 <br/><br/>\
+# 실천방법 <br/>\
+1. Fine-Scale Feedback <br/>\
+- Pair-Programming : 2명 프로그래머 코딩, 리뷰 역할 바꿔가며 공동작업 <br/>\
+- Planning Game : 게임처럼 선수, 규칙 목표 두고 기획 <br/>\
+- TDD : 테스트부터 작성 및 수행 기반 코드 작성 <br/>\
+- Whole Team : 요구사항 대한 즉각적 대답 위해 고객 참여 <br/><br/>\
+2. Continuous Process<br/>\
+- Continuous Integration : 상시 빌드 및 배포 가능 상태 유지 <br/>\
+- Refactoring : 기능 변경없이 중복/복잡성 제거 <br/>\
+- Small Release : 짧은 주기(1~2주)로 잦은 배포, 고객 변경사항 볼 수 있게 함 <br/><br/>\
+3. Shared Understanding <br/>\
+- Coding Standards : 소스 코드 작성 포맷, 규칙들 표준화 관계 따라 작성 <br/>\
+- Collective Code Ownership : 시스템에 있는 코드는 프로그래머 누구든지 언제라도 수정 가능 <br/>\
+- Simple Design : 가능한 간결한 디자인 유지 <br/>\
+- System Metaphore : 최종적 개발 되어야 할 시스템 구조 기술 <br/><br/>\
+4. Programmer Welfare <br/>\
+- Sustainable pace : 일주일 40시간 작업금지, 2주 연속 오버타임 금지 <br/><br/>\
 ',
 
 // Scrum
