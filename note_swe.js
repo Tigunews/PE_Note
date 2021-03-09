@@ -1,5 +1,5 @@
 var question = question.concat(
-'공학 ',
+'공학 개요',
 '[개요]- SW공학',
 '[개요]- SW공학의 원리',
 '[계획단계]- 비용산정',
@@ -258,6 +258,7 @@ var question = question.concat(
 '[모델][SDLC]- 프로토타입모델(Prototype) = 원형모델',
 '[모델][SDLC]- 나선형 모델(Spiral)',
 '[모델][SDLC]- 반복적개발모델 = 점증적개발모델',
+'[모델]- 4세대 모형',
 '[모델][SDLC]- RAD',
 '[모델][SDLC][RAD]- JAD',
 '[모델]- 클린룸(Clean Room) 모델',
