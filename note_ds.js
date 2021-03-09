@@ -198,7 +198,7 @@ var question = question.concat(
 '[로봇]- URC',
 '[로봇]- SLAM',
 '[IoT]- 객체 식별자 기반 사물인터넷 디바이스 식별체계(TTAK.KO-06.0365/RI)',
-'[Gartner 2020]- Democraization',
+'[Gartner 2020]- Democratization',
 '[Gartner 2021][People Centricity]- IoB',
 '[Gartner 2021][People Centricity]- 전체 경험',
 '[Gartner 2021][People Centricity]- 개인정보보호 강화 컴퓨팅',
