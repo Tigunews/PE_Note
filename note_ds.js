@@ -198,6 +198,7 @@ var question = question.concat(
 '[로봇]- URC',
 '[로봇]- SLAM',
 '[IoT]- 객체 식별자 기반 사물인터넷 디바이스 식별체계(TTAK.KO-06.0365/RI)',
+'[Gartner 2020]- Democraization',
 '[Gartner 2021][People Centricity]- IoB',
 '[Gartner 2021][People Centricity]- 전체 경험',
 '[Gartner 2021][People Centricity]- 개인정보보호 강화 컴퓨팅',
@@ -3709,6 +3710,39 @@ var answer = answer.concat(
 # 목적 : 글로벌 식별체계 구축, 산업 활성화 <br/><br/>\
 # 구성요소 : 상위, 제조사식별, 모델, 일련번호식별 <br/><br/>\
 * 116회 1교시 11번\
+',
+  
+// Democratization
+'# 정의 : 단순화된 경험 / 전문 지식 대중 제공 패러다임 <br/>\
+- 고도의 훈련 없이 단순화된 경험을 통해 SW개발, 인공지능등의 기술전문지식이나 세일즈, 경제 분석 등 사업 전문 지식을 대중에게 제공하는 패러다임 <br/><br/>\
+# 제공형태 <br/>\
+1. 데이터 분석의 민주화 <br/>\
+- AI 및 분석툴 사용대상이 전문가->일반 개발자 or 업종 전문가 <br/>\
+- Citizen Data Scientist, Self-Service Analytics, Augmented Analytics <br/><br/>\
+2. 개발의 민주화 <br/>\
+- 맞춤 개발 App 활용할 수 있는 AI 툴 확산, AI 개발 용이 <br/>\
+- Citizen Development, AI PaaS, AI Platform, OPEN API <br/><br/>\
+3. 설계의 민주화 <br/>\
+- 시민 개발자에게 권한을 주는 추가적인 앱개발 기능 자동화 <br/>\
+- Low-Code, No-Code <br/><br/>\
+4. 지식의 민주화 <br/>\
+- 비전문가들이 사용하기 쉬운 IT 툴 이용해 본래 전문기술이나 훈련 수준 초월 <br/>\
+- AutoML, 개인화 서비스, Citizen Integrator <br/><br/>\
+# 실현기술 상세 설명 <br/>\
+1. 데이터 분석 <br/>\
+- Citizen Data Scientist : 분석 데이터 추출, 분석 모델 생성 자동화, 가시화툴 인사이트 <br/>\
+- Self-Service Analytics : Data 준비도구, 시각적 분석 도구, 예측 분석 도구 <br/>\
+- Augmented Analytics : 딥러닝, CNN, RNN, 딥러닝 이용 AI 분석 인사이트 <br/><br/>\
+2. 개발 및 설계 <br/>\
+- Low-Code : SaaS + PaaS 기반 App제작 배포, 비주얼 IDE <br/>\
+- No-Code : 코딩 없이 컴포넌트들 Drag & Drop <br/>\
+- AI 플랫폼 : AI 데이터, AI SW API, 컴퓨팅 자원 제공 <br/><br/>\
+3. 지식 <br/>\
+- Auto ML : AI 필요한 학습 Workflow 자동처리 <br/><br/>\
+# 향후 전망 <br/>\
+- 가트너는 데이터 분석 업무 40%가 자동화, 보편화 예측 <br/>\
+- 데이터 분석 민주화에서 AI 민주화 실현 발전 <br/><br/>\
+* 121회 관리 1교시 12번\
 ',
   
 // IoB
