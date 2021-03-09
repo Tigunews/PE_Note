@@ -4690,6 +4690,7 @@ P 히스토그램 : Data 분포 <br/>\
 - System Metaphore : 최종적 개발 되어야 할 시스템 구조 기술 <br/><br/>\
 4. Programmer Welfare <br/>\
 - Sustainable pace : 일주일 40시간 작업금지, 2주 연속 오버타임 금지 <br/><br/>\
+* 123회 응용 3교시 2번\
 ',
 
 // Scrum
