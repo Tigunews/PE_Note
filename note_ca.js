@@ -1002,6 +1002,25 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - CPU에 수십개에서 수백개의 코어를 집적하여 극한의 병렬화된 실행을 목적으로 하는 프로세서 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/ManycoreCPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. Cache 접근성 <br/>\
+- NUCA(Non-Uniform Cache Architecture) : 각 코어블록, 지리적 근접 L2 Cache Bank 접근 허용, Bandwidth 향상 <br/>\
+2. 외부 메모리 연결 <br/>\
+- 3D die Stacking : SOC die 내부의 여러 지점에 Memory die와 연결되는 via 제공, 대역폭 향상, 많은 수 연결 지원 <br/>\
+3. 고속 내부 네트워크 <br/>\
+- NoC(network On Chip) : 프로세스 내 인터커넥션 위한 라우터 통한 고속 네트워크 구현 <br/>\
+4. 에너지 효율성 <br/>\
+- DVFS(Dynamic Voltage Frequency Scaling) : 프로세서 전력 효율 향상, 처리량 대비 가변 전압, 주파수 적용 <br/>\
+5. 내부 메모리 컨트롤 <br/>\
+- Internal Memory Controller : 매니코어 메모리 접근성 향상 <br/>\
+6. 고밀도 집적 <br/>\
+- Nano 집적 기술 : 단일 프로세서 칩 집적, 50nm 이하 소자 집적 기술, 현재 10nm 이하 소자 집적 발전중 <br/><br/>\
+# SW 측면 기술요소 <br/>\
+- Message Passing : 병렬처리 정보교환시 필요한 기능, 문법, API 표준 <br/>\
+- Transaction Memory : 공유 메모리 접근 위한 동시성 제어 기법 <br/>\
+- SPMT(Serial Port Memory Technology) : 수행 확률 높은 부분 다른 코어 통해 미리 수행 <br/>\
+- Token Based Coherence Protocol : 캐시 일관성위한토큰 기반프로토콜<br/>\
+- SW 지원 플랫폼 : OpenMP, OpenCL, CUDA 등 병렬 프로그램 지원 플랫폼 <br/.<br/>\
 # 활용 : 머신러닝, 클라우드, 5G <br/><br/>\
 * NoC : 멀티 코어 스위치 연결 구조 <br/>\
 * CG : Core Group <br/>\
