@@ -4991,15 +4991,22 @@ P 히스토그램 : Data 분포 <br/>\
 ',
 
 // Kanban 방법론
-'# 정의 : JIT 지원 방법론 / 애자일 프로세스 전반 <br/>\
-- 애자일 프로세스 전반에 걸친 JIT(Just in Time Development)를 지원하는 방법론 <br/><br/>\
+'# 정의 : 칸반보드 / WIP 제한 / Lean / 개발 방법론  <br/>\
+- 칸반보드를 통해 개발공정을 시각화하고 WIP 제한을 이용해 Workflow 상의 공정을 관리하고 최적화하는 Lean 생산 방식 기반의 개발 방법론 <br/><br/>\
 # 암기 <br/>\
 - 규칙(3) : 워W플 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/KanbanboardImg.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- KanbanBoard : 프로세스를 기재한 Baord, Story card 이요해 업무흐름제어 <br/>\
+- Process : 실제 업무 이루어지는 단계 및 업무 수행 통한 산출물 작성 <br/>\
+- Work Queue : 대기행렬, 개발 대기, 테스트 대기, 배포/릴리즈 대기 과정 <br/>\
+- 총 주기 시간 : 총 작업의 수행시간. 개별 업무의 Cycle Time 합으로 구성 <br/><br/>\
 # 규칙(3) <br/>\
 - 워크플로 가시화 : 일을 잘게 분할->backlog <br/>\
 - WP 제한 : 동시진행 가능 항목제한 <br/>\
 - 플로우의 측정 및 최적화 : 완료 평균시간, Cycle Time <br/><br/>\
-* 매우 적은 규칙을 갖고 있는 방법이기에 다른 방법론 특히 스크럼과 함께사용 : TDD, CI도 함께 사용\
+<font color = "red">* 매우 적은 규칙을 갖고 있는 방법이기에 다른 방법론 특히 스크럼과 함께사용 : TDD, CI도 함께 사용</font>\
 ',
 
 // 방법론 테일러링
