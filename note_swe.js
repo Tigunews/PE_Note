@@ -285,9 +285,13 @@ var question = question.concat(
 '[방법론][객체지향]- 정보은닉',
 '[방법론][객체지향]- 상속',
 '[방법론][객체지향]- 상속 합성',
+'[방법론][객체지향]- 객체 모델링',
 '[방법론][객체지향]- SOLID',
+'[방법론][객체지향]- 의존성 주입',
+'[방법론][객체지향]- Overriding, Overloading',
 '[방법론][객체지향]- Demeter\'s Law',
 '[방법론]- CBD',
+'[방법론][CBD]- RUP',
 '[방법론]- SOA',
 '[방법론]- Product Line 방법론',
 '[방법론]- Agile 방법론',
@@ -305,9 +309,12 @@ var question = question.concat(
 '[방법론][Agile]- 기술스토리',
 '[방법론][Agile]- 스토리 포인트',
 '[방법론]- Pair Programming',
-'[방법론]- Lean 방법론',
+'[방법론][Agile]- Lean 방법론',
 '[방법론][Lean]- Lean UX',
-'[방법론]- Kanban 방법론',
+'[방법론][Agile]- Kanban 방법론',
+'[방법론][Agile]- Daily Build',
+'[방법론][Agile]- Planning Poker',
+'[방법론][Agile]- MetaPhor',
 '[방법론]- 방법론 테일러링',
 '[방법론]- MOM, MOA',
 '[방법론]- EIP',
@@ -4608,8 +4615,15 @@ P 히스토그램 : Data 분포 <br/>\
 // 상속 합성
 '<img src = "./img/InheritComposition.png" style = "max-width:100%; height:auto;">\
 ',
+ 
+// 객체 모델링
+'# 정의 : 객체 특성, 구조 / 관계 분석 모델링 <br/>\
+- 요구되는 객체를 찾아내어 객체들의 특성과 객체들 사이의 정적 구조 관계를 분석하는 모델링 기법 <br/><br/>\
+# 정의 과정 : 추상화 > 클래스 정의 > 관계 분석 > 상속성 <br/><br/>\
+# 절차 : 문제 정의 > 객체 모델링 > 동적 ㅗ델링 > 기능적 모델링 > 시스템 설계 > 객체 설계 > 구현 > 테스트 및 검증 > 평가 <br/><br/>\
+',
 
-// [객체지향방법론]- SOILD
+// [객체지향방법론]- SOLID
 '# 정의 : 디자인 패턴 근본 원칙 / 객체지향 <br/>\
 - 객체지향 소프트웨어 설계의 근본 원칙, 디자인 패턴의 근본 원칙 <br/><br/>\
 # 주요내용 : SOLID <br/>\
@@ -4635,6 +4649,21 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/DependancyInversion.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SOLID_ALL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * DRY(Don\'t Repeat Yourself)\
+',
+ 
+// 의존성 주입
+'# 정의 : 의존 관계 자동 연결 기법 <br/>\
+- 객체를 직접 생성하는 것이 아닌 외부의 조립기를 이용해 생성하는 기법 <br/>\
+- 각 계층사이, 각 클래스 사이에 필요하는 의존관계를 컨테이너가 자동으로 연결해주는 기법 \
+',
+ 
+// Overriding, Overloading
+'# Overriding : 하위 클래스, 상위 클래스 메소드 재정의 <br/>\
+- 개념 : 상속 관계에 있는 두 클래스 중, 하위 클래스에서 상위 클래스의 메소드를 재정의 하는 기법 <br/>\
+- 특징 : 확장성, 유연성 <br/><br/>\
+# Overlading : 동일 이름 메소드 <br/>\
+- 개념 : 한 클래스 내에서 비슷한 일을 하는 메소드 같은 이름의 메소드로 여러개 정의하는 기법 <br/>\
+- 항목 : 메소드 명, 파라미터, 자료형, 리턴타입 \
 ',
 
 // Demeter's Law
@@ -4664,6 +4693,17 @@ P 히스토그램 : Data 분포 <br/>\
 - 사용자 중심 <br/><br/>\
 <img src = "./img/CBD_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AgileCBD.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// RUP
+'# 정의 : UML / 점진, 반복 / 프로세스 수행 <br/>\
+- Rational Unified Process <br/>\
+- 요구사항을 UML로 정의하여 점진/반복적으로 개발 프로세스를 수행하여 개발하는 방법론 <br/><br/>\
+# 특징 : 아키텍처 기반, UseCase(4+1), 반복/점진적 <br/><br/>\
+# 단계 : Inception(초기분석) > Elaboration(세부분석) > Construction(구축) > Transition(검증) <br/><br/>\
+# 구성 : 작업자, 행위, 산출물, Workflow <br/><br/>\
+# 핵심워크플로우 : 비즈니스모델링 > 요구사항 > 분석/설계 > 구현 > 테스트 > 배포 <br/><br/>\
+# 지원워크플로우 : 형상/변경관리, 프로젝트관리, 환경 \
 ',
 
 // SOA
@@ -5007,6 +5047,27 @@ P 히스토그램 : Data 분포 <br/>\
 - WP 제한 : 동시진행 가능 항목제한 <br/>\
 - 플로우의 측정 및 최적화 : 완료 평균시간, Cycle Time <br/><br/>\
 <font color = "red">* 매우 적은 규칙을 갖고 있는 방법이기에 다른 방법론 특히 스크럼과 함께사용 : TDD, CI도 함께 사용</font>\
+',
+ 
+// Daily Build
+'# 정의 : 매일 마감 / 컴파일, 링크 <br/>\
+- 매일 변경이 마감된 시스템을 컴파일하고 링크하는 개발활동 <br/><br/>\
+# 특징 : CI의 작은 의미 \
+',
+ 
+// Planning Poker
+'# 정의 : User Story 추정 게임 <br/>\
+- 사용자의 스토리의 규모를 추정(팀원 전체가 같이 수행하는 실천적 방법) <br/><br/>\
+# 절차 : 결정 > 업무 이해 > 채점 > 추가 설명 > 최대/최소 이해 > 게임 반복 > 최종 결정 > 분할검토 > 마무리 \
+',
+ 
+// MetaPhore
+'# 정의 : 효과적 정보 교류 위한 / 방식 장치 전략 수단 <br/>\
+- 시스템과 사용자간의 자연스럽고 효과적인 정보 교류를 제공하기 위한 방식, 장치, 전략, 수단 <br/><br/>\
+# 주요요소 <br/>\
+- 공통비전, 공유어휘, 해결책, 인터페이스 <br/><br/>\
+# 목적 <br/>\
+- 커뮤니케이션, 개발사상 전달, 시스템 작동에 대한 스토리 \
 ',
 
 // 방법론 테일러링
