@@ -1,7 +1,8 @@
 var question = question.concat(
 '공학 개요',
-'[개요]- SW공학',
-'[개요]- SW공학의 원리',
+'[개요]- SW 공학',
+'[개요]- SW 공학의 원리',
+'[개요]- Web 공학',
 '[계획단계]- 비용산정',
 '[계획단계][비용산정]- 본수산정',
 '[계획단계][비용산정]- LOC',
@@ -261,6 +262,7 @@ var question = question.concat(
 '[모델]- 4세대 모형',
 '[모델][SDLC]- RAD',
 '[모델][SDLC][RAD]- JAD',
+'원격지 개발',
 '[모델]- 클린룸(Clean Room) 모델',
 '[모델][CleanRoom]- 함수적등가성',
 '[모델]- V Model',
@@ -293,7 +295,6 @@ var question = question.concat(
 '[방법론]- CBD',
 '[방법론][CBD]- RUP',
 '[방법론]- SOA',
-'[방법론]- Product Line 방법론',
 '[방법론]- Agile 방법론',
 '[방법론][Agile]- xp',
 '[방법론][Agile]- Scrum',
@@ -326,6 +327,9 @@ var question = question.concat(
 '[방법론]- AOP',
 '[방법론]- SSPL',
 '[방법론][SSPL]- Feature',
+'[방법론][SSPL]- Product Line 방법론',
+'[방법론][SSPL]- FORM',
+'[방법론][SSPL]- 도메인 공학',
 '[방법론]- MDA',
 '[방법론]- MDD',
 '[방법론]- ASD',
@@ -334,7 +338,6 @@ var question = question.concat(
 '[방법론][Ops]- DataOps',
 '[방법론][Ops]- GitOps',
 '[방법론][Ops]- MLOps',
-'[방법론]- Product Line 방법론',
 '[방법론]- 시각적 분석 (Visual Analytics)',
 '[방법론]- 시각화 분석 (Visualization Analysis)',
 '[방법론]- 데이터 시각화 (Data Visualization)',
@@ -344,6 +347,7 @@ var question = question.concat(
 '[방법론]- UX 모델링',
 '[방법론][UX]- Design Thinking',
 '[방법론][UX]- 페르소나(Persona)',
+'[방법론]- 임베디드 개발 방법론',
 'Open SEED',
 'BPMN(Business Process Model and Notation)',
 '블랙보드(BlackBoard) 패턴',
@@ -440,6 +444,11 @@ var answer = answer.concat(
 // [개요]- SW 공학의 원리 
 '# 공학원리 : 정형성과 엄격, 관심사의 분리, 모듈화, 추상화, 변화예측, 일반화, 점진화 <br/><br/>\
 # 발전원리 : 공학적 접근, 표준화, 자동화 도구 활용, 품질보증 체제 \
+',
+ 
+// Web 공학
+'# 정의 : 고품질 웹 기반 시스템 개발을 위해 경영 관리/공학 원칙 적용 <br/><br/>\
+# 특징 : 네트워크 연결, 콘텐츠 중심, 지속변화\
 ',
 
 // 노력산정, 비용추정, 비용산정 
@@ -4354,6 +4363,14 @@ P 히스토그램 : Data 분포 <br/>\
 - JAD session 실행 <br/>\
 - 종료 \
 ',
+ 
+// 원격지 개발
+'# 정의 : 소프트웨어 기업이 고객의 통제없이 독립된 공간과 분리된 공정으로 소프트웨어 개발 결과를 서비스하는 방법 <br/><br/>\
+# 필요성 : 인력활용 증대, IT 기술 고도화, 글로벌 역량 강화, 비용절감 <br/><br/>\
+# 구성 : 온사이트(요구분석, 분석), 원격(설계, 개발, 테스트) <br/><br/>\
+# 문제점 : 부정확한 산출물, 중계자 부재, 전달 체계 미흡, 요구사항 변경 대응 문제 <br/><br/>\
+# 해결방안 : 중계자, 원격 개발방법론(사용자 스토리, TDD, 애자일 기반 프로세스, 산출물 테스트) \
+',
 
 // Clean Room
 '# 정의 : 수학적 기초 완전 무결시스템 목표 모델 / 반복, 박스구조, 함수적 등가성 이용 검증 <br/>\
@@ -4739,27 +4756,6 @@ P 히스토그램 : Data 분포 <br/>\
 * 사례 : 구글맵 \
 ',
  
-// Product Line 방법론
-'# 개념 : 도메인 공학, 어플리케이션 공학, 다수 제품 맞춤 개발, CBD 한계 극복, Core Asset <br/>\
-- 제품/서비스 군 별로 SW 핵심자산(Core Asset)을 개발하고 이를 관리/조직적인 재사용을 통해 경제적인 S/W 제품을 생산하여 S/W Reusability 와 Productivity를 극대화하기 위한 개발 방법론 <br/><br/>\
-# 필요성 : 품질개선(52%), 비용절감(45%), 생산성 향상(39%), 제품출시기간(30%) 경쟁력 확보 (Carmegi Mellon Univ. SPL 기술보고서) <br/><br/>\
-# 구성요소 <br/>\
-1. Engineering 측면 <br/>\
-- Domain Engineering : 단일 제품군 내의 핵심 자산 식별하여 개발 / Core Asset 도출, 식별 <br/>\
-- Application Engineering : Core Asset 재사용하고 가변요소 선택적으로 집중 개발 / 회귀 테스트 <br/>\
-- Management : Repository 저장, 프로세스 관리, 진행상태 통제 / 형상, 품질관리, V&V <br/><br/>\
-2. Core Asset 측면 <br/>\
-- 실행 : 컴포넌트, 소스 코드 실행가능한 Core Asset 형태 자산 / CBD, TDD <br/>\
-- 지식 : 아키텍처, 실행결과, 디자인 패턴등 형식지 형태 자산 : UML Diagram, Profile <br/>\
-- 도메인 : Domain Specific 형태 요구사항, 비즈니스 모델 형태 자산 / MDA, MDD <br/><br/>\
-# 개발방식 선택 <br/>\
-- 선행적 : Core Asset 먼저 개발 후 제품 개발 / 새로운 제품 개발시 코드 개발 최소화<br/>\
-- 반응적 : 하나 또는 여러개 제품에서 Core Asset 도출 / 처음 적용시 효과<br/>\
-- 추출식 : 선제적 방식 대비 적용비용 필요 / 기존 개발 시스템 3R 기법 추출<br/>\
-- 점진적 : 선행적 방식과 반응적 방식 혼융 / 초기 Core Asset 기반 추가하는 반복적 방식 <br/><br/>\
-* 라이지움 88회 3교시 4번\
-',
-
 // Agile 방법론
 '# 정의 : 사람 중심 효율적 시스템 개발 방법론 / 유연성 / 신속성<br/>\
 - 절차보다는 사람이 중심이 되어 변화에 유연하고 신속하게 적응하면서 효율적으로 시스템을 개발할 수 있는 방법론<br/><br/>\
@@ -5244,6 +5240,50 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 '# 정의 : 시스템 행위 논리적 단위 <br/>\
 - 제품군 혹은 제품에 대한 일련의 기능 및 품질 요구사항에 근거하여 명문화 된 시스템 행위의 논리적 단위 \
 ',
+ 
+// Product Line 방법론
+'# 개념 : 도메인 공학, 어플리케이션 공학, 다수 제품 맞춤 개발, CBD 한계 극복, Core Asset <br/>\
+- 제품/서비스 군 별로 SW 핵심자산(Core Asset)을 개발하고 이를 관리/조직적인 재사용을 통해 경제적인 S/W 제품을 생산하여 S/W Reusability 와 Productivity를 극대화하기 위한 개발 방법론 <br/><br/>\
+# 필요성 : 품질개선(52%), 비용절감(45%), 생산성 향상(39%), 제품출시기간(30%) 경쟁력 확보 (Carmegi Mellon Univ. SPL 기술보고서) <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/ProductlineDetail.png" style = "max-width:100%; height:auto;"><br/>\
+1. Engineering 측면 <br/>\
+- Domain Engineering : 단일 제품군 내의 핵심 자산 식별하여 개발 / Core Asset 도출, 식별 <br/>\
+- Application Engineering : Core Asset 재사용하고 가변요소 선택적으로 집중 개발 / 회귀 테스트 <br/>\
+- Management : Repository 저장, 프로세스 관리, 진행상태 통제 / 형상, 품질관리, V&V <br/><br/>\
+2. Core Asset 측면 <br/>\
+- 실행 : 컴포넌트, 소스 코드 실행가능한 Core Asset 형태 자산 / CBD, TDD <br/>\
+- 지식 : 아키텍처, 실행결과, 디자인 패턴등 형식지 형태 자산 : UML Diagram, Profile <br/>\
+- 도메인 : Domain Specific 형태 요구사항, 비즈니스 모델 형태 자산 / MDA, MDD <br/><br/>\
+# 개발방식 선택 <br/>\
+- 선행적 : Core Asset 먼저 개발 후 제품 개발 / 새로운 제품 개발시 코드 개발 최소화<br/>\
+- 반응적 : 하나 또는 여러개 제품에서 Core Asset 도출 / 처음 적용시 효과<br/>\
+- 추출식 : 선제적 방식 대비 적용비용 필요 / 기존 개발 시스템 3R 기법 추출<br/>\
+- 점진적 : 선행적 방식과 반응적 방식 혼융 / 초기 Core Asset 기반 추가하는 반복적 방식 <br/><br/>\
+* 라이지움 88회 3교시 4번\
+',
+ 
+// FORM
+'# 정의 : Feature Model 기반의 SPL 구현 방법론 <br/>\
+- 특정 마켓/도메인 부합 Core Asset을 구축, Core Asset의 조립에 의해 Product 생산하는 기법 <br/><br/>\
+# 구성요소 <br/>\
+- 도메인 공학 <br/>\
+- 어플리케이션 공학 <br/>\
+- 관리 활동(형상관리, 프로세스 개선, 기술적 코칭) <br/>\
+- Core Asset <br/>\
+- Product Development <br/>\
+- Management <br/>\
+- Repository 저장 \
+',
+ 
+// 도메인 공학
+'# 정의 : 도메인 모델의 공통성과 가변성을 분석하여 재사용 가능한 요구사항, 아키텍처, 컴포넌트, 테스트 케이스 개발 <br/><br/>\
+# Application 공학 <br/>\
+- 도메인 공학의 핵심 자산을 바탕으로 특정 프로덕트 개발하는 활동 <br/>\
+- 동일한 기능의 산출물을 재사용, 신규 기능의 산출물을 프로덕트에 포함시켜 어플리케이션 개발 <br/><br/>\
+# Process : 정의 > 모델 > 디자인 > 구현 <br/><br/>\
+# 도메인 공학 : 추출 > 분석 > 명세 >검증 \
+',
 
 // MDA
 '# 정의 : 모델기반의 SW 개발 아키텍처 <br/>\
@@ -5402,12 +5442,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 협업, 소통 중시문화 \
 ',
  
-// Product Line 방법론
-'# 정의 : 도메인 공학, 어플리케이션 공학, 다수 제품 맞춤개발 <br/><br/>\
-# 구성요소 <br/>\
-<img src = "./img/ProductlineDetail.png" style = "max-width:100%; height:auto;">\
-',
-
 // 시각적 분석
 '# 정의 : 데이터 패턴, 관계 표현 과정 <br/>\
 - 데이터의 유의미한 패턴 혹은 데이터간의 관계를 파악하는 것 뿐 아니라 이러한 결과를 사용자가 이해하기 쉽게 화면에 표현하는 것까지의 과정<br/><br/>\
@@ -5554,6 +5588,18 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 장점 : 창조적 생각 도출 가능 <br/>\
 - 단점 : 실제 요구사항보다 확대 해석 될 수 있음 <br/><br/>\
 <img src = "./img/Persona.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// 임베디드 개발 방법론
+'# 정의 : 특정한 기능만을 수행하기 위해 포함된(내장된) SW 개발 방법론 <br/><br/>\
+# 특징 <br/>\
+- 물리적 특성 : 실시간 처리/저전력/저사양/소형화 <br/>\
+- 설게 방법 : HW, SW 동시 설계 및 통합 <br/><br/>\
+# 절차 <br/>\
+- 요구사항 분석 > HW/SW(분석 > 설계(기능) > 개발 > 검증(기능) > 개발(비기능) >검증(HW/SW통합검증)) <br/><br/>\
+# 응용 SW 개발 계획서 목차 <br/>\
+- 개요, 자원 및 일정 예측, 조직 구성, 업무 분장, 기술관리 방법등이 포함된 문서 <br/><br/>\
+# 목차 : 제목, 개요, 결과물, 개발방법, 위험관리, 단계적 개발 계획, 참여자, 업무분장 \
 ',
 
 // Open Seed 
