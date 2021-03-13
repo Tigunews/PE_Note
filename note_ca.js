@@ -1539,15 +1539,15 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - 안전상태와 불안전 상태로 구분하고 운영체제는 안전상태를 유지할 수 있는 요구만을 수락하고 불안전 상태를 야기하는 요구는 거절 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/BankersAlgorithmAttribute.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 실행순서 <br/>\
+1. 현재 사용 가능한 리소스 산정 : Available <br/>\
+2. 추가 요구량 산정 : Need Table<br/>\
+3. 수행 가능 프로세스 검사 : Available / Need 비교 <br/>\
+4. 프로세스 순서 산출 <br/><br/>\
 # 코드 <br/>\
 <img src = "./img/BankersAlgorithmPseudoCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 흐름도 <br/>\
 <img src = "./img/BankersAlgorithmFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 실행순서 <br/>\
-1. 현재 사용 가능한 리소스 산정 : Available <br/>\
-2. 추가 요구량 상정 : Need Table<br/>\
-3. 수행 가능 프로세스 검사 : Available / Need 비교 <br/>\
-4. 프로세스 순서 산출 <br/><br/>\
 # Understand <br/>\
 <img src = "./img/BangkerAlgorithmUnderstand.png" style = "max-width:100%; height:auto;">\
 ',
