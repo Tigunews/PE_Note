@@ -907,7 +907,7 @@ var answer = answer.concat(
 ',
   
 // Hashing
-'# 정의 : 저장, 검색 수행기법 / Table / Function <br/>\
+'# 정의 : Table / Function / 저장, 검색 수행기법 <br/>\
 - Hash Table 저장공간에 Hash Function 을 이용하여 저장과 검색을 수행하는 기법 <br/><br/>\
 # 특징 <br/>\
 - 검색속도 빠름, 기억공간 소모 많음 <br/>\
@@ -943,7 +943,7 @@ var answer = answer.concat(
 * 그리타 \
 ',
 
-// 35
+// Clustering Factor
 '# 정의 : index, Column  저장 위치 유사 정도 <br/>\
 - 인덱스 컬럼값과 데이터 로우의 저장위치가 얼마나 비슷한 순서로 저장되는 지표',
 
@@ -987,7 +987,7 @@ var answer = answer.concat(
 ',
 
 // Join
-'# 정의 : 데이터 검색 방법 / 테이블, 데이터베이스 연결 <br/>\
+'# 정의 : 테이블, 데이터베이스 연결 / 데이터 검색 방법 <br/>\
 - 두개 이상의 테이블이나 데이터베이스를 연결하여 데이터를 검색하는 방법 <br/><br/>\
 # 논리적 조인 (내외크셀)<br/>\
 1. Inner Join (교집합) <br/><br/>\
