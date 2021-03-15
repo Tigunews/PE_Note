@@ -2802,7 +2802,8 @@ var answer = answer.concat(
 ',
   
 // 메시지 큐잉
-'# 정의 : Message Oriented Middleware (MOM) <br/>\
+'# 정의 : 비동기 메시지 / MOM <br/>\
+- Message Oriented Middleware (MOM) <br/>\
 - 비동기 메시지를 사용하여 데이터 송수신을 위한 메시지 지향 미들웨어를 구현한 시스템 <br/><br/>\
 # 관련 개념 <br/>\
 - MOM : 분산 시스템간 메시지 기능 지원 인프라 <br/>\
@@ -2810,6 +2811,19 @@ var answer = answer.concat(
 - Broker : MQ 시스템 <br/>\
 - AMQP(Advanced Message Queueing Protocol) : 메시지 지향 미들웨어 위한 프로토콜 <br/><br/>\
 # 필요성 : 확장성(모듈분리), 데이터 영속성(디스크 저장), 고가용성(지연시간 희생), 장애 복원력(SPOF 해소) <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/MessageQueueStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Producer(Sender) <br/>\
+- Queue <br/>\
+- Consumer(Receiver) <br/><br/>\
+# 장점 <br/>\
+- 비동기(Asynchronous) : Queue에 넣기 떄문에 나중에 처리 가능 <br/>\
+- 비동조(Decoupling) : Application과 분리 가능(Loosely Coupled) <br/>\
+- 탄력성(Resilience) : 일부가 실패시 전체 영향받지 않음 <br/>\
+- 과잉(Redundancy) : 실패할 경우 재실행 가능 <br/>\
+- 보증(Gurantees) : 작업이 처리된 것을 확인 가능 <br/>\
+- 확장성(Scalable) : 다수의 프로세스들이 큐에 메시지를 보낼 수 있음 <br/><br/>\
 # 종류 <br/>\
 1. RabbitMQ : 생성자에게 메시지 받아 소비자에게 전달 하는 AMQP 프로토콜 구현한 메시지 브로커 <br/>\
 - 구성요소 : Producer(생성,발송주체), Consumer(수신주체), Queue(보관 장소), Exchange(라우팅), Binding(라우팅 규칙 지정) <br/>\
