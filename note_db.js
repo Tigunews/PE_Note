@@ -316,7 +316,8 @@ var answer = answer.concat(
 ',
   
 // 2PL
-'# 정의 : 모든 트랜잭션들이 Lock과 Unlock 연산을 확장단계와 수축단계로 구분하여 수행하는 Locking 기법 <br/><br/>\
+'# 정의 : Lock, Unlock / 확장, 수축 단계 / Locking 기법 <br/>\
+- 모든 트랜잭션들이 Lock과 Unlock 연산을 확장단계와 수축단계로 구분하여 수행하는 Locking 기법 <br/><br/>\
 # 변형 기법 <br/>\
 - Strict 2PL : 모든 독점로그(lock-X)는 그 트랜잭션이 완료될 때까지 unlock 하지 않고 유지 <br/>\
 - Rigorous 2PL : 모든 락(Lock-S,X)는 그 트랜잭션이 완료될 때까지 unlock 하지 않고 유지 <br/>\
@@ -363,7 +364,7 @@ var answer = answer.concat(
 ',
   
 // 낙관적 검증
-'# 정의 : <br/>\
+'# 정의 : 트랜잭션 종료시 일괄적 검사 기법 <br/>\
 - 트랜잭션 수행 동안은 어떠한 검사도 하지 않고, 트랜잭션 종료 시에 일괄적으로 검사하는 방법 <br/><br/>\
 # 특징 <br/>\
 - No Deadlock <br/>\
@@ -417,7 +418,7 @@ var answer = answer.concat(
 // 그림자 페이지
 '<img src = "./img/ShadowPaging.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
-- 메모리상 Current Page Table과 동일한 Shadow Page Table 생성 <br/>\
+- <font color = "red">메모리상</font> Current Page Table과 동일한 Shadow Page Table 생성 <br/>\
 - Tx 성공할 경우 Shadow Page Table 삭제 <br/>\
 - Tx 실패할 경우 Shadow Page Table을 Current Page Table 로 복사 \
 ',
@@ -477,7 +478,8 @@ var answer = answer.concat(
 ',
   
 // SAGA
-'# 정의 : 데이터 일관성 유지를 위해 비동기 메시징(버퍼링)을 이용하여 편성한 일련의 로컬 트랜잭션 <br/><br/>\
+'# 정의 : 비동기 메시징(버퍼링) / 로컬 트랜잭션 <br/>\
+- 데이터 일관성 유지를 위해 비동기 메시징(버퍼링)을 이용하여 편성한 일련의 로컬 트랜잭션 <br/><br/>\
 # 특징 <br/>\
 - 이벤트 Trigger 기반 : 완료시 메시지 발행, SAGA 편성중 다음 단계 서비스 Trigger <br/>\
 - 순차적 단계 트랜잭션 : 연속적인 업데이트 연산 중심 <br/>\
@@ -515,7 +517,8 @@ var answer = answer.concat(
 ',
   
 // Choreography-Based Saga
-'# 정의 : 자신이 보유한 서비스내 Local 트랜잭선을 관리하며, 트랜잭션이 종료되면 완료 Event 발생하는 방식 <br/><br/>\
+'# 정의 : Local Tx / 완료 Event 발생 방식 <br/>\
+- 자신이 보유한 서비스내 Local 트랜잭선을 관리하며, 트랜잭션이 종료되면 완료 Event 발생하는 방식 <br/><br/>\
 # 성공 <br/>\
 <img src = "./img/SAGA_Pattern_Sucess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 실패 <br/>\
@@ -529,7 +532,8 @@ var answer = answer.concat(
 ',
   
 // Orchestration-Based Saga
-'# 정의 : 트랜잭션 처리를 위한 Saga 인스턴스(Manager)가 별도 존재하는 방식 <br/><br/>\
+'# 정의 : Saga 인스턴스(Manager) / 별도 존재 방식 <br/>\
+- 트랜잭션 처리를 위한 Saga 인스턴스(Manager)가 별도 존재하는 방식 <br/><br/>\
 # 성공 <br/>\
 <img src = "./img/OrchestrationBasedSagaSuccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 실패 <br/>\
@@ -542,7 +546,7 @@ var answer = answer.concat(
 ',
 
 // 정규화
-'# 정의 : 무손실 분해 규칙 / 이상현상 / 속성간 종석 관계 제거 <br/>\
+'# 정의 : 속성간 종속 관계 제거 / 이상현상 / 무손실 분해 규칙 <br/>\
 - 이상현상 야기하는 속성간 종속관계 제거하는 무손실 분해 규칙 <br/>\
 - 데이터 중복을 해소하기 위해서 릴레이션을 분해하는 과정 <br/>\
 - 제1정규형 ~ 제5정규형, BCNF가 실무적으로 활용되며 나머지는 연구용<br/>\
@@ -594,7 +598,7 @@ var answer = answer.concat(
 ',
 
 // 관계 대수
-'# 정의 : 절차적 언어 / 질의 결과 생성 / 연산 순서 명시 <br/>\
+'# 정의 : 질의 결과 생성 / 연관 순서 명시 / 절차적 언어 <br/>\
 - 질의에 대한 결과를 생성하기 위해 수행해야 할 연산의 순서를 명시하는 절차적 언어 -> 상용 관계 DBMS의 범용 SQL 이론적 기초 <br/><br/>\
 <img src = "./img/관계대수_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/관계대수_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -611,8 +615,8 @@ var answer = answer.concat(
 <img src = "./img/관계해석_1.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 8
-'# 정의 : 데이터 저장 기법 / 이벤트 <br/>\
+// Event Sourcing
+'# 정의 : 이벤트 / 데이터 저장 기법 <br/>\
 - 순차적으로 발생하는 이벤트를 모두 저장하는 데이터 저장 기법\
 ',
 
@@ -657,7 +661,7 @@ var answer = answer.concat(
 ',
 
 // 스타 스키마
-'# 정의 : 주키, 추가적인 사실들로 이루어진 스키마 <br/>\
+'# 정의 : Fact Table 중심 / Dimension Table 배치 형태 모델링 <br/>\
 - 데이터 웨어하우스에서 한 개의 사실 테이블과 주 키 및 각 차원과 추가적인 사실들로 이루어진 스키마 <br/>\
 - 정규화된 Fact Table을 중심으로 비정규화된 Dimension Table들이 배치되는 형태의 모델링 기법 <br/><br/>\
 # 구성요소 <br/>\
@@ -687,7 +691,7 @@ var answer = answer.concat(
 ',
 
 // 중심성 이론
-'# 정의 : 상대적 중요성 척도 / 그래프, SNS / Vertex, Node <br/>\
+'# 정의 : 그래프, SNS / Vertex, Node / 상대적 중요성 척도 <br/>\
 - 그래프 이론에서 중심성이란 그래프 혹은 사회 연결망에서 꼭짓점(vertex) 혹은 노드(node)의 상대적 중요성을 나타내는 척도 <br/><br/>\
 # 암기 : 유형-연근매고 조카페 <br/><br/>\
 # 유형 : 이 중심성은 지수로 계산되는데, 이 중심성 지수는 그 계산 방법에 따라 나뉨 <br/>\
@@ -731,8 +735,8 @@ var answer = answer.concat(
 <img src = "./img/Centrality.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 20
-'# 정의 : 오픈소스 데이터 플랫폼 / 타 오픈 소스 결합 <br/>\
+// CKAN
+'# 정의 : 컨텐츠 관리, 시각화, API 추출 / 타 오픈 소스 결합 / 데이터 플랫폼 <br/>\
 - Comprehensive Knowledge Archive Network <br/>\
 - OKF, 오픈소스 기반 데이터 플랫폼 Open Knowledge Foundation <br/>\
 - 컨텐츠 관리, 시각화, API 추출 등의 특화된 기능을 Drupal과 같은 타 오픈 소스와 결합하여 단점을 극복한 오픈 소스 기반 데이터 플랫폼 <br/><br/>\
@@ -760,8 +764,8 @@ var answer = answer.concat(
 * 1.6버전까지 LOD 지원위해 RDF-Extention 설치, 2012년 10월 1.7버전 부터 코어에 RDF 지원\
 ',
 
-// 21
-'# 정의 : 데이터 품질 관리 활동 / 사용자 기대 만족 / 지속적 <br/>\
+// DQM
+'# 정의 : 사용자 기대 만족 / 지속적 / 데이터 품질 관리 활동 <br/>\
 - Data Quality Management <br/>\
 - 조직 내,외부 정보시스템 및 DB 사용자의 기대를 만족시키기 위해 지속적으로 데이터 품질(Data Quality)을 관리하는 활동 <br/><br/>\
 # 암기 <br/>\
@@ -803,7 +807,7 @@ var answer = answer.concat(
 ',
 
 // DQM3
-'# 정의 : 데이터 품질 프로세스 성숙도 모델 / 진단, 제시 <br/>\
+'# 정의 : 수준진단, 개선과제, 방안단계 / 데이터 품질 프로세스 성숙도 모델 <br/>\
 - Data Quality Management Maturity Model <br/>\
 - 데이터 품질관리 수준을 진단하고 개선과제, 방안 단계를 체계적 제시하는 데이터 품질 프로세스 성숙도 모델 <br/><br/>\
 # 암기 <br/>\
@@ -823,8 +827,8 @@ var answer = answer.concat(
 5. 통제(Control) : 개선 전/후 평가, DQM 프로세스 개선 및 보완 \
 ',
 
-// 23
-'# 정의 : 데이터 요소 매핑 표준 / 동명이의어 <br/>\
+// ISO/IEC 20943-5
+'# 정의 : 동명이의어 / 데이터 요소 매핑 표준 <br/>\
 - Metadata Mapping Procedure <br/>\
 - 동일한 의미의 다른 이름 가지는 데이터 요소들에 대해 매핑하기 위한 표준 <br/><br/>\
 # 구성 <br/>\
@@ -840,7 +844,7 @@ var answer = answer.concat(
 ',
 
 // DQC
-'# 정의 : 범 국가적 데이터 품질 제도 / 데이터 품질, 보안 / <br/>\
+'# 정의 : 공공민간 개발 / 범 국가적 데이터 품질 제도 <br/>\
 -  공공•민간에서 개발하여 활용 중인 정보시스템의 데이터 품질을 확보하기 위해 데이터 자체 품질과 데이터 관리체계의 품질, 그리고 데이터베이스 보안 체계를 심사•인증하여 범국가적 데이터의 품질 제고 및 고도화를 위한 제도<br/><br/>\
 # 암기 <br/>\
 - V-도업:플골실5/3.5/3.2 <br/>\
@@ -889,13 +893,13 @@ var answer = answer.concat(
 ',
 
 // 인덱스 구조
-'# B-Tree : 균등한 응답속도 유지를 위하여 Leaf Level의 좌우 균형을 유지하는 트리 <br/><br/>\
-# B+Tree : 링크드 리스트, Leaf에 모든 값 정렬 <br/><br/>\
-# B*Tree : 2/3 split overhead 감소 <br/><br/>\
-# R-Tree : 사각형 영역안에 객체가 완전히 포함되도록 하는 MBR(Minimum Bounding Region 최소경계사각형)에 기반한 인덱싱 기법 <br/><br/>\
-# R+Tree : R-Tree에서 노드간의 중첩 영역 제거, k-d-B트리의 특징 접목, 겹침 없음 <br/><br/>\
-# R*Tree : R-Tree에서의 삽입, 삭제 알고리즘을 개선, 성능 개선 <br/><br/>\
-# T-Tree : AVL-Tree와 B-Tree의 장점을 모아 메모리상에서 최적의 성능을 유지할 수 있도록 한 트리 (AVL-Tree + B-Tree; Min/Max)<br/><br/>\
+'# B-Tree : <font color = "red">균등한 응답속도</font> 유지를 위하여 Leaf Level의 좌우 균형을 유지하는 트리 <br/><br/>\
+# B+Tree : <font color = "red">링크드 리스트</font>, Leaf에 모든 값 정렬 <br/><br/>\
+# B*Tree : <font color = "red">2/3 split</font> overhead 감소 <br/><br/>\
+# R-Tree : 사각형 영역안에 객체가 완전히 포함되도록 하는 <font color = "red">MBR(Minimum Bounding Region 최소경계사각형)에</font> 기반한 인덱싱 기법 <br/><br/>\
+# R+Tree : R-Tree에서 노드간의 <font color = "red">중첩 영역 제거</font>, k-d-B트리의 특징 접목, 겹침 없음 <br/><br/>\
+# R*Tree : R-Tree에서의 <font color = "red">삽입, 삭제 알고리즘을 개선</font>, 성능 개선 <br/><br/>\
+# T-Tree : <font color = "red">AVL-Tree와 B-Tree의 장점</font>을 모아 메모리상에서 최적의 성능을 유지할 수 있도록 한 트리 (AVL-Tree + B-Tree; Min/Max)<br/><br/>\
 <img src = "./img/인덱스구조1.png" style = "max-width:100%; height: auto;"><br/><br/>\
 <img src = "./img/인덱스구조2.png" style = "max-width:100%; height: auto;"><br/><br/>\
 <img src = "./img/인덱스구조3.png" style = "max-width:100%; height: auto;"><br/><br/>\
