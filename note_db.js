@@ -149,7 +149,8 @@ var answer = answer.concat(
 ',
 
 // ACID
-'# 정의 : 데이터베이스 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 성질을 가르키는 약어 <br/><br/>\
+'# 정의 : 트랜잭션 / 안전 보장 / 성질 <br/>\
+- 데이터베이스 트랜잭션이 안전하게 수행된다는 것을 보장하기 위한 성질을 가르키는 약어 <br/><br/>\
 # 설명 <br/>\
 1. Atmoicity (원자성) <br/>\
 - 개념 : 하나의 트랜잭션의 모든 연산이 데이터베이스에 반영되거나 전혀 반영되지 않아야 함(All or Nothing) <br/>\
@@ -175,8 +176,8 @@ var answer = answer.concat(
 ',
   
 // Isolation Level
-'# 정의 : 트랜잭션 ACID 속성 보장위한 기법 <br/>\
-- 트랜잭션 실행 중 결과에 대한 다른 트랜잭션의 접근가능 영부를 정의한 수준 <br/>\
+'# 정의 : 타 트랜잭션 접근 가능 여부 정의 수준 <br/>\
+- 트랜잭션 실행 중 결과에 대한 다른 트랜잭션의 접근가능 여부를 정의한 수준 <br/>\
 # 특징 : ANSI/ISO Standard, ACID속성보장, Locking 기법 <br/><br/>\
 # level <br/>\
 1) Read Uncommitted : 처리중 데이터 허용 / Oracle 미지원<br/>\
@@ -257,7 +258,7 @@ var answer = answer.concat(
 ',
 
 // 트랜잭션 직렬화
-'# 정의 : 동시 실행 가능성 판별 기법 <br/>\
+'# 정의 : 동시 실행 가능성(충돌 직렬성) 판별 기법 <br/>\
 - 동시에 수행된 트랜잭션 간의 Read, Write 연산에 의한 충돌 발생시 데이터베이스 일관성 보장 위한 동시실행 가능성(충돌 직렬성) 판별 기법 <br/><br/>\
 # 충돌 발생유형 <br/>\
 <img src = "./img/Serialization_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
