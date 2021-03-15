@@ -1975,7 +1975,7 @@ var answer = answer.concat(
 - Low demand rate : 사용빈도수 대략 년 1회 미만시 (ex: 에어백) <br/><br/>\
 1. 정량적 <br/>\
 <img src = "./img/SIL.png", style = "max-width:100%; height:auto;"><br/><br/>\
-2. 정성적 <br/>\
+2. 정성적(결빈회사) <br/>\
 <img src = "./img/SIL_Qualitative.png", style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SIL_QualitativeExample.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 13번\
