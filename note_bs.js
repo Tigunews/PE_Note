@@ -7,6 +7,7 @@ var question = question.concat(
 '아웃소싱 운영관리 메뉴얼',
 '[ITSM]- 장애 관리',
 '[ITSM]- 문제 관리',
+'ISO 31000',
 'ITIL',
 '[ITIL]- SKMS',
 'ISP',
@@ -39,7 +40,6 @@ var question = question.concat(
 ' 기능성 게임(Serious Games)',
 'ISO 26000',
 '[ISO 26000]- CSR', 
-'[IT-컴플라이언스] - ISO 31000',
 'BCP',
 '[BCP]- RTO, RPO',
 '[BCP]- BIA',
@@ -51,7 +51,6 @@ var question = question.concat(
 'TOC',
 '[환경분석]- 5 Force',
 '[환경분석]- 7S',
-'Open Shift',
 'D-Commerce',
 '빅블러 현상',
 '옴니채널(Omni-Channel)',
@@ -242,6 +241,49 @@ var answer = answer.concat(
 # 장애 관리, 문제 관리 비교 <br/>\
 <img src = "./img/IncidentProblem.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 91회 관리 1교시 12번\
+',
+
+// [IT-컴플라이언스]- ISO 31000
+'# 정의 : 리스크 관리 국제 표준 <br/>\
+- 위험관리 원칙과 프로세스 및 위험평가기법에 관한 리스크 관리 국제 표준 <br/>\
+- 2009년도 발행(제정)되었으며, 2018년도에 개정된 모든 형태의 조직에 적용하기 위한 범용적 특징 <br/><br/>\
+# 구성 (PFP)<br/>\
+<img src = "./img/ISO31000_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Principles (Caluse 4) (ISCIDBHC)<br/><br/>\
+<img src = "./img/ISO31000_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Integrated : 조직이 모든 활동에서 위험관리를 통합 <br/>\
+- Structred and Comprehensive :  구조화, 포괄적인 접근방식 기반 구축<br/>\
+- Customized : 조직의 목표와 연계, 조정 <br/>\
+- Inclusive : 이해관계자 포함, 지식,관점 및 인식 파악 하기 위한 조치 <br/>\
+- Dynamic : 내/외부 변화 감지 및 대응 <br/>\
+- Best available information : 현재, 미래 반영 설명 <br/>\
+- Human and Cultural facts : 인간의 행동과 문화, 모든 측면 고려 <br/>\
+- Continual Improvement : 지속적 개선 <br/><br/>\
+# Framework (Caluse 5)<br/><br/>\
+<img src = "./img/ISO31000_3.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+1. Integration : 리스크 관리 통합은 조직 구조와 상황에 대한 이해에 의존 <br/><br/>\
+2. Design : 위험관리를 위한 프레임 워크를 설계할 때, 조직은 외부 및 내부 컨텍스트를 조사하고 이해 <br/>\
+- 외부적 : 경제, 환경, 동향, 인식, 가치, 요구, 기대, 계약관계, 네트워크와 종속성, 복잡성 <br/>\
+- 내부적 : 비전, 사명 및 가치, 거버넌스, 역할 및 책임, 조직의 문화, 지침, 모델, 데이터, 정보 시스템 및 정보 흐름, 상호 연결 <br/><br/>\
+3. Implementation : 위험 관리 프레임워크 구현사항 기술 <br/>\
+1) 시간과 자원 포함한 적절한 계획 개발 <br/>\
+2) 조직 저체에서 언제, 어떻게 다양한 유형의 의사결정 내려졌는지 식별 <br/>\
+3) 필요한 경우 적용가능한 의사결정 프로세스 수정 <br/>\
+4) 위험관리를 위한 조직의 준비를 명확하게 이해, 실천 <br/><br/>\
+4. Evaluation <br/>\
+- 목적, 이행계획, 지표 및 예상되는 행동에 대비하여 주기적으로 측정 <br/>\
+- 조직의 목표 달성을 지원하기에 적합 여부 결정 <br/><br/>\
+5. Imporvement <br/>\
+- 지속적 모니터링, 외부 및 내부 변경사항 해결 -> 가치 향상 <br/>\
+- 위험관리 프레임 워크의 적합성, 적절성 및 효과성과 위험관리 프로세스가 통합되는 방식으로 개선 <br/><br/>\
+# Process (Caluse 6) <br/>\
+<img src = "./img/ISO31000_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Communication and Consulation : 이해목적, 개인정보보호 권리 고려하여 정보교환 <br/>\
+- Scope, Context and Criteria : 효과적인 위험평가 및 적절한 위험 처리 가능 목적 <br/>\
+- Risk assessment : 식별, 분석, 평가의 전체 프로세스 <br/>\
+- Risk treatment : 공식화 및 선택, 처리계획 및 구현, 효과 평가, 남은 위험 수용가능 결정 <br/>\
+- Monitoring and review : 설계, 구현 및 결과의 품질과 효과를 보장하고 향상 <br/>\
+- Recording and reporting : 조직 전체의 위험 관리 활동 및 결과 전달\
 ',
  
 // ITIL 
@@ -696,7 +738,7 @@ var answer = answer.concat(
 
 // 기능성 게임
 '# 정의 : 순기능 확장 게임 <br/>\
-- 기존의 게임이 가지고 있던 단순한 재미 요소 이외에, 교육, 학습, 훈련, 치료 등의 특별한 목적을 접목시켜 게임이 가지는 순기능을 더욱 확장시킨 형태의 게임 (TTA)<br/><br/>\
+- 기존의 게임이 가지고 있던 단순한 재미 요소 이외에, <font color = "red">교육, 학습, 훈련, 치료</ 등의 특별한 목적을 접목시켜 게임이 가지는 순기능을 더욱 확장시킨 형태의 게임 (TTA)<br/><br/>\
 # 특징 : 재미, 효과, 과정중시 <br/><br/>\
 # 적용 : 의료, 스포츠(Wii), 교육(에듀게임, 한매타자), 교통(안전), 환경보호, 군사(워게임)\
 ',
@@ -750,51 +792,9 @@ var answer = answer.concat(
 - 개인적 목표/가치 : 생존, 위생욕구, 물질적 풍요 > 소속, 존경욕구, 정직적 풍요 > 자아실현 욕구, 영적 충만감 \
 ',
 
-// [IT-컴플라이언스]- ISO 31000
-'# 정의 : 리스크 관리 국제 표준 <br/>\
-- 위험관리 원칙과 프로세스 및 위험평가기법에 관한 리스크 관리 국제 표준 <br/>\
-- 2009년도 발행(제정)되었으며, 2018년도에 개정된 모든 형태의 조직에 적용하기 위한 범용적 특징 <br/><br/>\
-# 구성 (PFP)<br/>\
-<img src = "./img/ISO31000_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-# Principles (Caluse 4) (ISCIDBHC)<br/><br/>\
-<img src = "./img/ISO31000_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- Integrated : 조직이 모든 활동에서 위험관리를 통합 <br/>\
-- Structred and Comprehensive :  구조화, 포괄적인 접근방식 기반 구축<br/>\
-- Customized : 조직의 목표와 연계, 조정 <br/>\
-- Inclusive : 이해관계자 포함, 지식,관점 및 인식 파악 하기 위한 조치 <br/>\
-- Dynamic : 내/외부 변화 감지 및 대응 <br/>\
-- Best available information : 현재, 미래 반영 설명 <br/>\
-- Human and Cultural facts : 인간의 행동과 문화, 모든 측면 고려 <br/>\
-- Continual Improvement : 지속적 개선 <br/><br/>\
-# Framework (Caluse 5)<br/><br/>\
-<img src = "./img/ISO31000_3.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-1. Integration : 리스크 관리 통합은 조직 구조와 상황에 대한 이해에 의존 <br/><br/>\
-2. Design : 위험관리를 위한 프레임 워크를 설계할 때, 조직은 외부 및 내부 컨텍스트를 조사하고 이해 <br/>\
-- 외부적 : 경제, 환경, 동향, 인식, 가치, 요구, 기대, 계약관계, 네트워크와 종속성, 복잡성 <br/>\
-- 내부적 : 비전, 사명 및 가치, 거버넌스, 역할 및 책임, 조직의 문화, 지침, 모델, 데이터, 정보 시스템 및 정보 흐름, 상호 연결 <br/><br/>\
-3. Implementation : 위험 관리 프레임워크 구현사항 기술 <br/>\
-1) 시간과 자원 포함한 적절한 계획 개발 <br/>\
-2) 조직 저체에서 언제, 어떻게 다양한 유형의 의사결정 내려졌는지 식별 <br/>\
-3) 필요한 경우 적용가능한 의사결정 프로세스 수정 <br/>\
-4) 위험관리를 위한 조직의 준비를 명확하게 이해, 실천 <br/><br/>\
-4. Evaluation <br/>\
-- 목적, 이행계획, 지표 및 예상되는 행동에 대비하여 주기적으로 측정 <br/>\
-- 조직의 목표 달성을 지원하기에 적합 여부 결정 <br/><br/>\
-5. Imporvement <br/>\
-- 지속적 모니터링, 외부 및 내부 변경사항 해결 -> 가치 향상 <br/>\
-- 위험관리 프레임 워크의 적합성, 적절성 및 효과성과 위험관리 프로세스가 통합되는 방식으로 개선 <br/><br/>\
-# Process (Caluse 6) <br/>\
-<img src = "./img/ISO31000_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- Communication and Consulation : 이해목적, 개인정보보호 권리 고려하여 정보교환 <br/>\
-- Scope, Context and Criteria : 효과적인 위험평가 및 적절한 위험 처리 가능 목적 <br/>\
-- Risk assessment : 식별, 분석, 평가의 전체 프로세스 <br/>\
-- Risk treatment : 공식화 및 선택, 처리계획 및 구현, 효과 평가, 남은 위험 수용가능 결정 <br/>\
-- Monitoring and review : 설계, 구현 및 결과의 품질과 효과를 보장하고 향상 <br/>\
-- Recording and reporting : 조직 전체의 위험 관리 활동 및 결과 전달\
-',
-
 // BCP 
-'# 정의 : 기업 내외부에 발생 가능한 모든 재해 및 장애에도 비즈니스의 중단없이 정상적 업무수행이 가능하도록 예방 및 복구활동을 포함하는 비즈니스 연속성 보장 체계 <br/><br/>\
+'# 정의 : 무중단 / 예방 및 복구 / 비즈니스 연속성 보장 체계 <br/>\
+- 기업 내외부에 발생 가능한 모든 재해 및 장애에도 비즈니스의 중단없이 정상적 업무수행이 가능하도록 예방 및 복구활동을 포함하는 비즈니스 연속성 보장 체계 <br/><br/>\
 # 절차 <br/>\
 <img src = "./img/BCP_Process.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 <img src = "./img/BCP_0.png" style = "max-width: 100%; height: auto;"><br/><br/>\
@@ -811,12 +811,11 @@ var answer = answer.concat(
 ',
 
 // [BCP]- BIA
-'# 정의 : BCP 구축 핵심 절차 / 장애, 재해 가정 / <br/>\
+'# 정의 : 재해 손실 가정 / BCP 구축 절차 <br/>\
 - Business Impact Analysis <br/>\
 - 장애나 재해로 인해 운영상의 주요 손실을 입을 것을 가정하여 시간흐름에 따른 영향도 및 손실 평가를 조사하여 BCP를 구축하기 위한 핵심 절차(TTA) <br/>\
 - 주요업무 프로세스의 식별하여 재해유형 식별 및 재해 발생 가능성과 업무 중단의 지속시간, 업무 프로세스별 중요도 평가 <br/><br/>\
-# 암기 : 대손복필 <br/><br/>\
-# 절차 <br/>\
+# 절차 (대손복필)<br/>\
 1. 대상 업무 선정 : 현황자료 분석 > 대상 업무 선정 <br/>\
 2. 손실정도(정성/정량)산정 : 설문조사/ 인터뷰 > 결과분석(피해 및 대응 정도) > 업무별 손실도 평가 <br/>\
 3. 복구 우선순위 도출 : RTO 평가, RPO 설정<br/>\
@@ -864,10 +863,7 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 '# 정의 : 복구 업무 영향 최소화 계획 <br/>\
 - Disaster Recovery Planning <br/>\
 - 정보기술서비스기반에 대해 재해가 발생하는 경우를 대비하여, 이를 빠른 복구를 통해 업무에 대한 영향을 최소화 하기 위한 제반 계획<br/><br/>\
-# 암기 <br/>\
-- 구성 : 문복훈 <br/>\
-- 절차 : 판단/선포 > 통보 > Takeover > DR센터 가동 > 복구 > 검증 > 완료보고<br/><br/>\
-# 구성 <br/>\
+# 구성 (문복훈) <br/>\
 - DRS문서 : DRS구성도, 운영절차서 <br/>\
 - 복구 계획서 : 시스템 복구 계획서, 업무복계, 비상연락체계 <br/>\
 - 훈련 계획서 : 복구이동절차, 복구시나리오, 평가 및 보완사항 <br/><br/>\
@@ -875,17 +871,14 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 ',
 
 // BPR
-'# 정의 : 예외 및 기회 발생 알림 제공 솔루션 <br/>\
+'# 정의 : 이벤트 파악 / 정보 제공 / 예외, 기회 발생 알림 제공 솔루션 <br/>\
 - Business Process Reengineering <br/>\
 - 다양한 기업의 비지니스 활동으로부터 발생하는 이벤트를 파악하고, 이벤트를 기반으로 관련 데이터 수집하여 KPI와 같은 사용자가 원하는 정보를 실시간으로 제공되며, 예외 및 기회 발생에 대한 알림을 제공하는 솔루션 <br/><br/>\
-# 암기 <br/>\
-- 구성요소(3) : RRB <br/>\
-- 기술(5) : 통BDB네 <br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (RRB) <br/>\
 - Rule Engine : Rules, ActionMsg <br/>\
 - Reporting & Analysis Tool : Biz Context, Dashboard Portal <br/>\
 - BAM Server : Real Time Event Store, Operating Process <br/><br/>\
-# 기술 <br/>\
+# 기술 (통BDB네) <br/>\
 - 통합(3) : EAI, B2Bi, eAI <br/>\
 - BI(2) : Reporting Tool, Analysis Tool <br/>\
 - DW(2) : OLAP, DataMining <br/>\
@@ -894,21 +887,19 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 ',
 
 // PI
-'# 정의 : 전사차원 혁신적 개선 재설계 활동 / 시간, 비용 최소화 / 서비스 향상 <br/>\
+'# 정의 : 재설계 / 시간, 비용 최소화 / 서비스 향상 활동 <br/>\
 - Process Innovation <br/>\
 - 전사차원의 역량 강화를 위해 현재의 프로세스를 혁신적으로 개선 재설계 하여 시간, 비용은 최소화 하고 기업서비스를 향상시키는 활동<br/><br/>\
-# 암기<br/>\
-- 구성(4) : FPAD <br/><br/>\
 # Keyword : 경영혁신, 고객지향, 기업의 가치, 표준화, Top-Down / Bottom-up, 최고 경영자 레벨, 3~5년, 단계별 <br/><br/>\
-# 구성 : Function, Process, Application, Data Global Best Practice 내재된 Package Solution 중심 <br/><br/>\
+# 구성(FPAD) : Function, Process, Application, Data Global Best Practice 내재된 Package Solution 중심 <br/><br/>\
 * BPR과 차이점 : 통폐합 불가\
 ',
 
 // TOC
-'# 정의 : 목적 달성 저해 제약조건 찾고, 통제 / 전체 최적화 / 의사결정 지원 경영과학 이론 <br/>\
+'# 정의 : 제약 사항 관리 / 경영혁신 기법 <br/>\
 - Theory Of Constraints <br/>\
-- 엘릿 골드렛 박사가 개발한 목적(Goal)달성을 방해하는 제약 사항을 관리하여, 시스템이 목적을 달성할 수 있도록 하는 경영혁신 기법<br/>\
-- 기업 전략을 방해하는 제약사항을 발견하여 이를 제거하기 위한 기법으로 시스템의 목적 달성을 저해하는 제약조건(병목)을 찾아내 극복하기 위한 시스템 개선방법<br/><br/>\
+- <font color = "red">엘릿 골드렛 박사</font>가 개발한 목적(Goal)달성을 방해하는 제약 사항을 관리하여, 시스템이 목적을 달성할 수 있도록 하는 경영혁신 기법<br/>\
+- 기업 전략을 방해하는 제약사항을 발견하여 이를 제거하기 위한 기법으로 시스템의 목적 달성을 저해하는 제약조건(<font color = "red">병목</font>)을 찾아내 극복하기 위한 시스템 개선방법<br/><br/>\
 # 특징 <br/>\
 - 전체 최적화 <br/>\
 - 제약사항 고려 <br/>\
@@ -957,22 +948,6 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 - Skills : 전문화된 기술 숙련도 분석 <br/>\
 - Staff : 평가와 보상제도, 급여 등 계획 및 실천 <br/>\
 - Style : 기업의 고유한 기업 문화 수립 \
-',
-
-// Open Shift
-'# 정의 : Readhat에서public으로 서비스 되는 PaaS 솔루션 <br/><br/>\
-# 암기<br/>\
-- 구성 : 브노기카 <br/><br/>\
-# 아키텍처 : 2개의 주요 컴포넌트 (Broker, Node(Gear(Catridge)) <br/><br/>\
-# 소스저장 구조 : 다수의 소스 저장 구조 <br/><br/>\
-# PaaS 설치 ; 도커통한 설치, IaaS 환경 선택적 <br/><br/>\
-# App 설치 : 소스코드 형태의 저장 및 배포 <br/><br/>\
-# 로드 밸런싱 : 서비스 (HA Proxy)통한 로드밸런싱 <br/><br/>\
-# 멀티태넌시 : Node단위 멀티태넌시 <br/><br/>\
-# 확장성 : Catridge 통한 서비스 확장 <br/><br/>\
-# 라이선스 : Apache 2.0 <br/><br/>\
-<img src = "./img/OpenShift_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/OpenShift_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // D-Commerce
