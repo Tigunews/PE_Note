@@ -73,6 +73,7 @@ var question = question.concat(
 '[빅데이터]- 데이터 플래그십',
 '[빅데이터]- 단순 대치법',
 '[빅데이터]- 정보 시각화',
+'[빅데이터]- D-Commerce',
 '[R-Tree]- Hilbert R-Tree',
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
@@ -1569,6 +1570,29 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 정보 시각 표현 : 디자인 기본 원리, 인터랙션 디자인 <br/><br/>\
 # 정보 시각화 유형 (시분공관비)<br/>\
 <img src = "./img/InformationVisualizationType.png" style = "max-width:100%; height:auto;">\
+',
+  
+// D-Commerce
+'# 정의 : 커머스 시장의 새로운 트랜드 / 빅데이터 분석 / 맞춤형 상품 제공, 구매 유도<br/>\
+- 빅데이터와 커머스의 만남, 큐레이션 커머스 시대 도래 <br/>\
+- 빅데이터 분석을 통한 맞춤형 상품 제공 및 구매를 유도하는 커머스 시장의 새로운 트랜드 <br/>\
+- 공공 데이터 및 고객들의 통신, 금융, 미디어 등을 통한 데이터를 활용해 상품과 소비자를 연결해주는 일종의 큐레이션 서비스<br/><br/>\
+# 진화 <br/>\
+- 인터넷 쇼핑몰 출현 (1996) <br/>\
+- 인터넷 쇼핑몰 폭발적 성장 (2000) <br/>\
+- 모바일 쇼핑 시장 주도 (2010) <br/>\
+- 데이터 커머스 등장 (2016) <br/><br/>\
+# 주요 사업자 및 경쟁 현황 <br/>\
+- 통신사 : 쇼닥, RecoPick<br/>\
+- 포털 : yap <br/>\
+- 커머스 업체간 : tmon, auction <br/>\
+- 해외 커머스 업체 : amazon, rakuten <br/><br/>\
+# 사례 <br/>\
+- 큐레이션 커머스의 진화 : 빅데이터 분석을 통한 맞춤형 쇼핑몰 스티치 픽스(Stitch Fix), 일본 최대 화장품 정보 사이트 Hapicana <br/>\
+- 빅데이터 활용한 위치 기반 서비스 : 알리바바 올해 광군제 자사 쇼핑몰 사이트 티몰의 고양이 캐릭터 천묘를 사냥하는 위치기반 AR 게임 서비스 <br/>\
+- 커머스 시장의 새로운 트랜드, 스마트 렌탈에서의 빅데이터 활용 : 여성 의류렌탈 서비스 Rent the Runway <br/><br/>\
+<img src = "./img/DCommerce_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DCommerce_2.png" style = "max-width:100%; height:auto;">\
 ',
   
 // Hilbert R-Tree
