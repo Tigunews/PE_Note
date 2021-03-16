@@ -431,7 +431,7 @@ var answer = answer.concat(
 3. 프로세스 : 도구, 기법 사용하여 작업하는 순서 <br/>\
 - Unified Process, eXtreme Programing <br/><br/>\
 4. 패러다임(Paradigm) : 접근 방법, 스타일 <br/>\
-- 구조적, 객체지향 방법론 <br/>\
+- 구조적, 객체지향 방법론 <br/><br/>\
 5. 기술 <br/><br/>\
 # 목표(QCD) <br/>\
 - 고품질 소프트웨어 생산 : 요구사항 관리, 품질관리 <br/>\
