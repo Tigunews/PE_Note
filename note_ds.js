@@ -2829,12 +2829,17 @@ var answer = answer.concat(
 - 구성요소 : Producer(생성,발송주체), Consumer(수신주체), Queue(보관 장소), Exchange(라우팅), Binding(라우팅 규칙 지정) <br/>\
 - 주요기능 : 메시지 분배(병렬처리), 공평한 분배(prefetchCount 1 ack), 메시지 수신 통보(ACK) <br/><br/>\
 2. Active MQ : 아파치, 기업 연동 작업 구현 고기능 Java 메시지 기반 MOM 통합 패턴 서버 <br/>\
-- 구성요소 : JMS(Java Message Service)-Enterprise Edition 기반, 메시지 생성, 송수신, 읽기, 비동기, 신뢰 통신 허용 <br/><br/>\
+- 구성요소 : JMS(Java Message Service)-Enterprise Edition 기반, 메시지 생성, 송수신, 읽기, 비동기, 신뢰 통신 허용 <br/>\
 - 주요기능 <br/>\
 -> JMS 준수 : 1:1 메시지 전달<br/>\
 -> 연결성 : 넓은 연결 옵션-HTTP/S, IP Multicast, SSL, STOMP<br/>\
 -> 다양성 : WAS, Active MQ, 저장매체 <br/>\
 -> 확장성 : 브로커 클러스터링 동작 <br/><br/>\
+# 활용 분야 <br/>\
+- Data : 다른곳의 API로 부터 송수신 / Kafka <br/>\
+- Application : 다른 App에서 비동기 통신 / JMS <br/>\
+- E-Mail : 이메일 발송 및 업로드 / SMTP <br/>\
+- Process : 많은 양의 프로세스 처리 / 윈도우 프로시저 <br/><br/>\
 * 123회 관리 3교시 1번\
 ',
 
