@@ -152,6 +152,7 @@ var question = question.concat(
 '[클라우드]- 차세대 방향성',
 '[클라우드]- 오픈 스택',
 '[클라우드][오픈스택]- Swift',
+'[클라우드]- Open Shift',
 '엣지컴퓨팅',
 '레그테크',
 '섭테크',
@@ -2924,6 +2925,22 @@ var answer = answer.concat(
 - Account : 계정 컨테이너 관리 데몬 구성 <br/>\
 - Container : 사용자 계정의 컨테이너 관리 데몬 구성 <br/>\
 - Object : 실제 데이터 저장 \
+',
+
+// Open Shift
+'# 정의 : Readhat에서public으로 서비스 되는 PaaS 솔루션 <br/><br/>\
+# 암기<br/>\
+- 구성 : 브노기카 <br/><br/>\
+# 아키텍처 : 2개의 주요 컴포넌트 (Broker, Node(Gear(Catridge)) <br/><br/>\
+# 소스저장 구조 : 다수의 소스 저장 구조 <br/><br/>\
+# PaaS 설치 ; 도커통한 설치, IaaS 환경 선택적 <br/><br/>\
+# App 설치 : 소스코드 형태의 저장 및 배포 <br/><br/>\
+# 로드 밸런싱 : 서비스 (HA Proxy)통한 로드밸런싱 <br/><br/>\
+# 멀티태넌시 : Node단위 멀티태넌시 <br/><br/>\
+# 확장성 : Catridge 통한 서비스 확장 <br/><br/>\
+# 라이선스 : Apache 2.0 <br/><br/>\
+<img src = "./img/OpenShift_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OpenShift_2.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 엣지 컴퓨팅 
