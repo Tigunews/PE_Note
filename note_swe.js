@@ -367,6 +367,7 @@ var question = question.concat(
 '[감리]- 운영 감리',
 '[감리]- 유지보수 감리',
 '[감리]- 감리기준 감리업무 절차',
+'[감리]- 정보시스템 하드웨어 규모산정 지침',
 'PMBOK 6th 주요개정 내용',
 '지식영역별 세부 프로세스 49개',
 '발주 프로세스',
@@ -5854,6 +5855,40 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 6. 보칙 <br/><br/>\
 # 감리업무 절차 <br/>\
 <img src = "./img/AuditStandardProcess.png" style = "max-width:100%; height:auto;">\
+',
+ 
+// 정보시스템 하드웨어 규모산정 지침
+'# 정의 : TTA 기반 하드웨어에 대한 예산 수립 지침 / 시스템 관점, 일시적 <br/>\
+- 기본적인 용량과 성능, 요구사항이 제시되었을 때, 그것을 시스템 요구사항으로 변화하는 기법<br/><br/>\
+# 유형(수참시) <br/>\
+1. 수치계산법 : 사용자수등 요소로 규모산정 후 보정치 적용 <br/>\
+- 장점 : 근거 명확, 간단 산정 <br/>\
+- 단점 : 보정치에 대한 정확한 근거 제시 어려움, 보정치 의존도 높음 <br/><br/>\
+2. 참조법 <br/>\
+- 업무량 : 사용자수 ,DB 크기 따라 유사 시스템 규모 참조 <br/>\
+- 장점 : 안전 <br/>\
+- 단점 : 근거 제시시 미약 <br/><br/>\
+3. 시뮬레이션법 : 작업부하 모델링 후 시뮬레이션 <br/>\
+- 장점 : 상대적 정확한 값 <br/>\
+- 단점 : 시간, 비용 많이 소요 <br/><br/>\
+# 절차 <br/>\
+- 구축방향 및 기초자료 조사 : 환경 파악, 흐름 파악<br/>\
+- 기초자료 및 업무 분석 : 기준 부하 설정, 업무 내용 검증<br/>\
+- 참조모델 결정 및 서버 규모 산정 : WEB/WAS/OLTP <br/>\
+- 참조모델별 가중치 적용 : WEB/WAS/OLTP(2.1/0.4,0.7,1), WEB/WAS,OLTP(1.6/0.6,1), WEB,WAS/OLTP(1.7/0.7,1), WEB,WAS,OLTP(미적용/1,1,1) <br/><br/>\
+# 규모산정 대상 <br/>\
+<img src = "./img/HW_Calc_Scale_Target.png" style = "max-width:100%; height:auto;"><br/>\
+- CPU : PCU(Power Control Unit) 규모 계산 <br/>\
+- 메모리 : CPU 규모산정, 시스템 S/W, App <br/>\
+- 디스크 : CPU 규모산정, 시스템 S/W, DB 사용량 <br/>\
+- 스토리지 : 서버 규모 <br/><br/>\
+# CPU 및 스토리지 성능 기준치 (tTMSIS) <br/>\
+<img src = "./img/CPU_Spec_Standard.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# CPU 및 스토리지 성능 기준치 측정방법 <br/>\
+- TPC-C : 분당 트랜잭션 측정 / tpmC (Translation Per Minute) <br/>\
+- SPECjbb2015 : Java App 기반 시나리오 / max-jOPS (Fail발생 직전 최대부하) <br/>\
+- SPC-1 : 비휘발성 스토리 표시 실제 환경 시뮬레이션 / Input Output Per Second (In 40, Out 60) <br/><br/>\
+* 119회 응용 2교시 5번\
 ',
   
 // PMBOK 6th 주요개정 내용 <br/>\
