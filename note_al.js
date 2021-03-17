@@ -121,6 +121,7 @@ var question = question.concat(
 '[AI][NLP]- TF-IDF',
 '[AI][NLP]- Word2Vec',
 '[AI][NLP]- BERT',
+'[AI][NLP]- GPT-3',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining][Text]- 로봇 저널리즘',
@@ -2054,6 +2055,18 @@ var answer = answer.concat(
 - Position Embedding : 토큰을 순서대로 인코딩 <br/><br/>\
 # 이전 모델 비교 <br/>\
 <img src = "./img/BERT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 4번\
+',
+  
+// GPT-3
+'# 정의 : 딥러닝 / 텍스트 생성 /자기 회귀 언어 모델<br/>\
+- Generation Pre-trained Transformer 3 <br/>\
+- 딥러닝을 이용해 자연스러운 텍스트를 생성하는 자기 회귀 언어 모델 <br/><br/>\
+# 특징 <br/>\
+- few-shot 러닝을 이용한 언어 예측 모델 <br/>\
+- 개발사 : Open API <br/>\
+- 프로세스 : few-shot 러닝(훈련-검증-테스트) 단계 <br/>\
+- 수행 task : 언어 관련 문제풀이, 작문, 번역, 웹코딩 <br/><br/>\
 * 123회 관리 4교시 4번\
 ',
    
