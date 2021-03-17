@@ -30,10 +30,10 @@ var question = question.concat(
 '[AI][지도학습][성능검증]- 혼동행렬(오차행렬)',
 '[AI][지도학습]- 분류모델생성알고리즘',
 '[AI][지도학습][AL]- ANN',
-'[AI][지도학습]- 차원축소',
-'[AI][지도학습][AL]- PCA Algorithm',
 '[AI][지도학습][AL]- SVM',
 '[AI]- 비지도 학습',
+'[AI][비지도학습]- 차원축소',
+'[AI][비지도학습][AL]- PCA Algorithm',
 '[AI][비지도 학습]- GAN',
 '[AI][비지도 학습]- DCGAN',
 '[AI]- 강화학습',
@@ -206,7 +206,8 @@ var answer = answer.concat(
 ',
 
 // 정렬 알고리즘
-'# 정의 : 원소들을 번호순이나 사전 순서와 같이 일정한 순서대로 열거하는 알고리즘 <br/><br/>\
+'# 정의 : 일정한 순서 열거 / 알고리즘 <br/>\
+- 원소들을 번호순이나 사전 순서와 같이 일정한 순서대로 열거하는 알고리즘 <br/><br/>\
 <img src = "./img/DataSort.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/StableNotStableSort.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SortAL_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -216,7 +217,7 @@ var answer = answer.concat(
 ',
 
 // Selection sort
-'# 정의 : 현재 위치에 들어갈 값을 찾아서 자리바꿈하는 방식의 정렬 <br/><br/>\
+'# 정의 : <font color = "red">현재 위치</font>에 들어갈 값을 <font color = "red">찾아서</font> 자리바꿈하는 방식의 정렬 <br/><br/>\
 # 도식 <br/>\
 <img src = "./img/SelectionSortGraphic.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 매커니즘 <br/>\
@@ -439,7 +440,7 @@ var answer = answer.concat(
   
 // 인공지능 특이점
 '# 정의 : 인공지능 > 인간 시점 <br/>\
-- 인간이 스스로 만든 인공지능 기술을 이해하거나 따라잡지 못하는 미래의 한계점, 즉 인공지능이 인가의 두뇌를 뛰어넘는 시점 <br/><br/>\
+- 인간이 스스로 만든 인공지능 기술을 이해하거나 따라잡지 못하는 미래의 한계점, 즉 인공지능이 인간의 두뇌를 뛰어넘는 시점 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SingularityGraph.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 방향성 <br/>\
@@ -498,13 +499,13 @@ var answer = answer.concat(
 '# 정의 : 비지도 / 유사 특성 / 집단화 / 거리차이 최소화 <br/>\
 - 비지도 학습의 일종으로, 상호 간 유사 특성을 갖는 데이터들을 집단화로 묶고 중심과의 거리 차이를 최소화 하는 기법 <br/><br/>\
 # 유형 <br/>\
-- K-means Clustering : Centroid 기반 중심 찾아가는 방식 <br/>\
-- EM-Clustrering : Gaussian Mixture 모델 기반 / E-step, M-step / 반복 군집 형성 <br/>\
-- Dendrogram Clustering : 각 단계의 군집이 어떻게 형성되는지 확인하고 형성된 군집의 유사성 수준이 평가 가능한 다이어그램 \
+- K-means Clustering : <font color = "red">Centroid</font> 기반 중심 찾아가는 방식 <br/>\
+- EM-Clustrering : <font color = "red">Gaussian Mixture</font> 모델 기반 / E-step, M-step / 반복 군집 형성 <br/>\
+- Dendrogram Clustering : 각 단계의 군집이 </font color = "red">어떻게 형성되는지 확인</font>하고 형성된 군집의 유사성 수준이 평가 가능한 다이어그램 \
 ',
   
 // 지식 증류
-'# 정의 : 큰 모델 파라미터 활용 학습 <br/>\
+'# 정의 : 큰 모델 파라미터 활용 학습 / Teacher NW / Student NW <br/>\
 - Knowledge Distillation <br/>\
 - 미리 학습된 큰 모델(Teacher Network)을 통해 새로운 모델(Student Network) 생성시 파라미터를 활용해 학습시간을 줄이는 기법 <br/><br/>\
 # 등장배경 <br/>\
@@ -520,7 +521,8 @@ var answer = answer.concat(
 ',
   
 // 머신러닝 예측모델
-'# 정의 : 라벨이 있는 훈련데이터로 모델을 학습하여 경험하지 못한 데이터나 미래의 데이터에 대한 예측하는 기법 <br/><br/>\
+'# 정의 : 라벨 / 미래 데이터 예측 모델 <br/>\
+- 라벨이 있는 훈련데이터로 모델을 학습하여 경험하지 못한 데이터나 미래의 데이터에 대한 예측하는 기법 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/MLPrevisonModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 일반적 절차 <br/>\
@@ -553,7 +555,7 @@ var answer = answer.concat(
 ',
   
 // Cross Validation
-'# 정의 : Train Dataset을 나누어 검증하는 방법 <br/><br/>\
+'# 정의 : Train, Dataset을 나누어 검증하는 방법 <br/><br/>\
 # 필요성 <br/>\
 - Test Set Data 고정 <br/>\
 - Test Set Overfitting 문제점 발생 <br/><br/>\
@@ -643,6 +645,33 @@ var answer = answer.concat(
 <img src = "./img/AL2_1_1.PNG" style = "max-width:100%; height:auto;">\
 ',
   
+// SVM
+'# 정의 : 가장 근접한 데이터 / 가장 큰 경계 식별 <br/>\
+- 데이터가 사상된 공간에서 경계선과 가장 근접한 데이터(Support Vector)간의 거리가 가장 큰 경계를 식별하는 알고리즘(Maximum Margin Hyper plane)<br/><br/>\
+# 구성요소 <br/>\
+- Suppor Vector : 분류 경계에 가장 가까운곳에 위치한 데이터 <br/>\
+- Margin : 분류경계에 가장 가까운 데이터로부터 분류 경계까지의 거리 <br/>\
+- Hyperplane : 다차원의 공간의 구분을 위해 결정되는 n-1 평면 <br/>\
+- Kernel Trick : 비선형 패턴 분리 위한 차원확대 Feature Space 변환 하고 경계값 찾는 방법 <br/>\
+- Slack : 잘못 분류된 데이터 포인트를 본래 속하는 클래스로 비용을 들어 이동 시키는 값 <br/><br/>\
+# 장단점 <br/>\
+- 장점 : 높은 정확도, 범주,수치 예측 문제, 노이즈 영향x, Overfitting x, 신경망보다 사용 쉬움 <br/>\
+- 단점 : 최적 모델 찾기 어려움, 커널 함수 따라 성능 차이, 데이터셋 속성수 많으면 느림, 복잡한 해석 <br/><br/>\
+# 활용 사례 : 텍스트, 이미지, 의료정보, 문자 분류 \
+',
+  
+// 비지도 학습
+'# 정의 : 목표치 x / 구성 파악 / 기계학습 <br/>\
+- 입력 값에 대한 목표치가 주어지지 않으며, 데이터가 어떻게 구성되었는지를 알아내는 문제의 범주에 속하는 기계학습의 한 방법 <br/><br/>\
+# 알고리즘 <br/>\
+- 군집화 : 밀접하게 관련된 데이터들의 그룹을 찾는 기법 <br/>\
+- K-Means : 군집별 중심값에서 데이터의 거리를 측정하며 유사그룹 데이터를 분류 <br/>\
+- 계층적 군집화 : 전체 데이터를 계층 구조로 분할 <br/>\
+- SOM : 대뇌피질의 시각피질을 모델화 <br/>\
+- PCA : 분포된 데이터들의 주성분을 가장 잘 표현할 수 있는 벡터를 찾는 기법 <br/>\
+- ICA : 다변량의 신호를 통계적으로 독립된 하부 성분으로 분리 계산 방법 \
+',
+    
 // 차원축소
 '개념 : 차원의 저주 <br/>\
 - 벡터의 차원이 높아짐에 따라 생길 수 있는 문제점 방지 위한 축소 기법 <br/><br/>\
@@ -670,33 +699,6 @@ var answer = answer.concat(
 - PCA(Principal Component Analysis) : 1차 얼굴 인식 <br/>\
 - ICA(Independent Component Analysis) : 2차 얼굴 인식 <br/>\
 - FDA(Fisher Discriminant Analysis) : 특징 분류 (ex. 남,여) \
-',
-  
-// SVM
-'# 정의 : 가장 근접한 데이터 / 가장 큰 경계 식별 <br/>\
-- 데이터가 사상된 공간에서 경계선과 가장 근접한 데이터(Support Vector)간의 거리가 가장 큰 경계를 식별하는 알고리즘(Maximum Margin Hyper plane)<br/><br/>\
-# 구성요소 <br/>\
-- Suppor Vector : 분류 경계에 가장 가까운곳에 위치한 데이터 <br/>\
-- Margin : 분류경계에 가장 가까운 데이터로부터 분류 경계까지의 거리 <br/>\
-- Hyperplane : 다차원의 공간의 구분을 위해 결정되는 n-1 평면 <br/>\
-- Kernel Trick : 비선형 패턴 분리 위한 차원확대 Feature Space 변환 하고 경계값 찾는 방법 <br/>\
-- Slack : 잘못 분류된 데이터 포인트를 본래 속하는 클래스로 비용을 들어 이동 시키는 값 <br/><br/>\
-# 장단점 <br/>\
-- 장점 : 높은 정확도, 범주,수치 예측 문제, 노이즈 영향x, Overfitting x, 신경망보다 사용 쉬움 <br/>\
-- 단점 : 최적 모델 찾기 어려움, 커널 함수 따라 성능 차이, 데이터셋 속성수 많으면 느림, 복잡한 해석 <br/><br/>\
-# 활용 사례 : 텍스트, 이미지, 의료정보, 문자 분류 \
-',
-  
-// 비지도 학습
-'# 정의 : 데이터가 어떻게 구성 / 통계의 밀도 추정 / 클러스터링 / 독립 성분 분석 <br/>\
-- 입력 값에 대한 목표치가 주어지지 않으며, 데이터가 어떻게 구성되었는지를 알아내는 문제의 범주에 속하는 기계학습의 한 방법 <br/><br/>\
-# 알고리즘 <br/>\
-- 군집화 : 밀접하게 관련된 데이터들의 그룹을 찾는 기법 <br/>\
-- K-Means : 군집별 중심값에서 데이터의 거리를 측정하며 유사그룹 데이터를 분류 <br/>\
-- 계층적 군집화 : 전체 데이터를 계층 구조로 분할 <br/>\
-- SOM : 대뇌피질의 시각피질을 모델화 <br/>\
-- PCA : 분포된 데이터들의 주성분을 가장 잘 표현할 수 있는 벡터를 찾는 기법 <br/>\
-- ICA : 다변량의 신호를 통계적으로 독립된 하부 성분으로 분리 계산 방법 \
 ',
 
 // GAN
@@ -731,10 +733,10 @@ var answer = answer.concat(
 ',
   
 // DCGAN
-'# 정의 : 안정적 학습을 위한 GAN <br/>\
+'# 정의 : Fully Connected Layer 제거 / Convolution Layer / 배치 정규화 / 안정적 학습 GAN <br/>\
 - Deep Convolution GAN <br/>\
 - GAN의 Fully Connected layer를 제거하고 Convolution Layer와 배치 정규화 구조를 사용하여 안정적인 학습이 가능한 GAN 알고리즘 <br/><br/>\
-# 개념도 <br/>\
+# 개념도(FCRTI / ICLS) <br/>\
 <img src = "./img/DCGAN_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. 네트워크 구조 <br/>\
