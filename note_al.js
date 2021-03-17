@@ -24,6 +24,7 @@ var question = question.concat(
 '[AI]- 지도학습',
 '[AI]- Clustering',
 '[AI]- 지식 증류',
+'[AI]- 능동학습',
 '[AI][지도학습]- 머신러닝 예측모델',
 '[AI][지도학습]- 성능검증',
 '[AI][지도학습][성능검증]- Cross Validation',
@@ -517,6 +518,30 @@ var answer = answer.concat(
 - Soft Label : 출력값의 분포 Soft화 (10^-6, 0.9, 0.1, 10^9 -> 0.05, 0.3, 0.2, 0.005) <br/>\
 - Distilliation Loss : Teacher Network 학습 후 Student Network 학습 <br/><br/>\
 * 123회 응용 1교시 9번\
+',
+  
+// 능동 학습
+'# 정의 : 반지도 기계학습 모델 <br/>\
+- 초기 라벨링된 일부 데이터를 이용해 모델 학습한 이후, 추가적인 데이터 인위적 선별, 활용하는 기계학습 모델 <br/><br/>\
+# 프로세스 <br/>\
+<img src = "./img/ActiveLearningProcess.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ActiveLearningProcessDetail.png" style = "max-width:100%; height:auto;"><br/>\
+# 기술요소 <br/>\
+1. 모델 기반 <br/>\
+- Uncertainty Sampling : 확신도 낮은 데이터 선별 <br/>\
+- Query By Commitee : 불일치 높은 데이터 선별<br/>\
+- Expected Impact : 변화 많은 데이터 선별 <br/><br/>\
+2. 데이터 기반 <br/>\
+- Density Weighted Method : 밀집 지역 데이터 선별 <br/>\
+- Core-set approach : 분포 데이터 선별 <br/>\
+- Learning Loss : Loss 데이터 선별 <br/><br/>\
+# 능동 학습, 자동 레이블 비교 <br/>\
+<img src = "./img/ActiveLearningAutoLabel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 활용방안 <br/>\
+- 학습 데이터 절감 : 랜덤 데이터 Annotation 보다 40% 절감 <br/>\
+- 학습 데이터 분류 : 초기 데이터, 전문지식 데이터 분류 가능 <br/>\
+- 학습 데이터 통합 : 레코드단 중복제거, 룰셋 적용 <br/><br/>\
+* 123회 응용 1교시 4번\
 ',
   
 // 머신러닝 예측모델
