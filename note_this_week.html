@@ -13,10 +13,17 @@
 <script type = "text/javascript">
 // varation
   var index = new Array();
+	var data = new Array();
 	
-	for(i=0; i<question.length; i++)
+	for(i=0; i<this_week_question.length; i++)
 	{
-		alert(this_week_question[i]);
+		for(j=0; j<question.length; j++)
+		{
+			if(question[j].serach(this_week_question[i]) != -1)
+			{
+				alert(j);
+			}
+		}
 	}
 
   for( i = 0; i<question.length; i++)
