@@ -21,7 +21,6 @@
   function next()
   {
     var data = this_week_question[1];
-	  alert(data);
     Init();
     	  
     if( data != null)
@@ -32,9 +31,10 @@
         //if(question[i].indexOf(data.value) != -1)
 	      if(question[i].search(new RegExp(data.value, "i")) != -1)
 	      {
-	       document.write('<hr width = "100%" color = "red"  noshade/><br/>');
-	       document.write(question[i] + '<br/><br/>');
-	       document.write(answer[i] + '<br/><br/>');
+					alert(data[1]);
+	        document.write('<hr width = "100%" color = "red"  noshade/><br/>');
+	        document.write(question[i] + '<br/><br/>');
+	        document.write(answer[i] + '<br/><br/>');
 	      }
       }
     }
