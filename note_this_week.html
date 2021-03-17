@@ -12,56 +12,48 @@
 </head>
 <script type = "text/javascript">
 // varation
-  var data = new Array();
+  var index = new Array();
+	
+	for(i=0; i<question.length; i++)
+	{
+		alert(this_week_question[i]);
+	}
+
+  for( i = 0; i<question.length; i++)
+  {
+    index.push(i);
+  }
+
   var current;
   var bInit = 0;
-
-	for(i=0; i<this_week_question.length; i++)
-	{
-		data.push(this_week_question[i]);
-	}
 
 // function 
   function next()
   {
-    Init();
-    	  
-    if( data != null)
+    if ( bInit != 0 )
     {
-      for(var i = 0; i<question.length ; i++)
-      {
-        //if(question[i] == data.value)
-        //if(question[i].indexOf(data.value) != -1)
-	      if(question[i].search(new RegExp(data.value, "i")) != -1)
-	      {
-					document.write('<hr width = "100%" color = "red"  noshade/><br/>');
-	        document.write(question[i] + '<br/><br/>');
-	        document.write(answer[i] + '<br/><br/>');
-	      }
-      }
+      index.splice( current, 1);
+      question.splice( current, 1);
+      answer.splice( current, 1);
+    }
+    else
+    {
+      bInit = 1;
+    }
+
+    if( index.length == 0 )
+    {
+      alert("All question resolved!");
+    }
+    else
+    {
+      drawScreen()
     }
   }
 
   function getAnswer()
   {
     document.write('Answer : <br/>' + answer[current] + '<br/><br/>');
-  }
-
-  function Init()
-  {
-    document.body.innerHTML = "";
-    document.write('<head> <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" </head>');
-    document.write('** All Search **' + '<br /><br />');
-    document.write('<input type = "text" id = "search" onkeyup="enterkey();"/> ');
-    document.write('<button id="b_search" onclick="search();">Search</button>');
-  }
-
-  function enterkey()
-  {
-    if(window.event.keyCode == 13)
-    {
-      search();
-    }
   }
 
   function drawScreen()
