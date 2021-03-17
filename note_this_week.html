@@ -25,24 +25,22 @@
 // function 
   function next()
   {
-    if ( bInit != 0 )
+    var data = index[i];
+    Init();
+    	  
+    if( data != null)
     {
-      index.splice( current, 1);
-      question.splice( current, 1);
-      answer.splice( current, 1);
-    }
-    else
-    {
-      bInit = 1;
-    }
-
-    if( index.length == 0 )
-    {
-      alert("All question resolved!");
-    }
-    else
-    {
-      drawScreen()
+      for(var i = 0; i<question.length ; i++)
+      {
+        //if(question[i] == data.value)
+        //if(question[i].indexOf(data.value) != -1)
+	      if(question[i].search(new RegExp(data.value, "i")) != -1)
+	      {
+	       document.write('<hr width = "100%" color = "red"  noshade/><br/>');
+	       document.write(question[i] + '<br/><br/>');
+	       document.write(answer[i] + '<br/><br/>');
+	      }
+      }
     }
   }
 
