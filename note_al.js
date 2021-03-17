@@ -23,7 +23,6 @@ var question = question.concat(
 '[AI]- 기계학습',
 '[AI]- 지도학습',
 '[AI]- Clustering',
-'[AI]- 지식 증류',
 '[AI]- 능동학습',
 '[AI][지도학습]- 머신러닝 예측모델',
 '[AI][지도학습]- 성능검증',
@@ -95,6 +94,7 @@ var question = question.concat(
 '[AI]- 딥러닝 경량화',
 '[AI][딥러닝 경량화]- 경량 딥러닝 기술',
 '[AI][딥러닝 경량화]- 알고리즘 경량화',
+'[AI][알고리즘 경량화]- 지식 증류',
 '[AI][AL]- Q-러닝',
 '[AI]- 모라벡의 역설(Moravec\'s Paradox)',
 '[AI]- 인공지능 서비스 플랫폼',
@@ -502,22 +502,6 @@ var answer = answer.concat(
 - K-means Clustering : <font color = "red">Centroid</font> 기반 중심 찾아가는 방식 <br/>\
 - EM-Clustrering : <font color = "red">Gaussian Mixture</font> 모델 기반 / E-step, M-step / 반복 군집 형성 <br/>\
 - Dendrogram Clustering : 각 단계의 군집이 </font color = "red">어떻게 형성되는지 확인</font>하고 형성된 군집의 유사성 수준이 평가 가능한 다이어그램 \
-',
-  
-// 지식 증류
-'# 정의 : 큰 모델 파라미터 활용 학습 / Teacher NW / Student NW <br/>\
-- Knowledge Distillation <br/>\
-- 미리 학습된 큰 모델(Teacher Network)을 통해 새로운 모델(Student Network) 생성시 파라미터를 활용해 학습시간을 줄이는 기법 <br/><br/>\
-# 등장배경 <br/>\
-- 환경 최적화 : 딥러닝 모델 환경 <> 실제 적용 환경 <br/>\
-- 앙상블 측면 : 다량 유저 배포 어려움, 새로운 방식 앙상블 제시 <br/><br/>\
-# 구성요소 <br/>\
-- Teacher Network : 복잡한 고도 학습 모델 <br/>\
-- Student Network : 단순한 적용 학습 모델 <br/><br/>\
-# 동작원리 <br/>\
-- Soft Label : 출력값의 분포 Soft화 (10^-6, 0.9, 0.1, 10^9 -> 0.05, 0.3, 0.2, 0.005) <br/>\
-- Distilliation Loss : Teacher Network 학습 후 Student Network 학습 <br/><br/>\
-* 123회 응용 1교시 9번\
 ',
   
 // 능동 학습
@@ -1634,6 +1618,30 @@ var answer = answer.concat(
 3. 하드웨어 가속화 기술 <br/>\
 - TPU, VPU, GPU : 벡터/행렬 연산 병렬 처리 연산 전용 하드웨어 기술 <br/><br/>\
 * KPC 91회 2교시 2번\
+',
+  
+// 지식 증류
+'# 정의 : 큰 모델 파라미터 활용 학습 / Teacher NW / Student NW <br/>\
+- Knowledge Distillation <br/>\
+- 미리 학습된 큰 모델(Teacher Network)을 통해 새로운 모델(Student Network) 생성시 파라미터를 활용해 학습시간을 줄이는 기법 <br/><br/>\
+# 등장배경 <br/>\
+- 환경 최적화 : 딥러닝 모델 환경 <> 실제 적용 환경 <br/>\
+- 앙상블 측면 : 다량 유저 배포 어려움, 새로운 방식 앙상블 제시 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/KnowledgeDistillationMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Model <br/>\
+- Teacher Network : 복잡한 고도 학습 모델 <br/>\
+- Student Network : 단순한 적용 학습 모델 <br/><br/>\
+2. Function <br/>\
+- Activation Function : 입력값 활성화 여부 결정, Soft max <br/>\
+- Loss Function : Teacher Model의 Soft label 과 Student Model 예측 비교 <br/><br/>\
+# 동작원리 <br/>\
+- Soft Label : 출력값의 분포 Soft화 (10^-6, 0.9, 0.1, 10^9 -> 0.05, 0.3, 0.2, 0.005) <br/>\
+- Distilliation Loss : Teacher Network 학습 후 Student Network 학습 <br/><br/>\
+# 기존 학습 비교 <br/>\
+<img src = "./img/KnowledgeDistillationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 1교시 9번\
 ',
 
 // Q-러닝 
