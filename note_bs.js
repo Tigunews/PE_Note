@@ -3,6 +3,10 @@ var question = question.concat(
 'ITSM',
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
+'[SLA]- Penalty/Incentive',
+'[SLA]- SIP',
+'[SLA]- Annual Reset',
+'[ITSM]- OLA',
 '[ITSM]- SLM',
 '아웃소싱 운영관리 메뉴얼',
 '[ITSM]- 장애 관리',
@@ -144,6 +148,50 @@ var answer = answer.concat(
 <img src = "./img/SLAOLA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 4교시 2번 <br/>\
 * 라이지움 87회 관리 3교시 5번\
+',
+ 
+// OLA
+'# 정의 : IT 구현 참가자 / 상호 협력 규정 문서 <br/>\
+- Operating Level Agreements <br/>\
+- 성능과 성과를 유지하기 위해 IT 서비스 구현 과정에 참가하는 당사자들이 서로 협력을 하는 방법을 규정한 문서 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SLAOLA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 2번 \
+',
+ 
+// Penalty/Incentive
+'# 정의 : KPI / 가점, 감점 / 수행 관리 체계 <br/>\
+- IT 서비스의 핵심성과지표(KPI)를 선정하고 달성수준에 따라 가점(금액)과 감점(금액)으로 수행능력을 관리하는 체계 <br/><br/>\
+# 적용 방법 <br/>\
+- 평가(%) = (수행점수/기준점수) * 가중치 <br/>\
+- Incentive(Penalty)금액 = (평가%-100%) * 기업이윤 <br/><br/>\
+# 적용사례 <br/>\
+<img src = "./img/SLA_IncentivePenalty.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 4교시 2번\
+',
+ 
+// SIP
+'# 정의 : 변화 대응, 개선, 향상 / Life-Cycle, 역할 기준 / 개선 계획 <br/>\
+- Service Improvement Plan <br/>\
+- 비즈니스 변화에 맞게 IT 서비스 개선 및 향상하기 위해 Life-Cycle 중심, 역할 등의 기준으로 수립한 개선 계획 <br/><br/>\
+# 적용 방법 <br/>\
+- PDCA 개선 <br/>\
+- ITIL에서는 RACI 모델 제시 <br/>\
+<font color = "red">\
+- Responsibility : 실무자 <br/>\
+- Accountability : 의사 결정권자 <br/>\
+- Consulted : 업무수행 조언자 <br/>\
+- Informed : 결과통보 대상자 </font><br/><br/>\
+* 123회 4교시 2번\
+',
+ 
+// Annual Reset
+'# 정의 : KPI / 차년도 계약 / 제시 지표 <br/>\
+- KPI 지표의 달성 결과에 따른 외주용영업체의 차년도 갱신(연장) 계약 조건으로 제시 지표 <br/><br/>\
+# 적용 방법 <br/>\
+- 100% 이상시 다음연도 계약시 자동연장 가능 <br/>\
+- 유사 계약 시 가점 지표 혜택 적용 <br/><br/>\
+* 123회 4교시 2번\
 ',
 
 // SLM
