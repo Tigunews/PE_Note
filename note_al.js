@@ -30,6 +30,7 @@ var question = question.concat(
 '[AI][지도학습][성능검증]- 혼동행렬(오차행렬)',
 '[AI][지도학습]- 분류모델생성알고리즘',
 '[AI][지도학습][AL]- ANN',
+'[AI]- DNN',
 '[AI][지도학습][AL]- SVM',
 '[AI]- 비지도 학습',
 '[AI][비지도학습]- 차원축소',
@@ -43,10 +44,13 @@ var question = question.concat(
 '[AI]- 전문가 시스템',
 '[AI][Classifier][AL]- Perceptron',
 '[AI][Classifier][AL]- Activation Function',
+'[AI]- Feed Forward Neural',
 '[AI][Classifier][AL]- Backpropagation',
 '[AI][Classifier][AL]- Gradient Descent',
 '[AI][Classifier][AL]- Optimizer',
+'[AI]- 비용함수, 손실함수',
 '[AI][Classifier][AL]- KNN',
+'[AI][Classifier]- 로지스틱 회귀분석',
 '[AI][Clustering][AL]- DBSCAN',
 '[AI][Clustering][AL]- EM Clustering',
 '[AI][Clustering][AL]- Dendrogram CLustering',
@@ -82,19 +86,14 @@ var question = question.concat(
 '[AI]- AutoML',
 '[AI]- 역기능',
 '[AI]- 인공지능 감성지능',
-'[AI]- Feed Forward Neural Network',
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
 '[AI]- TensorFlow',
 '[AI]- 모방학습',
 '[AI]- 연합학습',
-'[AI][AL]- 로지스틱 회귀분석',
-'[AI][AL]- 비용함수, 손실함수',
-'[AI][AL]- DNN',
 '[AI]- 딥러닝 경량화',
 '[AI][딥러닝 경량화]- 경량 딥러닝 기술',
 '[AI][딥러닝 경량화]- 알고리즘 경량화',
-'[AI][AL]- Hyper Parameter',
 '[AI][AL]- Q-러닝',
 '[AI]- 모라벡의 역설(Moravec\'s Paradox)',
 '[AI]- 인공지능 서비스 플랫폼',
@@ -645,6 +644,11 @@ var answer = answer.concat(
 <img src = "./img/AL2_1_1.PNG" style = "max-width:100%; height:auto;">\
 ',
   
+// [딥러닝]- DNN
+'# 정의 : 여러개 은닉층 인공신경망 <br/>\
+- 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) <br/><br/>\
+',
+  
 // SVM
 '# 정의 : 가장 근접한 데이터 / 가장 큰 경계 식별 <br/>\
 - 데이터가 사상된 공간에서 경계선과 가장 근접한 데이터(Support Vector)간의 거리가 가장 큰 경계를 식별하는 알고리즘(Maximum Margin Hyper plane)<br/><br/>\
@@ -862,6 +866,12 @@ var answer = answer.concat(
 * NET : 입력과 ㅇ녀결 강도의 가중 합 <br/>\
 - Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 \
 ',
+
+// [기계학습]- Feed Forward Neural Network
+'# 정의 : 일방향 전달 방식 인공 신경망 / 은닉층 / 노드간 사이클 x <br/>\
+- 은닉층에서 노드 간에 싸이클을 형성하지 않고 일방향으로 정보를 전달하는 방식의 인공 신경망 <br/><br/>\
+* 라이지움 86회 1교시 6번 \
+',
   
 // Backpropagation
 '# 정의 : 경사하강 관찰 / 가중치 이동 <br/>\
@@ -929,6 +939,32 @@ var answer = answer.concat(
 * 라이지움 88회 관리 3교시 3번\
 ',
 
+// 비용함수, 손실함수
+'# 정의 : 최적 매게변수 탐색 <br/>\
+- 신경망 성능의 나쁨을 나타내는 지표로, 알고리즘이 얼마나 잘못하고 있는지를 표현하는 지표 <br/><br/>\
+# 특징 : 제곱(양수), 최소화(합 최소), 경사하강법(비용 최소) <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/CoastFunctionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개요도 <br/>\
+<img src = "./img/LossFunction.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 종류 <br/>\
+1. MSE (평균제곱오차) Mean Squared Error <br/>\
+<img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/>\
+*Pi 실제값, Yi 예측값<br/><br/>\
+2. RMSE (평균제곱근오차) Root MSE<br/>\
+- 속도 향상 <br/>\
+<img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+3. CEE (교차엔트로피) Cross Entropy Error <br/>\
+- 원-핫 인코딩 경우 사용 <br/>\
+- y : 신경망 출력, t : 정답 레이블 <br/>\
+<img src = "./img/CEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+4. Mini-Batch <br/>\
+- 무작위 뽑아 학습 <br/>\
+<img src = "./img/MiniBatch.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* 라이지움 87회 관리 1교시 6번 <br/>\
+* KPC 94회 1교시 2번\
+',
+
 // KNN
 '# 정의 : Fingerprint / 기존 클러스터 / Instance 기반 거리 / 많은 속성 <br/>\
 - 새로운 Fingerprint를 기존 클러스터 내의 모든 데이터와 Instance 기반거리를 측정하여 가장 많은 속성을 가진 클러스터에 할당하는 분류 알고리즘 <br/><br/>\
@@ -958,6 +994,19 @@ var answer = answer.concat(
 - 선호도 분류 : 사용자 추천정보 기반 성향 및 구매 패턴 분류 / 추천상품 연계 <br/>\
 - 데이터 필터링 : 포털의 중복, 유사 게시글 필터링 / 문서분류 (빈발 항목 집합, 빈발 단어 집합등) <br/>\
 - 고속도로 통행시간 예측 : TCS 교통량 및 DRSC 구간 통행시간의 실시간 자류 KNN기반 분석 / DRSC 활용, 통행시간 예측\
+',
+
+// 로지스틱 회기분석
+'# 개념 : 관측치 집단 분류 / 예측 모형 개발 / 통계기법 <br/>\
+- 분석하고자 하는 대상들이 두 집단 혹은 그 이상의 집단으로 나누어진 경우에 개별 관측치들이 어느 집단에 분류될 수 있는가를 분석하고 이를 예측하는 모형을 개발하는데 사용되는 통계기법 <br/><br/>\
+# 유형 <br/>\
+- 다항 로지스틱 회귀 : 다수 범주 <br/>\
+- 서수 로지스틱 회귀 : 다수 범주 + 순서 <br/><br/>\
+# 로지스틱 회기분석 원리 <br/>\
+<img src = "./img/LogisticFunction.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 로지스틱, 선형 회기분석 비교 <br/>\
+<img src = "./img/LogisticLinearRegression.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 1교시 13번\
 ',
   
 // DBSCAN
@@ -1262,7 +1311,7 @@ var answer = answer.concat(
 ',
   
 // One-Hot Encoding
-'# 정의 : 단 하나만 True <br/>\
+'# 정의 : 범주형 변수 / 하나만 True <br/>\
 - 범주형 변수에 대해 단 하나의 값만 True이고 나머지는 모두 False인 인코딩 기법 <br/><br/>\
 # 동작원리 <br/>\
 <img src = "./img/OneHotEncodingMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -1294,17 +1343,32 @@ var answer = answer.concat(
 '# 정의 : Latent Face, 학습(CNN,LSTM), 생성(GAN) 보정(가우시안필터)<br/>\
 - 딥러닝을 이용해 기존 영상에 다른 영상이나 이미지 정보를 합성하여 콘텐츠를 생성하는 기법 \
 ',
-  
+
 // Hyper Parameter
-'# 정의 : 최적의 모델링 / 직접 <br/>\
-- 최적의 모델링을 위해 사용자가 직접 설정해주는 변수 <br/><br/>\
-# 종류 : 학습율, 경사하강법 반복 횟수, 활성화 함수 <br/><br/>\
-# 튜닝 방법 <br/>\
-- Manual Search : 휴리스틱 기반 방식, 탐색의 단순성 <br/>\
-- Grid Search : 모든 조합 탐색, 균등 탐색 <br/>\
-- Random Search : 랜덤 샘플링, 최대, 최소값 부여 <br/>\
-- Bayesian Optimization : 기존 추출 기반 탐색, Bayesian Theroy\
-',
+'# 정의 : 의도적 설정 파라미터 <br/>\
+- 신경망 학습을 통해서 튜닝 또는 최적화 해야 하는 주 변수가 아니라, 학습 진도율이나 Mini-batch 크기, 훈련 반복 횟수, 가중치 초기화 방법 등 인간의 </font color = "red">선험적 지식</font>으로 설정을 하는 변수 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/HyperParameterOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+1. 네트워크 구조 관련 <br/>\
+- Hidden Layer, Unit 개수 : 훈련 데이터 대한 학습 최적화 결정 변수 <br/>\
+<img src = "./img/NumberofHiddenLayerandUnits.png" style = "max-width:100%; hegiht:auto;"><br/>\
+- Dropout : Overfitting 피하기 위한 정규화기법 <br/>\
+<img src = "./img/DropOut.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+2. Training Algorithm 관련 <br/>\
+- Learning Rate : gradient 방향 이동 속도 (Big Learning Rate, Just right, Too small)<br/>\
+- Mini-batch 크기 : Data 나누는 크기 <br/>\
+- Cost function : MSE, RMSE <br/>\
+- Regulation Parameter : Overfitting 문제 피하기 위해 사용 <br/>\
+- Training 반복 횟수 : 학습 조기 종료 결정 변수 <br/>\
+- Weight initialization : 학습 성능 결정 변수 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/ParameterHyperParameter.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 튜닝방법 <br/>\
+<img src = "./img/HyperParameterTunning.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* KPC 97회 응용 1교시 16번<br/>\
+* 120회 관리 4교시 3번\
+',  
   
 // Open CV
 '# 정의 : 컴퓨터 비전 프로그래밍 이미지 프로세싱 라이브러리, 오픈소스 BSD <br/>\
@@ -1315,7 +1379,7 @@ var answer = answer.concat(
 ',
   
 // SOM
-'# 정의 : 입력층, 생성층, 격자층, 지도(map), 유클리드, 승자 독식, Feed Forward Flow <br/>\
+'# 정의 : 저차원 격자 / 고차원 데이터 / 군집 도출 방법 <br/>\
 - Self Organized Map <br/>\
 - 사람이 눈으로 볼 수 있는 저차원 격자에 고차원 데이터의 각 개체들이 대응하도록 인공신경망과 유사한 방식의 학습을 통해 군집을 도출해내는 기법 <br/><br/>\
 # 구성요소 <br/>\
@@ -1330,7 +1394,7 @@ var answer = answer.concat(
 ',
   
 // 머신러닝 파이프라인
-'# 정의 : 데이터 흡수, 전처리, 모델 학습, 예측 제공<br/>\
+'# 정의 : 수집, 예측, 제공 / 전과정 순차적 처리 / 머신러닝 아키텍처 <br/>\
 - 데이터 수집에서 예측 제공 단계까지의 전 과정을 순차적으로 처리하는 머신러닝의 아키텍처 <br/><br/>\
 # 단계 <br/>\
 1. 데이터 흡수 <br/>\
@@ -1348,7 +1412,7 @@ var answer = answer.concat(
 ',
   
 // Active Learning
-'# 정의 : 반지도 학습, 데이터 큐레이션 <br/>\
+'# 정의 : 원시 데이터 -> 레이블 데이터 확보 / 낮은 비용 지능형 시스템 구현 / 데이터 큐레이션, 기계학습 기법 <br/>\
 - 레이블이 없는 대규모 원시 데이터로부터 지도학습에 최적화된 레이블 데이터를 반복적으로 확보하여 낮은 비용으로 지능형 시스템을 구현하기 위한 데이터 큐레이션 및 기계학습 기법 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/ActiveLearningProcess.png" style = "max-width:100%; height:auto;"><br/>\
@@ -1428,12 +1492,6 @@ var answer = answer.concat(
 * KPC 97회 관리 3교시 2번\
 ',
 
-// [기계학습]- Feed Forward Neural Network
-'# 정의 : 일방향 전달 방식 인공 신경망 / 은닉층 / 노드간 사이클 x <br/>\
-- 은닉층에서 노드 간에 싸이클을 형성하지 않고 일방향으로 정보를 전달하는 방식의 인공 신경망 <br/><br/>\
-* 라이지움 86회 1교시 6번 \
-',
-
 // [기계학습]- 앙상블 학습법
 '# 정의 : 단일 학습모델 성능보완 <br/>\
 - 여러개의 학습 분류기의 예측결과를 결합하여 예측 성능을 높이는 머신러닝 기법 <br/><br/>\
@@ -1477,7 +1535,8 @@ var answer = answer.concat(
 ',
   
 // 모방학습
-'# 정의 : Imitation Learning <br/>\
+'# 정의 : 최상 성능 위해 / 전문가 행동 모방 / 순차적 작업 <br/>\
+- Imitation Learning <br/>\
 - 학습자로 하여금 최상의 성능을 달성하기 위해 전문가의 행동을 모방하려고 하는 순차적 작업 <br/><br/>\
 # 특징 <br/>\
 - 직접적 보상 요구 x <br/>\
@@ -1485,7 +1544,7 @@ var answer = answer.concat(
 # 종류 <br/>\
 1. 행동복제(시출정학생) : 전문가를 통해 쌍으로 이뤄진 상태 및 동작 시퀀스 시연 궤적을 수집하여 정책을 지도하는 알고리즘 <br/>\
 <img src = "./img/BehaviorCloning.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 견습학습(기IRL기) : 전문가의 시연으로부터 보상 함수를 만들고 계산된 보상 함수를 통해 최적의 정책을 학습하는 알고리즘 <br/>\
+2. 견습학습(IRL > RL) : 전문가의 시연으로부터 보상 함수를 만들고 계산된 보상 함수를 통해 최적의 정책을 학습하는 알고리즘 <br/>\
 <img src = "./img/ApprenticeshipLearning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 84회 4교시 4번\
 ',
@@ -1498,53 +1557,6 @@ var answer = answer.concat(
 <img src = "./img/Federated_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Federated_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 1교시 11번 \
-',
-
-// 로지스틱 회기분석
-'# 개념 : 학습 데이터를 잘 설명하는 w와 b 값을 찾는 문제 <br/>\
-- 분석하고자 하는 대상들이 두 집단 혹은 그 이상의 집단으로 나누어진 경우에 개별 관측치들이 어느 집단에 분류될 수 있는가를 분석하고 이를 예측하는 모형을 개발하는데 사용되는 통계기법 <br/><br/>\
-# 유형 <br/>\
-- 다항 로지스틱 회귀 : 다수 범주 <br/>\
-- 서수 로지스틱 회귀 : 다수 범주 + 순서 <br/><br/>\
-# 로지스틱 회기분석 원리 <br/>\
-<img src = "./img/LogisticFunction.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 로지스틱, 선형 회기분석 비교 <br/>\
-<img src = "./img/LogisticLinearRegression.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 87회 1교시 13번\
-',
-  
-// 비용함수, 손실함수
-'# 정의 : 인공지능 학습원리 <br/>\
-- 선형 회귀식에서 학습데이터가 주어지면 w,b 값을 조정하여 최소화 시키기 위한 함수 <br/><br/>\
-# 특징 : 제곱(양수), 최소화(합 최소), 경사하강법(비용 최소) <br/><br/>\
-# 절차 <br/>\
-<img src = "./img/CoastFunctionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 87회 관리 1교시 6번 <br/>\
-<hr color = "blue"></hr>\
-# 정의 : 최적 매게변수 탐색 <br/>\
-- 신경망 성능의 나쁨을 나타내는 지표로, 알고리즘이 얼마나 잘못하고 있는지를 표현하는 지표 <br/><br/>\
-# 개요도 <br/>\
-<img src = "./img/LossFunction.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 종류 <br/>\
-1. MSE (평균제곱오차) Mean Squared Error <br/>\
-<img src = "./img/MSE.png" style = "max-width: 100%; height: auto;"><br/>\
-*Pi 실제값, Yi 예측값<br/><br/>\
-2. RMSE (평균제곱근오차) Root MSE<br/>\
-- 속도 향상 <br/>\
-<img src = "./img/RMSE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-3. CEE (교차엔트로피) Cross Entropy Error <br/>\
-- 원-핫 인코딩 경우 사용 <br/>\
-- y : 신경망 출력, t : 정답 레이블 <br/>\
-<img src = "./img/CEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-4. Mini-Batch <br/>\
-- 무작위 뽑아 학습 <br/>\
-<img src = "./img/MiniBatch.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-* KPC 94회 1교시 2번\
-',
-
-// [딥러닝]- DNN
-'# 정의 : 여러개 은닉층 인공신경망 <br/>\
-- 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) <br/><br/>\
 ',
   
 // 딥러닝 경량화
@@ -1565,7 +1577,7 @@ var answer = answer.concat(
 ',
 
 // 경량 딥러닝
-'# 정의 : 알고리즘 효율화, 경량화 기술 <br/>\
+'# 정의 : 알고리즘 구조 개선 / 알고리즘 효율화, 경량화 기술 <br/>\
 - 알고리즘 자체를 적은 연산과 효율적인 구조로 설계하여, 기존 모델의 정확도는 최대한 유지하면서 기존 모델 대비 효율을 극대화하기 위한 딥러닝 경량화 기술 <br/><br/>\
 # 암기 <br/>\
 - 모(RSD): Res(파라x), Squeeze(합성곱 필터 감소), Dense(Feature Map 쌓기) <br/>\
@@ -1586,7 +1598,7 @@ var answer = answer.concat(
 ',
 
 // 알고리즘 경량화 
-'# 정의 :  모델 크기 경량화 기법 <br/>\
+'# 정의 : 파라미터 제거, 공유 / 모델 크기 경량화 기법 <br/>\
 - 기존 알고리즘의 불필요한 파라미터를 제거하거나, 파라미터의 공통된 값을 공유하거나 파라미터의 표현력을 잃지 않으면서 기존 모델의 크기를 줄이는 알고리즘 경량화 기법 <br/><br/>\
 # 종류 (압지하)<br/>\
 1. 모델 압축 기술 <br/>\
@@ -1597,32 +1609,6 @@ var answer = answer.concat(
 3. 하드웨어 가속화 기술 <br/>\
 - TPU, VPU, GPU : 벡터/행렬 연산 병렬 처리 연산 전용 하드웨어 기술 <br/><br/>\
 * KPC 91회 2교시 2번\
-',
-  
-// Hyper Parameter
-'# 정의 : 의도적 설정 파라미터 <br/>\
-- 신경망 학습을 통해서 튜닝 또는 최적화 해야 하는 주 변수가 아니라, 학습 진도율이나 Mini-batch 크기, 훈련 반복 횟수, 가중치 초기화 방법 등 인간의 선험적 지식으로 설정을 하는 변수 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/HyperParameterOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 종류 <br/>\
-1. 네트워크 구조 관련 <br/>\
-- Hidden Layer, Unit 개수 : 훈련 데이터 대한 학습 최적화 결정 변수 <br/>\
-<img src = "./img/NumberofHiddenLayerandUnits.png" style = "max-width:100%; hegiht:auto;"><br/>\
-- Dropout : Overfitting 피하기 위한 정규화기법 <br/>\
-<img src = "./img/DropOut.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-2. Training Algorithm 관련 <br/>\
-- Learning Rate : gradient 방향 이동 속도 (Big Learning Rate, Just right, Too small)<br/>\
-- Mini-batch 크기 : Data 나누는 크기 <br/>\
-- Cost function : MSE, RMSE <br/>\
-- Regulation Parameter : Overfitting 문제 피하기 위해 사용 <br/>\
-- Training 반복 횟수 : 학습 조기 종료 결정 변수 <br/>\
-- Weight initialization : 학습 성능 결정 변수 <br/><br/>\
-# 비교 <br/>\
-<img src = "./img/ParameterHyperParameter.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 튜닝방법 <br/>\
-<img src = "./img/HyperParameterTunning.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* KPC 97회 응용 1교시 16번<br/>\
-* 120회 관리 4교시 3번\
 ',
 
 // Q-러닝 
