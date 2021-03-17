@@ -1644,21 +1644,32 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 // 기술통계
 '# 정의 : 변수, 자료 체계적 조직화 / 요약 기술 / 통계 방법 <br/>\
 - 하나의 변수나 집단 수량적 자료 체계적 조직화, 요약 기술해주는 통계적 방법 <br/><br/>\
+# 특징 <br/>\
+- 방법 : 의미있는 방식으로 데이터 수집, 정리, 분석 제시 <br/>\
+- 결과 : 도표 및 테이블 이용한 상황 설명 표현 <br/><br/>\
 # 사용기술 <br/>\
 - 중앙화 경향(Central Tendency) : 평균(mean), 중앙값(median), 최빈값(mode) 등 <br/>\
 - 분산도(Variation) : 범위, 표준편차(standard deviation), 사분위수(quantile) <br/>\
 - 분포(Distribution) : 왜도, 첨도 <br/>\
 - 빈도(frequency)와 백분율(percent) : 빈도, 빈도분포, 백분위 <br/><br/>\
+# 기술, 추론통계 관계 <br/>\
+<img src = "./img/DescribeInferenceRelation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술, 추론통계 비교 <br/>\
+<img src = "./img/DescribeInferenceCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 3교시 3번\
 ',
   
 // 추론통계
 '# 정의 : 표본 통계치 / 추정 가설검증 / 통계 방법 <br/>\
 - 표본에서 나온 통계치로부터 모든 추정 가설검증하는데 사용하는 통계적 방법 <br/><br/>\
+# 특징 <br/>\
+- 방법 : 데이터 비교, 가설검증, 미래결과 예측 <br/>\
+- 결과 : 확률 통한 이벤트의 발생 가능성 설명 <br/><br/>\
 # 사용기술 <br/>\
 - 점추정(Point Estimation) : 적률법, 최대가능도추정법, 최소제곱법 <br/>\
 - 구간추정(Interval Estimation) : 표준정규분포, t분포 <br/>\
-- 가설검정/차이검정 : t-검정(t-test), 분산분석(ANOVA) <br/>\
+- 가설검정 : 귀무가설, 대립가설 통한 추론 <br/>\
+- 차이검정 : t-검정(t-test), 분산분석(ANOVA) <br/>\
 - 관계검정 : 교차분석(Chi Square), 상관분석(Correlation), 회귀분석(Regression) <br/><br/>\
 * 123회 관리 3교시 3번\
 ',
