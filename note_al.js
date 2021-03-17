@@ -2270,32 +2270,33 @@ var answer = answer.concat(
 ',
 
 // Opinion Mining
-'# 정의 : 사용자 의견분석 기술 <br/>\
-- SNS 대량 리뷰로 사용자가 원하는 정보를 분석해 유의미한 정보를 지능적으로 유추해내는 Mining 기술 <br/><br/>\
+'# 정의 : Web 컨텐츠 Text / 의견, 성향 분석 / 마이닝 기법 <br/>\
+- Web 컨텐츠의 Text에 나타난 사람들의 의견, 성향등의 주관적인 평판, 경향, 감성 분석하는 자연어 처리 기술 <br/><br/>\
 # 특징 <br/>\
-- 1단계 : 팩트와 의견 문장 구분 <br/>\
-- 2단계 : 의견이 들어간 문장을 긍정과 부정으로 구분 <br/>\
-- 3단계 : 긍정과 부정 표현 수 및 유용한 문장 추출후 분석 <br/><br/>\
-# 구성요소 <br/>\
-<img src = "./img/OpinionMining.png" style = "max-width:100%; height:auto;"><br/><br/>\
-1. 도메인 지식 추출 <br/>\
-- 전처리 : 객관적인 문장인지 주관적인 문장인지 분리 <br/>\
-- 도메인 의존적 단어 : 특정 단어의 도메인 발생 빈도와 일반 도메인 신문기사 발생 빈도 비교 <br/>\
-- 문장 정보 : Likelihood ratio(우도: 발생가능비율)를 평가 척도로 활용 <br/>\
-- 단서 단어 : 개체명 인식에서 단서 단어를 찾는데 활용 <br/><br/>\
-2. Opinion 추출 <br/>\
-- 개체명 인식 : 평가요소 및 오피니언에 해당하는 단어 열 인식 <br/>\
-- 관계 추출 : 평가요소-오피니언 관계 중 관련성 존재 연결 인식 <br/><br/>\
+1. 문장추출 : 팩트와 의견 문장 구분 <br/>\
+2. 극성분류 : 의견이 들어간 문장을 긍정과 부정으로 구분 <br/>\
+3. 요약 : 긍정과 부정 표현 수 및 유용한 문장 추출후 분석 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/OpinionMiningStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 수집/추출 <br/>\
+- Web Crawling : robots, txt, 웹 자동 수집 <br/>\
+- Scraping : 마이데이터 활용 <br/>\
+- SNS : 추출 대상 텍스트 저장소 <br/>\
+- 주관성 탐지 : 감정과 관련 없는 부분 제외 <br/><br/>\
+2. Mining <br/>\
+- NLP : 형태소, 구문 분석 <br/>\
+- Text Mining : 의미 강도 분석 <br/>\
+- 알고리즘 : Word2Vec, ML분류기(SVM) <br/>\
+- 극성분류 : 긍정, 부정 분류 <br/><br/>\
+3. 시각화 <br/>\
+- 전처리 : 토큰화, Segmentation <br/>\
+- Info Graphic : 이미지 시각화 <br/>\
+- 빈도수 분석 : TF-IDF <br/><br/>\
 # 사례 제시 <br/>\
-1. 1단계 <br/>\
-- 긍정/부정 표현 어휘 정보 추출 <br/>\
-- 사례 : 각 부착한 레이블이 갖는 값이 범위는 0.0~1.0 이며 synset 별로 점수의 총합은 1.0 리소스들은 영어에 국한 <br/><br/>\
-2. 2단계 <br/>\
-- 긍정/부정 표현 수 검출 및 리뷰 요약 <br/>\
-- 사례 : Naiv Bayes, Maximum Entropy(ME) mode, SVM과 같은 알고리즘을 적용하여 기계학습 수행 <br/><br/>\
-3. 3단계 <br/>\
-- 세부 평가요소와 관련된 오피니언을 포함하는 문장들 중 유의미한 문장들을 긍정/부정 평가별로 추출 후 중요 문장으로 구성된 리뷰 요약 생성 <br/>\
-<img src = "./img/OpinionMining_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OpinionMiningExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Opinion Mining, Text Mining 관계 <br/>\
+<img src = "./img/OpinionMiningTextMining.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 1교시 11번\
 ',
  
