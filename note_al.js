@@ -1958,6 +1958,8 @@ var answer = answer.concat(
 - NLG(Generation) : 다시 자연어로 변환 (NLP 일부분) <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 발전과정 <br/>\
+<img src = "./img/NLP_Growth.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. NLU(형구분담) <br/>\
 - 형태소 분석(Morphological ANalysis) : 품사 정보 인식 <br/>\
@@ -2039,6 +2041,15 @@ var answer = answer.concat(
 # TF-IDF, Word2Vec 비교 <br/>\
 <img src = "./img/TF_IDF_Word2Vec.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 4교시 5번\
+',
+  
+// Transformer
+'# 정의 : 2017 Google / Attention / 인코더, 디코더 / 언어처리 모델 <br/>\
+- 2017년 구글이 발표하여 Attention 매커니즘을 사용하여 인코더, 디코더로 구현된 언어처리 모델<br/><br/>\
+# 특징 : 최근 딥러닝 언어모델 Transformer에서 파생 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/Transformer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 4번\
 ',
   
 // BERT
