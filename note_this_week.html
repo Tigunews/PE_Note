@@ -45,6 +45,23 @@
     document.write('Answer : <br/>' + answer[current] + '<br/><br/>');
   }
 
+  function Init()
+  {
+    document.body.innerHTML = "";
+    document.write('<head> <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" </head>');
+    document.write('** All Search **' + '<br /><br />');
+    document.write('<input type = "text" id = "search" onkeyup="enterkey();"/> ');
+    document.write('<button id="b_search" onclick="search();">Search</button>');
+  }
+
+  function enterkey()
+  {
+    if(window.event.keyCode == 13)
+    {
+      search();
+    }
+  }
+
   function drawScreen()
   {
     document.body.innerHTML = "";
