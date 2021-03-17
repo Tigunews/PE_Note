@@ -1766,7 +1766,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 구성요소 <br/>\
 - 고유 벡터 : 데이터의 분포를 나타내는 선 <br/>\
 - 고유 값 : 고유벡터에 대한 데이터의 분산 <br/><br/>\
-# 절차 : 공분산 계산 > 고유 벡터 계산 > 고유치 선택 > 변환행렬 생성 > 선형 변환 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/DeminsionDecreseProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 2교시 4번\
 ',
   
@@ -1789,6 +1790,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 * 구간척도(interval Scale) : 숫자 간의 간격이 산술적 의미 (덧셈 허용, 곱셈 비허용) <br/>\
 * 서열척도(Ordinal Scale) : 개체간의 서열 관계 의미 (1등, 2등, 3등) <br/><br/>\
 </font>\
+# 절차 <br/>\
+<img src = "./img/MultidimensionalScalingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 활용 사례 <br/>\
 - 심리학 : 청각 반응, 시각 반응 <br/>\
 - 사회학 : 인식 정도, 그룹과 조직간 구조 이해 <br/>\
