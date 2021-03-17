@@ -58,6 +58,7 @@ var question = question.concat(
 '[빅데이터]- Edge Analytics',
 '[빅데이터]- R-HIVE',
 '[빅데이터]- NoSQL',
+'[NoSQL]- Column Family Store',
 '[빅데이터][NoSQL]- 데이터 모델링 패턴',
 '[빅데이터][NoSQL]- CAP 이론',
 '[빅데이터][NoSQL]- PACEL',
@@ -1240,6 +1241,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 특징 : 테이블간 관계정의를 안함, 분산환경지원, 저비용처리(오픈소스), 확장성, 다양 형태 저장구조 <br/><br/>\
 * 123회 1교시 11번 <br/>\
 * 117회 1교시 9번 \
+',
+  
+// Column Family Store
+'# 정의 : Value 조합 저장 / 분산 데이터 베이스 형태 <br/>\
+- Key-Value Store 방식의 단점 극복 위해, Value 조합을 저장하는 분산 데이터 베이스 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/ColumnFamilyDBStructure.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Colum Family : Column들을 물리적으로 배치 <br/>\
+- Row : Row Key, 여러 Column 으로 구성 <br/>\
+- Row Key : Row 식별자, 검색 기본키 <br/>\
+- Column : 하나의 Row에 여러 Column 저장 <br/>\
+- Time Stamp : Value 버전위한 식별자 활용 <br/><br/>\
+# 유형 <br/>\
+- Cassandra : Bigtable과 Dynamo 분산기술 <br/>\
+- HBase : 하둡기반 동작, 빅데이터 분산처리 <br/><br/>\
+* 123회 관리 1교시 11번 \
 ',
   
 // NoSQL 데이터 모델링 패턴
