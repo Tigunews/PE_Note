@@ -12,16 +12,18 @@
 </head>
 <script type = "text/javascript">
 // varation
-  var index = new Array();
-
+  var data = new Array();
   var current;
   var bInit = 0;
+
+	for(i=0; i<this_week_question.length; i++)
+	{
+		data.push(this_week_question[i]);
+	}
 
 // function 
   function next()
   {
-    var data = this_week_question[1];
-
     Init();
     	  
     if( data != null)
