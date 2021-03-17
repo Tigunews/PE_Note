@@ -89,6 +89,7 @@ var question = question.concat(
 '[통계]- 재현정보',
 '[통계]- 차등정보보호',
 '[통계]- 회귀 분석',
+'[통계][회귀 분석]- 다변량 회귀 분석',
 '[통계]- 판별 분석',
 '[통계][분석기법]- 주성분 분석',
 '[통계][분석기법]- 다차원 척도법',
@@ -1730,6 +1731,16 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/RegressionModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 2교시 4번 <br/>\
 * KPC 91회 3교시 1번\
+',
+  
+// 다변량 회귀 분석
+'# 정의 : 다수 종속변수, 독립변수 / 변수 차원 줄이는 기법 <br/>\
+- 다수의 종속변수와 독립변수와의 상관관계 분석시 변수 차원을 줄이는 기법 <br/>\
+# 종류 <br/>\
+<img src = "./img/MultiRegressionAnalysis.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 변수 축소법 <br/>\
+<img src = "./img/MultiRegressionAnalysisDecress.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 2교시 4번\
 ',
   
 // 판별 분석
