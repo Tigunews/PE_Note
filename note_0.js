@@ -28,4 +28,5 @@ var this_week_question =
 'IT 투자',
 'API Gateway',
 '최단경로',
+'국제 표준화 기구',
 ];
