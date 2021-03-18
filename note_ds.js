@@ -1,4 +1,5 @@
 var question = question.concat(
+'국제 표준화 기구',
 '4차산업 혁명',
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
@@ -216,6 +217,41 @@ var question = question.concat(
 );
 
 var answer = answer.concat(
+// 국제 표준화 기구
+'# IEEE-Std. Framework <br/>\
+- Full name : Institute of Electrical and Electronics Engineers <br/>\
+- 설립 : 1884년 <br/>\
+- 역할 : 전기 전자기술분야 전문가 협회, 컴퓨터 통신, 전력, 에너지 기술등 표준 개발 <br/>\
+- 홈페이지 : www.ieee.org <br/>\
+- 주도 : 미국 <br/>\
+- 특징 : IEEE 802시리즈(LAN, WAN등 표준 규격 <br/><br/>\
+# IEC-Std. Framework <br/>\
+- Full name : International Electrotechnical Commission <br/>\
+- 표준 : 국제표준 <br/>\
+- 홈페이지 : wwww.iec.ch <br/>\
+- 주도 : 유럽 <br/>\
+- 특징 : 1974년 이후 ISO의 전기, 전자부분 담당 <br/><br/>\
+# 국내 ICT 표준화 동향 <br/>\
+1. 정책 <br/>\
+- 디지털 뉴딜(2020.07) : 코로나 이후 글로벌 경제 선도, 국가발전전략 <br/>\
+- 인공지능 국가전략(2019.12) : 경제, 사회 전반 혁신 위한 3대 분야 9대 전략 100대 실행과제 <br/><br/>\
+2. 기술 <br/>\
+- 차량군집 주행(ITU-T X.1372) : 공인인증서 기반 차량통신 위한 규격정의 <br/>\
+- 자율주행 통신(ITU-R M.2084-1) : 저지연 응답특성(100 ms 이내), V2V, V2I 기술 표준 <br/><br/>\
+# 해외 ICT 표준화 동향 <br/>\
+1. 표준화 기구 <br/>\
+- ETSI : Edge App 개발자용 MEC 샌드박스 발표 <br/>\
+- ISO : PDF 표준 개정, 정보보안 거버넌스 개정 <br/>\
+- IEEE : 표준 공로자 시상식 온라인 개최 <br/>\
+- W3C : IETF와 함께 WebRTC 표준 발표 <br/><br/>\
+2. 국가 <br/>\
+- 중국 : 상업용 우주탐사 운송제어, 표준화 산업 연맹 설립 <br/>\
+- 미국 : ANSI, 국가전략 개정 발표 <br/>\
+- EU : EC, ERBD 데이터 혁신적 사용 촉진 <br/>\
+- 일본 : ICT 인프라 지역 전개 마스터 플랜 3.0 발표 <br/><br/>\
+* 123회 응용 3교시 6번\
+',
+  
 // 4차 산업혁명
 '# 정의 : 기술의 융합을 통한 창조적 파괴 혁신 <br/>\
 - 다보스포럼 : 모든 기술 융합, 파괴적 혁신 <br/>\
