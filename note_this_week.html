@@ -17,13 +17,12 @@
   for(i=0; i<this_week_question.length; i++)
   {
     data = this_week_question[i];
-    alert(data);
-		
+    		
     for(j=0; j<question.length; j++)
     {
       if(question[i].search(new RegExp(data, "i")) != -1)
       {
-        
+        alert(i);
       }
     }
   }
