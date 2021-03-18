@@ -1232,6 +1232,16 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 - 업무 처리 시간 : 처리 시간 단축 대해 평가 <br/><br/>\
 # 경제성 분석기법 <br/>\
 <img src = "./img/IT_Economic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 평가 체계 Framework <br/>\
+<img src = "./img/IT_InvestFramework.png" style = "max-width:100%; height:auto;"><br/>\
+1. 평가 유형 <br/>\
+- 사전협의/정보화 사업 : 중복투자, 상호연계 여부 관리 / 신규, 계속사업 <br/>\
+- 운영성과 : 시스템 효율적 운영 성과 측정 / 3년 이상 정보시스템, 1년이상 모바일앱 <br/><br/>\
+2. 평가 프로세스 <br/>\
+<img src = "./img/IT_InvestProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 평가지표 <br/>\
+- 사전협의/정보화사업 : 기획,구축(업무처리시간 개선율), 구축(DB구축비율), 구축,운영(사이버침해 조기 차단율), 운영(사용자 만족도) <br/>\
+- 운영성과 : 비용(누적,투입,평균 유지비), 업무(기능 활용도, 사용자편의성, 목표대비 업무성과달성도, 업무성과 증감율) <br/><br/>\
 * 122회 관리 3교시 5번 <br/>\
 * 119회 관리 2교시 3번\
 ',
