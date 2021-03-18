@@ -8,12 +8,12 @@
 <script type= "text/javascript" src="note_ds.js"></script>
 <script type= "text/javascript" src="note_sec.js"></script>
 <script type= "text/javascript" src="note_al.js"></script>
-<script type= "text/javascript" src="note_this_week.js"></script>
+
 </head>
 <script type = "text/javascript">
 // varation
-var current = 0;
-var data = this_week_question[current];
+var current = -1;
+var data;
  
 // function 
   function next()
@@ -42,11 +42,14 @@ var data = this_week_question[current];
 
   function getAnswer()
   {
+    data = this_week_question[current];
+    alert(data);
+   
     for(var i=0; i<question.length; i++)
     {
       if(question[i].search(data) != -1)
       {
-        document.write('Answer : <br/>' + this_week_question[i] + '<br/><br/>');
+        document.write('Answer : <br/>' + answer[i] + '<br/><br/>');
       }
     }
   }
