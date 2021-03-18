@@ -1242,7 +1242,7 @@ var answer = answer.concat(
 ',
 
 // ISO/IEC/IEEE 42010
-'# 정의 : 소프트웨어 아키텍처 표준 정립 <br/>\
+'# 정의 : 기술 요소, 행위 표준화 / 다양한 SW 설계, 활용 / 의사소통 / 메타 모델 <br/>\
 - 소프트웨어 집약적 시스템의 아키텍처 기술 요소와 행위를 표준화하여 다양한 소프트웨어를 설계 및 활용할 수 있게 하고, 이해관계자들이 의사소통이 용이하도록 만든 표준 메타 모델 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/ISOIECIEEE42010Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
