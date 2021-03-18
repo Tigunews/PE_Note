@@ -14,7 +14,7 @@ var this_week_question =
 '주성분',
 '다차원 척도',
 '아웃소싱',
-'itsm]- sla',
+'sla',
 'penal',
 'sip',
 'nosql',
