@@ -164,6 +164,7 @@ var question = question.concat(
 'HTML 5',
 '[공공데이터]- Open Data Platform',
 '[공공데이터][Open Data]- LOD',
+'Data Warehouse',
 '[공공데이터]- Data Lake',
 '[공공데이터][Data Lake]- Data Catalogs',
 '[공공데이터]- 공공데이터 품질관리 메뉴얼 V2.0',
@@ -3175,6 +3176,25 @@ var answer = answer.concat(
 - 국내 : 공공 Wifi 정보, 국가서지 <br/><br/>\
 * 라이지움 88회 관리 2교시 3번 <br/>\
 * 122회 1교시 3번\
+',
+  
+// Data Warehouse
+'# 정의 : OLAP, 공통 형식 변환 관리 DB <br/>\
+- 의사 결정에 도움을 주기 위하여, 기간 시스템의 데이터베이스에 축적된 데이터를 공통의 형식으로 변환해서 관리하는 데이터베이스 <br/><br/>\
+# Data Warehouse, Data Lake <br/>\
+<img src = "./img/DataWarehouseDataLakeFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/DataWarehouseSturcture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 데이터 : 트랜잭션 시스템, 운영 DB, 사업부서 App RDB <br/>\
+- 스키마 : 구현전 설계(Schema on Write) <br/>\
+- 가격/성능 : 고비용의 스토리지 사용 가장 빠른 결과 <br/>\
+- 데이터 품질 : 큐레이트된 데이터 <br/>\
+- Agility : Less-Agile, Fixed Config <br/>\
+- 보안성 : 보안 기술 성숙화 <br/>\
+- 사용자 : Business Professional <br/>\
+- 분석 : 배치보고, BI 및 시각화 <br/><br/>\
+* 122회 응용 2교시 3번\
 ',
   
 // Data Lake
