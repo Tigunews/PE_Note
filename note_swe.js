@@ -1335,6 +1335,10 @@ var answer = answer.concat(
 - 개념 : 개발팀 개발 물리적 산출물 관점 표현 <br/>\
 - 관점 : Programmer <br/>\
 - 표현 : Component, Package Diagram <br/><br/>\
+5. Scenarios <br/>\
+- 개념 : 중요 요구 사항 Scenario 형태 표현, 4개 View 모두 연결 View <br/>\
+- 관점 : 전체 <br/>\
+- 표현 : Usecase Diagram <br/><br/>\
 * ITPE 5회 2교시 1번\
 ',
 
