@@ -52,7 +52,7 @@ var question = question.concat(
 '[설계단계][소프트웨어 아키텍처]- 품질속성',
 '[설계단계][소프트웨어 아키텍처]- 품질속성 시나리오',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처뷰',
-'[설계단계][소프트웨어 아키텍처]- 4+1 View',
+'[설계단계][소프트웨어 아키텍처]- Kruchten\'s 4 Plus 1 View',
 '[설계단계][소프트웨어 아키텍처]- SEI 3 View',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처 스타일',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처 평가방법',
@@ -1313,8 +1313,29 @@ var answer = answer.concat(
 <img src = "./img/ArchView_2.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 4+1 View
-'<img src = "./img/4Plus1View.png" style = "max-width:100%; height:auto;">\
+// Kruchten\'s 4 Plus 1 View
+'# 정의 : Logical, Physical, Process, Developer, Scenarios / 집약적 시스템 아키텍처 / view model <br/>\
+- Logical, Physical, Process, Developer, Scenarios 5개 view 사용을 기반으로 소프트웨어 집약적 시스템의 아키텍처 설명을 위한 view model <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/Kruchten41View.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Logical View <br/>\
+- 개념 : 시스템 -> 사용자 제공 기능 구조적 구성요소 역할 분해, 관계 명시 View <br/>\
+- 관점 : End-User <br/>\
+- 표현 : Class, State Diagram <br/><br/>\
+2. Process View <br/>\
+- 개념 : 프로세스간 통신, Run-Time 동작 표현 초점 View <br/>\
+- 관점 : System Integrators <br/>\
+- 표현 : Activity, Class, Collaboration Diagram <br/><br/>\
+3. Physical VIew(Deployment View) <br/>\
+- 개념 : 물리 구성요소, 배치되는 SW 산출물 관계 초점 View <br/>\
+- 관점 : (HW) System Engineers <br/>\
+- 표현 : Deployment Diagram<br/><br/>\
+4. Development View(Implementation View) <br/>\
+- 개념 : 개발팀 개발 물리적 산출물 관점 표현 <br/>\
+- 관점 : Programmer <br/>\
+- 표현 : Component, Package Diagram <br/><br/>\
+* ITPE 5회 2교시 1번\
 ',
 
 // [소프트웨어 아키텍처]- SEI 3 View',
