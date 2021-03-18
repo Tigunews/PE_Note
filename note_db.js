@@ -89,13 +89,30 @@ var question = question.concat(
 '[통계]- 특이정보, Outlier',
 '[통계]- 재현정보',
 '[통계]- 차등정보보호',
+'[통계]- 분석기법',
 '[통계][분석기법]- 회귀 분석',
 '[통계][회귀 분석]- 다변량 회귀 분석',
 '[통계][분석기법]- 주성분 분석',
 '[통계][분석기법]- 다차원 척도법',
+'[통계][분석기법]- 군집분석',
+'[통계][분석기법][군집분석]- 계층적 군집분석',
+'[통계][분석기법][군집분석]- 비계층적 군집분석',
 '[통계][분석기법]- 판별 분석',
+'[통계][분석기법]- 연관규칙',
+'[통계][분석기법][연관규칙]- Apriori Algorithm',
 '[통계]- 타당도',
 '[통계]- 신뢰도',
+'Data Mining',
+'[Data Mining]- Text Mining',
+'[Data Mining][Text]- 로봇 저널리즘',
+'[Data Mining]- 단어구름(Word Cloud)',
+'[Data Mining]- Co-Word Analysis',
+'[Data Mining]- 탐색적 데이터 분석(Exploratory Data Analysis)',
+'[Data Mining]- 확증적 데이터 분석(Confimatory Data Analysis)',
+'[Data Mining]- 토픽 모델링',
+'[Data Mining]- Opinion Mining',
+'[Data Mining]- System Dynamics',
+'[Data Mining]- CRISP-DM',
 '데이터 사이언스',
 '반정형 데이터',
 'RAID',
@@ -1742,6 +1759,30 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 * 86회 라이지움 관리 1교시 3번\
 ',
   
+// 분석기법
+'# 정의 : 데이터 LifeCycle에 따른 Activity 중요성에 의해 빅데이터, 인공지능 핵심영역으로 자리잡고 있는 데이터 활용 기반 기술 <br/><br/>\
+# 종류 <br/>\
+1. 회귀분석 <br/>\
+- 개념 : 하나 또는 여러개 독립변수와 종속변수간의 관계를 설명한 분석 <br/>\
+- 예시 : 선형, 로지스틱 <br/>\
+- 평가 : 잔차분석, ACF 그래프, 히스토그램 <br/><br/>\
+2. 분류분석 <br/>\
+- 개념 : 데이터의 실체가 어떤 그룹에 속하는지 예측하는데 사용하는 데이터 마이닝 기법 <br/>\
+- 예시 : K-NN, 의사결정 나무, 베이지안 정리, Random Forest <br/>\
+- 평가 : 혼동행렬, ROC Curve <br/><br/>\
+3. 군집분석 <br/>\
+- 개념 : n개의 군집을 시작해 군집의 개수를 줄여나가는 방법 <br/>\
+- 예시 : 거리기반, 차원축소, 계층, 비계층 <br/>\
+- 평가 : 내부, 외부 평가 <br/><br/>\
+4. 연관성 분석 <br/>\
+- 개념 : 거대한 데이터에서 유용한 정보를 얻기 위해 사용되는 분석 <br/>\
+- 예시 : 연관규칙, 빈발항목 집합 <br/>\
+- 평가 : 지지도, 신뢰도, 향상도 <br/><br/>\
+# 절차 <br/>\
+- EDA -> 전처리 -> 분석 모델링 -> 분석모델 평가 <br/><br/>\
+* KPC 96회 관리 4교시 2번\
+',
+  
 // 회귀 분석
 '# 정의 : 독립, 종속 변수간 </font color = "red">관련성</font> / </font color = "red">함수적 관계 통계적 추정</font> / 종속(1) / 변화 따른 </font color = "red">예측</font> <br/>\
 - 독립변수들과 종속변수 간에 존재하는 관련성을 분석하기 위하여, 관측된 자료에서 이들 간의 함수적 관계를 통계적으로 추정하는 방법 <br/><br/>\
@@ -1812,6 +1853,57 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 * 123회 관리 2교시 4번\
 ',
   
+// 군집분석
+'# 정의 : 사전 정보 없는 경우 값 기반 유사성 이용 분석법 <br/>\
+- 모집단 또는 범주에 대한 사전 정보가 없는 경우 주어진 관측 값들 사이의 거리 또는 유사성을 이용하는 분석법 <br/>\
+- 전체 데이터를 집단으로 그룹화하여 각 집단의 성격 파악, 데이터 전체의 구조 이해 지원 분석법 <br/><br/>\
+# 특징 <br/>\
+- 탐색적인 기법 : 주어진 자료에 대한 사전 정보 없이 의미있는 자료 구조를 찾아낼 수 있음 <br/>\
+- 이식성 : 거리만 잘 정의되면 모든 종류의 자료에 적용할 수 있음 <br/>\
+- 초기 군집수 K 결정 : 초기 군집수 K의 결정이 어려움 <br/><br/>\
+# 군집분석의 과정 <br/>\
+- 거리측도 선택 : 유사성 판단 / 유클리디안 거리 <br/>\
+- 절차 선택 : 계층, 비계층 / 단일, K-Means <br/>\
+- 군집의 수 결정 : 계층, 비계층 / 결합 거리, 분산합계 <br/>\
+- 평가 : 신뢰성, 타당성 <br/><br/>\
+# 유형분류(1) <br/>\
+1. 거리 중심 <br/>\
+- 계층적 군집 : 중복 허용x  <br/>\
+- K-means : 개채간 유사성 <br/>\
+- SOM(Self Oragnizing Map) : 저차원 뉴런, 지도 형상화 <br/><br/>\
+2. 자원축소 <br/>\
+- 주성분분석(PCA) : 새로운 변수 창출 <br/>\
+- MDS(MultiDimensional Scaling) : 다차원 척도법 <br/><br/>\
+<img src = "./img/판별군집비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형분류(2) <br/>\
+<img src = "./img/ClusterAnalyzeCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 122회 관리 1교시 5번\
+',
+ 
+// 계층적 군집분석
+'# 정의 : 군집화 하는 과정에서 여러개의 내포된 군집으로 군집을 형성하는 기법 <br/><br/>\
+# 방법 <br/>\
+- 병합적 방법 : 가까운 관찰 단위까지 군집을 만들어가는 방법 <br/>\
+- 분할적 방법 : 거리가 먼 관찰 단위들을 나누어가는 방법 <br/><br/>\
+# 종류 <br/>\
+- 최단 연결법 : 가장 가까이 있는 두 관측치 사이의 거리 기반 군집 형성 <br/>\
+- 최장 연결법 : 가장 멀리 떨어진 두 관측치 사이의 거리 기반 군집 형성 <br/>\
+- 중심 연결법 : 두 군집의 중심간의 거리를 측정하여 군집 형성 <br/>\
+- 와드 연결법 : 군집내의 오차제곱합에 기초하여 군집 형성 <br/><br/>\
+# 거리 정의 <br/>\
+<img src = "./img/HireachyClusterAnalyzeDistance.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 4번\
+',
+ 
+// 비 계층적 군집분석
+'# 정의 : 랜덤으로 데이터를 군집화하고 군집 과정에서 중앙값의 변화에 따라 각 데이터들을 적절한 클러스터로 이동시켜 군집을 형성하여 분석하는 기법 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/NonHireachyClusterAnalyzeType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분석 알고리즘 <br/>\
+<img src = "./img/NonHireachyClusterAnalyzeAlgorithm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 87회 관리 3교시 4번\
+',
+
 // 판별 분석
 '# 정의 : 종속(2이상) / 집단 구성원 판별, 예측 / 영향력 큰 변인 파악<br/>\
 - 종속 변수가 2개 혹은 그 이상의 집단으로 구성되어 있을 때 여러개의 독립 변수로 집단 구성원을 판별 혹은 예측하기 위한 통계적 방법 <br/><br/>\
@@ -1827,6 +1919,54 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 분류 정확도 파악 : 분류 결과 평가 (Wilk\'s람다 값(집단내 제곱/전체 제곱), 고유 값(집단간 제곱/집단내 제곱) <br/>\
 - 소속 집단 예측 : 판별함수 적용, 예측 수행 <br/><br/>\
 * KPC 91회 3교시 1번\
+',
+
+// 연관규칙
+'# 정의 : 연관성 정량적 표현 작업 <br/>\
+- 특정 아이템 집합에서 의미있는 연관성이 존재하며, 해당 연관성을 일반화하고 정량적으로 표현하는 작업 <br/><br/>\
+# 장단점 <br/>\
+- 장점 : 탐색적기법(이해하기 쉬움), 강력한 비목적성 분석기법, 편리한 분석 데이터 형태(데이터 변환x), 계산의 용이성(간단한 계산) <br/>\
+- 단점 : 계산과정(품목수에 따라 복잡), 적절한 품목 결정(세분화, 의미없는 결과 도출 가능), 품목 비율차이(적은 거래량, 제외 쉬움) <br/><br/>\
+# 평가척도 <br/>\
+1. 지지도(Support) : <font color="red">전체 거래 품목 A,B가 동시에 포함될 확률</font>, 두 품목의 동시구매가 얼마나 자주 일어나는지를 분석 <br/>\
+- Support = P(A∩B) = (AB동시/전체거래) = (A거래수 * B거래수) / 전체거래수<br/><br/>\
+2. 신뢰도(Confidence) : A->B 연관규칙에서, <font color="red">품목 A포함 거래중 A,B 동시 포함 거래 확률</font> -> 두 품목간 연관성의 강도를 분석 <br/>\
+- Confidence = P(B|A) = 지지도/P(A) = P(A∩B)/P(A)<br/><br/>\
+3. 향상도(Lift) : A->B 연관규칙에서, <font color="red">임의의 B가 구매되는 경우 대비, A와 관계되어 구매되는 비율</font> => A와 B의 상관관계 분석 <br/>\
+- 향상도 = 1 (독립적 관계) : A,B 구매시 상호 연관 없음 <br/>\
+- 향상도 > 1 (양의 상관 관계) : A 구매시 B 구매 예상 <br/>\
+- 향상도 < 1 (음의 상관 관계) : A 구매시 B 구매 감소 <br/>\
+- Lift =  P(B|A)/P(B) = 신뢰도/P(B) = (P(A∩B)/P(A))/P(B)<br/><br/>\
+* <font color="red">지지도 신뢰도 향상도 : 빈도 / 연관성 / 상관관계 </font><br/><br/>\
+# 관련 알고리즘 <br/>\
+- Apriori Algorithm : 항목집합 줄이기 <br/>\
+- DHP Algorithm : Transaction 줄이기 <br/>\
+- FP-growth Algorithm : 비교횟수 줄이기 <br/><br/>\
+<img src = "./img/연관규칙.png" style = "max-width:100%; height:auto;">\
+',
+  
+// Apriori Algorithm
+'# 정의 : 선험적 알고리즘 (사전지식 활용)<br/>\
+- 데이터베이스에서 후보 항목집합을 생성, 발생빈도 계산, 사용자 정의 최소 지지도 기준으로 빈발 항목집합 결정 알고리즘 <br/><br/>\
+# 구성요소 <br/>\
+1. 선험적 규칙 <br/>\
+- 규칙 1 : 한 항목집합이 빈발하다면, 이 항목집합의 모든 부분집합은 빈발항목 집합 <br/>\
+-> {a,b,c,d} 빈발 항목집합 {b,c,d} / {b,c}, {b,d}, {c,d}, {b}, {c}, {d} <br/>\
+- 규칙 2 : 한 항목집합이 비빈발하다면, 이 항목집합을 포함하는 모등 집합은 비 빈발항목 집합 <br/>\
+-> {a,b,c,d} 비빈발 항목집합 {a,b} / {a,b,c}, {a,b,d}, {a,b,c,d} <br/><br/>\
+2. 연산 <br/>\
+- Join : 빈발항목 집합 찾기 위해 후보집합 생성 연산 <br/>\
+- Prune : 비 빈발항목에 따라서 후보집합에서 후보를 제외 하는 연산 <br/><br/>\
+# 절차 <br/>\
+- 빈발 항목 집합 탐색 <br/>\
+- 최소 지지도 확인 <br/>\
+- 후보 집합 생성 <br/>\
+- 반복 <br/>\
+- 연관규칙 생성 <br/><br/>\
+# 예시 <br/>\
+<img src = "./img/AprioriAlgorithmExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 90회 응용 2교시 4번 <br/>\
+* 119회 2교시 1번\
 ',
 
 // 타당도
@@ -1857,6 +1997,165 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 반분(Split-half) : 양분 채점 방식 (스피어맨-브라운 공식) <br/>\
 - 문항 내적 합치도 : 하나의 문항 하나의 설문지로 가정 (10문항 = 10번 조사처럼) (Cronbach의 Alpha) <br/><br/>\
 * 123회 관리 1교시 2번\
+',
+  
+// Data Mining
+'# 정의 : 정보 도출 방법 / 데이터 집합 / 사용자 요구 /<br/>\
+- 데이터 집합에서 사용자 요구 따라 유용 가능성 있는 정보 도출 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DataMining_OLAP.png" style = "max-width:100%; height:auto;"><br/>\
+* ETT : Extension, Transformation, Transportation <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/DataMiningType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+1. Sampling : 표본 추출 <br/>\
+2. Cleansing : 전처리(Pre-Processing) <br/>\
+3. 오류 제거 <br/>\
+4. Exploration : 자료의 탐색을 통해 기본정보 획득 및 분석 <br/>\
+5. Modeling : 알고리즘 선정 및 적용하여 마이닝 수행, 지도학습 알고리즘(의사결정, 신경망), 자율학습(연관성, 군집) <br/>\
+6. Reporting : 결과 분석/ 평가, 반복수행 여부 결정 <br/>\
+7. FeedBack <br/><br/>\
+# Apriori Algorithm <br/>\
+- 지지도 P(A∩B)<br/>\
+- 신뢰도 P(B|A)= P(A∩B)/P(A) <br/>\
+- 향상도 P(B|A)/P(B) = P(A∩B)/P(A)*P(B)\
+',
+
+// Text Mining 
+'# 정의 : 정보 도출 기법 / 비 조화 텍스트 문서 <br/>\
+- 비 조화된 텍스트 문서에서 가치있는 정보를 도출하는 기법 <br/><br/>\
+# 암기 <br/>\
+- 기법 : 분클토질컨듀 <br/><br/>\
+# 절차 : 데이터 수집 > 전처리 > 정보추출 > 클러스터링/범주화 > 요약/검색 <br/><br/>\
+# 기법 : 문서분류, 문서클러스터링, 토픽 트래킹, 질의응답(NLP), Concept Linkage(문서간 의미적 연결성), 듀오 마이닝(Data Mining, Text Mining 동시 적용)\
+',
+
+// 로봇 저널리즘
+'# 정의 : Robot + Journalism <br/>\
+- 로봇이 자체적으로 정보를 수집 및 분류한 후 의미를 해석해서 스스로 기사를 작성하는 저널리즘 기술 <br/><br/>\
+# 프레임워크 <br/>\
+<img src = "./img/RobotJournalismFramework.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 프로세스 <br/>\
+- 수집 : API, Web Crawling <br/>\
+- 추출 : Text Mining, Semantic Analyzing, ML <br/>\
+- 선별 : 이벤트 가중치, 스코어링 <br/>\
+- 결정 : NLU, 평판분석 <br/>\
+- 배포 : 워드 임베딩, 데이터 매칭 스코어 계산 <br/>\
+* Semantic Analyzing : 문장이나 단락에 기술된 주제 파악, 대상 검색 <br/>\
+* Word Embedding : 단어를 벡터로 표현하는 방법, 단어 밀집 표현으로 변환 <br/><br/>\
+# 순기능, 역기능 <br/>\
+- 순기능 : 언론 혁신, 개인화 서비스, 가치 창출 <br/>\
+- 역기능 : 일자리 감소, 적대적 공격, 알고리즘 담합 <br/><br/>\
+* KPC 96회 1교시 4번\
+',
+
+// Word Cloud
+'# 정의 : 시각적 표시 방법 / 메타데이터 / 태그 분석 / <br/>\
+- 메타데이터에서 얻어진 태그들을 분석하여 중요도나 인기도 등을 고려하여 시각적으로 늘어 놓아 웹사이트에 표시하는 방법 <br/><br/>\
+# 암기 <br/>\
+- 유형 : 문데 <br/>\
+- 도구 : 워A두 <br/><br/>\
+# 유형 <br/>\
+- 문서 구름 : Text Cloud - 문서 포함 단어의 시각적 표현 <br/>\
+- 데이터 구름 : Data Cloud - 단어대신 숫자 정보를 크기와 색깔로 표현 <br/><br/>\
+# 도구 : Wordle, ABCya, DoodleBuz\
+',
+
+// Co-Word Analysis
+'# 정의 : 내용 분석 기법 / 문장 / 단어 규칙 / 핵심개념 / 관계식별<br/>\
+- 문장 안에서 함께 사용되는 단어 규칙을 조사해서 문서의 주제와 관련된 핵심 개념이 무엇이고 이들의 관계가 어떤지 식별하는 내용 분석 기법 <br/><br/>\
+# 암기 <br/>\
+- 절차 : 수전동 <br/><br/>\
+# 절차 <br/>\
+1. 데이터 수집 <br/>\
+2. 데이터 전처리 과정 : 텍스트 마이닝, 불용어 제거, 품사 태깅, 주석 통해 제시된 명사구 선택 <br/>\
+3. 동시 출현 단어 분석 과정 \
+',
+
+// Exploratory Data Analysis
+'# 정의 : 분석 기법 / 관찰, 가설 / 필요한 데이터 형태 추출 <br/>\
+- 관찰한 현상을 보고 가설을 설정하고 필요한 데이터의 형태를 추출하는 분석 기법',
+
+// Confimatory Data Analysis
+'# 정의 : 분석 기법 / 의사결정 / 수집, 분석, 활용 <br/>\
+- 의사결정을 하기 위해 목적에 적합한 데이터를 수집하고 분석하여 결과를 활용하는 분석기법',
+
+// 토픽 모델링
+'# 정의 : 추론 모델 / 비정형 문서 집단 / 주제 찾기 알고리즘 / 맥락, 단어 이용 / 유사 의미 단어 클러스터링 <br/>\
+- 구조화 되지 않은 방대한 문서 집단으로 주제를 찾아내기 위한 알고리즘으로 맥락과 관련된 단어들을 이용하여 유사한 의미를 가진 단어들을 클러스터링하는 방식으로 추론하는 모델 <br/><br/>\
+# 절차 <br/>\
+1. 비 단어 제거 : 특수기호, 불용어 제거/정제 <br/>\
+2. 사전에 정의된 단어만으로 발췌 <br/>\
+3. DTM(Dcoument-Term Matrix) 생성 <br/>\
+4. 알고리즘 적용 : 백터기반 or 확률 기반 <br/><br/>\
+# 알고리즘 유형 <br/>\
+1. 백터 기반 <br/>\
+- LSA(Latent Semantic-Analysis) : 고차원 데이터 공간에 대해 축 변경해 새로운 축을 찾아내는 가변량 통계 분석 방법 <br/>\
+2. 확률 기반 <br/>\
+- pLSA(Probailistic LSA) : 데이터셋과 선별된 토픽 K간의 가장 잘 맵핑되는 토픽과 단어, 단어와 문서간의 조합 찾는 방법, 기존 LSA를 확률적 접근 <br/>\
+- LDA(Latent Dirichlet Allocation) : 주어진 문서 대해 각 문서에 어떤 주제들이 존재하는지에 대한 확률 모형\
+',
+  
+// Opinion Mining
+'# 정의 : Web 컨텐츠 Text / 의견, 성향 분석 / 마이닝 기법 <br/>\
+- Web 컨텐츠의 Text에 나타난 사람들의 의견, 성향등의 주관적인 평판, 경향, 감성 분석하는 자연어 처리 기술 <br/><br/>\
+# 특징 <br/>\
+1. 문장추출 : 팩트와 의견 문장 구분 <br/>\
+2. 극성분류 : 의견이 들어간 문장을 긍정과 부정으로 구분 <br/>\
+3. 요약 : 긍정과 부정 표현 수 및 유용한 문장 추출후 분석 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/OpinionMiningStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 수집/추출 <br/>\
+- Web Crawling : robots, txt, 웹 자동 수집 <br/>\
+- Scraping : 마이데이터 활용 <br/>\
+- SNS : 추출 대상 텍스트 저장소 <br/>\
+- 주관성 탐지 : 감정과 관련 없는 부분 제외 <br/><br/>\
+2. Mining <br/>\
+- NLP : 형태소, 구문 분석 <br/>\
+- Text Mining : 의미 강도 분석 <br/>\
+- 알고리즘 : Word2Vec, ML분류기(SVM) <br/>\
+- 극성분류 : 긍정, 부정 분류 <br/><br/>\
+3. 시각화 <br/>\
+- 전처리 : 토큰화, Segmentation <br/>\
+- Info Graphic : 이미지 시각화 <br/>\
+- 빈도수 분석 : TF-IDF <br/><br/>\
+# 사례 제시 <br/>\
+<img src = "./img/OpinionMiningExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Opinion Mining, Text Mining 관계 <br/>\
+<img src = "./img/OpinionMiningTextMining.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 122회 1교시 11번\
+',
+ 
+// System Dynamics 
+'# 정의 : 사회 현상을 구성요소로 분해하여, 요소 간의 인과 관계를 표현하는 기법 <br/>\
+- 동태적, 순환적 인과관계의 시각적으로 현상 이해하고 설명하거나 컴퓨터상에서 실험해 보는 방법론이자 현상을 바라보는 프레임워크 <br/><br/>\
+# 특징 <br/>\
+- 집중(초점) : 변수들 간의 영향관계 집중 <br/>\
+- 인과관계 기초 : 순환적 인과관계 <br/>\
+- 데이터 분석 : 동태적 데이터 분석 <br/><br/>\
+# 구성요소 <br/>\
+- 시스템 : 특정 목표를 공유하는 요소 집합 <br/>\
+- 인과관계 : 한 요소의 변화가 다른 요소에 영향을 미치는 의미 <br/>\
+<img src = "./img/SystemDynamics_1.png" style = "max-width:100%; height:auto;"><br/>\
+- 피드백 : 강화 루프, 균형 루프 <br/>\
+- 레벨과 레이트 : 피드백 루프요소를 시뮬레이션 모델로 표현 <br/>\
+<img src = "./img/SystemDynamics_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// CRISP-DM
+'# 정의 : 6단계 구성 데이터 마이닝 방법론 <br/>\
+- 유럽에서 시작되어 비즈니스의 이해를 바탕으로 데이터 분석 목적의 6단계로 진행되는 데이터 마이닝 방법론 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CRISP_DM_Struct.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성 <br/>\
+- Phases : 기획, 수집, 분석 <br/>\
+- Generic Tasks : 단일 프로세스 완벽 수행 단위(데이터 정제) <br/>\
+- Specialized Tasks : Generic Tasks 구체적으로 나눈 단계 <br/>\
+- Process Instances : 데이터 마이닝 위한 구체적 실행 <br/><br/>\
+# 프로세스 <br/>\
+<img src = "./img/CRISP_DM_Process.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CRISP_DM_Detail.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 데이터 사이언스
