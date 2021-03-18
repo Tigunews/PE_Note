@@ -16,13 +16,14 @@
   	
   for(i=0; i<this_week_question.length; i++)
   {
-	  data = this_week_question[i];
+    data = this_week_question[i];
+		alert(data.value);
 		
     for(j=0; j<question.length; j++)
     {
       if(question[i].search(new RegExp(data.value, "i")) != -1)
       {
-        alert(j);
+        
       }
     }
   }
