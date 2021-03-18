@@ -13,13 +13,14 @@
 <script type = "text/javascript">
 // varation
   var index = new Array();
-  var data = new Array();
-	
+  	
   for(i=0; i<this_week_question.length; i++)
   {
+	  data = this_week_question[i];
+		
     for(j=0; j<question.length; j++)
     {
-      if(question[j].serach(new RegExp(this_week_question[j].value, "j")) != -1)
+      if(question[i].search(new RegExp(data.value, "i")) != -1)
       {
         alert(j);
       }
