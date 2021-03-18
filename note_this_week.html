@@ -48,7 +48,7 @@ var data;
     {   
       for(var i=0; i<question.length; i++)
       {
-        if(question[i].search(data) != -1)
+        if(question[i].search(new RegExp(data, "i"))) != -1)
         {
           document.write('<hr width = "100%" color = "red" noshade/><br/>');
           document.write(question[i] + '<br/><br/>');
