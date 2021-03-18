@@ -102,6 +102,10 @@ var question = question.concat(
 '[통계][분석기법][연관규칙]- Apriori Algorithm',
 '[통계]- 타당도',
 '[통계]- 신뢰도',
+'[통계]- CLT',
+'[통계]- 추정이론(estimation theory)',
+'[통계]- 가설검정 (Statistical Hypothesis Testing)',
+'[통계]- 베이즈 정리',
 'Data Mining',
 '[Data Mining]- Text Mining',
 '[Data Mining][Text]- 로봇 저널리즘',
@@ -1998,6 +2002,60 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 문항 내적 합치도 : 하나의 문항 하나의 설문지로 가정 (10문항 = 10번 조사처럼) (Cronbach의 Alpha) <br/><br/>\
 * 123회 관리 1교시 2번\
 ',
+  
+// CLT
+'# 정의 : Central Limit Theorm (중심극한정리) <br/>\
+- 임의의 모집단에서 크기 n의 표본 k개를 복원추출을 할 때 n과 k가 충분히 크다면 각 표본의 평균 분포는 정규 분포로 수렴한다는 정리이론 <br/><br/>\
+# 수식 <br/>\
+<img src = "./img/CLT_Math.png" style = "max-width:100%; height:auto;"><br/>\
+# 활용 <br/>\
+- 적은 샘플수로 모집단의 평균을 정확하게 계산하는 경우 <br/>\
+- 적은 샘플수로 모집단의 분산을 정확하게 계산하는 경우 <br/>\
+- 모집단에 대한 정규 분포를 생성하는경우 <br/>\
+- 정규 분포를 활용한 통계적 가설검정 및 기법에 적용하는 경우 <br/><br/>\
+* KPC 97회 관리 1교시 7번\
+',
+  
+// 추정이론
+'# 정의 : 모집단 성질 유추 방법<br/>\
+- 표본에 들어있는 정보에 의거해서 모집단의 성질을 유추하는 통계적 추론 방법 <br/><br/>\
+# 종류 <br/>\
+- 점 추정 : 미지의 모수를 하나의 수치로 지정하는 방법 (제품의 불량율은 1%다)<br/>\
+- 구간 추정 : 모수가 포함될 것으로 예상되는 구간을 지정하는 방법 (제품의 불량율 추정시 불량율은 10.5%)<br/>\
+',
+
+// 가설검정
+'# 정의 : 가설 채택 여부 결정 통계적 분석 방법<br/>\
+- 모집단의 특성에 대한 어떤 가설을 설정한 뒤 표본관찰을 통하여 그 가설에 대한 채택여부를 결정하는 통계적 분석방법 <br/><br/>\
+# 종류 <br/>\
+- 귀무가설(H0) : 입증하고자 하는 가설(기각 목표, 같다, 차이가 없다 / 이 범죄자는 무죄다)<br/>\
+- 대립가설(H1) : 귀무가설과 대립되는 가설(채택 목표, 다르다, 차이가 있다 / 이 범죄자가 범인이다) <br/>\
+* p-value : 관찰 데이터가 귀무가설과 양립하는 정도를 0~1 사이 수치로 표현한 것 <br/><br/>\
+# 오류 종류 <br/>\
+- 1종 오류 (소비자/알파) : 음인데 양으로 (확진)<br/>\
+- 2종 오류 (소비자/배타) : 양인데 음으로 (정상)<br/><br/>\
+* KPC 94회 1교시 12번\
+',
+
+// 베이즈 정리 
+'# 정의 : 조건부, 주변부 확률분포 연관 이론 <br/>\
+- 확률변수의 조건부(conditional) 확률분포와 주변부(marginal) 확률분포를 연관 짓는 확률이론<br/>\
+- 어떤 사건의 관측 전의 원인의 가능성과 관측 후의 원인의 가능성 사이의 관계를 설명하는 확률이론 <br/>\
+- n개의 서로 배반인 사건 A1, A2, ... An 중 하나는 반드시 일어난다고 할 때, 임의의 사건 B에 의해 사건 A가 일어날 조건부 확률 <br/><br/>\
+# 구성요소 <br/>\
+- 사전확률(P(A)), 우도확률(P(B|A)), 사후확률(P(A|B), 예측사전확률(P(B)) <br/>\
+<img src = "./img/BayesTheoremBase.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 이론 <br/>\
+<img src = "./img/BayesTheoremDetail.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/베이즈_6.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 예제 <br/>\
+<img src = "./img/베이즈_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/베이즈_4.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/베이즈_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/베이즈_5.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* KPC 97회 관리 1교시 6번\
+',
+
   
 // Data Mining
 '# 정의 : 정보 도출 방법 / 데이터 집합 / 사용자 요구 /<br/>\
