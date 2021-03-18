@@ -108,8 +108,8 @@ var question = question.concat(
 '[AI]- XAI',
 '[AI][지식표현]- 생성규칙',
 '[AI][지식표현]- 의미망',
+'[AI][의미망]- 프레임',
 '[AI][지식표현]- 논리',
-'[AI][지식표현]- 프레임',
 '[AI]- 클라우드 활용 AI구축 모델',
 '[AI]- AI 프로젝트',
 '[AI]- 규범 동향',
@@ -132,8 +132,6 @@ var question = question.concat(
 '[AI][정책]- AI 조달 가이드라인',
 '[AI][정책]- 한국판 AI 윤리기준', 
 'CCW(CounterClockWise) 알고리즘',
-'BASE64',
-'[VHDL]- 유한 오토마타',
 );
 
 var answer = answer.concat(
@@ -1532,7 +1530,8 @@ var answer = answer.concat(
 ',
   
 // 인공지능 감성지능
-'# 정의 : 감성지능과 인공지능의 결합, 스스로 보유한 감정을 기반으로 자신과 타인의 감정 구별 및 새로운 사고와 행동을 결정하는 인공지능 <br/><br/>\
+'# 정의 : 감성지능 + 인공지능 / 감정 구별 / 새로운 사고 행동 결정 <br/>\
+- 감성지능과 인공지능의 결합, 스스로 보유한 감정을 기반으로 자신과 타인의 감정 구별 및 새로운 사고와 행동을 결정하는 인공지능 <br/><br/>\
 # 확산배경 <br/>\
 - 기존 인공지능 기반 서비스 확산 한계 <br/>\
 - 비대면, 대화형 서비스 활용증가 <br/><br/>\
@@ -1561,7 +1560,7 @@ var answer = answer.concat(
 ',
 
 // [기계학습]- 앙상블 학습법
-'# 정의 : 단일 학습모델 성능보완 <br/>\
+'# 정의 : 단일 하습 예측 결과 결합 / 예층 성능 제고 / 머신러닝 기법 <br/>\
 - 여러개의 학습 분류기의 예측결과를 결합하여 예측 성능을 높이는 머신러닝 기법 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/EnsembleOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -1796,6 +1795,13 @@ var answer = answer.concat(
 <img src = "./img/SemanticNetwork.png" style = "max-width: 100%; height: auto;">\
 ',
 
+// 프레임 
+'# 정의 : 구조, 틀 표현 자료구조 <br/>\
+- 의미망의 한 종류로서 객체와 그 속성의 구조를 기술 <br/>\
+- 어떤 대상, 객체에 대한 여러개의 상황정보를 하나의 구조화된 틀로 표현할 수 있는 자료구조 <br/><br/>\
+<img src = "./img/Frame.png" style = "max-width: 100%; height: auto;">\
+',
+
 // 논리
 '# 정의 : 인간의 사고과정과 유사한 지식 표현 <br/>\
 - Logic <br/>\
@@ -1812,13 +1818,6 @@ var answer = answer.concat(
 - LIVE(JOHN,HOUSE)^COLOR(HOUSE,YELLOW) <br/><br/>\
 <img src = "./img/PredicateLogic.png" style = "max-width: 100%; height: auto;">\
 * 122회 1교시 12번\
-',
-
-// 프레임 
-'# 정의 : 구조, 틀 표현 자료구조 <br/>\
-- 의미망의 한 종류로서 객체와 그 속성의 구조를 기술 <br/>\
-- 어떤 대상, 객체에 대한 여러개의 상황정보를 하나의 구조화된 틀로 표현할 수 있는 자료구조 <br/><br/>\
-<img src = "./img/Frame.png" style = "max-width: 100%; height: auto;">\
 ',
 
 // 클라우드 활용 AI구축 모델 
@@ -1839,7 +1838,7 @@ var answer = answer.concat(
 // AI 프로젝트
 '# 과업내용 <br/>\
 1. AI 프로젝트 기획 <br/>\
-- 종합계획 수립 : Big Pictgure Design, 타당성분석, 우선과제 선정 <br/>\
+- 종합계획 수립 : Big Picture Design, 타당성분석, 우선과제 선정 <br/>\
 - 비즈니스 이해 : 업무목표수립, 현황 평가, 마이닝 목표수립, 계획수립 <br/><br/>\
 2. Data Pipeline <br/>\
 - Data 이해 : 초기데이터 수집,기술, 데이터 탐색,품질검증 <br/>\
@@ -1858,7 +1857,7 @@ var answer = answer.concat(
 - 영국 : 정부 위원회 구성 촉구 <br/>\
 - 일본 : 창작물 저작권 인정 <br/>\
 - 한국 : 로봇윤리헌장 제정 위원회, 로봇윤리헌장 발표 <br/><br/>\
-2. 민간 연구기관 (O공 I휴 M친 C위)<br/>\
+2. 민간 연구기관 (<font color= "red">O공 I휴 M친 C위</font>)<br/>\
 - Open Roboethics initiative : 연구, 공론화 <br/>\
 - IEET : 트랜스 휴머니즘 비영리 단체, 미래비전 연구 <br/>\
 - MIRI : 버클리대 소재 연구소, 인간 친화적 인공지능 위한 연구 <br/>\
@@ -1935,7 +1934,8 @@ var answer = answer.concat(
 ',
   
 // 음성비서
-'# 정의 : 머신 러닝, 음성 인식, 문장 분석, 상황인지 등 인공지능 기술과 첨단 기술의 결합으로 사용자의 언어를 이해하고 사용자가 원하는 지시 사항을 수행하는 기능을 자동으로 제공하는 AI 비서 서비스 <br/><br/>\
+'# 정의 : 언어 이해 / 자동제공 / AI 비서 <br/>\
+- 머신 러닝, 음성 인식, 문장 분석, 상황인지 등 인공지능 기술과 첨단 기술의 결합으로 사용자의 언어를 이해하고 사용자가 원하는 지시 사항을 수행하는 기능을 자동으로 제공하는 AI 비서 서비스 <br/><br/>\
 # 기반기술 <br/>\
 1. 음성인식 디바이스 <br/>\
 - Zero UI : 사용자 Interaction, Interface <br/>\
@@ -1975,7 +1975,7 @@ var answer = answer.concat(
 - 사람 재식별 기술 : 촬영된 영상 통한 자동 분석 기술 <br/>\
 - 사람 행동 인식 기술 : 제스처(신체일부), 액션(재스쳐합), 인터렉션(사람,사물간) 통한 자동 인식 기술<br/><br/>\
 2. 차량 영상 인식 기술 <br/>\
-- 번호판 인식, 복원 기술 : 번호판 인식, 복원, 추족 기술 <br/>\
+- 번호판 인식, 복원 기술 : 번호판 인식, 복원, 추적 기술 <br/>\
 - 차량 재식별 기술 : 특정 차량 추적 기술 <br/><br/>\
 3. 범죄 예측 영상 인식 기술 <br/>\
 - 휴먼 속성 인식 기술 <br/>\
@@ -1991,7 +1991,8 @@ var answer = answer.concat(
 ',
   
 // 지능형 로봇 
-'# 정의 : 인간을 모방하여 외부 환경을 인식하고 상황을 판단하여 자율적으로 동작하는 지능형 기계 로봇 <br/><br/>\
+'# 정의 : 인간 모방 / 자율적 동작 <br/>\
+- 인간을 모방하여 외부 환경을 인식하고 상황을 판단하여 자율적으로 동작하는 지능형 기계 로봇 <br/><br/>\
 # 유형 <br/>\
 - 산업 제조용 <br/>\
 - 개인 서비스 <br/>\
@@ -2081,7 +2082,7 @@ var answer = answer.concat(
   
 // TF-IDF
 '# 개념 <br/>\
-- TF-IDF : 핵심어 추출 및 검색 결과 순위 결정을 위해 단어의 특정 문서 내 중요도를 산출하는 통계적 가중치 알고리즘 <br/>\
+- TF-IDF : 핵심어 추출 및 검색 결과 순위 결정을 위해 <font color = "red">단어의 특정 문서 내 중요도</font>를 산출하는 통계적 가중치 알고리즘 <br/>\
 - TF : 단어의 문서 내 등장빈도 <br/>\
 - IDF : 단어 출현 문서 빈도수의 역수 <br/><br/>\
 # 산출기법 <br/>\
@@ -2090,7 +2091,8 @@ var answer = answer.concat(
 ',
   
 // Word2Vec
-'# 개념 : 단어를 벡터 평면에 배치하여 컴퓨터가 인식할 수 있도록 문맥적 의미를 보존하는 워드 임베딩 기법 <br/><br/>\
+'# 개념 : 단어 벡터 / 컴퓨터 인식 / 워드 임베딩 <br/>\
+- 단어를 벡터 평면에 배치하여 컴퓨터가 인식할 수 있도록 문맥적 의미를 보존하는 워드 임베딩 기법 <br/><br/>\
 # 신경망 연산 <br/>\
 - 은닉 벡터(h) = 입력(x) x 입력 가중치 행렬(w) <br/>\
 - 출력(y) = 은닉 벡터(h) x 출력 가중치 행렬(w) <br/><br/>\
@@ -2117,7 +2119,7 @@ var answer = answer.concat(
 - 양방향 속성 : Masked Language Model 사용 <br/>\
 - 다이나믹 임베딩 : 동일 단어 다른 임베딩, 중의성 해소 <br/>\
 - 활성화 함수 : LeRu 대신 GELU(Geussian Error Linear Units) 사용 <br/>\
-- Fin Tuning : Task의 Sate of the art 달성 <br/><br/>\
+- Fine Tuning : Task의 Sate of the art 달성 <br/><br/>\
 # 구조 <br/>\
 - Token Embedding : Char 단위 임베딩, Sub-Word 생성 <br/>\
 - Segment Embedding : 토큰 시킨 단어 다시 하나의 문장 생성 <br/>\
@@ -2197,23 +2199,4 @@ var answer = answer.concat(
 '# 정의 : 외적 이용, 세점 위치 판단 알고리즘 <br/>\
 - 벡터의 외적을 이용하여 평면상에 세 점이 있을 때 점들의 위치 관계를 판단할 수 있는 알고리즘.<br/>\
 다각형 넓이 구하기, 정점의 위치판단, 두 선분의 교차여부 판단에 사용',
-
-// BASE64
-'# 정의 : 8비트 이진 데이터를 6비트 이진 데이터로 치환하여 인코딩 처리 <br/>\
-- 아스키 코드표에 표시되어 있는 수치를 2진수로 변경시켜 한 문자당 8bit로 표현된 문자를 쭉 연결하여 청ㅁ부터 다시 6it씩 끊어서 base 64 테이블에 나와있는 수치대로 치환하는 무손실 압축 암호기법중 하나<br/><br/>\
-# 절차 <br/>\
-- 아스키 코드 매핑 <br/>\
-- 2진수 변환 <br/>\
-- 6bit 단위 변환 <br/>\
-- 10진수 변환 <br/>\
-- Base 64테이블 메칭 <br/>\
-- 패딩연산 (원본 비트수 mod3 만큼 "="문자로 패딩)<br/><br/>\
-<img src = "./img/AL_48_1.PNG" style = "max-width:100%; height:auto;">\
-',
-  
-// 유한 오토마타
-'# 정의 : 전이 유발 조건 집합 <br/>\
-- VHSIC(Very High Speed Integrated Circuits, 초고속 집적회로) Hardware Description Language <br/>\
-- 현재 상태로부터 가능한 전이 상태와 이러한 전이를 유발하는 조건들의 집합으로 구성된 컴퓨터 프로그램 전자 논리회로를 설계하는데 쓰이는 수학적 모델\
-',
 );
