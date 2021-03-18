@@ -85,6 +85,7 @@ var question = question.concat(
 '[InMemory]- In-Memory Database',
 'Auto Scale Up, Out',
 'Library',
+'유한 오토마타',
 );
 
 var answer = answer.concat(
@@ -1654,5 +1655,11 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 - DLL 선점 상황일 시, 프로그램 치명적 오류 발생 가능성 <br/>\
 - DLL 종속성 : 프로그램, DLL이 다른 DLL 함수 사용하는 경우 유의 <br/><br/>\
 * 123회 응용 1교시 3번\
+',
+  
+// 유한 오토마타
+'# 정의 : 전이 유발 조건 집합 <br/>\
+- VHSIC(Very High Speed Integrated Circuits, 초고속 집적회로) Hardware Description Language <br/>\
+- 현재 상태로부터 가능한 전이 상태와 이러한 전이를 유발하는 조건들의 집합으로 구성된 컴퓨터 프로그램 전자 논리회로를 설계하는데 쓰이는 수학적 모델\
 ',
 );
