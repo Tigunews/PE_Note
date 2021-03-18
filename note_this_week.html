@@ -12,7 +12,7 @@
 </head>
 <script type = "text/javascript">
 // varation
-var current = -1;
+var current = 0;
 var data;
  
 // function 
@@ -43,13 +43,14 @@ var data;
   function getAnswer()
   {
     data = this_week_question[current];
-    alert(data);
-   
+       
     for(var i=0; i<question.length; i++)
     {
       if(question[i].search(data) != -1)
       {
-        document.write('Answer : <br/>' + answer[i] + '<br/><br/>');
+        document.write('<hr width = "100%" color = "red"  noshade/><br/>');
+	       document.write(question[i] + '<br/><br/>');
+	       document.write(answer[i] + '<br/><br/>');
       }
     }
   }
