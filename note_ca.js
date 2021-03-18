@@ -81,6 +81,7 @@ var question = question.concat(
 '[교착상태][회피]- Wait-Die, Wound-Wait',
 '[교착상태][발견]- 자원할당 그래프',
 '[InMemory]- In-Memory Computing',
+'[InMemory]- In-Memory DataGrid',
 '[InMemory]- In-Memory Database',
 'Auto Scale Up, Out',
 'Library',
@@ -1587,6 +1588,26 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/InMemoryComputingTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 4교시 6번\
 ',
+    
+// In-Memory DataGrid
+'# 정의 : 고가용성, 확장성 / 여러 메인 메모리 / 분산 메모리 시스템 <br/>\
+- 고가용성과 확장성을 보장하기 위해 여러 메인메모리(MM)으로 데이터를 나누어 저장하는 분산 메모리 시스템 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/IMDG_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요기술 <br/>\
+1. 데이터 처리 <br/>\
+- Key-Value : Key를 이용해 데이터 분산 저장 <br/>\
+- Colloection API : 여러 노트 대상 Hash Map이나 Hash Set을 사용 <br/><br/>\
+2. 트랜잭션 기술 <br/>\
+- Distributed Event : MQ 시스템 <br/>\
+- Distributed Lock : 분산시스템 하나의 Lock 동기화 <br/><br/>\
+3. 분산기술 <br/>\
+- Clustering : 다수 메모리, 하나의 큰 메모리 구축 <br/>\
+- Replication : 여러 서버에 데이터 분산, 복제 관리 <br/><br/>\
+# IMDG, RDBMS, NoSQL 비교 <br/>\
+<img src = "./img/IMDG_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 122회 응용 1교시 5번\
+'.
   
 // In-Memory Database
 '# 정의 : 익스트림 트랜잭션의 고성능 처리 지원 <br/>\
