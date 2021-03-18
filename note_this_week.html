@@ -43,14 +43,17 @@ var data;
   function getAnswer()
   {
     data = this_week_question[current];
-       
-    for(var i=0; i<question.length; i++)
-    {
-      if(question[i].search(new RegExp(data.value, "i")) != -1)
+   
+    if(data != null)
+    {   
+      for(var i=0; i<question.length; i++)
       {
-        document.write('<hr width = "100%" color = "red"  noshade/><br/>');
-        document.write(question[i] + '<br/><br/>');
-        document.write(answer[i] + '<br/><br/>');
+        if(question[i].match(new RegExp(data)) != -1)
+        {
+          document.write('<hr width = "100%" color = "red"  noshade/><br/>');
+          document.write(question[i] + '<br/><br/>');
+          document.write(answer[i] + '<br/><br/>');
+        }
       }
     }
   }
