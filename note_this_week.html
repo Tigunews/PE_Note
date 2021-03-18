@@ -19,7 +19,7 @@
   {
     for(j=0; j<question.length; j++)
     {
-      if(question[j].serach(this_week_question[i]) != -1)
+      if(question[j].serach(new RegExp(this_week_question[j].value, "j")) != -1)
       {
         alert(j);
       }
