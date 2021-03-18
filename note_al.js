@@ -1462,6 +1462,8 @@ var answer = answer.concat(
 // 머신러닝 파이프라인
 '# 정의 : 수집, 예측, 제공 / 전과정 순차적 처리 / 머신러닝 아키텍처 <br/>\
 - 데이터 수집에서 예측 제공 단계까지의 전 과정을 순차적으로 처리하는 머신러닝의 아키텍처 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MLPipeline.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 단계 <br/>\
 1. 데이터 흡수 <br/>\
 - Data Lake : 예측 위한 정형, 비정형 라이브 수집 데이터 <br/>\
