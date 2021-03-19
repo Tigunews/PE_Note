@@ -5,7 +5,6 @@ var question = question.concat(
 'ITSM',
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
-'[SLA]- OLA',
 '[SLA]- Penalty/Incentive',
 '[SLA]- SIP',
 '[SLA]- Annual Reset',
@@ -204,15 +203,6 @@ var answer = answer.concat(
 * 라이지움 87회 관리 3교시 5번\
 ',
  
-// OLA
-'# 정의 : IT 구현 참가자 / 상호 협력 규정 문서 <br/>\
-- Operating Level Agreements <br/>\
-- 성능과 성과를 유지하기 위해 IT 서비스 구현 과정에 참가하는 당사자들이 서로 협력을 하는 방법을 규정한 문서 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/SLAOLA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 4교시 2번 \
-',
- 
 // Penalty/Incentive
 '# 정의 : KPI / 가점, 감점 / 수행 관리 체계 <br/>\
 - IT 서비스의 핵심성과지표(KPI)를 선정하고 달성수준에 따라 가점(금액)과 감점(금액)으로 수행능력을 관리하는 체계 <br/><br/>\
@@ -246,6 +236,15 @@ var answer = answer.concat(
 - 100% 이상시 다음연도 계약시 자동연장 가능 <br/>\
 - 유사 계약 시 가점 지표 혜택 적용 <br/><br/>\
 * 123회 4교시 2번\
+',
+
+// OLA
+'# 정의 : IT 구현 참가자 / 상호 협력 규정 문서 <br/>\
+- Operating Level Agreements <br/>\
+- 성능과 성과를 유지하기 위해 IT 서비스 구현 과정에 참가하는 당사자들이 서로 협력을 하는 방법을 규정한 문서 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SLAOLA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 2번 \
 ',
 
 // SLM
