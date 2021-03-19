@@ -5,7 +5,7 @@ var question = question.concat(
 'ITSM',
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
-'[ITSM]- OLA',
+'[SLA]- OLA',
 '[SLA]- Penalty/Incentive',
 '[SLA]- SIP',
 '[SLA]- Annual Reset',
