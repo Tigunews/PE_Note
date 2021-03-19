@@ -2072,7 +2072,8 @@ var answer = answer.concat(
 ',
   
 // 워드 임베딩
-'# 정의 : 단어간 유사도 및 중요도 파악을 위해 단어 저차원의 실수 벡터로 맵핑하여 의미적으로 비슷한 단어를 가깝게 배치하는 자연어 처리 모델링 기술 <br/><br/>\
+'# 정의 : 단어간 유사도, 중요도 파악 / 저차원 실수 벡터 맵핑 / 가깝게 배치 / 자연어 처리 모델링 기술 <br/>\
+- 단어간 유사도 및 중요도 파악을 위해 단어 저차원의 실수 벡터로 맵핑하여 의미적으로 비슷한 단어를 가깝게 배치하는 자연어 처리 모델링 기술 <br/><br/>\
 # 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\
 # Dense Representation Embedding 유형 <br/>\
 <img src = "./img/DenseBasedEmbedding.png" style = "max-width:100%; height:auto;"><br/><br/>\
