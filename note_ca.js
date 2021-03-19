@@ -1608,7 +1608,7 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 # IMDG, RDBMS, NoSQL 비교 <br/>\
 <img src = "./img/IMDG_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 응용 1교시 5번\
-'.
+',
   
 // In-Memory Database
 '# 정의 : 익스트림 트랜잭션의 고성능 처리 지원 <br/>\
