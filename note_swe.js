@@ -1632,7 +1632,8 @@ var answer = answer.concat(
 ',
  
 // Sequence Diagram
-'# 정의 : 문제 해결에 필요한 객체간 메시지 순서를 시간 흐름에 따라 보여주는 UML 다이어그램 <br/><br/>\
+'# 정의 : 메시지 순서 / 시간 흐름 / Behavior > Interaction > UML Diagram <br/>\
+- 문제 해결에 필요한 객체간 메시지 순서를 시간 흐름에 따라 보여주는 UML 다이어그램 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/SequenceDiagram.png" style = "max-width:100%; height:auto;"><br/>\
 - Lifeline : 모델링 되는 개개의 인스턴스, 시간경과 표시<br/>\
