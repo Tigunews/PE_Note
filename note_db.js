@@ -1065,6 +1065,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 // 데이터 품질관리 지침
 '# 데이터 품질관리 정의 : 기대 만족 / 데이터 관리 및 개선 활동 <br/>\
 - 기관이나 조직 내외부의 정보시스템 및 DB 사용자의 기대를 만족시키기 위해 지속적으로 수행하는 데이터 관리 및 개선 활동 <br/><br/>\
+# 암기 <br/>\
+<img src = "./img/DataFrameworkSummury.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 데이터 품질관리 프레임워크 <br/>\
 - 정의 : 데이터 품질관리의 대상이 되는 구성요소와 요소들 간의 관계를 정의한 데이터 품질관리의 기본 개념틀 <br/>\
 <img src = "./img/DQ_Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
