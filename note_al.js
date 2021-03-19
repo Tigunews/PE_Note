@@ -560,7 +560,7 @@ var answer = answer.concat(
 ',
   
 // 능동 학습
-'# 정의 : 반지도 기계학습 모델 <br/>\
+'# 정의 : 초벌 / 반지도 기계학습 모델 <br/>\
 - 초기 라벨링된 일부 데이터를 이용해 모델 학습한 이후, 추가적인 데이터 인위적 선별, 활용하는 기계학습 모델 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/ActiveLearningProcess.png" style = "max-width:100%; height:auto;"><br/>\
