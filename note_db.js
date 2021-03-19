@@ -1809,7 +1809,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
   
 // 다변량 회귀 분석
 '# 정의 : 다수 종속변수, 독립변수 / 변수 차원 줄이는 기법 <br/>\
-- 다수의 종속변수와 독립변수와의 상관관계 분석시 변수 차원을 줄이는 기법 <br/>\
+- 다수의 종속변수와 독립변수와의 상관관계 분석시 변수 차원을 줄이는 기법 <br/><br/>\
 # 종류 <br/>\
 <img src = "./img/MultiRegressionAnalysis.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 변수 축소법 <br/>\
