@@ -2049,7 +2049,7 @@ var answer = answer.concat(
 // NER
 '# 정의 : 엔티티 인식 추출 분류 기법 <br/>\
 - Named Entity Recognition <br/>\
-- 문자열 안에서 NE의 위치를 알아내고, 사전 정의한 카테고리에 다라 알맞게 분류하는 작업 <br/><br/>\
+- 문자열 안에서 NE의 위치를 알아내고, 사전 정의한 카테고리에 따라 알맞게 분류하는 작업 <br/><br/>\
 # 유형 <br/>\
 - Generic NEs : 인물, 장소, 명칭 해당 <br/>\
 - Domain-specific NEs : 단백질, 효소, 유전자 등 전문 분야 용어 해당 <br/><br/>\
