@@ -1813,7 +1813,11 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 종류 <br/>\
 <img src = "./img/MultiRegressionAnalysis.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 변수 축소법 <br/>\
-<img src = "./img/MultiRegressionAnalysisDecress.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/MultiRegressionAnalysisDecress.png" style = "max-width:100%; height:auto;"><br/>\
+- 전진 선택법 : 절편부터 시작, 주요 변수부터 추가 / 변수가 많은 경우 유용 <br/>\
+- 후진 제거법 : 영향이 적은 변수부터 제거 / 전체 변수들 정보 이용 <br/>\
+- 단계 선택법 : 전진 선택 변수 추가, 후진 제거법 수행 / 전진, 후진 장점 취합 <br/><br/>\
+<font color = "red">* 다중공선성 문제 : 회귀분석에서 독립변수들 간에 강한 상관 관계가 나타나는 문제 </font><br/><br/>\
 * 123회 관리 2교시 4번\
 ',
   
