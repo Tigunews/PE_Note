@@ -1873,22 +1873,25 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 탐색적인 기법 : 주어진 자료에 대한 사전 정보 없이 의미있는 자료 구조를 찾아낼 수 있음 <br/>\
 - 이식성 : 거리만 잘 정의되면 모든 종류의 자료에 적용할 수 있음 <br/>\
 - 초기 군집수 K 결정 : 초기 군집수 K의 결정이 어려움 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/ClusteringMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 군집분석의 과정 <br/>\
 - 거리측도 선택 : 유사성 판단 / 유클리디안 거리 <br/>\
 - 절차 선택 : 계층, 비계층 / 단일, K-Means <br/>\
 - 군집의 수 결정 : 계층, 비계층 / 결합 거리, 분산합계 <br/>\
 - 평가 : 신뢰성, 타당성 <br/><br/>\
-# 유형분류(1) <br/>\
+# 유형 <br/>\
+<img src = "./img/ClusterAnalyzeCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분석 기술 <br/>\
 1. 거리 중심 <br/>\
 - 계층적 군집 : 중복 허용x  <br/>\
 - K-means : 개채간 유사성 <br/>\
 - SOM(Self Oragnizing Map) : 저차원 뉴런, 지도 형상화 <br/><br/>\
-2. 자원축소 <br/>\
+2. 차원축소 <br/>\
 - 주성분분석(PCA) : 새로운 변수 창출 <br/>\
 - MDS(MultiDimensional Scaling) : 다차원 척도법 <br/><br/>\
+# 판별분석, 군집분석 비교 <br/>\
 <img src = "./img/판별군집비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 유형분류(2) <br/>\
-<img src = "./img/ClusterAnalyzeCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 관리 1교시 5번\
 ',
  
