@@ -1759,7 +1759,7 @@ var answer = answer.concat(
 ',
  
 // API Gateway
-'# 정의 : 분산형 아키텍처, Proxy, MSA <br/>\
+'# 정의 : REST, JSON / 단일접점 라우팅 / 서비스 통합 솔루션 <br/>\
 - REST 기반 JSON 통신 활용, 단일 접점 API 라우팅 및 웹 서비스 Front End 제공, 서비스 통합 솔루션 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/APIGW.png" style = "max-width:100%; height:auto;"><br/><br/>\
