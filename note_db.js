@@ -1824,6 +1824,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 // 주성분 분석
 '# 개념 : 고차원 -> 저차원 / 환원 <br/>\
 - 고차원의 데이터를 저차원의 데이터로 환원시키는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PCA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - 고유 벡터 : 데이터의 분포를 나타내는 선 <br/>\
 - 고유 값 : 고유벡터에 대한 데이터의 분산 <br/><br/>\
