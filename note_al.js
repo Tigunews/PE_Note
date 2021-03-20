@@ -354,11 +354,9 @@ var answer = answer.concat(
 - A* : 휴리스틱 순서 탐색 <br/>\
 - 플로이드 : 동적계획법 기반, 고차원 기법 <br/><br/>\
 # 특징 : 모든 정점 1회 순회, 싸이클 생성 금지 <br/><br/>\
-# 활용 <br/>\
-- 다익스트라 : NW 라우팅 경로 설계 <br/>\
-- A* : 2D 길찾기 <br/><br/>\
-<img src = "./img/Floyd.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/AStar.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 알고리즘간 비교 <br/>\
+<img src = "./img/PathFindAlgorithmCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 6번\
 ',
 
 // [최단경로 알고리즘]- 다익스트라 알고리즘
@@ -384,7 +382,8 @@ var answer = answer.concat(
 * GAS -> VAS <br/>\
 <img src = "./img/Dijkstra.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Dijkstra_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 선택 정점에서 주변 노드의 비용 모드 재계산 후 최소 비용 노드 선택\
+* 선택 정점에서 주변 노드의 비용 모드 재계산 후 최소 비용 노드 선택<br/><br/>\
+* 123회 관리 4교시 6번\
 ',
 
 // [최단경로 알고리즘]- 플로이드 알고리즘
@@ -392,14 +391,18 @@ var answer = answer.concat(
 - 동적 계획법 접근으로, 그래프 상의 모든 두 정점을 잇는 경로의 최소 비용을 구하는 알고리즘<br/><br/>\
 # 특징 : 모든 정점에서 다른 모든 정점으로의 최단거리 <br/>\
 - 기반이론 : 동적프로그래밍 -> 더 빨리 수행 <br/>\
-- 시간복잡도 : O(n^3)\
+- 시간복잡도 : O(n^3)<br/><br/>\
+# 소스코드 <br/>\
+<img src = "./img/Floyd.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 6번\
 ',
 
 // [최단경로 알고리즘]- 벨만포드 알고리즘
 '# 정의 : 가중치가 음수이더라도 최단 경로를 구할 수 있는 알고리즘<br/><br/>\
 # 특징 : 시작 정점에서 다른 모든 정점으로의 최단거리, 간선의 가중치 음수 허용 <br/>\
 - 시간복잡도 : O(VE) v = 정점, e = 간선 <br/>\
-- 활용 : 네트워크 라우팅경로 설계(거리벡터 라우팅)\
+- 활용 : 네트워크 라우팅경로 설계(거리벡터 라우팅) <br/><br/>\
+* 123회 관리 4교시 6번\
 ',
 
 // [최단거리알고리즘]- A* 알고리즘
@@ -415,7 +418,10 @@ var answer = answer.concat(
 # 활용 : 네비게이션, 전략시뮬레이션 게임에서의 길찾기 <br/><br/>\
 # 고려사항<br/>\
 - 컴퓨팅 리소스 낭비, 경로 존재 여부 사전 파악 불가 <br/>\
-- 특정 레벨단위로 다익스트라 알고리즘 교차적용하여 연산 수를 줄이고 비교항목을 최소화하는 하이브리드 탐색 알고리즘의 도입 가능 \
+- 특정 레벨단위로 다익스트라 알고리즘 교차적용하여 연산 수를 줄이고 비교항목을 최소화하는 하이브리드 탐색 알고리즘의 도입 가능 <br/><br/>\
+# 코드 <br/>\
+<img src = "./img/AStar.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 4교시 6번\
 ',
 
 // 최소신장트리
