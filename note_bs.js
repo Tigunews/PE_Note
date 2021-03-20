@@ -140,7 +140,7 @@ var answer = answer.concat(
 - 세계 표준화 기관이나 공인기관에서 지정된 표준은 아니지만 시장형성과정에서 생성되는 표준 <br/><br/>\
 # 특징 <br/>\
 - 비공식 표준 : 특정 기술분야 비공식적 통용 업계 표준 <br/>\
-- 시장 지배력 호기득 : 경쟁승리,  독점 지배력 <br/><br/>\
+- 시장 지배력 획득 : 경쟁승리,  독점 지배력 <br/><br/>\
 # 사례 <br/>\
 - Service : Google Play, App Store <br/>\
 - Platform : Android, iOS 중심 CPNS(Contents, Platform, Network, Service) <br/>\
