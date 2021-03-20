@@ -173,6 +173,7 @@ var question = question.concat(
 '[Open API]- REST API',
 '[Open API]- OAuth2.0',
 '[Open API]- OAS',
+'API Gateway',
 'Ontact',
 '디지털 트윈',
 'Edge Computing',
@@ -3328,6 +3329,64 @@ var answer = answer.concat(
 - OAuth 플로우 기반 인증 <br/><br/>\
 * 성능요건, 적용가능 버전, CORS 제한 대응 <br/><br/>\
 * 123회 관리 1교시 7번 \
+',
+   
+// API Gateway
+'# 정의 : REST, JSON / 단일접점 라우팅 / 서비스 통합 솔루션 <br/>\
+- REST 기반 JSON 통신 활용, 단일 접점 API 라우팅 및 웹 서비스 Front End 제공, 서비스 통합 솔루션 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/APIGW.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 역할 <br/>\
+1. 보안<br/>\
+- 내부 데이터 보호 <br/>\
+- 접근 통제 <br/>\
+- 로깅 및 모니터링 <br/><br/>\
+2. 서비스 연결 <br/>\
+- 클라이언트 요청 변환 <br/>\
+- 백엔드 처리결과 변환 <br/><br/>\
+# 필요성 <br/>\
+1. 서비스 처리 측면 <br/>\
+- 서비스별 공통기능 구현 : 효율성 증대 <br/>\
+- 처리 메시지 경량화 : HTTP/JSON 기반 REST 아키텍처 활용, 경량화 메시지 <br/><br/>\
+2. 관리적 측면 <br/>\
+- 클라이언트 접점 일원화 : Proxy Gateway <br/>\
+- API 호출 기록 관리 <br/><br/>\
+# 기술요소 <br/>\
+- API Token : 클라이언트 인증 후 API 토큰 생성 및 발급 기술 / 통합 인증 관리 모듈 <br/>\
+- API Routing : 다수 엔드포인트/데이터 센터 환경 내 라우팅 기술 / 서비스 단일 접점 <br/>\
+- Mediation : JSON 기반 요청메시지 처리 및 프로토콜 변환 기술 / 메시징 패턴 변조 <br/>\
+- Logging & Metering : 다양한 루트 별 호출 로그 공통 관리 기술 / 운영 모니터링, 최적화 <br/><br/>\
+# 주요기능 <br/>\
+1. Client API, GW 측면 <br/>\
+- 인증/인가 : API 토큰 발급, API 호출 인증, API 요청인가 <br/>\
+- API 라우팅 : 로드밸런싱, 엔드포인트 제공, 메시지기반 라우팅, 공통로직 처리 <br/><br/>\
+2. API GW, Service 측면 <br/>\
+- 중재기능 : 메시지 포맷 변환(JSON, API 서버), 프로토콜 변환, 호출 패턴 변환(동기, 비동기), 어그레게이션(API Clustering) <br/>\
+- 로깅 및 미터링 : API 호출 로깅, 미터링, 과금, QoS 조정 <br/><br/>\
+# 고려사항 <br/>\
+1. SPOF <br/>\
+- 단일 접점, 이중화 고려 필요 <br/>\
+- L4 Switch, HA Proxy, GSLB <br/><br/>\
+2. Loosely Coupled <br/>\
+- Microsevice 와의 관계 고려 <br/>\
+- Business Logic 최소화 <br/><br/>\
+3. Scale-Out <br/>\
+- Traffic 부하 따른 증설 고려 <br/>\
+- 병목 최소화 <br/><br/>\
+4. Latency <br/>\
+- In-Line Traffic 처리로 지연 고려 <br/>\
+- Circuit Break 고려 필요 <br/><br/>\
+# 사례 <br/>\
+1. OpenSource 측면 <br/>\
+- Netflix Zuul : Java 기반 Sprint Boot / Ribbon Auto Scaling Routning <br/>\
+- Kong API Gateway : 다양한 환경 / API Trrafic 제어 <br/><br/>\
+2. CSP 제공 측면 <br/>\
+- AWS API Gateway : RESTful API, Websockt API / AWS IAM 정책 Lambda 연동 <br/>\
+- Azure API Management : API 호출 수락 후, 백엔드 라우팅 / API 키 JWT 토큰, 인증서 확인 검증 <br/><br/>\
+# 정보시스템 구축시 적용방안 <br/>\
+<img src = "./img/APIGatewayApply.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 3교시 4번 <br/>\
+* KPC 92회 관리 3교시 2번\
 ',
 
 // Ontact
