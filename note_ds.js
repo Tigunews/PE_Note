@@ -2820,9 +2820,11 @@ var answer = answer.concat(
 - Queue <br/>\
 - Consumer(Receiver) <br/><br/>\
 # 기능 <br/>\
+1. 데이터 수집 <br/>\
 - 비동기(Asynchronous) : Queue에 넣기 떄문에 나중에 처리 가능 <br/>\
 - 비동조(Decoupling) : Application과 분리 가능(Loosely Coupled) <br/>\
-- 탄력성(Resilience) : 일부가 실패시 전체 영향받지 않음 <br/>\
+- 탄력성(Resilience) : 일부가 실패시 전체 영향받지 않음 <br/><br/>\
+2. 데이터 처리 <br/>\
 - 과잉(Redundancy) : 실패할 경우 재실행 가능 <br/>\
 - 보증(Gurantees) : 작업이 처리된 것을 확인 가능 <br/>\
 - 확장성(Scalable) : 다수의 프로세스들이 큐에 메시지를 보낼 수 있음 <br/><br/>\
