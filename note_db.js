@@ -1302,8 +1302,13 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 
 /// [빅데이터][NoSQL]- CAP 이론
 '# NoSQL의 CAP 이론 <br/>\
-- 개념 : Consistency, Availability, Partition Tolerance의 3가지 특징을 가지고 있으며, 이중 두가지만 만족할 수 있다는 이론 <br/>\
-<img src = "./img/CAP.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+- 개념 : Consistency, Availability, Partition Tolerance의 3가지 특징을 가지고 있으며, 이중 두가지만 만족할 수 있다는 이론 <br/><br/>\
+# 속성 설명 <br/>\
+- Consistency(일관성) : 모든 사용자는 동시에 항상 같은 데이터를 조회 <br/>\
+- Availability(가용성) : 모든 사용자는 항상 Read/Write 할 수 있음 <br/>\
+- Partition Tolerance(부분 결함 허용) : 부분적 결함에도 시스템은 정상 동작해야 함 <br/><br/>\
+# 상세 설명 <br/>\
+<img src = "./img/CAP.png" style = "max-width: 100%; height: auto;"><br/>\
 - C+P : 데이터 발생, 변경시 수평적으로 확장된 클러스터내의 데이터 일관성을 즉각적으로 유지 (Couchbase, MongoDB, Appache HBase)<br/>\
 - A+P : 즉시는 아니더라도 데이터 일관성은 결국에는 유지 (Cassandra, Couchbase(XDCR), ScyllaDB)<br/>\
 - C+A : 데이터 발생, 변경시 수직적으로 확장된 시스템내에서 데이터 일관성을 즉각적으로 유지 (MySQL, Oracle)\
