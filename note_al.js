@@ -2116,7 +2116,8 @@ var answer = answer.concat(
 ',
   
 // BERT
-'# 정의 : 언어 표현 사전 훈련 방법 <br/>\
+'# 정의 : Transformer 인코더 / Fine-Tunning / 양방향 / NLP Model <br/>\
+- Transformer의 인코더 구조로 구성되어 Fine-Tunning 된 양방향 자연어 처리모델 <br/>\
 - 2018년 구글에서 공개한 Language Representation Model로 언어 표현을 사전 훈련하는 방법 <br/><br/>\
 # 특징 <br/>\
 - 양방향 속성 : Masked Language Model 사용 <br/>\
@@ -2133,8 +2134,9 @@ var answer = answer.concat(
 ',
   
 // GPT-3
-'# 정의 : 딥러닝 / 텍스트 생성 /자기 회귀 언어 모델<br/>\
+'# 정의 : Transformer 디코더 구조 / Few Shot Learning / 순방향 / NLP Model <br/>\
 - Generation Pre-trained Transformer 3 <br/>\
+- Transformer의 디코더 구조로 구성되어 Few  Shot Learning된 순방향 자연어 처리 모델 <br/>\
 - 딥러닝을 이용해 자연스러운 텍스트를 생성하는 자기 회귀 언어 모델 <br/><br/>\
 # 특징 <br/>\
 - few-shot 러닝을 이용한 언어 예측 모델 <br/>\
