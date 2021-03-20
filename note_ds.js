@@ -2819,7 +2819,7 @@ var answer = answer.concat(
 - Producer(Sender) <br/>\
 - Queue <br/>\
 - Consumer(Receiver) <br/><br/>\
-# 장점 <br/>\
+# 기능 <br/>\
 - 비동기(Asynchronous) : Queue에 넣기 떄문에 나중에 처리 가능 <br/>\
 - 비동조(Decoupling) : Application과 분리 가능(Loosely Coupled) <br/>\
 - 탄력성(Resilience) : 일부가 실패시 전체 영향받지 않음 <br/>\
@@ -2827,16 +2827,12 @@ var answer = answer.concat(
 - 보증(Gurantees) : 작업이 처리된 것을 확인 가능 <br/>\
 - 확장성(Scalable) : 다수의 프로세스들이 큐에 메시지를 보낼 수 있음 <br/><br/>\
 # 종류 <br/>\
-1. RabbitMQ : 생성자에게 메시지 받아 소비자에게 전달 하는 AMQP 프로토콜 구현한 메시지 브로커 <br/>\
-- 구성요소 : Producer(생성,발송주체), Consumer(수신주체), Queue(보관 장소), Exchange(라우팅), Binding(라우팅 규칙 지정) <br/>\
-- 주요기능 : 메시지 분배(병렬처리), 공평한 분배(prefetchCount 1 ack), 메시지 수신 통보(ACK) <br/><br/>\
-2. Active MQ : 아파치, 기업 연동 작업 구현 고기능 Java 메시지 기반 MOM 통합 패턴 서버 <br/>\
-- 구성요소 : JMS(Java Message Service)-Enterprise Edition 기반, 메시지 생성, 송수신, 읽기, 비동기, 신뢰 통신 허용 <br/>\
-- 주요기능 <br/>\
--> JMS 준수 : 1:1 메시지 전달<br/>\
--> 연결성 : 넓은 연결 옵션-HTTP/S, IP Multicast, SSL, STOMP<br/>\
--> 다양성 : WAS, Active MQ, 저장매체 <br/>\
--> 확장성 : 브로커 클러스터링 동작 <br/><br/>\
+1. Open Source <br/>\
+- Kafka : 발행, 구독 모델, Broker, Topic, Message <br/>\
+- Rabbit MQ : AMQP 프로토콜, Exchange, Binding <br/><br/>\
+2. 상용 서비스 <br/>\
+- AWS SQS : 아마존 서비스, Serverless, Sclae out <br/>\
+- Azure EH : MS Azure 기반, 일괄/순차 알고리즘 <br/><br/>\
 # 활용 분야 <br/>\
 - Data : 다른곳의 API로 부터 송수신 / Kafka <br/>\
 - Application : 다른 App에서 비동기 통신 / JMS <br/>\
