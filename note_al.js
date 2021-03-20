@@ -2120,6 +2120,7 @@ var answer = answer.concat(
 - Transformer의 인코더 구조로 구성되어 Fine-Tunning 된 양방향 자연어 처리모델 <br/>\
 - 2018년 구글에서 공개한 Language Representation Model로 언어 표현을 사전 훈련하는 방법 <br/><br/>\
 # 특징 <br/>\
+- 활용 : 문장 중간 단어 검색 기능 / 자연어 처리 분야 대부분 <br/>\
 - 양방향 속성 : Masked Language Model 사용 <br/>\
 - 다이나믹 임베딩 : 동일 단어 다른 임베딩, 중의성 해소 <br/>\
 - 활성화 함수 : LeRu 대신 GELU(Geussian Error Linear Units) 사용 <br/>\
@@ -2139,6 +2140,7 @@ var answer = answer.concat(
 - Transformer의 디코더 구조로 구성되어 Few  Shot Learning된 순방향 자연어 처리 모델 <br/>\
 - 딥러닝을 이용해 자연스러운 텍스트를 생성하는 자기 회귀 언어 모델 <br/><br/>\
 # 특징 <br/>\
+- 활용 : 다음단어 찾기 / 기사 작성, 음성비서, 프로그래밍 코드 작성 <br/>\
 - few-shot 러닝을 이용한 언어 예측 모델 <br/>\
 - 개발사 : Open API <br/>\
 - 프로세스 : few-shot 러닝(훈련-검증-테스트) 단계 <br/>\
