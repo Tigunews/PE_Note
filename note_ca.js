@@ -86,6 +86,7 @@ var question = question.concat(
 'Auto Scale Up, Out',
 'Library',
 '유한 오토마타',
+'엑사스케일 컴퓨팅 시스템',
 );
 
 var answer = answer.concat(
@@ -1661,5 +1662,25 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 '# 정의 : 전이 유발 조건 집합 <br/>\
 - VHSIC(Very High Speed Integrated Circuits, 초고속 집적회로) Hardware Description Language <br/>\
 - 현재 상태로부터 가능한 전이 상태와 이러한 전이를 유발하는 조건들의 집합으로 구성된 컴퓨터 프로그램 전자 논리회로를 설계하는데 쓰이는 수학적 모델\
+',
+  
+// 엑사스케일 컴퓨팅 시스템
+'# 정의 : 엑사플롭스급 컴퓨팅 시스템 / 초당 10^18 연산<br/>\
+- 1 엑사플롭스(ExaFlops) 이상의 처리능력을 가진, 엑사플롭스(ExaFlops) 급의 컴퓨팅 시스템<br/>\
+- 1 엑사플롭스(ExaFlops)는 초당 10^18 회(100 경 회)의 연산을 의미함<br/><br/>\
+# 기술(요구사항) <br/>\
+- 에너지 : 20MW 이하 <br/>\
+- 인터커넥트 : 광학데이터 이동기술 / 인텔 OPA(Omni Path Architecture) <br/>\
+- 메모리 : 계층구조 / 인텔 3D Xpoint 메모리 <br/>\
+- 확장성기반 SW : 다수노드 기반 <br/>\
+- 프로그래밍 : 병렬 / OpenMP, OpenCL, CUDA <br/>\
+- 데이터 관리 : 관리 / Lustre 파일 시스템 <br/>\
+- 엑사스케일 알고리즘 : 저장후 연산 ->  재실행알고리즘 변환 필요, 발견과 설계, 결함 알고리즘 (Multi-Physical 문제 해결) <br/><br/>\
+# 동향 <br/>\
+- 미국 : CORAL 프로젝트 <br/>\
+- EU : EU CRESTA 프로젝트 <br/>\
+- 독일 : Deep 프로젝트 <br/>\
+- 국내 : ETRI-MAHA(유전체 데이터 분석), 서울대-천둥(슈퍼컴퓨터) <br/><br/>\
+* FLOPS(FLoating point OPerations per Second) = 컴퓨터의 성능 수치로 나타낼 때 주로 사용되는 단위로서 초당 실행가능한 부동소수점 연산 횟수를 의미 \
 ',
 );
