@@ -3,9 +3,13 @@ var question = question.concat(
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[4차산업]- Smart Energy',
+'[스마트 그리드]- AMI',
+'[스마트 그리드]- 보안',
+'마이크로 그리드(MicroGrid)',
 '[Energy]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
-'[4차산업][Smart Factory]- CPS',
+'[Smart Factory]- CPS',
+'[Smart Factory]- SCADA',
 '[4차산업]- Smart Hospital',
 '[4차산업]- Smart Car',
 '자율주행자동차',
@@ -80,8 +84,8 @@ var question = question.concat(
 'NUI',
 '제로 UI',
 '데이터브로커',
-'가상머신, 컨테이너',
 '가상화',
+'가상머신, 컨테이너',
 '[가상화]- 하이퍼바이저(Hypervisor)',
 '[가상화]- 컨테이너',
 '[가상화]- 컨테이너 오케스트레이션',
@@ -92,16 +96,10 @@ var question = question.concat(
 '[가상화]- VDI',
 '[GIS]- OGC',
 '위치정보, 위치기반서비스',
-'[스마트 그리드]- AMI',
-'[스마트 그리드]- 보안',
-'마이크로 그리드(MicroGrid)',
-'[산업제어시스템]- SCADA',
-'ISO 26262',
 'IEC 61508',
 '[ISO/IEC 61508]- SIL',
+'[ISO/IEC 61508]- 26262',
 'HILS, HIL 시뮬레이션',
-'문자 인코딩',
-'3D Sensing',
 '오픈뱅킹(Open Banking)',
 'ISO 19626',
 'IoMT',
@@ -333,6 +331,86 @@ var answer = answer.concat(
 * KPC 93회 관리 4교시 4번\
 ',
   
+// AMI
+'# 정의 : 최종 소비자와 전력 회사 사이의 양방향 원격지침 인프라 <br/>\
+- Advanced Metering Infrastructure <br/>\
+- 에너지를 효율적으로 관리할 수 있는 시스템 및 서비스로, 소비자에게 실시간으로 에너지 사용량에 대한 정보가 제공되어 소비자 스스로 혹은 자동화된 기기 제어를 통해 에너지 사용을 제어하는 인프라 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/AMI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 상위 시스템 <br/>\
+- MDMS (Meter Data Management System) : 미터링 데이터 관리 <br/>\
+- CIS (Customer Information System) : 고객이 관리와 과금의 주체가 되는 시스템 <br/><br/>\
+2. 통신시스템 <br/>\
+- WAN (Wide Area Network) : CDMA, 광통신망 등 공중망 사용 <br/>\
+- NAN (Neighborhood Area Network) : 중계기와 미터 사이의 영역 <br/>\
+- HAN (Home Arae Network) : 수용가 내부 통신 네트워크 (PLC, ZigBee)\
+',
+  
+// 스마트 그리드 보안
+'# 정의 : 전력망 _+ IT / 차세대 지능 전령망 위한 / 법,제도,조직,기술 보안 체계 <br/>\
+- 전력망에 IT를 융합한 안전한 차세대 지능형 전력망을 위한 범 국가적인 법, 제도, 조직 및 기술적인 보안체계 <br/><br/>\
+# 보안위협 <br/>\
+- 제어시스템 위협 : 미터기 공격, 대규모 정전 사태 <br/>\
+- 네트워크 위협 : 인터넷 취약점 이용하여 제어시스템으로 침투 <br/>\
+- 소비자 보안 위협 : 각 가정 에너지 사용정보 통한 개인정보 노출 피해 <br/><br/>\
+# 대응방안 <br/>\
+1. 정책적 <br/>\
+- 법/제도 : 정보통신망이 관련되지 않은 사각지대 관련법 개정 <br/>\
+- 조직 : 보안 전문 조직 필요 <br/><br/>\
+2. 기술적 <br/>\
+- 제어시스템 : 암호화 키공유, SCADA 보안 <br/>\
+- 네트워크 : 단말기 인증, 네트워크 포렌식 <br/>\
+- 소비자 : 기기보안, 소비자보안, 서비스 보안 \
+',
+
+// 마이크로 그리드
+'# 정의 : 소규모지역 에너지 공급 전력 체계 <br/>\
+- 스마트그리드의 일종으로 재생에너지를 사용해 소규모지역에 자급자족할 수 있는 에너지를 제공하는 전력체계 <br/>\
+- 지역화된 전력망으로 수용가와 풍력, 태양광 등의 분산 에너지 자원(DER)을 연결한 전력망으로 전체 전력 계통과 독립적(off-grid)으로 동작하여 전력의 자급자족이 가능하며, 필요에 따라 계통과 연결(on-grid)되어 동작할 수도 있는 전력망<br/><br/>\
+# 암기 <br/>\
+- 표준 : IEEE 1547, IEEE P2030.7, IEC 61850 <br/>\
+- 현황 <br/>\
+1) L(안.지)K(DR)포(운플) <br/>\
+2) 미국비치.GE제어 <br/>\
+3) GM벨에 <br/><br/>\
+# 구성 : 기존계통(한전), 통합운영시스템, 마이크로그리드 <br/><br/>\
+# 주요기술 : 스마트계통 운영기술(SCADA, DAS, EMS), AMI, HAN, Smart Meter, 보안기술, 신재생 에너지, 연계 및 충전 기술 <br/><br/>\
+# 취약점 <br/>\
+- 행동 유형별 : 행동패턴, 사용기기파악 <br/>\
+- 데이터 유형별 : 에너지사용 데이터, 전기차 충전 정보, 사용자 장비 보유현황 <br/>\
+- 구간별 : 운영센터, 연계구간, 사용자기기 <br/><br/>\
+# 대응 <br/>\
+- 관리적 : 정보보호체계, 보안관제, 침해사고 대응 계획 수립 <br/>\
+- 기술적 : IoT 공통 보안 <br/><br/>\
+# 정책 <br/>\
+- 비전 : 중소기업 참여와 민간자본투자를 통한 자생력을 갖춘 에너지 신산업 조성(2014.07.) <br/>\
+- 목표 : 2017까지 2조 8백억원 시장 조성, 1만 2백개 일자리 창출 <br/>\
+- 분야 : 기후변화대응 신산업 => ICT 활용 수요관리, 그린 빌리지 구축 <br/>\
+- 신사업 모델 : ICT활용수요관리 전력수요관리, 에너지 통합 서비스, 전기차 서비스 및 유료충전, 그린빌리지 구축(태양광 렌탈, 독립 마이크로그리드, 온배수열 활용) <br/><br/>\
+# 표준<br/>\
+- IEEE 1547 : 전원 시스템과 분산형 자원의 상호접속을 위한 표준<br/>\
+- IEEE P2030.7 : 마이크로 그리드 컨트롤러 사양 표준 <br/>\
+- IEC 61850 : 표준 기반의 분산형 전원(DER) 시스템의 정보모델에 대해 국제 표준화 <br/><br/>\
+# 현황 <br/>\
+- 독립형 마이크로 그리드 : 가파도, 마라도, 가사도 실증연구, 울릉도 실증 사업 추진 <br/>\
+- 계통 연계형 마이크로 그리드 : KETEP 정부지원과제로 전력 IT 10대 과제중 마이크로그리드, K-MEG 등 통하여 실증단지 수준으로 구현, 본격 시장 형성 전 <br/>\
+- LS산전 : 안산을 탄소 제로 에너지자립도시, 인천시 덕적도 인근 작은섬 "지도"가 에너지 자립섬으로 구축 <br/>\
+- KT : 도시내 구축 스마트 그리드 기반으로 수요반응 기반 전력거래/판매사시스템 구축, 신재생 발전원/가정용저장장치등 계통 운영과 연계한 통합 운영센터 개발중 <br/>\
+- 포스코ICT : 도서,도심,산업용 마이크로 그리드 운영플랫폼 개발, 전남 신안군 수행, 일본 해외 사업 추진 <br/>\
+- 현대 중공업 : SG확산사업을 통해서 조선과 석유화학공장에 EES, AMI, 에너지 관리 시스템 구축, 전력거래 인프라 개발 <br/>\
+- 미국<br/>\
+1) 2014년 군사용 마이크로그리드들 비롯하여 전체 마이크로그리드 1GW 상용화 추진 <br/>\
+2) Beach Cities Microgrid, IIT Perfect Power, CERTS Microgrid demonstration(Santa Rita Jail)등을 포함하여 총 9개의 프로젝트를 추진 <br/>\
+- EU <br/>\
+1) Grid4EU(12개 EU국가의 27개사가 참여)<br/>\
+2) NiceGrid : 마이크로 그리드 프로젝트, Grid4EU의 6개 스마트그리드 프로젝트 중 하나 <br/>\
+3) Issy Grid : City Microgrid / 프랑스 최초 도시형 마이크로 그리드 <br/>\
+- GE, ABB, Siemens 등 기업들은 마이크로 그리드용 제어 시스템을 상용화 <br/>\
+- General Microgrids(미국) : "Balance Energy"라는 에너지 S/W 플랫폼, 각종 컨설팅 및 엔지니어링 서비스 제공\
+',
+
+  
 // 인터미턴트 컴퓨팅
 '# 정의 : 전력 수급 불안정 / 에너지 하베스팅 / 신뢰성 보장 동작 컴퓨팅<br/>\
 - Intermittent Computing <br/>\
@@ -425,6 +503,26 @@ var answer = answer.concat(
 - 신뢰성 확보 : 정형검증 요구 <br/>\
 - 프라이버시 : 과도한 정보 수집 금지 <br/>\
 - 정보보안 : 산업 기밀 유출 방지 \
+',
+  
+// [산업제어스템]- SCADA
+'# 정의 : 통신 신호 사용 / RTU / 원격 감시,제어 시스템 br/>\
+- Supervisiory Control And Data Acquisition <br/>\
+- 통신 경로상의 아날로그 또는 디지털 신호를 사용하여 원격장치의 상태정보 데이터를 RTU로 수집/수신/기록/표시하여 중앙 제어 시스템에 원격 장치를 감시 제어하는 시스템 <br/><br/>\
+# 구성요소 <br/>\
+- HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
+- PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
+- RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치<br/><br/>\
+# SCADA DCS 비교 <br/>\
+<img src = "./img/SCADA_DCS.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 기능 (지누경감)<br/>\
+- 지시/표시 : PLCs가 수집한 상태정보를 수신/기록/표시 <br/>\
+- 누산기능 : 정보를 용도에 맞게 계산 <br/>\
+- 경보기능 : 상태변화에 따라 알람 <br/>\
+- 감시/제어 : 관제대상 모니터링 하고 원격제어 <br/><br/>\
+# 보안 취약점 : 정보노출, 불완전한 NW 아키텍처, 실시간 모니터링 부재 <br/><br/>\
+# 보안 요구사항 : 접근제어, 기무가, 인증, 접근차단 및 탐지, 보안정책, 감사기록 <br/><br/>\
+<img src = "./img/SCADA.png", style = "max-width:100%; height:auto;">\
 ',
   
 // Smart Hospital 
@@ -1496,7 +1594,7 @@ var answer = answer.concat(
 ',
 
 // NUI
-'# 정의 : 디지털 기기 제어 인터페이스 기술 / 별도 장치 없이 <br/>\
+'# 정의 : 별도 장치 없이 / 디지털 기기 제어 인터페이스 기술 <br/>\
 - Natural User Interface <br/>\
 - 마우스 등 별도의 인공적 제어장치 없이 사람의 자연스러운 감각/행동/인지 능력을 통해 직접 교감하는 방식으로 디지털 기기를 제어하는 인터페이스 기술 <br/><br/>\
 # 발전 : CLI > GUI > NUI > OUI <br/><br/>\
@@ -1551,19 +1649,10 @@ var answer = answer.concat(
 - 공공데이터포털 / 한국정보화진흥원 : 공공데이터를 오픈 API, 파일 데이터, 표준 데이터로 제공, 시각화 등 다양한 방식 제공/유통, 국민 편의 제공 <br/>\
 - 보건의료빅데이터개방시스템 / 건강보험심사평가원 : 민간기업, 프로그램 개발자, 인터넷 이용자 대상으로 병원, 약국정보, 서비스 등 의료데이터 지원\
 ',
-  
-// 가상머신, 컨테이너
-'# 개념 <br/>\
-<img src = "./img/VM_Container_Concept.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구동원리 <br/>\
-<img src = "./img/VM_Container_Mechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 배포방식 <br/>\
-<img src = "./img/VM_Container_Delivery.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 120회 관리 2교시 4번\
-',
 
 // 가상화 
-'# 정의 : 컴퓨터 운영체제(OS)를 시스템 구조나 하드웨어에 영향받지 않고 설치, 사용할 수 있도록 하는 기술 <br/><br/>\
+'# 정의 : OS / System 구조, HW 영향 x / 설치, 사용 기술 <br/>\
+- 컴퓨터 운영체제(OS)를 시스템 구조나 하드웨어에 영향받지 않고 설치, 사용할 수 있도록 하는 기술 <br/><br/>\
 # 암기 <br/>\
 - 원리 : 분집에인 <br/>\
 1) 분할(Partitioning) <br/>\
@@ -1596,9 +1685,19 @@ var answer = answer.concat(
 <img src = "./img/Virtualization_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Virtualization_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
+  
+// 가상머신, 컨테이너
+'# 개념 <br/>\
+<img src = "./img/VM_Container_Concept.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구동원리 <br/>\
+<img src = "./img/VM_Container_Mechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 배포방식 <br/>\
+<img src = "./img/VM_Container_Delivery.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 관리 2교시 4번\
+',
 
 // [가상화]- 하이퍼바이저
-'# 정의 : 멀티프로그래밍 시스템 문제 해결 <br/>\
+'# 정의 : 하나 호스트 / 다수 운영체제 / 소프트웨어 가상화 플랫폼 <br/>\
 - 하나의 호스트 컴퓨터에서 다수의 운영체제를 동시에 실행하기 위한 논리적인 소프트웨어 가상화 플랫폼 <br/><br/>\
 # 유형 <br/>\
 <img src = "./img/HypervisorOverview.png" style = "max-width:100%; height:auto;"><br/>\
@@ -1611,7 +1710,7 @@ var answer = answer.concat(
 ',
   
 // 컨테이너
-'# 정의 : 커널 공유 프로세스 간 격리된 환경 제공 가상화 기술 <br/>\
+'# 정의 : 커널 공유 프로세스 간 / 격리된 환경 제공 / 가상화 기술 <br/>\
 - 커널을 공유하는 프로세스간 Cgroup, namespace, Chroot등의 기능 이용 격리된 환경 제공 가상화 기술 <br/><br/>\
 #  기술요소 <br/>\
 1. Cgroup (HW 자원 가상화) <br/>\
@@ -1626,7 +1725,8 @@ var answer = answer.concat(
 ',
   
 // 컨테이너 오케스트레이션 
-'# 정의 : 반복적인 애플리케이션의 배포, 확장 및 운영을 자동화 하는 행위 <br/><br/>\
+'# 정의 : 배포, 확장, 운영 / 자동화 행위 <br/>\
+- 반복적인 애플리케이션의 배포, 확장 및 운영을 자동화 하는 행위 <br/><br/>\
 # 필요성<br/>\
 - Composition : 다종 컨테이너 구성 서비스의 설정 및 연동 <br/>\
 - Replication : Scalability, FT, HA위한 복제 <br/>\
@@ -1663,7 +1763,7 @@ var answer = answer.concat(
 ',
   
 // LXC, 도커
-'# 정의 : 경량(Light-Weight) 프로세스 가상화 기술 <br/>\
+'# 정의 : 리눅스 호스트 / namespace, cgroup / 경량 프로세스 가상화 기술 <br/>\
 - 하나의 리눅스 호스트상에서 namespace와 cgroups를 활용하여 여러개의 독립된 리눅스 컨테이너를 제공하는 운영체제 수준의 경량 프로세스 가상화 기술 <br/><br/>\
 # 특징 <br/>\
 - 적은 Footprint : 차지하는 공간 작음 <br/>\
@@ -1712,7 +1812,7 @@ var answer = answer.concat(
 ',
   
 // HCI
-'# 정의 : 차세대 데이터센터 플랫폼 <br/>\
+'# 정의 : X86머신 / 컴퓨팅, 스토리지, 네트워킹 단일 시스템 결합 / SDI / IT Framework <br/>\
 - Hyper Converaged Infrastructor <br/>\
 - X86 머신에 가상 컴퓨팅기능을 적용하고 스토리지와 네트워킹을 단일 시스템으로 결합하여 데이터 센터의 모든 요소를 Software Defined IT Infrastructure (SDI)로 구축, Scale-Out, 벤더 Lock-in 탈피한 통합 IT 프레임워크 <br/><br/>\
 # 배경 <br/>\
@@ -1736,7 +1836,8 @@ var answer = answer.concat(
 ',
   
 // VDI 
-'# 정의 : Virtual Desktop Infrastructure; 가상데스크톱 인프라 <br/>\
+'# 정의 : SW 이용 중앙 제어 기반 / 데스크탑 가상화 기술 <br/>\
+- Virtual Desktop Infrastructure; 가상데스크톱 인프라 <br/>\
 - 소프트웨어를 이용해 데스크탑을 가상화하고, 이를 중앙에서 사용자 환경으로 제공하는 기반기술 <br/><br/>\
 <img src = "./img/VDI.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
@@ -1778,9 +1879,9 @@ var answer = answer.concat(
 ',
   
 // OGC
-'# 정의 : 지리정보 상호 운용성 제고 비영리 단체 / 미국 / 1994 / 이질적 환경 <br/>\
+'# 정의 : HW, SW 이질적 환경 / 지리정보 제공 목적 / 미국 비영리 단체 <br/>\
 - Open GIS Consortium <br/>\
-- 1994년 각기 다른 하드웨어와 소프트웨어를 가진 이질적인 환경에서 지리정보의 상호운용성을 제고하려는 목적으로 미국에서 창립된 비영리 단체 <br/><br/>\
+- 1994년 각기 다른 하드웨어와 소프트웨어를 가진 이질적인 환경에서 지리정보의 상호운용성을 제공하려는 목적으로 미국에서 창립된 비영리 단체 <br/><br/>\
 # OWS(OGC Web Service) : 데이터 마트에 접근하고, 이 데이터를 분석,처리하여 표현할 수 있는 일련의 서비스 처리 체계 <br/>\
 - 구성 : WMS, WFS, WCS, WPS, CSW <br/><br/>\
 # WMS(Web Map Service) : 데이터 서버에 저장된 레이어 또는 분석을 통해 생성된 벡터 및 래스터 데이터를 Visualization 하는 서비스 <br/>\
@@ -1806,124 +1907,6 @@ var answer = answer.concat(
 * 116회 응용 2교시 3번\
 ',
    
-// AMI
-'# 정의 : 최종 소비자와 전력 회사 사이의 양방향 원격지침 인프라 <br/>\
-- Advanced Metering Infrastructure <br/>\
-- 에너지를 효율적으로 관리할 수 있는 시스템 및 서비스로, 소비자에게 실시간으로 에너지 사용량에 대한 정보가 제공되어 소비자 스스로 혹은 자동화된 기기 제어를 통해 에너지 사용을 제어하는 인프라 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/AMI.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-1. 상위 시스템 <br/>\
-- MDMS (Meter Data Management System) : 미터링 데이터 관리 <br/>\
-- CIS (Customer Information System) : 고객이 관리와 과금의 주체가 되는 시스템 <br/><br/>\
-2. 통신시스템 <br/>\
-- WAN (Wide Area Network) : CDMA, 광통신망 등 공중망 사용 <br/>\
-- NAN (Neighborhood Area Network) : 중계기와 미터 사이의 영역 <br/>\
-- HAN (Home Arae Network) : 수용가 내부 통신 네트워크 (PLC, ZigBee)\
-',
-  
-// 스마트 그리드 보안
-'# 정의 : 전력망에 IT를 융합한 안전한 차세대 지능형 전력망을 위한 범 국가적인 법, 제도, 조직 및 기술적인 보안체계 <br/><br/>\
-# 보안위협 <br/>\
-- 제어시스템 위협 : 미터기 공격, 대규모 정전 사태 <br/>\
-- 네트워크 위협 : 인터넷 취약점 이용하여 제어시스템으로 침투 <br/>\
-- 소비자 보안 위협 : 각 가정 에너지 사용정보 통한 개인정보 노출 피해 <br/><br/>\
-# 대응방안 <br/>\
-1. 정책적 <br/>\
-- 법/제도 : 정보통신망이 관련되지 않은 사각지대 관련법 개정 <br/>\
-- 조직 : 보안 전문 조직 필요 <br/><br/>\
-2. 기술적 <br/>\
-- 제어시스템 : 암호화 키공유, SCADA 보안 <br/>\
-- 네트워크 : 단말기 인증, 네트워크 포렌식 <br/>\
-- 소비자 : 기기보안, 소비자보안, 서비스 보안 \
-',
-
-// 마이크로 그리드
-'# 정의 : 소규모지역 에너지 공급 전력 체계 <br/>\
-- 스마트그리드의 일종으로 재생에너지를 사용해 소규모지역에 자급자족할 수 있는 에너지를 제공하는 전력체계 <br/>\
-- 지역화된 전력망으로 수용가와 풍력, 태양광 등의 분산 에너지 자원(DER)을 연결한 전력망으로 전체 전력 계통과 독립적(off-grid)으로 동작하여 전력의 자급자족이 가능하며, 필요에 따라 계통과 연결(on-grid)되어 동작할 수도 있는 전력망<br/><br/>\
-# 암기 <br/>\
-- 표준 : IEEE 1547, IEEE P2030.7, IEC 61850 <br/>\
-- 현황 <br/>\
-1) L(안.지)K(DR)포(운플) <br/>\
-2) 미국비치.GE제어 <br/>\
-3) GM벨에 <br/><br/>\
-# 구성 : 기존계통(한전), 통합운영시스템, 마이크로그리드 <br/><br/>\
-# 주요기술 : 스마트계통 운영기술(SCADA, DAS, EMS), AMI, HAN, Smart Meter, 보안기술, 신재생 에너지, 연계 및 충전 기술 <br/><br/>\
-# 취약점 <br/>\
-- 행동 유형별 : 행동패턴, 사용기기파악 <br/>\
-- 데이터 유형별 : 에너지사용 데이터, 전기차 충전 정보, 사용자 장비 보유현황 <br/>\
-- 구간별 : 운영센터, 연계구간, 사용자기기 <br/><br/>\
-# 대응 <br/>\
-- 관리적 : 정보보호체계, 보안관제, 침해사고 대응 계획 수립 <br/>\
-- 기술적 : IoT 공통 보안 <br/><br/>\
-# 정책 <br/>\
-- 비전 : 중소기업 참여와 민간자본투자를 통한 자생력을 갖춘 에너지 신산업 조성(2014.07.) <br/>\
-- 목표 : 2017까지 2조 8백억원 시장 조성, 1만 2백개 일자리 창출 <br/>\
-- 분야 : 기후변화대응 신산업 => ICT 활용 수요관리, 그린 빌리지 구축 <br/>\
-- 신사업 모델 : ICT활용수요관리 전력수요관리, 에너지 통합 서비스, 전기차 서비스 및 유료충전, 그린빌리지 구축(태양광 렌탈, 독립 마이크로그리드, 온배수열 활용) <br/><br/>\
-# 표준<br/>\
-- IEEE 1547 : 전원 시스템과 분산형 자원의 상호접속을 위한 표준<br/>\
-- IEEE P2030.7 : 마이크로 그리드 컨트롤러 사양 표준 <br/>\
-- IEC 61850 : 표준 기반의 분산형 전원(DER) 시스템의 정보모델에 대해 국제 표준화 <br/><br/>\
-# 현황 <br/>\
-- 독립형 마이크로 그리드 : 가파도, 마라도, 가사도 실증연구, 울릉도 실증 사업 추진 <br/>\
-- 계통 연계형 마이크로 그리드 : KETEP 정부지원과제로 전력 IT 10대 과제중 마이크로그리드, K-MEG 등 통하여 실증단지 수준으로 구현, 본격 시장 형성 전 <br/>\
-- LS산전 : 안산을 탄소 제로 에너지자립도시, 인천시 덕적도 인근 작은섬 "지도"가 에너지 자립섬으로 구축 <br/>\
-- KT : 도시내 구축 스마트 그리드 기반으로 수요반응 기반 전력거래/판매사시스템 구축, 신재생 발전원/가정용저장장치등 계통 운영과 연계한 통합 운영센터 개발중 <br/>\
-- 포스코ICT : 도서,도심,산업용 마이크로 그리드 운영플랫폼 개발, 전남 신안군 수행, 일본 해외 사업 추진 <br/>\
-- 현대 중공업 : SG확산사업을 통해서 조선과 석유화학공장에 EES, AMI, 에너지 관리 시스템 구축, 전력거래 인프라 개발 <br/>\
-- 미국<br/>\
-1) 2014년 군사용 마이크로그리드들 비롯하여 전체 마이크로그리드 1GW 상용화 추진 <br/>\
-2) Beach Cities Microgrid, IIT Perfect Power, CERTS Microgrid demonstration(Santa Rita Jail)등을 포함하여 총 9개의 프로젝트를 추진 <br/>\
-- EU <br/>\
-1) Grid4EU(12개 EU국가의 27개사가 참여)<br/>\
-2) NiceGrid : 마이크로 그리드 프로젝트, Grid4EU의 6개 스마트그리드 프로젝트 중 하나 <br/>\
-3) Issy Grid : City Microgrid / 프랑스 최초 도시형 마이크로 그리드 <br/>\
-- GE, ABB, Siemens 등 기업들은 마이크로 그리드용 제어 시스템을 상용화 <br/>\
-- General Microgrids(미국) : "Balance Energy"라는 에너지 S/W 플랫폼, 각종 컨설팅 및 엔지니어링 서비스 제공\
-',
-
-// [산업제어스템]- SCADA
-'# 정의 : 중앙 제어 시스템 원격 감시,제어 시스템 / 통신 경로상 신호 사용 <br/>\
-- Supervisiory Control And Data Acquisition <br/>\
-- 통신 경로상의 아날로그 또는 디지털 신호를 사용하여 원격장치의 상태정보 데이터를 RTU로 수집/수신/기록/표시하여 중앙 제어 시스템에 원격 장치를 감시 제어하는 시스템 <br/><br/>\
-# 구성요소 <br/>\
-- HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
-- PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
-- RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치<br/><br/>\
-# SCADA DCS 비교 <br/>\
-<img src = "./img/SCADA_DCS.png", style = "max-width:100%; height:auto;"><br/><br/>\
-# 기능 (지누경감)<br/>\
-- 지시/표시 : PLCs가 수집한 상태정보를 수신/기록/표시 <br/>\
-- 누산기능 : 정보를 용도에 맞게 계산 <br/>\
-- 경보기능 : 상태변화에 따라 알람 <br/>\
-- 감시/제어 : 관제대상 모니터링 하고 원격제어 <br/><br/>\
-# 보안 취약점 : 정보노출, 불완전한 NW 아키텍처, 실시간 모니터링 부재 <br/><br/>\
-# 보안 요구사항 : 접근제어, 기무가, 인증, 접근차단 및 탐지, 보안정책, 감사기록 <br/><br/>\
-<img src = "./img/SCADA.png", style = "max-width:100%; height:auto;">\
-',
-
-// ISO 26262
-'# 정의 : 차량 탑재 기능안전 규격 <br/>\
-- 차량에 탑재되는 SW오류로 인한 사고를 방지 위한 기능안전규격이며 차량의 전기전자장치의 기능 안전성에 관한 요건을 정의한 표준<br/><br/>\
-# 암기 : 용.기.구.시.하.소.생/운.지.A.가.반.모 <br/><br/>\
-# 목차<br/>\
-1. Vocabulary 용어 <br/>\
-2. Management of functional saety 기능안전성 관리 : 프로젝트 관리활동, 안전성 관리계획, 조정, 추적 요건 <br/>\
-3. Concept design 구상단계 : 안전목표, 매커니즘 정의, ASIL 판정 <br/>\
-4. Product development : System level 제품개발, 시스템 레벨(시스템 수준 기술 요구사항, 시스템 디자인, 테스트, 검증, V모델) <br/>\
-5. Product development : H/W 제품개발, HW레벨(V모델 따른 HW 요구사항)<br/>\
-6. Product development : S/W 제품개발, SW레벨(SW요구) <br/>\
-7. Production and operation 생산 및 운용(생산위한 계획, 요구사항) <br/>\
-8. Support process 지원 프로세스(명세방법, 형상,변경관리 요구) <br/>\
-9. ASIL-oriented and safety-oriented analysis ASIL 및 안전 중심의 분석(ASIL 분석방법) <br/>\
-10. Guideline on ISO 26262(informative) 가이드라인 <br/>\
-11. ISO 26262 반도체 적용 가이드라인(반도체 아날로그, 디지털 부품대한 적용 지침 및 고장 분석 방법 등) <br/>\
-12. 모터사이클 적용(적용방법)<br/><br/>\
-* Second Edition 11, 12 추가 \
-',
-
 // ISO 61508
 '# 정의 : 기능안전에 대한 국제 규격 <br/><br/>\
 <img src = "./img/IEC61508.png" style = "width:100%; height:auto;">\
@@ -1949,8 +1932,28 @@ var answer = answer.concat(
 * 123회 응용 1교시 13번\
 ',
 
+// ISO 26262
+'# 정의 : 차량 탑재 SW / 기능 안전성 표준 <br/>\
+- 차량에 탑재되는 SW오류로 인한 사고를 방지 위한 기능안전규격이며 차량의 전기전자장치의 기능 안전성에 관한 요건을 정의한 표준<br/><br/>\
+# 암기 : 용.기.구.시.하.소.생/운.지.A.가.반.모 <br/><br/>\
+# 목차<br/>\
+1. Vocabulary 용어 <br/>\
+2. Management of functional saety 기능안전성 관리 : 프로젝트 관리활동, 안전성 관리계획, 조정, 추적 요건 <br/>\
+3. Concept design 구상단계 : 안전목표, 매커니즘 정의, ASIL 판정 <br/>\
+4. Product development : System level 제품개발, 시스템 레벨(시스템 수준 기술 요구사항, 시스템 디자인, 테스트, 검증, V모델) <br/>\
+5. Product development : H/W 제품개발, HW레벨(V모델 따른 HW 요구사항)<br/>\
+6. Product development : S/W 제품개발, SW레벨(SW요구) <br/>\
+7. Production and operation 생산 및 운용(생산위한 계획, 요구사항) <br/>\
+8. Support process 지원 프로세스(명세방법, 형상,변경관리 요구) <br/>\
+9. ASIL-oriented and safety-oriented analysis ASIL 및 안전 중심의 분석(ASIL 분석방법) <br/>\
+10. Guideline on ISO 26262(informative) 가이드라인 <br/>\
+11. ISO 26262 반도체 적용 가이드라인(반도체 아날로그, 디지털 부품대한 적용 지침 및 고장 분석 방법 등) <br/>\
+12. 모터사이클 적용(적용방법)<br/><br/>\
+* Second Edition 11, 12 추가 \
+',
+
 // HILS
-'# 정의 : 실시간 시뮬레이션 기술 <br/>\
+'# 정의 : 가상 모델 구현 / 실제 제어 시스템 연동 / 실시간 시뮬레이션 기술 <br/>\
 - Hardware in the loop Simulation <br/>\
 - 제어 대상 하드웨어(자동차, 항공기, 선박, 기계)를 가상의 모델로 구현하고 이를 제어하는 실제 제어시스템을 시험 플랫폼에 연동시켜 실시간 시뮬레이션을 하는 기술<br/>\
 - 하나 또는 여러 개의 실제 컴포넌트가 실시간으로 시뮬레이션 되는 컴포넌트들과 상호작용하며 제품을 평가하는 기술<br/><br/>\
@@ -1966,31 +1969,24 @@ var answer = answer.concat(
 * 국내의 경우, HILS 기술을 상용화하여 실적을 가진 기업이 없음\
 ',
 
-// 문자 인코딩 
-'# 정의 : 통신 목적 부호화 <br/>\
-- 문자나 기호들의 집합을 컴퓨터에서 저장하거나 통신에 사용할 목적으로 부호화하는 방법',
-
-// 3D Sensing
-'# 정의 : 입체적 센싱 기술 <br/>\
-- 객체의 심도 정보(Depth Information)를 파악할 수 있는 입체적 센싱 기술',
-
 // 오픈뱅킹
-'# 정의 : Open API + Test BED <br/>\
+'# 정의 : 핀테크 기업 개발 편리 / 금융 서비스 표준화 형태 제공 인프라 <br/>\
+- Open API + Test BED <br/>\
 - 핀테크 기업이 금융 서비스를 편리하게 개발할 수 있도록 은행의 금융 서비스를 표준화된 형태로 제공하는 인프라 <br/><br/>\
 # 등장 배경 : 전산표준 호환성, 은행간 협약, 핀테크 서비스 개발 <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/OpenBankingComponent.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OpenBankingComponent.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/OpenBankingSEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 4교시 2번 <br/><br/>\
 * KPC 93회 1교시 8번\
 ',
 
 // ISO 19626
-'# 정의 : 신뢰성 있는 통신 플랫폼 <br/>\
+'# 정의 : TCP / 신뢰성 통신 관련 사항 규약 <br/>\
 - TCP는 개방되고 분산된 환경에서 상거래, 전자정부, 제조, 산업, 의료, 기타 업무에서 높은 신뢰성이 필요한 통신 관련 사항을 규약',
 
 // IoMT
-'# 정의 : 의료사물인터넷 / 의료중심 건강관리 시스템 구현 <br/>\
+'# 정의 : 개인 중심 건강관리 시스템 구현 / 환자 Digital Dust Monitoring / IoT 기술 <br/>\
 - Internet of Medical Things<br/>\
 - 의료사물인터넷. 개인의 생활습관, 신체검진, 의료이용정보, 질병 이력, 유전체정보 등 다양한 데이터를 통해 환자의 증상 및 치료 관리 현황을 꾸준히 모니터링해 공백이 발생하지 않도록 하는 개인중심의 건강관리시스템을 구현',
 
@@ -2121,18 +2117,19 @@ var answer = answer.concat(
 # 보상 <br/>\
 - 블록체인 - 암호화 화폐 관계 (동기 및 유인책) <br/><br/>\
 # 충돌(Fork) <br/>\
-- 개념 : 두개 이상 노드 거의 동시 생성 현상 <br/><br/>\
+- 개념 : 두개 이상 노드 거의 동시 생성 현상 <br/>\
 - 해결책 : 보편적(더 많은 작업증명 수행되어 길이가 더 긴 블록), Ethereum(엉클 Block), Ghost 계열(Main Chain 합류) <br/>\
 - ex) A - P / X - B - P = B 선택 \
 ',
 
 // [블록체인]- UTXO
-'# 정의 : 블록체인의 미사용 거래출력값 <br/>\
+'# 정의 : 잔액 의미 <br/>\
 - Unspent Trasnsaction Output <br/>\
-- 블록체인에 기록된 "미사용 거래 출력값"을 이용하여 거래의 유효성을 검사하여 코인의 존재여부를 확인. 비트코인과 퀀텀은 이 UTXO를 사용.',
+- 트랜잭션에 의한 결과물들의 합 \
+',
 
 // [블록체인]- 머클트리
-'# 정의 : 블록체인 내의 각각의 블록에 존재하는 트리 <br/>\
+'# 정의 : Tx Hashing 반복 값 구성 트리 <br/>\
 - 머클 트리는 수많은 Tx(트랜잭션)을 각각 Hashing 하여  2개씩 짝 지어서 또 해싱하고 반복하여 최종적으로 하나가 남을 때까지 해싱을 한 트리<br/>\
 - 해시트리의 일종으로 Ralphmerkle이 고안한 모든 비 리프노드의 이름이 자식들의 해시로 구성된 트리 <br/>\
 블록체인 내 다수의 거래내역을 각각 해싱하고 합치는 과정을 반복하여 최종적으로 하나가 남을 때까지 해싱하 이진트리 <br/><br/>\
@@ -2143,7 +2140,7 @@ var answer = answer.concat(
 ',
 
 // [블록체인]- 블록체인 오라클 문제 
-'# 정의 : 블록체인 밖에 있는 데이터를 블록체인 안으로 가져올 때 발생하는 문제<br/>\
+'# 정의 : Off-Chain -> On-Chain Problem <br/>\
 - 블록체인 밖의 데이터를 오프체인(Off-Chain), 그 데이터가 블록체인 안으로 들어온 것을 온체인(On-Chain).',
 
 // 스마트시티 블록체인
@@ -2170,7 +2167,8 @@ var answer = answer.concat(
 ',
   
 // Off Chain
-'# 정의 : On-Chain 기능 확장 <br/>\
+'# 정의 : Main Chain 성능 향상 / Tx 별도 처리 Chain <br/>\
+- On-Chain 기능 확장 <br/>\
 - 메인 블록체인 네트워크의 속도 향상 및 확장성을 확보하기 위해, 메인 블록체인 외부에서 트랜잭션을 처리 및 저장하는 별도의 체인 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/OffChain.png" style = "max-width:100%; height:auto;"><br/><br/>\
