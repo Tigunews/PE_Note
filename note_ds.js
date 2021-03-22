@@ -92,6 +92,7 @@ var question = question.concat(
 '[가상화]- 도커(Docker)',
 '[가상화][도커]- LXC', 
 '[가상화]- 쿠버네티스(Kubernetes)',
+'[가상화]- CI',
 '[가상화]- HCI',
 '[가상화]- VDI',
 '[GIS]- OGC',
@@ -1812,8 +1813,25 @@ var answer = answer.concat(
 <img src = "./img/Kubernetes.png" style = "max-width:100%; hegiht:auto;">\
 ',
   
+// CI
+'# 정의 : 단일 벤더 일괄 제공 / 효율적 인프라 관리 / 통합 어플라이언스 <br/>\
+- 단일벤더의 서버, 스토리지, 네트워크, 프로비저닝 관리 S/W 일괄 제공, 효율적인 인프라 관리 가능 통합 어플라이언스 <br/><br/>\
+# 특징 : 일체형 제공, 단일벤더 제공 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/CI_Architecture.png" style = "max-width:100%; hegiht:auto;"><br/>\
+1. 물리자원 계층 : 서버, 네트워크, 스토리지 등 물리자원 <br/>\
+2. Hypervisor 계층 : 물리적 자원의 가상화를 위한 계층 <br/>\
+3. 통합 관리 계층 : 중앙 집중화 관리를 위한 관리 SW 계층 <br/><br/>\
+# 주요기능 <br/>\
+- 자원 추상화 : 유연성, 확장성 <br/>\
+- 자원 가상화 : 자원 Pool 통합/분할 <br/>\
+- 중앙 집중 관리 : 자원설정, 모니터링 <br/>\
+- 프로비저닝 : 물리적 가상자원의 빠른 프로비저닝 <br/>\
+- 자동 계층화 : 스토리지 계층화 효율적 처리 기능 \
+',
+  
 // HCI
-'# 정의 : X86머신 / 컴퓨팅, 스토리지, 네트워킹 단일 시스템 결합 / SDI / IT Framework <br/>\
+'# 정의 : X86 머신 가상 적용 / 스토리지 네트워킹 단일 시스템 결합 / SDI 형태 구축한 / 벤더 Lock in 탈피 / 통합 어플라이언스 <br/>\
 - Hyper Converaged Infrastructor <br/>\
 - X86 머신에 가상 컴퓨팅기능을 적용하고 스토리지와 네트워킹을 단일 시스템으로 결합하여 데이터 센터의 모든 요소를 Software Defined IT Infrastructure (SDI)로 구축, Scale-Out, 벤더 Lock-in 탈피한 통합 IT 프레임워크 <br/><br/>\
 # 배경 <br/>\
