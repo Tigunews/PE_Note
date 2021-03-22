@@ -904,14 +904,16 @@ var answer = answer.concat(
 ',
   
 // 바이오정보 분산관리
-'# 개념 : 금융 이용자의 지문, 정맥등 바이오 정보를 분산관리센터와 금융기관에 분산 저장하여 보안 강화한 인증기술 <br/><br/>\
+'# 개념 : 분산관리센터 / 금융기관 / 분산저장 인증기술 <br/>\
+- 금융 이용자의 지문, 정맥등 바이오 정보를 분산관리센터와 금융기관에 분산 저장하여 보안 강화한 인증기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/BioDistribute.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 관리 2교시 1번\
 ',
   
 // 앰비언트 커머스
-'# 정의 : E-Commerce와 IT 기술 조합 <br/>\
+'# 정의 : 사람의 존재 인식 / 알아서 추천, 제공 서비스 <br/>\
+- E-Commerce와 IT 기술 조합 <br/>\
 - 사람의 존재를 인식하여 사용자가 원하는 쇼핑정보를 알아서 제공하고 추천하여 개인 맞춤형 쇼핑을 제공하는 서비스 <br/><br/>\
 # 매커니즘 <br/>\
 <img src = "./img/AmbientCommerceTech.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
@@ -923,7 +925,8 @@ var answer = answer.concat(
 ',
   
 // 핀테크
-'# 정의 : Finance + Technology <br/>\
+'# 정의 : 첨단 정보기술 기반 / 금융서비스 및 산업 변화 총칭 <br/>\
+- Finance + Technology <br/>\
 - 금융과 기술의 합성어로, 모바일, 빅데이터, SNS등의 첨단 정보 기술을 기반으로 한 금융서비스 및 산업의 변화 통칭 <br/><br/>\
 # 기술요소 <br/>\
 - 통신 : NFC, BLE(Bluetooth Low Energy) <br/>\
@@ -984,7 +987,7 @@ var answer = answer.concat(
 ',
   
 // 인터넷 전문 은행
-'# 정의 : ICT 기업의 금융업, 인터넷을 통한 무점포 비대면 영업 <br/>\
+'# 정의 : 인터넷을 통한 무점포 비대면 영업 / ICT 기업의 금융업 <br/>\
 - 점포를 통한 대면거래를 하지 않고 인터넷을 주요 영업채널로 활용하며 업무 범위는 수신 및 여신업무 등 기존 은행 본연의 업무 대부분을 수행 가능한 새로운 개념의 은행 <br/><br/>\
 # 구성요소 <br/>\
 - 전산설비 : 위탁 가능<br/>\
@@ -995,7 +998,8 @@ var answer = answer.concat(
 ',
   
 // FDS
-'# 정의 : Fraud Detection System <br/>\
+'# 정의 : 전자 금융거래 / 탐지, 차단 시스템 <br/>\
+- Fraud Detection System <br/>\
 - 전자 금융거래에서 사용되는 단말기 정보,접속정보,거래내용 등을 종합적으로 분석, 의심거래를 탐지하고 이상 금융거래를 차단하는 시스템 <br/><br/>\
 # 주요기능(수분대감) <br/>\
 <img src = "./img/FDS_Function.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
@@ -1193,7 +1197,7 @@ var answer = answer.concat(
 
 // [이더리움]- 스마트계약
 '# 정의 : 컴퓨터 언어로 저장된 계약 / 분산원장 시스템 / 자동 체결<br/>\
-- 분산원장시스템(Distributed ledger system)과 같은 컴퓨터 시스템에 의하여 자동으로 체결될 수 있는 기존 법률적 언어대신 컴퓨터 언어로 저장된 계약<br/>\
+- 분산원장시스템(Distributed ledger system)과 같은 컴퓨터 시스템에 의하여 자동으로 체결될 수 있는 <font color = "red">기존 법률적 언어대신 컴퓨터 언어</font>로 저장된 계약<br/>\
 - 블록체인을 통해 일정 조건을 만족시키면 거래가 자동으로 실행되도록 프로그램된계약<br/><br/>\
 # 특징 : 자율성, 안정성, 분산성 <br/><br/>\
 # 구성 : 블록체인, 이더리움, 스크립트 언어(Python, Serpent(Python 문법과 유사), LLL(Listp와 유사), 솔디리티(Soldility, 자바스크립트 유사한 독자 언어) <br/><br/>\
@@ -1204,7 +1208,7 @@ var answer = answer.concat(
 ',
   
 // Smart Contract Audit
-'# 정의 : 스마트 컨트랙트 코드 결함, 취약점 <br/>\
+'# 정의 : 결함, 취약점 찾기 / 개선 방향 제시 / 백서 내용 일치 구현 / 검증 활동 <br/>\
 - 스마트 컨트랙트가 가진 코드 결함 및 보안취약점을 찾아내어 개선방향을 제시하고 기능이 백서의 내용과 일치하게 구현되어 있는지 검증하는 활동 <br/><br/>\
 # 점검대상 <br/>\
 - 아키텍처 <br/>\
@@ -1225,7 +1229,7 @@ var answer = answer.concat(
 ',
 
 // [3D 프린터]- 팝업팩토리
-'# 정의 : HW Agile 방법론 / 3D Printing<br/>\
+'# 정의 : 3D Printing / 전자기기 즉석 생산 기법 <br/>\
 - 3D 프린팅 기술을 이용하여 전자기기(HW)를 그 자리에서 즉석(Pop-up) 생산하는 기법. 더 빠르고 신속하게 SW를 만드는 SW부문의 Agile 개발방법론을 하드웨어(HW) 생산 방식에 접목하여 HW를 빠르고 유연하고 민첩하게 생산(fast, flexible, agile Manufacturing)하기 위한 기법',
 
 // 오감기술
