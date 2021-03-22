@@ -565,8 +565,9 @@ var answer = answer.concat(
 - Dendrogram Clustering : 각 단계의 군집이 </font color = "red">어떻게 형성되는지 확인</font>하고 형성된 군집의 유사성 수준이 평가 가능한 다이어그램 \
 ',
   
-// 능동 학습
-'# 정의 : 초벌 / 반지도 기계학습 모델 <br/>\
+// 능동학습
+'# 정의 : Data 부족 / UnLabeled Data 선별 / Auto Labeling 기법 <br/>\
+- Data 부족 해결하기 위해 UnLabeled Data를 선별하여 자동 학습하는 Auto Labeling 기법 <br/>\
 - 초기 라벨링된 일부 데이터를 이용해 모델 학습한 이후, 추가적인 데이터 인위적 선별, 활용하는 기계학습 모델 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/ActiveLearningProcess.png" style = "max-width:100%; height:auto;"><br/>\
@@ -587,6 +588,28 @@ var answer = answer.concat(
 - 학습 데이터 분류 : 초기 데이터, 전문지식 데이터 분류 가능 <br/>\
 - 학습 데이터 통합 : 레코드단 중복제거, 룰셋 적용 <br/><br/>\
 * 123회 응용 1교시 4번\
+',
+  
+// 전이학습
+'# 정의 : 다른 모델 학습 결과 전이 / 데이터 확보 / 훈련시간 단축 / 머신러닝 기법 <br/>\
+- 기존의 학습된 모델과 비슷한 유형의 다른 모델로 학습된 결과를 옮겨서 부족한 데이터를 통한 학습이나 훈련 시간을 단축시키는 머신러닝 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/TransferLearningStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 전이학습 유형 분류 <br/>\
+<img src = "./img/TransferLearningType.png" style = "max-width:100%; height:auto;"><br/>\
+1. 적용범위 <br/>\
+- Task 전이 : 응용 분야가 변경되는 경우 (영상->음성) <br/>\
+- Domain 전이 : 데이터 확률분포가 다른 경우(영불 번역기 -> 영한 번역기) <br/><br/>\
+2. 데이터셋 Label 여부 <br/>\
+- 귀납(Inductive) : Multi-task(일반화된 모델 만든 후 특화 Layer 분리법), Self-Taught(원본데이터 변환, Feature 만든 후 Linear Classifier 학습) <br/>\
+- 변형(Transductive) : Source Data의 Label 이용 Target Daata에 맞도록 학습 <br/>\
+- 자율(Unsupervised) : Unlabled Data간 학습 진행 <br/><br/>\
+# 주요 학습 기법 <br/>\
+- Fine-tuned CNN : 미리 학습된 CNN의 마지막 Fully Connected Layer만 변경 분류 실행 <br/>\
+- Pre-Trained Model : 미리 학습된 모델의 가중치를 새로운 모델에 적용 <br/>\
+- Domain Adaption : 풍부한 데이터 바탕, 도메인 구분능력 약하게 학습, Targert Data 분류 가능 구축 <br/>\
+- Layer Re-Use : 기존 모델 일부 Layer 재사용, 부족 Data Domain 모델 구축 활용 <br/><br/>\
+* ITPE 1회 1교시 1번\
 ',
   
 // 머신러닝 예측모델
