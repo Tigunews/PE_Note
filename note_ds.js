@@ -107,6 +107,7 @@ var question = question.concat(
 '[블록체인]- 블록체인 3.0',
 '[블록체인]- 합의 알고리즘',
 '[합의 알고리즘]- PoW',
+'[블록체인]- Hard Fork, Soft Fork',
 '[블록체인]- UTXO',
 '[블록체인]- 머클트리(Merkle Tree)',
 '[블록체인]- 블록체인 오라클 문제',
@@ -2120,6 +2121,18 @@ var answer = answer.concat(
 - 개념 : 두개 이상 노드 거의 동시 생성 현상 <br/>\
 - 해결책 : 보편적(더 많은 작업증명 수행되어 길이가 더 긴 블록), Ethereum(엉클 Block), Ghost 계열(Main Chain 합류) <br/>\
 - ex) A - P / X - B - P = B 선택 \
+',
+  
+// Hard Fork, Soft Fork
+'# Fork <br/>\
+- Block Chain 새로운 버전으로의 분기점 <br/><br/>\
+# Hard Fork <br/>\
+- 개념 : 이전에 사용되던 코인과 공동되지 않는 대규모 규칙 분기 <br/>\
+- 사례 : 이더리움 -(Hard Fork)-> 이더리움 클래식 <br/>\
+- 특징 : 코인 재발급, 가격 상승 영향 <br/><br/>\
+# Soft Fork <br/>\
+- 개념 : 이전 사용되던 코인과 연결되어 계속 사용 가능한 소규모 규칙 분기 <br/>\
+- 특징 : 영향 , 시스템 호환 가능, 채굴자들만 적은 업그레이드 필요 \
 ',
 
 // [블록체인]- UTXO
