@@ -77,7 +77,6 @@ var question = question.concat(
 '시선통신기술(Line of Sight Communications)',
 '[음성인식]- 하이퍼보이스(Hypervioice)',
 '모바일 컨시어지(Mobile Concierge)',
-'엑사스케일(Exascale) 컴퓨팅 시스템',
 'NUI',
 '제로 UI',
 '데이터브로커',
@@ -1382,12 +1381,12 @@ var answer = answer.concat(
 ',
 
 // [Web 3.0]- React.js
-'# 정의 : Facebook 개발 오픈소스 Javascript Library <br/>\
+'# 정의 : 웹 상호작용 UI / Facebook 개발 / 오픈소스 Javascript 라이브러리 <br/>\
 - 웹에서 상호작용하는 사용자 인터페이스를 만들기 위해 Facebook에서 내부적으로 개발한 오픈소스 javascript 라이브러리<br/>\
 최초 한 번의 Request에 html, css, images, js 파일들 압축해서 클라이언트 브라우저 다운 받고, 그 후 요청한 Request에 동적 data만 서버를 통해 다운 받음',
 
 // [Web 3.0]- REST
-'# 정의 : WOA(Web Oriented Architecture) 핵심 정보교환 프로토콜 <br/>\
+'# 정의 : URI / HTTP Method / CRUD Opeartion / WOA(Web Oriented Architecture) 핵심 정보교환 프로토콜 <br/>\
 - Representational State Transfer <br/>\
 - HTTP URI(Uniform Resource Identifier)를 통해 자원을 명시하고, HTTP Method(POST, GET, PUT, DELETE)를 통해 자원에 대한 CRUD Operation을 적용하는 것 <br/><br/>\
 # 구성요소 <br/>\
@@ -1418,7 +1417,7 @@ var answer = answer.concat(
 ',
 
 // Semantic Web
-'# 정의 : 지능형 웹 패러다임 <br/>\
+'# 정의 : RDF, Ontology / 기계 이해, 추론 / 지능형 웹 패러다임 <br/>\
 - 웹 상 존재 데이터 의미와 관계를 RDF(Resource Description Framework), 온톨로지 기반 표현. 기계가 의미를 이해. 추론할 수 있도록 하는 지능형 웹 패러다임<br/><br/>\
 #  특징 <br/>\
 - 기술적 특징 : 메타데이터기반의 지능형 추론형 웹으로 확장 / 의미사전인 Ontology 구축<br/>\
@@ -1453,9 +1452,9 @@ var answer = answer.concat(
 ',
 
 // 시선통신기술
-'# 정의 : 곧바로 띄우는 기술 / 기지국, AP X <br/>\
-- 기지국이나 AP 도움 없이 스마트폰 화면 TV나 스크린에 곧바로 띄우는 기술<br/><br/>\
-# 정의 : 연결하고자 하는 대상의 식별번호를 몰라도 스마트폰 화면에 보이는 대상과 바로 연결해주는 통신 기술 <br/><br/>\
+'# 정의 : 기지국, API X 곧바로 띄우는 기술 / 대상 바로 연결 통신 기술 <br/>\
+- 기지국이나 AP 도움 없이 스마트폰 화면 TV나 스크린에 곧바로 띄우는 기술<br/>\
+- 연결하고자 하는 대상의 식별번호를 몰라도 스마트폰 화면에 보이는 대상과 바로 연결해주는 통신 기술 <br/><br/>\
 # 기술요소 <br/>\
 - 자가공간 필터링 : 10도 이내 자가 공간 인식 <br/>\
 - 객체 구분형 이미지 특성 매칭 : 객체 타입에 따른 이미지 특성 추출 <br/>\
@@ -1481,7 +1480,7 @@ var answer = answer.concat(
 ',
 
 // 모바일 컨시어지
-'# 정의 : 업무 처리 맞춤형, 개인화 서비스 / 모바일 프로그램 이용<br/>\
+'# 정의 : 음성비서 이용 / 개인화 서비스 <br/>\
 - 모바일 기기의 챗팅 봇, 음성 인식 개인 비서 프로그램를 이용하여 사용자의 제반 업무를 일괄적으로 처리하고 맞춤형, 개인화하는 서비스<br/><br/>\
 # 특징 <br/>\
 - 단일화 : 별도 앱 불필요 <br/>\
@@ -1494,26 +1493,6 @@ var answer = answer.concat(
 - Processing : 인공지능 <br/>\
 - Repository : 빅데이터 큐레이션 <br/><br/>\
 # 사례 : 11번가 디지털 컨시어지 11톡, Facebook M Assistant\
-',
-
-// 엑사스케일 컴퓨팅 시스템
-'# 정의 : 엑사플롭스급 컴퓨팅 시스템 / 초당 10^18 연산<br/>\
-- 1 엑사플롭스(ExaFlops) 이상의 처리능력을 가진, 엑사플롭스(ExaFlops) 급의 컴퓨팅 시스템<br/>\
-- 1 엑사플롭스(ExaFlops)는 초당 10^18 회(100 경 회)의 연산을 의미함<br/><br/>\
-# 기술(요구사항) <br/>\
-- 에너지 : 20MW 이하 <br/>\
-- 인터커넥트 : 광학데이터 이동기술 / 인텔 OPA(Omni Path Architecture) <br/>\
-- 메모리 : 계층구조 / 인텔 3D Xpoint 메모리 <br/>\
-- 확장성기반 SW : 다수노드 기반 <br/>\
-- 프로그래밍 : 병렬 / OpenMP, OpenCL, CUDA <br/>\
-- 데이터 관리 : 관리 / Lustre 파일 시스템 <br/>\
-- 엑사스케일 알고리즘 : 저장후 연산 ->  재실행알고리즘 변환 필요, 발견과 설계, 결함 알고리즘 (Multi-Physical 문제 해결) <br/><br/>\
-# 동향 <br/>\
-- 미국 : CORAL 프로젝트 <br/>\
-- EU : EU CRESTA 프로젝트 <br/>\
-- 독일 : Deep 프로젝트 <br/>\
-- 국내 : ETRI-MAHA(유전체 데이터 분석), 서울대-천둥(슈퍼컴퓨터) <br/><br/>\
-* FLOPS(FLoating point OPerations per Second) = 컴퓨터의 성능 수치로 나타낼 때 주로 사용되는 단위로서 초당 실행가능한 부동소수점 연산 횟수를 의미 \
 ',
 
 // NUI
