@@ -29,6 +29,7 @@ var question = question.concat(
 '[AI]- 지도학습',
 '[AI]- Clustering',
 '[AI]- 능동학습',
+'[AI]- 전이학습',
 '[AI][지도학습]- 머신러닝 예측모델',
 '[AI][지도학습]- 성능검증',
 '[AI][지도학습][성능검증]- Cross Validation',
