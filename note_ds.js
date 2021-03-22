@@ -3,9 +3,10 @@ var question = question.concat(
 '[4차산업]- Smart City',
 '[4차산업]- Smart Work',
 '[4차산업]- Smart Energy',
-'[스마트 그리드]- AMI',
-'[스마트 그리드]- 보안',
-'마이크로 그리드(MicroGrid)',
+'Smart Grid',
+'[Smart Grid]- AMI',
+'[Smart Grid]- 보안',
+'Micro Grid',
 '[Energy]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
 '[Smart Factory]- CPS',
@@ -333,8 +334,34 @@ var answer = answer.concat(
 * KPC 93회 관리 4교시 4번\
 ',
   
+// Smart Grid
+'# 정의 : 전력 + ICT / 최적화 기술 <br/>\
+- 전력 시스템 기술과 ICT 기술을 융합하여 수급조건 전력 생산, 수송, 소비하는 최적화 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SmartGridStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 자가치유 : 탐지 > 분석 > 반응/복구 <br/>\
+- 고객 참여 : 소비 정보 통합, 전력망 설계 / 분산전원(DER) 관리 <br/>\
+- 전력 마켓 : 전력 요구 거래 및 스마트 미터 <br/><br/>\
+# 기술요소 <br/>\
+1. Electrification <br/>\
+- 전기차 : 전기 에너지 동력 자동차 <br/>\
+- V2G(Grid) : 전기 배터리 저장 전력 활용 기술 <br/><br/>\
+2. Decentralization <br/>\
+- 태양광 : 빛 에너지 -> 전기 에너지 <br/>\
+- ESS : 생산된 전기 저장, 공급 장치 <br/>\
+- DR : 기기 부하에 대한 전력제어 지원 <br/><br/>\
+3. Digitalization <br/>\
+- 스마트 미터 : 인력 없이 요금 정산 <br/>\
+- IoT : 스마트 기기, AMI, 원격 제어기 센서 통신 기능 내장 연결 기술 <br/>\
+- 원격제어 : 소비자 사용량 측정, 맞춤형 서비스 제공 위한 제어 시스템 <br/><br/>\
+# 기존 전력망 비교 <br/>\
+<img src = "./img/SmartGridCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 118회 관리 2교시 6번\
+',
+  
 // AMI
-'# 정의 : 최종 소비자와 전력 회사 사이의 양방향 원격지침 인프라 <br/>\
+'# 정의 : 최종 소비자와 전력 회사 사이의 양방향 원격검침 인프라 <br/>\
 - Advanced Metering Infrastructure <br/>\
 - 에너지를 효율적으로 관리할 수 있는 시스템 및 서비스로, 소비자에게 실시간으로 에너지 사용량에 대한 정보가 제공되어 소비자 스스로 혹은 자동화된 기기 제어를 통해 에너지 사용을 제어하는 인프라 <br/><br/>\
 # 구성도 <br/>\
