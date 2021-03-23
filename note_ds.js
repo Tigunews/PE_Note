@@ -35,6 +35,7 @@ var question = question.concat(
 '[의료기술]- ISO 62304',
 '[의료기술]- ISO 25237',
 '[의료기술]- 의료 AI',
+'[의료기술]- 차세대 Healthcare service',
 'OTT(Over the top)',
 '[OTT]- 웹인증 API',
 '인증기술',
@@ -870,6 +871,17 @@ var answer = answer.concat(
 <img src = "./img/MediAIProcessExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 <img src = "./img/MediAISubject.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * KPC 95회 관리 4교시 5번\
+',
+  
+// 차세대 Healthcare Service
+'# 정의 : 건강 관련 서비스 / IT 융햡 / 환자중심 종합의료 서비스 <br/>\
+- 개인의 건강과 의료에 관한 정보, 기기, 시스템, 플랫폼을 다루는 산업분야로서 건강 관련 서비스와 의료 IT가 융합된 환자중심 종합의료서비스 <br/><br/>\
+# Overveiw <br/>\
+<img src = "./img/HealthcareOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 서비스 유형 <br/>\
+<img src = "./img/SmartHealthcareTree.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 흐름 <br/>\
+<img src = "./img/HealthcareFlow.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // OTT
