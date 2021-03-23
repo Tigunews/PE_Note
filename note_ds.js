@@ -874,7 +874,7 @@ var answer = answer.concat(
 ',
   
 // 차세대 Healthcare Service
-'# 정의 : 건강 관련 서비스 / IT 융햡 / 환자중심 종합의료 서비스 <br/>\
+'# 정의 : 건강 관련 서비스 / IT 융합 / 환자중심 종합의료 서비스 <br/>\
 - 개인의 건강과 의료에 관한 정보, 기기, 시스템, 플랫폼을 다루는 산업분야로서 건강 관련 서비스와 의료 IT가 융합된 환자중심 종합의료서비스 <br/><br/>\
 # Overveiw <br/>\
 <img src = "./img/HealthcareOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
