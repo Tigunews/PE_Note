@@ -197,7 +197,6 @@ var question = question.concat(
 'DOM SAX',
 '[로봇]- URC',
 '[로봇]- SLAM',
-'[IoT]- 객체 식별자 기반 사물인터넷 디바이스 식별체계(TTAK.KO-06.0365/RI)',
 '[Gartner 2020]- Democratization',
 '[Gartner 2021][People Centricity]- IoB',
 '[Gartner 2021][People Centricity]- 전체 경험',
@@ -3755,15 +3754,17 @@ var answer = answer.concat(
 ',
   
 // DOM SAX
-'# DOM : Document Object Model <br/>\
+'# DOM : XML 문서 트리 구조 파싱 / 메모리 Upload / 해석 시스템 <br/>\
+- Document Object Model <br/>\
 - XML 문서를 Root에서 트리 구조로 파싱하여 XML 문서 컨텐츠와 구조 전체를 메모리에 올려 놓고 해석하는 시스템 <br/><br/>\
-# SAX : Simple API for XML <br/>\
+# SAX : 이벤트 처리 / 자료구조 x / 스캔, Element 중심 이벤트 발생 / XML 처리 방식 <br/>\
+- Simple API for XML <br/>\
 - 이벤트 처리 기반으로, 자료 구조를 만들지 않고 XML 문서를 스캔해 가면서 특정 Element를 중심으로 이벤트를 발생시켜 XML 문서를 처리하는 방식 <br/><br/>\
 <img src = "./img/DOM_SAX.png" style = "max-width:100%; height:auto;">\
 ',
   
 // URC
-'# 정의 : IT 기반 지능형 로봇의 새로운 패러다임 <br/>\
+'# 정의 : IT / 지능형 / 로봇  <br/>\
 - Ubiquitous Robotic Companion <br/>\
 - IT 기반 지능형 서비스 로봇의 패러다임 <br/><br/>\
 # 특징 <br/>\
@@ -3776,7 +3777,7 @@ var answer = answer.concat(
 - 음성기반 컴포넌트 : 음성인식, 음성합성, 음성 추적 <br/><br/>\
 2. Smart Action 기술 <br/>\
 - 지능형 주행 : 위치결정기술, 지도형성기술, 경로작성기술 <br/>\
-- 지능형 조작 : 호나경/객체 인지기술, 조작제어기술 \
+- 지능형 조작 : 환경/객체 인지기술, 조작제어기술 \
 ',
   
 // SLAM
@@ -3802,39 +3803,26 @@ var answer = answer.concat(
 * 라이지움 88회 관리 1교시 1번\
 ',
   
-// 객체식별자 기반 사물인터넷 디바이스 식별체계 
-'# 정의 : OID(Object Identifier) 기반 사물인터넷 디바이스 식별체계를 정의하고 그에 대한 할당 및 관리 기관 정의한 식별체계 <br/><br/>\
-# 목적 : 글로벌 식별체계 구축, 산업 활성화 <br/><br/>\
-# 구성요소 : 상위, 제조사식별, 모델, 일련번호식별 <br/><br/>\
-* 116회 1교시 11번\
-',
-  
 // Democratization
 '# 정의 : 단순화된 경험 / 전문 지식 대중 제공 패러다임 <br/>\
 - 고도의 훈련 없이 단순화된 경험을 통해 SW개발, 인공지능등의 기술전문지식이나 세일즈, 경제 분석 등 사업 전문 지식을 대중에게 제공하는 패러다임 <br/><br/>\
 # 제공형태 <br/>\
 1. 데이터 분석의 민주화 <br/>\
 - AI 및 분석툴 사용대상이 전문가->일반 개발자 or 업종 전문가 <br/>\
-- Citizen Data Scientist, Self-Service Analytics, Augmented Analytics <br/><br/>\
+- Citizen Data Scientist : 분석 데이터 추출, 분석 모델 생성 자동화, 가시화툴 인사이트 <br/>\
+- Self-Service Analytics : Data 준비도구, 시각적 분석 도구, 예측 분석 도구 <br/>\
+- Augmented Analytics : 딥러닝, CNN, RNN, 딥러닝 이용 AI 분석 인사이트 <br/><br/>\
 2. 개발의 민주화 <br/>\
 - 맞춤 개발 App 활용할 수 있는 AI 툴 확산, AI 개발 용이 <br/>\
-- Citizen Development, AI PaaS, AI Platform, OPEN API <br/><br/>\
+- Low-Code : SaaS + PaaS 기반 App제작 배포, 비주얼 IDE <br/>\
+- No-Code : 코딩 없이 컴포넌트들 Drag & Drop <br/>\
+- AI 플랫폼 : AI 데이터, AI SW API, 컴퓨팅 자원 제공 <br/><br/>\
 3. 설계의 민주화 <br/>\
 - 시민 개발자에게 권한을 주는 추가적인 앱개발 기능 자동화 <br/>\
 - Low-Code, No-Code <br/><br/>\
 4. 지식의 민주화 <br/>\
 - 비전문가들이 사용하기 쉬운 IT 툴 이용해 본래 전문기술이나 훈련 수준 초월 <br/>\
-- AutoML, 개인화 서비스, Citizen Integrator <br/><br/>\
-# 실현기술 상세 설명 <br/>\
-1. 데이터 분석 <br/>\
-- Citizen Data Scientist : 분석 데이터 추출, 분석 모델 생성 자동화, 가시화툴 인사이트 <br/>\
-- Self-Service Analytics : Data 준비도구, 시각적 분석 도구, 예측 분석 도구 <br/>\
-- Augmented Analytics : 딥러닝, CNN, RNN, 딥러닝 이용 AI 분석 인사이트 <br/><br/>\
-2. 개발 및 설계 <br/>\
-- Low-Code : SaaS + PaaS 기반 App제작 배포, 비주얼 IDE <br/>\
-- No-Code : 코딩 없이 컴포넌트들 Drag & Drop <br/>\
-- AI 플랫폼 : AI 데이터, AI SW API, 컴퓨팅 자원 제공 <br/><br/>\
-3. 지식 <br/>\
+- AutoML, 개인화 서비스, Citizen Integrator <br/>\
 - Auto ML : AI 필요한 학습 Workflow 자동처리 <br/><br/>\
 # 향후 전망 <br/>\
 - 가트너는 데이터 분석 업무 40%가 자동화, 보편화 예측 <br/>\
