@@ -7,6 +7,10 @@ var answer =
 var this_week_question =
 [
 '',
+'지능형 CCTV',
+'LBS',
+'RTLS',
+  /*
 '타당도',
 '신뢰도',
 '능동학습',
@@ -55,4 +59,5 @@ var this_week_question =
 '머신러닝 파이프라인',
 'Gradient Descent',
 '정렬',
+*/
 ];
