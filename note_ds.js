@@ -1,6 +1,7 @@
 var question = question.concat(
 '4차산업 혁명',
 '[4차산업]- Smart City',
+'Smart City 보안',
 '[4차산업]- Smart Work',
 '[4차산업]- Smart Energy',
 'Smart Grid',
@@ -281,6 +282,37 @@ var answer = answer.concat(
 - BOO(Build Own Operate) : 직접 모든 인프라 구축 및 소유 <br/><br/>\
 * 123회 응용 2교시 3번 <br/>\
 * 117회 관리 1교시 13번\
+',
+  
+// Smart City 보안
+'# 공격 형태 <br/>\
+<img src = "./img/SmartCityCyberAttackType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 보안 이슈 <br/>\
+- 인프라 측면 : IoT, Cloud <br/>\
+- 서비스 측면 : Privacy <br/><br/>\
+# 계층별 보안 구조 (감지 > 수집 > 처리 > 애플리케이션)<br/>\
+1. 감지 계층 <br/>\
+- 개요 : 스마트 시티 내 다양한 정보 감지 <br/>\
+- 구성 : 센서, 엑츄에이터, 카메라 <br/><br/>\
+2. 데이터 수집 계층 <br/>\
+- 개요 : 감지 계층에서 생성된 데이터 수집, 저장 <br/>\
+- 구성 : 빅데이터 형태, 클라우드 대용량 IT 인프라 <br/><br/>\
+3. 데이터 처리 계층 <br/>\
+- 개요 : 수집 계층에서 의미 있는 정보 추출 <br/>\
+- 구성 : 실시간 처리, 배치 처리 <br/><br/>\
+4. 애플리케이션 계층 <br/>\
+- 개요 : 이해관계자들게 정보 제공 <br/><br/>\
+# 대응기술 <br/>\
+1. 관리적 <br/>\
+- 보안 대응 체계 : 보안 오케스트레이션, SOAR(자동화 및 복구) <br/>\
+- 취약점 패치 : 패치 관리, 서버 안전 인증 <br/><br/>\
+2. 물리적 <br/>\
+- 안전한 부팅 : 펌웨어 유효성 검사, UEFI 적용 <br/>\
+- 안전한 통신 : BlueTooth(4.2), Zigbee(CCM 128Bit 이상), Wifi(WPA2) <br/><br/>\
+3. 기술적 <br/>\
+- 인증 및 접근 제어 : 격리 프로세스, 경량화 IoT 장비(패시브 형태 사용) <br/>\
+- 데이터 보호 : CRC(x), SHA-2이상 권장 <br/><br/>\
+- 블록체인 : 데이터 통합 관리 \
 ',
   
 // Smart Work
