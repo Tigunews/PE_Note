@@ -31,6 +31,7 @@ var question = question.concat(
 '[정책][뉴딜]- 그린 뉴딜',
 '[정책][뉴딜]- SoC 디지털화',
 '[정책]- 지능 정보화 기본법',
+'프로토콜 경제',
 'Flipped Learning',
 '디지털 사이니지(Digital Signage)',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린',
@@ -848,6 +849,28 @@ var answer = answer.concat(
 <img src = "./img/SmartInfoRuleSpecefication.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 1교시 5번 <br/>\
 * 아이리포 24회 관리 3교시 6번\
+',
+  
+// 프로토콜 경제
+'# 개념 : 플랫폼 경쟁 보완 / 참여형 공정경쟁 시스템 <br/>\
+- 플랫폼 경제가 가져온 독점화 폐해를 보완하는 개념의 참여형 공정경쟁 시스템 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ProtocolEconomyStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 : 블록체인 기술을 다양하게 접목시켜 탈 중앙화 및 탈 독점화 <br/><br/>\
+# 생태계 <br/>\
+1. 공정한 부의 분배 <br/>\
+- 내용 : 블록체인 기반 부동산 집합 투자 및 수익 배분 <br/>\
+- 사례 : 디지털 자산 거래 <br/><br/>\
+2. 이용자 보호 <br/>\
+- 내용 : 블록체인 기반 의료 데이터 비대면 프랫폼 <br/>\
+- 사례 : 마이데이터 사업 <br/><br/>\
+3. 자동화와 효율성 <br/>\
+- 내용 : 이더리움 기반 메인셋, 하이퍼레저 패브릭 <br/>\
+- 사례 : BaaS 서비스형 블록체인 <br/><br/>\
+4. 공유화 협력의 촉매 <br/>\
+- 내용 : 탈중앙화 금융을 위한 Stable Coin DEX <br/>\
+- 사례 : DeFi 사업 <br/><br/>\
+# 기대효과 : 일정한 규칙 아래 참여자 모두에게 공정성과 투명성 확보 \
 ',
   
 // Flipped Learning
