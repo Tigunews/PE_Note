@@ -25,6 +25,7 @@ var this_week_question =
 'XR',
 '차세대 Healtchare Service',
 '멀티 클라우드',
+'CCTV 개인영상 보호방안',
   /*
 '타당도',
 '신뢰도',
