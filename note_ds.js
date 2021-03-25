@@ -2551,6 +2551,22 @@ var answer = answer.concat(
 // 클라우드 컴퓨팅
 '# 정의 : 중앙 IT 서비스 컴퓨팅 환경 <br/>\
 - 인터넷상의 서버를 통하여 데이터 저장, 네트워크, 컨텐츠 사용 등 IT 관련 서비스를 한번에 사용할 수 있는 컴퓨팅 환경 <br/><br/>\
+# 특징 <br/>\
+- On Demand : 사용자 요구에 따른 서비스 <br/>\
+- 리소스 가상화 : NW, Storage, Server 등 가상화 <br/>\
+- 편의성 : Web, 모바일, Client 등 접근 <br/>\
+- 독립성 : 다른 사용자 접근과 무관 <br/>\
+- 보안성 : 외부침입, 해킹으로부터 보호 <br/><br/>\
+# 6대 핵심 기술 <br/>\
+1. 가상 측면 <br/>\
+- 가상서버 제공 기술 : 하이퍼바이저, 도커 <br/>\
+- 가상화 구성 기술 : 오픈 스택 <br/><br/>\
+2. 로드 밸런싱 <br/>\
+- 병렬 처리 : RAZD, Hadoop <br/>\
+- 분산 스토리지 : Object 스토리지 <br/><br/>\
+3. 인프라 측면 <br/>\
+- CDN, 저지연 : Low Latency <br/>\
+- 가상 인프라 설계 : BI, 대시보드 <br/><br/>\
 # 구성 <br/>\
 - User Interaction Interface <br/>\
 - Service Catalog <br/>\
