@@ -27,6 +27,7 @@ var question = question.concat(
 '[공격기법]- DRDoS',
 '시큐어코딩',
 '[시큐어코딩]- TouchPoints 기법',
+'크라임웨어(Crimeware)',
 '[랜섬웨어]- 종류',
 '[랜섬웨어]- DBD',
 '[랜섬웨어]- 드라이브 바이 크립토마이닝(drive-by cryptomining)',
@@ -36,7 +37,6 @@ var question = question.concat(
 '[랜섬웨어]- 배드래빗(Bad Rabbit)',
 '[랜섬웨어]- 사이버범죄 서비스(CaaS, Cybercrime as a Service)',
 '[랜섬웨어]- 갠드크랩(GandCrab) 랜섬웨어',
-'크라임웨어(Crimeware)',
 '멀버타이징(Mulvertising)',
 '피싱(Phishing)',
 '[피싱(Phshing)]- 액티브 피싱',
@@ -577,6 +577,34 @@ var answer = answer.concat(
 <img src = "./img/SevenTouch_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/SevenTouch_2.png" style = "max-width:100%; height:auto;">\
 ',
+  
+// 크라임웨어
+'# 정의 : 불법 활동 조장 프로그램 <br/>\
+- 온라인상에서 불법 활동을 조장하기 위해 만들어진 컴퓨터 프로그램(TTA) <br/>\
+- 스파이웨어, 브라우저 하이젝커, 키로커 등을 포함하여 모두 피싱킷 이라는 공통점에 대부분 웹사이트 개발 소프트웨어와 스패밍 소프트웨어를 포함하고 있고, 인터넷에서 곧바로 사용 가능 <br/>\
+- 중요한 금융정보 또는 인증정보를 탈취하거나 유출을 유도하여 금전적인 이익 등의 범죄행위를 목적으로 하는 악성 코드 <br/><br/>\
+# 특징 : 추적회피, 확산지향, Zero Day Attack <br/><br/>\
+# 주요유형<br/>\
+- 은닉형 : 트로이 목마, 루트킷/익스플로잇, 피싱/파밍, 스파이웨어 <br/>\
+- 정보획득형 : 키보드로거, 메모리 해킹 <br/>\
+- 금전요구형 : 멀버타이징, 랜섬웨어<br/>\
+- 서비스형 : CaaS <br/>\
+- 제우스(Zeus), 스파이아이(SpyEye), 랜섬웨어, 스파이웨어, KeyLogger, 스크린 Scraper, 메일/메신저 Redirect, 세션 하이재커 MITM, 루트킷 등 <br/><br/>\
+# 발전 단계 <br/>\
+- 폼 그래빙(Form grabbing) : 훅 기반 키로깅 <br/>\
+- 안티 디텍션(Anti Detection) : 레지스트리 위치, 파일이름, 서명, 프로토콜 등 변화시켜 회피,은닉 <br/>\
+- 웹 인젝션(MITB) <br/>\
+- 브라우저/OS 확장 지원 <br/>\
+- 소스 코드 입수, 배포 : 제우스, 스파이아이 소스코드 2010, 2011 공개적 배포 <br/>\
+- 크라임 웨어 백신 작동 해제, 회피 <br/>\
+- 모바일 기기 확대 : MITM(Man In The Mobile)<br/>\
+- 삭제 방지 : 삭제해도 재생성 <br/><br/>\
+# 최근경향 <br/>\
+- 1세대 : 은닉형 Malware <br/>\
+- 2세대 : Ransomware <br/>\
+- 3세대 : Crimeware as a Service <br/><br/>\
+* 최근 다양한 형태의 크라임웨어가 SaaS(Software as a Service) 형태로 상업화 빠르게 진행 \
+',
 
 // 랜섬웨어 종류 
 '# 공격대상 관점 (블록크랜)<br/>\
@@ -703,34 +731,6 @@ var answer = answer.concat(
 - 서비스형 랜섬웨어의 일종으로 파일 암호화 기능을 수행한 뒤 가상화폐를 요구하는 랜섬웨어 <br/><br/>\
 ',
 
-// 크라임웨어
-'# 정의 : 불법 활동 조장 프로그램 <br/>\
-- 온라인상에서 불법 활동을 조장하기 위해 만들어진 컴퓨터 프로그램(TTA) <br/>\
-- 스파이웨어, 브라우저 하이젝커, 키로커 등을 포함하여 모두 피싱킷 이라는 공통점에 대부분 웹사이트 개발 소프트웨어와 스패밍 소프트웨어를 포함하고 있고, 인터넷에서 곧바로 사용 가능 <br/>\
-- 중요한 금융정보 또는 인증정보를 탈취하거나 유출을 유도하여 금전적인 이익 등의 범죄행위를 목적으로 하는 악성 코드 <br/><br/>\
-# 특징 : 추적회피, 확산지향, Zero Day Attack <br/><br/>\
-# 주요유형<br/>\
-- 은닉형 : 트로이 목마, 루트킷/익스플로잇, 피싱/파밍, 스파이웨어 <br/>\
-- 정보획득형 : 키보드로거, 메모리 해킹 <br/>\
-- 금전요구형 : 멀버타이징, 랜섬웨어<br/>\
-- 서비스형 : CaaS <br/>\
-- 제우스(Zeus), 스파이아이(SpyEye), 랜섬웨어, 스파이웨어, KeyLogger, 스크린 Scraper, 메일/메신저 Redirect, 세션 하이재커 MITM, 루트킷 등 <br/><br/>\
-# 발전 단계 <br/>\
-- 폼 그래빙(Form grabbing) : 훅 기반 키로깅 <br/>\
-- 안티 디텍션(Anti Detection) : 레지스트리 위치, 파일이름, 서명, 프로토콜 등 변화시켜 회피,은닉 <br/>\
-- 웹 인젝션(MITB) <br/>\
-- 브라우저/OS 확장 지원 <br/>\
-- 소스 코드 입수, 배포 : 제우스, 스파이아이 소스코드 2010, 2011 공개적 배포 <br/>\
-- 크라임 웨어 백신 작동 해제, 회피 <br/>\
-- 모바일 기기 확대 : MITM(Man In The Mobile)<br/>\
-- 삭제 방지 : 삭제해도 재생성 <br/><br/>\
-# 최근경향 <br/>\
-- 1세대 : 은닉형 Malware <br/>\
-- 2세대 : Ransomware <br/>\
-- 3세대 : Crimeware as a Service <br/><br/>\
-* 최근 다양한 형태의 크라임웨어가 SaaS(Software as a Service) 형태로 상업화 빠르게 진행 \
-',
-
 // 멀버타이징
 '# 정의 : Malware + Advertisng<br/>\
 - 광고 서비스의 정상적인 네트워크를 이용하여 악성코드를 유포 및 감염시키는 악의적 공격기법 <br/><br/>\
@@ -753,7 +753,7 @@ var answer = answer.concat(
 ',
 
 // Phishing
-'# 정의 : 정보 절도 사기 수법 <br/>\
+'# 정의 : 사회공학적 방법 / 기술적 은닉기법 / 개인,금융 정보 절도 사기 수법 <br/>\
 - 개인정보(Private Data), 낚시(Fishing) 합성어로 사회공학적 방법 및 기술적 은닉기법을 이용해 민감한 개인정보, 금융제정 정보를 절도하는 금융사기 수법 <br/><br/>\
 # 암기 : 대응-기사법<br/><br/>\
 # 유형 : 도메인 사기, 공기관 사칭, 뉴스/사건 사칭, 가짜 사이트/링크 <br/><br/>\
@@ -765,7 +765,8 @@ var answer = answer.concat(
 ',
 
 //[피싱(Phshing)]- 액티브 피싱
-'# 정의 : Active Phishing <br/>\
+'# 정의 : MITM + Phshing <br/>\
+- Active Phishing <br/>\
 - MITM(Man-in-the-middle) 공격을 피싱 공격에 응용한 것으로 MTTM 피싱 또는 실시간 피싱 <br/><br/>\
 # 대응 : 2채널 인증\
 ',
@@ -896,12 +897,12 @@ var answer = answer.concat(
 ',
   
 // OPC UA
-'# 정의 : <br/>\
+'# 정의 : IEC 61968/61970 / M2M 프로토콜 <br/>\
 - Open Platform Communication Unified Architecture <br/>\
 - IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/><br/>\
 # 아키텍처 <br/>\
 - Session : 사용자 인증, 권한 확인 <br/>\
-- Secure Channel : 무결성, 기밀성 보장, X.509 v3 사용 <br/>\
+- Secure Channel : 무결성, 기밀성 보장, </font color = "red">X.509 v3</font> 사용 <br/>\
 - Transport : 소켓 연결, 에러 복구 및 서비스 거부 공역 방어 <br/><br/>\
 # 통신보안 <br/>\
 1. 연결 성립 <br/>\
@@ -927,7 +928,8 @@ var answer = answer.concat(
 ',
 
 // APT
-'# 정의 : 장기간 은밀 진행 공격 기법 <br/>\
+'# 정의 : 지능적 지속적 위협 / 공격기법 <br/>\
+- Advanced Persistent Threat <br/>\
 - 공격자 대상시스템을 타킷으로 침투 목적 달성 위해 지능적 지속 방법 사용하여 장기간 은밀한 진행하는 공격기법 <br/><br/>\
 # 특징(3) : 사회공학, 비인지, 장기간 <br/><br/>\
 # 기법 : 관찰, Zero-Day Attack, 사회공학기법, 은닉, 권한상승, 유출, 적응/지속, 스피어피싱, 난독화, 스턱스넷, 오프레이션 오로라, 나이트 드래곤, EMC/RSA 공격 <br/><br/>\
