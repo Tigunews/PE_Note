@@ -14,11 +14,12 @@ var question = question.concat(
 '[4차산업]- Smart Hospital',
 '[4차산업]- Smart Car',
 '자율주행자동차',
-'[자율주행자동차]- 트롤리 딜레마',
-'[자율주행자동차]- 모랄머신',
-'[자율주행자동차]- 군집주행 (Platooning)',
-'[자율주행자동차]- LDM',
-'[자율주행자동차]- C-ITS',
+'[자율주행]- 트롤리 딜레마',
+'[자율주행]- 모랄머신',
+'[자율주행]- 군집주행 (Platooning)',
+'[자율주행]- LDM',
+'[자율주행]- C-ITS',
+'[자율주행]- Lidar',
 '안티드론',
 '[정책]- 데이터거버넌스법안',
 '[정책]- K뉴딜',
@@ -663,6 +664,28 @@ var answer = answer.concat(
 - IVN(In-Vehicle Network) : 차량 내부의 차량 게이트웨이 통한 외부와 통신 <br/>\
 - DSRC(Dedicated Short-range Radio Communication) : 차량간 메시지 안전 전송 <br/>\
 - WAVE(IEEE 802.11.p) : 차량간 고속통신 지원 \
+',
+  
+// Lidar
+'# 정의 : 레이저 송출 / 반사 시간 / 위치 좌표 측정 / 레이다 시스템 <br/>\
+- 레이저를 송출하여 반사되어 돌아오는 시간을 측정, 반사체의 위치 좌표를 측정하는 레이다 시스템 <br/><br/>\
+# 특징 : 직진성, 고밀도, 3D 영상 촬영 <br/>\
+# 개념도 <br/>\
+<img src = "./img/LidarStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Source : 레이저 <br/>\
+- Optics : 광학 렌즈 <br/>\
+- Detector : 인식 대상 <br/><br/>\
+# 기술유형 <br/>\
+1. 변조 방식 <br/>\
+- ToF(Time of Flight) : 시간 측정 거리 계산 <br/>\
+- PS(Phase Shift) : 특정 주파수 위상 변화량 측정 <br/><br/>\
+2. 구성 방식 <br/>\
+- 회전형 : 360도 회전 <br/>\
+- 어레이형 : 어레이 구성, 시간차이 인식 <br/>\
+- STUD(Static Unitary Detector) : 고해상도 3차원 영상품질 낮은 비용 확보 <br/><br/>\
+# Lidar, Lader 비교 <br/>\
+<img src = "./img/LidarLaderCompare.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 안티드론
