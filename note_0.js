@@ -10,6 +10,11 @@ var this_week_question =
 '지능형 CCTV',
 'LBS',
 'RTLS',
+'Lidar',
+'클라우드',
+'의료기술',
+'컨테이너 오케스트레이션',
+'SCADA',
   /*
 '타당도',
 '신뢰도',
