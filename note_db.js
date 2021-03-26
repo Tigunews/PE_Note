@@ -287,7 +287,7 @@ var answer = answer.concat(
 # 충돌 발생유형 <br/>\
 <img src = "./img/Serialization_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 직렬화 수행 <br/>\
-<img src = "./img/Serialization_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Serialization_2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // Timestamp
