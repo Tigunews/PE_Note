@@ -501,7 +501,7 @@ var answer = answer.concat(
 <img src = "./img/XREconomyGoal.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 범위 <br/>\
 <img src = "./img/XREConomyRange.png" style = "max-width:100%; height:auto;">\
-'.
+',
  
 // RTE 
 '# 정의 : 지연 최소화 / 실시간 전달 / 의사결정 속도 높 / 경쟁력 극대화 기업 <br/>\

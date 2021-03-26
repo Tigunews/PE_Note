@@ -198,6 +198,8 @@ var question = question.concat(
 '[관리표준][PMBOK]- Scope Creep',
 '[관리표준][PMBOK]- Resource Leveling',
 '[관리표준][PMBOK]- 브룩스 법칙',
+'[관리표준][PMBOK]- 수확 체감의 법칙',
+'[관리표준][PMBOK]- 범위 크립',
 '[관리표준][PMBOK]- 원가관리',
 '[관리표준][PMBOK]- 품질관리',
 '[관리표준]- SW Metrics',
@@ -3485,6 +3487,21 @@ var answer = answer.concat(
 - 오류해결 위해 추가일정지연 가능성 <br/><br/>\
 # 대응 <br/>\
 - 고급인력, 잔업, 아웃소싱, 병행 작업, Critical Chain, Re-Estimation \
+',
+
+// 수확 체감의 법칙
+'# 정의 : 인력 효율 이상 현상 법칙 <br/>\
+- Low of Diminishing returns <br/>\
+- 프로젝트에 작업하는 하나의 요인인 노동자수만 증가할 수록 1인당 수확량은 점차 적어진다는 프로젝트 자원 관리 법칙 <br/><br/>\
+# 설명 <br/>\
+<img src = "./img/LawOfDiminishingReturns.png" style = "max-width:100%; height:auto;">\
+',
+
+// 범위 크립
+'# 정의 : 요구사항만 추가 / 부정적 영향 상황 <br/>\
+- 프로젝트 범위 확장, 통제되지 않은 변경, 일정, 자원, 원가의 조종 없이 요구사항 추가로, 프로젝트 성과 달성에 부정적인 영향을 미치게 되는 상황 <br/><br/>\
+# 설명 <br/>\
+<img src = "./img/ScopeCreep.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 원가관리
