@@ -14,6 +14,9 @@ var question = question.concat(
 '[4차산업]- Smart Factory',
 '[Smart Factory]- CPS',
 '[Smart Factory]- SCADA',
+'[IoT Platform]- oneM2M Mobius',
+'[IoT Platform]- OCF',
+'[IoT Platform]- OPC UA',
 '[4차산업]- Smart Hospital',
 '[4차산업]- Smart Car',
 '자율주행자동차',
@@ -628,6 +631,52 @@ var answer = answer.concat(
 # 보안 취약점 : 정보노출, 불완전한 NW 아키텍처, 실시간 모니터링 부재 <br/><br/>\
 # 보안 요구사항 : 접근제어, 기무가, 인증, 접근차단 및 탐지, 보안정책, 감사기록 <br/><br/>\
 <img src = "./img/SCADA.png", style = "max-width:100%; height:auto;">\
+',
+  
+// oneM2M Mobious Platform 
+'# IoT Platform Overview <br/>\
+- 발전 내용 : Embedded > CPS = IoT Platform <br/>\
+- 구성 : 다양성이 낮은 구성요소 집합(Platform 구성요소) + 다양성이 높은 구성요소 집합 <br/><br/>\
+# 개념 : IoT 공동 서비스 플랫폼 개발 Defacto <br/>\
+- 파편화 플랫폼 개발 구조 통합, 공유하기 위한 사실상 표준화 단체 및 표준 규격 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/oneM2MStructure.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- AE(Application Entity) : Application 계층 M2M 응용 프로그램 서비스 로직 구현 <br/>\
+- CSE(Common Services Entity) : 다양한 AE들이 공통적으로 사용할 수 있는 세트 모듈화 <br/>\
+- NSE(Network Services Entity) : 네트워크 서비스 제공(장치 관리, 위치 서비스, 장치 트리거링) \
+',
+  
+// OCF
+'# 개념 : CoAP 이용 / 상호제어 플랫폼 기술 <br/>\
+- IoT 서비스 구현시 경량형 CoAP 프로토콜로 사물인터넷 장치들을 연결하여 장치에 존재하는 자원들을 상호제어 할 수 있게 하는 표준 플랫폼 기술 <br/><br/>\
+# 특징 <br/>\
+- 유무선 연결기술 유연 탑재 가능 프레임워크 <br/>\
+- 스마트 홈, 자동차, 물류, 헬스케어 등 특화 <br/><br/>\
+# 프레임워크 <br/>\
+<img src = "./img/OCF_Framework.png", style = "max-width:100%; height:auto;">\
+',
+    
+// OPC UA
+'# 정의 : 제조 시스템 SOA / 요구사항 해결 / OCP 재단 표준 <br/>\
+- Open Platform Communication Unified Architecture <br/>\
+- IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/>\
+- 제조 시스템 SOA 도입 따른 요구사항(보안, 손실방지, 중복 처리, 복잡 구조) 해결 위한 OPC 재단 표준 <br/>\
+# 아키텍처 <br/>\
+<img src = "./img/OPCUAFramework.png", style = "max-width:100%; height:auto;"><br/>\
+- Session : 사용자 인증, 권한 확인 <br/>\
+- Secure Channel : 무결성, 기밀성 보장, </font color = "red">X.509 v3</font> 사용 <br/>\
+- Transport : 소켓 연결, 에러 복구 및 서비스 거부 공역 방어 <br/><br/>\
+# 통신보안 <br/>\
+1. 연결 성립 <br/>\
+- 보안설정 획득 : 보안 정책, 모드, 사용자 토큰 정책 <br/>\
+- 보안채널 생성 : Open Secure Channel 통한 생성<br/>\
+- 세션 생성 : 보안 채널 생성시, 난수 생성 통한 클라이언트 인증 <br/>\
+- 세션 활성화 : 사용자토큰, 클라이언트 소프트웨어 인증서 전송 <br/><br/>\
+2. 사용자 변경 <br/>\
+- 세션 종료전 변경시 기능 제공 <br/><br/>\
+3. 통신 보안 기능 구현 : SOAP, XML(WS_Secure Conversation) <br/><br/>\
+* 라이지움 81회 관리 2교시 4번\
 ',
   
 // Smart Hospital 
