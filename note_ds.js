@@ -2073,7 +2073,7 @@ var answer = answer.concat(
 ',
   
 // VDI 
-'# 정의 : SW 이용 중앙 제어 기반 / 데스크탑 가상화 기술 <br/>\
+'# 정의 : 데스크탑 가상화 / 중앙 / 사용자 환경 제공 / 기반 기술 <br/>\
 - Virtual Desktop Infrastructure; 가상데스크톱 인프라 <br/>\
 - 소프트웨어를 이용해 데스크탑을 가상화하고, 이를 중앙에서 사용자 환경으로 제공하는 기반기술 <br/><br/>\
 <img src = "./img/VDI.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -2091,7 +2091,7 @@ var answer = answer.concat(
 3) 단점 : 프로토콜 복잡, Client 성능 요구 <br/>\
 - Host Rendering <br/>\
 1) 개념 : 호스트 CPU, GPU 활용 렌더링 수행 후 화면 캡쳐, 압축, 암호화해 클라이언트 전송 <br/>\
-2) 장점 : 2D/3D 및 어플 무간 사용 가능 <br/>\
+2) 장점 : 2D/3D 및 어플 무관 사용 가능 <br/>\
 3) 단점 : 렌더링/압축부하, NW 대역폭 요구 <br/><br/>\
 # RISK <br/>\
 - 성능 불만족 : 도입시 PoC 통한 만족도 조사 <br/>\
