@@ -545,7 +545,7 @@ var answer = answer.concat(
 * KPC 91회 응용 3교시 7번\
 ', 
   
-// 스마트 팩토리
+// Smart Factory
 '# 정의 : 자동화 + 지능화 공장 <br/>\
 - ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
 <img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/><br/>\
