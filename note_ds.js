@@ -14,6 +14,7 @@ var question = question.concat(
 '[4차산업]- Smart Factory',
 '[Smart Factory]- CPS',
 '[Smart Factory]- SCADA',
+'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
 '[IoT Platform]- OCF',
 '[IoT Platform]- OPC UA',
@@ -633,11 +634,43 @@ var answer = answer.concat(
 <img src = "./img/SCADA.png", style = "max-width:100%; height:auto;">\
 ',
   
-// oneM2M Mobious Platform 
+// IoT Platform
 '# IoT Platform Overview <br/>\
 - 발전 내용 : Embedded > CPS = IoT Platform <br/>\
 - 구성 : 다양성이 낮은 구성요소 집합(Platform 구성요소) + 다양성이 높은 구성요소 집합 <br/><br/>\
-# 개념 : IoT 공동 서비스 플랫폼 개발 Defacto <br/>\
+# 요구사항 Tree <br/>\
+1. 전체 시스템 <br/>\
+- 다양한 통신 프로토콜 연동 : HTTP, MQTT, CoAP, WebSocket, HTTTPS <br/>\
+- 다른 표준과 연동 : 3GPP, OCF, OPC UA, oneM2M, TSN <br/>\
+- 시스템 서비스 및 장치 식별 <br/>\
+- 다중 장치 및 게이트웨이 간 상호작용 <br/>\
+- 다양한 산업 도메인 지원 <br/>\
+- 대규모 확장성 지원 <br/><br/>\
+2. 자원관리 <br/>\
+- 장치 관리 및 구성 <br/>\
+- 네트워크 구성 검색 : topology, protocol <br/>\
+- 그룹화 된 방식의 장치 관리 <br/><br/>\
+3. 데이터 시멘틱 처리 <br/>\
+- 온톨로지 : 관계들로 구성된 일종의 사전 <br/>\
+- 자원 의미 정보 관리 <br/>\
+- 온톨로지에 따른 데이터 분석 <br/><br/>\
+4. 보안 <br/>\
+- 데이터 기밀성 보장 <br/>\
+- 데이터 무결성 보장 <br/>\
+- 시스템 인증 절차 지원 <br/>\
+- 특정 그룹 보안성 <br/><br/>\
+5. 운영 <br/>\
+- 운영 프로그램 모니터링 <br/>\
+- 운영 프로그램 소프트웨어 관리 <br/>\
+- 운영 프로그램 실행 상태 구성 <br/><br/>\
+6. 통신 관리 <br/>\
+- 통신 QoS 설정 지원 <br/>\
+- 우선 순위 통신 요청 분류 <br/>\
+- 데이터 전달 QoS 보장 \
+',
+  
+// oneM2M Mobious Platform 
+'# 개념 : IoT 공동 서비스 플랫폼 개발 Defacto <br/>\
 - 파편화 플랫폼 개발 구조 통합, 공유하기 위한 사실상 표준화 단체 및 표준 규격 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/oneM2MStructure.png", style = "max-width:100%; height:auto;"><br/><br/>\
