@@ -47,7 +47,6 @@ var question = question.concat(
 '스푸핑(Spoofing)',
 'Session Hijacking',
 '산업제어시스템 보안',
-'[산업보안]- OPC UA',
 '스턱스넷(stuxnet)',
 'APT',
 '[APT]- Leteral Movement',
@@ -893,26 +892,6 @@ var answer = answer.concat(
 # ICT 시스템 보안 구조 비교 <br/>\
 <img src = "./img/ICS_ICT_SEC.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 8번 <br/>\
-* 라이지움 81회 관리 2교시 4번\
-',
-  
-// OPC UA
-'# 정의 : IEC 61968/61970 / M2M 프로토콜 <br/>\
-- Open Platform Communication Unified Architecture <br/>\
-- IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/><br/>\
-# 아키텍처 <br/>\
-- Session : 사용자 인증, 권한 확인 <br/>\
-- Secure Channel : 무결성, 기밀성 보장, </font color = "red">X.509 v3</font> 사용 <br/>\
-- Transport : 소켓 연결, 에러 복구 및 서비스 거부 공역 방어 <br/><br/>\
-# 통신보안 <br/>\
-1. 연결 성립 <br/>\
-- 보안설정 획득 : 보안 정책, 모드, 사용자 토큰 정책 <br/>\
-- 보안채널 생성 : Open Secure Channel 통한 생성<br/>\
-- 세션 생성 : 보안 채널 생성시, 난수 생성 통한 클라이언트 인증 <br/>\
-- 세션 활성화 : 사용자토큰, 클라이언트 소프트웨어 인증서 전송 <br/><br/>\
-2. 사용자 변경 <br/>\
-- 세션 종료전 변경시 기능 제공 <br/><br/>\
-3. 통신 보안 기능 구현 : SOAP, XML(WS_Secure Conversation) <br/><br/>\
 * 라이지움 81회 관리 2교시 4번\
 ',
 
