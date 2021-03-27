@@ -3672,6 +3672,7 @@ P 히스토그램 : Data 분포 <br/>\
 # 절차 (계식성량대(계실)감) <br/>\
 <img src = "./img/위험관리_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/위험관리_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/RiskAdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 대응방안 <br/>\
 1. 부정적 위험 대응 (회전완수)<br/>\
 - 에스컬레이션 : PM 권한 밖 <br/>\
