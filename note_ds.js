@@ -12,7 +12,8 @@ var question = question.concat(
 'Micro Grid',
 '[Energy]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
-'[Smart Factory]- CPS',
+'CPS',
+'CPS 요구사항',
 '[Smart Factory]- SCADA',
 'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
@@ -612,6 +613,41 @@ var answer = answer.concat(
 - 신뢰성 확보 : 정형검증 요구 <br/>\
 - 프라이버시 : 과도한 정보 수집 금지 <br/>\
 - 정보보안 : 산업 기밀 유출 방지 \
+',
+
+// CPS 요구사항
+'# 요구사항 종류 <br/>\
+- 기능 요구사항 : 시스템이 제공해야 하는 서비스에 대한 내용 <br/>\
+- 비기능 요구사항 : 성능, 보안, 가용성, 안전과 같은 시스템에 필요한 특성 <br/><br/>\
+# CPS 특성 <br/>\
+- Scalability : 기능, 성능, 물리적 규모 확장 <br/>\
+- Composability : CPS, 서브시스템간 융복합 <br/>\
+- Interactivity : CPS 간, 휴먼 간 상호 작용 <br/>\
+- Dependability : 신뢰성, 회복성, 유지보수성, 안전성, 보안성 <br/>\
+- Timing : 실시간성, 동기화 기능 <br/>\
+- Interoerability : 대규모 CPS 발생 이종성 극복 <br/>\
+- Intelligence : 지능형 서비스 제공 위한 응용 차원 <br/><br/>\
+# 자동차 CPS <br/>\
+1. 기능 요구사항 <br/>\
+- Actuation : 가속, 감속, 조향장치 작동 있어야 함 <br/>\
+- Communication : 응용들 간 통신 위한 표준 소프트웨어 I/F 제공 해야 함 <br/><br/>\
+2. 비기능 요구사항 <br/>\
+- 상호작용성 : 전력 효율 위해 Core Off 기능 지원 <br/>\
+- 실시간성 : V2X 통신에서 상황정보 100ms 주기 정보 송수신 <br/><br/>\
+# 항공기 CPS <br/>\
+1. 기능 요구사항 <br/>\
+- Actuation : 추력 방향 Vectoring 해야 함 <br/>\
+- Communication : 파티션간 데이터 교환 통신 기능 보유 <br/><br/>\
+2. 비기능 요구사항 <br/>\
+- 시스템 확장성 : 호환성, 이식성, 처리 용량 설정 <br/>\
+- 실시간성 : 무인항공기의 영상 촬영 수 ms 이내 실시간 처리 <br/><br/>\
+# Smart Factory CPS <br/>\
+1. 기능 요구사항 <br/>\
+- Actuation : 설정된 공정에 따라 생산라인 구성 해야 함<br/>\
+- Communication : OPC/UA, PROFINET등 다양한 산업용 통신 기술 지원 해야 함 <br/><br/>\
+2. 비기능 요구사항 <br/>\
+- 고신뢰성 : 상황 발생 지능적 예측(예측정확도 n% 이상) <br/>\
+- 실시간성 : 발생신호 설정된 시간내 도달 보장, 초과시 알림 기능(수 ms이내 응답) \
 ',
   
 // [산업제어스템]- SCADA
