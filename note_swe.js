@@ -3329,7 +3329,14 @@ var answer = answer.concat(
 - 프로젝트 납기 준수를 위해 프로젝트의 범위 변경 없이 일정을 조정하는 기법 <br/><br/>\
 # 종류 (크자 패병)<br/>\
 - Crashing : 자원추가 <br/>\
-- Fast Tracking : 작업 병행 추진 \
+- Fast Tracking : 작업 병행 추진 <br/><br/>\
+# 실질적인 일정단축 방안 <br/>\
+- Re Estimation : 자원/범위/일정 검토 단축 <br/>\
+- 인적자원 품질 : 도메인 및 해당 IT 기술 및 지속 교육 <br/>\
+- 초과 근무 : 주 52시간 고려 초과 근무 수행 <br/>\
+- CCM 버퍼 축소 : Min, Max 조정 <br/>\
+- 범위 조정 : 의사결정자 협의 / 중재 <br/>\
+- 테스트 범위 : STA, FTA 확인, QC 레벨 조정 \
 ',
   
 // CPM
