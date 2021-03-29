@@ -2547,13 +2547,18 @@ var answer = answer.concat(
 * 라이지움 86회 2교시 4번\
 ',
   
-// MCDC
-'# 정의 : 개별조건식 <br/>\
-- 의사결정에 포함된 기본 조건이 다른 조건과 독립적으로 구성되며, 그에 따른 결과가 테스트 데이터 집합에 의해 실행된 코드의 정도로 Condition / Decision 커버리지를 향상시킨 테스트 커버리지 <br/><br/>\
+// MC/DC
+'# 정의 : 개별조건식 다른 조건 영향 x / 전체 결정문 결과 독립적 영향 / 테스트케이스 도출 커버리지 <br/>\
+- 소프트웨어의 화이트박스 테스트에서 개별조건식이 다른 조건식의 영향을 받지 않고 전체 결정문의 결과에 독립적으로 영향을 미치는 테스트 케이스를 도출하는 테스트 커버리지 <br/><br/>\
 # 특징 <br/>\
 - 결과에 독립적 <br/>\
 - N+1 Test Case <br/>\
 * 모든 조건 중에 결과에 영향 없는 조건 빼기 <br/><br/>\
+# 도출 프로세스 <br/>\
+<img src = "./img/MCDC_Process.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 국제 표준 사례 <br/>\
+- 차량(ISO 26262) : ASIL D Level <br/>\
+- 항공(DO-178B,C) : Level A 획득 위한 요구사항 <br/><br/>\
 # 사례 (대N중테) <br/>\
 <img src = "./img/MCDC_Example.png", style = "max-width:100%; height:auto;">\
 ',
