@@ -1,5 +1,6 @@
 var question = question.concat(
 '데이터베이스',
+'데이터베이스 트랜잭션',
 '데이터 무결성',
 'ACID',
 'Isolation Level',
@@ -137,6 +138,20 @@ var answer = answer.concat(
 - 동시 공용성 : 다중 멀티 사용 지원토록, 동시 공용을 위한 조직, 저장, 관리 요구됨 <br/>\
 - 내용에 의한 참조 : 데이터의 내용, 참조를 원하는 데이터의 값에 따라 참조 \
 ',
+
+// 데이터베이스 트랜잭션
+'# 정의 : 한번에 처리되어야할 일련의 작업단위 <br/>\
+- 한번에 처리되어야 할 하나 또는 둘 이상의 일련의 작업단위로써 데이터베이스에서 행해지는 작업의 논리적 단위 (Logical Unit of Work) <br/><br/>\
+# 내용 <br/>\
+- 보장기법 : ACID <br/>\
+- 상태전이도 : Active Partial Committed, Failed, Committed, Aborted <br/>\
+- 병행제어 기법 : 갱읽모연 / 락타낙다 <br/><br/>\
+# MSA 에서 Transaction 처리기법 <br/>\
+- 2 Phase  Commit : Prepare, Commit 두 단계 커밋 / 분산 트랜잭션 지원 DB 만 사용 <br/>\
+- Saga Pattern : 트랜잭션 처리 Application 담당(Eventual Consistency) / 별도 개발 필요 <br/><br/>\
+* ITPE 6회 1교시 1번\
+',
+
 // 데이터무결성 
 '# Data 무결성 : 데이터 보호 성질 / ACID / 무효갱신 <br/>\
 - 데이터의 ACID 확보 위해 무효갱신으로부터 데이터를 보호하는 성질 <br/>\
