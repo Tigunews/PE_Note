@@ -1202,13 +1202,37 @@ var answer = answer.concat(
 ',
   
 // Faster RCNN
-'<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+'# 정의 : Region Proposal, Classification 단계적 순차적 수행 / 2-Stage / 객체 탐지 인공신경망 모델 <br/>\
+- Regional Proposal(관심영역 추출) 단계와 Classification 단계를 순차적으로 수행하는 대표적인 2-Stage 객체 탐지 인공신경망 모델 <br/><br/>\
+# 특징 <br/>\
+- Fast R-CNN과 SPP-net의 장점 결합 <br/>\
+- 정확도 향상 및 기존 R-CNN 계열에 비해 속도 향상 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/FasterRCNN_Structure.png" style = "max-width:100%; height:auto;"><br/>\
+- Regional Proposal Layer : 다수의 객체가 존재하는 위치 후보 검출 <br/>\
+- 객체위치 후보 : Regional Proposal Layer로 부터 추출된 객체 위치 후보 <br/>\
+- Regression : 경계 박스(객체 위치) 정보 추출 <br/>\
+- Classifier : 객체 분류 정보 추출 <br/><br/>\
+<img src = "./img/FasterRCNN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 6회 관리 1교시 4번 <br/>\
 * KPC 95회 관리 3교시 5번\
 ',
   
 // YOLO
-'# 정의 : 이미지 전체에서 다수의 Bounding box를 예측하고, 동시에 각 박스에 Class Probability를 계산하는 통합된 모델 사용 알고리즘 <br/><br/>\
+'# 정의 : Regional Proposal, Classification 동시 수행 / 1-Stage 객체 탐지 인공신경망 모델 <br/>\
+- You Only Look Once <br/>\
+- Regional Proposal(관심영역 추출)과 Classification을 동시에 수행함으로써 정확도보다는 빠른 속도를 특징으로 하는 1-Stage 객체 탐지 인공신경망 모델 <br/><br/>\
+# 특징 <br/>\
+- 최초 실시간 객체 탐지 모델 <br/>\
+- 2015년 제안, 최근 YOLO v4 <br/>\
+- 하나의 네트워크, 경계박스 위치 검출 및 객체 분류 동시 수행 <br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/YOLO_Structure.png" style = "max-width:100%; height:auto;"><br/>\
+- Convolution Layer : 다양한 크기 경계박스, 객체의 분류 정보 출력 <br/>\
+- Feature Maps : Convolution Layer 로부터 추출된 특징 정보 <br/>\
+- Output : 경계 박스와 분류 정보 포함 <br/><br/>\
 <img src = "./img/YOLO.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 6회 관리 1교시 4번 <br/>\
 * KPC 95회 관리 3교시 5번\
 ', 
 
