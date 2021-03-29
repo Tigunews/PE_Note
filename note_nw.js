@@ -90,6 +90,7 @@ var question = question.concat(
 'NOS',
 '대역확산',
 'NW 가상화',
+'[NW 가상화]- VPN',
 '[NW 가상화]- NFV',
 '[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
@@ -1724,6 +1725,21 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 2. 서비스 비교 <br/>\
 <img src = "./img/NWVirutlaizationServiceCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 87회 응용 4교시 5번\
+',
+
+// VPN
+'# 정의 : 터널 / 공중망, 사설망 / 네트워크 서비스<br/>\
+- 암호화된 터널을 통해 인터넷에 연결함으로써 공중망(인터넷망)을 사설망(전용회선)처럼 이용할 수 있는 네트워크 서비스 <br/><br/>\
+# 특징 <br/>\
+- 투명성 제공, 경제성, 커스터마이징 <br/><br/>\
+# 기술요소 <br/>\
+- 터널링 : 패킷 가상경로 설정 <br/>\
+- 암호화 : 패킷 암호화, 기밀성 제공, 공개키 암호화 방식 <br/>\
+- 인증 : MAC, 해시함수 이용, 메시지 인증, 무결성 <br/>\
+- 접근 제어 : 패킷 필터링 통한 회선 접근 제어 <br/><br/>\
+# 구현 <br/>\
+<img src = "./img/VPN_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 6회 관리 1교시 7번\
 ',
   
 // NFV
