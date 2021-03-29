@@ -19,6 +19,6 @@ var this_week_question =
 
 /* ITPE 6 */
 /*
-'데이터베이스 트랜잭션', 'DaaS 인증','MC/DC','YOLO','Faster RCNN','랜섬웨어','표적형 랜섬웨어',
+'데이터베이스 트랜잭션', 'DaaS 인증','MC/DC','YOLO','Faster RCNN','랜섬웨어','표적형 랜섬웨어','XR',
 */
 ];
