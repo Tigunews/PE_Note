@@ -149,7 +149,7 @@ var answer = answer.concat(
 # MSA 에서 Transaction 처리기법 <br/>\
 - 2 Phase  Commit : Prepare, Commit 두 단계 커밋 / 분산 트랜잭션 지원 DB 만 사용 <br/>\
 - Saga Pattern : 트랜잭션 처리 Application 담당(Eventual Consistency) / 별도 개발 필요 <br/><br/>\
-* ITPE 6회 1교시 1번\
+* ITPE 6회 관리 1교시 1번\
 ',
 
 // 데이터무결성 

@@ -147,6 +147,7 @@ var question = question.concat(
 '[클라우드]- 클라우드 보안이슈',
 '[클라우드][정책]- 정보자원등급 평가기준(2014.04.)',
 '[클라우드][정책]- 보안인증 제도',
+'[클라우드][보안인증]- DaaS 인증',
 '[클라우드][정책]- 디지털서비스 전문계약제도',
 '[클라우드][정책]- 디지털서비스 전문시스템',
 '[클라우드]- Grid Computing',
@@ -2904,6 +2905,19 @@ var answer = answer.concat(
 # 인증 절차 <br/>\
 <img src = "./img/CloudSecFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 3교시 6번\
+',
+
+// DaaS 인증
+'# 클라우드 보안인증제 인증 범위 <br/>\
+- IaaS + SaaS -> DaaS(서비스형 데스크톱) <br/>\
+- 기존인증 : IaaS, SaaS, SaaS 간편인증 <br/>\
+- 추가인증 : 2020.11. DaaS 분야 인증 추가 <br/><br/>\
+# DaaS 분야 보안인증 범위 <br/>\
+<img src = "./img/DaaSArea.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# DaaS 분야 인증기준 <br/>\
+- 14개 분야 110개 통제 항목 <br/>\
+- ISO/IEC 27017 내용 비슷 <br/><br/>\
+* ITPE 6회 관리 1교시 2번\
 ',
   
 // 디지털서비스 전문계약제도
