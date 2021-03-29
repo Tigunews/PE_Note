@@ -1148,23 +1148,18 @@ var answer = answer.concat(
 // 바이오 인증
 '# 정의 : 신체적, 행동적 특성 활용 인증 기술<br/>\
 - 사람의 측정 가능한 신체적 또는 행동적 특성을 자동화된 장치로 추출하여 본인 여부를 비교, 확인하기 위한 수단으로 활용하기 위한 기술 <br/><br/>\
-# 기반기술 : Data Collection, Transmission(압축, 암호화), Signal Processing(특징추출), Database, Decision <br/><br/>\
-# 바이오 인식 기술 분류 기준 <br/>\
-- 행동학적 특징 : 음성, 서명, 키보드 입력, 걸음거리(Walking Style) <br/>\
-- 신체적 특징 : 해부학적 지표(표면적/고정적) : 지문, 얼굴, 홍체, 망막, 정맥 <br/>\
-- 신체적 특징 : 생리학적 지표 생체신호(내부적/유동적) <br/>\
-=> 전기 : 심전도(ECG/EKG, 심장박동-전압), 뇌전도(EEG, 대뇌-전압), 근전도(EMG, 근육-전위차) <br/>\
-=> 기계/물리 : 심탄도(BCG) <br/>\
-=> 광학/화학 : 광용적맥파(PPG) <br/><br/>\
-# 바이오 인증 설계지표 : 민감도, 오류율, FAR, FRR, CER(Crossover Error Rate), EEG(Equal Error Rate) <br/><br/>\
+# 유형 <br/>\
+- 정적 : 지문(CNN), 홍채(266 패턴), 안면(혈관, 열), 정맥(적외선 잔영) <br/>\
+- 동적 : 음성인식(화자 독립,종속 분류), 서명인식(필체 역학), 걸음걸이(지능형 영상감시) <br/>\
+- 생체 신호 : 심전도(ECG/EKG), 뇌전도(EEG), 근전도(EMG), 심탄도(BCG) <br/><br/>\
 # 고려 : 사생활 침해, 생체정보 절도, 익명성 상실, 생체정보 DB화 문제, 정부에 의한 오남용 <br/><br/>\
-<img src = "./img/바이오인증_1.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/바이오인증_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 바이오 인증 설계지표 : 민감도, 오류율, FAR, FRR, CER(Crossover Error Rate), EEG(Equal Error Rate) <br/><br/>\
 <img src = "./img/바이오인증_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * FAR(False Acceptance Ratio) : 타인 수락율 <br/>\
 * FRR(False Rejection Ratio) : 본인 거부율 <br/>\
 * EER(Equal Error Rate) <br/>\
-* CER(Crossover Error Rate) : 교차 오류율 \
+* CER(Crossover Error Rate) : 교차 오류율 <br/><br/>\
+* ITPE 6회 2교시 1번\
 ',
 
 // 얼굴인식 알고리즘 
