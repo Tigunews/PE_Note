@@ -45,6 +45,7 @@ var question = question.concat(
 '[의료기술]- ISO 25237',
 '[의료기술]- 의료 AI',
 '[의료기술]- 차세대 Healthcare service',
+'기능성 게임',
 'OTT(Over the top)',
 '[OTT]- 웹인증 API',
 '인증기술',
@@ -1101,6 +1102,13 @@ var answer = answer.concat(
 <img src = "./img/SmartHealthcareTree.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 흐름 <br/>\
 <img src = "./img/HealthcareFlow.png" style = "max-width:100%; hegiht:auto;">\
+',
+
+// 기능성 게임
+'# 정의 : 순기능 확장 게임 <br/>\
+- 기존의 게임이 가지고 있던 단순한 재미 요소 이외에, <font color = "red">교육, 학습, 훈련, 치료</font> 등의 특별한 목적을 접목시켜 게임이 가지는 순기능을 더욱 확장시킨 형태의 게임 (TTA)<br/><br/>\
+# 특징 : 재미, 효과, 과정중시 <br/><br/>\
+# 적용 : 의료, 스포츠(Wii), 교육(에듀게임, 한매타자), 교통(안전), 환경보호, 군사(워게임)\
 ',
 
 // OTT
