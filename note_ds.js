@@ -416,8 +416,8 @@ var answer = answer.concat(
 ',
   
 // Smart Grid
-'# 정의 : 전력 + ICT / 최적화 기술 <br/>\
-- 전력 시스템 기술과 ICT 기술을 융합하여 수급조건 전력 생산, 수송, 소비하는 최적화 기술 <br/><br/>\
+'# 정의 : 제 2차 전력 혁명 / 전기 + ICT / 지능화, 고도화 / 효율 극대화 / 전력망 기술 <br/>\
+- 전기, ICT 기술 활용, 에너지 효율 향상, 낭비 절감, 지능화 고도화 효율 극대화 전력망 기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SmartGridStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
