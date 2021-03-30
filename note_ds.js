@@ -221,9 +221,6 @@ var question = question.concat(
 '[Gartner 2021][Resilient Delivery]- AI 엔지니어링',
 '[Gartner 2021][Resilient Delivery]- 초자동화',
 'Ray Tracing',
-'압축기술',
-'[압축기술][무손실]- Huffman Coding',
-'[압축기술][혼합]- MPEG',
 );
 
 var answer = answer.concat(
@@ -4327,62 +4324,5 @@ var answer = answer.concat(
 - 사실적 프로토타입 : CAD 응용, Prototype 모델링 활용 <br/>\
 - 과학 연구 : 소리 파형, 전자기파 파향 시각화 모델링 <br/><br/>\
 * 라이지움 85회 관리 1교시 1번\
-',
-  
-// 압축기술
-'# 정의 : 데이터 저장공간과 전송대역폭의 효과적 이용을 위해 데이터 크기를 줄이는 기법 <br/><br/>\
-# 종류 <br/>\
-<img src = "./img/ComressionTech.png" style = "max-width:100%; height:auto;"><br/>\
-- 무손실 : 압축전 = 복원데이터 / 정보손실x, 압축률 낮음<br/>\
-- 손실 : 압축전 <> 복원데이터 / 정보손실o, 압축률 높음<br/>\
-- 혼합 : 손실/무손실 모두 사용 / 정보손실o, 압축률 높음 \
-',
-  
-// Huffman Coding
-'# 정의 : 빈도수 기반 무손실 압축기술<br/>\
-- 데이터를 구성하는 단위 정보들의 빈도수를 기반으로 하여 각 단위 정보를 표현한 무손실 압축기술 <br/><br/>\
-# 절차 <br/>\
-1. 압축 <br/>\
-- 초기화 : 출현 빈도수 따라 나열 <br/>\
-- 해 선택 : 빈도수 낮은 두개의 노드 선택, 결합, 두 노드 위 부모 노드 새로 생성 <br/>\
-- 실행 가능성 검사 : 리프 노드 조건 만족 검사 <br/>\
-- 최종해 검사 : Huffman 트리 완성 여부, 반복 수행 <br/><br/>\
-2. 해제 <br/>\
-- 버퍼 준비 : 임시 저장용 버퍼 준비 <br/>\
-- 비트 해석 : 아직 읽지 않은 부분 남아 있을 경우 비트 Read <br/>\
-- 비트 순회 : 읽은 비트가 Leaf 노드가 될 떄까지 이진 탐색트리 순회 <br/><br/>\
-# 예제 <br/>\
-<img src = "./img/HuffmanCodingEx1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/HuffmanCodingEx2.png" style = "max-width:100%; height:auto;">\
-',
-  
-// MPEG
-'# 정의 : 공간/시간적 동영상 압축 알고리즘 <br/>\
-- 정지영상의 압축/복원인 JPEG를 동영상에 적용시켜 공간적 압축 뿐만이 아니라 시간적 압축 기법을 적용한 표준 동영상 압축 알고리즘 <br/><br/>\
-# 특징 <br/>\
-- 공간 : 화면내 압축 <br/>\
-- 시간 : 화면간 압축 <br/><br/>\
-# 공간적 압축기법 <br/>\
-1. 색차, 공간주파수 연관성 : 상관도, 색차 비례 관계 <br/><br/>\
-2. 적용 알고리즘 <br/>\
-- DCT(Discrete Cosine Transform) : 이산 코사인 변환으로 높은 공간 주파수 필터링 <br/>\
-- 양자화 : 인간이 구별하기 힘든 범위내에서 DCT 계수 반올림 <br/><br/>\
-3. 절차 <br/>\
-- 분할 : 기존 영상 분할 구성 <br/>\
-- 변환 : 2차원 평면 공간의 컬러 정보 -> 2차원 주파수 정보 (푸리에 변환) <br/>\
-- 처리 : 인간이 구별하기 힘든 범위내 DCT 계수 반올림 <br/>\
-<font color = "red">\
-* 푸리에 변환(Fourier Transform) : 시간, 공간에 대한 함수를 주파수 성분으로 분환하는 변환 <br/><br/>\
-</font>\
-# 시간적 압축기법 <br/>\
-1. Motion Estimation <br/>\
-- 메크로 블록 설정 : 16*16 분할 <br/>\
-- 메크로 블록 검색 : 동일 매크로 블럭 검색 및 확인 <br/>\
-- Motion Vector 산출 : 변화 블록 움직임 Vector 화 <br/><br/>\
-2. Motion Compensation <br/>\
-- 매크로 블록 복사 : 프레임 이동 위치 공지 및 보상 영상 구성 <br/>\
-- 움직임 보상 : 모든 매크로 블록 모션 벡터 근거, 복사되어 보상 영상 구성 <br/>\
-- 부호화 : 보상 영상, 원래 프레임 통한 움직임 좌표 저장(데이터양 적음) <br/><br/>\
-* 116회 응용 4교시 6번\
 ',
 );
