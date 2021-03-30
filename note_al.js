@@ -1652,9 +1652,21 @@ var answer = answer.concat(
 '<img src = "./img/Fitting.png" style = "max-width:100%; height:auto;">',
 
 // TensorFlow 
-'# 정의 : 머신러닝 오픈소스 라이브러리 <br/>\
-- Google에서 만든, 딥러닝 프로그램을 쉽게 구현할 수 있도록 다양한 기능을 제공해주는 라이브러리 <br/>\
+'# 정의 : 다양한 디바이스 / 풍부 기술 / 2015 구글 / 오픈소스 딥러닝 프레임워크 <br/>\
+- 다양한 디바이스를 지원하고 풍부한 기능 및 기술 지원으로 널리 사용되고 있는 2015년 구글이 공개한 오픈 소스 딥러닝 프레임워크 <br/>\
 <img src = "./img/TensorFlowAPI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- High-Level 딥러닝 모델 구현 API : 모델 내부 대한 지식 없이도 함수 형태 사용 가능 <br/>\
+- 풍부한 개발자 지원 : 양질의 문서 제공, 커뮤니티 지원 활발 <br/>\
+- 오픈 소스 : 소스, 문서 공개, 커스터마이징 및 튜닝 가능 <br/>\
+- 특징 : 세밀 제어, 코드 사용 복잡 <br/>\
+- 프레임워크 구성 : 라이브러리(정의 및 런타임), 계산 그래프 <br/>\
+- 메커니즘 : 정적 선언 및 실행(Define-and-run) <br/>\
+- 병렬처리 : 분산 학습 과정 대한 코딩 필요 <br/>\
+- 시각화 : 풍부한 학습과정, 성능 시각화 제공(Tensor Board) <br/>\
+- 모델 배포 : REST API 통한 즉각 배포(TensorFlow Serving) <br/>\
+- 코드 작성 : 다양한 빌트인 API, 디버깅 메소드 필요, 빠른 수정 어려움 <br/>\
+- 프로젝트 : Magenta, Sonnet, Ludwig <br/><br/>\
 # 구성요소 <br/>\
 - Tensor : 다차원 배열 데이터 표현 방식 <br/>\
 - Dataflow Graph : 텐서 형태 데이터 딥러닝 연산 <br/>\
