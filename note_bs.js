@@ -394,11 +394,46 @@ var answer = answer.concat(
 '# 정의 : ITSM을 위한 Practice 모음집 <br/>\
 - IT Infrastructure Library <br/>\
 - IT 서비스 관리에 대한 프레임워크 구현을 돕기 위한 문서들의 집합 <br/><br/>\
-# 프로세스 : 계참설획수개 <br/>\
-# 구성요소 : 조정파가 <br/>\
-# 3.0, 4.0 비교<br/>\
-- 전설전운지 / 계참설획수개 <br/>\
-<img src = "./img/ITIL.png" style = "max-width:100%; height:auto;">\
+# 버전별 주요 변화 <br/>\
+1. 2.0(2000) <br/>\
+- 내용 : 서비스 제공과 지원영역 분리 <br/>\
+- 효과 : 서비스 간 연계 부재 <br/><br/>\
+2. 3.0(2011) <br/>\
+- 내용 : 생명주기, 프로세스 연결성, 지속적 개선 <br/>\
+- 효과 : 클라우드 및 오픈소스 환경 수용부재 <br/><br/>\
+3. 4.0(2019) <br/>\
+- 내용 : 서비스 가치 체계 도입, Practice 중심 IT 관리 <br/>\
+- 효과 : 클라우드 환경 운영절차 강화 <br/><br/>\
+# ITILv4.0 SVS(Service Value System) <br/>\
+<img src = "./img/ITILv4SVS.png" style = "max-width:100%; height:auto;"><br/>\
+- Guiding Principles : ITIL 가치 수혜 위한 7원칙 <br/>\
+- Governance : 지시/모니터링/평가 통한 조직체계 관리 구성 <br/>\
+- Service Value Chain : 계참설획수개 <br/>\
+- Practices : 34가지 일반, 서비스, 기술 관리 프랙티스 <br/>\
+- Continual Improvement : ITSM 성공 위한 지속적 개선 적용 <br/><br/>\
+# ITILv4.0 SVC(Service Value Chain) <br/>\
+<img src = "./img/ITILv4SVC.png" style = "max-width:100%; height:auto;"><br/>\
+1. Plan <br/>\
+- 내용 : 조직 전체 제품, 서비스, 비전 이해 및 개선 방향 제시 <br/>\
+- 사례 : Portfolio Management - 프로그램 관리 지원 <br/><br/>\
+2. Improve <br/>\
+- 내용 : 모든 가치사슬 활동 개선, 최적화 <br/>\
+- 사례 : Continual Improvement - 변화하는 시장 고려 필요 <br/><br/>\
+3. Engage <br/>\
+- 내용 : 이해관계자 요구, 투명성 이해 후 참여와 소통 <br/>\
+- 사례 : Relationship Management - 모든 수준 참여, 관계 설정, 실무 구성 <br/><br/>\
+4. Design / Transition <br/>\
+- 내용 : 신속한 전환, 기대치 충족 <br/>\
+- 사례 : Organization Change Management - 지속적 변경관리 <br/><br/>\
+5. Obtain / Build <br/>\
+- 내용 : 필요한 때와 장소에서 사용 가능하도록 지속적 개선 <br/>\
+- 사례 : Project Management - 공식적 프로젝트 관리 접근 방식 <br/><br/>\
+6. Delivger / Support <br/>\
+- 내용 : 기대치 따라 전달/지원 보장 <br/>\
+- 사례 : IT Asset Management - IT 자산 수명 주기 계획 및 관리, 가치 극대화 <br/><br/>\
+# 3.0, 4.0 비교 (<font color = "red"> * 전설전운지 / 계참설획수개, 조정파가 </font>)<br/>\
+<img src = "./img/ITIL.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 6회 관리 2교시 5번\
 ',
  
 // SKMS
