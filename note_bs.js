@@ -100,7 +100,9 @@ var answer = answer.concat(
 - 기술,조직,전략,프로세스 <br/><br/>\
 - 4P : 제품(Product), 가격(Price), 유통(Place), 촉진(Promotion) <br/><br/>\
 - 비용, 접근성, 품질 <br/><br/>\
-- 비전, 목표, 전략, Item \
+- 비전, 목표, 전략, Item <br/><br/>\
+# Lead 문구 <br/>\
+- 기업, 사회를 품다. ESG 경영 개요 \
 ',
  
 // 국제 표준화 기구
