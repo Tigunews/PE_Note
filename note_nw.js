@@ -592,31 +592,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - QUIC에서의 혼잡 제어 방식, 손실될 패킷 이동경로, 미리 예측한 트래픽 의한 속도 저하 방지 알고리즘 <br/>\
 <img src = "./img/BBR.png" style = "max-width:100%; height:auto;">\
 ',
-  
-// LBS
-'# 정의 : 위치정보 근거 서비스 <br/>\
-- Location Based Service <br/>\
-- 이동 중에 있는 사용자가 그들의 지리학적 위치, 소재 또는 알려진 존재에 대해 파악할 수 있는 위지정보에 근거한 서비스<br/><br/>\
-# 기술요소 <br/>\
-1. 무선 측위 기술(LDT) <br/>\
-- Location Determination Technology <br/>\
-- 개념 : 사용자의 위치파악 목적 사용 기술 <br/>\
-- 요소 기술 : GPS, Cell ID <br/><br/>\
-2. LBS 미들웨어(LEP) <br/>\
-- Location Enable Platform <br/>\
-- 개념 : 위치정보를 관리, 부가기능들 종합적 제공 <br/>\
-- 요소기술 : MMDB, 공간 인덱싱, 인증,접근통제 <br/><br/>\
-3. LBS 응용 기술(LAP) <br/>\
-- Location Application Program <br/>\
-- 개념 : 위치기반 서비스 제공 위한 컨텐츠 처리, 운영 필요기술 <br/>\
-- 요소기술 : GIS, L-CRM, Location Trigger Marketing <br/><br/>\
-# 유형 <br/>\
-- 네트워크 기반 : Cell-ID <br/>\
-- 위성신호 기반 : GPS <br/>\
-- Wi-Fi 신호 기반 : Wi-Fi AP, WPS <br/>\
-- 혼합 측위 기반 : XPS <br/><br/>\
-* 98회 응용 4교시 1번\
-',
 
 // IPSec
 '# 정의 : 인증헤더, 인증헤더 이용 IP 보안 프로토콜 <br/>\
@@ -1051,6 +1026,31 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Advertising 개선 : 긴 패킷 Chaining <br/>\
 - 실내측위 : AoA, AoD, Beacon <br/><br/>\
 * KPC 96회 응용 3교시 8번\
+',
+  
+// LBS
+'# 정의 : 위치정보 근거 서비스 <br/>\
+- Location Based Service <br/>\
+- 이동 중에 있는 사용자가 그들의 지리학적 위치, 소재 또는 알려진 존재에 대해 파악할 수 있는 위지정보에 근거한 서비스<br/><br/>\
+# 기술요소 <br/>\
+1. 무선 측위 기술(LDT) <br/>\
+- Location Determination Technology <br/>\
+- 개념 : 사용자의 위치파악 목적 사용 기술 <br/>\
+- 요소 기술 : GPS, Cell ID <br/><br/>\
+2. LBS 미들웨어(LEP) <br/>\
+- Location Enable Platform <br/>\
+- 개념 : 위치정보를 관리, 부가기능들 종합적 제공 <br/>\
+- 요소기술 : MMDB, 공간 인덱싱, 인증,접근통제 <br/><br/>\
+3. LBS 응용 기술(LAP) <br/>\
+- Location Application Program <br/>\
+- 개념 : 위치기반 서비스 제공 위한 컨텐츠 처리, 운영 필요기술 <br/>\
+- 요소기술 : GIS, L-CRM, Location Trigger Marketing <br/><br/>\
+# 유형 <br/>\
+- 네트워크 기반 : Cell-ID <br/>\
+- 위성신호 기반 : GPS <br/>\
+- Wi-Fi 신호 기반 : Wi-Fi AP, WPS <br/>\
+- 혼합 측위 기반 : XPS <br/><br/>\
+* 98회 응용 4교시 1번\
 ',
 
 // IPS
