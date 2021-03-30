@@ -2155,6 +2155,8 @@ var answer = answer.concat(
 # 고려사항 <br/>\
 - 도입 전 : 벤더 마찰, 이슈 대응, HW 종속 <br/>\
 - 도입 후 : 데이터 용량 대응, 백업 정책 프로세스 확인 <br/><br/>\
+# CI HCI 비교 <br/>\
+<img src = "./img/CIHCICompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 응용 4교시 8번<br/>\
 * KPC 94회 관리 3교시 2번\
 ',
