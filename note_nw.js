@@ -30,6 +30,8 @@ var question = question.concat(
 '[Internet]- IPv6',
 '[IPv6]- 헤더구성',
 '[IPv6]- 전환기술',
+'[IPv6]- 패킷 단편화',
+'[IPv6]- ICMPv6',
 '[IPv6]- 보안취약성 및 대응방안',
 'Subnet',
 'Subnetting',
@@ -700,7 +702,8 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 // [IPv6]- 헤더구성
 '# 헤더 구성 <br/>\
-<img src = "./img/IP_Header.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/IP_Header.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">기본헤더(40Byte) > 확장 헤더 > 상위 계층 라우터</font><br/><br/>\
 - 헤더길이 필드 제거 <br/>\
 - 서비스 유형 필드 -> 트래픽 클래스 필드 <br/>\
 - 식별, 플래그, 프래그먼트 옵셋 필드 제거 <br/>\
@@ -726,6 +729,36 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 2. 전송계층 릴레이 방식 : 세션 중간 / Fragment, ICMP 변환 용이 / 내장 IP 변환 <br/>\
 3. 응용계층 Gateway 방식 : ALG 은닉, 성능 향상 / 헤더변환 단점 해소 / ALG 모드 별도 실행 <br/>\
 * KPC 94회 4교시 6번\
+',
+
+// 패킷 단편화
+'# 정의 : L2, L3 / 다양한 크기 적응, 공정한 액세스 / PDU 나눔 동작 <br/>\
+- L2, L3 계층에서 기억장치 낭비 축소, NW 통신시 다양한 크기 제약 적응, 공정한 액세스를 위해 프로토콜의 기본 교환 단위인 PDU(Protocol Data Unit)을 더 작은 단위로 나누는 동작 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PacketFragmentOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# IPv4 패킷 단편화 <br/>\
+<img src = "./img/PacketFragmentIPv4.png" style = "max-width:100%; height:auto;"><br/>\
+- Length : Maximum = MTU <br/>\
+- ID : Data Group(동일해야 함) <br/>\
+- FragFlag : 0(마지막), 1(진행) <br/>\
+- Offset : 순서 재결합 위한 위치 명시 <br/><br/>\
+# IPv6 패킷 단편화 <br/>\
+<img src = "./img/PacketFragmentIPv6.png" style = "max-width:100%; height:auto;"><br/>\
+- IP 단편화 필요 없음 : 라우팅 효율 높임 <br/>\
+- 단편화 제어 필드 -> 확장 헤더 방식 변경 <br/>\
+- 발신지에서만 단편화 시행 <br/><br/>\
+* ITPE 6회 응용 4교시 6번\
+',
+
+// ICMPv6
+'# 정의 : TCP/IP / IP 패킷 처리 문제 / 알림 프로토콜 <br/>\
+- Internet Control Message Protocol <br/>\
+- TCP/IP에서 IP 패킷을 처리할 때 발생되는 문제를 알려주는 프로토콜 <br/><br/>\
+# 추가기능 <br/>\
+- PMTUD(Path MTU Discovery) : MTU 값이 가장 적은 링크의 MTU 값 확인 과정 <br/>\
+- MLD(Multicast Listener Discovery) : 멀티캐스트 그룹 호스트 확인, 관리 <br/>\
+- NDP(Neighbor Discovery Protocol) : IPv6 통한 MAC 주소 알아내고, 통신 가능 제공 <br/><br/>\
+* IPTE 6회 응용 4교시 6번\
 ',
 
 // [IPv6]- 보안취약성 및 대응방안
