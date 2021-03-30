@@ -2195,9 +2195,18 @@ var answer = answer.concat(
 - 내부 성능 테스트 : 예상되는 최대 수용 가능 동시 단말 사용자 서버처리 검증 <br/>\
 - 외부 성능 테스트 : 예상되는 최대 부하에 대한 네트워크 처리 인프라 능력 검증 <br/><br/>\
 # 절차 <br/>\
-- Workload Modeling : Web Log, 시스템 사용 현황, Current, Target 분석 <br/>\
-- Performance Modleing : 환경 구축, Model 선정, 테스트 대상 선정<br/>\
-- Scripting & Execution : 시나리오 구현, Execution, 장애 분석/수정, 실행결과 분석 <br/><br/>\
+1. 계획 단계 <br/>\
+- 테스트 요구사항 수집 : 비기능 요구사항 기준, 범위, 목표 대한 상위 레벨 기대치 수집 <br/>\
+- 현행 시스템 부하 분석 : 대상 or 레거시 시스템 부하량 분석 <br/>\
+- 성능 테스트 계획 수립 : 목적, 범위, 목표, 대상업무, 일정, 조직, 테스트, 시작/종료조건 <br/><br/>\
+2. 설계/구현 단계 <br/>\
+- 테스트 스크립트 설계 : 업무별 스크립트 작성 <br/>\
+- 테스트 데이터 준비 : 레거시 시스템 추출된 데이터 사용 <br/>\
+- 테스트 시나리오 설계 : 부하 분석 결과 통한 시나리오 설계 <br/><br/>\
+3. 수행/종료 단계 <br/>\
+- 테스트 수행 : 유형별 접근, 테스트 수행 <br/>\
+- 성능 튜닝 : 목표치 분석, 병목 제거 활동 <br/>\
+- 테스트 결과 정리 : 유형별 측정 결과 비교 분석, 정리 <br/><br/>\
 # 목차 예시 <br/>\
 1. 성능시험 개요 <br/>\
 2. 성능 평가 기준 <br/>\
@@ -2206,6 +2215,18 @@ var answer = answer.concat(
 5. Workload 모델링 (Weblog, Current Workload, Target Workload) <br/>\
 6. Performance 모델링 (단위 App, 혼합 BP, 모니터링 항목) <br/>\
 7. Performance Test Results (단위 테스트 결과, 권고안, 혼합 BP 테스트 결과 권고안) <br/><br/>\
+# 주요 평가 지표 <br/>\
+1. 처리지표 <br/>\
+- TPS(Transaction Per Second) : Active User / MRT(Mean Response Time) <br/>\
+- Throughput : 시간 당 처리량 <br/>\
+- Resource Usage : CPU, 메모리 등 HW 리소스 사용량 <br/><br/>\
+2. 시간지표 <br/>\
+- Response Time : 응답 소요시간 <br/>\
+- Think Time : 사용자가 생각하는 시간 <br/>\
+- Request Interval Time : 클릭 간 시간 <br/><br/>\
+3. 사용자 지표 <br/>\
+- Concurrent User : 동시 사용자 수 <br/>\
+- Active User : 활성 사용자 수 <br/><br/>\
 # 유형<br/>\
 1. 방법 (루스티가) <br/>\
 - 루프백 : 업무별 병목지점 <br/>\
@@ -2219,6 +2240,8 @@ var answer = answer.concat(
 - 확장성 : 증설전후 성능 <br/><br/>\
 * Little\'s Law : 공간 내에 머무는 객체수(L)는 객체의 공간 유입량(A)과 객체가 머무는 시간(W)에 비례한다 <br/>\
 - L = AW <br/><br/>\
+# Tool : 자동화(Apache JMeter, DBMonster), 관리 시스템(Qtset, TestLink) <br/><br/>\
+* ITPE 6회 관리 3교시 4번 <br/>\
 * 123회 응용 3교시 5번\
 ',
 
