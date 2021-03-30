@@ -56,6 +56,7 @@ var question = question.concat(
 '[소프트웨어 아키텍처][아키텍처 모델]- MVC 모델',
 '[소프트웨어 아키텍처][아키텍처 모델]- Pipe & Filter',
 '[소프트웨어 아키텍처][아키텍처 모델]- Batch Process',
+'[소프트웨어 아키텍처][아키텍처 모델]- Blackboard Pattern',
 '[설계단계][소프트웨어 아키텍처]- 품질속성',
 '[설계단계][소프트웨어 아키텍처]- 품질속성 시나리오',
 '[설계단계][소프트웨어 아키텍처]- 아키텍처뷰',
@@ -349,7 +350,6 @@ var question = question.concat(
 '[방법론]- 임베디드 개발 방법론',
 'Open SEED',
 'BPMN(Business Process Model and Notation)',
-'블랙보드(BlackBoard) 패턴',
 '연동계획(Rolling Wave Planning)',
 'SW 사업정보 저장소',
 'SW 사업 대가선정 가이드 (2019 개정판)',
@@ -1355,6 +1355,17 @@ var answer = answer.concat(
 - 한 컴포넌트가 수행 완료후 다음 컴포넌트 수행하여 전통적 데이터 처리 응용분야에 사용되는 아키텍처 모델 <br/><br/>\
 <img src = "./img/BatchProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 3교시 5번\
+',
+
+// Blackboard Pattern
+'# 정의 : 명확 해결전략 x / 해결 위한 패턴 <br/>\
+- DNA, 감정분석등 명확한 해결전략이 없는 문제를 해결하기 위한 패턴 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BlackboardPattern.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 블랙보드 영역(솔루션 영역) : 문제 해결 위한 객체 수집 영역 <br/>\
+- 지식 소스 : 특정/특별 모듈들의 집합 <br/>\
+- 제어 컴포넌트 : 지식소스 모듈의 제어 \
 ',
 
 // [소프트웨어 아키텍처]- 품질속성
@@ -5621,10 +5632,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 '# 정의 : 그래픽 기반 프로세스 모델링 방법론 / 비즈니스 분석가, 개발자, 관리자 <br/>\
 - 비즈니스 분석가, 개발자, 관리자 등의 모든 비즈니스 프로세스 관련자에게 모델링 요소를 제공하는 그래픽 기반의 프로세스 모델링 방법론 \
 ',
-
-// 81
-'# 정의 : 미해결 문제 접근 방법 / 블랙보드, 지식소스, 제어컴포넌트<br/>\
-- 결정 가능한 해결방법이 마련되지 않은 문제를 접근하고자 할 때 유용. 블랙보드(blackboard), 지식소스(knowledge source), 제어컴포넌트(control component)로 구성',
 
 // 연동계획
 '# 정의 : 반복적 계획 기법 / 점진적 상세화 / 가까운시기 상세 / 미래 작업 상위 수준 계획 <br/>\
