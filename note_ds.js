@@ -1198,19 +1198,16 @@ var answer = answer.concat(
 '<a href = "https://www.kisa.or.kr/uploadfile/201909/201909031758548278.pdf">참고문헌</a><br/><br/>\
 # 정의 : 스스로 선택 신원 정보 관리 기술 <br/>\
 - 사용자가 자신의 신원증명을 직접 관리하고, 공개 대상과 범위를 스스로 선택할 수 있는 분산형 자기주권 신원 정보 관리 기술 <br/><br/>\
-# 신원증명 발전 단계 <br/>\
-1. 센터형 : 서비스 제공자 / 서비스 제공자 보유, 요청에 의한 제공 <br/>\
-2. 연방형 : 연합내 서비스 제공자 / 연합내 다른 기관에서도 동일 인증 <br/>\
-3. 사용자 중심형 : 사용자가 선택한 서비스 제공자 / 별도의 신원관리 사업자 , 통제 관리 <br/>\
-4. 자기주권형 : 사용자 / 사용자가 신원관리의 중심, 제어 운용 <br/><br/>\
-<img src = "./img/신원모델진화.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/분산신원절차.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-# 주요 기술 <br/>\
-1. 구성요소 <br/>\
-- 분산 ID : 탈중앙화된 디지털 개인정보 식별체계, 신원 증명의 키 역할 <br/>\
-- 블록체인 : 위변조 불가의 특성과 보안성을 활용하여 분산 ID 보관 및 수요자 검증을 위한 공개키를 보관하는 구조 <br/>\
-- 영지식 증명 : 개인정보 주체가 스스로 정보에 대한 주권을 갖고 신원 인증 <br/>\
-2. 표준요소 <br/>\
+# 아키텍처 <br/>\
+<img src = "./img/DID_Architecture.png" style = "max-width:100%; height:auto;"><br/>\
+- Verifiable Data Registry : DID, DID Dcoument 저장, Global Key-Value, DLT-Block Chain <br/>\
+- DID : Scheme, Method, Method-Specific Identifier 구성, DID Document 1:1 매칭 <br/>\
+- DID Dcoument : Public Key 값(Peer 간 인터랙션 암호화), Service End-Point 기록 문서, JSON <br/>\
+- DID Controller : DID Document(Public Key, Service End-Point) 추가 제거 권한가진 엔티티 DID 값 <br/>\
+- DID Resolver : DID 값 입력 -> DID Document 결과 반환, SW or HW <br/><br/>\
+# DID, DID Document 예시 <br/>\
+<img src = "./img/DID_DIDDocument_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 표준요소 <br/>\
 - DIDs : 전체적인 아이디 관리 방식 표준화 / W3C<br/>\
 - DKMS : Decentralized Key Management System; DIDs에서 필요한 사설키를 위해 제안된 공개 표준 / OASIS <br/>\
 - DID Auth : 아이디 소유자가 개인키를 가지고 간단히 인증할 수 있는 방법에 대한 표준 / DIF <br/>\
@@ -1220,6 +1217,14 @@ var answer = answer.concat(
 - 아이콘루프 : 블록체인 기반 자기주권형 신원 인증 서비스 DPASS 출시 <br/>\
 - 경찰청 : 이동통신 3사의 공통 본인인증 PASS 이용<br/>\
 - LG CNS, 캐나다 "애버님"과 블록체인 기반 신분인증체게 구현 <br/><br/>\
+# 신원증명 발전 단계 <br/>\
+1. 센터형 : 서비스 제공자 / 서비스 제공자 보유, 요청에 의한 제공 <br/>\
+2. 연방형 : 연합내 서비스 제공자 / 연합내 다른 기관에서도 동일 인증 <br/>\
+3. 사용자 중심형 : 사용자가 선택한 서비스 제공자 / 별도의 신원관리 사업자 , 통제 관리 <br/>\
+4. 자기주권형 : 사용자 / 사용자가 신원관리의 중심, 제어 운용 <br/><br/>\
+<img src = "./img/신원모델진화.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/분산신원절차.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 6회 관리 4교시 5번\
 ',
   
 // DID
