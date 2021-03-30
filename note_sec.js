@@ -7,13 +7,16 @@ var question = question.concat(
 '[암호학]- 혼돈과 확산',
 '[암호학]- 암호문 분석(공격모델)',
 '[암호학]- 알고리즘 보안강도',
-'[암호학]- 블록 암호화',
-'[블록암호]- ECB',
-'[블록암호]- CBC',
-'[블록암호]- PCBC',
-'[블록암호]- CFB',
-'[블록암호]- OFB',
-'[블록암호]- CTR',
+'[암호학]- 블록암호화',
+'[블록암호화]- Feistel Cipher',
+'[블록암호화]- SPN Cipher',
+'[블록암호화]- 블록암호화 운영모드',
+'[블록암호화 운영모드]- ECB',
+'[블록암호화 운영모드]- CBC',
+'[블록암호화 운영모드]- PCBC',
+'[블록암호화 운영모드]- CFB',
+'[블록암호화 운영모드]- OFB',
+'[블록암호화 운영모드]- CTR',
 '[암호]- Base64',
 '[공개키]- 디피헬만 알고리즘',
 'ECC',
@@ -234,12 +237,54 @@ var answer = answer.concat(
 - 암호 알고리즘이나 시스템의 암호키 또는 해시함수의 취약성을 찾아내는데 소요되는 작업량 수치화한 정도 \
 ',
   
-// 블록 암호화
+// 블록암호화
+'# 정의 : 평문 고정길이 블록 단위 / 블록마다 암호화 / 고정길이 암호문 생성 기술 <br/>\
+- 평문을 고정 길이의 블록단위로 나누어 각 블록마다 암호화를 수행하여 고정된 크기의 블록 단위 암호문을 생성하는 암호화 기술 <br/><br/>\
+# 특징 <br/>\
+- 고정길이 : N-Bit 평문 블록 > N-Bit 암호화 블록 변환 <br/>\
+- 암호화 구조 : SPN, Feistel 구조 등 S-Box, P-Box, XOR, Shift 활용 암호화 <br/>\
+- 운용모드 : IV, 패딩, 시프트, 순환 기능 선택적 이용 운영 방식 <br/><br/>\
+* ITPE 6회 관리 2교시 4번\
+',
+
+// Feistel Cipher
+'# 정의 : 라운드 방식 / 암호화 방식 <br/>\
+- 특정 계산함수의 반복인, 라운드 함수로 이루어진 암호화 방식 <br/><br/>\
+# 암호강도 결정 요소 <br/>\
+- 평문 블록 길이 : 64 bit 이상<br/>\
+- 키의 길이 : 128 bit 권장<br/>\
+- 라운드의 수 : 16회 이상 <br/><br/>\
+# 구조 : 암호화 = 복호화 <br/>\
+- 암호화 과정 Input : Plain Text, 보조키 Ki <br/>\
+- 복호화 과정 Input : Cipher Text, 보조키 Ki(역순) <br/>\
+<img src = "./img/FeistelStructure.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 유형 <br/>\
+- DES : 56 bit 키, 64 bit 평문 -> 64 bit 암호문, 미국 표준 알고리즘 <br/>\
+- LEA : 빅데이터, 클라우드, IoT / 128 bit 경량화 알고리즘 <br/>\
+- HIGHT : RFID, USN / 저전력 경량화 / 64 bit 평문, 128 bit 키 <br/>\
+- SEED : 전자 상거래, 무선통신 / 128 bit 평문, 128 bit Key, 16 Round, 128 bit 암호문 <br/><br/>\
+* ITPE 6회 관리 2교시 4번\
+',
+
+// SPN Cipher
+'# 정의 : Shannon 이론 / Substitution(치환), Permutation(재배열) Cipher 중첩 형태 암호화 기술 <br/>\
+- Substitution Permutation Network Structure <br/>\
+- 여러개의 함수를 중첩하면, 개별 함수로 이루어진 암호보다 안전하다 라는 Shannon 이론 근거, 고전 암호의 일종인 Substitution Cipher, Permutation Cipher 중첩 형태 암호화 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/SPN_Structure.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 유형 <br/>\
+- AES : DES 대체하는 미국 연방 표준, 대칭키 기반 / 입력 평문 128 bit 고정, 가변 길이 키 <br/>\
+- ARIA : 학계, 연구소, 정부기관 공동개발, 초경량 환경 / 고정길이 128bit 입,출력, 가변 길이 키 <br/><br/>\
+* ITPE 6회 관리 2교시 4번\
+',
+
+// 블록암호화 운영모드
 '# 정의 : 하나의 키 하에서 블록 암호를 반복적으로 안전하게 이용하는 절차 <br/><br/>\
 # 개요도 : 블록 암호화만 사용 / 자기 동기 스트림 <br/>\
 <img src = "./img/BlockEncryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 비교 <br/>\
 <img src = "./img/BlockEncryptionCompare.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
   
@@ -254,6 +299,7 @@ var answer = answer.concat(
 - 가장 간단한 처리 <br/>\
 - 고속/병렬 처리 가능 <br/>\
 - 다른 운영 모드에 비해 기밀성 낮음 <br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
   
@@ -268,6 +314,7 @@ var answer = answer.concat(
 - 평문의 반복이 암호문에 반영되지 않음 <br/>\
 - 복호화만 병렬 처리 가능 <br/>\
 - 임의의 암호문 블록을 복호화 가능 <br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
   
@@ -280,6 +327,7 @@ var answer = answer.concat(
 <img src = "./img/PCBC_Decryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 특징 <br/>\
 - 데이터와 암호화 결과를 한번 더 XOR 처리를 통해 복호화로 복잡도를 높인 암호화 <br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
 
@@ -294,6 +342,7 @@ var answer = answer.concat(
 - 패딩이 필요 없고, 복호화만 병렬처리 가능 <br/>\
 - 임의의 암호문 블록을 복호화 가능 <br/>\
 - 암호화에서 병렬 처리 불가능 <br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
 
@@ -308,6 +357,7 @@ var answer = answer.concat(
 - 패딩 필요 없음, 암/복호화 사전 준비 가능 <br/>\
 - 암/복호화가 같은 구조 <br/>\
 - 병렬 처리 불가능 <br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
 
@@ -322,6 +372,7 @@ var answer = answer.concat(
 - 패딩 필요 없음 <br/>\
 - 암/복호화 사전 준비 가능 <br/>\
 - 병렬 처리 가능 <br/><br/>\
+* ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',
 
