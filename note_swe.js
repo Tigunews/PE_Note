@@ -5830,6 +5830,8 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 '# 정의 : 사업비가 20억 이상이고, 사업기간이 6개월 이상일 경우, 요구정의, 설계, 종료 3단계 감리를 통하여 정보화 사업의 품질 및 과업이행 여부의 적절성을 확인하는 제도 <br/><br/>\
 # 절차 : 착수회의 > 현장감리 > 감리보고서작성 > 종료회의 > 감리보고서접수 <br/>\
 <img src = "./img/AuditLevel3Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 세부내용 <br/>\
+<img src = "./img/AuditLevel3Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 종료단계 감리 <br/>\
 - 정의 : 사업자가 제출한 과업대비표의 과업내용 이행 결과를 적합, 부적합 판정하는지 점검하는 감리 <br/>\
 - 절차 : 예비조사 > 현장가리 > 시정조치확인 <br/><br/>\
