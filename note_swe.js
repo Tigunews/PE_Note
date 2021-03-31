@@ -367,6 +367,7 @@ var question = question.concat(
 '[감리]- 유지보수 감리',
 '[감리]- 감리기준 감리업무 절차',
 '[감리]- 정보시스템 하드웨어 규모산정 지침',
+'[감리]- 21년 개정사항',
 'PMBOK 6th 주요개정 내용',
 '지식영역별 세부 프로세스 49개',
 '발주 프로세스',
@@ -5912,6 +5913,10 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - SPECjbb2015 : Java App 기반 시나리오 / max-jOPS (Fail발생 직전 최대부하) <br/>\
 - SPC-1 : 비휘발성 스토리 표시 실제 환경 시뮬레이션 / Input Output Per Second (In 40, Out 60) <br/><br/>\
 * 119회 응용 2교시 5번\
+',
+
+// 21년 개정사항
+'<img src = "./img/Audit21Upgrade.png" style = "max-width:100%; height:auto;">\
 ',
   
 // PMBOK 6th 주요개정 내용 <br/>\
