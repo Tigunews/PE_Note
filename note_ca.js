@@ -945,7 +945,18 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // NUMA
-'# 정의 <br/>\
+'# 정의 : UMA 한계 극복 / 더 큰 규모 시스템 구성 / 병렬 컴퓨팅 모델 <br/>\
+- Non-uniform Memory Access <br/>\
+- UMA 모델의 한계를 극복하고 더 큰 규모의 시스템을 구성하기 위한 병렬 컴퓨팅 모델 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/NUMA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 다수 UMA 모델들이 상호연결망에 의해 접속 <br/>\
+- 전역 공유기억장치 (GSM) 갖음 <br/><br/>\
+# 세부 종류 <br/>\
+- 지역(Local) 기억장치 액세스 <br/>\
+- 전역(Global) 기억장치 액세스 <br/>\
+- 원격(Remote) 기억장치 액세스 <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
 ',
 
