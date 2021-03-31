@@ -961,12 +961,29 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // NORMA
-'# 정의 <br/>\
+'# 정의 : 원격 기억장치 / 직접 액세스 x 구조 <br/>\
+- No-Remote Memory Access <br/>\
+- 프로세서가 원격 기억장치는 직접 액세스할 수 없는 병렬 컴퓨팅 모델 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/NORMA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 프로세서들과 기억장치들은 메시지-전송(Message-passing) 지원하는 상호연결 접속 <br/>\
+- 분산-기억장치 시스템(Distirbuted-memory)로도 부름 <br/>\
+- 상호 연결망 : Mesh, Hypercube, Torus <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
 ',
 
 // COMA
-'# 정의 <br/>\
+'# 정의 : 캐쉬 동작 / 하나의 공통 주소 공간 / 병렬 컴퓨팅 모델 <br/>\
+- 각 프로세서가 가지고 있는 기억장치들이 모드 캐쉬로 동작하며, 하나의 공통 주소 공간을 가지는 병렬 컴퓨팅 모델 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/COMA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 시스템 내 기억장치 존재하지 않음 <br/>\
+- 다른 캐시 대한 엑세스는 분산 캐시 디렉토리에 의해 지원 <br/>\
+- 초기 데이터들이 임의 캐시 저장, 실행 시간동안 데이터 사용할 프로세서의 캐시로 이동 <br/>\
+- 사례 : Data Diffusion Machine(DDM), KSR-1 <br/>\
+- Numa + Cache 일관성 = ccNUMA(Cache-Coherent NUMA) <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
 ',
   
