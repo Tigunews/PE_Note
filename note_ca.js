@@ -25,7 +25,6 @@ var question = question.concat(
 'Buffering / Spooling',
 '결함허용 시스템(FTS:Fault Tolerant System)',
 '고가용성(High Availability)',
-'[고가용성]-NUMA 시스템',
 '우선순위역전현상',
 'WDT',
 '반도체 종류',
@@ -45,9 +44,14 @@ var question = question.concat(
 '[Cache]- MESI',
 'DMA',
 'FeRAM',
-'Cloud GPU',
+'병렬 컴퓨팅',
+'[병렬 컴퓨팅]- UMA',
+'[병렬 컴퓨팅]- NUMA',
+'[병렬 컴퓨팅]- NORMA',
+'[병렬 컴퓨팅]- COMA',
 'GPGPU',
 '[GPGPU]-CUDA',
+'Cloud GPU',
 'Many core CPU',
 'Fabric Computing',
 '양자컴퓨팅',
@@ -592,52 +596,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/고가용성_2.png" style = "max-width:100%; height:auto;">\
 ',
 
-// [고가용성]-NUMA 시스템
-'# 정의 : 불균일 메모리 접근기법 <br/>\
-- Non-Uniform Memory Access <br/>\
-- CPU 메모리 공유방식에 따른 분류의 한 종류 <br/>\
-- 다중 프로세서(CPU) 환경에서 메모리 Access Time 최소화를 위하여 개별 프로세서에 독립적인 로컬메모리가 고속으로 연결된 구조<br/>\
-<img src = "./img/NUMA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 특징 <br/>\
-- NUMA 환경에서는 프로세서 클러스터 구성이 용이하며, CPU Scale-Out 확장시 공유 메모리 접근에 따른 성능 문제 해결 <br/>\
-- SMP(Symmetric Multi-Processing) 확장성 문제 해결 <br/>\
-- MPP(Massively Parallel Processor) 이식성 문제 해결 <br/><br/>\
-# 유형 <br/>\
-1. ccNUMA <br/>\
-- Cache-Choerent NUMA <br/>\
-- 캐시 일관성을 하드웨어적으로 구현 <br/>\
-- 현재의 모든 NUMA 컴퓨터들은 하드웨어적으로 캐시 일관성 제공 <br/><br/>\
-2. RMC <br/>\
-- Reflective Memory Cluster <br/>\
-- 개별 노드마다 운영체제 복사본 구성 <br/>\
-- 노드간 데이터 복사 및 이동 <br/><br/>\
-3. COMA <br/>\
-- Cache Only Memory Architecture <br/>\
-- NUMA 구조에서 메모리 대신 단일의 큰 캐시를 가지는 구조 <br/>\
-- 캐시 일관성 제공 <br/>\
-- 최근 상용시스템 사용x <br/>\
-- 캐시 내 데이터의 정해진 위치 없음 <br/><br/>\
-# 지원기술 <br/>\
-1. MS <br/>\
-- MS-SQL Server에서 NUMA node 수 확인 Query <br/>\
-- Query <br/>\
-SELECT DISTINCT memory_node_id <br/>\
-FROM sys.dm_os_memory_clerks <br/><br/>\
-2. Oracle<br/>\
-- 기본설정이 disable <br/>\
-- init.ora 파일 파라미터 변경 (_enable_NUMA_support=TRUE) <br/><br/>\
-3. Linux <br/>\
-- /proc/$pid/numa_maps <br/>\
--> 논리주소와 NUMA 노드 할당 매핑정보 확인 가능 <br/><br/>\
-- numactl -show(-s) 옵션 <br/>\
--> 현재 프로세서의 NUMA 정책 확인 <br/><br/>\
-4. Google <br/>\
-- Google\'s Warehouse Scale Computers <br/>\
-- 고성능 메모리 관리자 -tcmalloc 제공 <br/>\
--> tcmalloc의 기능을 일부 개선하여 NUMA 대응할 수 있는 환경 제공 <br/><br/>\
-* 그리타 \
-',
-
 // 우선순위 역전 현상 
 '# 정의 : TASK 수행 불가 현상 / 낮은 우선순위 / 임계영역 대기<br/>\
 - 낮은 우선순위를 가진 TASK에 의해 높은 우선순위를 가진 TASK가 임계 영역 대기 때문에 Block되어 수행되지 못하는 현상 <br/><br/>\
@@ -951,20 +909,54 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 '정의 : 차세대 비휘발성 메모리 / 강유전체 <br/>\
 - DRAM과 비슷한 구조를 갖고 있으나 강유전체를 가지고 있어 비휘발성을 가지며 기존 메모리에 비해 빠른 속도, 높은 쓰기/지우기 횟수, 낮은 전력을 사용하는 차세대 비휘발성 메모리',
 
-// Cloud GPU
-'# 암기 <br/>\
-- API 리모팅 : Lib <br/>\
-- 가상화 : Driver <br/>\
-- 하드웨어 지원 : Module <br/><br/>\
-# 종류 <br/>\
-- API 리모팅 : 벤더가 가상화 지원 x <br/>\
-<img src = "./img/CloudGPU_API.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- 반가상화 및 전 가상화 : GPU 드라이버 조정 <br/>\
-<img src = "./img/CloudGPU_Driver.png" style = "max-width:100%; height:auto;"><br/>\
-* QEMU (Quick EMUlator) : Hardware 가상화의 기능을 갖춘 오픈소스 CPU 에뮬레이터 <br/><br/>\
-- 하드웨어 지원 가상화 : 벤더 가상화 지원 o <br/>\
-<img src = "./img/CloudGPU_HW.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 93회 2교시 8변\
+// 병렬 컴퓨팅
+'# 정의 : 다수 프로세서 / 여러개 프로그램, 분할된 부분 / 분담 동시 처리 프로세스 <br/>\
+- 다수의 프로세서들을 이용하여 여러개의 프로그램들 혹은 프로그램의 분할된 부분들을 분담하여 동시에 처리하는 프로세스 <br/><br/>\
+# 필요성 <br/>\
+- 프로세서 처리 속도 한계 <br/>\
+- 고성능 컴퓨터 요구 증대 <br/>\
+- 인터넷 사용자 증대 <br/>\
+- 딥러닝 기술 발전 <br/><br/>\
+# 구현 위한 조건 <br/>\
+1. 설계 부분 <br/>\
+- 많은 수 프로세서들로 하나의 시스템 구성 필요 <br/>\
+- 작고 저렴한 고속 프로세서 <br/>\
+- 자원 공유성 <br/>\
+-> VLSI 집적도 증가, 상호 배제 메커니즘 구현 <br/><br/>\
+2. 실행 부분 <br/>\
+- 프로그램의 분할 가능성 <br/>\
+- 병렬처리가 순차처리 결과와 같아야 함 <br/>\
+- 병렬 프로그램 언어와 컴파일러 개발 <br/>\
+-> 문제 분할과 프로세스 간 통신 해결 필요, OpenCL, CUDA, OpenMP <br/><br/>\
+* ITPE 6회 관리 3교시 2번\
+',
+
+// UMA 
+'# 정의 : 상호연결망 / 주기억장치 공유 / 병렬 컴퓨팅 <br/>\
+- Uniform Memory Access <br/>\
+- 모든 프로세서들이 상호연결망에 의해 접속된 주기억장치 공유 방식 병렬 컴퓨팅 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/UMA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 장점 : 하드웨어 간단, 프로그래밍 편리 <br/>\
+- 단점 : 공유자원 경합, 시스템 크기 한계 <br/>\
+- 사례 : 공유-버스(30 이하), 크로스바 MIN(64 이하) <br/><br/>\
+* ITPE 6회 관리 3교시 2번\
+',
+
+// NUMA
+'# 정의 <br/>\
+* ITPE 6회 관리 3교시 2번\
+',
+
+// NORMA
+'# 정의 <br/>\
+* ITPE 6회 관리 3교시 2번\
+',
+
+// COMA
+'# 정의 <br/>\
+* ITPE 6회 관리 3교시 2번\
 ',
   
 // GPGPU
@@ -1004,6 +996,22 @@ FROM sys.dm_os_memory_clerks <br/><br/>\
 <img src = "./img/CUDA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CUDA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CUDA_3.png" style = "max-width:100%; height:auto;">\
+',
+
+// Cloud GPU
+'# 암기 <br/>\
+- API 리모팅 : Lib <br/>\
+- 가상화 : Driver <br/>\
+- 하드웨어 지원 : Module <br/><br/>\
+# 종류 <br/>\
+- API 리모팅 : 벤더가 가상화 지원 x <br/>\
+<img src = "./img/CloudGPU_API.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 반가상화 및 전 가상화 : GPU 드라이버 조정 <br/>\
+<img src = "./img/CloudGPU_Driver.png" style = "max-width:100%; height:auto;"><br/>\
+* QEMU (Quick EMUlator) : Hardware 가상화의 기능을 갖춘 오픈소스 CPU 에뮬레이터 <br/><br/>\
+- 하드웨어 지원 가상화 : 벤더 가상화 지원 o <br/>\
+<img src = "./img/CloudGPU_HW.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 93회 2교시 8변\
 ',
   
 // Many core CPU
