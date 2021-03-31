@@ -5752,11 +5752,14 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 개선 시점 : 장기, 단기 <br/>\
 - 과업내용 이행 여부 : 적합, 부적합, 점검 제외 <br/><br/>\
 # 감리 법,제도 <br/>\
-<img src = "./img/AuditRule.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/AuditRule.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 감리 수행형태 <br/>\
+<img src = "./img/AuditProcessType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 감리 Overview \
 ',
  
 // 공통 감리
-'# 정의 : 모든 유형 공통 적용 절차 <br/>\
+'# 정의 : 모든 유형 공통 적용 절차 (상주, 상시 감리 적용 x) <br/>\
 - 모든 유형의 정보화 사업에 공통적으로 적용되는 일반 감리 절차 <br/><br/>\
 # 공통 감리 절차 (예현시)<br/>\
 1. 예비조사 (준실감) <br/>\
@@ -5825,7 +5828,8 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
  
 // 3단계 감리
 '# 정의 : 사업비가 20억 이상이고, 사업기간이 6개월 이상일 경우, 요구정의, 설계, 종료 3단계 감리를 통하여 정보화 사업의 품질 및 과업이행 여부의 적절성을 확인하는 제도 <br/><br/>\
-# 절차 : 착수회의 > 현장감리 > 감리보고서작성 > 종료회의 > 감리보고서접수 <br/><br/>\
+# 절차 : 착수회의 > 현장감리 > 감리보고서작성 > 종료회의 > 감리보고서접수 <br/>\
+<img src = "./img/AuditLevel3Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 종료단계 감리 <br/>\
 - 정의 : 사업자가 제출한 과업대비표의 과업내용 이행 결과를 적합, 부적합 판정하는지 점검하는 감리 <br/>\
 - 절차 : 예비조사 > 현장가리 > 시정조치확인 <br/><br/>\
