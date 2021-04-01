@@ -158,6 +158,8 @@ var question = question.concat(
 '[클라우드]- CSB',
 '[클라우드]- 인터클라우드',
 '[클라우드]- 멀티 클라우드',
+'[클라우드]- 클라우드 네이티브 애플리케이션',
+'[클라우드][개발 방법론]- 12 Factors',
 '[클라우드]- 메시지 큐잉',
 '[메시지 큐잉]- Kafka',
 '[클라우드]- 차세대 방향성',
@@ -3115,6 +3117,23 @@ var answer = answer.concat(
 - 멀티레이어 보안성 확보 : 기초 데이터 암호화(AES, SHA-2, RSA), NFV(SECaaS 기반 CASE 연계) <br/>\
 - 데이터 보호 및 흐름 가시화 : 중요도별 Access 분리(Bell-Lapadula), 능동형 URI 감시 가시화(URI 경로 감시, vDPI 페이로드 분석) <br/><br/>\
 * KPC 93회 2교시 2번\
+',
+
+// 클라우드 네이티브 애플리케이션
+'# 정의 : MSA, Container, Orchestration / 클라우드 기반 애플리케이션 <br/>\
+- MSA, 컨테이너화된 서비스, 분산 관리 및 오케스트레이션으로 구성된 클라우드 기반 애플리케이션 <br/><br/>\
+# 성숙도 모델 <br/>\
+<img src = "./img/CNMM.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/CloudNativeApplicationArcitecture.png" style = "max-width:100%; height:auto;">\
+',
+
+// 12 Factors
+'# 정의 : 클라우드 네이티브 애플리케이션 개발방법론 / 헤로쿠 기업<br/>\
+- 클라우드 플랫폼 모델 사용하는 기업들의 개발, 운영, 확장등을 관찰, 작성한 개발 방법론 <br/><br/>\
+# 상세 내용 <br/>\
+<img src = "./img/12Factors.png" style = "max-width:100%; height:auto;"><br/>\
+* 15 Factors : API 우선, 관측, 인증과 권한 추가 \
 ',
   
 // 메시지 큐잉
