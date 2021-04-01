@@ -1366,7 +1366,7 @@ var answer = answer.concat(
 - HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
 - Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
 - HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
-2. MAC <br/>\
+2. MAC(NHCC) <br/>\
 - Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
 - HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
 - CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
@@ -1402,7 +1402,7 @@ var answer = answer.concat(
 - 해시함수와 대칭키를 이용하여 메시지 무결성을 확인하고 메시지에 대한 인증을 하는 알고리즘 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/MACFlow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 종류 <br/>\
+# 종류(NHCC) <br/>\
 - Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
 - HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
 - CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
