@@ -1187,9 +1187,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // LBS
-'# 정의 : 사용자 / 위치 정보 근거 서비스 <br/>\
+'# 정의 : 사용자 / 알려진 존재 파악 가능 / 위치 정보 근거 서비스 <br/>\
 - Location Based Service <br/>\
 - 이동 중에 있는 사용자가 그들의 지리학적 위치, 소재 또는 알려진 존재에 대해 파악할 수 있는 위지정보에 근거한 서비스<br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/LBS_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
 1. LDT - 무선 측위 기술<br/>\
 - Location Determination Technology <br/>\
@@ -1272,7 +1274,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : 특정 객체 위치 실시간 추적 / LBS 제공 기술 <br/>\
 - 제한적인 범위의 실내 또는 실외에서 특정 사물이나 사람에 대한 인식 및 위치를 실시간으로 추적하여 위치정보기반의 서비스를 제공하는 기술 <br/><br/>\
 # 개념도 <br/>\
-<img src = "./img/RTLS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/RTLS_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구현기술 <br/>\
 <img src = "./img/RTLS_Tech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 분야별 서비스 <br/>\
