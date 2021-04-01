@@ -8,7 +8,7 @@ var this_week_question =
 [
 /* 6주차 */
 '','지능형 CCTV','LBS','RTLS','Lidar','클라우드','의료기술','컨테이너 오케스트레이션','SCADA','Smart City 보안','인공지능 서비스 플랫폼','CPS','디지털 트윈','CI','HCI','Smart Grid','XR','차세대 Healtchare Service','멀티 클라우드',
-'CCTV 개인영상 보호방안',
+'CCTV 개인영상 보호방안','12 Factors',
 
 /* 5주차 */
 /*

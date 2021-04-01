@@ -82,7 +82,6 @@ var question = question.concat(
 '재난안전통신망(Disaster Security Communication Network, 재난망)',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
-'RTLS(Real-Time Locating System)',
 'eMTC',
 'Network Storage',
 '자가망 구축 가이드라인',
@@ -1188,21 +1187,21 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // LBS
-'# 정의 : 위치정보 근거 서비스 <br/>\
+'# 정의 : 사용자 / 위치 정보 근거 서비스 <br/>\
 - Location Based Service <br/>\
 - 이동 중에 있는 사용자가 그들의 지리학적 위치, 소재 또는 알려진 존재에 대해 파악할 수 있는 위지정보에 근거한 서비스<br/><br/>\
 # 기술요소 <br/>\
-1. 무선 측위 기술(LDT) <br/>\
+1. LDT - 무선 측위 기술<br/>\
 - Location Determination Technology <br/>\
-- 개념 : 사용자의 위치파악 목적 사용 기술 <br/>\
+- 개념 : <font color = "red">사용자의 위치파악</font> 목적 사용 기술 <br/>\
 - 요소 기술 : GPS, Cell ID <br/><br/>\
-2. LBS 미들웨어(LEP) <br/>\
+2. LEP - LBS Platform <br/>\
 - Location Enable Platform <br/>\
-- 개념 : 위치정보를 관리, 부가기능들 종합적 제공 <br/>\
+- 개념 : 위치정보를 관리, <font color = "red">부가기능</font>들 종합적 제공 <br/>\
 - 요소기술 : MMDB, 공간 인덱싱, 인증,접근통제 <br/><br/>\
-3. LBS 응용 기술(LAP) <br/>\
+3. LAP - LBS 응용 <br/>\
 - Location Application Program <br/>\
-- 개념 : 위치기반 서비스 제공 위한 컨텐츠 처리, 운영 필요기술 <br/>\
+- 개념 : 위치기반 서비스 제공 위한 <font color = "red">컨텐츠</font> 처리, 운영 필요기술 <br/>\
 - 요소기술 : GIS, L-CRM, Location Trigger Marketing <br/><br/>\
 # 유형 <br/>\
 - 네트워크 기반 : Cell-ID <br/>\
@@ -1270,8 +1269,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
  
 // RTLS
-'# 정의 : 실시간 위치추적 기술 <br/>\
+'# 정의 : 특정 객체 위치 실시간 추적 / LBS 제공 기술 <br/>\
 - 제한적인 범위의 실내 또는 실외에서 특정 사물이나 사람에 대한 인식 및 위치를 실시간으로 추적하여 위치정보기반의 서비스를 제공하는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/RTLS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구현기술 <br/>\
 <img src = "./img/RTLS_Tech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 분야별 서비스 <br/>\
@@ -1655,24 +1656,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 비지상 네트워크
 '# 정의 : 저궤도 위성 이용, 50Mbps급 이상 고속 이동통신 구현 기술 <br/>\
 - 지구 전역을 커버하는 저궤도 위성으로 통신 음영지역을 제로에 가깝게 줄이고 차세대 드론 등 융합서비스 등장을 촉진시키는 혁신 통신기술. 저궤도 통신위성에 통신용 기지국 또는 중계기를 탑재해 지상 단말기와 50Mbps급 이상의 고속 이동통신을 가능케 함',
-
-// RTLS
-'# 정의 : 실시간 정보 제공 시스템 / 사물에 RTLS 태그 부착<br/>\
-- Real Time Location System <br/>\
-- 사물에 RTLS 태그를 부착하여 사물의 정보와 정보를 실시간으로 제공해 주는 시스템, 능동형 태그를 기반으로 하는 실시간 위치 정보 서비스 구현 모델 <br/><br/>\
-# 특징 : 능동형 RFID, 식별 & 측위, 전원이 장착된 액티브 태그와 셀 방식의 위치 시스템 구성 필요, 실시간 모니터링 가능 자동화 시스템 구현에 활용 <br/><br/>\
-# 구성 <br/>\
-- Mobile Resource : Device, Tags <br/>\
-- H/W Infrastructure : Access Point, Location Receiver <br/>\
-- Software : Engine, Mobile, Viewer, 3rd Party App<br/><br/>\
-# 구현 형태 <br/>\
-1. Real Time Location : 특정한 지역내의 실시간 위치정보 <br/>\
-2. Presence : 리시버와 태그간 통신 범위내의 존재 유무 <br/>\
-3. Check Point Gate : 태그가 특정 지역의 접근/통과 정보 (RFID) <br/><br/>\
-# 리더/태그 무선 전파 이용, 위치계산 AL <br/>\
-- AoA, ToA, TDoA, RSS(Received Signal Strength, 전파강도) <br/><br/>\
-<img src = "./img/RTLS.png" style = "max-width:100%; height:auto;"><br/><br/>\
-',
 
 // eMTC
 '# 정의 : IoT 전용 통신 기술 / 이동성 / 지속성 <br/>\
