@@ -654,23 +654,25 @@ var answer = answer.concat(
 ',
   
 // [산업제어스템]- SCADA
-'# 정의 : 통신 신호 사용 / RTU / 원격 감시,제어 시스템 br/>\
+'# 정의 : 통신 신호 사용 / RTU / 원격 감시,제어 시스템 <br/>\
 - Supervisiory Control And Data Acquisition <br/>\
-- 통신 경로상의 아날로그 또는 디지털 신호를 사용하여 원격장치의 상태정보 데이터를 RTU로 수집/수신/기록/표시하여 중앙 제어 시스템에 원격 장치를 감시 제어하는 시스템 <br/><br/>\
+- 원자력, 전력, 가스 시설등의 원격지 플랜트 생산공정 정보를 중앙에서 감시,제어,관리 하는 시스템 <br/><br/>\
 # 구성요소 <br/>\
+<img src = "./img/SCADA.png", style = "max-width:100%; height:auto;"><br/>\
 - HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
 - PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
 - RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치<br/><br/>\
-# SCADA DCS 비교 <br/>\
-<img src = "./img/SCADA_DCS.png", style = "max-width:100%; height:auto;"><br/><br/>\
 # 기능 (지누경감)<br/>\
 - 지시/표시 : PLCs가 수집한 상태정보를 수신/기록/표시 <br/>\
 - 누산기능 : 정보를 용도에 맞게 계산 <br/>\
 - 경보기능 : 상태변화에 따라 알람 <br/>\
 - 감시/제어 : 관제대상 모니터링 하고 원격제어 <br/><br/>\
 # 보안 취약점 : 정보노출, 불완전한 NW 아키텍처, 실시간 모니터링 부재 <br/><br/>\
+# SCADA DCS 비교 <br/>\
+<img src = "./img/SCADA_DCS.png", style = "max-width:100%; height:auto;"><br/>\
+* DCS : Distributed Control System <br/><br/>\
 # 보안 요구사항 : 접근제어, 기무가, 인증, 접근차단 및 탐지, 보안정책, 감사기록 <br/><br/>\
-<img src = "./img/SCADA.png", style = "max-width:100%; height:auto;">\
+* 120회 응용 2교시 4번\
 ',
   
 // IoT Platform
