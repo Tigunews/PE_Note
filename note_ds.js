@@ -315,15 +315,15 @@ var answer = answer.concat(
 - 개요 : 이해관계자들게 정보 제공 <br/><br/>\
 # 대응기술 <br/>\
 1. 관리적 <br/>\
-- 보안 대응 체계 : 보안 오케스트레이션, SOAR(자동화 및 복구) <br/>\
+- 보안 대응 체계 : 보안 오케스트레이션, <font color = "red">SOAR(자동화 및 복구)</font> <br/>\
 - 취약점 패치 : 패치 관리, 서버 안전 인증 <br/><br/>\
 2. 물리적 <br/>\
-- 안전한 부팅 : 펌웨어 유효성 검사, UEFI 적용 <br/>\
+- 안전한 부팅 : 펌웨어 유효성 검사, <font color = "red">UEFI</font> 적용 <br/>\
 - 안전한 통신 : BlueTooth(4.2), Zigbee(CCM 128Bit 이상), Wifi(WPA2) <br/><br/>\
 3. 기술적 <br/>\
 - 인증 및 접근 제어 : 격리 프로세스, 경량화 IoT 장비(패시브 형태 사용) <br/>\
-- 데이터 보호 : CRC(x), SHA-2이상 권장 <br/><br/>\
-- 블록체인 : 데이터 통합 관리 \
+- 데이터 보호 : CRC(x), <font color = "red">SHA-2이상</font> 권장 <br/>\
+- <font color = "red">블록체인</font> : 데이터 통합 관리 \
 ',
     
 // 지능형 CCTV
