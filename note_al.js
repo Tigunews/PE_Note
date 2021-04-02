@@ -1877,21 +1877,21 @@ var answer = answer.concat(
 // 인공지능 서비스 플랫폼 
 '# 정의 : 인공지능 활용 서비스 개발 도구 <br/>\
 - AI as a Service <br/>\
-- 자연어 처리등 인공지능 기술을 활용하여 제품이나 서비스를 개발하기 위한 도구 <br/><br/>\
+- 인공지능 서비스에 활용되는 기계학습 라이브러리, 인터페이스, 소프트웨어 제공하는 인프라 유기적 집합 <br/><br/>\
 # 암기 <br/>\
 - AI성능 3요소 : 알데컴 (알고리즘, 데이터, 컴퓨팅파워) <br/><br/>\
-# 기술 <br/>\
+# 기술(학상언시인) <br/>\
 - 학습 및 추론기술 : 지식표현, 지식베이스 <br/>\
 - 상황이해 : 감정이해, 공간이해, 협력지능, 자가이해, 자연어 처리 <br/>\
 - 언어 이해기술 : 자연어처리, 질의응답, 음성처리, 자동통번역 <br/>\
 - 시각 이해기술 : 내용기반 영상검색, 행동인식, 시각지식 <br/>\
 - 인식 및 인지기술 : 휴먼라이프 이해, 인지아키텍처 <br/><br/>\
 # 현황 <br/>\
-- Google Machine learning Platform : 2016.03. 발표, 범용 인공지능 플랫폼, 방대한 데이터 기반 <br/>\
-- Facebook Manager Platform with Chatbot : 2016.04. 개인 맞춤형 AI 플랫폼 <br/>\
-- Amazon : Alexsa Voice Service 클라우드 기반 생활 맞춤형 : 블루투스 스피커 echo 내 탑재됨 <br/>\
-- IBM Waton Health Platform : 의료 전문 지능형 플랫폼 길병원 온콜로지 <br/>\
-- GE Predix Platform : 산업현장 정보 분석, 산업 현장 데이터 + 기존 사업 경험 노하우\
+- <font color = "red">Google</font> Machine learning Platform : 2016.03. 발표, <font color = "red">범용 인공지능</font> 플랫폼, 방대한 데이터 기반 <br/>\
+- <font color = "red">Facebook</font> Manager Platform with <font color = "red">Chatbot</font> : 2016.04. 개인 맞춤형 AI 플랫폼 <br/>\
+- <font color = "red">Amazon</font> : Alexsa Voice Service <font color = "red">클라우드 기반 생활 맞춤</font>형 : 블루투스 스피커 echo 내 탑재됨 <br/>\
+- <font color = "red">IBM Waton</font> Health Platform : <font color = "red">의료</font> 전문 지능형 플랫폼 길병원 온톨로지 <br/>\
+- <font color = "red">GE</font> Predix Platform : 산업현장 정보 분석, <font color = "red">산업 현장</font> 데이터 + 기존 사업 <font color = "red">경험 노하우</font>\
 ',
   
 // 인공지능 소프트웨어 보안 취약성
