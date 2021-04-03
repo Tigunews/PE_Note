@@ -1157,7 +1157,7 @@ var answer = answer.concat(
 # 이슈 <br/>\
 - IoT : DIgital 수가 책정 > 기준 마련 <br/>\
 - Big Data : 개인정보 유출 > 가명, 익명 처리 <br/>\
-- AI : 책임 소재 > XAI \
+- AI : 책임 소재 > XAI <br/><br/>\
 # 흐름 <br/>\
 <img src = "./img/HealthcareFlow.png" style = "max-width:100%; hegiht:auto;">\
 ',
