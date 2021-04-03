@@ -106,7 +106,7 @@ var question = question.concat(
 '[가상화]- 도커(Docker)',
 '[가상화][도커]- LXC', 
 '[가상화]- 쿠버네티스(Kubernetes)',
-'[가상화]- CI',
+'[가상화]- Converged Infrastructure',
 '[가상화]- HCI',
 '[가상화]- VDI',
 '[GIS]- OGC',
@@ -424,17 +424,24 @@ var answer = answer.concat(
 - 전기, ICT 기술 활용, 에너지 효율 향상, 낭비 절감, 지능화 고도화 효율 극대화 전력망 기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SmartGridStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 암기 <br/>\
+1. 전력 운영 측면 <br/>\
+- 운 : ESD <br/>\
+- H : 계반관<br/>\
+- A : ZP <br/>\
+- D : DA <br/><br/>\
+2. 보안 및 지능화 측면 <br/>\
+- 보자충 <br/><br/>\
 # 특징 <br/>\
 - 자가치유 : 탐지 > 분석 > 반응/복구 <br/>\
 - 고객 참여 : 소비 정보 통합, 전력망 설계 / 분산전원(DER) 관리 <br/>\
 - 전력 마켓 : 전력 요구 거래 및 스마트 미터 <br/><br/>\
 # 기술요소 <br/>\
-1. 전력 운영 측면 <br/>\
-- 스마트계통 운영기술 : 급전종합자동화 설비(EMS), 원격감시제어설비(SCADA), 배전 자동화 시스템(DAS) <br/>\
-- AMI 기술 : 지능형 전령량 계량 기술, 소비자수요 반응기기, 지능형 관리 시스템,네트워크 <br/>\
-- HAN : Zigbee, PLC(Power Line Communication) <br/>\
-- DR(Demand Response) : 수요측 에너지 관리(DSEM), 자동화된 오류검출과 진단(AFDD) <br/>\
-- 전력 유통 매커니즘 : 실시간 대용량 정보 처리, 모니터링, 사용자 인터페이스 기술 <br/><br/>\
+1. 전력 운영 측면 (<font color = "red">운AHD</font>) <br/>\
+- 운영(ESD) : <font color = "red">E</font>MS(급전종합자동화 설비), <font color = "red">S</font>CADA(원격감시제어설비), <font color = "red">D</font>AS(배전 자동화 시스템) <br/>\
+- AMI(계반관)  : 지능형 <font color = "red">계</font>량, 수요 <font color = "red">반</font>응기기, 지능형 <font color = "red">관</font>리 <br/>\
+- HAN(ZP) : <font color = "red">Z</font>igbee, <font color = "red">P</font>LC(Power Line Communication) <br/>\
+- DR(Demand Response)(DA) : <font color = "red">D</font>SEM(수요측 에너지 관리), <font color = "red">A</font>FDD(자동화된 오류검출과 진단) <br/>\
 2. 보안 및 지능화 측면 <br/>\
 - 보안 매커니즘 : 암호화, 인증/접근통제, 침해탐지/대응/복구, DoS 탐지 <br/>\
 - 자가치유 매커니즘 : 센서 네트워크, 자가치유 알고리즘 <br/>\
@@ -1110,12 +1117,29 @@ var answer = answer.concat(
 ',
   
 // 차세대 Healthcare Service
-'# 정의 : 건강 관련 서비스 / IT 융합 / 환자중심 종합의료 서비스 <br/>\
-- 개인의 건강과 의료에 관한 정보, 기기, 시스템, 플랫폼을 다루는 산업분야로서 건강 관련 서비스와 의료 IT가 융합된 환자중심 종합의료서비스 <br/><br/>\
-# Overveiw <br/>\
-<img src = "./img/HealthcareOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 서비스 유형 <br/>\
-<img src = "./img/SmartHealthcareTree.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+'# 정의 : ICT / 예측,예상,개인중심 / Smart Healthcare Service <br/>\
+- 4차 산업혁명 ICT 기반, 예측,예상,개인중심 구현 목표 Smart Healthcare Service <br/><br/>\
+# 유형 <br/>\
+- IoT : 개인이 건강 데이터 수집 / Google, Smasung <br/>\
+- Big Data : 보건 향상 기반 Data / 각국 정부 주도 <br/>\
+- AI : 인공지능 임상 결정 기술 / IBM, Apple <br/><br/>\
+# 종류 <br/>\
+1. IoT 헬스케어 <br/>\
+- 생체 측정 기술 : 사용자 Device 비대면 측정 <br/>\
+- 디지털 치료제 : 정신병리, 심리치료 S/W <br/>\
+- 헬스케어 플랫폼 : 3rd Party Open Platform <br/><br/>\
+2. Bigdata 헬스케어 <br/>\
+- 유전체 Data : 전국민 유전체 분석 Data <br/>\
+- Bio Center : Bio Data 제공 전문기관 <br/>\
+- 확산 경보 : 감염병 확상 조짐 분석 <br/><br/>\
+3. AI 헬스케어 <br/>\
+- AI 진단 : 질병 진단 인공지능 <br/>\
+- AI 판독 : X-Ray, CT, MRI 판독 <br/>\
+- AI 백신 : 미래 예측 백신 개발 <br/><br/>\
+# 이슈 <br/>\
+- IoT : DIgital 수가 책정 > 기준 마련 <br/>\
+- Big Data : 개인정보 유출 > 가명, 익명 처리 <br/>\
+- AI : 책임 소재 > XAI \
 # 흐름 <br/>\
 <img src = "./img/HealthcareFlow.png" style = "max-width:100%; hegiht:auto;">\
 ',
@@ -2139,9 +2163,9 @@ var answer = answer.concat(
 <img src = "./img/Kubernetes.png" style = "max-width:100%; hegiht:auto;">\
 ',
   
-// CI
-'# 정의 : 단일 벤더 일괄 제공 / 효율적 인프라 관리 / 통합 어플라이언스 <br/>\
-- 단일벤더의 서버, 스토리지, 네트워크, 프로비저닝 관리 S/W 일괄 제공, 효율적인 인프라 관리 가능 통합 어플라이언스 <br/><br/>\
+// Converged Infrastructure
+'# 정의 : 서버, 스토리지, NW, 가상화 관리SW / Rack 형태 통합 / 어플라이언스 인프라 <br/>\
+- 서버 및 스토리지, NW, 가상화 관리 SW 등을 하나의 Rack 형태로 통합한 어플라이언스 인프라 <br/><br/>\
 # 특징 : 일체형 제공, 단일벤더 제공 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/CI_Architecture.png" style = "max-width:100%; hegiht:auto;"><br/>\
@@ -2159,7 +2183,7 @@ var answer = answer.concat(
 // HCI
 '# 정의 : X86 머신 가상 적용 / 스토리지 네트워킹 단일 시스템 결합 / SDI 형태 구축한 / 벤더 Lock in 탈피 / 통합 어플라이언스 <br/>\
 - Hyper Converaged Infrastructor <br/>\
-- X86 머신에 가상 컴퓨팅기능을 적용하고 스토리지와 네트워킹을 단일 시스템으로 결합하여 데이터 센터의 모든 요소를 Software Defined IT Infrastructure (SDI)로 구축, Scale-Out, 벤더 Lock-in 탈피한 통합 IT 프레임워크 <br/><br/>\
+- X86 머신 기반 스토리지, 서버등 모든 요소 SDI 통합, 전원 및 네트워크 연결만으로 사용 가능한 Appliance 기반 It Framework <br/><br/>\
 # 배경 <br/>\
 - 3-Tier Architecture 한계 <br/>\
 - 복잡, 제어 어려움, DevOps, 규모 조정 불가 <br/>\
@@ -3771,7 +3795,7 @@ var answer = answer.concat(
 - 통합제어 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 진화 과정 <br/>\
+# 진화 과정 (M관모연자) <br/>\
 <img src = "./img/DigitalTwinFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 발전 모델 <br/>\
 <img src = "./img/DigitalTwinEvolution.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -4036,18 +4060,18 @@ var answer = answer.concat(
 ',
    
 // XR
-'# XR <br/>\
-- 각종 디바이스를 이용하여 생성되는 가상현실, 혼합현실, 대체현실을 모두 포괄하는 리얼리티 구축 기술 <br/>\
-- MR의 확장된 개념으로 현실과 가상간의 Interaction이 더욱 강화된 현실공간에 배치된 가상의 물체를 오감으로 연결할 수 있는 기술 <br/><br/>\
-# VR <br/>\
-- 가상공간 상에 리얼리티를 구축하는 기술 <br/>\
-- 현살이 아닌 100% 가상 이미지를 사용하는 기술 <br/><br/>\
-# AR <br/>\
-- 현실공간의 물체 등에 정보를 겹쳐 보이도록 하여 새로운 정보를 인식하게 하는 기술 <br/>\
-- 현실에 가상 이미지를 겹쳐서 보여주는 기술 <br/><br/>\
-# MR <br/>\
-- 현실공간과 가상공간을 융합하여 리얼리티를 구축하는 기술 <br/>\
-- 가상의 영상을 현실에 겹쳐서 가상 세계를 만드는 기술 <br/><br/>\
+'# VR<br/>\
+- 특징 : 100% 가상<br/>\
+- 기술 : 가상현실 구현 기술<br/>\
+- 정의 : 100% 가상 이미지를 사용하여 가상 공간상 <font color = "red">리얼리티 구축 기술</font><br/><br/>\
+# AR<br/>\
+- 특징 : 현실 + 가상 이미지<br/>\
+- 기술 : 정보 인식 구현 기술<br/>\
+- 정의 : 현실에 가상이미지를 겹쳐, <font color = "red">새로운 정보 인식 구현 기술</font><br/><br/>\
+# MR<br/>\
+- 특징 : 현실 + 가상 영상<br/>\
+- 기술 : 현실, 가상 융합 리얼리티 구축 기술<br/>\
+- 정의 : 가상 영상을 현실에 겹쳐, <font color = "red">상호 융합 리얼리티 구축 기술</font><br/><br/>\
 # SR <br/>\
 - 사람의 인지과정을 왜곡시켜 가상 세계에서의 경험을 실제인 것처럼 인식하게 하는 기술 <br/><br/>\
 # 주요기술 <br/>\
