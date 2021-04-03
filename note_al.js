@@ -22,7 +22,10 @@ var question = question.concat(
 '최소신장트리',
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
-'AVL 트리',
+'[Tree]- AVL Tree',
+'[Tree]- B Tree',
+'[Tree]- B Plus Tree',
+'[Tree]- B Star Tree',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
@@ -454,7 +457,7 @@ var answer = answer.concat(
 # 원리 : 선택, 갱신, 비교, 반복\
 ',
 
-// AVL 트리
+// AVL Tree
 '# 정의 : 균형인수, 회전기법, 이진 탐색트리 <br/>\
 - AVL = Adelson-Velskii, Landis <br/>\
 - 1962년 G.M. Adelson-Velskii와 E.M. Landis가 논문 "An algorithm for organization of information"에서 발표 <br/>\
@@ -478,6 +481,53 @@ var answer = answer.concat(
 <img src = "./img/AVL_RR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_LR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;">\
+',
+
+// B Tree
+'# 정의 : 2개 자식 or 1개 값 / 1/2 / 효율적 자료구조 <br/>\
+- 루트노드는 최소한 2개의 자식노드와 적어도 한 개의 값을 가지며, 루트노드와 리프노드를 제외하고는 최소한 1/2 이상이 채워져 있는 효율적 자료구조 <br/><br/>\
+# B Tree 진화 과정 <br/>\
+<img src = "./img/BTreeFamily.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 구조 : Root ~ Leaf 동일 높이, 분열시 보조연산 <br/>\
+- 순차접근 : 중위순회 <br/>\
+- 직접접근 : 트리 순회 검색 <br/>\
+- 속도 : 보통(소량 데이터 검색 유리) <br/>\
+- 중복성 : 탐색키 중복성 없음 <br/>\
+- 노드키 이동기준 : 1/2 <br/>\
+- 노드 관리 : Leaf 아닌 노드 크기 더 크며, 저장 관리 복잡 \
+',
+
+// B Plus Tree
+'# 정의 : 50 -> 67% / 트리 분할 횟수 줄인 / B 트리 개선 자료구조 <br/>\
+- B 트리 50% 공간 활용도를 67% 공간 활용도로 개선하여 트리 분할 횟수를 줄인 B 트리 개션 자료구조 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BPlusTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 구조 : Index set, Sequence set(Data) <br/>\
+- 순차접근 : Leaf 노드만 검색 <br/>\
+- 직접접근 : Index Set 순회 검색 <br/>\
+- 속도 : 순차검색 빠름 <br/>\
+- 중복성 : Index set, Sequence Set, 중복 키 <br/>\
+- 노드키 이동기준 : 1/2 <br/>\
+- 노드 관리 : 모든 노드 크기 동일, 삭제될 노드는 Leaf 존재 \
+',
+
+// B Star Tree
+'# 정의 : 키값 2/M -> 2/3 <br/>\
+- B Tree 에서 최소 2/M의 키 값을 가져야한다는 점을 2/3으로 변경한 트리 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BStarTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 구조 : Overflow 형제 노드 분열, Underflow 형제 노드 결합 <br/>\
+- 순차접근 : 중위 순회 <br/>\
+- 직접접근 : 트리 순회 검색 <br/>\
+- 속도 : B Tree 보다 빠름 <br/>\
+- 중복성 : 탐색키 중복성 없음 <br/>\
+- 노드키 이동기준 : 2/3 <br/>\
+- 노드 관리 : 리프 아닌 노드크기가 더 크고, 저장공간 관리 복잡\
 ',
   
 // 인공지능 특이점
