@@ -338,7 +338,7 @@ var answer = answer.concat(
 # 전망 <br/>\
 - 범죄 수사를 위한 증거 차원을 넘어 범죄 징후 사전 예측 수준으로 발전 <br/>\
 - 빅데이터 기술과 연계하여 범죄 예측 모델로 활용 <br/><br/>\
-# 기술 종류 <br/>\
+# 기술 종류 (<font color ="red">대차범</font>)<br/>\
 1. 대인 영상 기술 <br/>\
 - 얼굴 인식 기술 : 딥러닝, GAN(Generative Adverserial Network) 활용 얼굴인식 기술 (인간개입x)<br/>\
 - 사람 재식별 기술 : 촬영된 영상 통한 자동 분석 기술 <br/>\
