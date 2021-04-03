@@ -42,6 +42,7 @@ var question = question.concat(
 '[디지털 사이니지(Digital Signage)] - 오픈스크린 프로젝트',
 '의료기술',
 '[의료기술]- ISO 62304',
+'[의료기술]- ISO 14971',
 '[의료기술]- ISO 13485',
 '[의료기술]- ISO 25237',
 '[의료기술]- 의료 AI',
