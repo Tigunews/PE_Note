@@ -91,6 +91,7 @@ var question = question.concat(
 'Library',
 '유한 오토마타',
 '엑사스케일 컴퓨팅 시스템',
+'Thunderbolt Interface',
 );
 
 var answer = answer.concat(
@@ -1718,5 +1719,15 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 독일 : Deep 프로젝트 <br/>\
 - 국내 : ETRI-MAHA(유전체 데이터 분석), 서울대-천둥(슈퍼컴퓨터) <br/><br/>\
 * FLOPS(FLoating point OPerations per Second) = 컴퓨터의 성능 수치로 나타낼 때 주로 사용되는 단위로서 초당 실행가능한 부동소수점 연산 횟수를 의미 \
+',
+
+// ThunderBolt Interface
+'# 정의 : 인텔 차세대 데이터 전송 규격<br/>\
+- 고속의 전송도로로 데이터와 음성, 디지털 영상을 동시에 전송 가능한 코드명 Lite peak로 시작된 인텔의 차세대 데이터 전송규격 <br/><br/>\
+# 주요특성 <br/>\
+- Dual Protocol : 단일 케이블 내 Data(PCI-E) + 영상(Display Port) 지원 <br/>\
+- 범용성 제공 : 썬더볼트 3에서 USB C(Type-C) 지원 <br/>\
+- 라이선스 개방 : 썬더볼트 프로토콜 규격 공개, 무료 라이선스 전환(18년) <br/><br/>\
+* 117회 응용 1교시 11번\
 ',
 );
