@@ -53,6 +53,7 @@ var question = question.concat(
 '[무선통신]- 패시브 와이파이(Passive wifi)',
 '[무선통신]- 인지무선(Cognitive Radio)',
 '[무선통신]- IEEE 802.11p',
+'[무선통신]- C-V2X',
 '[무선통신]- Gigabit WLAN',
 '[무선통신]- 저전력 무선통신 비교',
 '[무선통신][저전력]- 블루투스 5',
@@ -1139,6 +1140,21 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 3) 최대 전송거리 : 1 Km <br/>\
 4) 최대 대역폭 : 27 Mbps / 54 Mpbs <br/><br/>\
 * 86회 라이지움 모의고사 1교시 1번\
+',
+
+// C-V2X
+'# 정의 : 자율주행 차량용 무선 전송 기술 표준 <br/>\
+- 3GPP 에서 제정된 자율주행 차량용 무선 전송 기술 표준으로, 이동통신 기지국과 단말간 종래의 상향/하향 링크와 더불어 차량 단말간 직접 통신 링크를 지원하는 기술 <br/><br/>\
+# 특징 : 보안성(ISO, ETSI), 고속지원(500Km/h) <br/><br/>\
+# C-V2X 전송모드 <br/>\
+- LTE Direct : 챠랑, 보행자, 도로 인프라가 직접 통신 (5.9GHZ) <br/>\
+- LTE Boradcast : 구축된 LTE Network 기반 <br/><br/>\
+# 현황 <br/>\
+- 5G-V2X : 3GPP, 5GAA 표준화 상용화 로드맵 <br/>\
+- Connected Car : C-V2X 활용 기술 <br/>\
+- 정보 서비스 : 차량 통신의 클라우드 로컬간 공유 지연성 갱신 <br/><br/>\
+<img src = "./img/DSRC_V2X.png" style = "max-width:100%; height:auto;">\
+* 121회 관리 1교시 9번\
 ',
  
 // Gigabit WLAN
