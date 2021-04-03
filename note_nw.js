@@ -1252,10 +1252,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 인프라 유형별 종류 <br/>\
 1. 네트워크 기반 <br/>\
 - Cell ID / Sector ID : 기지국 ~ 단말기 간의 거리 측정 <br/>\
-- AoA(Angle of Arrival) : 2개 이상의 기지국과 단말기간 도달 각 정보 측정 <br/>\
-- TDoA(Time Difference of Arrival) : 3개이상의 기지국과 단말 간의 도달시간 정보 측정 <br/><br/>\
-2. 위성 신호 기반 <br/>\
-- StandAlone GPS : 독자적 위성 신호 <br/>\
+- AoA(Angle of Arrival) : <font color ="red">2개 이상</font>의 기지국과 단말기간 <font color ="red">도달 각</font> 정보 측정 <br/>\
+- TDoA(Time Difference of Arrival) : <font color ="red">3개 이상</font>의 기지국과 단말 간의 <font color ="red">도달 시간</font> 정보 측정 <br/><br/>\
+2. 위성 신호 기반 (SBA) <br/>\
+- SA GPS : 독자적 위성 신호 <br/>\
 - MS-Based GPS : 최초 GPS 위성정보에서 독자적 <br/>\
 - MS-Assisted GPS : 최초 GPS 위성정보 + 위치측위 정보까지 서버 통해 전달 <br/>\
 * MS : Mobile Station <br/><br/>\
