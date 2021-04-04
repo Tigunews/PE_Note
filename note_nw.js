@@ -1234,7 +1234,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Indoor Positioning System <br/>\
 - 실내에서 모바일이 수신하는 센서,전파로 건물 내 위치와 이동경로를 측정하는 시스템 <br/><br/>\
 # 기술요소 <br/>\
-<img src = "./img/IPS_Tech.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/IPS_Tech.png" style = "max-width:100%; height:auto;"><br/>\
 * WPS (Wifi Positioning System) <br/>\
 * RSSI (Received Signal Strength Indicator) : 수신 신호 세기/강도 <br/>\
 * UWB (Ultra Wideband) : 3.1~10.6GHz 넓은 주파수 대역 <br/><br/>\
