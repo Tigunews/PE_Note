@@ -1233,8 +1233,31 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : GPS 실내용 버전 <br/>\
 - Indoor Positioning System <br/>\
 - 실내에서 모바일이 수신하는 센서,전파로 건물 내 위치와 이동경로를 측정하는 시스템 <br/><br/>\
-# 기술요소 <br/>\
-<img src = "./img/IPS_Tech.png" style = "max-width:100%; height:auto;"><br/>\
+# 특징 <br/>\
+- 디바이스 모빌리티 확장 : RTLS 제공 / 애플 iBeacon <br/>\
+- 실내외 네트워킹 연계 : GPS, Cell-ID 결합 / 참조 포인트 <br/>\
+- 산업간 융복합 플랫폼 구축 : 경로 추적, 서비스 모니터링 / 스마트 팩토리 <br/>\
+- 다양한 사용자 경험 제공 : 향상된 UX/UI 제공 / VR,AR,옴니채널,O2O <br/><br/>\
+# Radio 기반 측위 기술 <br/>\
+1. 기지국 기반 <br/>\
+- Cell ID : 위상, 전계강도, 패턴매칭 <br/>\
+- FingerPrint : 위치 RSSI 값 측정, 테이블 생성 <br/><br/>\
+2. WLAN 기반 <br/>\
+- WPS : SSID, MAC, FIngerprint, GPS 음영 측위 <br/>\
+- RSSI : 전압레벨, 무선주파수 송수신 전력 거리 측정 <br/><br/>\
+3. WPAN 기반 <br/>\
+- Zigbee : 저전력, 다수 노드 클러스터링 <br/>\
+- Bluetooth : 50m, 지오펜싱 기반 전파멥 <br/><br/>\
+# Non-Radino 기반 측위 기술 <br/>\
+1. 센서 기반 <br/>\
+- 자기장 센서 : 스마트폰 자기장 센서, 내부 자기장 지도 비교 <br/>\
+- 관성 센서 : 가속도, 방향계, 상대 위치 측위 <br/><br/>\
+2. 주파수 기반 <br/>\
+- RFID : RFID Tag, Bluetooth, Wifi <br/>\
+- 적외선 : 적외선 센서, 고유 ID, IrDA 컨트롤러 <br/><br/>\
+3. 영상 기반 <br/>\
+- 비주얼 마커 : 위치 좌표 디코딩 <br/>\
+- CCTV : 실시간 영상, 이미징 정보 <br/><br/>\
 * WPS (Wifi Positioning System) <br/>\
 * RSSI (Received Signal Strength Indicator) : 수신 신호 세기/강도 <br/>\
 * UWB (Ultra Wideband) : 3.1~10.6GHz 넓은 주파수 대역 <br/><br/>\
