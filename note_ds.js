@@ -2882,9 +2882,9 @@ var answer = answer.concat(
 // 클라우드 컴퓨팅
 '# 정의 : 인터넷상 서버 / 중앙 IT 서비스 컴퓨팅 환경 <br/>\
 - 인터넷상의 서버를 통하여 데이터 저장, 네트워크, 컨텐츠 사용 등 IT 관련 서비스를 한번에 사용할 수 있는 컴퓨팅 환경 <br/><br/>\
-# 특징 (NIST) <br/>\
+# 특징 (NIST) (OBRDM) <br/>\
 - On-demand Self-Service : 자동 이용 가능 / Manage Console, Service Catalog <br/>\
-- Broad netowrk Access : 이기종 클라이언트, NW 접근 / Mobile, Tablet, PC <br/>\
+- Broad network Access : 이기종 클라이언트, NW 접근 / Mobile, Tablet, PC <br/>\
 - Resource Pooling : 여러 사용자, 위치 관계 없이 제공 / Multi tenant, Location Transparency <br/>\
 - Rapid Elasticity : 탄력적 프로비저닝 / Auto Scaling <br/>\
 - Measured Service : 자동 제어 최적화 / 1시간 단위 비용 측정 <br/><br/>\
@@ -2896,8 +2896,8 @@ var answer = answer.concat(
 - 병렬 처리 : RAID, Hadoop <br/>\
 - 분산 스토리지 : Object 스토리지 <br/><br/>\
 3. 인프라 측면 <br/>\
-- CDN, 저지연 : Low Latency <br/>\
-- 가상 인프라 설계 : BI, 대시보드 <br/><br/>\
+- CDN : Low Latency <br/>\
+- BI, 대시보드 : 가상 인프라 설계<br/><br/>\
 # 구성 <br/>\
 - User Interaction Interface <br/>\
 - Service Catalog <br/>\
