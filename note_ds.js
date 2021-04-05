@@ -2882,14 +2882,12 @@ var answer = answer.concat(
 // 클라우드 컴퓨팅
 '# 정의 : 인터넷상 서버 / 중앙 IT 서비스 컴퓨팅 환경 <br/>\
 - 인터넷상의 서버를 통하여 데이터 저장, 네트워크, 컨텐츠 사용 등 IT 관련 서비스를 한번에 사용할 수 있는 컴퓨팅 환경 <br/><br/>\
-# 특징 <br/>\
-1. 물리적 (가독)<br/>\
-- 리소스 가상화 : NW, Storage, Server 등 가상화 <br/>\
-- 독립성 : 다른 사용자 접근과 무관 <br/><br/>\
-2. 기술적 (On편보)<br/>\
-- On Demand : 사용자 요구에 따른 서비스 <br/>\
-- 편의성 : Web, 모바일, Client 등 접근 <br/>\
-- 보안성 : 외부침입, 해킹으로부터 보호 <br/><br/>\
+# 특징 (NIST) <br/>\
+- On-demand Self-Service : 자동 이용 가능 / Manage Console, Service Catalog <br/>\
+- Broad netowrk Access : 이기종 클라이언트, NW 접근 / Mobile, Tablet, PC <br/>\
+- Resource Pooling : 여러 사용자, 위치 관계 없이 제공 / Multi tenant, Location Transparency <br/>\
+- Rapid Elasticity : 탄력적 프로비저닝 / Auto Scaling <br/>\
+- Measured Service : 자동 제어 최적화 / 1시간 단위 비용 측정 <br/><br/>\
 # 6대 핵심 기술 <br/>\
 1. 가상 측면 <br/>\
 - 가상서버 제공 기술 : 하이퍼바이저, 도커 <br/>\
