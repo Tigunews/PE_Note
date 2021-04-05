@@ -28,4 +28,9 @@ var this_week_question =
 /*
 '클라우드 네이티브 애플리케이션','12 Factors',
 */
+
+/* Mentor's Pick */
+/*
+'SD-WAN',
+*/
 ];

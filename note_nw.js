@@ -103,6 +103,7 @@ var question = question.concat(
 '[NW 가상화]- NFV',
 '[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
+'[NW 가상화]- SD-WAN',
 '유무선 전력전송',
 '망분리',
 '망연계',
@@ -1975,6 +1976,17 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 대규모 네트워크, 기존 IP 적용 가능 <br/>\
 - 기존 네트워크와 같은 효율 수준 <br/><br/>\
 * KPC 23회 관리 4교시 2번\
+',
+
+// SD-WAN
+'# 정의 : 초고속 인터넷 회선 / 사설 오버레이 생성 / 네트워크 기능 <br/>\
+- 초고속 인터넷 회선을 이용하여, 사설 오버레이 네트워크를 생성할 수 있게 해주는 일련의 네트워크 기능 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/SDWAN.png" style = "max-width:100%; height:auto;"><br/>\
+- 중앙 컨트롤러 : 구성저장, 토폴로지 관리, 엑세스 정책 설정, 사용량, 성능 보고 <br/>\
+- 액세스 노드 : SD-WAN CPE, VNF, 라우팅, 터널링, WAN 최적화 <br/><br/>\
+# SD-WAN, SD-WAN 2.0 비교 <br/>\
+<img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 유무선 전력전송
