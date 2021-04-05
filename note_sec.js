@@ -27,6 +27,9 @@ var question = question.concat(
 '[공격기법]- SSRF',
 '[공격기법]- DDoS',
 '[DDoS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
+'[DDoS]- TCP Traffic Flooding',
+'[DDoS]- HTTP Head/Option Spoofing Flooding',
+'[DDoS]- HashDoS',
 '[공격기법]- DRDoS',
 '시큐어코딩',
 '[시큐어코딩]- TouchPoints 기법',
@@ -579,10 +582,18 @@ var answer = answer.concat(
 '# 개념 : 좀비 클라이언트 / 자원 고갈 / 시스템 거부 유발 <br/>\
 - 대량의 좀비 클라이언트의 악성 프로그램을 통해 목표 시스템의 자원을 고갈하여 시스템 거부(DoS)를 유발하는 공격기법 <br/><br/>\
 # 주요 공격 유형 <br/>\
+<img src = "./img/DDoSType.png" style = "max-width: 100%; height: auto;"><br/>\
 - SYN Flood : 대량 SYN 패킷 서버 전달 / 대기큐 가득 <br/>\
 - UDP Flood : 대량 UDP 패킷 서버 전달 / 대역폭 가득 <br/>\
 - ICMP Flood : 봇냇 사용 ICMP 패킷 전송 / 서비스 중지 <br/>\
 - HTTP Get Flood : HTTP GET 요청 / 리소스 소진 <br/><br/>\
+# 대응 절차 <br/>\
+- 공격 인지 : 이벤트 DDoS 판별 <br/>\
+- 유형 파악 : 유형 명확 파악, 정책 분류 <br/>\
+- 유형별 차단 대응 : 대역폭 소진, 웹서버 자원 소모, DB Connection 부하 등 유형별 대응 <ber/>\
+- 사후 조치 : 트래픽 분석, 정책 업데이트 IP 확보 <br/>\
+<font color = "red">* KISA의 사이버 대피소등 외부 지원 서비스 활용 </font><br/><br/>\
+* 114회 응용 3교시 3번 <br/>\
 * ITPE 2회 관리 2교시 4번\
 ',
   
@@ -595,6 +606,63 @@ var answer = answer.concat(
 - 트래픽 방어 여부 : 복호화 여부 / Inspection / 트래픽 처리 <br/>\
 - 기존장비 활용 : 보안 장비 / 보안 솔루션 / 네트워크 장비 <br/><br/>\
 * 116회 4교시 2번\
+',
+
+// [DDoS]- TCP Traffic Flooding
+'# 정의 : TCP 악용 / Victim 서비스 / 과부하 공격 <br/>\
+- TCP 연결지향성을 위한 프로토콜 과정을 악용하여 Victim 서비스의 과부하를 야기시키는 공격 <br/><br/>\
+# 종류 <br/>\
+1. SYN Flooding <br/>\
+- 공격자 : 다량의 SYN 패킷 전달 <br/>\
+- 서버 : 대기큐 가득 채워 장애 (Half open 상태 / 75초) <br/><br/>\
+2. TCP Flag Flooding <br/>\
+- TCP Flag 값 임의 조작 (SYN, ACK, FIN, RST) <br/>\
+- 수신 대상 검증 위해 자원 소모 <br/><br/>\
+3. TCP Session (3 Way Handshaking 과도 유발) <br/>\
+- TCP 세션 연결유지 DDoS 공격 <br/>\
+- TCP 세션 연결/해제 반복 공격 <br/>\
+- 연결 후 정상 처럼 보이는 DDoS <br/><br/>\
+# 대응 방안 <br/>\
+1. SYN Flooding <br/>\
+- 임계치 기반 SYN Flooding 차단 : PPS 단계적 조정 <br/>\
+- FirstSYNFlooding 차단 : 의도적 Drop, 재요청 확인<br/>\
+- 정상 트랜잭션 검증 : 연결 후 정상 수행 확인 <br/><br/>\
+2. TCP Session 공격 <br/>\
+- Connection Timeout 설정 : 일정 시간 송수신 체크 <br/>\
+- Keep-Alive 설정 : Keepalivetimeout 세션 공격 차단 <br/>\
+- Time-Wait 설정 : 연결 고갈 공격 차단 <br/>\
+- L7 스위치 임계치 설정 : IP당 Connection Limit 설정 <br/><br/>\
+* 114회 응용 3교시 3번\
+',
+
+// [DDoS]- HTTP Head/Option Spoofing Flooding
+'# 정의 : 웹 서버 가용량 소비 / DoS 상태 유발 공격 <br/>\
+- 웹 서버의 가용량을 모두 소비시켜 정상적인 웹 서비스를 제공하지 못하도록 하는 DoS 상태를 유발하는 공격 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/HTTPHeadOptionSpoofingFlooding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 공격 기법 <br/>\
+- Slow HTTP Post DoS : 장기간 걸쳐 분할 전송 <br/>\
+- Slow HTTP Header DoS(Slowloris) : Header 속여 지속 연결 <br/>\
+- Slow HTTP Read DoS : TCP 윈도우 크기, 데이터 처리율 감소 연결 <br/><br/>\
+# 대응 방안 <br/>\
+- Slow HTTP Post DoS : 임계치, Connection,Keepalive,RequestRead Timeout <br/>\
+- Slowloris : 캐시 서비스 대체, Content-Lengt 임계치 설정 <br/>\
+- Slow Read DoS : HTTP Request Packet Size 검증, TCP 모니터링 <br/><br/>\
+* 114회 응용 3교시 3번\
+',
+
+// [DDoS]- HashDoS
+'# 정의 : GET, POST Hash 구조 서버 공격 기법 <br/>\
+- GET, POST 방식으로 전송되는 HTTP 메시지에 포함된 매게변수의 효과적인 관리를 위해 해시 구조를 사용하는 웹서버를 대상으로 하는 공격 <br/><br/>\
+# 절차 <br/>\
+- 다량 파라미터 전달 <br/>\
+- 해시테이블 중복 유도, 충돌 발생 <br/>\
+- 조회시 많은 자원 소모하여 100% 도달 <br/><br/>\
+# 대응 방안 <br/>\
+- Parameter 개수 제한 <br/>\
+- POST 메시지 크기 제한 <br/>\
+- 웹 서버 업데이트 : 위 2 항목 지원 버전 <br/><br/>\
+* 114회 응용 3교시 3번\
 ',
   
 // DRDoS
