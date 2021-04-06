@@ -612,25 +612,25 @@ var answer = answer.concat(
 - TCP 연결지향성을 위한 프로토콜 과정을 악용하여 Victim 서비스의 과부하를 야기시키는 공격 <br/><br/>\
 # 종류 <br/>\
 1. SYN Flooding <br/>\
-- 공격자 : 다량의 SYN 패킷 전달 <br/>\
+- 공격자 : 다량의 <font color = "red">SYN</font> 패킷 전달 <br/>\
 - 서버 : 대기큐 가득 채워 장애 (Half open 상태 / 75초) <br/><br/>\
 2. TCP Flag Flooding <br/>\
-- TCP Flag 값 임의 조작 (SYN, ACK, FIN, RST) <br/>\
+- TCP Flag 값 임의 조작 (<font color = "red">SYN, ACK, FIN, RST</font>) <br/>\
 - 수신 대상 검증 위해 자원 소모 <br/><br/>\
-3. TCP Session (3 Way Handshaking 과도 유발) <br/>\
+3. TCP Session (<font color = "red">3 Way Handshaking</font> 과도 유발) <br/>\
 - TCP 세션 연결유지 DDoS 공격 <br/>\
 - TCP 세션 연결/해제 반복 공격 <br/>\
 - 연결 후 정상 처럼 보이는 DDoS <br/><br/>\
 # 대응 방안 <br/>\
 1. SYN Flooding <br/>\
-- 임계치 기반 SYN Flooding 차단 : PPS 단계적 조정 <br/>\
-- FirstSYNFlooding 차단 : 의도적 Drop, 재요청 확인<br/>\
-- 정상 트랜잭션 검증 : 연결 후 정상 수행 확인 <br/><br/>\
+- 임계치 기반 SYN Flooding 차단 : <font color = "red">PPS</font> 단계적 조정 <br/>\
+- FirstSYNFlooding 차단 : <font color = "red">의도적 Drop</font>, 재요청 확인<br/>\
+- 정상 트랜잭션 검증 : <font color = "red">연결 후 정상</font> 수행 확인 <br/><br/>\
 2. TCP Session 공격 <br/>\
-- Connection Timeout 설정 : 일정 시간 송수신 체크 <br/>\
-- Keep-Alive 설정 : Keepalivetimeout 세션 공격 차단 <br/>\
-- Time-Wait 설정 : 연결 고갈 공격 차단 <br/>\
-- L7 스위치 임계치 설정 : IP당 Connection Limit 설정 <br/><br/>\
+- Connection Timeout 설정 : 일정 <font color = "red">시간</font> 송수신 체크 <br/>\
+- Keep-Alive 설정 : Keepalivetimeout <font color = "red">세션</font> 공격 차단 <br/>\
+- Time-Wait 설정 : 연결 <font color = "red">고갈</font> 공격 차단 <br/>\
+- L7 스위치 임계치 설정 : <font color = "red">IP당 Connection Limit</font> 설정 <br/><br/>\
 * 114회 응용 3교시 3번\
 ',
 
@@ -640,9 +640,9 @@ var answer = answer.concat(
 # 절차 <br/>\
 <img src = "./img/HTTPHeadOptionSpoofingFlooding.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 공격 기법 <br/>\
-- Slow HTTP Post DoS : 장기간 걸쳐 분할 전송 <br/>\
-- Slow HTTP Header DoS(Slowloris) : Header 속여 지속 연결 <br/>\
-- Slow HTTP Read DoS : TCP 윈도우 크기, 데이터 처리율 감소 연결 <br/><br/>\
+- Slow HTTP <font color = "red">Post</font> DoS : <font color = "red">장기간</font> 걸쳐 분할 전송 <br/>\
+- Slow HTTP <font color = "red">Header</font> DoS(Slowloris) : <font color = "red">Header 속여</font> 지속 연결 <br/>\
+- Slow HTTP <font color = "red">Read</font> DoS : TCP 윈도우 <font color = "red">크기</font>, 데이터 <font color = "red">처리율</font> 감소 연결 <br/><br/>\
 # 대응 방안 <br/>\
 - Slow HTTP Post DoS : 임계치, Connection,Keepalive,RequestRead Timeout <br/>\
 - Slowloris : 캐시 서비스 대체, Content-Lengt 임계치 설정 <br/>\
