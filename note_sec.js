@@ -630,7 +630,7 @@ var answer = answer.concat(
 - Connection Timeout 설정 : 일정 <font color = "red">시간</font> 송수신 체크 <br/>\
 - Keep-Alive 설정 : Keepalivetimeout <font color = "red">세션</font> 공격 차단 <br/>\
 - Time-Wait 설정 : 연결 <font color = "red">고갈</font> 공격 차단 <br/>\
-- L7 스위치 임계치 설정 : <font color = "red">IP당 Connection Limit</font> 설정 <br/><br/>\
+- L7 스위치 임계치 설정 : <font color = "red">IP</font>당 Connection Limit 설정 <br/><br/>\
 * 114회 응용 3교시 3번\
 ',
 
@@ -642,11 +642,11 @@ var answer = answer.concat(
 # 공격 기법 <br/>\
 - Slow HTTP <font color = "red">Post</font> DoS : <font color = "red">장기간</font> 걸쳐 분할 전송 <br/>\
 - Slow HTTP <font color = "red">Header</font> DoS(Slowloris) : <font color = "red">Header 속여</font> 지속 연결 <br/>\
-- Slow HTTP <font color = "red">Read</font> DoS : TCP 윈도우 <font color = "red">크기</font>, 데이터 <font color = "red">처리율</font> 감소 연결 <br/><br/>\
+- Slow HTTP <font color = "red">Read</font> DoS : TCP <font color = "red">윈도우</font> 크기, <font color = "red">데이터 처리율</font> 감소 연결 <br/><br/>\
 # 대응 방안 <br/>\
-- Slow HTTP Post DoS : 임계치, Connection,Keepalive,RequestRead Timeout <br/>\
-- Slowloris : 캐시 서비스 대체, Content-Lengt 임계치 설정 <br/>\
-- Slow Read DoS : HTTP Request Packet Size 검증, TCP 모니터링 <br/><br/>\
+- Slow HTTP Post DoS : <font color = "red">임계치</font>, Connection,Keepalive,RequestRead <font color = "red">Timeout</font> <br/>\
+- Slow HTTP Header DoS: <font color = "red">캐시</font> 서비스 대체, Content-Length 임계치 설정 <br/>\
+- Slow HTTP Read DoS : HTTP Request <font color = "red">Packet Size 검증</font>, <font color = "red">TCP 모니터링</font> <br/><br/>\
 * 114회 응용 3교시 3번\
 ',
 
