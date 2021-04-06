@@ -31,8 +31,8 @@ var question = question.concat(
 '[DDoS]- HTTP Head/Option Spoofing Flooding',
 '[DDoS]- HashDoS',
 '[공격기법]- DRDoS',
-'시큐어코딩',
-'[시큐어코딩]- TouchPoints 기법',
+'Secure Coding',
+'[Secure Coding]- TouchPoints 기법',
 '크라임웨어(Crimeware)',
 '랜섬웨어',
 '표적형 랜섬웨어',
@@ -675,8 +675,41 @@ var answer = answer.concat(
 * ITPE 2회 관리 2교시 4번\
 ',
   
-// 시큐어 코딩
-'<img src = "./img/SecureCoding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+// Secure Coding
+'# 정의 : 설계 및 구현 단계 / 취약점 사전 제거 / 안전한 소프트웨어 개발 기법 <br/>\
+- 설계 및 구현 단계에서 해킹 등의 공격을 유발할 가능성이 있는 잠재적인 보안 취약점을 사전에 제거하여, 외부 공격으로부터 안전한 소프트웨어를 개발하는 기법 <br/><br/>\
+# 유형 (CWE 7 Pernicious Kingdom) <br/>\
+1. 입력 데이터 검증 및 표현 <br/>\
+- 내용 : 검증 누락, 잘못된 형식 지정 <br/>\
+- 유형 : SQL Injection / XSS / OS 명령어 삽입 <br/>\
+- 대응 : 인자화 질의문 / ReplaceAll / 사용 x <br/><br/>\
+2. 보안 기능 <br/>\
+- 내용 : 보안 기준(인증, 접근제어, 기밀성, 암호화, 권한관리) 부적절 관리 <br/>\
+- 유형 : 부적절 인가 / 취약한 암호 알고리즘 <br/>\
+- 대응 : 노출 최소화 / 3DES, AES, SEED <br/><br/>\
+3. 시간 및 상태 <br/>\
+- 내용 : 병렬 시스템 프로세스, 쓰레드 부적절 관리 <br/>\
+- 유형 : 검사시점 사용시점 , 재귀함수 <br/>\
+- 대응 : thread safe 함수 / 조건문 or 반복문 블록 사용 <br/><br/>\
+4. 에러 처리 <br/>\
+- 내용 : 에러 처리 x, 불충분 처리, 에러 정보<br/>\
+- 유형 : 노출, 오류 상황 대응 부재 <br/>\
+- 대응 : 최소한 정보 표현 / 예외 처리 <br/><br/>\
+5. 코드 오류 <br/>\
+- 내용 : 복잡한 코드 유발 문제점 <br/>\
+- 유형 : 자료형 오류(부호, Casting) / 동적 메모리 <br/>\
+- 대응 : 반환 값 확인 / 사용후 자원 해제 <br/><br/>\
+6. 캡슐화 <br/>\
+- 내용 : 중요 데이터 불충분 캡슐화 <br/>\
+- 유형 : 디버거 코드 / 시스템데이터 노출 <br/>\
+- 대응 : 개발 후 삭제 / 노출 금지 <br/><br/>\
+7. API 악용 <br/>\
+- 내용 : 의도 이외 사용, 보안 취약 API <br/>\
+- 유형 : 위험 함수 사용 / NULL 처리 <br/>\
+- 대응 : 취약 함수 금지 / NULL Exception <br/><br/>\
+# 사례 <br/>\
+<img src = "./img/SecureCoding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 114회 응용 1교시 9번 <br/>\
 * 라이지움 87회 관리 4교시 2번\
 ',
   
