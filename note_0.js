@@ -33,4 +33,9 @@ var this_week_question =
 /*
 'SD-WAN',
 */
+
+/* 암기 목록 */
+/*
+'ISO/IEC 20889', '식별자', 'ISMS-P','ISA/IEC 62443','GDPR','Privacy By Design',
+*/
 ];
