@@ -658,8 +658,8 @@ var answer = answer.concat(
 - 해시테이블 중복 유도, 충돌 발생 <br/>\
 - 조회시 많은 자원 소모하여 100% 도달 <br/><br/>\
 # 대응 방안 <br/>\
-- Parameter 개수 제한 <br/>\
-- POST 메시지 크기 제한 <br/>\
+- <font color ="red">Parameter</font> 개수 제한 <br/>\
+- <font color = "red">POST</font> 메시지 크기 제한 <br/>\
 - 웹 서버 업데이트 : 위 2 항목 지원 버전 <br/><br/>\
 * 114회 응용 3교시 3번\
 ',
