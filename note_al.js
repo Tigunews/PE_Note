@@ -1930,6 +1930,8 @@ var answer = answer.concat(
 - 인공지능 서비스에 활용되는 기계학습 라이브러리, 인터페이스, 소프트웨어 제공하는 인프라 유기적 집합 <br/><br/>\
 # 암기 <br/>\
 - AI성능 3요소 : 알데컴 (알고리즘, 데이터, 컴퓨팅파워) <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/AIServicePlatform.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 기술(학상언시인) <br/>\
 - 학습 및 추론기술 : 지식표현, 지식베이스 <br/>\
 - 상황이해 : 감정이해, 공간이해, 협력지능, 자가이해, 자연어 처리 <br/>\
