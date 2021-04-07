@@ -1118,8 +1118,13 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 양자 병렬성 : 양자 얽힘 이용한 고유정보 처리 능력 <br/>\
 - 순간이동 : 양자 얽힘 이용 특성 <br/><br/>\
 # 알고리즘 <br/>\
-- Shor\'s Algorithm : QTF(Quantum Fourier Transform) 이용 함수 주기 구하는 알고리즘, 단시간 소인수 분해 가능, RSA 더이상 사용 X <br/>\
-- Grover Algorithm : 소인수 분해하지 않고 1부터 대입해도 몇분이면 해독 가능 <br/><br/>\
+1. Shore <br/>\
+- 특징 : 인수분해 문제 해결 속도 감소 <br/>\
+- 공개키 : 안전하지 않음 <br/><br/>\
+2. Grover <br/>\
+- 특징 : 정렬되지 않은 DB 원소 검색속도 향상 <br/>\
+- 대칭키 : 키사이즈 증가 필요 <br/>\
+- 해시 : 암호 알고리즘 출력길이 증가 필요 <br/><br/>\
 # 구조 <br/>\
 - Physical Device : 양자정보소자 구현/제어 물리계층 <br/>\
 - Computation Model : 물리적 계층구조를 논리적 계층구조 변경 위한 오류 정보, 결함허용 방식 적용 <br/>\
