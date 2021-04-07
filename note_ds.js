@@ -3177,14 +3177,33 @@ var answer = answer.concat(
 2. 비즈니스적 <br/>\
 - 탄력성 : 최소 비용, BCP(RTO/RPO)<br/>\
 - 다양성 : 최적 도구(Shadow IT 예방), Polyglot 환경(Cross Compiler) <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/MultiCloud.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - Public Cloud : 다양한 클라우드 환경에서 변화하는 가상 장치가 조직과 연결 <br/>\
 - Private Cloud : 서비스 오케스트레이션과 함께 작동하는 분석, SDN 및 운영 관리 <br/>\
 - End to End Connectivity : 안전한 이더넷 코어 스위치 및 무선 액세스 <br/>\
 - Data Center : Leaf, Spine, Core 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
 - Campus and branch : sd-wan 라우팅, sd-branch 보안으로 액세스 <br/><br/>\
+# 기술요소 <br/>\
+1. 인프라 연동 <br/>\
+- 개념 : 동일 방식, 인터페이스 활용 연동 <br/>\
+- 주요기능 : 단일 API, 드라이버, 자원 관리, Scale Out <br/><br/>\
+2. 인프라 서비스 통합 운용/관리 <br/>\
+- 개념 : 개별 클라우드 자원(가상머신, 컨테이너) 통합 배치, 운용, 관리 기술 <br/>\
+- 주요기능 : 최적 배치 스케줄링, 통합 서비스 관리, 실행환경 연계 <br/><br/>\
+3. Application 통합 운용, 관리 기술 <br/>\
+- 개념 : 다양한 애플리케이션 배치, 운용, 관리 기술 <br/>\
+- 기능 : App 생성 및 배치, App 운용 및 관리 <br/><br/>\
+4. 통합 모니터링 <br/>\
+- 개념 : 애플리케이션 상태 및 성능 정보 수집, 저장, 관리 기술 <br/>\
+- 기능 : Agent(표준화), Push(주기적), Pull(실시간), 모니터링(복수 서비스 관계) <br/><br/>\
+5. 개방형 인터페이스 기술 <br/>\
+- 개념 : 전문성의 민주화, 환경 제공 <br/>\
+- 기능 : Open API(REST), CLI(터미널), 웹 도구(GUI) <br/><br/>\
+# 국내 산업 영향 <br/>\
+- 국내 클라우드 사업자 위기 : 해외 밴더 진출 인한 입지 위기 <br/>\
+- 그룹사 IT 자회사 위기 : 외부 클라우드 서비스 전환시 역할 모호 <br/>\
+- 통신&IDC  사업자 기회 : 글로벌 클라우드 사업자와 제휴 기회 <br/>\
+- Cloud MSP 기회 : 복수 클라우드 Managed 수요 증가 <br/><br/>\
 # 구축시 고려사항 <br/>\
 1. 클라우드 연계 <br/>\
 - 분산 App 서비스 연계 : 개체 위치 최적화/자동화(URL 기반 경로), 가상 멀티테넌시(오버레이 네트워크) <br/>\
@@ -3192,6 +3211,7 @@ var answer = answer.concat(
 2. 멀티 클라우드 보안성 확보 <br/>\
 - 멀티레이어 보안성 확보 : 기초 데이터 암호화(AES, SHA-2, RSA), NFV(SECaaS 기반 CASE 연계) <br/>\
 - 데이터 보호 및 흐름 가시화 : 중요도별 Access 분리(Bell-Lapadula), 능동형 URI 감시 가시화(URI 경로 감시, vDPI 페이로드 분석) <br/><br/>\
+* ITPE 122회 합숙 2일차 관리 2교시 5번 <br/>\
 * KPC 93회 2교시 2번\
 ',
 
