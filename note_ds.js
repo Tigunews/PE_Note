@@ -3187,10 +3187,8 @@ var answer = answer.concat(
 - 인프라 연동 : 단일 API, 인프라 연동 드라이버, 자원 관리, Scaleout <br/>\
 - 인프라 서비스 관리 : 스케줄링, 통합 서비스 관리, 실행환경 연계 <br/>\
 - Application 관리 : App 생성 및 배치, App 운용 및 관리 <br/>\
-- 통합 모니터링 : Agent, Push, Pull, 서비스 모니터링 <br/><br/>\
-5. 개방형 인터페이스 기술 <br/>\
-- 개념 : 전문성의 민주화, 환경 제공 <br/>\
-- 기능 : Open API(REST), CLI(터미널), 웹 도구(GUI) <br/><br/>\
+- 통합 모니터링 : Agent, Push, Pull, 서비스 모니터링 <br/>\
+- 개방형 인터페이스 : Open API(REST), CLI(터미널), 웹 도구(GUI) <br/><br/>\
 # 국내 산업 영향 <br/>\
 - 국내 클라우드 사업자 위기 : 해외 밴더 진출 인한 입지 위기 <br/>\
 - 그룹사 IT 자회사 위기 : 외부 클라우드 서비스 전환시 역할 모호 <br/>\
