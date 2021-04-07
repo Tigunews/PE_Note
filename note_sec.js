@@ -678,7 +678,7 @@ var answer = answer.concat(
 // Secure Coding
 '# 정의 : 설계 및 구현 단계 / 취약점 사전 제거 / 안전한 소프트웨어 개발 기법 <br/>\
 - 설계 및 구현 단계에서 해킹 등의 공격을 유발할 가능성이 있는 잠재적인 보안 취약점을 사전에 제거하여, 외부 공격으로부터 안전한 소프트웨어를 개발하는 기법 <br/><br/>\
-# 유형 (CWE 7 Pernicious Kingdom) <br/>\
+# 유형 (CWE 7 Pernicious Kingdom) (입보시에코캡A) <br/>\
 1. 입력 데이터 검증 및 표현 <br/>\
 - 내용 : 검증 누락, 잘못된 형식 지정 <br/>\
 - 유형 : SQL Injection / XSS / OS 명령어 삽입 <br/>\
