@@ -3184,8 +3184,10 @@ var answer = answer.concat(
 - Data Center : Leaf, Spine, Core 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
 - Campus and branch : sd-wan 라우팅, sd-branch 보안으로 액세스 <br/><br/>\
 # 기술요소 <br/>\
+1. 컴퓨팅 자원 활용 <br/>\
 - 인프라 연동 : 단일 API, 인프라 연동 드라이버, 자원 관리, Scaleout <br/>\
-- 인프라 서비스 관리 : 스케줄링, 통합 서비스 관리, 실행환경 연계 <br/>\
+- 인프라 서비스 관리 : 스케줄링, 통합 서비스 관리, 실행환경 연계 <br/><br/>\
+2. 멀티 클라우드 응용 <br/>\
 - Application 관리 : App 생성 및 배치, App 운용 및 관리 <br/>\
 - 통합 모니터링 : Agent, Push, Pull, 서비스 모니터링 <br/>\
 - 개방형 인터페이스 : Open API(REST), CLI(터미널), 웹 도구(GUI) <br/><br/>\
