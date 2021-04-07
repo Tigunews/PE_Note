@@ -3167,8 +3167,15 @@ var answer = answer.concat(
 '# 정의 : 연계, 상호 운용성, 탄력성 보장 클라우드 기술 <br/>\
 - 2개 이상의 CSP(Cloud Service Provider)가 제공하는 Public or Private 구성된 클라우드 운영 방식 <br/><br/>\
 # 필요성 <br/>\
-- 구성 : Shadow IT, 유연성<br/>\
-- 서비스 : 근접성, FailOver <br/><br/>\
+1. 구성 <br/>\
+- 단일 클라우드 한계 <br/>\
+- 벤더 종속성 탈피 <br/>\
+- Shadow IT 대응 <br/>\
+- 조직 특성의 다양성 <br/><br/>\
+2. 서비스 <br/>\
+- 서비스 근접성 <br/>\
+- 서비스 탄력성 확보 <br/>\
+- Fail Over <br/><br/>\
 # 특징 <br/>\
 1. 기술적 <br/>\
 - 독립성(Lockin) : 선택적 서비스(라이선스), 협상 경쟁력(ROI)<br/>\
