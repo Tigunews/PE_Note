@@ -1110,13 +1110,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 얽힘이나 중첩등의 양자역학적 현상을 이용하여 큐비트 단위로 자료를 처리하는 컴퓨팅 기법 <br/><br/>\
 # 암기 : 원리-초양중복얽병순 <br/><br/>\
 # 원리 <br/>\
-- 초전도체 나노 소자 : 양자 표현 비트, Qubit 이용 정보 저장 처리 <br/>\
-- 양자 비트 : 2Qubit로 00,01,10,11 4가지 경우 한번에 처리, 병렬성 <br/>\
-- 중첩 : 원자핵스핀, 관측전 2가지 상태 동시, 관측후 방향 확정 <br/>\
-- 복제불가원리 : 관측시 상태 바뀜 <br/>\
-- 얽힘 : 한번 연산 명령으로 모든 양자 상 변화, Qubit간 상호작용 <br/>\
-- 양자 병렬성 : 양자 얽힘 이용한 고유정보 처리 능력 <br/>\
-- 순간이동 : 양자 얽힘 이용 특성 <br/><br/>\
+<img src = "./img/QuantumProperty.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 알고리즘 <br/>\
 1. Shore <br/>\
 - 특징 : 인수분해 문제 해결 속도 감소 <br/>\
