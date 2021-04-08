@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 /* 7주차 */
-'CDR','디지털 포렌식',
+'CDR','디지털 포렌식','Secure Coding',
 
 /* 6주차 */
 /*
