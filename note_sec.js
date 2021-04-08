@@ -2819,12 +2819,13 @@ EAL : 펑스매매세세포 <br/><br/>\
 // FIDO
 '# 정의 : ID/PW -> 다양한 생체 인식 기반 / 인증 시스템 <br/>\
 - Fast Identify Online <br/>\
-- 현재의 ID/PW 방식 대신 지문, 홍채, 얼굴 인식 등 다양한 생체 인식 기반의 새로운 인증 시스템 <br/><br/>\
+- 온라인 환경 생체 인식 기술 활용, 인증 프로토콜과 인증 수단 분리된 Fido Alliance 제안 인증 프로토콜 <br/><br/>\
 # 이력 <br/>\
-- 1.0 (2014.12.) : UAF, U2F <br/>\
-- 2.0 (2018.05.) : 웹 확장, 비밀번호 없이 인증 <br/>\
-* UAF(Universal Authentication Framework) : 지문, 음성, 얼굴인식 등 사용자 고유의 생체 정보 인식 <br/>\
-* U2F(Universal Second Factor) : 1차인증 후 1회성 보안키 동글 2차인증 <br/><br/>\
+- 1.0 (2014.12.) : Device 저장, UAF, U2F <br/>\
+- 2.0 (2018.05.) : FIDO 1.0 플랫폼화 / 웹 확장, WebAuthn, CTAP <br/>\
+<font color = "red">* UAF(Universal Authentication Framework) : 지문, 음성, 얼굴인식 등 사용자 고유의 생체 정보 인식 <br/>\
+* U2F(Universal Second Factor) : 1차인증 후 1회성 보안키 동글 2차인증 <br/>\
+* CTAP(Client to Authenticator Protocol) : USB, NFC, BT 이용, 운영체제나 웹 브라우저 등과 인증자 연동 </font><br/><br/>\
 # 구성요소 <br/>\
 - FIDO Server : 키 등록 관리 검증 <br/>\
 - FIDO Client : 인증자 필터링, ASM RP Client 중계 <br/>\
