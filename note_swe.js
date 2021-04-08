@@ -5730,7 +5730,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 '# 정의 : 3자 관점의 검증활동 <br/>\
 - 감리발주기관 및 피감리인의 이해관계로부터 독립된자가 제3자적 관점에서 정보시스템의 효율성을 향상시키고 안전성을 확보하기 종합적으로 점검하고 문제점을 개선하도록 하는 활동 <br/><br/>\
 # 감리대상 (전자정부법 57조) (대공5필) <br/>\
-- 의무감리 : 사업비 <font color = "red">5</font>억이상, <font color = "red">대</font>국민 서비스, 민원 업무, <font color = "red">공<font/>통 구현 / 시행령 71-1,2 <br/>\
+- 의무감리 : 사업비 <font color = "red">5</font>억이상, <font color = "red">대</font>국민 서비스, 민원 업무, <font color = "red">공</font>통 구현 / 시행령 71-1,2 <br/>\
 - 기관장 판단 : EA, ISP, SE, OP 등에 감리 시행 <font color = "red">필</font>요성 인정되는 경우 <br/><br/>\
 # 감리프레임워크 (시영관) <br/>\
 - 감리시점 : ITA, ISP, SD, DB, OP, MA <br/>\
