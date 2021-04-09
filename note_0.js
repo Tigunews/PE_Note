@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 /* 7주차 */
-'CDR','디지털 포렌식','Secure Coding',
+'CDR','디지털 포렌식','Secure Coding','무자각 지속 인증','NFV','SDN',
 
 /* 6주차 */
 /*

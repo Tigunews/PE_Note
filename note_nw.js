@@ -80,7 +80,7 @@ var question = question.concat(
 '[6G]- Wifi 7',
 'Wifi 6',
 'Wifi 6e',
-'재난안전통신망(Disaster Security Communication Network, 재난망)',
+'재난 안전통신망',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'eMTC',
@@ -95,7 +95,6 @@ var question = question.concat(
 '[FTP]- FTPS',
 '[FTP]- SFTP',
 'Socket',
-'공공무선 통신망',
 'NOS',
 '대역확산',
 'NW 가상화',
@@ -1657,7 +1656,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 기타 UHF, VHF, TETRA, idEN, WiBro 등 다양한 규격의 무선통신 사용 <br/><br/>\
 4. To-Be <br/>\
 - 미래부 : 차세대 기술방식 선정, 주파수 공급지원 <br/>\
-- 안행부 : 구축사업 추진, PS-LTE 통신 방식, 전용 주파수 대역 활용 <br/><br/>\
+- 행안부 : 구축사업 추진, PS-LTE 통신 방식, 전용 주파수 대역 활용 <br/><br/>\
 5. 기대효과 <br/>\
 - 재난 대응 시간 단축 <br/>\
 - 중복 투자 예방 <br/>\
@@ -1675,6 +1674,19 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 미래창조 과학부 : 지상파 UHD기술 기준, 무선설비 기술기준 일부개정안 발표 but X <br/>\
 - 단말 전문가 : 고성능 필터 의한 최적화 한계 존재, 전파 출력조절, 보호 대역 확대 외 대안 없다 판단 <br/>\
 - 전파법 : 후순위 제공 서비스 주체가 전파 간섭 책임져야함. 지역마다 순서 달라 책임 주체 논의 필요\
+',
+ 
+// 공공무선 통신망
+'# 정의: 국민 편의 및 안전 확보 위안 LTE 기반 공공 무선통신망 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PublicWirelessCommunication.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# PS-LTE <br/>\
+<img src = "./img/PS-LTE_OverView.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# LTE-R <br/>\
+<img src = "./img/LTE-R_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# LTE-M <br/>\
+<img src = "./img/LTE-M_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 1교시 3번\
 ',
 
 // 토르 네트워크
@@ -1851,19 +1863,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * 116회 3교시 6번\
 ',
  
-// 공공무선 통신망
-'# 정의: 국김 편의 및 안전 확보 위안 LTE 기반 공공 무선통신망 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/PublicWirelessCommunication.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# PS-LTE <br/>\
-<img src = "./img/PS-LTE_OverView.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# LTE-R <br/>\
-<img src = "./img/LTE-R_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# LTE-M <br/>\
-<img src = "./img/LTE-M_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 120회 응용 1교시 3번\
-',
- 
 // NOS
 '# 정의 : NW 환경에서 원활한 통신 보장위한 운영체제 <br/>\
 - 네트워크 환경에서 서버와 클라이언트간의 원활한 통신을 보장하기 위해 자원 공유 서비스 및 클라이언트의 관리 기능을 제공하는 운영체제 <br/><br/>\
@@ -1927,7 +1926,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // NFV
-'# 정의 : 하나의 물리적인 네트워크 기능을 여러 사용자 및 장치가 사용 가능하도록 네트워크 기능을 가상화하는 기술 <br/><br/>\
+'# 정의 : 네트워크 기능 / 여러 사용자 사용 가능 / 가상화 기술 <br/>\
+- 하나의 물리적인 네트워크 기능을 여러 사용자 및 장치가 사용 가능하도록 네트워크 기능을 가상화하는 기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/NFV_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
@@ -1940,7 +1940,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 가상화 레이어 : 논리적 통합 <br/>\
 - VNF : 라우팅, 방화벽 등 네트워크 기능 제공 <br/><br/>\
 # SDN NFV 비교 <br/>\
-<img src = "./img/SDN_NFV.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SDN_NFV.png" style = "max-width:100%; height:auto;"><br/>\
+* NFV : ETSI NFV Working Group <br/><br/>\
 * 아이리포 23회 관리 1교시 10번\
 ',
   
@@ -1951,6 +1952,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Application : SDN 운영, 활용, 구동 레이어(4~7Layer) / NMS, Python <br/>\
 - Control plane : 공통부, 어플리케이션 구성되어 네트워크 제어 / SDN Controller, Southbound API <br/>\
 - Data Plane : Controller와 Application을 구동하기 위한 네트워크 장비 / SDN Switch, VXLAN <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/SDN_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 응용 3교시 6번\
 ',
   
