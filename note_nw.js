@@ -81,6 +81,7 @@ var question = question.concat(
 'Wifi 6',
 'Wifi 6e',
 '재난 안전통신망',
+'공공무선 통신망',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'eMTC',
