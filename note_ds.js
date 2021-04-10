@@ -1198,6 +1198,11 @@ var answer = answer.concat(
 - 소지기반 : SNS, 음성, email, OTP토큰, 스마트카드 <br/>\
 - 생체기반 : 홍채,지정맥,장문,지문,정맥 <br/>\
 - 특징기반 : Q&A, 상황정보 <br/><br/>\
+# 종류 <br/>\
+- 인증서 : PKI 기반 / 공개키, 개인키, 전자서명 <br/>\
+- 토큰 : Stateless / 사용자 무상태 유지, OAuth <br/>\
+- FIDO : Paswordless / UAF, U2F <br/>\
+- MFA : Multi Factor / 2가지 이상 결합 <br/><br/>\
 # 비대면 실명 인증 적용사례 <br/>\
 - 신분증 사본 제출 : 스캔 제출 <br/>\
 - 영상 통화 : 안면인식기술 대조 <br/>\
