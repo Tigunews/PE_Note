@@ -23,6 +23,7 @@ var question = question.concat(
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
 '[최소신장트리]- 프림(Prim) 알고리즘',
 '[Tree]- AVL Tree',
+'[Tree]- Multiway Search Tree',
 '[Tree]- B Tree',
 '[Tree]- B Plus Tree',
 '[Tree]- B Star Tree',
@@ -483,21 +484,42 @@ var answer = answer.concat(
 <img src = "./img/AVL_RL.png" style = "max-width:100%; height:auto;">\
 ',
 
+// Multiway Search Tree
+'# 정의 : 트리의 노드가 m개 이하의 가지를 가질 수 있는 탐색 트리 <br/>\
+- 노드 안에 여러개의 자료를 가질 수 있고, 서브 트리 역시 여러개 가질수 있는 트리 자료구조 <br/><br/>\
+# 특징 <br/>\
+- 이진 탐색 트리 확장 / 높이 감소 목적 <br/>\
+- 2개 이상 자식 보유 가능 (3,4원 탐색트리...) <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/MultiwaySearchTreeStructure.png" style = "max-width:100%; height:auto;">\
+* 
+',
+
 // B Tree
-'# 정의 : 2개 자식 or 1개 값 / 1/2 / 효율적 자료구조 <br/>\
-- 루트노드는 최소한 2개의 자식노드와 적어도 한 개의 값을 가지며, 루트노드와 리프노드를 제외하고는 최소한 1/2 이상이 채워져 있는 효율적 자료구조 <br/><br/>\
+'# 정의 : 균등한 응답속도 보장 / 데이터 정렬 / 순차 접근 / 트리형 자료구조 / Skewed 현상 적음 <br/>\
+- 데이터를 정렬하여 탐색, 삽입, 삭제 및 순차 접근이 가능토록 유지하는 트리형 자료구조 <br/><br/>\
 # B Tree 진화 과정 <br/>\
 <img src = "./img/BTreeFamily.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/BTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 7가지 조건 <br/>\
+1. 탐색 노드는 1/2 이상 채워져야 하며, Leaf Node는 같은 Level 존재 <br/>\
+2. 탐색, 추가, 삭제는 Root Node로 부터 시작 <br/>\
+3. 노드 내 값은 오름차순 유지 <br/>\
+4. 공백이거나 높이 1이상인 m-원 탐색 트리 <br/>\
+5. 루트와 리프를 제외한 내부 노드 최소 m/2, 최대 m 개 서브트리 가지며, 적어도 m/2-1개 키 값 가짐 <br/>\
+6. 루트는 그 자체 리프가 아닌 이상 적어도 두개의 서브트리 가짐 <br/>\
+7. 모든 리프는 같은 레벨에 있음 (균형 트리) <br/><br/>\
 # 특징 <br/>\
-- 구조 : Root ~ Leaf 동일 높이, 분열시 보조연산 <br/>\
-- 순차접근 : 중위순회 <br/>\
-- 직접접근 : 트리 순회 검색 <br/>\
-- 속도 : 보통(소량 데이터 검색 유리) <br/>\
-- 중복성 : 탐색키 중복성 없음 <br/>\
-- 노드키 이동기준 : 1/2 <br/>\
-- 노드 관리 : Leaf 아닌 노드 크기 더 크며, 저장 관리 복잡 \
+- 구조 : Root ~ Leaf 동일 높이 <br/>\
+- 순차접근 : 중위 순회 <br/>\
+- 직접접근 : 트리 순회 <br/>\
+- 속도 : 보통 (소량 데이터 유리) <br/>\
+- 중복성 : 없음 <br/>\
+- 노드키 이동 기준 : m/2 <br/>\
+- 노드관리 : Leaf < Branch,Root / 저장 관리 복잡 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/BTreeFamilyCompare.png" style = "max-width:100%; height:auto;">\
 ',
 
 // B Plus Tree
@@ -505,6 +527,16 @@ var answer = answer.concat(
 - B 트리 50% 공간 활용도를 67% 공간 활용도로 개선하여 트리 분할 횟수를 줄인 B 트리 개션 자료구조 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/BPlusTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# B 트리와 차이점 (조건) <br/>\
+1. 루트 서브트리 개수 : [0,2] or [m/2,m] <br/>\
+2. 로트, 리프 제외한 노드 서브트리 : [m/2,m] <br/>\
+3. 모든 리프 동일 레벨 존재, 파일의 순차 세트로 리스트 연결됨 <br/>\
+4. 리프가 아닌 노드에 있는 키값의 수 = 서브트리수 -1 <br/>\
+5. 순차 액세스, 직접 액세스 모두 이용 <br/>\
+6. 모든 키 단말과 내부 두 곳 에 존재 <br/><br/>\
+# 구성요소 <br/>\
+- Index Set : 키, 포인터만 존재 (경로제공 목적) <br/>\
+- Sequence Set : 데이터만 존재 (정렬) <br/><br/>\
 # 특징 <br/>\
 - 구조 : Index set, Sequence set(Data) <br/>\
 - 순차접근 : Leaf 노드만 검색 <br/>\
@@ -520,6 +552,14 @@ var answer = answer.concat(
 - B Tree 에서 최소 2/M의 키 값을 가져야한다는 점을 2/3으로 변경한 트리 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/BStarTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 조건 <br/>\
+1. 리프를 제외한 모든 노드는 m개의 서브트리 이상 가질 수 없음 <br/>\
+2. 루트를 제외한 모든 노드는 2/3 이상 채워져야 함 <br/>\
+3. 루트와 리프를 제외한 모든 노드는 적어도 (2m-2)/3 +1 개의 서브트리 가짐 <br/>\
+4. 노드가 가득차면 분할하는 대신 이웃한 형제 노드 재배치 <br/>\
+5. 한 노드가 가득차고 인접 노드까지 모두 가득 찰 때까지 분할 지연 <br/>\
+6. 순차 엑세스와 직접 엑세스 모두 이용 <br/>\
+7. 각 리프 키값 보유량 : [2m-2/3, m-1] <br/><br/>\
 # 특징 <br/>\
 - 구조 : Overflow 형제 노드 분열, Underflow 형제 노드 결합 <br/>\
 - 순차접근 : 중위 순회 <br/>\
