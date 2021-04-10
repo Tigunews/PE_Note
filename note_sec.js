@@ -56,9 +56,9 @@ var question = question.concat(
 '산업제어시스템 보안',
 '스턱스넷(stuxnet)',
 'APT',
-'[APT]- Leteral Movement',
-'[Leteral Movement]- IoA',
-'[Leteral Movement]- IoC',
+'[APT]- Lateral Movement',
+'[Lateral Movement]- IoA',
+'[Lateral Movement]- IoC',
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
@@ -1114,18 +1114,22 @@ var answer = answer.concat(
 * 116회 2교시 1번\
 ',
    
-// Leteral Movement
+// Lateral Movement
 '# 정의 : APT 내부망 이동 공격 기법 <br/>\
 - Lateral Movement <br/>\
 - 지능형 위협 공격(APT) 과정 중 공격자가 조직 내 최초 시스템 해킹에 성공후 내부망에서 사용되는 계정 정보를 획득하여 내부망의 시스템으로 이동하는 방식 <br/><br/>\
 # 공격기법 <br/>\
-- 1단계 : 인증정보 탈취 <br/>\
-- 2단계 : 확산 <br/>\
-- 3단계 : 유출 <br/>\
+- 1단계 : 내부 침투 / 스피어피싱, 워터링홀 -> Credential 탈취 <br/>\
+- 2단계 : 확산 / 미미캐츠, Pass the hash <br/>\
+- 3단계 : 유출 / 기밀정보, 개인정보 유출 <br/>\
 - 4단계 : 의도적 흔적 삭제 <br/><br/>\
 # 대응방안 <br/>\
-- 예방 단계 : xp_cmeshell procedure 삭제, SSL 활성화 <br/>\
-- 사후 단계 : 허니팟 시스템(모니터링), 머신러닝(이상여부), 문자,메일(인증) <br/><br/>\
+1. 사전 대응 <br/>\
+- 인증정보보호 : Crecential 관리 강화 <br/>\
+- 네트워크 분리 : 망분리 <br/><br/>\
+2. 사후 대응 <br/>\
+- ZeroTrust : Endpoint 수준 보호 <br/>\
+- Client 허니팟 : Target 위장 <br/><br/>\
 * 120회 응용 1교시 9번\
 ',
   
@@ -1136,7 +1140,7 @@ var answer = answer.concat(
 # 비교 <br/>\
 <img src = "./img/IOC_IOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 적용사례 <br/>\
-- 위협탐지 : Leteral Movement 등에 대한 행위기반 위협 탐지 <br/>\
+- 위협탐지 : Lateral Movement 등에 대한 행위기반 위협 탐지 <br/>\
 - 위협분석 : 다수의 시스템을 연계하여 이상 행위룰 분석 <br/>\
 - 대응 : 학습을 통한 비반복적, Zero Day 등 새로운 위협 대응 가능 <br/><br/>\
 * 라이지움 88회 관리 1교시 3번\
