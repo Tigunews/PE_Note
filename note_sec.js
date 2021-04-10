@@ -145,6 +145,7 @@ var question = question.concat(
 '[시스템 보안]- Race Condition',
 '[시스템 보안]- Format String',
 'FIDO',
+'[FIDO]- UAF 기술 표준',
 'SSO',
 '[Android]- Deeplink',
 'Zero Trust 보안 모델',
@@ -2851,7 +2852,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 <font color = "red">* UAF(Universal Authentication Framework) : 지문, 음성, 얼굴인식 등 사용자 고유의 생체 정보 인식 <br/>\
 * U2F(Universal Second Factor) : 1차인증 후 1회성 보안키 동글 2차인증 <br/>\
 * CTAP(Client to Authenticator Protocol) : USB, NFC, BT 이용, 운영체제나 웹 브라우저 등과 인증자 연동 </font><br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (클클A인) <br/>\
 - FIDO Server : 키 등록 관리 검증 <br/>\
 - FIDO Client : 인증자 필터링, ASM RP Client 중계 <br/>\
 - ASM(Authenticator Specific Module) : Client 요청 인증자 전달 중계 <br/>\
@@ -2861,8 +2862,30 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 구성요소 비교 <br/>\
 <img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 116회 4교시 3번\
+* 118회 관리 3교시 2번 \
 ',
+
+// UAF 기술 표준
+'# 개념도 <br/>\
+<img src = "./img/U2FStandard.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술표준 <br/>\
+1. FIDO 공통 <br/>\
+(1) 아키텍처 : 사용 시나리오 <br/>\
+(8) 공통상수 : 공통 사용 상수 <br/>\
+(10) 보안참조 : 보안 분석 내용 <br/>\
+(11) 용어해설 : 용어 및 약어 <br/><br/>\
+2. UAF Protocol <br/>\
+(2) 프로토콜 : Message 규격, 절차 <br/>\
+(9) App ID, Facet : 기관 대표 ID, 서로다른 앱 하나 등록키 사용 <br/><br/>\
+3. FIDO User Device <br/>\
+(3) 응용 API : App FIDO 이용 <br/>\
+(4) 인증 API : 인증 장치 접근 표준화 방법 <br/>\
+(5) 인증 명령 : 다양한 형태 구현 <br/><br/>\
+4. 인증장치 Meta Data <br/>\
+(6) Meta Data : 인증방법, 명령어 정의 <br/>\
+(7) Meta Data Service : 서비스기관 메타 데이터 접근 <br/><br/>\
+* 118회 관리 3교시 2번\
+'.
   
 // SSO
 '# 정의 : Single Sign-On <br/>\
