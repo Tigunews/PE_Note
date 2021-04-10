@@ -1151,7 +1151,7 @@ var answer = answer.concat(
 - Indicators of Compromise <br/>\
 - 시그니쳐 등과 같은 공격이 발생했음을 나타내는 방어자의 대응 중심적인 관점의 지표 <br/><br/>\
 # 적용사례 <br/>\
-- 위협탐지 : 시그니쳐 기반의 지푤르 통한 침입탐지 <br/>\
+- 위협탐지 : 시그니쳐 기반의 지표를 통한 침입탐지 <br/>\
 - 위협분석 : 단일 시스템 중심의 지표 분석 <br/>\
 - 대응 : 반복적 공격에 대응 <br/><br/>\
 * 라이지움 88회 관리 1교시 3번\
@@ -1571,6 +1571,8 @@ var answer = answer.concat(
 2. 국내 <br/>\
 - SKT : 세계 1위 양자암호통신 기업 IDQ 인수 <br/>\
 - 한전 : 전력 전송구간 QKD 기술 보호 통신망 개통 <br/><br/>\
+# QKD 방식 비교 <br/>\
+<img src = "./img/QKDType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 117회 관리 1교시 3번 \
 ',
    
