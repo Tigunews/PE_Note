@@ -1323,10 +1323,34 @@ var answer = answer.concat(
 ',
   
 // 바이오정보 분산관리
-'# 개념 : 분산관리센터 / 금융기관 / 분산저장 인증기술 <br/>\
-- 금융 이용자의 지문, 정맥등 바이오 정보를 분산관리센터와 금융기관에 분산 저장하여 보안 강화한 인증기술 <br/><br/>\
+'# 개념 : 불가능 조각 / 분산관리 / 인증시 결합후 폐기 관리 절차<br/>\
+- 바이오정보를 인증이 불가능한 조각으로 분할하여 기관간 분산관리하고, 인증시 조각정보를 결합한 후 인증 완료시 원본 정보는 폐기하는 관리 절차<br/><br/>\
+# 사업 개념 <br/>\
+- 사업명 : 바이오정보 분산관리 국제표준 개발 <br/>\
+- 개발내용 : 국제 표준 개발,등록 보급,확산 활동 <br/>\
+- 사업기간 : 2018.4.1 ~ 2021.12.31 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/BioDistribute.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 바이오 특징점 : 신체적, 행동적 특징 <br/>\
+- 등록 템플릿 : Data 등록 형태 <br/>\
+- 인식 템플릿 : 등록 템플릿과 비교 위한 자료 <br/><br/>\
+# 처리과정별 보안위협 <br/>\
+- 수집/입력 : 위조 인증정보, 전송구간 유출 / TLS <br/>\
+- 저장/이용 : 원본 유출, 템플릿 유출,오남용 / Hash, SEED, HSM(인증수행 영역) <br/>\
+- 파기 : 원본 미파기, 개인정보 미분리 / 즉시파기, 템플릿 폐기<br/><br/>\
+# 모델 유형 <br/>\
+1. 분산관리 센터 결합 <br/>\
+<img src = "./img/BioDistributeA.png" style = "max-width:100%; hegiht:auto;"><br/>\
+<img src = "./img/BioDistributeB.png" style = "max-width:100%; hegiht:auto;"><br/>\
+<img src = "./img/BioDistributeC.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+2. 금융기관 결합 <br/>\
+<img src = "./img/BioDistributeD.png" style = "max-width:100%; hegiht:auto;"><br/>\
+<img src = "./img/BioDistributeE.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 활용 사례 : ATM, 키오스크, 간편 결제 <br/><br/>\
+# 표준화 현황 <br/>\
+- 2019.08 ISO 국제표준화 대상 채택 <br/>\
+- 2022.08. 까지 바이오 인증 국제 표준안 마련후 ISO에서 최종 승인 획득 예정 <br/><br/>\
 * 120회 관리 2교시 1번\
 ',
   
