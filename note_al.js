@@ -492,7 +492,6 @@ var answer = answer.concat(
 - 2개 이상 자식 보유 가능 (3,4원 탐색트리...) <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/MultiwaySearchTreeStructure.png" style = "max-width:100%; height:auto;">\
-* 
 ',
 
 // B Tree
