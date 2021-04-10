@@ -2885,7 +2885,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 (6) Meta Data : 인증방법, 명령어 정의 <br/>\
 (7) Meta Data Service : 서비스기관 메타 데이터 접근 <br/><br/>\
 * 118회 관리 3교시 2번\
-'.
+',
   
 // SSO
 '# 정의 : Single Sign-On <br/>\
