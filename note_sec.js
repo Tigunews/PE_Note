@@ -1,4 +1,4 @@
-var question = question.concat(
+﻿var question = question.concat(
 '보안 Overview',
 '내외부 정보보안 위협',
 '공격 유형 Overview',
@@ -1092,15 +1092,17 @@ var answer = answer.concat(
 '# 정의 : 지능적 지속적 위협 / 공격기법 <br/>\
 - Advanced Persistent Threat <br/>\
 - 공격자 대상시스템을 타킷으로 침투 목적 달성 위해 지능적 지속 방법 사용하여 장기간 은밀한 진행하는 공격기법 <br/><br/>\
-# 특징(3) : 사회공학, 비인지, 장기간 <br/><br/>\
-# 기법 : 관찰, Zero-Day Attack, 사회공학기법, 은닉, 권한상승, 유출, 적응/지속, 스피어피싱, 난독화, 스턱스넷, 오프레이션 오로라, 나이트 드래곤, EMC/RSA 공격 <br/><br/>\
+# 특징 <br/>\
+- 대상 : 대상확대, 지속적 공격 <br/>\
+- 방법 : 사회공학적, 은밀 <br/>\
+- 피해 : 대규모 <br/><br/>\
 # 공격단계(4) : 침투 > 검색 > 수집 > 유출<br/>\
 1. 관리적 <br/>\
-- 침투 : 사회공학기법(피싱, 스미싱, 파밍) <br/>\
-- 검색 : 관리자권한 탈취(RootKit, Bot, Backdoor), 내부시스템 감염(리소스 갈취, 고의적 파괴, 서비스 거부, 제로데이)<br/><br/>\
+- 침투 : 피싱, 스미싱, 파밍, 스피어 피싱, 워터링홀 <br/>\
+- 탐색 : 크리덴셜, RootKit, DBD <br/><br/>\
 2. 기술적 <br/>\
-- 수집 : 행동형(트로이목마, Keylogger, Spyware), 제어용(Bot, Root-kit, Backdoor) <br/>\
-- 유출 : 데이터 유출, 공격중단 <br/><br/>\
+- 수집 : 기밀정보 수집, 스캐닝 DB접근 <br/>\
+- 유출 : 기밀정보 유출, C&C 통신, 흔적삭제(wipe) <br/><br/>\
 # 대응방안 <br/>\
 1. 관리적 <br/>\
 - Governance : 인사보안, 정보자산, 고객정보 지침 <br/>\
@@ -1111,7 +1113,7 @@ var answer = answer.concat(
 - 네트워크 : 방화벽, QoS <br/>\
 - 망분리 : VDI, SBC, 이중화 <br/>\
 - 엔드포인트 : 매체제어, 침입탐지 <br/>\
-- 데이터 : 암호화솔루션(API, Plugin, 암호화키), 접근제어(로그인, SQL통제) <br/><br/>\
+- 데이터 : 암호화솔루션(API, Plugin, 암호화키), 접근제어(MAC, DAC, RBAC) <br/><br/>\
 * 116회 2교시 1번\
 ',
    
