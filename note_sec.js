@@ -449,6 +449,9 @@ var answer = answer.concat(
 '# 정의 : 128bit Block 암호 알고리즘 / 국가보안기술 연구소 <br/>\
 - Light weight Encryption Algorithm <br/>\
 - IoT등 경량환경의 기밀성 제공 위해 비밀키 이용 128 bit 블록 암호 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- 국산 암호기술 <br/>\
+- 2019.10. 국제표준 제정 <br/><br/>\
 # 매커니즘 <br/>\
 <img src = "./img/LEA_Mechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 요소기술 <br/>\
