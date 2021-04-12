@@ -434,15 +434,15 @@ var answer = answer.concat(
 <img src = "./img/LSH_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 동작 방식 <br/>\
 1. 초기화 <br/>\
-- 입력 메시지 패딩 : 메시지 블록비티 길이의 배수 <br/>\
-- 분할 : 패딩된 메시지, 블록 단위로 분할 <br/><br/>\
+- 입력 메시지 <font color = "red">패딩</font> : 메시지 블록비티 길이의 배수 <br/>\
+- <font color = "red">분할</font> : 패딩된 메시지, 블록 단위로 분할 <br/><br/>\
 2. 압축 <br/>\
-- 연결 변수 갱신 : 32 word 배열 메시지 블록, 압축 함수 입력 후 갱신 <br/>\
-- 메시지 압축 : 마지막 메시지 블록 처리할 때까지 반복 <br/><br/>\
+- 연결 변수 <font color = "red">갱신</font> : 32 word 배열 메시지 블록, 압축 함수 입력 후 갱신 <br/>\
+- 메시지 <font color = "red">압축</font> : 마지막 메시지 블록 처리할 때까지 반복 <br/><br/>\
 3. 완료 <br/>\
-- 연결 변수 최종된 값으로부터 n비트 길이 해시 함수 출력값 생성 <br/><br/>\
+- 연결 변수 최종된 값으로부터 n비트 길이 해시 함수 <font color = "red">출력값 생성</font> <br/><br/>\
 # LEA 와 비교 <br/>\
-<img src = "./img/LEALSH.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/LEALSH.png" style = "max-width:100%; height:auto;">\
 ',
 
 // LEA
