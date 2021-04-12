@@ -19,6 +19,7 @@ var question = question.concat(
 '[Layer4]- TCP',
 '[Layer4][TCP]- DTLS',
 '[Layer4][TCP]- TLS',
+'DHCP',
 'DNS',
 'IP Tunneling',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
@@ -495,6 +496,30 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - TLS 1.0(1999) : SSL 3.0 기반 표준화 \
 ',
 
+// DHCP
+'# 정의 : 일정 시간 유효 / 임대 개념 IP 할당 관리 / 프로토콜 <br/>\
+- 네트워크 관리자가 조직의 중앙에서 일정한 시간 동안만 유효하도록 하는 임대 개념의 IP 주소를 할당하고 관리할 수 있도록 해 주는 프로토콜 <br/><br/>\
+# 특징 <br/>\
+- Client/Server 방식 동작 <br/>\
+- Transport Layer의 UDP 기반 <br/>\
+- 관리 용이성 및 보안성 강화 <br/><br/>\
+# 종류 <br/>\
+- Automatic Allocation : 클라이언트에게 영구적인 IP 할당 기법 <br/>\
+- Dynamic Allocation : 한정된 시간 할당 기법(재사용 자동) <br/>\
+- Manual Allocation : Client IP 네트워크 관리자 할당, DHCP 그 주소 할당 기법 <br/><br/>\
+# 동작절차 <br/>\
+1. 할당(임대) 절차 (DORA) <br/>\
+- Discover : DHCP 서버 찾기 위한 메시지 브로드캐스팅 <br/>\
+- Offer : DHCP 서버 알림 위한 메시지 브로드캐스팅 <br/>\
+- Request : 네트워크 정보 요청 위해 메시지 브로드캐스팅 <br/>\
+- Ack : Request 메시지 수신 후, 응답 메시지 브로드캐스팅 <br/><br/>\
+2. 임대기간 연장 절차 (RA)<br/>\
+- Request : IP Lease Time 절판시 유니캐스팅 <br/>\
+- Ack : 할당 단말 IP, Subnet, GW, DNS, Lease Time 등 포함 유니캐스팅 <br/><br/>\
+3. IP 주소 반납 절차 <br/>\
+- Release : 유니캐스팅 전달 <br/><br/>\
+* KPC 117회 대비 합숙 2일차 1교시 7번\
+',
  
 // DNS
 '# 정의 : 호스트의 도메인 이름을 IP 주소로 전환하는 분산형 이름 질의 시스템 <br/><br/>\
