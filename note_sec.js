@@ -19,6 +19,9 @@
 '[블록암호화 운영모드]- CTR',
 '[암호]- Base64',
 '[공개키]- 디피헬만 알고리즘',
+'경량 암호',
+'[경량 암호]- LSH',
+'[경량 암호]- LEA',
 'ECC',
 '[ECC]- ECDSA',
 '보안이슈, 대응방안',
@@ -122,7 +125,6 @@
 'X.509',
 '라이트 커맨드(Light Commands) 취약점',
 '무자각 지속 인증(Implicity Continuous Authentication)',
-'[암호화기술]- LEA',
 'GDPR',
 '[GDPR]- GDPR 적정성 평가',
 '2020 정부 전자서명법 개정',
@@ -407,6 +409,63 @@ var answer = answer.concat(
 - 취약점 : 이산대수 원리, 비밀키(공유키) 기반, MITM <br/>\
 - 대응방안 : RSA (소인수 분해 해독, 공개키/개인키 기반) <br/><br/>\
 * KPC 93회 관리 1교시 9번\
+',
+
+// 경량 암호
+'# 정의 : 제한된 환경 / 경량, 초 지연성 / 안전성 보장 / 암호화 기술 <br/>\
+- 제한된 환경에서 구현하기 위해 단순한 연산으로 경량 특성 및 초 지연성을 제공하면서 안전성을 보장할 수 있도록 설계된 암호화 기술 <br/><br/>\
+# 유형 <br/>\
+1. 경량 암호기술 유형 <br/>\
+- SPECK : SW 경량 주안점, ARX 구조 사용 <br/>\
+- SIMON : HW 경량 주안점, ARX 구조 사용 <br/>\
+- LEA : SW 경량, 국산, ARX 구조 사용 <br/><br/>\
+2. 저지연 암호 <br/>\
+- PRINCE : HW 경량 특성, 저면적 <br/><br/>\
+3. 경량 해시 <br/>\
+- Keccak : XOR 직접 갱신 부분 크기 R, 그외 부분 크기 N <br/>\
+- LSH : 패딩 분할, 압축 함수 연결 변수, n비트 해시 암호화 <br/><br/>\
+* KPC 120회 대비 합숙 3일차 1교시 1번\
+',
+
+// LSH
+'# 정의 : 대용량 데이터 무결성 검증 / SW 고속 해시 함수 <br/>\
+- 금융, 클라우드, 빅데이터 등의 분야에서 대용량 데이터의 무결성 검증에 적합한 SW 고속 해시 함수 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/LSH_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작 방식 <br/>\
+1. 초기화 <br/>\
+- 입력 메시지 패딩 : 메시지 블록비티 길이의 배수 <br/>\
+- 분할 : 패딩된 메시지, 블록 단위로 분할 <br/><br/>\
+2. 압축 <br/>\
+- 연결 변수 갱신 : 32 word 배열 메시지 블록, 압축 함수 입력 후 갱신 <br/>\
+- 메시지 압축 : 마지막 메시지 블록 처리할 때까지 반복 <br/><br/>\
+3. 완료 <br/>\
+- 연결 변수 최종된 값으로부터 n비트 길이 해시 함수 출력값 생성 <br/><br/>\
+# LEA 와 비교 <br/>\
+<img src = "./img/LEALSH.png" style = "max-width:100%; height:auto;"><br/><br/>\
+',
+
+// LEA
+'# 정의 : 128bit Block 암호 알고리즘 / 국가보안기술 연구소 <br/>\
+- Light weight Encryption Algorithm <br/>\
+- 2012년 국가보안기술 연구소 개발 128bit Block 암호 알고리즘 <br/><br/>\
+# 특징 (AES 비교) <br/>\
+- 속도(2.7) <br/>\
+- 경량코드(1/8) <br/>\
+- 효율성(1/2) 작은플랫폼 적합 <br/>\
+- 암호화 Addition <br/>\
+- 복호화기 Subtraction 사용 <br/><br/>\
+# Spec <br/>\
+1) 키 : 128/192/256 bit 가변적 <br/>\
+2) 블록암호화 : 128bit <br/>\
+3) 라운드 방식 : 32비트 단위 -> 라운드마다 ARX 수행 <br/>\
+4) 암호화 방식 ; ARX(Addition, Rotation, XOR) 기반 GFN(Generalized Feistel Network) <br/><br/>\
+# 현황 <br/>\
+- 2015년 9월 룩셈부르크대 암호성능 측정 프로젝트에서 우수성 인정, 32비트 운영체제에 최적화 <br/>\
+- 2015년 6월 암호모듈 검증제도 대상 알고리즘 포함 (ex. 라온 시큐어 Key # Crpyto v1.3) 알집 압축 기능 등 적용 <br/><br/>\
+<img src = "./img/LEA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/LEA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/LEA_3.png" style = "max-width:100%; height:auto;">\
 ',
   
 // ECC
@@ -2390,29 +2449,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 걸음걸이 : KNN(걸음걸이 특징), HNN(3축 가속도, GDI 센서) <br/>\
 - 문체 : n-gram(언어학적 형태), 감독학습(단어, 입력주기, 빈도평가) <br/><br/>\
 * 120회 관리 1교시 3번\
-',
-
-// LEA
-'# 정의 : 128bit Block 암호 알고리즘 / 국가보안기술 연구소 <br/>\
-- Light weight Encryption Algorithm <br/>\
-- 2012년 국가보안기술 연구소 개발 128bit Block 암호 알고리즘 <br/><br/>\
-# 특징 (AES 비교) <br/>\
-- 속도(2.7) <br/>\
-- 경량코드(1/8) <br/>\
-- 효율성(1/2) 작은플랫폼 적합 <br/>\
-- 암호화 Addition <br/>\
-- 복호화기 Subtraction 사용 <br/><br/>\
-# Spec <br/>\
-1) 키 : 128/192/256 bit 가변적 <br/>\
-2) 블록암호화 : 128bit <br/>\
-3) 라운드 방식 : 32비트 단위 -> 라운드마다 ARX 수행 <br/>\
-4) 암호화 방식 ; ARX(Addition, Rotation, XOR) 기반 GFN(Generalized Feistel Network) <br/><br/>\
-# 현황 <br/>\
-- 2015년 9월 룩셈부르크대 암호성능 측정 프로젝트에서 우수성 인정, 32비트 운영체제에 최적화 <br/>\
-- 2015년 6월 암호모듈 검증제도 대상 알고리즘 포함 (ex. 라온 시큐어 Key # Crpyto v1.3) 알집 압축 기능 등 적용 <br/><br/>\
-<img src = "./img/LEA_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/LEA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/LEA_3.png" style = "max-width:100%; height:auto;">\
 ',
 
 // GDPR
