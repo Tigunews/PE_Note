@@ -62,6 +62,7 @@
 '[APT]- Lateral Movement',
 '[Lateral Movement]- IoA',
 '[Lateral Movement]- IoC',
+'사이버디셉션',
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
@@ -1221,6 +1222,34 @@ var answer = answer.concat(
 - 위협분석 : 단일 시스템 중심의 지표 분석 <br/>\
 - 대응 : 반복적 공격에 대응 <br/><br/>\
 * 라이지움 88회 관리 1교시 3번\
+',
+
+// 사이버디셉션
+'# 정의 : 엔드포인트 위협 / 미끼, 함정 / 실시간 / 보안 기술 / <br/>\
+- NW, 엔드포인트 등에서 위협이 주변으로 확산되기 전에 미끼(Decoy)와 함정(Trap)을 이용해 실시간으로 유언, 탐지, 예방 하는 보안 기술 <br/><br/>\
+# 특징 <br/>\
+- 허니팟 : 공격자 유인 함정 <br/>\
+- 오탐 최소화 : 로그 데이터 활용, 오탐 최소화 <br/>\
+- 실시간성 : 즉시 일어나는 이벤트 처리 <br/><br/>\
+# 동작방식 <br/>\
+<img src = "./img/CyberDeception.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Decoy <br/>\
+- 쿠키 : 스크립트의 기록서 <br/>\
+- 서버접근정보 : IP, MAC, 접속시간, 접속기간 <br/>\
+- 로그인 정보 : 계정정보, 접근 경로, 권한 정보, 사용 명령어 <br/>\
+- 자동생성기술 : 방화벽, 유사 내부정보 활용 접근 포인트 생성 <br/><br/>\
+2. Trap <br/>\
+- Endpoint : Agent 정보, 방화벽, 경로별 정보 유도, USB, Port <br/>\
+- Network : 가상 유도 NW, 트래픽 생성, Access Control, 이메일 정보 <br/>\
+- OS : Root 정보, 사용자 인증, 접근제어 허가, 메모리 유도 <br/><br/>\
+3. Deception System <br/>\
+- NW 탐지 : 이상 접근, 미끼기반 모니터링, 랜섬웨어 확인, 현상 파악 <br/>\
+- 포렌식 : 정당성 확보 위한 근거 추출, 이상현상 대한 원인 분석 <br/>\
+- User Interface : 실시간 트래픽 모니터링, 포트, 다경로 시각화 수행 <br/><br/>\
+# 사이버디셉션, 허니팟 비교 <br/>\
+<img src = "./img/CyberDeceptionHonneyPot.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 122회 대비 합숙 2일차 1교시 5번\
 ',
 
 // SQL Injection
