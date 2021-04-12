@@ -20,8 +20,8 @@
 '[암호]- Base64',
 '[공개키]- 디피헬만 알고리즘',
 '경량 암호',
-'[경량 암호]- LSH',
-'[경량 암호]- LEA',
+'[경량 암호]- LSH 암호화',
+'[경량 암호]- LEA 암호화',
 'ECC',
 '[ECC]- ECDSA',
 '보안이슈, 대응방안',
@@ -448,18 +448,19 @@ var answer = answer.concat(
 // LEA
 '# 정의 : 128bit Block 암호 알고리즘 / 국가보안기술 연구소 <br/>\
 - Light weight Encryption Algorithm <br/>\
-- 2012년 국가보안기술 연구소 개발 128bit Block 암호 알고리즘 <br/><br/>\
-# 특징 (AES 비교) <br/>\
-- 속도(2.7) <br/>\
-- 경량코드(1/8) <br/>\
-- 효율성(1/2) 작은플랫폼 적합 <br/>\
-- 암호화 Addition <br/>\
-- 복호화기 Subtraction 사용 <br/><br/>\
-# Spec <br/>\
-1) 키 : 128/192/256 bit 가변적 <br/>\
-2) 블록암호화 : 128bit <br/>\
-3) 라운드 방식 : 32비트 단위 -> 라운드마다 ARX 수행 <br/>\
-4) 암호화 방식 ; ARX(Addition, Rotation, XOR) 기반 GFN(Generalized Feistel Network) <br/><br/>\
+- IoT등 경량환경의 기밀성 제공 위해 비밀키 이용 128 bit 블록 암호 알고리즘 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/LEA_Mechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 요소기술 <br/>\
+1. 알고리즘 <br/>\
+- 초기 변환 : 라운드 함수 입력 변환 <br/>\
+- 라운드 함수 : 32 라운드 구성 <br/>\
+- 최종 변환 : 화이트닝 키 이용 변환 <br/><br/>\
+2. 비밀키 <br/>\
+- 화이트닝 키(WK) : 변환 적용 라운드 키 <br/>\
+- 서브 키 (SK) : 라운드 함수 사용 키 <br/><br/>\
+# AES 비교 <br/>\
+<img src = "./img/LEA_AES.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 현황 <br/>\
 - 2015년 9월 룩셈부르크대 암호성능 측정 프로젝트에서 우수성 인정, 32비트 운영체제에 최적화 <br/>\
 - 2015년 6월 암호모듈 검증제도 대상 알고리즘 포함 (ex. 라온 시큐어 Key # Crpyto v1.3) 알집 압축 기능 등 적용 <br/><br/>\
