@@ -1001,6 +1001,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 분기 방향 예측 <br/>\
 - 분기 목적지 예측 <br/>\
 - 예측 실행 <br/><br/>\
+<font color = "red">* Hazard : 파이프라인의 진행을 연기해야 하는 상황 유발 원인 <br/>\
+-> 구조적, 데이터, 제어 <br/>\
+* Stall : 정지, 멎다 의미 </font><br/><br/>\
 * 120회 응용 4교시 1번\
 ',
 
@@ -1014,11 +1017,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 1. 정적 분기방향 예측 <br/>\
 - Always Taken : 모든 분기문 분기 <br/>\
 - Always Not Taken : 모든 분기문 분기 않음 <br/>\
-- BTFNT : 뒤-분기, 앞-분기 않음 <br/><br/>\
+- Backward Taken : 뒤로 가서 분기 설정 <br/>\
+- Profiling 정보 : 코드별 전송 대한 힌트 제공 <br/><br/>\
 2. 동적 분기방향 예측 <br/>\
-- 1단계 : BHT(Branch History Table) 이력기반 예측 <br/>\
-- 2단계 : gshare 인덱스 기반 적응적 분기 예측 <br/>\
-- 하이브리드 : 2가지 이상 기법 병행 <br/><br/>\
+- 2bit 예측 : 이진수 2자리로 4가지 구분 <br/>\
+- BHR : 지금까지 분기 내역 bit 표현 <br/>\
+- Prediction Register : 모든 분기에 사용 <br/><br/>\
 * 120회 응용 4교시1 번\
 ',
 
@@ -1030,9 +1034,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 분기 요소 : 무조건 분기, 조건 분기, 서브루틴/함수 호출,복귀 <br/><br/>\
 # 예측 기법 <br/>\
 1. 직접 분기문 예측 <br/>\
-- 과거 실행한 분기 목적지 명령어에 인코딩 <br/>\
-- Directed-mapped 형식 분기 목적지 예측 <br/>\
-- BTB(Branch Target Buffer) 통해 목적지 예측 <br/><br/>\
+- 과거 실행 주소 <br/>\
+- Directed-mapped <br/>\
+- BTB(Branch Target Buffer) <br/><br/>\
 2. 간접 분기문 목적지 예측 <br/>\
 - 분기 목적지 레지스터 or 메모리 존재 <br/>\
 - RAS(Return Address Stack) 이용 리턴 목적지 예측 <br/>\
@@ -1041,7 +1045,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // 예측 실행
-'# 정의 <br/>\
+'# 정의 : 예측 실패 대한 보상 / 성능 나은 방향 / 명령어 처리 기법 <br/>\
 - 불확실한 예측 기반 더 나은 성능을 가져오는 방향으로 명령어를 처리하는 기법 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SpeculativeExecution.png" style = "max-width:100%; height:auto;"><br/><br/>\
