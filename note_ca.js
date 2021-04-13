@@ -1283,6 +1283,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # Multi Level Feedback Queue : 작업들을 여러 종류의 그룹으로 나누어 여러개의 큐를 이용하는 스케줄링 기법 <br/>\
 # 특징 : 큐별 차등 시간 부여 <br/>\
 <img src = "./img/MLFQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 3교시 6번\
 ',
 
 // [CPU Scheduling]- Process Aging 
