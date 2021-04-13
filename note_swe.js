@@ -387,6 +387,7 @@ var question = question.concat(
 'Marshalling',
 '오픈소스 프로젝트관리 소프트웨어',
 'ALM',
+'SW Visualization',
 );
 
 var answer = answer.concat(
@@ -6234,5 +6235,34 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - Jenkins : 지속적 통합 빠르고 쉽게 구축 <br/>\
 - SonarQube : 실시간 소스 코드 품질 현황 가시화 솔루션 <br/><br/>\
 * 121회 관리 1교시 5번\
+',
+
+// SW Visualization
+'# 정의 : 프로세스 관리 목적 / 시각화 문서화 / SW 개발 품질관리 수행 방법 <br/>\
+- 소스코드와 개발 프로세스를 관리하는 것을 목적으로 시각화와 문서화를 통해 SW 개발 품질관리를 수행하는 방법 <br/><br/>\
+# 개발 프로세스 별 주요 도구/기법 <br/>\
+<img src = "./img/SW_Visualization_Process.png" style = "max-width:100%; height:auto;"><br/>\
+1. 요구사항 관리 <br/>\
+- Redmine : 웹 기반 프로젝트 관리, 버그 추적 기능 제공 <br/><br/>\
+2. 구현 <br/>\
+- Eclipse : IDE, Java 기반 확장 플랫폼 <br/>\
+- Mylyn : Task 관리 위한 Eclipse Plugin <br/>\
+- Subclipse : Subversion과 연동한 Eclipse Plugin <br/><br/>\
+3. 테스트 <br/>\
+- TestLink : 요구사항 등록, 테스트 케이스 관리 <br/>\
+- Impasse : TestLink 기능 Redmine Plugin <br/>\
+- SonarQube : Jenkins와 연계, 자동화 테스트 <br/><br/>\
+4. 형상 관리 <br/>\
+- Subversion : CVS 대체 오픈소스 버전관리 시스템 <br/>\
+- Jenkins : 반복 작업 모니터링, 지속적 통합 도구 <br/><br/>\
+# 시스템 구성 <br/>\
+<img src = "./img/SW_Visualization_Structure.png" style = "max-width:100%; height:auto;"><br/>\
+- 지속적 통합 : Jenkins <br/>\
+- 요구사항 관리 : Redmine <br/>\
+- 테스트 케이스 : TestLink, Impasse <br/>\
+- 형상관리 : Subversion <br/>\
+- 테스트 자동화 : Jenkins, SonarQube <br/>\
+- 통합 개발 환경 : Eclipse, Mylyn, Subclipse <br/><br/>\
+* KPC 113회 대비 1일차 관리 1교시 2번\
 ',
 );
