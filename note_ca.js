@@ -1020,7 +1020,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 2단계 : gshare 인덱스 기반 적응적 분기 예측 <br/>\
 - 하이브리드 : 2가지 이상 기법 병행 <br/><br/>\
 * 120회 응용 4교시1 번\
-'.
+',
 
 // 분기 목적지 예측
 '# 개념 : 목적지 PC 값 예측 기법 <br/>\
