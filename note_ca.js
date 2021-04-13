@@ -49,6 +49,10 @@ var question = question.concat(
 '[병렬 컴퓨팅]- NUMA',
 '[병렬 컴퓨팅]- NORMA',
 '[병렬 컴퓨팅]- COMA',
+'분기 예측 기술',
+'[분기 예측]- 분기 방향 예측',
+'[분기 예측]- 분기 목적지 예측',
+'[분기 예측]- 예측 실행',
 'GPGPU',
 '[GPGPU]-CUDA',
 'Cloud GPU',
@@ -986,6 +990,70 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 사례 : Data Diffusion Machine(DDM), KSR-1 <br/>\
 - Numa + Cache 일관성 = ccNUMA(Cache-Coherent NUMA) <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
+',
+
+// 분기 예측 기술
+'# 정의 : 종료 대기 않고 / 다음 분기 예측 / 성능 저하 최소화 / CPU 실행 기술<br/>\
+- 파이프라인을 통한 명령 실행 중 조건 분기 명령의 실행이 종료될 때까지 다음 명령을 대기하지 않고 분기를 예측 실행하여 파이프라인 처리 성능 저하를 최소화하는 CPU 실행 기술 <br/><br/>\
+# 필요성 <br/>\
+<img src = "./img/BranchPredictionNeeds.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- 분기 방향 예측 <br/>\
+- 분기 목적지 예측 <br/>\
+- 예측 실행 <br/><br/>\
+* 120회 응용 4교시 1번\
+',
+
+// 분기 방향 예측
+'# 개념 : 분기 여부 예측 기법 <br/>\
+- 실행될 파이프라인 조건 분기문의 분기 여부(taken or not taken) 예측 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BranchPredictionDirection.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분기 요소 : taken(분기), not taken(분기 않음) <br/><br/>\
+# 예측 기법 <br/>\
+1. 정적 분기방향 예측 <br/>\
+- Always Taken : 모든 분기문 분기 <br/>\
+- Always Not Taken : 모든 분기문 분기 않음 <br/>\
+- BTFNT : 뒤-분기, 앞-분기 않음 <br/><br/>\
+2. 동적 분기방향 예측 <br/>\
+- 1단계 : BHT(Branch History Trable) 이력기반 예측 <br/>\
+- 2단계 : gshare 인덱스 기반 적응적 분기 예측 <br/>\
+- 하이브리드 : 2가지 이상 기법 병행 <br/><br/>\
+* 120회 응용 4교시1 번\
+'.
+
+// 분기 목적지 예측
+'# 개념 : 목적지 PC 값 예측 기법 <br/>\
+- 분기문이 어디로 분기할지 목적지(target) PC 값을 예측하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BranchPredictionDestiantion.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분기 요소 : 무조건 분기, 조건 분기, 서브루틴/함수 호출,복귀 <br/><br/>\
+# 예측 기법 <br/>\
+1. 직접 분기문 예측 <br/>\
+- 분기목적지 명령어에 인코딩 <br/>\
+- Directed-mapped 형식 분기 목적지 예측 <br/>\
+- BTB(Branch Target Buffer) 통해 목적지 예측 <br/><br/>\
+2. 간접 분기문 목적지 예측 <br/>\
+- 분기 목적지 레지스터 or 메모리 존재 <br/>\
+- RAS(Return Address Stack) 이용 리턴 목적지 예측 <br/>\
+- 이력기반 iBTB(Indirect Branch Target Buffer) 통해 예측 <br/><br/>\
+* 120회 응용 4교시 1번\
+',
+
+// 예측 실행
+'# 정의 <br/>\
+- 불확실한 예측 기반 더 나은 성능을 가져오는 방향으로 명령어를 처리하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SpeculativeExecution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 필요 장치 <br/>\
+- 미래 예측 장치 : 확실하지 않은 명령 미리 수행 장치 <br/>\
+- ROB(Reorder Buffer) : 실행 계속 진행 장치 (Issue->Execute->Write Result->(Commit)) <br/>\
+- UNDO : 예측 틀렸을 경우 원상태 복구 장치 <br/><br/>\
+# 동작 원리 <br/>\
+- 분기문 예측 실행 : 정적/동적 분기방향, 분기 목적지 예측 명령어 실행 <br/>\
+- 예측 성공시 : Commit, 다음 명령어 수행 <br/>\
+- 예측 실패시 : UNDO, 실패한 파이프라인 개수 만큼 CPU 클럭 주기 낭비 <br/><br/>\
+* 120회 응용 4교시 1번\
 ',
   
 // GPGPU
