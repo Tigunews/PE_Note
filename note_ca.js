@@ -1016,7 +1016,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Always Not Taken : 모든 분기문 분기 않음 <br/>\
 - BTFNT : 뒤-분기, 앞-분기 않음 <br/><br/>\
 2. 동적 분기방향 예측 <br/>\
-- 1단계 : BHT(Branch History Trable) 이력기반 예측 <br/>\
+- 1단계 : BHT(Branch History Table) 이력기반 예측 <br/>\
 - 2단계 : gshare 인덱스 기반 적응적 분기 예측 <br/>\
 - 하이브리드 : 2가지 이상 기법 병행 <br/><br/>\
 * 120회 응용 4교시1 번\
@@ -1030,7 +1030,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 분기 요소 : 무조건 분기, 조건 분기, 서브루틴/함수 호출,복귀 <br/><br/>\
 # 예측 기법 <br/>\
 1. 직접 분기문 예측 <br/>\
-- 분기목적지 명령어에 인코딩 <br/>\
+- 과거 실행한 분기 목적지 명령어에 인코딩 <br/>\
 - Directed-mapped 형식 분기 목적지 예측 <br/>\
 - BTB(Branch Target Buffer) 통해 목적지 예측 <br/><br/>\
 2. 간접 분기문 목적지 예측 <br/>\
