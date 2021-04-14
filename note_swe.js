@@ -6239,30 +6239,32 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 
 // SW Visualization
 '# 정의 : 프로세스 관리 목적 / 시각화 문서화 / SW 개발 품질관리 수행 방법 <br/>\
-- 소스코드와 개발 프로세스를 관리하는 것을 목적으로 시각화와 문서화를 통해 SW 개발 품질관리를 수행하는 방법 <br/><br/>\
-# 개발 프로세스 별 주요 도구/기법 <br/>\
-<img src = "./img/SW_Visualization_Process.png" style = "max-width:100%; height:auto;"><br/>\
-1. 요구사항 관리 <br/>\
-- Redmine : 웹 기반 프로젝트 관리, 버그 추적 기능 제공 <br/><br/>\
-2. 구현 <br/>\
-- Eclipse : IDE, Java 기반 확장 플랫폼 <br/>\
-- Mylyn : Task 관리 위한 Eclipse Plugin <br/>\
-- Subclipse : Subversion과 연동한 Eclipse Plugin <br/><br/>\
-3. 테스트 <br/>\
-- TestLink : 요구사항 등록, 테스트 케이스 관리 <br/>\
-- Impasse : TestLink 기능 Redmine Plugin <br/>\
-- SonarQube : Jenkins와 연계, 자동화 테스트 <br/><br/>\
-4. 형상 관리 <br/>\
-- Subversion : CVS 대체 오픈소스 버전관리 시스템 <br/>\
-- Jenkins : 반복 작업 모니터링, 지속적 통합 도구 <br/><br/>\
-# 시스템 구성 <br/>\
-<img src = "./img/SW_Visualization_Structure.png" style = "max-width:100%; height:auto;"><br/>\
-- 지속적 통합 : Jenkins <br/>\
-- 요구사항 관리 : Redmine <br/>\
-- 테스트 케이스 : TestLink, Impasse <br/>\
-- 형상관리 : Subversion <br/>\
-- 테스트 자동화 : Jenkins, SonarQube <br/>\
-- 통합 개발 환경 : Eclipse, Mylyn, Subclipse <br/><br/>\
+- 소스코드와 개발 프로세스를 관리하는 것을 목적으로 하고, <font color = "red">시각화</font>와 <font color = "red">문서화</font>를 그 방안으로 하여 SW 개발 품질관리를 수행하는 전략 <br/><br/>\
+<a href = "./doc/SWV.pdf">참고문헌</a><br/><br/>\
+# Process <br/>\
+<img src = "./img/SWV_Overview.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/SWV_Visualization.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 시각화 <br/>\
+1. 프로세스 시각화 : 개발 과정 상태 파악, 정보 제공 <br/>\
+- 지표 : 개발과정(요구사항, 형상관리), 품질검증(동적 테스트, 정적 테스트), 결함 수준 <br/>\
+- 시스템 : 요구사항 관리, 구현, 프로세스, 형상관리 <br/>\
+- 구성원 : BA, QA, Architect, Tester, Developer <br/><br/>\
+2. 소스코드 시각화 : 복잡성 증가 방지 위한 내부 구조 품질 관리 <br/>\
+- 역공학 : 추상 수준 표현물 복원 위한 시스템 분석 기법 <br/>\
+- 내부 설계 : 추상화, 모듈화, 캡슐화 <br/>\
+- 품질 지표 : 결합도, 응집도 <br/><br/>\
+# 문서화 <br/>\
+1. 프로세스 문서화 : 내부적 관리 데이터 -> 산출물 형태 발생 <br/>\
+- 도구 : Redmine, Impasse <br/><br/>\
+2. 소스코드 문서화 : 개발자 업무 공백 최소화 방안 활용 <br/>\
+- 도구 : JavaDoC, Doxygen <br/><br/>\
+# SW Visualiztion의 기대효과 <br/>\
+- 개발상태 실시간 파악 : 요구사항 구현 <br/>\
+- 객관적, 정량적 분석 : 품질지표<br/>\
+- 개발의 투명성 : 진척 상황 <br/>\
+- 자동화에 의한 편의성 : SW 관리 <br/>\
+- 문서 작업의 간소화 : SW 개발관리 문서화 <br/>\
+- 품질기반의 개발 문화 : 미래형 SW 개발 문화 기반 <br/><br/>\
 * KPC 113회 대비 1일차 관리 1교시 2번\
 ',
 );
