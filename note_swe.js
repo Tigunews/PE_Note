@@ -4058,10 +4058,10 @@ P 히스토그램 : Data 분포 <br/>\
  
 // CMMI V2.0
 '# 정의 : DevOps, Agile을 반영한 기업 성숙도 평가모델 <br/>\
-- 소프트웨어, 제품 및 서비스 개발 조직의 공정 및 관리 능력을 향상시키고, 생산성과 효율적 행동을 장려할 수 있도록 고안된 프로세스이자 모델 <br/><br/>\
+- 소프트웨어, 제품 및 서비스 개발 조직의 공정 및 관리 능력을 향상시키고, <font color = "red">생산성과 효율적 행동을 장려</font>할 수 있도록 고안된 프로세스이자 모델 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/CMMI2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성도 <br/>\
+# 구성도 (PPGP / CCPLP)<br/>\
 <img src = "./img/CMMI_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. Model <br/>\
@@ -4080,6 +4080,8 @@ P 히스토그램 : Data 분포 <br/>\
 - Evaluation(자체 심사) : 방침, 프로세스 모델 일치성 여부 점검 통한 개선 사항 식별 <br/><br/>\
 # Process Category (D(생산), M(계획), E(제공), I(유지)) <br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 1.3 2.0 비교 <br/>\
+<img src = "./img/CMMI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 2회 1교시 9번 <br/>\
 * KPC 97회 관리 4교시 3번\
 ',
@@ -6207,7 +6209,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 ',
 
 // ALM
-'# 정의 : 개발 프로세스 융합 / 자동화 툴 이용 / 개발 필요 활동 관리 / 소프트웨어 관리 체계 <br/>\
+'# 정의 : 융합(비즈니스 요건 관리, 개발 프로세스) / 자동화 툴 이용 / 개발 필요 활동 관리 / 소프트웨어 관리 체계 <br/>\
 - Application Lifecycle Management <br/>\
 - 비즈니스 요건 관리 부분과 실제 소프트웨어 개발 프로세스를 융합하고 자동화 툴을 이용하여 개발에 필요한 활동들을 관리하는 소프트웨어 관리체계 <br/><br/>\
 # 구성도 <br/>\
