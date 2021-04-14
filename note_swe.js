@@ -54,6 +54,8 @@ var question = question.concat(
 '[소프트웨어 아키텍처][아키텍처 모델]- 클라이언트-서버 모델',
 '[소프트웨어 아키텍처][아키텍처 모델]- 계층형 모델',
 '[소프트웨어 아키텍처][아키텍처 모델]- MVC 모델',
+'[소프트웨어 아키텍처][아키텍처 모델]- MVP 모델',
+'[소프트웨어 아키텍처][아키텍처 모델]- MVVM 모델',
 '[소프트웨어 아키텍처][아키텍처 모델]- Pipe & Filter',
 '[소프트웨어 아키텍처][아키텍처 모델]- Batch Process',
 '[소프트웨어 아키텍처][아키텍처 모델]- Blackboard Pattern',
@@ -1336,11 +1338,56 @@ var answer = answer.concat(
 '# 개념 : 시스템을 Model, View, Controller 3가지 영역으로 구분, 각 영역을 독립적으로 구현하고 변경할 수 있게 구성하는 구조 <br/><br/>\
 # 모델구조 <br/>\
 <img src = "./img/MVC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 역할 및 기능 <br/>\
+- Model : 컨트롤러, 뷰에 정보 통보 <br/>\
+- View : 사용자 볼 결과물 생성, 모델로부터 정보 얻음 <br/>\
+- Controller : 모델에 명령, 모델 상태 변경 <br/><br/>\
+# 절차 <br/>\
+- 모든 입력 Controller 처리 <br/>\
+- Controller 는 Model 조작 및 표현할 View 선택 <br/>\
+- Controller View 관계 : 1 : N <br/>\
+- View 는 Model을 이용하여 업데이트 수행 <br/><br/>\
 # 특징 <br/>\
-- 장점 : 비즈니스/인터페이스 로직 분리, 확장성, 표준화, 공동작업/유지보수 용이 <br/>\
-- 단점 : 개발자간의 협력필요, 복잡성 증가, 성능저하 <br/>\
-- 사례 : 웹개발 서비스, IOS Application 서비스 <br/><br/>\
+- 이벤트 감지 방법 : Model 직접 사용, Model 에게 View Notify, View Polling <br/>\
+- 장점 : Simple 구조 <br/>\
+- 단점 : View Model 간 의존성, 가독성,유지보수 난해 <br/><br/>\
 * 116회 4교시 4번\
+',
+
+// MVP 모델
+'# 정의 : Model View, Presenter <br/>\
+- MVC에서 컨트롤러가 Presenter로 교체된 형태 아키텍처 모델 <br/><br/>\
+# 역할 및 기능 <br/>\
+- Model : View에 맞는 모델 정보 생성 <br/>\
+- View : 모델 정보 Presenter로 부터 얻어옴 <br/>\
+- Presenter : Model, View 사이 가교 역할 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MVP_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- 모든 입력은 View에서 처리 <br/>\
+- View에서 이벤트 발생하면 Presenter에 전달 <br/>\
+- Presenter는 이벤트에 따른 Model 조작, View 통보,Update <br/><br/>\
+# 특징 <br/>\
+- 장점 : Presenter 통한 Model, View 완전히 분리 <br/>\
+- 단점 : View와 의존성 강함, Class 수 증가 \
+',
+
+// MVVM 모델
+'# 정의 : <br/>\
+- Model + View + View Model 합친 패턴 <br/><br/>\
+# 역할 및 기능 <br/>\
+- Model : ViewModel 사용하여 View 자동 업데이트 수행 <br/>\
+- View : 뷰모델 바인딩, 업데이트 <br/>\
+- ViewModel : View 나타내주기 위한 Model (1:N) <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MVVM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- View 를 통한 입력 <br/>\
+- ViewModel을 선택하여 바인딩, 업데이트 수행 <br/>\
+- 바인딩 후, View 속성과 View Model 속성 연결, 자동 업데이트 <br/><br/>\
+# 특징 <br/>\
+- 장점 : Command, Data Binding으로 View와 의존성 분리 <br/>\
+- 단점 : View Model 설계 어려움 \
 ',
  
 // Pipe&Filter Model
