@@ -1335,7 +1335,8 @@ var answer = answer.concat(
 ',
   
 // MVC 모델 
-'# 개념 : 시스템을 Model, View, Controller 3가지 영역으로 구분, 각 영역을 독립적으로 구현하고 변경할 수 있게 구성하는 구조 <br/><br/>\
+'# 개념 : 인터페이스,비즈니스 로직 분리 / 아키텍처 패턴 <br/>\
+- 모델, 뷰, 컨트롤러로 구성되어 사용자 인터페이스/비즈니스 로직 분리 아키텍처 패턴 <br/><br/>\
 # 모델구조 <br/>\
 <img src = "./img/MVC.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 역할 및 기능 <br/>\
@@ -1345,9 +1346,10 @@ var answer = answer.concat(
 # 절차 <br/>\
 - 모든 입력 Controller 처리 <br/>\
 - Controller 는 Model 조작 및 표현할 View 선택 <br/>\
-- Controller View 관계 : 1 : N <br/>\
+- Controller View 관계 : N : 1 <br/>\
 - View 는 Model을 이용하여 업데이트 수행 <br/><br/>\
 # 특징 <br/>\
+- 사례 : Struts, Spring F/W <br/>\
 - 이벤트 감지 방법 : Model 직접 사용, Model 에게 View Notify, View Polling <br/>\
 - 장점 : Simple 구조 <br/>\
 - 단점 : View Model 간 의존성, 가독성,유지보수 난해 <br/><br/>\
@@ -1356,7 +1358,7 @@ var answer = answer.concat(
 
 // MVP 모델
 '# 정의 : Model View, Presenter <br/>\
-- MVC에서 컨트롤러가 Presenter로 교체된 형태 아키텍처 모델 <br/><br/>\
+- 기존의 MVC Coupling 현상 제거한 아키텍처 패턴 <br/><br/>\
 # 역할 및 기능 <br/>\
 - Model : View에 맞는 모델 정보 생성 <br/>\
 - View : 모델 정보 Presenter로 부터 얻어옴 <br/>\
@@ -1368,13 +1370,14 @@ var answer = answer.concat(
 - View에서 이벤트 발생하면 Presenter에 전달 <br/>\
 - Presenter는 이벤트에 따른 Model 조작, View 통보,Update <br/><br/>\
 # 특징 <br/>\
+- 사례 : Android MVP, Google Architecture <br/>\
 - 장점 : Presenter 통한 Model, View 완전히 분리 <br/>\
-- 단점 : View와 의존성 강함, Class 수 증가 \
+- 단점 : View-Presenter 의존성 존재, Class 수 증가 \
 ',
 
 // MVVM 모델
-'# 정의 : <br/>\
-- Model + View + View Model 합친 패턴 <br/><br/>\
+'# 정의 : Model + View + View Model 합친 패턴 <br/>\
+- View Model 통한 기존 View-Presenter Coupling 제거 아키텍처 패턴 <br/>\
 # 역할 및 기능 <br/>\
 - Model : ViewModel 사용하여 View 자동 업데이트 수행 <br/>\
 - View : 뷰모델 바인딩, 업데이트 <br/>\

@@ -8,6 +8,9 @@ var this_week_question =
 [
 '',
 
+/* 8주차 */
+'Library',
+
 /* 7주차 */
 'CDR','디지털 포렌식','Secure Coding','무자각 지속 인증','NFV','SDN','Pre-Crime','대역확산','Lateral Movement','양자암호통신','바이오정보 분산관리','FIDO','APT','DDoS','인증기술'
 
