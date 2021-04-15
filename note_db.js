@@ -80,6 +80,7 @@ var question = question.concat(
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
 '[DB확장]- Database Partitioning',
+'DB 복제 - Web Service',
 'Data File Structure',
 '[통계]- 통계 관련 데이터',
 '[통계]- 통계 Overview',
@@ -1629,6 +1630,19 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Reference : 부모 테이블 Reference Key <br/>\
 <img src = "./img/ProDataPartitioning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 응용 3교시 5번\
+',
+
+// DB 복제 - Web Service
+'# 정의 : 가용성, 유지, 부하분산 / 일관성 유지 기술 <br/>\
+- 웹 서비스의 가용성 유지 및 부하분산을 위해 2대 이상의 DBMS를 나눠서 데이터를 저장, 동기화하여 일관성 유지 기술 <br/><br/>\
+# 유형 <br/>\
+1. 실시간 복제 <br/>\
+- 트랜잭션 복제 : 트랜잭션, 로그기반, 게시자, 배포자, 구독자, 변경로그, 게시자 중심 복제 <br/>\
+- P2P 복제 : 중복허용 복제, 가용성 강화, 읽기 전용, 쓰기 성능 떨어짐, 복구 어려움 <br/><br/>\
+2. 시점 복제 <br/>\
+- 병합 복제 : 상호 변경 권한, 최종 동기화, 복제, Merge Agent, Server Client 환경, 충돌 가능, 실시간성 저하 <br/>\
+- 스냅샷 북제 : 특정 시점 모든 데이터, Agent, Folder, Distribution Agent, 변경 적을 시, 많은 리소스 <br/><br/>\
+* 120회 관리 4교시 4번\
 ',
   
 // Data File Structure
