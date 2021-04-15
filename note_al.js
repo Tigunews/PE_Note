@@ -1781,18 +1781,29 @@ var answer = answer.concat(
 
 // Python
 '# 정의 : 인공지능 시대에 최적화된 인터프리터 언어 <br/>\
-- 1990년 암스테르담의 귀도 반 로섬에 의해 만들어진 인터프리터 언어 <br/><br/>\
+- 간결구조, 라이브러리 기반의 오픈소스 개발언어 제공하는 인터프리터 언어 <br/><br/>\
 # 특징 <br/>\
-- 장점 : 인터프리터 언어, 플랫폼 독립적, 오픈소스 <br/>\
+- 장점 : 인터프리터 언어, 플랫폼 독립적, 오픈소스, 멀티 패러다임, 메모리 자동 관리, 동적 타입언어 <br/>\
 - 단점 : 느린 속도, 모바일,웹 취약, 설계 제약 <br/><br/>\
 # 자료형 <br/>\
-- int, float, str, bool <br/>\
+1. 기본자료형 <br/>\
+- int, float, str, bool <br/><br/>\
+2. 군집 자료형 <br/>\
 - complex : 실수 + 허수 / -7 + 2j<br/>\
 - List : 여러가지 Object 데이터 집합 / [1,2,3] <br/>\
 - Tuple : 불변 Object 집합 (1,2,3) <br/>\
 - Dictionary : Key, Value / {\'name\' : \'Hong\', \'Phone\' : 010} <br/>\
-- Set : 유일값 집합 / set("Hello") <br/>\
-- 자료형 확인 : type() <br/><br/>\
+- Set : 유일값 집합 / set("Hello") <br/><br/>\
+# 자료형 확인 <br/>\
+- 확인 : print(type(a)) -> <class \'str\'> <br/>\
+- 검사 : if(str(type(a)) == "<class \'str\'>" ... <br/><br/>\
+# 활용 분야 <br/>\
+1. 개발 분야 <br/>\
+- 수치 연산 프로그래밍 : NumPy <br/>\
+- 데이터베이스 프로그래밍 : Pickle 모듈 <br/><br/>\
+2. 분석 분야 <br/>\
+- 데이터 분석 : Panda 모듈 분석 <br/>\
+- 사물 인터넷 : 라즈베리 파이 제어 도구 <br/><br/>\
 * 122회 2교시 1번\
 ',
 
