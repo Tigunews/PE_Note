@@ -565,7 +565,7 @@ var answer = answer.concat(
 - 복잡도 및 기여도 : DET(Attribute), RET(Split Table - 사원(정규직,비정규직)) <br/><br/>\
 2. 트랜잭션 기능 <br/>\
 - 기능유형 : EI, EO, EQ <br/>\
-- 복잡도 및 기여도 : DET, FTR(참조하는 ILF, EIF 수) <br/><br/>\
+- 복잡도 및 기여도 : DET, FTR(Table 수) <br/><br/>\
 # 개발비 : 보정 개발원가 + 직접경비 + 이윤(25%) <br/><br/>\
 # 개발비 산정절차 / 산출물 <br/>\
 - 사전준비 : 개발대상 업무 기능 요구사항 규모산정 방법 <br/>\
