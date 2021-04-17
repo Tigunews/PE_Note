@@ -1804,6 +1804,10 @@ var answer = answer.concat(
 2. 분석 분야 <br/>\
 - 데이터 분석 : Panda 모듈 분석 <br/>\
 - 사물 인터넷 : 라즈베리 파이 제어 도구 <br/><br/>\
+# R언어 Python 비교 <br/>\
+<img src = "./img/R_Python_Comapre1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/R_Python_Comapre2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 1교시 10번 <br/>\
 * 122회 2교시 1번\
 ',
 
