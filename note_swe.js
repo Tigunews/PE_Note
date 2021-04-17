@@ -1377,7 +1377,7 @@ var answer = answer.concat(
 
 // MVVM 모델
 '# 정의 : Model + View + View Model 합친 패턴 <br/>\
-- View Model 통한 기존 View-Presenter Coupling 제거 아키텍처 패턴 <br/>\
+- View Model 통한 기존 View-Presenter Coupling 제거 아키텍처 패턴 <br/><br/>\
 # 역할 및 기능 <br/>\
 - Model : ViewModel 사용하여 View 자동 업데이트 수행 <br/>\
 - View : 뷰모델 바인딩, 업데이트 <br/>\
