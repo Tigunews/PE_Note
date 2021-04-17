@@ -6297,7 +6297,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 <img src = "./img/SWV_Visualization.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 도구, 지표 <br/>\
 - 요구관리 : Redmine, Jira, Gant 차트 / 요구사항 만족도 <br/>\
-- 구현 : Eclipse, Visual STiduio, VIM / 테스트 케이스 수<br/>\
+- 구현 : Eclipse, Visual Studio, VIM / 구현 진척도 <br/>\
 - 테스트 : TestLink, SonarQube, JUnit / 테스트 완료율 <br/>\
 - 형상관리 : RCS, SVN, Git, Subversion / 형상 일치율 <br/>\
 - 지속적 통합 : Jenkins, Open Monitering <br/><br/>\
