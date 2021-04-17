@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 /* 8주차 */
-'Library','Python','ALM','SW Visualization','ARM','정보시스템 하드웨어 규모산정 지침','CMMI','일정관리','WBS','Thread','Process','MVC','MVP','MVVM','테스트 자동화','데이터 복제','Sceculing','비용산정','분기 예측',
+'Library','Python','ALM','SW Visualization','ARM','정보시스템 하드웨어 규모산정 지침','CMMI','ISO/IEC 33000','일정관리','WBS','Thread','Process','MVC','MVP','MVVM','테스트 자동화','데이터 복제','Sceculing','비용산정','분기 예측',
 
 /* 7주차 */
 /*
