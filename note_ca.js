@@ -999,11 +999,11 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 구성도 <br/>\
 <img src = "./img/ARM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성 <br/>\
-- ARM 코어 : ARM 기본원리 이용 구현, 프로세서 핵심 부분 <br/>\
-- 캐시 : 명령, 데이터 전달 고속 메모리 장치 <br/>\
-- MMU(Memory Management Unit) : 어드레스 변환기능, 다양 어플리케이션 지원 <br/>\
-- 버스 : Bus Master(다른 Device Data 전송), Bus Slave(버스 마스터 요청에만 동작) <br/>\
-- AMBA(Advanced MicroController Bus Architecture) : On-chip bus Architecture 적용, ASB, APB, AHB로 발전 <br/><br/>\
+- ARM 프로세서 : 임베디드 디바이스제어 <br/>\
+- 메모리 : Cache, ROM, DRAM <br/>\
+- AMBA Protocol : On-chip 형태 아키텍처 <br/>\
+- ARM Bus : Master(다른 디바이스 전송), Slave(Master 요청) <br/>\
+- Controller : Memory, Interrupt <br/><br/>\
 # 처리 과정 <br/>\
 - Fetch : 명령어 Read, 명령 파이프 저장 <br/>\
 - Decode : 명령어 해독, 다음 명령어 준비 <br/>\
