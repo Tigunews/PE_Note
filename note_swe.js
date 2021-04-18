@@ -1,4 +1,4 @@
-var question = question.concat(
+﻿var question = question.concat(
 '공학 개요',
 '[개요]- SW 공학',
 '[개요]- SW 공학의 원리',
@@ -565,7 +565,7 @@ var answer = answer.concat(
 2. 트랜잭션 기능 <br/>\
 - 기능유형 : EI, EO, EQ <br/>\
 - 복잡도 및 기여도 : DET, FTR(Table 수) <br/><br/>\
-# 개발비 : 보정 개발원가 + 직접경비 + 이윤(25%) <br/><br/>\
+# 개발비 : 보정 개발원가 + 직접경비 + 이윤 <br/><br/>\
 # 개발비 산정절차 / 산출물 <br/>\
 - 사전준비 : 개발대상 업무 기능 요구사항 규모산정 방법 <br/>\
 - 개발대상 SW 기능점수 산정 : 개발대상 SW 기능점수 <br/>\
