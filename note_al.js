@@ -1795,8 +1795,8 @@ var answer = answer.concat(
 - Dictionary : Key, Value / {\'name\' : \'Hong\', \'Phone\' : 010} <br/>\
 - Set : 유일값 집합 / set("Hello") <br/><br/>\
 # 자료형 확인 <br/>\
-- 확인 : print(type(a)) -> \<class \'str\'\> <br/>\
-- 검사 : if(str(type(a)) == "\<class \'str\'\>" ... <br/><br/>\
+- 확인 : print(type(a)) -> class \'str\' <br/>\
+- 검사 : if(str(type(a)) == class \'str\' ... <br/><br/>\
 # 활용 분야 <br/>\
 1. 개발 분야 <br/>\
 - 수치 연산 프로그래밍 : NumPy <br/>\
