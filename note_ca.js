@@ -94,6 +94,7 @@ var question = question.concat(
 '[InMemory]- In-Memory Database',
 'Auto Scale Up, Out',
 'Library',
+'정규 표현식',
 '유한 오토마타',
 '엑사스케일 컴퓨팅 시스템',
 'Thunderbolt Interface',
@@ -1791,11 +1792,34 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - DLL 종속성 : 프로그램, DLL이 다른 DLL 함수 사용하는 경우 유의 <br/><br/>\
 * 123회 응용 1교시 3번\
 ',
+
+// 정규 표현식
+'# 정의 : 규칙 / 문자열 집합 / 표현 언어 <br/>\
+- 특정한 규칙을 가진 문자열의 집합을 표현하는데 사용하는 형식언어 <br/><br/>\
+# 표현 <br/>\
+<img src = "./img/Regex_Grammer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 장점 : 대규모 문자열 치환, 검색 효율성, 성능 향상 <br/>\
+- 단점 : 인간의 직관적 이해 불가, 작성 및 관리의 어려움 <br/><br/>\
+* 121회 관리 1교시 11번\
+',
   
 // 유한 오토마타
-'# 정의 : 전이 유발 조건 집합 <br/>\
-- VHSIC(Very High Speed Integrated Circuits, 초고속 집적회로) Hardware Description Language <br/>\
-- 현재 상태로부터 가능한 전이 상태와 이러한 전이를 유발하는 조건들의 집합으로 구성된 컴퓨터 프로그램 전자 논리회로를 설계하는데 쓰이는 수학적 모델\
+'# 정의 : 프로그램, 논리회로 / 수학적 모델 <br/>\
+- 유한한 개수의 사태를 가지는 기계로, 컴퓨터 프로그램과 전자 논리회로 설계에 사용되는 수학적 모델 <br/><br/>\
+# 구성요소 <br/>\
+- 상태 : 전이 시작전 대기하고 있는 시스템의 행동적 노드 <br/>\
+- 전이 : 조건 만족시 일련 동작 <br/><br/>\
+# 유형 <br/>\
+- 비결정적 유한 오토마타(NFA) : 하나의 입력, 여러개 결과값 <br/>\
+- 결정적 유한 오토마타(DFA) : 하나의 입력, 하나의 결과값 <br/><br/>\
+# 정규표현식, 유한오토마타 활용방안 <br/>\
+1. HW <br/>\
+- 디지털 회로 : 설계 가능 논리소자, 로직, 컨트롤러, 논리회로, 플립플롭 <br/><br/>\
+2. SW <br/>\
+- 문자열 검색, 필터링, 치환 : Cloud, Big Data, CLI OS, VI Editor <br/>\
+- NW 보안 : FW, IPS, ITM, Signature Rule Traffic 검색 <br/><br/>\
+* 121회 관리1 교시 11번\
 ',
   
 // 엑사스케일 컴퓨팅 시스템
