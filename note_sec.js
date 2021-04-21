@@ -162,6 +162,8 @@ var answer = answer.concat(
 '# 기술 프레임워크 <br/>\
 <img src = "./img/SEC_Architecture1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 보안 정책 (관리적 보안) <br/>\
+- 관리적 보안 : 정P보P개소C인 <br/>\
+- 물리적 보안 : 출전C위문설PD <br/>\
 - 기술적 보안 : 운영, 대응, 진단, 개발 지침 <br/>\
 <img src = "./img/SEC_Architecture2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 보안 시스템 (물리적 보안)
