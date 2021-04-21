@@ -1,4 +1,5 @@
 ﻿var question = question.concat(
+'보안 아키텍처',
 '보안 Overview',
 '내외부 정보보안 위협',
 '공격 유형 Overview',
@@ -157,6 +158,14 @@
 );
 
 var answer = answer.concat(
+// 보안 아키텍처
+'# 기술 프레임워크 <br/>\
+<img src = "./img/SEC_Architecture1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 보안정책 (관리적 보안) <br/>\
+- 기술적 보안 : 운영, 대응, 진단, 개발 지침 <br/>\
+<img src = "./img/SEC_Architecture2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+',
+
 // 보안 Overview
 '# 정보보호 목표 (NIST-800-33) <br/>\
 - 기밀성 : 정보내용 알 수 없도록 <br/>\

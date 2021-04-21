@@ -1454,7 +1454,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 // ISO 20547
 '# 개요 <br/>\
 <img src = "./img/ISO20547Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성체계 <br/>\
+# 구성체계 (프유아보로) <br/>\
 <img src = "./img/ISO20547Contents.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 동향 <br/>\
 - 국외 : ITU-T-3600, 클라우드 기반 빅데이터 기능 및 요구사항 <br/>\
