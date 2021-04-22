@@ -2092,6 +2092,9 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 2종 오류 (소비자/배타) : 귀무가설 거짓, 채택 오류 (실제 양, 음 판정)<br/><br/>\
 # 관계 <br/>\
 <img src = "./img/NullHypothesisGraph.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 사례 <br/>\
+<img src = "./img/NullHypothesisGraphExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 라이지움 90회 응용 1교시 11번 <br/>\
 * 117회 관리 1교시 4번 <br/>\
 * KPC 94회 1교시 12번\
 ',
