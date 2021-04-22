@@ -90,6 +90,7 @@
 '[구현단계][디자인패턴]- 전략패턴',
 '[구현단계][디자인패턴]- Observer Pattern',
 '[구현단계][디자인패턴]- Null Object Pattern',
+'[구현단계][디자인패턴]- Singleton Pattern',
 '[구현단계]- 연산생략기법',
 '[구현단계]- 정형기법',
 '[구현단계][정형기법]- 정형명세',
@@ -1867,6 +1868,27 @@ var answer = answer.concat(
 # 구현단계 : 추상 클래스 > 구체적 클래스 > Null 클래스 <br/>\
 <img src = "./img/NullObjectClassObject.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/NullObjectClassMain.png" style = "max-width:100%; height:auto;">\
+',
+
+// Singleton Pattern 
+'# 정의 : 실제 생성 객체 하나 / 최초 생성자 생성 객체 리턴 / 디자인 패턴 <br/>\
+- 생성자가 여러 차례 호출되더라도 실제로 생성되는 객체는 하나이고 최초 생성 이후에 호출된 생성자는 최초의 생성자가 생성한 객체를 리턴하는 디자인 패턴 <br/><br/>\
+# 특징 <br/>\
+- 단일 인스턴스 : 인스턴스 하나 뿐인 객체 생성 지원 <br/>\
+- 상속 불가 : 생성자 Private 선언, 단일 인스턴스 <br/>\
+- 늦은 초기화 : getInstance() 호출시 객체 생성 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/SignletonStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+1. 장점 <br/>\
+- 한번 인스턴스, 메모리 낭비 방지 <br/>\
+- 전역 Instance, 다른 클래스 자원 공유 용이 <br/>\
+- DBCP(DB Connection Pool) 공통 객체 여러개 생성 사용 상황 사용 <br/>\
+- 쓰레드 풀, 캐시, 대화상자, 사용자 설정, 레지스트리 설정, 로그 기록 객채등 <br/><br/>\
+2. 단점 <br/>\
+- 결합도 높, OCP 원칙 위배 <br/>\
+- 수정 테스트 어려워짐 <br/><br/>\
+* 라이지움 90회 관리 1교시 13번\
 ',
 
 // 연산생략기법
