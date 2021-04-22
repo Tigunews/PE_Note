@@ -58,6 +58,7 @@ var question = question.concat(
 '[무선통신]- Gigabit WLAN',
 '[무선통신]- 저전력 무선통신 비교',
 '[무선통신][저전력]- 블루투스 5',
+'[무선통신][저전력]- UWB',
 '[측위기술]- LBS',
 '[측위기술]- IPS',
 '[측위기술]- LDT',
@@ -1213,7 +1214,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
  
 // 저전력 무선통신
-'<img src = "./img/LowPowerWireless.png" style = "max-width:100%; height:auto;">\
+'# 유형 <br/>\
+<img src = "./img/LowPowerWirelessType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 비교 <br/>\
+<img src = "./img/LowPowerWireless.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 블루투스 5
@@ -1226,6 +1230,36 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Advertising 개선 : 긴 패킷 Chaining <br/>\
 - 실내측위 : AoA, AoD, Beacon <br/><br/>\
 * KPC 96회 응용 3교시 8번\
+',
+
+// UWB 
+'# 정의 : 펄스신호 사용 / 넓은 주파수 대역 / 근거리 무선통신 <br/>\
+- IEEE 802.15.4a / 4z <br/>\
+- 짧은 시간의 펄스 신호를 사용하여 넓은 주파수 대역으로 데이터를 송수신하는 근거리 무선통신 <br/><br/>\
+# 특징 <br/>\
+- 보안성 : 물리계층 암호화 <br/>\
+- 신뢰성 : 협대역 페이딩 <br/>\
+- 실시간성 : 초당 200~1000회 갱신 <br/>\
+- 정확성 : 수 cm 오차 범위 <br/>\
+- 호환성 : Bluetooth, Wi-Fi등 다른 대역폭 지원 <br/>\
+- 저전력성 : Pulse Radio, 주파수 폭 형성 <br/><br/>\
+# 측위기술 종류 <br/>\
+1. 전파 도달 시간 이용 방식 <br/>\
+- TWR(Two Way Raging) : UWB 사용 <br/>\
+- TDOA(Time Difference Of Arrival) : UWB 사용 <br/><br/>\
+2. 전파 송수신 각도 이용 방식 <br/>\
+- AoA(Angle of Arrival) <br/><br/>\
+3. 수신 전계강도 활용 방식 <br/>\
+- RSSI(Receive Signal strength Indicator) : 정확도 떨어짐, 송수신 메시지 시간정보 보낼 수 없을 때 사용 <br/><br/>\
+# UWB 측위기술 종류 <br/>\
+1. TWR <br/>\
+- 개념 : 신호 전송 시간 측정 > 양단 거리 계산 > 삼각 측량 위치 파악 기술 <br/>\
+- 특징 : 비동기, 양방향 <br/><br/>\
+2. TDOA <br/>\
+- 개념 : 지속적 Broad cast > 다수 Anchor Data 수집 > 측위 서버 위치 계산 <br/>\
+- 특징 : 동기, 단방향 <br/><br/>\
+# UWB, Wi-Fi 비교 <br/>\
+<img src = "./img/UWB_Wifi_Compare.png" style = "max-width:100%; height:auto;">\
 ',
   
 // LBS
