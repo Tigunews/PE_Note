@@ -671,7 +671,7 @@ var answer = answer.concat(
 - 유형 파악 : 유형 명확 파악, 정책 분류 <br/>\
 - 유형별 차단 대응 : 대역폭 소진, 웹서버 자원 소모, DB Connection 부하 등 유형별 대응 <ber/>\
 - 사후 조치 : 트래픽 분석, 정책 업데이트 IP 확보 <br/>\
-* KISA의 사이버 대피소등 외부 지원 서비스 활용<br/><br/>\
+<font color = "red">* KISA의 사이버 대피소등 외부 지원 서비스 활용</font><br/><br/>\
 * 114회 응용 3교시 3번 <br/>\
 * ITPE 2회 관리 2교시 4번\
 ',
@@ -738,7 +738,7 @@ var answer = answer.concat(
 - 해시테이블 중복 유도, 충돌 발생 <br/>\
 - 조회시 많은 자원 소모하여 100% 도달 <br/><br/>\
 # 대응 방안 <br/>\
-- <font color ="red">Parameter</font> 개수 제한 <br/>\
+- <font color = "red">Parameter</font> 개수 제한 <br/>\
 - <font color = "red">POST</font> 메시지 크기 제한 <br/>\
 - 웹 서버 업데이트 : 위 2 항목 지원 버전 <br/><br/>\
 * 114회 응용 3교시 3번\
