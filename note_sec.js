@@ -2402,14 +2402,18 @@ EAL : 펑스매매세세포 <br/><br/>\
 '# 정의 : 티켓 기반 NW 인증 프로토콜 <br/>\
 - MIT대 Athena Project에 의해 개발된 비밀키 방식에 의한 인증 시스템으로 서비스 요구를 인증하기 위한 대칭 암호기법에 바탕을 둔 티켓 기반한 네트워크 인증 포로토콜 <br/><br/>\
 # 특징 <br/>\
-- 기밀성<br/>\
-- 무결성<br/>\
-- SPOF <br/>\
+- 인증 프로토콜 : Window AD 등 사용, 주요 인증 메커니즘 <br/>\
+- SSO 제공 : 분산 환경, SSO 제공 <br/>\
+- 키분배 센터 : Key Distribution Center 동작 <br/>\
 - 패스워드 추측 공격에 취약 <br/><br/>\
 # 구성요소 <br/>\
-- KERBEROS 서버 : 인증서버 <br/>\
-- Ticket Granting Server : 티켓 발급 <br/>\
-- 접속서버 : Ticket을 확인하여 티켓이 유효한 경우 접속 승인 <br/><br/>\
+1. Server <br/>\
+- AS(Autentication Server) : 인증서버, TGT 발행, SSO <br/>\
+- TGS(Ticket Granting Service) : TGT 기반 Ticket 발행 <br/>\
+- Application Server : Ticket 기반 이용 가능 App 서버, 표준x <br/><br/>\
+2. Ticket <br/>\
+- TGT(Ticket Granting Ticket) : AS 발행, TGS 접근 위한 티켓 <br/>\
+- SGT(Service Granting Ticket) : Service Ticket 불림, TGS 발행, 대상 시스템 접근 위한 티켓 <br/><br/>\
 # Ticket의 정보내용 <br/>\
 1. Client가 접속 하기를 원하는 서버의 ID <br/>\
 2. Client ID <br/>\
@@ -2418,7 +2422,11 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 활용 <br/>\
 - 클라우드 스토리지 사용자 인증 <br/>\
 - 네트워크 인증 시스템의 기반으로 빅데이터 환경에서의 인증 정책으로 사용됨 <br/><br/>\
-<img src = "./img/Kerberos.png" style = "max-width:100%; height:auto;">\
+# 취약점 및 대응방안 <br/>\
+- SPOF : 이중화, HA, FT <br/>\
+- 재전송 공격 : Timestamp 기반 방지 <br/><br/>\
+<img src = "./img/Kerberos.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 90회 응용 1교시 13번 \
 ',
 
 // 동형암호
