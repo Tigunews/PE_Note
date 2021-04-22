@@ -26,6 +26,7 @@ var question = question.concat(
 '[일관성]- SAGA',
 '[일관성][SAGA]- Choreography-Based Saga',
 '[일관성][SAGA]- Orchestration-Based Saga',
+'DB 이상현상',
 '정규화',
 '[정규화]-암스트롱 공리, 함수폐포, 자기참조관계',
 '관계대수',
@@ -583,6 +584,22 @@ var answer = answer.concat(
 - 장점 : 복잡성 줄어들고, 테스트 상대적 쉬움, Rollback 용이 <br/>\
 - 단점 : 관리 위한 Orchestrator 서비스 추가, 인프라 구현 복잡성 증가 <br/><br/>\
 * 사례 : Axon Saga \
+',
+
+// DB 이상현상
+'# 정의 : 삽입, 수정, 삭제 / 데이터 무결성 <br/>\
+- 데이터베이스의 릴레이션에 대한 조작으로 삽입, 삭제, 수정 수행시 원하지 않는 데이터 조작이 발생하여 데이터의 무결성이 깨지는 현상 <br/><br/>\
+# 문제점 <br/>\
+- 이상현상 : 원하지 않는 조작, 무결성 침해 <br/>\
+- 무결성 침해 : 데이터 베이스 품질 저하 <br/>\
+- 시스템 오동작 : 의사결정시 지연, 오류 발생 <br/><br/>\
+# 예시 및 유형 <br/>\
+<img src = "./img/DBAnormalyExample.png" style = "max-width:100%; height:auto;"><br/>\
+- 삽입 이상 : 학번 1003 삽입 / <font color = "red">누락</font> 발생 <br/>\
+- 삭제 이상 : 학번 1002 삭제 / <font color = "red">손실</font> 발생 <br/>\
+- 수정 이상 : 학번 1004 변경 / <font color = "red">모순</font> 발생 <br/><br/>\
+# 해결방안 : 정규화 <br/><br/>\
+* 라이지움 90회 응용 1교시 13번 \
 ',
 
 // 정규화
