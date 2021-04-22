@@ -173,24 +173,33 @@ var answer = answer.concat(
 ',
 
 // 보안 Overview
-'# 정보보호 목표 (NIST-800-33) <br/>\
-- 기밀성 : 정보내용 알 수 없도록 <br/>\
-- 무결성 : 정보를 하무로 수정할 수 없도록 <br/>\
-- 가용성 : 접긴시 방해받지 않는 것 <br/><br/>\
-# 전체위험 = 자산 * 취약점 * 위협 <br/><br/>\
-# 보안 약점 : SW 결함/오류 등으로 인한 공격을 유발할 가능성 있는 잠재적 보안 취약점 <br/><br/>\
-# 보안 취약점 : 해커의 직접적인 대상이 되는 보안 허점 <br/><br/>\
-# 대상 및 취약점 <br/>\
-- App : 코딩, 권한 미통제, 개발 백도어, 쿠키 <br/>\
-- DB : 비암호화, 비정규화, 취약한 접근모델 <br/>\
-- NW : 비암호화 통신, 프로토콜 포트, 무선 취약점, SSID 노출, 망분리 침입, 블랙홀 <br/><br/>\
-# 정보보호의 범위 <br/>\
-- 공통기반 : 암호, 인증/인가, 취약점 <br/>\
-- 시스템/디바이스 : 모바일, IoT, 시스템 악성코드 <br/>\
-- 네트워크 : 유선, 무선, 관제 <br/>\
-- 응용서비스 : 클라우드 , 웹, 핀테크, 디지털 포렌식 <br/>\
-- 물리 : 휴먼, 바이오, CCTV, 무인전자 <br/>\
-- 융합 : 스마트 홈/시티, 산업제어, 자율자동차, 헬스케어\
+'# 목적 <br/>\
+- 기밀성 : 인가된 사용자 <br/>\
+- 무결성 : 생성/변경/삭제 x <br/>\
+- 가용성 : 지체 없이 동작 <br/><br/>\
+# 기밀성 위협 <br/>\
+- Spoofing : 속이다 - ARP, IP, DNS <br/>\
+- Sniffing : 훔쳐 보기 - Packet, Hub, Switch <br/>\
+- Snooping : 몰래 획득 - IGMP, DHCP <br/><br/>\
+# 무결성 위협 <br/>\
+# 가용성 위협 <br/>\
+# 기밀성 대응방안 <br/>\
+1. 접근제어 <br/>\
+- 정책 : MAC(관리자), DAC(임의), RBAC(역할) <br/>\
+- 모델 : BLP(기밀성), Biba(무결성), Clark-wilson(기,무 결정), Chinese wall(상업 기밀) <br/>\
+- 매커니즘 : ACL(접근행렬 열), CL(접근행렬 행), SL(제어 대상) <br/><br/>\
+2. 암호화 <br/>\
+- 대칭키 : SEED, AES, ARIA <br/>\
+- 비대칭키 : RSA, ECC, Elgamal <br/>\
+- 단방향 : MDC(MD5, SHA-1, HAS-160, HAVAL), MAC(Nested MAC, HMAC, CBC-MAC, CMAC) <br/><br/>\
+# 무결성 대응 방안 <br/>\
+# 가용성 대응 방안 <br/>\
+<font color = "red">* MAC : Mandatory Access Control <br/>\
+* DAC : Discretionary Access Control <br/>\
+* RBAC : Role Based Access Control <br/>\
+* ACL : Access Control List <br/>\
+* CL : Capability List <br/>\
+* SL : Security List </font><br/><br/>\
 ',
   
 // 내/외부 정보보안 위협
