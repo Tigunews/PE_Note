@@ -166,7 +166,7 @@ var answer = answer.concat(
 - 물리적 보안 : 출전C위문설PD <br/>\
 - 기술적 보안 : 운영, 대응, 진단, 개발 지침 <br/>\
 <img src = "./img/SEC_Architecture2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 보안 시스템 (물리적 보안)
+# 보안 시스템 (물리적 보안) <br/>\
 <img src = "./img/SEC_Architecture3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 보안 기술 (기술적 보안) <br/>\
 <img src = "./img/SEC_Architecture4.png" style = "max-width: 100%; height: auto;">\
