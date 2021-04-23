@@ -207,7 +207,7 @@ var answer = answer.concat(
 * RBAC : Role Based Access Control <br/>\
 * ACL : Access Control List <br/>\
 * CL : Capability List <br/>\
-* SL : Security List </font><br/><br/>\
+* SL : Security List </font>\
 ',
   
 // 내/외부 정보보안 위협
