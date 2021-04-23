@@ -189,9 +189,9 @@ var answer = answer.concat(
 - DoS, DDoS <br/><br/>\
 # 기밀성 대응방안 <br/>\
 1. 접근제어 <br/>\
-- 정책 : MAC(관리자), DAC(임의), RBAC(역할) <br/>\
+- 정책 : DAC(임의-신분), MAC(강제-허가권한), RBAC(역할-중앙 관리자) <br/>\
 - 모델 : BLP(기밀성), Biba(무결성), Clark-wilson(기,무 결정), Chinese wall(상업 기밀) <br/>\
-- 매커니즘 : ACL(접근행렬 열), CL(접근행렬 행), SL(제어 대상) <br/><br/>\
+- 매커니즘 : ACL(접근행렬 열-행위), CL(접근행렬 행-허가 목록), SL(제어 대상-속성 집합) <br/><br/>\
 2. 암호화 <br/>\
 - 대칭키 : SEED, AES, ARIA <br/>\
 - 비대칭키 : RSA, ECC, Elgamal <br/>\
