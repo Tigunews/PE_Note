@@ -63,7 +63,7 @@
 '[APT]- Lateral Movement',
 '[Lateral Movement]- IoA',
 '[Lateral Movement]- IoC',
-'사이버디셉션',
+'사이버 디셉션',
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
@@ -183,7 +183,7 @@ var answer = answer.concat(
 - Snooping : 몰래 획득(조작o) - IGMP, DHCP <br/><br/>\
 # 무결성 위협 <br/>\
 - Phishing : 메일, 문자, 사기 <br/>\
-- Exploit : 취약점 공격<br/>\
+- Exploit : 취약점 이용 스크립트 <br/>\
 - Ransomeware : 블록크랜 <br/><br/>\
 # 가용성 위협 <br/>\
 - DoS, DDoS <br/><br/>\
@@ -198,7 +198,7 @@ var answer = answer.concat(
 - 단방향 : MDC(MD5, SHA-1, HAS-160, HAVAL), MAC(Nested MAC, HMAC, CBC-MAC, CMAC) <br/><br/>\
 # 무결성 대응 방안 <br/>\
 - 침입탐지 : 방화벽, 웹 방화벽, IPS, IDS, UTM SIEM <br/>\
-- 백업 : DLP, DRM, 보안 USB, 원격 백업 <br/><br/>\
+- 백업 : DLP(흐름 감시), DRM(권한 제어), 보안 USB, 원격 백업 <br/><br/>\
 # 가용성 대응 방안 <br/>\
 - BCP/DR : 정보시스템 재해복구, Mirror/Hot/Warm/Cold <br/>\
 - Dos/DDoS 대응 : 사이버 대피소, DNS 싱크홀, 사이버 디셉션 <br/><br/>\
@@ -1263,7 +1263,7 @@ var answer = answer.concat(
 * 라이지움 88회 관리 1교시 3번\
 ',
 
-// 사이버디셉션
+// 사이버 디셉션
 '# 정의 : 엔드포인트 위협 / 미끼, 함정 / 실시간 / 보안 기술 / <br/>\
 - NW, 엔드포인트 등에서 위협이 주변으로 확산되기 전에 미끼(Decoy)와 함정(Trap)을 이용해 실시간으로 유언, 탐지, 예방 하는 보안 기술 <br/><br/>\
 # 특징 <br/>\
