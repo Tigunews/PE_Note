@@ -179,8 +179,8 @@ var answer = answer.concat(
 - 가용성 : 지체 없이 동작 <br/><br/>\
 # 기밀성 위협 <br/>\
 - Spoofing : 속이다 - ARP, IP, DNS <br/>\
-- Sniffing : 훔쳐 보기 - Packet, Hub, Switch <br/>\
-- Snooping : 몰래 획득 - IGMP, DHCP <br/><br/>\
+- Sniffing : 훔쳐 보기(조작x) - Packet, Hub, Switch <br/>\
+- Snooping : 몰래 획득(조작o) - IGMP, DHCP <br/><br/>\
 # 무결성 위협 <br/>\
 - Phishing : 메일, 문자, 사기 <br/>\
 - Exploit : 취약점 공격<br/>\
