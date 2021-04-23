@@ -4,6 +4,7 @@ var question = question.concat(
 'Unix OS',
 '[Unix OS]- File System',
 '[Unix OS]- Permission',
+'[Unix OS]- Super Block',
 '[Unix OS]- i-node Block',
 '[Unix OS]- I/O Model',
 '[Unix OS][Synchronous I/O]- Blocking I/O',
@@ -153,8 +154,11 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // File System
 '# File System 구조 <br/>\
 <img src = "./img/Unix_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 표준 File System <br/>\
-<img src = "./img/LinuxOriginDiskFileSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 표준 File System (부수아데) <br/>\
+- Boot Block : Bootstrap code <br/>\
+- Super Block : 파일 시스템 상태 <br/>\
+- i-node Block : 파일 위치 정보 <br/>\
+- Data Block : 실제 데이터 정보 <br/><br/>\
 # 지원 File System <br/>\
 - msdos : MS-DOS 파티션 사용 <br/>\
 - nfs : Network File System, 원격 서버 디스크 연결 <br/>\
@@ -165,7 +169,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - tmpfs : Temporary File System, 메모리에 임시 파일 저장 <br/>\
 - proc : 커널의 현재 상태를 나타내는 파일 <br/>\
 - ramfs : 램디스크 지원 파일시스템 <br/>\
-- rootfs : Root File System, 시스템 초기화와 관리에 필요한 내용 관리\
+- rootfs : Root File System, 시스템 초기화와 관리에 필요한 내용 관리<br/><br/>\
+* 라이지움 90회 응용 2교시 5번\
 ',
   
 // Permission
@@ -185,6 +190,23 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 위치 : /etc/group <br/>\
 - 내용 : group list, 해딩 그룹 속한 user 표시 <br/>\
 - 종류 : Primary group (최초 소속), Supplementrary (나머지) \
+',
+
+// Super Block
+'# 정의 : 파일 시스템 상태 / 종합 정보 보관 <br/>\
+- 파일 시스템의 상태에 관한 종합적인 정보를 보관하는 영역 <br/><br/>\
+# 관리 자료 <br/>\
+- Number <br/>\
+- Revision Mount Count <br/>\
+- Block Count <br/>\
+- Block Group Number <br/>\
+- Block Size <br/>\
+- Block Per Group <br/>\
+- Free Blocks <br/>\
+- Free Inode <br/>\
+- First Inode <br/>\
+- Inode per Group <br/><br/>\
+* 라이지움 90회 응용 2교시 5번\
 ',
 
 // [Unix OS]- i-node Block
@@ -293,7 +315,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 특징 <br/>\
 - 성능 향상 <br/>\
 - Callback 처리로 프로그램 복잡도 상승 고려 <br/><br/>\
-* KPC 97회 응요 4교시 8번\
+* KPC 97회 응용 4교시 8번\
 ',
 
 // Loader 

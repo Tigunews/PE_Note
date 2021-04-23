@@ -36,6 +36,6 @@ var this_week_question =
 'ISO/IEC 20889', '식별자', 'ISMS-P','ISA/IEC 62443','GDPR','Privacy By Design',
 
 /* 라이지움 90회 */
-'초자동화','ASIL','디지털서비스 전문계약제도','ISO 25000','가설검정','DB 이상현상',
+'초자동화','ASIL','디지털서비스 전문계약제도','ISO 25000','가설검정','DB 이상현상','Text Mining',
 
 ];
