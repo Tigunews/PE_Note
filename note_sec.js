@@ -182,7 +182,11 @@ var answer = answer.concat(
 - Sniffing : 훔쳐 보기 - Packet, Hub, Switch <br/>\
 - Snooping : 몰래 획득 - IGMP, DHCP <br/><br/>\
 # 무결성 위협 <br/>\
+- Phishing : 메일, 문자, 사기 <br/>\
+- Exploit : 취약점 공격<br/>\
+- Ransomeware : 블록크랜 <br/><br/>\
 # 가용성 위협 <br/>\
+- DoS, DDoS <br/><br/>\
 # 기밀성 대응방안 <br/>\
 1. 접근제어 <br/>\
 - 정책 : MAC(관리자), DAC(임의), RBAC(역할) <br/>\
@@ -193,7 +197,11 @@ var answer = answer.concat(
 - 비대칭키 : RSA, ECC, Elgamal <br/>\
 - 단방향 : MDC(MD5, SHA-1, HAS-160, HAVAL), MAC(Nested MAC, HMAC, CBC-MAC, CMAC) <br/><br/>\
 # 무결성 대응 방안 <br/>\
+- 침입탐지 : 방화벽, 웹 방화벽, IPS, IDS, UTM SIEM <br/>\
+- 백업 : DLP, DRM, 보안 USB, 원격 백업 <br/><br/>\
 # 가용성 대응 방안 <br/>\
+- BCP/DR : 정보시스템 재해복구, Mirror/Hot/Warm/Cold <br/>\
+- Dos/DDoS 대응 : 사이버 대피소, DNS 싱크홀, 사이버 디셉션 <br/><br/>\
 <font color = "red">* MAC : Mandatory Access Control <br/>\
 * DAC : Discretionary Access Control <br/>\
 * RBAC : Role Based Access Control <br/>\
