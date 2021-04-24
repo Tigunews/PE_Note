@@ -148,7 +148,8 @@ var answer = answer.concat(
 Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. Start<br/><br/>\
 <img src = "./img/Unix_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Unix_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/LinuxUnixCompare.png" style = "max-width:100%; height:auto;">\
 ',
   
 // File System
@@ -196,16 +197,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 파일 시스템 상태 / 종합 정보 보관 <br/>\
 - 파일 시스템의 상태에 관한 종합적인 정보를 보관하는 영역 <br/><br/>\
 # 관리 자료 <br/>\
-- Number <br/>\
-- Revision Mount Count <br/>\
-- Block Count <br/>\
-- Block Group Number <br/>\
-- Block Size <br/>\
-- Block Per Group <br/>\
-- Free Blocks <br/>\
-- Free Inode <br/>\
-- First Inode <br/>\
-- Inode per Group <br/><br/>\
+- Number : Mount Kernel 확인 <br/>\
+- Revision Mount Count : 기능 호환성 체크 <br/>\
+- Block Count : 모든 파일 정보 저장, 관리 <br/>\
+- Block Group Number : 실제 데이터 저장 공간 <br/>\
+- Block Size : 블록 크기 Byte 단위 <br/>\
+- Block Per Group : 그룹당 블록 개수 <br/>\
+- Free Blocks : 여유 블록<br/>\
+- Free Inode : 여유 i-node<br/>\
+- First Inode : 첫번째 i-node No. <br/>\
+- Inode per Group : 그룹당 i-Node 개수 <br/><br/>\
 * 라이지움 90회 응용 2교시 5번\
 ',
 
