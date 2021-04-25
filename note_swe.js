@@ -4908,9 +4908,9 @@ P 히스토그램 : Data 분포 <br/>\
 - 미팅 : 일일스크럼, 스프린트 계획, 스프린트 리뷰 <br/>\
 - 산출물 : 제품 백로그, 스프린트 백로그, 소멸차트 <br/><br/>\
 # 팀 구성 <br/>\
-- 제품 책임자 : 제품 기능 목록 작성, 스프린트 운영관여 x <br/>\
-- 스크럼 마스터 : 조력자 역할, 에자일 촉진자, 개발 방해 요소 제거 <br/>\
-- 스크럼 팀 : 요구사항 구현, 제품 시연, 스크럼 회의 진행 <br/><br/>\
+- Product Master : Back Log 작성, 우선순위 관리, 요구사항 검증 <br/>\
+- Scrum Master : Daily Meeting 주관, Agile 촉진자, 가이드 제시, 장애 관리 <br/>\
+- Scrum Team : 제품 개발, User Story 관리, 개발 환경 구성 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/Scrum.png" style = "max-width:100%; height:auto;"><br/>\
 - 요구정의 : 린스타트업, 디자인 싱킹 <br/>\

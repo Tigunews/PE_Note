@@ -57,6 +57,7 @@ var question = question.concat(
 '[인증기술]- DID',
 '[인증기술]- GADI',
 '[인증기술]- 바이오정보 분산관리',
+'Solid - Social Linked Data',
 '앰비언트 커머스',
 '핀테크',
 '[핀테크]- 서비스',
@@ -946,15 +947,18 @@ var answer = answer.concat(
 ',
   
 // 데이터 댐
-'# 정의 : 모든 사업 + 5G 이동통신 / AI 융합서비스 확산 사업 <br/>\
-- 데이터 수집/가공/결합/거래/활용을 통해 데이터 경제 가속화하고 5G 이동통신 전국 망에 기반하여 모든 사업으로 5G 이동통신과 인공지능 융합서비스를 확산하려는 사업 <br/><br/>\
-# Keyword : 디지털 뉴딜, DNA, 인공지능, 클라우드, 바우처, 빅데이터 <br/><br/>\
-# 추진 배경 <br/>\
-- 비대면 서비스 확산 <br/>\
-- 양질의 일자리 창출 <br/>\
-- 데이터 중심 생태계 <br/><br/>\
+'# 정의 : 데이터 수집/가공/결합/거래/활용 / 데이터 경제 가속화 / 5G + AI 융합 / 디지털 뉴딜 프로젝트 <br/>\
+- 데이터 수집/가공/결합/거래/활용을 통해 데이터 경제 가속화하고 5G 이동통신 전국 망에 기반하여 모든 사업으로 5G 이동통신과 인공지능 융합서비스를 확산하려는 디지털 뉴딜 프로젝트 <br/><br/>\
+# 구축 목표  <br/>\
+- 데이터 수집/활용 <br/>\
+- 공공 데이터 개방/연계 <br/><br/>\
 # 주요내용 <br/>\
 <img src = "./img/DataDamStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 후속 조치 사항 <br/>\
+- 데이터 표준화 및 품질 관리 : 가이드 라인 <br/>\
+- 디지털 전문 계약 제도 도입 : 디지털 서비스 전문위 <br/>\
+- AI 법제/윤리 기반 마련 : 지능정보 기본법 <br/><br/>\
+* ITPE 7회 관리 1교시 1번 <br/>\
 * KPC 96회 관리 1교시 9번 <br/>\
 * 라이지움 87회 관리 1교시 3번\
 ',
@@ -1358,6 +1362,27 @@ var answer = answer.concat(
 - 2019.08 ISO 국제표준화 대상 채택 <br/>\
 - 2022.08. 까지 바이오 인증 국제 표준안 마련후 ISO에서 최종 승인 획득 예정 <br/><br/>\
 * 120회 관리 2교시 1번\
+',
+
+// Solid - Social Linked Data
+'# 정의 : 팀 버너스리 / 웹 사용자 탈중앙화 구축 / 오픈소스 프로젝트 <br/>\
+- 팀 버너스리에 의해 만들어진 웹 사용자 스스로 자신의 데이터를 통제할 수 있는 웹을 구축하기 위한 오픈 소스 프로젝트 <br/><br/>\
+# Solid Project Architecture <br/>\
+<img src = "./img/SolidProjectArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 세부 요소 <br/>\
+1. 구성요소 <br/>\
+- Pod : 개별정보 DB<br/>\
+- IPS : Pod 인증 수행<br/>\
+- WAC : ACL <br/><br/>\
+2. 기술요소 <br/>\
+- RDF : Solid Data Model<br/>\
+- WebID : 공용 ID <br/>\
+- WebID-TLS : 신원 확인 매커니즘 <br/>\
+- WOAF Vocabulary : WebID, ACL 사용 언어 <br/>\
+- LDP(Linked Data Platform) : 웹 리소스 HTTP 작업 집합 <br/><br/>\
+# Pod Architecture <br/>\
+<img src = "./img/PodArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* IPTE 7회 1교시 관리 2번\
 ',
   
 // 앰비언트 커머스
