@@ -57,6 +57,7 @@ var question = question.concat(
 '[인증기술]- DID',
 '[인증기술]- GADI',
 '[인증기술]- 바이오정보 분산관리',
+'Solid - Social Linked Data',
 '앰비언트 커머스',
 '핀테크',
 '[핀테크]- 서비스',
@@ -71,6 +72,7 @@ var question = question.concat(
 '[핀테크]- Scraping',
 '[핀테크]- API',
 '[핀테크]- QR코드 기반 결제',
+'[핀테크]- Zero Pay',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
 '[이더리움] - 스마트계약(Smart Contract)',
@@ -141,6 +143,7 @@ var question = question.concat(
 '[블록체인]- ICO',
 '[블록체인]- KYC',
 '[하이퍼레저]- 하이퍼레저 패브릭',
+'CBDC',
 'MaaS',
 'Dark Net',
 'RPA',
@@ -149,6 +152,7 @@ var question = question.concat(
 '[클라우드]- 클라우드 전환',
 '[클라우드]- IaaS, PaaS, SaaS',
 '[클라우드]- IaC',
+'[클라우드]- KAMP',
 '[클라우드]- PaaS-TA',
 '[클라우드]- 클라우드 보안이슈',
 '[클라우드][정책]- 정보자원등급 평가기준(2014.04.)',
@@ -162,6 +166,7 @@ var question = question.concat(
 '[클라우드]- CSB',
 '[클라우드]- 인터클라우드',
 '[클라우드]- 멀티 클라우드',
+'[클라우드]- 클라우드 네이티브 컴퓨팅',
 '[클라우드]- 클라우드 네이티브 애플리케이션',
 '[클라우드][개발 방법론]- 12 Factors',
 '[클라우드]- 메시지 큐잉',
@@ -228,6 +233,8 @@ var question = question.concat(
 '[Gartner 2021][Resilient Delivery]- AI 엔지니어링',
 '[Gartner 2021][Resilient Delivery]- 초자동화',
 'Ray Tracing',
+'Living Lab',
+'SOS Lab',
 );
 
 var answer = answer.concat(
@@ -946,15 +953,18 @@ var answer = answer.concat(
 ',
   
 // 데이터 댐
-'# 정의 : 모든 사업 + 5G 이동통신 / AI 융합서비스 확산 사업 <br/>\
-- 데이터 수집/가공/결합/거래/활용을 통해 데이터 경제 가속화하고 5G 이동통신 전국 망에 기반하여 모든 사업으로 5G 이동통신과 인공지능 융합서비스를 확산하려는 사업 <br/><br/>\
-# Keyword : 디지털 뉴딜, DNA, 인공지능, 클라우드, 바우처, 빅데이터 <br/><br/>\
-# 추진 배경 <br/>\
-- 비대면 서비스 확산 <br/>\
-- 양질의 일자리 창출 <br/>\
-- 데이터 중심 생태계 <br/><br/>\
+'# 정의 : 데이터 수집/가공/결합/거래/활용 / 데이터 경제 가속화 / 5G + AI 융합 / 디지털 뉴딜 프로젝트 <br/>\
+- 데이터 수집/가공/결합/거래/활용을 통해 데이터 경제 가속화하고 5G 이동통신 전국 망에 기반하여 모든 사업으로 5G 이동통신과 인공지능 융합서비스를 확산하려는 디지털 뉴딜 프로젝트 <br/><br/>\
+# 구축 목표  <br/>\
+- 데이터 수집/활용 <br/>\
+- 공공 데이터 개방/연계 <br/><br/>\
 # 주요내용 <br/>\
 <img src = "./img/DataDamStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 후속 조치 사항 <br/>\
+- 데이터 표준화 및 품질 관리 : 가이드 라인 <br/>\
+- 디지털 전문 계약 제도 도입 : 디지털 서비스 전문위 <br/>\
+- AI 법제/윤리 기반 마련 : 지능정보 기본법 <br/><br/>\
+* ITPE 7회 관리 1교시 1번 <br/>\
 * KPC 96회 관리 1교시 9번 <br/>\
 * 라이지움 87회 관리 1교시 3번\
 ',
@@ -1359,6 +1369,27 @@ var answer = answer.concat(
 - 2022.08. 까지 바이오 인증 국제 표준안 마련후 ISO에서 최종 승인 획득 예정 <br/><br/>\
 * 120회 관리 2교시 1번\
 ',
+
+// Solid - Social Linked Data
+'# 정의 : 팀 버너스리 / 웹 사용자 탈중앙화 구축 / 오픈소스 프로젝트 <br/>\
+- 팀 버너스리에 의해 만들어진 웹 사용자 스스로 자신의 데이터를 통제할 수 있는 웹을 구축하기 위한 오픈 소스 프로젝트 <br/><br/>\
+# Solid Project Architecture <br/>\
+<img src = "./img/SolidProjectArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 세부 요소 <br/>\
+1. 구성요소 <br/>\
+- Pod : 개별정보 DB<br/>\
+- IPS : Pod 인증 수행<br/>\
+- WAC : ACL <br/><br/>\
+2. 기술요소 <br/>\
+- RDF : Solid Data Model<br/>\
+- WebID : 공용 ID <br/>\
+- WebID-TLS : 신원 확인 매커니즘 <br/>\
+- WOAF Vocabulary : WebID, ACL 사용 언어 <br/>\
+- LDP(Linked Data Platform) : 웹 리소스 HTTP 작업 집합 <br/><br/>\
+# Pod Architecture <br/>\
+<img src = "./img/PodArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* IPTE 7회 1교시 관리 2번\
+',
   
 // 앰비언트 커머스
 '# 정의 : 사람의 존재 인식 / 알아서 추천, 제공 서비스 <br/>\
@@ -1666,6 +1697,42 @@ var answer = answer.concat(
 - MPM(Merchant Presented Mode) <br/>\
 - CPM(Customer Presented Mode) <br/><br/>\
 * 120회 관리 3교시 1번\
+',
+
+// Zero Pay
+'# 정의 : 카드 수수료 부담 절감 / QR 코드 이용 / 간편결제 서비스 <br/>\
+- 소상공인들의 카드 결제 수수료 부담을 줄이기 위해 QR 코드를 통해 거래하는 간편결제 서비스 <br/><br/>\
+# 특징 <br/>\
+- 수수료 : 8역 / 12억 / 초과 / 일반 -> 0 % / 0.3 % / 0.5 % / 2 % <br/>\
+- 혜택 : 40% 소득공제, 공공시설 할인 <br/><br/>\
+# 결제 프로세스 <br/>\
+1. MPM(Merchant Presented Mode) <br/>\
+<img src = "./img/MPM_Process.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+2. CPM(Customer Presented Mode) <br/>\
+<img src = "./img/CPM_Process.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 한계 <br/>\
+1. 고객 <br/>\
+- 고객 유인책 부족 <br/>\
+- 자영업자 살리기 명분 의존 <br/>\
+- 결제 절차 복잡 <br/><br/>\
+2. 가맹점 <br/>\
+- 결제 절차 복잡 <br/>\
+- 이미 갖춰진 카드결제 인프라 <br/><br/>\
+# 고도화 방안 <br/>\
+1. 기술 측면 <br/>\
+- 소상공인 혜택 중심 정책 극복 <br/>\
+- 결제수단 일원화 <br/>\
+- 제로페이 전용계좌, 충전혜택 <br/><br/>\
+2. 제도 측면 <br/>\
+- 제로페이 멤버십 제도 <br/>\
+- 제로페이 영수증 복권제도 <br/><br/>\
+3. 고객 체험 강화 측면 <br/>\
+- 은행앱의 제로페이 모드 준비 <br/>\
+- 가맹점 확인 방식 혁신 <br/><br/>\
+4. 혜택 측면 <br/>\
+- 가맹점주 CRM 지원 <br/>\
+- 제로페이 결제 데이터 활용 유도 <br/><br/>\
+* ITPE 7회 관리 3교시 4번\
 ',
   
 // 아바커스 프로젝트
@@ -2837,6 +2904,30 @@ var answer = answer.concat(
 * 보증 정책(Endorsing Policies) : 체인코드가 장부를 업데이트 하기 위해 필요한 서명 수 <br/><br/>\
 * KPC 90회 관리 3교시 6번\
 ',
+
+// CBDC
+'# 정의 : 실물 명목화폐 대체 보완 / 중앙은행 / 전자형태 발행 / 새로운 화폐 <br/>\
+- Central Bank Digital Currency <br/>\
+- 실물 명목화폐를 대체하거나 보완하기 위해 중앙은행이 전자적 형태로 발행하는 새로운 화폐 <br/><br/>\
+# 구현방식 <br/>\
+- 단일 원장 : 중앙 은행 <br/>\
+- 허가형 분산 원장 : 합의자 <br/><br/>\
+# 운영 방식 <br/>\
+1. 단일 원장 <br/>\
+- 직접 운영 : 중앙은행 <br/>\
+- 간접 운영 : 은행 등 위탁 <br/><br/>\
+2. 허가형 분산 원장 <br/>\
+- 직접 운영 : 중앙 은행 <br/>\
+- 간접 운영 : 은행 등 위탁 <br/><br/>\
+# 기술 평가 요건 <br/>\
+- 복원력 : 무중단, 중단 최소화 <br/>\
+- 확장성 : 중단 없이 용량 증설 <br/>\
+- 보안성 : 위변조 방어, 검증 가능 <br/>\
+- 익명성 : 거래 당사자만 열람 가능, 필요시 추적 가능 <br/>\
+- 호환성 : 기존 시스템 연동 <br/>\
+- 이자지급 가능성 : 이자지급, 마이너스 금리 부과 가능 <br/><br/>\
+* ITPE 7회 관리 2교시 3번\
+',
   
 // MaaS
 '# 정의 : 단일 플랫폼 / 교통 수단 / 정보 제공, 예약, 요금 결제 / 통합 서비스 <br/>\
@@ -3015,6 +3106,25 @@ var answer = answer.concat(
 - Docker : App 구동 설정/파일 관리 <br/>\
 - Vagrant : VM 리소스, 스크립트 수행 <br/><br/>\
 * 라이지움 86회 \
+',
+
+// KAMP
+'# 정의 : AI 관련 인프라, 데이터 / 중소 제조업 지원 / 종합 플랫폼 <br/>\
+- Korea AI Manufacturing Platform <br/>\
+- 중소 제조기업이 갖추기 어려운 AI 관련 인프라 및 주요 데이터 등을 한곳에 모아 중소제조업의 인공지능화를 지원하는 종합 플랫폼 <br/><br/>\
+# 특징 <br/>\
+- 저비용 : CAPEX 절감 <br/>\
+- 접근성 : 스마트 공장 쉽게 구현 <br/>\
+- 표준화 : 공장 데이터 표준화 <br/>\
+- 경쟁력 강화 : 제줘 원가, 품질 향상 <br/>\
+- 개방화 : 기업 메타 데이터 개방 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/KAMP_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 추진 계획 <br/>\
+- 클라우드 기반 제조 Data AI 활용 촉진 : 데이터 표준화 <br/>\
+- 인공지능 스마트 공장 확대 : 중소기업 보급 <br/>\
+- 마이제조데이터 활성화 기반 마련 : 공유 규범 마련 <br/><br/>\
+* ITPE 7회 관리 1교시 6번 \
 ',
   
 // PaaS-TA
@@ -3276,13 +3386,30 @@ var answer = answer.concat(
 * KPC 93회 2교시 2번\
 ',
 
+// 클라우드 네이티브 컴퓨팅
+'# 정의 : 전체 영역 대상 / 클라우드 결합 / 구성 컴퓨팅 환경 <br/>\
+- 인프라, 플랫폼, 애플리케이션/서비스와 개발, 운영, 관리의 전체 영역을 대상으로 클라우드의 특성과 장점을 적용하여 구성된 컴퓨팅 환경 <br/><br/>\
+# 필요성 : 숙도, 무중단, 확장성 <br/><br/>\
+# 구성요소 <br/>\
+- MSA : 독립적 서비스, API GW, Cross Function Team, Polyglot <br/>\
+- DevOps : DevOps Pipeline, 자동화(소스,빌드,배포,테스트) <br/>\
+- CI/CD : DevOps Workflow <br/>\
+- Container : 가상화, 도커, 쿠버네티스 <br/>\
+- PaaS : 클라우드 미들웨어, App LifeCycle 관리, Scale Out <br/>\
+- 12 Factor App : 개발 방법론 <br/><br/>\
+* ITPE 7회 관리 4교시 5번\
+',
+
 // 클라우드 네이티브 애플리케이션
 '# 정의 : MSA, Container, Orchestration / 클라우드 기반 애플리케이션 <br/>\
 - MSA, 컨테이너화된 서비스, 분산 관리 및 오케스트레이션으로 구성된 클라우드 기반 애플리케이션 <br/><br/>\
 # 성숙도 모델 <br/>\
 <img src = "./img/CNMM.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 아키텍처 <br/>\
-<img src = "./img/CloudNativeApplicationArcitecture.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/CloudNativeApplicationArcitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기존 Application 비교 <br/>\
+<img src = "./img/LegacyCloudNativeApplicationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 5번\
 ',
 
 // 12 Factors
@@ -4532,5 +4659,35 @@ var answer = answer.concat(
 - 사실적 프로토타입 : CAD 응용, Prototype 모델링 활용 <br/>\
 - 과학 연구 : 소리 파형, 전자기파 파향 시각화 모델링 <br/><br/>\
 * 라이지움 85회 관리 1교시 1번\
+',
+
+// Living Lab
+'# 정의 : 사용자 중심 / 반복적 / 에코 시스템 <br/>\
+- 사용자 중심의 반복적 개방형 혁신 에코 시스템  <br/><br/>\
+# 특징 <br/>\
+- Bottom-Up, 나선형 <br/>\
+- 최종 사용자 추가된 사중 나선 구조 <br/><br/>\
+# 프로세스 <br/>\
+- 탐색 : 문헌 조사, 기술 탐색, 실험 집단 선정 <br/>\
+- 실험 : 구체화, 실체화 > 실행, 이행 <br/>\
+- 평가 : 피드백 <br/><br/>\
+* ITPE 7회 관리 2교시 4번 \
+',
+
+// SOS Lab
+'# 정의 : 지역사회 문제 해결 / 사회 구성원 / SW, ICT 기술 / 해결 / 사회문제 연구소<br/>\
+- Solution in Our Society Lab <br/>\
+- 지역사회 문제해결을 위해 사회 구성원들이 모여 SW, ICT 기술로 해결 방법을 마련하는 사회문제 연구소 <br/><br/>\
+# 프로세스 <br/>\
+- 문제 발굴, 정의 : 능동적 발굴 (웹 스크래핑, 빅데이터 분석) <br/>\
+- 공동 창조 : DB 운용, 중간지원조직 인프라 활용 <br/>\
+- 테스팅 검증 : 협업관리 시스템 <br/>\
+- 공유 확산 : 성과 DB 빅데이터 통합 플랫폼, 교차 실증 확산 <br/><br/>\
+# 조성 현황 <br/>\
+- 인천 : 아동안전 <br/>\
+- 대전 : 시민생활 안전(노인,장애인,악취) <br/>\
+- 전북 : 대기 환경 <br/>\
+- 전남 : 사회격차 (교통, 문화, 소통, 환경) <br/><br/>\
+* ITPE 7회 관리 2교시 4번\
 ',
 );

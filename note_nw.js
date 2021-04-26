@@ -72,13 +72,17 @@ var question = question.concat(
 'CDN, ADN',
 'IEEE 802.15.x',
 'USB4.0',
+'이동통신 발전역사',
 '5G 이동통신',
+'[5G]- NSA',
+'[5G]- SA',
 '[5G]- 3GPP Release 16',
 '[5G]- MEC',
 '[MEC]- SSL Offloading',
 '[5G]- 5GX',
 '[5G]- Open Lan',
 '6G',
+'[6G]- 6G 추진 전략',
 '[6G]- Wifi 7',
 'Wifi 6',
 'Wifi 6e',
@@ -1515,6 +1519,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // USB 4.0
 '# 정의 : Thunderbolt 3 호환 및 Double bandwidth 를 사용하여 40 Gbp 의 전송 대역폭을 지원하는 USB 기술',
 
+// 이동통신 발전역사
+'<img src = "./img/MobileCommunicationHistory.png" style = "width:100%; height:auto;">\
+* ITPE 7회 관리 3교시 1번 \
+',
+
 // 5G 이동통신
 '# 정의 : 대한민국 퍼스트 무버 <br/>\
 - 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
@@ -1524,6 +1533,34 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * FR2 커버리지 극복방안 <br/>\
 - 셀의 개수 증가 <br/>\
 - 빔포밍 기술 적용 (건물, 빌딩, 구조물 많을 경우 커버리지 안정성 저하)\
+',
+
+// NSA
+'# 정의 : Control Plane 4G(eNB) / User, Data Plane 5G(gNB) / 3GPP Release 15 기반 / 5G 기술 <br/>\
+- Control Plane의 동작은 4G 기지국(eNB)을 활용하고, User/Data Plane의 동작은 5G 기지국(gNB)을 이용하는 LTE 코어망을 활용한 3GPP Release 15기반 5G 구현 기술 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/5GNSA.png" style = "width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- Release : 3GPP Releas 15(Option 3) <br/>\
+- Master Node : eNB (Evolved NodeB) <br/>\
+- Control Plane : MME(Mobility Management Entity), 가입자 관리, 위치등록, 인증 신호 처리 <br/>\
+- User/Data Plane : SGW(Serving GW), PGW(Packet GW), 통화 설정 관리, 핸드오버 IP, 이동성 <br/>\
+- 적용 : Public 5G 초기 상용화 <br/><br/>\
+* ITPE 7회 관리 3교시 1번\
+',
+
+// SA
+'# 정의 : Control Plane, User/Data Plane / 5G 기지국(gNB) / 3GPP Release 15 기반 / 단독형 5G 구현 기술 <br/>\
+- 4G 기지국(eNB)를 이용하지 않고 Control Plane과 User/Data Plane의 동작을 오직 5G 기지국(gNB)과 5G Core망을 이용하는 3GPP Release 15기반 단독형 5G 구현 기술 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/5GSA.png" style = "width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- Release : 3GPP Release 15(Option 2) <br/>\
+- Master Node : gNB(Next Generatino NodeB) <br/>\
+- Control Plane : AMF(Access and Mobility Management), 이동성 관리 기능, 단말 접속 관리 <br/>\
+- User/Data Plane : UPF(User Plane Function), 단일 Plane(SGW, PGW) <br/>\
+- 적용 : Private 5G 적용 유리 <br/><br/>\
+* ITPE 7회 관리 3교시 1번\
 ',
  
 // 3GPP Release 16
@@ -1613,25 +1650,35 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // 6G
-'# 정의 : 초성능, 초대역, 초공간, 초정밀, 초신뢰, 초지능, THz <br/>\
-- 6세대 무선 네트워크 <br/><br/>\
+'# 정의 : 최대 전송 용량, 5배 1Tbps / 체감 속도, 10배 1Gbps / 6세대 무선 이동 통신 기술 <br/>\
+- 5G의 20Gbps보다 5배 빠른 1Tbps 최대 전송 용량과 10배 우수한 1Gbps 사용자 체감 속도 등을 지원하는 차세대 이동 통신 기술 <br/><br/>\
 # KPI / 전략과제 (성대공정지현)<br/>\
-- 초성능 : 1Tbps / Tbps 급 무선 통신 기술<br/>\
-- 초대역 : 1THz(지원대역), ~30GHz(대역폭) / 6G 주파수 확보기술 개발<br/>\
-- 초공간 : ~10Km(지원고도), 1,000km/h(이동속도) / 3차원 공간 이동체 브로드밴드 <br/>\
-- 초정밀 : 0.1 us(무선), ~5ms(유선) / 초저지연, 고정밀, 고가용 <br/>\
-- 초지능 : AI 기반 지능형 네트워크 / 지능형 무선 액세스 네트워크<br/>\
-- 초현실 : 3차원 미디어, Tangible 미디어 / 시공간 초월 미디어 <br/><br/>\
+<img src = "./img/5G6G_GraphicCompare.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요기술 <br/>\
 - 주파수 기술 : THz, OFDM(New Waveform), 스펙트럼 공유(AI 동적공유) <br/>\
 - NW 토폴로지 기술 : 지상/비지상 NW, IAB(Integration of Access and Backhaul) <br/>\
 - 고신뢰성 기술 : HW 수준 보안/고신뢰 AI(Secure-by-Design, OSS 보안 강화, 적대적 머신러닝 대응 AI) <br/>\
 - Duplex 통신 기술 : 상호 배타적 통신(안테나) <br/>\
 - 최적화 기술 : Comprehensive AI <br/>\
-- 만물지능 인터넷 : SPlit Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
-# 5G 비교 <br/>\
-<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 이동통신 기술의 한세대를 통상 10년으로 칭함 \
+- 만물지능 인터넷 : Split Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
+# 6G 시범 사업 <br/>\
+<img src = "./img/6G_PilotProject.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 6G 핵심기술개발 주요내용 <br/>\
+<img src = "./img/6GCoreTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 1교시 8번\
+',
+
+// 6G 추진 전략
+'# 비전 : 상상이 현실이 되는 6G 시대 선도 <br/><br/>\
+# 목표 <br/>\
+- 세계 최초 6G 상용화 위한 핵심 기술 확보 <br/>\
+- 6G 글로벌 시장 주도 기반 마련 <br/><br/>\
+# 추진 전략 <br/>\
+- 차세대 6G 기술 선점 : 전략과제, 기술 교루, 시범 서비스 추진<br/>\
+- 고 부가가치 특허 확보 : R&D 성과 국제표준 반영, 국제 표준화 리더십 확보 추진 <br/>\
+- 연구, 산업기반 조성 병행 : 부품, 장비 국산화, 고급 실무인력 양성 <br/><br/>\
+* ITPE 7회 관리 3교시 1번\
 ',
   
 // Wifi 7
@@ -2049,14 +2096,37 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
 
 // SD-WAN
-'# 정의 : 초고속 인터넷 회선 / 사설 오버레이 생성 / 네트워크 기능 <br/>\
-- 초고속 인터넷 회선을 이용하여, 사설 오버레이 네트워크를 생성할 수 있게 해주는 일련의 네트워크 기능 <br/><br/>\
+'# 정의 : LAN 에서 SDN을 / 통신 사업자, 서비스 제공자의 WAN으로 확장 적용 기술 <br/>\
+- 데이터센터, 기업, 대학 등의 LAN에서 Data Plane과 Control Plane을 분리하는 SDN을 통신망 사업자와 서비스 제공자 등의WAN으로 확장 적용 가능한 네트워크 기술 <br/><br/>\
+# 특징 <br/>\
+- 네트워크 가상화 : NFV 활용, 다양한 기능 수행 가능 <br/>\
+- WAN 회선 비용 절감 : 기존 인터넷 회선 + 저렴 회선 추가 > 대역폭 향상 및 비용 절감 <br/>\
+- 어플리케이션 관리 : Layer 7기반 QoS 수행 <br/>\
+- 중앙 집중형 제어 : SD-WAN Controller 통한 QoS 및 네트워크 토폴로지 관리 <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/SDWAN.png" style = "max-width:100%; height:auto;"><br/>\
 - 중앙 컨트롤러 : 구성저장, 토폴로지 관리, 엑세스 정책 설정, 사용량, 성능 보고 <br/>\
 - 액세스 노드 : SD-WAN CPE, VNF, 라우팅, 터널링, WAN 최적화 <br/><br/>\
+# 기술요소 <br/>\
+1. 장비 측면 <br/>\
+- SD-WAN Controller : 정책 설정, 토폴로지 관리 <br/>\
+- SD-WAN CPE : 오버레이 생성, 종단 엔진 <br/><br/>\
+2. 기술 측면 <br/>\
+- Dynamic Path Switching : 경로 선택 트래픽 스위칭 <br/>\
+- Packet Duplication : 중복 패킷 전송 <br/>\
+- Link Aggregation : 물리적 여러 회선 -> 논리적 하나 회선 <br/>\
+- Network Segmentation : Segment 단위 VLAN 할당 <br/><br/>\
+# 기대효과 <br/>\
+1. 비용 측면 <br/>\
+- TCO, ROI 비용 감소 : 투자, 운영 비용 감소 <br/>\
+- 운영 인력 통합 : 사설, 공용망 별도 관리 불필요 <br/><br/>\
+2. 기술 측면 <br/>\
+- NW 품질 향상 : 자원 재배치, 가상 WAN 구현 기능 지원<br/>\
+- 백업 기능 구현 : 회선 이중화 통한 안정성 <br/>\
+- 대체 경로 확보 : 이중화 구성 가능 <br/><br/>\
 # SD-WAN, SD-WAN 2.0 비교 <br/>\
-<img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 1번\
 ',
   
 // 유무선 전력전송
@@ -2085,22 +2155,46 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 망분리
 '# 정의 : 접근제어 / 유출차단 / 업무, 인터넷 망 차단 조치 <br/>\
 - 외부 인터넷망을 통한 불법적인 접근과 내부정보 유출을 차단하기 위해 업무망과 외부 인터넷망을 분리하는 망 차단 조치(개인정보의 기술적,관리적 보호조치 기준 제2조) <br/><br/>\
-# 도입배경 <br/>\
-- 2008년 옥션 해킹 1,800 만명 유출 <br/>\
-- 2011년 Nate, Cyworld 해킹 3,500만명 유출 <br/><br/>\
 # 관련 규정 <br/>\
-1. 금융 감독원 <br/>\
-- 법률 조항 : 전자 감독규정 제15조 (해킹 등 방지 대책) <br/>\
-- 대상 : 금융기관 내부 시스템 접속 모든 단말기 <br/><br/>\
-2. 개인정보 <br/>\
-- 법률 조항 : 개인정보보호법 시행령 48조의2 (개인정보의 안전성 확보 조치에 관한 특례) <br/>\
-- 대상 : 전년도 말 기준 직전 3개월간 이용자수 100만명 이상 / 매출액 100억원 이상 정보통신 서비스 제공자 <br/><br/>\
+1. 공공 <br/>\
+- 국가정보보호기본지침 <br/>\
+- 내부, 외부망 분리 <br/><br/>\
+2. 민간부문 <br/>\
+- 정보통신망법 시행령 <br/>\
+- 100만(개인정보), 100억(전년도 매출), 개인정보 저장 PC <br/><br/>\
+3. 금융기업 <br/>\
+- 전자금융감독규정 <br/>\
+- 15-3 : 업무용 PC 인터넷 차단 <br/>\
+- 15-4 : 시스템 운영,개발,보안용 PC 물리적 분리 <br/>\
+- 시행세칙 2조 2 : 망분리 적용 예외 개정(21.01.01.) <br/><br/>\
 # 유형 <br/>\
 <img src = "./img/NetworkDistributionDetail.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/NetDistribution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 문제점 <br/>\
+1. 구축/운영 문제 <br/>\
+- 물리적 : 공간 차지, 비용 상승, 신규 망 구축, 관리 비용 증가, 전환 장치 필요 <br/>\
+- 논리적 : 하드웨어 성능 필요, 가상환경 호환성 <br/>\
+- 효율성 저하 <br/>\
+- 업무 영역별 규제 획일적 적용 <br/><br/>\
+2. 산업혁신 저해 <br/>\
+- 신기술 활용 불가 <br/>\
+- 핀테크 성장 저해 <br/>\
+- 초연결 사회 역행 <br/>\
+- 데이터 활용 비효율적 <br/><br/>\
+# 해결방안 <br/>\
+1. 제도 보완 <br/>\
+- 비 중요 처리 시스템 클라우드 이관 가능 : 전자금융감독 1차 개정(2016) <br/>\
+- 금융권 클라우드 확대 방안 : 금융위 (2018) <br/>\
+- 중요 시스템 클라우드 이관 가능 : 전자금융감독 1차 개정 (2019) <br/><br/>\
+2. 구축/운영 <br/>\
+- 데이터 단위 망분리 체계 도입 : 중요도별 망분리 규제 적용 <br/>\
+- 개발 분야 망분리 제외 : 클라우드/오픈소스 활용 증대 <br/><br/>\
+3. 산업혁신 <br/>\
+- 망분리 예외 적용 : 카카오 뱅크, 금융기술 연구소 망분리 예외 인정 <br/><br/>\
 # 주요현황 <br/>\
 - 전자금융감독규정 제 15조 1항 예외적용 완화 (2020.10 시행) <br/>\
 <img src = "./img/NetDistributionCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 2교시 2번 <br/>\
 * 라이지움 88회 관리 1교시 4번\
 ',
   

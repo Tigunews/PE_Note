@@ -4,6 +4,7 @@ var question = question.concat(
 'Unix OS',
 '[Unix OS]- File System',
 '[Unix OS]- Permission',
+'[Unix OS]- Super Block',
 '[Unix OS]- i-node Block',
 '[Unix OS]- I/O Model',
 '[Unix OS][Synchronous I/O]- Blocking I/O',
@@ -147,14 +148,18 @@ var answer = answer.concat(
 Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. Start<br/><br/>\
 <img src = "./img/Unix_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Unix_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/LinuxUnixCompare.png" style = "max-width:100%; height:auto;">\
 ',
   
 // File System
 '# File System 구조 <br/>\
 <img src = "./img/Unix_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 표준 File System <br/>\
-<img src = "./img/LinuxOriginDiskFileSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 표준 File System (부수아데) <br/>\
+- Boot Block : Bootstrap code <br/>\
+- Super Block : 파일 시스템 상태 <br/>\
+- i-node Block : 파일 위치 정보 <br/>\
+- Data Block : 실제 데이터 정보 <br/><br/>\
 # 지원 File System <br/>\
 - msdos : MS-DOS 파티션 사용 <br/>\
 - nfs : Network File System, 원격 서버 디스크 연결 <br/>\
@@ -165,7 +170,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - tmpfs : Temporary File System, 메모리에 임시 파일 저장 <br/>\
 - proc : 커널의 현재 상태를 나타내는 파일 <br/>\
 - ramfs : 램디스크 지원 파일시스템 <br/>\
-- rootfs : Root File System, 시스템 초기화와 관리에 필요한 내용 관리\
+- rootfs : Root File System, 시스템 초기화와 관리에 필요한 내용 관리<br/><br/>\
+* 라이지움 90회 응용 2교시 5번\
 ',
   
 // Permission
@@ -185,6 +191,23 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 위치 : /etc/group <br/>\
 - 내용 : group list, 해딩 그룹 속한 user 표시 <br/>\
 - 종류 : Primary group (최초 소속), Supplementrary (나머지) \
+',
+
+// Super Block
+'# 정의 : 파일 시스템 상태 / 종합 정보 보관 <br/>\
+- 파일 시스템의 상태에 관한 종합적인 정보를 보관하는 영역 <br/><br/>\
+# 관리 자료 <br/>\
+- Number : Mount Kernel 확인 <br/>\
+- Revision Mount Count : 기능 호환성 체크 <br/>\
+- Block Count : 모든 파일 정보 저장, 관리 <br/>\
+- Block Group Number : 실제 데이터 저장 공간 <br/>\
+- Block Size : 블록 크기 Byte 단위 <br/>\
+- Block Per Group : 그룹당 블록 개수 <br/>\
+- Free Blocks : 여유 블록<br/>\
+- Free Inode : 여유 i-node<br/>\
+- First Inode : 첫번째 i-node No. <br/>\
+- Inode per Group : 그룹당 i-Node 개수 <br/><br/>\
+* 라이지움 90회 응용 2교시 5번\
 ',
 
 // [Unix OS]- i-node Block
@@ -293,7 +316,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 특징 <br/>\
 - 성능 향상 <br/>\
 - Callback 처리로 프로그램 복잡도 상승 고려 <br/><br/>\
-* KPC 97회 응요 4교시 8번\
+* KPC 97회 응용 4교시 8번\
 ',
 
 // Loader 
@@ -467,16 +490,15 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 작업 실행 단위 / CDHS 영역 독립 <br/>\
 - 프로그램을 구동하여 메모리에 적재된 상태로 실행되는 하나의 작업 단위, CDHS(CODE, DATA, HEAP, STACK) 영역 독립 <br/><br/>\
 # 프로세스 상태 <br/>\
-<img src = "./img/Process_0.jpg" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ProcessStateTransitionMap.png" style = "max-width:100%; height:auto;"><br/>\
 - 상태변화 : (준비) Dispatch, Timeout (실행) Wakeup (대기) <br/>\
 - X축 : Job, CPU Scheduler <br/>\
 - Y축 : 활동상태(주기억장치), 중단상태(보조기억장치), 중단,재시작(Swap in, Swap out)<br/><br/>\
 # 프로세스 상태변화 사례 <br/>\
 - 인터럽트, 시스템콜 / PCB1에 P1문맥 저장 / PCB2에서 P2 문맥복구 <br/><br/>\
 # Process Thread 비교 <br/>\
-<img src = "./img/Process_1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/Process_2.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/Process_3.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/ProcessThreadCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 4번\
 ',
   
 // PCB
@@ -494,15 +516,33 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 단위 명령 집합 / 프로세스내 / 리소스 공유(SCDH)<br/>\
 - 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합, STACK 외의 CODE, DATA, HEAP영역 공유 <br/><br/>\
 # Keyword : 사용자모드(임계,스핀락), 커널모드(세마포어), TCB, Light Weight, 멀티스레드, 공유(힙/데이터/코드), 독립(레지스터/스택), PCB <br/><br/>\
-# 종류<br/>\
-- 단일 : 1:1 <br/>\
-- 멀티 : 1:n <br/>\
+# 유형 <br/>\
+0. 개념도 <br/>\
 <img src = "./img/ThreadType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. Many to One <br/>\
+<img src = "./img/ThreadManyToOne.png" style = "max-width:100%; height:auto;"><br/>\
+- 동작 : N:1 Mapping, Kernel Thread 지원 x 환경 사용 <br/>\
+- 장점 : 사용자 수준 쓰레드 관리 가능 <br/>\
+- 단점 : 여러개 쓰레드 동시 호출 불가 <br/><br/>\
+2. One to One <br/>\
+<img src = "./img/ThreadOneToOne.png" style = "max-width:100%; height:auto;"><br/>\
+- 동작 : 1:1 Mapping, N:1 방식 중단 문제 해결 <br/>\
+- 장점 : 동시 호출 가능 <br/>\
+- 단점 : 생성시 자원 제약 발생 <br/><br/>\
+3. Many to Many <br/>\
+<img src = "./img/ThreadManyToMany.png" style = "max-width:100%; height:auto;"><br/>\
+- 동작 : N:N Mapping, 커널이 사용자, 커널 쓰레드 맵핑 조정 <br/>\
+- 장점 : 쓰레드 중단, 자원 제약 한계 극복 <br/>\
+- 단점 : 쓰레드 처리 스케줄링 복잡성 증가 <br/><br/>\
+# 종류 <br/>\
+- Kernel Thread : 프로세스, 쓰레드 문맥 교환 커널 유지 <br/>\
+- User Thread : 응용프로그램이 Thread Library 사용 수행 <br/><br/>\
 # 구현시 고려사항 <br/>\
 - 단일 : 신호전달(불법접근시), 종료(제거시점 신중결정), 마스킹(종료전) <br/>\
 - 멀티 : 동기화(임계영역, 스핀락, 세마포어) <br/><br/>\
 # 비교 <br/>\
 <img src = "./img/ThreadProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 4번 <br/>\
 * 116회 3교시 4번\
 ',
 

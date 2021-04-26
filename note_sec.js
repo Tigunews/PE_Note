@@ -63,7 +63,7 @@
 '[APT]- Lateral Movement',
 '[Lateral Movement]- IoA',
 '[Lateral Movement]- IoC',
-'사이버디셉션',
+'사이버 디셉션',
 'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
@@ -75,6 +75,7 @@
 '크리덴셜 스터핑',
 'Atom Bombing',
 '컴퓨터 포렌식(Computer forensics) = 디지털 포렌식',
+'[포렌식]- 클라우드 포렌식',
 'WNAC',
 '소프트웨어 개발보안 가이드',
 '클라우드 컴퓨팅 보안',
@@ -155,6 +156,7 @@
 'Zero Trust 보안 모델',
 '재택,원격근무 정보보호 6대 실전 수칙',
 'CDR',
+'[Cloud 보안]- CSPM',
 );
 
 var answer = answer.concat(
@@ -179,11 +181,11 @@ var answer = answer.concat(
 - 가용성 : 지체 없이 동작 <br/><br/>\
 # 기밀성 위협 <br/>\
 - Spoofing : 속이다 - ARP, IP, DNS <br/>\
-- Sniffing : 훔쳐 보기 - Packet, Hub, Switch <br/>\
-- Snooping : 몰래 획득 - IGMP, DHCP <br/><br/>\
+- Sniffing : 훔쳐 보기(조작x) - Packet, Hub, Switch <br/>\
+- Snooping : 몰래 획득(조작o) - IGMP, DHCP <br/><br/>\
 # 무결성 위협 <br/>\
 - Phishing : 메일, 문자, 사기 <br/>\
-- Exploit : 취약점 공격<br/>\
+- Exploit : 취약점 이용 스크립트 <br/>\
 - Ransomeware : 블록크랜 <br/><br/>\
 # 가용성 위협 <br/>\
 - DoS, DDoS <br/><br/>\
@@ -198,7 +200,7 @@ var answer = answer.concat(
 - 단방향 : MDC(MD5, SHA-1, HAS-160, HAVAL), MAC(Nested MAC, HMAC, CBC-MAC, CMAC) <br/><br/>\
 # 무결성 대응 방안 <br/>\
 - 침입탐지 : 방화벽, 웹 방화벽, IPS, IDS, UTM SIEM <br/>\
-- 백업 : DLP, DRM, 보안 USB, 원격 백업 <br/><br/>\
+- 백업 : DLP(흐름 감시), DRM(권한 제어), 보안 USB, 원격 백업 <br/><br/>\
 # 가용성 대응 방안 <br/>\
 - BCP/DR : 정보시스템 재해복구, Mirror/Hot/Warm/Cold <br/>\
 - Dos/DDoS 대응 : 사이버 대피소, DNS 싱크홀, 사이버 디셉션 <br/><br/>\
@@ -1263,7 +1265,7 @@ var answer = answer.concat(
 * 라이지움 88회 관리 1교시 3번\
 ',
 
-// 사이버디셉션
+// 사이버 디셉션
 '# 정의 : 엔드포인트 위협 / 미끼, 함정 / 실시간 / 보안 기술 / <br/>\
 - NW, 엔드포인트 등에서 위협이 주변으로 확산되기 전에 미끼(Decoy)와 함정(Trap)을 이용해 실시간으로 유언, 탐지, 예방 하는 보안 기술 <br/><br/>\
 # 특징 <br/>\
@@ -1501,6 +1503,26 @@ var answer = answer.concat(
 - Hash Function : 증거 무결성, MD 사용 <br/>\
 - 전자서명 : 공개키 암호화, 무결성 <br/><br/>\
 * 라이지움 88회 응용 3교시 5번\
+',
+
+// 클라우드 포렌식
+'# 정의 : 클라우드 증거물 / 사법기관 제출 / 시그니처 데이터 수집, 분석, 보고서 작성 / 과학수사 기법 <br/>\
+- 클라우드에 존재하는 전자적 증거물 등을 사법기관에 제출하기 위해 클라우드 시그니처 데이터 수집, 분석 및 보고서를 작성하는 과학수사 기법 <br/><br/>\
+# 특징 <br/>\
+- 클라우드 시그니처 : 클라우드 서비스 이용 판단 가능한 은닉 폴더, 파일등 흔적 <br/>\
+- 증거수집의 관할권 : 물리적 저장위치 따른 국내/해외 관할권 고려 <br/>\
+- 클라우드 유형 고려 : SaaS, PaaS, IaaS 유형별 포렌식 방법 고려 <br/><br/>\
+# 클라우드 포렌식 조사 절차 <br/>\
+<img src = "./img/CloudForensicProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 문제점 <br/>\
+- 증거 수집 : 대상 범위 불명확, 증거인멸 문제점 <br/>\
+- 증거 분석 : 중앙 집중화 대용량, 서비스별 상이한 시그니처 <br/>\
+- 개인 정보 : 진술 거부권, 해외 사업자 제공 <br/><br/>\
+# 해결방안 <br/>\
+- 증거 수집 : 압수수색 대상 전자정보 직접 명시, 협조 요구 프로세스 간소화, 법체계 마련 <br/>\
+- 증거 분석 : 원격 수색제도, 시그니처 전용 분석 툴 <br/>\
+- 개인 정보 : 수집 프로세스 체계 개선, 해외 제공 활동(GDPR) <br/><br/>\
+* ITPE 7회 4교시 3번\
 ',
 
 // WNAC
@@ -3094,5 +3116,27 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 제거 : 별도 임베디드(글꼴, 실행파일) 제거 / 정확한 구조 파악 / 컨텐츠 손실 <br/>\
 - 전환 : 파일을 다른 형식으로 전환 / 쉬운 조치 / 변환 과정 비용 <br/><br/>\
 * 121회 관리 1교시 10번\
+',
+
+// CSPM
+'# 정의 : 컴플라이언스, 정책 / 클라우드 인프라 위협요소 / 예방, 탐지, 대응, 예측 / 지속적 관리 솔루션 <br/>\
+- Cloud Security Posture Management <br/>\
+- 컴플라이언스 또는 기업 보안 정책에 따라 클라우드 인프라의 위협 요소를 예방, 탐지, 대응 및 예측하여 클라우드 위험을 지속적으로 관리하는 솔루션 <br/><br/>\
+# 핵심 기능 <br/>\
+- 지속성 : 지속적 변화 환경 체크 <br/>\
+- 가시성 : 통합, Dashboard <br/>\
+- 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Compliance Assesment : 이슈 관리 평가 <br/>\
+- Operational Monitoring : PaaS, SaaS 운영 데이터 모니터링 <br/>\
+- DevSecOps Integration : 내부 Cloud 활용 DevSecOps 완성 <br/>\
+- Risk Identification : 발생 가능 주요 위험 식별 및 관리 <br/>\
+- Policy Enforcement : 기업 요구 정책 적용 수행 <br/>\
+- Threat Protection : 내/외부 위협 요소 제거 <br/><br/>\
+# CSPM, CASB, CWPP 비교 <br/>\
+<img src = "./img/CSPM_CASB_CWPP_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 1교시 4번 \
 ',
 );

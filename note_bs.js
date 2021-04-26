@@ -90,6 +90,7 @@ var question = question.concat(
 'Servitization',
 '대기행렬이론',
 '[대기행렬]- 대기행렬 시스템',
+'OKR',
 );
 
 var answer = answer.concat(
@@ -1010,12 +1011,11 @@ var answer = answer.concat(
 ',
 
 // [BCP]- ISO22301
-'# 정의 : 재난 상황 업무 연속성 관리 체계 <br/>\
+'# 정의 : 업무 중단위험 / 최단 시간 내 핵심 업무 복구 / 시행안, 목표 설정 위한 표준 <br/>\
 - Business Continuity Management System <br/>\
-- BS 25999-2 대체 <br/>\
-- 기업의 비즈니스를 보호할 수 있도록 경영시스템 요구사항을 명시/역할,책임,교육을 통한 기업 경영의 연속성을 유지할 수 있는 경영 국제인증 <br/><br/>\
-# Keyword : PDCA, 조직현황, 리더쉽, 계획, 지원, 운영, 수행평가, 개선, 인증, 비즈니스 연속성 <br/><br/>\
+- 재해, 재난, 테러등 예기치 못한 이위기로 업무 중단 위험이 발생한 경우 최단 시간 내 핵심 업무를 복구하기 위한 최상의 시행안과 목표를 설정하기 위한 표준 <br/><br/>\
 # 주요 내용 (조리계지운성개) <br/>\
+[1~3 공통 내용] <br/>\
 P(4) 조직의 상황 : BCM 관리 상황<br/>\
 P(5) 리더십 : 경영진 방침 <br/>\
 P(6) 계획수립 : 업무 연속성 목적 제시<br/>\
@@ -1026,6 +1026,10 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 <img src = "./img/BCMS_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Time Graph <br/>\
 <img src = "./img/BCMS_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# ISO 22301:2019 <br/>\
+- 용어 : 실제 사용 용어 통한 정의 변경 <br/>\
+- 구조 : 중복 내용 병합, 제거, 명확화 <br/>\
+- 유효기간 : ISO 22301:2012 - 2021까지 / 이후 ISO 22301:2019 적용 <br/><br/>\
 * 라이지움 87회 관리 1교시 8번\
 ',
  
@@ -1538,5 +1542,32 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 4. Web <br/>\
 <img src = "./img/WaitQueingWeb.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 2교시 6번\
+',
+
+// OKR
+'# 정의: 조직 목표 설정 / 결과 추적 / 성과 중심 목표 설정 프레임워크 <br/>\
+- Objective Key Results <br/>\
+- 조직적 차원에서 목표를 설정하고, 그 결과를 추적할 수 있도록 도와주는 성과 중심 조직을 위한 목표 설정 프레임워크 <br/><br/>\
+# 원칙 <br/>\
+- 집중(Focus) : 중요한 것 선택 <br/>\
+- 정렬(Alignment) : 여러 요소 사이 집합 취함 <br/>\
+- 추적(Tracking) : 일 상황 추적 가능 <br/>\
+- 도전(Stretching) : 더 높은 곳 도전 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/OKR_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 상세요소 <br/>\
+1. 구성요소 <br/>\
+- Objectives : Mission 달성 이전 자신이 정하는 목표 <br/>\
+- Key Result : Objective 달성 판단 지표 <br/><br/>\
+2. 프로세스 <br/>\
+- 범위 설정 : OKR 대상 팀, 적용 범위 <br/>\
+- 미션 설정 : OKR 적용 팀, 수행해야 할 미션 <br/>\
+- 마일스톤 설정 : 1개월 or 3개우러 단위 마일스톤 지정 <br/>\
+- 모델 작성 : 목표, 핵심결과 지표 정하기 위한 모델 작성 <br/>\
+- 핵심 지표 결정 : 구체적 수치 목표 지정, Key Results 로 정의 <br/>\
+<font color = "red">* SMART : Specific, Measurable, Achievable, Relevant, Time-bound </font><br/><br/>\
+# OKR, KPI 비교 <br/>\
+<img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 5번 \
 ',
 );

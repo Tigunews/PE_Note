@@ -89,7 +89,8 @@ var question = question.concat(
 '[AI]- NPU',
 '[AI]- Deep Fake',
 '[AI]- Hyper Prameter',
-'[AI]- OpenCV',
+'[AI]- Computer Vision',
+'[AI][Computer Vision]- OpenCV',
 '[AI]- SOM',
 '[AI]- 머신러닝 파이프라인',
 '[AI]- Active Learning',
@@ -137,6 +138,9 @@ var question = question.concat(
 '[AI][NLP]- GPT-3',
 '[AI]- 추천 시스템',
 '[AI][정책]- AI 조달 가이드라인',
+'[AI]- Digital Cartel',
+'[AI]- 인공지능 성능 지표',
+'[AI][성능지표]- IoU',
 'CCW(CounterClockWise) 알고리즘',
 );
 
@@ -1060,9 +1064,14 @@ var answer = answer.concat(
 # 개념도 <br/>\
 <img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
-<img src = "./img/ActivationFunction.png" style = "max-width:100%; height:auto;"><br/>\
-* NET : 입력과 ㅇ녀결 강도의 가중 합 <br/>\
-- Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 \
+1. 은닉층 <br/>\
+<img src = "./img/ActivationFunctionHiddenLayer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 출력층 <br/>\
+<img src = "./img/ActivationFunctionOutputLayer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ActivationFunction.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* NET : 입력과 연결 강도의 가중 합 <br/>\
+- Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 <br/><br/>\
+* ITPE 7회 관리 2교시 1번 \
 ',
 
 // [기계학습]- Feed Forward Neural Network
@@ -1590,14 +1599,41 @@ var answer = answer.concat(
 <img src = "./img/HyperParameterTunning.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * KPC 97회 응용 1교시 16번<br/>\
 * 120회 관리 4교시 3번\
-',  
+',
+
+// Computer Vision
+'# 정의 : 영상 처리 기술 / 사람 처럼 사물 인지 / 수학적 알고리즘 / 추출, 분석 기술 <br/>\
+- 영상 처리 기술을 활용하여 컴퓨터가 사람처럼 사물을 인지하고 의미 있는 정보를 수학적 알고리즘을 통하여 추출, 분석하는 기술 <br/><br/>\
+# Process <br/>\
+<img src = "./img/ComputerVisionProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 전처리 <br/>\
+- Gray Scale : 다중 채널 -> 단일 채널 <br/>\
+- 이진화 : Black(0), White(255) <br/>\
+- 확대/축소 : 이미지 크기 변경 <br/><br/>\
+2. 특징 추출 <br/>\
+- STIP(Space-Time Interest Points) : 행동 인식, 관심점 선택 추출 기법 <br/>\
+- SIFT(Scale-Invariant Feature Transform) : 크기, 회전 불변 특징 추출 알고리즘 <br/>\
+- SURF(Speed-Up Robust Features) : 적분 영상 사용, 관심점과 영역 계산 <br/><br/>\
+3. 탐지/분할 <br/>\
+- PCA(Principa Component Anlaysis) : 고차원 -> 저 차원 표변 변환 <br/>\
+- Neural Network : 뉴런 상호작용, 생물학적 반복 학습 과정 모형화 <br/><br/>\
+4. 분류 <br/>\
+- SOM(Self-Organizing Map) : 저차원 격자, 고차원 데이터 대응, 군집 도출 기법 <br/>\
+- SVM : 근접 데이터 거리 가장 큰 경계 식별, 분류 알고리즘 <br/>\
+- K-Means : 군집별 중심값에서 중심 거리 기반 데이터 분류 군집 알고리즘 <br/><br/>\
+* ITPE 7회 관리 1교시 7번 \
+',
   
-// Open CV
+// OpenCV
 '# 정의 : 컴퓨터 비전 프로그래밍 이미지 프로세싱 라이브러리, 오픈소스 BSD <br/>\
 - 실시간 컴퓨터 비전을 목적으로 한 영상처리와 컴퓨터 비전 프로그래밍 분야의 대표적인 이미지 프로세싱 라이브러리 <br/><br/>\
 # 특징 : 컴퓨터 비전 구현, BSD 라이선스, 다양한 플랫폼 지원 <br/><br/>\
 # 알고리즘 <br/>\
-- 이진화, 노이즈 제거, 외곽선 검출, 패턴인식, 기계학습, ROI(측정 범위 설정), 이미지 변환, 하드웨어 가속\
+- 이진화, 노이즈 제거, 외곽선 검출, 패턴인식, 기계학습, ROI(측정 범위 설정), 이미지 변환, 하드웨어 가속 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/OpenCVStrcture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 1교시 7번\
 ',
   
 // SOM
@@ -2348,11 +2384,34 @@ var answer = answer.concat(
 ',
   
 // Transformer
-'# 정의 : 2017 Google / Attention / 인코더, 디코더 / 언어처리 모델 <br/>\
-- 2017년 구글이 발표하여 Attention 매커니즘을 사용하여 인코더, 디코더로 구현된 언어처리 모델<br/><br/>\
-# 특징 : 최근 딥러닝 언어모델 Transformer에서 파생 <br/><br/>\
-# 구성도 <br/>\
+'# 정의 : RNN 탈피 / seq2seq의 인코더, 디코더 모델 / 셀프 어텐션 구조 / 자연어 처리 모델 <br/>\
+- RNN을 탈피하고 seq2seq의 인코더-디코더 모델과 셀프 어덴션 구조만으로 구현한 자연어 처리 모델 <br/><br/>\
+# 등장배경 <br/>\
+- RNN 인코더-디코더 모델 한계 : 정보손실, 긴 문장 오류, 병렬 불가 <br/>\
+- RNN + Attention 모델 : 인코더 결과물 재참조, 연관 단어 집중, 품질 향상, RNN사용 여전히 느림 <br/>\
+- Transformer 등장 : RNN 구조 탈피, Self-Attention 매커니즘, 병렬처리 가능 <br/><br/>\
+# 특징 <br/>\
+- 2017년 구글 "All you need is Attention" <br/>\
+- RNN 보다 우수 <br/>\
+- BERT GPT 기반 <br/><br/>\
+# 개념도 <br/>\
 <img src = "./img/Transformer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/TransformerNetworkStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 입력 <br/>\
+- Positional Encoding : 입력단어 위치 값 추가, 사인, 코사인 함수 이용, RNN 미사용 극복 <br/><br/>\
+2. 인코더 <br/>\
+- Encoder Self-Attention : 입력 토큰 병렬, 이전 어텐션 참조 <br/>\
+- Feed Forward NN : 완전 연결망, 잔차 이용, 정규화 수행 <br/><br/>\
+3. 디코더 <br/>\
+- Masked Self-Attention : 입력 토큰 병렬, 현재 이후 단어 마스킹 <br/>\
+- Encoder-Decoder Attention : Self Attention x, E-D 결합 <br/>\
+- Feed Foward NN : 인코더 구조와 동일 <br/><br/>\
+4. 출력 <br/>\
+- Linear Layer : 디코더 출력 벡터화 Fully Connected <br/>\
+- Softmax : 출력단어 예측 <br/><br/>\
+* ITPE 7회 관리 3교시 3번 <br/>\
 * 123회 관리 4교시 4번\
 ',
   
@@ -2423,6 +2482,57 @@ var answer = answer.concat(
 - 구축 모델에 대한 충분한 검토 <br/>\
 - 지속적, 신속한 유지보수, 위험관리 <br/><br/>\
 * KPC 93회 관리 4교시 6번\
+',
+
+// Digtal Cartel
+'# 정의 : 인공지능 알고리즘 / 정보교환, 가격조정, 모니터링 / 사람 개입없이 수행 / 기업의 담합 행위 <br/>\
+- 인공지능 알고리즘에 기반하여 정보교환, 가격 조정 및 모니터링 등의 과정을 사람의 직접적 개입 없이 수행하는 기업의 담합 행위 <br/><br/>\
+# 특징 <br/>\
+- 이익 극대화 : 기업이 알고리즘 이용 하여 가격, 공급량 조절, 이윤 추구 <br/>\
+- 정보 비대칭 : 알고리즘 통한 공급자, 소비자간 정보 비대칭 발생 <br/>\
+- 빠른 속도 : 인간 인지 불가 속도 <br/><br/>\
+# 알고리즘 (<font color = "red">모평신자</font>) <br/>\
+- 모니터링 알고리즘 : 경쟁업체 가격 실시간 수집, 담합 이탈 감시 <br/>\
+- 평행 알고리즘 : 가격 결정 소프트웨어 이용, 가격 동기화 <br/>\
+- 신호 알고리즘 : 가격 인상 신호 실시간 송수신, 공동 가격 조정 유도 <br/>\
+- 자가학습 알고리즘 : 인공지능이 시장 데이터 학습, 분석으로 내린 결정이 담합 초래 <br/><br/>\
+# 유형 <br/>\
+1. Messenger <br/>\
+- 합의 형태 : 명시적 합의(알고리즘이 사람의 명령 수동적 수행) <br/>\
+- 합의 근거 : 직접 근거 <br/>\
+- 법적 책임 : 일반적으로 위법 <br/><br/>\
+2. Hub and Spoke <br/>\
+- 합의 형태 : 묵시적 합의(온라인 플랫폼이 제시한 가격 일괄 수용) <br/>\
+- 합의 근거 : 정황 근거 <br/>\
+- 법적 책임 : 위법 적발 가능 <br/><br/>\
+3. Predictable Agent <br/>\
+- 합의 형태 : 합의 없음(알고리즘으로 경쟁업체 행위 예측 대응) <br/>\
+- 합의 근거 : 추가 시점 <br/>\
+- 법적 책임 : 불명확 <br/><br/>\
+4. Autonomous Machine <br/>\
+- 합의 형태 : 합의 없음(인공지능끼리 스스로 판단 담합) <br/>\
+- 합의 근거 : 증거 확인 불가 <br/>\
+- 법적 책임 : 처벌 근거 부재 <br/><br/>\
+# 대응방안 <br/>\
+- 알고리즘 감사제도 : 공적 감사, 불확실성 최소화<br/>\
+- 법적 지위 부여 : 인격 부여, 법적 공백 최소화 <br/>\
+- 규제 고도화 : RegTech 통한 효율적 감독 수행 <br/>\
+- 소비자의 대응 수단 : 소비자의 소비를 AI가 대신 수행, 협상력 제고 <br/><br/>\
+* ITPE 7회 관리 1교시 9번\
+',
+
+// [AI]- 인공지능 성능 지표
+'<img src = "./img/AIDegree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 6번\
+',
+
+// [AI][성능지표]- IoU
+'# 정의 : 경계 상자 교차영역 / 넓이 이용 / 인식 성능 지표 <br/>\
+- Intersection Over Union <br/>\
+- 영상, 이미지의 객체 탐지 모델에서 예측된 경계상자와 실제 참값(Ground Truth) 경계상자의 교차 영역의 넓이를 이용한 인식성능 지표 <br/><br/>\
+# 상세 설명 <br/>\
+<img src = "./img/IOU_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 6번\
 ',
   
 // CCW 알고리즘

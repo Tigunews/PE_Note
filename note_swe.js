@@ -359,6 +359,8 @@
 'PMO',
 '공공 PMO',
 '정보시스템 감리',
+'[감리]- 21년 개정사항',
+'[감리]- 감리 계획서, 보고서 작성 원칙',
 '[감리]- 공통감리',
 '[공통감리][현장감리]- 검사기준서',
 '[공통감리][현장감리]- 기능/비기능 요구사항 점검',
@@ -369,7 +371,6 @@
 '[감리]- 유지보수 감리',
 '[감리]- 감리기준 감리업무 절차',
 '[감리]- 정보시스템 하드웨어 규모산정 지침',
-'[감리]- 21년 개정사항',
 'PMBOK 6th 주요개정 내용',
 '지식영역별 세부 프로세스 49개',
 '발주 프로세스',
@@ -390,6 +391,7 @@
 '오픈소스 프로젝트관리 소프트웨어',
 'ALM',
 'SW Visualization',
+'SW안전 확보 지침',
 );
 
 var answer = answer.concat(
@@ -2896,7 +2898,7 @@ var answer = answer.concat(
 - 소스코드상의 보안 취약점을 검증하고, 탐지된 취약점을 동적 분석으로 재 검증하여 오탐률을 최소화하며, 탐지된 보안 취약점에 대한 Exploit 기능 제공으로 보안 취약점을 검증기법',
 
 // 백투백 테스트
-'# 정의 : 테스트 기법 / Dual TEST <br/>\
+'# 정의 : 상이한 버전 / 동일 입력값 / 출력 결과 비교 <br/>\
 - 2개 이상의 상이한 버전의 프로그램상에서 동일한 입력값에 대한 출력결과를 비교하는 테스트 기법 <br/><br/>\
 # 구성요소 <br/>\
 - 동일 요구 명세서 <br/>\
@@ -2904,17 +2906,15 @@ var answer = answer.concat(
 - 병행 테스트<br/>\
 - 구현 정확성 판단<br/><br/>\
 # 절차 <br/>\
-- 어플리케이션 개발 : 동일명세, 다른팀 <br/>\
-- 버전별 테스트 : 병행, 구현 정확성 판단<br/><br/>\
+- 테스트 케이스 작성 <br/>\
+- 테스트 병렬 수행 <br/>\
+- 출력 결과값 비교 <br/>\
+- 불일치시, 원인 분석 <br/><br/>\
 # 활용범위 <br/>\
-- ISO 26262 처럼 결함이 Near Zero 수준의 Mission Critical 한 소프트웨어 테스트 및 오류 검출시 <br/>\
-- 원자력 발전, 풍력 발전처럼 문제 발생시 Risk한 파장이 예측되지 않은 경우<br/>\
-- 자동차의 Safety-Critical SW에 모델 기반 테스트 방법론 적용 <br/><br/>\
-# 지멘스 적용 사례 <br/>\
-- 개요 : 전기차 e-drive 차량의 핵심 컴포넌트, 파워일렉트로닉스, 지능형 탑재 충전기술<br/><br/>\
-- 개발 방법론 : V-Cycle 기반의 SW 개발 및 자동화 Compliance 준수 (핵심: Automotive SPICE 가이드라인 및 CMMI-Dev) <br/><br/>\
-- 모델 기반 개발 요구 조건 : ISO 26262, ASPICE, ISO 표준 6Part(제품개발:SW준수), ASIL, A-D 요구 준수 -> ISO 26262 맥락에서 Simulink, TargetLink 활용 모델 아키 및 설계 절차, 패널 정의, 요구조건 역추적성 제공, 생성 코드 활용 전 모델 수준 요구조건 대기 테스트 가능 <br/><br/>\
-- 테스트 방법 : 요구조건 기반 테스팅, 인터페이스 테스팅, 모델과 코드 사이 백투백 테스팅 (핵심: SW모듈 및 기능 테스트)\
+- ISO 26262 <br/>\
+- 원자력, 풍력 발전 <br/>\
+- ASIL <br/><br/>\
+* ITPE 7회 관리 4교시 2번\
 ',
 
 // Smoke Testing
@@ -2952,15 +2952,9 @@ var answer = answer.concat(
 - 심볼릭 경로 수식(Symbolic Path Formula) 추출 방법 : 심볼릭 경로 수식을 추출하기 위해 수정된 가상머신을 활용하는 방법 \
 ',
 
-// 34
+// Fuzz
 '# 정의 : 취약점 테스트 방법 / 무작위 데이터 입력 / 조직적 실패 유발<br/>\
 - SW에 무작위 데이터를 입력하여 SW의 조직적 실패를 유발함으로써 SW의 보안 취약점을 찾아내는 테스트 방법 <br/><br/>\
-# 암기<br/>\
-- 커-다인로 <br/><br/>\
-- 생-덤스에 <br/>\
-- 투-벨,인스,인페 <br/>\
-- 대-뮤,제 <br/>\
-- 기법-화블 <br/><br/>\
 # 커버리지 <br/>\
 - Direct Physical Attack : NW(OBD), File System, File/Media <br/>\
 - Indirect Physical Attack : Application <br/>\
@@ -2970,7 +2964,15 @@ var answer = answer.concat(
 - 데이터 투입 : Valid Case Fuzz Testing, Invalid Case Skip Testing, Invalid Case Fail Testing <br/>\
 - 변조 대상 : Mutation base Fuzzing, Generation based Fussing <br/>\
 - 테스팅 기법 : Whitebox Fuzzing, Blackbox Fuzzing <br/><br/>\
-# 고려사항 : 종료 조건 생성, 취약점 분석 능력, 풍부한 프로토콜 및 프로그램 지시\
+# 절차 <br/>\
+- 테스트 대상 분석 : 시스템 식별 및 특징 분석 <br/>\
+- 입력 값 선정 : 오류 유발 입력값 선정 <br/>\
+- 테스트 케이스 생성 : 입력값 대한 테스트 케이스 생성 <br/>\
+- 테스트 실행 : 테스트 케이스 입력, 실행 <br/>\
+- 시스템 동작 모니터링 : 문제 발생시 로그 수집 <br/>\
+- 분류 및 해결 : 문제 발생 항목 점검, 원인 분석 및 코드 수정 <br/><br/>\
+# 고려사항 : 종료 조건 생성, 취약점 분석 능력, 풍부한 프로토콜 및 프로그램 지시<br/><br/>\
+* ITPE 7회 관리 4교시 2번\
 ',
 
 // Shift-left Testing
@@ -3773,7 +3775,10 @@ P 히스토그램 : Data 분포 <br/>\
   
 // 몬테카를로 시뮬레이션
 '# 정의 : 확률모형 모수, 변수 반복적 대입 / 확률 변수 분포 산정 <br/>\
-- 특정 변수를 예측하기 위해 확률모형의 모수나 변수에 대해 반복적으로 여러 수치를 대입하여 확률 변수의 분포를 산정하는 기법 <br/><br/>\
+- 특정 변수를 예측하기 위해 확률모형의 모수나 변수에 대해 반복적으로 여러 수치를 대입하여 확률 변수의 분포를 산정하는 기법 <br/>\
+- 일련의 난수를 반복적으로 생성하여 계산 가능한 함수의 값을 확률적으로 계산하는 알고리즘 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/MonteCraloSimulationProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 사례 <br/>\
 - 시작 : 난수 생성 (0~1) <br/>\
 - 전환 : 난수 -> 표본값 <br/>\
@@ -3900,7 +3905,7 @@ P 히스토그램 : Data 분포 <br/>\
 - SW 공학프로세스 <br/>\
 - SW 공학도구와 방법 <br/>\
 - SW 품질 <br/><br/>\
-3. tlsrbrlqks <br/>\
+3. 신규기반 <br/>\
 + SW 전문가 실천 <br/>\
 + SW 경제학 <br/>\
 + SW 컴퓨팅 기반 <br/>\
@@ -4137,6 +4142,7 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 1.3 2.0 비교 <br/>\
 <img src = "./img/CMMI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 2교시 6번 <br/>\
 * ITPE 2회 1교시 9번 <br/>\
 * KPC 97회 관리 4교시 3번\
 ',
@@ -4905,9 +4911,9 @@ P 히스토그램 : Data 분포 <br/>\
 - 미팅 : 일일스크럼, 스프린트 계획, 스프린트 리뷰 <br/>\
 - 산출물 : 제품 백로그, 스프린트 백로그, 소멸차트 <br/><br/>\
 # 팀 구성 <br/>\
-- 제품 책임자 : 제품 기능 목록 작성, 스프린트 운영관여 x <br/>\
-- 스크럼 마스터 : 조력자 역할, 에자일 촉진자, 개발 방해 요소 제거 <br/>\
-- 스크럼 팀 : 요구사항 구현, 제품 시연, 스크럼 회의 진행 <br/><br/>\
+- Product Master : Back Log 작성, 우선순위 관리, 요구사항 검증 <br/>\
+- Scrum Master : Daily Meeting 주관, Agile 촉진자, 가이드 제시, 장애 관리 <br/>\
+- Scrum Team : 제품 개발, User Story 관리, 개발 환경 구성 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/Scrum.png" style = "max-width:100%; height:auto;"><br/>\
 - 요구정의 : 린스타트업, 디자인 싱킹 <br/>\
@@ -5440,45 +5446,14 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 // DevOps
 '# 정의 : 개발 + 운영 문화, 방법론 <br/>\
 - 개발과 운영이 분리되면서 오는 문제점(사후관리, 서비스등)을 해결하기 위해서, 개발과 운영을 하나의 조직으로 합쳐서 팀을 운영하는 문화이자 방법론 <br/><br/>\
-# 암기 <br/>\
-- 발전단계 : 3 3-9-8 <br/>\
-- 구성요소(3) : 품프도<br/>\
-1) 품질 : 기통테 <br/>\
-2) 프로세스 : CC완릴 <br/>\
-3) 도구 : C어프 <br/>\
-- 개발 사이클(12) : 요스범이 의솔개테 릴법운서 <br/><br/>\
-# 발전 단계 : 초기단계(3) > 성숙조직(9) > DevOps 단계(8) <br/><br/>\
-# 핵심요소 CAMS<br/>\
-- Culture : 개발, 운영, 책임 공유 <br/>\
-- Automation : 개발 ~ 배포 <br/>\
-- Measure : 제품 생성 로그, 정보, 지표등 운영이 개발에 피드백 <br/>\
-- Share : 개발지식을 운영과정 적용 <br/><br/>\
-# 구성요소 <br/>\
-- 품질(3) : 품질기준, 통합적 품질보증, 테스트 자동화<br/>\
-- 프로세스(4) : Cycle Time 축소, 완료시점 범위 확장-운영동작까지, CD, Release-배포 분리<br/>\
-- 도구(3) : CI(Git, 젠킨스), 자동 어플리케이션 릴리즈, 프로비저닝 <br/><br/>\
-# 데브옵스 기반 개발 싸이클 <br/>\
-- User 요구사항 <br/>\
-- User Story <br/>\
-- 범위, 우선순위 결정 <br/>\
-- 이해관계자 관리 <br/>\
-- Dependency 관리 <br/>\
-- 솔루션 도입 및 평가방안 <br/>\
-- 개발<br/>\
-- Testing <br/>\
-- Release <br/>\
-- 법적관리 <br/>\
-- 운영<br/>\
-- 서비스(Customer Support)<br/><br/>\
+# 프로세스 <br/>\
+<img src = "./img/DevOpsPipeLine.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 도구 <br/>\
-- Chef : automation tool, jenkins의 build후 처리와 비슷하지만 훨씬 많은 templet 제공, build 후 취할 활동 미리 정의 후 자동 실행 테스트 수행 <br/>\
-- Puppet : Delivery & Deploy tool, WAS 환경의 java deploy 제어/관리, 각 서비스 deploy 수행 결과 수집 및 통계처리 지원<br/><br/>\
-# 적용시 고려사항 : 적용조건, 적용가능 분야, 적용시 피해야할 분야(치명적으로 중요성 높은 프로그램, 높은 완결성 요구 프로그램), 툴도입 넘어 조직 문화 변화 병행 필요 <br/><br/>\
-* CD : Continuous Delivery : 단위 시험 자동화뿐 아니라 특정환경에서의 인수 시험 자동화 <br/><br/>\
-* CI : Continuous Integration : 지속적 품질통제 적용 프로세스 수행 Agile 비교, MSA 활용 <br/><br/>\
-<img src = "./img/DevOps_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DevOps_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DevOps_3.png" style = "max-width:100%; height:auto;">\
+- 소스 컨트롤 자동화 : Subversion, Github, GitLab, BitBucket <br/>\
+- 빌드/테스트 자동화 : Maven, Selenium, SoapUI, Find Bugs <br/>\
+- 배포 자동화 : JFrog Artifactory, docker <br/>\
+- 배포/운영 : Puppet, Chef, Ansible <br/><br/>\
+* ITPE 7회 관리 4교시 5번\
 ',
  
 // DataOps
@@ -5490,7 +5465,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 검토 : 필요한 데이터 수집됐는지 확인 <br/>\
 - 보안 : 데이터 보안 보장 <br/>\
 - 극복 : 사용가능한 데이터 사일로 만들기 <br/><br/>\
-* Silo : 각부서, 사업단위나 브랜치별로 데이터가 ㅇ리치하지 않는 증상 \
+* Silo : 각부서, 사업단위나 브랜치별로 데이터가 일치하지 않는 증상 \
 ',
  
 // GitOps
@@ -5821,6 +5796,24 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 <img src = "./img/AuditProcessType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 감리 Overview \
 ',
+
+// 21년 개정사항
+'# 정보시스템 감리수행 가이드 주요 변경 사항 <br/>\
+- 감리수행 절차 변경 : 예현시 / 정보개발 사업(요설종-각 단계별 예현시) <br/>\
+- 역할 명확화 : 상주감리 업무역할 대해 개정고시 내용 반영(PMO 역할 유사 부분 명확화) <br/>\
+- 항목 보완 : 정보화사업 유형별 표준 점검항목 일부보완(운영우지보수 점검가이드 2.0 반영) <br/>\
+- 내용 수정 : 발주기관 입장에서 설명한 일부 내용 수정 <br/>\
+- 내용 보완 : 표, 서식, 이미지 개선 및 설명내용 간소화 등 <br/><br/>\
+# 정보시스템 감리기준 고시 개정 사항 <br/>\
+<img src = "./img/Audit21Upgrade.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 2교시 5번 \
+',
+
+// 감리 계획서, 보고서 작성 원칙
+'# 작성 원칙 <br/>\
+<img src = "./img/AuditWritePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 2교시 5번\
+',
  
 // 공통 감리
 '# 정의 : 모든 유형 공통 적용 절차 (상주, 상시 감리 적용 x) <br/>\
@@ -5976,10 +5969,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - SPECjbb2015 : Java App 기반 시나리오 / max-jOPS (Fail발생 직전 최대부하) <br/>\
 - SPC-1 : 비휘발성 스토리 표시 실제 환경 시뮬레이션 / Input Output Per Second (In 40, Out 60) <br/><br/>\
 * 119회 응용 2교시 5번\
-',
-
-// 21년 개정사항
-'<img src = "./img/Audit21Upgrade.png" style = "max-width:100%; height:auto;">\
 ',
   
 // PMBOK 6th 주요개정 내용 <br/>\
@@ -6337,5 +6326,22 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 문서 작업의 간소화 : SW 개발관리 문서화 <br/>\
 - 품질기반의 개발 문화 : 미래형 SW 개발 문화 기반 <br/><br/>\
 * KPC 113회 대비 1일차 관리 1교시 2번\
+',
+
+// SW안전 확보 지침
+'# 정의 : 외부 침입 없이 / 사람 생명, 신체 재산 피해 / 충분 대비 상태 <br/>\
+- 사이버 공격 등의 외부 침입 없이, 소프트웨어 내부의 오작동과 안전기능 마비등으로 발생할 수 있는 사람의 생명, 신체 또는 재산에 대한 피해에 충분히 대비된 상태 <br/><br/>\
+# 주요 내용 <br/>\
+1. 총칙 : 목적, 정의, 적용범위, 업무 및 담당자, 대상 소프트웨어 <br/>\
+2. SW 개발단계 안전 확보 : 안전 요구사항, 위험원 분석, 설계 및 구현, 검증 <br/>\
+3. SW 운영단계 안전 확보 : 운영관리 계획, 위험 분석, 안전 점검, 변경 관리 <br/>\
+4. 그외 SW 안전확보 사항 : 정보공유, 기반확보, 기타사항, 재검토기한 <br/><br/>\
+# 증진 방안 <br/>\
+- 문화 강화 <br/>\
+- 산업 독립 <br/>\
+- 전문가 육성 <br/>\
+- 산업 활성화 <br/>\
+- 평가, 수준 따른 안전 활동 <br/><br/>\
+* ITPE 7회 관리 3교시 5번\
 ',
 );

@@ -95,6 +95,7 @@ var question = question.concat(
 '[통계]- 분석기법',
 '[통계][분석기법]- 회귀 분석',
 '[통계][회귀 분석]- 다변량 회귀 분석',
+'[통계][분석기법]- 상관 분석',
 '[통계][분석기법]- 주성분 분석',
 '[통계][분석기법]- 다차원 척도법',
 '[통계][분석기법]- 군집분석',
@@ -123,6 +124,7 @@ var question = question.concat(
 '데이터 사이언스',
 '반정형 데이터',
 'RAID',
+'DMBOK',
 );
 
 var answer = answer.concat(
@@ -1848,7 +1850,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
   
 // 회귀 분석
-'# 정의 : 독립, 종속 변수간 </font color = "red">관련성</font> / </font color = "red">함수적 관계 통계적 추정</font> / 종속(1) / 변화 따른 </font color = "red">예측</font> <br/>\
+'# 정의 : 독립, 종속 변수간 <font color = "red">관련성</font> / <font color = "red">함수적 관계 통계적 추정</font> / 종속(1) / 변화 따른 </font color = "red">예측</font> <br/>\
 - 독립변수들과 종속변수 간에 존재하는 관련성을 분석하기 위하여, 관측된 자료에서 이들 간의 함수적 관계를 통계적으로 추정하는 방법 <br/><br/>\
 # 목적 <br/>\
 - 예측 : 종속 변수 값 예측 <br/>\
@@ -1879,6 +1881,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 단계 선택법 : 전진 선택 변수 추가, 후진 제거법 수행 / 전진, 후진 장점 취합 <br/><br/>\
 <font color = "red">* 다중공선성 문제 : 회귀분석에서 독립변수들 간에 강한 상관 관계가 나타나는 문제 </font><br/><br/>\
 * 123회 관리 2교시 4번\
+',
+
+// 상관 분석
+'# 정의 : 두 변수간 / 상관계수 측정 / 선형적 관계 / 분석 기법 <br/>\
+- 두 변수 간의 상관계수를 측정하여 이를 기반으로 어떤 선형적 관계를 가지는지 분석하는 기법 <br/><br/>\
+# 구성요소 : 분산, 공분산, 상관계수, 두개의 변수 <br/><br/>\
+# 특징 <br/>\
+1. 유형 <br/>\
+- 단순 상관 분석 : 단순한 강한관계 정도 측정 <br/>\
+- 다중 상관 분석 : 2개 이상 변수간 관계 강도 측정 <br/><br/>\
+2. 계수 <br/>\
+- 피어슨 상관계수 : cov(X,Y) / Sigma(x)Sigma(y) <br/>\
+<font color = "red"> * Cov : 공분산(선형 관계 나타내는 값 - 양음) </font><br/>\
+* Sigma : 표준 편차 <br/><br/>\
+# 회귀분석, 상관분석 비교 <br/>\
+<img src = "./img/RegressionCorelationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 1교시 12번\
 ',
   
 // 주성분 분석
@@ -2159,12 +2178,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
 
 // Text Mining 
-'# 정의 : 정보 도출 기법 / 비 조화 텍스트 문서 <br/>\
-- 비 조화된 텍스트 문서에서 가치있는 정보를 도출하는 기법 <br/><br/>\
-# 암기 <br/>\
-- 기법 : 분클토질컨듀 <br/><br/>\
-# 절차 : 데이터 수집 > 전처리 > 정보추출 > 클러스터링/범주화 > 요약/검색 <br/><br/>\
-# 기법 : 문서분류, 문서클러스터링, 토픽 트래킹, 질의응답(NLP), Concept Linkage(문서간 의미적 연결성), 듀오 마이닝(Data Mining, Text Mining 동시 적용)\
+'# 비정형 데이터 / 단어 행렬 / 분석, 마이닝 / 의사결정 지원 분석기법 <br/>\
+- 다양한 문서 형태의 비정형 데이터를 가져와 문서의 단어별 행렬을 만들어 추가적인 분석이나 데이터 마이닝 기법을 적용하여 의사결정을 지원해주는 분석기법 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/TextMiningArchitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기능 <br/>\
+- 문서 요약 : 내용 추출, 요약 <br/>\
+- 문서 분류 : 키워드, 구조화 및 분류 지도 학습 <br/>\
+- 문서 군집 : 분석 후 분류, 자율 학습 <br/>\
+- 특성 추출 : 특성 자동 추출, 메타데이터 추출 <br/><br/>\
+# 절차 <br/>\
+- 수집 : HTML Parsing, API <br/>\
+- 전처리 : Corpus(구조화), tm_map(문장 부호 제거), Stop word(무의미 단어 제거)<br/>\
+- 자연어 처리 : Stemming(공통 어간 단어 통합), KoNLP(한글 텍스트 단어 추출) <br/>\
+- TDM 구축 : TermDocumentMatrix(행열 매트릭스), Dictonary(매트릭스 사전)  <br/>\
+- 분석 및 시각화 : Assortiation(단어간 연관성), Word Cloud(시각화), 감성 분석(오피니언 마이닝) <br/><br/>\
+# 활용 사례 : 개인 신용 측정, 자동 번영, 챗봇, 채용, 마켓 인텔리전스 <br/><br/>\
+* 라이지움 90회 관리 2교시 6번\
 ',
 
 // 로봇 저널리즘
@@ -2346,5 +2376,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/RAID_Detail2.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/RAID_Detail3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 89회 관리 3교시 5번 <br/>\
+',
+
+// DMBOK
+'# 정의 : 데이터 관리 국제 표준 <br/>\
+- Data Management Body Of Knowledge <br/>\
+- DAMA International에서 운영 중인 데이터관리를 위한 국제 표준 지침 <br/><br/>\
+# 구성 <br/>\
+- Data Governance <br/>\
+- Data Architecture Management <br/>\
+- Data Development <br/>\
+- Data Operations Management <br/>\
+- Data Security Management <br/>\
+- Reference & Master Data Management <br/>\
+- Data Warehousing & Business Intelligence Management <br/>\
+- Document & Content Management <br/>\
+- Meta Data Management <br/>\
+- Data Quality Management <br/><br/>\
+* ITPE 7회 관리 3교시 6번\
 ',
 );
