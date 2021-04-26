@@ -1613,25 +1613,23 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // 6G
-'# 정의 : 초성능, 초대역, 초공간, 초정밀, 초신뢰, 초지능, THz <br/>\
-- 6세대 무선 네트워크 <br/><br/>\
+'# 정의 : 최대 전송 용량, 5배 1Tbps / 체감 속도, 10배 1Gbps / 6세대 무선 이동 통신 기술 <br/>\
+- 5G의 20Gbps보다 5배 빠른 1Tbps 최대 전송 용량과 10배 우수한 1Gbps 사용자 체감 속도 등을 지원하는 차세대 이동 통신 기술 <br/><br/>\
 # KPI / 전략과제 (성대공정지현)<br/>\
-- 초성능 : 1Tbps / Tbps 급 무선 통신 기술<br/>\
-- 초대역 : 1THz(지원대역), ~30GHz(대역폭) / 6G 주파수 확보기술 개발<br/>\
-- 초공간 : ~10Km(지원고도), 1,000km/h(이동속도) / 3차원 공간 이동체 브로드밴드 <br/>\
-- 초정밀 : 0.1 us(무선), ~5ms(유선) / 초저지연, 고정밀, 고가용 <br/>\
-- 초지능 : AI 기반 지능형 네트워크 / 지능형 무선 액세스 네트워크<br/>\
-- 초현실 : 3차원 미디어, Tangible 미디어 / 시공간 초월 미디어 <br/><br/>\
+<img src = "./img/5G6G_GraphicCompare.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요기술 <br/>\
 - 주파수 기술 : THz, OFDM(New Waveform), 스펙트럼 공유(AI 동적공유) <br/>\
 - NW 토폴로지 기술 : 지상/비지상 NW, IAB(Integration of Access and Backhaul) <br/>\
 - 고신뢰성 기술 : HW 수준 보안/고신뢰 AI(Secure-by-Design, OSS 보안 강화, 적대적 머신러닝 대응 AI) <br/>\
 - Duplex 통신 기술 : 상호 배타적 통신(안테나) <br/>\
 - 최적화 기술 : Comprehensive AI <br/>\
-- 만물지능 인터넷 : SPlit Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
-# 5G 비교 <br/>\
-<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 이동통신 기술의 한세대를 통상 10년으로 칭함 \
+- 만물지능 인터넷 : Split Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
+# 6G 시범 사업 <br/>\
+<img src = "./img/6G_PilotProject.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 6G 핵심기술개발 주요내용 <br/>\
+<img src = "./img/6GCoreTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 1교시 8번\
 ',
   
 // Wifi 7
