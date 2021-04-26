@@ -359,6 +359,8 @@
 'PMO',
 '공공 PMO',
 '정보시스템 감리',
+'[감리]- 21년 개정사항',
+'[감리]- 감리 계획서, 보고서 작성 원칙',
 '[감리]- 공통감리',
 '[공통감리][현장감리]- 검사기준서',
 '[공통감리][현장감리]- 기능/비기능 요구사항 점검',
@@ -369,7 +371,6 @@
 '[감리]- 유지보수 감리',
 '[감리]- 감리기준 감리업무 절차',
 '[감리]- 정보시스템 하드웨어 규모산정 지침',
-'[감리]- 21년 개정사항',
 'PMBOK 6th 주요개정 내용',
 '지식영역별 세부 프로세스 49개',
 '발주 프로세스',
@@ -5824,6 +5825,24 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 <img src = "./img/AuditProcessType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 감리 Overview \
 ',
+
+// 21년 개정사항
+'# 정보시스템 감리수행 가이드 주요 변경 사항 <br/>\
+- 감리수행 절차 변경 : 예현시 / 정보개발 사업(요설종-각 단계별 예현시) <br/>\
+- 역할 명확화 : 상주감리 업무역할 대해 개정고시 내용 반영(PMO 역할 유사 부분 명확화) <br/>\
+- 항목 보완 : 정보화사업 유형별 표준 점검항목 일부보완(운영우지보수 점검가이드 2.0 반영) <br/>\
+- 내용 수정 : 발주기관 입장에서 설명한 일부 내용 수정 <br/>\
+- 내용 보완 : 표, 서식, 이미지 개선 및 설명내용 간소화 등 <br/><br/>\
+# 정보시스템 감리기준 고시 개정 사항 <br/>\
+<img src = "./img/Audit21Upgrade.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 2교시 5번 \
+',
+
+// 감리 계획서, 보고서 작성 원칙
+'# 작성 원칙 <br/>\
+<img src = "./img/AuditWritePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 2교시 5번\
+',
  
 // 공통 감리
 '# 정의 : 모든 유형 공통 적용 절차 (상주, 상시 감리 적용 x) <br/>\
@@ -5979,10 +5998,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - SPECjbb2015 : Java App 기반 시나리오 / max-jOPS (Fail발생 직전 최대부하) <br/>\
 - SPC-1 : 비휘발성 스토리 표시 실제 환경 시뮬레이션 / Input Output Per Second (In 40, Out 60) <br/><br/>\
 * 119회 응용 2교시 5번\
-',
-
-// 21년 개정사항
-'<img src = "./img/Audit21Upgrade.png" style = "max-width:100%; height:auto;">\
 ',
   
 // PMBOK 6th 주요개정 내용 <br/>\
