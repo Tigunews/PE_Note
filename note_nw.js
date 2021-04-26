@@ -72,13 +72,17 @@ var question = question.concat(
 'CDN, ADN',
 'IEEE 802.15.x',
 'USB4.0',
+'이동통신 발전역사',
 '5G 이동통신',
+'[5G]- NSA',
+'[5G]- SA',
 '[5G]- 3GPP Release 16',
 '[5G]- MEC',
 '[MEC]- SSL Offloading',
 '[5G]- 5GX',
 '[5G]- Open Lan',
 '6G',
+'[6G]- 6G 추진 전략',
 '[6G]- Wifi 7',
 'Wifi 6',
 'Wifi 6e',
@@ -1515,6 +1519,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // USB 4.0
 '# 정의 : Thunderbolt 3 호환 및 Double bandwidth 를 사용하여 40 Gbp 의 전송 대역폭을 지원하는 USB 기술',
 
+// 이동통신 발전역사
+'<img src = "./img/MobileCommunicationHistory.png" style = "width:100%; height:auto;">\
+* ITPE 7회 관리 3교시 1번 \
+',
+
 // 5G 이동통신
 '# 정의 : 대한민국 퍼스트 무버 <br/>\
 - 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
@@ -1524,6 +1533,34 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * FR2 커버리지 극복방안 <br/>\
 - 셀의 개수 증가 <br/>\
 - 빔포밍 기술 적용 (건물, 빌딩, 구조물 많을 경우 커버리지 안정성 저하)\
+',
+
+// NSA
+'# 정의 : Control Plane 4G(eNB) / User, Data Plane 5G(gNB) / 3GPP Release 15 기반 / 5G 기술 <br/>\
+- Control Plane의 동작은 4G 기지국(eNB)을 활용하고, User/Data Plane의 동작은 5G 기지국(gNB)을 이용하는 LTE 코어망을 활용한 3GPP Release 15기반 5G 구현 기술 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/5GNSA.png" style = "width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- Release : 3GPP Releas 15(Option 3) <br/>\
+- Master Node : eNB (Evolved NodeB) <br/>\
+- Control Plane : MME(Mobility Management Entity), 가입자 관리, 위치등록, 인증 신호 처리 <br/>\
+- User/Data Plane : SGW(Serving GW), PGW(Packet GW), 통화 설정 관리, 핸드오버 IP, 이동성 <br/>\
+- 적용 : Public 5G 초기 상용화 <br/><br/>\
+* ITPE 7회 관리 3교시 1번\
+',
+
+// SA
+'# 정의 : Control Plane, User/Data Plane / 5G 기지국(gNB) / 3GPP Release 15 기반 / 단독형 5G 구현 기술 <br/>\
+- 4G 기지국(eNB)를 이용하지 않고 Control Plane과 User/Data Plane의 동작을 오직 5G 기지국(gNB)과 5G Core망을 이용하는 3GPP Release 15기반 단독형 5G 구현 기술 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/5GSA.png" style = "width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- Release : 3GPP Release 15(Option 2) <br/>\
+- Master Node : gNB(Next Generatino NodeB) <br/>\
+- Control Plane : AMF(Access and Mobility Management), 이동성 관리 기능, 단말 접속 관리 <br/>\
+- User/Data Plane : UPF(User Plane Function), 단일 Plane(SGW, PGW) <br/>\
+- 적용 : Private 5G 적용 유리 <br/><br/>\
+* ITPE 7회 관리 3교시 1번\
 ',
  
 // 3GPP Release 16
@@ -1630,6 +1667,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 6G 핵심기술개발 주요내용 <br/>\
 <img src = "./img/6GCoreTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 1교시 8번\
+',
+
+// 6G 추진 전략
+'# 비전 : 상상이 현실이 되는 6G 시대 선도 <br/><br/>\
+# 목표 <br/>\
+- 세계 최초 6G 상용화 위한 핵심 기술 확보 <br/>\
+- 6G 글로벌 시장 주도 기반 마련 <br/><br/>\
+# 추진 전략 <br/>\
+- 차세대 6G 기술 선점 : 전략과제, 기술 교루, 시범 서비스 추진<br/>\
+- 고 부가가치 특허 확보 : R&D 성과 국제표준 반영, 국제 표준화 리더십 확보 추진 <br/>\
+- 연구, 산업기반 조성 병행 : 부품, 장비 국산화, 고급 실무인력 양성 <br/><br/>\
+* ITPE 7회 관리 3교시 1번\
 ',
   
 // Wifi 7

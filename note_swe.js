@@ -4141,6 +4141,7 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 1.3 2.0 비교 <br/>\
 <img src = "./img/CMMI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 2교시 6번 <br/>\
 * ITPE 2회 1교시 9번 <br/>\
 * KPC 97회 관리 4교시 3번\
 ',
