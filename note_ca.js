@@ -490,16 +490,15 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 작업 실행 단위 / CDHS 영역 독립 <br/>\
 - 프로그램을 구동하여 메모리에 적재된 상태로 실행되는 하나의 작업 단위, CDHS(CODE, DATA, HEAP, STACK) 영역 독립 <br/><br/>\
 # 프로세스 상태 <br/>\
-<img src = "./img/Process_0.jpg" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ProcessStateTransitionMap.png" style = "max-width:100%; height:auto;"><br/>\
 - 상태변화 : (준비) Dispatch, Timeout (실행) Wakeup (대기) <br/>\
 - X축 : Job, CPU Scheduler <br/>\
 - Y축 : 활동상태(주기억장치), 중단상태(보조기억장치), 중단,재시작(Swap in, Swap out)<br/><br/>\
 # 프로세스 상태변화 사례 <br/>\
 - 인터럽트, 시스템콜 / PCB1에 P1문맥 저장 / PCB2에서 P2 문맥복구 <br/><br/>\
 # Process Thread 비교 <br/>\
-<img src = "./img/Process_1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/Process_2.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/Process_3.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/ProcessThreadCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 4번\
 ',
   
 // PCB
@@ -517,15 +516,33 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 단위 명령 집합 / 프로세스내 / 리소스 공유(SCDH)<br/>\
 - 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합, STACK 외의 CODE, DATA, HEAP영역 공유 <br/><br/>\
 # Keyword : 사용자모드(임계,스핀락), 커널모드(세마포어), TCB, Light Weight, 멀티스레드, 공유(힙/데이터/코드), 독립(레지스터/스택), PCB <br/><br/>\
-# 종류<br/>\
-- 단일 : 1:1 <br/>\
-- 멀티 : 1:n <br/>\
+# 유형 <br/>\
+0. 개념도 <br/>\
 <img src = "./img/ThreadType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. Many to One <br/>\
+<img src = "./img/ThreadManyToOne.png" style = "max-width:100%; height:auto;"><br/>\
+- 동작 : N:1 Mapping, Kernel Thread 지원 x 환경 사용 <br/>\
+- 장점 : 사용자 수준 쓰레드 관리 가능 <br/>\
+- 단점 : 여러개 쓰레드 동시 호출 불가 <br/><br/>\
+2. One to One <br/>\
+<img src = "./img/ThreadOneToOne.png" style = "max-width:100%; height:auto;"><br/>\
+- 동작 : 1:1 Mapping, N:1 방식 중단 문제 해결 <br/>\
+- 장점 : 동시 호출 가능 <br/>\
+- 단점 : 생성시 자원 제약 발생 <br/><br/>\
+3. Many to Many <br/>\
+<img src = "./img/ThreadManyToMany.png" style = "max-width:100%; height:auto;"><br/>\
+- 동작 : N:N Mapping, 커널이 사용자, 커널 쓰레드 맵핑 조정 <br/>\
+- 장점 : 쓰레드 중단, 자원 제약 한계 극복 <br/>\
+- 단점 : 쓰레드 처리 스케줄링 복잡성 증가 <br/><br/>\
+# 종류 <br/>\
+- Kernel Thread : 프로세스, 쓰레드 문맥 교환 커널 유지 <br/>\
+- User Thread : 응용프로그램이 Thread Library 사용 수행 <br/><br/>\
 # 구현시 고려사항 <br/>\
 - 단일 : 신호전달(불법접근시), 종료(제거시점 신중결정), 마스킹(종료전) <br/>\
 - 멀티 : 동기화(임계영역, 스핀락, 세마포어) <br/><br/>\
 # 비교 <br/>\
 <img src = "./img/ThreadProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 4번 <br/>\
 * 116회 3교시 4번\
 ',
 
