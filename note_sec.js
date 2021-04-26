@@ -3128,13 +3128,13 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-- Compliance Assesment : 이슈 관리 평가 <br/>\
-- Operational Monitoring : PaaS, SaaS 운영 데이터 모니터링 <br/>\
-- DevSecOps Integration : 내부 Cloud 활용 DevSecOps 완성 <br/>\
-- Risk Identification : 발생 가능 주요 위험 식별 및 관리 <br/>\
-- Policy Enforcement : 기업 요구 정책 적용 수행 <br/>\
-- Threat Protection : 내/외부 위협 요소 제거 <br/><br/>\
+# 구성요소 (COD RPT) <br/>\
+- Compliance Assesment : <font color = "red">이슈 관리 평가</font> <br/>\
+- Operational Monitoring : PaaS, SaaS <font color = "red">운영 데이터</font> 모니터링 <br/>\
+- DevSecOps Integration : <font color = "red">내부 Cloud</font> 활용 DevSecOps 완성 <br/>\
+- Risk Identification : <font color = "red">발생 가능</font> 주요 위험 식별 및 관리 <br/>\
+- Policy Enforcement : <font color = "red">기업 요구 정책</font> 적용 수행 <br/>\
+- Threat Protection : <font color = "red">내/외부</font> 위협 요소 제거 <br/><br/>\
 # CSPM, CASB, CWPP 비교 <br/>\
 <img src = "./img/CSPM_CASB_CWPP_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 1교시 4번 \
