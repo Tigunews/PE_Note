@@ -139,6 +139,8 @@ var question = question.concat(
 '[AI]- 추천 시스템',
 '[AI][정책]- AI 조달 가이드라인',
 '[AI]- Digital Cartel',
+'[AI]- 인공지능 성능 지표',
+'[AI][성능지표]- IoU',
 'CCW(CounterClockWise) 알고리즘',
 );
 
@@ -2517,6 +2519,20 @@ var answer = answer.concat(
 - 규제 고도화 : RegTech 통한 효율적 감독 수행 <br/>\
 - 소비자의 대응 수단 : 소비자의 소비를 AI가 대신 수행, 협상력 제고 <br/><br/>\
 * ITPE 7회 관리 1교시 9번\
+',
+
+// [AI]- 인공지능 성능 지표
+'<img src = "./img/AIDegree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 6번\
+',
+
+// [AI][성능지표]- IoU
+'# 정의 : 경계 상자 교차영역 / 넓이 이용 / 인식 성능 지표 <br/>\
+- Intersection Over Union <br/>\
+- 영상, 이미지의 객체 탐지 모델에서 예측된 경계상자와 실제 참값(Ground Truth) 경계상자의 교차 영역의 넓이를 이용한 인식성능 지표 <br/><br/>\
+# 상세 설명 <br/>\
+<img src = "./img/IOU_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 6번\
 ',
   
 // CCW 알고리즘

@@ -165,6 +165,7 @@ var question = question.concat(
 '[클라우드]- CSB',
 '[클라우드]- 인터클라우드',
 '[클라우드]- 멀티 클라우드',
+'[클라우드]- 클라우드 네이티브 컴퓨팅',
 '[클라우드]- 클라우드 네이티브 애플리케이션',
 '[클라우드][개발 방법론]- 12 Factors',
 '[클라우드]- 메시지 큐잉',
@@ -1703,7 +1704,31 @@ var answer = answer.concat(
 - 혜택 : 40% 소득공제, 공공시설 할인 <br/><br/>\
 # 결제 프로세스 <br/>\
 1. MPM(Merchant Presented Mode) <br/>\
+<img src = "./img/MPM_Process.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 2. CPM(Customer Presented Mode) <br/>\
+<img src = "./img/CPM_Process.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 한계 <br/>\
+1. 고객 <br/>\
+- 고객 유인책 부족 <br/>\
+- 자영업자 살리기 명분 의존 <br/>\
+- 결제 절차 복잡 <br/><br/>\
+2. 가맹점 <br/>\
+- 결제 절차 복잡 <br/>\
+- 이미 갖춰진 카드결제 인프라 <br/><br/>\
+# 고도화 방안 <br/>\
+1. 기술 측면 <br/>\
+- 소상공인 혜택 중심 정책 극복 <br/>\
+- 결제수단 일원화 <br/>\
+- 제로페이 전용계좌, 충전혜택 <br/><br/>\
+2. 제도 측면 <br/>\
+- 제로페이 멤버십 제도 <br/>\
+- 제로페이 영수증 복권제도 <br/><br/>\
+3. 고객 체험 강화 측면 <br/>\
+- 은행앱의 제로페이 모드 준비 <br/>\
+- 가맹점 확인 방식 혁신 <br/><br/>\
+4. 혜택 측면 <br/>\
+- 가맹점주 CRM 지원 <br/>\
+- 제로페이 결제 데이터 활용 유도 <br/><br/>\
 * ITPE 7회 관리 3교시 4번\
 ',
   
@@ -3334,13 +3359,30 @@ var answer = answer.concat(
 * KPC 93회 2교시 2번\
 ',
 
+// 클라우드 네이티브 컴퓨팅
+'# 정의 : 전체 영역 대상 / 클라우드 결합 / 구성 컴퓨팅 환경 <br/>\
+- 인프라, 플랫폼, 애플리케이션/서비스와 개발, 운영, 관리의 전체 영역을 대상으로 클라우드의 특성과 장점을 적용하여 구성된 컴퓨팅 환경 <br/><br/>\
+# 필요성 : 숙도, 무중단, 확장성 <br/><br/>\
+# 구성요소 <br/>\
+- MSA : 독립적 서비스, API GW, Cross Function Team, Polyglot <br/>\
+- DevOps : DevOps Pipeline, 자동화(소스,빌드,배포,테스트) <br/>\
+- CI/CD : DevOps Workflow <br/>\
+- Container : 가상화, 도커, 쿠버네티스 <br/>\
+- PaaS : 클라우드 미들웨어, App LifeCycle 관리, Scale Out <br/>\
+- 12 Factor App : 개발 방법론 <br/><br/>\
+* ITPE 7회 관리 4교시 5번\
+',
+
 // 클라우드 네이티브 애플리케이션
 '# 정의 : MSA, Container, Orchestration / 클라우드 기반 애플리케이션 <br/>\
 - MSA, 컨테이너화된 서비스, 분산 관리 및 오케스트레이션으로 구성된 클라우드 기반 애플리케이션 <br/><br/>\
 # 성숙도 모델 <br/>\
 <img src = "./img/CNMM.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 아키텍처 <br/>\
-<img src = "./img/CloudNativeApplicationArcitecture.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/CloudNativeApplicationArcitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기존 Application 비교 <br/>\
+<img src = "./img/LegacyCloudNativeApplicationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 5번\
 ',
 
 // 12 Factors

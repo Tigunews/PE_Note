@@ -39,5 +39,5 @@ var this_week_question =
 '초자동화','ASIL','디지털서비스 전문계약제도','ISO 25000','가설검정','DB 이상현상','Text Mining','Unix',
 
 /* ITPE 7회 */
-'데이터 댐', 'Solid - Social Linked Data','CSPM','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','-21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','SA','NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay',
+'데이터 댐', 'Solid - Social Linked Data','CSPM','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','-21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','SA','NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay','클라우드 네이티브 컴퓨팅','DevOps','인공지능 성능 지표','IoU',
 ];

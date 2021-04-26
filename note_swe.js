@@ -5445,45 +5445,14 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 // DevOps
 '# 정의 : 개발 + 운영 문화, 방법론 <br/>\
 - 개발과 운영이 분리되면서 오는 문제점(사후관리, 서비스등)을 해결하기 위해서, 개발과 운영을 하나의 조직으로 합쳐서 팀을 운영하는 문화이자 방법론 <br/><br/>\
-# 암기 <br/>\
-- 발전단계 : 3 3-9-8 <br/>\
-- 구성요소(3) : 품프도<br/>\
-1) 품질 : 기통테 <br/>\
-2) 프로세스 : CC완릴 <br/>\
-3) 도구 : C어프 <br/>\
-- 개발 사이클(12) : 요스범이 의솔개테 릴법운서 <br/><br/>\
-# 발전 단계 : 초기단계(3) > 성숙조직(9) > DevOps 단계(8) <br/><br/>\
-# 핵심요소 CAMS<br/>\
-- Culture : 개발, 운영, 책임 공유 <br/>\
-- Automation : 개발 ~ 배포 <br/>\
-- Measure : 제품 생성 로그, 정보, 지표등 운영이 개발에 피드백 <br/>\
-- Share : 개발지식을 운영과정 적용 <br/><br/>\
-# 구성요소 <br/>\
-- 품질(3) : 품질기준, 통합적 품질보증, 테스트 자동화<br/>\
-- 프로세스(4) : Cycle Time 축소, 완료시점 범위 확장-운영동작까지, CD, Release-배포 분리<br/>\
-- 도구(3) : CI(Git, 젠킨스), 자동 어플리케이션 릴리즈, 프로비저닝 <br/><br/>\
-# 데브옵스 기반 개발 싸이클 <br/>\
-- User 요구사항 <br/>\
-- User Story <br/>\
-- 범위, 우선순위 결정 <br/>\
-- 이해관계자 관리 <br/>\
-- Dependency 관리 <br/>\
-- 솔루션 도입 및 평가방안 <br/>\
-- 개발<br/>\
-- Testing <br/>\
-- Release <br/>\
-- 법적관리 <br/>\
-- 운영<br/>\
-- 서비스(Customer Support)<br/><br/>\
+# 프로세스 <br/>\
+<img src = "./img/DevOpsPipeLine.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 도구 <br/>\
-- Chef : automation tool, jenkins의 build후 처리와 비슷하지만 훨씬 많은 templet 제공, build 후 취할 활동 미리 정의 후 자동 실행 테스트 수행 <br/>\
-- Puppet : Delivery & Deploy tool, WAS 환경의 java deploy 제어/관리, 각 서비스 deploy 수행 결과 수집 및 통계처리 지원<br/><br/>\
-# 적용시 고려사항 : 적용조건, 적용가능 분야, 적용시 피해야할 분야(치명적으로 중요성 높은 프로그램, 높은 완결성 요구 프로그램), 툴도입 넘어 조직 문화 변화 병행 필요 <br/><br/>\
-* CD : Continuous Delivery : 단위 시험 자동화뿐 아니라 특정환경에서의 인수 시험 자동화 <br/><br/>\
-* CI : Continuous Integration : 지속적 품질통제 적용 프로세스 수행 Agile 비교, MSA 활용 <br/><br/>\
-<img src = "./img/DevOps_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DevOps_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DevOps_3.png" style = "max-width:100%; height:auto;">\
+- 소스 컨트롤 자동화 : Subversion, Github, GitLab, BitBucket <br/>\
+- 빌드/테스트 자동화 : Maven, Selenium, SoapUI, Find Bugs <br/>\
+- 배포 자동화 : JFrog Artifactory, docker <br/>\
+- 배포/운영 : Puppet, Chef, Ansible <br/><br/>\
+* ITPE 7회 관리 4교시 5번\
 ',
  
 // DataOps
@@ -5495,7 +5464,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 검토 : 필요한 데이터 수집됐는지 확인 <br/>\
 - 보안 : 데이터 보안 보장 <br/>\
 - 극복 : 사용가능한 데이터 사일로 만들기 <br/><br/>\
-* Silo : 각부서, 사업단위나 브랜치별로 데이터가 ㅇ리치하지 않는 증상 \
+* Silo : 각부서, 사업단위나 브랜치별로 데이터가 일치하지 않는 증상 \
 ',
  
 // GitOps
