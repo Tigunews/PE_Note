@@ -2145,9 +2145,31 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 유형 <br/>\
 <img src = "./img/NetworkDistributionDetail.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/NetDistribution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 문제점 <br/>\
+1. 구축/운영 문제 <br/>\
+- 물리적 : 공간 차지, 비용 상승, 신규 망 구축, 관리 비용 증가, 전환 장치 필요 <br/>\
+- 논리적 : 하드웨어 성능 필요, 가상환경 호환성 <br/>\
+- 효율성 저하 <br/>\
+- 업무 영역별 규제 획일적 적용 <br/><br/>\
+2. 산업혁신 저해 <br/>\
+- 신기술 활용 불가 <br/>\
+- 핀테크 성장 저해 <br/>\
+- 초연결 사회 역행 <br/>\
+- 데이터 활용 비효율적 <br/><br/>\
+# 해결방안 <br/>\
+1. 제도 보완 <br/>\
+- 비 중요 처리 시스템 클라우드 이관 가능 : 전자금융감독 1차 개정(2016) <br/>\
+- 금융권 클라우드 확대 방안 : 금융위 (2018) <br/>\
+- 중요 시스템 클라우드 이관 가능 : 전자금융감독 1차 개정 (2019) <br/><br/>\
+2. 구축/운영 <br/>\
+- 데이터 단위 망분리 체계 도입 : 중요도별 망분리 규제 적용 <br/>\
+- 개발 분야 망분리 제외 : 클라우드/오픈소스 활용 증대 <br/><br/>\
+3. 산업혁신 <br/>\
+- 망분리 예외 적용 : 카카오 뱅크, 금융기술 연구소 망분리 예외 인정 <br/><br/>\
 # 주요현황 <br/>\
 - 전자금융감독규정 제 15조 1항 예외적용 완화 (2020.10 시행) <br/>\
 <img src = "./img/NetDistributionCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 2교시 2번 <br/>\
 * 라이지움 88회 관리 1교시 4번\
 ',
   

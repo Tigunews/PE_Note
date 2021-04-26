@@ -72,6 +72,7 @@ var question = question.concat(
 '[핀테크]- Scraping',
 '[핀테크]- API',
 '[핀테크]- QR코드 기반 결제',
+'[핀테크]- Zero Pay',
 '아바커스 프로젝트(Project Abacus)',
 '영지식 증명(Zero-knowledge Proof)',
 '[이더리움] - 스마트계약(Smart Contract)',
@@ -1692,6 +1693,18 @@ var answer = answer.concat(
 - MPM(Merchant Presented Mode) <br/>\
 - CPM(Customer Presented Mode) <br/><br/>\
 * 120회 관리 3교시 1번\
+',
+
+// Zero Pay
+'# 정의 : 카드 수수료 부담 절감 / QR 코드 이용 / 간편결제 서비스 <br/>\
+- 소상공인들의 카드 결제 수수료 부담을 줄이기 위해 QR 코드를 통해 거래하는 간편결제 서비스 <br/><br/>\
+# 특징 <br/>\
+- 수수료 : 8역 / 12억 / 초과 / 일반 -> 0 % / 0.3 % / 0.5 % / 2 % <br/>\
+- 혜택 : 40% 소득공제, 공공시설 할인 <br/><br/>\
+# 결제 프로세스 <br/>\
+1. MPM(Merchant Presented Mode) <br/>\
+2. CPM(Customer Presented Mode) <br/>\
+* ITPE 7회 관리 3교시 4번\
 ',
   
 // 아바커스 프로젝트

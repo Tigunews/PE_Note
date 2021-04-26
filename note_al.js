@@ -1062,8 +1062,11 @@ var answer = answer.concat(
 # 개념도 <br/>\
 <img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
-<img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/ActivationFunctionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. 은닉층 <br/>\
+<img src = "./img/ActivationFunctionHiddenLayer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 출력층 <br/>\
+<img src = "./img/ActivationFunctionOutputLayer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ActivationFunction.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * NET : 입력과 연결 강도의 가중 합 <br/>\
 - Softmax function : 0~1 결과 도출, 전체 합 1, 출력값 지수함수 적용 정규화 <br/><br/>\
 * ITPE 7회 관리 2교시 1번 \
@@ -2379,11 +2382,34 @@ var answer = answer.concat(
 ',
   
 // Transformer
-'# 정의 : 2017 Google / Attention / 인코더, 디코더 / 언어처리 모델 <br/>\
-- 2017년 구글이 발표하여 Attention 매커니즘을 사용하여 인코더, 디코더로 구현된 언어처리 모델<br/><br/>\
-# 특징 : 최근 딥러닝 언어모델 Transformer에서 파생 <br/><br/>\
-# 구성도 <br/>\
+'# 정의 : RNN 탈피 / seq2seq의 인코더, 디코더 모델 / 셀프 어텐션 구조 / 자연어 처리 모델 <br/>\
+- RNN을 탈피하고 seq2seq의 인코더-디코더 모델과 셀프 어덴션 구조만으로 구현한 자연어 처리 모델 <br/><br/>\
+# 등장배경 <br/>\
+- RNN 인코더-디코더 모델 한계 : 정보손실, 긴 문장 오류, 병렬 불가 <br/>\
+- RNN + Attention 모델 : 인코더 결과물 재참조, 연관 단어 집중, 품질 향상, RNN사용 여전히 느림 <br/>\
+- Transformer 등장 : RNN 구조 탈피, Self-Attention 매커니즘, 병렬처리 가능 <br/><br/>\
+# 특징 <br/>\
+- 2017년 구글 "All you need is Attention" <br/>\
+- RNN 보다 우수 <br/>\
+- BERT GPT 기반 <br/><br/>\
+# 개념도 <br/>\
 <img src = "./img/Transformer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/TransformerNetworkStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 입력 <br/>\
+- Positional Encoding : 입력단어 위치 값 추가, 사인, 코사인 함수 이용, RNN 미사용 극복 <br/><br/>\
+2. 인코더 <br/>\
+- Encoder Self-Attention : 입력 토큰 병렬, 이전 어텐션 참조 <br/>\
+- Feed Forward NN : 완전 연결망, 잔차 이용, 정규화 수행 <br/><br/>\
+3. 디코더 <br/>\
+- Masked Self-Attention : 입력 토큰 병렬, 현재 이후 단어 마스킹 <br/>\\
+- Encoder-Decoder Attention : Self Attention x, E-D 결합 <br/>\
+- Feed Foward NN : 인코더 구조와 동일 <br/><br/>\
+4. 출력 <br/>\
+- Linear Layer : 디코더 출력 벡터화 Fully Connected <br/>\
+- Softmax : 출력단어 예측 <br/><br/>\
+* ITPE 7회 관리 3교시 3번 <br/>\
 * 123회 관리 4교시 4번\
 ',
   
