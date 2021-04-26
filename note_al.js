@@ -2403,7 +2403,7 @@ var answer = answer.concat(
 - Encoder Self-Attention : 입력 토큰 병렬, 이전 어텐션 참조 <br/>\
 - Feed Forward NN : 완전 연결망, 잔차 이용, 정규화 수행 <br/><br/>\
 3. 디코더 <br/>\
-- Masked Self-Attention : 입력 토큰 병렬, 현재 이후 단어 마스킹 <br/>\\
+- Masked Self-Attention : 입력 토큰 병렬, 현재 이후 단어 마스킹 <br/>\
 - Encoder-Decoder Attention : Self Attention x, E-D 결합 <br/>\
 - Feed Foward NN : 인코더 구조와 동일 <br/><br/>\
 4. 출력 <br/>\
