@@ -2096,14 +2096,37 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
 
 // SD-WAN
-'# 정의 : 초고속 인터넷 회선 / 사설 오버레이 생성 / 네트워크 기능 <br/>\
-- 초고속 인터넷 회선을 이용하여, 사설 오버레이 네트워크를 생성할 수 있게 해주는 일련의 네트워크 기능 <br/><br/>\
+'# 정의 : LAN 에서 SDN을 / 통신 사업자, 서비스 제공자의 WAN으로 확장 적용 기술 <br/>\
+- 데이터센터, 기업, 대학 등의 LAN에서 Data Plane과 Control Plane을 분리하는 SDN을 통신망 사업자와 서비스 제공자 등의WAN으로 확장 적용 가능한 네트워크 기술 <br/><br/>\
+# 특징 <br/>\
+- 네트워크 가상화 : NFV 활용, 다양한 기능 수행 가능 <br/>\
+- WAN 회선 비용 절감 : 기존 인터넷 회선 + 저렴 회선 추가 > 대역폭 향상 및 비용 절감 <br/>\
+- 어플리케이션 관리 : Layer 7기반 QoS 수행 <br/>\
+- 중앙 집중형 제어 : SD-WAN Controller 통한 QoS 및 네트워크 토폴로지 관리 <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/SDWAN.png" style = "max-width:100%; height:auto;"><br/>\
 - 중앙 컨트롤러 : 구성저장, 토폴로지 관리, 엑세스 정책 설정, 사용량, 성능 보고 <br/>\
 - 액세스 노드 : SD-WAN CPE, VNF, 라우팅, 터널링, WAN 최적화 <br/><br/>\
+# 기술요소 <br/>\
+1. 장비 측면 <br/>\
+- SD-WAN Controller : 정책 설정, 토폴로지 관리 <br/>\
+- SD-WAN CPE : 오버레이 생성, 종단 엔진 <br/><br/>\
+2. 기술 측면 <br/>\
+- Dynamic Path Switching : 경로 선택 트래픽 스위칭 <br/>\
+- Packet Duplication : 중복 패킷 전송 <br/>\
+- Link Aggregation : 물리적 여러 회선 -> 논리적 하나 회선 <br/>\
+- Network Segmentation : Segment 단위 VLAN 할당 <br/><br/>\
+# 기대효과 <br/>\
+1. 비용 측면 <br/>\
+- TCO, ROI 비용 감소 : 투자, 운영 비용 감소 <br/>\
+- 운영 인력 통합 : 사설, 공용망 별도 관리 불필요 <br/><br/>\
+2. 기술 측면 <br/>\
+- NW 품질 향상 : 자원 재배치, 가상 WAN 구현 기능 지원<br/>\
+- 백업 기능 구현 : 회선 이중화 통한 안정성 <br/>\
+- 대체 경로 확보 : 이중화 구성 가능 <br/><br/>\
 # SD-WAN, SD-WAN 2.0 비교 <br/>\
-<img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 4교시 1번\
 ',
   
 // 유무선 전력전송

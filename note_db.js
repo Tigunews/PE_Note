@@ -124,6 +124,7 @@ var question = question.concat(
 '데이터 사이언스',
 '반정형 데이터',
 'RAID',
+'DMBOK',
 );
 
 var answer = answer.concat(
@@ -2375,5 +2376,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/RAID_Detail2.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/RAID_Detail3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 89회 관리 3교시 5번 <br/>\
+',
+
+// DMBOK
+'# 정의 : 데이터 관리 국제 표준 <br/>\
+- Data Management Body Of Knowledge <br/>\
+- DAMA International에서 운영 중인 데이터관리를 위한 국제 표준 지침 <br/><br/>\
+# 구성 <br/>\
+- Data Governance <br/>\
+- Data Architecture Management <br/>\
+- Data Development <br/>\
+- Data Operations Management <br/>\
+- Data Security Management <br/>\
+- Reference & Master Data Management <br/>\
+- Data Warehousing & Business Intelligence Management <br/>\
+- Document & Content Management <br/>\
+- Meta Data Management <br/>\
+- Data Quality Management <br/><br/>\
+* ITPE 7회 관리 3교시 6번\
 ',
 );
