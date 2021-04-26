@@ -90,6 +90,7 @@ var question = question.concat(
 'Servitization',
 '대기행렬이론',
 '[대기행렬]- 대기행렬 시스템',
+'OKR',
 );
 
 var answer = answer.concat(
@@ -1538,5 +1539,32 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 4. Web <br/>\
 <img src = "./img/WaitQueingWeb.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 2교시 6번\
+',
+
+// OKR
+'# 정의: 조직 목표 설정 / 결과 추적 / 성과 중심 목표 설정 프레임워크 <br/>\
+- Objective Key Results <br/>\
+- 조직적 차원에서 목표를 설정하고, 그 결과를 추적할 수 있도록 도와주는 성과 중심 조직을 위한 목표 설정 프레임워크 <br/><br/>\
+# 원칙 <br/>\
+- 집중(Focus) : 중요한 것 선택 <br/>\
+- 정렬(Alignment) : 여러 요소 사이 집합 취함 <br/>\
+- 추적(Tracking) : 일 상황 추적 가능 <br/>\
+- 도전(Stretching) : 더 높은 곳 도전 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/OKR_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 상세요소 <br/>\
+1. 구성요소 <br/>\
+- Objectives : Mission 달성 이전 자신이 정하는 목표 <br/>\
+- Key Result : Objective 달성 판단 지표 <br/><br/>\
+2. 프로세스 <br/>\
+- 범위 설정 : OKR 대상 팀, 적용 범위 <br/>\
+- 미션 설정 : OKR 적용 팀, 수행해야 할 미션 <br/>\
+- 마일스톤 설정 : 1개월 or 3개우러 단위 마일스톤 지정 <br/>\
+- 모델 작성 : 목표, 핵심결과 지표 정하기 위한 모델 작성 <br/>\
+- 핵심 지표 결정 : 구체적 수치 목표 지정, Key Results 로 정의 <br/>\
+<font color = "red">* SMART : Specific, Measurable, Achievable, Relevant, Time-bound </font><br/><br/>\
+# OKR, KPI 비교 <br/>\
+<img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 5번 \
 ',
 );

@@ -150,6 +150,7 @@ var question = question.concat(
 '[클라우드]- 클라우드 전환',
 '[클라우드]- IaaS, PaaS, SaaS',
 '[클라우드]- IaC',
+'[클라우드]- KAMP',
 '[클라우드]- PaaS-TA',
 '[클라우드]- 클라우드 보안이슈',
 '[클라우드][정책]- 정보자원등급 평가기준(2014.04.)',
@@ -3040,6 +3041,25 @@ var answer = answer.concat(
 - Docker : App 구동 설정/파일 관리 <br/>\
 - Vagrant : VM 리소스, 스크립트 수행 <br/><br/>\
 * 라이지움 86회 \
+',
+
+// KAMP
+'# 정의 : AI 관련 인프라, 데이터 / 중소 제조업 지원 / 종합 플랫폼 <br/>\
+- Korea AI Manufacturing Platform <br/>\
+- 중소 제조기업이 갖추기 어려운 AI 관련 인프라 및 주요 데이터 등을 한곳에 모아 중소제조업의 인공지능화를 지원하는 종합 플랫폼 <br/><br/>\
+# 특징 <br/>\
+- 저비용 : CAPEX 절감 <br/>\
+- 접근성 : 스마트 공장 쉽게 구현 <br/>\
+- 표준화 : 공장 데이터 표준화 <br/>\
+- 경쟁력 강화 : 제줘 원가, 품질 향상 <br/>\
+- 개방화 : 기업 메타 데이터 개방 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/KAMP_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 추진 계획 <br/>\
+- 클라우드 기반 제조 Data AI 활용 촉진 : 데이터 표준화 <br/>\
+- 인공지능 스마트 공장 확대 : 중소기업 보급 <br/>\
+- 마이제조데이터 활성화 기반 마련 : 공유 규범 마련 <br/><br/>\
+* ITPE 7회 관리 1교시 6번 \
 ',
   
 // PaaS-TA

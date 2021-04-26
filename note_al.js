@@ -89,7 +89,8 @@ var question = question.concat(
 '[AI]- NPU',
 '[AI]- Deep Fake',
 '[AI]- Hyper Prameter',
-'[AI]- OpenCV',
+'[AI]- Computer Vision',
+'[AI][Computer Vision]- OpenCV',
 '[AI]- SOM',
 '[AI]- 머신러닝 파이프라인',
 '[AI]- Active Learning',
@@ -1590,9 +1591,15 @@ var answer = answer.concat(
 <img src = "./img/HyperParameterTunning.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * KPC 97회 응용 1교시 16번<br/>\
 * 120회 관리 4교시 3번\
-',  
+',
+
+// Computer Vision
+'# 정의 <br/>\
+- 영상 처리 기술을 활용하여 컴퓨터가 사람처러 사물을 인지하고 의미 있는 정보를 수학적 알고리즘을 통하여 추출, 분석하는 기술 <br/><br/>\
+* ITPE 7회 관리 1교시 7번 \
+',
   
-// Open CV
+// OpenCV
 '# 정의 : 컴퓨터 비전 프로그래밍 이미지 프로세싱 라이브러리, 오픈소스 BSD <br/>\
 - 실시간 컴퓨터 비전을 목적으로 한 영상처리와 컴퓨터 비전 프로그래밍 분야의 대표적인 이미지 프로세싱 라이브러리 <br/><br/>\
 # 특징 : 컴퓨터 비전 구현, BSD 라이선스, 다양한 플랫폼 지원 <br/><br/>\

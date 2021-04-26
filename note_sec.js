@@ -3098,13 +3098,24 @@ EAL : 펑스매매세세포 <br/><br/>\
 ',
 
 // CSPM
-'# 정의 : 클라우드 인프라 위협요소 / 예방, 탐지, 대응, 예측 / 지속적 관리 솔루션 <br/>\
+'# 정의 : 컴플라이언스, 정책 / 클라우드 인프라 위협요소 / 예방, 탐지, 대응, 예측 / 지속적 관리 솔루션 <br/>\
+- Cloud Security Posture Management <br/>\
 - 컴플라이언스 또는 기업 보안 정책에 따라 클라우드 인프라의 위협 요소를 예방, 탐지, 대응 및 예측하여 클라우드 위험을 지속적으로 관리하는 솔루션 <br/><br/>\
 # 핵심 기능 <br/>\
 - 지속성 : 지속적 변화 환경 체크 <br/>\
 - 가시성 : 통합, Dashboard <br/>\
 - 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
 # 개념도 <br/>\
+<img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Compliance Assesment : 이슈 관리 평가 <br/>\
+- Operational Monitoring : PaaS, SaaS 운영 데이터 모니터링 <br/>\
+- DevSecOps Integration : 내부 Cloud 활용 DevSecOps 완성 <br/>\
+- Risk Identification : 발생 가능 주요 위험 식별 및 관리 <br/>\
+- Policy Enforcement : 기업 요구 정책 적용 수행 <br/>\
+- Threat Protection : 내/외부 위협 요소 제거 <br/><br/>\
+# CSPM, CASB, CWPP 비교 <br/>\
+<img src = "./img/CSPM_CASB_CWPP_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 1교시 4번 \
 ',
 );
