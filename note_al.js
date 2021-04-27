@@ -1612,9 +1612,9 @@ var answer = answer.concat(
 - 이진화 : Black(0), White(255) <br/>\
 - 확대/축소 : 이미지 크기 변경 <br/><br/>\
 2. 특징 추출 <br/>\
-- STIP(Space-Time Interest Points) : 행동 인식, 관심점 선택 추출 기법 <br/>\
-- SIFT(Scale-Invariant Feature Transform) : 크기, 회전 불변 특징 추출 알고리즘 <br/>\
-- SURF(Speed-Up Robust Features) : 적분 영상 사용, 관심점과 영역 계산 <br/><br/>\
+- STIP(Space-Time Interest Points) : 행동 인식, <font color = "red">관심점</font> 선택 추출 기법 <br/>\
+- SIFT(Scale-Invariant Feature Transform) : 크기, 회전 <font color = "red">불변</font> 특징 추출 알고리즘 <br/>\
+- SURF(Speed-Up Robust Features) : <font color = "red">적분</font> 영상 사용, 관심점과 영역 계산 <br/><br/>\
 3. 탐지/분할 <br/>\
 - PCA(Principa Component Anlaysis) : 고차원 -> 저 차원 표변 변환 <br/>\
 - Neural Network : 뉴런 상호작용, 생물학적 반복 학습 과정 모형화 <br/><br/>\
