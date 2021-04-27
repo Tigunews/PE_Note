@@ -1952,7 +1952,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 초기 군집수 K 결정 : 초기 군집수 K의 결정이 어려움 <br/><br/>\
 # 매커니즘 <br/>\
 <img src = "./img/ClusteringMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 군집분석의 과정 <br/>\
+# 절차 (<font color = "red">거절수평</font>)<br/>\
 - 거리측도 선택 : 유사성 판단 / 유클리디안 거리 <br/>\
 - 절차 선택 : 계층, 비계층 / 단일, K-Means <br/>\
 - 군집의 수 결정 : 계층, 비계층 / 결합 거리, 분산합계 <br/>\
