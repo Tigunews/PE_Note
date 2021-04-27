@@ -619,6 +619,8 @@ var answer = answer.concat(
 - 성능 측면 : 저장 공간 절약, 단순 쿼리 성능 향상 <br/>\
 - 개발 측면 : 테이블 명확화, 접근제어 강화 <br/>\
 - DB 운영 측면 : 확장성 용이, DB 설계 용이 <br/><br/>\
+# 전체 <br/>\
+<img src = "./img/NormalForm.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 # 설명 <br/>\
 <img src = "./img/123BCNF.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/5NF.png" style = "max-width:100%; height:auto;"><br/><br/>\
