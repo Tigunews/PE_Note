@@ -178,6 +178,7 @@ var question = question.concat(
 '엣지 컴퓨팅',
 '레그테크',
 '섭테크',
+'프롭테크',
 '[HPC]- Singularity',
 '2020년 하반기 경제정책 방향',
 '로보 어드바이저',
@@ -3591,6 +3592,7 @@ var answer = answer.concat(
 '# 정의 : 내부통제, 법규준수 용이 정보기술 <br/>\
 - 규제를 뜻하는 Regulation과 기술을 뜻하는 Technology의 합성어로 금융회사로 하여금 내부 통제와 법규 준수를 용이하게 하는 정보기술 <br/><br/>\
 # Keyword : 규제준수/감시, 빅데이터, 인공지능, 머신러닝, 데이터마이닝, 로보틱스, 바이오인증, 블록체인, 클라우드 컴퓨팅 <br/><br/>\
+<img src = "./img/RegTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 목적 <br/>\
 - AS-IS : 핀테크 편의성 및 보안성 개선 <br/>\
 - TO-BE : 금융회사의 업무처리 비용 절감 및 업무 효율성 개선 <br/><br/>\
@@ -3611,19 +3613,23 @@ var answer = answer.concat(
 - 금융당국 등 이해관계자 협업 필요 <br/>\
 - 표준화 개발 필요 <br/>\
 - 법규 준수 여부 검토 필요 <br/><br/>\
-<img src = "./img/RegTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 국내외 동향 <br/>\
 1. 해외 <br/>\
-<img src = "./img/RegTechOversea.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 영국 : 리스크 데이터 수집 <br/>\
+- 호주 : IBM Watson, 증권 거래 데이터 감시 <br/>\
+- 미국 : 자금세탁 원천 차단 기술 <br/>\
+- 중국 : 관리방법 개선, 데이터 수집 비용 절감 <br/><br/>\
 2. 국내 <br/>\
-<img src = "./img/RegTechLocal.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 금융감독원 : AI 약관 심사 <br/>\
+- 금융보안원 : 보고서 자동생성 <br/>\
+- KOSCOM : 컴플라이언스 모니터링 플랫폼 <br/>\
+- AIMS : 보험 약관 알고리즘, 착오지급 자동 검출 <br/><br/>\
 * 120회 관리 3교시 2번\
 ',
   
 // 섭테크
-'# 정의 : 금융감독 업무전환 <br/>\
-- 감독(Supervisor)과 기술(Technology)의 합성어로 금융감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/>\
-- 금융감독기관의 데이터 접근성 향상, 추출 정보의 총합 관리에 응용 <br/><br/>\
+'# 정의 : 금융 감독 업무 / 첨단 기술 도입 / 효율적 감독 기술 <br/>\
+- 감독(Supervisor)과 기술(Technology)의 합성어로 금융감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/><br/>\
 # 주요기술 <br/>\
 <img src = "./img/SubTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 적용사례 <br/>\
@@ -3632,6 +3638,32 @@ var answer = answer.concat(
 - 금융감독 챗봇 : AI가 금융회사 및 소비자 질의에 답변제공 <br/><br/>\
 # 레그테크, 섭테크 비교 <br/>\
 <img src = "./img/RegTechSubTech.png" style = "max-width:100%; height:auto;">\
+',
+
+// 프롭테크
+'# 정의 : 부동산 서비스 창출,혁신 / 기여 서비스 <br/>\
+<img src = "./img/PropTechOverview.png" style = "max-width:100%; height:auto;"><br/>\
+- Property + Technology <br/>\
+- 부동산 서비스 창출/혁신하여 구매, 판매, 임대, 개발, 관리에 효율적 기여 서비스 <br/><br/>\
+# 등장배경 <br/>\
+- 장기적 속성 : 신기술 대체 어려움 <br/>\
+- 자본집약 성격 : 자본 진입 장벽 높음 <br/>\
+- 불투명 시장 : 각각 시장 특성 상이 <br/><br/>\
+# 산업 분야 <br/>\
+- 중개 및 임대 : 정보 기반 데이터 분석, 중개 / 매물 검색, 공유 주택 <br/>\
+- 부동산 관리 : IoT, 센서 기술 기반 건물 관리 / 스마트 홈, 임차인 관리, 기물 수선 <br/>\
+- 프로젝트 개발 : 3D 분야 기술 개발 과정 이용 / 3D 설계 <br/>\
+- 투자 및 자금 조달 : 핀테크 기술 부동산 투자 도입 / 대출, 크라우드 펀딩 <br/><br/>\
+# 구성 기술 <br/>\
+- 가상현실 : VR, AR <br/>\
+- 플랫폼 : O2O (Online Offline 연결) <br/>\
+- 빅데이터 : 부동산 분석 (대량 비정형 데이터) <br/>\
+- 인공지능 : 챗봇 (실시간 지능형 서비스 컨설팅) <br/>\
+- 블록체인 : 스마트 컨트랙트 (투명 보상) <br/><br/>\
+# 은행권 프롭테크 현황 <br/>\
+- 신한 : 쏠렌드(실거래가), 다방(매물 한도 확인) <br/>\
+- 네이버 : 네이버 부동산 (매물 정보 시세 검색) <br/><br/>\
+* ITPE 122회 합숙 2일차 1교시 3번\
 ',
 
 // [HPC]- Singularity
