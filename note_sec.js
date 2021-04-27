@@ -156,7 +156,9 @@
 'Zero Trust 보안 모델',
 '재택,원격근무 정보보호 6대 실전 수칙',
 'CDR',
+'[Cloud 보안]- CWPP',
 '[Cloud 보안]- CSPM',
+'[Cloud 보안]- CASB',
 );
 
 var answer = answer.concat(
@@ -3118,6 +3120,26 @@ EAL : 펑스매매세세포 <br/><br/>\
 * 121회 관리 1교시 10번\
 ',
 
+// CWPP
+'# 정의 : 가상머신, 컨테이너 / 서버 워크로드 / 보안 솔루션 <br/>\
+- Cloud Workload Protection Platform <br/>\
+- 가상머신, 컨테이너 등 서버 워크로드의 가시성 및 공격 방어를 위한 에이전트를 바탕으로 한 보안 솔루션 <br/><br/>\
+# Cloud 보안 개요 <br/>\
+<img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 관리 측면 <br/>\
+- System Ingergrity : 시스템 통합, 보안관리 일원화 <br/>\
+- System Monitoring : 시스템 이상 발생, 정상 동작 여부 <br/>\
+- Application Whitelisting : 현재 승인, 사용중인 어플리케이션 기준 준수 확인 <br/><br/>\
+2. 기술 측면 <br/>\
+- Exploit Protection : 자체 취약점 방어 <br/>\
+- Workload Configuration : 서버 워크로드 설정 통한 대응 <br/>\
+- Network Segmentation : 네트워크 분할 통한 위협 대응 <br/><br/>\
+# 전체 Framework <br/>\
+<img src = "./img/CloudSecurityFramework.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 122회 합숙 1일차 2교시 1번 \
+',
+
 // CSPM
 '# 정의 : 컴플라이언스, 정책 / 클라우드 인프라 위협요소 / 예방, 탐지, 대응, 예측 / 지속적 관리 솔루션 <br/>\
 - Cloud Security Posture Management <br/>\
@@ -3128,15 +3150,42 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 (COD RPT) <br/>\
+# 구성요소 (COP DRT) <br/>\
+1. 관리 측면 <br/>\
 - Compliance Assesment : <font color = "red">이슈 관리 평가</font> <br/>\
 - Operational Monitoring : PaaS, SaaS <font color = "red">운영 데이터</font> 모니터링 <br/>\
+- Policy Enforcement : <font color = "red">기업 요구 정책</font> 적용 수행 <br/><br/>\
+2. 기술 측면 <br/>\
 - DevSecOps Integration : <font color = "red">내부 Cloud</font> 활용 DevSecOps 완성 <br/>\
 - Risk Identification : <font color = "red">발생 가능</font> 주요 위험 식별 및 관리 <br/>\
-- Policy Enforcement : <font color = "red">기업 요구 정책</font> 적용 수행 <br/>\
 - Threat Protection : <font color = "red">내/외부</font> 위협 요소 제거 <br/><br/>\
 # CSPM, CASB, CWPP 비교 <br/>\
 <img src = "./img/CSPM_CASB_CWPP_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 1교시 4번 \
+',
+
+// CASB
+'# 정의 : 이용자, 서비스 사이 / 독립적 보안 SW <br/>\
+- Cloud Access Security Broker <br/>\
+- 클라우드 서비스 이용자와 클라우드 서비스 사이에 위치하여 독립적으로 보안 기능 수행하는 SW <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CASB_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 핵심기능 <br/>\
+- 서비스 검색 및 위험 평가 : Risk Assesment <br/>\
+- 암호화 : 기밀성, 가용성 보장 <br/>\
+- 접근 통제 : 정책, 모델, 매커니즘 <br/>\
+- 데이터 손실 방지 : 데이터 유출 방지 <br/>\
+- 로깅 및 감사 : 추적 및 무결성 보장 <br/>\
+- 이상 탐지 : 행위적 침해 대응 <br/><br/>\
+# 유형 (AAPP) <br/>\
+1. SW형 <br/>\
+- Agent CASB : 서비스 사용자 단말기 설치 <br/>\
+- API CASB : 서비스앱 개발사 직접 적용 <br/><br/>\
+2. HW형 <br/>\
+- Private CASB : Outbound Traffic Check 위치 <br/>\
+- Public CASB : Cloud Servie Platform 내부 <br/><br/>\
+# 유형별 비교 <br/>\
+<img src = "./img/CASB_Type_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\D
+* KPC 118회 합숙 4일차 1교시 3번 \
 ',
 );
