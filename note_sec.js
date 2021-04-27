@@ -3185,7 +3185,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Private CASB : Outbound Traffic Check 위치 <br/>\
 - Public CASB : Cloud Servie Platform 내부 <br/><br/>\
 # 유형별 비교 <br/>\
-<img src = "./img/CASB_Type_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\D
+<img src = "./img/CASB_Type_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 118회 합숙 4일차 1교시 3번 \
 ',
 );
