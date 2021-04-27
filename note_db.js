@@ -2126,6 +2126,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/NullHypothesisTable.png" style = "max-width:100%; hegiht:auto;"><br/>\
 - 1종 오류 (생산자/알파) : 귀무가설 참, 채택 않는 오류 (실제 음, 양 판정)<br/>\
 - 2종 오류 (소비자/배타) : 귀무가설 거짓, 채택 오류 (실제 양, 음 판정)<br/><br/>\
+# 절차 (Hap비) <br/>\
+- 가설검정(H0,H1) > 유의수준 설정(a) > p-value 계산 > 비교(통계>임계, p<a) <br/><br/>\
 # 관계 <br/>\
 <img src = "./img/NullHypothesisGraph.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 사례 <br/>\
