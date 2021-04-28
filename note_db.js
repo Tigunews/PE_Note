@@ -378,15 +378,22 @@ var answer = answer.concat(
 ',
   
 // MVCC
-'# 정의 : SCN(System Change Number) 기반 직렬가능성 보장 적절 버전 선택 접근 기법 <br/>\
+'# 정의 : SCN 기반 / Lock 사용 x / 읽기 일관성 보장 기법 <br/>\
 - 트랜잭션 접근시 여러 버전 타임스탬프 비교, 직렬가능성 보장 적절한 버전 선택 접근 기법 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/MVCC_Undeerstand.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구현방식 <br/>\
+1. MGA(Multi Generation Architecture) <br/>\
+- 개념 : 기존 데이터 두고, 새로운 버전 추가 / PostgreSQL<br/>\
+- 특징 : 기존 데이터 잔존, 주기적 VACUUM, 물리적 위치 변경 <br/>\
+<img src = "./img/MVCC_MGA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Rollback Segment <br/>\
+- 개념 : 기존 데이터 블록 변경, 이전 데이터 Rollback Segment 보관 / Oracle <br/>\
+- 특징 : SCN 비교, 물리적 위치 변경x, VACCUM 필요 없음 <br/>\
+<img src = "./img/MVCC_RollbackSegment.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
 1. Multiversion Timestamp Ordering <br/>\
 - 개념 : Timestamp를 시간 순서에 따라 트랜잭션 부여 기법 <br/>\
 - 알고리즘 : 읽기(가장큰 값 반환), 쓰기(낮은 값 존재시 거부) <br/><br/>\
-2. Multiversion Two-Phase Locking <br/>\
+2. MultiVersion Two-Phase Locking <br/>\
 - 개념 : R,W,C(보증) 잠금 모드 사용 제어 <br/>\
 - RWC 호환성 테이블 <br/>\
 <img src = "./img/MTPL.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -398,7 +405,7 @@ var answer = answer.concat(
 - Read Committed : 오라클 Default <br/>\
 - Serializable : Commit 데이터 변경사항, 자신의 insert, update, delete 변경 데이터 열람 <br/>\
 - Read Only : Commit된 변경사항만 열람 가능, insert, update, delete 허용않음 <br/><br/>\
-* 111회 관리 \
+* 111회 관리 1교시 8번\
 ',
   
 // 낙관적 검증
