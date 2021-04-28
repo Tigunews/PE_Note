@@ -76,6 +76,8 @@ var question = question.concat(
 '[빅데이터]- 단순 대치법',
 '[빅데이터]- 정보 시각화',
 '[빅데이터]- D-Commerce',
+'[빅데이터]- Random Sampling',
+'[빅데이터]- Filtering',
 '[R-Tree]- Hilbert R-Tree',
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
@@ -1591,6 +1593,36 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 커머스 시장의 새로운 트랜드, 스마트 렌탈에서의 빅데이터 활용 : 여성 의류렌탈 서비스 Rent the Runway <br/><br/>\
 <img src = "./img/DCommerce_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/DCommerce_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// Random Sampling
+'# 정의 : 모집단 / 샘플 추출 / 확률 동일 / 추출 방법 <br/>\
+- 모집단으로부터 샘플을 추출하는 방법으로 모집단의 각 구성요소가 샘플에 포함될 확률을 동일하게 하여 샘플을 추출하는 방법 <br/><br/>\
+# 특징 <br/>\
+- 목적 : 샘플링 오차 제거 <br/>\
+- 절차 : 신뢰성 검토 > 정밀도 검토 > 정확성 검토 <br/>\
+- 고려사항 : Error, Bias Trade Off 관계 <br/><br/>\
+# 주요기법 <br/>\
+- Simple Random Sampling : 임의 추출(복원, 비복원) <br/>\
+- Systematic Sampling : 시간, 공간적 일정 간격(매 5번째 추출) <br/>\
+- Stratified Random Sampling : 각 계층 원소 임의 추출(성별, 연령대별) <br/>\
+- Cluster Sampling : 군집 선택 후 표본 추출 <br/>\
+- Multi-Stage Sampling : 여러 단계로 나누어 추출(등급별>성별>연령별) <br/><br/>\
+* 116회 응용 2교시 1번\
+',
+
+// Filtering 
+'# 기법 <br/>\
+1. 학습 기반 <br/>\
+- Rule Based : 정의된 이상치 / 키워드 기반 스팸 매일 <br/>\
+- Baysian Classification : 조건부, 사후 확률 분류기반 필터링 / 노트북 공장 불량 선별 <br/>\
+- Decision Tree : 입력 트리 구조 <br/>\
+- Neural Network : 뉴런 노드 학습 필터링 <br/><br/>\
+2. 비학습 기반 <br/>\
+- K-Means Clustering : K개 군집만큼 분류, 유사도 먼 그룹 필터링 <br/>\
+- SOM : 격자 구조 출력층, 경쟁학습 필터링 <br/>\
+- PCA : 차원 축 집단 분류 필터링 <br/><br/>\
+* 116회 응용 2교시 1번\
 ',
   
 // Hilbert R-Tree
