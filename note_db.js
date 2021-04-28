@@ -4,7 +4,6 @@ var question = question.concat(
 '데이터 무결성',
 'ACID',
 'Isolation Level',
-'읽기 이상현상',
 '데이터 독립성',
 '[데이터 독립성]- ANSI SPARC 3계층',
 '병행제어 = 동시성제어',
@@ -96,6 +95,7 @@ var question = question.concat(
 '[통계]- 분석기법',
 '[통계][분석기법]- 회귀 분석',
 '[통계][회귀 분석]- 다변량 회귀 분석',
+'[통계][회귀 분석]- 선형회귀모형 추론 가정',
 '[통계][분석기법]- 상관 분석',
 '[통계][분석기법]- 주성분 분석',
 '[통계][분석기법]- 다차원 척도법',
@@ -229,13 +229,13 @@ var answer = answer.concat(
 3) Repeatable Read : 타 Tx Update 금지, Insert 허용 / Phantom Read 발생<br/>\
 4) Serializable : 동시 수행 금지 / 완벽 일관성 모드<br/>\
 <img src = "./img/IsolationLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Read Phenomena / 해결 방안 <br/>\
+- Dirty Read : Commit 이전 Data 참조 / 공유 Lock 적용 <br/>\
+- Non-Repeatable Read : Query 2 수행시, 타 Tx 중간값 참조 / Tx 완료까지 수정,삭제 제한 <br/>\
+- Phantom Read : Query 2 수행시, Phantom Record 발생 / Isolation Level 3 <br/><br/>\
 * 119회 1교시 13번\
 ',
-  
-// 읽기 이상현상
-'<img src = "./img/ReadPhenomena.png" style = "max-width:100%; height:auto;">\
-',
-  
+   
 // 데이터 독립성
 '# 정의 : 스키마 정의 변경 성질 / 상위 하위 / <br/>\
 - 상위 단계 스키마 정의에 영향주지 않으면서 하위 단계 스키마 정의를 변경할 수 있는 성질 <br/><br/>\
@@ -1908,6 +1908,23 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 단계 선택법 : 전진 선택 변수 추가, 후진 제거법 수행 / 전진, 후진 장점 취합 <br/><br/>\
 <font color = "red">* 다중공선성 문제 : 회귀분석에서 독립변수들 간에 강한 상관 관계가 나타나는 문제 </font><br/><br/>\
 * 123회 관리 2교시 4번\
+',
+
+// 선형회귀모형 추론 가정
+'# 정의 : 선형회귀모형 추론 / 반드시 만족 / 기본 성질 <br/>\
+- 하나 또는 그 이상의 독립변수(X)와 종속변수(Y)에 대한 상관관계를 나타내는 선형회귀모형을 추론하기 위해 반드시 만족해야 하는 선형성, 독립성, 등분산성, 정규성 등의 기본성질 <br/><br/>\
+# 필요성 <br/>\
+- 설명변수 전처리 : 최적 변수 선택, 로그, 루트, 이상치 제거 수행 <br/>\
+- 유의한 모델 생성 : 4가지 가정 모두 만족하는 유의한 선형회귀무형 생성 <br/>\
+- 예측령 향상 : 위배시 해결통한 예측력 향상 <br/><br/>\
+# 가정 / 위배시 해결법 <br/>\
+- 선형성 : 종속변수와 독립변수간의 선형성 만족 / 이차항 추가<br/><br/>\
+- 독립성 : 다중회귀분석 X간 상관 관계 없음 / 다중공선성 변수제거 (R의 Step 함수) <br/>\
+- 등분산성 : 잔차 분산 같아, 고르게 분포 / 이차항 추가, 로그, 루트 사용 <br/>\
+- 정규성 : 잔차 분포 평균0 만족 / 로그, 루트 취함, 이상치 제거 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/LinearRegressionModelCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 118회 1교시 7번\
 ',
 
 // 상관 분석

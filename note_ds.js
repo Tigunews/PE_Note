@@ -589,7 +589,7 @@ var answer = answer.concat(
 - Cloud Based App : 클라우드 기반 데이터 처리 및 분석 통한 공정 설계 실행 <br/>\
 - AI : 머신러닝, 딥러닝 등을 통한 데이터 수집,학습,분석 <br/>\
 - Big Data : NoSQL, Hadoop, Spark, Storm 활용 데이터 처리 <br/><br/>\
-# 분류(자최제모점) <br/>\
+# 분류(<font color = "red">자최제모점</font>) <br/>\
 <img src = "./img/SmartFactory5Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 스마트공장 보안 감사 <br/>\
 - 면담조사 <br/>\

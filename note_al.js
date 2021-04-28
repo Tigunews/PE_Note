@@ -1268,6 +1268,8 @@ var answer = answer.concat(
 '# 정의 : 저차원 격자 / 고차원 데이터 / 군집 도출 방법 <br/>\
 - Self Organized Map <br/>\
 - 사람이 눈으로 볼 수 있는 저차원 격자에 고차원 데이터의 각 개체들이 대응하도록 인공신경망과 유사한 방식의 학습을 통해 군집을 도출해내는 기법 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/SOM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - 입력층 : 입력 벡터를 받는 층 <br/>\
 - 경쟁층 : 격자형태로 배치 <br/>\
