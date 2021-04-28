@@ -19,8 +19,8 @@ var question = question.concat(
 '[회복기법]- 그림자 페이지',
 '[회복기법]- 체크포인트',
 '[회복기법]- 미디어',
-'[회복기법]- ARIES',
 '[회복기법]- WAL정책',
+'[회복기법][WAL]- ARIES',
 '[일관성]- SAGA',
 '[일관성][SAGA]- Choreography-Based Saga',
 '[일관성][SAGA]- Orchestration-Based Saga',
@@ -475,44 +475,42 @@ var answer = answer.concat(
 - 미디어 장애시 가장 최근 덤프로 복구, 로그 파일을 참조해 덤프 이후 작업 Redo <br/>\
 - Undo 수행 x \
 ',
-  
-// ARIES
-'# 정의 : WAL(로그선행법), LSN(로그순서번호) / 회복기법 <br/>\
-- Algorithms for Recovery and Isolation Exploiting Semantics <br/>\
-- 데이터 베이스의 장애 발생시 WAL을 통해 기록된 LSN을 이용하여 데이터베이스를 회복하는 기법 <br/><br/>\
-# 특징 <br/>\
-- 원칙 : WAL(Write Ahead Logging), 로그 타입 관계 없이 DB 반영전 Log 기록 <br/>\
-- 정책 : Steal(커밋되지 않아도 기록가능), No-Force(커밋되어도 즉시 기록x) <br/><br/>\
-# 구성요소 <br/>\
-- Log : LSN 할당, Write,Commit,Abort,UNDO,end,LogNumber,Transaction ID,Page ID <br/>\
-- LSN(Log Sequence Number) : 로그 순차번호, 관계파악 <br/>\
-- Transaction Table : 진행 트랜잭션 정보 <br/>\
-- Dirty Page Table : 버퍼의 오손 페이지 정보 <br/><br/>\
-# 복구 단계 설명 <br/>\
-<img src = "./img/AriesFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 96회 관리 4교시 3번\
-',
 
 // [회복기법]- WAL 정책
 '# 정의 : 데이터 버퍼관리 정책 / 메모리 버퍼에 저장한 페이지 / 언제 디스크에 기록 <br/>\
 - White-Ahead Logging <br/>\
 - 메모리 버퍼에 저장한 페이지가 언제 디스크에 기록될 것인가를 명시하는 데이터 버퍼관리 정책<br/><br/>\
-# STEAL <br/>\
-- 다른 트랜잭션이 메모리 버퍼를 사용하려고 하면 가장 오랫동안 사용하지 않은(LRU, Least Recently Used) DIRTY 페이지를 데이터베이스 볼륨에 Flush하고 버퍼를 해제(Free)함<br/>\
-- STEAL 정책을 사용하면, 트랜잭션을 롤백할 때 과거 데이터로 복구하기 위해 UNDO 로깅이 필요<br/><br/>\
-# NO STEAL <br/>\
-- 트랜잭션이 완료될 때까지 DIRTY 페이지를 반드시 버퍼에 유지함<br/>\
-- 진행중인 모든 트랜잭션들에 의해 변경된 모든 페이지를 유지할 만큼 충분한 버퍼 공간 필요<br/><br/>\
-# FORCE <br/>\
-- 커밋(Commit)할 때 트랜잭션이 갱신한 모든 페이지를 즉시 데이터베이스 볼륨에 반영함 <br/>\
-- FORCE 정책을 사용하면 트랜잭션을 커밋할 때마다 매번 디스크 쓰기를 해야하므로 성능에 영향을 미침 <br/>\
-- 짧은 시간에 여러 트랜잭션에 의해 하나의 페이지가 20번 수정된다면, 디스크도 20번 쓰여야함 <br/><br/>\
-# NO FORCE <br/>\
-- 커밋 과정 중 트랜잭션이 갱신한 모든 페이지를 즉시 데이터베이스 볼륨에 반영하지 않음<br/>\
-- 데이터베이스 볼륨에 커밋이 반영되지 않은 상태에서 다른 트랜잭션이 해당 페이지를 갱신하는 경우에 페이지를 다시 쓰는 데 드는 비용을 줄일 수 있음<br/>\
-- 단 시스템 고장이 발생한 경우에도 성공적으로 커밋된 트랜잭션에 의한 데이터 변경을 보장하기 위해서 REDO 로깅이 필요함<br/><br/>\
-* NO STEAL/FORCE 정책 : 구현 Good 성능 Bad <br/>\
-* STEAL/NO FORCE 정책 : 성능 Good\
+# 내용 <br/>\
+1. DIRTY Page <br/>\
+- STEAL : DIRTY Page 해제(LRU), UNDO 필요 <br/>\
+- NO STEAL :  DIRTY Page 유지, 충분 버퍼 필요 <br/><br/>\
+2. Commit <br/>\
+- FORCE : 모든 페이지 즉시 Commit, 성능 저하 <br/>\
+- NO FORCE : 일부 페이지 Commit, REDO 필요 <br/>\
+<font color = "red">* NO STEAL/FORCE 정책 : 구현 Good 성능 Bad <br/>\
+* STEAL/NO FORCE 정책 : 성능 Good</font>\
+',
+  
+// ARIES
+'# 정의 : WAL(로그선행기록), LSN(로그순서번호) / 회복기법 <br/>\
+- Algorithms for Recovery and Isolation Exploiting Semantics <br/>\
+- 데이터 베이스의 장애 발생시 WAL을 통해 기록된 LSN을 이용하여 데이터베이스를 회복하는 기법 <br/><br/>\
+# 특징 <br/>\
+- 원칙 : WAL(Write Ahead Logging), 로그 타입 관계 없이 DB 반영전 Log 기록 <br/>\
+- 정책 : Steal(항시기록-UNDO필요), No-Force(지연갱신-REDO필요) <br/><br/>\
+# 프로세스 <br/>\
+- Analysis : REDO 시작 로그 위치 결정 / Transaction 상태 분석 <br/>\
+- REDO : 장애시점 완결 Tx 대해 수행 / 재수행 <br/>\
+- UNDO : 장애시점 미완결 Tx 대해 수행 / 무효화 <br/><br/>\
+# 핵심 원리 <br/>\
+- WAL : 로그 선행 기록, DB 변경 사항 Logging / Atomicity, Durability <br/>\
+- LSN : 로그 대한 고유 식별 번호 / 복구 목적 로그 관리 <br/>\
+- Repeating History : 장애 이전 상태 추적, REDO 활용 / 장애 직전 중지 Tx 취소 <br/>\
+- UNDO Logging : UNDO 상황 로그 기록, 반복처리 회피 / LSN 활용 <br/>\
+<font color = "red">* Database Logging : Update, Commit, Abort, End, Rollback 행위, 결과 기록</font><br/><br/>\
+# 복구 단계 설명 <br/>\
+<img src = "./img/AriesFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 96회 관리 4교시 3번\
 ',
   
 // SAGA
@@ -1045,7 +1043,7 @@ var answer = answer.concat(
 // Join
 '# 정의 : 테이블, 데이터베이스 연결 / 데이터 검색 방법 <br/>\
 - 두개 이상의 테이블이나 데이터베이스를 연결하여 데이터를 검색하는 방법 <br/><br/>\
-# 논리적 조인 (내외크셀)<br/>\
+# 논리적 조인 (<font color = "red">내외크셀</font>)<br/>\
 1. Inner Join (교집합) <br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
 FROM TABLE_A A TABLE_B B <br/>\
@@ -1074,24 +1072,24 @@ FROM EX_TABLE A, JOIN_TABLE B <br/><br/>\
 <img src = "./img/Join_2.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
 FROM TABLE_A A, TABLE_A B <br/><br/>\
-# 물리적 조인 (네소해카인)<br/>\
+# 물리적 조인 (<font color = "red">네소해카인</font>)<br/>\
 - SQL문 사용하지 않음<br/>\
 - SQL문에서 요청하는 논리 조인을 옵티마이저가 자료 통계나 규칙에 맞게 가져오는 방법 <br/>\
 - 내부에서 일어나는 조인 <br/><br/>\
 1. Nested Loop Join <br/>\
-- 가장 많이 사용하는 기본 조인 방식 <br/>\
-- 선수행 범위가 중요, 후수행 랜덤 엑세스 <br/><br/>\
+- <font color = "red">가장 많이 사용</font>하는 기본 조인 방식 <br/>\
+- 선수행 범위가 중요, <font color = "red">후수행 랜덤 엑세스</font> <br/><br/>\
 2. Sort Merge Join <br/>\
-- 정렬 후 조인 수행 방식 <br/>\
-- 조인은 효과적, 정렬에 대한 부담 존재 <br/><br/>\
+- <font color = "red">정렬 후</font> 조인 수행 방식 <br/>\
+- <font color = "red">조인은 효과적</font>, 정렬에 대한 부담 존재 <br/><br/>\
 3. Hash Join <br/>\
-- 해시함수 기법 활용한 조인 방식 <br/>\
-- 일반적으로 높은 성능 수준 <br/><br/>\
+- <font color = "red">해시함수</font> 기법 활용한 조인 방식 <br/>\
+- 일반적으로 <font color = "red">높은 성능</font> 수준 <br/><br/>\
 4. Cartesion Join <br/>\
-- 전체 x 전체 또는 M:M 조인 방식 <br/>\
-- 일반적으로 조인 순서 잘못된 경우 발생 <br/><br/>\
+- 전체 x 전체 또는 <font color = "red">M:M</font> 조인 방식 <br/>\
+- 일반적으로 <font color = "red">조인 순서 잘못된</font> 경우 발생 <br/><br/>\
 5. Index Join <br/>\
-- 인덱스 존재시 인덱스간 해시 조인을 통해 액세스 하는 기법\
+- <font color = "red">인덱스 존재</font>시 인덱스간 해시 조인을 통해 액세스 하는 기법\
 ',
   
 // 데이터 품질관리 지침
@@ -1804,8 +1802,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 '# 정의 : Outlier <br/>\
 - 아주 작은 or 큰 값 <br/>\
 - 통계적 자료분석의 결과를 왜곡시키거나, 자료 분석의 적절성을 위협하는 변수값 또는 사례 <br/>\
-- (</font color = "red">기술 통계학</font>) : </font color = "red">분포 집중경향치</font>의 값을 왜곡시키거나, </font color = "red">상관계수 추정치의 값</font>을 왜곡시키는 개체 또는 변수 값 <br/>\
-- (</font color = "red">추론 통계학</font>) : </font color = "red">모수추정치의 값</font>을 왜곡시키는 개체 또는 변수의 값 <br/><br/>\
+- (<font color = "red">기술 통계학</font>) : <font color = "red">분포 집중경향치</font>의 값을 왜곡시키거나, <font color = "red">상관계수 추정치의 값</font>을 왜곡시키는 개체 또는 변수 값 <br/>\
+- (<font color = "red">추론 통계학</font>) : <font color = "red">모수추정치의 값</font>을 왜곡시키는 개체 또는 변수의 값 <br/><br/>\
 # 유형 <br/>\
 - 비합리적 특이정보 : <font color = "red">입력 오류등 자료의 오염</font>으로 인해 발생한 이상치 <br/>\
 - 합리적 특이정보 : <font color = "red">정확하게 측정</font>되었으나 다른 자료들과 전혀 다른 경향이나 특성을 보이는 이상치 <br/><br/>\
@@ -1877,7 +1875,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
   
 // 회귀 분석
-'# 정의 : 독립, 종속 변수간 <font color = "red">관련성</font> / <font color = "red">함수적 관계 통계적 추정</font> / 종속(1) / 변화 따른 </font color = "red">예측</font> <br/>\
+'# 정의 : 독립, 종속 변수간 <font color = "red">관련성</font> / <font color = "red">함수적 관계 통계적 추정</font> / 종속(1) / 변화 따른 <font color = "red">예측</font> <br/>\
 - 독립변수들과 종속변수 간에 존재하는 관련성을 분석하기 위하여, 관측된 자료에서 이들 간의 함수적 관계를 통계적으로 추정하는 방법 <br/><br/>\
 # 목적 <br/>\
 - 예측 : 종속 변수 값 예측 <br/>\
