@@ -5,7 +5,6 @@ var question = question.concat(
 'ACID',
 'Isolation Level',
 '읽기 이상현상',
-'상태전이도',
 '데이터 독립성',
 '[데이터 독립성]- ANSI SPARC 3계층',
 '병행제어 = 동시성제어',
@@ -148,7 +147,7 @@ var answer = answer.concat(
 - 한번에 처리되어야 할 하나 또는 둘 이상의 일련의 작업단위로써 데이터베이스에서 행해지는 작업의 논리적 단위 (Logical Unit of Work) <br/><br/>\
 # 내용 <br/>\
 - 보장기법 : ACID <br/>\
-- 상태전이도 : Active Partial Committed, Failed, Committed, Aborted <br/>\
+- 상태전이도(<font color = "red">활부완실철</font>) : Active, Partial Committed, Failed, Committed, Aborted <br/>\
 - 병행제어 기법 : 갱읽모연 / 락타낙다 <br/><br/>\
 # MSA 에서 Transaction 처리기법 <br/>\
 - 2 Phase  Commit : Prepare, Commit 두 단계 커밋 / 분산 트랜잭션 지원 DB 만 사용 <br/>\
@@ -235,16 +234,6 @@ var answer = answer.concat(
 '<img src = "./img/ReadPhenomena.png" style = "max-width:100%; height:auto;">\
 ',
   
-// DB 상태전이도
-'<img src = "./img/DB_State_move.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- Activity : 정상적 실행 상태 <br/>\
-- Partially Committed : 트랜잭션에 정의된 모든 연산 실행 완료 <br/>\
-- Failed : 더 이상 진행될 수 없는 상태 <br/>\
-- Aborted : Fail이후 실행되기 이전으로 복귀 <br/>\
-- Committed : 성공적 완료, 데이터 저장 <br/><br/>\
-* 116회 응용 2교시 5번\
-',
-
 // 데이터 독립성
 '# 정의 : 스키마 정의 변경 성질 / 상위 하위 / <br/>\
 - 상위 단계 스키마 정의에 영향주지 않으면서 하위 단계 스키마 정의를 변경할 수 있는 성질 <br/><br/>\
@@ -286,15 +275,19 @@ var answer = answer.concat(
 '# 정의 : 직렬 가능성 보장 기법 / 트랜잭션 / 동시 접근 / 무결성 / 성공 실행 <br/>\
 - 동일 데이터에 여러 트랜잭션 동시 접근시 데이터 무결성을 확보하고, 성공/실행지원하는 직렬가능성 보장기법 <br/><br/>\
 # 문제 (갱읽모연회)<br/>\
-- 갱신손실(Lost Update) : 다수 트랜잭션, 데이터, 덮어씀 / 이전 트랜잭션에 데이터를 갱신한 후, 종료전에 다른 트랜잭션이 갱신값을 덮어씀 <br/>\
-- 읽기오류(Dirty Read) : 다수 트랜잭션, 중간 결과값, 참조 / 트랜잭션의 중간 수행결과를 다른 트랜잭션이 참조 <br/>\
-- 모순성(Inconsistency) : 한 트랜잭션내, 갱신전, 갱신후 값 참조 오류 / 갱신한 DB 내의 결과값 상호 불일치, 출력정보 모순 발생 <br/>\
-- 연쇄복기(Cascading Rollback) : 다수 트랜잭션, 레코드, 복귀과정 / 도중 한 트랜잭션 성공, 실패한 트랜잭션 복귀 과정 발생 문제 <br/><br/>\
+1. 갱신손실(Lost Update) : 동신 갱신 경우, 데이터, 덮어씀 <br/>\
+<img src = "./img/LostUpdateExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 읽기오류(Dirty Read) : 다수 트랜잭션, 중간 결과값, 참조 <br/>\
+<img src = "./img/DirtyReadExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 모순성(Inconsistency) : 다수 트랜잭션, 상호 간섭, 일관성 없는 상태 변질 <br/>\
+<img src = "./img/InconsistencyExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. 연쇄복기(Cascading Rollback) : 다수 트랜잭션, 레코드, 복귀과정 <br/>\
+<img src = "./img/CacadingRollbackExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기법 (락타낙다)<br/>\
 - 락킹(Locking) : 상호배제 기능 제공, 2PL, 공유락, 전용락, Lock Escalation-연쇄복귀 <br/>\
 - 타임스탬프(Timestamp) : 시스템 시계, 논리적 계수기 <br/>\
-- 낙관적 기법(Validation Verification) : 트랜잭션 제어 x, 갱신시 사본 저장<br/>\
-- 다중버전 동시성제어(MVCC) : 여러버전 타임스탬프 비교, 직렬성 보장 버전 선택<br/><br/>\
+- 낙관적 기법(Validation Verification) : Read Phase, Validation Phase, Write Phase <br/>\
+- 다중버전 동시성제어(MVCC) : 여러버전 타임스탬프 비교, 직렬성 보장 버전 선택 (SCN) <br/><br/>\
 <img src = "./img/병행제어_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/병행제어_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 응용 2교시 5번\
