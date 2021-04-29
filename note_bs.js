@@ -1409,7 +1409,7 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 ',
   
 // COBIT 5.0
-'# 정의: 전사적 IT 거버넌스 프레임워크 <br/>\
+'# 정의 : 실행, 수준 진단 / 감사, 개선 / IT-Governance Framework <br/>\
 - IT 거버넌스 실행, 수준 진단 통해 IT 통제, 감사, 개선에 사용되는 IT 거버넌스 프레임워크 <br/><br/>\
 # 진화 과정(ACMIG) : Audit > Control > Management > IT Governance > Governance of Enterprise IT <br/><br/>\
 # 구성요소 <br/>\
@@ -1442,6 +1442,22 @@ A(10) 개선 : 부적합 시정조치, 개선 <br/>\
 - 기업의 투명성 강화, 리스크 관리를 위하여 정부나 관련 기관이 제시한 각종 규제, 법안 등에 만족될 수 있도록 IT 관점에서 시스템을 재정비하는 활동 <br/><br/>\
 # Keyword <br/>\
 - Sarbaens-Oxley, Basel-II, E-Discovery, 정보통신망법, 전자서명법, 의료법, 개인정보보호, 정보관리, 정보보안, COBIT, 패널티 <br/><br/>\
+# 종류 <br/>\
+1. 경영 투명성 <br/>\
+- SOX : 회계 투명성 <br/>\
+- K-SOX : 내부 관리 회계 제도 <br/>\
+- IFRS : 국제 회계기준 <br/><br/>\
+2. 개인정보보호 <br/>\
+- 개인정보보호법 : PIMS, PIA <br/>\
+- 유럽 개인정보보호 : EU-GDPR <br/><br/>\
+3. 정보보안 <br/>\
+- 정보통신망법 : ISMS <br/>\
+- 금융 정보보안 : F-IMS <br/><br/>\
+4. IT 지원 <br/>\
+- COSO <br/>\
+- COBIT <br/>\
+- RDW <br/>\
+- RDB <br/><br/>\
 # 필요성 <br/>\
 <img src = "./img/ITComplianceOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 요구사항 (공보보통책)<br/>\
