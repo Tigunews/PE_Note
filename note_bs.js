@@ -692,42 +692,19 @@ var answer = answer.concat(
 // BABOK
 '# 정의 : Biz업무 / 업무 기술 모음 / 지식체계 정의  <br/>\
 - Business Analysis Body Of Knowledge <br/>\
-- Biz업무 원활 진행 위한 업무 기술 모음 지식체계 정의 문서 <br/><br/>\
-# 암기 <br/>\
-- BA PM <br/>\
-- E~C ~ S RA <br/>\
-- S R <br/>\
-- 비요전라분평 <br/><br/>\
-# 구성 <br/>\
-- BA Knowledgy Area(6) <br/>\
-- Business 분석 업무 수행자 역량(6) <br/>\
-- Business 분석 활동 위한 기술(50) <- V2: 6,6 34, 범위, BACCM <- V3만 존재 <br/><br/>\
-# 6대 지식영역 관계도 : BA PM(이 말하길...) E~C~ S RA(는데) S(를) R(이라고해?) <br/>\
-1. BA Planning And Monitoring : BA 접근 / 거버넌스 / 정보관리 계획, Stakeholder 참여 계획, 비즈니스 분석 성능 향상 확인 <br/>\
-2. Elicitation & Collaboration (V2:Elicitation) : 요구추출준비, 행동추출, 추출결과 확인, 비즈니스 분석 정보 의사소통, 이해관계자의 협업 관리 <br/>\
-4. Strategy Analysis(V2:Enterprise Analysis) : 현황분석, 미래 상태 정의, 위험평가, 변경 전락 정의 <br/>\
-5. Requrements Analysis & Design Definition (V2:Requrements Analysis) : 요구사항 추적/유지/우선순위/변경평가/승인 <br/>\
-6. Solution Evaluation (V2:Solution Assessment & Validation) : 솔루션 성능 측정, 성능 측정 분석, 솔루션 한계 평가, 솔루션 가치 증가 액션 추가 <br/>\
-3. Requirement Lifecycle Mgmt (V2:Requirements Mgmt and Communication) : 요구사항 모델 지정/확인/유효성평가/아키텍처 정의, 솔루션 옵션 정의 <br/><br/>\
-# BACCM(BA핵심 개념 모델) <br/>\
-- 이해당사자 : 변경필요/솔루션관계 <br/>\
-- 요구 : 문제/기회<br/>\
-- 변화 : by요구 <br/>\
-- 솔루션 : 요구만족특정방법 <br/>\
-- 배경 : 변화둘러싼 상황 <br/>\
-- 가치 : 이해관계자가치 <br/><br/>\
-# BA Five Perspective(범위) : Agile, BI, Information Technology, Business Architecture, Businesss Process Management <br/><br/>\
-# BA 특화 분석기법(15개) <br/>\
-- RACI Metrix <br/>\
-- Stackholder Map : 이해당사자와 솔루션 관계 묘사 <br/>\
-- Variance Analysis : 계획/결과비교 <br/>\
-- Baselining : 요구사항추적 <br/>\
-- Sighoff : 이해당사자 요구사항 공식적 승인 <br/>\
-- Coverage Matirx : 요구사항 추적 <br/>\
-- Checklists <br/>\
-- Voting : 참가자에 요구사항 배분 <br/>\
-- Timingbox / Bugeting : 요구사항 필터링<br/><br/>\
-<img src = "./img/BABOK_1.png" style = "max-width:100%; height:auto;">\
+- Biz업무 원활 진행 위한 업무, 기술 모은 지식 체계 <br/><br/>\
+# 목적 <br/>\
+- 이해 당사자 가치 제공, 요구 정의 하기 위한 지식체계 <br/>\
+- 요구사항 따른 솔루션 추천, 50개 분석기법 <br/><br/>\
+# 구성 (<font color = "red">모추관분정평</font>) <br/>\
+- BA 계획 모니터링 : 활동, 이해 관계자 참여 정의 <br/>\
+- 추출과 협업 : 요구사항 추출, 협업 체계 <br/>\
+- 요구사항 생명주기 관리 : 요구사항 유지보수, 추적, 개선 <br/>\
+- 전략 분석 : 위험, 전략 정의 <br/>\
+- 요구사항 분석과 설계 정의 : 잠재적 가치, 비즈니스 만족 검증 <br/>\
+- 솔루션 평가 및 검토 : 최적 솔루션 결정 <br/><br/>\
+<img src = "./img/BABOK_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 3교시 6번\
 ',
 
 // BSC

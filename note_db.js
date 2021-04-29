@@ -2443,17 +2443,26 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 '# 정의 : 데이터 관리 국제 표준 <br/>\
 - Data Management Body Of Knowledge <br/>\
 - DAMA International에서 운영 중인 데이터관리를 위한 국제 표준 지침 <br/><br/>\
+# 목적 <br/>\
+- 공통 관점 제시 <br/>\
+- 표준 용어 정의 및 문서화 원칙 가이드 <br/>\
+- 벤더 중립적 데이터 관리 방법 및 원칙 설명 <br/>\
+- 데이터관리 범위 명확화 <br/><br/>\
 # 구성 <br/>\
-- Data Governance <br/>\
-- Data Architecture Management <br/>\
-- Data Development <br/>\
-- Data Operations Management <br/>\
-- Data Security Management <br/>\
-- Reference & Master Data Management <br/>\
-- Data Warehousing & Business Intelligence Management <br/>\
-- Document & Content Management <br/>\
-- Meta Data Management <br/>\
-- Data Quality Management <br/><br/>\
+1. 데이터 관리 (<font color = "red">프거아</font>) <br/>\
+- 프랙티스 <br/>\
+- 거버넌스 <br/>\
+- 아키텍처 관리 <br/><br/>\
+2. 데이터 개발 (<font color = "red">모설통 보 DB</font>) <br/>\
+- 모델링, 설계, 통합 <br/>\
+- 보안 <br/>\
+- DW / BI(Business Inteligence) <br/>\
+- 참조 / 기준정보 <br/><br/>\
+3. 데이터 관리와 통제(<font color = "red">저문메품</font>)<br/>\
+- 데이터 저장, 운영 <br/>\
+- 문서, 컨텐츠 관리 <br/>\
+- 메타 데이터 관리 <br/>\
+- 데이터 품질 <br/><br/>\
 * ITPE 7회 관리 3교시 6번\
 ',
 );
