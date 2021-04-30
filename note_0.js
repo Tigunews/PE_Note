@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 /* 9주차 */
-'가설검정','레그테크','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹',
+'가설검정','레그테크','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타',
 
 /* 8주차 */
 'Library','Python','ALM','SW Visualization','ARM','정보시스템 하드웨어 규모산정 지침','CMMI','ISO/IEC 33000','일정관리','WBS','Thread','Process','MVC','MVP','MVVM','테스트 자동화','DB 복제','Scheduling','비용산정','분기 예측',

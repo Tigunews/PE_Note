@@ -784,7 +784,7 @@ var answer = answer.concat(
 - Growth Hacking<br/>\
 - 제품 또는 서비스의 중요한 지표를 지속적으로 파악 및 분석하여, 사용자의 흐름을 최적화하고, 많은 유저를 확보하는 전략적 마케팅 기법 <br/><br/>\
 # 특징 : 제품/서비스 지향, 성장지향, 가설과 검증 <br/><br/>\
-# 단계(AARRR) <br/>\
+# 단계(<font color = "red">AARRR</font>) <br/>\
 <img src = "./img/GrowthHacking.png" style = "max-width:100%; height:auto;"><br/>\
 - Acquisition : 인지-SEO,PR,캠페인SEM,콘테스트 <br/>\
 - Activation : 촉진-UI/UX, A/B 테스트 <br/>\
@@ -793,16 +793,18 @@ var answer = answer.concat(
 - Revenue : 매출-시장분석 <br/><br/>\
 # Cycle <br/>\
 - 분석 : 제품 이용 증대 분석 <br/>\
-- 생각 : 팀 전체, 테스트 대상 검토 <br/>\
+- 검토 : 팀 전체, 테스트 대상 검토 <br/>\
 - 우선순위 결정 : Impact, Confidence, Ease <br/>\
 - 테스트 : 책임자 할당, 테스트, 결과 공유 <br/><br/>\
-# 분석 방법론 (웹퍼설A) <br/>\
+# 분석 방법론 (<font color = "red">웹퍼설AC</font>) <br/>\
 - 웹 사이트 분석 : 구글, 애널리틱스, 오즈 <br/>\
 - 퍼넬측정 : 주요 단계별 잔류 사용자 측정 <br/>\
 - 사용자 설문조사 : 서베이 콩키, 퀼라루 <br/>\
 - A/B테스트 : 옵피마즐리, 언바운스 <br/>\
 - Cohort Analysis : 동일 특성 그룹, 시간흐름 따라 비교 <br/><br/>\
-# 사례 : facebook, twitter, hotmail, 드롭박스, 에어비엔비 <br/><br/>\
+# 사례  <br/>\
+- Airbnb : 간단히 매물 올리기 기능 추가 <br/>\
+- Linkedin : 프로필 완성도 ProgressBar 도입 <br/><br/>\
 # 비교 : 넥서스 경영(기업경영전략이 톱니바퀴처럼 맞물려 균형 맞추는 것)\
 ',
 
