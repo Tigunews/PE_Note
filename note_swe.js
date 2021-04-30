@@ -3938,7 +3938,7 @@ P 히스토그램 : Data 분포 <br/>\
 - SW 공학프로세스 <br/>\
 - SW 공학도구와 방법 <br/>\
 - SW 품질 <br/><br/>\
-3. 신규기반 (<font color = "red">전경컴수공</font><br/>\
+3. 신규기반 (<font color = "red">전경컴수공)</font><br/>\
 + SW 전문가 실천 <br/>\
 + SW 경제학 <br/>\
 + SW 컴퓨팅 기반 <br/>\
