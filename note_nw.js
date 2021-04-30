@@ -114,6 +114,7 @@ var question = question.concat(
 '망분리',
 '망연계',
 '망중립성',
+'ISO 19626',
 );
 
 var answer = answer.concat(
@@ -2242,5 +2243,23 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 특수 서비스 제공 조건 구체화 : ISP 서비스 적정 수준 유지, 특수 서비스 망중립성 원칙 회피 금지 <br/>\
 - 투명성 강화 : 통신사(정보 공개대상 확대), 정부(인터넷 접속 서비스 품질 점검) 근거 마련 <br/><br/>\
 * 123회 관리 4교시 1번\
+',
+
+// ISO 19626
+'# 정의 : 분산 환경 / 신뢰 통신 <br/>\
+- 한국주도 국제 표준 <br/>\
+- 물리적 세계와 사이버 세계가 연결되어 분산된 비즈니스 환경에서 신뢰성 있는 데이터 Set(정보, 문선)의 흐름을 책임지는 전자적 통신 <br/><br/>\
+# 특징 <br/>\
+- 완전성 : 전 구간, 단대단(E2E) <br/>\
+- 안전성 : IoT, 클라우드, 블록체인, AI 내외부 정보전달 <br/>\
+- 가시성 : 통신 구간별 무결성 증거, 데이터 신뢰성 확보 <br/><br/>\
+# Architecture <br/>\
+<img src = "./img/ISO19626Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성 <br/>\
+- 19626-1 : Fundamentals <br/>\
+- 19626-2 : Application and its Services <br/>\
+- 19626-3 : Interoperability <br/>\
+- 19626-n : Fast Track ETSI Project <br/><br/>\
+* 117회 응용 2교시 4번\
 ',
 );

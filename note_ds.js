@@ -121,7 +121,6 @@ var question = question.concat(
 '[ISO/IEC 61508]- 26262',
 'HILS, HIL 시뮬레이션',
 '오픈뱅킹(Open Banking)',
-'ISO 19626',
 'IoMT',
 '블록체인',
 '[블록체인]- 블록체인 3.0',
@@ -2501,10 +2500,6 @@ var answer = answer.concat(
 * 120회 관리 4교시 2번 <br/><br/>\
 * KPC 93회 1교시 8번\
 ',
-
-// ISO 19626
-'# 정의 : TCP / 신뢰성 통신 관련 사항 규약 <br/>\
-- TCP는 개방되고 분산된 환경에서 상거래, 전자정부, 제조, 산업, 의료, 기타 업무에서 높은 신뢰성이 필요한 통신 관련 사항을 규약',
 
 // IoMT
 '# 정의 : 개인 중심 건강관리 시스템 구현 / 환자 Digital Dust Monitoring / IoT 기술 <br/>\
