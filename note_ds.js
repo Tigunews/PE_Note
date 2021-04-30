@@ -949,6 +949,11 @@ var answer = answer.concat(
   
 // 디지털 뉴딜
 '# Digital New Deal <br/>\
+# D인비디 <br/>\
+- D : 활고융사 <br/>\
+- 인 : 양지 <br/>\
+- 비 : 원온비 <br/>\
+- 디 : 프관신 <br/><br/>\
 <img src = "./img/DigitalNewDeal.png" style = "max-width:100%; height:auto;">\
 ',
   
@@ -970,7 +975,11 @@ var answer = answer.concat(
 ',
   
 // 그린 뉴딜
-'<img src = "./img/GreenNewDeal.png" style = "max-width:100%; height:auto;">\
+'# 주요내용 <br/>\
+- 도시공간생활 <br/>\
+- 산업 <br/>\
+- 에너지 <br/><br/>\
+<img src = "./img/GreenNewDeal.png" style = "max-width:100%; height:auto;">\
 ',
   
 // SoC 디지털화
