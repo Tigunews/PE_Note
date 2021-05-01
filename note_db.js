@@ -342,8 +342,8 @@ var answer = answer.concat(
 <img src = "./img/LockingScale.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Lock 종류 <br/>\
 1. 기본 Lock <br/>\
-- S (Shared) : R가능, 다른 S타입 Lock 설정 가능 <br/>\
-- X (Exclusive) : RW가능, Lock 설정 불가 <br/><br/>\
+- S (Shared) : R가능, 동시 Locking 가능 <br/>\
+- X (Exclusive) : RW가능, 동시 Locking 	불가능 <br/><br/>\
 2. 의도형 Lock <br/>\
 - IS (Intension Shared) : 자손 S <br/>\
 - IX (Intension Exclusive) : 자손 S, X <br/>\
