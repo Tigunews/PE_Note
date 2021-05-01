@@ -3635,7 +3635,11 @@ var answer = answer.concat(
 '# 정의 : 금융 감독 업무 / 첨단 기술 도입 / 효율적 감독 기술 <br/>\
 - 감독(Supervisor)과 기술(Technology)의 합성어로 금융감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/><br/>\
 # 주요기술 <br/>\
-<img src = "./img/SubTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SubTech.png" style = "max-width:100%; height:auto;"><br/>\
+- 위험요인 <br/>\
+- 분석기술 : 빅데이터, 기계학습, 인공지능 <br/>\
+- 감독기관 <br/>\
+- 감독대상 <br/><br/>\
 # 적용사례 <br/>\
 - AI 약관 심사 <br/>\
 - 전자금융사기방지시스템 : 보이스피싱 경고 <br/>\
