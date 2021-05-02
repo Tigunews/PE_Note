@@ -2198,12 +2198,12 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 
 // 재식별 공격
 '# 정의 : 비식별 정보의 의도된 재식별화 공격 <br/><br/>\
-# 유형 <br/>\
-- Prosecutor Atack : 특정 데이터 주체에 속하는 <font color = "red">레코드</font> 재식별 <br/>\
-- Journalist Atack : 특정 레코드의 <font color = "red">데이터 주체</font> 재식별 <br/>\
+# 유형(<font color = "red">PJMDI / 레데많존민 </font>) <br/>\
+- Prosecutor Attack : 특정 데이터 주체에 속하는 <font color = "red">레코드</font> 재식별 <br/>\
+- Journalist Attack : 특정 레코드의 <font color = "red">데이터 주체</font> 재식별 <br/>\
 - Marketer Attack : 해당 데이터 주체로 <font color = "red">가능한 한 많은 레코드</font> 재식별 <br/>\
-- Distinguishability Attack : 데이터 집합에 특정 <font color = "red">데이터 주체 존재</font> 확인 <br/>\
-- Inference Attack : 다른 속성 그룹과 <font color = "red">관련된 민감한 속성 추론</font> <br/><br/>\
+- Distinguishability Attack : 데이터 집합에 특정 데이터 <font color = "red">주체 존재</font> 확인 <br/>\
+- Inference Attack : 다른 속성 그룹과 관련된 <font color = "red">민감한 속성</font> 추론<br/><br/>\
 * 인포에버 122회 관리 4교시 6번\
 ',
    
