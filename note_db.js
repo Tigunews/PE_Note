@@ -1,4 +1,4 @@
-var question = question.concat(
+﻿var question = question.concat(
 '데이터베이스',
 '데이터베이스 트랜잭션',
 '데이터 무결성',
@@ -1643,6 +1643,11 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Hilbert Cell : 공간의 차수가 1인 경우의 Hilbert 곡선 <br/>\
 - Hiblert Gene : 이전 차수 곡선 통한 다음 차수 생성 정보 <br/>\
 - GPGPU : 일반 연산 가능 설계 GPU <br/><br/>\
+# 절차 (<font color = "red">힐로리상</font>) <br/>\
+- 힐버트 값 계산 <br/>\
+- 오름 차순 정렬 <br/>\
+- 리프 노드 계산 <br/>\
+- 상위 노드 계산 <br/><br/>\
 # 활용 <br/>\
 - 벌크 로딩 : 고속화, 공간활용도 증가 <br/>\
 - 효율적 질의 : 인덱스 성능 향상 <br/><br/>\
