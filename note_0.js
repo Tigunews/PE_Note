@@ -8,6 +8,9 @@ var this_week_question =
 [
 '',
 
+// 추가 토픽
+'Smart Contract','AutoML',
+
 // 9주차 
 '가설검정','레그테크','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert','재식별 공격',
 

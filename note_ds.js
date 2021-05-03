@@ -1768,16 +1768,43 @@ var answer = answer.concat(
 - 코인플러그(메타디움, 부정거래 및 사기 행위)\
 ',
 
-// [이더리움]- 스마트계약
+// Smart Contract
 '# 정의 : 컴퓨터 언어로 저장된 계약 / 분산원장 시스템 / 자동 체결<br/>\
 - 분산원장시스템(Distributed ledger system)과 같은 컴퓨터 시스템에 의하여 자동으로 체결될 수 있는 <font color = "red">기존 법률적 언어대신 컴퓨터 언어</font>로 저장된 계약<br/>\
 - 블록체인을 통해 일정 조건을 만족시키면 거래가 자동으로 실행되도록 프로그램된계약<br/><br/>\
-# 특징 : 자율성, 안정성, 분산성 <br/><br/>\
-# 구성 : 블록체인, 이더리움, 스크립트 언어(Python, Serpent(Python 문법과 유사), LLL(Listp와 유사), 솔디리티(Soldility, 자바스크립트 유사한 독자 언어) <br/><br/>\
-# 위협성 <br/>\
-- 정상행위 : State 설계 오류, 암호학 실수, 메시지 중첩 등 충돌 <br/>\
-- 악의적 행위 : Criminal Smart Contract등 익명성 악용 <br/><br/>\
-# 대응 : 프로그램 분석기법 이용 탐지, 안전한 작성 지원, 악의적 스마트 컨트랙트 탐지 및 차단\
+# 특징 <br/>\
+1. 계약 측면 <br/>\
+- 자동계약 <br/>\
+- 프로세스 간소화 <br/><br/>\
+2. 기술 측면 <br/>\
+- 탈중앙화 <br/>\
+- 코드 실행 <br/>\
+- 튜링 완전성 <br/><br/>\
+# 원칙 <br/>\
+- 관측 가능성 : 계약 이행 관찰, 성과 입증 <br/>\
+- 검증 가능성 : 위반시 확인 <br/>\
+- 사생활 보호 : 당사자에게만 분배 <br/>\
+- 강제 가능성 : 구속력 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SmartContractStructure.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 신뢰성 <br/>\
+- 전자서명 : 공개키, 개인키, 부인방지 <br/>\
+- 마이닝 : 합의 알고리즘 신뢰성 <br/><br/>\
+2. 튜링완전 언어 <br/>\
+- Solidity : Javascript 유사 객체지향 프로그래밍 <br/>\
+- Serpent : Python 유사한 이더리움 개발 가능 프로그래밍 <br/><br/>\
+3. 이더리움 <br/>\
+- EVM(Ethereum Virtual Machine) : 스택기반 가상 머신 <br/>\
+- DApp : 사용자 유저단 UI 제공 기술 <br/><br/>\
+# 예시 <br/>\
+<img src = "./img/SmartContractExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 활용 <br/>\
+- 지급결제, 송금 : 실물 화폐, 지급 결제 <br/>\
+- 지적 재산권 : 디지털 음원, 특허관리 <br/>\
+- 권리 증명 : 부동산 등기, 권리 증명 <br/>\
+- 인증, 공유경제 : 3차인증, 공유 경제 <br/><br/>\
+* KPC 81회 관리 1교시 1번\
 ',
   
 // Smart Contract Audit
@@ -3635,15 +3662,20 @@ var answer = answer.concat(
 '# 정의 : 금융 감독 업무 / 첨단 기술 도입 / 효율적 감독 기술 <br/>\
 - 감독(Supervisor)과 기술(Technology)의 합성어로 금융감독 업무에 첨단기술을 도입하여 효율적으로 감독과 검사를 수행하기 위한 기술 <br/><br/>\
 # 주요기술 <br/>\
-<img src = "./img/SubTech.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/SupTechStructure.png" style = "max-width:100%; height:auto;"><br/>\
 - 위험요인 <br/>\
 - 분석기술 : 빅데이터, 기계학습, 인공지능 <br/>\
 - 감독기관 <br/>\
 - 감독대상 <br/><br/>\
 # 적용사례 <br/>\
-- AI 약관 심사 <br/>\
-- 전자금융사기방지시스템 : 보이스피싱 경고 <br/>\
-- 금융감독 챗봇 : AI가 금융회사 및 소비자 질의에 답변제공 <br/><br/>\
+1. 금융 <br/>\
+- 금융사기 방지 시스템 : AI, Big Data <br/>\
+- 금융 감독 챗봇 : STT, NLP, RNN <br/>\
+- 불법 금융광고 감시 : GAN, CNN <br/><br/>\
+2. 보험 <br/>\
+- 불완전 판매 식별 : 음성변환, LeRu <br/>\
+- AI 사모펀드 심사 : Auto ML <br/>\
+- 보험 민원 분류 : 데이터 마이닝 <br/><br/>\
 # 레그테크, 섭테크 비교 <br/>\
 <img src = "./img/RegTechSubTech.png" style = "max-width:100%; height:auto;">\
 ',
