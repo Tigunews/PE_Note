@@ -3903,17 +3903,17 @@ var answer = answer.concat(
 ',
   
 // Data Catalogs
-'# 정의 : Data Lake 큐레이션 <br/>\
+'# 정의 : 데이터 관리, 검색도구 결합 / 메타데이터 모음 <br/>\
 - 데이터 관리 및 검색 도구가 결합된 메타데이터 모음으로, 기업 또는 기관이 보유한 데이터 자산의 효율적, 효과적 사용을 위해 사용 가능한 데이터 인벤토리를 제공하는 데이터 관리 플랫폼 <br/><br/>\
-# 구성요소 (PSPS/작검라사)<br/>\
-- People : 데이터 관련 작업자 설명 메타데이터 <br/>\
-- Search : 태그 및 키워드 지원으로 데이터 검색이 가능한 메타데이터 <br/>\
-- Processing : 데이터 소스에 대한 라이센싱 제약조건에 대한 메타데이터 <br/>\
-- Suppliers : 데이터 라이프 사이클에 대한 메타데이터 <br/><br/>\
+# 구성요소 (<font color = "red">PSPS/작검라사</font>)<br/>\
+- People : 데이터 관련 <font color = "red">작업자 설명</font> 메타데이터 <br/>\
+- Search : 태그 및 키워드 지원으로 데이터 <font color = "red">검색이 가능</font>한 메타데이터 <br/>\
+- Processing : 데이터 소스에 대한 <font color = "red">라이센싱 제약조건</font>에 대한 메타데이터 <br/>\
+- Suppliers : 데이터 <font color = "red">라이프 사이클</font>에 대한 메타데이터 <br/><br/>\
 # 주요기능 <br/>\
-- 데이터 세트 검색 : 자연어, 연관어 검색 <br/>\
-- 데이터 품질 정보 제공 : 데이터 집합 뷰 제공 <br/>\
-- 데이터 액세스 : 데이터 공유, REST API <br/><br/>\
+- 데이터 세트 <font color = "red">검색</font> : 자연어, 연관어 검색 <br/>\
+- 데이터 품질 <font color = "red">정보 제공</font> : 데이터 집합 뷰 제공 <br/>\
+- 데이터 <font color = "red">액세스</font> : 데이터 공유, REST API <br/><br/>\
 # 데이터 카탈로그 활용 이점 <br/>\
 - 데이터 효율 향상 <br/>\
 - 향상된 데이터 Context 제공 <br/>\
