@@ -1538,6 +1538,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 
 // NSA
 '# 정의 : Control Plane 4G(eNB) / User, Data Plane 5G(gNB) / 3GPP Release 15 기반 / 5G 기술 <br/>\
+- <font color = "red">C4U5 </font><br/>\
 - Control Plane의 동작은 4G 기지국(eNB)을 활용하고, User/Data Plane의 동작은 5G 기지국(gNB)을 이용하는 LTE 코어망을 활용한 3GPP Release 15기반 5G 구현 기술 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/5GNSA.png" style = "width:100%; height:auto;"><br/><br/>\
@@ -1547,6 +1548,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Control Plane : MME(Mobility Management Entity), 가입자 관리, 위치등록, 인증 신호 처리 <br/>\
 - User/Data Plane : SGW(Serving GW), PGW(Packet GW), 통화 설정 관리, 핸드오버 IP, 이동성 <br/>\
 - 적용 : Public 5G 초기 상용화 <br/><br/>\
+<font color = "red">* EPC(Evolved Packet Core) : 3GPP LTE망에서 코어 네트워크 구조 <br/>\
+* UE(User Equipment) : User 단말 수 </font><br/><br/>\
 * ITPE 7회 관리 3교시 1번\
 ',
 
