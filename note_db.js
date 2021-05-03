@@ -384,10 +384,12 @@ var answer = answer.concat(
 1. MGA(Multi Generation Architecture) <br/>\
 - 개념 : 기존 데이터 두고, 새로운 버전 추가 / PostgreSQL<br/>\
 - 특징 : 기존 데이터 잔존, 주기적 VACUUM, 물리적 위치 변경 <br/>\
+- Perssimistic Lock 사용, PostgreSQL, SQL Server, InterBase 사용 <br/>\
 <img src = "./img/MVCC_MGA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. Rollback Segment <br/>\
 - 개념 : 기존 데이터 블록 변경, 이전 데이터 Rollback Segment 보관 / Oracle <br/>\
 - 특징 : SCN 비교, 물리적 위치 변경x, VACCUM 필요 없음 <br/>\
+- Undo Segment 사용, Oracle, InnoDB 사용방식 <br/>\
 <img src = "./img/MVCC_RollbackSegment.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 <br/>\
 1. Multiversion Timestamp Ordering <br/>\
