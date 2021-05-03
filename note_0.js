@@ -9,8 +9,8 @@ var this_week_question =
 '',
 
 // 9주차 
-'가설검정','레그테크','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert',
-/*
+'가설검정','레그테크','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert','재식별 공격',
+
 // 8주차 
 'Library','Python','ALM','SW Visualization','ARM','정보시스템 하드웨어 규모산정 지침','CMMI','ISO/IEC 33000','일정관리','WBS','Thread','Process','MVC','MVP','MVVM','테스트 자동화','DB 복제','Scheduling','비용산정','분기 예측',
 
@@ -43,5 +43,5 @@ var this_week_question =
 
 // ITPE 7회 
 '데이터 댐', 'Solid - Social Linked Data','Cloud 보안','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','-21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','SA','NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay','클라우드 네이티브 컴퓨팅','DevOps','인공지능 성능 지표','IoU','CBDC','Living Lab','SOS Lab','SW안전 확보 지침','SWEBOK','DMBOK','BABOK','백투백', 'Fuzz',
-*/
+
 ];
