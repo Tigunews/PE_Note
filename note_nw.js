@@ -2044,7 +2044,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // NFV
-'# 정의 : 네트워크 기능 / 여러 사용자 사용 가능 / 가상화 기술 <br/>\
+'# 정의 : 네트워크 기능 / 여러 사용자 사용 가능 / 네트워크 장비 가상화 기술 <br/>\
 - 하나의 물리적인 네트워크 기능을 여러 사용자 및 장치가 사용 가능하도록 네트워크 기능을 가상화하는 기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/NFV_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -2054,9 +2054,23 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - VNF Manager : 가상화된 네트워크 제어 및 관리 <br/>\
 - Orchestrator : 리소스 제어 <br/><br/>\
 2. 하드웨어 장비 <br/>\
-- Device : 컴퓨팅, 네트워크, 스토리지 장비 등 하드웨어 리소스 <br/>\
+- NFVI : 컴퓨팅, 네트워크, 스토리지 장비 등 하드웨어 리소스 <br/>\
 - 가상화 레이어 : 논리적 통합 <br/>\
-- VNF : 라우팅, 방화벽 등 네트워크 기능 제공 <br/><br/>\
+- VNFs : 라우팅, 방화벽 등 네트워크 기능 제공 <br/><br/>\
+# 특징 <br/>\
+1. 활용 <br/>\
+- 전체 구조 : 디바이스와 기능 분리 <br/>\
+- 구조 관리 : 오케스트레이션 기능 <br/>\
+- 목적 : 전용 Appliance 기능 가상화, 일반 서버 재배치 <br/>\
+- 동기 : 특정 장비 귀속 네트워크 기능 서버 재배치 <br/>\
+- 적용 위치 : Service Provider Network <br/>\
+- 효과 : 경제성, 유연성/신속성, 개방성 <br/><br/>\
+2. 기술 <br/>\
+- 응용분야 : 라우터, 방화벽, 게이트웨이, CDN, WAN가속기, SLA <br/>\
+- 디바이스 : 스위치 활용 <br/>\
+- 플랫폼 : OPNFV <br/>\
+- 프로토콜 : 없음 <br/>\
+- 표준화 기구 : ETSI NFV Working <br/><br/>\
 # SDN NFV 비교 <br/>\
 <img src = "./img/SDN_NFV.png" style = "max-width:100%; height:auto;"><br/>\
 * NFV : ETSI NFV Working Group <br/><br/>\
@@ -2064,14 +2078,30 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
   
 // SDN
-'# 정의 : 제어부 / 데이터부 <br/>\
+'# 정의 : 제어부 / 데이터부 / 네트워킹 가상화 기술 <br/>\
 - 네트워크 장비의 제어부와 데이터부를 분리하여 소프트웨어적으로 제어하는 네트워크 <br/><br/>\
 # 구성요소 <br/>\
 - Application : SDN 운영, 활용, 구동 레이어(4~7Layer) / NMS, Python <br/>\
-- Control plane : 공통부, 어플리케이션 구성되어 네트워크 제어 / SDN Controller, Southbound API <br/>\
-- Data Plane : Controller와 Application을 구동하기 위한 네트워크 장비 / SDN Switch, VXLAN <br/><br/>\
+- Control plane : Openflow 통한 네트워크 장비 제어 / SDN Controller, Southbound API <br/>\
+- Data Plane : 실제 Data 통신 수행 Device Layer / SDN Switch, VXLAN <br/><br/>\
+# 특징 <br/>\
+1. 활용 <br/>\
+- 전체 구조 : Plane간 구분으로 Control 기능 강화 <br/>\
+- 구조 관리 : Openflow 기반 통신 <br/>\
+- 목적 : 제어(중앙 집중화 관리), 데이터 분리 <br/>\
+- 동기 : 중앙화 관리, 유연성 확보 <br/>\
+- 적용 위치 : 기업 본사/지사, 캠퍼스, 데이터 센터 <br/>\
+- 효과 : NW 기반 비즈니스 확대, 투자, 운영비용 절감 <br/><br/>\
+2. 기술 <br/>\
+- 응용 분야 : Cloud Orchestration <br/>\
+- 디바이스 : 상용 서버 위주 활용 <br/>\
+- 플랫폼 : OpenDaylight(스위치 밴더), ONOS(통신 사업자 요구) <br/>\
+- 프로토콜 : Openflow, OVSDB, NETCONF <br/>\
+- 표준화 기구 : ONF, OpenDaylight <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/SDN_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Network Slice <br/>\
+<img src = "./img/5GNetworkSlice.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 응용 3교시 6번\
 ',
   
