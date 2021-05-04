@@ -52,7 +52,7 @@ var question = question.concat(
 'BCP',
 '[BCP]- RTO, RPO',
 '[BCP]- BIA',
-'[BCP]- ISO22301',
+'[BCP]- ISO 22301',
 '[BCP]- DRS',
 '[BDP]- DRP',
 '[BCP]- BPR',
