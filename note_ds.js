@@ -451,7 +451,7 @@ var answer = answer.concat(
 - 운영(ESD) : <font color = "red">E</font>MS(급전종합자동화 설비), <font color = "red">S</font>CADA(원격감시제어설비), <font color = "red">D</font>AS(배전 자동화 시스템) <br/>\
 - AMI(계반관)  : 지능형 <font color = "red">계</font>량, 수요 <font color = "red">반</font>응기기, 지능형 <font color = "red">관</font>리 <br/>\
 - HAN(ZP) : <font color = "red">Z</font>igbee, <font color = "red">P</font>LC(Power Line Communication) <br/>\
-- DR(Demand Response)(DA) : <font color = "red">D</font>SEM(수요측 에너지 관리), <font color = "red">A</font>FDD(자동화된 오류검출과 진단) <br/>\
+- DR(Demand Response)(DA) : <font color = "red">D</font>SEM(수요측 에너지 관리), <font color = "red">A</font>FDD(자동화된 오류검출과 진단) <br/><br/>\
 2. 보안 및 지능화 측면 <br/>\
 - 보안 매커니즘 : 암호화, 인증/접근통제, 침해탐지/대응/복구, DoS 탐지 <br/>\
 - 자가치유 매커니즘 : 센서 네트워크, 자가치유 알고리즘 <br/>\
