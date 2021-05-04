@@ -989,19 +989,19 @@ var answer = answer.concat(
 <img src = "./img/BIA.png" style = "max-width:100%; height:auto;">\
 ',
 
-// [BCP]- ISO22301
+// [BCP]- ISO 22301
 '# 정의 : 업무 중단위험 / 최단 시간 내 핵심 업무 복구 / 시행안, 목표 설정 위한 표준 <br/>\
 - Business Continuity Management System <br/>\
 - 재해, 재난, 테러등 예기치 못한 이위기로 업무 중단 위험이 발생한 경우 최단 시간 내 핵심 업무를 복구하기 위한 최상의 시행안과 목표를 설정하기 위한 표준 <br/><br/>\
 # 주요 내용 (조리계지운성개) <br/>\
 [1~3 공통 내용] <br/>\
-P(4) 조직의 상황 : BCM 관리 상황<br/>\
-P(5) 리더십 : 경영진 방침 <br/>\
-P(6) 계획수립 : 업무 연속성 목적 제시<br/>\
-P(7) 지원 : 정보의 문서화<br/>\
-D(8) 운영 : 운영계획 수립 및 통제 관리 <br/>\
-C(9) 성과평가 : 감시,측정,분석<br/>\
-A(10) 개선 : 부적합 시정조치, 개선 <br/>\
+P(4) 조직의 상황 : BCM 관리 <font color = "red">상황</font><br/>\
+P(5) 리더십 : <font color = "red">경영</font>진 방침 <br/>\
+P(6) 계획수립 : 업무 연속성 <font color = "red">목적 제시</font><br/>\
+P(7) 지원 : 정보의 <font color = "red">문서화</font><br/>\
+D(8) 운영 : 운영<font color = "red">계획 수립</font> 및 <font color = "red">통제</font> 관리 <br/>\
+C(9) 성과평가 : <font color = "red">감시,측정,분석</font><br/>\
+A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 <img src = "./img/BCMS_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Time Graph <br/>\
 <img src = "./img/BCMS_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
