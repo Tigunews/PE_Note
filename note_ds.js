@@ -209,6 +209,7 @@ var question = question.concat(
 '[오픈소스 라이선스]- Apache',
 '[오픈소스 라이선스]- MPL',
 '[오픈소스 라이선스]- InnerSource',
+'오픈소스 거버넌스',
 '[디지털 정책]- 디지털 디바이드',
 '[디지털 정책]- 디지털 리터러시',
 '[디지털 정책]- 디지털 포용',
@@ -4327,6 +4328,17 @@ var answer = answer.concat(
 # 활용방안 <br/>\
 <img src = "./img/InnerSource.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 93회 1교시 6번\
+',
+
+// 오픈소스 거버넌스
+'1. 오픈소스 SW영역 <br/>\
+2. 정책 및 가이드영역 <br/>\
+3. 운영 영역 <br/>\
+4. 활동 전반 진단 <br/>\
+5. 도입 전략 수립 <br/>\
+6. 정책 결정  <br/>\
+7. 지원 전략 수립 <br/>\
+8. 유지보수\
 ',
   
 // 디지털 디바이드
