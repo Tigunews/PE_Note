@@ -1965,7 +1965,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 구성요소 <br/>\
 - 고유 벡터 : 데이터의 분포를 나타내는 선 <br/>\
 - 고유 값 : 고유벡터에 대한 데이터의 분산 <br/><br/>\
-# 절차 <br/>\
+# 절차 (<font color = "red">공고항편차</font>)<br/>\
 <img src = "./img/DeminsionDecreseProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 2교시 4번\
 ',
