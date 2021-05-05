@@ -3450,6 +3450,8 @@ var answer = answer.concat(
 - 클라우드 플랫폼 모델 사용하는 기업들의 개발, 운영, 확장등을 관찰, 작성한 개발 방법론 <br/><br/>\
 # 상세 내용 (코종설B 빌무포동 폐환로관)<br/>\
 <img src = "./img/12Factors.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* 포트바인딩 : 응용 계층(소켓), 전송 계층(TCP) <br/>\
+* 무상태 프로세스 : 격리 </font><br/><br/>\
 * 15 Factors : API 우선, 관측, 인증과 권한 추가 \
 ',
   
