@@ -1561,7 +1561,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/5GSA.png" style = "width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - Release : 3GPP Release 15(Option 2) <br/>\
-- Master Node : gNB(Next Generatino NodeB) <br/>\
+- Master Node : gNB(Next Generation NodeB) <br/>\
 - Control Plane : AMF(Access and Mobility Management), 이동성 관리 기능, 단말 접속 관리 <br/>\
 - User/Data Plane : UPF(User Plane Function), 단일 Plane(SGW, PGW) <br/>\
 - 적용 : Private 5G 적용 유리 <br/><br/>\
