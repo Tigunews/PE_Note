@@ -1663,6 +1663,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 독립적 관리 <br/>\
 - 경제성 <br/><br/>\
 # 구성도 <br/>\
+<img src = "./img/5GNetworkSlice.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/NetworkSlicingStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - NFVI : 물리적 H/W 자원, VNF 실행 지원 <br/>\
