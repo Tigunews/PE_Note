@@ -81,6 +81,7 @@ var question = question.concat(
 '[MEC]- SSL Offloading',
 '[5G]- 5GX',
 '[5G]- Open Lan',
+'[5G]- Network Slicing',
 '6G',
 '[6G]- 6G 추진 전략',
 '[6G]- Wifi 7',
@@ -1651,6 +1652,24 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - SW 분리 : 차세대 기술 적용 유리, 비용 절감 예상 <br/><br/>\
 # 기업 현황 : 구글, MS, FaceBook <br/><br/>\
 <img src = "./img/OpenLan.jpg" style = "max-width:100%; height:auto;">\
+',
+
+// Network Slicing
+'# 정의 : 물리적 하나 네트워크 / 논리적 분리 서비스 / 특화 적용 / 5G NW 핵심 기술<br/>\
+- 물리적으로 하나의 네트워크를 통해 Device, Access, Transport, Core를 포함하여 End-to-End로 논리적으로 분리된 네트워크를 만들어 서로 다른 특성을 갖는 다양한 서비스들에 대해 그 서비스에 특화된 전용 네트워크를 제공하는 5G 네트워크의 핵심 기술 <br/><br/>\
+# 특징 <br/>\
+- 자원의 분리 <br/>\
+- 맞춤형 <br/>\
+- 독립적 관리 <br/>\
+- 경제성 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/NetworkSlicingStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- NFVI : 물리적 H/W 자원, VNF 실행 지원 <br/>\
+- NFVs : SW 개발된 네트워크 기능 집합 <br/>\
+- MANO(Managent & Orchestration) : 물리/SW적 자원관리 전달, VNF 관리 <br/>\
+- E2E Networking : NFV 인프라, VNF 연결 포워딩 그래프 <br/><br/>\
+* 118회 관리 1교시 10번 \
 ',
   
 // 6G
