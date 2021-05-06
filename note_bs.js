@@ -1355,8 +1355,8 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 # 평가 체계 Framework <br/>\
 <img src = "./img/IT_InvestFramework.png" style = "max-width:100%; height:auto;"><br/>\
 1. 평가 유형 <br/>\
-- 사전협의/정보화 사업 : 중복투자, 상호연계 여부 관리 / 신규, 계속사업 <br/>\
-- 운영성과 : 시스템 효율적 운영 성과 측정 / 3년 이상 정보시스템, 1년이상 모바일앱 <br/><br/>\
+- 사전협의/정보화 사업 : <font color = "red">중복투자, 상호연계</font> 여부 관리 / 신규, 계속사업 <br/>\
+- 운영성과 : 시스템 <font color = "red">효율</font>적 운영 성과 측정 / 3년 이상 정보시스템, 1년이상 모바일앱 <br/><br/>\
 2. 평가 프로세스 <br/>\
 <img src = "./img/IT_InvestProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 3. 평가지표 <br/>\

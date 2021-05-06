@@ -2960,11 +2960,6 @@ var answer = answer.concat(
 - Direct Physical Attack : NW(OBD), File System, File/Media <br/>\
 - Indirect Physical Attack : Application <br/>\
 - Local/Remote Wireless Attack : Application, NW <br/><br/>\
-# 유형 <br/>\
-- 데이터 생성 : Dumb Fuzzing, Smart Fuzzing, Evolutionary <br/>\
-- 데이터 투입 : Valid Case Fuzz Testing, Invalid Case Skip Testing, Invalid Case Fail Testing <br/>\
-- 변조 대상 : Mutation base Fuzzing, Generation based Fussing <br/>\
-- 테스팅 기법 : Whitebox Fuzzing, Blackbox Fuzzing <br/><br/>\
 # 절차 <br/>\
 - 테스트 대상 분석 : 시스템 식별 및 특징 분석 <br/>\
 - 입력 값 선정 : 오류 유발 입력값 선정 <br/>\
@@ -2972,6 +2967,13 @@ var answer = answer.concat(
 - 테스트 실행 : 테스트 케이스 입력, 실행 <br/>\
 - 시스템 동작 모니터링 : 문제 발생시 로그 수집 <br/>\
 - 분류 및 해결 : 문제 발생 항목 점검, 원인 분석 및 코드 수정 <br/><br/>\
+# 테스팅 기법 <br/>\
+- 블랙박스 퍼징 : 내분석 x 무작위 입력값 <br/>\
+- 화이트 박스 퍼징 : 소스 코드 기반 분석, 입력값 산출 <br/>\
+- 그레이 박스 퍼징 : 내부 구조 일부만 알고 입력값 산출 <br/><br/>\
+# 데이터 변조 방식 <br/>\
+- 뮤테이션 기반 퍼징 : 기존 입력값, 임의 대체, 삭제, 추가 <br/>\
+- 제너레이션 퍼징 : 파일 포맷, 프로토콜 스펙 분석, 취약 공격 <br/><br/>\
 # 고려사항 : 종료 조건 생성, 취약점 분석 능력, 풍부한 프로토콜 및 프로그램 지시<br/><br/>\
 * ITPE 7회 관리 4교시 2번\
 ',
