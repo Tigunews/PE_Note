@@ -2015,7 +2015,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/SpreadSpectrumType.png" style = "max-width:100%; height:auto;"><br/>\
 - 직접확산 (Direct Sequence) : PN Code / CDMA (802.11b) <br/>\
 - 주파수도약 (Freqency Hopping) : +주파수합성기 / Bluetooth (802.15.1) <br/>\
-- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/>\
+- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/><br/>\
 # 상세 설명 <br/>\
 1. DSSS <br/>\
 <img src = "./img/DSSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
