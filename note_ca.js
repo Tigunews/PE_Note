@@ -377,7 +377,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 문맥교환 : PCB 정보 교체 과정 / 실행중 중지 / 다른 프로세스 교환 <br/>\
 - Context Switch <br/>\
 - 멀티 프로세스 환경에서 실행중인 프로세스를 중지하고 다른 프로세스로 교환할 때 발생하는 PCB(Process Control Block) 정보 교체 과정 <br/><br/>\
-# 절차 <br/>\
+# 절차 (<font color = "red">인커저R유</font>)<br/>\
+<img src = "./img/ContextSwitchProcess.png" style = "max-width:100%; height:auto;"><br/>\
 1. 인터럽트/시스템 호출 <br/>\
 2. 커널 모드 전환 <br/>\
 3. 현재 프로세스의 PCB 저장 <br/>\
@@ -390,7 +391,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - System call (Running->Wating) <br/><br/>\
 # 문제점 vs 해결 <br/>\
 - 오버헤드 발생 : 문맥교환 발생 빈도 최소화, 쓰레드 사용(쓰레드 문맥교환은 Stack 만 수행, 프로세스 문맥교환은 Stack,Heap,Data,Code 모두 대상, 다중 프로그래밍 수준을 낮춤 <br/><br/>\
-* PCB 구성 : 카레상어입아포 <br/>\
+* PCB 구성 (<font color = "red">카레상어입아포</font>) <br/>\
 - pc, 레지스터, 상태, account, 입출력, pid, pointer\
 ',
 
