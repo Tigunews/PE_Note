@@ -393,7 +393,8 @@ var answer = answer.concat(
 // ITIL 
 '# 정의 : ITSM을 위한 Practice 모음집 <br/>\
 - IT Infrastructure Library <br/>\
-- IT 서비스 관리에 대한 프레임워크 구현을 돕기 위한 문서들의 집합 <br/><br/>\
+- IT 서비스 관리에 대한 프레임워크 구현을 돕기 위한 문서들의 집합 <br/>\
+- V4.0 : 기존 Service Lifecycle 에서 Service Value System으로 큰 변화를 포함한 4번째 ITIL 버전 <br/><br/>\
 # 버전별 주요 변화 <br/>\
 1. 2.0(2000) <br/>\
 - 내용 : 서비스 제공과 지원영역 분리 <br/>\
