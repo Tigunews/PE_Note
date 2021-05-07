@@ -2245,12 +2245,12 @@ var answer = answer.concat(
 - Concurrent User : 동시 사용자 수 <br/>\
 - Active User : 활성 사용자 수 <br/><br/>\
 # 유형<br/>\
-1. 방법 (루스티가) <br/>\
+1. 방법 (<font color = "red">루스티가</font>) <br/>\
 - 루프백 : 업무별 병목지점 <br/>\
 - 스파이크 : 임계 측정 목표 <br/>\
 - 티어 테스트 : 구간별 병목 <br/>\
 - 가용성 : 업무처리의 가용성 측정 <br/><br/>\
-2. 목적 (단복임확)<br/>\
+2. 목적 (</font color = "red">단복임확</font>)<br/>\
 - 단위성능 <br/>\
 - 복합성능 : 가중치 적용 <br/>\
 - 임계성능 : 임계도달 <br/>\
