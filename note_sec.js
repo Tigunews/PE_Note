@@ -3136,8 +3136,10 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Cloud Workload Protection Platform <br/>\
 - 가상머신, 컨테이너 등 서버 워크로드의 가시성 및 공격 방어를 위한 에이전트를 바탕으로 한 보안 솔루션 <br/><br/>\
 # Cloud 보안 개요 <br/>\
-<img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
+<img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* UEBA(User and Entity Behavior Analyutics) : 사용자 및 개체 행동 분석 </font><br/>\
+* DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 <br/><br/>\
+# 구성요소 (<font color = "red">IMW EWS</font>)<br/>\
 1. 관리 측면 <br/>\
 - System Ingergrity : 시스템 통합, 보안관리 일원화 <br/>\
 - System Monitoring : 시스템 이상 발생, 정상 동작 여부 <br/>\
@@ -3161,7 +3163,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 (COP DRT) <br/>\
+# 구성요소 (<font color = "red">COP DRT</font>) <br/>\
 1. 관리 측면 <br/>\
 - Compliance Assesment : <font color = "red">이슈 관리 평가</font> <br/>\
 - Operational Monitoring : PaaS, SaaS <font color = "red">운영 데이터</font> 모니터링 <br/>\

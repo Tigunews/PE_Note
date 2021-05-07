@@ -2478,9 +2478,9 @@ var answer = answer.concat(
 '# 정의 : 차량 안전성 보전 등급 <br/>\
 - 전기전자 장치안전 표준(IEC 61508)의 안전성보전등급(SIL) 개념을 자동차 제품 특성에 맞게 개선한 차량의 안전성 보전등급 <br/><br/>\
 # ASIL 결정 3요소 <br/>\
-- S(Severity) : 잠재적 재난, 위험에 대한 심각도 <br/>\
-- E(Exposure) : 위험 및 재난의 노출 가능성 <br/>\
-- C(Controllability) : 재난 통제 가능성 등급 <br/><br/>\
+- S(Severity) : 잠재적 재난, 위험에 대한 <font color = "red">심각도</font> <br/>\
+- E(Exposure) : 위험 및 재난의 <font color = "red">노출 가능성</font> <br/>\
+- C(Controllability) : 재난 <font color = "red">통제 가능성</font> 등급 <br/><br/>\
 # ASIL 세부 등급 정의 <br/>\
 <img src = "./img/ASIL_Grade.png", style = "max-width:100%; height:auto;"><br/>\
 * ASIL 등급 높을 수록 사고 피해 정도 심함 <br/><br/>\
