@@ -1724,33 +1724,36 @@ var answer = answer.concat(
 ',
    
 // EAI
-'# 정의 : 이기종 연동, Adapter/EAI 허브 <br/>\
+'# 정의 : 미들웨어(Adaptor) / 기업 내 어플리케이션 연동 / 비즈니스 통합 솔루션 <br/>\
 - Enterprise Application Integration <br/>\
-- 기존 Point to point Interface의 한계를 극복하여, 기업 내 상호 연관된 모든 어플리케이션을 손쉬운 확장성으로 연결하여 필요 정보를 중앙 집중적으로 통합, 사용할 수 있는 환경을 구축하기 위한 방법 <br/><br/>\
+- 미들웨어(Adaptor) 활용, 비즈니스 로직 중심의 기업 내 어플리케이션 연동지원, 비즈니스 통합 솔루션 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-<img src = "./img/EAI.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- Adapters : 어플리케이션간 연결 위한 모듈 기술 <br/>\
+- EAI Platform : 메시지 큐, 트랜잭션 미들웨어 기능 제공 기술 <br/>\
+- Message Queuing : 큐 통한 비동기 상호 통신 수행 기술 <br/>\
+- Data Format Transformation : 다단계 공통 데이터 포맷 프로세스 적용 기술 <br/><br/>\
 # 통합유형 <br/>\
 - Point to Point : 1:1 통합 <br/>\
 - Hub & Spoke : 중앙집중형 <br/>\
 - Messaging Bus : Middleware <br/>\
 - Hybrid : Hub&Spoke + Messaging Bus 혼합 <br/>\
-- Peer to Peer : 각 어플리케이션 Peer Seerverr P2P <br/><br/>\
+- Peer to Peer : 각 어플리케이션 Peer Seerver P2P <br/><br/>\
 * KPC 92회 관리 3교시 2번\
 ',
  
 // ESB
-'# 정의 : SOAP 표준, HTTP/XML/WSDL/UDDI, SOA기반 <br/>\
+'# 정의 : SOAP Web Service / 내/외부 통합,관리,사용 / SOA 지원 미들웨어 플랫폼 솔루션 <br/>\
 - Enterpriese Service Bus <br/>\
 - SOAP(XML/HTTP) Web Service 기술 이용, 내/외부 정보시스템 통합,관리, 사용 지원하는 SOA 지원 미들웨어 플랫폼 솔루션 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/ESB.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
-- Interaction Link : 상호 메시지 저장 및 복원 기술 / 전송환경, 큐관리, 모니터링 <br/>\
-- SOAP : 서비스 통합 및 연결을 위한 통신 표준화 기술 / 서비스 요청 및 호출, 경로설정 <br/>\
-- Runner 기술 : 실행정보 교환 및 공통 환경 위한 경로 설정 기술 / 실행 환경 필요 정보 전달 <br/>\
-- ESB 패턴 : 일정 패턴 기반 솔루션 전개 기술 / 기반 솔루션 설계 및 개발 적용 <br/><br/>\
+# 기술요소 (<font color = "red">ISRE</font>)<br/>\
+- Interaction Link : 상호 메시지 <font color = "red">저장 및 복원</font> 기술 / 전송환경, 큐관리, 모니터링 <br/>\
+- SOAP : 서비스 통합 및 연결을 위한 <font color = "red">통신 표준화</font> 기술 / 서비스 요청 및 호출, 경로설정 <br/>\
+- Runner 기술 : 실행정보 교환 및 공통 환경 위한 <font color = "red">경로 설정</font> 기술 / 실행 환경 필요 정보 전달 <br/>\
+- ESB 패턴 : 일정 패턴 기반 <font color = "red">솔루션 전개</font> 기술 / 기반 솔루션 설계 및 개발 적용 <br/><br/>\
 * KPC 92회 관리 3교시 2번\
 ',
  
