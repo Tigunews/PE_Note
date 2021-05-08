@@ -4948,6 +4948,17 @@ P 히스토그램 : Data 분포 <br/>\
 - 기간 : 스프린트 <br/>\
 - 미팅 : 일일스크럼, 스프린트 계획, 스프린트 리뷰 <br/>\
 - 산출물 : 제품 백로그, 스프린트 백로그, 소멸차트 <br/><br/>\
+# 도구 <br/>\
+- 요구사항 수집 : Product Backlog, Planning Poker <br/>\
+- 진척 관리 : Burn Down,Up chart, Kanban Board <br/>\
+- 형상 관리 : Git, SVN <br/>\
+- 빌드, 배포 : CI/CD, Jenkins <br/>\
+* Jira(이슈추적), Redmine(도입) <br/><br/>\
+# 기법 <br/>\
+- Time Boxing : 동작하는 SW <br/>\
+- Planning Poker : 개인과 상호작용 <br/>\
+- JRP, JRD : 고객과 협력 <br/>\
+- 지속 배포 : 변화에 대응 <br/><br/>\
 # 팀 구성 <br/>\
 - Product Master : Back Log 작성, 우선순위 관리, 요구사항 검증 <br/>\
 - Scrum Master : Daily Meeting 주관, Agile 촉진자, 가이드 제시, 장애 관리 <br/>\

@@ -405,13 +405,13 @@ var answer = answer.concat(
 3. 4.0(2019) <br/>\
 - 내용 : 서비스 가치 체계 도입, Practice 중심 IT 관리 <br/>\
 - 효과 : 클라우드 환경 운영절차 강화 <br/><br/>\
-# ITILv4.0 SVS(Service Value System) <br/>\
+# ITILv4.0 SVS(Service Value System) (<font color = "red">GGSPC</font>)<br/>\
 <img src = "./img/ITILv4SVS.png" style = "max-width:100%; height:auto;"><br/>\
-- Guiding Principles : ITIL 가치 수혜 위한 7원칙 <br/>\
-- Governance : 지시/모니터링/평가 통한 조직체계 관리 구성 <br/>\
-- Service Value Chain : 계참설획수개 <br/>\
-- Practices : 34가지 일반, 서비스, 기술 관리 프랙티스 <br/>\
-- Continual Improvement : ITSM 성공 위한 지속적 개선 적용 <br/><br/>\
+- Guiding Principles : ITIL <font color = "red">가치 수혜</font> 위한 7원칙 <br/>\
+- Governance : <font color = "red">지시/모니터링/평가</font> 통한 조직체계 관리 구성 <br/>\
+- Service Value Chain : <font color = "red">계참설획수개</font> <br/>\
+- Practices : 34가지 <font color = "red">일반, 서비스, 기술 관리</font> 프랙티스 <br/>\
+- Continual Improvement : ITSM 성공 위한 <font color = "red">지속적 개선</font> 적용 <br/><br/>\
 # ITILv4.0 SVC(Service Value Chain) <br/>\
 <img src = "./img/ITILv4SVC.png" style = "max-width:100%; height:auto;"><br/>\
 1. Plan <br/>\
@@ -1555,10 +1555,10 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 1. 구성요소 <br/>\
 - Objectives : Mission 달성 이전 자신이 정하는 목표 <br/>\
 - Key Result : Objective 달성 판단 지표 <br/><br/>\
-2. 프로세스 <br/>\
+2. 프로세스 (<font color = "red">범미마모핵</font>)<br/>\
 - 범위 설정 : OKR 대상 팀, 적용 범위 <br/>\
 - 미션 설정 : OKR 적용 팀, 수행해야 할 미션 <br/>\
-- 마일스톤 설정 : 1개월 or 3개우러 단위 마일스톤 지정 <br/>\
+- 마일스톤 설정 : 1개월 or 3개월 단위 마일스톤 지정 <br/>\
 - 모델 작성 : 목표, 핵심결과 지표 정하기 위한 모델 작성 <br/>\
 - 핵심 지표 결정 : 구체적 수치 목표 지정, Key Results 로 정의 <br/>\
 <font color = "red">* SMART : Specific, Measurable, Achievable, Relevant, Time-bound </font><br/><br/>\
