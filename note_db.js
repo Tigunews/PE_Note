@@ -1384,7 +1384,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - VoltDB, HBase <br/><br/>\
 # NoSQL 모델링 원칙 <br/>\
 - 비정규화 : 데이터 중복 허용 설계 <br/>\
-- Aggregation : 1:N 고나계 Join 최소화, 유연한 스키마 구조 설계 <br/>\
+- Aggregation : 1:N 관계 Join 최소화, 유연한 스키마 구조 설계 <br/>\
 - Application Join : Application 데이터 활용방식 따른 직접 Join 구현 설계 \
 ',
 
