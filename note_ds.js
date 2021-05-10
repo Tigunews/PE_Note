@@ -142,6 +142,7 @@ var question = question.concat(
 '[블록체인]- ICO',
 '[블록체인]- KYC',
 '[하이퍼레저]- 하이퍼레저 패브릭',
+'암호화폐 용어',
 'CBDC',
 'MaaS',
 'Dark Net',
@@ -2936,6 +2937,17 @@ var answer = answer.concat(
 - 갱신 : 각 Peer, Block을 채널의 체인에 덧붙임, 장부 상태 업데이트 <br/>\
 * 보증 정책(Endorsing Policies) : 체인코드가 장부를 업데이트 하기 위해 필요한 서명 수 <br/><br/>\
 * KPC 90회 관리 3교시 6번\
+',
+
+// 암호화폐 용어
+'# 용어 <br/>\
+- 코인(Cryptocurrency) : 결제뿐 아니라 주식 등 역할 <br/>\
+- ICO(Initial Coin Offering) : 코인 발행하고 투자금 모집 <br/>\
+- 백서(White Paper) : 사업자가 만든 프로젝트 계획서 <br/>\
+- 토큰(Token) : 기존 코인 네트워크를 활용해 만든 코인 <br/>\
+- 메인넷(Main-Net) : 기존 네트워크에서 독립한 독자 플랫폼 <br/>\
+- 하드포크(Hard Fork) : 블록체인으로부터 분리 독립한 코인 <br/>\
+- 소프트포크(Soft Fork) : 기존 블록체인 호환 가능한 업그레이드 \
 ',
 
 // CBDC

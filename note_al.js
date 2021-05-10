@@ -1704,6 +1704,10 @@ var answer = answer.concat(
 - 고품질 학습 데이터 생성 : 데이터 사이언티스트 개입 최소, 손실함수 및 교차 검증 오류 최소화 <br/>\
 - 커스텀 ML 모델 개발 : 신경망 알고리즘 자동적 개선, 고도화 모델 개발 <br/>\
 - AI 서비스 통합 : API 형태 내외부 공개, 데이터 분석서비스와 통합 인공지능 서비스 구축 <br/><br/>\
+# 사례 <br/>\
+- Google(Cloud AutoML) : 전이학습, NAS 기술 기반 AutoML <br/>\
+- Azure(Azure ML) : 머신러닝 Work flow 단계별 도구 <br/>\
+- AWS(Amazon SageMaker) : Traffic Auto Scaling 기능 내장 <br/><br/>\
 <font color = "red">* Google AI, H2O.Ai, Auto-Sklearn, ML Box, Auto-Keras, TPOT, Pycaret <br/>\
 같은게 있는 간글 키워드로 쓰심 좋을거 같고, <br/>\
 커뮤니티에선 H2O, Pycaret 가 좀 언급 되는거 같아요. <br/>\
