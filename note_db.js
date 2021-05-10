@@ -1365,6 +1365,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 '# 정의 : 장애, 정상 상황 고려 / CAP 한계 극복 / 분산 데이터베이스 시스템 분류 이론 <br/>\
 - 장애상황(Partition)과 정상상황(Else)을 모두 고려한 NoSQL 특성 설명 통한 CAP 이론의 한계점 극복, 분산 데이터베이스 시스템 분류 이론 <br/><br/>\
 # 유형 <br/>\
+<img src = "./img/PACEL.png" style = "max-width: 100%; height: auto;"><br/>\
 1. PA / EL <br/>\
 - 장애 상황시 : 가용 노드만 반영, 복구시 전체 반영 <br/>\
 - 정상 상황시 : Lateyncy 우선 고려 <br/>\
