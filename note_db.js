@@ -1253,7 +1253,8 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
 
 // 관계형 데이터 모델
-'<img src = "./img/RelationDataModel.png" style = "max-width:100%; height:auto;">\
+'(<font color = "red">릴튜속시카</font>)<br/>\
+<img src = "./img/RelationDataModel.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 연결함정
