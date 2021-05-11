@@ -1562,7 +1562,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 특징 <br/>\
 - Release : 3GPP Release 15(Option 2) <br/>\
 - Master Node : gNB(Next Generation NodeB) <br/>\
-- Control Plane : AMF(Access and Mobility Management), 이동성 관리 기능, 단말 접속 관리 <br/>\
+- Control Plane : AMF(Access and Mobility management Function), 이동성 관리 기능, 단말 접속 관리 <br/>\
 - User/Data Plane : UPF(User Plane Function), 단일 Plane(SGW, PGW) <br/>\
 - 적용 : Private 5G 적용 유리 <br/><br/>\
 * ITPE 7회 관리 3교시 1번\
