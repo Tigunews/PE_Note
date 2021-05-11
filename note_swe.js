@@ -3581,7 +3581,7 @@ var answer = answer.concat(
 - 흐름도 : 프로세스 개선점 도출시 <br/>\
 - 친화도 : 브레인스톰이 아이디어 그룹핑 <br/>\
 - 우선순위 매트릭스 : 여러 대안 체계적 평가시 <br/><br/>\
-# 절차 (<font color = "red'>계보통</font>)<br/>\
+# 절차 (<font color = "red">계보통</font>)<br/>\
 - 계획 수립 <br/>\
 - 보증 수행 <br/>\
 - 통제 수행 \

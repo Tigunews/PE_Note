@@ -572,20 +572,20 @@ var answer = answer.concat(
 '# 정의 : 자동화 + 지능화 공장 <br/>\
 - ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
 <img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
+# 기술요소 (<font color = "red">현운제사</font>)<br/>\
 1. 공장/현장 자동화 관리 <br/>\
 - PLC : 프로그램을 통한 외부장치 자동제어 및 감시 <br/>\
 - HMI : PLC등 제어 유닛 단위로 감시, 제어 기기 <br/><br/>\
-2. 공장운영관리 <br/>\
+2. 공장 운영관리 <br/>\
 - CPS : 사이버 시스템을 통해 물리 제어하는 시스템 <br/>\
 - Digital Twin : 현실 세계를 가상공간에 복제 및 시뮬레이션 기술 <br/><br/>\
-3. 제품개발 관리 <br/>\
+3. 제품 개발 관리 <br/>\
 - 3D 프린팅 : 디지털 데이터를 이용, 3차원 물체를 제조하는 기술 <br/>\
 - VR/AR/XR : 객체 모델링, 공정 데이터, 예측, 제어 관리 기술 <br/><br/>\
 4. 공급 사슬 관리 <br/>\
 - SCM : SCP, SCE, APS등 수요 예측, 계획, 운영 등 공급망 관리 <br/>\
 - CRM : 고객 수요 예측, 피드백 반영한 제품 생산 <br/><br/>\
-5. 공통기술 <br/>\
+5. 공통 기술 <br/>\
 - 5G : 초저지연, 초연결, 초고속 5세대 이동통신 기술 <br/>\
 - Cloud Based App : 클라우드 기반 데이터 처리 및 분석 통한 공정 설계 실행 <br/>\
 - AI : 머신러닝, 딥러닝 등을 통한 데이터 수집,학습,분석 <br/>\
@@ -1501,7 +1501,8 @@ var answer = answer.concat(
   
 // 마이데이터 산업
 '# 개념 : 전송요구권 행사 / 분산 / 통합조회 서비스 제공 산업 <br/>\
-- My Data 산업 : (본인신용정보관리업); 고객의 전송요구권 행사에 따라 분산되어 있는 개인신용정보를 제공받아 해당 고객에게 통합조회 서비스를 제공하는 산업 <br/>\
+- My Data 산업 : (본인신용정보관리업); 고객의 전송요구권 행사에 따라 분산되어 있는 개인신용정보를 제공받아 해당 고객에게 통합조회 서비스를 제공하는 산업 <br/><br/>\
+(<font color = "red">마이데이터 산업 : 부수(정.데), 겸용(자.금)</font>)<br/>\
 <img src = "./img/MyDataConcept.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 주체별 역할, 처리흐름 <br/>\
 <img src = "./img/MyDataSpecification.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
