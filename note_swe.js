@@ -5850,7 +5850,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 ',
 
 // 감리 계획서, 보고서 작성 원칙
-'# 작성 원칙 <br/>\
+'# 작성 원칙 (<font color = "red">유간논명 완정객적준</font>) <br/>\
 <img src = "./img/AuditWritePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 2교시 5번\
 ',
