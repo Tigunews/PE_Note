@@ -2955,7 +2955,7 @@ var answer = answer.concat(
 '# 정의 : 실물 명목화폐 대체 보완 / 중앙은행 / 전자형태 발행 / 새로운 화폐 <br/>\
 - Central Bank Digital Currency <br/>\
 - 실물 명목화폐를 대체하거나 보완하기 위해 중앙은행이 전자적 형태로 발행하는 새로운 화폐 <br/><br/>\
-# 구현방식 <br/>\
+# 구현방식 (<font color = "red">복호이익확보</font>)<br/>\
 - 단일 원장 : 중앙 은행 <br/>\
 - 허가형 분산 원장 : 합의자 <br/><br/>\
 # 운영 방식 <br/>\
