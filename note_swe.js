@@ -4455,7 +4455,7 @@ P 히스토그램 : Data 분포 <br/>\
 
 // RAD
 '# 정의 : 짧은 기간 개발 방법 <br/>\
-- Rapid Application Developmen <br/>\
+- Rapid Application Development <br/>\
 - 중요한 시스템을 빠르게 개발하면서도 개발 비용을 줄이고 품질을 유지하기 위해 CASE등 최신개발도구 사용해 2~3개월의 짧은 기간동안 신속하게 개발하는 방법 <br/><br/>\
 # 특징 <br/>\
 - 도구 CASE 사용 <br/>\
