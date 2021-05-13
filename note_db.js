@@ -565,9 +565,9 @@ var answer = answer.concat(
 '# 정의 : Local Tx / 완료 Event 발생 방식 <br/>\
 - 자신이 보유한 서비스내 Local 트랜잭선을 관리하며, 트랜잭션이 종료되면 완료 Event 발생하는 방식 <br/><br/>\
 # 성공 <br/>\
-<img src = "./img/SAGA_Pattern_Sucess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ChoreographySuccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 실패 <br/>\
-<img src = "./img/SAGA_Pattern_Failure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/ChoreographyFail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - App에서 Event 수신 받고 다음 처리 (Kafka 메시지큐) <br/>\
 - App별로 트랜잭션 관리 로직 존재 <br/>\
@@ -1247,8 +1247,9 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/IE.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Chen : 사각형 박스는 실체, 속성은 타원형, 관계는 마름모로 표기 <br/>\
 <img src = "./img/Chen.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- Barker : IE표기법과 유사한 표기법, Oracle에서 Case Method로 채택하여 사용 <br/><br/>\
-<img src = "./img/Barker.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Barker : IE표기법과 유사한 표기법, Oracle에서 Case Method로 채택하여 사용 <br/>\
+<img src = "./img/Barker.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* # : PK / * : Mandatory / o : Optional </font><br/><br/>\
 * 122회 4교시 5번\
 ',
 
