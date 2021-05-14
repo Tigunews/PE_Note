@@ -1171,7 +1171,7 @@ var answer = answer.concat(
 // [소프트웨어 아키텍처]- 아키텍처 평가
 '# 정의 : 요구 충족 여부 / 아키텍처 수준 평가 절차 <br/>\
 - 제시된 소프트웨어 아키텍처가 개발될 소프트웨어에 대해서 요구되는 품질 특성을 충족시킬 수 있는지 아키텍처 수준에서 평가하는 절차 <br/><br/>\
-# 유형(시시수경) <br/>\
+# 유형(<font color = "red">시시수경</font>) <br/>\
 - 시나리오 기반 : 미리 정의된 Profile 의존 평가 (ATAM, SAAM, CBAM) <br/>\
 - 시뮬레이션 기반 : BMT <br/>\
 - 수학적 기반 : 기준 모델 수치화 평가 <br/>\
@@ -1183,7 +1183,7 @@ var answer = answer.concat(
 '# 정의 : 최초 정리 평가 방법 <br/>\
 - Software Architecture Analysis Method <br/>\
 - 최초로 정리된 평가방법, 다양한 수정가능성들의 관점에서 아키텍처 분석 <br/><br/>\
-# 절차 <br/>\
+# 절차 (<font color = "red">시아시간시종</font>)<br/>\
 1. 시나리오 개발 <br/>\
 2. 아키텍처 설명 <br/>\
 3. 시나리오 분류와 우선순위 결정 <br/>\
@@ -1201,14 +1201,14 @@ var answer = answer.concat(
 - 민감점 <br/>\
 - 절충점 <br/><br/>\
 # 절차 <br/>\
-1. 1차 평가 <br/>\
+1. 1차 평가 (<font color = "red">A비아아품아</font>)<br/>\
 - ATAM 소개 <br/>\
 - 비즈니스 동인 소개 <br/>\
 - 아키텍처 소개 <br/>\
 - 아키텍처 접근법 식별 <br/>\
 - 품질속성 유틸리티 트리 작성 <br/>\
 - 아키텍처 접근법 분석 <br/><br/>\
-2. 2차 평가 <br/>\
+2. 2차 평가 (<font color = "red">브아결</font>)<br/>\
 - 브레인 스토밍과 시나리오 우선순위 결정 <br/>\
 - 아키텍처 접근법 분석 반복 <br/>\
 - 결과 발표 \
@@ -1219,7 +1219,7 @@ var answer = answer.concat(
 - Cost Benefit Analysis Method <br/>\
 - ATAM 에서 부족한 경제적 평가 부분을 보강한 프로세스 <br/>\
 - 비용과 일정간의 관계를 파악하여 아키텍처 전략적 비용 측정 <br/><br/>\
-# 절차 <br/>\
+# 절차 (<font color = "red">시효이선</font>)<br/>\
 1. 시나리오 결정 <br/>\
 2. 효용-반응값 곡선 작성 <br/>\
 3. 아키턱체 접근법 전체 이익 계산 <br/>\
