@@ -2692,7 +2692,10 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/DoubleAuthenticaiton.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
-<img src = "./img/DualSignatureProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. Sender <br/>\
+<img src = "./img/DoubleAuthenticaitonSender.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Receiver <br/>\
+<img src = "./img/DoubleAuthenticaitonReciver.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 82회 관리 2교시 6번\
 ',
 
