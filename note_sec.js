@@ -3142,13 +3142,13 @@ EAL : 펑스매매세세포 <br/><br/>\
 * DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 <br/><br/>\
 # 구성요소 (<font color = "red">IMW EWS</font>)<br/>\
 1. 관리 측면 <br/>\
-- System Ingergrity : 시스템 통합, 보안관리 일원화 <br/>\
-- System Monitoring : 시스템 이상 발생, 정상 동작 여부 <br/>\
-- Application Whitelisting : 현재 승인, 사용중인 어플리케이션 기준 준수 확인 <br/><br/>\
+- System Ingergrity : 시스템 통합, <font color = "red">보안관리 일원화</font> <br/>\
+- System Monitoring : 시스템 <font color = "red">이상 발생, 정상 동작</font> 여부 <br/>\
+- Application Whitelisting : 현재 승인, 사용중인 어플리케이션 <font color = "red">기준 준수 확인</font> <br/><br/>\
 2. 기술 측면 <br/>\
-- Exploit Protection : 자체 취약점 방어 <br/>\
-- Workload Configuration : 서버 워크로드 설정 통한 대응 <br/>\
-- Network Segmentation : 네트워크 분할 통한 위협 대응 <br/><br/>\
+- Exploit Protection : 자체 <font color = "red">취약점</font> 방어 <br/>\
+- Workload Configuration : <font color = "red">서버 워크로드 설정</font> 통한 대응 <br/>\
+- Network Segmentation : <font color = "red">네트워크 분할</font> 통한 위협 대응 <br/><br/>\
 # 전체 Framework <br/>\
 <img src = "./img/CloudSecurityFramework.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 122회 합숙 1일차 2교시 1번 \
