@@ -1783,7 +1783,7 @@ var answer = answer.concat(
 - 탈중앙화 <br/>\
 - 코드 실행 <br/>\
 - 튜링 완전성 <br/><br/>\
-# 원칙 <br/>\
+# 원칙 (<font color = "red">관검사강</font>)<br/>\
 - 관측 가능성 : 계약 이행 관찰, 성과 입증 <br/>\
 - 검증 가능성 : 위반시 확인 <br/>\
 - 사생활 보호 : 당사자에게만 분배 <br/>\
@@ -3451,7 +3451,7 @@ var answer = answer.concat(
 - MSA, 컨테이너화된 서비스, 분산 관리 및 오케스트레이션으로 구성된 클라우드 기반 애플리케이션 <br/><br/>\
 # 성숙도 모델 <br/>\
 <img src = "./img/CNMM.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 아키텍처 <br/>\
+# 아키텍처 (<font color = "red">DORPI</font>)<br/>\
 <img src = "./img/CloudNativeApplicationArcitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기존 Application 비교 <br/>\
 <img src = "./img/LegacyCloudNativeApplicationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
