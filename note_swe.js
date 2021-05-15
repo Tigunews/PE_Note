@@ -5371,7 +5371,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 제품/서비스 군 별로 SW 핵심자산(Core Asset)을 개발하고 이를 관리/조직적인 재사용을 통해 경제적인 S/W 제품을 생산하여 S/W Reusability 와 Productivity를 극대화하기 위한 개발 방법론 <br/><br/>\
 # 필요성 : 품질개선(52%), 비용절감(45%), 생산성 향상(39%), 제품출시기간(30%) 경쟁력 확보 (Carmegi Mellon Univ. SPL 기술보고서) <br/><br/>\
 # 구성요소 <br/>\
-<img src = "./img/ProductlineDetail.png" style = "max-width:100%; height:auto;"><br/>\
 1. Engineering 측면 <br/>\
 - Domain Engineering : 단일 제품군 내의 핵심 자산 식별하여 개발 / Core Asset 도출, 식별 <br/>\
 - Application Engineering : Core Asset 재사용하고 가변요소 선택적으로 집중 개발 / 회귀 테스트 <br/>\
@@ -5384,7 +5383,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 선행적 : Core Asset 먼저 개발 후 제품 개발 / 새로운 제품 개발시 코드 개발 최소화<br/>\
 - 반응적 : 하나 또는 여러개 제품에서 Core Asset 도출 / 처음 적용시 효과<br/>\
 - 추출식 : 선제적 방식 대비 적용비용 필요 / 기존 개발 시스템 3R 기법 추출<br/>\
-- 점진적 : 선행적 방식과 반응적 방식 혼융 / 초기 Core Asset 기반 추가하는 반복적 방식 <br/><br/>\
+- 점진적 : 선행적 방식과 반응적 방식 혼용 / 초기 Core Asset 기반 추가하는 반복적 방식 <br/><br/>\
 * 라이지움 88회 3교시 4번\
 ',
  
@@ -5460,12 +5459,12 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - N:N 통신 <br/>\
 - 이벤트기반 트리거 <br/>\
 - 비동기식 <br/>\
-[참고] SOA는 roosely coupled, 1:1연결, 순차적프로세스 , 동기식 <br/><br/>\
+[참고] SOA는 loosely coupled, 1:1연결, 순차적프로세스 , 동기식 <br/><br/>\
 # 구성 <br/>\
 - 이벤트 메타데이터 : 규격, Rule, 이벤트소스, 수신자, 처리자 <br/>\
 - 이벤트 프로세싱 : SEP, ESP, CEP <br/>\
 - 이벤트 도구 <br/>\
-- 이벤트 관리 도구 : 모니터링, 디시보드 <br/>\
+- 이벤트 관리 도구 : 모니터링, 대시보드 <br/>\
 - 엔터프라이즈 통합 : by Enterprise Integration Backbone <br/>\
 - 통합할 외부 자원 : 외부서비스 <br/><br/>\
 # 절차 : 이벤트 -> 이벤트 수집 -> EDA 엔진 복합이벤트 -> 의사결청체계 -> RTE <br/><br/>\
@@ -5678,7 +5677,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 4. 페르소나 <br/>\
 - 장점 : 상황 기반으로 효과적 도출 가능 <br/>\
 - 단점 : 사용자 모집단을 지나치게 단순화 시킬 수 있음 <br/><br/>\
-# Futuer Workshop <br/>\
+5. Futuer Workshop <br/>\
 - 장점 : 창조적 생각 도출 가능 <br/>\
 - 단점 : 실제 요구사항보다 확대 해석 될 수 있음 <br/><br/>\
 <img src = "./img/Persona.png" style = "max-width:100%; height:auto;">\
@@ -5688,7 +5687,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 '# 정의 : 특정한 기능만을 수행하기 위해 포함된(내장된) SW 개발 방법론 <br/><br/>\
 # 특징 <br/>\
 - 물리적 특성 : 실시간 처리/저전력/저사양/소형화 <br/>\
-- 설게 방법 : HW, SW 동시 설계 및 통합 <br/><br/>\
+- 설계 방법 : HW, SW 동시 설계 및 통합 <br/><br/>\
 # 절차 <br/>\
 - 요구사항 분석 > HW/SW(분석 > 설계(기능) > 개발 > 검증(기능) > 개발(비기능) >검증(HW/SW통합검증)) <br/><br/>\
 # 응용 SW 개발 계획서 목차 <br/>\
@@ -5708,8 +5707,8 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 // 연동계획
 '# 정의 : 반복적 계획 기법 / 점진적 상세화 / 가까운시기 상세 / 미래 작업 상위 수준 계획 <br/>\
 - 프로젝트의 특성 중 하나인 점진적 상세화(Progressive elaboration)와 비슷한 특징을 지닌 개념으로 가까운 시기에 완료할 작업은 상세히 계획하고, 미래의 작업은 상위 수준에서 계획하는 반복적인 계획 기법<br/><br/>\
-# 절차 (마분WP)<br/>\
-- 1단계 : 마스터플랜 계획 <br/>\
+# 절차 (<font color = "red">마분W관실</font>)<br/>\
+- 1단계 : 마스터 플랜 계획 <br/>\
 - 2단계 : 분류 수준 계획 <br/>\
 - 3단계 : WBS 단위 계획 <br/>\
 - 4단계 : Work Package 관리, 인수기준 상세화 <br/>\
@@ -5763,13 +5762,13 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - Project Management Office <br/>\
 - 성공적인 프로젝트 수행을 위해 프로젝트의 자원, 인력, 일정 등을 체계적으로 관리하기 위해 조직된 프로젝트 전담 관리 조직 <br/><br/>\
 # 구성요소 <br/>\
-1. 관리적 측면 (전재일고형)<br/>\
+1. 관리적 측면 (<font color = "red">전재일고형</font>)<br/>\
 - 전문 PM : 전체 프로젝트 진행 관리 <br/>\
 - 재무 관리자 <br/>\
 - 일정 관리자 <br/>\
 - 고객인수 담당자 <br/>\
 - 형상 관리자 <br/><br/>\
-2. 기술적 측면 (품개형)<br/>\
+2. 기술적 측면 (<font color = "red">품개형</font>)<br/>\
 - 품질 관리자 <br/>\
 - 개발기술 담당자 : 전문 Skill, Architecture <br/>\
 - 형상관리 위원회<br/><br/>\
