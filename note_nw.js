@@ -1896,8 +1896,24 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 ',
  
 // QoS
-'# 정의 : Quality of Service <br/>\
-- 다른 응용 프로그램, 사용자, 데이터 흐름 등에 우선순위를 정하여, 데이터 전송에 특정 수준의 성능을 보장하기 위한 능력 \
+'# 정의 : 한정, 효율 사용 / 정책별 제어 / 종단간 품질 향상 기술 <br/>\
+- Quality of Service <br/>\
+- 한정된 네트워크 망의 대역폭을 효율적으로 사용하게 하고, 네트워크 트래픽을 정책 별로 제어하여 인턴세 종단간 서비스 품질을 향상 시키는 기술 <br/><br/>\
+# 주요 요소(<font color = "red">대지패지</font>) <br/>\
+- 대역폭 : 특정 App 할당 NW 자원량 / 확장, DWDM, MPEG4 <br/>\
+- 지연 : End-To-End 패킷 소요시간 / 라우팅 고속화, MPLS, CDN <br/>\
+- 패킷 손실 : 전달 과정 중 유실, 간섭 / 혼잡, 회피, IPv6 <br/>\
+- 지터 : 최초 신호 왜곡 정도 / Dos, DDoS 대응, 전용선 <br/><br/>\
+# 요소 기술 <br/>\
+1. Queuing <br/>\
+- FIFO Queueing : 하나의 큐 모든 클래스 트래픽 저장 <br/>\
+- Priority Queueing : 여러개 FIFO 큐 사용, 다른 클래스 매핑 <br/>\
+- WRR(Weighted RR) : 가중치 부여 RR 방식 <br/>\
+- WFQ(Weighted Faire Queueing) : Priority 큐 변형, 가중치 부여 <br/><br/>\
+2. Buffer 관리 <br/>\
+- RED(Random Early Detction) : 혼잡 발생전 랜덤 패킷 폐기 <br/>\
+- WRED(Weighted RED) : 가중치 부여, RED 함수 적용 <br/><br/>\
+* KPC 121회 합숙 2일차 2교시 4번\
 ',
  
 // 통합 서비스

@@ -1184,6 +1184,16 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 실행계획 : 옵티마이저가 생성한 SQL 처리 경로<br/><br/>\
 # 개념도 (<font color = "red">PODS</font>)<br/>\
 <img src = "./img/DB_Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 (<font color = "red">POGE</font>)<br/>\
+<img src = "./img/DB_Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Parser : 개별 요소 분석, Syntax Chec <br/><br/>\
+2. Optimizer <br/>\
+- Query transformer : Parsing SQL 일반형태 변환 <br/>\
+- Estimator : 선택도, 카디널리티 비용 계산, 총 비용 계산 <br/>\
+- Plan Generator : 후보군 실행계획 생성 <br/><br/>\
+3. Row-Source Generator : 실제 실행 형태 포맷 <br/><br/>\
+4. SQL Engine : SQL Run <br/><br/>\
 # 최적화 과정 <br/>\
 - 탐색 : 후보군이 될만한 실행계획 탐색 <br/>\
 - 예상 비용 산정 : 데이터 딕셔너리에 미리 수집해놓은 오브젝트 통계 및 시스템 통계정보 이용하여 각각의 예상 비용산정<br/>\
