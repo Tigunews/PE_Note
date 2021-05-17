@@ -164,7 +164,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - msdos : MS-DOS 파티션 사용 <br/>\
 - nfs : Network File System, 원격 서버 디스크 연결 <br/>\
 - ufs : Unix File System, 유닉스 표준 파일 시스템 <br/>\
--ntfs : 윈도우 NTFS 지원 위한 파일 시스템 <br/><br/>\
+- ntfs : 윈도우 NTFS 지원 위한 파일 시스템 <br/><br/>\
 # 가상 File System <br/>\
 - swap : 스왑 영역 관리 <br/>\
 - tmpfs : Temporary File System, 메모리에 임시 파일 저장 <br/>\
@@ -185,7 +185,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # UID <br/>\
 - 개념 : User 마다 Assign 되는 id 형태 <br/>\
 - 위치 : /etc/passwd <br/>\
-- 값 : 0 ~32767 <br/><br/>\
+- 값 : 0 ~32767 (2^15)<br/><br/>\
 # GID <br/>\
 - 개념 : Group 마다 Assign 되는 id 형태 <br/>\
 - 위치 : /etc/group <br/>\
@@ -196,7 +196,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // Super Block
 '# 정의 : 파일 시스템 상태 / 종합 정보 보관 <br/>\
 - 파일 시스템의 상태에 관한 종합적인 정보를 보관하는 영역 <br/><br/>\
-# 관리 자료 <br/>\
+# 관리 자료 (<font color = "red">NM CGSP BI IP</font>)<br/>\
 - Number : Mount Kernel 확인 <br/>\
 - Revision Mount Count : 기능 호환성 체크 <br/>\
 - Block Count : 모든 파일 정보 저장, 관리 <br/>\
