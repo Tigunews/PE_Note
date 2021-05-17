@@ -26,7 +26,7 @@ var question = question.concat(
 'Buffering / Spooling',
 '결함허용 시스템(FTS:Fault Tolerant System)',
 '고가용성(High Availability)',
-'우선순위역전현상',
+'우선순위 역전현상',
 'WDT',
 '반도체 종류',
 '메모리 관리 기법',
@@ -512,8 +512,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 
 // Thread 
 '# 정의 : 프로세스 내 / 메모리 공유 / 단위 명령 집합 <br/>\
-- 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합 <br/>\
-- STACK 외의 CODE, DATA, HEAP영역 공유 <br/><br/>\
+- 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합 <br/><br/>\
 # Keyword : 사용자모드(임계,스핀락), 커널모드(세마포어), TCB, Light Weight, 멀티스레드, 공유(힙/데이터/코드), 독립(레지스터/스택), PCB <br/><br/>\
 # 유형 <br/>\
 0. 개념도 <br/>\
@@ -539,7 +538,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 구현시 고려사항 <br/>\
 - 단일 : 신호전달(불법접근시), 종료(제거시점 신중결정), 마스킹(종료전) <br/>\
 - 멀티 : 동기화(임계영역, 스핀락, 세마포어) <br/><br/>\
-# 비교 <br/>\
+# 비교 (<font color = "red">NRWT / NRRWT </font>)<br/>\
 <img src = "./img/ThreadProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 4교시 4번 <br/>\
 * 116회 3교시 4번\
@@ -558,15 +557,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // 결함허용 시스템
 '# 정의 : 장애 발생x 시스템 / 고장 발생 / 프로그램 오류 <br/>\
 - 고장이 발생하거나 프로그램에 오류가 있더라도 시스템 전체에 장애가 발생하지 않게 구성한 시스템 <br/><br/>\
-# 암기 <br/>\
-- 해결단계 : 감진통복 <br/>\
-- 지표 : MTBF, MTTF, MTTR - 가용도 IEC 62278<br/>\
-- 전략 <br/>\
-1) HW : 듀스티와레셀 <br/>\
-2) DB : 롤로체쉐 <br/>\
-3) SWL : 체리컨디NN <br/>\
-- 복구 : 전향, 후향 <br/>\
-- 장애복구 : 롤리다다 <br/><br/>\
 # 결함 해결 단계 : 감지 > 진단 > 통제 > 복구 <br/><br/>\
 # 시스템 결함 허용정도 측정기준 <br/>\
 - 평균고장간격 MTBF(Mean Time Between Failure) <br/>\
@@ -623,9 +613,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Mutal Takeover : 한쪽이 2개 업무 수행(DB 2개) <br/>\
 - Concurrent Access : 병렬처리, L4 Switch <br/><br/>\
 # 동작 방식 <br/>\
-- 시스템 전체 장애시 : Keep Alive Packet 수신 지연시 Down 판단, N/W자원 -> Disk 자원 -> Application 자원 순 복구(script 사전 정의 필요) <br/>\
-- N/W Adapter(Card) 장애시 : Standby Adapter가 Service Adapter의 IP Address Failover <br/>\
-- TCP/IP N/W 장애시 : 자동 대응 불가 <br/><br/>\
+- <font color = "red">시스템</font> 전체 장애시 : <font color = "red">Keep Alive Packet</font> 수신 지연시 Down 판단, N/W자원 -> Disk 자원 -> Application 자원 순 복구(script 사전 정의 필요) <br/>\
+- <font color = "red">N/W</font> Adapter(Card) 장애시 : <font color = "red">Standby Adapter</font>가 <font color = "red">Service Adapter</font>의 IP Address Failover <br/>\
+- <font color = "red">TCP/IP</font> N/W 장애시 : 자동 대응 <font color = "red">불가</font> <br/><br/>\
 # 한계점 <br/>\
 - External Disk 자체 장애 발생 대응 불가<br/>\
 - 시스템 Down 되지 않으면 Failover 불가 <br/>\
@@ -637,12 +627,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 전략 : 예산 비용 고려한 Mission Critical 업무 적용, 전사적 BCP 연계 구축 <br/>\
 - 지침 : IT Compliance 수준 고려, ITIL SLA 요구 수준 고려 <br/>\
 - 절차 : Stress Test 통한 실제 운영환경과 동일한 부하, Capacity Plan의 한 체계적 적용 <br/>\
-- 기술 : HW, SW등 전체 시스템 관점 아키텍처 설계, HA구성 의한 Overhead 고려 HA 구성 방식 및 대상 서버 결정, 백업서버(Capacity, External Disk의 보호방안(2중화 여부), HA 대상 시스템 대한 OS 및 사용자가 자원 동기화, 보호될 자원 결정 및 자원 동기화 <br/><br/>\
+- 기술 : 아키텍처 설계, 2중화, 자원 동기화 <br/><br/>\
 <img src = "./img/고가용성_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/고가용성_2.png" style = "max-width:100%; height:auto;">\
 ',
 
-// 우선순위 역전 현상 
+// 우선순위 역전현상 
 '# 정의 : TASK 수행 불가 현상 / 낮은 우선순위 / 임계영역 대기<br/>\
 - 낮은 우선순위를 가진 TASK에 의해 높은 우선순위를 가진 TASK가 임계 영역 대기 때문에 Block되어 수행되지 못하는 현상 <br/><br/>\
 # 원인 : 비선점 스케줄링, 실시간 운영체제, 상호배제, 공유자원의 장기 소유, 릴리즈 낮은 우선순위 task 자원 점유 <br/><br/>\
@@ -703,10 +693,10 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
   
 // 단일 분할 할당
-'# 개념 : 하나의 상용자만 주기억 장치의 사용자 영역 사용 기법 <br/><br/>\
+'# 개념 : 하나의 사용자만 주기억 장치의 사용자 영역 사용 기법 <br/><br/>\
 # 특징 <br/>\
 - 초기 운영체제 사용 기법 <br/>\
-- 경계 레지스터 사용 : OS(Kernel) / USER <br/>\
+- 경계 레지스터 사용 : OS(Kernel) / USER <br/><br/>\
 # 종류 <br/>\
 - Overlay : 프로그램 조각화 후 적층 <br/>\
 - Swapping : 프로그램 전체 Swap in (보조->주) / 페이징 기법 발전\
@@ -735,13 +725,13 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // 분산 로딩 기법
 '# 가상 기억 장치 : 주기억 장치 내 용량이 부족할 때 사용하지 않은 프로그램을 보조기억장치 내 특별한 영역으로 이동해서 해당 보조기억장치의 일부를 주기억 장치처럼 사용할 수 있는 기법 <br/><br/>\
 # 암기 <br/>\
-- Paging : 가PO / TPF / 물FO <br/>\
-- Segmentation : 가SO / TSBL / 물 BO <br/>\
-- Paged Segmentation : 가SPO / STSBL / PTPF / 물FO <br/><br/>\
+- Paging : POF <br/>\
+- Segmentation : SOB L <br/>\
+- Paged Segmentation : S P(BL)OF <br/><br/>\
 # Paging <br/>\
-<img src = "./img/Paging.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/Paging.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Segment <br/>\
-<img src = "./img/Segmentation.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/Segmentation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Paged Segmentation <br/>\
 - 페이징 기법 : 메모리 관리 편의성, 외부 단편화 제거 <br/>\
 - 세그먼트 기법 : 논리적 프로그램 개체 보호, 확장성 자료 구조 처리 <br/>\
