@@ -405,7 +405,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 주변장치 작동 : Keyboard, Mouse 처리 요구 <br/><br/>\
 2. 내부 <br/>\
 - 프로그램상 문제 : 보호된 Memory 접근 시도 <br/><br/>\
-# 우선순위 (전기외입 프 S)<br/>\
+# 우선순위 (<font color = "red">전기외입 C프 S</font>)<br/>\
 1. 외부 <br/>\
 - 전원 이상 <br/>\
 - 기계 착오 : CPU 기능적 오류 <br/>\
@@ -430,7 +430,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Interrupt_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 2교시 1번 <br/>\
 * 라이지움 86회 4교시 6번\
 ',
   
@@ -438,7 +437,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : 처리할 인터럽트 <br/>\
 - 인터럽트 요인이 발생 하였을 경우 처리를 할 것인지 설정할 수 있는 인터럽트 <br/><br/>\
 # 특징 <br/>\
-- 사용 PIN : INTR(인터럽트 신호 접수) <br/>\
+- 사용 PIN : <font color = "red">INTR</font>(인터럽트 신호 접수) <br/>\
 - 제어 : 인터럽트 마스크 레지스터로 제어 <br/>\
 - 처리조건 : 인터럽트 처리 루틴 설정 필요 <br/>\
 - 사례 : 외부 신호 인터럽트, 파일 오류 <br/><br/>\
@@ -449,7 +448,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : CPU 처리 인터럽트 <br/>\
 - 인터럽트 요인이 발생 하면 CPU가 무조건 처리 해야 하는 인터럽트 <br/><br/>\
 # 특징 <br/>\
-- 사용 PIN : NMI(유보 불가한 인터럽트 접수) <br/>\
+- 사용 PIN : <font color = "red">NMI</font>(유보 불가한 인터럽트 접수) <br/>\
 - 제어 : 제어 불가능 <br/>\
 - 처리조건 : NMI 트리거 조건 설정 필요 <br/>\
 - 사례 : 전원 이상, 메모리 에러, I/O 이상 <br/><br/>\
@@ -492,11 +491,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 프로그램을 구동하여 메모리에 적재된 상태로 실행되는 하나의 작업 단위, CDHS(CODE, DATA, HEAP, STACK) 영역 독립 <br/><br/>\
 # 프로세스 상태 <br/>\
 <img src = "./img/ProcessStateTransitionMap.png" style = "max-width:100%; height:auto;"><br/>\
-- 상태변화 : (준비) Dispatch, Timeout (실행) Wakeup (대기) <br/>\
-- X축 : Job, CPU Scheduler <br/>\
-- Y축 : 활동상태(주기억장치), 중단상태(보조기억장치), 중단,재시작(Swap in, Swap out)<br/><br/>\
-# 프로세스 상태변화 사례 <br/>\
-- 인터럽트, 시스템콜 / PCB1에 P1문맥 저장 / PCB2에서 P2 문맥복구 <br/><br/>\
 # Process Thread 비교 <br/>\
 <img src = "./img/ProcessThreadCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 4교시 4번\
@@ -505,17 +499,21 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // PCB
 '# 정의 : 프로 그램 실행 자료, 자료구조 <br/>\
 - 운영체제가 프로그램 실행을 위해 필요한 자료를 담고 있는 자료구조 <br/><br/>\
-# 구성요소 <br/>\
-- PID :  각 프로세스에 대한 고유 식별자 <br/>\
-- 프로세스 상태 : 생성, 준비, 실행, 대기, 중단 등의 상태 <br/>\
+# 구성요소 (<font color = "red">카레상어입아포</font>)<br/>\
 - 프로그램 카운터 : 다음 명령 주소 표시 <br/>\
 - 레지스터 저장 영역 : 인터럽트 발생시 PC와 함께 저장, 재 실행시 복귀 <br/>\
-- 기타 정보 : 스케줄링 정보, 계정 정보, 입출력 상태 정보, 메모리 관리 정보 \
+- 프로세스 상태 : 생성, 준비, 실행, 대기, 중단 등의 상태 <br/>\
+- Account 정보 <br/>\
+- 입출력 상태 정보<br/>\
+- PID :  각 프로세스에 대한 고유 식별자 <br/>\
+- Pointer <br/>\
+- 기타 정보 : 스케줄링 정보, 메모리 관리 정보 \
 ',
 
 // Thread 
-'# 정의 : 단위 명령 집합 / 프로세스내 / 리소스 공유(SCDH)<br/>\
-- 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합, STACK 외의 CODE, DATA, HEAP영역 공유 <br/><br/>\
+'# 정의 : 프로세스 내 / 메모리 공유 / 단위 명령 집합 <br/>\
+- 하나의 프로세스내에서 리소스를 공유하며 독립적으로 수행 가능한 단위 명령의 집합 <br/>\
+- STACK 외의 CODE, DATA, HEAP영역 공유 <br/><br/>\
 # Keyword : 사용자모드(임계,스핀락), 커널모드(세마포어), TCB, Light Weight, 멀티스레드, 공유(힙/데이터/코드), 독립(레지스터/스택), PCB <br/><br/>\
 # 유형 <br/>\
 0. 개념도 <br/>\
