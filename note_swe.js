@@ -3468,7 +3468,7 @@ var answer = answer.concat(
 // 형상관리 베이스라인
 '# 정의 : 특정 시점 / 완전 산출물 / 이용 상태 집합<br/>\
 - 소프트웨어 개발의 특정시점에서 형상항목이 소프트웨어 개발에 하나의 완전한 산출물로써 이용될 수 있는 상태의 집합 <br/><br/>\
-# 내용 <br/>\
+# 내용 (<font color = "red">기분설시제운</font>)<br/>\
 <img src = "./img/ShapeAdmin.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 6회 관리 2교시 2번\
 ',
