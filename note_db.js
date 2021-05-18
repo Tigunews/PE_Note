@@ -1420,7 +1420,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/BASEACID.png" style = "max-width: 100%; height: auto;">\
 ',
 
-// [빅데이터]- 그래프 데이터베이스
+// Graph Database
 '# 정의 : NoSQL 기반 데이터베이스 / 노드,엔티티 관계 그래프 모델 / 트랜잭션 관리 <br/>\
 - 노드(엔티티)와 이들 간의 관계를 그래프 데이터 모델로 저장하여 트랜잭션을 관리하는 기능을 API 로 제공하는 NoSQL 기반 데이터베이스<br/><br/>\
 # 정의 : 데이터를 노드와 엣지로 표현하여 데이터 사이의 관계를 그래프 구조를 이용하여 저장하는 NoSQL 기반의 데이터 베이스 <br/><br/>\

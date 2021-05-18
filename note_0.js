@@ -21,7 +21,7 @@ var this_week_question =
 'CDR','디지털 포렌식','Secure Coding','무자각 지속 인증','NFV','SDN','Pre-Crime','대역확산','Lateral Movement','양자암호통신','바이오정보 분산관리','FIDO','APT','DDoS','인증기술',
 
 // 6주차 
-'지능형 CCTV','LBS','RTLS','Lidar','클라우드','의료기술','컨테이너 오케스트레이션','SCADA','Smart City 보안','인공지능 서비스 플랫폼','CPS','디지털 트윈','Converged Infrastructure','HCI','Smart Grid','XR','차세대 Healthcare Service','멀티 클라우드',
+'지능형 CCTV','LBS','RTLS','Lidar','클라우드','의료기술','컨테이너 오케스트레이션','SCADA','Smart City 보안','인공지능 서비스 플랫폼','CPS','디지털 트윈','Converged Infrastructure','HCI','Smart Grid','차세대 Healthcare Service','멀티 클라우드',
 'CCTV 개인영상 보호방안','12 Factors','C-V2X','Appliance Server','MPEG',
 
 // 5주차 
