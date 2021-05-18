@@ -21,11 +21,11 @@ var this_week_question =
 'CDR','디지털 포렌식','Secure Coding','무자각 지속 인증','NFV','SDN','Pre-Crime','대역확산','Lateral Movement','양자암호통신','바이오정보 분산관리','FIDO','APT','DDoS','인증기술',
 
 // 6주차 
-'지능형 CCTV','LBS','RTLS','Lidar','클라우드','의료기술','컨테이너 오케스트레이션','SCADA','Smart City 보안','인공지능 서비스 플랫폼','CPS','디지털 트윈','Converged Infrastructure','HCI','Smart Grid','차세대 Healthcare Service','멀티 클라우드',
+'지능형 CCTV','LBS','RTLS','Lidar','클라우드','의료기술','컨테이너 오케스트레이션','SCADA','Smart City 보안','인공지능 서비스 플랫폼','CPS','디지털 트윈','Smart Grid','차세대 Healthcare Service','멀티 클라우드',
 'CCTV 개인영상 보호방안','12 Factors','C-V2X','Appliance Server','MPEG',
 
 // 5주차 
-'타당도','신뢰도','능동학습','opinion','회귀','주성분','다차원 척도','아웃소싱','sla','penalty','sip','nosql','증류','기술통계','추론통계','데이터 품질관리 지침','NLP','큐잉','군집분석','IT 투자','API Gateway','최단경로','국제 표준화 기구',
+'타당도','신뢰도','능동학습','opinion','회귀','주성분','다차원 척도','아웃소싱','sla','penalty','sip','nosql','증류','기술통계','추론통계','데이터 품질관리 지침','NLP','큐잉','군집분석','IT 투자','API Gateway','국제 표준화 기구',
 'Efficient','지능 정보화 기본법','de facto standard','TensorFlow','스타스키마','ERD','관계형 데이터 모델','DataGrid','Graph Database','Back Tracking','분할과정복','Greedy','동적계획법','인공지능 데이터 평가','GAN','Vanishing Gradient Problem',
 'Data Warehouse','Data Lake','HOt Encoding','Softmax','AI 윤리','성능검증','머신러닝 파이프라인','Gradient Descent','정렬',
 

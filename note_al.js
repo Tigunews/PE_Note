@@ -1698,7 +1698,7 @@ var answer = answer.concat(
 <img src = "./img/AutoMLMachanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
 - Feature Engineering Automation : Raw Data를 머신러닝 모델에 적합하게 변형 / 도메인 엔지니어링, PCA, EDA <br/>\
-- Hyper Parameter Optimization : 사용자 직접 설정 값, 훈련 제어 파라미터 / 그리드 탐색, 랜덤 탐색, 베이지안 최적화, 경사하강법 <br/>\
+- Hyper Parameter Optimization : 사용자 직접 설정 값, 훈련 제어 파라미터 / Manual, Grid, Random, Bayesian 경사하강법 <br/>\
 - Neural Architecture Search : 가장 효과적 훈련할 수 있는 신경망 자동 탐색 방법 / 진화 알고리즘, 강화 학습 <br/><br/>\
 # 활용방안 <br/>\
 - 고품질 학습 데이터 생성 : 데이터 사이언티스트 개입 최소, 손실함수 및 교차 검증 오류 최소화 <br/>\
