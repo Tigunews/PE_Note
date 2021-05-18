@@ -40,6 +40,9 @@ var question = question.concat(
 '[커널 메모리 할당]- Buddy allocator',
 '[커널 메모리 할당]- Slab allocator',
 '[Virtual Memory]- Mapping',
+'가상 메모리 페이지 교체 알고리즘',
+'[가상 메모리 페이지 교체 알고리즘]- 벨라디 변이(Belady\'s Anomaly)',
+'[가상 메모리 페이지 교체 알고리즘]- 스레싱(Thrashing)',
 'Cache Memory',
 '[Cache]- Cache Mapping',
 '[Cache]- Cache 일관성',
@@ -74,9 +77,6 @@ var question = question.concat(
 '[CPU Scheduling]- Process Aging',
 '[RTOS Scheduling]- RM',
 '[RTOS Scheduling]- EDF',
-'가상 메모리 페이지 교체 알고리즘',
-'[가상 메모리 페이지 교체 알고리즘]- 벨라디 변이(Belady\'s Anomaly)',
-'[가상 메모리 페이지 교체 알고리즘]- 스레싱(Thrashing)',
 'Disk 스케줄링',
 '[Disk 스케줄링]- 알고리즘 유형',
 '리소스 동기화',
@@ -810,6 +810,63 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 * 그리타 \
 ',
 
+// 가상 메모리 페이지 교체 알고리즘
+'# 정의 : 미사용 페이지 교체 알고리즘 <br/>\
+- 페이지 방식을 취하는 가상메모리에서 페이지 부재가 발생하면 메인 메모리에 있으면서 사용되지 않는 페이지를 제거하고 새로운 페이지로 교체하는 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- 페이지 크기에 따른 Trade-Off : 크면 낭비, 작으면 페이지수 증가로 포인트 증대<br/>\
+- Belady\'s Anomaly : FIFO 이상 현상 <br/><br/>\
+# 종류 <br/>\
+- Random Page Replacement <br/>\
+- FIFO <br/>\
+- OPT(Optimal Replacement) <br/>\
+- LRU <br/>\
+- NUR(Not Used Recently) <br/>\
+- SCR(Second Chance Replacement) <br/>\
+- LFU(Least Frequently Used) <br/>\
+- MFU(Most Frequently Use) <br/>\
+- Page Buffer Algorithm \
+',
+
+// [가상 메모리 페이지 교체 알고리즘]- 벨라디 변이
+'# 정의 : 많은 수 페이지 할당 -> 페이지 부재 많이 발생 <br/>\
+- FIFO Anomaly <br/>\
+- FIFO 페이지 교체 기법 하에서 프로세스에 더 많은 수의 페이지를 할당할 경우 오히려 더 많은 페이지 부재가 발생하는 이상현상 즉, 프레임이 3개일 때보다 프레임이 4개일 때 페이지 부재가 많이 발생하는 현상<br/><br/>\
+# 암기 <br/>\
+- 12301401234 -34 <br/>\
+- 참프부 <br/><br/>\
+# 대응 방법 : 페이지 교체 정책(OPT, LRU), 최적화 원칙 설계(Locality, PFF)<br/><br/>\
+<img src = "./img/Belady_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Belady_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// [가상 메모리 페이지 교체 알고리즘]- 스레싱
+'# 정의 : 페이지 교체 시간 과다 현상<br/>\
+- 멀티프로세싱, 멀티프로그래밍의 역기능으로 페이지 부재가 자주 일어나 프로세스가 보다 페이지 교체에 보내는 시간이 더 많게 되는 현상 <br/><br/>\
+# 원인 <br/>\
+- 리소스 부족 <br/>\
+- 부적절한 페이지 교체 정책 <br/>\
+- 과도한 멀티 프로세싱 <br/><br/>\
+# 해결방법 <br/>\
+- 우선순위 교환 알고리즘 <br/>\
+- 작업집합(Working-Set)모델 <br/>\
+- PFF(Page Fault Frequency) : 페이지 부재율 예측, 상한 넘으면 프레임 더 할당, 낮으면 일부 회수 <br/>\
+- 다중 프로그래밍 수 제한<br/>\
+- 프로그래밍 기법 : 적절한 자료구조 <br/><br/>\
+# 효과적인 Thrashing 설정 고려요소 <br/>\
+- Localicy<br/>\
+- 전역교체/지역교체<br/>\
+- Pre-paging<br/>\
+- Page Size<br/>\
+- Inverted Page Table<br/>\
+- 프로그램 구조<br/>\
+- 입출력 상호 잠금 <br/><br/>\
+<img src = "./img/Thrashing_1.jpg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/Thrashing_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/Thrashing_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/Thrashing_4.png" style = "max-width:100%; hegiht:auto;">\
+',
+
 // Cache Memory
 '# 정의 : 일시 저장 기억 장소 / CPU, Main Memory 속도 차이<br/>\
 - 고속의 중앙처리장치와 상대적 저속의 주기억 장치 사이의 속도 차이를 보완하기 위하여 데이터와 명령어를 일시적으로 저장하는 기억 장소 <br/><br/>\
@@ -1176,7 +1233,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Transaction Memory : 공유 메모리 접근 위한 동시성 제어 기법 <br/>\
 - SPMT(Serial Port Memory Technology) : 수행 확률 높은 부분 다른 코어 통해 미리 수행 <br/>\
 - Token Based Coherence Protocol : 캐시 일관성위한토큰 기반프로토콜<br/>\
-- SW 지원 플랫폼 : OpenMP, OpenCL, CUDA 등 병렬 프로그램 지원 플랫폼 <br/.<br/>\
+- SW 지원 플랫폼 : OpenMP, OpenCL, CUDA 등 병렬 프로그램 지원 플랫폼 <br/><br/>\
 # 활용 : 머신러닝, 클라우드, 5G <br/><br/>\
 * NoC : 멀티 코어 스위치 연결 구조 <br/>\
 * CG : Core Group <br/>\
@@ -1263,15 +1320,13 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // NanoQplus
 '# 정의 : 임베디드 초소형 운영체제 / ETRI / IoT, M2M, 무선 센서 네트워크 /<br/>\
 - ETRI에서 개발한 무선 센서 네트워크, IOT, M2M등 분야에서 사용되는 임베디드 장치용 초소형 운영체제 <br/><br/>\
-# 암기 <br/>\
-- 구성 : 하통커유 <br/><br/>\
 # 특징 <br/>\
 - 멀티쓰레드 <br/>\
 - 선점형 지원 <br/>\
 - 저전력 기반 <br/>\
 - 선택적 커널모듈(저사향 고려, 커널 모듈 선택) <br/>\
 - C언어 기반 <br/><br/>\
-# 구성 <br/>\
+# 구성 (<font color = "red">하통커유</font>)<br/>\
 - Hardware Abstraction Layer : HAL-센서드라이버탑재 <br/>\
 - 통신프로토콜스택 : Ad-hoc NW 유사, 수백 노드간 P2P통신 <br/>\
 - 커널 : 멀티쓰레드 지원, 우선순위 기반 RR, 세마포어, 메시지 큐, 저전력 관리 <br/>\
@@ -1390,7 +1445,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # Multi Level Queue : 작업들을 여러 종류의 그룹으로 나누어 여러개의 큐를 이용하는 스케줄링 기법<br/>\
 # 특징 : 큐별 동일 시간 부여 <br/>\
 <img src = "./img/MLQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Multi Level Feedback Queue : 작업들을 여러 종류의 그룹으로 나누어 여러개의 큐를 이용하는 스케줄링 기법 <br/>\
+# Multi Level Feedback Queue : 작업들을 여러 종류의 그룹으로 나누어 여러개의 큐를 이용하는 스케줄링 기법 <br/><br/>\
 # 특징 : 큐별 차등 시간 부여 <br/>\
 <img src = "./img/MLFQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 관리 3교시 6번\
@@ -1405,7 +1460,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 선점형 : 운영체제 인터럽트의해 준비큐 이동 <br/>\
 - 기아현상 : 할당우선 순위 높은 작업 지속 추가 <br/><br/>\
 # 기아 유발 <br/>\
-- 비선점형 : SJF, Pririty <br/>\
+- 비선점형 : SJF, Priority <br/>\
 - 선점형 : SRT, MLQ<br/><br/>\
 # 기아 미유발 <br/>\
 - 비선점형 : HRN, Priority_Aging(오래 대기 프로세스 우선순위 증가), FIFO<br/>\
@@ -1435,73 +1490,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 실시간 운영체제에서 사용되는 동적 CPU 스케줄링 알고리즘중 하나 <br/><br/>\
 # 예시 <br/>\
 <img src = "./img/EDF_Example.png" style = "max-width:100%; height:auto;">\
-',
-
-// 가상 메모리 페이지 교체 알고리즘
-'# 정의 : 미사용 페이지 교체 알고리즘 <br/>\
-- 페이지 방식을 취하는 가상메모리에서 페이지 부재가 발생하면 메인 메모리에 있으면서 사용되지 않는 페이지를 제거하고 새로운 페이지로 교체하는 알고리즘 <br/><br/>\
-# 암기 <br/>\
-- 종류 : RFOLNSCP <br/>\
-- 이차빵킬 : 이차기회, 참조비트, 빵(0)쏴서 킬(교체)<br/><br/>\
-# 특징 <br/>\
-- 페이지 크기에 따른 Trade-Off : 크면 낭비, 작으면 페이지수 증가로 포인트 증대<br/>\
-- Belady\'s Anomaly : FIFO 이상 현상 <br/><br/>\
-# 종류 : RFOLNSCP <br/>\
-- Random page replacement<br/>\
-- FIFO(First In First Out) <br/>\
-- OPT(Optimal replacement(최소부재율)) <br/>\
-- LRU(Least Recently Used Page Replacement) : 페이지마다 TimeStamp 사용 or 페이지번호 구분되는 스택 유지, PageFault 발생시 Bottom 페이지 교체 -> 시간적 Locality 고려 FIFO의 Locality 미고려 단점 보완, Thrashing 해결, Time-Stamping 오버헤드, 구현 H/W 복잡9별도의 계수기, 구현회로가 필요, 구현 복잡)<br/>\
-- NUR(Not Used Recently) : 참조비트, 변형비트,I/O부하 감소 목적<br/>\
-- SCR(Second Chance Replacement) : FIFO 보완, 페이지 참조 비트 이용, 프레임들 원형 버퍼(큐) 구성 <br/>\
-- Counting Algorithm(LFU(Least Frequently Used - 에이지 정책 사용 보완), MFU(Most Frequentyly Use - 최근 반입페이지 우선권))<br/>\
-- Page Buffer Algorithm : 교체 대상 페이지 삭제전 가용 Pool에 보관, 페이지 교체 알고리즘 약점 보완, 타 알고리즘의 부가로 사용 <br/><br/>\
-<img src = "./img/페이지교체알고리즘_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/페이지교체알고리즘_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/페이지교체알고리즘_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 이차기회 : 모든 페이지으 ㅣ참조비트가 1인 경우 전체 2차 기회 부여로 성능 저하 <br/><br/>\
-<img src = "./img/페이지교체알고리즘_4.png" style = "max-width:100%; height:auto;">\
-',
-
-// [가상 메모리 페이지 교체 알고리즘]- 벨라디 변이
-'# 정의 : 많은 수 페이지 할당 -> 페이지 부재 많이 발생 <br/>\
-- FIFO Anomaly <br/>\
-- FIFO 페이지 교체 기법 하에서 프로세스에 더 많은 수의 페이지를 할당할 경우 오히려 더 많은 페이지 부재가 발생하는 이상현상 즉, 프레임이 3개일 때보다 프레임이 4개일 때 페이지 부재가 많이 발생하는 현상<br/><br/>\
-# 암기 <br/>\
-- 12301401234 -34 <br/>\
-- 참프부 <br/><br/>\
-# 대응 방법 : 페이지 교체 정책(OPT, LRU), 최적화 원칙 설계(Locality, PFF)<br/><br/>\
-<img src = "./img/Belady_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Belady_2.png" style = "max-width:100%; height:auto;">\
-',
-
-// [가상 메모리 페이지 교체 알고리즘]- 스레싱
-'# 정의 : 페이지 교체 시간 과다 현상<br/>\
-- 멀티프로세싱, 멀티프로그래밍의 역기능으로 페이지 부재가 자주 일어나 프로세스가 보다 페이지 교체에 보내는 시간이 더 많게 되는 현상 <br/><br/>\
-# 암기 <br/>\
-- 원인 : 리교멀<br/>\
-- 해결 : 우워피다 <br/><br/>\
-# 원인 <br/>\
-- 리소스 부족 <br/>\
-- 부적절한 페이지 교체 정책 <br/>\
-- 과도한 멀티 프로세싱 <br/><br/>\
-# 해결방법 <br/>\
-- 우선순위 교환 알고리즘 <br/>\
-- 작업집합(Working-Set)모델 <br/>\
-- PFF(Page Fault Frequency) : 페이지 부재율 예측, 상한 넘으면 프레임 더 할당, 낮으면 일부 회수 <br/>\
-- 다중 프로그래밍 수 제한<br/>\
-- 프로그래밍 기법 : 적절한 자료구조 <br/><br/>\
-# 효과적인 Thrashing 설정 고려요소 <br/>\
-- Localicy<br/>\
-- 전역교체/지역교체<br/>\
-- Pre-paging<br/>\
-- Page Size<br/>\
-- Inverted Page Table<br/>\
-- 프로그램 구조<br/>\
-- 입출력 상호 잠금 <br/><br/>\
-<img src = "./img/Thrashing_1.jpg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Thrashing_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Thrashing_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Thrashing_4.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // Disk 스케줄링

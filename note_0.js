@@ -9,13 +9,13 @@ var this_week_question =
 '',
 
 // 추가 토픽
-'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS',
+'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS','Cloud GPU','MajorState','뉴로모픽','벨라디 변이',
 
 // 9주차 
-'가설검정','레그테크','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert','재식별 공격',
+'가설검정','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert','재식별 공격',
 
 // 8주차 
-'Library','Python','ALM','SW Visualization','ARM','정보시스템 하드웨어 규모산정 지침','CMMI','ISO/IEC 33000','일정관리','WBS','Thread','Process','MVC','MVP','MVVM','테스트 자동화','DB 복제','Scheduling','비용산정','분기 예측',
+'Library','Python','ALM','SW Visualization','정보시스템 하드웨어 규모산정 지침','CMMI','ISO/IEC 33000','일정관리','WBS','Thread','Process','MVC','MVP','MVVM','테스트 자동화','DB 복제','Scheduling','비용산정','분기 예측',
 
 // 7주차 
 'CDR','디지털 포렌식','Secure Coding','무자각 지속 인증','NFV','SDN','Pre-Crime','대역확산','Lateral Movement','양자암호통신','바이오정보 분산관리','FIDO','APT','DDoS','인증기술',
