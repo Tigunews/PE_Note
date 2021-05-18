@@ -1380,7 +1380,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 <img src = "./img/PACEL.png" style = "max-width: 100%; height: auto;"><br/>\
 1. PA / EL <br/>\
 - 장애 상황시 : 가용 노드만 반영, 복구시 전체 반영 <br/>\
-- 정상 상황시 : Lateyncy 우선 고려 <br/>\
+- 정상 상황시 : Latency 우선 고려 <br/>\
 - Cassandra, DynamoDB <br/><br/>\
 2. PA / EC <br/>\
 - 장애 상황시 : 가용 노드만 반영, 복구시 전체 반영 <br/>\
@@ -1801,7 +1801,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 # 특징 <br/>\
 - 방법 : 데이터 비교, 가설검증, 미래결과 예측 <br/>\
 - 결과 : 확률 통한 이벤트의 발생 가능성 설명 <br/><br/>\
-# 사용기술 <br/>\
+# 사용기술 (<font color = "red">점구가차관</font>)<br/>\
 - 점추정(Point Estimation) : 적률법, 최대가능도추정법, 최소제곱법 <br/>\
 - 구간추정(Interval Estimation) : 표준정규분포, t분포 <br/>\
 - 가설검정 : 귀무가설, 대립가설 통한 추론 <br/>\

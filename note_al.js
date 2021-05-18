@@ -1673,7 +1673,7 @@ var answer = answer.concat(
 - Bias Analysis : 모델 포함된 편향 제거 <br/><br/>\
 3. 모델 교육 <br/>\
 - Hyper Parameterization : 모델 정확도 향상 위한 학습 튜닝 기법 <br/>\
-- Model Paralleization : 병렬송 활용, 여러 CPU, GPU 노드 작업 분산 <br/><br/>\
+- Model Paralleization : 병렬성 활용, 여러 CPU, GPU 노드 작업 분산 <br/><br/>\
 4. 예측 제공 : 학습된 모델 배치하여 예측, 서비스 제공 단계 <br/><br/>\
 # 이점 : 무인 실행, 재사용 가능, 추적 및 버전 관리 <br/><br/>\
 * 121회 관리 1교시 13번\
@@ -2046,7 +2046,7 @@ var answer = answer.concat(
 - 인공지능 서비스에 활용되는 기계학습 라이브러리, 인터페이스, 소프트웨어 제공하는 인프라 유기적 집합 <br/><br/>\
 # 암기 <br/>\
 - AI성능 3요소 : 알데컴 (알고리즘, 데이터, 컴퓨팅파워) <br/><br/>\
-# 개념도 <br/>\
+# 개념도 (<font color = "red">ECIC전</font>)<br/>\
 <img src = "./img/AIServicePlatform.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 기술(학상언시인) <br/>\
 - 학습 및 추론기술 : 지식표현, 지식베이스 <br/>\
