@@ -41,6 +41,7 @@ var question = question.concat(
 '[커널 메모리 할당]- Slab allocator',
 '[Virtual Memory]- Mapping',
 'Cache Memory',
+'[Cache]- Cache Mapping',
 '[Cache]- Cache 일관성',
 '[Cache]- MESI',
 'DMA',
@@ -826,41 +827,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Cache Miss <br/>\
 - Hit Rate : 적중률 = 적중횟수/전체기억장치 액세스 횟수 <br/>\
 - Miss Rate : 미스율 = 1 - 적중율 <br/><br/>\
-# 사상방식 <br/>\
-1. 직접사상 <br/>\
-- 메모리 각 블록(단어)를 캐시의 특정 슬롯(라인)에 적재<br/>\
-- 캐시와 메모리 1:1 적재 <br/>\
-- 장점 : 회로 구현 용이, 맵핑간단, 처리속도 빠름 <br/>\
-- 단점 : Miss Rate 높음 <br/>\
-- 메모리 주소 : 태그(8)슬롯주소(14)단어(2), 데이터(32) > 캐시 슬단 위치의 태그 비교 후 일치하면 hit 불일치면 Miss(메모리-> 캐시 적재 후 태그변경) <br/>\
-<img src = "./img/CacheMemory_1.png" style = "max-width:100%; height:auto;"><br/>\
-1) 00002 접근시 캐시메모리 Hit, Index(002), Tag(00) <br/>\
-2) 00003 접근시 캐시메모리 Miss <br/>\
--> 주기억 장치 검색 <br/>\
--> 캐시메모리 Index 003에 Tag 00 입력, Data 2555 입력 <br/><br/>\
-2. 연관사상 <br/>\
-- 캐시메모리 데이터 적재시, 데이터 + 데이터의 주기억 장치 주소도 함께 저장 <br/>\
-- 1 : N 대응 <br/>\
-- 블록이 캐시의 어느라인에나 적재가능 <br/>\
-- 장점 : Hit rate 높음 <br/>\
-- 단점 : 태그 고속 탐색으로 회로 복잡, 전체 탐색으로 처리 속도 느림 <br/>\
-- 메모리 주소 : 태그(22)단어(2),데이터(32) > CPU 요청 주소의 태그부분 비교, 동일 태그 존재시 Hit, 미존재시 Miss(매->캐 적재후 태그 변경) <br/>\
-<img src = "./img/CacheMemory_2.png" style = "max-width:100%; height:auto;"><br/>\
-1) 01002 접근시, 캐시메모리의 주소 일치하면 Hit <br/>\
-2) 00002 접근시, 캐시메모리 Miss <br/>\
--> 주기억장치 검색 <br/>\
--> 캐시메모리  Index 003에 Address와 Data 입력 <br/><br/>\
-3. 집합연관사상 <br/>\
-- 캐시 메모리의 한 Index에 2개 이상의 서로 다른 블록 저장하여 하나의 Set 형성 <br/>\
-- 캐시와 메모리 대응 N:1, N-Way associated mapping(보통 4way) <br/>\
-- 메모리 주소 : 태그 + 집합주소 + 단어, 데이터(32) > 집합주소 찾아 집합내 태그 탐색 <br/>\
-- 장점 : 캐시 적중율 높음 <br/>\
-- 단점 : 구현회로 및 구조가 복잡 <br/><br/>\
-<img src = "./img/CacheMemory_3.PNG" style = "max-width:100%; height:auto;"><br/>\
-1) 01002 접근시 캐시메모리 Hit, Index(002), Tag(01) <br/>\
-2) 캐시 Miss의 경우 <br/>\
--> 주기억 장치 검색<br/>\
--> 동일 Index Tag 찾아 Data 입력 <br/><br/>\
 # 교체 알고리즘 <br/>\
 - LRU : 최근 미사용 <br/>\
 - FIFO <br/>\
@@ -872,6 +838,27 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Conflict : 캐시 연관도 증가 <br/>\
 - Coherence : MESI, 스누피 프로토콜 <br/><br/>\
 <img src = "./img/CacheMemory_4.png" style = "max-width:100%; height:auto;">\
+',
+
+// Cache Mapping
+'# 정의 : 주기억 장치 -> 캐시 메모리 / 데이터 전송 <br/>\
+- 주기억 장치로부터 캐시 메모리로 데이터 전송하는 작업 <br/><br/>\
+# 유형 <br/>\
+1. 직접 사상 <br/>\
+<img src = "./img/CacheMemory_1.png" style = "max-width:100%; height:auto;"><br/>\
+- 원리 : 메모리 블록, 캐시 특정 라인 적재 (1:1) <br/>\
+- 장점 : 회로 구현 용이, 맵핑 간단, 처리속도 빠름 <br/>\
+- 단점 : Miss Rate 높음 <br/><br/>\
+2. 연관 사상 <br/>\
+<img src = "./img/CacheMemory_2.png" style = "max-width:100%; height:auto;"><br/>\
+- 원리 : 메모리 블록 어느 라인에나 적재 가능 <br/>\
+- 장점 : Hit Rate 높음 <br/>\
+- 단점 : 회로 복잡, 속도 느림 <br/><br/>\
+3. 집합 연관 사상 <br/>\
+<img src = "./img/CacheMemory_3.png" style = "max-width:100%; height:auto;"><br/>\
+- 원리 : 캐시 메모리 한 Index에 2개 이상 저장 Set 형성 <br/>\
+- 장점 : Hit Rate 높음 <br/>\
+- 단점 : 구현회로 복잡\
 ',
   
 // Cache 일관성
