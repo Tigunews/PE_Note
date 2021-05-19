@@ -1251,7 +1251,7 @@ var answer = answer.concat(
 - 코드 실행 여부, 지속성, 스텔스, C&C 서버, 네트워크 내 움직임에 대한 정보 등 공격 의도를 파악할 수 있는 동적인 지표 <br/><br/>\
 # 비교 <br/>\
 <img src = "./img/IOC_IOA.png" style = "max-width:100%; height:auto;"><br/>\
-<font color = "red'>* TTP : 전략, 전술, 절차 </font><br/><br/>\
+<font color = "red">* TTP : 전략, 전술, 절차 </font><br/><br/>\
 # 적용사례 <br/>\
 - 위협탐지 : Lateral Movement 등에 대한 행위기반 위협 탐지 <br/>\
 - 위협분석 : 다수의 시스템을 연계하여 이상 행위룰 분석 <br/>\
