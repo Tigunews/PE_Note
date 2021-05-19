@@ -1250,7 +1250,8 @@ var answer = answer.concat(
 - Indicators of Attack <br/>\
 - 코드 실행 여부, 지속성, 스텔스, C&C 서버, 네트워크 내 움직임에 대한 정보 등 공격 의도를 파악할 수 있는 동적인 지표 <br/><br/>\
 # 비교 <br/>\
-<img src = "./img/IOC_IOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/IOC_IOA.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red'>* TTP : 전략, 전술, 절차 </font><br/><br/>\
 # 적용사례 <br/>\
 - 위협탐지 : Lateral Movement 등에 대한 행위기반 위협 탐지 <br/>\
 - 위협분석 : 다수의 시스템을 연계하여 이상 행위룰 분석 <br/>\
@@ -1710,20 +1711,10 @@ var answer = answer.concat(
 - 각자 보유한 QKD 기기 통한 양자 송수신 <br/>\
 - 양자 불확정성 통한 예측 불가능한 암호키 생성 <br/><br/>\
 # 구성요소 <br/>\
-1. Qubits <br/>\
-- 개념 : 양자 통신 정보 최소 단위 <br/>\
-- 키워드 : 중첩원리, 양자 비트 <br/><br/>\
-2. 광자(Photon) <br/>\
-- 개념 : 수많은 양자로 구성된 입자 <br/>\
-- 키워드 : 빛의 양자 <br/><br/>\
-3. 채널 <br/>\
-- 종류 : 양자채널(광자), 퍼블릭채널(TCP/IP) <br/><br/>\
-4. 프로토콜 <br/>\
-- 개념 : 송수신자 사이 OTP 생성 프로토콜 <br/>\
-- 키워드 : BB84 Protocol <br/><br/>\
-5. 신호체계 <br/>\
-- 개념 : 전송(광자 편광 성질) > 측정(편광 필터, 위상 시간차, 간섭계) <br/>\
-- 키워드 : 편광 필터, 간섭계 <br/><br/>\
+- Qubits : 양자 통신 정보 최소 단위 <br/>\
+- 양자광학계 : 양자광원, 간섭계, 변조기(PM), 검출기(APD) <br/>\
+- QKD : 복제 불가능성, 파동함수 붕괴, Key 공유 <br/>\
+- 전자제어부 : 구동회로부, 신호처리부, 외부시스템 연계, 제어 회로부 <br/><br/>\
 # 동향 <br/>\
 1. 해외 <br/>\
 - 미국 : Google 큐비트 규모 양자 컴퓨터 발표 <br/>\
@@ -1763,22 +1754,8 @@ var answer = answer.concat(
 - 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
 # 양자보안의 매커니즘(암광키) <br/>\
 <img src = "./img/QuntaumCryptographyMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
-1. QED <br/>\
-- 광학역학계 : 변조기, 회선제어기 <br/>\
-- P&P : 광자 통한 상태 변경 <br/>\
-- One way : 거리 무관 암호 교환 <br/><br/>\
-2. QKD <br/>\
-- BB84 : 프로토콜 이용 키교환 <br/>\
-- QRNG : 난수 이용 생성 <br/>\
-- 보안 NW : Pure NW 이용 통신 <br/><br/>\
 # 양자보안 알고리즘 종류 <br/>\
-- 다변수 기반 : 다항식 활용 계산, 전자서명 주로 활용 / Rainbow, GUI<br/>\
-- 코드 기반 : 행렬 기반 알고리즘, 복잡한 계산 방식 / McBits, Eliece <br/>\
-- 격자 기반 : 코드의 격자화 활용, 계산시간 감소 / Newhope, BLISS <br/>\
-- 아이소제니 기반 : 다양한 활용가능, 변수 설정 난해 / SIDH<br/>\
-- 해시 기반 : 해시의 충돌 회피성, 무결성 활용 암호화 / XMSS, HORS <br/><br/>\
-* 라이지움 87회 관리 2교시 6번 <br/>\
+<img src = "./img/QuntaumCryptographyType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 1교시 13번\
 ',
 
