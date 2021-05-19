@@ -3118,7 +3118,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 가상머신, 컨테이너 등 서버 워크로드의 가시성 및 공격 방어를 위한 에이전트를 바탕으로 한 보안 솔루션 <br/><br/>\
 # Cloud 보안 개요 <br/>\
 <img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/>\
-<font color = "red">* UEBA(User and Entity Behavior Analyutics) : 사용자 및 개체 행동 분석 </font><br/>\
+<font color = "red">* UEBA(User and Entity Behavior Analytics) : 사용자 및 개체 행동 분석 </font><br/>\
 * DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 <br/><br/>\
 # 구성요소 (<font color = "red">IMW EWS</font>)<br/>\
 1. 관리 측면 <br/>\
