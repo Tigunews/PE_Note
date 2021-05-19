@@ -3118,8 +3118,8 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 가상머신, 컨테이너 등 서버 워크로드의 가시성 및 공격 방어를 위한 에이전트를 바탕으로 한 보안 솔루션 <br/><br/>\
 # Cloud 보안 개요 <br/>\
 <img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/>\
-<font color = "red">* UEBA(User and Entity Behavior Analytics) : 사용자 및 개체 행동 분석 </font><br/>\
-* DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 <br/><br/>\
+<font color = "red">* UEBA(User and Entity Behavior Analytics) : 사용자 및 개체 행동 분석 <br/>\
+* DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 </font><br/><br/>\
 # 구성요소 (<font color = "red">IMW EWS</font>)<br/>\
 1. 관리 측면 <br/>\
 - System Ingergrity : 시스템 통합, <font color = "red">보안관리 일원화</font> <br/>\
@@ -3171,7 +3171,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 데이터 손실 방지 : 데이터 유출 방지 <br/>\
 - 로깅 및 감사 : 추적 및 무결성 보장 <br/>\
 - 이상 탐지 : 행위적 침해 대응 <br/><br/>\
-# 유형 (AAPP) <br/>\
+# 유형 (<font color = "red">AAPP</font>) <br/>\
 1. SW형 <br/>\
 - Agent CASB : 서비스 사용자 단말기 설치 <br/>\
 - API CASB : 서비스앱 개발사 직접 적용 <br/><br/>\
