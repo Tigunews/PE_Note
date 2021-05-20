@@ -366,8 +366,8 @@ var answer = answer.concat(
   
 // Phantom Conflict
 '# 정의 : 가상 튜플에 의한 충돌 <br/>\
-- 두 개 이상의 트랜잭션이 실제 데이터베이스에 저장되어 있는 튜플이 아니라, 데이터베이스에 삽입되려고 하는 가상의 튜플, 즉 팬텀 튜플에 의해 트랜잭션이 충돌되어 일관성/무결성이 보장되지 않는 현상 <br/><br/>\
-# 영향 <br/>\
+- 두 개 이상의 트랜잭션이 실제 데이터베이스에 저장되어 있는 튜플이 아니라, <font color = "red">데이터베이스에 삽입되려고 하는 가상의 튜플</font>, 즉 팬텀 튜플에 의해 트랜잭션이 충돌되어 <font color = "red">일관성/무결성</font>이 보장되지 않는 현상 <br/><br/>\
+# 영향 (<font color = "red">없있 있없</font>)<br/>\
 - 읽기 : 다른 Tx 삽입 / 없었던 행 출현 <br/>\
 - 쓰기 : 다른 Tx 삭제 / 행 사라짐 <br/><br/>\
 # 해결방법 <br/>\
@@ -382,7 +382,7 @@ var answer = answer.concat(
 - 트랜잭션 접근시 여러 버전 타임스탬프 비교, 직렬가능성 보장 적절한 버전 선택 접근 기법 <br/><br/>\
 # 구현방식 <br/>\
 1. MGA(Multi Generation Architecture) <br/>\
-- 개념 : 기존 데이터 두고, 새로운 버전 추가 / PostgreSQL<br/>\
+- 개념 : 기존 데이터 두고, 새로운 버전 추가 / <font color = "red">PostgreSQL</font><br/>\
 - 특징 : 기존 데이터 잔존, 주기적 VACUUM, 물리적 위치 변경 <br/>\
 - Perssimistic Lock 사용, PostgreSQL, SQL Server, InterBase 사용 <br/>\
 <img src = "./img/MVCC_MGA.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -394,7 +394,7 @@ var answer = answer.concat(
 # 유형 <br/>\
 1. Multiversion Timestamp Ordering <br/>\
 - 개념 : Timestamp를 시간 순서에 따라 트랜잭션 부여 기법 <br/>\
-- 알고리즘 : 읽기(가장큰 값 반환), 쓰기(낮은 값 존재시 거부) <br/><br/>\
+- 알고리즘 : 읽기(가장 큰 값 반환), 쓰기(낮은 값 존재시 거부) <br/><br/>\
 2. MultiVersion Two-Phase Locking <br/>\
 - 개념 : R,W,C(보증) 잠금 모드 사용 제어 <br/>\
 - RWC 호환성 테이블 <br/>\
