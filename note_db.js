@@ -491,11 +491,11 @@ var answer = answer.concat(
 - 메모리 버퍼에 저장한 페이지가 언제 디스크에 기록될 것인가를 명시하는 데이터 버퍼관리 정책<br/><br/>\
 # 내용 <br/>\
 1. DIRTY Page <br/>\
-- STEAL : DIRTY Page 해제(LRU), UNDO 필요 <br/>\
-- NO STEAL :  DIRTY Page 유지, 충분 버퍼 필요 <br/><br/>\
+- STEAL : DIRTY Page <font color = "red">해제</font>(LRU), UNDO 필요 <br/>\
+- NO STEAL :  DIRTY Page <font color = "red">유지</font>, 충분 버퍼 필요 <br/><br/>\
 2. Commit <br/>\
-- FORCE : 모든 페이지 즉시 Commit, 성능 저하 <br/>\
-- NO FORCE : 일부 페이지 Commit, REDO 필요 <br/>\
+- FORCE : <font color = "red">모든</font> 페이지 즉시 Commit, 성능 저하 <br/>\
+- NO FORCE : <font color = "red">일부</font> 페이지 Commit, REDO 필요 <br/><br/>\
 <font color = "red">* NO STEAL/FORCE 정책 : 구현 Good 성능 Bad <br/>\
 * STEAL/NO FORCE 정책 : 성능 Good</font>\
 ',
@@ -563,7 +563,7 @@ var answer = answer.concat(
   
 // Choreography-Based Saga
 '# 정의 : Local Tx / 완료 Event 발생 방식 <br/>\
-- 자신이 보유한 서비스내 Local 트랜잭선을 관리하며, 트랜잭션이 종료되면 완료 Event 발생하는 방식 <br/><br/>\
+- <font color = "red">자신이 보유한</font> 서비스내 Local 트랜잭선을 관리하며, 트랜잭션이 종료되면 완료 Event 발생하는 방식 <br/><br/>\
 # 성공 <br/>\
 <img src = "./img/ChoreographySuccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 실패 <br/>\
@@ -578,7 +578,7 @@ var answer = answer.concat(
   
 // Orchestration-Based Saga
 '# 정의 : Saga 인스턴스(Manager) / 별도 존재 방식 <br/>\
-- 트랜잭션 처리를 위한 Saga 인스턴스(Manager)가 별도 존재하는 방식 <br/><br/>\
+- 트랜잭션 처리를 위한 <font color = "red">Saga 인스턴스(Manager)</font>가 별도 존재하는 방식 <br/><br/>\
 # 성공 <br/>\
 <img src = "./img/OrchestrationBasedSagaSuccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 실패 <br/>\
@@ -651,10 +651,6 @@ var answer = answer.concat(
 # 예시 : Relation = {A,B,C,G,H,I} FD = {A->B, A->C, CG->H, CG->I, B-H} <br/>\
 - 암스트롱 공리 적용 : A->BC , CG->HI, A->H, AG->H <br/>\
 - 함수폐포 : A+={A,B,C,H}<br/><br/>\
-# 암기 <br/>\
-- 기 : 재부이 <br/>\
-- 부 : 합분의 <br/>\
-- 자기참조 대응 : 관피부 <br/><br/>\
 <img src = "./img/암스트롱공리_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/암스트롱공리_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src= "./img/DB_7.PNG" style = "max-width:100%; height:auto;">\
@@ -665,7 +661,9 @@ var answer = answer.concat(
 - 질의에 대한 결과를 생성하기 위해 수행해야 할 연산의 순서를 명시하는 절차적 언어 -> 상용 관계 DBMS의 범용 SQL 이론적 기초 <br/><br/>\
 <img src = "./img/관계대수_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/관계대수_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/관계대수_3.png" style = "max-width:100%; height:auto;">\
+# 예제 <br/>\
+<img src = "./img/관계대수_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/RelativeAlgebra2.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 관계 해석
