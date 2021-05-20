@@ -1639,7 +1639,7 @@ var answer = answer.concat(
 - SIFT(Scale-Invariant Feature Transform) : 크기, 회전 <font color = "red">불변</font> 특징 추출 알고리즘 <br/>\
 - SURF(Speed-Up Robust Features) : <font color = "red">적분</font> 영상 사용, 관심점과 영역 계산 <br/><br/>\
 3. 탐지/분할 <br/>\
-- PCA(Principa Component Anlaysis) : 고차원 -> 저 차원 표변 변환 <br/>\
+- PCA(Principa Component Anlaysis) : 고차원 -> 저차원 표변 변환 <br/>\
 - Neural Network : 뉴런 상호작용, 생물학적 반복 학습 과정 모형화 <br/><br/>\
 4. 분류 <br/>\
 - SOM(Self-Organizing Map) : 저차원 격자, 고차원 데이터 대응, 군집 도출 기법 <br/>\
