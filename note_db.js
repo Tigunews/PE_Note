@@ -277,7 +277,7 @@ var answer = answer.concat(
 '# 정의 : 직렬 가능성 보장 기법 / 트랜잭션 / 동시 접근 / 무결성 / 성공 실행 <br/>\
 - 동일 데이터에 여러 트랜잭션 동시 접근시 데이터 무결성을 확보하고, 성공/실행지원하는 직렬가능성 보장기법 <br/><br/>\
 # 문제 (갱읽모연회)<br/>\
-1. 갱신손실(Lost Update) : 동신 갱신 경우, 데이터, 덮어씀 <br/>\
+1. 갱신손실(Lost Update) : 동시 갱신 경우, 데이터, 덮어씀 <br/>\
 <img src = "./img/LostUpdateExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. 읽기오류(Dirty Read) : 다수 트랜잭션, 중간 결과값, 참조 <br/>\
 <img src = "./img/DirtyReadExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
