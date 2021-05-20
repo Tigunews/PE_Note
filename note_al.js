@@ -1634,7 +1634,7 @@ var answer = answer.concat(
 - Gray Scale : 다중 채널 -> 단일 채널 <br/>\
 - 이진화 : Black(0), White(255) <br/>\
 - 확대/축소 : 이미지 크기 변경 <br/><br/>\
-2. 특징 추출 <br/>\
+2. 특징 추출 (<font color = "red">스시서</font>)<br/>\
 - STIP(Space-Time Interest Points) : 행동 인식, <font color = "red">관심점</font> 선택 추출 기법 <br/>\
 - SIFT(Scale-Invariant Feature Transform) : 크기, 회전 <font color = "red">불변</font> 특징 추출 알고리즘 <br/>\
 - SURF(Speed-Up Robust Features) : <font color = "red">적분</font> 영상 사용, 관심점과 영역 계산 <br/><br/>\
