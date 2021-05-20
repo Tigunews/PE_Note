@@ -683,7 +683,7 @@ var answer = answer.concat(
 - HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
 - PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
 - RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치<br/><br/>\
-# 기능 (지누경감)<br/>\
+# 기능 (<font color = "red">지누경감</font>)<br/>\
 - 지시/표시 : PLCs가 수집한 상태정보를 수신/기록/표시 <br/>\
 - 누산기능 : 정보를 용도에 맞게 계산 <br/>\
 - 경보기능 : 상태변화에 따라 알람 <br/>\

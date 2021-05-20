@@ -1440,13 +1440,13 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 - RDB <br/><br/>\
 # 필요성 <br/>\
 <img src = "./img/ITComplianceOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 주요 요구사항 (공보보통책)<br/>\
+# 주요 요구사항 (<font color = "red">공보보통책</font>)<br/>\
 <img src = "./img/ITComplianceNeeds.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- 공개 : 투명성 제고, 데이터 공개 요구 <br/>\
-- 보존 : 이력 추적, 데이터 보존 기한 준수 요구 <br/>\
-- 보호 : 암호화, 접근 제어 요구 <br/>\
-- 내부통제 : 감사에 대한 수준 요구 <br/>\
-- 책임성 : 수집,저장,활용,파기시 발생 변조,유출,침해사고 고지 및 책임요구 <br/><br/>\
+- 공개 : <font color = "red>투명성</font> 제고, <font color = "red>데이터</font> 공개 요구 <br/>\
+- 보존 : <font color = "red>이력 추적, 데이터</font> 보존 기한 준수 요구 <br/>\
+- 보호 : 암호화, <font color = "red>접근 제어</font> 요구 <br/>\
+- 내부통제 : <font color = "red>감사 수준</font> 요구 <br/>\
+- 책임성 : 수집,저장,활용,파기시 발생 <font color = "red>변조,유출,침해</font> 사고 고지 및 책임요구 <br/><br/>\
 # 대응방안 <br/>\
 1. 인식전환 <br/>\
 - 조직 교육 : 조직 문화화, 정기적 교육, CSR 강화, 사례 공유 <br/>\
@@ -1454,7 +1454,7 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 2. 제도 및 기술 <br/>\
 - 제도 측면 : 내부점검 정례화, IT 거버넌스 확립, Data 거버넌스 확립, 프로세스 정의 <br/>\
 - 기술 측면 : 문서보호 도입, 데이터 보호 기술, 외부 침해 대응, 내부 오남용 대응 <br/><br/>\
-* 116회 2교시 5번\
+* 116회 관리 2교시 5번\
 ',
  
 // 규제 샌드박스

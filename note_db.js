@@ -1312,7 +1312,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - Key/Value Store : Unique, API 접근(Put(key,value), Value :=get(key)) / Redis, Dynamo <br/>\
 - Column Family Store : Column Value 묶음 / Cassandra, HBase <br/>\
 - Document Store : Type Document, XML, JSON / CouchDB, MongoDB <br/>\
-- Graph Store : Note, Vertex, Edge, 시맨틱, 온톨로지 / Neo4J, AllegroGraph <br/><br/>\
+- Graph Store : Node, Vertex, Edge, 시맨틱, 온톨로지 / Neo4J, AllegroGraph <br/><br/>\
 # 데이터 모델링 절차(도쿼패기후하) <br/>\
 1. 도메인 모델 파악 : 개체 파악, 분석, ERD 도식화 <br/>\
 2. 쿼리 결과 디자인 : 데이터 출력 내용 기반 디자인 <br/>\
@@ -1343,19 +1343,19 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 ',
   
 // NoSQL 데이터 모델링 패턴
-'# 데이터 모델링 패턴 <br/>\
+'# 데이터 모델링 패턴(<font color = "red">CGH - DAA CIA TAM</font>) <br/>\
 1 Conceptual Techniques <br/>\
-- Denormalization : 같은 데이터 중복해서 저장 <br/>\
-- Aggregation : Schema-less 이용, 데이터 모델 합성 가능 <br/>\
-- Application Side Join : N:M관계 Join 필요하므로, Application Level 구현 <br/><br/>\
+- Denormalization : 같은 데이터 <font color = "red">중복</font>해서 저장 <br/>\
+- Aggregation : <font color = "red">Schema-less</font> 이용, 데이터 모델 합성 가능 <br/>\
+- Application Side Join : <font color = "red">N:M관계 Join</font> 필요하므로, Application Level 구현 <br/><br/>\
 2. General Modeling Techniques <br/>\
-- Atomic Aggregates : Entity -> Key-Value 저장 -> 원자적 업데이트 <br/>\
-- Index Table : Key-Value Store Index 활용, 직관적 모델링 패턴 <br/>\
-- Composite Key Index : 결합키 구성, 다중 Key 구성 <br/><br/>\
+- Composite Key Index : <font color = "red">결합키</font> 구성, <font color = "red">다중키</font> 구성 <br/>\
+- Index Table : <font color = "red">Key-Value Store Index</font> 활용, 직관적 모델링 패턴 <br/>\
+- Atomic Aggregates : <font color = "red">Entity</font> -> <font color = "red">Key-Value</font> 저장 -> 원자적 업데이트 <br/><br/>\
 3. Hierachy Modeling Techniques <br/>\
-- Tree Aggregation : Tree, 임의 Graph <br/>\
-- Adjacent List : Linked List 자료구조 <br/>\
-- Materialized Path : Root에서 현재 노드까지 전체 경로를 Key로 저장 <br/><br/>\
+- Tree Aggregation : Tree, <font color = "red">임의 Graph</font> <br/>\
+- Adjacent List : <font color = "red">Linked List</font> 자료구조 <br/>\
+- Materialized Path : Root에서 현재 노드까지 <font color = "red">전체 경로</font>를 Key로 저장 <br/><br/>\
 * 라이지움 87회 응용 2교시 6번\
 ',
 
@@ -1393,11 +1393,7 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 4. PC / EC <br/>\
 - 장애 상황시 : Time Consistency 수준 보장 <br/>\
 - 정상 상황시 : 모든 노드 동일 메시지 보장 <br/>\
-- VoltDB, HBase <br/><br/>\
-# NoSQL 모델링 원칙 <br/>\
-- 비정규화 : 데이터 중복 허용 설계 <br/>\
-- Aggregation : 1:N 관계 Join 최소화, 유연한 스키마 구조 설계 <br/>\
-- Application Join : Application 데이터 활용방식 따른 직접 Join 구현 설계 \
+- VoltDB, HBase \
 ',
 
 // [빅데이터][NoSQL]- NoSQL RDBMS 비교
@@ -1410,12 +1406,12 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 가용성과 성능을 중시하는 분산 시스템의 NoSQL 특성 <br/><br/>\
 # BASE 속성 <br/>\
 1. BAsically Availabe <br/>\
-- 데이터는 항상 접근 가능 <br/>\
-- 다수 스토리지에 복사본 저장 <br/><br/>\
+- 데이터는 <font color = "red">항상 접근</font> 가능 <br/>\
+- <font color = "red">다수 스토리지</font>에 복사본 저장 <br/><br/>\
 2. Soft-State <br/>\
-- 노드의 상태는 외부에서 전송된 정보를 통해 상태 결정 <br/><br/>\
+- 노드의 상태는 <font color = "red">외부</font>에서 전송된 정보를 통해 상태 결정 <br/><br/>\
 3. Eventually Consistency <br/>\
-- 일정 시간 경과시 데이터의 일관성 유지되는 속성 <br/><br/>\
+- 일정 <font color = "red">시간 경과</font>시 데이터의 일관성 유지되는 속성 <br/><br/>\
 # BASE ACID 비교 <br/>\
 <img src = "./img/BASEACID.png" style = "max-width: 100%; height: auto;">\
 ',
