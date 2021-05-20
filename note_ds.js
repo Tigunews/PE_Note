@@ -570,7 +570,8 @@ var answer = answer.concat(
   
 // Smart Factory
 '# 정의 : 자동화 + 지능화 공장 <br/>\
-- ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/><br/>\
+- ICT 기술을 기반으로 제조 전 과정을 자동화, 지능화하여, 최소의 비용 및 시간으로 제품을 생산하는 미래형 공장 <br/>\
+<font color = "red">* 고객 맞춤 : Mass Customization, 비스포크 </font><br/><br/>\
 <img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/ISA95.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 (<font color = "red">현운제사</font>)<br/>\
