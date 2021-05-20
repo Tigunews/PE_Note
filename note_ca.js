@@ -1549,7 +1549,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 
 // 리소스 공유방법 동기화방법
 '# 리소스 공유방법 : N개의 Task와 M개의 Resource를 공유할 때, 세마포어 초기값을 N개로 설정하는 방법 <br/><br/>\
-# Task간 동기화 방법 : 여러개의 Task가 공유 데이터에 접근하는 경우, 동일한 값을 얻을 수 있도록 맞추는 작업 <br/><br/><br/>\
+# Task간 동기화 방법 : 여러개의 Task가 공유 데이터에 접근하는 경우, 동일한 값을 얻을 수 있도록 맞추는 작업 <br/><br/>\
 # 시스템의 요구사항별 효율적인 동기화 기법 제안 <br/>\
 - 락 부담 적어야하는 경우, 락 사용시간 짧은 경우 => 스핀락 <br/>\
 - 인터럽트 컨텍스트에서 락 사용하는 경우 => 반드시 스핀락 <br/>\
@@ -1568,7 +1568,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 구성요소 <br/>\
 - 잠금 <br/>\
 - 인터럽트 봉쇄 <br/>\
-- 엄격한 교대 : 자원 체킹<br/><br/>\
+- 엄격한 교대 : 자원 체킹<br/>\
 - 바쁜대기 <br/>\
 - 잠자기 깨우기 : Sleep(s), Wait(s) -> P(s), V(s) <br/><br/>\
 * 구현기법 <br/>\
@@ -1681,7 +1681,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // 은행가 알고리즘
 '# 정의 : 교착상태 해결 방안중 회피기법의 중요한 알고리즘 <br/>\
 - 안전상태와 불안전 상태로 구분하고 운영체제는 안전상태를 유지할 수 있는 요구만을 수락하고 불안전 상태를 야기하는 요구는 거절 <br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">AMANR</font>)<br/>\
 <img src = "./img/BankersAlgorithmAttribute.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 실행순서 <br/>\
 1. 현재 사용 가능한 리소스 산정 : Available <br/>\
@@ -1708,7 +1708,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 
 // 자원할당 그래프
 '# 정의 : 교착상태 탐지 <br/>\
-- 상태(Deadlock) 탐지를 목적으로 프로세스와 자원 간의 관계를 간선(Node)과 정점(Vertex)으로 표현한 그래프 <br/><br/>\
+- 상태(Deadlock) 탐지를 목적으로 프로세스와 자원 간의 관계를 정점(Vertex)과 간선(Edge)로 표현한 그래프 <br/><br/>\
 # 구성요소 <br/>\
 <img src = "./img/ResourceAllocationGraph.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 교착상태 판별 <br/>\
