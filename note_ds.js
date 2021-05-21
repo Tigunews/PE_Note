@@ -3249,17 +3249,18 @@ var answer = answer.concat(
 - 클라우드 서비스 공급자가 사용자에게 개방형 OS를 사용하는 가상화 데스크톱을 아웃소싱 형태로 전달하는 서비스 <br/><br/>\
 # 개요 <br/>\
 - 목적 및 필요성 : 공공기관, 안정성, 신뢰성 검증된 민간 클라우드서비스 공급 <br/>\
-- 근거 법률 : 클발법 23-2 <br/>\
+- 근거 법률 : 클발법 23-2, 5조 2015년 1차 시행 <br/>\
 - 인증기관 : KISA <br/><br/>\
-# 클라우드 보안인증제 인증 범위 (<font color = "red">하파네관</font>)<br/>\
+# 클라우드 보안인증제 인증 종류 <br/>\
 - IaaS + SaaS -> DaaS(서비스형 데스크톱) <br/>\
 - 기존인증 : IaaS, SaaS, SaaS 간편인증 <br/>\
 - 추가인증 : 2020.11. DaaS 분야 인증 추가 <br/><br/>\
-# DaaS 분야 보안인증 범위 <br/>\
+# DaaS 분야 보안인증 범위 (<font color = "red">하파네관 백유개가서</font>)<br/>\
 <img src = "./img/DaaSArea.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # DaaS 분야 인증기준 <br/>\
-- 14개 분야 110개 통제 항목 <br/>\
-- ISO/IEC 27017 내용 비슷 <br/><br/>\
+- 관리 / 물리 / 기술 / 공공기관용 추가 보호조치 <br/>\
+<font color = "red">* 14개 분야 110개 통제 항목 <br/>\
+* ISO/IEC 27017 내용 비슷 </font><br/><br/>\
 * 라이지움 90회 1교시 3번 <br/>\
 * ITPE 6회 관리 1교시 2번\
 ',
