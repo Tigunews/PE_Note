@@ -1055,6 +1055,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 
 // COMA
 '# 정의 : 캐쉬 동작 / 하나의 공통 주소 공간 / 병렬 컴퓨팅 모델 <br/>\
+- Cache Only Memory Access <br/>\
 - 각 프로세서가 가지고 있는 기억장치들이 모두 캐쉬로 동작하며, 하나의 공통 주소 공간을 가지는 병렬 컴퓨팅 모델 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/COMA.png" style = "max-width:100%; height:auto;"><br/><br/>\
