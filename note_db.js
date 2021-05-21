@@ -1086,7 +1086,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 확정 : 데이터 표준 검토 및 확정 <br/>\
 - 관리 : 데이터 표준 이행<br/><br/>\
 # 프로세스 <br/>\
-<img src = "./img/DataStandardAdminProcess.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/DataStandardAdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 6회 관리 3교시 6번 <br/>\
 * 라이지움 86회 2교시 3번 \
 ',
@@ -1115,7 +1115,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - DBMS 튜닝(환경 관점) : 성능 고려하여 메모리나 블록 크기 지정 / Buffer, Cache 크기 <br/>\
 - SQL 튜닝(응용프로그램 관점) : SQL 작성시 성능 고려 / Hash, Join <br/><br/>\
 # 시스템 데이터베이스 튜닝기법 <br/>\
-- CPU튜닝 : Peak Time 60% 이하 <br/>\
+- CPU 튜닝 : Peak Time 60% 이하 <br/>\
 - 메모리 튜닝 : 메모리 최적화, 버퍼 크기 조정 <br/>\
 - 스토리지 : RAID 레벨 조정, SSD 도입, 스토리지 스티어링 <br/>\
 - 네트워크 튜닝 : 로드밸런싱, 대역폭 확대 <br/><br/>\
@@ -1130,7 +1130,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 # 개념도 (<font color = "red">PODS</font>)<br/>\
 <img src = "./img/DB_Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성도 (<font color = "red">POGE</font>)<br/>\
-<img src = "./img/DB_Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/Optimizerr.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. Parser : 개별 요소 분석, Syntax Chec <br/><br/>\
 2. Optimizer <br/>\
