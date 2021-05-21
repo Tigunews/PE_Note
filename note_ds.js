@@ -4803,16 +4803,21 @@ var answer = answer.concat(
 '# 정의 : 지역사회 문제 해결 / 사회 구성원 / SW, ICT 기술 / 해결 / 사회문제 연구소<br/>\
 - Solution in Our Society Lab <br/>\
 - 지역사회 문제해결을 위해 사회 구성원들이 모여 SW, ICT 기술로 해결 방법을 마련하는 사회문제 연구소 <br/><br/>\
-# 프로세스 (<font color = "red">정창테확</font>)<br/>\
-- 문제 발굴, 정의 : <font color = "red">능동적</font> 발굴 (웹 스크래핑, 빅데이터 분석) <br/>\
-- 공동 창조 : <font color = "red">DB</font> 운용, 중간지원조직 <font color = "red">인프라</font> 활용 <br/>\
-- 테스팅 검증 : <font color = "red">협업</font> 관리 시스템 <br/>\
-- 공유 확산 : <font color = "red">성과 DB</font> 빅데이터 통합 플랫폼, <font color = "red">교차 실증 확산</font> <br/><br/>\
+# 프로세스 (<font color = "red">조개구실공사</font>)<br/>\
+- 조직화 : 혁신조직, 자원확보, 가치와 목표 <br/>\
+- 개념화 : 문제발굴, 공감, 문제 정의 <br/>\
+- 구체화 : 아이디에이션, 프로토타입 <br/>\
+- 실체화 : 공동창조, 컨셉 디자인 <br/>\
+- 공유화 : 실증 및 확산, 데이터 관리 <br/>\
+- 사업화 : 비즈니스 모델, 지원 프로그램 <br/><br/>\
 # 조성 현황 <br/>\
 - 인천 : 아동안전 <br/>\
 - 대전 : 시민생활 안전(노인,장애인,악취) <br/>\
 - 전북 : 대기 환경 <br/>\
 - 전남 : 사회격차 (교통, 문화, 소통, 환경) <br/><br/>\
+# Living Lab SoS Lab 비교 <br/>\
+<img src = "./img/LivingLabSoSLabCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 124회 대비 합숙 2일차 1교시 11번\
 * ITPE 7회 관리 2교시 4번\
 ',
 );

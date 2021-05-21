@@ -110,7 +110,7 @@ var question = question.concat(
 '[NW 가상화]- NFV',
 '[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
-'[NW 가상화]- SD-WAN',
+'[NW 가상화]- SD WAN',
 '유무선 전력전송',
 '망분리',
 '망연계',
@@ -2165,9 +2165,9 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 * KPC 23회 관리 4교시 2번\
 ',
 
-// SD-WAN
-'# 정의 : LAN 에서 SDN을 / 통신 사업자, 서비스 제공자의 WAN으로 확장 적용 기술 <br/>\
-- 데이터센터, 기업, 대학 등의 LAN에서 Data Plane과 Control Plane을 분리하는 SDN을 통신망 사업자와 서비스 제공자 등의WAN으로 확장 적용 가능한 네트워크 기술 <br/><br/>\
+// SD WAN
+'# 정의 : WAN / Data Plane, Control Plane / 분리 가상화 <br/>\
+- 광역 네트워크(WAN)에서 데이터(Data Plane)와 제어 영역(Control Plane)을 분리하여 가상화된 오버레이 네트워크 구성 기술 <br/><br/>\
 # 특징 <br/>\
 - 네트워크 가상화 : NFV 활용, 다양한 기능 수행 가능 <br/>\
 - WAN 회선 비용 절감 : 기존 인터넷 회선 + 저렴 회선 추가 > 대역폭 향상 및 비용 절감 <br/>\
@@ -2177,23 +2177,26 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/SDWAN.png" style = "max-width:100%; height:auto;"><br/>\
 - 중앙 컨트롤러 : 구성저장, 토폴로지 관리, 엑세스 정책 설정, 사용량, 성능 보고 <br/>\
 - 액세스 노드 : SD-WAN CPE, VNF, 라우팅, 터널링, WAN 최적화 <br/><br/>\
-# 기술요소 <br/>\
-1. 장비 측면 <br/>\
-- SD-WAN Controller : 정책 설정, 토폴로지 관리 <br/>\
-- SD-WAN CPE : 오버레이 생성, 종단 엔진 <br/><br/>\
-2. 기술 측면 <br/>\
-- Dynamic Path Switching : 경로 선택 트래픽 스위칭 <br/>\
-- Packet Duplication : 중복 패킷 전송 <br/>\
-- Link Aggregation : 물리적 여러 회선 -> 논리적 하나 회선 <br/>\
-- Network Segmentation : Segment 단위 VLAN 할당 <br/><br/>\
-# 기대효과 <br/>\
-1. 비용 측면 <br/>\
-- TCO, ROI 비용 감소 : 투자, 운영 비용 감소 <br/>\
-- 운영 인력 통합 : 사설, 공용망 별도 관리 불필요 <br/><br/>\
-2. 기술 측면 <br/>\
-- NW 품질 향상 : 자원 재배치, 가상 WAN 구현 기능 지원<br/>\
-- 백업 기능 구현 : 회선 이중화 통한 안정성 <br/>\
-- 대체 경로 확보 : 이중화 구성 가능 <br/><br/>\
+# 구성요소 <br/>\
+1. Control Plane <br/>\
+- 인프라 조율 : 안정적 운영, 정책 배포, 트래픽 모니터링 <br/><br/>\
+2. Data Plane <br/>\
+- Overlay Tunnel : Underlay Tunnel 사용, 논리적 터널 구성<br/>\
+- Underlay Tunnel : MPLS, LTE, 물리 네트워크 공간, IpSec 연결 <br/><br/>\
+# 기능 <br/>\
+1. SD-WAN Orchestration <br/>\
+- 클라우드 기반 중앙 집중형 관리 <br/>\
+- 정책 기반 SD-WAN 오버레이 운영 <br/>\
+- Network Overlay 설정 <br/>\
+- Backhual Traffic 감소 <br/>\
+- 가시성 <br/><br/>\
+2. Traffic Control <br/>\
+- Traffic Steering <br/>\
+- Dynamic Path Control(Switching) <br/>\
+- Tunnel Bounding (Packet Duplication <br/><br/>\
+3. 보안 <br/>\
+- Zone Based Firewall <br/>\
+- 클라우드 보안 솔루션과 통합 <br/><br/>\
 # SD-WAN, SD-WAN 2.0 비교 <br/>\
 <img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 4교시 1번\

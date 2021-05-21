@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 추가 토픽
-'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS','Cloud GPU','MajorState','뉴로모픽','벨라디 변이','DQC','공공무선 통신망',
+'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS','Cloud GPU','MajorState','뉴로모픽','벨라디 변이','DQC','공공무선 통신망','UWB',
 
 // 9주차 
 '가설검정','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert','재식별 공격',
@@ -36,7 +36,7 @@ var this_week_question =
 '클라우드 네이티브 애플리케이션','12 Factors','저전력',
 
 // Mentor's Pick 
-'SD-WAN','ARIES','Join','MVCC',
+'SD WAN','ARIES','Join','MVCC',
 
 // 암기 목록 
 'ISO/IEC 20889', '식별자', 'ISMS-P','ISA/IEC 62443','GDPR','Privacy By Design',
