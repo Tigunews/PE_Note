@@ -301,7 +301,7 @@ var answer = answer.concat(
 - 암호화 과정 Input : Plain Text, 보조키 Ki <br/>\
 - 복호화 과정 Input : Cipher Text, 보조키 Ki(역순) <br/>\
 <img src = "./img/FeistelStructure.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 유형 <br/>\
+# 유형 (<font color = "red">DLHS</font>)<br/>\
 - DES : 56 bit 키, 64 bit 평문 -> 64 bit 암호문, 미국 표준 알고리즘 <br/>\
 - LEA : 빅데이터, 클라우드, IoT / 128 bit 경량화 알고리즘 <br/>\
 - HIGHT : RFID, USN / 저전력 경량화 / 64 bit 평문, 128 bit 키 <br/>\
@@ -315,7 +315,7 @@ var answer = answer.concat(
 - 여러개의 함수를 중첩하면, 개별 함수로 이루어진 암호보다 안전하다 라는 Shannon 이론 근거, 고전 암호의 일종인 Substitution Cipher, Permutation Cipher 중첩 형태 암호화 <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/SPN_Structure.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 유형 <br/>\
+# 유형 (<font color = "red">AA</font>)<br/>\
 - AES : DES 대체하는 미국 연방 표준, 대칭키 기반 / 입력 평문 128 bit 고정, 가변 길이 키 <br/>\
 - ARIA : 학계, 연구소, 정부기관 공동개발, 초경량 환경 / 고정길이 128bit 입,출력, 가변 길이 키 <br/><br/>\
 * ITPE 6회 관리 2교시 4번\
@@ -439,7 +439,7 @@ var answer = answer.concat(
 - 공개키 사용 <br/>\
 - 이산대수 어려움 : 이산대수의 난해함 <br/>\
 - 비밀키 사용 : 암호문 생성 및 평문의 복구를 위한 복호화 키 <br/><br/>\
-# 매커니즘 <br/>\
+# 매커니즘 (<font color = "red">Aga KBa</font>)<br/>\
 <img src = "./img/DiffieHellmanAlgorithmMechanishm.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 상세절차 <br/>\
 <img src = "./img/DiffieHellmanAlgorithmMechanishmDetail.png" style = "max-width: 100%; height: auto;"><br/><br/>\
