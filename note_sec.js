@@ -511,26 +511,18 @@ var answer = answer.concat(
 ',
   
 // ECC
-'# 정의 : 이산대수, 유한체, 타원곡선 <br/>\
-- 타원곡선 이산대수 기반으로 짧은 키 길이와 빠른 속도가 특징인 공개키 암호화 알고리즘 <br/><br/>\
+'# 정의 : 유한체 / 타원곡선 대수적 구조 / 이산로그 문제 / 공개키 암호화 알고리즘 <br/>\
+- 유한체(Finite Field) 위에서 타원곡선의 대수적 구조를 기반으로 한 이산로그 문제에 착안해 만들어진 공개키 암호화 알고리즘 <br/><br/>\
 # 특징 <br/>\
 - SECP256K1 표준 (블록체인) <br/>\
 - 이산대수 문제 (ECDLP) 기반 암호체계 <br/>\
 - 선택성 : 유한체상 다양한 타원곡선 선택 가능 <br/>\
 - 설계 안전성 : 안전한 암호 시스템 설계 용이 <br/>\
 - 고효율성 : 256(ECRSA) / 3072(RSA) <br/><br/>\
-# 원리 <br/>\
+# 알고리즘 키 생성원리 <br/>\
 <img src = "./img/ECC_Calc.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 적용분야 알고리즘 <br/>\
-- 디지털 서명 : ECDSA <br/>\
-- 키교환 : ECDH <br/>\
-- 난수생성 : Dual-EC DRBG <br/>\
-- 암/복호화 : EC-KEM <br/><br/>\
-# ECDSA <br/>\
+# 암/복호화 방식 <br/>\
 <img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/ECDSA_Graphic.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# ECDH <br/>\
-<img src = "./img/ECDH.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # ECC RSA 비교 <br/>\
 <img src = "./img/ECC_RSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 86회 라이지움 1교시 7번 <br/>\
