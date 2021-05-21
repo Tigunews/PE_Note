@@ -58,12 +58,12 @@
 '[빅데이터]- R-HIVE',
 '[빅데이터]- NoSQL',
 '[NoSQL]- Column Family Store',
+'[NoSQL]- Graph Database',
 '[빅데이터][NoSQL]- 데이터 모델링 패턴',
 '[빅데이터][NoSQL]- CAP 이론',
 '[빅데이터][NoSQL]- PACEL',
 '[빅데이터][NoSQL]- NoSQL RDBMS 비교',
 '[빅데이터][NoSQL]- BASE',
-'[빅데이터]- 그래프 데이터베이스(Graph Database)',
 '[빅데이터]- 빅데이터 개인정보보호 가이드라인',
 '[빅데이터]- HDFS',
 '[빅데이터]- 하둡 에코시스템',
@@ -1129,10 +1129,8 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 실행계획 : 옵티마이저가 생성한 SQL 처리 경로<br/><br/>\
 # 개념도 (<font color = "red">PODS</font>)<br/>\
 <img src = "./img/DB_Optimizer.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성도 (<font color = "red">POGE</font>)<br/>\
-<img src = "./img/Optimizerr.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-1. Parser : 개별 요소 분석, Syntax Chec <br/><br/>\
+1. Parser : 개별 요소 분석, Syntax Check <br/><br/>\
 2. Optimizer <br/>\
 - Query transformer : Parsing SQL 일반형태 변환 <br/>\
 - Estimator : 선택도, 카디널리티 비용 계산, 총 비용 계산 <br/>\
@@ -1209,7 +1207,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 ',
 
 // 관계형 데이터 모델
-'(<font color = "red">릴튜속시카</font>)<br/>\
+'(<font color = "red">릴튜속식카</font>)<br/>\
 <img src = "./img/RelationDataModel.png" style = "max-width:100%; height:auto;">\
 ',
   
@@ -1254,11 +1252,11 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 '# 정의 : 고용량, 비정형, 효율처리 / 분산 DBMS <br/>\
 - RDBMS 한계를 벗어나, 고용량의 비정형 데이터를 효율적으로 처리할 수 있는 구조와 유연성을 가진 분산 DBMS <br/><br/>\
 # 모델 구조 <br/>\
-- Key/Value Store : Unique, API 접근(Put(key,value), Value :=get(key)) / Redis, Dynamo <br/>\
-- Column Family Store : Column Value 묶음 / Cassandra, HBase <br/>\
-- Document Store : Type Document, XML, JSON / CouchDB, MongoDB <br/>\
-- Graph Store : Node, Vertex, Edge, 시맨틱, 온톨로지 / Neo4J, AllegroGraph <br/><br/>\
-# 데이터 모델링 절차(도쿼패기후하) <br/>\
+- Key/Value Store : <font color = "red">Unique, API</font> 접근(Put(key,value), Value :=get(key)) / Redis, Dynamo <br/>\
+- Column Family Store : Column Value <font color = "red">묶음</font> / Cassandra, HBase <br/>\
+- Document Store : Type Document, <font color = "red">XML, JSON</font> / CouchDB, MongoDB <br/>\
+- Graph Store : <font color = "red">Node, Vertex, Edge</font>, 시맨틱, 온톨로지 / Neo4J, AllegroGraph <br/><br/>\
+# 데이터 모델링 절차(<font color = "red">도쿼패기후하</font>) <br/>\
 1. 도메인 모델 파악 : 개체 파악, 분석, ERD 도식화 <br/>\
 2. 쿼리 결과 디자인 : 데이터 출력 내용 기반 디자인 <br/>\
 3. 패턴 이용 데이터 모델링 : Put/Get 형태로 NoSQL내 테이블로 재정의 <br/>\
@@ -1266,8 +1264,8 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 5. 후보 NoSQL 선정 및 테스트 : 구조 특성 분석후 부하, 안전성 테스트<br/>\
 6. 최적화 및 하드웨어 디자인 : 완성된 데이터 모델을 NoSQL에 최적화 및 하드웨어 디자인 <br/><br/>\
 # 특징 : 테이블간 관계정의를 안함, 분산환경지원, 저비용처리(오픈소스), 확장성, 다양 형태 저장구조 <br/><br/>\
-* 123회 1교시 11번 <br/>\
-* 117회 1교시 9번 \
+* 123회 관리 1교시 11번 <br/>\
+* 117회 관리 1교시 9번 \
 ',
   
 // Column Family Store
@@ -1285,6 +1283,14 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - Cassandra : Bigtable과 Dynamo 분산기술 <br/>\
 - HBase : 하둡기반 동작, 빅데이터 분산처리 <br/><br/>\
 * 123회 관리 1교시 11번 \
+',
+
+// Graph Database
+'# 정의 : NoSQL 기반 데이터베이스 / 노드,엔티티 관계 그래프 모델 / 트랜잭션 관리 <br/>\
+- 노드(엔티티)와 이들 간의 관계를 그래프 데이터 모델로 저장하여 트랜잭션을 관리하는 기능을 API 로 제공하는 NoSQL 기반 데이터베이스<br/><br/>\
+# 정의 : 데이터를 노드와 엣지로 표현하여 데이터 사이의 관계를 그래프 구조를 이용하여 저장하는 NoSQL 기반의 데이터 베이스 <br/><br/>\
+<img src = "./img/DS_38_1.PNG" style = "max-width: 100%; height: auto;"><br/><br/>\
+<img src = "./img/DS_38_2.PNG" style = "max-width: 100%; height: auto;">\
 ',
   
 // NoSQL 데이터 모델링 패턴
@@ -1359,14 +1365,6 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 일정 <font color = "red">시간 경과</font>시 데이터의 일관성 유지되는 속성 <br/><br/>\
 # BASE ACID 비교 <br/>\
 <img src = "./img/BASEACID.png" style = "max-width: 100%; height: auto;">\
-',
-
-// Graph Database
-'# 정의 : NoSQL 기반 데이터베이스 / 노드,엔티티 관계 그래프 모델 / 트랜잭션 관리 <br/>\
-- 노드(엔티티)와 이들 간의 관계를 그래프 데이터 모델로 저장하여 트랜잭션을 관리하는 기능을 API 로 제공하는 NoSQL 기반 데이터베이스<br/><br/>\
-# 정의 : 데이터를 노드와 엣지로 표현하여 데이터 사이의 관계를 그래프 구조를 이용하여 저장하는 NoSQL 기반의 데이터 베이스 <br/><br/>\
-<img src = "./img/DS_38_1.PNG" style = "max-width: 100%; height: auto;"><br/><br/>\
-<img src = "./img/DS_38_2.PNG" style = "max-width: 100%; height: auto;">\
 ',
 
 // 빅데이터 개인정보보호 가이드라인
