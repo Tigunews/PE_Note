@@ -2337,12 +2337,12 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 '# 정의 : 범용적인 제어 시스템 보안 관련 국제 표준 규격 <br/>\
 - 전사적으로 보안적인 산업용 자동화 및 제어 시스템(IACS ; Industrial Automation and Control Systems)을 구현하기 위한 일련의 표준, 보고서 및 부속 문서들을 표준하는 국제 표준 <br/>\
 - IEC 62443 표준의 가이드라인을 준수한다면 네트워크에 대한 사이버 공격 위험성 낮춤 효과 <br/><br/>\
-# 구성요소 (GPSC) <br/>\
+# 구성요소 (<font color ="red">GPSC</font>) <br/>\
 - General : 개념 모델, 용어, 일반사항<br/>\
 - Policies & Procedures : 보안 정책, 절차 규정<br/>\
 - System : 기본적 요구사항 (FR 1~7) 설계, 구현<br/>\
 - Component : 보증, 기능 요구사항 규정<br/><br/>\
-# 기본 보안 요구사항 (IUSDRTR / IU스드르트르)<br/>\
+# 기본 보안 요구사항 (<font color = "red">IUSDRTR / IU스드르트르</font>)<br/>\
 1. FR1 : Identification and Authentication Control <br/>\
 - (IAC, 식별 및 인증) : 접근 허용전 모든 사용자 식별, 인증 <br/><br/>\
 2. FR2 : Use Control<br/>\
