@@ -45,7 +45,6 @@
 'NewSQL DBMS',
 '데이터 리터러시(Data Literacy)',
 'Join',
-'데이터 품질관리 지침',
 '데이터 표준화',
 '데이터 표준 관리도구',
 'DB Tunning',
@@ -822,10 +821,20 @@ var answer = answer.concat(
 ',
 
 // DQM
-'# 정의 : 사용자 기대 만족 / 지속적 / 데이터 품질 관리 활동 <br/>\
-- Data Quality Management <br/>\
-- 조직 내,외부 정보시스템 및 DB 사용자의 기대를 만족시키기 위해 지속적으로 데이터 품질(Data Quality)을 관리하는 활동 <br/><br/>\
-<img src = "./img/DQM_1.png" style = "max-width:100%; height:auto;">\
+'# 데이터 품질관리 정의 : 기대 만족 / 데이터 관리 및 개선 활동 <br/>\
+- 기관이나 조직 내외부의 정보시스템 및 DB 사용자의 기대를 만족시키기 위해 지속적으로 수행하는 데이터 관리 및 개선 활동 <br/><br/>\
+# 암기 <br/>\
+<img src = "./img/DataFrameworkSummury.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 데이터 품질관리 프레임워크 <br/>\
+- 정의 : 데이터 품질관리의 대상이 되는 구성요소와 요소들 간의 관계를 정의한 데이터 품질관리의 기본 개념틀 <br/>\
+<img src = "./img/DQ_Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 데이터 관리 <br/>\
+<img src = "./img/DQ_Admin.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 데이터 구조관리 <br/>\
+<img src = "./img/DQ_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 데이터 관리프로세스 <br/>\
+<img src = "./img/DQ_AdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 3교시 2번\
 ',
 
 // DQM3
@@ -848,9 +857,9 @@ var answer = answer.concat(
 '# 정의 : 동명이의어 / 데이터 요소 매핑 표준 <br/>\
 - Metadata Mapping Procedure <br/>\
 - 동일한 의미의 다른 이름 가지는 데이터 요소들에 대해 매핑하기 위한 표준 <br/><br/>\
-# 구성 <br/>\
+# 구성 (<font color = "red">데값메온</font>)<br/>\
 - Part3 : 데이터 요소 표준화 <br/>\
-- Part4 : 값영역 표준화 <br/>\
+- Part4 : 값 영역 표준화 <br/>\
 - Part5 : 메타데이터의 의미적 일, 매핑절차 표준화 <br/>\
 - Part6 : 온톨로지 생성 FW <br/><br/>\
 # 절차 <br/>\
@@ -865,13 +874,12 @@ var answer = answer.concat(
 -  공공•민간에서 개발하여 활용 중인 정보시스템의 데이터 품질을 확보하기 위해 데이터 자체 품질과 데이터 관리체계의 품질, 그리고 데이터베이스 보안 체계를 심사•인증하여 범국가적 데이터의 품질 제고 및 고도화를 위한 제도<br/><br/>\
 # 암기 <br/>\
 - V-도업:플골실5/3.5/3.2 <br/>\
-- M-일정 적접 보유 <br/>\
+- M-일정 적접 보유 / 도정통정최 <br/>\
 - S-접암작취 <br/><br/>\
 # 유형 <br/>\
 - 데이터인증(DQC-V) : 도메인,업무규칙 -> 데이터 정합성 정량화 > Platinum Class(5시그마 이상 99.977%이상) > Gold(3.5시, 97.7%) > Silver(3.2시, 95.510%)<br/>\
 - 데이터관리인증(DQC-M) : 일관성, 정확성, 적시성, 접근성, 보안성, 유용성 -> 도정통정최(1~5Level) <br/>\
 - 데이터보안인증(DQC-S) : 접근제어, 암호화, 작업결재, 취약점분석 -> 접압작취(1~4Level)<br/><br/>\
-<img src = "./img/DQC_M.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 78회 3교시 6번\
 ',
   
@@ -897,7 +905,7 @@ var answer = answer.concat(
 - B 트리 인덱스 : 좌우 균형 유지, O(logn) 성능 유지 <br/><br/>\
 2. 해시 인덱스 <br/>\
 - 정적 해싱 : 버킷 수 고정, 데이터 개수를 이미 알고 있는 경우 <br/>\
-- 동적 해싱 : 버킷 수 가변, 데이엍 증감 원활 위해 (Trie 자료구조 사용) <br/>\
+- 동적 해싱 : 버킷 수 가변, 데이터 증감 원활 위해 (Trie 자료구조 사용) <br/>\
 - 확장 해싱 : 해시 함수 동적 변경 허용 기술, 디렉토리 버킷으로 2단계 구조 <br/><br/>\
 3. 확장 인덱스 (특정 밴더) <br/>\
 - 군집 인덱스(MS) : 검색키의 순서와 파일의 순서가 순차적 연결 <br/>\
@@ -974,7 +982,7 @@ var answer = answer.concat(
 - 비 잠금 동시성 제어 : 트랜잭션 동시성 제어 Non-Locking 구조 <br/><br/>\
 2. Infra <br/>\
 - 노드 단위 고성능 : 단일 DBMS 서버 노드 단위 확장, 고성능 보장 <br/>\
-- 병령/비 공유 아키텍처 : 병렬 수행시 고성능 처리, 분산 처리시 독립적 존재 <br/><br/>\
+- 명령/비 공유 아키텍처 : 병렬 수행시 고성능 처리, 분산 처리시 독립적 존재 <br/><br/>\
 # 핵심 기술 <br/>\
 1. 스토리지 관리 <br/>\
 - Main Memory Storage : In Memory DB / Paging(VoltDB), Column Store(MemSQL) <br/>\
@@ -992,7 +1000,7 @@ var answer = answer.concat(
 // 디지털 리터러시
 '# 정의 : 데이터 활용 능력 / 목적, 의미, 이해, 해석, 활용 <br/>\
 - Data 와 Literacy 의 합성어로, 데이터를 목적에 맞게 생성하고, 데이터의 숨겨진 의미를 올바르게 이해 및 해석하여 적절하게 활용하는 능력<br/><br/>\
-# 6영역 (연비창디의기)<br/>\
+# 6영역 (<font color = "red">연비창디의기</font>)<br/>\
 - 연구 및 정보 <br/>\
 - 비판적 사고력 <br/>\
 - 창의성 및 혁신성 <br/>\
@@ -1010,38 +1018,38 @@ var answer = answer.concat(
 1. Inner Join (교집합) <br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
 FROM TABLE_A A TABLE_B B <br/>\
-WHERE A.NO_EMP = B.NO_EMP <br/>\
-AND   A.DEPT   = B.DEPT   <br/><br/>\
+WHERE A.NO_EMP <font color = "red">=</font> B.NO_EMP <br/>\
+AND   A.DEPT   <font color = "red">=</font> B.DEPT   <br/><br/>\
 2. Left Outer Join (A) <br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
 FROM TABLE_A A TABLE_B B <br/>\
-WHERE A.NO_EMP(+) = B.NO_EMP <br/>\
+WHERE A.NO_EMP<font color = "red">(+)</font> = B.NO_EMP <br/>\
 AND   A.DEPT   = B.DEPT   <br/><br/>\
 3. Full Outer Join (A+B) <br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
 FROM TABLE_A A TABLE_B B <br/>\
-WHERE A.NO_EMP(+) = B.NO_EMP(+) <br/>\
+WHERE A.NO_EMP<font color = "red">(+)</font> = B.NO_EMP<font color = "red">(+)</font> <br/>\
 AND   A.DEPT   = B.DEPT   <br/><br/>\
 4. Cross Join <br/>\
 - 모든 경우의 수 표현 <br/>\
 - 결과값 수 N*M <br/>\
 <img src = "./img/Join_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
-FROM EX_TABLE A, JOIN_TABLE B <br/><br/>\
+FROM <font color = "red">EX_TABLE A, JOIN_TABLE B</font> <br/><br/>\
 5. Self Join <br/>\
 - 자기 자신과 조인 <br/>\
 - 하나의 테이블 여러번 복사 <br/>\
 - 자신이 가지고 있는 칼럼 다양하게 변형시켜 활용할 때 사용 <br/>\
 <img src = "./img/Join_2.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 SELECT A.NAME, B.AGE <br/>\
-FROM TABLE_A A, TABLE_A B <br/><br/>\
+FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B <br/><br/>\
 # 물리적 조인 (<font color = "red">네소해카인</font>)<br/>\
 - SQL문 사용하지 않음<br/>\
 - SQL문에서 요청하는 논리 조인을 옵티마이저가 자료 통계나 규칙에 맞게 가져오는 방법 <br/>\
 - 내부에서 일어나는 조인 <br/><br/>\
 1. Nested Loop Join <br/>\
 - <font color = "red">가장 많이 사용</font>하는 기본 조인 방식 <br/>\
-- 선수행 범위가 중요, <font color = "red">후수행 랜덤 엑세스</font> <br/><br/>\
+- 선수행 범위가 중요, <font color = "red">후 수행 랜덤 엑세스</font> <br/><br/>\
 2. Sort Merge Join <br/>\
 - <font color = "red">정렬 후</font> 조인 수행 방식 <br/>\
 - <font color = "red">조인은 효과적</font>, 정렬에 대한 부담 존재 <br/><br/>\
@@ -1053,23 +1061,6 @@ FROM TABLE_A A, TABLE_A B <br/><br/>\
 - 일반적으로 <font color = "red">조인 순서 잘못된</font> 경우 발생 <br/><br/>\
 5. Index Join <br/>\
 - <font color = "red">인덱스 존재</font>시 인덱스간 해시 조인을 통해 액세스 하는 기법\
-',
-  
-// 데이터 품질관리 지침
-'# 데이터 품질관리 정의 : 기대 만족 / 데이터 관리 및 개선 활동 <br/>\
-- 기관이나 조직 내외부의 정보시스템 및 DB 사용자의 기대를 만족시키기 위해 지속적으로 수행하는 데이터 관리 및 개선 활동 <br/><br/>\
-# 암기 <br/>\
-<img src = "./img/DataFrameworkSummury.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 데이터 품질관리 프레임워크 <br/>\
-- 정의 : 데이터 품질관리의 대상이 되는 구성요소와 요소들 간의 관계를 정의한 데이터 품질관리의 기본 개념틀 <br/>\
-<img src = "./img/DQ_Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 데이터 관리 <br/>\
-<img src = "./img/DQ_Admin.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 데이터 구조관리 <br/>\
-<img src = "./img/DQ_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 데이터 관리프로세스 <br/>\
-<img src = "./img/DQ_AdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 3교시 2번\
 ',
 
 // 데이터 표준화 
