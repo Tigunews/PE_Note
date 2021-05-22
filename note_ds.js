@@ -3488,7 +3488,7 @@ var answer = answer.concat(
 ',
 
 // 12 Factors
-'# 정의 : 클라우드 네이티브 애플리케이션 개발방법론 / 헤로쿠 기업<br/>\
+'# 정의 : 클라우드 네이티브 애플리케이션 개발방법론 / <font color = "red">헤로쿠 기업</font><br/>\
 - 클라우드 플랫폼 모델 사용하는 기업들의 개발, 운영, 확장등을 관찰, 작성한 개발 방법론 <br/><br/>\
 # 상세 내용 (코종설B 빌무포동 폐환로관)<br/>\
 <img src = "./img/12Factors.png" style = "max-width:100%; height:auto;"><br/>\

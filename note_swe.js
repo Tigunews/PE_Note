@@ -5524,7 +5524,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 // MLOps
 '# 정의 : Meachine Laerning + DevOps <br/>\
 - 데이터 과학 및 기계 학습의 솔루션 개발과 DevOps 기반의 전주기 운영통합 문화 기술 인프라 개념 결합 <br/><br/>\
-# 특징 <br/>\
+# 특징 (<font color = "red">오기예수</font>)<br/>\
 - ML 프로젝트 오해 : ML 프로젝트에서 모델링(Coding)은 비율상 작은 범위 <br/>\
 - 기술 부채 발생 : 모델 개발 과도 집중 <br/>\
 - 예측 불가능성 : 학습, 생산데이터 일치성 예측 불가 <br/>\
