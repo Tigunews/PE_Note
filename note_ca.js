@@ -1196,7 +1196,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // Cloud GPU
-'# 암기 <br/>\
+'# 암기 (<font color = "red">응라드</font>)<br/>\
 - API 리모팅 : Lib <br/>\
 - 가상화 : Driver <br/>\
 - 하드웨어 지원 : Module <br/><br/>\

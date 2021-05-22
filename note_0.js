@@ -25,7 +25,7 @@ var this_week_question =
 'CCTV 개인영상 보호방안','12 Factors','C-V2X','Appliance Server','MPEG',
 
 // 5주차 
-'타당도','신뢰도','능동학습','opinion','회귀','주성분','다차원 척도','아웃소싱','Slab allocator','penalty','sip','nosql','증류','기술통계','추론통계','데이터 품질관리 지침','NLP','큐잉','군집분석','IT 투자','API Gateway','국제 표준화 기구',
+'타당도','신뢰도','능동학습','opinion','회귀','아웃소싱','Slab allocator','penalty','sip','nosql','증류','기술통계','추론통계','데이터 품질관리 지침','NLP','큐잉','군집분석','IT 투자','API Gateway','국제 표준화 기구',
 'Efficient','지능 정보화 기본법','de facto standard','TensorFlow','스타스키마','ERD','관계형 데이터 모델','DataGrid','Graph Database','Back Tracking','분할과정복','Greedy','동적계획법','인공지능 데이터 평가','GAN','Vanishing Gradient Problem',
 'Data Warehouse','Data Lake','HOt Encoding','Softmax','AI 윤리','성능검증','머신러닝 파이프라인','Gradient Descent','정렬',
 
