@@ -1485,7 +1485,7 @@ var answer = answer.concat(
 # 발생원인 <br/>\
 - Layer 깊이 측면 : 복잡한 문제 해결 위한 층 확장 / 국부해 수렴, 최적해 수렴시 반복 계산 증가 <br/>\
 - 활성함수 측면 : Sigmoid 함수의 "Squash"특성 / 역전파시 최대 미분값 0.25, 층 반복시 0 수렴 <br/>\
-<font color = "red">*Squash : Input을 매우 작은 범위의 Output Range로 매핑시키는 방식 </font><br/><br/>\
+<font color = "red">* Squash : Input을 매우 작은 범위의 Output Range로 매핑시키는 방식 </font><br/><br/>\
 # 해결방안 <br/>\
 1. 학습 효율 측면 <br/>\
 - LSTM 활용 : Forgot Gate, 장기의존성 문제 해결 <br/>\
