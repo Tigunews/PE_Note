@@ -2669,7 +2669,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 절차 <br/>\
 1. Sender <br/>\
 <img src = "./img/DoubleAuthenticaitonSender.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. Receiver <br/>\
+2. Receiver (<font color = "red">123 5423</font>)<br/>\
 <img src = "./img/DoubleAuthenticaitonReciver.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 82회 관리 2교시 6번\
 ',

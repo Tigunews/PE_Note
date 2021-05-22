@@ -2249,7 +2249,7 @@ var answer = answer.concat(
 - 스파이크 : 임계 측정 목표 <br/>\
 - 티어 테스트 : 구간별 병목 <br/>\
 - 가용성 : 업무처리의 가용성 측정 <br/><br/>\
-2. 목적 (</font color = "red">단복임확</font>)<br/>\
+2. 목적 (<font color = "red">단복임확</font>)<br/>\
 - 단위성능 <br/>\
 - 복합성능 : 가중치 적용 <br/>\
 - 임계성능 : 임계도달 <br/>\

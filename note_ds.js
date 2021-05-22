@@ -1515,6 +1515,23 @@ var answer = answer.concat(
 <img src = "./img/MyDataConcept.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 주체별 역할, 처리흐름 <br/>\
 <img src = "./img/MyDataSpecification.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 고객 : 정보주체 <br/>\
+- 정보 제공자 : 금융기관 <br/>\
+- 마이데이터 사업자 : 핀테크 사업자 <br/>\
+- 마이데이터 종합포털 : 마이데이터 지원센터 제공 웹 서비스 <br/>\
+- 통합 인증기관 : 다수 정보제공자 공통 인증수단 <br/><br/>\
+# 제공범위 (<font color = "red">여보카전</font>)<br/>\
+- 여,수신, 금융투자 : 예,적금 대출<br/>\
+- 보험 : 가입상품, 대출<br/>\
+- 카드 : 월 이용 정보 <br/>\
+- 전자 금융 : 선불 발행정보, 거래내역 <br/><br/>\
+# 마이데이터 지원센터 역할 (<font color = "red">참정민정마</font>)<br/>\
+- 참여기관 관리 <br/>\
+- 정보항목 선정 및 표준화 <br/>\
+- 민원,분쟁사항 관리 <br/>\
+- 정기 협의체 운영 : 의견 조율<br/>\
+- 마이데이터 종합포털 운영 <br/><br/>\
 * 120회 2교시 2번\
 ',
 
