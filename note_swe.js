@@ -102,7 +102,6 @@
 '[구현단계]- Mccabe 순환복잡도(Cyclomatic Complexity) = 회전복잡도',
 '[구현단계][Mccabe 순환복잡도]- Halstead Metrics, 객체지향 Metrics',
 '[구현단계]- Spring Framework',
-'[구현단계][Spring Framework]- IOC',
 '[구현단계]- MISRA-C, MISRA-C++',
 '[구현단계]- node.js',
 '[구현단계]- Javascript',
@@ -291,7 +290,9 @@
 '[방법론][객체지향]- 상속 합성',
 '[방법론][객체지향]- 객체 모델링',
 '[방법론][객체지향]- SOLID',
-'[방법론][객체지향]- 의존성 주입',
+'[방법론][객체지향]- IOC',
+'[방법론][객체지향]- DL',
+'[방법론][객체지향]- DI',
 '[방법론][객체지향]- Overriding, Overloading',
 '[방법론][객체지향]- Demeter\'s Law',
 '[방법론]- CBD',
@@ -2055,25 +2056,6 @@ var answer = answer.concat(
 - 도입위한 추가작업 <br/>\
 - layer간 인터페이스 생성 필요 <br/><br/>\
 # 구성 : spring core(IoC), aop, dao, spring orm, context, web, mvc \
-',
-
-// IOC
-'# 정의 : 컨테이너 위임 기법 <br/>\
-- Inversion of Control <br/>\
-- 기존의 프로그래밍에서 객체의 라이프 사이클을 개발자가 관리하던 것을 컨테이너에게 그 제어권을 위임하는 프로그래밍 기법 <br/><br/>\
-# 특징 <br/>\
-- 유지보수 용이 <br/>\
-- 재사용성 <br/>\
-- 테스트 <br/>\
-- 자유로운 환경 설정 <br/><br/>\
-# 구성 : 빈, 빈펙토리, 애플리케이션컨텍스트, IoC 컨테이너 <br/><br/>\
-# DI 유형 <br/>\
-1. Setter Injection : 클래스 사이의 의존관계를 연결시키기 위한 방법 <br/>\
-2. Constructor Injection : 생성자를 통하여 클래스 사이의 의존관계를 연결시키는 방법 <br/>\
-3. Method Injection : SIngleton 인스턴스와 Non Singlton의 의존관계 연결시키는 방법 <br/><br/>\
-# 구현 방법 <br/>\
-- DL(Dependancy Lookup) : 개발자들이 컨테이너에게 제공하는 API를 이용하여 사용하고자 하는 Bean을 Lookup(의존성 검색) <br/>\
-- DI(Dependancy Injection) : 각 클래스 사이에 피룡로 하는 의존관계를 컨테이너가 자동으로 연결(의존성 주입) \
 ',
 
 // MISRA-C, MISRA-C++
@@ -4790,11 +4772,40 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/SOLID_ALL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * DRY(Don\'t Repeat Yourself)\
 ',
+
+// IOC
+'# 정의 : 컨테이너 위임 기법 <br/>\
+- Inversion of Control <br/>\
+- 기존의 프로그래밍에서 객체의 라이프 사이클을 개발자가 관리하던 것을 컨테이너에게 그 제어권을 위임하는 프로그래밍 기법 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/IOC_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 유지보수 용이 <br/>\
+- 재사용성 <br/>\
+- 테스트 <br/>\
+- 자유로운 환경 설정 <br/><br/>\
+# 구성 : 빈, 빈펙토리, 애플리케이션컨텍스트, IoC 컨테이너 <br/><br/>\
+# DI 유형 <br/>\
+1. Setter Injection : 클래스 사이의 의존관계를 연결시키기 위한 방법 <br/>\
+2. Constructor Injection : 생성자를 통하여 클래스 사이의 의존관계를 연결시키는 방법 <br/>\
+3. Method Injection : SIngleton 인스턴스와 Non Singlton의 의존관계 연결시키는 방법 <br/><br/>\
+# 구현 방법 <br/>\
+- DL(Dependancy Lookup) : 개발자들이 컨테이너에게 제공하는 API를 이용하여 사용하고자 하는 Bean을 Lookup(의존성 검색) <br/>\
+- DI(Dependancy Injection) : 각 클래스 사이에 피룡로 하는 의존관계를 컨테이너가 자동으로 연결(의존성 주입) <br/><br/>\
+* 124회 관리 1교시 6번\
+',
+
+// DL
+'# 정의 <br/>\
+* 124회 관리 1교시 6번\
+',
  
-// 의존성 주입
+// DI
 '# 정의 : 의존 관계 자동 연결 기법 <br/>\
+- Dependency Injection <br/>\
 - 객체를 직접 생성하는 것이 아닌 외부의 조립기를 이용해 생성하는 기법 <br/>\
-- 각 계층사이, 각 클래스 사이에 필요하는 의존관계를 컨테이너가 자동으로 연결해주는 기법 \
+- 각 계층사이, 각 클래스 사이에 필요하는 의존관계를 컨테이너가 자동으로 연결해주는 기법 <br/><br/>\
+* 124회 관리 1교시 6번\
 ',
  
 // Overriding, Overloading

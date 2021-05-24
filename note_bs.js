@@ -91,6 +91,7 @@ var question = question.concat(
 '대기행렬이론',
 '[대기행렬]- 대기행렬 시스템',
 'OKR',
+'Valu Chain',
 );
 
 var answer = answer.concat(
@@ -1565,5 +1566,12 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 # OKR, KPI 비교 <br/>\
 <img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 5번 \
+',
+
+// Value Chain
+'# 정의 : 주활동 / 지원활동 / 기능 / 프로세스 / 연계 분석 기법 <br/>\
+- 기업이 고객에게 가치를 제공함에 있어서 부가가치 창출에 직/간접적으로 관련된 주활동, 지원활동, 기능, 프로세스를 연계하는 분석 기법 <br/><br/>\
+<img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 124회 관리 1교시 1번\
 ',
 );

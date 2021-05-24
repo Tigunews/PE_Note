@@ -95,6 +95,7 @@ var question = question.concat(
 '[Web]- XML, JSON',
 'Semantic Web',
 '앱접근성(Mobile App Accessibility)',
+'Responsive Web Design',
 '시선통신기술(Line of Sight Communications)',
 '[음성인식]- 하이퍼보이스(Hypervioice)',
 '모바일 컨시어지(Mobile Concierge)',
@@ -221,6 +222,7 @@ var question = question.concat(
 '[XR]- AR',
 '메타버스',
 'E-Learning',
+'디지털 휴먼 증강',
 'DOM SAX',
 '[로봇]- URC',
 '[로봇]- SLAM',
@@ -607,7 +609,19 @@ var answer = answer.concat(
 <img src = "./img/SmartFactorySecWeak.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 보안 기술 <br/>\
 <img src = "./img/SmartFactorySecTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 124회 관리 1교시 3번 <br/>\
 * 120회 관리 2교시 5번\
+',
+
+// ISA 95
+'# 정의 : Smart Factory MES 참조 모델 <br/>\
+<img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Level <br/>\
+- Level 4(비즈니스) : 비즈니스 계획, 물류 (ERP, SCM) <br/>\
+- Level 3(생산 관리) : 생산/설비/품질/재고 관리 <br/>\
+- Level 2(공정 제어) : PLC+HMI, DCS, SCADA 활용, 프로세스 제어, 자동화 <br/>\
+- Level 1(단위 제어 장치) : 모터, 유압, 공기압 활용 Actuator 제어 <br/><br/>\
+* 124회 관리 1교시 3번 \
 ',
   
 // CPS
@@ -2061,7 +2075,7 @@ var answer = answer.concat(
 // 앱접근성
 '# 정의 : 제작 차별금지 규정 지침 <br/>\
 - 모바일 애플리케이션 서비스 제공자가 장애인과 고령자 등 접근성을 보장하기 위해 어플리케이션 제작시 지켜야할 사항을 규정한 지침 <br/><br/>\
-# 원리 및 지침 (인운이견)<br/>\
+# 원리 및 지침 (<font color = "red">인운이견</font>)<br/>\
 1. 인식 용이성 <br/>\
 - 대체 텍스트 제공 <br/>\
 - 멀티미디어 대체 수단 제공 : 자막, 원고, 수화 <br/>\
@@ -2079,6 +2093,28 @@ var answer = answer.concat(
 4. 견고성 <br/>\
 - 문법 준수 <br/>\
 - 웹, 애플리케이션 접근성 \
+',
+
+// Responsive Web Design
+'# 정의 : 사용자 디바이스 / 해상도, 화면 / 자동 변환 기술 <br/>\
+- 사용자의 다양한 디바이스 환경에 따라 해상도나 화면이 최적화된 환경으로 자동 변환되는 기술 <br/><br/>\
+# 패턴 <br/>\
+1. 유동형 (Mostly Fluid) <br/>\
+- 가변형 그리드로 구성, 단순히 컨텐츠 폭 맞추는 방법 <br/>\
+<img src = "./img/RWD_MostlyFluid.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 열 끌어놓기 (Column Drop) <br/>\
+- 화면폭 좁아져, 표현 힘들 경우, 하단 수직 배열 <br/>\
+<img src = "./img/RWD_ColumnDrop.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 배치 이동(Layout Shifter) <br/>\
+- 스크린 마다 다른 형태 사용 <br/>\
+<img src = "./img/RWD_LayoutShifter.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. 미세 조정(Tiny Tweaks) <br/>\
+- 글꼴, 이미지 크기조정, 미세조정 발생 <br/>\
+<img src = "./img/RWD_TinyTweaks.png" style = "max-width:100%; height:auto;"><br/><br/>\
+5. 오프 캔버스(Off-Canvas) <br/>\
+- 필요할 때 노출 패턴 <br/>\
+<img src = "./img/OffCanvas.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 124회 관리 1교시 5번\
 ',
 
 // 시선통신기술
@@ -4542,6 +4578,14 @@ var answer = answer.concat(
 - 다양화 : 멀티미디어 이용, 정보원천, 학습전달 모드 <br/>\
 - 국가적 대응 : 지식기반 경제에 대응 <br/>\
 - 표준화 : 재사용, 질향상 위한 컨텐츠 표준화 \
+',
+
+// 디지털 휴먼 증강
+'# 정의 : 신체 저하 예방 / 건강한 삶 지속 가능 기술 <br/>\
+- AI, IT, BT 등의 다양한 이종 기술간 융합을 바탕으로 인간의 신체, 두뇌, 감성 능력의 저하를 예방하고, 회복 및 향상을 통해 지속적인 건강한 삶을 가능하게 하는 기술 <br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/DigitalHumanAugmentation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 124회 관리 1교시 4번\
 ',
   
 // DOM SAX

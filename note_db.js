@@ -1691,9 +1691,17 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
   
 // 통계 Overview
 '<img src = "./img/StaticsUnderstand.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 척도 <br/>\
+1. 범주형 변수 <br/>\
+- 명목척도 : 단순 범주 분류 목적, 숫자 부여<br/>\
+- 서열척도 : 명목척도 기능 + 범주간 대소관계, 서열 <br/><br/>\
+2. 연속형 변수 <br/>\
+- 등간척도 : 영점 x, 대상 갖는 양차이, 등간 숫자 부여<br/>\
+- 비율척도 : 영점 o, 비율 계산 숫자 부여 <br/><br/>\
+* 124회 관리 1교시 2번 <br/>\
 * 123회 관리 3교시 3번\
 ',
-  
+ 
 // 데이터 분석 전처리
 '# 개념 : 데이터를 특정 <font color = "red">분석 목적</font>에 맞게 분석 가능한 상태로 만드는 것 <br/><br/>\
 # 종류 : 정제(Cleansing), 누가치 대체(missing vlaue imputation), 날짜 파싱 <br/><br/>\
@@ -1857,6 +1865,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 예측 : 목적 변수 예측 <br/><br/>\
 # 종류 <br/>\
 <img src = "./img/RegressionModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/RegressionDistribute.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 2교시 4번 <br/>\
 * KPC 91회 3교시 1번\
 ',
