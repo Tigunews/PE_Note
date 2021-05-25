@@ -115,6 +115,7 @@ var question = question.concat(
 '[가상화]- Appliance Server',
 '[가상화]- VDI',
 '[GIS]- OGC',
+'[GIS]- IMDF',
 '위치정보, 위치기반서비스',
 'IEC 61508',
 '[ISO/IEC 61508]- SIL',
@@ -2498,6 +2499,19 @@ var answer = answer.concat(
 * WCS : Web Coverage Service <br/>\
 * WPS : Web Processing Service <br/>\
 * CSW : Catalogue Service\
+',
+
+// IMDF
+'# 정의 : 모든 환경 / 실내 지도 앱, 서비스 / 활용 포맷 <br/>\
+- 모든 앱, 웹 사이트 또는 운영 체제에서 동일한 고도로 정확하고 상세한 데이터를 사용하여 누구나 실내 지도 앱 및 서비스를 활용 포맷 <br/><br/>\
+# 표준화 동향 <br/>\
+- Apple 실내 매핑 데이터 형식 표준 <br/>\
+- Fashion Intelligence, IoT 실내 측위 서비스 이용 <br/><br/>\
+# 사례 <br/>\
+- 차량 서비스 센터 내 위치 파악 <br/>\
+- 전염병 관리 목적 위치 추적 <br/>\
+- 대규모 조직 애플리케이션 활용 <br/><br/>\
+* 124회 1교시 7번\
 ',
     
 // 위치정보, 위치기반 서비스

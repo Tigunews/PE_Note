@@ -39,7 +39,11 @@
 'ISO/IEC 20943-5',
 'DQC',
 '인덱스',
-'[인덱스]- 인덱스 구조(B,R,T-Tree)',
+'다차원 색인구조',
+'[다차원 색인]- PAM',
+'[다차원 색인]- SAM',
+'[다차원 색인]- 인덱스 구조(B,R,T-Tree)',
+'[다차원 색인]- Hilbert R-Tree',
 'Hashing',
 'Clustering Factor',
 'NewSQL DBMS',
@@ -76,7 +80,6 @@
 '[빅데이터]- D-Commerce',
 '[빅데이터]- Random Sampling',
 '[빅데이터]- Filtering',
-'[R-Tree]- Hilbert R-Tree',
 'DB 확장성 확보 방안',
 '[DB확장]- Database Shard',
 '[DB확장]- Database Partitioning',
@@ -917,6 +920,53 @@ var answer = answer.concat(
 * KPC 90회 관리 3교시 2번\
 ',
 
+// 다차원 색인구조
+'# 정의 : 이미지, 멀티미디어 / 효율적 검색 / 여러개 필드 / 동시 키 사용 구조 <br/>\
+- 이미지나 멀티미디어 데이터와 같은 비정형 데이터의 효율적 검색을 위해 여러개의 필드(애트리뷰트)를 동시에 키로 사용한 색인 구조 <br/><br/>\
+# 유형 <br/>\
+1. PAM(Point Access Method) <br/>\
+- 다차원 점 데이터 저장 및 검색 <br/>\
+<img src = "./img/PAM.png" style = "max-width:100%; height: auto;"><br/><br/>\
+2. SAM(Spatial Access Method) <br/>\
+- 선, 면 등과 같은 크기를 갖는 다차원 데이터를 저장 및 검색 <br/>\
+<img src = "./img/SAM.png" style = "max-width:100%; height: auto;"><br/><br/>\
+* 124회 관리 1교시 9번\
+',
+
+// PAM
+'# 정의 : Point Access Method <br/>\
+- 다차원 점 데이터 저장 및 검색 <br/><br/>\
+# 유형 <br/>\
+1. k-d Tree <br/>\
+- 개념 : Binary Search Tree를 다차원 공간으로 Straightforward 하게 확장한 자료구조 <br/>\
+<img src = "./img/kdtree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+2. k-d-b Tree <br/>\
+- 개념 : B-Tree와 k-b Tree 의 결합 <br/>\
+<img src = "./img/kdbtree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+3. Grid File <br/>\
+- 개념 : 전체 공간을 하나 이상의 격자(Grid)로 분할 <br/>\
+<img src = "./img/GridFile.png" style = "max-width:100%; height: auto;"><br/><br/>\
+4. Quad Tree <br/>\
+- 개념 : 공간을 순환적으로 분해하는 계층적 자료 구조 <br/>\
+<img src = "./img/QuadTree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+* 124회 관리 1교시 9번\
+',
+
+// SAM
+'# 정의 : Spatial Access Method <br/>\
+- 선, 면 등과 같은 크기를 갖는 다차원 데이터 저장 및 검색<br/><br/>\
+# 유형 <br/>\
+1. R-Tree <br/>\
+- 개념 : 다차원 공간 데이터 저장 색인 자료구조 <br/>\
+<img src = "./img/RTree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+2. R+ Tree <br/>\
+- 개념 : R Tree, K-D-B Tree 중간형태, 겹치는 데이터 여러 노드 중복 저장 색인 자료구조 <br/>\
+<img src = "./img/RPlusTree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+3. R* Tree <br/>\
+- 개념 : MBR의 넓이와 다른 MBR 과 겹침 영역의 최소화하는 색인 자료구조 <br/><br/>\
+* 124회 관리 1교시 9번\
+',
+
 // 인덱스 구조
 '# B-Tree : <font color = "red">균등한 응답속도</font> 유지를 위하여 Leaf Level의 좌우 균형을 유지하는 트리 <br/><br/>\
 # B+Tree : <font color = "red">링크드 리스트</font>, Leaf에 모든 값 정렬 <br/><br/>\
@@ -929,6 +979,32 @@ var answer = answer.concat(
 <img src = "./img/인덱스구조2.png" style = "max-width:100%; height: auto;"><br/><br/>\
 <img src = "./img/인덱스구조3.png" style = "max-width:100%; height: auto;"><br/><br/>\
 <img src = "./img/인덱스구조4.png" style = "max-width:100%; height: auto;"><br/><br/>\
+* 124회 관리 1교시 9번\
+',
+
+// Hilbert R-Tree
+'# 정의 : 힐버트 곡선을 활용한 대용량의 공간데이터베이스 구축 <br/>\
+- Hilbert 곡선을 이용해서 대용량의 데이터를 고비용의 분할 과정 없이 R-Tree를 구성하는 기법 <br/><br/>\
+# 특징 <br/>\
+- 고속 연산 : 고비용 분할 과정 없이 R-Tree 구성 <br/>\
+- GPU 활용 : Hilbert 매핑 병렬화, 벌크로딩 고속화 / 45배 향상 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/HillbertRTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Hilbert Cell : 공간의 차수가 1인 경우의 Hilbert 곡선 <br/>\
+- Hiblert Gene : 이전 차수 곡선 통한 다음 차수 생성 정보 <br/>\
+- GPGPU : 일반 연산 가능 설계 GPU <br/><br/>\
+# 절차 (<font color = "red">힐로리상</font>) <br/>\
+- 힐버트 값 계산 <br/>\
+- 오름 차순 정렬 <br/>\
+- 리프 노드 계산 <br/>\
+- 상위 노드 계산 <br/><br/>\
+# 활용 <br/>\
+- 벌크 로딩 : 고속화, 공간활용도 증가 <br/>\
+- 효율적 질의 : 인덱스 성능 향상 <br/><br/>\
+# R-Tree 비교 <br/>\
+<img src = "./img/Hilbert_RTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 116회 1교시 13번\
 ',
   
 // Hashing
@@ -1583,31 +1659,6 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - SOM : 격자 구조 출력층, 경쟁학습 필터링 <br/>\
 - PCA : 차원 축 집단 분류 필터링 <br/><br/>\
 * 116회 응용 2교시 1번\
-',
-  
-// Hilbert R-Tree
-'# 정의 : 힐버트 곡선을 활용한 대용량의 공간데이터베이스 구축 <br/>\
-- Hilbert 곡선을 이용해서 대용량의 데이터를 고비용의 분할 과정 없이 R-Tree를 구성하는 기법 <br/><br/>\
-# 특징 <br/>\
-- 고속 연산 : 고비용 분할 과정 없이 R-Tree 구성 <br/>\
-- GPU 활용 : Hilbert 매핑 병렬화, 벌크로딩 고속화 / 45배 향상 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/HillbertRTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-- Hilbert Cell : 공간의 차수가 1인 경우의 Hilbert 곡선 <br/>\
-- Hiblert Gene : 이전 차수 곡선 통한 다음 차수 생성 정보 <br/>\
-- GPGPU : 일반 연산 가능 설계 GPU <br/><br/>\
-# 절차 (<font color = "red">힐로리상</font>) <br/>\
-- 힐버트 값 계산 <br/>\
-- 오름 차순 정렬 <br/>\
-- 리프 노드 계산 <br/>\
-- 상위 노드 계산 <br/><br/>\
-# 활용 <br/>\
-- 벌크 로딩 : 고속화, 공간활용도 증가 <br/>\
-- 효율적 질의 : 인덱스 성능 향상 <br/><br/>\
-# R-Tree 비교 <br/>\
-<img src = "./img/Hilbert_RTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 116회 1교시 13번\
 ',
   
 // DB 확장성 확보 방안
