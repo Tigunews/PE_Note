@@ -11,11 +11,13 @@ var question = question.concat(
 '[Layer2][흐름제어]- Stop and Wait',
 '[Layer2][접근제어]- CSMA/CD',
 '[Layer2][접근제어]- CSMA/CA',
+'[Layer2]- Frame Relay',
 '[Layer2]- Collison Domain',
 '[Layer3]- 공증교환 데이터망(PSDN) 방식',
 '[Layer3]- 회선교환',
 '[Layer3]- 패킷교환',
 '[Layer3]- 패킷데이터 네트워크 계층 오류',
+'[Layer3]- 거리벡터 라우팅',
 '[Layer4]- TCP',
 '[Layer4][TCP]- DTLS',
 '[Layer4][TCP]- TLS',
@@ -239,7 +241,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 라이지움 87회 관리 3교시 6번\
 ',
 
-// [패킷데이터 네트워크 계층 오류]- 오류제어
+// 오류제어
 '# 정의 : 신뢰성 확보 위한 통신 에러 제어 기법 <br/>\
 - 데이터링크(hop to hop, 라우터), 전송계층(peer to peer) 에러제어 <br/>\
 - 디지털 데이터 송수신 데이터가 외부간섭, 노이즈, 시간지연 등에 의해 변형, 손실, 순서 어긋남 등의 통신 장애에부터 통신 오류의 검출, 복구, 정정등 데이터 통신에서 신뢰성을 확보하기 위한 통신 에러 제어 기법 <br/><br/>\
@@ -264,7 +266,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 그리타\
 ',
   
-//[패킷데이터 네트워크 계층 오류]- 해밍코드
+// 해밍코드
 '# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
 # Byte Order <br/>\
@@ -278,7 +280,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 오류비트 2비트까지 검출가능, 1만 수정가능\
 ',
 
-// [패킷 데이터 네트워크 계층 오류]- CRC
+// CRC
 '# 정의 : Modulo-2 연산(XOR)을 기반으로 오류를 검출하는 방식 <br/>\
 - Cyclic Redundancy Check <br/><br/>\
 # 암기 <br/>\
@@ -293,7 +295,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/CRC_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
 
-// [패킷데이터 네트워크 계층 오류]- Parity Check
+// Parity Check
 '# 정의 : 추가 1비트 오류 판단 / 짝수개 오류 검출 불가 / Block Sum 검사 이용 <br/>\
 - 데이터의 끝에 한 비트를 추가하여 1의 개수로 오류 유무 판단, Parity Check의 경우는 짝수 개의 오류는 검출이 불가, Block Sum 검사 이용해 해결 <br/><br/>\
 # 유형 <br/>\
@@ -309,7 +311,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/Parity_4.png" style = "max-width:100%; height:auto;">\
 ',
 
-// [패킷데이터 네트워크 계층 오류]- Check Sum
+// Check Sum
 '# 정의 : 수신측 합산 검사 방법 / 전송측 합계 보수화 전송<br/>\
 - 전송 데이터의 맨 마지막에 모든 데이터를 다 합한 합계를 보수화하여 전송, 수신 측에서는 모든 수를 합산하여 보수화 한 후 모두 0일 때 수용하는 검사 방법 <br/>\
 - 송신 측에서 전송할 데이터를 16비트 워드 단위 구분, 1의 보수를 취하고 그 합에 대한 결과를 전송 <br/>\
@@ -362,6 +364,30 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 장점 : 충돌한 패킷 낭비 감소, 에러 제어 용이 <br/>\
 - 단점 : 고속 부적합, 전송효율 저하, 속도 느림 <br/><br/>\
 * 라이지움 87회 관리 3교시 6번\
+',
+
+// Frame Relay
+'# 정의 : WAN / 링크 레이어 프로토콜 / 가상 회선 / 전용선 취급 / 패킷 모드 전송 서비스 <br/>\
+- 장거리 통신망(WAN)에서 사용하는 링크 레이어 프로토콜중의 하나로 하나의 물리적인 회선에 여러 논리적인 회선인 가상 회선을 만들어 마치 전용선처럼 취급하는 패킷 모드 전송 서비스 <br/><br/>\
+# 프로토콜 <br/>\
+1. 기본 프로토콜 <br/>\
+- 구조 : Flag / Address / Information / FCS / Flag <br/>\
+- Flag : 프레임 시작 끝 위치, 프레임 구분 <br/>\
+- FCS : 프레임 에러 검색, 에러 발생 프레임 제거 <br/><br/>\
+2. 제어 프로토콜 <br/>\
+- 구조 : Flag / Address / Control / Information / FCS / Flag <br/>\
+- 제어부 존재, 에러 제어, 흐름제어 수행 <br/><br/>\
+# 유형 <br/>\
+1. Hub and Spoke <br/>\
+- DLCI(Data Link Connection Identifier) 번호 기반 프레임 전달 <br/>\
+<img src = "./img/FrameRelayHubAndSpoke.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Full Mesh <br/>\
+- 상호 연결 토폴로지, 많은 연결 지점, 이중화 기능, PVC(Permanent Virtual Circuit) 비용 증가 <br/>\
+<img src = "./img/FullMesh.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Partial Mesh <br/>\
+- 트래픽 분산 용도 사용 <br/>\
+<img src = "./img/FrameRelayPartialMesh.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 124회 관리 1교시 10번\
 ',
  
 // Collison Domain
@@ -419,6 +445,31 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 개념 : 의도와 순서 바뀌는 현상 <br/>\
 - 순서제어 기법 활용 <br/><br/>\
 * 그리타\
+',
+
+// 거리벡터 라우팅
+'# 정의 : 일정 시간 / 라우팅 정보 교환 / 최적 경로 설정 라우팅 방식 <br/>\
+- 일정시간 마다 이웃에 위치한 라우터와 라우팅 테이블의 정보를 교환해 최적의 경로 설정 라우팅 방식 <br/><br/>\
+# 특징 <br/>\
+- 분산적 : 각 노드 직접 연결 계산, 이웃 알림<br/>\
+- 반복적 : 라우팅 정보 반복 수신 <br/>\
+- 비동기적 : 제각각 동작 계산 <br/><br/>\
+# 동작 방식 <br/>\
+<img src = "./img/DisntanceVectorRoutingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+- 송신 노드로부터 테이블 정보 수신 <br/>\
+- 송신 노드로부터 수신 받은 테이블 정보, 수신 노드 사이 비용 고려, 정보반영 <br/>\
+- 변경 전,후 테이블 정보 비교 <br/>\
+- Hop Count 변경 or 유지 <br/><br/>\
+# 알고리즘 <br/>\
+- RIP : 라우터 경로값, 자신 경로값 비교 갱신 <br/>\
+- IGRP : 전송 능력, 지연 시간, 회선 사용률, 신뢰성, 로드밸런싱 기반 설정 <br/><br/>\
+# 거리벡터 한계점인 루핑 해결방안 <br/>\
+- Hold Down Timer : 타이머 종료할 때, 정성경로 처리만 Update <br/>\
+- Split Horizon : 인접간 루핑 방지 가능 <br/>\
+- Route Poisoning : 다운 네트워크 값 메트릭 16 고정, 무시 <br/>\
+- Poison Reverse : Split Horizon, Route Poisoning 혼합 방법 <br/><br/>\
+* 124회 관리 1교시 11번\
 ',
   
 // TCP
