@@ -837,6 +837,7 @@ var answer = answer.concat(
 <img src = "./img/DQ_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 데이터 관리프로세스 <br/>\
 <img src = "./img/DQ_AdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 124회 관리 2교시 5번 <br/>\
 * 123회 관리 3교시 2번\
 ',
 
