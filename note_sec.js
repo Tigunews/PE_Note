@@ -65,7 +65,6 @@
 '[Lateral Movement]- IoA',
 '[Lateral Movement]- IoC',
 '사이버 디셉션',
-'SQL Injection',
 '워터링 홀 공격(Watering Hole Attack)',
 '루트킷(Rootkit)',
 '포맷 스트링 공격',
@@ -95,6 +94,7 @@
 '형태 보존 암호화',
 'OWASP Top 10',
 '[OWASP]- Injection',
+'[OWASP][Injection]- SQL Injection',
 'OWASP Mobile Top 10',
 'OWASP IoT Top 10',
 '개인정보 영향평가(PIA)',
@@ -1307,34 +1307,6 @@ var answer = answer.concat(
 * ITPE 122회 대비 합숙 2일차 1교시 5번\
 ',
 
-// SQL Injection
-'# 정의 : SQL을 이용한 주입 공격 <br/>\
-- 웹 어플리케이션의 SQL 입력값을 변조하여 비정상적인 데이터베이스 접근을 시도하거나 원하는 정보를 탈취하는 해킹기법 <br/><br/>\
-# 공격기법 <br/>\
-1. 인증우회 <br/>\
-<img src = "./img/SQLInjection_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 권한획득 <br/>\
-<img src = "./img/SQLInjection_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-3. 오류분석 <br/>\
-- 웹 어플리케이션에서 발생하는 에러메시지를 분석 <br/>\
-- 데이터베이스 열람 및 시스템 명령어 수행을 위한 자료로 활용 <br/><br/>\
-4. 정보열람 <br/>\
-- Error-Based Injection, Blind SQL Injection 등의 기법 활용하여 데이터베이스 조회, 테이블 생성 등 데이터베이스 조작가능 <br/>\
-- Error-Based Injection : 화면에 노출된 DB 에러 메시지를 이용한 공격 방식 <br/>\
-- Blind SQL Injection : 쿼리조건에 따른 결과화면의 차이를 이용한 공격 방식 <br/><br/>\
-# 방어기법 <br/>\
-1. 바인딩 변수 <br/>\
-- 어플리케이션에서 제공하는 바인딩 매개변수를 명시적으로 지정 사용 <br/>\
-- Java의 경우 PreparedStatement Class 활용 <br/>\
-- 데이터베이스의 StoredProcedure 사용 <br/><br/>\
-2. 입력값 체크 <br/>\
-- 자바스크립트 등의 클라이언트 스크립트를 활용하여 입력값 체크 <br/>\
-- SQL Injection 발생시킬 수 있는 위험한 문자 포함 여부 확인 <br/>\
-( \', --, ;, % 등 체크 )<br/><br/>\
-3. 필터링 <br/>\
-- Request, Response에 대해 공통적으로 적용되는 기능을 구현하여 SQL Injection 유발 값에 대한 필터링 \
-',
-
 // Watering Hole Attack
 '# 정의 : 제로데이 취약점 악용 / Target / 해킹 방법 <br/>\
 - 특정 사이트에 미리 제로데이 취약점 등 악용하여 악성코드 심고 특정 Target 방문시 자동 감염하여 해킹하는 방법 <br/><br/>\
@@ -1887,7 +1859,7 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 2. 대응방안 <br/>\
 - 충분한 사용자 컨텍스트로 로그인, 접근 통제, 입력 검증 실패 기록 <br/>\
 - 효과적인 모니터링 및 경고 <br/><br/>\
-<img src = "./img/OWASP.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OWASP.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 * [2017]A4+A7 -> A4통합, A10삭제, 공격 방어취약점(A7) 추가, 취약한 API 추가 <br/>\
 * [2017.10] RC(Release Candidate) 2 공객 : OWASP TOP 10 2017 RC1의 다음 단계이자 최종 정식버전의 바로 전 단계로 피드백을 받기 위해 미리 공개하는 버전 <br/>\
 * OOXML(Office Open XML) : MS Office에서 XML 사용이 가능한 문서\
@@ -1914,6 +1886,34 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - 컬럼 단위 복구 : 직접 사용전, 문제 없는지 사전 환경 구축 후 테스트 <br/>\
 - 일괄 스크립트 사용 복구 : 직접 사용전 문제 없는지 사전 환경 구축후 테스트 진행 <br/><br/>\
 * 124회 관리 2교시 6번\
+',
+
+// SQL Injection
+'# 정의 : SQL을 이용한 주입 공격 <br/>\
+- 웹 어플리케이션의 SQL 입력값을 변조하여 비정상적인 데이터베이스 접근을 시도하거나 원하는 정보를 탈취하는 해킹기법 <br/><br/>\
+# 공격기법 <br/>\
+1. 인증우회 <br/>\
+<img src = "./img/SQLInjection_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 권한획득 <br/>\
+<img src = "./img/SQLInjection_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 오류분석 <br/>\
+- 웹 어플리케이션에서 발생하는 에러메시지를 분석 <br/>\
+- 데이터베이스 열람 및 시스템 명령어 수행을 위한 자료로 활용 <br/><br/>\
+4. 정보열람 <br/>\
+- Error-Based Injection, Blind SQL Injection 등의 기법 활용하여 데이터베이스 조회, 테이블 생성 등 데이터베이스 조작가능 <br/>\
+- Error-Based Injection : 화면에 노출된 DB 에러 메시지를 이용한 공격 방식 <br/>\
+- Blind SQL Injection : 쿼리조건에 따른 결과화면의 차이를 이용한 공격 방식 <br/><br/>\
+# 방어기법 <br/>\
+1. 바인딩 변수 <br/>\
+- 어플리케이션에서 제공하는 바인딩 매개변수를 명시적으로 지정 사용 <br/>\
+- Java의 경우 PreparedStatement Class 활용 <br/>\
+- 데이터베이스의 StoredProcedure 사용 <br/><br/>\
+2. 입력값 체크 <br/>\
+- 자바스크립트 등의 클라이언트 스크립트를 활용하여 입력값 체크 <br/>\
+- SQL Injection 발생시킬 수 있는 위험한 문자 포함 여부 확인 <br/>\
+( \', --, ;, % 등 체크 )<br/><br/>\
+3. 필터링 <br/>\
+- Request, Response에 대해 공통적으로 적용되는 기능을 구현하여 SQL Injection 유발 값에 대한 필터링 \
 ',
 
 // OWASP Mobile Top 10

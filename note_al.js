@@ -2,6 +2,7 @@ var question = question.concat(
 '자료구조',
 '선형구조',
 '[선형]- Stack',
+'[비선형]- Heap',
 '[알고리즘 설계]- Back Tracking',
 '[알고리즘 설계]- 분할과정복',
 '[알고리즘 설계]- Greedy',
@@ -178,6 +179,12 @@ var answer = answer.concat(
 # 연산 표기 방법 <br/>\
 <img src = "./img/Mid2End.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 3교시 6번\
+',
+
+// Heap
+'# 정의 : 완전 이지트리 / Node / Key 값 가장 큰,작은 / 찾기 위한 자료구조 <br/>\
+- 완전 이진트리에 있는 Node 중에서 Key 값이 가장 큰 Node나 가장 작은 Node를 찾기 위한 자료구조 <br/><br/>\
+* 124회 관리 3교시 2번\
 ',
   
 // Back Tracking
