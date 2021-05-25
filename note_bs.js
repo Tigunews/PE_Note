@@ -91,7 +91,7 @@ var question = question.concat(
 '대기행렬이론',
 '[대기행렬]- 대기행렬 시스템',
 'OKR',
-'Valu Chain',
+'Value Chain',
 );
 
 var answer = answer.concat(

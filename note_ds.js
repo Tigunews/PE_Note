@@ -12,6 +12,7 @@ var question = question.concat(
 'Micro Grid',
 '[Energy]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
+'[Smart Factory]- ISA 95',
 'CPS',
 'CPS 요구사항',
 '[Smart Factory]- SCADA',
