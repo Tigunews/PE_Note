@@ -2389,7 +2389,7 @@ var answer = answer.concat(
 - 토픽 모델링 : 단어, 말뭉치(corups) 주체, 키워드별 묶음, 비지도 학습 (LDA, 베이즈이론) <br/><br/>\
 # 유형 <br/>\
 - 통계 기반 : TDM, TF-IDF, One-hot Encoding <br/>\
-- NN 기반 : Word2Vec, BERT <br/><br/>\
+- NN 기반 : Word2Vec, BERT <br/>\
 - 단어 수준 : Word2Vec, Fast Text, ELMO(Embedding from Language Models) <br/>\
 - 문장 수준 임베딩 : BERT <br/><br/>\
 * 124회 관리 4교시 1번 <br/>\
