@@ -184,6 +184,20 @@ var answer = answer.concat(
 // Heap
 '# 정의 : 완전 이지트리 / Node / Key 값 가장 큰,작은 / 찾기 위한 자료구조 <br/>\
 - 완전 이진트리에 있는 Node 중에서 Key 값이 가장 큰 Node나 가장 작은 Node를 찾기 위한 자료구조 <br/><br/>\
+# 유형 <br/>\
+1. Max Heap <br/>\
+- 개념 : 부모 Node의 키 값이 자식 Node의 키 값보다 항상 크거나 같은 완전 이진트리 <br/>\
+- 연산 : 원소의 개수 만큼 삭제 연산 수행, 큰 수 부터 POP 내림 차순 정렬 <br/>\
+<img src = "./img/MaxHeap.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Min Heap <br/>\
+- 개념 : 부모 Node의 키 값이 자식 Node의 키 값보다 항상 작거나 같은 완전이진트리 <br/>\
+- 연산 : 원소의 개수만큼 삭제 연산을 수행하여 작은수 부터 POP하여 오름차순으로 정렬 수행 <br/>\
+<img src = "./img/MinHeap.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 공간 복잡도 : O(n) <br/>\
+- 시간 복잡도 : O(nlogn) <br/>\
+- 장점 : 평균 시간 복잡도 우수, 추가메모리 x <br/>\
+- 단점 : 데이터 구조 따른 효율 저하 <br/><br/>\
 * 124회 관리 3교시 2번\
 ',
   
@@ -2368,6 +2382,17 @@ var answer = answer.concat(
 <img src = "./img/DenseBasedEmbedding.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/WordEmbeddingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<hr width = "100%" color = "blue"  noshade/><br/>\
+# 구성 방식 <br/>\
+- 워드 클라우드 : 관심사, 키워드, 개념 빈도수 카운트 시각화 <br/>\
+- N-gram Model : Unigram(현재 단어), Bi-gram(바로 전 단어 까지), Tri-gram(3단어) <br/>\
+- 토픽 모델링 : 단어, 말뭉치(corups) 주체, 키워드별 묶음, 비지도 학습 (LDA, 베이즈이론) <br/><br/>\
+# 유형 <br/>\
+- 통계 기반 : TDM, TF-IDF, One-hot Encoding <br/>\
+- NN 기반 : Word2Vec, BERT <br/><br/>\
+- 단어 수준 : Word2Vec, Fast Text, ELMO(Embedding from Language Models) <br/>\
+- 문장 수준 임베딩 : BERT <br/><br/>\
+* 124회 관리 4교시 1번 <br/>\
 * 123회 관리 4교시 4번<br/>\
 * KPC 96회 관리 4교시 5번\
 ',

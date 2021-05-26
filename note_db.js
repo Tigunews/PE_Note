@@ -128,6 +128,7 @@
 '반정형 데이터',
 'RAID',
 'DMBOK',
+'Spatial DB',
 );
 
 var answer = answer.concat(
@@ -1341,6 +1342,9 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 5. 후보 NoSQL 선정 및 테스트 : 구조 특성 분석후 부하, 안전성 테스트<br/>\
 6. 최적화 및 하드웨어 디자인 : 완성된 데이터 모델을 NoSQL에 최적화 및 하드웨어 디자인 <br/><br/>\
 # 특징 : 테이블간 관계정의를 안함, 분산환경지원, 저비용처리(오픈소스), 확장성, 다양 형태 저장구조 <br/><br/>\
+# 모델링 사례 <br/>\
+<img src = "./img/NoSQLModelingExample.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* 124회 관리 3교시 3번 <br/>\
 * 123회 관리 1교시 11번 <br/>\
 * 117회 관리 1교시 9번 \
 ',
@@ -2485,5 +2489,24 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 메타 데이터 관리 <br/>\
 - 데이터 품질 <br/><br/>\
 * ITPE 7회 관리 3교시 6번\
+',
+
+// Spatial DB
+'# 정의 : 문자, 숫자 표현 / 비공간 데이터 / 공간 객체 좌표값 / 공간 데이터 집합 <br/>\
+- 문자와 숫자 등으로 표현되는 비공간 데이터와 공간 객체의 좌표값으로 표현되는 공간데이터의 집합 <br/><br/>\
+# 공간 관계 연산자 연관도 <br/>\
+<img src = "./img/SpatialOperator.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 공간 관계 연산자 <br/>\
+- Equals(g1,g2) : 동일 여부 <br/>\
+- Disjoint(g1,g2) : 겹치는 부분 여부 <br/>\
+- Within(g1,g2) : g1,g2 영역 포함 여부 <br/>\
+- Overlaps(g1,g2) : 교집합 영역 존재 여부 <br/>\
+- Intersects(g1,g2) : 교집합 존재 여부 <br/>\
+- Distance(g1,g2) : 거리반환 <br/>\
+- Intersection(g1,g2) : 교집합 공간 객체 반환 <br/>\
+- Union(g1,g2) : 합집합 공간 객체 반환 <br/>\
+- Difference(g1,g2) : 차집합 공간 객체 반환 <br/>\
+- Buffer Union(g1,g2) : g1에서 d 거리만큼 확장한 공간 객체 반환 <br/><br/>\
+* 124회 관리 4교시 3번\
 ',
 );
