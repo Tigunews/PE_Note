@@ -10,7 +10,7 @@ var this_week_question =
 
 // 124회
 'Value Chain', '통계 Overview', '회귀 분석','ISA 95','Responsive Web Design', '다차원 색인', 'Frame Relay', '거리벡터 라우팅', 'NAC', '데이터 주권 이슈','데이터 거버넌스', '요구사항 수집기법','DQM','SW 진흥','Heap','SRGM','IPS','IDS','워드 임베딩','오픈소스','Spatial DB','ISMS', '블록체인',
-
+/*
 // 추가 토픽
 'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS','Cloud GPU','MajorState','뉴로모픽','벨라디 변이','DQC','공공무선 통신망','UWB','경량','전송부호화',
 
@@ -49,5 +49,5 @@ var this_week_question =
 
 // ITPE 7회 
 '데이터 댐', 'Solid - Social Linked Data','Cloud 보안','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','5G SA','5G NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay','클라우드 네이티브 컴퓨팅','DevOps','인공지능 성능 지표','IoU','CBDC','Living Lab','SOS Lab','SW안전 확보 지침','SWEBOK','DMBOK','BABOK','백투백', 'Fuzz',
-
+*/
 ];
