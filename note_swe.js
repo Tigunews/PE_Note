@@ -4831,7 +4831,7 @@ P 히스토그램 : Data 분포 <br/>\
 # DI 유형 <br/>\
 1. Setter Injection : 클래스 사이의 의존관계를 연결시키기 위한 방법 <br/>\
 2. Constructor Injection : 생성자를 통하여 클래스 사이의 의존관계를 연결시키는 방법 <br/>\
-3. Method Injection : SIngleton 인스턴스와 Non Singlton의 의존관계 연결시키는 방법 <br/><br/>\
+3. Method Injection : Singletone 인스턴스와 Non Singletone의 의존관계 연결시키는 방법 <br/><br/>\
 # 구현 방법 <br/>\
 - DL(Dependancy Lookup) : 개발자들이 컨테이너에게 제공하는 API를 이용하여 사용하고자 하는 Bean을 Lookup(의존성 검색) <br/>\
 - DI(Dependancy Injection) : 각 클래스 사이에 피룡로 하는 의존관계를 컨테이너가 자동으로 연결(의존성 주입) <br/><br/>\
@@ -4851,14 +4851,16 @@ P 히스토그램 : Data 분포 <br/>\
 - 객체를 직접 생성하는 것이 아닌 외부의 조립기를 이용해 생성하는 기법 <br/>\
 - 각 계층사이, 각 클래스 사이에 필요하는 의존관계를 컨테이너가 자동으로 연결해주는 기법 <br/><br/>\
 # 장점 <br/>\
-1. 설계 및 개발 단계 장점 <br/>\
-- 구현의 분리 : App Logic 관계 분리 <br/>\
-- 변경 용이성 : 변경 대처, 유지보수성 <br/>\
-- 모듈성 강화 : 가독성, 재 사용성 강화 <br/><br/>\
-2. 테스트 및 유지보수 단계 장점 <br/>\
-- 테스트 용이 : 오류 발생시 디버깅 용이 <br/>\
-- 유연성/확장성 향상 : 추가 개발시 개발시간 단축 <br/>\
-- 객체간의 의존관계 설정 : SW 아키텍처 변경 용이 <br/><br/>\
+1. 아키텍처 관점 <br/>\
+- 구현 분리 : 자유로운 환경설정 <br/>\
+- 변경 용이성 : 변경 쉽게 대처, 유지보수성 <br/>\
+- 모듈성 강화 : 재 사용성 강화 <br/><br/>\
+2. 개발자, 테스터 관점 <br/>\
+- 다형성 : 개발 유연 용이 <br/>\
+- Mocking 용이 : 다른 Mock 객체 DI 가능 <br/>\
+- Configuration 활용 : 설정 적용된 Bean, 각 서비스에서 DI 가능 <br/>\
+- 형식의 변화 유연성 : RestTemplate 같은 다른 Bean 과 형식 맞춰 사용 <br/>\
+- Lifecycle 관리 : 외부 컨테이너에서 Singleton Lifecycle 관리 <br/><br/>\
 * 124회 관리 1교시 6번\
 ',
  
