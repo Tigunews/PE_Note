@@ -9,8 +9,8 @@ var question = question.concat(
 'Smart Grid',
 '[Smart Grid]- AMI',
 '[Smart Grid]- 보안',
-'Micro Grid',
-'[Energy]- 인터미턴트 컴퓨팅',
+'[Smart Grid]- Micro Grid',
+'[Smart Grid]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
 '[Smart Factory]- MESA 표준기능',
 '[Smart Factory]- ANSI/ISA 95',
@@ -268,11 +268,11 @@ var answer = answer.concat(
 ',
   
 // Smart City
-'# 정의 : 첨단 산업 융합의 미래 도시 <br/>\
+'# 정의 : 하드 인프라(IT) / 소프트 인프라(비 IT) / 지능형 / 첨단 산업 융합의 미래 도시 <br/>\
 - 스스로 인지하고 발전하는 IT 인프라인 하드 인프라와 교육, 안전, 복지 등 시민의 삶을 윤택하게 하는 IT, 비IT를 망라한 각종 서비스인 소프트 인프라가 조화를 이루어 모든 시민이 지능형 서비스를 이용할 수 있도록 설계된 신개념 도시<br/><br/>\
 # 통합 플랫폼 <br/>\
 <img src = "./img/SmartCityPortalPlatform.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 서비스 유형 <br/>\
+# 서비스 유형 (<font color = "red">교생경환안에</font>)<br/>\
 1. 교통 <br/>\
 - 스마트 파킹 <br/>\
 - V2I 자율주행차 운영 고도화 <br/>\
@@ -445,25 +445,17 @@ var answer = answer.concat(
 - 전기, ICT 기술 활용, 에너지 효율 향상, 낭비 절감, 지능화 고도화 효율 극대화 전력망 기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SmartGridStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 암기 <br/>\
-1. 전력 운영 측면 <br/>\
-- 운 : ESD <br/>\
-- H : 계반관<br/>\
-- A : ZP <br/>\
-- D : DA <br/><br/>\
-2. 보안 및 지능화 측면 <br/>\
-- 보자충 <br/><br/>\
 # 특징 <br/>\
 - 자가치유 : 탐지 > 분석 > 반응/복구 <br/>\
 - 고객 참여 : 소비 정보 통합, 전력망 설계 / 분산전원(DER) 관리 <br/>\
 - 전력 마켓 : 전력 요구 거래 및 스마트 미터 <br/><br/>\
 # 기술요소 <br/>\
-1. 전력 운영 측면 (<font color = "red">운AHD</font>) <br/>\
+1. 전력 운영 측면 (<font color = "red">운-ESD / A-계반관 / H- ZP / D-DA</font>) <br/>\
 - 운영(ESD) : <font color = "red">E</font>MS(급전종합자동화 설비), <font color = "red">S</font>CADA(원격감시제어설비), <font color = "red">D</font>AS(배전 자동화 시스템) <br/>\
 - AMI(계반관)  : 지능형 <font color = "red">계</font>량, 수요 <font color = "red">반</font>응기기, 지능형 <font color = "red">관</font>리 <br/>\
 - HAN(ZP) : <font color = "red">Z</font>igbee, <font color = "red">P</font>LC(Power Line Communication) <br/>\
 - DR(Demand Response)(DA) : <font color = "red">D</font>SEM(수요측 에너지 관리), <font color = "red">A</font>FDD(자동화된 오류검출과 진단) <br/><br/>\
-2. 보안 및 지능화 측면 <br/>\
+2. 보안 및 지능화 측면 (<font color = "red">보자충</font>)<br/>\
 - 보안 매커니즘 : 암호화, 인증/접근통제, 침해탐지/대응/복구, DoS 탐지 <br/>\
 - 자가치유 매커니즘 : 센서 네트워크, 자가치유 알고리즘 <br/>\
 - 신재생 에너지 연계 및 충전 기술 : 대용량 배터리 재충전, 전력 공급 장치 <br/><br/>\
@@ -478,7 +470,7 @@ var answer = answer.concat(
 - 에너지를 효율적으로 관리할 수 있는 시스템 및 서비스로, 소비자에게 실시간으로 에너지 사용량에 대한 정보가 제공되어 소비자 스스로 혹은 자동화된 기기 제어를 통해 에너지 사용을 제어하는 인프라 <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/AMI.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">HNWU</font>)<br/>\
 1. 상위 시스템 <br/>\
 - MDMS (Meter Data Management System) : 미터링 데이터 관리 <br/>\
 - CIS (Customer Information System) : 고객이 관리와 과금의 주체가 되는 시스템 <br/><br/>\
@@ -489,7 +481,7 @@ var answer = answer.concat(
 ',
   
 // 스마트 그리드 보안
-'# 정의 : 전력망 _+ IT / 차세대 지능 전령망 위한 / 법,제도,조직,기술 보안 체계 <br/>\
+'# 정의 : 전력망 + IT / 차세대 지능 전령망 위한 / 법,제도,조직,기술 보안 체계 <br/>\
 - 전력망에 IT를 융합한 안전한 차세대 지능형 전력망을 위한 범 국가적인 법, 제도, 조직 및 기술적인 보안체계 <br/><br/>\
 # 보안위협 <br/>\
 - 제어시스템 위협 : 미터기 공격, 대규모 정전 사태 <br/>\
@@ -505,16 +497,10 @@ var answer = answer.concat(
 - 소비자 : 기기보안, 소비자보안, 서비스 보안 \
 ',
 
-// 마이크로 그리드
+// Micro Grid
 '# 정의 : 소규모지역 에너지 공급 전력 체계 <br/>\
 - 스마트그리드의 일종으로 재생에너지를 사용해 소규모지역에 자급자족할 수 있는 에너지를 제공하는 전력체계 <br/>\
 - 지역화된 전력망으로 수용가와 풍력, 태양광 등의 분산 에너지 자원(DER)을 연결한 전력망으로 전체 전력 계통과 독립적(off-grid)으로 동작하여 전력의 자급자족이 가능하며, 필요에 따라 계통과 연결(on-grid)되어 동작할 수도 있는 전력망<br/><br/>\
-# 암기 <br/>\
-- 표준 : IEEE 1547, IEEE P2030.7, IEC 61850 <br/>\
-- 현황 <br/>\
-1) L(안.지)K(DR)포(운플) <br/>\
-2) 미국비치.GE제어 <br/>\
-3) GM벨에 <br/><br/>\
 # 구성 : 기존계통(한전), 통합운영시스템, 마이크로그리드 <br/><br/>\
 # 주요기술 : 스마트계통 운영기술(SCADA, DAS, EMS), AMI, HAN, Smart Meter, 보안기술, 신재생 에너지, 연계 및 충전 기술 <br/><br/>\
 # 취약점 <br/>\
@@ -524,31 +510,21 @@ var answer = answer.concat(
 # 대응 <br/>\
 - 관리적 : 정보보호체계, 보안관제, 침해사고 대응 계획 수립 <br/>\
 - 기술적 : IoT 공통 보안 <br/><br/>\
-# 정책 <br/>\
-- 비전 : 중소기업 참여와 민간자본투자를 통한 자생력을 갖춘 에너지 신산업 조성(2014.07.) <br/>\
-- 목표 : 2017까지 2조 8백억원 시장 조성, 1만 2백개 일자리 창출 <br/>\
-- 분야 : 기후변화대응 신산업 => ICT 활용 수요관리, 그린 빌리지 구축 <br/>\
-- 신사업 모델 : ICT활용수요관리 전력수요관리, 에너지 통합 서비스, 전기차 서비스 및 유료충전, 그린빌리지 구축(태양광 렌탈, 독립 마이크로그리드, 온배수열 활용) <br/><br/>\
 # 표준<br/>\
 - IEEE 1547 : 전원 시스템과 분산형 자원의 상호접속을 위한 표준<br/>\
 - IEEE P2030.7 : 마이크로 그리드 컨트롤러 사양 표준 <br/>\
 - IEC 61850 : 표준 기반의 분산형 전원(DER) 시스템의 정보모델에 대해 국제 표준화 <br/><br/>\
 # 현황 <br/>\
+1. 국내 <br/>\
 - 독립형 마이크로 그리드 : 가파도, 마라도, 가사도 실증연구, 울릉도 실증 사업 추진 <br/>\
-- 계통 연계형 마이크로 그리드 : KETEP 정부지원과제로 전력 IT 10대 과제중 마이크로그리드, K-MEG 등 통하여 실증단지 수준으로 구현, 본격 시장 형성 전 <br/>\
-- LS산전 : 안산을 탄소 제로 에너지자립도시, 인천시 덕적도 인근 작은섬 "지도"가 에너지 자립섬으로 구축 <br/>\
-- KT : 도시내 구축 스마트 그리드 기반으로 수요반응 기반 전력거래/판매사시스템 구축, 신재생 발전원/가정용저장장치등 계통 운영과 연계한 통합 운영센터 개발중 <br/>\
-- 포스코ICT : 도서,도심,산업용 마이크로 그리드 운영플랫폼 개발, 전남 신안군 수행, 일본 해외 사업 추진 <br/>\
-- 현대 중공업 : SG확산사업을 통해서 조선과 석유화학공장에 EES, AMI, 에너지 관리 시스템 구축, 전력거래 인프라 개발 <br/>\
-- 미국<br/>\
-1) 2014년 군사용 마이크로그리드들 비롯하여 전체 마이크로그리드 1GW 상용화 추진 <br/>\
-2) Beach Cities Microgrid, IIT Perfect Power, CERTS Microgrid demonstration(Santa Rita Jail)등을 포함하여 총 9개의 프로젝트를 추진 <br/>\
-- EU <br/>\
-1) Grid4EU(12개 EU국가의 27개사가 참여)<br/>\
-2) NiceGrid : 마이크로 그리드 프로젝트, Grid4EU의 6개 스마트그리드 프로젝트 중 하나 <br/>\
-3) Issy Grid : City Microgrid / 프랑스 최초 도시형 마이크로 그리드 <br/>\
-- GE, ABB, Siemens 등 기업들은 마이크로 그리드용 제어 시스템을 상용화 <br/>\
-- General Microgrids(미국) : "Balance Energy"라는 에너지 S/W 플랫폼, 각종 컨설팅 및 엔지니어링 서비스 제공\
+- 계통 연계형 마이크로 그리드 : KETEP 정부지원과제 <br/>\
+- LS산전 : 안산, 지도 / 에너지 자립섬 구축 <br/>\
+- KT : 도시내 전력 거래, 판매 시스템 <br/>\
+- 포스코 ICT : 산업용 마이크로 그리드 개발 <br/>\
+- 현대 중공업 : 조선, 석유 화학 공장 EES, AMI, 에너지 관리 시스템 구축 <br/><br/>\
+2. 해외 <br/>\
+- 미국 : 마이크로 그리드 1GW 상용화 <br/>\
+- EU : Grid4EU > NiceGrid(6대 프로젝트) > Issy Grid(프랑스) \
 ',
 
   
@@ -561,19 +537,11 @@ var answer = answer.concat(
 - 데이터 측면 : 메모리 시스템 기술(비휘발성 메모리), 프로그래밍 언어(다중 버전 모델) <br/><br/>\
 # 기술 동향 <br/>\
 1. 에너지 측면 <br/>\
-- 에너지 하베스팅 <br/>\
--> 초 전력 마이크로 컨트롤러(MSP 430)<br/>\
--> CMU에서 보드 하드웨어 설계도 공개 <br/>\
-- 에너지 절약 기술<br/>\
--> 동적 재구성 가능 장치(CMU, HW SW 동시설계)<br/>\
--> 부품별 ESS 연결(부품간 에너지 간섭 제거) <br/><br/>\
+- 에너지 하베스팅 : 초 전력 마이크로 컨트롤러(MSP 430) <br/>\
+- 에너지 절약 기술 : 동적 재구성 장치, 부품별 ESS 연결 <br/><br/>\
 2. 데이터 측면 <br/>\
-- 비 휘발성 메모리 변환<br/>\
--> 메모리 시스템 교체<br/>\
--> 특성 결합(캐시 계층, 비 휘발성 특성 혼합 복합 메모리 계층 연구) <br/>\
-- 실행 모델 및 프로그래밍 언어<br/>\
--> App 제어(다중 버전 모델, 체크포인팅 프로세스)<br/>\
--> 안전성 보장 프로그래밍 (CMU-Chain(Overhead x),Alpaca(Task 기반 데이터 공유)) <br/><br/>\
+- 비 휘발성 메모리 변환 : 캐시, 비휘발 특성 혼합 <br/>\
+- 실행 모델 및 프로그래밍 언어 : App 동시성 제어, 안전성 보장 <br/><br/>\
 * KPC 91회 응용 3교시 7번\
 ', 
   

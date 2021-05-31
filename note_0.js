@@ -11,6 +11,9 @@ var this_week_question =
 // 11주차
 'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen',
 
+// 추가 토픽
+'Smart City', 'Smart Grid',
+
 /*
 // 124회
 'Value Chain', '통계 Overview', '회귀 분석','ISA 95','Responsive Web Design', '다차원 색인', 'Frame Relay', '거리벡터 라우팅', 'NAC', '데이터 주권 이슈','데이터 거버넌스', '요구사항 수집기법','DQM','SW 진흥','Heap','SRGM','IPS','IDS','워드 임베딩','오픈소스','Spatial DB','ISMS', '블록체인',
