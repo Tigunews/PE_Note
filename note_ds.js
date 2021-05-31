@@ -624,7 +624,7 @@ var answer = answer.concat(
 - Manufactoring Execution System <br/>\
 - Manufacturing Enterprise Solutions Association <br/>\
 - ERP만으로 제조현장 관리 한계로 인해 등장한 MES의 표준 기능 제시 목록 <br/><br/>\
-# 목록 <br/>\
+# 목록 (<font color = "red">자운생문 데인품공 설제성</font>)<br/>\
 1. 자원할당과 상황(Resource Allocation and Status) <br/>\
 2. 운영/상세일정 계획(Detail Scheduling) <br/>\
 3. 생산단위별 반송(Dispatching Production Units) <br/>\
@@ -648,18 +648,18 @@ var answer = answer.concat(
 <img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Framework (<font color = "red">BPL MOM MS SM PP</font>)<br/>\
 <img src = "./img/ISA95Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성 (<font color = "red">용PLP생운</font>) <br/>\
+# 구성 (<font color = "red">용속운속운운</font>) <br/>\
 - Part 1 : Level 4, Level 3 Interface, ERP,MES <font color = "red">용어 정의, 기본 모형 제시</font> <br/>\
 - Part 2 : <font color = "red">Part 1</font>에서 제시된 ERP MES간 표준화 정보흐름 표현 위한 <font color = "red">객체 모형과 속성 제시</font> <br/>\
 - Part 3 : Level 3의 제조 <font color = "red">운영활동 정의</font> <br/>\
 - Part 4 : <font color = "red">Part 3</font>에서 제시된 제조 운영활동 관련된 <font color = "red">객체 모형, 속성 제시</font> <br/>\
 - Part 5 : <font color = "red">생산</font> 자동화 시스템, <font color = "red">사무</font>지원 활동간 <font color = "red">운영활동 정의</font> <br/>\
-- Part 6 : 제조 공정간 <font color = "red">운영</font> <br/><br/>\
+- Part 6 : <font color = "red">제조 공정</font>간 <font color = "red">운영</font> <br/><br/>\
 # 제조 운영관리 모형 (<font color = "red">생설품재</font>)<br/>\
-- 생산관리 : 원자재, 에너지, 장비, 인력 이용, 제품 생산 일련 활동 <br/>\
-- 설비관리 : 장비 사용가능 상태 유지 활동 <br/>\
-- 품질관리 : 품질 측정, 보고 일련 활동 <br/>\
-- 재고관리 : 작업장에서 장비 및 자재의 이동 관련 활동 <br/><br/>\
+- 생산관리 : 원자재, 에너지, 장비, 인력 이용, 제품 <font color = "red">생산 일련 활동</font> <br/>\
+- 설비관리 : 장비 <font color = "red">사용가능</font> 상태 유지 활동 <br/>\
+- 품질관리 : 품질 <font color = "red">측정, 보고</font> 일련 활동 <br/>\
+- 재고관리 : 작업장에서 <font color = "red">장비 및 자재</font>의 이동 관련 활동 <br/><br/>\
 # MES 구축시 ISA-95 역할 <br/>\
 - 표준 제공 : 시스템 통합 인터페이스 표준 제공 <br/>\
 - 모듈 정의 : MES 구성 모듈의 정의 <br/>\
