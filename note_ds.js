@@ -14,8 +14,8 @@ var question = question.concat(
 '[4차산업]- Smart Factory',
 '[Smart Factory]- MESA 표준기능',
 '[Smart Factory]- ANSI/ISA 95',
-'CPS',
-'CPS 요구사항',
+'[Smart Factory]- CPS',
+'[Smart Factory]- CPS 요구사항',
 '[Smart Factory]- SCADA',
 'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
@@ -611,7 +611,7 @@ var answer = answer.concat(
 
 // ANSI/ISA 95
 '# 정의 : ERP MES 시스템 통합 / 인터페이스, 객체 모델, 용어 정의 / 참조모델 표준 <br/>\
-- American National Standars Institute <br/>\
+- American National Standards Institute <br/>\
 - International Society of Automation <br/>\
 - ERP와 MES 등의 시스템 통합 운영위한 인터페이스와 객체 모델 제시, 용어 정의한 MES 참조모델 표준 <br/><br/>\
 <img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -704,7 +704,7 @@ var answer = answer.concat(
 '# 정의 : 통신 신호 사용 / RTU / 원격 감시,제어 시스템 <br/>\
 - Supervisiory Control And Data Acquisition <br/>\
 - 원자력, 전력, 가스 시설등의 원격지 플랜트 생산공정 정보를 중앙에서 감시,제어,관리 하는 시스템 <br/><br/>\
-# 구성요소 (<font color = "red">EBIMABP</font>)<br/>\
+# 구성요소 - Perdue 모형 (<font color = "red">EBIMABP</font>)<br/>\
 <img src = "./img/SCADA.png", style = "max-width:100%; height:auto;"><br/>\
 - 5 : Enterprise <br/>\
 - 4 : Business Planning, Logistics <br/>\
@@ -735,7 +735,7 @@ var answer = answer.concat(
 - 구성 : 다양성이 낮은 구성요소 집합(Platform 구성요소) + 다양성이 높은 구성요소 집합 <br/><br/>\
 # 요구사항 Tree <br/>\
 1. 전체 시스템 <br/>\
-- 다양한 통신 프로토콜 연동 : HTTP, MQTT, CoAP, WebSocket, HTTTPS <br/>\
+- 다양한 통신 프로토콜 연동 : HTTP, MQTT, CoAP, WebSocket, HTTPS <br/>\
 - 다른 표준과 연동 : 3GPP, OCF, OPC UA, oneM2M, TSN <br/>\
 - 시스템 서비스 및 장치 식별 <br/>\
 - 다중 장치 및 게이트웨이 간 상호작용 <br/>\
@@ -766,10 +766,10 @@ var answer = answer.concat(
   
 // oneM2M Mobious Platform 
 '# 개념 : IoT 공동 서비스 플랫폼 개발 Defacto <br/>\
-- 파편화 플랫폼 개발 구조 통합, 공유하기 위한 사실상 표준화 단체 및 표준 규격 <br/><br/>\
+- <font color = "red">파편화</font> 플랫폼 개발 구조 통합, 공유하기 위한 사실상 표준화 단체 및 표준 규격 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/oneM2MStructure.png", style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">ACN</font>)<br/>\
 - AE(Application Entity) : Application 계층 M2M 응용 프로그램 서비스 로직 구현 <br/>\
 - CSE(Common Services Entity) : 다양한 AE들이 공통적으로 사용할 수 있는 세트 모듈화 <br/>\
 - NSE(Network Services Entity) : 네트워크 서비스 제공(장치 관리, 위치 서비스, 장치 트리거링) \
@@ -777,11 +777,18 @@ var answer = answer.concat(
   
 // OCF
 '# 개념 : CoAP 이용 / 상호제어 플랫폼 기술 <br/>\
-- IoT 서비스 구현시 경량형 CoAP 프로토콜로 사물인터넷 장치들을 연결하여 장치에 존재하는 자원들을 상호제어 할 수 있게 하는 표준 플랫폼 기술 <br/><br/>\
+- Open Connectivity Foundation <br/>\
+- IoT 서비스 구현시 경량형 <font color = "red">CoAP</font> 프로토콜로 사물인터넷 장치들을 연결하여 장치에 존재하는 자원들을 상호제어 할 수 있게 하는 표준 플랫폼 기술 <br/><br/>\
 # 특징 <br/>\
 - 유무선 연결기술 유연 탑재 가능 프레임워크 <br/>\
 - 스마트 홈, 자동차, 물류, 헬스케어 등 특화 <br/><br/>\
 # 프레임워크 <br/>\
+1. Discovery : 장치 검색 (IETF CoRE) <br/>\
+2. Messaging : 장치 지원 (기본, 제한 장치-프로토콜 변환) <br/>\
+3. Common Resource Model : 데이터 모델로 정의된 실제 엔티티 <br/>\
+4. CRUN : Create, Retrieve(검색), Update, Delete, Notify <br/>\
+5. ID & Addressing : OCF 엔티티에 대한 ID 및 주소 지정 <br/>\
+6. Protocol Bridge / GW : 코어에서 동일한 Bridge 사양 처리 <br/><br/>\
 <img src = "./img/OCF_Framework.png", style = "max-width:100%; height:auto;">\
 ',
     
@@ -789,7 +796,7 @@ var answer = answer.concat(
 '# 정의 : 제조 시스템 SOA / 요구사항 해결 / OCP 재단 표준 <br/>\
 - Open Platform Communication Unified Architecture <br/>\
 - IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/>\
-- 제조 시스템 SOA 도입 따른 요구사항(보안, 손실방지, 중복 처리, 복잡 구조) 해결 위한 OPC 재단 표준 <br/>\
+- 제조 시스템 SOA 도입 따른 요구사항(보안, 손실방지, 중복 처리, 복잡 구조) 해결 위한 OPC 재단 표준 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/OPCUAFramework.png", style = "max-width:100%; height:auto;"><br/>\
 - Session : 사용자 인증, 권한 확인 <br/>\
@@ -808,7 +815,7 @@ var answer = answer.concat(
 ',
   
 // Smart Hospital 
-'# 정의 : 혁신적 기술 고아범위 사용 / 환자중심 품질 / 의료비용 감소시키는 병원 <br/>\
+'# 정의 : 혁신적 기술 광범위 사용 / 환자중심 품질 / 의료비용 감소시키는 병원 <br/>\
 - 혁신적인 기술을 광범위하게 사용하여 다른 생태계와 디지털로 연결하여, 환자 중심의 서비스 품질과 경험을 향상시키면서 의료비용은 감소시키는 병원 <br/><br/>\
 # 해외 사례 <br/>\
 - 싱가폴 : 스마트 병원 구축 활용 <br/>\
@@ -849,7 +856,7 @@ var answer = answer.concat(
 3. 차량제어 <br/>\
 - 관리 및 제어 : OS, FS, DB <br/>\
 - 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
-# Level <br/>\
+# Level (<font color = "red">비운부 조고완</font>)<br/>\
 <img src = "./img/AutomationCarLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
 * MOST(Media Oriented Systems Transort) : 자동차 산업 최적화 고속 멀티미디어 네트워크 기술 <br/>\
@@ -866,7 +873,6 @@ var answer = answer.concat(
 * ALC : Automatic Lane Change <br/>\
 * 아폴로 플랫폼 <br/>\
 * 스마트더스트 c-its 연계 가능 <br/>\
-<img src = "./img/자율주행자동차_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/자율주행자동차_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 응용 3교시 6번\
 ',
@@ -874,8 +880,6 @@ var answer = answer.concat(
 // [자율주행자동차]- 트롤리 딜레마 
 '# 정의 : 윤리학의 사고실험 / 필리파 푸트 제시 / 주디스 톰슨 분석 <br/>\
 - 필리파 푸트(Philippa Foot)가 제시하고 주디스 톰슨(Judith Thormson)이 체계적으로 분석한 윤리학의 사고실험  <br/><br/>\
-# 암기 <br/>\
-- 문제점 해결 : 사회적 합의, 법/제도 /정책 수립 <br/><br/>\
 # 이슈 : 운전자를 보호할 것인가, 보행자를 보호할 것인가, 다수를 보호할 것인가, 소수를 보호할 것인가 <br/><br/>\
 # Jean-Francois Bonnefon 연구팀의 Amazon 직원 대상 실험 결과 <br/>\
 - 여러 사람을 살릴 수 있도록 설계되어야 한다는 공리주의적인 응답이 지지를 받음 <br/>\
@@ -898,11 +902,17 @@ var answer = answer.concat(
 '# 정의 : 동적 공간 데이터 저장소 <br/>\
 - Local Dynamic Map <br/>\
 - 정보수집의 대상 범위내에 있는 고정 물체 또는 이동 물체에 관한 정적, 일시적, 동적 정보를 모두 관리할 수 있는 동적 공간 데이터 저장소 <br/><br/>\
-# 등장배경 <br/>\
-- ITS -> C-ITS <br/>\
-- 차량-도로 자동화 패러다임 변화 <br/><br/>\
+# 구성도 (<font color = "red">정밀 일시 일시 정적 / 동적 동적 정적 정적</font>)<br/>\
 <img src = "./img/LDM_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/LDM_2.PNG" style = "max-width:100%; height:auto;">\
+# 기술요소 <br/>\
+- 서비스 구성요소 : LDM 객체, LDM 인터페이스 <br/>\
+- 통신 기능 : Map Matching Module, DM Protocol(동적 제공 메시지 규격) <br/>\
+- 복구 기능 : Watch Dog <br/>\
+- 수집 기능 : Road Survey(Probe Car) <br/><br/>\
+# 현황 <br/>\
+- 해외(미국, 유럽, 일본) : LDM 핵심 기술 개발 투자 <br/>\
+- 표준기관(ISO) : 기능 정의 , 다양 의견 수렴 <br/>\
+- 국내(교통과학기술 진흥원) : 스마트 자율 협력주행 도로 시스템 개발 \
 ',
   
 // C-ITS
@@ -924,7 +934,7 @@ var answer = answer.concat(
 // Lidar
 '# 정의 : 레이저 송출 / 반사 시간 / 위치 좌표 측정 / 레이다 시스템 / 객체 탐지 기술<br/>\
 - 레이저를 송출하여 반사되어 돌아오는 시간을 측정, 반사체의 위치 좌표를 측정하는 레이다 시스템 <br/><br/>\
-# 특징 : 직진성, 고밀도, 3D 영상 촬영 <br/>\
+# 특징 : 직진성, 고밀도, 3D 영상 촬영 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/LidarStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
@@ -965,9 +975,12 @@ var answer = answer.concat(
 * 인포레버 17년 12월 1교시 11번\
 ',
   
-// 데이터 거버넌스 법안
+// 데이터 거버넌스
 '# 전략 <br/>\
-<img src = "./img/DataGovernanceStragety.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DataGovernanceStragety.png" style = "max-width:100%; height:auto;"><br/>\
+- 전략, 실행계획 수립 : <font color = "red">목표</font> 수립, <font color = "red">개방,유통</font> 활성화 <br/>\
+- 거버넌스 확립 : <font color = "red">국가</font> 거버넌스 체계, <font color = "red">생산,공유,활용</font> 체계 개선, <font color = "red">역량</font> 강화 <br/>\
+- 법 제도 정비 : <font color = "red">법령</font> 정비, 법률 <font color = "red">연계성</font> 확보 <br/><br/>\
 # 법안 <br/>\
 1. 개념 :  2020.11.25. EU 집행위에서 제안된 EU 전역의 민간-민간, 민간-공공 데이터 공유 체계 강화, 시장 형상 촉진 목적 법안 <br/><br/>\
 2. 내용 <br/>\
@@ -992,8 +1005,8 @@ var answer = answer.concat(
 // 디지털 뉴딜
 '# 정의 : 디지털 가속화 / 비대면화 / 디지털 기반 경제 혁신 가속화 / 국가발전 전략 <br/>\
 - 국내 산업의 디지털화를 가속화 하고 비대면화를 촉진시켜 디지털 기반의 일자리 창출 및 경제 혁신 가속화 추진 국가 발전전략 <br/><br/>\
-# D인비디 <br/>\
-- D : 활고융사 <br/>\
+# 암기 <br/>\
+- D : DNA보 <br/>\
 - 인 : 양지 <br/>\
 - 비 : 원온비 <br/>\
 - 디 : 프관신 <br/><br/>\

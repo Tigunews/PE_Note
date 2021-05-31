@@ -12,7 +12,7 @@ var this_week_question =
 'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen',
 
 // 추가 토픽
-'Smart City', 'Smart Grid',
+'Smart City', 'Smart Grid','뉴딜',
 
 /*
 // 124회
