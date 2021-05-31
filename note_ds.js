@@ -4706,7 +4706,8 @@ var answer = answer.concat(
 '# 정의 : 신체 저하 예방 / 건강한 삶 지속 가능 기술 <br/>\
 - AI, IT, BT 등의 다양한 이종 기술간 융합을 바탕으로 인간의 신체, 두뇌, 감성 능력의 저하를 예방하고, 회복 및 향상을 통해 지속적인 건강한 삶을 가능하게 하는 기술 <br/><br/>\
 # 기술요소 <br/>\
-<img src = "./img/DigitalHumanAugmentation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DigitalHumanAugmentation.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* 한국전자통신연구원(ETRI), 한국과학기술기획평가원(KISTEP) 2/23 18개 서비스 제시 </font><br/><br/>\
 * 124회 관리 1교시 4번\
 ',
   

@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 11주차
-'ISA', 'MESA',
+'ISA', 'MESA', '디지털 휴먼 증강',
 
 /*
 // 124회
