@@ -12,7 +12,8 @@ var question = question.concat(
 'Micro Grid',
 '[Energy]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
-'[Smart Factory]- ISA 95',
+'[Smart Factory]- MESA 표준기능',
+'[Smart Factory]- ANSI/ISA 95',
 'CPS',
 'CPS 요구사항',
 '[Smart Factory]- SCADA',
@@ -618,14 +619,50 @@ var answer = answer.concat(
 * 120회 관리 2교시 5번\
 ',
 
-// ISA 95
-'# 정의 : Smart Factory MES 참조 모델 <br/>\
+// MESA 표준기능
+'# 정의 : MES 기능 제시 목록 <br/>\
+- Manufactoring Execution System <br/>\
+- Manufacturing Enterprise Solutions Association <br/>\
+- ERP만으로 제조현장 관리 한계로 인해 등장한 MES의 표준 기능 제시 목록 <br/><br/>\
+# 목록 <br/>\
+1. 자원할당과 상황(Resource Allocation and Status) <br/>\
+2. 운영/상세일정 계획(Detail Scheduling) <br/>\
+3. 생산단위별 반송(Dispatching Production Units) <br/>\
+4. 문서관리(Document Control) <br/>\
+5. 데이터 수집/획득 (Data Collection/Acquisition) <br/>\
+6. 인력관리(Labor Management) <br/>\
+7. 품질관리(Quality Management) <br/>\
+8. 공정관리(Process Management) <br/>\
+9. 설비관리(Maintence Management) <br/>\
+10. 제품이력 추적 및 구성(Product Tracking and Genealogy) <br/>\
+11. 성과분석(Performance Analysis) <br/><br/>\
+# ISA-95 + MESA 11 Function <br/>\
+<img src = "./img/ISA95MESA.png" style = "max-width:100%; height:auto;">\
+',
+
+// ANSI/ISA 95
+'# 정의 : ERP MES 시스템 통합 / 인터페이스, 객체 모델, 용어 정의 / 참조모델 표준
+- American National Standars Institute <br/>\
+- International Society of Automation <br/>\
+- ERP와 MES 등의 시스템 통합 운영위한 인터페이스와 객체 모델 제시, 용어 정의한 MES 참조모델 표준 <br/><br/>\
 <img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Level <br/>\
-- Level 4(비즈니스) : 비즈니스 계획, 물류 (ERP, SCM) <br/>\
-- Level 3(생산 관리) : 생산/설비/품질/재고 관리 <br/>\
-- Level 2(공정 제어) : PLC+HMI, DCS, SCADA 활용, 프로세스 제어, 자동화 <br/>\
-- Level 1(단위 제어 장치) : 모터, 유압, 공기압 활용 Actuator 제어 <br/><br/>\
+# Framework <br/>\
+<img src = "./img/ISA95Framework.png" style = "max-width:100%; height:auto;"><br/>\
+- Part 1 : Level 4, Level 3 Interface, ERP,MES 용어 정의, 기본 모형 제시 <br/>\
+- Part 2 : Part 1에서 제시된 ERP MES간 표준화 정보흐름 표현 위한 객체 모형과 속성 제시 <br/>\
+- Part 3 : Level 3의 제조 운영활동 정의 <br/>\
+- Part 4 : Part 3에서 제시된 제조 운영활동 관련된 객체 모형, 속성 제시 <br/>\
+- Part 5 : 생산자동화 시스템, 사무지원활동간 운영 대한 정의 <br/>\
+- Part 6 : 제조 공정간 운영 <br/><br/>\
+# 제조 운영관리 모형 <br/>\
+- 생산운영관리 : 원자재, 에너지, 장비, 인력 이용, 제품 생산 일련 활동 <br/>\
+- 설비관리 : 장비 사용가능 상태 유지 활동 <br/>\
+- 품질관리 : 품질 측정, 보고 일련 활동 <br/>\
+- 재고관리 : 작업장에서 장비 및 자재의 이동 관련 활동 <br/><br/>\
+# MES 구축시 ISA-95 역할 <br/>\
+- 시스템 통합 인터페이스 표준 제공 <br/>\
+- MES 구성 모듈의 정의 <br/>\
+- MES 데이터의 속성 및 관계에 대한 표준 제시 <br/><br/>\
 * 124회 관리 1교시 3번 \
 ',
   
