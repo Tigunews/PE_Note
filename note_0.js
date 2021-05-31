@@ -16,7 +16,7 @@ var this_week_question =
 'Value Chain', '통계 Overview', '회귀 분석','ISA 95','Responsive Web Design', '다차원 색인', 'Frame Relay', '거리벡터 라우팅', 'NAC', '데이터 주권 이슈','데이터 거버넌스', '요구사항 수집기법','DQM','SW 진흥','Heap','SRGM','IPS','IDS','워드 임베딩','오픈소스','Spatial DB','ISMS', '블록체인',
 
 // 추가 토픽
-'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS','Cloud GPU','MajorState','뉴로모픽','벨라디 변이','DQC','공공무선 통신망','UWB','경량','전송부호화',
+'Smart Contract','AutoML','ASPICE','오픈소스','오픈소스 거버넌스','PaaS-TA','Open Shift','DHCP','분산 클라우드','PQC','테스트 7원칙','DMA','디지털 정책','뉴로모픽','Smart City','자율주행','NFT','Smart Contract','PACEL','NoSQL','BASE','AutoML','연합학습','전자서명','전자봉투','이중서명','아키텍처 평가','시정조치 확인 보고서','운영 감리','유지보수 감리','동기부여','QoS','Cloud GPU','MajorState','뉴로모픽','벨라디 변이','DQC','공공무선 통신망','UWB','경량','전송부호화','ISO 20547',
 
 // 9주차 
 '가설검정','섭테크','프롭테크','트랜잭션','Random Sampling','Filtering','K-Means','SOM','Isolation Level','선형회귀모형 추론 가정','Smart Factory','위험관리','IT-Compliance','COBIT 5.0','그로스 해킹','정규 표현식','유한 오토마타','가설검정','병행제어','SVM','ISO 19626','Hilbert','재식별 공격',
