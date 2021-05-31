@@ -331,6 +331,7 @@ var answer = answer.concat(
 <img src = "./img/BlockEncryption.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 비교 <br/>\
 <img src = "./img/BlockEncryptionCompare.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+<font color = "red">* 하나금융 API 작업 : AES256/CFB/NoPadding/Base64변환 </font><br/><br/>\
 * ITPE 6회 관리 2교시 4번<br/>\
 * KPC 93회 2교시 4번\
 ',

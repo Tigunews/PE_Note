@@ -98,7 +98,8 @@ var question = question.concat(
 '[Web]- XML, JSON',
 'Semantic Web',
 '앱접근성(Mobile App Accessibility)',
-'Responsive Web Design',
+'[N Screen]- Responsive Web Design',
+'[N Screen]- Adaptive Web Design',
 '시선통신기술(Line of Sight Communications)',
 '[음성인식]- 하이퍼보이스(Hypervioice)',
 '모바일 컨시어지(Mobile Concierge)',
@@ -2179,6 +2180,31 @@ var answer = answer.concat(
 - 필요할 때 노출 패턴 <br/>\
 <img src = "./img/OffCanvas.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 5번\
+',
+
+// Adaptive Web Design
+'# 정의 : Source Code, N-Screen / 1:1 <br/>\
+- 미리 정해진 몇 가지 화면 크기를 기준으로 두고 비율에 맞춰 페이지를 구성하는 방식 <br/><br/>\
+#  개념도 <br/>\
+<img src = "./img/AWD_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 유동형 테이블(Fluid Table) <br/>\
+- 기기 종류 따라 열 재구성 <br/>\
+<img src = "./img/AWD_FluidTable.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Cross Tab <br/>\
+- 행,열 반대 표현 방식 <br/>\
+<img src = "./img/AWD_CrossTab.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Progressive Hide Grid <br/>\
+- 중요성 떨어지는 컬럼 숨기는 기술 <br/>\
+<img src = "./img/AWD_ProgressiveHideGrid.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. Responsive Scroll Grid <br/>\
+- 중요 컬럼 고정, 가로 스크롤 생김 기술 <br/>\
+<img src = "./img/AWD_ResponsiveScrollGrid.png" style = "max-width:100%; height:auto;"><br/><br/>\
+5. Accordian Tab <br/>\
+- 탭컨텐츠 사용시, 화면 사이즈 무관하게 각각 개별 탭 선택하여 컨텐츠 전환 <br/>\
+<img src = "./img/AWD_AccordianTab.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 적용 사례 <br/>\
+<img src = "./img/AWD_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 ',
 
 // 시선통신기술
