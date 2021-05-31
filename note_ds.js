@@ -646,23 +646,23 @@ var answer = answer.concat(
 - International Society of Automation <br/>\
 - ERP와 MES 등의 시스템 통합 운영위한 인터페이스와 객체 모델 제시, 용어 정의한 MES 참조모델 표준 <br/><br/>\
 <img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Framework <br/>\
+# Framework (<font color = "red">BPL MOM MS SM PP</font>)<br/>\
 <img src = "./img/ISA95Framework.png" style = "max-width:100%; height:auto;"><br/>\
-- Part 1 : Level 4, Level 3 Interface, ERP,MES 용어 정의, 기본 모형 제시 <br/>\
-- Part 2 : Part 1에서 제시된 ERP MES간 표준화 정보흐름 표현 위한 객체 모형과 속성 제시 <br/>\
-- Part 3 : Level 3의 제조 운영활동 정의 <br/>\
-- Part 4 : Part 3에서 제시된 제조 운영활동 관련된 객체 모형, 속성 제시 <br/>\
-- Part 5 : 생산자동화 시스템, 사무지원활동간 운영 대한 정의 <br/>\
-- Part 6 : 제조 공정간 운영 <br/><br/>\
-# 제조 운영관리 모형 <br/>\
-- 생산운영관리 : 원자재, 에너지, 장비, 인력 이용, 제품 생산 일련 활동 <br/>\
+- Part 1 : Level 4, Level 3 Interface, ERP,MES <font color = "red">용어 정의, 기본 모형 제시</font> <br/>\
+- Part 2 : <font color = "red">Part 1</font>에서 제시된 ERP MES간 표준화 정보흐름 표현 위한 <font color = "red">객체 모형과 속성 제시</font> <br/>\
+- Part 3 : Level 3의 제조 <font color = "red">운영활동 정의</font> <br/>\
+- Part 4 : <font color = "red">Part 3</font>에서 제시된 제조 운영활동 관련된 <font color = "red">객체 모형, 속성 제시</font> <br/>\
+- Part 5 : <font color = "red">생산</font> 자동화 시스템, <font color = "red">사무</font>지원 활동간 <font color = "red">운영활동 정의</font> <br/>\
+- Part 6 : 제조 공정간 <font color = "red">운영</font> <br/><br/>\
+# 제조 운영관리 모형 (<font color = "red">생설품재</font>)<br/>\
+- 생산관리 : 원자재, 에너지, 장비, 인력 이용, 제품 생산 일련 활동 <br/>\
 - 설비관리 : 장비 사용가능 상태 유지 활동 <br/>\
 - 품질관리 : 품질 측정, 보고 일련 활동 <br/>\
 - 재고관리 : 작업장에서 장비 및 자재의 이동 관련 활동 <br/><br/>\
 # MES 구축시 ISA-95 역할 <br/>\
-- 시스템 통합 인터페이스 표준 제공 <br/>\
-- MES 구성 모듈의 정의 <br/>\
-- MES 데이터의 속성 및 관계에 대한 표준 제시 <br/><br/>\
+- 표준 제공 : 시스템 통합 인터페이스 표준 제공 <br/>\
+- 모듈 정의 : MES 구성 모듈의 정의 <br/>\
+- 표준 제시 : MES 데이터의 속성 및 관계에 대한 표준 제시 <br/><br/>\
 * 124회 관리 1교시 3번 \
 ',
   
