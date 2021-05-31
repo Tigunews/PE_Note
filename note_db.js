@@ -1523,9 +1523,9 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 '# 정의 : 계층적 프로세스 모델\
 - <font color = "red">Phase-Task-Step</font>의 3계층으로 구성된 <font color = "red">계층적 프로세스 모델</font> <br/>\
 - 비즈니스 도메인과 문제점을 인식하고 비즈니스 요구사항과 데이터 분석에 필요한 원천 데이터 확보하고 분석 수행 <br/><br/>\
-# 프로세스 <br/>\
+# 프로세스 (<font color = "red">PPADD</font>)<br/>\
 <img src = "./img/BigData분석방법론프로세스.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 빅데이터 분석 활용 기법 (플도기)<br/>\
+# 빅데이터 분석 활용 기법 (<font color = "red">플도기</font>)<br/>\
 - 플랫폼 : 빅데이터 분석 플랫폼 HW / SW 구축 <br/>\
 - 분석도구 : R언어, BigQuery, Presto <br/>\
 - 분석기법 : 통계적분석(상관/회귀/분산), 데이터 마이닝, 텍스트 마이닝 <br/><br/>\
@@ -1533,10 +1533,10 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 ',
 
 // DCAT
-'# 정의 : W3C 주도 / 상호 운용 용이 / 어휘 집합(Ontology) <br/>\
+'# 정의 : W3C 주도 / 상호 운용 용이 / 카탈로그 표준 모델, 어휘 집합(Ontology) <br/>\
 - Data Category Vocabulary <br/>\
 - W3C가 주도하여 웹에 게시된 데이터 카탈로그 간의 상호 운용이 용이하도록 설계된 카탈로그 표준 모델과 데이터 속성을 표현하는 어휘의 집합(Ontology) <br/><br/>\
-# 구성요소 (리셋서디카)<br/>\
+# 구성요소 (<font color = "red">리셋서디카</font>)<br/>\
 - Resource : 공통 속성 <br/>\
 - Data Set : Resource 클래스 상속, 정보 <br/>\
 - Data Service : Resource 클래스 상속, 속성 정보<br/>\
@@ -1558,7 +1558,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 사회 전반 데이터 활용가치 인식 향상 <br/><br/>\
 # 절차 <br/>\
 - 수요예측 > 상품기획 > 공정효율화 > 사후관리 <br/><br/>\
-# 추진체계 <br/>\
+# 추진체계 (<font color = "red">주전평수참</font>)<br/>\
 <img src = "./img/DataFlagshipHireachy.png" style = "max-width:100%; height:auto;"><br/>\
 - 주무부처 : 과제추진전략 및 기본계획 수립 <br/>\
 - 전담기관 : 과제 세부계획 수립 및 추진 <br/>\
@@ -1609,7 +1609,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 정보 구조화 : 수집 및 탐색, 분류 및 배열 <br/>\
 - 정보 시각화 : 시간, 분포, 공간, 관계, 비교 <br/>\
 - 정보 시각 표현 : 디자인 기본 원리, 인터랙션 디자인 <br/><br/>\
-# 정보 시각화 유형 (시분공관비)<br/>\
+# 정보 시각화 유형 (<font color = "red">시분공관비</font>)<br/>\
 <img src = "./img/InformationVisualizationType.png" style = "max-width:100%; height:auto;">\
 ',
   

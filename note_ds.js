@@ -9,13 +9,13 @@ var question = question.concat(
 'Smart Grid',
 '[Smart Grid]- AMI',
 '[Smart Grid]- 보안',
-'Micro Grid',
-'[Energy]- 인터미턴트 컴퓨팅',
+'[Smart Grid]- Micro Grid',
+'[Smart Grid]- 인터미턴트 컴퓨팅',
 '[4차산업]- Smart Factory',
 '[Smart Factory]- MESA 표준기능',
 '[Smart Factory]- ANSI/ISA 95',
-'CPS',
-'CPS 요구사항',
+'[Smart Factory]- CPS',
+'[Smart Factory]- CPS 요구사항',
 '[Smart Factory]- SCADA',
 'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
@@ -268,11 +268,11 @@ var answer = answer.concat(
 ',
   
 // Smart City
-'# 정의 : 첨단 산업 융합의 미래 도시 <br/>\
+'# 정의 : 하드 인프라(IT) / 소프트 인프라(비 IT) / 지능형 / 첨단 산업 융합의 미래 도시 <br/>\
 - 스스로 인지하고 발전하는 IT 인프라인 하드 인프라와 교육, 안전, 복지 등 시민의 삶을 윤택하게 하는 IT, 비IT를 망라한 각종 서비스인 소프트 인프라가 조화를 이루어 모든 시민이 지능형 서비스를 이용할 수 있도록 설계된 신개념 도시<br/><br/>\
 # 통합 플랫폼 <br/>\
 <img src = "./img/SmartCityPortalPlatform.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 서비스 유형 <br/>\
+# 서비스 유형 (<font color = "red">교생경환안에</font>)<br/>\
 1. 교통 <br/>\
 - 스마트 파킹 <br/>\
 - V2I 자율주행차 운영 고도화 <br/>\
@@ -445,25 +445,17 @@ var answer = answer.concat(
 - 전기, ICT 기술 활용, 에너지 효율 향상, 낭비 절감, 지능화 고도화 효율 극대화 전력망 기술 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SmartGridStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 암기 <br/>\
-1. 전력 운영 측면 <br/>\
-- 운 : ESD <br/>\
-- H : 계반관<br/>\
-- A : ZP <br/>\
-- D : DA <br/><br/>\
-2. 보안 및 지능화 측면 <br/>\
-- 보자충 <br/><br/>\
 # 특징 <br/>\
 - 자가치유 : 탐지 > 분석 > 반응/복구 <br/>\
 - 고객 참여 : 소비 정보 통합, 전력망 설계 / 분산전원(DER) 관리 <br/>\
 - 전력 마켓 : 전력 요구 거래 및 스마트 미터 <br/><br/>\
 # 기술요소 <br/>\
-1. 전력 운영 측면 (<font color = "red">운AHD</font>) <br/>\
+1. 전력 운영 측면 (<font color = "red">운-ESD / A-계반관 / H- ZP / D-DA</font>) <br/>\
 - 운영(ESD) : <font color = "red">E</font>MS(급전종합자동화 설비), <font color = "red">S</font>CADA(원격감시제어설비), <font color = "red">D</font>AS(배전 자동화 시스템) <br/>\
 - AMI(계반관)  : 지능형 <font color = "red">계</font>량, 수요 <font color = "red">반</font>응기기, 지능형 <font color = "red">관</font>리 <br/>\
 - HAN(ZP) : <font color = "red">Z</font>igbee, <font color = "red">P</font>LC(Power Line Communication) <br/>\
 - DR(Demand Response)(DA) : <font color = "red">D</font>SEM(수요측 에너지 관리), <font color = "red">A</font>FDD(자동화된 오류검출과 진단) <br/><br/>\
-2. 보안 및 지능화 측면 <br/>\
+2. 보안 및 지능화 측면 (<font color = "red">보자충</font>)<br/>\
 - 보안 매커니즘 : 암호화, 인증/접근통제, 침해탐지/대응/복구, DoS 탐지 <br/>\
 - 자가치유 매커니즘 : 센서 네트워크, 자가치유 알고리즘 <br/>\
 - 신재생 에너지 연계 및 충전 기술 : 대용량 배터리 재충전, 전력 공급 장치 <br/><br/>\
@@ -478,7 +470,7 @@ var answer = answer.concat(
 - 에너지를 효율적으로 관리할 수 있는 시스템 및 서비스로, 소비자에게 실시간으로 에너지 사용량에 대한 정보가 제공되어 소비자 스스로 혹은 자동화된 기기 제어를 통해 에너지 사용을 제어하는 인프라 <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/AMI.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">HNWU</font>)<br/>\
 1. 상위 시스템 <br/>\
 - MDMS (Meter Data Management System) : 미터링 데이터 관리 <br/>\
 - CIS (Customer Information System) : 고객이 관리와 과금의 주체가 되는 시스템 <br/><br/>\
@@ -489,7 +481,7 @@ var answer = answer.concat(
 ',
   
 // 스마트 그리드 보안
-'# 정의 : 전력망 _+ IT / 차세대 지능 전령망 위한 / 법,제도,조직,기술 보안 체계 <br/>\
+'# 정의 : 전력망 + IT / 차세대 지능 전령망 위한 / 법,제도,조직,기술 보안 체계 <br/>\
 - 전력망에 IT를 융합한 안전한 차세대 지능형 전력망을 위한 범 국가적인 법, 제도, 조직 및 기술적인 보안체계 <br/><br/>\
 # 보안위협 <br/>\
 - 제어시스템 위협 : 미터기 공격, 대규모 정전 사태 <br/>\
@@ -505,16 +497,10 @@ var answer = answer.concat(
 - 소비자 : 기기보안, 소비자보안, 서비스 보안 \
 ',
 
-// 마이크로 그리드
+// Micro Grid
 '# 정의 : 소규모지역 에너지 공급 전력 체계 <br/>\
 - 스마트그리드의 일종으로 재생에너지를 사용해 소규모지역에 자급자족할 수 있는 에너지를 제공하는 전력체계 <br/>\
 - 지역화된 전력망으로 수용가와 풍력, 태양광 등의 분산 에너지 자원(DER)을 연결한 전력망으로 전체 전력 계통과 독립적(off-grid)으로 동작하여 전력의 자급자족이 가능하며, 필요에 따라 계통과 연결(on-grid)되어 동작할 수도 있는 전력망<br/><br/>\
-# 암기 <br/>\
-- 표준 : IEEE 1547, IEEE P2030.7, IEC 61850 <br/>\
-- 현황 <br/>\
-1) L(안.지)K(DR)포(운플) <br/>\
-2) 미국비치.GE제어 <br/>\
-3) GM벨에 <br/><br/>\
 # 구성 : 기존계통(한전), 통합운영시스템, 마이크로그리드 <br/><br/>\
 # 주요기술 : 스마트계통 운영기술(SCADA, DAS, EMS), AMI, HAN, Smart Meter, 보안기술, 신재생 에너지, 연계 및 충전 기술 <br/><br/>\
 # 취약점 <br/>\
@@ -524,31 +510,21 @@ var answer = answer.concat(
 # 대응 <br/>\
 - 관리적 : 정보보호체계, 보안관제, 침해사고 대응 계획 수립 <br/>\
 - 기술적 : IoT 공통 보안 <br/><br/>\
-# 정책 <br/>\
-- 비전 : 중소기업 참여와 민간자본투자를 통한 자생력을 갖춘 에너지 신산업 조성(2014.07.) <br/>\
-- 목표 : 2017까지 2조 8백억원 시장 조성, 1만 2백개 일자리 창출 <br/>\
-- 분야 : 기후변화대응 신산업 => ICT 활용 수요관리, 그린 빌리지 구축 <br/>\
-- 신사업 모델 : ICT활용수요관리 전력수요관리, 에너지 통합 서비스, 전기차 서비스 및 유료충전, 그린빌리지 구축(태양광 렌탈, 독립 마이크로그리드, 온배수열 활용) <br/><br/>\
 # 표준<br/>\
 - IEEE 1547 : 전원 시스템과 분산형 자원의 상호접속을 위한 표준<br/>\
 - IEEE P2030.7 : 마이크로 그리드 컨트롤러 사양 표준 <br/>\
 - IEC 61850 : 표준 기반의 분산형 전원(DER) 시스템의 정보모델에 대해 국제 표준화 <br/><br/>\
 # 현황 <br/>\
+1. 국내 <br/>\
 - 독립형 마이크로 그리드 : 가파도, 마라도, 가사도 실증연구, 울릉도 실증 사업 추진 <br/>\
-- 계통 연계형 마이크로 그리드 : KETEP 정부지원과제로 전력 IT 10대 과제중 마이크로그리드, K-MEG 등 통하여 실증단지 수준으로 구현, 본격 시장 형성 전 <br/>\
-- LS산전 : 안산을 탄소 제로 에너지자립도시, 인천시 덕적도 인근 작은섬 "지도"가 에너지 자립섬으로 구축 <br/>\
-- KT : 도시내 구축 스마트 그리드 기반으로 수요반응 기반 전력거래/판매사시스템 구축, 신재생 발전원/가정용저장장치등 계통 운영과 연계한 통합 운영센터 개발중 <br/>\
-- 포스코ICT : 도서,도심,산업용 마이크로 그리드 운영플랫폼 개발, 전남 신안군 수행, 일본 해외 사업 추진 <br/>\
-- 현대 중공업 : SG확산사업을 통해서 조선과 석유화학공장에 EES, AMI, 에너지 관리 시스템 구축, 전력거래 인프라 개발 <br/>\
-- 미국<br/>\
-1) 2014년 군사용 마이크로그리드들 비롯하여 전체 마이크로그리드 1GW 상용화 추진 <br/>\
-2) Beach Cities Microgrid, IIT Perfect Power, CERTS Microgrid demonstration(Santa Rita Jail)등을 포함하여 총 9개의 프로젝트를 추진 <br/>\
-- EU <br/>\
-1) Grid4EU(12개 EU국가의 27개사가 참여)<br/>\
-2) NiceGrid : 마이크로 그리드 프로젝트, Grid4EU의 6개 스마트그리드 프로젝트 중 하나 <br/>\
-3) Issy Grid : City Microgrid / 프랑스 최초 도시형 마이크로 그리드 <br/>\
-- GE, ABB, Siemens 등 기업들은 마이크로 그리드용 제어 시스템을 상용화 <br/>\
-- General Microgrids(미국) : "Balance Energy"라는 에너지 S/W 플랫폼, 각종 컨설팅 및 엔지니어링 서비스 제공\
+- 계통 연계형 마이크로 그리드 : KETEP 정부지원과제 <br/>\
+- LS산전 : 안산, 지도 / 에너지 자립섬 구축 <br/>\
+- KT : 도시내 전력 거래, 판매 시스템 <br/>\
+- 포스코 ICT : 산업용 마이크로 그리드 개발 <br/>\
+- 현대 중공업 : 조선, 석유 화학 공장 EES, AMI, 에너지 관리 시스템 구축 <br/><br/>\
+2. 해외 <br/>\
+- 미국 : 마이크로 그리드 1GW 상용화 <br/>\
+- EU : Grid4EU > NiceGrid(6대 프로젝트) > Issy Grid(프랑스) \
 ',
 
   
@@ -561,19 +537,11 @@ var answer = answer.concat(
 - 데이터 측면 : 메모리 시스템 기술(비휘발성 메모리), 프로그래밍 언어(다중 버전 모델) <br/><br/>\
 # 기술 동향 <br/>\
 1. 에너지 측면 <br/>\
-- 에너지 하베스팅 <br/>\
--> 초 전력 마이크로 컨트롤러(MSP 430)<br/>\
--> CMU에서 보드 하드웨어 설계도 공개 <br/>\
-- 에너지 절약 기술<br/>\
--> 동적 재구성 가능 장치(CMU, HW SW 동시설계)<br/>\
--> 부품별 ESS 연결(부품간 에너지 간섭 제거) <br/><br/>\
+- 에너지 하베스팅 : 초 전력 마이크로 컨트롤러(MSP 430) <br/>\
+- 에너지 절약 기술 : 동적 재구성 장치, 부품별 ESS 연결 <br/><br/>\
 2. 데이터 측면 <br/>\
-- 비 휘발성 메모리 변환<br/>\
--> 메모리 시스템 교체<br/>\
--> 특성 결합(캐시 계층, 비 휘발성 특성 혼합 복합 메모리 계층 연구) <br/>\
-- 실행 모델 및 프로그래밍 언어<br/>\
--> App 제어(다중 버전 모델, 체크포인팅 프로세스)<br/>\
--> 안전성 보장 프로그래밍 (CMU-Chain(Overhead x),Alpaca(Task 기반 데이터 공유)) <br/><br/>\
+- 비 휘발성 메모리 변환 : 캐시, 비휘발 특성 혼합 <br/>\
+- 실행 모델 및 프로그래밍 언어 : App 동시성 제어, 안전성 보장 <br/><br/>\
 * KPC 91회 응용 3교시 7번\
 ', 
   
@@ -643,7 +611,7 @@ var answer = answer.concat(
 
 // ANSI/ISA 95
 '# 정의 : ERP MES 시스템 통합 / 인터페이스, 객체 모델, 용어 정의 / 참조모델 표준 <br/>\
-- American National Standars Institute <br/>\
+- American National Standards Institute <br/>\
 - International Society of Automation <br/>\
 - ERP와 MES 등의 시스템 통합 운영위한 인터페이스와 객체 모델 제시, 용어 정의한 MES 참조모델 표준 <br/><br/>\
 <img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -736,7 +704,7 @@ var answer = answer.concat(
 '# 정의 : 통신 신호 사용 / RTU / 원격 감시,제어 시스템 <br/>\
 - Supervisiory Control And Data Acquisition <br/>\
 - 원자력, 전력, 가스 시설등의 원격지 플랜트 생산공정 정보를 중앙에서 감시,제어,관리 하는 시스템 <br/><br/>\
-# 구성요소 (<font color = "red">EBIMABP</font>)<br/>\
+# 구성요소 - Perdue 모형 (<font color = "red">EBIMABP</font>)<br/>\
 <img src = "./img/SCADA.png", style = "max-width:100%; height:auto;"><br/>\
 - 5 : Enterprise <br/>\
 - 4 : Business Planning, Logistics <br/>\
@@ -767,7 +735,7 @@ var answer = answer.concat(
 - 구성 : 다양성이 낮은 구성요소 집합(Platform 구성요소) + 다양성이 높은 구성요소 집합 <br/><br/>\
 # 요구사항 Tree <br/>\
 1. 전체 시스템 <br/>\
-- 다양한 통신 프로토콜 연동 : HTTP, MQTT, CoAP, WebSocket, HTTTPS <br/>\
+- 다양한 통신 프로토콜 연동 : HTTP, MQTT, CoAP, WebSocket, HTTPS <br/>\
 - 다른 표준과 연동 : 3GPP, OCF, OPC UA, oneM2M, TSN <br/>\
 - 시스템 서비스 및 장치 식별 <br/>\
 - 다중 장치 및 게이트웨이 간 상호작용 <br/>\
@@ -798,10 +766,10 @@ var answer = answer.concat(
   
 // oneM2M Mobious Platform 
 '# 개념 : IoT 공동 서비스 플랫폼 개발 Defacto <br/>\
-- 파편화 플랫폼 개발 구조 통합, 공유하기 위한 사실상 표준화 단체 및 표준 규격 <br/><br/>\
+- <font color = "red">파편화</font> 플랫폼 개발 구조 통합, 공유하기 위한 사실상 표준화 단체 및 표준 규격 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/oneM2MStructure.png", style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">ACN</font>)<br/>\
 - AE(Application Entity) : Application 계층 M2M 응용 프로그램 서비스 로직 구현 <br/>\
 - CSE(Common Services Entity) : 다양한 AE들이 공통적으로 사용할 수 있는 세트 모듈화 <br/>\
 - NSE(Network Services Entity) : 네트워크 서비스 제공(장치 관리, 위치 서비스, 장치 트리거링) \
@@ -809,11 +777,18 @@ var answer = answer.concat(
   
 // OCF
 '# 개념 : CoAP 이용 / 상호제어 플랫폼 기술 <br/>\
-- IoT 서비스 구현시 경량형 CoAP 프로토콜로 사물인터넷 장치들을 연결하여 장치에 존재하는 자원들을 상호제어 할 수 있게 하는 표준 플랫폼 기술 <br/><br/>\
+- Open Connectivity Foundation <br/>\
+- IoT 서비스 구현시 경량형 <font color = "red">CoAP</font> 프로토콜로 사물인터넷 장치들을 연결하여 장치에 존재하는 자원들을 상호제어 할 수 있게 하는 표준 플랫폼 기술 <br/><br/>\
 # 특징 <br/>\
 - 유무선 연결기술 유연 탑재 가능 프레임워크 <br/>\
 - 스마트 홈, 자동차, 물류, 헬스케어 등 특화 <br/><br/>\
 # 프레임워크 <br/>\
+1. Discovery : 장치 검색 (IETF CoRE) <br/>\
+2. Messaging : 장치 지원 (기본, 제한 장치-프로토콜 변환) <br/>\
+3. Common Resource Model : 데이터 모델로 정의된 실제 엔티티 <br/>\
+4. CRUN : Create, Retrieve(검색), Update, Delete, Notify <br/>\
+5. ID & Addressing : OCF 엔티티에 대한 ID 및 주소 지정 <br/>\
+6. Protocol Bridge / GW : 코어에서 동일한 Bridge 사양 처리 <br/><br/>\
 <img src = "./img/OCF_Framework.png", style = "max-width:100%; height:auto;">\
 ',
     
@@ -821,7 +796,7 @@ var answer = answer.concat(
 '# 정의 : 제조 시스템 SOA / 요구사항 해결 / OCP 재단 표준 <br/>\
 - Open Platform Communication Unified Architecture <br/>\
 - IEC 61968/61970 근거한 CIM(Common Information Mode) 데이터 전송하기 위해서 사용하는 산업용 M2M 통신 프로토콜 <br/>\
-- 제조 시스템 SOA 도입 따른 요구사항(보안, 손실방지, 중복 처리, 복잡 구조) 해결 위한 OPC 재단 표준 <br/>\
+- 제조 시스템 SOA 도입 따른 요구사항(보안, 손실방지, 중복 처리, 복잡 구조) 해결 위한 OPC 재단 표준 <br/><br/>\
 # 아키텍처 <br/>\
 <img src = "./img/OPCUAFramework.png", style = "max-width:100%; height:auto;"><br/>\
 - Session : 사용자 인증, 권한 확인 <br/>\
@@ -840,7 +815,7 @@ var answer = answer.concat(
 ',
   
 // Smart Hospital 
-'# 정의 : 혁신적 기술 고아범위 사용 / 환자중심 품질 / 의료비용 감소시키는 병원 <br/>\
+'# 정의 : 혁신적 기술 광범위 사용 / 환자중심 품질 / 의료비용 감소시키는 병원 <br/>\
 - 혁신적인 기술을 광범위하게 사용하여 다른 생태계와 디지털로 연결하여, 환자 중심의 서비스 품질과 경험을 향상시키면서 의료비용은 감소시키는 병원 <br/><br/>\
 # 해외 사례 <br/>\
 - 싱가폴 : 스마트 병원 구축 활용 <br/>\
@@ -881,7 +856,7 @@ var answer = answer.concat(
 3. 차량제어 <br/>\
 - 관리 및 제어 : OS, FS, DB <br/>\
 - 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
-# Level <br/>\
+# Level (<font color = "red">비운부 조고완</font>)<br/>\
 <img src = "./img/AutomationCarLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
 * MOST(Media Oriented Systems Transort) : 자동차 산업 최적화 고속 멀티미디어 네트워크 기술 <br/>\
@@ -898,7 +873,6 @@ var answer = answer.concat(
 * ALC : Automatic Lane Change <br/>\
 * 아폴로 플랫폼 <br/>\
 * 스마트더스트 c-its 연계 가능 <br/>\
-<img src = "./img/자율주행자동차_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/자율주행자동차_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 응용 3교시 6번\
 ',
@@ -906,8 +880,6 @@ var answer = answer.concat(
 // [자율주행자동차]- 트롤리 딜레마 
 '# 정의 : 윤리학의 사고실험 / 필리파 푸트 제시 / 주디스 톰슨 분석 <br/>\
 - 필리파 푸트(Philippa Foot)가 제시하고 주디스 톰슨(Judith Thormson)이 체계적으로 분석한 윤리학의 사고실험  <br/><br/>\
-# 암기 <br/>\
-- 문제점 해결 : 사회적 합의, 법/제도 /정책 수립 <br/><br/>\
 # 이슈 : 운전자를 보호할 것인가, 보행자를 보호할 것인가, 다수를 보호할 것인가, 소수를 보호할 것인가 <br/><br/>\
 # Jean-Francois Bonnefon 연구팀의 Amazon 직원 대상 실험 결과 <br/>\
 - 여러 사람을 살릴 수 있도록 설계되어야 한다는 공리주의적인 응답이 지지를 받음 <br/>\
@@ -930,11 +902,17 @@ var answer = answer.concat(
 '# 정의 : 동적 공간 데이터 저장소 <br/>\
 - Local Dynamic Map <br/>\
 - 정보수집의 대상 범위내에 있는 고정 물체 또는 이동 물체에 관한 정적, 일시적, 동적 정보를 모두 관리할 수 있는 동적 공간 데이터 저장소 <br/><br/>\
-# 등장배경 <br/>\
-- ITS -> C-ITS <br/>\
-- 차량-도로 자동화 패러다임 변화 <br/><br/>\
+# 구성도 (<font color = "red">정밀 일시 일시 정적 / 동적 동적 정적 정적</font>)<br/>\
 <img src = "./img/LDM_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/LDM_2.PNG" style = "max-width:100%; height:auto;">\
+# 기술요소 <br/>\
+- 서비스 구성요소 : LDM 객체, LDM 인터페이스 <br/>\
+- 통신 기능 : Map Matching Module, DM Protocol(동적 제공 메시지 규격) <br/>\
+- 복구 기능 : Watch Dog <br/>\
+- 수집 기능 : Road Survey(Probe Car) <br/><br/>\
+# 현황 <br/>\
+- 해외(미국, 유럽, 일본) : LDM 핵심 기술 개발 투자 <br/>\
+- 표준기관(ISO) : 기능 정의 , 다양 의견 수렴 <br/>\
+- 국내(교통과학기술 진흥원) : 스마트 자율 협력주행 도로 시스템 개발 \
 ',
   
 // C-ITS
@@ -956,7 +934,7 @@ var answer = answer.concat(
 // Lidar
 '# 정의 : 레이저 송출 / 반사 시간 / 위치 좌표 측정 / 레이다 시스템 / 객체 탐지 기술<br/>\
 - 레이저를 송출하여 반사되어 돌아오는 시간을 측정, 반사체의 위치 좌표를 측정하는 레이다 시스템 <br/><br/>\
-# 특징 : 직진성, 고밀도, 3D 영상 촬영 <br/>\
+# 특징 : 직진성, 고밀도, 3D 영상 촬영 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/LidarStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
@@ -997,9 +975,12 @@ var answer = answer.concat(
 * 인포레버 17년 12월 1교시 11번\
 ',
   
-// 데이터 거버넌스 법안
+// 데이터 거버넌스
 '# 전략 <br/>\
-<img src = "./img/DataGovernanceStragety.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DataGovernanceStragety.png" style = "max-width:100%; height:auto;"><br/>\
+- 전략, 실행계획 수립 : <font color = "red">목표</font> 수립, <font color = "red">개방,유통</font> 활성화 <br/>\
+- 거버넌스 확립 : <font color = "red">국가</font> 거버넌스 체계, <font color = "red">생산,공유,활용</font> 체계 개선, <font color = "red">역량</font> 강화 <br/>\
+- 법 제도 정비 : <font color = "red">법령</font> 정비, 법률 <font color = "red">연계성</font> 확보 <br/><br/>\
 # 법안 <br/>\
 1. 개념 :  2020.11.25. EU 집행위에서 제안된 EU 전역의 민간-민간, 민간-공공 데이터 공유 체계 강화, 시장 형상 촉진 목적 법안 <br/><br/>\
 2. 내용 <br/>\
@@ -1024,8 +1005,8 @@ var answer = answer.concat(
 // 디지털 뉴딜
 '# 정의 : 디지털 가속화 / 비대면화 / 디지털 기반 경제 혁신 가속화 / 국가발전 전략 <br/>\
 - 국내 산업의 디지털화를 가속화 하고 비대면화를 촉진시켜 디지털 기반의 일자리 창출 및 경제 혁신 가속화 추진 국가 발전전략 <br/><br/>\
-# D인비디 <br/>\
-- D : 활고융사 <br/>\
+# 암기 <br/>\
+- D : DNA보 <br/>\
 - 인 : 양지 <br/>\
 - 비 : 원온비 <br/>\
 - 디 : 프관신 <br/><br/>\
