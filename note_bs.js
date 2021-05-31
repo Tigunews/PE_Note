@@ -1571,7 +1571,7 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 // Value Chain
 '# 정의 : 주활동 / 지원활동 / 기능 / 프로세스 / 연계 분석 기법 <br/>\
 - 기업이 고객에게 가치를 제공함에 있어서 부가가치 창출에 직/간접적으로 관련된 주활동, 지원활동, 기능, 프로세스를 연계하는 분석 기법 <br/><br/>\
-# 구성도 (<font color = "red">기인개조 내생외영사</font>)
+# 구성도 (<font color = "red">기인개조 내생외영사</font>) <br/>\
 <img src = "./img/ValueChain.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 1번\
 ',

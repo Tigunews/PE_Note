@@ -641,7 +641,7 @@ var answer = answer.concat(
 ',
 
 // ANSI/ISA 95
-'# 정의 : ERP MES 시스템 통합 / 인터페이스, 객체 모델, 용어 정의 / 참조모델 표준
+'# 정의 : ERP MES 시스템 통합 / 인터페이스, 객체 모델, 용어 정의 / 참조모델 표준 <br/>\
 - American National Standars Institute <br/>\
 - International Society of Automation <br/>\
 - ERP와 MES 등의 시스템 통합 운영위한 인터페이스와 객체 모델 제시, 용어 정의한 MES 참조모델 표준 <br/><br/>\
