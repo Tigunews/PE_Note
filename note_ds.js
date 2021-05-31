@@ -2205,6 +2205,8 @@ var answer = answer.concat(
 <img src = "./img/AWD_AccordianTab.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 적용 사례 <br/>\
 <img src = "./img/AWD_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 비교 <br/>\
+<img src = "./img/RWDAWD_Compare.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 시선통신기술
