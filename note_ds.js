@@ -647,7 +647,8 @@ var answer = answer.concat(
 - ERP와 MES 등의 시스템 통합 운영위한 인터페이스와 객체 모델 제시, 용어 정의한 MES 참조모델 표준 <br/><br/>\
 <img src = "./img/ISA95ISA88.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Framework (<font color = "red">BPL MOM MS SM PP</font>)<br/>\
-<img src = "./img/ISA95Framework.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ISA95Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성 (<font color = "red">용PLP생운</font>) <br/>\
 - Part 1 : Level 4, Level 3 Interface, ERP,MES <font color = "red">용어 정의, 기본 모형 제시</font> <br/>\
 - Part 2 : <font color = "red">Part 1</font>에서 제시된 ERP MES간 표준화 정보흐름 표현 위한 <font color = "red">객체 모형과 속성 제시</font> <br/>\
 - Part 3 : Level 3의 제조 <font color = "red">운영활동 정의</font> <br/>\
