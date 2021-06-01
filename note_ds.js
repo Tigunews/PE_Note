@@ -1524,7 +1524,7 @@ var answer = answer.concat(
 
 // [핀테크]- 인슈어테크
 '# 정의 : 맞춤형 보험 서비스 <br/>\
-- 빅데이터 분석, 인겅지능등의 기술을 활용해 보험금 청구 간소화 서비스, 빅데이터 분석을 통한 고객 맞춤형 상품 추천등 기존 다른 보험 서비스를 제공하는 서비스 <br/><br/>\
+- 빅데이터 분석, 인공지능등의 기술을 활용해 보험금 청구 간소화 서비스, 빅데이터 분석을 통한 고객 맞춤형 상품 추천등 기존 다른 보험 서비스를 제공하는 서비스 <br/><br/>\
 # 주요기술 <br/>\
 1. 쳇봇 <br/>\
 - 빅데이터 기반 맞춤형 상품추천, 보험신청, 청구서비스 <br/>\
@@ -1556,7 +1556,7 @@ var answer = answer.concat(
 '# 정의 : 전자 금융거래 / 탐지, 차단 시스템 <br/>\
 - Fraud Detection System <br/>\
 - 전자 금융거래에서 사용되는 단말기 정보,접속정보,거래내용 등을 종합적으로 분석, 의심거래를 탐지하고 이상 금융거래를 차단하는 시스템 <br/><br/>\
-# 주요기능(수분대감) <br/>\
+# 주요기능(<font color = "red">수분대감</font>) <br/>\
 <img src = "./img/FDS_Function.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 판정방식 유형 <br/>\
 <img src = "./img/FDS_Type.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
@@ -1779,7 +1779,7 @@ var answer = answer.concat(
 - OpenID Connect : OAuth 프레임 워크 기반 Identiy Layer <br/><br/>\
 # 활용 사례 <br/>\
 - Public API : 기상청(기상정보), 금융권(오픈 뱅킹), 구글(지도) <br/>\
-- Private API : Amazon(Service Oriented), Netflix(고객 서비스용 시스템 <br/><br/>\
+- Private API : Amazon(Service Oriented), Netflix(고객 서비스용 시스템) <br/><br/>\
 * 라이지움 88회 관리 1교시 5번\
 ',
   

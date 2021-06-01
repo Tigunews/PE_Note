@@ -12,7 +12,7 @@ var this_week_question =
 'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스',
 
 // 추가 토픽
-'Smart City', 'Smart Grid','뉴딜','라우팅','의료기술',
+'Smart City', 'Smart Grid','뉴딜','라우팅','의료기술','마이데이터',
 
 /*
 // 124회
