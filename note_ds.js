@@ -210,15 +210,16 @@ var question = question.concat(
 '서버리스 컴퓨팅',
 'Web Crawling',
 '오픈소스',
-'오픈소스 라이선스',
-'오픈소스 라이선스 분류',
+'[오픈소스]- 오픈소스 라이선스',
+'[오픈소스]- 오픈소스 라이선스 분류',
 '[오픈소스 라이선스]- GPL',
 '[오픈소스 라이선스]- LGPL',
 '[오픈소스 라이선스]- BSD',
 '[오픈소스 라이선스]- Apache',
 '[오픈소스 라이선스]- MPL',
 '[오픈소스 라이선스]- InnerSource',
-'오픈소스 거버넌스',
+'[오픈소스]- 오픈소스 거버넌스',
+'[오픈소스]- 오픈소스 수익모델',
 '[디지털 정책]- 디지털 디바이드',
 '[디지털 정책]- 디지털 리터러시',
 '[디지털 정책]- 디지털 포용',
@@ -4551,6 +4552,24 @@ var answer = answer.concat(
 6. 정책 결정  <br/>\
 7. 지원 전략 수립 <br/>\
 8. 유지보수\
+',
+
+// 오픈소스 수익모델
+'# 수익 모델 <br/>\
+1. 직접 수익 <br/>\
+- 듀얼라이선스 : 공개 + 사유 / MySQL, ghostscript <br/>\
+<img src = "./img/DualLicense.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 허가적 라이선스 : Permissive / 안드로이드, AWS, CNTK, React <br/>\
+<img src = "./img/PermissionLicense.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 공개SW와 결합 : 예외조항에 의해 비공개 가능 SW와 결합 / MariaDB <br/>\
+<img src = "./img/CombineOSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 간접 수익 <br/>\
+- 지원 서비스 : 서비스 제공 / 레드헷, 블랙덕 <br/>\
+<img src = "./img/SupportService.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 플랫폼 구축 : 플랫폼, 사용대가 / 스마트폰, 페이스북, AWS <br/>\
+<img src = "./img/PlatformConstruct.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 인수합병 : 공개 SW 기반 자산 매각 / 레드헷, GitHub, MySQL <br/>\
+<img src = "./img/MergersAndAcquisitions.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 디지털 디바이드
