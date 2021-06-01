@@ -1043,7 +1043,7 @@ var answer = answer.concat(
   
 // SoC 디지털화
 '# 정의 : 사회 간접 자원에 첨단기술을 더해 국민의 안전과 편의를 높이기 위한 디지털 트랜스포메이션 <br/><br/>\
-# 주요내용(실디스) <br/>\
+# 주요내용(<font color = "red">실디스</font>) <br/>\
 - 실시간 모니터링 : 교량, 사면 IoT 상시계측, 하천관리 CCTV, 철로 고장 감지 <br/>\
 - 디지털 트윈 : 터널 원격제어 시스템, 스마트 홍수 관리 시스템 <br/>\
 - 스마트 운영 기법 : 안전한 교통망/ 스마트 공항,철도, 톨링, K-city(4레벨 이상 자율차 시험환경) <br/><br/>\
@@ -1055,14 +1055,14 @@ var answer = answer.concat(
 # 등장배경 : 4차 산업 역기능 해소 <br/><br/>\
 # 개정안 주요사항 (2020.12.10. 시행)<br/>\
 <img src = "./img/SmartInfoRule.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 상세내용 <br/>\
+# 상세내용 (<font color = "red">목공서기역이</font>)<br/>\
 <img src = "./img/SmartInfoRuleSpecefication.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 1교시 5번 <br/>\
 * 아이리포 24회 관리 3교시 6번\
 ',
   
 // Flipped Learning
-'# 정의 : Blend Leaerning / 온라인 학습 선행 / 수업시간 학습 내용 농의, 평가, 확인, 보완 방식 <br/>\
+'# 정의 : Blend Leaerning / 온라인 학습 선행 / 수업시간 학습 내용 논의, 평가, 확인, 보완 방식 <br/>\
 - 혼합형 학습(Blend Learning)의 한 형태로 학생이 수업 전에 온라인 영상을 통해 먼저 학습하고, 수업 시간에는 학습한 내용을 논의와 평가등을 위해 확인,보완하는 학습방식(TTA) <br/><br/>\
 # 구성요소 <br/>\
 - School : Off Line <br/>\
@@ -1079,9 +1079,8 @@ var answer = answer.concat(
 // 디지털 사이니지
 '# 정의 : 전자 간판<br/>\
 - 네트워크에 접속된 디스플레이 전자적 기구 원격제어 다양한 정보시스템 <br/><br/>\
-# 암기 : 기술5 컨포관전 단재S <br/><br/>\
 # 특징 : 네트워크기반 양방향 서비스, 인터렉티브, 고화질<br/><br/>\
-# 기술 <br/>\
+# 기술 (<font color = "red">컨-포관전 단-재S</font>)<br/>\
 1. 콘텐츠 <br/>\
 - 콘텐츠 포맷 기술 : JPEG, MPEG-1/2/4, PNG, FLASH <br/>\
 - 콘텐츠 관리 기술 : PlayLog, XML <br/>\
@@ -1089,22 +1088,22 @@ var answer = answer.concat(
 2. 단말 <br/>\
 - 콘텐츠 재생 기술 : JPEG, MPEG-1/2/4, SVG <br/>\
 - SW기반 : 멀티미디어 FW 기반 제작 <br/><br/>\
-# 비교 : OOH(Out Of Home, 옥외광고물) 제어방식, 컨텐츠, 제공서비스, 타겟 마케팅, 업데이트, 상호작용 <br/><br/>\
+# 비교 : <font color = "red">OOH</font>(Out Of Home, 옥외광고물) 제어방식, 컨텐츠, 제공서비스, 타겟 마케팅, 업데이트, 상호작용 <br/><br/>\
 <img src = "./img/DS_2_1.PNG" style = "max-width: 100%; height: auto;"><br/><br/>\
 ',
 
 // [디지털사이니지]- 오픈 스크린 
 '# 정의 : 사용자 환경정보 기반 / 스크린 협업 / 개인형 맞춤형 컨텐츠 / 디지털 사이니지 방식 <br/>\
 - 사용자의 특성 및 움직임, 주변환경변화등 복합적인 상황정보 기반으로 스크린들이 서로 협업하여 개인 맞춤형 컨텐츠를 연속적으로 제공하는 디지털 사이니지 방식 <br/><br/>\
-# 진화(디텔오) <br/>\
+# 진화(<font color = "red">디텔오</font>) <br/>\
 - 디지털 미디어 : 불특정 다수<br/>\
-- 텔레스크린(Tele-Screen) : 양방향 인터렉션(현재) <br/>\
+- 텔레 스크린(Tele-Screen) : 양방향 인터렉션(현재) <br/>\
 - 오픈 스크린 : 스크린들이 협업 , 맞춤형 컨텐츠 제공 (미래)<br/><br/>\
-# 기술(공이비) <br/>\
+# 기술(<font color = "red">공이비</font>) <br/>\
 - 공간 복합 상황 인지 기술 : 위치추적, 움직임 식별<br/>\
 - 이종 오픈스크린 협업 기술 : 동적 스크린 그룹제어, 컨텐츠 매쉬업 기술<br/>\
 - 비정형 오픈 스크린 재현 : 컨텐츠 추출, 비정형 스크린 분배 <br/><br/>\
-# 오픈 스크린 플랫폼(ETRI) (광인.스생.스게) <br/>\
+# 오픈 스크린 플랫폼(ETRI) (<font color = "red">광인.스생.스게</font>) <br/>\
 - 광역 상황 정보 인지 시스템 : 움직임 식별 및 전송<br/>\
 - 스마트 미디어 생성 시스템 : 추천 컨텐츠 정보 획득, 컨텐츠 메쉬업<br/>\
 - 스마트 미디어 제공 시스템 : 메쉬업 컨텐츠 분배, 재현 동기화 <br/><br/>\
@@ -1154,7 +1153,7 @@ var answer = answer.concat(
 // ISO 14971
 '# 정의 : 의료기기 사용 관련 위험 관리 요구사항 국제 표준 <br/>\
 - 의료기기 사용에 관련된 위험을 관리하기 위해 체계적으로 적용하여야 할 경험, 통찰 및 판단의 체계를 제조업체에게 제공하기 위한 요구사항을 포함한 국제 표준 <br/><br/>\
-# 구성요소 (범용요분 평통잔보생) <br/>\
+# 구성요소 (<font color = "red">범용요분 평통잔보생</font>) <br/>\
 1. 적용 범위 : 체외진단용 포함, 수명주기 전기간 등 <br/>\
 2. 용어 및 정의 : 위해, 위해요인, 수명주기, 의료기기 <br/>\
 3. 위험 관리 대한 요구사항 : 프로세스, 관리 책임, 직원 적격성, 위험관리 계획, 위험관리 파일 <br/>\
@@ -1190,7 +1189,7 @@ var answer = answer.concat(
 - 가명처리(4) : 휴리스틱 익명화, k-익명화, 암호화, 교환방법 <br/>\
 - 총계/평균값 대체(4) : 총계처리, 부분집계, 라운딩, 데이터 재배열 <br/>\
 - 데이터 값 삭제(4) : 속성값 삭제, 속성값 부분 삭제, 데이터 행 삭제, 식별자 제거를 통한 단순 익명화 <br/>\
-- 범주화(4) : Subdivide Level Controlling-상한,하한,구간재코딩 기법 / Random Rounding - 올림,절삭 방식 <br/>\
+- 범주화(4) : Subdivide Level Controlling-상한,하한,구간 재코딩 기법 / Random Rounding - 올림,절삭 방식 <br/>\
 - 데이터마스킹(2) : 임의 잡음 추가, 공백과 대체 <br/><br/>\
 # 알고리즘 <br/>\
 - K-익명화 <br/>\
@@ -1201,7 +1200,7 @@ var answer = answer.concat(
 - 휴리스틱 익명화 <br/><br/>\
 # 한계 <br/>\
 - 외부데이터 조합 재식별 가능성 <br/>\
-- 완전보호X <br/>\
+- 완전보호 X <br/>\
 - 현재 비식별 처리 But 미래 비식별 처리 X\
 ',
   
@@ -1257,7 +1256,10 @@ var answer = answer.concat(
 - NW <br/>\
 - Infra : 스트리밍, P2P <br/>\
 - 플랫폼(3) : GPOS, HTML5, 모바일 웹 <br/>\
-- 보안(4) : CAS, DCAS, 워터마킹, 핑거프린팅 <br/><br/>\
+- 보안(4) : CAS, DCAS, 워터마킹, 핑거프린팅 <br/>\
+<font color = "red">* GPOS(General Purpose OS) : 주로 스마트폰에 탑재되는 모바일 플랫폼 <br/>\
+* CAS : Contents Access Security <br/>\
+* DCAS : Downloadable CAS </font><br/><br/>\
 # 서비스 유형 <br/>\
 - Contetns Aggregator : 컨텐츠 제공자와 NW사업자 사이 컨텐츠 패키징 <br/>\
 - 저작권관리 결제 및 과금등 수행 <br/>\
@@ -1381,7 +1383,7 @@ var answer = answer.concat(
 # 특징 : Decentralized, Digital Hub(개인이 소유), Cryptographically-verifiable(암호화 인증) <br/><br/>\
 # 기술요소 <br/>\
 - DIDs(Decentralized Identifiers) : 탈중앙 식별자 / W3C <br/>\
-- DKMS(Decentralized Key Management System) : 키관리 표준 / OASIS<br/>\
+- DKMS(Decentralized Key Management System) : 개인키 관리 표준 / OASIS<br/>\
 - DID Auth : 사설키 제어 증명 인증 / DIF<br/>\
 - Verifiable Credentials : 증명서 / W3C<br/><br/>\
 * 119회 관리 1교시 4번\
@@ -1425,11 +1427,16 @@ var answer = answer.concat(
 - 파기 : 원본 미파기, 개인정보 미분리 / 즉시파기, 템플릿 폐기<br/><br/>\
 # 모델 유형 <br/>\
 1. 분산관리 센터 결합 <br/>\
-<img src = "./img/BioDistributeA.png" style = "max-width:100%; hegiht:auto;"><br/>\
-<img src = "./img/BioDistributeB.png" style = "max-width:100%; hegiht:auto;"><br/>\
+- Model A <br/>\
+<img src = "./img/BioDistributeA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+- Model B <br/>\
+<img src = "./img/BioDistributeB.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+- Model C <br/>\
 <img src = "./img/BioDistributeC.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 2. 금융기관 결합 <br/>\
-<img src = "./img/BioDistributeD.png" style = "max-width:100%; hegiht:auto;"><br/>\
+- Model D <br/>\
+<img src = "./img/BioDistributeD.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+- Model E <br/>\
 <img src = "./img/BioDistributeE.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 활용 사례 : ATM, 키오스크, 간편 결제 <br/><br/>\
 # 표준화 현황 <br/>\
