@@ -17,6 +17,7 @@ var question = question.concat(
 '[Layer3]- 회선교환',
 '[Layer3]- 패킷교환',
 '[Layer3]- 패킷데이터 네트워크 계층 오류',
+'[Layer3]- 라우팅',
 '[Layer3]- 거리벡터 라우팅',
 '[Layer4]- TCP',
 '[Layer4][TCP]- DTLS',
@@ -369,25 +370,28 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 // Frame Relay
 '# 정의 : WAN / 링크 레이어 프로토콜 / 가상 회선 / 전용선 취급 / 패킷 모드 전송 서비스 <br/>\
-- 장거리 통신망(WAN)에서 사용하는 링크 레이어 프로토콜중의 하나로 하나의 물리적인 회선에 여러 논리적인 회선인 가상 회선을 만들어 마치 전용선처럼 취급하는 패킷 모드 전송 서비스 <br/><br/>\
+- 장거리 통신망(WAN)에서 사용하는 링크 레이어 프로토콜중의 하나로 하나의 물리적인 회선에 여러 논리적인 회선인 가상 회선을 만들어 마치 전용선처럼 취급하는 패킷 모드 전송 서비스 <br/>\
+- CSU, Static Routing, 본사 지사 통신 <br/><br/>\
 # 프로토콜 <br/>\
 1. 기본 프로토콜 <br/>\
-- 구조 : Flag / Address / Information / FCS / Flag <br/>\
+- 구조 : Flag(8) / Address(16) / Data(Variable) / FCS(16) / Flag(8) <br/>\
 - Flag : 프레임 시작 끝 위치, 프레임 구분 <br/>\
 - FCS : 프레임 에러 검색, 에러 발생 프레임 제거 <br/><br/>\
 2. 제어 프로토콜 <br/>\
 - 구조 : Flag / Address / Control / Information / FCS / Flag <br/>\
 - 제어부 존재, 에러 제어, 흐름제어 수행 <br/><br/>\
-# 유형 <br/>\
+# 토폴로지 <br/>\
 1. Hub and Spoke <br/>\
-- DLCI(Data Link Connection Identifier) 번호 기반 프레임 전달 <br/>\
+- Remote Router들의 PVC가 중앙 Router 연결 구조 <br/>\
 <img src = "./img/FrameRelayHubAndSpoke.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. Full Mesh <br/>\
-- 상호 연결 토폴로지, 많은 연결 지점, 이중화 기능, PVC(Permanent Virtual Circuit) 비용 증가 <br/>\
+- 모든 Router가 상호간 PVC로 연결된 구조 <br/>\
 <img src = "./img/FullMesh.png" style = "max-width:100%; height:auto;"><br/><br/>\
 3. Partial Mesh <br/>\
-- 트래픽 분산 용도 사용 <br/>\
+- Hub and Spoke, Full-Mesh 혼합 구조 <br/>\
 <img src = "./img/FrameRelayPartialMesh.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Frame Relay, X.25 비교 <br/>\
+<img src = "./img/FrameRelayX25Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 10번\
 ',
  
@@ -448,6 +452,21 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 그리타\
 ',
 
+// 라우팅
+'# 정의 : 네트워크 / 최적 경로 선택 과정 <br/>\
+- 어떤 네트워크 안에서 통신 데이터를 보낼 때 최적의 경로를 선택하는 과정 <br/><br/>\
+# 유형 <br/>\
+1. 정적 라우팅 <br/>\
+- 개념 : 테이블 경로를 수동으로 추가해야하는 프로세스 <br/>\
+- 장점 : 라우터 CPU 오버헤드x, 저렴한 라우팅 <br/>\
+- 단점 : 대규모 경우 관리자 수동 추가 리소스 작업 소요 많음<br/><br/>\
+2. 기본 라우팅 <br/>\
+- 개념 : 모든 라우터를 단일 라우터 (다음 홉)로 보내도록 구성하는 방법 <br/><br/>\
+3. 동적 라우팅 <br/>\
+- 개념 : 라우팅 테이블에서 경로의 현재 상태에 따라 경로를 자동으로 조정 방법 <br/>\
+- 유형 : 거리벡터 라우팅 (Hop기반), 링크스테이트 라우팅(오류 경로 반영) \
+',
+
 // 거리벡터 라우팅
 '# 정의 : 일정 시간 / 라우팅 정보 교환 / 최적 경로 설정 라우팅 방식 <br/>\
 - 일정시간 마다 이웃에 위치한 라우터와 라우팅 테이블의 정보를 교환해 최적의 경로 설정 라우팅 방식 <br/><br/>\
@@ -466,6 +485,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - RIP : 라우터 경로값, 자신 경로값 비교 갱신 <br/>\
 - IGRP : 전송 능력, 지연 시간, 회선 사용률, 신뢰성, 로드밸런싱 기반 설정 <br/><br/>\
 # 거리벡터 한계점인 루핑 해결방안 <br/>\
+- Maximum Hop Count : 최대 Hop Count를 15로 설정 <br/>\
 - Hold Down Timer : 타이머 종료할 때, 정성경로 처리만 Update <br/>\
 - Split Horizon : 인접간 루핑 방지 가능 <br/>\
 - Route Poisoning : 다운 네트워크 값 메트릭 16 고정, 무시 <br/>\
