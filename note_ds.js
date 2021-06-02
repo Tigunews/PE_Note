@@ -2702,8 +2702,8 @@ var answer = answer.concat(
 - 의료사물인터넷. 개인의 생활습관, 신체검진, 의료이용정보, 질병 이력, 유전체정보 등 다양한 데이터를 통해 환자의 증상 및 치료 관리 현황을 꾸준히 모니터링해 공백이 발생하지 않도록 하는 개인중심의 건강관리시스템을 구현',
 
 // 블록체인 
-'# 정의 : Block 기반 Chaning Data Record <br/>\
-- Block을 연속적으로 Chain한 다음, 지속적으로 성장하는 데이터 기록 연결 리스트 형태이며 분산 DB와 유사 <br/><br/>\
+'# 정의 : 디지털 장부 거래 저장 / 분산형 데이터 저장 기술 <br/>\
+- 누구나 열람할 수 있는 디지털 장부에 거래 내역을 투명하게 기록하고, 여러 대의 컴퓨터에 이를 복제해 저장하는 분산형 데이터 저장기술 <br/><br/>\
 <img src = "./img/BlockChain_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 블록체인 연결구조 <br/>\
 <img src = "./img/BlockChain_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -3250,9 +3250,9 @@ var answer = answer.concat(
 ',
 
 // 클라우드 컴퓨팅
-'# 정의 : 인터넷상 서버 / 중앙 IT 서비스 컴퓨팅 환경 <br/>\
-- 인터넷상의 서버를 통하여 데이터 저장, 네트워크, 컨텐츠 사용 등 IT 관련 서비스를 한번에 사용할 수 있는 컴퓨팅 환경 <br/><br/>\
-# 특징 (NIST) (OBRDM) <br/>\
+'# 정의 : 정보 자원 필요한 만큼 사용 / 확장성 지원 / 사용한 만큼 지불 / 컴퓨팅 기술 <br/>\
+- 서비스 이용자가 정보 자원(SW, Platform, Storage, Server, NW 등)을 필요한 만큼 빌려서 사용하고, 서비스 부하에 따라서 실시간 확장성(Scalability)을 지원 받으며, 필요한 순간에 접속하여, 사용한 만큼 비용을 지불하는 서비스로 공유된 컴퓨팅 자원이 신속히 제공되고, 회수되는 컴퓨팅 <br/><br/>\
+# 특징 (NIST) (<font color = "red">OBRDM</font>) <br/>\
 - On-demand Self-Service : 자동 이용 가능 / Manage Console, Service Catalog <br/>\
 - Broad network Access : 이기종 클라이언트, NW 접근 / Mobile, Tablet, PC <br/>\
 - Resource Pooling : 여러 사용자, 위치 관계 없이 제공 / Multi tenant, Location Transparency <br/>\
