@@ -1982,11 +1982,16 @@ var answer = answer.concat(
 - 전송, 음성/영상 캡처 <br/>\
 - Network I/O 모듈 <br/><br/>\
 # 기술 요소 <br/>\
-- API : Media Stream, RTCPeerConnection, RTCDataChannel <br/>\
-- 통신 : STUN, TURN, ICE, SDP, STRP, JSEP <br/>\
-- 보안 : TLS/SSL <br/>\
-- 코덱 : llbc, Isac, Opus, VP8 <br/>\
-- 지터 : NetEQ, 비디오 지터 버퍼 <br/><br/>\
+1. API : Media Stream, RTCPeerConnection, RTCDataChannel <br/><br/>\
+2. 통신 <br/>\
+- STUN(Session Traversal Utilities for NAT) : 공인 IP, 포트 확인 프로토콜 / 유일 식별정보 반환<br/>\
+- TURN(Traversal Using Relay NAT) : STUN 대안, 네트워크 미디어 중개 서버 이용 <br/>\
+- ICE(Interactive Connectivity Establishment) : P2P 연결 최적 경로 찾아주는 프레임워크 <br/>\
+- SDP(Session Description Protocol) : 해상도, 형식, 코덱등 컨텐츠 초기 인수 설명 프로토콜 <br/>\
+- STRP, JSEP <br/><br/>\
+3. 보안 : TLS/SSL <br/><br/>\
+4. 코덱 : llbc, Isac, Opus, VP8 <br/><br/>\
+5. 지터 : NetEQ, 비디오 지터 버퍼 <br/><br/>\
 # 동향 <br/>\
 - MS : Skype for Web Messagin Service (WebRTC 수용) <br/>\
 - Amazon : 태블릿 PC 킨들 파이어에 WebRTC 세션을 통한 기술지원담당자 연결기능 제공 <br/>\
