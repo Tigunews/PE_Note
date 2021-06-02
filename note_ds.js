@@ -1992,11 +1992,17 @@ var answer = answer.concat(
 3. 보안 : TLS/SSL <br/><br/>\
 4. 코덱 : llbc, Isac, Opus, VP8 <br/><br/>\
 5. 지터 : NetEQ, 비디오 지터 버퍼 <br/><br/>\
+# 한계점 <br/>\
+- 브라우저간 호환성 : adapter.js 라이브리 없이 호환성 장담 x <br/>\
+- 표준성 : 시그널링 서버에 대한 명시적 표준 없음 <br/>\
+- UDP 동작 : 속도는 빠르지만, 데이터 손실 발생 가능성 <br/><br/>\
 # 동향 <br/>\
 - MS : Skype for Web Messagin Service (WebRTC 수용) <br/>\
 - Amazon : 태블릿 PC 킨들 파이어에 WebRTC 세션을 통한 기술지원담당자 연결기능 제공 <br/>\
 - FaceBook Linkedin : 기존 FaceBook에서 메신저 분리 <br/>\
 - 하이퍼커넥트 : 국내벤처, 전세계 무료 메시지, 무료 영상 통화<br/>\
+# 개념도 <br/>\
+<img src = "./img/WebRTCOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/WebRTC.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 통신 유형 <br/>\
 <img src = "./img/WebRTC_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
