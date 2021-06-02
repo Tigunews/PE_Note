@@ -12,7 +12,7 @@ var this_week_question =
 'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스','블록체인','클라우드',
 
 // 추가 토픽
-'Smart City', 'Smart Grid','뉴딜','라우팅','의료기술','마이데이터','DA','DBA','DQM',
+'Smart City', 'Smart Grid','뉴딜','라우팅','의료기술','마이데이터','DB Stakeholder','DQM',
 
 /*
 // 124회

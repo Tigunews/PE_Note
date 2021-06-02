@@ -209,7 +209,7 @@ var question = question.concat(
 '디지털 트윈',
 '서버리스 컴퓨팅',
 'Web Crawling',
-'오픈소스',
+'오픈소스 소프트웨어',
 '[오픈소스]- 오픈소스 라이선스',
 '[오픈소스]- 오픈소스 라이선스 분류',
 '[오픈소스 라이선스]- GPL',
@@ -220,6 +220,7 @@ var question = question.concat(
 '[오픈소스 라이선스]- InnerSource',
 '[오픈소스]- 오픈소스 거버넌스',
 '[오픈소스]- 오픈소스 수익모델',
+'[오픈소스]- 오픈소스 프로젝트관리 소프트웨어',
 '[디지털 정책]- 디지털 디바이드',
 '[디지털 정책]- 디지털 리터러시',
 '[디지털 정책]- 디지털 포용',
@@ -2152,21 +2153,21 @@ var answer = answer.concat(
 // Responsive Web Design
 '# 정의 : 사용자 디바이스 / 해상도, 화면 / 자동 변환 기술 <br/>\
 - 사용자의 다양한 디바이스 환경에 따라 해상도나 화면이 최적화된 환경으로 자동 변환되는 기술 <br/><br/>\
-# 패턴 <br/>\
+# 패턴 (<font color = "red">유열배미오</font>)<br/>\
 1. 유동형 (Mostly Fluid) <br/>\
-- 가변형 그리드로 구성, 단순히 컨텐츠 폭 맞추는 방법 <br/>\
+- <font color = "red">가변형 그리드</font>로 구성, 단순히 컨텐츠 폭 맞추는 방법 <br/>\
 <img src = "./img/RWD_MostlyFluid.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. 열 끌어놓기 (Column Drop) <br/>\
-- 화면폭 좁아져, 표현 힘들 경우, 하단 수직 배열 <br/>\
+- 화면폭 좁아져, 표현 힘들 경우, <font color = "red">하단 수직 배열</font> <br/>\
 <img src = "./img/RWD_ColumnDrop.png" style = "max-width:100%; height:auto;"><br/><br/>\
 3. 배치 이동(Layout Shifter) <br/>\
-- 스크린 마다 다른 형태 사용 <br/>\
+- <font color = "red">스크린 마다</font> 다른 형태 사용 <br/>\
 <img src = "./img/RWD_LayoutShifter.png" style = "max-width:100%; height:auto;"><br/><br/>\
 4. 미세 조정(Tiny Tweaks) <br/>\
-- 글꼴, 이미지 크기조정, 미세조정 발생 <br/>\
+- 글꼴, 이미지 크기조정, <font color = "red">미세조정</font> 발생 <br/>\
 <img src = "./img/RWD_TinyTweaks.png" style = "max-width:100%; height:auto;"><br/><br/>\
 5. 오프 캔버스(Off-Canvas) <br/>\
-- 필요할 때 노출 패턴 <br/>\
+- <font color = "red">필요할 때</font> 노출 패턴 <br/>\
 <img src = "./img/OffCanvas.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 5번\
 ',
@@ -2174,23 +2175,23 @@ var answer = answer.concat(
 // Adaptive Web Design
 '# 정의 : Source Code, N-Screen / 1:1 <br/>\
 - 미리 정해진 몇 가지 화면 크기를 기준으로 두고 비율에 맞춰 페이지를 구성하는 방식 <br/><br/>\
-#  개념도 <br/>\
+# 개념도 <br/>\
 <img src = "./img/AWD_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
+# 기술요소 (<font color = "red">유크점반아</font>)<br/>\
 1. 유동형 테이블(Fluid Table) <br/>\
-- 기기 종류 따라 열 재구성 <br/>\
+- 기기 <font color = "red">종류 따라</font> 열 재구성 <br/>\
 <img src = "./img/AWD_FluidTable.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. Cross Tab <br/>\
-- 행,열 반대 표현 방식 <br/>\
+2. 크로스 탭 그리드(Cross Tab) <br/>\
+- <font color = "red">행,열 반대</font> 표현 방식 <br/>\
 <img src = "./img/AWD_CrossTab.png" style = "max-width:100%; height:auto;"><br/><br/>\
-3. Progressive Hide Grid <br/>\
-- 중요성 떨어지는 컬럼 숨기는 기술 <br/>\
+3. 점진적 컬럼 숨김 그리드(Progressive Hide Grid) <br/>\
+- <font color = "red">중요성</font> 떨어지는 컬럼 숨기는 기술 <br/>\
 <img src = "./img/AWD_ProgressiveHideGrid.png" style = "max-width:100%; height:auto;"><br/><br/>\
-4. Responsive Scroll Grid <br/>\
-- 중요 컬럼 고정, 가로 스크롤 생김 기술 <br/>\
+4. 반응형 스크롤 그리드(Responsive Scroll Grid) <br/>\
+- <font color = "red">중요 컬럼 고정</font>, 가로 스크롤 생김 기술 <br/>\
 <img src = "./img/AWD_ResponsiveScrollGrid.png" style = "max-width:100%; height:auto;"><br/><br/>\
-5. Accordian Tab <br/>\
-- 탭컨텐츠 사용시, 화면 사이즈 무관하게 각각 개별 탭 선택하여 컨텐츠 전환 <br/>\
+5. 아코디언 탭(Accordian Tab) <br/>\
+- 탭 컨텐츠 사용시, 화면 사이즈 무관하게 각각 <font color = "red">개별 탭</font> 선택하여 컨텐츠 전환 <br/>\
 <img src = "./img/AWD_AccordianTab.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 적용 사례 <br/>\
 <img src = "./img/AWD_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -4402,9 +4403,10 @@ var answer = answer.concat(
 * 122회 3교시 1번\
 ',
 
-// 오픈소스
-'# 정의 : 공개적 액세스 / 확인, 수정, 배포 / 소프트웨어 <br/>\
-- 공개적으로 액세스 할 수 있게 설계되어 누구나 자유롭게 확인, 수정, 배포할 수 있는 소프트웨어 <br/><br/>\
+// 오픈소스 소프트웨어
+'# 정의 : 소스코드 공개 / 액세스 / 확인,수정,배포 / 소프트웨어 <br/>\
+- OSS : Open Source Software <br/>\
+- 소스코드를 공개적으로 액세스할 수 있게 설계되어 누구나 자유롭게 확인,수정,배포할 수 있는 소프트웨어<br/><br/>\
 # 특징 <br/>\
 - 자유 : 복제, 설치, 운영, 수정, 배포의 자유 <br/>\
 - Copyleft : 공개되어 있는 소스코드 <br/>\
@@ -4412,9 +4414,9 @@ var answer = answer.concat(
 - 반환의무 : 특정 공개 SW 라이선스 소스 코드 공개 의무 <br/>\
 - 저작권 : 저작권법에 따른 법적 권리 보장 <br/><br/>\
 # 4차산업 기여하는 시사점 <br/>\
-- 오픈소스 전략적 활용 : 전문 인력 확보, 비용 절감, 고품질 제품 개발 <br/>\
-- 디지털 혁신 : 디지털 혁신, AI 기술 유연한 적용, 클라우드 중심 오픈소스 활용 <br/>\
-- 컴플라이언스 : 양립성, 거버넌스 구축 활용 <br/><br/>\
+- Service 측면 시사점 : 현대화, DX / BigData, Cloud, AI 분야 활용 <br/>\
+- Platform 측면 시사점 : Global IT 기업 플랫폼 선점화 경쟁 화두 / Google(Tensorflow), MS(CNTK), Amazone(MXet) <br/>\
+- Infra 측면 시사점 : Public Cloud 통한 오픈소스 기술 제공 기반 / 쿠버네티스, 도커, 마리아DB, Nginx, Hadoop <br/><br/>\
 * 124회 관리 4교시 2번\
 ',
   
@@ -4577,6 +4579,20 @@ var answer = answer.concat(
 <img src = "./img/PlatformConstruct.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 인수합병 : 공개 SW 기반 자산 매각 / 레드헷, GitHub, MySQL <br/>\
 <img src = "./img/MergersAndAcquisitions.png" style = "max-width:100%; height:auto;">\
+',
+
+// 오픈소스 프로젝트관리 소프트웨어
+'# 정의 : 프로젝트 효율적 관리 오픈소스 소프트웨어 <br/>\
+- 프로젝트 계획, 조직, 성과측정 등 프로젝트를 효율적으로 관리하는것을 지원해주는 오픈소스 기반의 소프트웨어 <br/><br/>\
+# 종류 <br/>\
+- 계몽 도입 : Redmine, Trello <br/>\
+- Agile 관리 적용 : Jenkins, Jira <br/>\
+- 개발 적용 : SonarCube, Junit <br/>\
+- 개발 운영 : SVN, Git-Hub <br/><br/>\
+# 장단점 <br/>\
+- 장점 : Time To Market, 품질향상, ROI 증대, 생산성 향상 <br/>\
+- 단점 : 명세화 부족, 요구사항 잦은 변경, 사업관리 미흡, 대ㅔ형프로젝트 도입 어려움 <br/><br/>\
+* 123회 관리 1교시 8번\
 ',
   
 // 디지털 디바이드
