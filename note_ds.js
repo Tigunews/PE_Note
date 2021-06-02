@@ -17,6 +17,7 @@ var question = question.concat(
 '[Smart Factory]- CPS',
 '[Smart Factory]- CPS 요구사항',
 '[Smart Factory]- SCADA',
+'[Smart Factory]- 팝업팩토리(Pop-up Factory)',
 'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
 '[IoT Platform]- OCF',
@@ -77,10 +78,6 @@ var question = question.concat(
 '[핀테크]- Zero Pay',
 '데이터 주권 이슈',
 '아바커스 프로젝트(Project Abacus)',
-'영지식 증명(Zero-knowledge Proof)',
-'[이더리움] - 스마트계약(Smart Contract)',
-'[Smart Contract]- Smart Contract Audit',
-'[3D 프린터]- 팝업팩토리(Pop-up Factory)',
 '오감기술',
 '모션기술',
 'Web 2.0',
@@ -128,6 +125,7 @@ var question = question.concat(
 'HILS, HIL 시뮬레이션',
 '오픈뱅킹(Open Banking)',
 'IoMT',
+'암호화폐 용어',
 '블록체인',
 '블록체인 종류',
 '[블록체인]- 블록체인 3.0',
@@ -148,8 +146,10 @@ var question = question.concat(
 '[블록체인]- De-Fi',
 '[블록체인]- ICO',
 '[블록체인]- KYC',
-'[하이퍼레저]- 하이퍼레저 패브릭',
-'암호화폐 용어',
+'[블록체인]- 영지식 증명(Zero-knowledge Proof)',
+'[블록체인] - 스마트계약(Smart Contract)',
+'[블록체인][Smart Contract]- Smart Contract Audit',
+'[블록체인][하이퍼레저]- 하이퍼레저 패브릭',
 'CBDC',
 'MaaS',
 'Dark Net',
@@ -730,6 +730,10 @@ var answer = answer.concat(
 # 보안 요구사항 : 접근제어, 기무가, 인증, 접근차단 및 탐지, 보안정책, 감사기록 <br/><br/>\
 * 120회 응용 2교시 4번\
 ',
+
+// [3D 프린터]- 팝업팩토리
+'# 정의 : 3D Printing / 전자기기 즉석 생산 기법 <br/>\
+- 3D 프린팅 기술을 이용하여 전자기기(HW)를 그 자리에서 즉석(Pop-up) 생산하는 기법. 더 빠르고 신속하게 SW를 만드는 SW부문의 Agile 개발방법론을 하드웨어(HW) 생산 방식에 접목하여 HW를 빠르고 유연하고 민첩하게 생산(fast, flexible, agile Manufacturing)하기 위한 기법',
   
 // IoT Platform
 '# IoT Platform Overview <br/>\
@@ -1848,88 +1852,6 @@ var answer = answer.concat(
 - 스마트폰이 알아서 현재 이용자가 진짜 주인인지 여부를 판단. 주인의 버릇과 주요 접속 장소, 말투 등 개인 정보를 축적한 뒤 현재 이용자가 비교해 "진실점수(Trust Score)"를 매긴 후 합격하면 자동 접속<br/><br/>\
 # 현황 : 비밀번호 대체해 여러 센서 정보 결합한 보안체계 개발 중, 음성, 얼굴 인식 등 정보에서 계산된 트러스트 스코어 활용해 보안 해제 기능 제공',
 
-// 영지식 증명
-'# 정의 : 증명 방법 / 정보 주지 않는 <br/>\
-- 1985년 Goldwasser, Micali, Rockoff가 영지식 대화형 증명 방식 발표로 시작, 어떤 내용을 알고 있을 때, 그 내용을 직접 보여주지 않고 그것을 알고 있음을 증명하는 방법 <br/>\
-- 한 사람이 다른 사람에게 사실의 증명에 관한 어떠한 정보도 보이지 않고 사실의 증명을 알 수 있도록 만드는 방법, 정보를 전혀 주지 않고 상대방에게 정보를 알고 있음을 증명하는 방법<br/><br/>\
-# 정의 : 정보를 발설하지 않고, 그 정보를 알고 있다는 것을 증명하는 기술 <br/><br/>\
-# 특징 <br/>\
-- 완전성 : 문장 참 / 정직한 증명자 / 정직한 검증자 / 납득  <br/>\
-- 정당성 : 문장 거짓 / 부정직한 증명자 / 정직한 검증자 / 납득x <br/>\
-- 영지식성 : 참 거짓 이외 아무것도 알 수 없음 <br/><br/>\
-# 구성요소 <br/>\
-- 명제 : 증명하려는 사실 (참, 거짓) <br/>\
-- 증명자 : 어떤 문장이 참이라는 것을 증명하는 쪽 <br/>\
-- 검증자 : 증명 과정에 참여하여 증명자와 정보를 주고 받는 쪽 <br/><br/>\
-# 사례 <br/>\
-- 이더리움(zk-SNARKs, 제크캐시(Quorum, JP 모건)<br/>\
-- 코인플러그(메타디움, 부정거래 및 사기 행위)\
-',
-
-// Smart Contract
-'# 정의 : 컴퓨터 언어로 저장된 계약 / 분산원장 시스템 / 자동 체결<br/>\
-- 분산원장시스템(Distributed ledger system)과 같은 컴퓨터 시스템에 의하여 자동으로 체결될 수 있는 <font color = "red">기존 법률적 언어대신 컴퓨터 언어</font>로 저장된 계약<br/>\
-- 블록체인을 통해 일정 조건을 만족시키면 거래가 자동으로 실행되도록 프로그램된계약<br/><br/>\
-# 특징 <br/>\
-1. 계약 측면 <br/>\
-- 자동계약 <br/>\
-- 프로세스 간소화 <br/><br/>\
-2. 기술 측면 <br/>\
-- 탈중앙화 <br/>\
-- 코드 실행 <br/>\
-- 튜링 완전성 <br/><br/>\
-# 원칙 (<font color = "red">관검사강</font>)<br/>\
-- 관측 가능성 : 계약 이행 관찰, 성과 입증 <br/>\
-- 검증 가능성 : 위반시 확인 <br/>\
-- 사생활 보호 : 당사자에게만 분배 <br/>\
-- 강제 가능성 : 구속력 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/SmartContractStructure.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 기술요소 <br/>\
-1. 신뢰성 <br/>\
-- 전자서명 : 공개키, 개인키, 부인방지 <br/>\
-- 마이닝 : 합의 알고리즘 신뢰성 <br/><br/>\
-2. 튜링완전 언어 <br/>\
-- Solidity : Javascript 유사 객체지향 프로그래밍 <br/>\
-- Serpent : Python 유사한 이더리움 개발 가능 프로그래밍 <br/><br/>\
-3. 이더리움 <br/>\
-- EVM(Ethereum Virtual Machine) : 스택기반 가상 머신 <br/>\
-- DApp : 사용자 유저단 UI 제공 기술 <br/><br/>\
-# 예시 <br/>\
-<img src = "./img/SmartContractExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 활용 <br/>\
-- 지급결제, 송금 : 실물 화폐, 지급 결제 <br/>\
-- 지적 재산권 : 디지털 음원, 특허관리 <br/>\
-- 권리 증명 : 부동산 등기, 권리 증명 <br/>\
-- 인증, 공유경제 : 3차인증, 공유 경제 <br/><br/>\
-* KPC 81회 관리 1교시 1번\
-',
-  
-// Smart Contract Audit
-'# 정의 : 결함, 취약점 찾기 / 개선 방향 제시 / 백서 내용 일치 구현 / 검증 활동 <br/>\
-- 스마트 컨트랙트가 가진 코드 결함 및 보안취약점을 찾아내어 개선방향을 제시하고 기능이 백서의 내용과 일치하게 구현되어 있는지 검증하는 활동 <br/><br/>\
-# 점검대상 <br/>\
-- 아키텍처 <br/>\
-- 코드결함 : Reentrancy, OverFlow, UnderFlow, Front-Running <br/>\
-- 보안취약점 <br/>\
-- 기능검토 : 기능, 백서 내용 일치 검증 <br/><br/>\
-# 감사기법 <br/>\
-- Code Design Patterns : 아키텍처, 안전 사용 검토 <br/>\
-- Statics Analysis : 보안 감사도구 사용하여 코드 결함, 백도어 및 악의적 코드 탐지 자동화 코드 검사 <br/>\
-- Unit Testing : 각 기능 작동 확인 <br/>\
-- Mannual Analysis : 경쟁 조건(Race Condition), 잠재적 문제점 발견, 라인 단위 코드 검사 <br/>\
-- BugBounties : 전문가 테스트통한 검증 (버그발견 보상지급) <br/><br/>\
-# 프로세스 <br/>\
-- 착수 : 소스코드, 백서 자료 받아 검토 / 감사 계획서, 백서, 소스코드 <br/>\
-- 감사 : 도구 이용한 자동화 및 수동 감사 수행 / 점검 결과서 <br/>\
-- 보고 : 보고서 작성 후 감사결과 고객에게 통보 / 감사 보고서 <br/><br/>\
-* 라이지움 88회 관리 1교시 12번\
-',
-
-// [3D 프린터]- 팝업팩토리
-'# 정의 : 3D Printing / 전자기기 즉석 생산 기법 <br/>\
-- 3D 프린팅 기술을 이용하여 전자기기(HW)를 그 자리에서 즉석(Pop-up) 생산하는 기법. 더 빠르고 신속하게 SW를 만드는 SW부문의 Agile 개발방법론을 하드웨어(HW) 생산 방식에 접목하여 HW를 빠르고 유연하고 민첩하게 생산(fast, flexible, agile Manufacturing)하기 위한 기법',
-
 // 오감기술
 '# 정의 : 오감자극 인터페이스 기술 <br/>\
 - 촉각, 후각, 미각 등 오감을 자극하여 정보를 전달하는 인터페이스 기술',
@@ -1953,7 +1875,7 @@ var answer = answer.concat(
 - 모델 : 웹서비스 <br/>\
 - 기술 : Ajax, API, LAMP <br/>\
 - 역량 : SaaS, 데이터소스 통제, 가벼운 UI <br/>\
-- 유연성 ; 단순 데이터 포맷 <br/><br/>\
+- 유연성 : 단순 데이터 포맷 <br/><br/>\
 2. SOA <br/>\
 - 모델 : 웹서비스 <br/>\
 - 기술 : WSDL, UDDI, SOAP <br/>\
@@ -2051,11 +1973,8 @@ var answer = answer.concat(
 // [Web 3.0]- WebRTC
 '# 정의 : No Plugin Service <br/>\
 - Web Realtime Communication <br/>\
+- Google 개발 <br/>\
 - 웹 브라우저 별도 Plugin 없이 실시간 음성, 영상통화, 파일공유 서비스 제공하는 웹 서비스 <br/><br/>\
-# 암기 <br/>\
-- 아키텍처(5) : P음비전N <br/>\
-- 기술(7) : GSJISNT <br/>\
-- Peer-Connection <br/><br/>\
 # 아키텍처 <br/>\
 - Peer Connection <br/>\
 - 세션관리 <br/>\
@@ -2702,6 +2621,17 @@ var answer = answer.concat(
 - Internet of Medical Things<br/>\
 - 의료사물인터넷. 개인의 생활습관, 신체검진, 의료이용정보, 질병 이력, 유전체정보 등 다양한 데이터를 통해 환자의 증상 및 치료 관리 현황을 꾸준히 모니터링해 공백이 발생하지 않도록 하는 개인중심의 건강관리시스템을 구현',
 
+// 암호화폐 용어
+'# 용어 <br/>\
+- 코인(Cryptocurrency) : 결제뿐 아니라 주식 등 역할 <br/>\
+- ICO(Initial Coin Offering) : 코인 발행하고 투자금 모집 <br/>\
+- 백서(White Paper) : 사업자가 만든 프로젝트 계획서 <br/>\
+- 토큰(Token) : 기존 코인 네트워크를 활용해 만든 코인 <br/>\
+- 메인넷(Main-Net) : 기존 네트워크에서 독립한 독자 플랫폼 <br/>\
+- 하드포크(Hard Fork) : 블록체인으로부터 분리 독립한 코인 <br/>\
+- 소프트포크(Soft Fork) : 기존 블록체인 호환 가능한 업그레이드 \
+',
+
 // 블록체인 
 '# 정의 : 디지털 장부 거래 저장 / 분산형 데이터 저장 기술 <br/>\
 - 누구나 열람할 수 있는 디지털 장부에 거래 내역을 투명하게 기록하고, 여러 대의 컴퓨터에 이를 복제해 저장하는 분산형 데이터 저장기술 <br/><br/>\
@@ -3098,6 +3028,84 @@ var answer = answer.concat(
 * CTR : Currency Transaction Report <br/><br/></font>\
 * 122회 관리 1교시 10번 \
 ',
+
+// 영지식 증명
+'# 정의 : 증명 방법 / 정보 주지 않는 <br/>\
+- 1985년 Goldwasser, Micali, Rockoff가 영지식 대화형 증명 방식 발표로 시작, 어떤 내용을 알고 있을 때, 그 내용을 직접 보여주지 않고 그것을 알고 있음을 증명하는 방법 <br/>\
+- 한 사람이 다른 사람에게 사실의 증명에 관한 어떠한 정보도 보이지 않고 사실의 증명을 알 수 있도록 만드는 방법, 정보를 전혀 주지 않고 상대방에게 정보를 알고 있음을 증명하는 방법<br/><br/>\
+# 정의 : 정보를 발설하지 않고, 그 정보를 알고 있다는 것을 증명하는 기술 <br/><br/>\
+# 특징 <br/>\
+- 완전성 : 문장 참 / 정직한 증명자 / 정직한 검증자 / 납득  <br/>\
+- 정당성 : 문장 거짓 / 부정직한 증명자 / 정직한 검증자 / 납득x <br/>\
+- 영지식성 : 참 거짓 이외 아무것도 알 수 없음 <br/><br/>\
+# 구성요소 <br/>\
+- 명제 : 증명하려는 사실 (참, 거짓) <br/>\
+- 증명자 : 어떤 문장이 참이라는 것을 증명하는 쪽 <br/>\
+- 검증자 : 증명 과정에 참여하여 증명자와 정보를 주고 받는 쪽 <br/><br/>\
+# 사례 <br/>\
+- 이더리움(zk-SNARKs, 제크캐시(Quorum, JP 모건)<br/>\
+- 코인플러그(메타디움, 부정거래 및 사기 행위)\
+',
+
+// Smart Contract
+'# 정의 : 컴퓨터 언어로 저장된 계약 / 분산원장 시스템 / 자동 체결<br/>\
+- 분산원장시스템(Distributed ledger system)과 같은 컴퓨터 시스템에 의하여 자동으로 체결될 수 있는 <font color = "red">기존 법률적 언어대신 컴퓨터 언어</font>로 저장된 계약<br/>\
+- 블록체인을 통해 일정 조건을 만족시키면 거래가 자동으로 실행되도록 프로그램된계약<br/><br/>\
+# 특징 <br/>\
+1. 계약 측면 <br/>\
+- 자동계약 <br/>\
+- 프로세스 간소화 <br/><br/>\
+2. 기술 측면 <br/>\
+- 탈중앙화 <br/>\
+- 코드 실행 <br/>\
+- 튜링 완전성 <br/><br/>\
+# 원칙 (<font color = "red">관검사강</font>)<br/>\
+- 관측 가능성 : 계약 이행 관찰, 성과 입증 <br/>\
+- 검증 가능성 : 위반시 확인 <br/>\
+- 사생활 보호 : 당사자에게만 분배 <br/>\
+- 강제 가능성 : 구속력 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SmartContractStructure.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 신뢰성 <br/>\
+- 전자서명 : 공개키, 개인키, 부인방지 <br/>\
+- 마이닝 : 합의 알고리즘 신뢰성 <br/><br/>\
+2. 튜링완전 언어 <br/>\
+- Solidity : Javascript 유사 객체지향 프로그래밍 <br/>\
+- Serpent : Python 유사한 이더리움 개발 가능 프로그래밍 <br/><br/>\
+3. 이더리움 <br/>\
+- EVM(Ethereum Virtual Machine) : 스택기반 가상 머신 <br/>\
+- DApp : 사용자 유저단 UI 제공 기술 <br/><br/>\
+# 예시 <br/>\
+<img src = "./img/SmartContractExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 활용 <br/>\
+- 지급결제, 송금 : 실물 화폐, 지급 결제 <br/>\
+- 지적 재산권 : 디지털 음원, 특허관리 <br/>\
+- 권리 증명 : 부동산 등기, 권리 증명 <br/>\
+- 인증, 공유경제 : 3차인증, 공유 경제 <br/><br/>\
+* KPC 81회 관리 1교시 1번\
+',
+  
+// Smart Contract Audit
+'# 정의 : 결함, 취약점 찾기 / 개선 방향 제시 / 백서 내용 일치 구현 / 검증 활동 <br/>\
+- 스마트 컨트랙트가 가진 코드 결함 및 보안취약점을 찾아내어 개선방향을 제시하고 기능이 백서의 내용과 일치하게 구현되어 있는지 검증하는 활동 <br/><br/>\
+# 점검대상 <br/>\
+- 아키텍처 <br/>\
+- 코드결함 : Reentrancy, OverFlow, UnderFlow, Front-Running <br/>\
+- 보안취약점 <br/>\
+- 기능검토 : 기능, 백서 내용 일치 검증 <br/><br/>\
+# 감사기법 <br/>\
+- Code Design Patterns : 아키텍처, 안전 사용 검토 <br/>\
+- Statics Analysis : 보안 감사도구 사용하여 코드 결함, 백도어 및 악의적 코드 탐지 자동화 코드 검사 <br/>\
+- Unit Testing : 각 기능 작동 확인 <br/>\
+- Mannual Analysis : 경쟁 조건(Race Condition), 잠재적 문제점 발견, 라인 단위 코드 검사 <br/>\
+- Bug Bounties : 전문가 테스트통한 검증 (버그발견 보상지급) <br/><br/>\
+# 프로세스 <br/>\
+- 착수 : 소스코드, 백서 자료 받아 검토 / 감사 계획서, 백서, 소스코드 <br/>\
+- 감사 : 도구 이용한 자동화 및 수동 감사 수행 / 점검 결과서 <br/>\
+- 보고 : 보고서 작성 후 감사결과 고객에게 통보 / 감사 보고서 <br/><br/>\
+* 라이지움 88회 관리 1교시 12번\
+',
   
 // 하이퍼레저 패브릭
 '# 정의 : 개발 위한 허가형 프라이빗 플랫폼 <br/>\
@@ -3125,17 +3133,6 @@ var answer = answer.concat(
 - 갱신 : 각 Peer, Block을 채널의 체인에 덧붙임, 장부 상태 업데이트 <br/>\
 * 보증 정책(Endorsing Policies) : 체인코드가 장부를 업데이트 하기 위해 필요한 서명 수 <br/><br/>\
 * KPC 90회 관리 3교시 6번\
-',
-
-// 암호화폐 용어
-'# 용어 <br/>\
-- 코인(Cryptocurrency) : 결제뿐 아니라 주식 등 역할 <br/>\
-- ICO(Initial Coin Offering) : 코인 발행하고 투자금 모집 <br/>\
-- 백서(White Paper) : 사업자가 만든 프로젝트 계획서 <br/>\
-- 토큰(Token) : 기존 코인 네트워크를 활용해 만든 코인 <br/>\
-- 메인넷(Main-Net) : 기존 네트워크에서 독립한 독자 플랫폼 <br/>\
-- 하드포크(Hard Fork) : 블록체인으로부터 분리 독립한 코인 <br/>\
-- 소프트포크(Soft Fork) : 기존 블록체인 호환 가능한 업그레이드 \
 ',
 
 // CBDC
