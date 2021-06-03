@@ -625,9 +625,9 @@ var answer = answer.concat(
 # Framework (<font color = "red">BPL MOM MS SM PP</font>)<br/>\
 <img src = "./img/ISA95Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성 (<font color = "red">용속운속운운</font>) <br/>\
-- Part 1 : Level 4, Level 3 Interface, ERP,MES <font color = "red">용어 정의, 기본 모형 제시</font> <br/>\
+- Part 1 : <font color = "red">Level 4, Level 3</font> Interface, ERP,MES <font color = "red">용어 정의, 기본 모형 제시</font> <br/>\
 - Part 2 : <font color = "red">Part 1</font>에서 제시된 ERP MES간 표준화 정보흐름 표현 위한 <font color = "red">객체 모형과 속성 제시</font> <br/>\
-- Part 3 : Level 3의 제조 <font color = "red">운영활동 정의</font> <br/>\
+- Part 3 : <font color = "red">Level 3</font>의 제조 <font color = "red">운영활동 정의</font> <br/>\
 - Part 4 : <font color = "red">Part 3</font>에서 제시된 제조 운영활동 관련된 <font color = "red">객체 모형, 속성 제시</font> <br/>\
 - Part 5 : <font color = "red">생산</font> 자동화 시스템, <font color = "red">사무</font>지원 활동간 <font color = "red">운영활동 정의</font> <br/>\
 - Part 6 : <font color = "red">제조 공정</font>간 <font color = "red">운영</font> <br/><br/>\
