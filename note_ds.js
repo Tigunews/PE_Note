@@ -597,7 +597,7 @@ var answer = answer.concat(
 
 // MESA 표준기능
 '# 정의 : MES 기능 제시 목록 <br/>\
-- Manufactoring Execution System <br/>\
+- Manufacturing Execution System <br/>\
 - Manufacturing Enterprise Solutions Association <br/>\
 - ERP만으로 제조현장 관리 한계로 인해 등장한 MES의 표준 기능 제시 목록 <br/><br/>\
 # 목록 (<font color = "red">자운생문 데인품공 설제성</font>)<br/>\
