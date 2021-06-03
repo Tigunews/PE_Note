@@ -3266,7 +3266,7 @@ var answer = answer.concat(
 // 클라우드 컴퓨팅
 '# 정의 : 정보 자원 필요한 만큼 사용 / 확장성 지원 / 사용한 만큼 지불 / 컴퓨팅 기술 <br/>\
 - 서비스 이용자가 정보 자원(SW, Platform, Storage, Server, NW 등)을 필요한 만큼 빌려서 사용하고, 서비스 부하에 따라서 실시간 확장성(Scalability)을 지원 받으며, 필요한 순간에 접속하여, 사용한 만큼 비용을 지불하는 서비스로 공유된 컴퓨팅 자원이 신속히 제공되고, 회수되는 컴퓨팅 <br/><br/>\
-# 특징 (NIST) (<font color = "red">OBRDM</font>) <br/>\
+# 특징 (NIST) (<font color = "red">OBRRM</font>) <br/>\
 - On-demand Self-Service : 자동 이용 가능 / Manage Console, Service Catalog <br/>\
 - Broad network Access : 이기종 클라이언트, NW 접근 / Mobile, Tablet, PC <br/>\
 - Resource Pooling : 여러 사용자, 위치 관계 없이 제공 / Multi tenant, Location Transparency <br/>\
