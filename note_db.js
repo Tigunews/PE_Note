@@ -78,6 +78,8 @@
 '[빅데이터]- DCAT',
 '[빅데이터]- 데이터 플래그십',
 '[빅데이터]- 단순 대치법',
+'[빅데이터]- 결측값',
+'[빅데이터]- 이상값',
 '[빅데이터]- 정보 시각화',
 '[빅데이터]- D-Commerce',
 '[빅데이터]- Random Sampling',
@@ -1621,6 +1623,33 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 # 단순, 다중대치법 비교 <br/>\
 <img src = "./img/ImputationCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 1교시 11번\
+',
+
+// 결측값
+'# 정의 : 입력 누락 값 / 반드시 처리 값 <br/>\
+- Missing Value <br/>\
+- 빅데이터 분석시 입력이 누락된 값, 산술 연산 오류로 인해 반드시 처리해야하는 값 <br/><br/>\
+# 종류 <br/>\
+1. 완전 무작위 결측 (MCAR) <br/>\
+- Missing Completely At Random <br/>\
+- 다른 변수와 아무 연관 없는 데이터 <br/><br/>\
+2. 무작위 결측 (MAR) <br/>\
+- Missing At Random <br/>\
+- 관측된 변수 연관, 비관측 변수 연관 x 결측 데이터 <br/><br/>\
+3. 비무작위 결측 (NMAR) <br/>\
+- Not Missing At Ramdom <br/>\
+- MCAR, MAR x (소득 밝히기 싫어 결측) <br/><br/>\
+# 보완 방법 <br/>\
+- 삭제 : 수집 데이터 충분시, 소극적 보완 <br/>\
+- 대체 : 평균치, 추정치, 보삽법(인구, 정부예산 - 변동 적음), 적극적 보완 <br/><br/>\
+* ITPE 합숙 124회 1일차 관리 1교시 9번\
+',
+
+// 이상값
+'# 정의 <br/>\
+- Outlier <br/>\
+- 입력오류, 데이터 처리오류 등으로 특정 범위에서 벗어난 데이터 값 <br/><br/>\
+* ITPE 합숙 124회 1일차 관리 1교시 9번\
 ',
   
 // 정보 시각화

@@ -1001,7 +1001,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 압축 (데이터&반복횟수 기록) <br/><br/>\
 # 사례 <br/>\
 - ABAAAAABCBDDDDDDDABC (20 Bytes) <br/>\
-- AB*A5BCB*D7ABC (14 Bytes) <br/><br/>
+- AB*A5BCB*D7ABC (14 Bytes) <br/><br/>\
 * ITPE 합숙 124회 1일차 1교시 5번\
 ',
   

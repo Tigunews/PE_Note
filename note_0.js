@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 11주차
-'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스','블록체인','클라우드','Spatial DB','IMDF', '연합학습', 'Sequence Diagram', '영지식 증명', '소스코딩',
+'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스','블록체인','클라우드','Spatial DB','IMDF', '연합학습', 'Sequence Diagram', '영지식 증명', '소스코딩','GNN','Deep Fake',
 
 /*
 // 추가 토픽
