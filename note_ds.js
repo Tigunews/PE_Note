@@ -229,7 +229,8 @@ var question = question.concat(
 '[XR]- VR',
 '[VR]- 주변감지 및 경고 시스템',
 '[XR]- AR',
-'메타버스',
+'[XR]- 메타버스',
+'[XR]- 실감협업',
 'E-Learning',
 '디지털 휴먼 증강',
 'DOM SAX',
@@ -4750,6 +4751,34 @@ var answer = answer.concat(
 - 가상세계 : 리니지, 세컨라이프 <br/><br/>\
 # 시사점 : 메타버스와 현실과의 조화, 정책 고도화, 블록체인 결합 <br/><br/>\
 * 123회 관리 2교시 3번\
+',
+
+// 실감협업 
+'# 정의 <br/>\
+- 풍부한 정보공유, 몰입감 높은 현장감, 대면하듯 자연스러운 상호작용을 경험하게 함으로써 매체 풍부성을 보장하는 실감기술에 기반한 협업 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ImmersiveCollaborationOverview.png" style = "max-width:100%; height:auto;"><br/>\
+# 주요 기능 <br/>\
+- 정보 공유 : 데이터 공유, 시각화, 공간 드로잉, 가상객체 상호작용 <br/>\
+- 현장감 : 공감대 향상, 집중도,참여도 높임 <br/>\
+- 자연스러운 대화 : 의사소통 채널 풍부, 비언어적 의사소통 가능 <br/><br/>\
+# 협업 유형 <br/>\
+- 동기식 협업 : 실시간 원격 미팅 협업 수행 <br/>\
+- 비동기식 협업 : 녹화, 메모 기능 활용 수행 <br/><br/>\
+# 주요기술 <br/>\
+- VR <br/>\
+- AR <br/>\
+- MR <br/>\
+- Display <br/>\
+- Tracking <br/>\
+- Rendering <br/>\
+- UI <br/>\
+- Plenoptic <br/>\
+- Volumetric Capture <br/>\
+- Hologram <br/>\
+- 5G <br/>\
+- Digital Twin <br/><br/>\
+* ITPE 합숙 124회 1일차 관리 1교시 13번\
 ',
   
 // E-Learning
