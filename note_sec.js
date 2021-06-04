@@ -19,12 +19,21 @@
 '[블록암호화 운영모드]- OFB',
 '[블록암호화 운영모드]- CTR',
 '[암호]- Base64',
-'[공개키]- 디피헬만 알고리즘',
+'[비대칭 암호]- 디피헬만 알고리즘',
+'[비대칭 암호]- ECC',
+'[비대칭 암호][ECC]- ECDSA',
+'[단방향 암호]- Hash Function',
+'[단방향 암호][Hash Function]- Hash Algorithm',
+'[단방향 암호][Hash Algorithm]- MDC',
+'[단방향 암호][Hash Algorithm]- MAC',
 '경량 암호',
 '[경량 암호]- LSH 암호화',
 '[경량 암호]- LEA 암호화',
-'ECC',
-'[ECC]- ECDSA',
+'형태 보존 암호화',
+'순서 보존 암호화',
+'동형암호',
+'[동형암호]- 준 동형암호',
+'[동형암호]- 완전 동형암호',
 '보안이슈, 대응방안',
 'SW 보안 약점',
 'NAC',
@@ -82,18 +91,12 @@
 '소프트웨어 개발보안 가이드',
 '클라우드 컴퓨팅 보안',
 'CVE',
-'암호화 기술',
-'Hash Function',
-'[Hash Function]- Hash Algorithm',
-'[Hash Algorithm]- MDC',
-'[Hash Algorithm]- MAC',
 '[암호화 기술]- 양자암호통신',
 '[양자 보안]- QKD',
 '[양자 보안]- PQC',
 '검색가능암호화',
 '[검색가능암호화]- PSES',
 'PPDM',
-'형태 보존 암호화',
 'OWASP Top 10',
 '[OWASP]- Injection',
 '[OWASP][Injection]- SQL Injection',
@@ -126,9 +129,6 @@
 '코드서명 (코드사인, Codesign)',
 'WPA3',
 '커버로스(Kerberos)',
-'동형암호',
-'[동형암호]- 준 동형암호',
-'[동형암호]- 완전 동형암호',
 'WAF',
 'X.509',
 '라이트 커맨드(Light Commands) 취약점',
@@ -164,6 +164,7 @@
 '[Cloud 보안]- CWPP',
 '[Cloud 보안]- CSPM',
 '[Cloud 보안]- CASB',
+'사이버 레질리언스',
 );
 
 var answer = answer.concat(
@@ -454,6 +455,127 @@ var answer = answer.concat(
 * KPC 93회 관리 1교시 9번\
 ',
 
+// ECC
+'# 정의 : 유한체 / 타원곡선 대수적 구조 / 이산로그 문제 / 공개키 암호화 알고리즘 <br/>\
+- 유한체(Finite Field) 위에서 타원곡선의 대수적 구조를 기반으로 한 이산로그 문제에 착안해 만들어진 공개키 암호화 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- SECP256K1 표준 (블록체인) <br/>\
+- 이산대수 문제 (ECDLP) 기반 암호체계 <br/>\
+- 선택성 : 유한체상 다양한 타원곡선 선택 가능 <br/>\
+- 설계 안전성 : 안전한 암호 시스템 설계 용이 <br/>\
+- 고효율성 : 256(ECRSA) / 3072(RSA) <br/><br/>\
+# 알고리즘 키 생성원리 <br/>\
+<img src = "./img/ECC_Calc.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 암/복호화 방식 <br/>\
+<img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
+# ECC RSA 비교 <br/>\
+<img src = "./img/ECC_RSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 86회 라이지움 1교시 7번 <br/>\
+* 88회 라이지움 1교시 7번 \
+',
+  
+// ECDSA
+'# 정의 : 타원곡선암호를 전자서명에 접목시킨 암호 알고리즘 <br/>\
+# 구성요소 <br/>\
+- 모듈로 p 타원 곡선 방정식 : y^2 mod p = (x^3 + ax + b) mod p (p;prime number) <br/>\
+-> secp256k1 표준 : a=0, b=7, p=D0364140 <br/>\
+- 생성자(G) : 표준에서 지정 <br/>\
+- 개인키(k) : 임의의 정수 <br/>\
+- 공개키(r) : (임의의 랜덤숫자) * G <br/>\
+- 메시지(m) : 전달할 Data <br/><br/>\
+# 송신 절차 <br/>\
+- 트랜잭션 만들기 : 타원곡선 생성 <br/>\
+- 개인키 정하기 : 1~D0364140 내 선택 <br/>\
+- 서명 r구하기 : k*G 연산 수행 결과값 <br/>\
+- 서명 s구하기 : k^-1(z+r*private key) mod n <br/>\
+-> k : 서명 r구할 때 고른 랜덤한 수 <br/>\
+-> z : 트랜잭션 정보를 직렬 정렬한 값 <br/>\
+-> r : 서명 r값 <br/>\
+-> private key : 개인키 값 <br/><br/>\
+# 수신 절차 <br/>\
+- p = U1 * G + U2 * Public key <br/>\
+-> U1 = z * w mod n <br/>\
+-> U2 = r * w mod n <br/>\
+-> w = s^ -1 mod n <br/>\
+-------------------- <br/>\
+- p의 x좌표 값, 서명 r 비교 <br/><br/>\
+* 81회 라이지움 응용 1교시 13번\
+',
+  
+// Hash Function
+'# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
+- 임의의 길이의 데이터를 "해시 알고리즘을 이용하여" 고정된 길이 데이터로 매핑하는 함수 <br/>\
+- Input : Hash Key / Output : Bucket home address <br/><br/>\
+# 특징 <br/>\
+- 고정된 길이의 값 출력 <br/>\
+- 입력 값 일부 변경 되더라도 전혀다른 결과값 출력 (Snow ball) <br/>\
+- 출력값 토대로 입력값 유추 불가능(역상 저항성) <br/>\
+- 입력값은 항상 동일한 해시값 출력 <br/><br/>\
+# 종류 <br/>\
+- 암호학적 : MD5, SHA 계열 <br/>\
+- 비 암호학적 : CRC32 <br/><br/>\
+* 120회 관리 1교시 9번 <br/>\
+* 116회 관리 1교시 3번\
+',
+
+// Hash Algorithm
+'# 정의 : Hash function + Encryption <br/>\
+- 임의의 길이의 메시지를 일정 고정길이의 해쉬 값으로 변환시켜주는 단방향성 알고리즘 <br/><br/>\
+# 조건 <br/>\
+<img src = "./img/HashAlgorithmCondition.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 원리 <br/>\
+<img src = "./img/HashAlgorithMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+1. MDC(Modification Detection Code) <br/>\
+- MD5 : 임의 메시지 128비트 암호화 알고리즘 <br/>\
+- SHA-1 : 임의 메시지 160 비트 암호화 알고리즘 <br/>\
+- HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
+- Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
+- HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
+2. MAC(NHCC) <br/>\
+- Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
+- HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
+- CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
+- CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
+# SHA 알고리즘 종류 <br/>\
+<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 보안성 확보방안 <br/>\
+- Hash Salt : 다이제스트 생성할 때 임의 문자열을 추가하는 방식 <br/>\
+- Key Stretching : 다이제스트 생성 후 이를 N번 반복하는 방법 <br/>\
+- PBKDF2(Password-Based Key Derivation Function) : 미국 정부 시스템 다이제스트 생성 알고리즘 <br/><br/>\
+* 120회 관리 1교시 9번 <br/>\
+* 116회 1교시 3번\
+',
+  
+// MDC
+'# 정의 : 무결성 보장, MDC 비교 알고리즘 <br/>\
+- Modification Detection Code <br/>\
+- 메시지의 무결성 보장 위해 수신한 메시지의 MDC를 계산하고 송신 측이 보내준 MDC와 동일하지 비교하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MDCFLow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류 <br/>\
+- MD5 : 임의 메시지 128비트 암호화 알고리즘 <br/>\
+- SHA-1 : 임의 메시지 160 비트 암호화 알고리즘 <br/>\
+- HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
+- Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
+- HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
+* 120회 관리 1교시 9번 \
+',
+  
+// MAC
+'# 정의 : 대칭키 이용, 인증 알고리즘 <br/>\
+- Message Authentication Code <br/>\
+- 해시함수와 대칭키를 이용하여 메시지 무결성을 확인하고 메시지에 대한 인증을 하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MACFlow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 종류(NHCC) <br/>\
+- Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
+- HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
+- CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
+- CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
+* 120회 관리 1교시 9번\
+',
+
 // 경량 암호
 '# 정의 : 제한된 환경 / 경량, 초 지연성 / 안전성 보장 / 암호화 기술 <br/>\
 - 제한된 환경에서 구현하기 위해 단순한 연산으로 경량 특성 및 초 지연성을 제공하면서 안전성을 보장할 수 있도록 설계된 암호화 기술 <br/><br/>\
@@ -514,52 +636,84 @@ var answer = answer.concat(
 <img src = "./img/LEA_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/LEA_3.png" style = "max-width:100%; height:auto;">\
 ',
-  
-// ECC
-'# 정의 : 유한체 / 타원곡선 대수적 구조 / 이산로그 문제 / 공개키 암호화 알고리즘 <br/>\
-- 유한체(Finite Field) 위에서 타원곡선의 대수적 구조를 기반으로 한 이산로그 문제에 착안해 만들어진 공개키 암호화 알고리즘 <br/><br/>\
-# 특징 <br/>\
-- SECP256K1 표준 (블록체인) <br/>\
-- 이산대수 문제 (ECDLP) 기반 암호체계 <br/>\
-- 선택성 : 유한체상 다양한 타원곡선 선택 가능 <br/>\
-- 설계 안전성 : 안전한 암호 시스템 설계 용이 <br/>\
-- 고효율성 : 256(ECRSA) / 3072(RSA) <br/><br/>\
-# 알고리즘 키 생성원리 <br/>\
-<img src = "./img/ECC_Calc.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 암/복호화 방식 <br/>\
-<img src = "./img/ECC_Mechanism.png" style = "max-width:100%; height:auto;"><br/>\
-# ECC RSA 비교 <br/>\
-<img src = "./img/ECC_RSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 86회 라이지움 1교시 7번 <br/>\
-* 88회 라이지움 1교시 7번 \
+
+// 형태 보존 암호화
+'# 정의 : 일정 포맷 규칙 / 동일 포맷 유지 / 암호화 알고리즘 <br/>\
+- 일정한 포맷규칙이 있는 평문을 암호화한 암호문이 평문과 동일한 포맷이 유지되도록 암호화하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/FormatPreservingEncryption.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특성 <br/>\
+- Tweak : 기밀성 제공 위한 추가 정보 정형화 데이터 입력 <br/>\
+- Feistel Cipher : Round Function 반복 수행 블록 암호화 방식 <br/><br/>\
+# 기술 유형 <br/>\
+- Prefix Cipher : 의사난수 가중치, 매핑 테이블, 테이블 크기 한계 <br/>\
+- Cycle-Walking Cipher : 원본 동일 결과까지 반복, 연산 부하 문제, 종료 시간 예측 한계 <br/>\
+- Generalized-Feistel CIpher : Feistel NW 이용, 비교적 큰 성능 저하 없음 <br/><br/>\
+* ITPE 합숙 124회 2일차 1교시 5번\
 ',
-  
-// ECDSA
-'# 정의 : 타원곡선암호를 전자서명에 접목시킨 암호 알고리즘 <br/>\
-# 구성요소 <br/>\
-- 모듈로 p 타원 곡선 방정식 : y^2 mod p = (x^3 + ax + b) mod p (p;prime number) <br/>\
--> secp256k1 표준 : a=0, b=7, p=D0364140 <br/>\
-- 생성자(G) : 표준에서 지정 <br/>\
-- 개인키(k) : 임의의 정수 <br/>\
-- 공개키(r) : (임의의 랜덤숫자) * G <br/>\
-- 메시지(m) : 전달할 Data <br/><br/>\
-# 송신 절차 <br/>\
-- 트랜잭션 만들기 : 타원곡선 생성 <br/>\
-- 개인키 정하기 : 1~D0364140 내 선택 <br/>\
-- 서명 r구하기 : k*G 연산 수행 결과값 <br/>\
-- 서명 s구하기 : k^-1(z+r*private key) mod n <br/>\
--> k : 서명 r구할 때 고른 랜덤한 수 <br/>\
--> z : 트랜잭션 정보를 직렬 정렬한 값 <br/>\
--> r : 서명 r값 <br/>\
--> private key : 개인키 값 <br/><br/>\
-# 수신 절차 <br/>\
-- p = U1 * G + U2 * Public key <br/>\
--> U1 = z * w mod n <br/>\
--> U2 = r * w mod n <br/>\
--> w = s^ -1 mod n <br/>\
--------------------- <br/>\
-- p의 x좌표 값, 서명 r 비교 <br/><br/>\
-* 81회 라이지움 응용 1교시 13번\
+
+// 순서 보존 암호화 
+'# 정의 : 암호문, 평문 동일 순서 정렬 / 암호화 알고리즘 <br/>\
+- 일정한 규칙에 의해 순서가 있는 평문을 암호화한 암호문이 평문과 동일한 순서로 정렬되도록 암호화하는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/OrederPreservingEncryption.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특성 <br/>\
+- 단조 증가 함수 : 원본 데이터 분할, 다른 함수 적용 <br/>\
+- Noise : 임의 Noise 삽입, 보안성 향상 <br/><br/>\
+# 기술 유형 <br/>\
+- 단조 증가함수 기반 : a > b 이면, F(a) > F(b) <br/>\
+- 버킷 분포 기반 : 다수 버킷 분할, 분포도 변환 <br/>\
+- POPIS : E(x) = a* x + b + noise(a,b 임의 상수, noise 0~a) <br/>\
+* Programmable Order-Preserving secure Index Scheme <br/><br/>\
+# 형태보존, 순서보존, 동형암호 비교 <br/>\
+<img src = "./img/EncryptionCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 2일차 1교시 5번\
+',
+
+// 동형암호
+'# 정의 : 복호화 없이 연산이 가능한 암호기술 <br/>\
+- 정보를 암호화한 상태에서 각종 연산을 했을 때, 그 결과가 암호화하지 않은 상태의 연산결과와 동일하게 나오는 4세대 암호체계 <br/>\
+<font color = "red">* Password > 대칭키 > 비대칭키 > Non Key </font><br/><br/>\
+# 원리 <br/>\
+<img src = "./img/동형암호화.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 유형 <br/>\
+- SHE : 준동형 암호 기술 / 식, 횟수 제한적 (+ *)<br/>\
+- FHE : 완전동형암호 기술 / 식, 횟수 무제한 (+ * XOR)<br/><br/>\
+2. 설계원리 <br/>\
+- 부트스트래핑 : 복호화 Key 암호화 Key 재사용 <br/>\
+- 스쿼싱 : 노이즈 감소지원 조합 <br/><br/>\
+3. 알고리즘 (<font color = "red">GDC</font>)<br/>\
+- GENO9 : <font color = "red">Idea Lattice</font> 기반 <br/>\
+- DGHV10 : <font color = "red">정수집합</font>에 GENO09 적용 <br/>\
+- CRT-BASED : <font color = "red">중국인의 나머지 정리</font> 이용 <br/><br/>\
+# 활용 <br/>\
+- 클라우드 : 금융, 의료등 민감정보 동형암호 <br/>\
+- 생체인식 : 생체정보 안전 처리 <br/>\
+- 금융분야 : 기밀성 보호 <br/><br/>\
+* ITPE 124회 합숙 3일차 1교시 8번\
+',
+
+// [동형암호]- 준 동형암호 
+'# 정의 : 수학의 준동형성 이용 암호화 함수<br/>\
+- Homomorphic Encryption <br/>\
+- 암호화된 데이터에 대해 복호화 하지 않고 연산을 수행할 수 있는 암호 수학의 준동형성을 이용하여 암호화 함수 중에서 평문 공간과 암호문 공간에 정의된 연산을 보존화는 암호화 함수 <br/><br/>\
+# 암기 : 활용-계암공 <br/><br/>\
+# 활용기법 <br/>\
+- 검색 가능 계산기법 : 클라우드 이용 계산, 처리 결과 검증 <br/>\
+- 검색 가능 암호기법 : 키워드 검색 기틀 포함, 인덱스 이용 <br/>\
+- 암호 데이터 공유기법 <br/><br/>\
+<img src = "./img/준동형암호화_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/준동형암호화_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/준동형암호화_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/준동형암호화_4.png" style = "max-width:100%; height:auto;">\
+',
+
+// [동형암호]- 완전 동형암호 
+'# 정의 : 상태 그대로 검색 가능 4세대 암호<br/>\
+- Fully Homomorhpic Encryption <br/>\
+- 암호화된 상태 그대로 원문 정보에 대한 연산이나 검색이 가능한 4세대 암호 (기본적인 준동형성에 모든 임의 논리 연산을 보존하는 준동형 암호) <br/><br/>\
+* IBM 연구원 Craig Gentry에 의해 2009년 개발 됨 \
 ',
   
 // 보안이슈, 대응방안
@@ -1634,95 +1788,6 @@ var answer = answer.concat(
 - CVE Editor로 CVE 웹사이트에 등록 <br/>\
 -> MITRE Corporation CVE Editor와 Primary CNA 관리 수행, CVE Editorial Board에서 CVE 생성 프로세스 감독 \
 ',
-
-// 암호화 기술
-'# 정의 : 평문 -> 암호화 문장<br/>\
-- 정당한 사용자만이 이용할 수 있도록 평문 (Plain text)을 암호화된 문장(Chiper text)로 바꾸는 기술<br/><br/>\
-# 대칭키 : 키길이에 비례, 길이n -> 보안강도 n비티 <br/><br/>\
-# 비대칭키 : 키길이에 비례, 길이1증가시 보안강도 1.02~1.05 증가 <br/><br/>\
-# 해시 : 별도 키 없음, 길이에 따라 충돌회피성 증가 n비트 해시 -> 약한 충돌 회피 n-1 -> 강한 충돌 회피 n/2 <br/><br/>\
-# 보안강도 컴플라이언스 <br/>\
-- 80bit (~2010) SEED, HEIGHT, ARIA, AES / 112 bit(2011~2030) / 128bit(2030 이후)<br/><br/>\
-# 암호화 기술 동향 <br/>\
-<img src = "./img/EncryptionFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/암호화기술_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/암호화기술_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/암호화기술_3.png" style = "max-width:100%; height:auto;">\
-',
-  
-// Hash Function
-'# 개념 : 수학식 구성, 임의 길이 -> 고정길이 출력 함수 <br/>\
-- 임의의 길이의 데이터를 "해시 알고리즘을 이용하여" 고정된 길이 데이터로 매핑하는 함수 <br/>\
-- Input : Hash Key / Output : Bucket home address <br/><br/>\
-# 특징 <br/>\
-- 고정된 길이의 값 출력 <br/>\
-- 입력 값 일부 변경 되더라도 전혀다른 결과값 출력 (Snow ball) <br/>\
-- 출력값 토대로 입력값 유추 불가능(역상 저항성) <br/>\
-- 입력값은 항상 동일한 해시값 출력 <br/><br/>\
-# 종류 <br/>\
-- 암호학적 : MD5, SHA 계열 <br/>\
-- 비 암호학적 : CRC32 <br/><br/>\
-* 120회 관리 1교시 9번 <br/>\
-* 116회 관리 1교시 3번\
-',
-
-// Hash Algorithm
-'# 정의 : Hash function + Encryption <br/>\
-- 임의의 길이의 메시지를 일정 고정길이의 해쉬 값으로 변환시켜주는 단방향성 알고리즘 <br/><br/>\
-# 조건 <br/>\
-<img src = "./img/HashAlgorithmCondition.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 원리 <br/>\
-<img src = "./img/HashAlgorithMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 종류 <br/>\
-1. MDC(Modification Detection Code) <br/>\
-- MD5 : 임의 메시지 128비트 암호화 알고리즘 <br/>\
-- SHA-1 : 임의 메시지 160 비트 암호화 알고리즘 <br/>\
-- HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
-- Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
-- HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
-2. MAC(NHCC) <br/>\
-- Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
-- HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
-- CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
-- CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
-# SHA 알고리즘 종류 <br/>\
-<img src = "./img/SHA.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 보안성 확보방안 <br/>\
-- Hash Salt : 다이제스트 생성할 때 임의 문자열을 추가하는 방식 <br/>\
-- Key Stretching : 다이제스트 생성 후 이를 N번 반복하는 방법 <br/>\
-- PBKDF2(Password-Based Key Derivation Function) : 미국 정부 시스템 다이제스트 생성 알고리즘 <br/><br/>\
-* 120회 관리 1교시 9번 <br/>\
-* 116회 1교시 3번\
-',
-  
-// MDC
-'# 정의 : 무결성 보장, MDC 비교 알고리즘 <br/>\
-- Modification Detection Code <br/>\
-- 메시지의 무결성 보장 위해 수신한 메시지의 MDC를 계산하고 송신 측이 보내준 MDC와 동일하지 비교하는 알고리즘 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/MDCFLow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 종류 <br/>\
-- MD5 : 임의 메시지 128비트 암호화 알고리즘 <br/>\
-- SHA-1 : 임의 메시지 160 비트 암호화 알고리즘 <br/>\
-- HAS-160 : 국내에서 개발한 SHA-1 기반 160비트 암호화 알고리즘 <br/>\
-- Tiger : 64비트 프로세스 최적화, 192비트 암호화 알고리즘 <br/>\
-- HAVAL : MD5 보완 128~256비트 다양한 크기 알고리즘 <br/><br/>\
-* 120회 관리 1교시 9번 \
-',
-  
-// MAC
-'# 정의 : 대칭키 이용, 인증 알고리즘 <br/>\
-- Message Authentication Code <br/>\
-- 해시함수와 대칭키를 이용하여 메시지 무결성을 확인하고 메시지에 대한 인증을 하는 알고리즘 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/MACFlow.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 종류(NHCC) <br/>\
-- Nested MAC : Key와 메시지를 암호화 후 결과값(MAC)을 Key와 조합하는 이중 해쉬 알고리즘 <br/>\
-- HMAC(Hash MAC) : Nested MAC에 Padding 추가하여 일방향 해쉬함수 사용하여 암호화 하는 알고리즘 <br/>\
-- CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
-- CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
-* 120회 관리 1교시 9번\
-',
    
 // [암호화기술]- 양자암호통신
 '# 정의 : 양자 / 불확정성, 비복제성 / 암호화 통신 <br/>\
@@ -1828,15 +1893,6 @@ var answer = answer.concat(
 # 기법 : K랜압기분 <br/>\
 <img src = "./img/PPDM_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 관리 4교시 5번\
-',
-
-// 형태 보존 암호화
-'# 정의 : 블록 암호 기반 암호화 기술<br/>\
-- 블록암호에 기반하여 특정한 형태의 평문을 암호화 후 평문의 형태와 암호문의 형태가 동일함을 보장하는 암호화 기술 <br/><br/>\
-# 핵심 AL <br/>\
-- prefix cipher <br/>\
-- cycle-walking cipher <br/>\
-- generalized-Feistel cipher\
 ',
 
 // OWASP Top 10
@@ -2554,52 +2610,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 * 라이지움 90회 응용 1교시 13번 \
 ',
 
-// 동형암호
-'# 정의 : 복호화 없이 연산이 가능한 암호기술 <br/>\
-- 정보를 암호화한 상태에서 각종 연산을 했을 때, 그 결과가 암호화하지 않은 상태의 연산결과와 동일하게 나오는 4세대 암호체계 <br/>\
-<font color = "red">* Password > 대칭키 > 비대칭키 > Non Key </font><br/><br/>\
-# 원리 <br/>\
-<img src = "./img/동형암호화.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
-1. 유형 <br/>\
-- SHE : 준동형 암호 기술 / 식, 횟수 제한적 (+ *)<br/>\
-- FHE : 완전동형암호 기술 / 식, 횟수 무제한 (+ * XOR)<br/><br/>\
-2. 설계원리 <br/>\
-- 부트스트래핑 : 복호화 Key 암호화 Key 재사용 <br/>\
-- 스쿼싱 : 노이즈 감소지원 조합 <br/><br/>\
-3. 알고리즘 (<font color = "red">GDC</font>)<br/>\
-- GENO9 : <font color = "red">Idea Lattice</font> 기반 <br/>\
-- DGHV10 : <font color = "red">정수집합</font>에 GENO09 적용 <br/>\
-- CRT-BASED : <font color = "red">중국인의 나머지 정리</font> 이용 <br/><br/>\
-# 활용 <br/>\
-- 클라우드 : 금융, 의료등 민감정보 동형암호 <br/>\
-- 생체인식 : 생체정보 안전 처리 <br/>\
-- 금융분야 : 기밀성 보호 <br/><br/>\
-* ITPE 124회 합숙 3일차 1교시 8번\
-',
-
-// [동형암호]- 준 동형암호 
-'# 정의 : 수학의 준동형성 이용 암호화 함수<br/>\
-- Homomorphic Encryption <br/>\
-- 암호화된 데이터에 대해 복호화 하지 않고 연산을 수행할 수 있는 암호 수학의 준동형성을 이용하여 암호화 함수 중에서 평문 공간과 암호문 공간에 정의된 연산을 보존화는 암호화 함수 <br/><br/>\
-# 암기 : 활용-계암공 <br/><br/>\
-# 활용기법 <br/>\
-- 검색 가능 계산기법 : 클라우드 이용 계산, 처리 결과 검증 <br/>\
-- 검색 가능 암호기법 : 키워드 검색 기틀 포함, 인덱스 이용 <br/>\
-- 암호 데이터 공유기법 <br/><br/>\
-<img src = "./img/준동형암호화_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/준동형암호화_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/준동형암호화_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/준동형암호화_4.png" style = "max-width:100%; height:auto;">\
-',
-
-// [동형암호]- 완전 동형암호 
-'# 정의 : 상태 그대로 검색 가능 4세대 암호<br/>\
-- Fully Homomorhpic Encryption <br/>\
-- 암호화된 상태 그대로 원문 정보에 대한 연산이나 검색이 가능한 4세대 암호 (기본적인 준동형성에 모든 임의 논리 연산을 보존하는 준동형 암호) <br/><br/>\
-* IBM 연구원 Craig Gentry에 의해 2009년 개발 됨 \
-',
-
 // WAF
 '# 정의 : 웹 공격 대응 역할 수행 장치<br/>\
 - Web Application Firewall <br/>\
@@ -3279,5 +3289,28 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 유형별 비교 <br/>\
 <img src = "./img/CASB_Type_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 118회 합숙 4일차 1교시 3번 \
+',
+
+// 사이버 레질리언스
+'# 정의 : 사이버 공간상 위협 / 조직 모굪 성과 / 전달할 수 있는 기업의 능력 <br/>\
+- 사이버 공간상에서 알려지거나 예측 가능한 공격, 알려지지 않았거나 예측 불가능한 위협 등의 예상 밖의 위험들이 발생시키는 부정적인 영향에도 불구하고 조직의 목표 성과를 전달할 수 있는 기업의 능력 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/CyberResilienceOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성 요소 <br/>\
+- 비즈니스 영향 분석 : 위협 요인 분석 기반 우선순위 도출 <br/>\
+- 보안 정책 통제 : 비즈니스 목적 설명 및 문서활르 통한 보안 기틀 마련 <br/>\
+- 종합적 테스트 정책 : 지속적 테스트와 측정 통한 보안 정책 검증 <br/>\
+- 매니지드 보안 도구 설치 : 비즈니스 이슈 관련 도구, 서비스에 대한 투자 <br/>\
+- 사이버 복구 계획 : 보안 이슈 발생 대응 절차 및 신속한 복구 계획 <br/><br/>\
+# 확보 단계 <br/>\
+- 위협 평가 역량 확보 : 기업 상화이에 맞는 위험 평가 지표 개발 <br/>\
+- 사이버 보안 방법 도입 : 사람, 프로세스, 기술 투자 활동, 고도화 사이버 공격 인식<br/>\
+- 위험 기반 계획 : 위협 발생 후 신속한 정상화 가능 계획 수립 <br/>\
+- 외부 위협으로부터 보호 : 외부 이해 관계 업체에서 전달되는 공격 보호 <br/>\
+- 내부 위험 최소화 : 이동식 미디어 제한, 퇴사자 규칙, 내부자 위협 신호 감지 <br/>\
+- 보안 문화 유지 : 교육, 보안정책 개선, SLA 개선 <br/><br/>\
+# 사이버 보안, 레질리언스 비교 <br/>\
+<img src = "./img/CyberSecurityCyberResilienceCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 2일차 관리 1교시 4번\
 ',
 );
