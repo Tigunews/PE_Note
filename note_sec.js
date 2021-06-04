@@ -24,8 +24,10 @@
 '[비대칭 암호][ECC]- ECDSA',
 '[단방향 암호]- Hash Function',
 '[단방향 암호][Hash Function]- Hash Algorithm',
-'[단방향 암호][Hash Algorithm]- MDC',
-'[단방향 암호][Hash Algorithm]- MAC',
+'[Hash Algorithm]- MDC',
+'[Hash Algorithm]- MAC',
+'[Hash Algorithm]- Hash Salt',
+'[Hash Algorithm]- Key Stretching',
 '경량 암호',
 '[경량 암호]- LSH 암호화',
 '[경량 암호]- LEA 암호화',
@@ -574,6 +576,36 @@ var answer = answer.concat(
 - CBC-MAC : 블록 암호화 CBC 모드와 유사한 방식으로 n개의 평문 블록을 하나의 MAC 생성 알고리즘 <br/>\
 - CMAC(Cipher-based Message Authentication Code) : CBC-MAC 동일, 복잡한 논리 함수와 수학함수 이용한 알고리즘 <br/><br/>\
 * 120회 관리 1교시 9번\
+',
+
+// Hash Salt
+'# 정의 : 단방향 해서 / 문자열 추가 / 보안성 강화 기법 <br/>\
+- 단방향 해시 함수에서 다이제스트를 생성할 때 임의 문자열을 추가하여 암호화해 해시 값을 달라지도록 보안성을 강화한 기법 <br/><br/>\
+# Oveview <br/>\
+<img src = "./img/HashFunctionProblem.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/HashSaltMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 해시 생성 <br/>\
+- 사용자가 평문 PWD 입력 <br/>\
+- PWD 입력 받은 시스템, 임의의 Unique한 Salt값 생성 평문 PWD 값과 결합 <br/>\
+- 해시 알고리즘으로 암호화 처리, DB 해시 결과 랜덤 Salt 저장 <br/><br/>\
+# 해시 검증 <br/>\
+- 사용자가 평문의 PWD 입력 <br/>\
+- DB에 저장된 Salt 값 평문 PWD 결합 후, 동일 해시 알고리즘 암호화 처리 <br/>\
+- 생성된 해시값, DB에 저장된 해시 값 비교, PWD 유효성 검증 <br/.<br/>\
+* ITPE 합숙 124회 2일차 관리 1교시 \
+',
+
+// Key Stretching
+'# 정의 : 다이제스트 입력값 반복 / N번째 다이제스트 생성 기법 <br/>\
+- 입력한 패스워드의 최초 다이제스트를 생성하고 생성된 다이제스트를 입력 값으로 반복하여 N번째 다이제스트를 생성하는 기법 (Iteration Count) <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/KeyStretchingMechanism.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 검증 <br/>\
+- 패스워드 입력 <br/>\
+- N번 만큼 반복 <br/>\
+- 일치 여부 확인 <br/><br/>\
+* ITPE 합숙 124회 2일차 관리 1교시 \
 ',
 
 // 경량 암호
