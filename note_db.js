@@ -2529,7 +2529,8 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - Disjoint(g1,g2) : 겹치는 부분 여부 <br/>\
 - Within(g1,g2) : g1,g2 영역 포함 여부 <br/>\
 - Overlaps(g1,g2) : 교집합 영역 존재 여부 <br/>\
-- Intersects(g1,g2) : 교집합 존재 여부 <br/>\
+- Intersects(g1,g2) : 교집합 존재 여부 <br/><br/>\
+# 공간 분석 연산자 <br/>\
 - Distance(g1,g2) : 거리반환 <br/>\
 - Intersection(g1,g2) : 교집합 공간 객체 반환 <br/>\
 - Union(g1,g2) : 합집합 공간 객체 반환 <br/>\

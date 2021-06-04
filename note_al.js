@@ -77,6 +77,7 @@ var question = question.concat(
 '[AI][AL][RNN]- BRNN',
 '[AI][AL]- LSTM',
 '[AI][AL]- GRU',
+'[AI][AL]- GNN',
 '[AI]- 딥러닝',
 '[AI][DeepLearning]- 딥러닝 한계점',
 '[AI][DeepLearning]- 컨텍스트 딥러닝',
@@ -1436,6 +1437,24 @@ var answer = answer.concat(
 * KPC 97회 1교시 3번\
 ',
 
+// GNN
+'# 정의 : 노드간 연결성 / 엣지 구성 / 그래프 데이터 학습 알고리즘 <br/>\
+- Graph Neural Network <br/>\
+- 노드와 노드간의 연결성을 나타내는 엣지로 구성된 그래프 데이터에 적합한 학습 알고리즘 <br/><br/>\
+# Tasks <br/>\
+- Node Level : 각 노드에 대한 분류, 회귀 문제 해결 <br/>\
+- Graph Level : 전체 그래프에 대해 분류, 회귀 문제 해결 <br/>\
+- Edge Level : 노드들 연결 여부 및 연결 관계 파악 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/GNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 학습 과정 <br/>\
+- 변환 : 비유클리드 공간, 신경망 학습 형태, 인접 행렬(노드간), 노드 특징행렬(노드 속성)<br/>\
+- 취합(Aggregate) : 각 레이어, 타겟 노드 인접 이웃노드들의 은닉 변수 정보 취합 <br/>\
+- 업데이트(Combine) : 타겟 노드 + 은닉 변수 -> 타겟 노드 업데이트 <br/>\
+- 생성(Readout) : 모든 노드 은닉 변수 결합, 그래프 단위 은닉변수 생성 <br/><br/>\
+* ITPE 124회 합숙 1일차 8번\
+',
+
 // 딥러닝 
 '# 정의 : 비지도 + 지도 / 사람처럼 <br/>\
 - 지도학습과 능동적인 비지도학습이 결합되어 컴퓨터가 마치 사람처럼 스스로 학습할 수 있는 기계학습 기법 <br/><br/>\
@@ -1594,8 +1613,20 @@ var answer = answer.concat(
 ',
   
 // Deep Fake
-'# 정의 : Latent Face, 학습(CNN,LSTM), 생성(GAN) 보정(가우시안필터)<br/>\
-- 딥러닝을 이용해 기존 영상에 다른 영상이나 이미지 정보를 합성하여 콘텐츠를 생성하는 기법 \
+'# 정의 : GAN 이용 / 중첩 결합 / 가공 콘텐츠 생성 합성기술 <br/>\
+- GAN(Generative Adversial Network)을 이용해 원본 이미지나 동영상 위에 다른 영상을 중첩하거나 결합하여 원본과는 다른 가공 컨텐츠를 생성하는 합성기술 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/DeepFake.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요기술 <br/>\
+1. 데이터 <br/>\
+- 수집, 훈련 : Source Video, Target Video 수집 > GAN 이용 > Fake, Real 수준 학습 <br/>\
+- 프레임 적용, 합성 : Target Video 프레임 단위 적용 후 LSTM 활용 영상 재생성 <br/><br/>\
+2. 알고리즘 <br/>\
+- GAN : 모션 패턴 모델링, 3D 모델 재구성 처리 <br/>\
+- LSTM : Residual Frame(현재, 이전 프레임 차 표현), CNN LSTM 기반 RNN 이용 벡터화 처리 <br/><br/>\
+# 이슈 및 진화 방향 <br/>\
+<img src = "./img/DeepFakeIssue.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 124회 합숙 1일차 1교시 6번\
 ',
 
 // Hyper Parameter
