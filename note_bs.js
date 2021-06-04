@@ -92,6 +92,7 @@ var question = question.concat(
 '[대기행렬]- 대기행렬 시스템',
 'OKR',
 'Value Chain',
+'MVP',
 );
 
 var answer = answer.concat(
@@ -1574,5 +1575,14 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 # 구성도 (<font color = "red">기인개조 내생외영사</font>) <br/>\
 <img src = "./img/ValueChain.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 1번\
+',
+
+// MVP
+'# 정의 : 초기 사용자 / 핵심 가치(기능) / 시간, 돈 최소 투입 / 제품 서비스 <br/>\
+- Minimum Viable Product <br/>\
+- 초기 사용자들이 관심과 구매 의사 및 피드백을 제공할 것으로 예상되는 핵심 가치(기능)을 선정하고 시간과 돈을 최소한 투입하여 구현한 제품 혹은 서비스 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MVP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 2일차 관리 1교시 2번\
 ',
 );

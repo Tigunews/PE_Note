@@ -20,6 +20,7 @@ var question = question.concat(
 '[Interrupt]- Vectored Interrupt',
 'Memory 영역',
 'Memory Leak',
+'OS Scheduler',
 'Process',
 'PCB',
 'Thread',
@@ -485,6 +486,18 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 디버깅 : 메모리 모니터링 <br/>\
 - 코드 : 프로그램 Code Inspection 수행 <br/><br/>\
 * 123회 응용 1교시 11번\
+',
+
+// OS Scheduler
+'# 정의 : Process State / CPU, Memory 자원 / 할당 회수 / 시스템 소프트웨어 <br/>\
+- 프로세스 상태에 따라 어떠한 프로세스에게 CPU와 메모리 자원을 할당하고 회수할지를 결정하는 시스템 소프트웨어 <br/><br/>\
+# 종류 <br/>\
+- 장기 스케줄러 : New -> Ready <br/>\
+- 중기 스케줄러 : Run -> Wait <br/>\
+- 단기 스케줄러 : Ready -> Run <br/><br/>\
+# 스케줄러, 디스패처 비교 <br/>\
+<img src = "./img/SchedulerDIspatcher.png" style = "max-width:100%; height:auto;"><br/>\
+* ITPE 합숙 2일차 1교시 1번\
 ',
 
 // Process
