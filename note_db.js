@@ -1650,11 +1650,11 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - Outlier <br/>\
 - 입력오류, 데이터 처리오류 등으로 특정 범위에서 벗어난 데이터 값 <br/><br/>\
 # 검출 <br/>\
-- Variance : 정규분포표 2.5% 이하 <br/>\
-- Likelihood : 확률변수의 표집값과 일관되는 정도 <br/>\
-- NN(Nearest Neighbor) : 모든 데이터 쌍의 거리 계산 검증 <br/>\
-- Densitiy : 밀도에서 가장 먼 데이터 검출 <br/>\
-- Clustering : 여러 클러스터 구분, 클러스터 사이 먼 경우 이상값 판별 <br/><br/>\
+- Variance : <font color = "red">정규분포표</font> 2.5% 이하 <br/>\
+- Likelihood : 확률변수의 표집값과 <font color = "red">일관</font>되는 정도 <br/>\
+- NN(Nearest Neighbor) : 모든 <font color = "red">데이터 쌍의 거리</font> 계산 검증 <br/>\
+- Densitiy : 밀도에서 가장 <font color = "red">먼</font> 데이터 검출 <br/>\
+- Clustering : 여러 클러스터 구분, 클러스터 사이 <font color = "red">먼</font> 경우 이상값 판별 <br/><br/>\
 # 처리 <br/>\
 - 하한/상한값 대체 : 결정 후 이상치 대체 <br/>\
 - 표준편차 대체 : 평균의 표준편차로 대체 <br/>\
