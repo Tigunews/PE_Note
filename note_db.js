@@ -1652,7 +1652,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 # 검출 (<font color = "red">VLNDC</font>)<br/>\
 - Variance : <font color = "red">정규분포표</font> 2.5% 이하 <br/>\
 - Likelihood : 확률변수의 표집값과 <font color = "red">일관</font>되는 정도 <br/>\
-- NN(Nearest Neighbor) : 모든 <font color = "red">데이터 쌍의 거리</font> 계산 검증 <br/>\
+- NN(Nearest Neighbor) : 모든 <font color = "red">데이터 쌍</font>의 거리 계산 검증 <br/>\
 - Densitiy : 밀도에서 가장 <font color = "red">먼</font> 데이터 검출 <br/>\
 - Clustering : 여러 클러스터 구분, 클러스터 사이 <font color = "red">먼</font> 경우 이상값 판별 <br/><br/>\
 # 처리 (<font color = "red">상표절극</font>)<br/>\

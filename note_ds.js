@@ -5138,12 +5138,12 @@ var answer = answer.concat(
 - Solution in Our Society Lab <br/>\
 - 지역사회 문제해결을 위해 사회 구성원들이 모여 SW, ICT 기술로 해결 방법을 마련하는 사회문제 연구소 <br/><br/>\
 # 프로세스 (<font color = "red">조개구실공사</font>)<br/>\
-- 조직화 : 혁신조직, 자원확보, 가치와 목표 <br/>\
-- 개념화 : 문제발굴, 공감, 문제 정의 <br/>\
-- 구체화 : 아이디에이션, 프로토타입 <br/>\
-- 실체화 : 공동창조, 컨셉 디자인 <br/>\
-- 공유화 : 실증 및 확산, 데이터 관리 <br/>\
-- 사업화 : 비즈니스 모델, 지원 프로그램 <br/><br/>\
+- 조직화 : 혁신조직, 자원확보, <font color = "red">가치와 목표</font> <br/>\
+- 개념화 : 문제발굴, <font color = "red">공감</font>, 문제 정의 <br/>\
+- 구체화 : 아이디에이션, <font color = "red">프로토타입</font> <br/>\
+- 실체화 : 공동창조, <font color = "red">컨셉 디자인</font> <br/>\
+- 공유화 : <font color = "red">실증 및 확산</font>, 데이터 관리 <br/>\
+- 사업화 : <font color = "red">비즈니스 모델</font>, 지원 프로그램 <br/><br/>\
 # 조성 현황 <br/>\
 - 인천 : 아동안전 <br/>\
 - 대전 : 시민생활 안전(노인,장애인,악취) <br/>\
