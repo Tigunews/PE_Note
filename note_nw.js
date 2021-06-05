@@ -2279,14 +2279,16 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 중앙 집중형 제어 : SD-WAN Controller 통한 QoS 및 네트워크 토폴로지 관리 <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/SDWAN.png" style = "max-width:100%; height:auto;"><br/>\
-- 중앙 컨트롤러 : 구성저장, 토폴로지 관리, 엑세스 정책 설정, 사용량, 성능 보고 <br/>\
-- 액세스 노드 : SD-WAN CPE, VNF, 라우팅, 터널링, WAN 최적화 <br/><br/>\
-# 구성요소 <br/>\
-1. Control Plane <br/>\
-- 인프라 조율 : 안정적 운영, 정책 배포, 트래픽 모니터링 <br/><br/>\
-2. Data Plane <br/>\
-- Overlay Tunnel : Underlay Tunnel 사용, 논리적 터널 구성<br/>\
-- Underlay Tunnel : MPLS, LTE, 물리 네트워크 공간, IpSec 연결 <br/><br/>\
+<font color = "red">* 기존 MPLS에 비해 상대적 저렴한 회선 추가 위해 SD-WAN 구성 </font><br/><br/>\
+# 기술요소 <br/>\
+1. 장비 측면 <br/>\
+- SD-WAN Controller : 액세스 노드 정책 설정, 토폴로지 관리 <br/>\
+- SD-WAN CPE : 오버레이 네트워크 생성 위한 라우팅 및 터널링 엔진 <br/><br/>\
+2. 기술 측면 <br/>\
+- Dynamic Path Switching : 성능 저하시 다른 경로 선택 <br/>\
+- Packet Duplication : 중요 패킷 경우 중복 전송 <br/>\
+- Link Aggregation : 물리적 여러 회선 -> 논리적 하나 회선 <br/>\
+- Network Segmentation : Segment별 VLAN 할당 <br/><br/>\
 # 기능 <br/>\
 1. SD-WAN Orchestration <br/>\
 - 클라우드 기반 중앙 집중형 관리 <br/>\
