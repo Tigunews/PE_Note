@@ -1583,20 +1583,20 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 - 초기 사용자들이 관심과 구매 의사 및 피드백을 제공할 것으로 예상되는 핵심 가치(기능)을 선정하고 시간과 돈을 최소한 투입하여 구현한 제품 혹은 서비스 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/MVP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 절차 <br/>\
+# 절차 (<font color = "red">아빌프메데런</font>)<br/>\
 <img src = "./img/MVP_Process.png" style = "max-width:100%; height:auto;"><br/>\
-- Idea : 새로운 제품 아이디어 도출, 고객 가치 판단 가설, 린 캔버스 통해 도출 <br/>\
-- Build : 핵심 가치 집중 제품 개발, 제작 <br/>\
-- Product : 개발된 제품 시장 배포 <br/>\
-- Measure : 고객 가체 지공 정량적 측정 <br/>\
-- Data : 정량적 측정된 데이터 저장 <br/>\
-- Learn : 개선 사항 도출, 문제시 방향전환 제시 <br/><br/>\
-# MVP, MMR, MMF, MMP <br/>\
+- Idea : <font color = "red">새로운</font> 제품 아이디어 도출, 고객 가치 판단 가설, <font color = "red">린 캔버스</font> 통해 도출 <br/>\
+- Build : <font color = "red">핵심 가치 집중</font> 제품 개발, 제작 <br/>\
+- Product : 개발된 제품 시장 <font color = "red">배포</font> <br/>\
+- Measure : 고객 가체 제공 <font color = "red">정량적 측정</font> <br/>\
+- Data : 정량적 측정된 데이터 <font color = "red">저장</font> <br/>\
+- Learn : <font color = "red">개선</font> 사항 도출, 문제시 <font color = "red">방향 전환</font> 제시 <br/><br/>\
+# MVP, MMF, MMR, MMP<br/>\
 <img src = "./img/MVP_MMR_MMF_MMP.png" style = "max-width:100%; height:auto;"><br/>\
-- MVP : 가설 테스트, 학습 위한 최소 제품, 서비스<br/>\
-- MMF : 최종 사용자 기대하는 최소 기능 정의  <br/>\
-- MMR : MMF의 모든 기능 제공 <br/>\
-- MMP : MMR의 최초 버전 <br/><Br/>\
+- MVP : 가설 테스트, 학습 위한 <font color = "red">최소 제품, 서비스</font><br/>\
+- MMF : 최종 사용자 기대하는 <font color = "red">최소 기능</font> 정의  <br/>\
+- MMR : <font color = "red">MMF의 모든</font> 기능 제공 <br/>\
+- MMP : <font color = "red">MMR의 최초</font> 버전 <br/><Br/>\
 * ITPE 합숙 124회 2일차 관리 1교시 2번\
 ',
 );

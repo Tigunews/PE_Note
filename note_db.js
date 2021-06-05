@@ -1649,17 +1649,17 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 '# 정의 : 입력 데이터 처리 오류 / 특정범위 벗어난 값 <br/>\
 - Outlier <br/>\
 - 입력오류, 데이터 처리오류 등으로 특정 범위에서 벗어난 데이터 값 <br/><br/>\
-# 검출 <br/>\
+# 검출 (<font color = "red">VLNDC</font>)<br/>\
 - Variance : <font color = "red">정규분포표</font> 2.5% 이하 <br/>\
 - Likelihood : 확률변수의 표집값과 <font color = "red">일관</font>되는 정도 <br/>\
 - NN(Nearest Neighbor) : 모든 <font color = "red">데이터 쌍의 거리</font> 계산 검증 <br/>\
 - Densitiy : 밀도에서 가장 <font color = "red">먼</font> 데이터 검출 <br/>\
 - Clustering : 여러 클러스터 구분, 클러스터 사이 <font color = "red">먼</font> 경우 이상값 판별 <br/><br/>\
-# 처리 <br/>\
-- 하한/상한값 대체 : 결정 후 이상치 대체 <br/>\
-- 표준편차 대체 : 평균의 표준편차로 대체 <br/>\
-- 절대편차 대체 : 중위수로부터 n편차 큰 값 <br/>\
-- 극 백분위수 대체 : 상위 p번째 백분위수보다 큰 값<br/><br/>\
+# 처리 (<font color = "red">상표절극</font>)<br/>\
+- 하한/상한값 대체 : <font color = "red">결정 후</font> 이상치 대체 <br/>\
+- 표준편차 대체 : <font color = "red">평균</font>의 표준편차로 대체 <br/>\
+- 절대편차 대체 : <font color = "red">중위수</font> 로부터 n편차 큰 값 <br/>\
+- 극 백분위수 대체 : <font color = "red">상위</font> p번째 백분위수보다 큰 값<br/><br/>\
 * ITPE 합숙 124회 1일차 관리 1교시 9번\
 ',
   
