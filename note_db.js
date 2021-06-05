@@ -70,6 +70,7 @@
 '[빅데이터][NoSQL]- PACEL',
 '[빅데이터][NoSQL]- NoSQL RDBMS 비교',
 '[빅데이터][NoSQL]- BASE',
+'[NoSQL]- Spatial DB',
 '[빅데이터]- 빅데이터 개인정보보호 가이드라인',
 '[빅데이터]- HDFS',
 '[빅데이터]- 하둡 에코시스템',
@@ -132,7 +133,6 @@
 '반정형 데이터',
 'RAID',
 'DMBOK',
-'Spatial DB',
 );
 
 var answer = answer.concat(
@@ -1478,6 +1478,36 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 <img src = "./img/BASEACID.png" style = "max-width: 100%; height: auto;">\
 ',
 
+// Spatial DB
+'# 정의 : 문자, 숫자 표현 / 비공간 데이터 / 공간 객체 좌표값 / 공간 데이터 집합 <br/>\
+- 문자와 숫자 등으로 표현되는 비공간 데이터와 공간 객체의 좌표값으로 표현되는 공간데이터의 집합 <br/><br/>\
+# Data Type <br/>\
+- Vector : 점, 선, 면, 다각형 도형 <br/>\
+- Rester : 지도를 이미지 방식으로 표현 <br/>\
+- Topology : 공간 객체간의 관계 <br/>\
+- Non-Spatial Data : 공간 DB가 아닌 Data <br/><br/>\
+# 공간 관계 연산자 연관도 <br/>\
+<img src = "./img/SpatialOperator.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 공간 관계 연산자 <br/>\
+- Equals(g1,g2) : 동일 여부 <br/>\
+- Disjoint(g1,g2) : 겹치는 부분 여부 <br/>\
+- Within(g1,g2) : g1,g2 영역 포함 여부 <br/>\
+- Overlaps(g1,g2) : 교집합 영역 존재 여부 <br/>\
+- Intersects(g1,g2) : 교집합 존재 여부 <br/><br/>\
+# 공간 분석 연산자 <br/>\
+- Distance(g1,g2) : 거리반환 <br/>\
+- Intersection(g1,g2) : 교집합 공간 객체 반환 <br/>\
+- Union(g1,g2) : 합집합 공간 객체 반환 <br/>\
+- Difference(g1,g2) : 차집합 공간 객체 반환 <br/>\
+- Buffer Union(g1,g2) : g1에서 d 거리만큼 확장한 공간 객체 반환 <br/><br/>\
+# 공간정보 Handling <br/>\
+- Middleware 방식 : ERSI ArcGIS <br/>\
+- RDBMS : Oracle Spatial <br/>\
+- Graph DB : Neo4j, AllegroGraph <br/>\
+- NoSQL : MongoDB <br/><br/>\
+* 124회 관리 4교시 3번\
+',
+
 // 빅데이터 개인정보보호 가이드라인
 '# 정의 : 산업 발전, 정보 주체 프라이버시 보호 / 빅데이터 활용 가이드 라인 <br/>\
 - "공개된 정보" 및 "이용내역정보"와 같은 데이터의 수집-분석-저장-처리에 있어서 이를 활용하는 산업의 발전과 정보주체의 프라이버시 보호 위해 제정된 빅데이터 활용 가이드라인<br/><br/>\
@@ -2557,25 +2587,5 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 메타 데이터 관리 <br/>\
 - 데이터 품질 <br/><br/>\
 * ITPE 7회 관리 3교시 6번\
-',
-
-// Spatial DB
-'# 정의 : 문자, 숫자 표현 / 비공간 데이터 / 공간 객체 좌표값 / 공간 데이터 집합 <br/>\
-- 문자와 숫자 등으로 표현되는 비공간 데이터와 공간 객체의 좌표값으로 표현되는 공간데이터의 집합 <br/><br/>\
-# 공간 관계 연산자 연관도 <br/>\
-<img src = "./img/SpatialOperator.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 공간 관계 연산자 <br/>\
-- Equals(g1,g2) : 동일 여부 <br/>\
-- Disjoint(g1,g2) : 겹치는 부분 여부 <br/>\
-- Within(g1,g2) : g1,g2 영역 포함 여부 <br/>\
-- Overlaps(g1,g2) : 교집합 영역 존재 여부 <br/>\
-- Intersects(g1,g2) : 교집합 존재 여부 <br/><br/>\
-# 공간 분석 연산자 <br/>\
-- Distance(g1,g2) : 거리반환 <br/>\
-- Intersection(g1,g2) : 교집합 공간 객체 반환 <br/>\
-- Union(g1,g2) : 합집합 공간 객체 반환 <br/>\
-- Difference(g1,g2) : 차집합 공간 객체 반환 <br/>\
-- Buffer Union(g1,g2) : g1에서 d 거리만큼 확장한 공간 객체 반환 <br/><br/>\
-* 124회 관리 4교시 3번\
 ',
 );
