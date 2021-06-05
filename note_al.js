@@ -1441,17 +1441,17 @@ var answer = answer.concat(
 '# 정의 : 노드간 연결성 / 엣지 구성 / 그래프 데이터 학습 알고리즘 <br/>\
 - Graph Neural Network <br/>\
 - 노드와 노드간의 연결성을 나타내는 엣지로 구성된 그래프 데이터에 적합한 학습 알고리즘 <br/><br/>\
-# Tasks <br/>\
-- Node Level : 각 노드에 대한 분류, 회귀 문제 해결 <br/>\
+# Tasks (<font color = "red">GEN</font>)<br/>\
 - Graph Level : 전체 그래프에 대해 분류, 회귀 문제 해결 <br/>\
-- Edge Level : 노드들 연결 여부 및 연결 관계 파악 <br/><br/>\
+- Edge Level : 노드들 연결 여부 및 연결 관계 파악 <br/>\
+- Node Level : 각 노드에 대한 분류, 회귀 문제 해결 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/GNN.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 학습 과정 <br/>\
+# 학습 과정 (<font color = "red">TACR</font>)<br/>\
 - 변환 : 비유클리드 공간, 신경망 학습 형태, 인접 행렬(노드간), 노드 특징행렬(노드 속성)<br/>\
-- 취합(Aggregate) : 각 레이어, 타겟 노드 인접 이웃노드들의 은닉 변수 정보 취합 <br/>\
-- 업데이트(Combine) : 타겟 노드 + 은닉 변수 -> 타겟 노드 업데이트 <br/>\
-- 생성(Readout) : 모든 노드 은닉 변수 결합, 그래프 단위 은닉변수 생성 <br/><br/>\
+- 취합(Aggregate) : 각 레이어, 타겟 노드 인접 이웃노드들의 <font color = "red">은닉 변수 정보 취합</font> <br/>\
+- 업데이트(Combine) : 타겟 노드 + 은닉 변수 -> <font color = "red">타겟 노드 업데이트</font> <br/>\
+- 생성(Readout) : <font color = "red">모든</font> 노드 은닉 변수 결합, <font color = "red">그래프 단위</font> 은닉변수 생성 <br/><br/>\
 * ITPE 124회 합숙 1일차 8번\
 ',
 
