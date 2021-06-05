@@ -3069,10 +3069,8 @@ var answer = answer.concat(
 ',
 
 // 영지식 증명
-'# 정의 : 증명 방법 / 정보 주지 않는 <br/>\
-- 1985년 Goldwasser, Micali, Rockoff가 영지식 대화형 증명 방식 발표로 시작, 어떤 내용을 알고 있을 때, 그 내용을 직접 보여주지 않고 그것을 알고 있음을 증명하는 방법 <br/>\
-- 한 사람이 다른 사람에게 사실의 증명에 관한 어떠한 정보도 보이지 않고 사실의 증명을 알 수 있도록 만드는 방법, 정보를 전혀 주지 않고 상대방에게 정보를 알고 있음을 증명하는 방법<br/><br/>\
-# 정의 : 정보를 발설하지 않고, 그 정보를 알고 있다는 것을 증명하는 기술 <br/><br/>\
+'# 정의 : 명제 증명 / 참,거짓 이외 어떠한 사항 노출 x / Interactive한 절차  <br/>\
+- 암호학에서 어떠한 사항이 참이라는 것을 증명할 때, 그 문장의 참 거짓 여부를 제외한 어떤 것도 노출되지 않는 Interactive한 절차 <br/><br/>\
 # 특징 <br/>\
 - 완전성 : 문장 참 / 정직한 증명자 / 정직한 검증자 / 납득  <br/>\
 - 정당성 : 문장 거짓 / 부정직한 증명자 / 정직한 검증자 / 납득x <br/>\
@@ -3294,17 +3292,21 @@ var answer = answer.concat(
 - Broad network Access : 이기종 클라이언트, NW 접근 / Mobile, Tablet, PC <br/>\
 - Resource Pooling : 여러 사용자, 위치 관계 없이 제공 / Multi tenant, Location Transparency <br/>\
 - Rapid Elasticity : 탄력적 프로비저닝 / Auto Scaling <br/>\
-- Measured Service : 자동 제어 최적화 / 1시간 단위 비용 측정 <br/><br/>\
+- Measured Service : 자동 제어 최적화 / Pay per use <br/><br/>\
 # 6대 핵심 기술 <br/>\
-1. 가상 측면 <br/>\
-- 가상서버 제공 기술 : 하이퍼바이저, 도커 <br/>\
-- 가상화 구성 기술 : 오픈 스택 <br/><br/>\
-2. 로드 밸런싱 <br/>\
-- 병렬 처리 : RAID, Hadoop <br/>\
-- 분산 스토리지 : Object 스토리지 <br/><br/>\
-3. 인프라 측면 <br/>\
-- CDN : Low Latency <br/>\
-- BI, 대시보드 : 가상 인프라 설계<br/><br/>\
+1. 분산 처리 <br/>\
+- 분산 데이터 저장 : HBASE, Hadoop, CODA, HyperTable <br/>\
+- 분산 컴퓨팅 : Kafka, Map Reduce, L/B, MPI, PVM <br/>\
+<font color = "red">* CODA(Context Oriented Directed Associations) : 가상 인체모델 <br/>\
+* Hyper Table :  데이터베이스 관리시스템 구현 오픈소스 소프트웨어 프로젝트 <br/>\
+* MPI : 메시지 전달 인터페이스 <br/>\
+* PVM : Pararrel Virtual Machine </font><br/><br/>\
+2. 가상화 <br/>\
+- 가상화 : Container, 하이퍼바이저, SDx, VLAN, SAN, NAS <br/>\
+- 서버구성 : 그리드, 쿠버네티스, 오케스트레이션, 오토스케일링 <br/><br/>\
+3. 자원 관리 <br/>\
+- 서비스 관리 : 클러스터링, 프로비저닝, 스케줄링 <br/>\
+- 클라우드 보안 : CWPP, CSPM, CASB <br/><br/>\
 # 구성 <br/>\
 - User Interaction Interface <br/>\
 - Service Catalog <br/>\
@@ -4843,11 +4845,16 @@ var answer = answer.concat(
 // 디지털 휴먼 증강
 '# 정의 : 신체 저하 예방 / 건강한 삶 지속 가능 기술 <br/>\
 - AI, IT, BT 등의 다양한 이종 기술간 융합을 바탕으로 인간의 신체, 두뇌, 감성 능력의 저하를 예방하고, 회복 및 향상을 통해 지속적인 건강한 삶을 가능하게 하는 기술 <br/><br/>\
-# 기술요소 <br/>\
-- 엑소 스켈레톤, 근력 증강 슈트, 감각치환 기술, 엑소스킨, 개인 면역 진단, 장기 지능형 관리 <br/>\
-- AI 칩 삽입형, 큐레이션 AI, 증강인지 커넥티드 헤드셋,헬멧, 웨어러블 뇌 임플란트형 <br/>\
-- AI 감성 친구, 감성케어, 부정 감정인지 및 완화, 디지털 휴먼 바이오 맵, 지능형 인터페이스 <br/><br/>\
-<img src = "./img/DigitalHumanAugmentation.png" style = "max-width:100%; height:auto;"><br/>\
+# Overview <br/>\
+<img src = "./img/DigitalHumanAugmentationOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 서비스 <br/>\
+- 신체 능력 증강 : 근력 감각, 면역 장기, 엑소스켈리톤, 감각 치환 <br/>\
+- 두뇌 능력 증강 : 기억, 인지, 창의, 소통, 기억 저장/삭제, 증강인지 헬멧 <br/>\
+- 감성 능력 증강 : 소통, 이상 감정 제어, 다국어 번역, 감정 예방 치료 <br/><br/>\
+# 기술 <br/>\
+- 정보통신 : AI, Big Data, CPS, IoB <br/>\
+- 뇌,바이오 : 뉴로모픽 칩, 바이오 칩, 인공장기 <br/>\
+- 로봇, 제조 : 근력 증강 로봇, 3D 프린팅 <br/><br/>\
 <font color = "red">* 한국전자통신연구원(ETRI), 한국과학기술기획평가원(KISTEP) 2/23 18개 서비스 제시 </font><br/><br/>\
 * 124회 관리 1교시 4번\
 ',

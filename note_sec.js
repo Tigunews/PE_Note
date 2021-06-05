@@ -675,12 +675,12 @@ var answer = answer.concat(
 # 개념도 <br/>\
 <img src = "./img/FormatPreservingEncryption.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특성 <br/>\
-- Tweak : 기밀성 제공 위한 추가 정보 정형화 데이터 입력 <br/>\
-- Feistel Cipher : Round Function 반복 수행 블록 암호화 방식 <br/><br/>\
+- Tweak : 기밀성 제공 위한 추가 정보 정형화 <font color = "red">데이터 입력</font> <br/>\
+- Feistel Cipher : <font color = "red">Round Function</font> 반복 수행 블록 암호화 방식 <br/><br/>\
 # 기술 유형 <br/>\
-- Prefix Cipher : 의사난수 가중치, 매핑 테이블, 테이블 크기 한계 <br/>\
-- Cycle-Walking Cipher : 원본 동일 결과까지 반복, 연산 부하 문제, 종료 시간 예측 한계 <br/>\
-- Generalized-Feistel CIpher : Feistel NW 이용, 비교적 큰 성능 저하 없음 <br/><br/>\
+- Prefix Cipher : <font color = "red">의사난수 가중치</font>, 매핑 테이블, 테이블 <font color = "red">크기 한계</font> <br/>\
+- Cycle-Walking Cipher : 원본 동일 결과까지 <font color = "red">반복</font>, <font color = "red">연산 부하</font> 문제, <font color = "red">종료 시간 예측 한계</font> <br/>\
+- Generalized-Feistel Cipher : <font color = "red">Feistel NW</font> 이용, 비교적 큰 성능 저하 없음 <br/><br/>\
 * ITPE 합숙 124회 2일차 1교시 5번\
 ',
 
@@ -696,7 +696,7 @@ var answer = answer.concat(
 - 단조 증가함수 기반 : a > b 이면, F(a) > F(b) <br/>\
 - 버킷 분포 기반 : 다수 버킷 분할, 분포도 변환 <br/>\
 - POPIS : E(x) = a* x + b + noise(a,b 임의 상수, noise 0~a) <br/>\
-* Programmable Order-Preserving secure Index Scheme <br/><br/>\
+<font color = "red">* Programmable Order-Preserving secure Index Scheme</font><br/><br/>\
 # 형태보존, 순서보존, 동형암호 비교 <br/>\
 <img src = "./img/EncryptionCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 2일차 1교시 5번\
