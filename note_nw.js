@@ -2272,6 +2272,9 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // SD WAN
 '# 정의 : WAN / Data Plane, Control Plane / 분리 가상화 <br/>\
 - 광역 네트워크(WAN)에서 데이터(Data Plane)와 제어 영역(Control Plane)을 분리하여 가상화된 오버레이 네트워크 구성 기술 <br/><br/>\
+# 부각 배경 <br/>\
+- Remote Work 인한 WAN 구간 병목구간 발생 / LAN -> WAN <br/>\
+- SaaS 이용증가 <br/><br/>\
 # 특징 <br/>\
 - 네트워크 가상화 : NFV 활용, 다양한 기능 수행 가능 <br/>\
 - WAN 회선 비용 절감 : 기존 인터넷 회선 + 저렴 회선 추가 > 대역폭 향상 및 비용 절감 <br/>\
