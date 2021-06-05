@@ -1305,7 +1305,7 @@ var answer = answer.concat(
 ',
   
 // 소프트웨어 아키텍처 모델, 패턴, 스타일
-'# 정의 : 반복, 일반적 발생 문제 해결 / 아키텍처 Best Practice 정리 패턴 <br/>\
+'# 정의 : 문제 해결 / 품빌 속성 달성 / Best Practice 정리 패턴 <br/>\
 - 아키텍처 설계에서 반복적, 일반적 발생 문제를 해결하고 아키텍처가 만족시켜야 하는 시스템 품질 속성 달성 위한 Best Practice를 정리한 패턴 <br/><br/>\
 # 기능 <br/>\
 - 기본 스키마 제시 <br/>\
@@ -1315,10 +1315,13 @@ var answer = answer.concat(
 - 모듈단위 분해방법 제시 <br/>\
 - 모듈단위 상호작용 방법 제시 <br/><br/>\
 # 유형 분류 <br/>\
-- 데이터 중심 : Blackboard, Repository <br/>\
-- 데이터 흐름 : Batch Sequence, Piep and Filters <br/>\
-- 가상 머신 : Interpreter, Rule-Based System <br/>\
-- 호출과 리턴 : Main Program And Subroutine, Remote Procedure Call, Layerd <br/><br/>\
+1. 기능 분할과 배치 <br/>\
+- 데이터 중심 모델 : 중앙 집중 <br/>\
+- 클라이언트/서버 모델 : 분산 <br/>\
+- 계층적 모델 : 접근층 나눔, 등급 부여 (사용자, 응용, 관리자 등...) <br/>\
+- MVC 모델 : Model(Data 집중), View(사용자 작업), Controller(연결 제어 장치) <br/><br/>\
+2. 제어 관계 <br/>\
+- 데이터 흐름 모델 : 하향식 디자인, 각 프로세스(원모양) 세부내용 하위 분해 <br/><br/>\
 # 10대 패턴별 비교 <br/>\
 <img src = "./img/SWArchitecturePatternCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 3교시 5번\
