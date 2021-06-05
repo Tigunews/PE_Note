@@ -974,16 +974,16 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 혼합 : 손실/무손실 모두 사용 / 정보손실o, 압축률 높음 <br/><br/>\
 # 종류 상세 <br/>\
 1. 무손실 압축 <br/>\
-- Run Length Coding : 연속적으로 나타나는 정보, 반복 횟수로 표현 <br/>\
-- Huffman Coding : 높은 빈도 수는 적은 비트, 낮은 빈도수 많은 비츠 할당 <br/>\
-- LZW : 반복해서 나타난 어구는 사전에 등록된 위치정보로 치환 <br/><br/>\
+- Run Length Coding : 연속적으로 나타나는 정보, <font color = "red">반복 횟수</font>로 표현 <br/>\
+- Huffman Coding : <font color = "red">높은 빈도</font> 수는 <font color = "red">적은 비트</font>,<font color = "red"> 낮은 빈도</font>수 <font color = "red">많은 비트</font> 할당 <br/>\
+- LZW : 반복해서 나타난 어구는 <font color = "red">사전에 등록된 위치 정보</font>로 치환 <br/><br/>\
 2. 손실 압축 <br/>\
-- 변환 코딩 : 변환 함수 통해 데이터 영역(Domain) 변환 <br/>\
-- 예측 코딩 : 직전 정보와 비슷한 성질(ADPCM, DPCM, Motion Compensation) <br/>\
-- 양자화 : 미리 정의된 양자 성질 이용, 데이터 부호화 <br/><br/>\
+- 변환 코딩 : <font color = "red">변환 함수</font> 통해 데이터 영역(Domain) 변환 <br/>\
+- 예측 코딩 : <font color = "red">직전 정보</font>와 비슷한 성질(ADPCM, DPCM, Motion Compensation) <br/>\
+- 양자화 : <font color = "red">미리 정의된 양자</font> 성질 이용, 데이터 부호화 <br/><br/>\
 3. 혼합 압축 <br/>\
-- MPEG / H.264 : 동영상 압축을 위해 손실/무손실 기법 결합 <br/>\
-- JPEG : 정지 영상 압축 코딩 국제 표준 <br/><br/>\
+- MPEG / H.264 : 동영상 압축을 위해 <font color = "red">손실/무손실</font> 기법 결합 <br/>\
+- JPEG : <font color = "red">정지 영상</font> 압축 코딩 국제 표준 <br/><br/>\
 * ITPE 합숙 124회 1일차 관리 1교시 5번\
 ',
 
@@ -993,7 +993,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 특징 <br/>\
 - 무손실 압축 <br/>\
 - 반복 데이터 유리 : BMP, PCX 파일 포맷 사용<br/>\
-- 분포 분석/예측 : 엔트로피 계산, 자료 불특정성 분석, 예측 <br/><br/>\
+- 분포 분석/예측 : 엔트로피 계산, 자료 불 특정성 분석, 예측 <br/><br/>\
 # 절차 <br/>\
 - 데이터 스트림 입력 <br/>\
 - 반복 데이터별로 카운트, 저장 <br/>\
@@ -1017,7 +1017,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 2. 해제 <br/>\
 - 버퍼 준비 : 임시 저장용 버퍼 준비 <br/>\
 - 비트 해석 : 아직 읽지 않은 부분 남아 있을 경우 비트 Read <br/>\
-- 비트 순회 : 읽은 비트가 Leaf 노드가 될 떄까지 이진 탐색트리 순회 <br/><br/>\
+- 비트 순회 : 읽은 비트가 Leaf 노드가 될 때 까지 이진 탐색트리 순회 <br/><br/>\
 # 예제 <br/>\
 <img src = "./img/HuffmanCodingEx1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/HuffmanCodingEx2.png" style = "max-width:100%; height:auto;">\
