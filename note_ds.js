@@ -2542,7 +2542,11 @@ var answer = answer.concat(
 // IMDF
 '# 정의 : 모든 환경 / 실내 지도 앱, 서비스 / 활용 포맷 <br/>\
 - Indoor Mapping Data Format <br/>\
-- 모든 앱, 웹 사이트 또는 운영 체제에서 동일한 고도로 정확하고 상세한 데이터를 사용하여 누구나 실내 지도 앱 및 서비스를 활용 포맷 <br/><br/>\
+- Apple이 만든, GeoJson을 사용하여 일반화되고 포괄적인 방법으로 2021.02. OGC에서 채택된 실내 데이터 표현 형식 <br/><br/>\
+# 절차 <br/>\
+- 변환 : 평면도 -> IMDF File Type <br/>\
+- 조사 : 실내 조사 수행 <br/>\
+- 추가 : 앱에 실내 지도 추가 <br/><br/>\
 # 표준화 동향 <br/>\
 - Apple 실내 매핑 데이터 형식 표준 <br/>\
 - Fashion Intelligence, IoT 실내 측위 서비스 이용 <br/><br/>\
