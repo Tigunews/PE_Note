@@ -5157,6 +5157,7 @@ var answer = answer.concat(
 
 // SRE
 '# 정의 : 적절 수준 안정성 / 엔지니어링 분야 <br/>\
+- Site Reliability Engineering <br/>\
 - 조직이 해당 시스템, 서비스 및 제품에서 적절한 수준(SLI, SLO)의 안정성을 달성할 수 있도록 지원하는 엔지니어링 분야 <br/><br/>\
 # 등장배경 <br/>\
 - 트렌드 변화 : DevOps 실적용, 유연한 App 개발 <br/>\
