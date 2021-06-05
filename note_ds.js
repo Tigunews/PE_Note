@@ -4592,6 +4592,11 @@ var answer = answer.concat(
 '# 정의 : 공개 소프트웨어 적용 / 라이프 사이클 단계별 / 제시 절차 및 체계 <br/>\
 - 공개 소프트웨어를 안전하게 사용,적용 및 배포하기 위해 필요한 사항을 다양한 관점에서 활용할 수 있도록 소프트웨어 라이프 사이클 단계별로 제시한 절차 및 체계 <br/><br/>\
 # 프레임워크 <br/>\
+<font color = "red">- 정 : 컨정조 <br/>\
+- 획 : 요조분평 <br/>\
+- 적 : 계설개패시배 <br/>\
+- 운 : 설운유기커 <br/>\
+- 관 : 컴교모 </font><br/><br/>\
 <img src = "./img/OSS_Governance_Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 고려사항 <br/>\
 - 비즈니스 전략 : OSS 자원 집중도, 경쟁 여부, 전략 수립 <br/>\
@@ -4791,16 +4796,20 @@ var answer = answer.concat(
 - 동기식 협업 : 실시간 원격 미팅 협업 수행 <br/>\
 - 비동기식 협업 : 녹화, 메모 기능 활용 수행 <br/><br/>\
 # 주요기술 <br/>\
+1. XR <br/>\
 - VR : 100% 가상 공간 <br/>\
 - AR : 투영된 현실, 부가 정보 <br/>\
-- MR : 현실공간에 가상 물체 배치, 인식, 구성 <br/>\
+- MR : 현실공간에 가상 물체 배치, 인식, 구성 <br/><br/>\
+2. Rendering, Interaction <br/>\
 - Display : HMD, SmartPhone<br/>\
 - Tracking : 동작, 생체 데이터 실시간 추적 기술<br/>\
 - Rendering : 고화질 3D 구현, 사실적 처리, 컴퓨터 그래픽 기술 <br/>\
-- UI : 인지, 조작, 정보 입력 <br/>\
+- UI : 인지, 조작, 정보 입력 <br/><br/>\
+3. Hologram <br/>\
 - Plenoptic : 자연스러운 현실세계의 빛 재현 <br/>\
 - Volumetric Capture : 모든 방향 컨텐츠 구현 <br/>\
-- Hologram : 레이저 광 빛의 간섭 현상 이용, 영상 기록 재생 기술<br/>\
+- Hologram : 레이저 광 빛의 간섭 현상 이용, 영상 기록 재생 기술<br/><br/>\
+4. Digital Twin <br/>\
 - 5G : 초고속, 초저지연, 초연결<br/>\
 - Digital Twin : 가상 동적 시뮬레이션 <br/><br/>\
 * ITPE 합숙 124회 1일차 관리 1교시 13번\
