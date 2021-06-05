@@ -4798,7 +4798,7 @@ var answer = answer.concat(
 '# 정의 <br/>\
 - 풍부한 정보공유, 몰입감 높은 현장감, 대면하듯 자연스러운 상호작용을 경험하게 함으로써 매체 풍부성을 보장하는 실감기술에 기반한 협업 <br/><br/>\
 # 개념도 <br/>\
-<img src = "./img/ImmersiveCollaborationOverview.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ImmersiveCollaborationOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 기능 <br/>\
 - 정보 공유 : 데이터 공유, 시각화, 공간 드로잉, 가상객체 상호작용 <br/>\
 - 현장감 : 공감대 향상, 집중도,참여도 높임 <br/>\
