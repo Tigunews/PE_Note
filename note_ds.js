@@ -14,6 +14,7 @@ var question = question.concat(
 '[4차산업]- Smart Factory',
 '[Smart Factory]- MESA 표준기능',
 '[Smart Factory]- ANSI/ISA 95',
+'[Smart Factory]- RAMI 4.0',
 '[Smart Factory]- CPS',
 '[Smart Factory]- CPS 요구사항',
 '[Smart Factory]- SCADA',
@@ -644,6 +645,21 @@ var answer = answer.concat(
 - 모듈 정의 : MES 구성 모듈의 정의 <br/>\
 - 표준 제시 : MES 데이터의 속성 및 관계에 대한 표준 제시 <br/><br/>\
 * 124회 관리 1교시 3번 \
+',
+
+// RAMI 4.0
+'# 정의 <br/>\
+- Reference Architecture Model Industrie 4.0 <br/>\
+- 인더스트리 4.0 구현을 위한 독일의 제조 분야 디지털 트랜스포메이션 국제표준 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/RAMI4.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Lifecycle value stream <br/>\
+- 제품의 개발과 생산, 각각의 사용과 유지보수 단계 <br/><br/>\
+2. Hierachy Levels <br/>\
+- 공장의 물리적인 구성을 나타내는 계층 구조 <br/><br/>\
+3. Layer <br/>\
+- 정보통신 기술의 축 \
 ',
   
 // CPS
