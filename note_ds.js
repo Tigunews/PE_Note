@@ -563,6 +563,11 @@ var answer = answer.concat(
 <font color = "red">* 고객 맞춤 : Mass Customization, 비스포크 </font><br/><br/>\
 <img src = "./img/SmartFactory.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/ISA95.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 4M + 1E 디지털화 : Man, Machinery, Material, Method + Environment <br/>\
+- IT, OT, AT 결합 <br/><br/>\
+# IEC 62443 기반 구성요소 <br/>\
+
 # 기술요소 (<font color = "red">현운제사</font>)<br/>\
 1. 공장/현장 자동화 관리 <br/>\
 - PLC : 프로그램을 통한 외부장치 자동제어 및 감시 <br/>\
