@@ -4234,14 +4234,14 @@ P 히스토그램 : Data 분포 <br/>\
 5. Optimizing : 프로세스의 지속적 개선<br/><br/>\
 # 참조 모델 (ISO 12207) <br/>\
 <img src = "./img/ASPICE.png" style = "max-width:100%; height:auto;"><br/>\
-1. 기본적 생명주기(<font color = "red">획시공S</font>) : <br/>\
+1. 기본적 생명주기(<font color = "red">ASE</font>) : <br/>\
 - Acquisition : 고객이 제품 및 서비스 획득 프로세스 <br/>\
 - Supply : 공급업체가 제품 및 서비스 제안, 인도 프로세스 <br/>\
 - Engineering : 고객의 요구사항 관리, 제품, 시스템 명세, 유지 관리 프로세스 <br/><br/>\
-2. 지원 생명주기(<font color = "red">지</font>) <br/>\
+2. 지원 생명주기(<font color = "red">S</font>) <br/>\
 - Support : 다른 프로세스 지원 구성 <br/><br/>\
-3. 조직 생명주기(<font color = "red">관재프조</font>) <br/>\
-- Management : 프로젝트 관리자가 이행 활동 포함 프로세스 <br/>\
+3. 조직 생명주기(<font color = "red">MIR</font>) <br/>\
+- Management : 프로젝트 관리자가 이행 활동 포함 프로세스 <br/>\/
 - Improvement : 조직단위 수행되는 프로세스 정의, 전개, 심사, 개선 위한 프로세스 <br/>\
 - Reuse : 조직의 재사용 프로그램 체계적 활용 프로세스 <br/><br/>\
 * 인포레버 116회 응용 1교시 16번\
