@@ -8,11 +8,13 @@ var this_week_question =
 [
 '',
 
-// 11주차
-'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스','블록체인','클라우드','Spatial DB','IMDF', '연합학습', 'Sequence Diagram', '영지식 증명', '소스코딩','GNN','Deep Fake','결측값','이상값','단순 대치법','아키텍처 모델','CBDC','Refactoring','실감협업','SRE','OS Scheduler','MVP','클라우드 보안','사이버 레질리언스','형태 보존 암호화','순서 보존 암호화','SD WAN','Hash Salt','Key Stretching','메모리 관리 기법','오픈소스 거버넌스','UWB','SOS Lab','Privacy By Design','데이터 전송요구권','RAMI 4.0',
-
+// 11주차 추가
+'RAMI 4.0','ASPICE','안티드론',
 
 /*
+// 11주차
+'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스','블록체인','클라우드','Spatial DB','IMDF', '연합학습', 'Sequence Diagram', '영지식 증명', '소스코딩','GNN','Deep Fake','결측값','이상값','단순 대치법','아키텍처 모델','CBDC','Refactoring','실감협업','SRE','OS Scheduler','MVP','클라우드 보안','사이버 레질리언스','형태 보존 암호화','순서 보존 암호화','SD WAN','Hash Salt','Key Stretching','메모리 관리 기법','오픈소스 거버넌스','UWB','SOS Lab','Privacy By Design','데이터 전송요구권',
+
 // 추가 토픽
 'Smart City', 'Smart Grid','뉴딜','라우팅','의료기술','마이데이터','DB Stakeholder','DQM',
 

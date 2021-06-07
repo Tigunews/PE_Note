@@ -4222,18 +4222,29 @@ P 히스토그램 : Data 분포 <br/>\
 ',
  
 // ASPICE
-'# 정의 : 자동차 SW 개발 프로세스 모델 <br/>\
+'# 정의 : ISO 15504, 12207 / 자동차 개발 특화 / 프로세스 모델 국제 표준화 <br/>\
 - Automotive SPICE <br/>\
-- ISO/IEC 33000 표준 기반의 자동차 소프트웨어 개발에 특화된 국제표준 프로세스 모델 <br/>\
-- 유럽의 완성차 업체 연합 주도의 자동차 소프트웨어 개발 프로세스 모델 <br/><br/>\
-# 암기 <br/>\
-- PAM : 33020 : 수-IPMEPI <br/>\
-- PRM : 12207 : 프-어.스플.시소 / 서/ 맨.핌.레우 : 3프로세스군 : 32프로세스 <br/><br/>\
-# 등장배경 <br/>\
-- 자동차 SW 중요성 <br/>\
-- 자동차 전장 범위,복잡도 증가 <br/>\
-- 복잡도 증가, 품질문제 발생 <br/><br/>\
-<img src = "./img/ASPICE.png" style = "max-width:100%; height:auto;">\
+- ISO/IEC 33000 표준 기반의 자동차 소프트웨어 개발에 특화된 국제표준 프로세스 모델 <br/><br/>\
+# 능력수준 (ISO 15504 - 수행능력 차원 평가) <br/>\
+0. Incomplete : 미구현 혹은 목적의 미달성 <br/>\
+1. Performed : 프로세스의 수행 및 목적 달성 <br/>\
+2. Managed : 프로세스 수행의 계획 및 관리 <br/>\
+3. Established : 표준 프로세스의 사용 <br/>\
+4. Predictable : 프로세스의 정량적인 이해 및 통제 <br/>\
+5. Optimizing : 프로세스의 지속적 개선<br/><br/>\
+# 참조 모델 (ISO 12207) <br/>\
+<img src = "./img/ASPICE.png" style = "max-width:100%; height:auto;"><br/>\
+1. 기본적 생명주기(<font color = "red">획시공S</font>) : <br/>\
+- Acquisition : 고객이 제품 및 서비스 획득 프로세스 <br/>\
+- Supply : 공급업체가 제품 및 서비스 제안, 인도 프로세스 <br/>\
+- Engineering : 고객의 요구사항 관리, 제품, 시스템 명세, 유지 관리 프로세스 <br/><br/>\
+2. 지원 생명주기(<font color = "red">지</font>) <br/>\
+- Support : 다른 프로세스 지원 구성 <br/><br/>\
+3. 조직 생명주기(<font color = "red">관재프조</font>) <br/>\
+- Management : 프로젝트 관리자가 이행 활동 포함 프로세스 <br/>\
+- Improvement : 조직단위 수행되는 프로세스 정의, 전개, 심사, 개선 위한 프로세스 <br/>\
+- Reuse : 조직의 재사용 프로그램 체계적 활용 프로세스 <br/><br/>\
+* 인포레버 116회 응용 1교시 16번\
 ',
 
 // CAR
