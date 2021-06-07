@@ -19,6 +19,7 @@ var question = question.concat(
 '[Layer3]- 패킷데이터 네트워크 계층 오류',
 '[Layer3]- 라우팅',
 '[Layer3]- 거리벡터 라우팅',
+'[Layer3]- 링크스테이트 라우팅',
 '[Layer4]- TCP',
 '[Layer4][TCP]- DTLS',
 '[Layer4][TCP]- TLS',
@@ -470,7 +471,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 // 거리벡터 라우팅
 '# 정의 : 일정 시간 / 라우팅 정보 교환 / 최적 경로 설정 라우팅 방식 <br/>\
-- 일정시간 마다 이웃에 위치한 라우터와 라우팅 테이블의 정보를 교환해 최적의 경로 설정 라우팅 방식 <br/><br/>\
+- 각 라우터가 인접한 라우터와 경로교환을 주기적 갱신정보로 라우팅 경로 결정 기법 <br/><br/>\
 # 특징 <br/>\
 - 분산적 : 각 노드 직접 연결 계산, 이웃 알림<br/>\
 - 반복적 : 라우팅 정보 반복 수신 <br/>\
@@ -485,6 +486,15 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 알고리즘 <br/>\
 - RIP : 라우터 경로값, 자신 경로값 비교 갱신 <br/>\
 - IGRP : 전송 능력, 지연 시간, 회선 사용률, 신뢰성, 로드밸런싱 기반 설정 <br/><br/>\
+# 특징 <br/>\
+- 경로 설정 방법 : Hop 기반 라우터 거리 계산 <br/>\
+- 알고리즘 : 벨만포드 <br/>\
+- 라우팅 테이블 정보 : 아웃 라우팅 정보 <br/>\
+- 프로토콜 : RIP, IGRP <br/>\
+- Routing 구성 : 최대 15 Hop 이내 범위 <br/>\
+- NW 환경 : 소규모 NW 환경 구성 <br/>\
+- 장점 : 라우팅 테이블 크기 감소, 구성 간단, 단순 알고리즘 <br/>\
+- 단점 : 대역폭 낭비, Coverage Time 느림 <br/><br/>\
 # 거리벡터 한계점인 루핑 해결방안 <br/>\
 - Maximum Hop Count : 최대 Hop Count를 15로 설정 <br/>\
 - Hold Down Timer : 타이머 종료할 때, 정성경로 처리만 Update <br/>\
@@ -492,6 +502,20 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Route Poisoning : 다운 네트워크 값 메트릭 16 고정, 무시 <br/>\
 - Poison Reverse : Split Horizon, Route Poisoning 혼합 방법 <br/><br/>\
 * 124회 관리 1교시 11번\
+',
+
+// 링크스테이트 라우팅
+'# 정의 : 토폴로지 DB, SPF / 라우팅 경로 결정 기법 <br/>\
+- 한 라우터가 목적지까지 모든 경로를 알고 토폴로지 DB 기반 SPF 이용한 라우팅 경로 결정기법 <br/><br/>\
+# 특징 <br/>\
+- 경로 설정 기법 : 다른 라우터까지 최단 경로 계산 <br/>\
+- 알고리즘 : 다익스트라 <br/>\
+- 라우팅 테이블 정보 : 네트워크 전체 <br/>\
+- 프로토콜 : OSPF, EIGRP <br/>\
+- Routing 구성 : 최소 경로 Routing Area, Back Bone Area <br/>\
+- NW 환경 : 대규모 및 BGP의 Inter-AS 연결 <br/>\
+- 장점 : Coverage 빠름, Overhead 감소 <br/>\
+- 단점 : 라우팅 테이블 증가, CPU 부하 발생 \
 ',
   
 // TCP
