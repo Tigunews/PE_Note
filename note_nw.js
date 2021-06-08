@@ -138,38 +138,31 @@ var answer = answer.concat(
 # 계층별 설명 <br/>\
 <img src = "./img/OSI7Layer.png" style = "max-width:100%; height:auto;"><br/><br/>\
 7. 응용 (응용)<br/>\
-- 세부내용 : 응용프로그램, 사용자간 인터페이스 <br/>\
-- 역할 : 사용자와 NW간의 연결 <br/>\
+- 사용자, NW 간 연결 / 데이터 생성 <br/>\
 - 프로토콜 : FTP, SMTP, SNMP, Telnet, DNS, HTTP <br/>\
 - PDU : Message <br/><br/>\
 6. 표현 (응용)<br/>\
-- 세부내용 : 응용, 세션 계층간 통신을 위한 표현/변환 <br/>\
-- 내용 : 데이터 형식 규정 <br/>\
+- 데이터 형식 규정 <br/>\
 - 프로토콜 : JPEG, MPEG, XDR, SMB <br/>\
 - PDU : Message <br/><br/>\
 5. 세션 (응용)<br/>\
-- 세부내용 : 대화 구성, 제어 <br/>\
-- 역할 : 인증 및 서비스 제공 <br/>\
+- 인증 및 서비스 제공 <br/>\
 - 프로토콜 : RTP, NetBIOS, RARP, X.26 <br/>\
 - PDU : Message <br/><br/>\
 4. 전송 (전송)<br/>\
-- 세부내용 : 종단간 투명 통신 <br/>\
-- 역할 : 프로세스간 데이터 전송 <br/>\
+- 프로세스 간의 데이터 전송 <br/>\
 - 프로토콜 : TCP, UDP <br/>\
 - PDU : Segment <br/><br/>\
 3. 네트워크 (인터넷)<br/>\
-- 세부내용 : 연결관리, 교환 <br/>\
-- 역할 : 데이터 경로 설정 <br/>\
+- 데이터 경로설정 스위칭, 라우팅 <br/>\
 - 프로토콜 : IP, ICMP, IGMP <br/>\
 - PDU : Packet <br/><br/>\
 2. 데이터링크 (네트워크 액세스)<br/>\
-- 세부내용 : 신뢰성 <br/>\
-- 역할 : 네트워크 기기간 데이터 전송 <br/>\
+- 네트워크 기기 간의 데이터 전송 <br/>\
 - 프로토콜 : ARP, RARP, X.25<br/>\
 - PDU : Frame <br/><br/>\
 1. 물리 (네트워크 액세스)<br/>\
-- 세부내용 : 기계적, 전기적, 기능적, 절차적 <br/>\
-- 역할 : 시스템간 물리적 연결 <br/>\
+- 시스템 간 물리적 연결, 전기 신호 변환 <br/>\
 - Ethernet, IEEE802, RS-232C <br/>\
 - PDU : Bit <br/><br/>\
 * 124회 관리 3교시 5번 <br/>\
