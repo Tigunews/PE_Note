@@ -4241,7 +4241,7 @@ P 히스토그램 : Data 분포 <br/>\
 2. 지원 생명주기(<font color = "red">S</font>) <br/>\
 - Support : 다른 프로세스 지원 구성 <br/><br/>\
 3. 조직 생명주기(<font color = "red">MIR</font>) <br/>\
-- Management : 프로젝트 관리자가 이행 활동 포함 프로세스 <br/>\/
+- Management : 프로젝트 관리자가 이행 활동 포함 프로세스 <br/>\
 - Improvement : 조직단위 수행되는 프로세스 정의, 전개, 심사, 개선 위한 프로세스 <br/>\
 - Reuse : 조직의 재사용 프로그램 체계적 활용 프로세스 <br/><br/>\
 * 인포레버 116회 응용 1교시 16번\

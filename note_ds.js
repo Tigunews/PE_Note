@@ -25,7 +25,7 @@ var question = question.concat(
 '[IoT Platform]- OPC UA',
 '[4차산업]- Smart Hospital',
 '[4차산업]- Smart Car',
-'자율주행자동차',
+'자율주행 자동차',
 '[자율주행]- 트롤리 딜레마',
 '[자율주행]- 모랄머신',
 '[자율주행]- 군집주행 (Platooning)',
@@ -876,20 +876,26 @@ var answer = answer.concat(
 - 애플 : 실내 스크린, VR 헤드셋 사용 자율주행 차량용 VR 시스템 특허 \
 ',
   
-// 자율주행자동차
+// 자율주행 자동차
 '# 정의 : 최첨단 자동차 / 상황인식 / 정보파악 / 기계제어 / 스스로 주행 <br/>\
 - 센서를 통한 상황인식, 전자제어장치 등에서 그 상황에 대한 정보를 파악,판단 기계장치들을 제어,스스로 주어진 목적지까지 주행하는 기능을 가진 최첨단 자동차 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/SelfDrivingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SelfDriving.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
 1. 상황인지 <br/>\
 - 내외부상황인지 : Ultrasonic Wave, 스마트 카메라, 레이더, 라이다 <br/>\
-- 내부 정보교환 통신 : CAN, Flexlay, LIN, MOST <br/>\
-- 외부정보교환 통신 : Wifi, LTE, DSRC, WAVE(5.9Ghz, IEEE1609) <br/><br/>\
+- 내부 정보교환 통신 : CAN(고속), Flexlay, LIN(저속), MOST <br/>\
+- 외부정보교환 통신 : V2X, Wifi, LTE, DSRC, WAVE(5.9Ghz, IEEE1609) <br/>\
+- 센서기술 : 레이더, 라이다, 카메라, 초음파, GPS <br/><br/>\
 2. 상황판단 측면의 자율주행 핵심기술 <br/>\
-- 수집정보해석, 상황판단 : ECU, DSP, MCU, AI <br/>\
+- 수집정보해석, 상황판단 : ECU, DSP, MCU, AI, ADAS(크루즈, 후진주차, 물체인식, 졸음방지, 주행이탈) <br/>\
 - 정밀위치기반 경로생성 : HD Map, MMS, GPS<br/><br/>\
 3. 차량제어 <br/>\
 - 관리 및 제어 : OS, FS, DB <br/>\
-- 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator <br/><br/>\
+- 차량제어/제동/조향 : ABS, ESC, MDPS, Actuator, MCU, DCU <br/><br/>\
+# 보안 표준 <br/>\
+- IEEE 1609.2, IEEE 26262, CAMP VSC3, AUTO SAR <br/><br/>\
 # Level (<font color = "red">비운부 조고완</font>)<br/>\
 <img src = "./img/AutomationCarLevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * LIN(Local Interconnect Network) : 차량용 LAN Protocol <br/>\
