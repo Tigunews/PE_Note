@@ -2025,9 +2025,11 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 '# 정의 : 보안 허점 / 악의적 명령 실행 / 비정상 조작 공격 기법 <br/>\
 - 응용 프로그램 보안상의 허점을 의도적으로 이용해, 악의적인 명령어를 실행되게 함으로써 정상적인 프로그램을 비정상적으로 조작하는 공격 기법 <br/><br/>\
 # 유형 <br/>\
-- SQL Injection : SQL Query 문 논리적 오류 이용 공격 <br/>\
+1. SQL Target <br/>\
+- SQL Injection : SQL Query / Blind, Timebased Injection<br/>\
 - Blind SQL Injection : Query 결과 따른 서버 참,거짓 결과 이용 공격 <br/>\
-- LDAP Injection : 웹 어플리케이션 악의적 LDAP 문법 이용 서버 의도 않는 동작 실행 <br/>\
+- LDAP Injection : 웹 어플리케이션 악의적 LDAP 문법 이용 서버 의도 않는 동작 실행 / Error Based Injection<br/><br/>\
+2. Process Target <br/>\
 - DLL Injection : 다른 프로세스 주소 공간 내에서 DLL 강제 로드 코드 실행 <br/><br/>\
 # 대응방안 <br/>\
 1. 시큐어 코딩 단계 <br/>\
@@ -2039,8 +2041,18 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - SQL Injection 취약점 검사 툴 : 수동, 자동 점검 <br/><br/>\
 3. 대응 조치 단계 <br/>\
 - 백업본 이용 복구 : 백업 시점 이후 자료 유실 발생 <br/>\
-- 컬럼 단위 복구 : 직접 사용전, 문제 없는지 사전 환경 구축 후 테스트 <br/>\
-- 일괄 스크립트 사용 복구 : 직접 사용전 문제 없는지 사전 환경 구축후 테스트 진행 <br/><br/>\
+- 컬럼 단위 복구 : 악성 코드 문자열 SQL 적용, 제거 <br/>\
+- 일괄 스크립트 사용 복구 : 컬럼 단위 시간적 문제 해결 <br/><br/>\
+<hr width = "100%" color = "green"  noshade/>
+# 대응방안 2 <br/>\
+1. 관리적 <br/>\
+- 보안 내재화 : Secure SDLC / Seven Touch Point, MS SDCL <br/>\
+- Security by Design : DevSecOps, DevTestOps <br/>\
+- 교육 : 인식함양, 기술교육, 보안 진단, 모의 침투 <br/><br/>\
+2. 기술적 <br/>\
+- Agent 강화 : 보안 솔루션(IDS/IPS, WAF), L7 Switch(NGFW), Framework Filtering <br/>\
+- Secure Coding : 입력값 필터링, Prepared Statement 함수 <br/>\
+- API/JS 필터 강화 : 검증된 API, Javascript 활용, Buy Bounding(공개 보안 진단) <br/><br/>\
 * 124회 관리 2교시 6번\
 ',
 
