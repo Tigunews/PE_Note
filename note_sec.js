@@ -847,18 +847,21 @@ var answer = answer.concat(
 <img src = "./img/IDS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 특징 <br/>\
 - Positive, Reactive 탐지 <br/>\
-- 선 패턴 등록 후 반응 <br/>\
+- 선 패턴 등록 후 반응 <br/><br/>\
+# 탐지/차단 <br/>\
 - 목적 : 침입 여부 탐지 <br/>\
 - 방법 : 시그니처 DB 기반 패턴 매칭 (Known) <br/>\
 - 패킷 공격 : 첫번째 공격 방어 어려움 <br/>\
 - Zero Day Attack : 방어 곤란 <br/>\
-- 대응 방법 : 관리자 경고, 방화벽 Rule 변경 <br/>\
-- 연결 방법 : Mirror (TAP, Switch) <br/>\
-- 차단 방법 : Reset Signal, 방화벽 연동 <br/>\
 - One Way Attack : 탐지 <br/>\
 - DDoS, DoS 차단 : 탐지 <br/>\
-- 서비스 중단시 장애극복 : 무관 <br/>\
 - Worm Virus : 탐지 <br/>\
+- 차단 방법 : Reset Signal, 방화벽 연동 <br/><br/>\
+# 구축/운영 <br/>\
+- 대응 방법 : 관리자 경고, 방화벽 Rule 변경 <br/>\
+- 연결 방법 : Mirror (TAP, Switch) <br/>\
+- 설치 위치 : 코어 네트워크 설치 <br/>\
+- 서비스 중단시 장애극복 : 무관 <br/>\
 - 장점 : 모든 패킷 자체 탐지 모듈 지원, 네트워크 이상경고 <br/>\
 - 단점 : 방화벽 연동 방어 통한 차단 가능 (독립적 제한) <br/><br/>\
 * 124회 관리 3교시 6번\
@@ -872,17 +875,19 @@ var answer = answer.concat(
 # 특징 <br/>\
 - Active, Proactive 대응 <br/>\
 - 공격전 사전 차단 <br/>\
+# 탐지/차단 <br/>\
 - 목적 : 침입방지, 탐지 후 적극적 대응 <br/>\
 - 분석방법 : Rule DB 기반, 비정상 행위 방지 <br/>\
 - 패킷공격 : 공격 방지 가능 <br/>\
-- Zero-Day Attack : 일부 가능 <br/>\
-- 대응 방법 : 자원 접근 차단(Unkown) <br/>\
-- 연결 방법 : In-lIne <br/>\
-- 차단 방법 : 자체 차단 <br/>\
 - One-Way Attack : 탐지/차단 <br/>\
 - DDoS, DoS 차단 : 탐지/차단 <br/>\
-- 서비스 중단시 장애 극복 : FoD(Fail Over Device) 통한 장애 대응 <br/>\
+- Zero-Day Attack : 일부 가능 <br/>\
 - Worm Virus : 탐지/차단 <br/>\
+- 차단 방법 : 자체 차단 <br/><br/>\
+# 구축/운영 <br/>\
+- 대응 방법 : 자원 접근 차단(Unkown) <br/>\
+- 연결 방법 : In-lIne <br/>\
+- 서비스 중단시 장애 극복 : FoD(Fail Over Device) 통한 장애 대응 <br/>\
 - 장점 : 모든 패킷 대해 자체 탐지, 차단, 보호 <br/>\
 - 단점 : Transparent Mode 운영, NAT등 방화벽 고유 기능지원 불가 <br/><br/>\
 * 124회 관리 3교시 6번\
