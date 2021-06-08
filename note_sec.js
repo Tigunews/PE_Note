@@ -811,8 +811,24 @@ var answer = answer.concat(
 // NAC
 '# 정의 : Endpoint NW 접근 시도 / 확인 / 차단 / 네트워크 접근제어 시스템 <br/>\
 - 사용자 Endpoint(PC, 노트북 등)의 NW 접근 시도시 사전 승인여부 및 보안 정책 준수 여부를 확인하고, NW 접속을 승인 또는 차단하는 네트워크 접근제어 시스템 <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/NAC.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/NAC_Mechanism.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 사용자 PC Agent : PC 보안 정보 수집, 정책관리 서버에 전송 <br/>\
+- 정책관리 서버 : 무결성 검사(방화벽, OS, 백신, 업데이트), 네트워크 접근 정책 결정 <br/>\
+- 정책실행 장비 : 단말 차단, 허용, 격리 정책 실행(라우터, 스위치, 방화벽, IPS, OS, SW등) <br/><br/>\
+# Process <br/>\
+- 네트워크 인증 (IEEE 802.1x 인증) : 사용자 인증, 단말기 인증 <br/>\
+- 격리 및 치료 : 인증 실패시 별도 치료 네트워크 이동 <br/>\
+- 권한 통제 : 사용자,조직,그룹별 자산 접근 권한 통제 <br/>\
+- 위협 모니터링, 탐지 : 확산 방지, 위협 모니터링 및 탐지, 격리 치료 <br/>\
+- NAC 정책 관리 : 사용자/조직/그룹 별 인증/격리/차단/권한 정책 관리 <br/><br/>\
+# 구현 방식 <br/>\
+- (2) 802.1x : PEAP, MD5, EAPOL / Switch 지원, 보안지원 확인 불가 <br/>\
+- (2) VLAN : 802.1q, Tagged VLAN / 허가 비허가 VLAN 설정 <br/>\
+- (3) ARP : RARP, Gratuitous ARP / ARP Table 조작 및 차단 구현 <br/>\
+- (7) SW Agent : Security Policy Monitoring / 최신 백신, OS Update <br/>\
+- (2) DHCP : Captive portals, Quarantine / MAC Address 기반 DHCP Pool 설정 <br/><br/>\
 # 기능 <br/>\
 - 정책 라이프사이클 관리 : 제품, 모듈 추가 없이 시나리오 정책 적용 <br/>\
 - 프로파일 생성 : 악성 코드 피해 발생전, 사용자 인식 자료 생성 <br/>\
