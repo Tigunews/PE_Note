@@ -69,6 +69,7 @@ var question = question.concat(
 'Tiny OS',
 'Nano Qplus',
 'NAND Flash Memory',
+'UFS',
 'CPU',
 '뉴로모픽',
 '[CPU]- MajorState',
@@ -1356,6 +1357,20 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 소형화, 대용량화 -> 모바일 및 전자제품 저장기기로 사용 <br/>\
 - 속도 느림 (NOR Flash Memory는 속도 빠름) <br/><br/>\
 <img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;">\
+',
+
+// UFS
+'# 정의 : 풀 듀플랙스 / 모바일 App / 전기 I/F 표준 <br/>\
+- MicroSD에 비해 5배 이상의 속도가 가능하며, 풀 듀플렉스(읽기/쓰기) 방식을 채택한 모바일 애플리케이션 전기 인터페이스 및 기기 신세대 표준 <br/><br/>\
+# 인터페이스 구조 <br/>\
+- 차등신호 : 높은 잡음 여유도 <br/>\
+- 직렬 인터페이스 기술 : 저전력 저 전압 고속 신호<br/>\
+- MIPI : Mobilie Industry Processor IF <br/><br/>\
+# Protocol <br/>\
+- SCSI : 다중 스레드, 동시 명령, 대기열 제공<br/>\
+- UniPro : I/O 오류 자동 감지 복구<br/>\
+- M-PHY : 안정적 데이터 전송 <br/><br/>\
+* ITPE 합숙 124회 3일차 1교시 3번\
 ',
   
 // CPU

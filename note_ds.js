@@ -78,7 +78,8 @@ var question = question.concat(
 '[핀테크]- API',
 '[핀테크]- QR코드 기반 결제',
 '[핀테크]- Zero Pay',
-'데이터 주권 이슈',
+'[마이데이터]- 데이터 주권 이슈',
+'[마이데이터]- PDS',
 '아바커스 프로젝트(Project Abacus)',
 '오감기술',
 '멀티 모달',
@@ -1897,6 +1898,16 @@ var answer = answer.concat(
 - 조세 형평성 : Digital Service Tax(DTX) 부과 <br/>\
 - 글로벌 데이터 기업 규제 : 시정조치 명령, 과징금 부과 -> 데이터 공정경쟁 규제 <br/><br/>\
 * 124회 관리 2교시 1번\
+',
+
+// PDS
+'# 정의 : 개인 데이터 / 지원 저장소<br/>\
+- 개인이 안전하고 구조화된 방법으로 자신의 주요 데이터를 저장, 관리, 활용할 수 있도록 지원하는 저장소 <br/><br/>\
+# 구성요소 <br/>\
+- Unit : 여러 Cell Hosting Server / https://personium.example/ <br/>\
+- Cell : 데이터 주체 위한 데이터 저장소 / https://john.personium.example/ <br/>\
+- Box : 각 셀에 설치된 앱 별 데이터 저장소 / https://john.personium.example/schedule/ <br/><br/>\
+* ITPE 합숙 124회 3일차 1교시 2번\
 ',
   
 // 아바커스 프로젝트
