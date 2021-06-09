@@ -242,24 +242,17 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 '# 정의 : 신뢰성 확보 위한 통신 에러 제어 기법 <br/>\
 - 데이터링크(hop to hop, 라우터), 전송계층(peer to peer) 에러제어 <br/>\
 - 디지털 데이터 송수신 데이터가 외부간섭, 노이즈, 시간지연 등에 의해 변형, 손실, 순서 어긋남 등의 통신 장애에부터 통신 오류의 검출, 복구, 정정등 데이터 통신에서 신뢰성을 확보하기 위한 통신 에러 제어 기법 <br/><br/>\
-# 발생원인 <br/>\
-- 감쇠(Attenuation) : 거리증가 인한 신호 약해지는 현상 <br/>\
-- 지연왜곡(Delay Distortion) : 한 전송매체에 여러 신호 전달시 주파수 따라 속도 달라짐, 유선 다발<br/>\
-- 상호 변조 잡음(Intermodulation Noise) : 서로 다른 주파수 한 전송매체 공유시 주파수 간 합이나 차로 인해 새로운 주파수 생성되는 현상 <br/>\
-- 충격잡음(Impluse Noise) : 번개와 같은 외부 충격이나 기계적 통신 시스템에서의 결함등 발생되는 잡음 <br/><br/>\
+# 발생원인 (<font color = "red">감지상충</font>)<br/>\
+- 감쇠(Attenuation) : <font color = "red">거리증가</font> 인한 신호 약해지는 현상 <br/>\
+- 지연왜곡(Delay Distortion) : 한 전송매체에 여러 신호 전달시 <font color = "red">주파수 따라</font> 속도 달라짐, 유선 다발<br/>\
+- 상호 변조 잡음(Intermodulation Noise) : 서로 다른 주파수 한 전송매체 공유시 <font color = "red">주파수 간</font> 합이나 차로 인해 새로운 주파수 생성되는 현상 <br/>\
+- 충격잡음(Impluse Noise) : 번개와 같은 <font color = "red">외부 충격</font>이나 기계적 통신 시스템에서의 결함 등 발생되는 잡음 <br/><br/>\
 # 방식 <br/>\
-1. FEC (순방향 오류 정정,검출) <br/>\
-- Parity Check <br/>\
-- Check sum <br/>\
-- Block sum Check <br/>\
-- 해밍거리 : 비교되는 두 패킷의 2진 비트수에서 일치 않는 개수 <br/>\
-- CRC <br/><br/>\
-2. BEC (후방향 오류 정정) : ARQ(자동 재전송 요구) <br/>\
-- Stop and Wait : 하나의 프레임 단위 송/수신 후 오류 검사 (Ack, Nak) <br/>\
-- Go-Back-N : 프레임 순서 동일 / Sliding Window / 오류 패킷 이후 재전송  요구  <br/>\
-- Selective Repeat : 프레임 순서 상관 없음 / Sliding Window / 오류발생 프레임만 재전송 요구 <br/><br/>\
-* Sliding window : 두 개의 네트워크 호스트간의 패킷의 흐름을 제어하기 위한 방법. 윈도우에 포함하는 모두 패킷을 전송하고 패킷 전달이 확인(Ack)되면 윈도를 슬라이딩하여 다음 패킷을 연속적으로 전송 <br/>\
-* Window 는 Buffer 크기 <br/><br/>\
+1. FEC <br/>\
+- Hamming Code, Read-Solomon Code, Convolutional Code, Turbo Code <br/><br/>\
+2. BEC <br/>\
+- (검출) Parity Check, Block Sum, CRC <br/>\
+- (재전송) Stop N Wait, Go Back N, Selective Repeat <br/><br/>\
 * 그리타\
 ',
   
