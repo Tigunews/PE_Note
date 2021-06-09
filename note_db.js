@@ -57,6 +57,7 @@
 '[DBMS 최적화]- Optimizer',
 '[DBMS 최적화]- Data Block Access',
 '[DBMS 최적화]- Parallel Operation',
+'Database View',
 'ERD',
 '관계형 데이터 모델',
 '연결함정',
@@ -1294,6 +1295,24 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 3. Hint 기능 사용 <br/>\
 - Select <u><b/>parallel(column, 20)</b></u> From table_name; <br/><br/>\
 * 라이지움 86회 4교시 5번\
+',
+
+// Database View
+'# 정의 : 가상 테이블 <br/>\
+- 이미 존재하는 하나 혹은 그 이상의 테이블에서 원하는 데이터만 정확히 가져올 수 있도록 미리 원하는 칼럼만 모아 가상적으로 만든 테이블 <br/><br/>\
+# 목적 <br/>\
+- 보안성 : 특정 테이블 컬럼 감추어 직접 접근 방지 <br/>\
+- 편의성 : 미리 조인한 뷰 제공, 사용자는 간단한 SQL문 사용 <br/>\
+- 성능향상 : 수행 속도, SQL 성능 향상 및 임시적 작업 위해 활용 <br/><br/>\
+# 종류 <br/>\
+- 시스템 뷰 : 테이블 제약, 색인 등 대한 정보 열람 가능 <br/>\
+- 인덱스된 뷰 : 성능 향상 위해 사용 <br/>\
+- 분할된 뷰 : 여러대 SQL 서버에 테이블 나누어 저장 <br/><br/>\
+# 사례 <br/>\
+- 수정, 생성 : CREATE OR REPLACE VIEW "view name" AS SELECT "filed1" "field2" FROM ... <br/>\
+- 호출 : SELECT * FROM "view name"; <br/>\
+- 삭제 : DROP VIEW "view name"; <br/><br/>\
+* ITPE 합숙 124회 3일차 1교시 1번\
 ',
 
 // ERD
