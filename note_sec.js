@@ -2048,7 +2048,7 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - 백업본 이용 복구 : 백업 시점 이후 자료 유실 발생 <br/>\
 - 컬럼 단위 복구 : 악성 코드 문자열 SQL 적용, 제거 <br/>\
 - 일괄 스크립트 사용 복구 : 컬럼 단위 시간적 문제 해결 <br/><br/>\
-<hr width = "100%" color = "green"  noshade/>
+<hr width = "100%" color = "green"  noshade/>\
 # 대응방안 2 <br/>\
 1. 관리적 <br/>\
 - 보안 내재화 : Secure SDLC / Seven Touch Point, MS SDCL <br/>\
