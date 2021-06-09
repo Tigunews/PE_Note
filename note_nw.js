@@ -335,7 +335,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/CSMACD_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 표준 : IEEE 802.3 <br/>\
 - 구조 : 버스형, 트리형 <br/>\
-- 주요 원리 : 충돌 회피 전략 <br/>\
+- 주요 원리 : 충돌 탐지 전략 <br/>\
 - 특징 : 충돌시 일정시간 대기, 이더넷 기반 널리사용 <br/>\
 - 장점 : 간단, 견고, 대역폭 효율 <br/>\
 - 단점 : 부하시 지연시간 급증, 빈도 따른 충돌 발생 <br/><br/>\
@@ -470,8 +470,8 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 변경 전,후 테이블 정보 비교 <br/>\
 - Hop Count 변경 or 유지 <br/><br/>\
 # 알고리즘 <br/>\
-- RIP : 라우터 경로값, 자신 경로값 비교 갱신 <br/>\
-- IGRP : 전송 능력, 지연 시간, 회선 사용률, 신뢰성, 로드밸런싱 기반 설정 <br/><br/>\
+- RIP : Max Hop Boradcast / 30초 <br/>\
+- IGRP : RIP 단점 보완, 갱신주기, 포트 / 90초 <br/><br/>\
 # 특징 <br/>\
 - 경로 설정 방법 : Hop 기반 라우터 거리 계산 <br/>\
 - 알고리즘 : 벨만포드 <br/>\
@@ -598,12 +598,12 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Dynamic Allocation : 한정된 시간 할당 기법(재사용 자동) <br/>\
 - Manual Allocation : Client IP 네트워크 관리자 할당, DHCP 그 주소 할당 기법 <br/><br/>\
 # 동작절차 <br/>\
-1. 할당(임대) 절차 (DORA) <br/>\
-- Discover : DHCP 서버 찾기 위한 메시지 브로드캐스팅 <br/>\
-- Offer : DHCP 서버 알림 위한 메시지 브로드캐스팅 <br/>\
-- Request : 네트워크 정보 요청 위해 메시지 브로드캐스팅 <br/>\
-- Ack : Request 메시지 수신 후, 응답 메시지 브로드캐스팅 <br/><br/>\
-2. 임대기간 연장 절차 (RA)<br/>\
+1. 할당(임대) 절차 (<font color = "red">DORA</font>) <br/>\
+- Discover : DHCP 서버 <font color = "red">찾기</font> 위한 메시지 브로드캐스팅 <br/>\
+- Offer : DHCP 서버 <font color = "red">알림</font> 위한 메시지 브로드캐스팅 <br/>\
+- Request : 네트워크 <font color = "red">정보 요청</font> 위해 메시지 브로드캐스팅 <br/>\
+- Ack : Request 메시지 수신 후, <font color = "red">응답 메시지</font> 브로드캐스팅 <br/><br/>\
+2. 임대기간 연장 절차 (<font color = "red">RA</font>)<br/>\
 - Request : IP Lease Time 절판시 유니캐스팅 <br/>\
 - Ack : 할당 단말 IP, Subnet, GW, DNS, Lease Time 등 포함 유니캐스팅 <br/><br/>\
 3. IP 주소 반납 절차 <br/>\
