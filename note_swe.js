@@ -1054,6 +1054,7 @@ var answer = answer.concat(
 - 결함트리 분석 : 정성적(Minimal Cut-Set 분석), 정량적(빈도, 확률 기반 Minimal Cut-Set 분석) <br/><br/>\
 # 상세 비교 <br/>\
 <img src = "./img/FMEA_FTA_HAZOP.png", style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SW_Stable.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 1교시 10번 <br/>\
 * 라이지움 88회 응용 4교시 5번 <br/>\
 * KPC 96회 관리 1교시 5번\
