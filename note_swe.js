@@ -56,6 +56,7 @@
 '[소프트웨어 아키텍처][아키텍처 모델]- MVC 모델',
 '[소프트웨어 아키텍처][아키텍처 모델]- MVP 모델',
 '[소프트웨어 아키텍처][아키텍처 모델]- MVVM 모델',
+'[소프트웨어 아키텍처][MVVM]- Vue.js',
 '[소프트웨어 아키텍처][아키텍처 모델]- Pipe & Filter',
 '[소프트웨어 아키텍처][아키텍처 모델]- Batch Process',
 '[소프트웨어 아키텍처][아키텍처 모델]- Blackboard Pattern',
@@ -1419,6 +1420,20 @@ var answer = answer.concat(
 # 특징 <br/>\
 - 장점 : Command, Data Binding으로 View와 의존성 분리 <br/>\
 - 단점 : View Model 설계 어려움 \
+',
+
+// Vue.js
+'# 정의 : 웹 애플리케이션 UI / OSS Progressive JS FW <br/>\
+- 웹 애플리케이션의 사용자 인터페이스를 만들기 위해 사용하는 오픈 소스 프로그레시브 자바스크립으 프레임워크 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/VueJS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- View(DOM) : HTML Tag, Class, Attribute Data Tree <br/>\
+- ViewModel(DOM Listener) : DOM 즉각 반응, 특정 로직 수행 <br/>\
+- Model : 데이터 공간, JS Object 형태 저장 <br/.<br/>\
+# JavaScript Based Framework 비교 <br/>\
+<img src = "./img/AngularReactVue.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 4번\
 ',
  
 // Pipe&Filter Model
