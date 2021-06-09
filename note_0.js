@@ -8,6 +8,9 @@ var this_week_question =
 [
 '',
 
+// 12주차 추가
+'IPv6',
+
 // 11주차 추가
 'RAMI 4.0','ASPICE','안티드론','자율주행 자동차',
 

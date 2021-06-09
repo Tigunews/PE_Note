@@ -696,7 +696,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - HTTP 연결 및 전송 지연을 최소화 하기 위해 TCP+TLS 조합 대신 UDP+TLS 조합을 이용하는 보안 및 향상된 성능을 제공하는 UDP 기반 전송 계층 프로토콜 <br/><br/>\
 # 스택구조 <br/>\
 <img src = "./img/HTTP3Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 동작과정 <br/>\
+# 동작과정 (<font color = "red">CRCRSR CRSR CRRCRSR<br/>\
 <img src = "./img/HTTP3ProtocolAction.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/HTTP3ProtocolConnection.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 1교시 4번\
@@ -794,9 +794,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 // IPv6
 '# 정의 : 128비트 확장 인터넷 프로토콜 주소 <br/>\
 - IPv4의 주소 고갈 문제를 해결하기 위하여 기존의 IPv4 주소 체계를 128비트 크기로 확장한 차세대 인터넷 프로토콜 주소 <br/><br/>\
-# 암기 <br/>\
-- 특징 : 주이보Q플I에 <br/>\
-- 전환 : 듀라,터네,트개 <br/><br/>\
 # 특징 <br/>\
 - 128 Bit 주소 <br/>\
 - 보안 문제 해결 (인증성, 기밀성, 무결성) <br/>\
