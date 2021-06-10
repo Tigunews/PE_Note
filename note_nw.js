@@ -26,6 +26,10 @@ var question = question.concat(
 'DHCP',
 'DNS',
 'IP Tunneling',
+'Web RTC',
+'[Web RTC]- RTP',
+'[Web RTC]- RTSP',
+'[Web RTC]- SCTP',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
 '[Internet]- HTTP/3.0',
@@ -652,6 +656,119 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Handover <br/>\
 - IPv4,6 전환 <br/><br/>\
 * 라이지움 82회 응용 1교시 13번\
+',
+
+// [Web 3.0]- WebRTC
+'# 정의 : No Plugin Service <br/>\
+- Web Realtime Communication <br/>\
+- Google 개발 <br/>\
+- 웹 브라우저 별도 Plugin 없이 실시간 음성, 영상통화, 파일공유 서비스 제공하는 웹 서비스 <br/><br/>\
+# 아키텍처 <br/>\
+- Peer Connection <br/>\
+- 세션관리 <br/>\
+- 음성, 비디오 엔진 <br/>\
+- 전송, 음성/영상 캡처 <br/>\
+- Network I/O 모듈 <br/><br/>\
+# 기술 요소 <br/>\
+1. API : Media Stream, RTCPeerConnection, RTCDataChannel <br/><br/>\
+2. 통신 <br/>\
+- STUN(Session Traversal Utilities for NAT) : 공인 IP, 포트 확인 프로토콜 / 유일 식별정보 반환<br/>\
+- TURN(Traversal Using Relay NAT) : STUN 대안, 네트워크 미디어 중개 서버 이용 <br/>\
+- ICE(Interactive Connectivity Establishment) : P2P 연결 최적 경로 찾아주는 프레임워크 <br/>\
+- SDP(Session Description Protocol) : 해상도, 형식, 코덱등 컨텐츠 초기 인수 설명 프로토콜 <br/>\
+- STRP, JSEP <br/><br/>\
+3. 보안 : TLS/SSL <br/><br/>\
+4. 코덱 : llbc, Isac, Opus, VP8 <br/><br/>\
+5. 지터 : NetEQ, 비디오 지터 버퍼 <br/><br/>\
+# 한계점 <br/>\
+- 브라우저간 호환성 : adapter.js 라이브리 없이 호환성 장담 x <br/>\
+- 표준성 : 시그널링 서버에 대한 명시적 표준 없음 <br/>\
+- UDP 동작 : 속도는 빠르지만, 데이터 손실 발생 가능성 <br/><br/>\
+# 동향 <br/>\
+- MS : Skype for Web Messagin Service (WebRTC 수용) <br/>\
+- Amazon : 태블릿 PC 킨들 파이어에 WebRTC 세션을 통한 기술지원담당자 연결기능 제공 <br/>\
+- FaceBook Linkedin : 기존 FaceBook에서 메신저 분리 <br/>\
+- 하이퍼커넥트 : 국내벤처, 전세계 무료 메시지, 무료 영상 통화<br/>\
+# 개념도 <br/>\
+<img src = "./img/WebRTCOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/WebRTC.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 통신 유형 <br/>\
+<img src = "./img/WebRTC_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 관리 1교시 9번 \
+',
+
+// RTP
+'# 정의 : Stream Data 전송 / E2E Protocol <br/>\
+- Real-time Transport Protocol <br/>\
+- 오디오나 비디오 같은 실시간 스트림 데이터를 전송하기 위한 표준화된 End to End Protocol <br/><br/>\
+# 동작원리 <br/>\
+<img src = "./img/RTP_Mechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Header 구조 <br/>\
+- Version(2bit) : RTP 버전 <br/>\
+- Payload Type(7bit) : Data Type (0=PCM, 3=GSM, 7=LPC, 33=MPEG2) <br/>\
+- Sequence Number(16bit) : RTP Packet마다 1씩 증가하여 전송 <br/>\
+- Time Stamp(32bit) : RTP data packet의 첫 번째 byte의 sampling 시간 <br/>\
+- Synchronization Source Identifier(32bit) : RTP Stream Source 식별자 <br/>\
+- Miscellaneous Fields : 이외 잡다한 필드 <br/><br/>\
+# 특징 <br/>\
+- UDP 동작 : 빠르게 데이터 전달 <br/>\
+- 시간특성 데이터 전송 : 실시간 응용, 시간 정보, 매체 동기화 <br/>\
+- RTCP와 함께 동작 : RTCP 와 함게 QoS, 세션 정보 제공 <br/>\
+- 데이터 포맷 : 오디오(PCM, GSM, MP3, MPEG, H.264) <br/>\
+- 시간정보/동기화 기능 : 
+* 98회 응용 1교시 6번\
+',
+
+// RTSP
+'# 정의 : 스트리밍 서비스 / 요구, 응답, 연결 설정, 스트림 재생 / 제어 담당 프로토콜 <br/>\
+- Real-Time Streaming Protocol <br/>\
+- 인터넷 상 스트리밍 서비스에 있어서, 서비스에 대한 요구, 응답이나 서비스 연결 설정, 스트림 재생과 관련된 각종 제어 담당 프로토콜 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/RTSP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- OPTIONS : 서버 요청 <br/>\
+- DESCRIBE : 미디어 정보 요청 <br/>\
+- SETUP : 미디어 정보 전달 방법 정의 요청 <br/>\
+- PLAY : 미디어 재생 <br/>\
+- PAUSE : 미디어 일시 정지 <br/>\
+- RECORD : 미디어 녹화 <br/>\
+- ANNOUNCE : 실시간 미디어 설명 업데이트 요청 <br/>\
+- TEARDOWN : 미디어 세션 종료 <br/>\
+- GET_PARAMETER : URL 미디어의 변수값 요청 <br/>\
+- SET_PARAMETER : URL 미디어의 변수값 설정 요청 <br/>\
+- REDIRECT : 다른 서버 연결 요청 <br/><br/>\
+# 기술요소 <br/>\
+- UDP : TCP 비해 안정성 떨어짐, 속도 빠름, 데이터 수신여부 미확인 <br/>\
+- RTP : Multi Cast, Uni Cast 에서 음성, 화상, 모의 데이터 E2E Transport 제공 <br/>\
+- SDP : 멀티세션 참여 위한 광고, 실시간으로 멀티미디어 세션 정의 <br/><br/>\
+# RTP RTCP 동작과정 <br/>\
+<img src = "./img/RTP_RTCP.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 123회 2일차 관리 1교시 13번\
+',
+
+// SCTP 
+'# 정의 : TCP 신뢰성 / UDP 실시간성 / 멀티 스트리밍, 멀티 호밍 / RFC2960 표준 프로토콜 <br/>\
+- Stream Control Transmission Protocol <br/>\
+- TCP의 신뢰성 있는 연결 및 전송의 장점과 UDP의 실시간 데이터 전송의 장점을 취한 멀티스트리밍과 멀티호밍을 지원하는 RFC2960 표준의 프로토콜 <br/><br/>\
+# 구조도 <br/>\
+<img src = "./img/SCTP_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Verification Tag : Association별로 할당, 세션 식별자 사용 <br/>\
+- TSN : 세션에 대한 흐름제어 및 오류 복구 위해 사용 <br/>\
+- SSN : 수신단 SCTP에서 Stream 별 순서화 위해 사용 <br/><br/>\
+# 절차 <br/>\
+1. 연결 절차 <br/>\
+- INT > INT-ACK > COOKIE-ECHO > COOKIE-ACK <br/>\
+- COOKIE 이용, TCP-SYN(blind attack) 문제 해결 <br/><br/>\
+2. 종료 절차 <br/>\
+- SHUTDOWN > SHUTDOWN-ACK > SHUTDOWN-CMPL <br/>\
+- TCP의 half-open closing 해결 <br/><br/>\
+# SCTP Muti Streaming, Multi Homing <br/>\
+1. Multi Streaming <br/>\
+- 하나의 세션에 서비스별 다수 스트림 전송 <br/>\
+- TCP의 HOL(Head Of Line) 해결 <br/><br/>\
+2. Multi Homing <br/>\
+- 두개 이상의 인터페이스 다중 경로 지원 <br/><br/>\
+* 116회 응용 1교시 8번 \
 ',
 
 // 인터넷 프로토콜 3단계 주소체계

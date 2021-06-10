@@ -73,6 +73,7 @@
 '[빅데이터][NoSQL]- BASE',
 '[NoSQL]- Spatial DB',
 '[빅데이터]- 빅데이터 개인정보보호 가이드라인',
+'[빅데이터]- Hadoop',
 '[빅데이터]- HDFS',
 '[빅데이터]- 하둡 에코시스템',
 '[빅데이터]- ISO 20547',
@@ -1536,6 +1537,38 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 개인정보 재식별시 조치 : 재식별 될 경우 즉시 파기하거나 추가적인 비식별화 조치하도록 함 <br/>\
 - 민감정보 통신비밀 처리 금지 : 특정 개인의 사상/신념, 정치적 견해등 민감정보의 생성을 목적으로 정보 처리 금지 <br/>\
 - 기술적 관리 보호 조치 : 저장/관리 시스템 기술적 관리\
+',
+
+// Hadoop
+'# 정의 : 분산환경 / 빅데이터 저장 처리 / 자바 기반 / OSS FW <br/>\
+- 분산 환경에서 빅데이터를 저장하고 처리할 수 있는 자바 기반의 오픈소스 프레임 워크 <br/><br/>\
+# 버전 <br/>\
+- Hadoop V1.0(2011) : 병렬 처리, 분산 저장 아키텍처 <br/>\
+- Hadoop V2.0(2012) : Job Tracker Bottle Neck 개선 위해 YARN 도입 <br/>\
+- Hadoop V3.0(2017) : Eraser Coding 도입 / HDFS 데이터 저장 효율성 증가 <br/><br/>\
+<img src = "./img/HDFS_Arcitecture.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 운영요소 <br/>\
+- Name Node : Data Node의 메타정보 관리, 블록 정보 저장 <br/>\
+- Data Node : Slave Node 데이터를 하나 그 이상의 블록에 저장 <br/><br/>\
+2. 기술요소 <br/>\
+- Replication : Data Node간 정보 복제, 분산저장 HA 구현 <br/>\
+- TCP/IP : 모든 HDFS 통신 구조, RPC <br/>\
+- Name Space : 계층적 파일 구조 지원, 호환성 확보 <br/><br/>\
+# Hadoop V3.0 특징 <br/>\
+1. 운영 효율성 측면 <br/>\
+- Erasure Coding : Read Solomon / FT 보장, 저장 공간 효율, 데이터 복제 방식 <br/>\
+- YARN Timeline Service v.2 : Timeline Server / RW HBase 활용 <br/>\
+- MapReduce Task-level native optimization : JNI(Java Native Interface) / Map Collector output 정렬 부분 JNI 호출 구현 <br/><br/>\
+2. 개발 효율성 측면 <br/>\
+- Java Version : JDK8 / Hadoop JAR File Java 8 Compile <br/>\
+- Shell Script Rewrite : UNIX Shell, UNIX Shell API / Hadoop Shell Script Bug Fix, 새로운 기능 추가 <br/>\
+- Support for more than 2 Name Nodes / HA / Active-Standby-Journal (V2(1/1/3) -> V3(1/1이상)<br/><br/>\
+# 국내 활용 동향 <br/>\
+- Digital New Deal : 공간 하둡, 분석결과 시각화 <br/>\
+- Hadoop+GPU Arcitecture : 코로나 19 시뮬레이션 / BONIC GPU + 분산형 컴퓨팅 <br/>\
+- 국민보험 의료 지도 <br/><br/>\
+* ITPE 합숙 124회 3일차 관리 2교시 1번\
 ',
 
 // HDFS

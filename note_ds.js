@@ -11,6 +11,7 @@ var question = question.concat(
 '[Smart Grid]- 보안',
 '[Smart Grid]- Micro Grid',
 '[Smart Grid]- 인터미턴트 컴퓨팅',
+'산업제어시스템',
 '[4차산업]- Smart Factory',
 '[Smart Factory]- MESA 표준기능',
 '[Smart Factory]- ANSI/ISA 95',
@@ -32,6 +33,7 @@ var question = question.concat(
 '[자율주행]- LDM',
 '[자율주행]- C-ITS',
 '[자율주행]- Lidar',
+'[자율주행]- ADAS',
 '안티드론',
 '[정책]- 데이터 거버넌스',
 '[정책]- K뉴딜',
@@ -93,7 +95,6 @@ var question = question.concat(
 '[Web 2.0]- SPA',
 '[Web 3.0]- PWA',
 '[Web 3.0]- Service Worker',
-'[Web 3.0]- WebRTC',
 '[Web 3.0]- React.js',
 '[Web 3.0]- REST',
 '[Web]- XML, JSON',
@@ -540,7 +541,6 @@ var answer = answer.concat(
 - 미국 : 마이크로 그리드 1GW 상용화 <br/>\
 - EU : Grid4EU > NiceGrid(6대 프로젝트) > Issy Grid(프랑스) \
 ',
-
   
 // 인터미턴트 컴퓨팅
 '# 정의 : 전력 수급 불안정 / 에너지 하베스팅 / 신뢰성 보장 동작 컴퓨팅<br/>\
@@ -557,7 +557,34 @@ var answer = answer.concat(
 - 비 휘발성 메모리 변환 : 캐시, 비휘발 특성 혼합 <br/>\
 - 실행 모델 및 프로그래밍 언어 : App 동시성 제어, 안전성 보장 <br/><br/>\
 * KPC 91회 응용 3교시 7번\
-', 
+',
+
+// 산업제어시스템
+'# 정의 : 산업 공정 제어 / 제어, 계측 시스템 <br/>\
+- Industrial Control System <br/>\
+- 산업 공정 제어에 사용되는 여러 유형의 제어 시스템 및 관련 계측 시스템 <br/><br/>\
+# 특징 <br/>\
+- 고가용성 : 전력, 운송, 물, 가스 사회 중요 인프라 / 100% 가용성 요구 <br/>\
+- 벤더 종속성 : 전용 운영체제, 프로토콜 사용 <br/>\
+- 독립성 : 고유 독립망 구성 <br/><br/>\
+# 유형 <br/>\
+- SCADA : 모니터링 용도 / 광범위 분산 형태 <br/>\
+- DCS : 연속 공정 제어 용도 / 지리적 제한 현장 (대규모) <br/>\
+- PLC : 불연속 공정 제어 용도 / 지리적 제한 현장 (소규모)<br/>\
+- ESD : 공장 안전 보장 / 위험 시설 지역에 사용 <br/><br/>\
+# ICS Framework (ISA-99 Perdue 모형) (<font color = "red">EBIMABP</font>)<br/>\
+<img src = "./img/ISA-99.png" style = "max-width:100%; height:auto;"><br/>\
+- 5 : Enterprise <br/>\
+- 4 : Business Planning, Logistics <br/>\
+- 3.5 : Industrial DMZ <br/>\
+- 3 : Manufacturing <br/>\
+- 2 : Area Supervisory <br/>\
+- 1 : Basic Control <br/>\
+- 0 : Process <br/><br/>\
+<font color = "red">* HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
+* PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
+* RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치</font><br/><br/>\
+',
   
 // Smart Factory
 '# 정의 : 자동화 + 지능화 공장 <br/>\
@@ -993,6 +1020,26 @@ var answer = answer.concat(
 - STUD(Static Unitary Detector) : 고해상도 3차원 영상품질 낮은 비용 확보 <br/><br/>\
 # Lidar, Lader 비교 <br/>\
 <img src = "./img/LidarLaderCompare.png" style = "max-width:100%; height:auto;">\
+',
+
+// ADAS
+'# 정의 : 센서 / 환경 인식 / 운전자 경고 / 자동 통제 수행 시스템 <br/>\
+- Adavanced Driver Assistance System <br/>\
+- 다양한 센서를 통해 주행환경을 인식하고 사물 인식 알고리즘의 정밀 분석 결과를 기반으로 주행 중 운전자에게 경고하거나 자동(반자동) 통제를 수행하는 시스템 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/ADAS_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. 인지 <br/>\
+- Lader : 전파 이용 거리, 속도 탐지 <br/>\
+- 카메라 : 외부 정보 수집 <br/><br/>\
+2. 판단 <br/>\
+- ADAS Controller : 시각 및 위치정보 이용, 차량 Actuation System 조정 <br/><br/>\
+3. 응용기술 <br/>\
+- ACC(Adaptive Cruise Control) : 교통환경 속도 조절 기능 <br/>\
+- LDW(Lane Departure Warning) : 차선 이탈 경고 <br/>\
+- LKA(Lane Keeping Assistance) : 차선 이탈 방지 보조, LDW 확장 <br/>\
+- IPAS(Intelligent Parking Assistance System) : 패달만으로 주차 <br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 12번\
 ',
   
 // 안티드론
@@ -2050,45 +2097,6 @@ var answer = answer.concat(
 - Web Push : 웹 통제 <br/>\
 - Offline : 오프라인 컨텐츠 <br/><br/>\
 * 122회 2교시 4번\
-',
-
-// [Web 3.0]- WebRTC
-'# 정의 : No Plugin Service <br/>\
-- Web Realtime Communication <br/>\
-- Google 개발 <br/>\
-- 웹 브라우저 별도 Plugin 없이 실시간 음성, 영상통화, 파일공유 서비스 제공하는 웹 서비스 <br/><br/>\
-# 아키텍처 <br/>\
-- Peer Connection <br/>\
-- 세션관리 <br/>\
-- 음성, 비디오 엔진 <br/>\
-- 전송, 음성/영상 캡처 <br/>\
-- Network I/O 모듈 <br/><br/>\
-# 기술 요소 <br/>\
-1. API : Media Stream, RTCPeerConnection, RTCDataChannel <br/><br/>\
-2. 통신 <br/>\
-- STUN(Session Traversal Utilities for NAT) : 공인 IP, 포트 확인 프로토콜 / 유일 식별정보 반환<br/>\
-- TURN(Traversal Using Relay NAT) : STUN 대안, 네트워크 미디어 중개 서버 이용 <br/>\
-- ICE(Interactive Connectivity Establishment) : P2P 연결 최적 경로 찾아주는 프레임워크 <br/>\
-- SDP(Session Description Protocol) : 해상도, 형식, 코덱등 컨텐츠 초기 인수 설명 프로토콜 <br/>\
-- STRP, JSEP <br/><br/>\
-3. 보안 : TLS/SSL <br/><br/>\
-4. 코덱 : llbc, Isac, Opus, VP8 <br/><br/>\
-5. 지터 : NetEQ, 비디오 지터 버퍼 <br/><br/>\
-# 한계점 <br/>\
-- 브라우저간 호환성 : adapter.js 라이브리 없이 호환성 장담 x <br/>\
-- 표준성 : 시그널링 서버에 대한 명시적 표준 없음 <br/>\
-- UDP 동작 : 속도는 빠르지만, 데이터 손실 발생 가능성 <br/><br/>\
-# 동향 <br/>\
-- MS : Skype for Web Messagin Service (WebRTC 수용) <br/>\
-- Amazon : 태블릿 PC 킨들 파이어에 WebRTC 세션을 통한 기술지원담당자 연결기능 제공 <br/>\
-- FaceBook Linkedin : 기존 FaceBook에서 메신저 분리 <br/>\
-- 하이퍼커넥트 : 국내벤처, 전세계 무료 메시지, 무료 영상 통화<br/>\
-# 개념도 <br/>\
-<img src = "./img/WebRTCOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/WebRTC.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 통신 유형 <br/>\
-<img src = "./img/WebRTC_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 1교시 9번 \
 ',
 
 // [Web 3.0]- React.js

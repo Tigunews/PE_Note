@@ -69,6 +69,7 @@ var question = question.concat(
 'Tiny OS',
 'Nano Qplus',
 'NAND Flash Memory',
+'eMMC',
 'UFS',
 'CPU',
 '뉴로모픽',
@@ -1357,6 +1358,29 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 소형화, 대용량화 -> 모바일 및 전자제품 저장기기로 사용 <br/>\
 - 속도 느림 (NOR Flash Memory는 속도 빠름) <br/><br/>\
 <img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;">\
+',
+
+// eMMC
+'# 정의 : 고속처리 / Controller + NAND / 임베디드 전용 메모리 반도체 <br/>\
+- embedded Multi Media Card <br/>\
+- 데이터 고속처리를 위해 컨트롤러와 NAND Flash Memory를 통합하여 제품에 내장한 임베디드 기기 전용 메모리 반도체 <br/><br/>\
+# 특징 <br/>\
+- 고집적 : 제어칩 캡슐화, 면적 절약 <br/>\
+- 고성능 : Cache, Memory Array / 읽기 쓰기 성능 우수 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/eMMC_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- CLK : 호스트로부터 데이터 전송 동기화 클럭 신호 출력 사용 <br/>\
+- CMD : Host에서 명령어 보내는데 사용 <br/>\
+- DAT[0:7] : Host eMMC간 데이터 전송 사용 <br/>\
+- MMC Controller : NAND Flash Memory 관리 주요 기능 구현 <br/><br/>\
+# 기술요소 <br/>\
+- ECC(Error Chedking & Correction) : 메모리 오류 검출, 위치 계산 오류 정정 <br/>\
+- Wear Leveling : 셀 고루 돌아가면서 읽기/쓰기 기능 <br/>\
+- BBM(Bad Block Management) : 불량 Blcok 관리 기술 / Bad Block Table, 회피 방법 <br/><br/>\
+# 표준별 속도 <br/>\
+<img src = "./img/eMMC_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 13번\
 ',
 
 // UFS
