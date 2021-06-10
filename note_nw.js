@@ -715,7 +715,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 시간특성 데이터 전송 : 실시간 응용, 시간 정보, 매체 동기화 <br/>\
 - RTCP와 함께 동작 : RTCP 와 함게 QoS, 세션 정보 제공 <br/>\
 - 데이터 포맷 : 오디오(PCM, GSM, MP3, MPEG, H.264) <br/>\
-- 시간정보/동기화 기능 : 
+- 시간정보/동기화 기능 <br/><br/>\
 * 98회 응용 1교시 6번\
 ',
 
