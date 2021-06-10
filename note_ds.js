@@ -2856,6 +2856,7 @@ var answer = answer.concat(
 <img src = "./img/ConsensusAlgorithm.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/ConsensusAlgorithmDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 종류 <br/>\
+<img src = "./img/ConsensusAlgorithmFlow.png" style = "max-width:100%; height:auto;"><br/>\
 1. 경쟁방식 <br/>\
 - PoW : 특정 난이도의 작업 수행 증명 <br/>\
 - PoS : 화폐량 우선시 블록 생성 방식 <br/>\
