@@ -2799,7 +2799,7 @@ var answer = answer.concat(
 - 식별성 : 익명성 <br/>\
 - 거래증명 : 사후 알고리즘 결정 <br/>\
 - 합의 알고리즘 : 부분 분기 허용, PoW, PoS <br/>\
-- 사례 : 비트코인 <br/>\
+- 사례 : Bit Coin, Ethereum, Ripple, DASH <br/>\
 <hr width = "100%" color = "green"  noshade/><br/>\
 2. Private <br/>\
 - 개인형 <br/>\
@@ -2816,7 +2816,7 @@ var answer = answer.concat(
 - 식별성 : 식별 가능 <br/>\
 - 거래증명 : 중앙 기관 <br/>\
 - 합의 알고리즘 : 부분분기 허용 x, PBFT, PoET <br/>\
-- 사례 : 링크 <br/>\
+- 사례 : Linq, Fabric, Loopchain <br/>\
 <hr width = "100%" color = "green"  noshade/><br/>\
 3. Consortium <br/>\
 - 반중앙형 <br/>\
@@ -2848,6 +2848,11 @@ var answer = answer.concat(
 // 합의 알고리즘
 '# 정의 : P2P에서 하나의 블록체인 유지하기 위한 기술 <br/><br/>\
 # 원리 <br/>\
+- 신규 블록 생성 : Nonce, Hash Value 생성 및 계산 <br/>\
+- 생성 블록 전파 : 전체 노드 브로드 캐스팅 <br/>\
+- 블록 검증 진행 : 노드 위변조 검증 <br/>\
+- 블록 내 기록 : 이상 없는 경우 기록 <br/>\
+- 포크 발생 대응 : 포크(2개 이상 분기) / 합의, 검증 / 가장 긴 분기 선택 / 무결성, 완전성 유지 <br/>\
 <img src = "./img/ConsensusAlgorithm.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/ConsensusAlgorithmDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 종류 <br/>\
