@@ -1808,7 +1808,7 @@ var answer = answer.concat(
 // File Carving
 '# 정의 : 시그니저 정보 x / 이미지 파일 조각 / 재생 기법 / 하드웨어 포렌식<br/>\
 - 시그니처 정보가 없는 이미지 파일 조각들을 재 조합하여 이미지를 재생하는 기법 <br/><br/>\
-# 종류 (<font color = "red">푸파램구</font>)
+# 종류 (<font color = "red">푸파램구</font>) <br/>\
 - Header/Footer : 파일의 Header, Footer 검색 <br/>\
 - Header/File Size : File size, Block 수치 계산 <br/>\
 - Header/Ram Slack : Header, Ram Slack 검색 <br/>\
