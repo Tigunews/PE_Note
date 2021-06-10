@@ -39,6 +39,7 @@
 '보안이슈, 대응방안',
 'SW 보안 약점',
 'NAC',
+'WNAC',
 'IPS',
 'IDS',
 '[공격기법]- XSS',
@@ -89,7 +90,6 @@
 'Atom Bombing',
 '컴퓨터 포렌식(Computer forensics) = 디지털 포렌식',
 '[포렌식]- 클라우드 포렌식',
-'WNAC',
 '소프트웨어 개발보안 가이드',
 '클라우드 컴퓨팅 보안',
 'CVE',
@@ -818,6 +818,14 @@ var answer = answer.concat(
 - 사용자 PC Agent : PC 보안 정보 수집, 정책관리 서버에 전송 <br/>\
 - 정책관리 서버 : 무결성 검사(방화벽, OS, 백신, 업데이트), 네트워크 접근 정책 결정 <br/>\
 - 정책실행 장비 : 단말 차단, 허용, 격리 정책 실행(라우터, 스위치, 방화벽, IPS, OS, SW등) <br/><br/>\
+# 인증방식 <br/>\
+- Pre-Admission : 사용자 사용전 인증 체크 <br/>\
+- Post-Admission : 특정 트래픽 탐지, 필수 소프트웨어 모니터링 <br/>\
+- Enforcement : 특정 사이트 차단 및 허용 관리 <br/><br/>\
+# 목적 <br/>\
+- 내부 사용자 : 내/외부 네트워크 접근 허용, 불법 AP 사용 여부, PC 보안, 프로그램 감시 <br/>\
+- 정기 방문자 : 외부 사용자 PC 인지, 위협 모니터링, OS, AntiVirus 패치 여부 검사 <br/>\
+- 비인가자 및 단말 : 인증 없이 네트워크 접속 불가능 통제 <br/><br/>\
 # Process <br/>\
 - 네트워크 인증 (IEEE 802.1x 인증) : 사용자 인증, 단말기 인증 <br/>\
 - 격리 및 치료 : 인증 실패시 별도 치료 네트워크 이동 <br/>\
@@ -838,6 +846,13 @@ var answer = answer.concat(
 - 인시던트 대응 : 관리자 확인 없이 차단, 격리, 복구 보안 정책 적용 <br/>\
 - 양방향 통합 : Open/RESTful API 통한 보안 및 네트워크 솔루션 통합 <br/><br/>\
 * 124회 관리 1교시 13번\
+',
+
+// WNAC
+'# 정의 : 무선 NW의 접근 통제 SE솔루션(TTA) <br/>\
+- SE : System Engineering<br/>\
+- Wireless Network Access Control <br/>\
+- NW 접근방식에 무선 공격을 탐지할 수 있는 기능을 추가하여 비인가자의 접근을 차단하는 방법\
 ',
 
 // IDS
@@ -1771,13 +1786,6 @@ var answer = answer.concat(
 - 증거 분석 : 원격 수색제도, 시그니처 전용 분석 툴 <br/>\
 - 개인 정보 : 수집 프로세스 체계 개선, 해외 제공 활동(GDPR) <br/><br/>\
 * ITPE 7회 4교시 3번\
-',
-
-// WNAC
-'# 정의 : 무선 NW의 접근 통제 SE솔루션(TTA) <br/>\
-- SE : System Engineering<br/>\
-- Wireless Network Access Control <br/>\
-- NW 접근방식에 무선 공격을 탐지할 수 있는 기능을 추가하여 비인가자의 접근을 차단하는 방법\
 ',
 
 // 소프트웨어 개발보안 가이드
