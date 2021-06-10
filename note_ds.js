@@ -85,14 +85,14 @@ var question = question.concat(
 '멀티 모달',
 '모션기술',
 'Web 2.0',
-'[Web2.0]- Ajax', 
-'[Web2.0]- CCL',
-'[Web2.0]- Folksonomy',
-'[Web2.0]- Enterprise 2.0',
-'[Web2.0]- Web Syndication',
-'[Web2.0]- SPA',
-'[Web3.0]- PWA',
-'[Web3.0]- Service Worker',
+'[Web 2.0]- Ajax', 
+'[Web 2.0]- CCL',
+'[Web 2.0]- Folksonomy',
+'[Web 2.0]- Enterprise 2.0',
+'[Web 2.0]- Web Syndication',
+'[Web 2.0]- SPA',
+'[Web 3.0]- PWA',
+'[Web 3.0]- Service Worker',
 '[Web 3.0]- WebRTC',
 '[Web 3.0]- React.js',
 '[Web 3.0]- REST',
@@ -106,6 +106,7 @@ var question = question.concat(
 '모바일 컨시어지(Mobile Concierge)',
 'NUI',
 '제로 UI',
+'감정 인식 기술',
 '데이터브로커',
 '가상화',
 '가상머신, 컨테이너',
@@ -2283,6 +2284,21 @@ var answer = answer.concat(
 - 홈어시스턴트 : 아마존 에코, 구글 홈, SKT 누구 <br/>\
 - 상황인지 기반 제로UI : 네스트 온도 조절기, 줄리(스마트 플러그), 알바(조명 조절) <br/><br/>\
 * 스크린기반 UI-> 제로 UI \
+',
+
+// 감정 인식 기술
+'# 정의 : 센싱, 딥러닝, 데이터베이스 / 음성, 표정, 생체신호, 뇌파 / 감정 읽어내는 기술<br/>\
+- 센싱, 딥러닝, 데이터베이스 기술이 융합되어 사람의 음성, 표정, 생체신호, 뇌파 등을 통해 감정을 읽어내는 기술 <br/><br/>\
+# 기술요소 <br/>\
+1. 동영상 기반 <br/>\
+- 얼굴 인식 : AAM(Active Appearance Model- PCA), Gabor Wavelet(표정 변화 벡터) <br/>\
+- 데이터 셋 : CK+(감정 영상), AFEW(일상 상황 동영상) <br/>\
+- 딥러닝 : CNN(Convolution, Pooling), LSTM(Frame 시간 연속성) <br/><br/>\
+2. 음성 기반 <br/>\
+- Arousal Valance Model(활동, 비활동성), SVM(집단 분리 Hyper Plane) <br/><br/>\
+3. 생체신호 기반 <br/>\
+- Rule-Based(특징값 추출, 분류/판별), ML <br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 5번\
 ',
 
 // 데이터브로커

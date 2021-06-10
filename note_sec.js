@@ -167,6 +167,7 @@
 '[Cloud 보안]- CSPM',
 '[Cloud 보안]- CASB',
 '사이버 레질리언스',
+'Reverse Turing Test',
 );
 
 var answer = answer.concat(
@@ -3377,5 +3378,20 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 사이버 보안, 레질리언스 비교 <br/>\
 <img src = "./img/CyberSecurityCyberResilienceCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 2일차 관리 1교시 4번\
+',
+
+// Reverse Turing Test
+'# 정의 : 사람, 컴퓨터 구별 사용 기술 <br/>\
+- 어떤 사용자가 실제 사람인지 컴퓨터 프로그램인지를 구별하기 위해 사용되는 기술 <br/><br/>\
+# 종류 / 라이선스 주체 <br/>\
+- CAPTCHA : 임의 문자, 숫자 / 무료 / 카네기 멜론(2000) <br/>\
+- reCAPTCHA : 고문서 단어 + 컴퓨터 단어 / 고문서 프로젝트 / 카네기 멜론(2007) <br/>\
+- noCAPTCHA reCAPTCHA : 나는 로봇이 아니다 / 사진 제시 / 구글(2014) <br/><br/>\
+# 절차 <br/>\
+- 임의 숫자/문자 생성 : 컨텐츠/게시판 접근시 입력할 문자/숫자 임의 생성 <br/>\
+- 의도적 왜곡 추가 : 생성된 문자/숫자 의도적 비틀거나 변형 <br/>\
+- 입력 : 사용자가 생성된 문자 확인 후 입력 <br/>\
+- 판별 : 승인/거부 판단 <br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 6번\
 ',
 );

@@ -82,6 +82,7 @@
 '[MSA]- EAI',
 '[MSA]- ESB',
 '[MSA]- Service Mesh',
+'GraphQL',
 '[설계단계]- Shared Nothing 아키텍쳐',
 '[설계단계]- Breadcrumbs',
 '[구현단계]- 디자인패턴',
@@ -375,6 +376,7 @@
 '[감리]- 유지보수 감리',
 '[감리]- 감리기준 감리업무 절차',
 '[감리]- 정보시스템 하드웨어 규모산정 지침',
+'[감리]- 상주감리',
 'PMBOK 6th 주요개정 내용',
 '지식영역별 세부 프로세스 49개',
 '발주 프로세스',
@@ -1816,6 +1818,28 @@ var answer = answer.concat(
 # Service Meseh, MSA 비교 <br/>\
 <img src = "./img/ServiceMeshAPIGateway.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 88회 응용 1교시 11번\
+',
+
+// GraphQL
+'# 정의 : 웹 클라이언트 / 데이터 Get / Client 작성, 호출 Query Langauge <br/>\
+- Facebook에서 만든 웹 클라이언트에서 데이터를 서버로부터 효율적으로 가져오기 위한 목적을 지닌 클라이언트에서 작성하고 호출하는 쿼리 언어 <br/><br/>\
+# 특징 <br/>\
+- Client 데이터 요청 : 일반-Backend / GraphQL-Client 직접 호출 <br/>\
+- 신속성 : CI/CD <br/>\
+- 성능 향상 : 다양한 기기 대한 BackEnd 부담 절감 <br/><br/>\
+# 아키텍처, 파이프라인 <br/>\
+<img src = "./img/GraphQLOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Query/Mutation : R / CUD 요청 구문 <br/>\
+- 스키마 / 타입 : Type 사전 작업 <br/>\
+<img src = "./img/GraphQLScheme.png" style = "max-width: 100%; height: auto;"><br/>\
+- Resolver : 실제 데이터 처리, 개발자 구현 방식 <br/>\
+<img src = "./img/GraphQLResolver.png" style = "max-width: 100%; height: auto;"><br/>\
+- Instropection : 스키마 실시간 정보 공유 <br/><br/>\
+# 장,단점 <br/>\
+- 장점 : 쉽고 유연한 구현, 타입기반, 활발한 커뮤니티, FrontEnd 적용 효과적 <br/>\
+- 단점 : 캐싱, 예외처리 불편, Node.js 기반, 높은 러닝 커브, Backend Tool 부족 <br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 9번\
 ',
 
 // Shared Nothing Architecture
@@ -5922,6 +5946,7 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
   
 // 정보시스템 감리
 '# 정의 : 3자 관점의 검증활동 <br/>\
+- 프로젝트의 품질 향상 목적 <br/>\
 - 감리발주기관 및 피감리인의 이해관계로부터 독립된자가 제3자적 관점에서 정보시스템의 효율성을 향상시키고 안전성을 확보하기 종합적으로 점검하고 문제점을 개선하도록 하는 활동 <br/><br/>\
 # 감리대상 (전자정부법 57조) (<font color = "red">대공5필</font>) <br/>\
 - 의무감리 : 사업비 <font color = "red">5</font>억이상, <font color = "red">대</font>국민 서비스, 민원 업무, <font color = "red">공</font>통 구현 / 시행령 71-1,2 <br/>\
@@ -6125,6 +6150,31 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - SPECjbb2015 : Java App 기반 시나리오 / max-jOPS (Fail발생 직전 최대부하) <br/>\
 - SPC-1 : 비휘발성 스토리 표시 실제 환경 시뮬레이션 / Input Output Per Second (In 40, Out 60) <br/><br/>\
 * 119회 응용 2교시 5번\
+',
+
+// 상주 감리
+'# 정의 : 감리대상사업 현장 상주 / 주기적 투입 감리원 수행 감리 <br/>\
+- 보통 수행사에서 요청 / 발주사는 결과만 받으면 됨 / 감리 비용 증가 <br/>\
+- 전자정부법 57조에 의거하여 감리대상사업 현장에 상주하거나, 주기적으로 투입되는 감리원이 수행하는 감리(감리기준 제2조 제14호에 의해 정의된 역할을 수행하는 감리) <br/><br/>\
+# 목적 <br/>\
+- 비용 최소화 : 대형 프로젝트에서 단계별 감리 수행시, 점검 따라 많은 조치양 발생 대비 <br/>\
+- 품질 관리 : 지속적인 품질 관리 필요 <br/><br/>\
+# 실시시기, 자격 <br/>\
+- 실시 시기 : 대기업 참여 제한(진흥법 48조 2항), 위험도, 난이도 높다고 판단 <br/>\
+- 자격 : 20억 이상 3회 이상, PM,QA 3년 이상, 발주자 인정한 수석 감리원 <br/><br/>\
+# 수행 절차 <br/>\
+1. 계획 수립 <br/>\
+- 감리사업수행계획서 일부 포함 or 별도 작성 <br/>\
+- 투입기간, 투입인력, 업무범위 반드시 제시 <br/><br/>\
+2. 상주감리 수행 <br/>\
+- 검토수행 : 감리계획서 점검항목 상시적 점검, 결과 공유, 시정조치 요구 <br/>\
+- 정기보고 : 감리계획서 일정 따라 정기적 보고 <br/><br/>\
+3. 완료보고 <br/>\
+- 상주감리 종료시 상주감리 대한 완료보고 <br/>\
+- 보고형태 : 발주자 협의 결정 <br/><br/>\
+# 상주감리, PMO 비교 <br/>\
+<img src = "./img/AllDayAuditPMO.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 3일차 관리 1교시 11번\
 ',
   
 // PMBOK 6th 주요개정 내용 <br/>\
