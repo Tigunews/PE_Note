@@ -8,6 +8,9 @@ var this_week_question =
 [
 '',
 
+// 12주차 
+'라우팅','NAC','injection',osi 7','보안솔루션','isms','database view','pds','ufs','vue.js','Reverse Turing Test',
+
 // 12주차 추가
 'IPv6',
 
