@@ -4,6 +4,7 @@ var question = question.concat(
 '[Layer2]- Service',
 '[Layer2]- 오류제어',
 '[Layer2][오류제어][FEC]- 해밍코드',
+'[해밍코드]- 해밍거리',
 '[Layer2][오류제어][BEC]- CRC',
 '[Layer2][오류제어][BEC]- Parity Check',
 '[Layer2][오류제어][BEC]- Check Sum',
@@ -272,6 +273,21 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - MSB : Most Significiant Bit <br/><br/>\
 # 특징 : 해밍거리(Hamming Distance) = 송신 데이터와 수신 데이터의 각 대응 비트가 서로 다른 비트 수 <br/><br/>\
 * 오류비트 2비트까지 검출가능, 1만 수정가능\
+',
+
+// 해밍거리
+'# 정의 : Bit 유사도 수치화 / Data 사이 거리 <br/>\
+- 네트워크 통신시 수신된 Bit간 유사도를 수치화하기 위해 측정한 Data사이의 거리 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/HammingDistance.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 계산로직 <br/>\
+- 데이터 수신 : A,B 데이터 수신 > 데이터 정렬 <br/>\
+- 비교 : A,B 데이터 차이 측정 <br/>\
+- 정리 : 거리측정 <br/><br/>\
+# 활용사례 <br/>\
+- AI : 유사도 측정 위한 협업필터링, 추천 시스템 Data 분석 <br/>\
+- 보안 : 전진오류수정을 위한 해밍코드 구현시 핵심 요소 활용 <br/><br/>\
+* 122회 응용 1교시 4번\
 ',
 
 // CRC
