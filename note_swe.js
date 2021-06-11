@@ -1427,13 +1427,13 @@ var answer = answer.concat(
 
 // Vue.js
 '# 정의 : 웹 애플리케이션 UI / OSS Progressive JS FW <br/>\
-- 웹 애플리케이션의 사용자 인터페이스를 만들기 위해 사용하는 오픈 소스 프로그레시브 자바스크립으 프레임워크 <br/><br/>\
+- 웹 애플리케이션의 사용자 인터페이스를 만들기 위해 사용하는 오픈 소스 프로그레시브 자바스크립트 프레임워크 <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/VueJS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - View(DOM) : HTML Tag, Class, Attribute Data Tree <br/>\
 - ViewModel(DOM Listener) : DOM 즉각 반응, 특정 로직 수행 <br/>\
-- Model : 데이터 공간, JS Object 형태 저장 <br/.<br/>\
+- Model : 데이터 공간, JS Object 형태 저장 <br/><br/>\
 # JavaScript Based Framework 비교 <br/>\
 <img src = "./img/AngularReactVue.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 3일차 관리 1교시 4번\
