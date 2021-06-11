@@ -1484,6 +1484,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 
 // UWB 
 '# 정의 : 펄스신호 사용 / 넓은 주파수 대역 / 근거리 무선통신 <br/>\
+- Ultra Wide Band <br/>\
 - IEEE 802.15.4a / 4z <br/>\
 - 짧은 시간의 펄스 신호를 사용하여 넓은 주파수 대역으로 데이터를 송수신하는 근거리 무선통신 <br/><br/>\
 # 특징 <br/>\
