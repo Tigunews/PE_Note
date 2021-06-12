@@ -28,8 +28,8 @@ var question = question.concat(
 'DNS',
 'IP Tunneling',
 'Web RTC',
-'[Web RTC]- RTP',
 '[Web RTC]- RTSP',
+'[Web RTC]- RTP',
 '[Web RTC]- SCTP',
 '[Internet]- 인터넷 프로토콜 3단계 주소체계',
 '[Internet]- HTTP/2.0',
@@ -688,9 +688,9 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 기술 요소 <br/>\
 1. API : Media Stream, RTCPeerConnection, RTCDataChannel <br/><br/>\
 2. 통신 <br/>\
-- STUN(Session Traversal Utilities for NAT) : 공인 IP, 포트 확인 프로토콜 / 유일 식별정보 반환<br/>\
-- TURN(Traversal Using Relay NAT) : STUN 대안, 네트워크 미디어 중개 서버 이용 <br/>\
-- ICE(Interactive Connectivity Establishment) : P2P 연결 최적 경로 찾아주는 프레임워크 <br/>\
+- STUN(Session Traversal Utilities for NAT) : 공인 IP, 포트 확인 프로토콜 / <font color = "red">유일 식별정보 반환</font><br/>\
+- TURN(Traversal Using Relay NAT) : STUN 대안, 네트워크 미디어 <font color = "red">중개 서버</font> 이용 <br/>\
+- ICE(Interactive Connectivity Establishment) : P2P 연결 <font color = "red">최적 경로</font> 찾아주는 프레임워크 <br/>\
 - SDP(Session Description Protocol) : 해상도, 형식, 코덱등 컨텐츠 초기 인수 설명 프로토콜 <br/>\
 - STRP, JSEP <br/><br/>\
 3. 보안 : TLS/SSL <br/><br/>\
@@ -711,28 +711,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 통신 유형 <br/>\
 <img src = "./img/WebRTC_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 1교시 9번 \
-',
-
-// RTP
-'# 정의 : Stream Data 전송 / E2E Protocol <br/>\
-- Real-time Transport Protocol <br/>\
-- 오디오나 비디오 같은 실시간 스트림 데이터를 전송하기 위한 표준화된 End to End Protocol <br/><br/>\
-# 동작원리 <br/>\
-<img src = "./img/RTP_Mechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Header 구조 <br/>\
-- Version(2bit) : RTP 버전 <br/>\
-- Payload Type(7bit) : Data Type (0=PCM, 3=GSM, 7=LPC, 33=MPEG2) <br/>\
-- Sequence Number(16bit) : RTP Packet마다 1씩 증가하여 전송 <br/>\
-- Time Stamp(32bit) : RTP data packet의 첫 번째 byte의 sampling 시간 <br/>\
-- Synchronization Source Identifier(32bit) : RTP Stream Source 식별자 <br/>\
-- Miscellaneous Fields : 이외 잡다한 필드 <br/><br/>\
-# 특징 <br/>\
-- UDP 동작 : 빠르게 데이터 전달 <br/>\
-- 시간특성 데이터 전송 : 실시간 응용, 시간 정보, 매체 동기화 <br/>\
-- RTCP와 함께 동작 : RTCP 와 함게 QoS, 세션 정보 제공 <br/>\
-- 데이터 포맷 : 오디오(PCM, GSM, MP3, MPEG, H.264) <br/>\
-- 시간정보/동기화 기능 <br/><br/>\
-* 98회 응용 1교시 6번\
 ',
 
 // RTSP
@@ -759,6 +737,28 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # RTP RTCP 동작과정 <br/>\
 <img src = "./img/RTP_RTCP.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 123회 2일차 관리 1교시 13번\
+',
+
+// RTP
+'# 정의 : Stream Data 전송 / E2E Protocol <br/>\
+- Real-time Transport Protocol <br/>\
+- 오디오나 비디오 같은 실시간 스트림 데이터를 전송하기 위한 표준화된 End to End Protocol <br/><br/>\
+# 동작원리 <br/>\
+<img src = "./img/RTP_Mechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Header 구조 (<font color = "red">VPSTSM</font>)<br/>\
+- Version(2bit) : RTP 버전 <br/>\
+- Payload Type(7bit) : Data Type (0=PCM, 3=GSM, 7=LPC, 33=MPEG2) <br/>\
+- Sequence Number(16bit) : RTP Packet마다 1씩 증가하여 전송 <br/>\
+- Time Stamp(32bit) : RTP data packet의 첫 번째 byte의 sampling 시간 <br/>\
+- Synchronization Source Identifier(32bit) : RTP Stream Source 식별자 <br/>\
+- Miscellaneous Fields : 이외 잡다한 필드 <br/><br/>\
+# 특징 <br/>\
+- UDP 동작 : 빠르게 데이터 전달 <br/>\
+- 시간특성 데이터 전송 : 실시간 응용, 시간 정보, 매체 동기화 <br/>\
+- RTCP와 함께 동작 : RTCP 와 함께 QoS, 세션 정보 제공 <br/>\
+- 데이터 포맷 : 오디오(PCM, GSM, MP3, MPEG, H.264) <br/>\
+- 시간정보/동기화 기능 <br/><br/>\
+* 98회 응용 1교시 6번\
 ',
 
 // SCTP 
