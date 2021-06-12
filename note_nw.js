@@ -704,7 +704,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - MS : Skype for Web Messagin Service (WebRTC 수용) <br/>\
 - Amazon : 태블릿 PC 킨들 파이어에 WebRTC 세션을 통한 기술지원담당자 연결기능 제공 <br/>\
 - FaceBook Linkedin : 기존 FaceBook에서 메신저 분리 <br/>\
-- 하이퍼커넥트 : 국내벤처, 전세계 무료 메시지, 무료 영상 통화<br/>\
+- 하이퍼커넥트 : 국내벤처, 전세계 무료 메시지, 무료 영상 통화<br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/WebRTCOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/WebRTC.png" style = "max-width:100%; height:auto;"><br/><br/>\
