@@ -1544,8 +1544,8 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 분산 환경에서 빅데이터를 저장하고 처리할 수 있는 자바 기반의 오픈소스 프레임 워크 <br/><br/>\
 # 버전 <br/>\
 - Hadoop V1.0(2011) : 병렬 처리, 분산 저장 아키텍처 <br/>\
-- Hadoop V2.0(2012) : Job Tracker Bottle Neck 개선 위해 YARN 도입 <br/>\
-- Hadoop V3.0(2017) : Eraser Coding 도입 / HDFS 데이터 저장 효율성 증가 <br/><br/>\
+- Hadoop V2.0(2012) : Job Tracker Bottle Neck 개선 위해 <font color = "red">YARN</font> 도입 <br/>\
+- Hadoop V3.0(2017) : <font color = "red">Eraser Coding</font> 도입 / HDFS 데이터 저장 효율성 증가 <br/><br/>\
 <img src = "./img/HDFS_Arcitecture.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. 운영요소 <br/>\
@@ -1557,7 +1557,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - Name Space : 계층적 파일 구조 지원, 호환성 확보 <br/><br/>\
 # Hadoop V3.0 특징 <br/>\
 1. 운영 효율성 측면 <br/>\
-- Erasure Coding : Read Solomon / FT 보장, 저장 공간 효율, 데이터 복제 방식 <br/>\
+- Eraser Coding : Read Solomon / FT 보장, 저장 공간 효율, 데이터 복제 방식 <br/>\
 - YARN Timeline Service v.2 : Timeline Server / RW HBase 활용 <br/>\
 - MapReduce Task-level native optimization : JNI(Java Native Interface) / Map Collector output 정렬 부분 JNI 호출 구현 <br/><br/>\
 2. 개발 효율성 측면 <br/>\
