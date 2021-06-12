@@ -693,7 +693,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - STUN(Session Traversal Utilities for NAT) : 공인 IP, 포트 확인 프로토콜 / <font color = "red">유일 식별정보 반환</font><br/>\
 - TURN(Traversal Using Relay NAT) : STUN 대안, 네트워크 미디어 <font color = "red">중개 서버</font> 이용 <br/>\
 - ICE(Interactive Connectivity Establishment) : P2P 연결 <font color = "red">최적 경로</font> 찾아주는 프레임워크 <br/>\
-- SDP(Session Description Protocol) : 해상도, 형식, 코덱등 컨텐츠 초기 인수 설명 프로토콜 <br/>\
+- SDP(Session Description Protocol) : 해상도, 형식, 코덱등 컨텐츠 <font color = "red">초기 인수</font> 설명 프로토콜 <br/>\
 - STRP, JSEP <br/><br/>\
 3. 보안 : TLS/SSL <br/><br/>\
 4. 코덱 : llbc, Isac, Opus, VP8 <br/><br/>\
@@ -732,7 +732,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - GET_PARAMETER : URL 미디어의 변수값 요청 <br/>\
 - SET_PARAMETER : URL 미디어의 변수값 설정 요청 <br/>\
 - REDIRECT : 다른 서버 연결 요청 <br/><br/>\
-# 기술요소 <br/>\
+<font color = "red"># 기술요소</font> <br/>\
 - UDP : TCP 비해 안정성 떨어짐, 속도 빠름, 데이터 수신여부 미확인 <br/>\
 - RTP : Multi Cast, Uni Cast 에서 음성, 화상, 모의 데이터 E2E Transport 제공 <br/>\
 - SDP : 멀티세션 참여 위한 광고, 실시간으로 멀티미디어 세션 정의 <br/><br/>\
@@ -764,7 +764,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 // SCTP 
-'# 정의 : TCP 신뢰성 / UDP 실시간성 / 멀티 스트리밍, 멀티 호밍 / RFC2960 표준 프로토콜 <br/>\
+'# 정의 : TCP 신뢰성 / UDP 실시간성 / <font color = "red">멀티 스트리밍, 멀티 호밍</font> / RFC2960 표준 프로토콜 <br/>\
 - Stream Control Transmission Protocol <br/>\
 - TCP의 신뢰성 있는 연결 및 전송의 장점과 UDP의 실시간 데이터 전송의 장점을 취한 멀티스트리밍과 멀티호밍을 지원하는 RFC2960 표준의 프로토콜 <br/><br/>\
 # 구조도 <br/>\
@@ -773,7 +773,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Verification Tag : Association별로 할당, 세션 식별자 사용 <br/>\
 - TSN : 세션에 대한 흐름제어 및 오류 복구 위해 사용 <br/>\
 - SSN : 수신단 SCTP에서 Stream 별 순서화 위해 사용 <br/><br/>\
-# 절차 <br/>\
+<font color = "red"># 절차</font> <br/>\
 1. 연결 절차 <br/>\
 - INT > INT-ACK > COOKIE-ECHO > COOKIE-ACK <br/>\
 - COOKIE 이용, TCP-SYN(blind attack) 문제 해결 <br/><br/>\
