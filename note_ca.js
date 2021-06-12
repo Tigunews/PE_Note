@@ -1361,7 +1361,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // eMMC
-'# 정의 : 고속처리 / Controller + NAND / 임베디드 전용 메모리 반도체 <br/>\
+'# 정의 : 고속처리 / <font color = "red">Controller + NAND</font> / <font color = "red">임베디드</font> 전용 메모리 반도체 <br/>\
 - embedded Multi Media Card <br/>\
 - 데이터 고속처리를 위해 컨트롤러와 NAND Flash Memory를 통합하여 제품에 내장한 임베디드 기기 전용 메모리 반도체 <br/><br/>\
 # 특징 <br/>\
@@ -1384,12 +1384,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // UFS
-'# 정의 : 풀 듀플랙스 / 모바일 App / 전기 I/F 표준 <br/>\
+'# 정의 : <font color = "red">풀 듀플랙스</font> / 모바일 App / 전기 I/F 표준 <br/>\
 - MicroSD에 비해 5배 이상의 속도가 가능하며, 풀 듀플렉스(읽기/쓰기) 방식을 채택한 모바일 애플리케이션 전기 인터페이스 및 기기 신세대 표준 <br/>\
 <font color = "red">* Full Duplex : 두 대의 단말기가 데이터 송수신 하기위해 동시에 독립된 회선 사용 통신 방식 </font><br/><br/>\
 # 인터페이스 구조 <br/>\
 - 차등신호 : 높은 잡음 여유도 <br/>\
-- 직렬 인터페이스 기술 : 저전력 저 전압 고속 신호<br/>\
+- 직렬 인터페이스 기술 : 저전력 저전압 고속 신호<br/>\
 - MIPI : Mobilie Industry Processor IF <br/><br/>\
 # Protocol <br/>\
 - SCSI : 다중 스레드, 동시 명령, 대기열 제공<br/>\

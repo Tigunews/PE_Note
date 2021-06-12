@@ -2070,8 +2070,9 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 # 유형 <br/>\
 1. SQL Target <br/>\
 - SQL Injection : SQL Query / Blind, Timebased Injection<br/>\
-- Blind SQL Injection : Query 결과 따른 서버 참,거짓 결과 이용 공격 <br/>\
-- LDAP Injection : 웹 어플리케이션 악의적 LDAP 문법 이용 서버 의도 않는 동작 실행 / Error Based Injection<br/><br/>\
+- Blind SQL Injection : Query 결과 따른 서버 <font color = "red">참,거짓 결과</font> 이용 공격 <br/>\
+- LDAP Injection : 웹 어플리케이션 악의적 LDAP 문법 이용 서버 의도 않는 동작 실행 / Error Based Injection<br/>\
+<font color = "red">* LDAP(Lightweight Directory Access Point) : TCP/IP위에서 디렉토리 서비스 조회, 수정 응용 프로토콜 </font><br/><br/>\
 2. Process Target <br/>\
 - DLL Injection : 다른 프로세스 주소 공간 내에서 DLL 강제 로드 코드 실행 <br/><br/>\
 # 대응방안 <br/>\

@@ -1495,12 +1495,12 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 호환성 : Bluetooth, Wi-Fi등 다른 대역폭 지원 <br/>\
 - 저전력성 : Pulse Radio, 주파수 폭 형성 <br/><br/>\
 # 측위기술 종류 <br/>\
-1. 전파 도달 시간 이용 방식 <br/>\
+1. 전파 도달 <font color = "red">시간</font> 이용 방식 <br/>\
 - TWR(Two Way Raging) : UWB 사용 <br/>\
 - TDOA(Time Difference Of Arrival) : UWB 사용 <br/><br/>\
-2. 전파 송수신 각도 이용 방식 <br/>\
+2. 전파 송수신 <font color = "red">각도</font> 이용 방식 <br/>\
 - AoA(Angle of Arrival) <br/><br/>\
-3. 수신 전계강도 활용 방식 <br/>\
+3. 수신 전계 <font color = "red">강도</font> 활용 방식 <br/>\
 - RSSI(Receive Signal strength Indicator) : 정확도 떨어짐, 송수신 메시지 시간정보 보낼 수 없을 때 사용 <br/><br/>\
 # UWB 측위기술 종류 <br/>\
 1. TWR <br/>\
@@ -1509,7 +1509,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 2. TDOA <br/>\
 - 개념 : 지속적 Broad cast > 다수 Anchor Data 수집 > 측위 서버 위치 계산 <br/>\
 - 특징 : 동기, 단방향 <br/><br/>\
-# UWB, Wi-Fi 비교 <br/>\
+# UWB, Wi-Fi 비교 (<font color = "red">속거대주</font>)<br/>\
 <img src = "./img/UWB_Wifi_Compare.png" style = "max-width:100%; height:auto;">\
 ',
   
@@ -1921,7 +1921,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 6G
 '# 정의 : 최대 전송 용량, 5배 1Tbps / 체감 속도, 10배 1Gbps / 6세대 무선 이동 통신 기술 <br/>\
 - 5G의 20Gbps보다 5배 빠른 1Tbps 최대 전송 용량과 10배 우수한 1Gbps 사용자 체감 속도 등을 지원하는 차세대 이동 통신 기술 <br/><br/>\
-# KPI / 전략과제 (성대공정지현)<br/>\
+# KPI / 전략과제 (<font color = "red">성대공정지현</font>)<br/>\
 <img src = "./img/5G6G_GraphicCompare.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요기술 <br/>\
@@ -1931,8 +1931,12 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Duplex 통신 기술 : 상호 배타적 통신(안테나) <br/>\
 - 최적화 기술 : Comprehensive AI <br/>\
 - 만물지능 인터넷 : Split Compute(전체 네트워크 가용연산자원 활용) <br/><br/>\
-# 6G 시범 사업 <br/>\
-<img src = "./img/6G_PilotProject.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 6G Pilot Project <br/>\
+- 초성능 : 인터랙티브 미디어 / XR, 오감 몰입형, 가상공간 <br/>\
+- 초대역 : 스마트 공장 / 디지털 트윈 <br/>\
+- 초공간 : Near Space Service / 저궤도 위성, 6G 광대역 <br/>\
+- 초정밀 : 초정밀 원격제어 / 드론, 원격 의료 <br/>\
+- 초지능 : 자율주행, 스마트 시티 / 초엣지 모빌리티, 초지능 로봇 <br/><br/>\
 # 6G 핵심기술개발 주요내용 <br/>\
 <img src = "./img/6GCoreTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 1교시 8번\
@@ -1962,8 +1966,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 최대 대역폭 : 320Mhz 이상 <br/>\
 - 지원 주파수 : 2.4Ghz, 5Ghz, 6Ghz <br/>\
 - 하위 호환성 : IEEE 802.11 장비 지원 <br/><br/>\
-# Wifi 6비교 <br/>\
-<img src = "./img/Wifi67.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Wifi 6 비교 <br/>\
+<img src = "./img/Wifi67.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* EHT : Extremely High Throughput <br/>\
+* HEW : High Efficiency WLAN <br/><br/>\
 * KPC 96회 응용 1교시 16번\
 ',
   
@@ -1990,15 +1996,15 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 전 세계 여러나라들 비면허 사용 위해 6GHz 개방 <br/><br/>\
 # Stack <br/>\
 <img src = "./img/Wifi6EStack.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
+# 기술요소 (<font color = "red">OMB BCT</font>)<br/>\
 1. PHY <br/>\
-- OFDMA : 부반송파를 분할하여 다수의 단말이 동시에 사용 <br/>\
-- MU-MIMO : 제각기 하나 이상의 안테나를 갖춘 무선 단말들이 서로 통신 <br/>\
-- Beam Forming : 안테나가 특정 단말에 국한되게 하는 전송 기술 <br/><br/>\
+- OFDMA : 부반송파를 분할하여 <font color = "red">다수의 단말</font>이 동시에 사용 <br/>\
+- MU-MIMO : 제각기 하나 이상의 안테나를 갖춘 무선 단말들이 <font color = "red">서로 통신</font> <br/>\
+- Beam Forming : 안테나가 특정 단말에 <font color = "red">국한</font>되게 하는 전송 기술 <br/><br/>\
 2. MAC <br/>\
-- BSS Color : Color 코드를 사용해 공간을 재사용, AP 충돌 방지 <br/>\
-- CCA 레벨 제어 : 각 단말기에 전송되는 파워를 조절 <br/>\
-- Target Wake Time : Access Time 조절 및 단말간의 무선 경쟁 회피 <br/><br/>\
+- BSS Color : Color 코드를 사용해 공간을 재사용, <font color = "red">AP 충돌 방지</font> <br/>\
+- CCA 레벨 제어 : 각 단말기에 전송되는 <font color = "red">파워 조절</font> <br/>\
+- Target Wake Time : Access Time 조절 및 단말간의 <font color = "red">무선 경쟁 회피</font> <br/><br/>\
 # 6GHz 대역 장점 <br/>\
 - 가용 채널 수 증가 <br/>\
 - 160MHz 대역폭을 실질 활용 <br/>\
