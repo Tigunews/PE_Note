@@ -1814,7 +1814,8 @@ var answer = answer.concat(
 - Header/Footer : 파일의 Header, Footer 검색 <br/>\
 - Header/File Size : File size, Block 수치 계산 <br/>\
 - Header/Ram Slack : Header, Ram Slack 검색 <br/>\
-- 파일 구조 검증 : 파일 고유 특징(ASCII, MIME) 이용 <br/><br/>\
+- 파일 구조 검증 : 파일 고유 특징(ASCII, MIME) 이용 <br/>\
+<font color = "red">* MIME(Multipurpose Internet Mail Extensions) : 전자 우편을 위한 인터넷 표준 포맷 </font><br/><br/>\
 * ITPE 합숙 124회 3일차 관리 2교시 2번\
 ',
 

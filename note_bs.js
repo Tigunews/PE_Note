@@ -103,6 +103,7 @@ var answer = answer.concat(
 - 4P : 제품(Product), 가격(Price), 유통(Place), 촉진(Promotion) <br/><br/>\
 - 비용, 접근성, 품질 <br/><br/>\
 - 비전, 목표, 전략, Item <br/><br/>\
+- Need < Approach < Benefit < Competition <br/><br/>\
 # Lead 문구 <br/>\
 - 기업, 사회를 품다. ESG 경영 개요 \
 ',
