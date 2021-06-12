@@ -265,8 +265,8 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 '# 정의 : 패리티비트(Parity Bit)에 의한 오류검출 및 오류정정까지 가능한 코드 <br/><br/>\
 # 2^p >= d + p + 1 (d:데이터 비트수, p:패리티 비트수) <br/><br/>\
 # Byte Order <br/>\
-- Little Endian : Host Byte Order <br/>\
-- Big Endian : Network Byte Order <br/><br/>\
+- Little Endian : Network Byte Order <br/>\
+- Big Endian : Host Byte Order <br/><br/>\
 <img src = "./img/BigLittleCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # LSB, MSB <br/>\
 - LSB : Least Significiant Bit <br/>\
