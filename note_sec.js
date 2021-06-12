@@ -3059,7 +3059,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 // ISO/IEC 27018
 '# 정의 : Public Cloud / 개인식별정보 / 보호 / 통제 국제표준 <br/>\
 - Public Cloud 환경에서 개인식별정보(PII : Personally Identifable Information)를 보호하기 위한 통제 국제표준 <br/><br/>\
-# 확장 구성 <br/>\
+# 확장 구성 (<font color = "red">개동정수최 공정개참책 보규</font>)<br/>\
 - 기본구성 : 27017 동일 <br/>\
 - (1)개요 : 퍼블릭 클라우드 개인식별정보 보호 개요 <br/>\
 - (2)동의와 선택 : 고객의 지시 따라 처리할 것 <br/>\
