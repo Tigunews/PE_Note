@@ -685,6 +685,8 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 음성, 비디오 엔진 <br/>\
 - 전송, 음성/영상 캡처 <br/>\
 - Network I/O 모듈 <br/><br/>\
+# Stack <br/>\
+<img src = "./img/WebRTCStack.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술 요소 <br/>\
 1. API : Media Stream, RTCPeerConnection, RTCDataChannel <br/><br/>\
 2. 통신 <br/>\
