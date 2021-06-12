@@ -1343,11 +1343,11 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 '# 정의 : ER 모델 / 관계성 분실 현상<br/>\
 - ER 모델 상 관계가 연결되지만, 실제 관계 설정이 되지 않는 관계성 분실 현상 <br/><br/>\
 # 종류 <br/>\
-1. 부채꼴 함정 (<font color = "red">단교학</font>)<br/>\
+1. 부채꼴 함정 (<font color = "red">단교학 11</font>)<br/>\
 - 개념 : <font color = "red">모호</font>한 현상 <br/>\
 - 예시 <br/>\
 <img src = "./img/SectorformTrap.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 균열 함정 (<font color = "red">교학학</font>)<br/>\
+2. 균열 함정 (<font color = "red">교학학 N1</font>)<br/>\
 - 개념 : <font color = "red">미존재</font> 현상 <br/>\
 - 예시 <br/>\
 <img src = "./img/CrashTrap.png" style = "max-width:100%; height:auto;"><br/><br/>\
