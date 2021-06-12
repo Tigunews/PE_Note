@@ -1367,7 +1367,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 특징 <br/>\
 - 고집적 : 제어칩 캡슐화, 면적 절약 <br/>\
 - 고성능 : Cache, Memory Array / 읽기 쓰기 성능 우수 <br/><br/>\
-# 구성도 <br/>\
+# 구성도 (<font color = "red">CICM</font>)<br/>\
 <img src = "./img/eMMC_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - CLK : 호스트로부터 데이터 전송 동기화 클럭 신호 출력 사용 <br/>\
