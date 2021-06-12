@@ -3541,7 +3541,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 3. 블록체인 스마트계약 언어 <br/>\
 - Solidity : 이더리움 동작, JS 유사 <br/>\
 - Serpent : 이더리움 동작, Python 유사 <br/>\
-- LLL : Low-level Lisp-like Language, Assembely 유사 <br/.<br/>\
+- LLL : Low-level Lisp-like Language, Assembely 유사 <br/><br/>\
 * 라이지움 90회 관리 1교시 4번\
 ',
 );
