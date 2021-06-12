@@ -1024,7 +1024,7 @@ var answer = answer.concat(
 # 필요성 : 시스템 변화, 사회 안전, 비용 절감 <br/><br/>\
 # 유형 <br/>\
 1. 요구분석/설계 단계 <br/>\
-- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방<br/>\
+- FMEA(Failure Mode and Effects Analysis) : 고장모드 예방 / FMEDA - Diagnosis <br/>\
 - HAZOP(Hazard and Operatbility Analysis) : 모듈 당 안전 직접적 영향 분석 <br/>\
 - FTA(Fault Tree Analysis) : 근본원인을 중심, TopDown으로 도출하는 Fault Tree 구성 <br/><br/>\
 2. 개발단계 <br/>\
@@ -1035,8 +1035,8 @@ var answer = answer.concat(
 - 정형검증 : 정리 증명, 모델 체킹 <br/><br/>\
 4. 산출물 검토 단계 <br/>\
 - 명세서 검증 : DFD, DD, Mini-Spec <br/>\
-- 디자인 검증 : 전문가 참여, 브레인 스토밍 / 라이팅 <br/><br/>\
-* DFD(Data Flow Diagram) <br/><br/>\
+- 디자인 검증 : 전문가 참여, 브레인 스토밍 / 라이팅 <br/>\
+<font color = "red">* DFD(Data Flow Diagram) </font><br/><br/>\
 * 119회 관리 4교시 4번\
 ',
   
@@ -1081,7 +1081,7 @@ var answer = answer.concat(
 - 분석 팀 구성 : 관련 전문가 팀 구성(리더, 팀원) <br/>\
 - 예비 조사 : 자료 수집, 분석 절차 수립 <br/>\
 - 토론 및 검토 : Study Node, 공정변수, 가이드워드 조합, 브레인 스토밍 <br/>\
-- 분석 결과 기록 : 이탈 원인, 결과 개선 권고사항등 기록 <br/>,br/>\
+- 분석 결과 기록 : 이탈 원인, 결과 개선 권고사항등 기록 <br/><br/>\
 * 123회 관리 1교시 10번\
 ',
 
