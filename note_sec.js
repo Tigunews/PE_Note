@@ -3374,11 +3374,11 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 장점 : Lateral Movement 방어 능력 우수 <br/>\
 - 단점 : 이행 어려움, 확장성 낮음, 복잡성 <br/><br/>\
 2. SDP(Software Defined Perimeter <br/>\
-- 개념 : 인증정책 전제, 중간 방화벽 통한 주문형 IP 터널 설정 방식 <br/>\
+- 개념 : 장치 인증, ID 기반 접근 결합 형태 / Controller 신원 확인, SDT(Tunnel) 유사 동작 <br/>\
 - 장점 : 레거시 원격 접속 방식, SSL, VPN 유사, 익숙한 사용 가능 <br/>\
 - 단점 : 제한된 아키텍처(Tunnel), 서비스 삽입 불가, 레거시 인증 적용 복잡 <br/><br/>\
 3. IAP(Identity Aware Proxy) <br/>\
-- 개념 : Proxy 계층 사용, 특정 프로그램 인증, 보안 접근 제공 <br/>\
+- 개념 : SDP 유사, Proxy 계층 사용, 특정 프로그램 인증, 보안 접근 제공 <br/>\
 - 장점 : App 최소 권한 제공, 별도 App 설치 불필요 <br/>\
 - 단점 : 네트워크 중심 솔루션 비해 3rt Party 초기 사전작업 어려움 <br/><br/>\
 # 구축 절차 <br/>\
