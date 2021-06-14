@@ -121,6 +121,7 @@ var question = question.concat(
 '[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
 '[NW 가상화]- SD WAN',
+'SASE',
 '유무선 전력전송',
 '망분리',
 '망연계',
@@ -2463,6 +2464,20 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # SD-WAN, SD-WAN 2.0 비교 <br/>\
 <img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 4교시 1번\
+',
+
+// SASE
+'# 정의 : 모바일 클라우드 환경 / SD-WAN, 네트워크 가상화 기술, 보안 기술 / 차세대 네트워크 서비스 모델 <br/>\
+- Secure Access Service Edge <br/>\
+- 모바일 클라우드 환경에 대응하기 위하여 SD-WAN등 여러 네트워크 가상화 기술과 보안 기술을 융합한 차세대 클라우드 기반 네트워크 서비스 모델 <br/><br/>\
+# 구성요소 <br/>\
+1. 네트워크 서비스 <br/>\
+- SD-WAN : SD-Wan Controller, CPE로 구성, 통신망 사업자, 서비스 제공자 WAN 확장 네트워크 <br/>\
+- SD-Branch : Programmable, 중앙 Orchestration, 지사 환경 많은 IT 인프라 제공 기술 <br/><br/>\
+2. 보안 서비스 <br/>\
+- CASB : 클라우드 서비스 이용자, 서비스 사이 위치, 독립적 보안 기능 수행 SW <br/>\
+- SECaaS : CSP SECaaS, SSP SECaaS로 제공하는 클라우드 보안 서비스 <br/>\
+- ZTNA : Perimeter 보안 -> Microperimeter 적용(Zero Trust) <br/><br/>\
 ',
   
 // 유무선 전력전송
