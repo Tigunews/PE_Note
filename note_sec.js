@@ -2522,7 +2522,7 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 - <font color = "red">개인정보 처리를 위한</font> 조직 및 인력 : 고객센터, 영업점, 물류센터, 개인정보보호팀 등 <br/>\
 - <font color = "red">개인정보 처리를 위한</font> 물리적 인프라 : 개인정보 취급 부서, 개인정보 취급 수탁사 <br/><br/>\
 # 절차 <br/>\
-<img src = "./img/VirtualAssetBusinessISMSProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/VirtualAssetBusinessISMSProcess.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 # 세부 점검 항목 <br/>\
 - 관리 분야 <br/>\
 - 물리 분야 <br/>\
