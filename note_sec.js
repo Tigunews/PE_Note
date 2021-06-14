@@ -3362,12 +3362,40 @@ EAL : 펑스매매세세포 <br/><br/>\
 // Zero Trust 보안 모델
 '# 정의 : 모든 자산 위험 요소 / 무신뢰 기반 <font color = "red">과립형</font> 경계 보안 모델 <br/>\
 - 모든 네트워크 자산을 위험 요소로 전제, 모든 데이터 모니터링, 접근 경로 통제, 액세스 권한 제어 통한 무신뢰 기반 과립형 경계 보안 모델 <br/><br/>\
-# 매커니즘 <br/>\
-- 데이터 확인 : 악성 데이터 확인, 분류 <br/>\
-- 경로 파악 : 악성 트래픽 경로 파악 <br/>\
-- 네트워크 설계 : 제로 트러스트 네트워크 설계 <br/>\
-- 정책생성 : 지능형 정책 생성 <br/>\
-- 모니터링 : 제로 트러스트 에코 시스템 모니터링 <br/><br/>\
+# 등장배경 <br/>\
+- 단위(Perimeter Security) : IPS/IDS, Infra <br/>\
+- 통합(Data Seciruty) : ISAC, Traffic,취약점 관리 <br/>\
+- 빅데이터(Trust Security) : 로그, 이벤트, 패킷 연동 <br/>\
+- 인공지능(Zero Trust) : SOAR, ML Based Analysis <br/><br/>\
+<img src = "./img/ZeroTrustModelOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구현모델 <br/>\
+1. Network Micro-Segment <br/>\
+- 정의 : 네트워크, 자산, 사용자, App, 논리적 그룹 분류 / 최소한 접근제어 <br/>\
+- 장점 : Lateral Movement 방어 능력 우수 <br/>\
+- 단점 : 이행 어려움, 확장성 낮음, 복잡성 <br/><br/>\
+2. SDP(Software Defined Perimeter <br/>\
+- 개념 : 인증정책 전제, 중간 방화벽 통한 주문형 IP 터널 설정 방식 <br/>\
+- 장점 : 레거시 원격 접속 방식, SSL, VPN 유사, 익숙한 사용 가능 <br/>\
+- 단점 : 제한된 아키텍처(Tunnel), 서비스 삽입 불가, 레거시 인증 적용 복잡 <br/><br/>\
+3. IAP(Identity Aware Proxy) <br/>\
+- 개념 : Proxy 계층 사용, 특정 프로그램 인증, 보안 접근 제공 <br/>\
+- 장점 : App 최소 권한 제공, 별도 App 설치 불필요 <br/>\
+- 단점 : 네트워크 중심 솔루션 비해 3rt Party 초기 사전작업 어려움 <br/><br/>\
+# 구축 절차 <br/>\
+- 중요 데이터 식별 : 민감도 기준 네트워크 분류 <br/>\
+- 민감데이터 흐름 매핑 : 종속 네트워크 시스템 개체 매핑 <br/>\
+- 미세 경계 설계 : 민감 데이터 기준 정의, 규칙 기반 자동화 <br/>\
+- 시스템 모니터링 : 비즈니스 적합 배포 모델 결정 <br/>\
+- 보안자동화, 오케스트레이션 도입 : 자동 정책 정의, SOAR 지원여부 확인 <br/><br/>\
+# 적용 사례 <br/>\
+- Forrester(ZeroTrust) : Cloud, Mobile 부상, 최초 ZT 시작 / Micro Segmentation <br/>\
+- Google(BeyondCorp) : ZT 대표적 구현 사례, Cloud 인증,인가,암호화 / IAP <br/>\
+- Gartner(CARTA) : DevSecOps 사람중심 보안 기술 적용 <br/>\
+- Forrester(ZTX Framework) : ZTX, NGFW, MFA 액세스 위협 감소 <br/><br/>\
+# 고려사항 <br/>\
+- On-Premise 연계 방안 점진적 적용 <br/>\
+- 업무 R&R 분석 및 Permission 최소화 <br/>\
+- 일원화된 모니터링 체계 (SOAR, EDR, SIEM) <br/><br/>\
 # 기술요소 <br/>\
 - 데이터 격리 : CDR, 웹/이메일 랜더링 <br/>\
 - 트래픽 감시 : EDR, IPS, WAF <br/>\
