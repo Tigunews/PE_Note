@@ -8,13 +8,16 @@ var this_week_question =
 [
 '',
 
+// 13주차
+'Inversion of Control',
+
+/*
 // 12주차 
 '라우팅','NAC','injection','osi 7','보안솔루션','isms','database view','pds','ufs','vue.js','Turing','연결함정','동형암호','GraphQL','안전성 분석','상주감리','ADAS','eMMC','Hadoop','포렌식','Web RTC','정보윤리','wifi','산업제어시스템','UWB','Buffer Overflow','OECD Privacy 8원칙','KYC','ISO/IEC 27017','ISO/IEC 27018','MEC','해밍','Zero Trust','데이터 3법','DNS','6g','보안 Overview',
 
 // 12주차 추가
 'IPv6', '가상자산 사업자', 'SASE',
 
-/*
 // 11주차 추가
 'RAMI 4.0','ASPICE','안티드론','자율주행 자동차','CSB','멀티 클라우드','클라우드 전환',
 

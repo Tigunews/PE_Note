@@ -293,9 +293,9 @@
 '[방법론][객체지향]- 상속 합성',
 '[방법론][객체지향]- 객체 모델링',
 '[방법론][객체지향]- SOLID',
-'[방법론][객체지향]- IOC',
-'[방법론][객체지향]- DL',
-'[방법론][객체지향]- DI',
+'[방법론][객체지향]- Inversion of Control',
+'[방법론][Inversion of Control]- Dependency Lookup',
+'[방법론][Inversion of Control]- Dependency Injection',
 '[방법론][객체지향]- Overriding, Overloading',
 '[방법론][객체지향]- Demeter\'s Law',
 '[방법론]- CBD',
@@ -4875,6 +4875,7 @@ P 히스토그램 : Data 분포 <br/>\
 - 기존의 프로그래밍에서 객체의 라이프 사이클을 개발자가 관리하던 것을 컨테이너에게 그 제어권을 위임하는 프로그래밍 기법 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/IOC_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DI_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - 유지보수 용이 <br/>\
 - 재사용성 <br/>\
@@ -4901,8 +4902,11 @@ P 히스토그램 : Data 분포 <br/>\
 // DI
 '# 정의 : 의존 관계 자동 연결 기법 <br/>\
 - Dependency Injection <br/>\
+- Loosely Coupled <br/>\
 - 객체를 직접 생성하는 것이 아닌 외부의 조립기를 이용해 생성하는 기법 <br/>\
 - 각 계층사이, 각 클래스 사이에 필요하는 의존관계를 컨테이너가 자동으로 연결해주는 기법 <br/><br/>\
+# 객체 사용 방법 <br/>\
+<img src = "./img/ObjectUseMethod.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 장점 <br/>\
 1. 아키텍처 관점 <br/>\
 - 구현 분리 : 자유로운 환경설정 <br/>\
@@ -4914,6 +4918,8 @@ P 히스토그램 : Data 분포 <br/>\
 - Configuration 활용 : 설정 적용된 Bean, 각 서비스에서 DI 가능 <br/>\
 - 형식의 변화 유연성 : RestTemplate 같은 다른 Bean 과 형식 맞춰 사용 <br/>\
 - Lifecycle 관리 : 외부 컨테이너에서 Singleton Lifecycle 관리 <br/><br/>\
+# Code 사례 <br/>\
+<img src = "./img/DI_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 6번\
 ',
  
