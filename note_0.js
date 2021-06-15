@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 13주차
-'Inversion of Control',
+'Inversion of Control', '품질표준',
 
 /*
 // 12주차 
