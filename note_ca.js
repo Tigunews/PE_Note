@@ -411,12 +411,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 2. 내부 <br/>\
 - 프로그램상 문제 : 보호된 Memory 접근 시도 <br/><br/>\
 # 우선순위 (<font color = "red">전기외입 C프 S</font>)<br/>\
-1. 외부(클럭,Time) 인터럽트 <br/>\
+1. 외부 인터럽트(HW) <br/>\
 - 전원 이상 : 정전 발생 <br/>\
 - 기계착오 : CPU 오류 등 경우 발생 <br/>\
-- 외부신호 : 타이머, 키보드, 외부장치 의해 발생 <br/>\
+- 외부신호(Clock) : 타이머, 키보드, 외부장치 의해 발생 <br/>\
 - I/O : 입출력 장치등에 의해 발생 <br/><br/>\
-2. 내부 인터럽트 <br/>\
+2. 내부 인터럽트(HW) <br/>\
 - 명령어 Error : 잘못된 명령어 사용 <br/>\
 - 프로그램 검사 : div 0, Overflow/Underflow <br/><br/>\
 3. SW 인터럽트 <br/>\
