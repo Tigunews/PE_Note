@@ -2471,13 +2471,25 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - Secure Access Service Edge <br/>\
 - 모바일 클라우드 환경에 대응하기 위하여 SD-WAN등 여러 네트워크 가상화 기술과 보안 기술을 융합한 차세대 클라우드 기반 네트워크 서비스 모델 <br/><br/>\
 # 구성요소 <br/>\
-1. 네트워크 서비스 <br/>\
-- SD-WAN : SD-Wan Controller, CPE로 구성, 통신망 사업자, 서비스 제공자 WAN 확장 네트워크 <br/>\
-- SD-Branch : Programmable, 중앙 Orchestration, 지사 환경 많은 IT 인프라 제공 기술 <br/><br/>\
-2. 보안 서비스 <br/>\
-- CASB : 클라우드 서비스 이용자, 서비스 사이 위치, 독립적 보안 기능 수행 SW <br/>\
-- SECaaS : CSP SECaaS, SSP SECaaS로 제공하는 클라우드 보안 서비스 <br/>\
-- ZTNA : Perimeter 보안 -> Microperimeter 적용(Zero Trust) <br/><br/>\
+1. NW 가상화 <br/>\
+- SD-WAN : N/W, WAN 설정 <br/>\
+- MPLS : Laeyr 2 NW <br/>\
+- IP Tunneling : 암호화, 인증 <br/><br/>\
+2. NW 서비스 <br/>\
+- SD-Branch : Orchestration <br/>\
+- WAP Optimize : WAN 변경 설정 <br/>\
+- Zero Trust : Default Deny Model <br/><br/>\
+3. Cloud 보안 <br/>\
+- CASB : Broker 보안 <br/>\
+- SECaaS : Cloud 보안 <br/>\
+- VMI : 가상 IPS <br/><br/>\
+4. Cloud 서비스 <br/>\
+- NaaS : NW 서비스 <br/>\
+- CDN : 컨텐츠 제공 <br/>\
+- Cloud SWG : 인프라 보안 <br/><br/>\
+# 기대효과 <br/>\
+- 비용절감 : CAPEX, OPEX 절감, 단일 플랫폼 전략 사용 지출 <br/>\
+- 구축용이 : 복잡성 완화, 성능 최적화, 아키텍처 단순화 클라우드 활용 \
 ',
   
 // 유무선 전력전송
