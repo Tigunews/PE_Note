@@ -15,6 +15,7 @@ var question = question.concat(
 'Dispatcher',
 '[Dispatcher]- 운영체제 문맥, 문맥교환',
 'Interrupt',
+'[Interrupt]- OS 역할',
 '[Interrupt]- Maskable Interrupt',
 '[Interrupt]- Non Maskable Interrupt',
 '[Interrupt]- Vectored Interrupt',
@@ -410,18 +411,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 2. 내부 <br/>\
 - 프로그램상 문제 : 보호된 Memory 접근 시도 <br/><br/>\
 # 우선순위 (<font color = "red">전기외입 C프 S</font>)<br/>\
-1. 외부 <br/>\
-- 전원 이상 <br/>\
-- 기계 착오 : CPU 기능적 오류 <br/>\
-- 외부 신호 : Time slice, Keyboard <br/>\
-- 입출력 : 입출력 데이터 오류, 이상현상 <br/><br/>\
-2. 내부 : 안정된 시스템 동작 위해 사전 정의 발생 <br/>\
-- Clock Interrupt <br/>\
-└ CPU 모니터링(특정 프로세스 집중 방지)<br/>\
-└ 문맥 교환(문맥 교환 타이밍) <br/>\
-- 프로그램 검사 : div 0, Overflow, Underflow <br/><br/>\
-3. SW <br/>\
-- SVC(SuperVisorCall) : 명령 요청 발생, 복잡한 입/출력, 기억장치 할당 <br/><br/>\
+1. 외부(클럭,Time) 인터럽트 <br/>\
+- 전원 이상 : 정전 발생 <br/>\
+- 기계착오 : CPU 오류 등 경우 발생 <br/>\
+- 외부신호 : 타이머, 키보드, 외부장치 의해 발생 <br/>\
+- I/O : 입출력 장치등에 의해 발생 <br/><br/>\
+2. 내부 인터럽트 <br/>\
+- 명령어 Error : 잘못된 명령어 사용 <br/>\
+- 프로그램 검사 : div 0, Overflow/Underflow <br/><br/>\
+3. SW 인터럽트 <br/>\
+- SVC(페이지 부재) : SVC 의한 임의 호출, 프로그램 처리중 오류 <br/><br/>\
 # 우선순위 처리방식 <br/>\
 1. 단일 회선 <br/>\
 - Polling : 가장 높은 우선순위 (SW) <br/>\
@@ -434,7 +433,23 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Interrupt_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 2교시 1번 <br/>\
 * 라이지움 86회 4교시 6번\
+',
+
+// OS 역할
+'# Clock Interrupt, I/O Interrupt OS 역할 <br/>\
+<img src = "./img/Clock_IO_Interrupt_OS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- IRQ(요청) : CPU에 인터럽트 요청신호 / Interrupt Request <br/>\
+- IPR(벡터) : 인터럽트 처리 루틴 / ISR(Interrupt ID) 분기, ISR 시작주소 저장 <br/>\
+- ISR(서비스 루틴) : 실제적인 인터럽트 처리 / i금지, p상태저장, i처리, p상태복구, i허용 <br/><br/>\
+# Page Fualt OS 역할 <br/>\
+<img src = "./img/PageFaultInterrutOS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Page Fault Trap 발생 : MMU가 Page Fault 발생 <br/>\
+- 페이지 접근 타당성 체크 : N(종료), Y(할당/확보) <br/>\
+- 유효 비트로 재설정 : 유효-무효 비트 재설정 <br/>\
+- 인터럽트 처리 종료 : 명령어 재시작 <br/><br/>\
+* 123회 응용 2교시 1번\
 ',
   
 // Maskable Interrupt

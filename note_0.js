@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 13주차
-'Inversion of Control', '제품 품질',
+'Inversion of Control', '제품 품질', 'Interrupt',
 
 /*
 // 12주차 
