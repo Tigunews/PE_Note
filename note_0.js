@@ -9,11 +9,7 @@ var this_week_question =
 '',
 
 // 13주차
-<<<<<<< HEAD
-'Inversion of Control', '제품 품질', 'Interrupt', '분산 로딩 기법',
-=======
-'Inversion of Control', '제품 품질', 'Interrupt', 'SW 공학', '감리', '요구공학',
->>>>>>> 071d6ec4cb7fc42bcba8bbc387060056d3eeed9a
+'Inversion of Control', '제품 품질', 'Interrupt', '분산 로딩 기법', 'SW 공학', '감리', '요구공학', 'Enterprise Arcitecture', 'Information System', 'MSA', '상호배제',
 
 /*
 // 12주차 
