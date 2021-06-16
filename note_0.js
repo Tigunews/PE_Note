@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 13주차
-'Inversion of Control', '제품 품질', 'Interrupt',
+'Inversion of Control', '제품 품질', 'Interrupt', 'SW 공학', '감리', '요구공학',
 
 /*
 // 12주차 

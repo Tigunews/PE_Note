@@ -16,8 +16,10 @@ var question = question.concat(
 'ISO 31000',
 'ITIL',
 '[ITIL]- SKMS',
-'ISP',
+'Enterprise Arcitecture',
+'Information System Plan',
 'ISP 수립 공통가이드(제4판)',
+'Information System Master Plan',
 '플랫폼 경제',
 '프로토콜 경제',
 '데이터 경제',
@@ -450,6 +452,41 @@ var answer = answer.concat(
 - Information Integration <br/>\
 - Data&Information\
 ',
+
+// Enterprise Arcithecture
+'# 정의 : 목표 달성 / IT, 비즈니스 관계 / 청사진 <br/>\
+- 조직의 전략적인 목표 및 정보자원 관리 목표를 달성하기 위하여 기업의 IT와 비즈니스 관계를 총괄하여 설명하는 청사진 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/EA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- IT Governance : IT 통제력, 기업 비즈니스 Goal Alignment / Control, Compliance, Alignment <br/>\
+- Business Architecture : 비즈니스 수행 조직 및 프로세스 정의 / PRM(성과), BRM(업무) <br/>\
+- Application Architecture : 애플리케이션 구조 체계화 / SRM(서비스 컴포넌트) <br/>\
+- Data Arcitecture : 데이터의 구조 체계적 정의 / DRM(데이터) <br/>\
+- Technical Architecture : 전사의 기술 인프라 체계 정의 / TRM(기술) <br/>\
+- Security Archtiecture : 보안 정책, 원칙, 프레임워크 / SRM(보안) <br/>\
+- Reference Model : 아키텍처 위한 기업 내/외부 사례, 표준 참조 <br/>\
+- Standard Profile : 각 RM에 대한 지침(Profile) 제공 표준 <br/><br/>\
+# 산출물 <br/>\
+- 아키텍처 모델 : 기업 전체의 비즈니스, IT AS-IS TO-BE 표현 <br/>\
+- 프로그램과 로드맵 : AS-IS TO-BE 비즈니스,IT 전환 전략 <br/>\
+- 참조모델 : IT 서비스 컴포넌트 단위 구매, 개발, 통합, 진화 관리 <br/>\
+- 원칙,표준 가이드 : 기획, 투자결정, 개발, 운영, 성과 평가 Life Cycle 전반 적용 원칙,표준,가이드 <br/><br/>\
+# 구축 절차 <br/>\
+- EA 기반 ISP/BPR : EA Framework,Matrix 정의, BPR/ISP 산출물 <br/>\
+- EAMS 개발 : EAMS 요건정의, Repository 구축, Interface Architecture, EA Portal 구축, EA 관리체계 정의 <br/>\
+- EA 활용 : EA 확산, EA 거버넌스 최적화 <br/><br/>\
+# EA Framewokr 유형 / 장점 / 단점 <br/>\
+- ZEAF : 기업 활동 공학적 관점 파악 / 5W1H 관점 상세 제공 / 과도한 산출물, 정확도 요구 <br/>\
+- FEAF : 미국 연방정부 개발 / BRM, DRM, SCRM, TRM, PRM / 조직,관련 규정 진화 관점 부족 <br/>\
+- DoDAF : 체제들간 상호 운용성 보장 / 산출물 Template 상세 정의 / 과도한 산출물, 정확도 요구 <br/>\
+- TEAF : TISAF, FEAF 의거 미국 재무성 개발 / Functional, Information, Organization, Infrastructure 관점 / EA 산출물 중심 FW, 활용 접근 부족 <br/>\
+- TOGAF : Open Group에서 TAFIM 기반 개발 / 구체적 아키텍처 개발 프로세스 제안 / 조직,관련규정 진화적 관점 부족 <br/>\
+- INDEX : CSC Index 프레임워크 / 간단한 셀구조 표현, 명확, 이해 용이 / 유연성 부족, 관점별 접근 불가능 <br/><br/>\
+# EA Frameowrk <br/>\
+<img src = "./img/EA_Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 4교시 3번\
+',
  
 // ISP
 '# 정의 : 조직의 목표 달성 / 중장기 마스터 플랜 <br/>\
@@ -473,6 +510,26 @@ var answer = answer.concat(
 # 기본 구성 내용 <br/>\
 <img src = "./img/ISP_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 2교시 6번\
+',
+
+// ISMP 
+'# 정의 : SW 개발사업 RFP 마련 / FP 도출 수준 까지 / 요건 기술, 구축 전략 수립 활동 <br/>\
+- 특정 SW 개발 사업에 대한 상세 분석과 제안요청서(RFP)를 마련하기 위해 기능점수 도출 가능수준까지 요건을 기술하여 구축전략 및 이행 전략 수립하는 활동 <br/><br/>\
+# 목적 <br/>\
+- ISP 수행범위 한계점 해결 : 대상 시스템 구체화 <br/>\
+- 부적절 발주 관행 해결 : RFP 효율화 <br/>\
+- 요구사항 명확화 : 기능/비기능 및 기술 요구사항 <br/><br/>\
+# 수행 절차 <br/>\
+- 프로젝트 착수 및 참여자 결정 : 경영진 지원조직 형성, 프로젝트 수행조직 편성, 프로젝트 계획 수립 <br/>\
+- 정보시스템 방향성 수립 : 정보화 전략 검토, 벤치마킹 분석, 추진범위 및 방향 정의,검토<br/>\
+- 업무 및 정보기술 요건 분석 : 현황분석, 업무 요건 분석, 기술 요건 분석<br/>\
+- 정보시스템 구조 및 요건 정의 : 아키텍처 정의, 요건 간 이행 연관성 분석, 요건 기술서 작성,검토 <br/>\
+- 정보시스템 구축사업 이행 방안 수립 : 계획 수립, 분리발주 가능성 평가, 예산 수립, RFP 작성, 업체 선정,평가 지원 <br/><br/>\
+# ISP, EA/ITA, ISMP <br/>\
+<img src = "./img/ISP_EA_ISMP.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 비교 <br/>\
+<img src = "./img/EAITAISPISMPCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 119회 관리 4교시 3번\
 ',
  
 // 플랫폼 경제
