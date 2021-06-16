@@ -18,7 +18,7 @@ var question = question.concat(
 '[ITIL]- SKMS',
 'Enterprise Arcitecture',
 'Information System Plan',
-'ISP 수립 공통가이드(제4판)',
+'Information System Plan 수립 공통가이드(제4판)',
 'Information System Master Plan',
 '플랫폼 경제',
 '프로토콜 경제',
