@@ -35,8 +35,10 @@ var question = question.concat(
 '[경영환경분석]- Horizon Scanning(이슈탐지)',
 '[경영환경분석]- Backcasting',
 'BABOK',
-'BSC',
-'IT-BSC',
+'[성과관리 방법]- BSC',
+'[성과관리 방법]- IT-BSC',
+'[성과관리 방법]- MBO',
+'[성과관리 방법]- OKR',
 '코호트분석(Cohort Analysis)',
 '악마의 강',
 '죽음의 계곡(Death Valley)',
@@ -92,7 +94,6 @@ var question = question.concat(
 'Servitization',
 '대기행렬이론',
 '[대기행렬]- 대기행렬 시스템',
-'OKR',
 'Value Chain',
 'MVP',
 );
@@ -771,31 +772,100 @@ var answer = answer.concat(
 // BSC
 '# 정의 : 재무중심 한계 / 재고내학 / 성과 관리 다중분석 기법 <br/>\
 - Balance Score Card <br/>\
--  기존 재무 중심의 성과관리 한계를 보완하기 위해 재무, 고객, 내부 프로세스, 학습과 성장 관점을 관리한 성과 관리 다중분석 기법 <br/><br/>\
-# 암기 <br/>\
-- 재고내학 <br/>\
-- 절차 : 비>맵>C>K>설 <br/><br/>\
-# 관점 <br/>\
+- 기존 재무 중심의 성과관리 한계를 보완하기 위해 재무, 고객, 내부 프로세스, 학습과 성장 관점을 관리한 성과 관리 다중분석 기법 <br/><br/>\
+# 관점 (<font color = "red">재고내학</font>)<br/>\
 - 재무 : 주주배당이익/현금흐름, EVM, 회전율/ABM, VBM <br/>\
 - 고객 : 고객만족, 납기준수/만족도, 유지율/CRM <br/>\
 - 내부프로세스 : 품질, 생산효율/신제품출하율, 재고수준/SixSigma <br/>\
 - 학습과성장 : 신제품개발/직원만족도, 전략이행정도/지식경영 <br/><br/>\
 # 구축 프로세스 (BSC 전략 구체화) : 비전 및 전략 -> 전략맵 -> CSF -> KPI -> KPI 상세설계 <br/><br/>\
-# 전략맵 : 전략요소의 인과관계를 재무, 비재무적 관점 따라 그림으로 표현 <br/><br/>\
+# 특징 <br/>\
+- 목적 : 재무적 성장관계 파악(비즈니스, 프로세스, 고객 서비스, 제품 개선) <br/>\
+- 목표 : 기업의 행동과 프로세스 변화 <br/>\
+- 활동 : 비즈니스 거버넌스 <br/>\
+- 중점분야 : 비즈니스 분야 <br/>\
+- 활용사례 : 경영전략 수립, 주주대상 보고 <br/>\
+- 고려사항 : 기업내 전 영역 종합적 평가 필요 <br/><br/>\
 # 지표 <br/>\
 - CSF : 예)시장점유율 <br/>\
 - KPI : 선행지표, 예) 고객만족도, 배달시간 <br/>\
-- KGI : 후행지표 \
+- KGI : 후행지표 <br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 2번\
 ',
 
 // IT-BSC
 '# 정의 : IT Paradox / BSC 융합 / IT 성과 측정도구 <br/>\
 - IT생산성 paradox를 해결하기 위해 경영 BSC개념을 융합하여 개발한 IT 성과측정도구 <br/><br/>\
-# 관점 (기사운미) <br/>\
+# 관점 (<font color = "red">기사운미</font>) <br/>\
 - 기업공헌도 : ROI, TCO <br/>\
 - 사용자 : IT 서비스공급자, 사용자 파트너쉽, 사용자 만족, 고객 만족도, 납기 준수 <br/>\
 - 운영프로세스 : 프로세스 성숙도, 문제건수 <br/>\
-- 미래 지향 : 전문가 비율, 표준준수 여부\
+- 미래 지향 : 전문가 비율, 표준준수 여부 <br/><br/>\
+# 특징 <br/>\
+- 목적 : 내부 기술에 대한 고객 서비스 측면 성과 측정 <br/>\
+- 목표 : IT Value 전달 및 성과 달성 목적 제시 <br/>\
+- 활동 : IT 거버넌스 <br/>\
+- 중점분야 : 기술적 분야 <br/>\
+- 활용사례 : IT 부서평가, IT 투자 전개 참고 <br/>\
+- 고려사항 : IT 담당자, 주요관점별 실무지표 <br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 2번\
+',
+
+// MBO
+'# 정의 : 조직 구성원 / 목표 설정 / 성과관리방법 <br/>\
+- Management By Objectives <br/>\
+- 조직 구성원들이 참여하여 목표를 설정하고, 그에 따라 생산 활동을 한 뒤, 성과관리방법 <br/><br/>\
+# 특징 <br/>\
+- 대상 : What <br/>\
+- 주기 : 1년 주기 <br/>\
+- 범위 : 개인별, 부서별 <br/>\
+- 평가활용 : 공정한 계산, 평가 직접 연계 방식 <br/>\
+- 프로세스 : 목표수립 > 모니터링 > 평가 <br/>\
+- 목표 단계 : 조직에서 정의된 단일 목표 <br/>\
+- 접근 방식 : Top Down <br/>\
+- 보상 방법 : 보상과 연결 <br/>\
+- 목표 수준 : 달성 가능 수준, 관리적(100% 달성) <br/>\
+- 결과 공유 : 폐쇄적, 전체 목표 공유에 소극적 <br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 2번\
+',
+
+// OKR
+'# 정의: 조직 목표 설정 / 결과 추적 / 성과 중심 목표 설정 프레임워크 <br/>\
+- Objective Key Results <br/>\
+- 조직적 차원에서 목표를 설정하고, 그 결과를 추적할 수 있도록 도와주는 성과 중심 조직을 위한 목표 설정 프레임워크 <br/><br/>\
+# 원칙 <br/>\
+- 집중(Focus) : 중요한 것 선택 <br/>\
+- 정렬(Alignment) : 여러 요소 사이 집합 취함 <br/>\
+- 추적(Tracking) : 일 상황 추적 가능 <br/>\
+- 도전(Stretching) : 더 높은 곳 도전 <br/><br/>\
+# 특징 <br/>\
+- 대상 : What & How to <br/>\
+- 주기 : 분기, 월 주기 <br/>\
+- 범위 : 전사, 팀, 개인 단위 <br/>\
+- 평가활용 : 동기부여 최우선 목적, 비공식적, 자연스러운 문화 강조 <br/>\
+- 프로세스 : 도전 > 정렬 > 집중 <br/>\
+- 목표단계 : Dream(장기적)에서 구체적 계획까지 연계 <br/>\
+- 접근방식 : Bottom Up or Sideways <br/>\
+- 보상방법 : 대부분 보상과 연결 없음 <br/>\
+- 목표 수준 : 공격적, 도전적 수준(60~70%) <br/>\
+- 결과 공유 : 개방적, 전체 내용 투명 공유 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/OKR_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 상세요소 <br/>\
+1. 구성요소 <br/>\
+- Objectives : Mission 달성 이전 자신이 정하는 목표 <br/>\
+- Key Result : Objective 달성 판단 지표 <br/><br/>\
+2. 프로세스 (<font color = "red">범미마모핵</font>)<br/>\
+- 범위 설정 : OKR 대상 팀, 적용 범위 <br/>\
+- 미션 설정 : OKR 적용 팀, 수행해야 할 미션 <br/>\
+- 마일스톤 설정 : 1개월 or 3개월 단위 마일스톤 지정 <br/>\
+- 모델 작성 : 목표, 핵심결과 지표 정하기 위한 모델 작성 <br/>\
+- 핵심 지표 결정 : 구체적 수치 목표 지정, Key Results 로 정의 <br/>\
+<font color = "red">* SMART : Specific, Measurable, Achievable, Relevant, Time-bound </font><br/><br/>\
+# OKR, KPI 비교 <br/>\
+<img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 2번\
+* ITPE 7회 관리 5번 \
 ',
 
 // 코호트분석
@@ -1598,33 +1668,6 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 4. Web <br/>\
 <img src = "./img/WaitQueingWeb.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 관리 2교시 6번\
-',
-
-// OKR
-'# 정의: 조직 목표 설정 / 결과 추적 / 성과 중심 목표 설정 프레임워크 <br/>\
-- Objective Key Results <br/>\
-- 조직적 차원에서 목표를 설정하고, 그 결과를 추적할 수 있도록 도와주는 성과 중심 조직을 위한 목표 설정 프레임워크 <br/><br/>\
-# 원칙 <br/>\
-- 집중(Focus) : 중요한 것 선택 <br/>\
-- 정렬(Alignment) : 여러 요소 사이 집합 취함 <br/>\
-- 추적(Tracking) : 일 상황 추적 가능 <br/>\
-- 도전(Stretching) : 더 높은 곳 도전 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/OKR_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 상세요소 <br/>\
-1. 구성요소 <br/>\
-- Objectives : Mission 달성 이전 자신이 정하는 목표 <br/>\
-- Key Result : Objective 달성 판단 지표 <br/><br/>\
-2. 프로세스 (<font color = "red">범미마모핵</font>)<br/>\
-- 범위 설정 : OKR 대상 팀, 적용 범위 <br/>\
-- 미션 설정 : OKR 적용 팀, 수행해야 할 미션 <br/>\
-- 마일스톤 설정 : 1개월 or 3개월 단위 마일스톤 지정 <br/>\
-- 모델 작성 : 목표, 핵심결과 지표 정하기 위한 모델 작성 <br/>\
-- 핵심 지표 결정 : 구체적 수치 목표 지정, Key Results 로 정의 <br/>\
-<font color = "red">* SMART : Specific, Measurable, Achievable, Relevant, Time-bound </font><br/><br/>\
-# OKR, KPI 비교 <br/>\
-<img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* ITPE 7회 관리 5번 \
 ',
 
 // Value Chain

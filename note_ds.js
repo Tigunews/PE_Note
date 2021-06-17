@@ -20,6 +20,7 @@ var question = question.concat(
 '[Smart Factory]- CPS 요구사항',
 '[Smart Factory]- SCADA',
 '[Smart Factory]- 팝업팩토리(Pop-up Factory)',
+'Smart Pharm',
 'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
 '[IoT Platform]- OCF',
@@ -793,7 +794,41 @@ var answer = answer.concat(
 // [3D 프린터]- 팝업팩토리
 '# 정의 : 3D Printing / 전자기기 즉석 생산 기법 <br/>\
 - 3D 프린팅 기술을 이용하여 전자기기(HW)를 그 자리에서 즉석(Pop-up) 생산하는 기법. 더 빠르고 신속하게 SW를 만드는 SW부문의 Agile 개발방법론을 하드웨어(HW) 생산 방식에 접목하여 HW를 빠르고 유연하고 민첩하게 생산(fast, flexible, agile Manufacturing)하기 위한 기법',
-  
+
+// Smart Pharm
+'# 정의 : 자동화 설비, ICT / 시간, 공간 제약 없이 / 농사 관측, 최적화 상태 관리 / 과학기반 농업방식 <br/>\
+- 자동화 설비와 정보통신기술을 활용해 시간과 공간의 제약 없이 농사 환경을 관측하고 최적의 상태로 관리하는 과학 기반의 농업 방식 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SmartPharm.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 모델 <br/>\
+- 1세대(2020) : 환경정보 모니터링, 스마트폰 원격제어 <br/>\
+- 2세대(2030) : 지능정보기술(ICBM) / 초보적 데이터 기반 스마트팜 모델 <br/>\
+- 3세대(2040) : 지능정보기술+로봇+신재생 에너지기술 / 무인,자동화 모델 <br/><br/>\
+# 기술요소 <br/>\
+1. 센서기술 <br/>\
+- 상황인지 센서 : 온실/원예 온도, 습도, CO2, 풍속, 채광 인식 <br/>\
+- 생체인식 센서 : 가축등 호흡,맥박,체온,행동,음성 <br/><br/>\
+2. 통신기술 <br/>\
+- WPAN : Zigbee, Bluetooth, Mesh N/W <br/>\
+- RFID/GPS : HF, UHF, 고주파 대역 <br/>\
+- LPWAN : Lora, Sigfox, LTE-MTC, NB-IoT <br/><br/>\
+3. SW 기술 <br/>\
+- 원격제어 : Agent, Agentless 원격제어 SW 기술 <br/>\
+- 모니터링 및 관리 : 다수 장비 모니터링, 실시간 표현 <br/>\
+- 빅데이터 분석 : 상황인지, 생체인식 센서 데이터 추출/분석 기술 <br/>\
+- 인공지능 : 과거 데이터로부터 미래 예측, 선제적 제안, 최적 스마트팜 구현 기술 <br/><br/>\
+4. 로봇기술 <br/>\
+- 자율주행 : 사전 경로 설정, 자율주행 자동 작업 기능 <br/>\
+- 자가치유 : 중단 방지 기능 <br/>\
+- CPS : 물리,화학,기계공학 컴퓨터 네트워크 통한 자율적, 지능적 제어 <br/><br/>\
+5. 에너지 관리 기술 <br/>\
+- ESS : 무선 센서 및 통신 이용 가능 <br/>\
+- Smart Grid : AMI, DR 효율 전력관리 기술 <br/><br/>\
+# 경쟁력 확보 방안 <br/>\
+<img src = "./img/SmartPharmVision.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 5번\
+',
+
 // IoT Platform
 '# IoT Platform Overview <br/>\
 - 발전 내용 : Embedded > CPS = IoT Platform <br/>\
