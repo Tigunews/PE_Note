@@ -344,6 +344,7 @@
 '[방법론][Ops]- DataOps',
 '[방법론][Ops]- GitOps',
 '[방법론][Ops]- MLOps',
+'[방법론][Ops]- DevSecOps',
 '[방법론]- 시각적 분석 (Visual Analytics)',
 '[방법론]- 시각화 분석 (Visualization Analysis)',
 '[방법론]- 데이터 시각화 (Data Visualization)',
@@ -5676,6 +5677,34 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 2. DevOps 측면 <br/>\
 - 데이터 Silo 해체 <br/>\
 - 협업, 소통 중시문화 \
+',
+
+// DevSecOps
+'# 정의 : 보안 주기 포함 / 개발 방법론 <br/>\
+- Development와 Operation의 융합과 협업을 통한 개발 주기에서 보안 측면의 주기를 포함하는 개발 방법론 <br/><br/>\
+# 적용 기술 <br/>\
+1. Cycle별 보안 기법 <br/>\
+- 테스트 : IAST(정적+동적), Fuzzing, Pen Testing <br/>\
+- 분석 : FMEA <br/>\
+- 컨테이너 : RASP(Exploit 대응) <br/><br/>\
+2. 도구 <br/>\
+- Code : 형상관리, 코드 추적성, 단일 버전 유지 도구 <br/>\
+- Build : 자동화된 코드 빌드 도구 <br/>\
+- Test : 동적, 정적 커버리지 자동화 테스트 도구 <br/>\
+- Release : 변경관리, 변경승인, 릴리즈 계획, 릴리즈 자동화 <br/><br/>\
+3. 보안 기능 <br/>\
+- Security Engineering : 보안 공학적 접근법, 자동화 도구 <br/>\
+- Security Operations : 보안성 호가보 위한 지속적 Monitoring, Detecting <br/>\
+- Security Science : 보안 모델 수립, 학습, 전파, 예측성 제공 <br/><br/>\
+# CARTA 접근법 <br/>\
+<img src = "./img/CARTA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Continous : 지속적 보안, 위험관리 핵심 <br/>\
+- Adaptive : 컨텍스트 기반 대처 가능 지속 학습, 모니터링 관리 중점 <br/>\
+- Risk : 위험은 일련의 이벤트 조합에 의해 결정 <br/>\
+- Trust : 사용자 경험 영항 x, 지속적인 액세스 관리 <br/>\
+- Assessment : 이전 단계 데이터 요소, 자동으로 실시간 요약, 최종 의사 결정 <br/>\
+- Continuous : 지속적인 보안이 위험관리의 핵심 <br/><br/>\
+* ITPE 합숙 124회 4일차 1교시 5번\
 ',
  
 // 시각적 분석

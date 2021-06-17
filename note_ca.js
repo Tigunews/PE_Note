@@ -72,6 +72,7 @@ var question = question.concat(
 'NAND Flash Memory',
 'eMMC',
 'UFS',
+'MoS',
 'CPU',
 '뉴로모픽',
 '[CPU]- MajorState',
@@ -1411,6 +1412,29 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - UniPro : I/O 오류 자동 감지 복구<br/>\
 - M-PHY : 안정적 데이터 전송 <br/><br/>\
 * ITPE 합숙 124회 3일차 1교시 3번\
+',
+
+// MoS
+'# 정의 : 비휘발성 메모리, 초저지연 반도체 저장장치 / 공간 통합 / 내부 동작 하드웨어 자동화 / 영구 메모리 기술 <br/>\
+- Memory Over Storage <br/>\
+- 비휘발성 메모리(NVDIMM) 용량과 초저지연(ULL) 반도체 저장장치(SSD)의 용량을 하나의 공간으로 통합하고, 내부 동작을 하드웨어로 자동화한 영구 메모리 기술 <br/><br/>\
+# 특징 <br/>\
+- 슈퍼 컴퓨터 활용 <br/>\
+- 높은 저장 용량 : 메모리 슬롯당 4배 이상 (TB) 수준 저장 <br/>\
+- 빠른 데이터 처리 속도 : 휘발성 메모리(D램) 유사 처리속도 <br/>\
+- 기존NVDIMM-SSD 재사용 : 기존 D램 메모리 규격, 고속 플래시 저장 장치 기술 재사용 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MoS_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작원리 <br/>\
+- 사용자 모든 메모리 요청 가능한 메인보드, CPU내부의 MCH(Memory Controller Hub) 적용 방식 구현 <br/>\
+- 사용자 메모리 요청 NVDIMM 캐시 메모리 처리 > 캐시 메모리x 데이터 SSD Read <br/>\
+- MCH 내부에서 하드웨어로 SSD 입출력 직접 처리 > 초저지연 SSD 발생 오버헤드 완화 <br/><br/>\
+# 기술요소 <br/>\
+- NVDIMM : 고성능 비휘발성 메모리 기술 <br/>\
+- 메모리 요청 : 캐시 메모리 <br/>\
+- 메모리 통합 : SSD, NVDIMM통합 기술 <br/>\
+- 속도 향상 : MCH 내부에서 SSD 입출력 처리, 에너지 절감 및 데이터 속도 향상 <br/><br/>\
+* ITPE 합숙 124회 4일차 1교시 13번\
 ',
   
 // CPU
