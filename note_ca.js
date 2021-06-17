@@ -1405,8 +1405,11 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 용량 늘리기 쉬움 <br/>\
 - 셀의 주소를 기억할 필요가 없음 <br/>\
 - 소형화, 대용량화 -> 모바일 및 전자제품 저장기기로 사용 <br/>\
-- 속도 느림 (NOR Flash Memory는 속도 빠름) <br/><br/>\
+- 속도 느림 (NOR Flash Memory는 속도 빠름) <br/>\
 <img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형별 비교 <br/>\
+<img src = "./img/NANDFlashTypeCopmare1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/NANDFlashTypeCopmare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 2교시 2번\
 ',
 
