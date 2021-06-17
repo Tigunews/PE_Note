@@ -50,6 +50,8 @@ var question = question.concat(
 '[Cache]- Cache 일관성',
 '[Cache]- MESI',
 'DMA',
+'PCI Express',
+'DDR SDRAM',
 'FeRAM',
 '병렬 컴퓨팅',
 '[병렬 컴퓨팅]- UMA',
@@ -69,6 +71,7 @@ var question = question.concat(
 '양자컴퓨팅',
 'Tiny OS',
 'Nano Qplus',
+'Flash Memory',
 'NAND Flash Memory',
 'eMMC',
 'UFS',
@@ -101,6 +104,7 @@ var question = question.concat(
 '[InMemory]- In-Memory Database',
 'Auto Scale Up, Out',
 'Library',
+'[Library]- DLL',
 '정규 표현식',
 '유한 오토마타',
 '엑사스케일 컴퓨팅 시스템',
@@ -496,10 +500,15 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // Memory Leak
 '# 정의 : 메모리 비반환 점유 현상 <br/>\
 - 컴퓨터 프로그램이 메모리를 할당된 메모리를 사용한 다음 반환하지 않아 메모리를 계속 점유하고 있는 현상 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MemoryLeak.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 문제점 <br/>\
 - 성능 : 프로그램 성능저하 문제 <br/>\
 - 오류 : 메모리 부족으로 인한 시스템 오류 <br/>\
 - 보안 : 버퍼 오버플로우 <br/><br/>\
+# 탐지 기법 <br/>\
+- 정적 : 프로그램 실행x, 잔존결함, 복잡도, 의존성 분석 탐지 / PMD, cppcheck, SonarQube <br/>\
+- 동적 : 프로그램 실행, 분석 탐지 / Avalanche, Valgrind <br/><br/>\
 # 해결방법 <br/>\
 - 디버깅 : 메모리 모니터링 <br/>\
 - 코드 : 프로그램 Code Inspection 수행 <br/><br/>\
@@ -1016,6 +1025,32 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 * 123회 응용 4교시 1번\
 ',
 
+// PCI Express
+'# 정의 : x1~x32 확장 가능 다수 레인 / 물리 계층 기반 / 고속 데이터전송 / 점대점 기기간 연결 프로토콜 <br/>\
+- PCIe는 x1에서 x32까지 확장 가능한 다수의 레인으로 구성된 물리 계층 기반의 고속 데이터 전송을 제공하는 점대점 기기간 연결 프로토콜 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/PCIeArchitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Transaction Layer : Packet Based Protocol / TLP 사용 통신, Tx 타입, 수신자 주소, 전송사이즈, 페이로드, CRC <br/>\
+- Datalink Layer : 오류제어, 흐름제어 / CRC, CheckSum, Packet loss 패킷 흐름 제어 <br/>\
+- Physical Layer : 인코딩, 레인 / GEN1~2(8b/10b), GEN3~4(128b/130b) 인코딩 <br/><br/>\
+* 123회 응용 1교시 2번\
+',
+
+// DDR SDRAM
+'# 정의 : 상승 및 하강 에지 전송 / 클럭 주파수 증가 x / 전송속도 2배 향상 RAM <br/>\
+- SDRAM 대비 클럭 신호의 상승 및 하강 에지에서 데이터를 전송함으로써 클럭 주파수를 증가시키지 않고 전송속도를 2배 향상 시킨 RAM <br/><br/>\
+# 구성요소 <br/>\
+- Bank : 데이터를 구분하여 저장할 수 있는 단위 <br/>\
+- BL(Burst Length) : 한 번의 읽기/쓰기 명령에 따른 연속 입출력 데이터 개수 <br/><br/>\
+# 주요기술 <br/>\
+- 고속 트레이닝 기술 : R/W 회로 고속 상태 최적화 <br/>\
+- DFE(Decision Feedback Equalization) : 반사 잡음 제거 회로 기술 <br/>\
+- DLL(Delay Locked Loop) : D Ram 출력 데이터 외부 클럭 동기화 전송 회로 기술 <br/>\
+- DCC(Duty Cycle Correction) : 연속되는 클록, 데이터 신호의 High,Low Pulse 폭 5:5 회로 기술 <br/>\
+* 123회 응용 1교시 1번\
+',
+
 // FeRAM
 '정의 : 차세대 비휘발성 메모리 / 강유전체 <br/>\
 - DRAM과 비슷한 구조를 갖고 있으나 강유전체를 가지고 있어 비휘발성을 가지며 기존 메모리에 비해 빠른 속도, 높은 쓰기/지우기 횟수, 낮은 전력을 사용하는 차세대 비휘발성 메모리',
@@ -1248,31 +1283,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 개념도 <br/>\
 <img src = "./img/ManycoreCPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
-1. Cache 접근성 <br/>\
-- NUCA(Non-Uniform Cache Architecture) : 각 코어블록, 지리적 근접 L2 Cache Bank 접근 허용, Bandwidth 향상 <br/>\
-2. 외부 메모리 연결 <br/>\
-- 3D die Stacking : SOC die 내부의 여러 지점에 Memory die와 연결되는 via 제공, 대역폭 향상, 많은 수 연결 지원 <br/>\
-3. 고속 내부 네트워크 <br/>\
-- NoC(network On Chip) : 프로세스 내 인터커넥션 위한 라우터 통한 고속 네트워크 구현 <br/>\
-4. 에너지 효율성 <br/>\
-- DVFS(Dynamic Voltage Frequency Scaling) : 프로세서 전력 효율 향상, 처리량 대비 가변 전압, 주파수 적용 <br/>\
-5. 내부 메모리 컨트롤 <br/>\
-- Internal Memory Controller : 매니코어 메모리 접근성 향상 <br/>\
-6. 고밀도 집적 <br/>\
-- Nano 집적 기술 : 단일 프로세서 칩 집적, 50nm 이하 소자 집적 기술, 현재 10nm 이하 소자 집적 발전중 <br/><br/>\
-# SW 측면 기술요소 <br/>\
-- Message Passing : 병렬처리 정보교환시 필요한 기능, 문법, API 표준 <br/>\
-- Transaction Memory : 공유 메모리 접근 위한 동시성 제어 기법 <br/>\
-- SPMT(Serial Port Memory Technology) : 수행 확률 높은 부분 다른 코어 통해 미리 수행 <br/>\
-- Token Based Coherence Protocol : 캐시 일관성위한토큰 기반프로토콜<br/>\
-- SW 지원 플랫폼 : OpenMP, OpenCL, CUDA 등 병렬 프로그램 지원 플랫폼 <br/><br/>\
-# 활용 : 머신러닝, 클라우드, 5G <br/><br/>\
-* NoC : 멀티 코어 스위치 연결 구조 <br/>\
-* CG : Core Group <br/>\
-* CPE : Computing Processing Elements <br/>\
-* MPE : Management Processing Element <br/>\
-* MC : Memory Controller <br/>\
-* LDM : Logical Disk Manager <br/><br/>\
+1. 프로세싱 <br/>\
+- 병렬 컴퓨팅 : NUMA, 멀티 쓰레딩 병렬 <br/>\
+- 캐시 일관성 : 디렉토리 프로토콜, 잠금 메커니즘 <br/>\
+- 하드웨어 추상화 : 프로세서 처리 추상화 레이어 계층 제공 <br/><br/>\
+2. 메모리 <br/>\
+- Messaing Passing : 병렬 처리 정보 교환 프로토콜 <br/>\
+- Scratchpad memory : 오퍼랜드, 버퍼, 인터럽트 등에 사용 고속 처리용 메모리 <br/>\
+- 메모리 주소 분할 : 분산 메모리 구조, 주소 분할 병렬처리 지원 <br/><br/>\
+# 멀티코어 프로세서 비교 <br/>\
+<img src = "./img/ManyCoreMultiCoreCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 5번\
 ',
 
@@ -1365,15 +1385,29 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - User API : 센서 노드에 사용되는 HW 제어, 추상화하여 사용자에 API형태 제공 \
 ',
 
+// Flash Memory 
+'# 정의 : 전원 제거 / 정보 유지 / 비휘발성 기억 장치 <br/>\
+- 전원이 제거되어도 정보를 그대로 유지하는 비휘발성 기억 장치 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/FlashMemoryOVerview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+- NAND : 수직 배열, 대용량 <br/>\
+- NOR : 수평 배열, 적은 용량, 빠른 속도 <br/><br/>\
+* 123회 응용 2교시 2번\
+',
+
 // NAND Flash Memory
 '# 정의 : 플래시 메모리 / 직렬 배열 <br/>\
 - 반도체의 셀이 직렬로 배열되어 있는 플래시 메모리의 한 종류 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/NandFlashType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - 용량 늘리기 쉬움 <br/>\
 - 셀의 주소를 기억할 필요가 없음 <br/>\
 - 소형화, 대용량화 -> 모바일 및 전자제품 저장기기로 사용 <br/>\
 - 속도 느림 (NOR Flash Memory는 속도 빠름) <br/><br/>\
-<img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 2교시 2번\
 ',
 
 // eMMC
@@ -1887,6 +1921,19 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 유의 사항 <br/>\
 - DLL 선점 상황일 시, 프로그램 치명적 오류 발생 가능성 <br/>\
 - DLL 종속성 : 프로그램, DLL이 다른 DLL 함수 사용하는 경우 유의 <br/><br/>\
+* 123회 응용 1교시 3번\
+',
+
+// DLL
+'# 정의 : 프로그램 실행될 때 사용 / 함수, 데이터 / 모듈 라이브러리 <br/>\
+- 프로그램이 실행될 때 다른 모듈에 의해 사용될 수 있는 함수나 데이터르 가지고 있는 모듈 라이브러리 <br/><br/>\
+# DLL 개념도 <br/>\
+<img src = "./img/DLL_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- Function : 내부,외부 DLL <br/>\
+- Link : 묵시적(살행파일 자체 포함),명시적 링킹 (API) <br/><br/>\
+# 동적,정적 라이브러리 비교 <br/>\
+<img src = "./img/StaticDynamicLibrarycompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 3번\
 ',
 
