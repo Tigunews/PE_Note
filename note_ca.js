@@ -48,6 +48,8 @@ var question = question.concat(
 'Cache Memory',
 '[Cache]- Cache Mapping',
 '[Cache]- Cache 일관성',
+'[Cache]- Directory Protocol',
+'[Cache]- Snoopy Protocol',
 '[Cache]- MESI',
 'DMA',
 'PCI Express',
@@ -952,7 +954,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 장점 : Hit Rate 높음 <br/>\
 - 단점 : 회로 복잡, 속도 느림 <br/><br/>\
 3. 집합 연관 사상 <br/>\
-<img src = "./img/CacheMemory_3.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CacheMemory_3.PNG" style = "max-width:100%; height:auto;"><br/>\
 - 원리 : 캐시 메모리 한 Index에 2개 이상 저장 Set 형성 <br/>\
 - 장점 : Hit Rate 높음 <br/>\
 - 단점 : 구현회로 복잡\
@@ -962,8 +964,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 '# 정의 : <br/>\
 - 공유 메모리 시스템에서 개별 프로세서의 지역 캐시간의 일관성 <br/><br/>\
 # 필요성 <br/>\
-- 환경 : 다중 프로세스 환경 <br/>\
-- 입출력 동작, 멀티 프로세스 환경, 변경 가능한 데이터 공유 <br/><br/>\
+- 일관성 : 캐시간 데이터 정합성 <br/>\
+- 성능 : 시스템 성능 저하 영향 미침 <br/>\
+- 신뢰성 : 프로그램 비정상 동작 방지 <br/><br/>\
 # 발생원인 <br/>\
 1. 정책 <br/>\
 - Write Through : 완전 전파 안됨 <br/>\
@@ -974,22 +977,65 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 3. 멀티 프로세서 환경 <br/>\
 - 프로세스 이주 : SMP(대칭적 다중 프로세서) 시스템에서 프로세스를 처리하던 프로세서가 변경되는 현상 <br/>\
 - 입출력 동작 : I/O 장치와 프로세서 캐시간의 일관성 <br/><br/>\
-# 유지기법 <br/>\
-1. Dir 기반 <br/>\
-- Full Map : 주기억 장치 저장 <br/>\
-- Limited : Full Map 오버헤드 감소 <br/>\
-- Chained : 연결 리스트 사용 <br/><br/>\
-2. Protocol 기반 <br/>\
+# HW 기반 유지기법 <br/>\
+0. 개념 <br/>\
+- 캐시 일관성 프로토콜, Runtime 동적 검출 <br/>\
+- SW 비해 캐시 사용률 좋음, 소프트웨어 개발 부담 줄임 <br/><br/>\
+1. Dir 기반 : 캐시블록 공유상태 저장 공간 이용 <br/>\
+- Full Map : 중앙집중식, 복사본 포인터 <br/>\
+- Limited : Full Map 작게 유지, 메모리 효율화 <br/>\
+- Chained : 포인터를 Linked list로 연결, 분산식 <br/><br/>\
+2. Protocol 기반 : 주소버스 감시, 캐시상 접근 검사 <br/>\
 - Snoopy Protocol : Write Through(Update), Write Back(Invalid) <br/>\
 - MSI Protocol : Shared 상태가 없어 여러 프로세서가 같은 값 읽을 때 유리 <br/>\
 - MESI Protocol : 메모리가 가질 수 있는 4가지 상태 정의 <br/>\
 - MOESI Protocol : Owned(캐시간 만 동기화) 추가 <br/><br/>\
-3. SW 기반 <br/>\
+# SW 기반 유지기법 <br/>\
+1. 개념 <br/>\
+- 컴파일러, OS 이용 <br/>\
+- 잠재된 문제 검출 오버헤드 Runtime -> Compiletime 이동 <br/>\
+- HW비해 간단, Cache 이용률 저하 <br/>\
+2. 방식 <br/>\
 - 공유캐시 사용 : 모든 프로세스들이 하나의 캐시만 사용 <br/>\
 - 공유변수 관리 : 공유되는 변수에 캐시 저장 않음 <br/>\
 - 잠금변수 사용 : Locking 사용하여, 다른 프로세스 접근 못하도록 차단 <br/><br/>\
 * 123회 응용 3교시 1번 <br/>\
 * 라이지움 82회 관리 4교시 6번\
+',
+
+// Directory Protocol
+'# 정의 : 캐시 정보 / 주기억장치 디렉토리 저장 / 일관성 유지 <br/>\
+- 캐시의 정보상태(캐시블록의 공유상태, 노드 등)를 주기억장치의 디렉토리에 저장하여 일관성을 유지시키는 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DirectoryProtocol.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- FullM Map Directory : 데이터 대한 Directory 주기억장치 저장, 포인터 상태 저장 <br/>\
+- Limit Directory : Full Map Directory 작게 유지 <br/>\
+- Chained Directory : Directory 포인터, Linked List 연결, 분산식 <br/><br/>\
+# 특징 <br/>\
+- 매커니즘 : 중앙 제어기, 지역 캐시 제어기 동작 제어, 보고 받아 일관성 유지 <br/>\
+- 장점 : 대역폭 상대적으로 작음 <br/>\
+- 단점 : 캐시 제어기, 중앙 제어기 간 통신 오버헤드 발생 <br/>\
+- 활용 : 대규모 시스템(64개 이상 프로세서) <br/><br/>\
+* 123회 응용 3교시 1번\
+',
+
+// Snoopy Protocol
+'# 정의 : 다중프로세서 내 / 모든 캐시 제어기 / 스누피 프로토콜 이용 / 분산 기법 <br/>\
+- 캐시 일관성 유지를 다중프로세서 내의 모든 캐시 제어기에 스누피 프로토콜을 이용하여 분산하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SnoopyProtocol.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 캐시 일관성 프로토콜 : 데이터 블록 공유 상태 추적 <br/>\
+- 쓰기 무효화 프로토콜 : 쓰기 수행시 다른 복사본 무효 만듦 <br/>\
+- 버스 감시 매커니즘 : 일관성 유지 위한 버스 감시 하드웨어 모듈 추가 <br/>\
+- 스누피 제어기 : 다른 프로세서에 의한 메모리 접근 검사, 캐시 블록 상태 조절 <br/><br/>\
+# 특징 <br/>\
+- 매커니즘 : 캐시 일관성 유지 책임, 다중 프로세서 내 캐시 제어기들에게 분산 <br/>\
+- 장점 : 대역폭이 충분히 크다면 좋은 성능 기대 <br/>\
+- 단점 : 노드 수 증가시 대역폭 늘어나야하므로 확장성 좋지 않음 <br/>\
+- 활용 : 버스 기반 다중 프로세서에서 적합 <br/><br/>\
+* 123회 응용 3교시 1번\
 ',
   
 // MESI
@@ -1005,6 +1051,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // DMA
 '# 정의 : 주변장치, 주기억장치 데이터 전송 장치 <br/>\
 - CPU를 통하지 않고 주변장치(I/O)와 주기억장치 사이의 데이터 전송을 담당하는 장치 <br/><br/>\
+# DMA 이전 방식 <br/>\
+- Programmed Driven I/O : CPU 상 실행되는 프로그램 의해 IO 제어 <br/>\
+- Interrupt Driven I/O : I/O Interface 주변 장치 상태 Check, CPU IO 요구 <br/><br/>\
+# 필요성 <br/>\
+- CPU 자원낭비 최소화 : Disk 위해 범용 프로세서 전송 제어 낭비 <br/>\
+- CPU 성능저하 개선 : 능동적 CPU 개입 필요, 오버헤드 발새 ㅇ가능 <br/><br/>\
 # 특징 <br/>\
 - CPU Utilization 향상 : CPU 다른 작업 수행 가능 <br/>\
 - Multi Process 환경 유리 : 프로세스 CPU 작업 병렬화 <br/>\
@@ -1015,13 +1067,15 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 동작 모드 <br/>\
 1. 전송 방식 <br/>\
 - Burst Mode(Block Mode) : 블록 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
-- Word Mode(Cyucle Stealing) : 워드 단위, Memory Cycle 훔쳐서 수행, CPU 보다 우선 <br/>\
+<img src = "./img/BurstMode.png" style = "max-width:100%; height:auto;"><br/>\
+- Word Mode(Cycle Stealing) : 워드 단위, Memory Cycle 훔쳐서 수행, CPU 보다 우선 <br/>\
+<img src = "./img/CycleStealingMode.png" style = "max-width:100%; height:auto;"><br/>\
 - Demand Trasnfer Mode : 바이트 단위, 단일 프로그램 채널 사용 <br/><br/>\
 2. 연결 방식 <br/>\
 - 단일 버스 : CPU, RAM, I/O, DMAC 단일 버스 연결 / 1회 연결 2번 사용 <br/>\
 - 단일 버스 통합 방식 : 여러 I/O 가 DMA 연결 / 1회 연결 1번 사용 <br/>\
 - 입출력 버스 방식 : 시스템, 입출력 버스 분리, 다양한 속도 I/O 처리, DMAC가 복잡 <br/>\
-* DMAC : Direct Memory Access Controller <br/><br/>\
+<font color = "red">* DMAC : Direct Memory Access Controller </font><br/><br/>\
 * 123회 응용 4교시 1번\
 ',
 
