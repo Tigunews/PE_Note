@@ -4953,19 +4953,19 @@ P 히스토그램 : Data 분포 <br/>\
 - 자유로운 환경 설정 <br/><br/>\
 # 구성 : 빈, 빈펙토리, 애플리케이션컨텍스트, IoC 컨테이너 <br/><br/>\
 # DI 유형 <br/>\
-1. Setter Injection : 클래스 사이의 의존관계를 연결시키기 위한 방법 <br/>\
-2. Constructor Injection : 생성자를 통하여 클래스 사이의 의존관계를 연결시키는 방법 <br/>\
+1. Setter Injection : Setter Method <br/>\
+2. Constructor Injection : Constructor Method <br/>\
 3. Method Injection : Singletone 인스턴스와 Non Singletone의 의존관계 연결시키는 방법 <br/><br/>\
 # 구현 방법 <br/>\
 - DL(Dependancy Lookup) : 개발자들이 컨테이너에게 제공하는 API를 이용하여 사용하고자 하는 Bean을 Lookup(의존성 검색) <br/>\
-- DI(Dependancy Injection) : 각 클래스 사이에 피룡로 하는 의존관계를 컨테이너가 자동으로 연결(의존성 주입) <br/><br/>\
+- DI(Dependancy Injection) : 각 클래스 사이에 필요로 하는 의존관계를 컨테이너가 자동으로 연결(의존성 주입) <br/><br/>\
 * 124회 관리 1교시 6번\
 ',
 
 // DL
 '# 정의 : IoC / Pool / 참조 방법 <br/>\
 - Dependency LookUp <br/>\
-- IoC Containor가 관리중인 객체 저장소(Pool)에서 객체를 검색하여 참조하는 방법 <br/><br/>\
+- 저장소에 저장되어 있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이용하여 Bean을 Lookup 하는 기술 <br/><br/>\
 * 124회 관리 1교시 6번\
 ',
  
@@ -4973,9 +4973,18 @@ P 히스토그램 : Data 분포 <br/>\
 '# 정의 : 필요한 객체 받아서 사용 / OOP 기법 <br/>\
 - Dependency Injection <br/>\
 - Loosely Coupled <br/>\
+- 각 클래스간의 의존관계를 빈 설정 (Bean Definition) 정보를 바탕으로 컨테이너가 자동으로 연결해주는 IoC 기법 <br/><br/>\
 - 필요한 객체를 직접 생성하는 것이 아닌, 외부로부터 필요한 객체를 받아서 사용하는 객체지향 프로그래밍 기법 <br/><br/>\
+# 매커니즘 <br/>\
+1. 개발자, 빈 설정파일 의존관계 정보 추가 <br/>\
+2. 객체 레퍼런스 컨테이너 주입, 실행시 동적으로 의존관계 생성 <br/>\
+3. 컨테이너가 흐름의 주체, 애플리케이션 코드에 의존관계 주입 <br/><br/>\
 # 객체 사용 방법 <br/>\
 <img src = "./img/ObjectUseMethod.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형 <br/>\
+- Setter Injection : Setter Method 이용 의존성 삽입 <br/>\
+- Constructor Injection : 생성자 이용 의존성 삽입 <br/>\
+- Field Injection : Containor mandate <br/><br/>\ 
 # 장점 <br/>\
 1. 아키텍처 관점 <br/>\
 - 구현 분리 : 자유로운 환경설정 <br/>\
@@ -4989,6 +4998,13 @@ P 히스토그램 : Data 분포 <br/>\
 - Lifecycle 관리 : 외부 컨테이너에서 Singleton Lifecycle 관리 <br/><br/>\
 # Code 사례 <br/>\
 <img src = "./img/DI_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Class Call <br/>\
+<mg src = "./img/DI_ClassCall.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형 (IoC) <br/>\
+1. Setter Injection : 1:1 설정 <br/>\
+<img src = "./img/DI_SetterInjection.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Constructor Injection : <br/>\
+<img src = "./img/DI_ConsturctorInjection.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 6번\
 ',
  

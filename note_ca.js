@@ -1447,6 +1447,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 종류 <br/>\
 - NAND : 수직 배열, 대용량 <br/>\
 - NOR : 수평 배열, 적은 용량, 빠른 속도 <br/><br/>\
+# 매커니즘 <br/>\
+- Write : 고전압 / Floating Gate에 Charge 주입 <br/>\
+- Read : 약전압 / Threashold Voltage Passing Check <br/><br/>\
 * 123회 응용 2교시 2번\
 ',
 
