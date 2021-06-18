@@ -478,7 +478,7 @@ var answer = answer.concat(
 - EA 기반 ISP/BPR : EA Framework,Matrix 정의, BPR/ISP 산출물 <br/>\
 - EAMS 개발 : EAMS 요건정의, Repository 구축, Interface Architecture, EA Portal 구축, EA 관리체계 정의 <br/>\
 - EA 활용 : EA 확산, EA 거버넌스 최적화 <br/><br/>\
-# EA Framewokr 유형 / 장점 / 단점 <br/>\
+# EA Framewok 유형 / 장점 / 단점 <br/>\
 - ZEAF : 기업 활동 공학적 관점 파악 / 5W1H 관점 상세 제공 / 과도한 산출물, 정확도 요구 <br/>\
 - FEAF : 미국 연방정부 개발 / BRM, DRM, SCRM, TRM, PRM / 조직,관련 규정 진화 관점 부족 <br/>\
 - DoDAF : 체제들간 상호 운용성 보장 / 산출물 Template 상세 정의 / 과도한 산출물, 정확도 요구 <br/>\

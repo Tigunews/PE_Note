@@ -5068,7 +5068,7 @@ P 히스토그램 : Data 분포 <br/>\
 // Agile 방법론
 '# 정의 : 사람 중심 효율적 시스템 개발 방법론 / 유연성 / 신속성<br/>\
 - 절차보다는 사람이 중심이 되어 변화에 유연하고 신속하게 적응하면서 효율적으로 시스템을 개발할 수 있는 방법론<br/><br/>\
-# 4대 가치 (개변동고)<br/>\
+# Agile 개발 SW 선언 (<font color = "red">공계문계 개변동고</font>)<br/>\
 <img src = "./img/Agile_1.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
@@ -5078,13 +5078,13 @@ P 히스토그램 : Data 분포 <br/>\
 - 의사소통과 TDD를 기반으로 짧은 개발 주기를 통해 소프트웨어를 생산하는 Agile 개발 프로세스의 대표적 개발 방법론 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/XPOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 핵심 가치 (용단커피존) <br/>\
+# 핵심 가치 (<font color = "red">용단커피존</font>) <br/>\
 - 용기(Courage) : 요구사항 능동대처 <br/>\
 - 단순성(Simplicity) : 부가 기능 배제 <br/>\
 - 의사소통(Communication) : 이해관계자 <br/>\
 - 피드백(Feed Back) : 빠른 피드백, 일처리 <br/>\
 - 존중(Respect) : 상호간 존중 <br/><br/>\
-# 단계 (유릴사스)<br/>\
+# 단계 (<font color = "red">유릴사스</font>)<br/>\
 <img src = "./img/XP.png" style = "max-width:100%; hegiht:auto;"><br/>\
 - User story : 요구사항 수집 <br/>\
 - Release Planning : 전체 배포 계획 <br/>\
