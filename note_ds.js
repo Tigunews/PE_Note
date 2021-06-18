@@ -2728,9 +2728,9 @@ var answer = answer.concat(
 # 결정 방법 <br/>\
 - High demanded rate : 안전 관련 기능 대한 사용이 계속적으로 발생시 적용 (ex: 센서) <br/>\
 - Low demand rate : 사용빈도수 대략 년 1회 미만시 (ex: 에어백) <br/><br/>\
-1. 정량적 <br/>\
+1. 정량적 (<font color = "red">-9 ~ -1</font>) <br/>\
 <img src = "./img/SIL.png", style = "max-width:100%; height:auto;"><br/><br/>\
-2. 정성적(결빈회사) <br/>\
+2. 정성적 (<font color = "red">결빈회사 CFPW </font>) <br/>\
 <img src = "./img/SIL_Qualitative.png", style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SIL_QualitativeExample.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 13번\

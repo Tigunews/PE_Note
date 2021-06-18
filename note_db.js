@@ -556,13 +556,13 @@ var answer = answer.concat(
 4. 보상 트랜잭션 : 피봇 실패시 이전 단계 변경분 Undo <br/>\
 -> 주문 서비스 Rollback 시 cancelOrder() 트랜잭션 실행 <br/><br/>\
 # MSA 환경 Isolation 보장 방안 <br/>\
-1. Semantic Lock : Application 수준 Lock 통한 참조제어 <br/>\
+1. Semantic Lock : <font color = "red">Application 수준 Lock</font> 통한 참조제어 <br/>\
 - 생성시 Pending, 완료시 Approve 상태값 관리 <br/>\
 - 승인된 데이터만 참조 <br/><br/>\
-2. ReRead Value : 최신 정보 확인 통한 Lost Update 방지 <br/>\
+2. ReRead Value : <font color = "red">최신 정보</font> 확인 통한 Lost Update 방지 <br/>\
 - 데이터 쓰기 전 변경 여부 확인 <br/>\
 - 변경시 쓰기 작업 중단, 트랜잭션 재시작 <br/><br/>\
-3. Commutative Update : 업데이트 교환적 설계 통한 Lost Update 방지 <br/>\
+3. Commutative Update : <font color = "red">업데이트 교환적 설계</font> 통한 Lost Update 방지 <br/>\
 - dedit(), credit(), 업데이트 및 롤백을 상호 교환 작업으로 구성 <br/><br/>\
 # 종류 <br/>\
 - Choreography-Based Saga <br/>\
