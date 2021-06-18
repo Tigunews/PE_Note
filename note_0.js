@@ -8,6 +8,9 @@ var this_week_question =
 [
 '',
 
+// 13주차 추가
+'SAGA',
+
 // 13주차
 'Inversion of Control', '제품 품질', 'Interrupt', '분산 로딩 기법', 'SW 공학', '감리', '요구공학', 'Enterprise Arcitecture', 'Information System', 'MSA', '상호배제', '안전성 분석', 'Scrum', 'Democratization', '양자', 'Lateral Movement', '사이버 디셉션', 'Servitization', '자율', 'MSP', '웹 접근성', 'MoS', '성과관리 방법', 'PCI Express', 'Library', 'Many core CPU', 'PoC', 'Memory leak', 'SIL', 'Flash Memory', '라이선스', 'Cache', 'Agile', 'DMA', 'Network Storage', 'file system',
 
