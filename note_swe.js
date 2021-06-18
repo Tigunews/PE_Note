@@ -4984,7 +4984,7 @@ P 히스토그램 : Data 분포 <br/>\
 # 유형 <br/>\
 - Setter Injection : Setter Method 이용 의존성 삽입 <br/>\
 - Constructor Injection : 생성자 이용 의존성 삽입 <br/>\
-- Field Injection : Containor mandate <br/><br/>\ 
+- Field Injection : Containor mandate <br/><br/>\
 # 장점 <br/>\
 1. 아키텍처 관점 <br/>\
 - 구현 분리 : 자유로운 환경설정 <br/>\
