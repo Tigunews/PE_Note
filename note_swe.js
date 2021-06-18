@@ -4194,7 +4194,7 @@ P 히스토그램 : Data 분포 <br/>\
 # 암기 <br/>\
 - <font color = "red">기타정성</font> : 타당성 / 정확성 / 성숙도 <br/>\
 - <font color = "red">신복 가결성</font> : 복구 용이성 / 가용성 / 결함 수용성 / 성숙성 <br/>\
-- <font color = "red">사해 인류 접근LO</font> : 이해성 / 인터페이스 / 사용자 오류보호 / 접근성 / Leamability /Operation
+- <font color = "red">사해 인류 접근LO</font> : 이해성 / 인터페이스 / 사용자 오류보호 / 접근성 / Leamability /Operation <br/>\
 - <font color = "red">효자지기</font> : 자원 활용성 / 시간 효율성 / 기억 용량 <br/>\
 - <font color = "red">유분수 재모시</font> : 분석성 / 수정 가능성 / 재사용성 / 모듈성 / 시험가능성 <br/>\
 - <font color = "red">이환설치</font> : 환경 적응성 / 설치 용이성 / 최환성 <br/>\
