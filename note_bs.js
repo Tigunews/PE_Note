@@ -17,9 +17,8 @@ var question = question.concat(
 'ITIL',
 '[ITIL]- SKMS',
 'Enterprise Arcitecture',
-'Information System Plan',
-'Information System Plan 수립 공통가이드(제4판)',
-'Information System Master Plan',
+'Information Stragy Plan',
+'Information Stragy Master Plan',
 '플랫폼 경제',
 '프로토콜 경제',
 '데이터 경제',
@@ -492,29 +491,27 @@ var answer = answer.concat(
  
 // ISP
 '# 정의 : 조직의 목표 달성 / 중장기 마스터 플랜 <br/>\
-- Information Stragey Planning <br/>\
+- Information Stragy Planning <br/>\
 - 조직의 중장기 마스터 플랜을 지원하기 위한 정보 시스템을 계획하고 전략을 수립하는 활동 <br/><br/>\
-# 순서 <br/>\
-<img src = "./img/ISP_Order.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 산출물 검토 (사실규) <br/>\
-<img src = "./img/ISP_Output.png" style = "max-width:100%; height:auto;">\
-',
- 
-// ISP 수립 공통가이드(제4판)
-'# 주요 개정사항 <br/>\
-<img src = "./img/ISP4NewContents.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 주요 내용 <br/>\
-- 규정사항 : ISP 수립 절차 및 준수사항 등 <br/>\
-- 적용대상 : 각 중앙관서 모든 ISP, 정보화 이외 일반재정, R&D 분야 ISP <br/>\
-- 결과활용 : 사압 타당성, 실현 가능성, 규모 적정성, 예산 편성 <br/><br/>\
-# 추진 및 검토 절차 <br/>\
+# 절차 (<font color = "red">환현정목통</font>) + RFP <br/>\
+1. 환경분석 <br/>\
+- 경영, 법,제도, IT / 분석서 <br/><br/>\
+2. 현황분석(As-Is) <br/>\
+- 업무현황, IT현황, 벤치마킹, 차이, 이슈통합 및 개선과제 / 분석서 <br/><br/>\
+3. 정보화 비전 및 전략 수립 <br/>\
+- 정보화 전략 정의서 <br/><br/>\
+4. 목표모델 설계(To-Be) <br/>\
+- 개선과제 상세화, 업무프로세스, 정보시스템 구조, 데이터 구조, 기술 및 보안 구조 / 설계서 <br/><br/>\
+5. 통합 이행 계획(<font color = "red">계획, 사업비, 효과</font>) <br/>\
+- 통합 이행계획 수립, 총사업비 산출, 효과 분석 / 통합 이행 계획 수립서 <br/><br/>\
+# ISP 추진 및 검토 절차 <br/>\
 <img src = "./img/ISP_Flow.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기본 구성 내용 <br/>\
-<img src = "./img/ISP_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 가이드 4판 개정사항 <br/>\
+<img src = "./img/ISP4NewContents.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 2교시 6번\
 ',
-
-// Information System Master Plan
+ 
+// Information Stragy Master Plan
 '# 정의 : SW 개발사업 RFP 마련 / FP 도출 수준 까지 / 요건 기술, 구축 전략 수립 활동 <br/>\
 - 특정 SW 개발 사업에 대한 상세 분석과 제안요청서(RFP)를 마련하기 위해 기능점수 도출 가능수준까지 요건을 기술하여 구축전략 및 이행 전략 수립하는 활동 <br/><br/>\
 # 목적 <br/>\
