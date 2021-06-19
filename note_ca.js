@@ -969,8 +969,8 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 신뢰성 : 프로그램 비정상 동작 방지 <br/><br/>\
 # 발생원인 <br/>\
 1. 정책 <br/>\
-- Write Through : 완전 전파 안됨 <br/>\
-- Write Back : 동기화 이전 연산 <br/><br/>\
+- Write Through : 동시 일관성 <br/>\
+- Write Back : 일괄 적용 <br/><br/>\
 2. 메모리 공유 <br/>\
 - 공유 메모리 : 멀티프로세서 메모리 공유 <br/>\
 - 변경가능한 데이터 공유 : 공유 데이터 불일치 <br/><br/>\
@@ -1039,7 +1039,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
   
 // MESI
-'# 정의 : 캐시 일관성 유지 <br/>\
+'# 정의 : Write Back / 캐시 일관성 유지 Protocol <br/>\
 - 멀티프로세서가 시스템에서 캐시의 일관성을 유지하기 위하여 메모리가 가질 수 있는 4가지 상태를 정의한 프로토콜 <br/><br/>\
 # 프로토콜 상태 <br/>\
 <img src = "./img/MESI_ProtocolStatus.png" style = "max-width:100%; height:auto;"><br/><br/>\
