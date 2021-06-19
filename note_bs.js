@@ -17,8 +17,8 @@ var question = question.concat(
 'ITIL',
 '[ITIL]- SKMS',
 'Enterprise Arcitecture',
-'Information Stragy Plan',
-'Information Stragy Master Plan',
+'Information Strategy Plan',
+'Information Strategy Master Plan',
 '플랫폼 경제',
 '프로토콜 경제',
 '데이터 경제',
@@ -491,7 +491,7 @@ var answer = answer.concat(
  
 // ISP
 '# 정의 : 조직의 목표 달성 / 중장기 마스터 플랜 <br/>\
-- Information Stragy Planning <br/>\
+- Information Strategy Planning <br/>\
 - 조직의 중장기 마스터 플랜을 지원하기 위한 정보 시스템을 계획하고 전략을 수립하는 활동 <br/><br/>\
 # 절차 (<font color = "red">환현정목통</font>) + RFP <br/>\
 1. 환경분석 <br/>\
@@ -511,7 +511,7 @@ var answer = answer.concat(
 * 123회 관리 2교시 6번\
 ',
  
-// Information Stragy Master Plan
+// Information Strategy Master Plan
 '# 정의 : SW 개발사업 RFP 마련 / FP 도출 수준 까지 / 요건 기술, 구축 전략 수립 활동 <br/>\
 - 특정 SW 개발 사업에 대한 상세 분석과 제안요청서(RFP)를 마련하기 위해 기능점수 도출 가능수준까지 요건을 기술하여 구축전략 및 이행 전략 수립하는 활동 <br/><br/>\
 # 목적 <br/>\
