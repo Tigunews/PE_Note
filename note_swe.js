@@ -4165,7 +4165,7 @@ P 히스토그램 : Data 분포 <br/>\
 - <font color = "red">효자지기</font> : 자원 활용성 / 시간 효율성 / 기억 용량 <br/>\
 - <font color = "red">유분수 재모시</font> : 분석성 / 수정 가능성 / 재사용성 / 모듈성 / 시험가능성 <br/>\
 - <font color = "red">이환설치</font> : 환경 적응성 / 설치 용이성 / 치환성 <br/>\
-- <font color = "red">보책 인기무부</font> : 책임성 / 인증성 / 기밀성 / 무결성 / 부인방지 <br/>\
+- <font color = "red">보책 기무부인</font> : 책임성 / 인증성 / 기밀성 / 무결성 / 부인방지 <br/>\
 - <font color = "red">호 공존운용</font> : 상호 공존성 / 상호 운용성 <br/><br/>\
 # 품질 특성 <br/>\
 1. 내부, 외부 품질 <br/>\
