@@ -4167,9 +4167,6 @@ P 히스토그램 : Data 분포 <br/>\
 '# 정의 : 품질 측정 및 기법, 평가 및 방안에 대한 국제 표준 / 각 단계 산출 제품 / <br/>\
 - SQuaRE / Software product Quality Requirements and Evaluation <br/>\
 - 개별적으로 개발된 기존의 SW 품질표준들을 하나로 통합한 SW 품질평가 국제 포준 <br/><br/>\
-# 암기 <br/>\
-- 구성(6) : 관모메요평확 <br/>\
-- 품질특성(8) : 기신유수유이보호 <br/><br/>\
 # 기반 표준 <br/>\
 - ISO 9126 : SW 품질특성/품질측정 표준 <br/>\
 - ISO 12119 : 패키지 SW 품질 표준 <br/>\
