@@ -429,7 +429,7 @@ var answer = answer.concat(
 - 비마모성 : 외부 환경 의한 마모가 아닌 품질 저하 <br/>\
 - 복제가능 : 간단한 방법으로 복제 가능 <br/><br/>\
 # 배경 : SW 위기 -> 수요에 대한 공급 능력 미비신화, 예산초과 및 일정지연, 품질저하 <br/><br/>\
-# 발전 원리 <br/>\
+# 발전 원리 (<font color = "red">자품공표</font>)<br/>\
 - 자동화 도구 : Case, UML, Repository <br/>\
 - 품질 보증 체계 : ITIL, CMMi, SPICE <br/>\
 - 공학적접근 : 방법론 <br/>\
@@ -4966,7 +4966,7 @@ P 히스토그램 : Data 분포 <br/>\
 # Code 사례 <br/>\
 <img src = "./img/DI_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Class Call <br/>\
-<mg src = "./img/DI_ClassCall.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DI_ClassCall.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 유형 (IoC) <br/>\
 1. Setter Injection : 1:1 설정 <br/>\
 <img src = "./img/DI_SetterInjection.png" style = "max-width:100%; height:auto;"><br/><br/>\
