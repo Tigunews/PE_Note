@@ -961,7 +961,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
   
 // Cache 일관성
-'# 정의 : <br/>\
+'# 정의 : 공유 메모리 시스템 / 개별 프로세서 / 지역 캐시간 일관성 <br/>\
 - 공유 메모리 시스템에서 개별 프로세서의 지역 캐시간의 일관성 <br/><br/>\
 # 필요성 <br/>\
 - 일관성 : 캐시간 데이터 정합성 <br/>\
@@ -982,7 +982,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 캐시 일관성 프로토콜, Runtime 동적 검출 <br/>\
 - SW 비해 캐시 사용률 좋음, 소프트웨어 개발 부담 줄임 <br/><br/>\
 1. Dir 기반 : 캐시블록 공유상태 저장 공간 이용 <br/>\
-- Full Map : 중앙집중식, 복사본 포인터 <br/>\
+- Full Map : 중앙 집중식, 복사본 포인터 <br/>\
 - Limited : Full Map 작게 유지, 메모리 효율화 <br/>\
 - Chained : 포인터를 Linked list로 연결, 분산식 <br/><br/>\
 2. Protocol 기반 : 주소버스 감시, 캐시상 접근 검사 <br/>\
@@ -994,7 +994,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 1. 개념 <br/>\
 - 컴파일러, OS 이용 <br/>\
 - 잠재된 문제 검출 오버헤드 Runtime -> Compiletime 이동 <br/>\
-- HW비해 간단, Cache 이용률 저하 <br/>\
+- HW비해 간단, Cache 이용률 저하 <br/><br/>\
 2. 방식 <br/>\
 - 공유캐시 사용 : 모든 프로세스들이 하나의 캐시만 사용 <br/>\
 - 공유변수 관리 : 공유되는 변수에 캐시 저장 않음 <br/>\
@@ -1009,7 +1009,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 개념도 <br/>\
 <img src = "./img/DirectoryProtocol.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-- FullM Map Directory : 데이터 대한 Directory 주기억장치 저장, 포인터 상태 저장 <br/>\
+- Full Map Directory : 데이터 대한 Directory 주기억장치 저장, 포인터 상태 저장 <br/>\
 - Limit Directory : Full Map Directory 작게 유지 <br/>\
 - Chained Directory : Directory 포인터, Linked List 연결, 분산식 <br/><br/>\
 # 특징 <br/>\
@@ -1026,10 +1026,10 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 개념도 <br/>\
 <img src = "./img/SnoopyProtocol.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-- 캐시 일관성 프로토콜 : 데이터 블록 공유 상태 추적 <br/>\
-- 쓰기 무효화 프로토콜 : 쓰기 수행시 다른 복사본 무효 만듦 <br/>\
 - 버스 감시 매커니즘 : 일관성 유지 위한 버스 감시 하드웨어 모듈 추가 <br/>\
-- 스누피 제어기 : 다른 프로세서에 의한 메모리 접근 검사, 캐시 블록 상태 조절 <br/><br/>\
+- 캐시 일관성 프로토콜 : 데이터 블록 공유 상태 추적 <br/>\
+- 스누피 제어기 : 다른 프로세서에 의한 메모리 접근 검사, 캐시 블록 상태 조절 <br/>\
+- 쓰기 무효화 프로토콜 : 쓰기 수행시 다른 복사본 무효 만듦 <br/><br/>\
 # 특징 <br/>\
 - 매커니즘 : 캐시 일관성 유지 책임, 다중 프로세서 내 캐시 제어기들에게 분산 <br/>\
 - 장점 : 대역폭이 충분히 크다면 좋은 성능 기대 <br/>\
