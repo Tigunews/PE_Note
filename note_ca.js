@@ -933,7 +933,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Random Optical : 미사용 예상블록, 비현실적 <br/><br/>\
 # Miss 원인 <br/>\
 - Cold Miss : 데이터 최초 읽을때 발생, Compulsory Miss <br/>\
-- Capacity : 캐시크기 증가 <br/>\
+- Capacity : 캐시 크기 증가 <br/>\
 - Conflict : 캐시 연관도 증가 <br/>\
 - Coherence : MESI, 스누피 프로토콜 <br/><br/>\
 <img src = "./img/CacheMemory_4.png" style = "max-width:100%; height:auto;">\
