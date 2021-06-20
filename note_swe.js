@@ -171,6 +171,7 @@
 '[시험단계]- 테스트 케이스(IEEE 829)',
 '[시험단계]- Agile Test',
 '[시험단계]- Test 자동화 도구',
+'[시험단계]- BMT',
 'SRGM',
 '[운영유지보수]- 레만의 원리',
 '[운영유지보수]- Code Smell',
@@ -3126,6 +3127,27 @@ var answer = answer.concat(
  
 // Test 자동화 도구
 '<img src = "./img/TestAutomationTool.png" style = "max-width:100%; height:auto;">\
+',
+
+// BMT
+'# 정의 : 실존 두 대상 / 비교 분석 / 수행 평가 <br/>\
+- Benchmark Test <br/>\
+- 실존하는 비교 대상을 두고 하드웨어나 소프트웨어의 성능을 비교 분석하여 수행하는 평가 <br/><br/>\
+# 법적 근거 <br/>\
+- 소프트웨어 산업 진흥법 제 13조 2 : 소프트웨어 품질성능 평가시험 <br/>\
+- 소프트웨어 산업 진흥법 시행규칙 제 6조 2 : 품질성능 평가시험의 대상 등 <br/>\
+- 소프트웨어 산업 진흥법 시행규칙 제 6조 3 : 평가시험의 의뢰 등 <br/><br/>\
+# 적용대상, 제외 기준 <br/>\
+- 적용대상 : 분리발주 대상 SW 5천만원 이상 <br/>\
+- 제외기준 : 5천만원 미만 / 조달청 구매 / 발주 기관장 판단 TTA 기관 의장 협의 <br/><br/>\
+# 구성요소 (<font color = "red">참발수심</font>)<br/>\
+- BMT 참여 업체 <br/>\
+- 발주처 <br/>\
+- BMT 수행 기관 <br/>\
+- BMT 심의 위원회 <br/><br/>\
+# BMT POC 비교 <br/>\
+<img src = "./img/BMT_POC_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 110회 관리 2교시 3번\
 ',
 
 // SRGM
