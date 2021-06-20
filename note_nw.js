@@ -2,6 +2,7 @@ var question = question.concat(
 'OSI 7 계층',
 '서비스 프리미티브(Service Primitive)',
 '[Layer2]- Service',
+'[Layer2]- 회선제어',
 '[Layer2]- 오류제어',
 '[Layer2][오류제어][FEC]- 해밍코드',
 '[해밍코드]- 해밍거리',
@@ -92,6 +93,7 @@ var question = question.concat(
 '[5G]- 5GX',
 '[5G]- Open Lan',
 '[5G]- Network Slicing',
+'[5G]- Private 5G',
 '6G',
 '[6G]- 6G 추진 전략',
 '[6G]- Wifi 7',
@@ -121,6 +123,7 @@ var question = question.concat(
 '[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
 '[NW 가상화]- SD WAN',
+'SASE',
 '유무선 전력전송',
 '망분리',
 '망연계',
@@ -228,7 +231,9 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 // Layer 2 Service
-'# 오류제어 : 통신 에러 보정기술 <br/>\
+'# 회선제어 : 수신 단말, 송신 단말 프레임 흐름 정도 조절 <br/>\
+- ENQ/ACK, Polling <br/><br/>\
+# 오류제어 : 통신 에러 보정기술 <br/>\
 - FEC : Hamming Code, Read-Solomon Code, Convolutional Code, Turbo Code <br/>\
 - BEC : (검출) Parity Check, Block Sum, CRC / (재전송) Stop N Wait, Go Back N, Selective Repeat <br/><br/>\
 # 흐름제어 <br/>\
@@ -240,7 +245,25 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 접근제어 <br/>\
 - CSMA/CD : 이더넷 환경에서 채널 사용중인지 확인하고 점유 기법 <br/>\
 - CSMA/CA : 충돌 미리 예측 후 가능성 최소화 액세스 방법 <br/><br/>\
+# Protocol : SDLC, HDLC <br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 3번 <br/>\
 * 라이지움 87회 관리 3교시 6번\
+',
+
+// 회선제어
+'# 정의 : 반이중 전송 링크 / 회선 공유 / 충돌 없이 통신 / 제어 규칙 <br/>\
+- 반이중 전송링크에서 여러 스테이션이 회선을 공유하며 충돌 없이 데이터 통신 위한 제어 규칙 <br/>\
+- 수신 단말이 허용 가능한 속도보다 송신 단말이 더 빠르게 프레임을 전송하지 않도록 흐름의 정도를 제어하는 기능 <br/><br/>\
+# 방법 <br/>\
+1. ENQ/QCK <br/>\
+<img src = "./img/ENQACK.png" style = "max-width:100%; height:auto;"><br/>\
+- 송신측에서 데이터 ENQ 프레임 요청 <br/>\
+- 수신측 ACK 응답 <br/><br/>\
+2. Polling <br/>\
+<img src = "./img/Polling.png" style = "max-width:100%; height:auto;"><br/>\
+- Polling Mode : Secondary Station 전송, Primary Station Polling 응답(NAK/Message) <br/>\
+- Selection Mode : Primary Station 전송, Select Frame 전송, ACK 응답 메시지 전송 <br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 3번\
 ',
 
 // 오류제어
@@ -1924,6 +1947,51 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - E2E Networking : NFV 인프라, VNF 연결 포워딩 그래프 <br/><br/>\
 * 118회 관리 1교시 10번 \
 ',
+
+// Private 5G
+'# 정의 : 특정 지역 도입 서비스 / 특화 맞춤형 5G 네트워크 <br/>\
+- 특정지역(건물, 공장)등에 한해 사용가능한 5G망으로서, 해당지역에서 도입하고자 하는 서비스에 특화된 맞춤형 네트워크 <br/><br/>\
+# 구축, 운영방식 <br/>\
+1. 이통사 <br/>\
+- 비용 : 구축비용 (낮음), 운영비용 (높음) <br/>\
+- 성능 최적화 : 지원 어려움 <br/>\
+- 정보 보안 : 낮음 <br/><br/>\
+2. 수요기업, 제3자(SI,SW 기업 등) <br/>\
+- 비용 : 구축비용(높음), 운영비용 (낮음) <br/>\
+- 성능 최적화 : 최적화 용이 <br/>\
+- 정보보안 : 높음 <br/><br/>\
+# 현황 <br/>\
+- 독일 : 제조업체 중심, 3.7~3.8GHz 대역 특화망 면허 공급 <br/>\
+- 일본 : 5G 지역확산 목적, 28.2~28.3GHz, 4.6~4.8GHz, 28.3~29.1GHz <br/>\
+- 영국 : 산업체 특화망 구축, 실내 커버리지 확대, 3.8~4.2GHz <br/>\
+- 국내 : 5G 특화망(B2B) 구축 주체 이통사만 허용, 시정 불투명, 실내용 장비 개발 지연 (실증,시범사업 수준) <br/><br/>\
+# 활용예시 <br/>\
+<img src = "./img/Private5GExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 도입 방식 <br/>\
+1. Type 1 <br/>\
+- 구축 주체 : 수요기업 <br/>\
+- 서비스 제공 : 수요기업 한정 <br/>\
+- 도입방식 : 수요기업이 자가망 설치자로 신고 <br/>\
+- 주파수 공급방식 : 수요기업에 주파수 지정 <br/>\
+- 예시 : 사업장 5G 특화망 운영, 자사 사용 <br/><br/>\
+2. Type 2 <br/>\
+- 구축 주체 : 수요기업 <br/>\
+- 서비스 제공 : 수요기업 + 협력사, 방문객 <br/>\
+- 도입방식 : 수요기업이 기간 통신사업자 등록 <br/>\
+- 주파수 공급방식 : 수요기업에 주파수 할당 <br/>\
+- 예시 : 사업장 5G 특화망 운영, 건물 입주 스타트업, 방문객 사용 <br/><br/>\
+3. Type 3 <br/>\
+- 구축 주체 : 제3자 등 <br/>\
+- 서비스 제공 : 수요기업 + 협력사, 방문객 <br/>\
+- 도입방식 : 제3자 등이 기간 통신사업자로 등록 <br/>\
+- 주파수 공급방식 : 제3자 등에 주파수 할당 <br/>\
+- 예시 : 대형경기장 VR,AR 기업 5G 특화망 설치 운영, 서비스 제공 <br/>\
+# 주파수 공급대역 <br/>\
+<img src = "./img/Private5GFrequency.png" style = "max-width:100%; height:auto;"><br/>\
+- 28GHz 대역(우선공급) : 이동통신 주파수 인접 (28.9~28.5GHz (600MHz폭) 공급 <br/>\
+- 6GHz 이하 대역(추후 검토) : 지역 공동사용 B2B 주파수 추가 확보방안 검토 <br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 6번\
+',
   
 // 6G
 '# 정의 : 최대 전송 용량, 5배 1Tbps / 체감 속도, 10배 1Gbps / 6세대 무선 이동 통신 기술 <br/>\
@@ -2463,6 +2531,32 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # SD-WAN, SD-WAN 2.0 비교 <br/>\
 <img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 4교시 1번\
+',
+
+// SASE
+'# 정의 : 모바일 클라우드 환경 / SD-WAN, 네트워크 가상화 기술, 보안 기술 / 차세대 네트워크 서비스 모델 <br/>\
+- Secure Access Service Edge <br/>\
+- 모바일 클라우드 환경에 대응하기 위하여 SD-WAN등 여러 네트워크 가상화 기술과 보안 기술을 융합한 차세대 클라우드 기반 네트워크 서비스 모델 <br/><br/>\
+# 구성요소 <br/>\
+1. NW 가상화 <br/>\
+- SD-WAN : N/W, WAN 설정 <br/>\
+- MPLS : Laeyr 2 NW <br/>\
+- IP Tunneling : 암호화, 인증 <br/><br/>\
+2. NW 서비스 <br/>\
+- SD-Branch : Orchestration <br/>\
+- WAP Optimize : WAN 변경 설정 <br/>\
+- Zero Trust : Default Deny Model <br/><br/>\
+3. Cloud 보안 <br/>\
+- CASB : Broker 보안 <br/>\
+- SECaaS : Cloud 보안 <br/>\
+- VMI : 가상 IPS <br/><br/>\
+4. Cloud 서비스 <br/>\
+- NaaS : NW 서비스 <br/>\
+- CDN : 컨텐츠 제공 <br/>\
+- Cloud SWG : 인프라 보안 <br/><br/>\
+# 기대효과 <br/>\
+- 비용절감 : CAPEX, OPEX 절감, 단일 플랫폼 전략 사용 지출 <br/>\
+- 구축용이 : 복잡성 완화, 성능 최적화, 아키텍처 단순화 클라우드 활용 \
 ',
   
 // 유무선 전력전송

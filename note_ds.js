@@ -20,6 +20,7 @@ var question = question.concat(
 '[Smart Factory]- CPS 요구사항',
 '[Smart Factory]- SCADA',
 '[Smart Factory]- 팝업팩토리(Pop-up Factory)',
+'Smart Pharm',
 'IoT Platform',
 '[IoT Platform]- oneM2M Mobius',
 '[IoT Platform]- OCF',
@@ -34,6 +35,7 @@ var question = question.concat(
 '[자율주행]- C-ITS',
 '[자율주행]- Lidar',
 '[자율주행]- ADAS',
+'[자율주행]- 자율운항 선박',
 '안티드론',
 '[정책]- 데이터 거버넌스',
 '[정책]- K뉴딜',
@@ -99,7 +101,7 @@ var question = question.concat(
 '[Web 3.0]- REST',
 '[Web]- XML, JSON',
 'Semantic Web',
-'앱접근성(Mobile App Accessibility)',
+'웹 접근성',
 '[N Screen]- Responsive Web Design',
 '[N Screen]- Adaptive Web Design',
 '시선통신기술(Line of Sight Communications)',
@@ -177,6 +179,7 @@ var question = question.concat(
 '[클라우드]- Utility Computing',
 '[클라우드]- Fog Computing',
 '[클라우드]- CSB',
+'[클라우드]- MSP',
 '[클라우드]- 인터클라우드',
 '[클라우드]- 멀티 클라우드',
 '[클라우드]- 클라우드 네이티브 컴퓨팅',
@@ -791,7 +794,41 @@ var answer = answer.concat(
 // [3D 프린터]- 팝업팩토리
 '# 정의 : 3D Printing / 전자기기 즉석 생산 기법 <br/>\
 - 3D 프린팅 기술을 이용하여 전자기기(HW)를 그 자리에서 즉석(Pop-up) 생산하는 기법. 더 빠르고 신속하게 SW를 만드는 SW부문의 Agile 개발방법론을 하드웨어(HW) 생산 방식에 접목하여 HW를 빠르고 유연하고 민첩하게 생산(fast, flexible, agile Manufacturing)하기 위한 기법',
-  
+
+// Smart Pharm
+'# 정의 : 자동화 설비, ICT / 시간, 공간 제약 없이 / 농사 관측, 최적화 상태 관리 / 과학기반 농업방식 <br/>\
+- 자동화 설비와 정보통신기술을 활용해 시간과 공간의 제약 없이 농사 환경을 관측하고 최적의 상태로 관리하는 과학 기반의 농업 방식 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SmartPharm.png", style = "max-width:100%; height:auto;"><br/><br/>\
+# 모델 <br/>\
+- 1세대(2020) : 환경정보 모니터링, 스마트폰 원격제어 <br/>\
+- 2세대(2030) : 지능정보기술(ICBM) / 초보적 데이터 기반 스마트팜 모델 <br/>\
+- 3세대(2040) : 지능정보기술+로봇+신재생 에너지기술 / 무인,자동화 모델 <br/><br/>\
+# 기술요소 <br/>\
+1. 센서기술 <br/>\
+- 상황인지 센서 : 온실/원예 온도, 습도, CO2, 풍속, 채광 인식 <br/>\
+- 생체인식 센서 : 가축등 호흡,맥박,체온,행동,음성 <br/><br/>\
+2. 통신기술 <br/>\
+- WPAN : Zigbee, Bluetooth, Mesh N/W <br/>\
+- RFID/GPS : HF, UHF, 고주파 대역 <br/>\
+- LPWAN : Lora, Sigfox, LTE-MTC, NB-IoT <br/><br/>\
+3. SW 기술 <br/>\
+- 원격제어 : Agent, Agentless 원격제어 SW 기술 <br/>\
+- 모니터링 및 관리 : 다수 장비 모니터링, 실시간 표현 <br/>\
+- 빅데이터 분석 : 상황인지, 생체인식 센서 데이터 추출/분석 기술 <br/>\
+- 인공지능 : 과거 데이터로부터 미래 예측, 선제적 제안, 최적 스마트팜 구현 기술 <br/><br/>\
+4. 로봇기술 <br/>\
+- 자율주행 : 사전 경로 설정, 자율주행 자동 작업 기능 <br/>\
+- 자가치유 : 중단 방지 기능 <br/>\
+- CPS : 물리,화학,기계공학 컴퓨터 네트워크 통한 자율적, 지능적 제어 <br/><br/>\
+5. 에너지 관리 기술 <br/>\
+- ESS : 무선 센서 및 통신 이용 가능 <br/>\
+- Smart Grid : AMI, DR 효율 전력관리 기술 <br/><br/>\
+# 경쟁력 확보 방안 <br/>\
+<img src = "./img/SmartPharmVision.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 124회 4일차 2교시 5번\
+',
+
 // IoT Platform
 '# IoT Platform Overview <br/>\
 - 발전 내용 : Embedded > CPS = IoT Platform <br/>\
@@ -1040,6 +1077,30 @@ var answer = answer.concat(
 - LKA(Lane Keeping Assistance) : 차선 이탈 방지 보조, LDW 확장 <br/>\
 - IPAS(Intelligent Parking Assistance System) : 패달만으로 주차 <br/><br/>\
 * ITPE 합숙 124회 3일차 관리 1교시 12번\
+',
+
+// 자율운항 선박
+'# 정의 : 자율적 결정 시스템 / 운항 선박 <br/>\
+- 인적 여부에 관계없이 자율적 결정시스템을 가지고 운항하는 선박 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/AutomationSheep.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 자율운항 시스템 기술 <br/>\
+- 다중센서 기반 장애물 탐지 및 상황인지 : Lidar <br/>\
+- 선박 자율제어 : 운항 상황 따라 항로 재계산 및 엔진 제어 <br/>\
+- 선박 자동 접,이안 : 도선사 도움 없이 자동 접,이안 <br/><br/>\
+2. 원격 관제 기술 <br/>\
+- 원격 모니터링 및 제어 : AR, VR, Digital Twin <br/>\
+- VTS 자동 보고 : 해상교통관제시스템(VTS) 센터 및 항만과 정보교환 <br/><br/>\
+3. 해상 연결성 기술 <br/>\
+- 해상 항법 장비 : 고 정밀 위성 항법 장비 기술 <br/>\
+- 이더넷 기반 선내 통신 : IoT 기반 네트워크, 장비와 시스템 통합 관리 <br/><br/>\
+# IMO(국제해사기구)의 자율화 등급 정의 <br/>\
+- 1등급 : 자동화된 프로세스 및 결정 시스템 갖춘 선박 <br/>\
+- 2등급(현재) : 원격제어 가능, 선상의 선원 승선 선박 <br/>\
+- 3등급(2025) : 원격제어 가능, 선원 승선 x 선박 <br/>\
+- 4등급(2030) : 완전자율운항 가능 선박 <br/><br/>\
+* ITPE 합숙 124회 4일차 1교시 7번\
 ',
   
 // 안티드론
@@ -2147,8 +2208,9 @@ var answer = answer.concat(
 - Logical Reasoing : 온톨로지와 함께 결합된 관계정보들로부터 새로운 정보 도출 / 정보를 결합하여 새 정보 도출 <br/>\
 ',
   
-// 앱접근성
+// 웹 접근성
 '# 정의 : 제작 차별금지 규정 지침 <br/>\
+- 전자정부웹사이트품질관리지침 <br/>\
 - 모바일 애플리케이션 서비스 제공자가 장애인과 고령자 등 접근성을 보장하기 위해 어플리케이션 제작시 지켜야할 사항을 규정한 지침 <br/><br/>\
 # 원리 및 지침 (<font color = "red">인운이견</font>)<br/>\
 1. 인식 용이성 <br/>\
@@ -2156,18 +2218,19 @@ var answer = answer.concat(
 - 멀티미디어 대체 수단 제공 : 자막, 원고, 수화 <br/>\
 - 명료성 :  색무관, 명확한 지시, 배경음x <br/><br/>\
 2. 운용 용이성 <br/>\
-- 키보드 접근성 <br/>\
-- 충분한 시간 제공 <br/>\
-- 광 과민성 발작 예방 <br/>\
-- 쉬운 네비게이션 <br/><br/>\
+- 키보드 접근성 : 키보드 만으로 동작 <br/>\
+- 충분한 시간 제공 : 응답 시간 조절, 움직임 제어 <br/>\
+- 광 과민성 발작 예방 : 초당 3~50회 주기 컨텐츠x <br/>\
+- 쉬운 네비게이션 : 반복 영역 건너뛰기, 제목 제공, 적절 링크 텍스트 <br/><br/>\
 3. 이해 용이성 <br/>\
-- 가독성 <br/>\
-- 예측 가능성 <br/>\
-- 콘텐츠 논리성 <br/>\
-- 입력 도움 <br/><br/>\
+- 가독성 : 주로 사용하는 언어 명시 <br/>\
+- 예측 가능성 : 의도x 기능 실행 x <br/>\
+- 콘텐츠 논리성 : 컨텐츠 논리적 순서 제공 <br/>\
+- 입력 도움 : 사용자 입력 대응 레이블 제공 <br/><br/>\
 4. 견고성 <br/>\
-- 문법 준수 <br/>\
-- 웹, 애플리케이션 접근성 \
+- 문법 준수 : 마크업 언어 열고 닫음, 중첩 관계 및 속성 선언 오류x <br/>\
+- 웹, 애플리케이션 접근성 : 컨텐츠 포함된 웹 App은 접근성 보유 필요 <br/><br/>\
+* ITPE 합숙 124회 4일차 1교시 12번\
 ',
 
 // Responsive Web Design
@@ -2665,9 +2728,9 @@ var answer = answer.concat(
 # 결정 방법 <br/>\
 - High demanded rate : 안전 관련 기능 대한 사용이 계속적으로 발생시 적용 (ex: 센서) <br/>\
 - Low demand rate : 사용빈도수 대략 년 1회 미만시 (ex: 에어백) <br/><br/>\
-1. 정량적 <br/>\
+1. 정량적 (<font color = "red">-9 ~ -1</font>) <br/>\
 <img src = "./img/SIL.png", style = "max-width:100%; height:auto;"><br/><br/>\
-2. 정성적(결빈회사) <br/>\
+2. 정성적 (<font color = "red">결빈회사 CFPW </font>) <br/>\
 <img src = "./img/SIL_Qualitative.png", style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SIL_QualitativeExample.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 13번\
@@ -3692,13 +3755,23 @@ var answer = answer.concat(
 * ITPE 합숙 122회 3일차 응용 1교시 14번\
 ',
 
+// MSP
+'# 정의 : 클라우드 제품 컨설팅 / 서비스 제공 기업 <br/>\
+- Managed Service Provider <br/>\
+- 클라우드 사업자의 제품 컨설팅과 운영 및 관리 서비스를 제공하는 기업 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MSP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 서비스 영역 <br/>\
+- 컨설팅 및 구축 서비스 : 아키텍처 디자인, 워크로드 마이그레이션 / 서버리스 아키텍처, 빅데이터, DevOps <br/>\
+- 운영 : 기술 지원, 모니터링, 보안 / OS, Middleware, DB, App, Infra 부가영역 전문성 서비스 <br/>\
+- Management Platform : 자산,사용자 관리 / 비용, 자산, 사용자 클라우드 관리 서비스 <br/><br/>\
+* ITPE 합숙 124회 4일차1 교시 8번\
+',
+
 // [클라우드 컴퓨팅]- 인터클라우드 
 '# 정의 : 상호 연계성 강화 하이브리드 기술 <br/>\
 - 서로 독립된 클라우드와 클라우드간 상호 연계성을 강화하는 하이브리드 기술 <br/>\
 - 복수의 클라우드 서비스 제공자 간의 클라우드 서비스 또는 자원을 연결,연계하여 사용자의 요구에 따른 클라우드 서비스의 연동 및 컴퓨팅 자원의 동적 할당 <br/><br/>\
-# 암기 <br/>\
-- 구성 : I인F확 <br/>\
-- 유형 : 피페인 <br/><br/>\
 # 구성요소 <br/>\
 - ICT 코아 서비스 : Switching, Routing/VM to VM&App to App <br/>\
 - ICF 코아 인프라 : Private cloud - ICFD, PNSC, Secure Communi <br/>\

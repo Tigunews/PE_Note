@@ -15,6 +15,7 @@ var question = question.concat(
 'Dispatcher',
 '[Dispatcher]- 운영체제 문맥, 문맥교환',
 'Interrupt',
+'[Interrupt]- OS 역할',
 '[Interrupt]- Maskable Interrupt',
 '[Interrupt]- Non Maskable Interrupt',
 '[Interrupt]- Vectored Interrupt',
@@ -47,8 +48,12 @@ var question = question.concat(
 'Cache Memory',
 '[Cache]- Cache Mapping',
 '[Cache]- Cache 일관성',
+'[Cache]- Directory Protocol',
+'[Cache]- Snoopy Protocol',
 '[Cache]- MESI',
 'DMA',
+'PCI Express',
+'DDR SDRAM',
 'FeRAM',
 '병렬 컴퓨팅',
 '[병렬 컴퓨팅]- UMA',
@@ -68,9 +73,11 @@ var question = question.concat(
 '양자컴퓨팅',
 'Tiny OS',
 'Nano Qplus',
+'Flash Memory',
 'NAND Flash Memory',
 'eMMC',
 'UFS',
+'MoS',
 'CPU',
 '뉴로모픽',
 '[CPU]- MajorState',
@@ -99,6 +106,7 @@ var question = question.concat(
 '[InMemory]- In-Memory Database',
 'Auto Scale Up, Out',
 'Library',
+'[Library]- DLL',
 '정규 표현식',
 '유한 오토마타',
 '엑사스케일 컴퓨팅 시스템',
@@ -410,18 +418,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 2. 내부 <br/>\
 - 프로그램상 문제 : 보호된 Memory 접근 시도 <br/><br/>\
 # 우선순위 (<font color = "red">전기외입 C프 S</font>)<br/>\
-1. 외부 <br/>\
-- 전원 이상 <br/>\
-- 기계 착오 : CPU 기능적 오류 <br/>\
-- 외부 신호 : Time slice, Keyboard <br/>\
-- 입출력 : 입출력 데이터 오류, 이상현상 <br/><br/>\
-2. 내부 : 안정된 시스템 동작 위해 사전 정의 발생 <br/>\
-- Clock Interrupt <br/>\
-└ CPU 모니터링(특정 프로세스 집중 방지)<br/>\
-└ 문맥 교환(문맥 교환 타이밍) <br/>\
-- 프로그램 검사 : div 0, Overflow, Underflow <br/><br/>\
-3. SW <br/>\
-- SVC(SuperVisorCall) : 명령 요청 발생, 복잡한 입/출력, 기억장치 할당 <br/><br/>\
+1. 외부 인터럽트(HW) <br/>\
+- 전원 이상 : 정전 발생 <br/>\
+- 기계착오 : CPU 오류 등 경우 발생 <br/>\
+- 외부신호(Clock) : 타이머, 키보드, 외부장치 의해 발생 <br/>\
+- I/O : 입출력 장치등에 의해 발생 <br/><br/>\
+2. 내부 인터럽트(HW) <br/>\
+- 명령어 Error : 잘못된 명령어 사용 <br/>\
+- 프로그램 검사 : div 0, Overflow/Underflow <br/><br/>\
+3. SW 인터럽트 <br/>\
+- SVC(페이지 부재) : SVC 의한 임의 호출, 프로그램 처리중 오류 <br/><br/>\
 # 우선순위 처리방식 <br/>\
 1. 단일 회선 <br/>\
 - Polling : 가장 높은 우선순위 (SW) <br/>\
@@ -434,7 +440,23 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/Interrupt_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Interrupt_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 2교시 1번 <br/>\
 * 라이지움 86회 4교시 6번\
+',
+
+// OS 역할
+'# Clock Interrupt, I/O Interrupt OS 역할 <br/>\
+<img src = "./img/Clock_IO_Interrupt_OS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- IRQ(요청) : CPU에 인터럽트 요청신호 / Interrupt Request <br/>\
+- IPR(벡터) : 인터럽트 처리 루틴 / ISR(Interrupt ID) 분기, ISR 시작주소 저장 <br/>\
+- ISR(서비스 루틴) : 실제적인 인터럽트 처리 / i금지, p상태저장, i처리, p상태복구, i허용 <br/><br/>\
+# Page Fualt OS 역할 <br/>\
+<img src = "./img/PageFaultInterrutOS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- Page Fault Trap 발생 : MMU가 Page Fault 발생 <br/>\
+- 페이지 접근 타당성 체크 : N(종료), Y(할당/확보) <br/>\
+- 유효 비트로 재설정 : 유효-무효 비트 재설정 <br/>\
+- 인터럽트 처리 종료 : 명령어 재시작 <br/><br/>\
+* 123회 응용 2교시 1번\
 ',
   
 // Maskable Interrupt
@@ -480,10 +502,15 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // Memory Leak
 '# 정의 : 메모리 비반환 점유 현상 <br/>\
 - 컴퓨터 프로그램이 메모리를 할당된 메모리를 사용한 다음 반환하지 않아 메모리를 계속 점유하고 있는 현상 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MemoryLeak.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 문제점 <br/>\
 - 성능 : 프로그램 성능저하 문제 <br/>\
 - 오류 : 메모리 부족으로 인한 시스템 오류 <br/>\
 - 보안 : 버퍼 오버플로우 <br/><br/>\
+# 탐지 기법 <br/>\
+- 정적 : 프로그램 실행x, 잔존결함, 복잡도, 의존성 분석 탐지 / PMD, cppcheck, SonarQube <br/>\
+- 동적 : 프로그램 실행, 분석 탐지 / Avalanche, Valgrind <br/><br/>\
 # 해결방법 <br/>\
 - 디버깅 : 메모리 모니터링 <br/>\
 - 코드 : 프로그램 Code Inspection 수행 <br/><br/>\
@@ -906,7 +933,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Random Optical : 미사용 예상블록, 비현실적 <br/><br/>\
 # Miss 원인 <br/>\
 - Cold Miss : 데이터 최초 읽을때 발생, Compulsory Miss <br/>\
-- Capacity : 캐시크기 증가 <br/>\
+- Capacity : 캐시 크기 증가 <br/>\
 - Conflict : 캐시 연관도 증가 <br/>\
 - Coherence : MESI, 스누피 프로토콜 <br/><br/>\
 <img src = "./img/CacheMemory_4.png" style = "max-width:100%; height:auto;">\
@@ -927,48 +954,92 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 장점 : Hit Rate 높음 <br/>\
 - 단점 : 회로 복잡, 속도 느림 <br/><br/>\
 3. 집합 연관 사상 <br/>\
-<img src = "./img/CacheMemory_3.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/CacheMemory_3.PNG" style = "max-width:100%; height:auto;"><br/>\
 - 원리 : 캐시 메모리 한 Index에 2개 이상 저장 Set 형성 <br/>\
 - 장점 : Hit Rate 높음 <br/>\
 - 단점 : 구현회로 복잡\
 ',
   
 // Cache 일관성
-'# 정의 : <br/>\
+'# 정의 : 공유 메모리 시스템 / 개별 프로세서 / 지역 캐시간 일관성 <br/>\
 - 공유 메모리 시스템에서 개별 프로세서의 지역 캐시간의 일관성 <br/><br/>\
 # 필요성 <br/>\
-- 환경 : 다중 프로세스 환경 <br/>\
-- 입출력 동작, 멀티 프로세스 환경, 변경 가능한 데이터 공유 <br/><br/>\
+- 일관성 : 캐시간 데이터 정합성 <br/>\
+- 성능 : 시스템 성능 저하 영향 미침 <br/>\
+- 신뢰성 : 프로그램 비정상 동작 방지 <br/><br/>\
 # 발생원인 <br/>\
 1. 정책 <br/>\
-- Write Through : 완전 전파 안됨 <br/>\
-- Write Back : 동기화 이전 연산 <br/><br/>\
+- Write Through : 동시 일관성 <br/>\
+- Write Back : 일괄 적용 <br/><br/>\
 2. 메모리 공유 <br/>\
 - 공유 메모리 : 멀티프로세서 메모리 공유 <br/>\
 - 변경가능한 데이터 공유 : 공유 데이터 불일치 <br/><br/>\
 3. 멀티 프로세서 환경 <br/>\
 - 프로세스 이주 : SMP(대칭적 다중 프로세서) 시스템에서 프로세스를 처리하던 프로세서가 변경되는 현상 <br/>\
 - 입출력 동작 : I/O 장치와 프로세서 캐시간의 일관성 <br/><br/>\
-# 유지기법 <br/>\
-1. Dir 기반 <br/>\
-- Full Map : 주기억 장치 저장 <br/>\
-- Limited : Full Map 오버헤드 감소 <br/>\
-- Chained : 연결 리스트 사용 <br/><br/>\
-2. Protocol 기반 <br/>\
+# HW 기반 유지기법 <br/>\
+0. 개념 <br/>\
+- 캐시 일관성 프로토콜, Runtime 동적 검출 <br/>\
+- SW 비해 캐시 사용률 좋음, 소프트웨어 개발 부담 줄임 <br/><br/>\
+1. Dir 기반 : 캐시블록 공유상태 저장 공간 이용 <br/>\
+- Full Map : 중앙 집중식, 복사본 포인터 <br/>\
+- Limited : Full Map 작게 유지, 메모리 효율화 <br/>\
+- Chained : 포인터를 Linked list로 연결, 분산식 <br/><br/>\
+2. Protocol 기반 : 주소버스 감시, 캐시상 접근 검사 <br/>\
 - Snoopy Protocol : Write Through(Update), Write Back(Invalid) <br/>\
 - MSI Protocol : Shared 상태가 없어 여러 프로세서가 같은 값 읽을 때 유리 <br/>\
 - MESI Protocol : 메모리가 가질 수 있는 4가지 상태 정의 <br/>\
 - MOESI Protocol : Owned(캐시간 만 동기화) 추가 <br/><br/>\
-3. SW 기반 <br/>\
+# SW 기반 유지기법 <br/>\
+1. 개념 <br/>\
+- 컴파일러, OS 이용 <br/>\
+- 잠재된 문제 검출 오버헤드 Runtime -> Compiletime 이동 <br/>\
+- HW비해 간단, Cache 이용률 저하 <br/><br/>\
+2. 방식 <br/>\
 - 공유캐시 사용 : 모든 프로세스들이 하나의 캐시만 사용 <br/>\
 - 공유변수 관리 : 공유되는 변수에 캐시 저장 않음 <br/>\
 - 잠금변수 사용 : Locking 사용하여, 다른 프로세스 접근 못하도록 차단 <br/><br/>\
 * 123회 응용 3교시 1번 <br/>\
 * 라이지움 82회 관리 4교시 6번\
 ',
+
+// Directory Protocol
+'# 정의 : 캐시 정보 / 주기억장치 디렉토리 저장 / 일관성 유지 <br/>\
+- 캐시의 정보상태(캐시블록의 공유상태, 노드 등)를 주기억장치의 디렉토리에 저장하여 일관성을 유지시키는 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DirectoryProtocol.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Full Map Directory : 데이터 대한 Directory 주기억장치 저장, 포인터 상태 저장 <br/>\
+- Limit Directory : Full Map Directory 작게 유지 <br/>\
+- Chained Directory : Directory 포인터, Linked List 연결, 분산식 <br/><br/>\
+# 특징 <br/>\
+- 매커니즘 : 중앙 제어기, 지역 캐시 제어기 동작 제어, 보고 받아 일관성 유지 <br/>\
+- 장점 : 대역폭 상대적으로 작음 <br/>\
+- 단점 : 캐시 제어기, 중앙 제어기 간 통신 오버헤드 발생 <br/>\
+- 활용 : 대규모 시스템(64개 이상 프로세서) <br/><br/>\
+* 123회 응용 3교시 1번\
+',
+
+// Snoopy Protocol
+'# 정의 : 다중프로세서 내 / 모든 캐시 제어기 / 스누피 프로토콜 이용 / 분산 기법 <br/>\
+- 캐시 일관성 유지를 다중프로세서 내의 모든 캐시 제어기에 스누피 프로토콜을 이용하여 분산하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SnoopyProtocol.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 버스 감시 매커니즘 : 일관성 유지 위한 버스 감시 하드웨어 모듈 추가 <br/>\
+- 캐시 일관성 프로토콜 : 데이터 블록 공유 상태 추적 <br/>\
+- 스누피 제어기 : 다른 프로세서에 의한 메모리 접근 검사, 캐시 블록 상태 조절 <br/>\
+- 쓰기 무효화 프로토콜 : 쓰기 수행시 다른 복사본 무효 만듦 <br/><br/>\
+# 특징 <br/>\
+- 매커니즘 : 캐시 일관성 유지 책임, 다중 프로세서 내 캐시 제어기들에게 분산 <br/>\
+- 장점 : 대역폭이 충분히 크다면 좋은 성능 기대 <br/>\
+- 단점 : 노드 수 증가시 대역폭 늘어나야하므로 확장성 좋지 않음 <br/>\
+- 활용 : 버스 기반 다중 프로세서에서 적합 <br/><br/>\
+* 123회 응용 3교시 1번\
+',
   
 // MESI
-'# 정의 : 캐시 일관성 유지 <br/>\
+'# 정의 : Write Back / 캐시 일관성 유지 Protocol <br/>\
 - 멀티프로세서가 시스템에서 캐시의 일관성을 유지하기 위하여 메모리가 가질 수 있는 4가지 상태를 정의한 프로토콜 <br/><br/>\
 # 프로토콜 상태 <br/>\
 <img src = "./img/MESI_ProtocolStatus.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -980,6 +1051,12 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // DMA
 '# 정의 : 주변장치, 주기억장치 데이터 전송 장치 <br/>\
 - CPU를 통하지 않고 주변장치(I/O)와 주기억장치 사이의 데이터 전송을 담당하는 장치 <br/><br/>\
+# DMA 이전 방식 <br/>\
+- Programmed Driven I/O : CPU 상 실행되는 프로그램 의해 IO 제어 <br/>\
+- Interrupt Driven I/O : I/O Interface 주변 장치 상태 Check, CPU IO 요구 <br/><br/>\
+# 필요성 <br/>\
+- CPU 자원낭비 최소화 : Disk 위해 범용 프로세서 전송 제어 낭비 <br/>\
+- CPU 성능저하 개선 : 능동적 CPU 개입 필요, 오버헤드 발새 ㅇ가능 <br/><br/>\
 # 특징 <br/>\
 - CPU Utilization 향상 : CPU 다른 작업 수행 가능 <br/>\
 - Multi Process 환경 유리 : 프로세스 CPU 작업 병렬화 <br/>\
@@ -990,14 +1067,42 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 동작 모드 <br/>\
 1. 전송 방식 <br/>\
 - Burst Mode(Block Mode) : 블록 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
-- Word Mode(Cyucle Stealing) : 워드 단위, Memory Cycle 훔쳐서 수행, CPU 보다 우선 <br/>\
+<img src = "./img/BurstMode.png" style = "max-width:100%; height:auto;"><br/>\
+- Word Mode(Cycle Stealing) : 워드 단위, Memory Cycle 훔쳐서 수행, CPU 보다 우선 <br/>\
+<img src = "./img/CycleStealingMode.png" style = "max-width:100%; height:auto;"><br/>\
 - Demand Trasnfer Mode : 바이트 단위, 단일 프로그램 채널 사용 <br/><br/>\
 2. 연결 방식 <br/>\
 - 단일 버스 : CPU, RAM, I/O, DMAC 단일 버스 연결 / 1회 연결 2번 사용 <br/>\
 - 단일 버스 통합 방식 : 여러 I/O 가 DMA 연결 / 1회 연결 1번 사용 <br/>\
 - 입출력 버스 방식 : 시스템, 입출력 버스 분리, 다양한 속도 I/O 처리, DMAC가 복잡 <br/>\
-* DMAC : Direct Memory Access Controller <br/><br/>\
+<font color = "red">* DMAC : Direct Memory Access Controller </font><br/><br/>\
 * 123회 응용 4교시 1번\
+',
+
+// PCI Express
+'# 정의 : x1~x32 확장 가능 다수 레인 / 물리 계층 기반 / 고속 데이터전송 / 점대점 기기간 연결 프로토콜 <br/>\
+- PCIe는 x1에서 x32까지 확장 가능한 다수의 레인으로 구성된 물리 계층 기반의 고속 데이터 전송을 제공하는 점대점 기기간 연결 프로토콜 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/PCIeArchitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Transaction Layer : Packet Based Protocol / TLP 사용 통신, Tx 타입, 수신자 주소, 전송사이즈, 페이로드, CRC <br/>\
+- Datalink Layer : 오류제어, 흐름제어 / CRC, CheckSum, Packet loss 패킷 흐름 제어 <br/>\
+- Physical Layer : 인코딩, 레인 / GEN1~2(8b/10b), GEN3~4(128b/130b) 인코딩 <br/><br/>\
+* 123회 응용 1교시 2번\
+',
+
+// DDR SDRAM
+'# 정의 : 상승 및 하강 에지 전송 / 클럭 주파수 증가 x / 전송속도 2배 향상 RAM <br/>\
+- SDRAM 대비 클럭 신호의 상승 및 하강 에지에서 데이터를 전송함으로써 클럭 주파수를 증가시키지 않고 전송속도를 2배 향상 시킨 RAM <br/><br/>\
+# 구성요소 <br/>\
+- Bank : 데이터를 구분하여 저장할 수 있는 단위 <br/>\
+- BL(Burst Length) : 한 번의 읽기/쓰기 명령에 따른 연속 입출력 데이터 개수 <br/><br/>\
+# 주요기술 <br/>\
+- 고속 트레이닝 기술 : R/W 회로 고속 상태 최적화 <br/>\
+- DFE(Decision Feedback Equalization) : 반사 잡음 제거 회로 기술 <br/>\
+- DLL(Delay Locked Loop) : D Ram 출력 데이터 외부 클럭 동기화 전송 회로 기술 <br/>\
+- DCC(Duty Cycle Correction) : 연속되는 클록, 데이터 신호의 High,Low Pulse 폭 5:5 회로 기술 <br/>\
+* 123회 응용 1교시 1번\
 ',
 
 // FeRAM
@@ -1232,31 +1337,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 개념도 <br/>\
 <img src = "./img/ManycoreCPU.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
-1. Cache 접근성 <br/>\
-- NUCA(Non-Uniform Cache Architecture) : 각 코어블록, 지리적 근접 L2 Cache Bank 접근 허용, Bandwidth 향상 <br/>\
-2. 외부 메모리 연결 <br/>\
-- 3D die Stacking : SOC die 내부의 여러 지점에 Memory die와 연결되는 via 제공, 대역폭 향상, 많은 수 연결 지원 <br/>\
-3. 고속 내부 네트워크 <br/>\
-- NoC(network On Chip) : 프로세스 내 인터커넥션 위한 라우터 통한 고속 네트워크 구현 <br/>\
-4. 에너지 효율성 <br/>\
-- DVFS(Dynamic Voltage Frequency Scaling) : 프로세서 전력 효율 향상, 처리량 대비 가변 전압, 주파수 적용 <br/>\
-5. 내부 메모리 컨트롤 <br/>\
-- Internal Memory Controller : 매니코어 메모리 접근성 향상 <br/>\
-6. 고밀도 집적 <br/>\
-- Nano 집적 기술 : 단일 프로세서 칩 집적, 50nm 이하 소자 집적 기술, 현재 10nm 이하 소자 집적 발전중 <br/><br/>\
-# SW 측면 기술요소 <br/>\
-- Message Passing : 병렬처리 정보교환시 필요한 기능, 문법, API 표준 <br/>\
-- Transaction Memory : 공유 메모리 접근 위한 동시성 제어 기법 <br/>\
-- SPMT(Serial Port Memory Technology) : 수행 확률 높은 부분 다른 코어 통해 미리 수행 <br/>\
-- Token Based Coherence Protocol : 캐시 일관성위한토큰 기반프로토콜<br/>\
-- SW 지원 플랫폼 : OpenMP, OpenCL, CUDA 등 병렬 프로그램 지원 플랫폼 <br/><br/>\
-# 활용 : 머신러닝, 클라우드, 5G <br/><br/>\
-* NoC : 멀티 코어 스위치 연결 구조 <br/>\
-* CG : Core Group <br/>\
-* CPE : Computing Processing Elements <br/>\
-* MPE : Management Processing Element <br/>\
-* MC : Memory Controller <br/>\
-* LDM : Logical Disk Manager <br/><br/>\
+1. 프로세싱 <br/>\
+- 병렬 컴퓨팅 : NUMA, 멀티 쓰레딩 병렬 <br/>\
+- 캐시 일관성 : 디렉토리 프로토콜, 잠금 메커니즘 <br/>\
+- 하드웨어 추상화 : 프로세서 처리 추상화 레이어 계층 제공 <br/><br/>\
+2. 메모리 <br/>\
+- Messaing Passing : 병렬 처리 정보 교환 프로토콜 <br/>\
+- Scratchpad memory : 오퍼랜드, 버퍼, 인터럽트 등에 사용 고속 처리용 메모리 <br/>\
+- 메모리 주소 분할 : 분산 메모리 구조, 주소 분할 병렬처리 지원 <br/><br/>\
+# 멀티코어 프로세서 비교 <br/>\
+<img src = "./img/ManyCoreMultiCoreCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 5번\
 ',
 
@@ -1349,15 +1439,35 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - User API : 센서 노드에 사용되는 HW 제어, 추상화하여 사용자에 API형태 제공 \
 ',
 
+// Flash Memory 
+'# 정의 : 전원 제거 / 정보 유지 / 비휘발성 기억 장치 <br/>\
+- 전원이 제거되어도 정보를 그대로 유지하는 비휘발성 기억 장치 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/FlashMemoryOVerview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+- NAND : 수직 배열, 대용량 <br/>\
+- NOR : 수평 배열, 적은 용량, 빠른 속도 <br/><br/>\
+# 매커니즘 <br/>\
+- Write : 고전압 / Floating Gate에 Charge 주입 <br/>\
+- Read : 약전압 / Threashold Voltage Passing Check <br/><br/>\
+* 123회 응용 2교시 2번\
+',
+
 // NAND Flash Memory
 '# 정의 : 플래시 메모리 / 직렬 배열 <br/>\
 - 반도체의 셀이 직렬로 배열되어 있는 플래시 메모리의 한 종류 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/NandFlashType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - 용량 늘리기 쉬움 <br/>\
 - 셀의 주소를 기억할 필요가 없음 <br/>\
 - 소형화, 대용량화 -> 모바일 및 전자제품 저장기기로 사용 <br/>\
-- 속도 느림 (NOR Flash Memory는 속도 빠름) <br/><br/>\
-<img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;">\
+- 속도 느림 (NOR Flash Memory는 속도 빠름) <br/>\
+<img src = "./img/NANDFlash.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형별 비교 <br/>\
+<img src = "./img/NANDFlashTypeCopmare1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/NANDFlashTypeCopmare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 123회 응용 2교시 2번\
 ',
 
 // eMMC
@@ -1396,6 +1506,29 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - UniPro : I/O 오류 자동 감지 복구<br/>\
 - M-PHY : 안정적 데이터 전송 <br/><br/>\
 * ITPE 합숙 124회 3일차 1교시 3번\
+',
+
+// MoS
+'# 정의 : 비휘발성 메모리, 초저지연 반도체 저장장치 / 공간 통합 / 내부 동작 하드웨어 자동화 / 영구 메모리 기술 <br/>\
+- Memory Over Storage <br/>\
+- 비휘발성 메모리(NVDIMM) 용량과 초저지연(ULL) 반도체 저장장치(SSD)의 용량을 하나의 공간으로 통합하고, 내부 동작을 하드웨어로 자동화한 영구 메모리 기술 <br/><br/>\
+# 특징 <br/>\
+- 슈퍼 컴퓨터 활용 <br/>\
+- 높은 저장 용량 : 메모리 슬롯당 4배 이상 (TB) 수준 저장 <br/>\
+- 빠른 데이터 처리 속도 : 휘발성 메모리(D램) 유사 처리속도 <br/>\
+- 기존NVDIMM-SSD 재사용 : 기존 D램 메모리 규격, 고속 플래시 저장 장치 기술 재사용 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MoS_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작원리 <br/>\
+- 사용자 모든 메모리 요청 가능한 메인보드, CPU내부의 MCH(Memory Controller Hub) 적용 방식 구현 <br/>\
+- 사용자 메모리 요청 NVDIMM 캐시 메모리 처리 > 캐시 메모리x 데이터 SSD Read <br/>\
+- MCH 내부에서 하드웨어로 SSD 입출력 직접 처리 > 초저지연 SSD 발생 오버헤드 완화 <br/><br/>\
+# 기술요소 <br/>\
+- NVDIMM : 고성능 비휘발성 메모리 기술 <br/>\
+- 메모리 요청 : 캐시 메모리 <br/>\
+- 메모리 통합 : SSD, NVDIMM통합 기술 <br/>\
+- 속도 향상 : MCH 내부에서 SSD 입출력 처리, 에너지 절감 및 데이터 속도 향상 <br/><br/>\
+* ITPE 합숙 124회 4일차 1교시 13번\
 ',
   
 // CPU
@@ -1848,6 +1981,19 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 유의 사항 <br/>\
 - DLL 선점 상황일 시, 프로그램 치명적 오류 발생 가능성 <br/>\
 - DLL 종속성 : 프로그램, DLL이 다른 DLL 함수 사용하는 경우 유의 <br/><br/>\
+* 123회 응용 1교시 3번\
+',
+
+// DLL
+'# 정의 : 프로그램 실행될 때 사용 / 함수, 데이터 / 모듈 라이브러리 <br/>\
+- 프로그램이 실행될 때 다른 모듈에 의해 사용될 수 있는 함수나 데이터르 가지고 있는 모듈 라이브러리 <br/><br/>\
+# DLL 개념도 <br/>\
+<img src = "./img/DLL_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- Function : 내부,외부 DLL <br/>\
+- Link : 묵시적(살행파일 자체 포함),명시적 링킹 (API) <br/><br/>\
+# 동적,정적 라이브러리 비교 <br/>\
+<img src = "./img/StaticDynamicLibrarycompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 1교시 3번\
 ',
 
