@@ -4940,8 +4940,10 @@ P 히스토그램 : Data 분포 <br/>\
 '# 정의 : 필요한 객체 받아서 사용 / OOP 기법 <br/>\
 - Dependency Injection <br/>\
 - Loosely Coupled <br/>\
-- 각 클래스간의 의존관계를 빈 설정 (Bean Definition) 정보를 바탕으로 컨테이너가 자동으로 연결해주는 IoC 기법 <br/><br/>\
+- 각 클래스간의 의존관계를 빈 설정 (Bean Definition) 정보를 바탕으로 컨테이너가 자동으로 연결해주는 IoC 기법 <br/>\
 - 필요한 객체를 직접 생성하는 것이 아닌, 외부로부터 필요한 객체를 받아서 사용하는 객체지향 프로그래밍 기법 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/DI_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 매커니즘 <br/>\
 1. 개발자, 빈 설정파일 의존관계 정보 추가 <br/>\
 2. 객체 레퍼런스 컨테이너 주입, 실행시 동적으로 의존관계 생성 <br/>\
