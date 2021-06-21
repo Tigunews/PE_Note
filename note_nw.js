@@ -1967,7 +1967,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 국내 : 5G 특화망(B2B) 구축 주체 이통사만 허용, 시정 불투명, 실내용 장비 개발 지연 (실증,시범사업 수준) <br/><br/>\
 # 활용예시 <br/>\
 <img src = "./img/Private5GExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 도입 방식 <br/>\
+# 구축 유형 <br/>\
+1. 독자적 구축 (물리적 분리) <br/>\
+- 투자장비 : 5G Core, MEC, 5G RAN 등 Full Set <br/>\
+- 주파수 : 비면허/면허 대역 <br/>\
+- 장점 : 보안, 초저지연, 백홀 미사용 <br/>\
+- 단점 : 초기 구축비용, 운영 인력 <br/><br/>\
+2. 이통사 인프라 사용(NW Slicing) <br/>\
+- 투자장비 : 5G RAN 또는 일부, 나머지 선택적 <br/>\
+- 주파수 : 면허 대역 <br/>\
+- 장점 : 초기구축비용, 운영인력 필요 없음 <br/>\
+- 단점 : 백홀구축, 보안고려, Private 대비 지연 <br/><br/>\
+# 구축 주체, 도입 방식 <br/>\
 1. Type 1 <br/>\
 - 구축 주체 : 수요기업 <br/>\
 - 서비스 제공 : 수요기업 한정 <br/>\
@@ -1985,7 +1996,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 서비스 제공 : 수요기업 + 협력사, 방문객 <br/>\
 - 도입방식 : 제3자 등이 기간 통신사업자로 등록 <br/>\
 - 주파수 공급방식 : 제3자 등에 주파수 할당 <br/>\
-- 예시 : 대형경기장 VR,AR 기업 5G 특화망 설치 운영, 서비스 제공 <br/>\
+- 예시 : 대형경기장 VR,AR 기업 5G 특화망 설치 운영, 서비스 제공 <br/><br/>\
 # 주파수 공급대역 <br/>\
 <img src = "./img/Private5GFrequency.png" style = "max-width:100%; height:auto;"><br/>\
 - 28GHz 대역(우선공급) : 이동통신 주파수 인접 (28.9~28.5GHz (600MHz폭) 공급 <br/>\
