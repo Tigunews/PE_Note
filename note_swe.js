@@ -171,6 +171,7 @@
 '[시험단계]- 테스트 케이스(IEEE 829)',
 '[시험단계]- Agile Test',
 '[시험단계]- Test 자동화 도구',
+'[시험단계]- BMT',
 'SRGM',
 '[운영유지보수]- 레만의 원리',
 '[운영유지보수]- Code Smell',
@@ -995,6 +996,7 @@ var answer = answer.concat(
   
 // 소프트웨어 안전성 분석
 '# 정의 : 안전성 만족 확인 활동 / 안전 필수 시스템 개발시 <br/>\
+- <font color = "red">Fool Proof, Fail Safe</font><br/>\
 - 안전 필수 시스템 개발시 시스템이 만족해야 할 안전성을 만족하는지 확인하는 활동<br/>\
 <font color = "red">* SW 안전성 : ISO/IEC GUIDE 51, 수용할 수 없는 위험이 없는 상태 </font><br/><br/>\
 # 안전성 분석 절차 (IEC 61508) <br/>\
@@ -3127,6 +3129,27 @@ var answer = answer.concat(
 '<img src = "./img/TestAutomationTool.png" style = "max-width:100%; height:auto;">\
 ',
 
+// BMT
+'# 정의 : 실존 두 대상 / 비교 분석 / 수행 평가 <br/>\
+- Benchmark Test <br/>\
+- 실존하는 비교 대상을 두고 하드웨어나 소프트웨어의 성능을 비교 분석하여 수행하는 평가 <br/><br/>\
+# 법적 근거 <br/>\
+- 소프트웨어 산업 진흥법 제 13조 2 : 소프트웨어 품질성능 평가시험 <br/>\
+- 소프트웨어 산업 진흥법 시행규칙 제 6조 2 : 품질성능 평가시험의 대상 등 <br/>\
+- 소프트웨어 산업 진흥법 시행규칙 제 6조 3 : 평가시험의 의뢰 등 <br/><br/>\
+# 적용대상, 제외 기준 <br/>\
+- 적용대상 : 분리발주 대상 SW 5천만원 이상 <br/>\
+- 제외기준 : 5천만원 미만 / 조달청 구매 / 발주 기관장 판단 TTA 기관 의장 협의 <br/><br/>\
+# 구성요소 (<font color = "red">참발수심</font>)<br/>\
+- BMT 참여 업체 <br/>\
+- 발주처 <br/>\
+- BMT 수행 기관 <br/>\
+- BMT 심의 위원회 <br/><br/>\
+# BMT POC 비교 <br/>\
+<img src = "./img/BMT_POC_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 110회 관리 2교시 3번\
+',
+
 // SRGM
 '# 정의 : 테스트 시간 경과 / 결함 발견, 수정, 제거 / 고장 확률 감소 / 신뢰도 증가, 발생 간격 증가 / 수학적 모델 표현 기법 <br/>\
 - Software Reliability Growth Model <br/>\
@@ -4940,8 +4963,10 @@ P 히스토그램 : Data 분포 <br/>\
 '# 정의 : 필요한 객체 받아서 사용 / OOP 기법 <br/>\
 - Dependency Injection <br/>\
 - Loosely Coupled <br/>\
-- 각 클래스간의 의존관계를 빈 설정 (Bean Definition) 정보를 바탕으로 컨테이너가 자동으로 연결해주는 IoC 기법 <br/><br/>\
+- 각 클래스간의 의존관계를 빈 설정 (Bean Definition) 정보를 바탕으로 컨테이너가 자동으로 연결해주는 IoC 기법 <br/>\
 - 필요한 객체를 직접 생성하는 것이 아닌, 외부로부터 필요한 객체를 받아서 사용하는 객체지향 프로그래밍 기법 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/DI_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 매커니즘 <br/>\
 1. 개발자, 빈 설정파일 의존관계 정보 추가 <br/>\
 2. 객체 레퍼런스 컨테이너 주입, 실행시 동적으로 의존관계 생성 <br/>\

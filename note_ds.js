@@ -4521,6 +4521,7 @@ var answer = answer.concat(
 
 // 디지털 트윈
 '# 정의 : 디지털 복제 / 동적 시뮬레이션 / 가상 모델 기술<br/>\
+- <font color = "red">ISO 23247 (제조업 Digital Twin 표준)</font><br/>\
 - 비즈니스 관점 : 물리적 객체 대한 디지털 복제 / 동적 성질 묘사 가상의 모델 <br/>\
 - 기술적 관점 : 물리적 사물 및 시스템의 동적 S/W 모델 / 센싱데이터 / 상태파악 / 변화 대응 / 운영 개선 / 가치부가 <br/><br/>\
 # 특징 <br/>\
@@ -4530,12 +4531,16 @@ var answer = answer.concat(
 - 통합제어 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 진화 과정 (M관모연자) <br/>\
+# 진화 과정 (<font color = "red">M관모연자</font>) <br/>\
 <img src = "./img/DigitalTwinFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 발전 모델 <br/>\
 <img src = "./img/DigitalTwinEvolution.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
-<img src = "./img/DigitalTwinTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 3D 모델링 : Unreal, Unity, 3,6-DOF, Sensor, 자동인식기술, AI, Simulation Modeling <br/>\
+- 분석 : 3D환경 및 알고리즘 분석, 빅데이터 분석 <br/>\
+- 가시화 : AR, VR, MR, XR, Infographics <br/>\
+- 연결 : IoT, CPS, 공간정보기술, Unified Repository, Digital Thread, Agent <br/>\
+- 운용 : 공간 데이터 암호화 기술, 사이버 보안 기술, Block chain <br/><br/>\
 # 산업분야 적용 <br/>\
 - 제조 : 예측,최적화, 제품설계 <br/>\
 - 항공/전력 : 고장진단, 수요예측 <br/>\
