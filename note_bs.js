@@ -870,7 +870,7 @@ var answer = answer.concat(
 <font color = "red">* SMART : Specific, Measurable, Achievable, Relevant, Time-bound </font><br/><br/>\
 # OKR, KPI 비교 <br/>\
 <img src = "./img/OKR_KPI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* ITPE 합숙 124회 4일차 2교시 2번\
+* ITPE 합숙 124회 4일차 2교시 2번 <br/>\
 * ITPE 7회 관리 5번 \
 ',
 
