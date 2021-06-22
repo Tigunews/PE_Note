@@ -1065,11 +1065,18 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/DMA_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 동작 모드 <br/>\
 1. 전송 방식 <br/>\
-- Burst Mode(Block Mode) : 블록 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
+- Burst Mode(Block Mode) <br/>\
+- <font colro = "red">블록</font> 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
+- 고속 입출력 장치 사용 <br/>\
 <img src = "./img/BurstMode.png" style = "max-width:100%; height:auto;"><br/>\
-- Word Mode(Cycle Stealing) : 워드 단위, Memory Cycle 훔쳐서 수행, CPU 보다 우선 <br/>\
+- Word Mode(Cycle Stealing) <br/>\
+- <font color = "red">워드</font> 단위, Memory Cycle 훔쳐서 수행(1Byte), CPU 보다 우선 <br/>\
+- 데이터 실시간 모니터링 I/O 장치 유리 <br/>\
 <img src = "./img/CycleStealingMode.png" style = "max-width:100%; height:auto;"><br/>\
-- Demand Trasnfer Mode : 바이트 단위, 단일 프로그램 채널 사용 <br/><br/>\
+- Demand Trasnfer Mode <br/>\
+- <font color = "red">바이트</font> 단위, 단일 프로그램 채널 사용 <br/>\
+- DREQ / 프로그래밍 로딩,데이터 파일 유용, 상대적으로 긴 CPU Idle Time <br/>\
+<img src = "./img/DemandTransferMode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. 연결 방식 <br/>\
 - 단일 버스 : CPU, RAM, I/O, DMAC 단일 버스 연결 / 1회 연결 2번 사용 <br/>\
 - 단일 버스 통합 방식 : 여러 I/O 가 DMA 연결 / 1회 연결 1번 사용 <br/>\
