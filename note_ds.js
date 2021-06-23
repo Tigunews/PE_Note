@@ -259,6 +259,7 @@ var question = question.concat(
 'Living Lab',
 'SOS Lab',
 'SRE',
+'디지털 성숙도',
 );
 
 var answer = answer.concat(
@@ -5364,5 +5365,16 @@ var answer = answer.concat(
 # 사례 <br/>\
 <img src = "./img/SRE_Example.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 1일차 2교시 2번\
+',
+
+// 디지털 성숙도
+'# 정의 : 디지털 변화 / 조직 적응 수준 / 디지털 전환 정도 <br/>\
+- 지속적으로 발생하는 디지털 변화에 현재의 조직이 얼마나 잘 적응하고 어느 수준에 해당하는지 평가 할 수 있는 디지털 전환 정도 <br/><br/>\
+# 유형 <br/>\
+- Beginners : 변화 관리 준비 않은 수준 <br/>\
+- Fashinistars : 비즈니스 디지털화 높은 수준, 경영 요구사항 충족 x <br/>\
+- Conservatives : 경영진 변화 높은 수준 준비 상태, 디지털화 수준 낮음 <br/>\
+- Digital Masters : 높은 수준의 디지털화 <br/><br/>\
+* KPC 99회 1교시 3번\
 ',
 );
