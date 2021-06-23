@@ -260,6 +260,7 @@ var question = question.concat(
 'SOS Lab',
 'SRE',
 '디지털 성숙도',
+'CDP',
 );
 
 var answer = answer.concat(
@@ -5376,5 +5377,23 @@ var answer = answer.concat(
 - Conservatives : 경영진 변화 높은 수준 준비 상태, 디지털화 수준 낮음 <br/>\
 - Digital Masters : 높은 수준의 디지털화 <br/><br/>\
 * KPC 99회 1교시 3번\
+',
+
+// CDP
+'# 정의 : 고객 정보 중앙 위치 통합 / 플랫폼 제공 / 소프트웨어 어플리케이션 <br/>\
+- Customer Data Platform <br/>\
+- 타 시스템이 수집, 열람 또는 액세스할 수 있는 고객 정보를 중앙 위치에서 통합하여 고객 정보의 통합 플랫폼을 제공하는 소프트웨어 어플리케이션 <br/><br/>\
+# 고객 데이터 통합 중요성 <br/>\
+- 기술 측면 : AI, ML 활용 예측 모델 생성 <br/>\
+- 데이터 가치 측면 : CRM, DMP 처리할 수 없는 고객 정보 통합 <br/>\
+- 개인정보 보호 측면 : GDPR 정보관리 효율적 수행 <br/><br/>\
+# CDP 아키텍처 <br/>\
+<img src = "./img/CDP_Architecure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 기능 <br/>\
+- 데이터 수집 : 원천 데이터 수집, 수집 엔진, 적재 데이터 <br/>\
+- 데이터 통합 : 표준화, 아이덴티티 식별, 기준/통합 데이터 <br/>\
+- 데이터 활성화 : 페르소나, 예측/처방 분석, 개인맞춤/캠페인 <br/>\
+- 데이터 관리 : 데이터 접촉, 관리 <br/><br/>\
+* KPC 100회 1교시 10번\
 ',
 );
