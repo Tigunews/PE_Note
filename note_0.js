@@ -9,12 +9,11 @@ var this_week_question =
 '',
 
 // 13주차 추가
-'SAGA',
+'SAGA', 'FRAND',
 
 // 13주차
 'Inversion of Control', '제품 품질', 'Interrupt', '분산 로딩 기법', 'SW 공학', '감리', '요구공학', 'Enterprise Arcitecture', 'Information System', 'MSA', '상호배제', '안전성 분석', 'Scrum', 'Democratization', '양자', 'Lateral Movement', '사이버 디셉션', 'Servitization', '자율', 'MSP', '웹 접근성', 'MoS', '성과관리 방법', 'PCI Express', 'Library', 'Many core CPU', 'PoC', 'Memory leak', 'SIL', 'Flash Memory', '라이선스', 'Cache', 'Agile', 'DMA', 'Network Storage', 'file system',
 
-/*
 // 12주차 
 '라우팅','NAC','injection','osi 7','보안솔루션','isms','database view','pds','ufs','vue.js','Turing','연결함정','동형암호','GraphQL','안전성 분석','상주감리','ADAS','eMMC','Hadoop','포렌식','Web RTC','정보윤리','wifi','산업제어시스템','UWB','Buffer Overflow','OECD Privacy 8원칙','KYC','ISO/IEC 27017','ISO/IEC 27018','MEC','해밍','Zero Trust','데이터 3법','DNS','6g','보안 Overview',
 
@@ -27,6 +26,7 @@ var this_week_question =
 // 11주차
 'ISA', 'MESA', '디지털 휴먼 증강', 'N Screen','오픈소스','블록체인','클라우드','Spatial DB','IMDF', '연합학습', 'Sequence Diagram', '영지식 증명', '소스코딩','GNN','Deep Fake','결측값','이상값','단순 대치법','아키텍처 모델','CBDC','Refactoring','실감협업','SRE','OS Scheduler','MVP','클라우드 보안','사이버 레질리언스','형태 보존 암호화','순서 보존 암호화','SD WAN','Hash Salt','Key Stretching','메모리 관리 기법','오픈소스 거버넌스','UWB','SOS Lab','Privacy By Design','데이터 전송요구권',
 
+/*
 // 추가 토픽
 'Smart City', 'Smart Grid','뉴딜','라우팅','의료기술','마이데이터','DB Stakeholder','DQM',
 
