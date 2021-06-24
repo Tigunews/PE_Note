@@ -230,7 +230,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 접근 및 보호 <br/><br/>\
 <img src = "./img/iNode.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-1. File 관리 (MOTSC) <br/>\
+1. File 관리 (<font color = "red">MOTSC</font>) <br/>\
 - mode : 파일과 관계된 접근과 실행권한 저장 플래그 <br/>\
 - Owner : 파일과 관계된 개별 소유자, 그룹 소유자 <br/>\
 - Timestamps : 마지막 접근, 마지막 수정, i-node 수정 시간 <br/>\
