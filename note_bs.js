@@ -457,7 +457,7 @@ var answer = answer.concat(
 // Enterprise Arcithecture
 '# 정의 : 목표 달성 / IT, 비즈니스 관계 / 청사진 <br/>\
 - 조직의 전략적인 목표 및 정보자원 관리 목표를 달성하기 위하여 기업의 IT와 비즈니스 관계를 총괄하여 설명하는 청사진 <br/><br/>\
-# 구성도 <br/>\
+# 구성도 (<font color = "red">BADT</font>)<br/>\
 <img src = "./img/EA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - IT Governance : IT 통제력, 기업 비즈니스 Goal Alignment / Control, Compliance, Alignment <br/>\
