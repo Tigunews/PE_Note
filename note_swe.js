@@ -365,6 +365,7 @@
 'SW 사업 대가선정 가이드 (2019 개정판)',
 '옵저버 패턴',
 'PMO',
+'Agile PMO',
 '공공 PMO',
 '정보시스템 감리',
 '[감리]- 21년 개정사항',
@@ -6056,7 +6057,28 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 2. 활성화 방안 <br/>\
 - 제도 측면 : 전문가 양성, 예산 확보, 생태계 기반 <br/>\
 - 운영 측면 : 참조 모델, 실무적 방법론, 효과 및 효율 <br/><br/>\
+* ITPE 8회 관리 1교시 5번 <br/>\
 * 라이지움 86회 2교시 2번 \
+',
+
+// Agile PMO
+'# 정의 : Scrum Master, 개발, QA 기능 조직 / 자문 및 상담 기능 / Agile Project 관리 조직 <br/>\
+- Scrum Master, 개발, QA의 기능조직들과 함께 구성되어 계획 및 통제 역할이 아닌 자문 및 상담 기능을 제공하는 Agile 프로젝트 관리 조직 <br/><br/>\
+# 역할 <br/>\
+<img src = "./img/PMOAgilePMO.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 관리 영역 <br/>\
+- 일정 : Agile Team, 일정 모니터링 <br/>\
+- 범위 : 현재 상황, 시장환경 분석 <br/>\
+- 위험 : 애자일 팀 간, 팀 내 자율적 조정 <br/>\
+- 품질 : 간단한 문서로 관리 (모형 화면, 표현 결과물) <br/>\
+- 의사소통 : 일일 스탠드업, 리더쉽 보드 공유 <br/>\
+- 자원 : 사용 가능 리소스 기반 산정 <br/>\
+- 성과 : 린캔버스 활용 비즈니스 성과 초점 <br/><br/>\
+# AgilePMO 참조 프레임워크 <br/>\
+- SAFe(Scaled Agile Framework) : 린 채택 4계층(Team, Program, Value Stream, Portfolio) 제공 FW <br/>\
+- LeSS(Large-Scale Scrum) : Crag & Bas Agile FW <br/>\
+- DAD(Disciplined Agile Delivery) : 도입, 구축, 전이 3단계 Agile FW <br/><br/>\
+* ITPE 8회 관리 1교시 5번\
 ',
   
 // 공공 PMO

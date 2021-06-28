@@ -101,6 +101,8 @@ var question = question.concat(
 '[AI]- 인공지능 감성지능',
 '[AI]- 앙상블 학습법',
 '[AI]- Fitting',
+'[AI][Fitting]- Overfitting',
+'[AI][Fitting]- Underfitting',
 '[AI]- Python',
 '[AI][DL FW]- (1) TensorFlow',
 '[AI][DL FW]- (2) PyTorch',
@@ -1723,14 +1725,18 @@ var answer = answer.concat(
 ',
   
 // AutoML
-'# 개념 : ML 파이프라인, 자동화, 학습모델 생성 기술 <br/>\
-- 머신러닝 파이프라인의 일부 또는 전체를 자동화하여 새로운 학습모델을 생성하는 기술 <br/><br/>\
+'# 개념 : 데이터 특징 추출, 하이퍼파라미터 / 소모적, 반복적 / 자동화 ML Process <br/>\
+- 기계학습 파이프라인에서 데이터의 특징 추출, 하이퍼파라미터 설정 등 소모적이고 반복적인 작업을 자동화하는 머신러닝 프로세스 <br/><br/>\
 # 매커니즘 <br/>\
 <img src = "./img/AutoMLMachanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
-- Feature Engineering Automation : <font color = "red">Raw Data</font>를 머신러닝 모델에 적합하게 변형 / 도메인 엔지니어링, PCA, EDA <br/>\
-- Hyper Parameter Optimization : 사용자 직접 설정 값, 훈련 제어 <font color = "red">파라미터</font> / Manual, Grid, Random, Bayesian 경사하강법 <br/>\
-- Neural Architecture Search : 가장 효과적 훈련할 수 있는 <font color = "red">신경망</font> 자동 탐색 방법 / 진화 알고리즘, 강화 학습 <br/><br/>\
+# 프로세스 <br/>\
+- Feature Engineering Automation : <font color = "red">Raw Data</font>를 머신러닝 모델에 적합하게 변형 <br/>\
+- Hyper Parameter Optimization : 사용자 직접 설정 값, 훈련 제어 <font color = "red">파라미터</font> <br/>\
+- Neural Architecture Search : 가장 효과적 훈련할 수 있는 <font color = "red">신경망</font> 자동 탐색 방법 <br/><br/>\
+# 주요기법 <br/>\
+- Feature Engineering Automation : PCA, K-means clustering, Min-Max Scaling, BoW, Domain ENG <br/>\
+- Hyper Parameter Optimization : Manual, Grid, Random Search, Bayesian Optimization, GD <br/>\
+- Neural Architecture Search : 검색 공간,검색 전략, 성능 추적 전략, 진화 알고리즘, 강화학습 <br/><br/>\
 # 활용방안 <br/>\
 - 고품질 학습 데이터 생성 : 데이터 사이언티스트 개입 최소, 손실함수 및 교차 검증 오류 최소화 <br/>\
 - 커스텀 ML 모델 개발 : 신경망 알고리즘 자동적 개선, 고도화 모델 개발 <br/>\
@@ -1743,6 +1749,7 @@ var answer = answer.concat(
 같은게 있는 간글 키워드로 쓰심 좋을거 같고, <br/>\
 커뮤니티에선 H2O, Pycaret 가 좀 언급 되는거 같아요. <br/>\
 많이 쓰이는 기술이여서 관련된 주제에서 AutoML을 키워드로 쓰시는것도 좋을거 같아요. </font><br/><br/>\
+* ITPE 8회 관리 1교시 4번 <br/>\
 * 라이지움 88회 1교시 관리 2번\
 ',
   
@@ -1856,7 +1863,32 @@ var answer = answer.concat(
 ',
 
 // [기계학습]- Fitting
-'<img src = "./img/Fitting.png" style = "max-width:100%; height:auto;">',
+'<img src = "./img/Fitting.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/FittingVarianceBias.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 8회 관리 1교시 2번\
+',
+
+// Over Fitting
+'# 개념 : 적은 데이터 / 정확 학습 / 저편향, 고분산 <br/>\
+- 샘플 데이터만 가지고 학습을 한 결과 너무 정확하게 학습이 된 상태 <br/><br/>\
+# 특징 <br/>\
+- 성능 : 훈련세트(좋음), 검증세트(낮음) <br/>\
+- 학습결과 : 모델 학습 오류 < 테스트 데이터 오류 <br/>\
+- 원인 : 잘못된 데이터, 복잡한 학습 모델, 부족한 학습 데이터 <br/>\
+- 해결 방안 : Dropout, Early Stopping, Cross Validation <br/><br/>\
+* ITPE 8회 관리 1교시 2번\
+',
+
+// Under Fitting
+'# 개념 : 데이터 적음, 학습 적음 / Decision Boundary 근접 x 상태 / 고편향, 저분산 <br/>\
+- 데이터가 너무 적거나 학습이 제대로 이루어지지 않아 Decision Boundary에 근접하지 못한 상태 <br/><br/>\
+# 특징 <br/>\
+- 성능 : 훈련세트(낮음), 검증세트(낮음) <br/>\
+- 학습결과 : 일부 특성만 학습, 학습 오류 줄이지 못함 <br/>\
+- 원인 : 많은 규제, 단순 학습 모델, 부족한 학습 데이터 <br/>\
+- 해결방안 : 파라미터가 더 많은 모델 변경, 학습 알고리즘 성능, ReLu <br/><br/>\
+* ITPE 8회 관리 1교시 2번\
+',
 
 // Python
 '# 정의 : 인공지능 시대에 최적화된 인터프리터 언어 <br/>\

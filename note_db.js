@@ -2,6 +2,7 @@
 '데이터베이스',
 '데이터베이스 트랜잭션',
 '데이터 무결성',
+'데이터베이스 모델링',
 'ACID',
 'Isolation Level',
 '데이터 독립성',
@@ -199,6 +200,25 @@ var answer = answer.concat(
 <img src = "./img/DataIntigrity_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 성능과 TradeOff <br/><br/>\
 <img src = "./img/DataIntigrity_3.png" style = "max-width:100%; height:auto;">\
+',
+
+// 데이터베이스 모델링
+'# 정의 : 현실 세계 DB 표현 / 추상화, 정형화 / 설계 과정 <br/>\
+- 현실 세계를 데이터베이스로 표현하기 위해서 추상화하여 정형화된 형태로 표현하기 위한 설계 과정 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DatabaseModeling.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 데이터 베이스 모델링 절차 <br/>\
+- 요구사항 분석 : 요구사항 명세서 / 정보내용, 요구조건, 경영목표, 제약조건 <br/>\
+- 개념적 모델링 : ERD / View, Attribute, Tx <br/>\
+- 논리적 모델링 : 상세 ERD / 논리 데이터 모델 변환, TX I/F, Schema 평가/정제 <br/>\
+- 물리적 모델링 : 물리 테이블 / 저장 레코드양식, 레코드, 접근 경로 <br/><br/>\
+# 고려사항 <br/>\
+- 무결성 : 갱신, 삽입, 삭제 연산 수행뒤 제약조건 만족 <br/>\
+- 일관성 : 응답 모순성 없이 일치 특성 <br/>\
+- 회복 : 장애 발생 직전 일관된 DB 상태 복구 <br/>\
+- 보안 : 불법적 데이터 변경, 손실, 노출 대한 보호 <br/>\
+- 확장성 : 시스템 운영 x 계속적 추가 <br/><br/>\
+* ITPE 8회 관리 1교시 1번\
 ',
 
 // ACID
@@ -2356,6 +2376,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 신뢰 구간 : 신뢰수준에 포함되는 x값 구간 <br/>\
 - 임계치 : 신뢰구간, 기각역 경계 <br/>\
 - 검정통계량 : 가설 검정 위한 기준 값 (t Value) <br/>\
+ㄴ (표준편차 - 모평균) / 표본 표준편차 <br/><br/>\
 <img src = "./img/StatisticalHypothesisTestTerms.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 절차 <br/>\
 - 가설 설정 : H0, H1 <br/>\
@@ -2366,6 +2387,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 <img src = "./img/NullHypothesisGraph.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 사례 <br/>\
 <img src = "./img/NullHypothesisGraphExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* ITPE 8회 관리 1교시 3번 <br/>\
 * 라이지움 90회 응용 1교시 11번 <br/>\
 * 117회 관리 1교시 4번 <br/>\
 * KPC 94회 1교시 12번\
