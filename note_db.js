@@ -1437,11 +1437,28 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 ',
 
 // Graph Database
-'# 정의 : NoSQL 기반 데이터베이스 / 노드,엔티티 관계 그래프 모델 / 트랜잭션 관리 <br/>\
-- 노드(엔티티)와 이들 간의 관계를 그래프 데이터 모델로 저장하여 트랜잭션을 관리하는 기능을 API 로 제공하는 NoSQL 기반 데이터베이스<br/><br/>\
-# 정의 : 데이터를 노드와 엣지로 표현하여 데이터 사이의 관계를 그래프 구조를 이용하여 저장하는 NoSQL 기반의 데이터 베이스 <br/><br/>\
-<img src = "./img/DS_38_1.PNG" style = "max-width: 100%; height: auto;"><br/><br/>\
-<img src = "./img/DS_38_2.PNG" style = "max-width: 100%; height: auto;">\
+'# 정의 : Node Edge 구성 / 데이터 모델 표현 / NoSQL 기반 DB <br/>\
+- 기존의 관계형 데이터베이스와 달리 노드와 엣지로 구성되어 있어 연결된 데이터 저장과 유연한 구조의 데이터 모델을 표현할 수 있는 NoSQL 기반의 데이터베이스 <br/><br/>\
+# 장점 <br/>\
+1. 일관성 <br/>\
+<img src = "./img/GraphDBSchemaless.png" style = "max-width: 100%; height: auto;"><br/>\
+- Schema less 구조 : 다른 속성 데이터 추가, 관계 설정 자유로움 <br/><br/>\
+2. 직관성 <br/>\
+<img src = "./img/GraphDBSpeed.png" style = "max-width: 100%; height: auto;"><br/>\
+- 질의 처리 속도 : Join x, 직접적 데이터 관계 설정, 관계 횡단 조회 방식 <br/>\
+<img src = "./img/GraphDBDirectModeling.png" style = "max-width: 100%; height: auto;"><br/>\
+- 직관적 모델링 : 현실반영 직관적 제공, 빠른 개발, 테스트, 수정, 이해 환경 지원 <br/><br/>\
+# 종류 <br/>\
+- Neo4j : GPL, Java, .Net, Python, Embeddign, REST / Java 기반 <br/>\
+- AllegroGraph : Eclipse, C#, C, Java, Python / RDF 저장, SPARQL 질의 <br/>\
+- Apach S2 Graph : Apache, HBase 기반 OLTP Graph DB / 카카오 개발 SNS 분석 <br/>\
+- JanusGraph : Apache, Java / 저장 및 순회 효율 설계 <br/><br/>\
+# 활용사례 <br/>\
+- 교육 : 학습 습관 패턴, 지식 그래프, 학습 성취, 행동 패턴 <br/>\
+- 제조 : 성과 지표, 직관적 시각화, 협업 과정 진행 <br/>\
+- 의료 : 신체 부위 시각화, 바이러스 노출 여부, 약물 성분 분석 <br/>\
+- 금융 : 데이터 연결성, 패턴 분석, 금융거래 이상 탐지 및 예방 <br/><br/>\
+* ITPE 8회 관리 2교시 5번\
 ',
   
 // NoSQL 데이터 모델링 패턴

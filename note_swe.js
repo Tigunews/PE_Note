@@ -1739,6 +1739,16 @@ var answer = answer.concat(
 - 사용 : WSDL / XML Markup Language, Method Argument Call, Procedure <br/>\
 - 정의/탐색 : UDDI / 사용 가능 웹서비스 레지스트리 정의/탐색 <br/>\
 - 메시지 : XML / SOAP 메시지, publish, bind, find 지원 메시지 컨텐츠 묘사 <br/><br/>\
+# 특징 <br/>\
+- 목적 : 비즈니스 로직 재사용, 민첩성 확보 <br/>\
+- 조직 : 조직, 서비스 연관 관계 없음 <br/>\
+- 아키텍처 : 전사적, 분산, 모놀리식 아키텍처, 전체 단위 배포 <br/>\
+- 서비스 : 재사용 우선순위 서비스 선정 <br/>\
+- 관계 : 서비스 단위, 수평적 분할 <br/>\
+- 중계 : ESB <br/>\
+- 방식 : ESB 제품, 공급 벤더 기반 <br/>\
+- 기반기술 : SOAP, WDSL, UDDI, XML <br/>\
+- 적용대상 : B2B 기반 엔터프라이즈 시스템, 비즈니스 App 환경 <br/><br/>\
 * ITPE 8회 관리 1교시 3번\
 ',
 
@@ -1767,20 +1777,34 @@ var answer = answer.concat(
 - 시스템 안정성 : Circuit Breaker, API G/W <br/><br/>\
 # MSA 구성요소 <br/>\
 <img src = "./img/SWE1_9_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-1. Front-end Tier <br/>\
+1. Client Layer(Front-end Tier) <br/>\
 - UI/UX : Client Application <br/>\
-- Protocol : HTTP Rest API, AMQP 경량화 프로토콜 <br/><br/>\
-2. Middle Tier <br/>\
+- Protocol : HTTP Rest API, AMQP 경량화 프로토콜 <br/>\
+- Orchestration : 이전 시스템 구축 API 재활용 <br/><br/>\
+2. Application Layer(Middle Tier) <br/>\
 - API Gateway : Load Balancing, 인증/로깅 <br/>\
+- Containerization : 환경, 인프라 종속탈피, 트래픽 Auto Scaling 지원 <br/>\
 - API Server : 상호 독립적 배포/관리 개별 서비스 <br/><br/>\
-3. Back-end Tier <br/>\
+3. Persistence Layer(Back-end Tier) <br/>\
+- Polyglot : 각 시스템 적합 개발언어 및 DB 사용 가능 <br/>\
 - NoSQL DB : Document, Graph, Key/value 수평적 확장 가능한 DB <br/>\
 - RDB : ACID DB <br/><br/>\
+# 특징 <br/>\
+- 목적 : CI/CD 비즈니스 민첩성 확보 <br/>\
+- 조직 : 서비스 단위, 업무 조직 단위 연계(콘웨이 법칙) <br/>\
+- 아키텍처 : 서비스별 독립적 아키텍처 <br/>\
+- 서비스 : 업무간 독립성 우선순위 평가 서비스 <br/>\
+- 관계 : SOA 사상 기반 경량화, 수직적 분해 <br/>\
+- 중계 : API Gateway <br/>\
+- 방식 : 글로벌 서비스 업체, 서비스 확장 과정 진화 <br/>\
+- 기반기술 : REST, CQRS, Containerization, JSON, XML <br/>\
+- 적용대상 : B2C 기반 분산 웹 서비스, 작은 단위 세분화 웹 기반 시스템 <br/><br/>\
 # 전환 고려사항 : 비즈니스 분해 효율성, DB 모델링 한계, 서비스 관리 포인트 증가 <br/><br/>\
 # 제언 <br/>\
 <img src = "./img/DevOpsComment.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * MSA SOA 비교표 <br/>\
 <img src = "./img/MSASOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 8회 관리 2교시 3번 <br/>\
 * KPC 92회 관리 2교시 4번 <br/>\
 * 120회 관리 2교시 3번<br/>\
 * KPC 91회 관리 2교시 4번\
