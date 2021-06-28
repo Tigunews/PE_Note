@@ -3,6 +3,7 @@
 '보안 Overview',
 '내외부 정보보안 위협',
 '공격 유형 Overview',
+'ATT and CK',
 '암호학',
 '[암호학]- Kerckhoff 원리',
 '[암호학]- 혼돈과 확산',
@@ -257,6 +258,42 @@ var answer = answer.concat(
 - 사례 : IDS/IPS, FW, WAF, SIEM <br/><br/>\
 2. IoA (Indicators of Attack) <br/>\
 - 사례 : AI, 머신러닝, 위협헌팅(Threat Hunting)\
+',
+
+// ATT and CK 
+'# 정의 : MITRE / 보안 프레임워크 / 실제 사이버 공격 기반 / 적대적 기술 및 정보 / 보안 매트릭스 <br/>\
+- Adversarial Tactics, Techniques & Common Knowledge Matrix
+- MITRE에서 제공하는 보안 프레임워크로서 실제 사이버공격에 대한 데이터를 기반으로 적대적인 전술 및 기술에 대한 정보를 쉽게 알아볼 수 있도록 만든 보안 매트릭스 <br/><br/>\
+# 모델 변화 <br/>\
+- Cyber Attack Lifecycle(FireEye Mandiant) : 공격방법 패턴화 <br/>\
+- Cyber Kill Chain(Lockhead Martin) : 공격단계별 방어전략 <br/>\
+- ATT&CK Matrix(MITRE) : 공격패턴 프로파일링 <br/><br/>\
+# 구성요소 <br/>\
+- Tactics : 공격자 행동, 사이버 공격 단계, 공격기술 범주 <br/>\
+- Techiniques : 실제적 해킹 기술, Tactic별 목표 달성 구체 방법 제시 <br/>\
+- Matrix : Tatics, Technique 관계 시각화 표현 <br/><br/>\
+# 버전 <br/>\
+- ATT&CK Matrix for Enterprise : Window, Mac, Linux, NW, Container <br/>\
+- ATT&CK Matrix for Mobile : Andorid, IOS <br/>\
+- ATT&CK Matrix for ICS : ICS <br/><br/>\
+# 14 Tactics <br/>\
+- Reconnaissance : 다른 시스템 위동 위한 탐구 단계 <br/>\
+- Resource Development : 다른 시스템 이동 위한 계정 확보 단계 <br/>\
+- Initial Access : 네트워크 진입 위해 사용자 환경 정보 취득 목적 <br/>\
+- Execution : 악성 코드 실행 위한 활동 <br/>\
+- Persistence : 공격 기반 유지, 시스템 지속적 접근 행동 <br/>\
+- Privilege Escalation : 네트워크 높은 권한 얻기 위한 행동 <br/>\
+- Defense Evasion : 침입 시간동안 탐지 회피 행동 <br/>\
+- Credential Access : 시스템, 도메인 서비스, 자격증명 등 접근, 제어 활동 <br/>\
+- Discovery : 시스템, 내부 네트워크 정보 얻기 위한 행동 <br/>\
+- Lateral Movement : 네트워크 상 원격시스템 접근 후 제어 위한 행동 <br/>\
+- Collection : 공격 목적, 관련 정보 포함 데이터 수집 행동 <br/>\
+- Command and Control : 내부 시스템 통신, 제어 행동 <br/>\
+- Exfiltration : 데이터 훔치기 위한 행동 <br/>\
+- Impact : 가용성 무결성 손상 행동 <br/><br/>\
+# CyberKill Chain 비교 <br/>\
+<img src = "./img/CyberKillChainATTandCK.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* ITPE 8회 관리 1교시 12번\
 ',
   
 // 암호학

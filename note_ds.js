@@ -11,6 +11,7 @@ var question = question.concat(
 '[Smart Grid]- 보안',
 '[Smart Grid]- Micro Grid',
 '[Smart Grid]- 인터미턴트 컴퓨팅',
+'[Smart Grid]- IDPP',
 '산업제어시스템',
 '[4차산업]- Smart Factory',
 '[Smart Factory]- MESA 표준기능',
@@ -562,6 +563,22 @@ var answer = answer.concat(
 - 비 휘발성 메모리 변환 : 캐시, 비휘발 특성 혼합 <br/>\
 - 실행 모델 및 프로그래밍 언어 : App 동시성 제어, 안전성 보장 <br/><br/>\
 * KPC 91회 응용 3교시 7번\
+',
+
+// IDPP
+'# 정의 : 발전소 취득 데이터 / IoT, BigData Platform 접목 / 효율적 운전, 정비 / DT 기술 <br/>\
+- Intelligent Digital Power Plant <br/>\
+- 발전소에서 취득한 데이터를 IoT, 빅데이터 플랫폼 기술과 접목하여 디지털 공간에 형상화함으로써 보일러, 터빈 등의 발전설비를 보다 효율적으로 운전하고 정비할 수 있도록 하는 DT 기술 <br/><br/>\
+# 기술요소 <br/>\
+- 보일러, 터빈 등 플랜트 : 센서, IoT, EdgeDevice, 데이터 수집 <br/>\
+- 감시, 진단, 예측 : Data Science, Mointoring, 고장 진단,예측 <br/>\
+- Operation & Maintenance : DT, AR/VR, 자동화, 최적화 <br/>\
+- 자산성능 관리 : 위험도 기반 정비(RBM), 상태 기반 정비(CBM) <br/><br/>\
+# 동향 <br/>\
+- SIMENS : MindSphere <br/>\
+- GE : Predix <br/>\
+- MHPS : Tomoni <br/><br/>\
+* IPTE 8회 관리 1교시 11번\
 ',
 
 // 산업제어시스템
