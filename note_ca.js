@@ -50,6 +50,8 @@ var question = question.concat(
 '가상 메모리 페이지 교체 알고리즘',
 '[가상 메모리 페이지 교체 알고리즘]- 벨라디 변이(Belady\'s Anomaly)',
 '[가상 메모리 페이지 교체 알고리즘]- 스레싱(Thrashing)',
+'[가상 메모리 페이지 교체 알고리즘][Thrashing]- Working set',
+'[가상 메모리 페이지 교체 알고리즘][Thrashing]- PFF',
 'Cache Memory',
 '[Cache]- Cache Mapping',
 '[Cache]- Cache 일관성',
@@ -993,30 +995,47 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 ',
 
 // [가상 메모리 페이지 교체 알고리즘]- 스레싱
-'# 정의 : 페이지 교체 시간 과다 현상<br/>\
-- 멀티프로세싱, 멀티프로그래밍의 역기능으로 페이지 부재가 자주 일어나 프로세스가 보다 페이지 교체에 보내는 시간이 더 많게 되는 현상 <br/><br/>\
-# 원인 <br/>\
-- 리소스 부족 <br/>\
-- 부적절한 페이지 교체 정책 <br/>\
-- 과도한 멀티 프로세싱 <br/><br/>\
+'# 정의 : 멀티 프로세싱, 프로그래밍 역기능 / 페이지 부재 / 페이지 교체 시간 증가 현상 <br/>\
+- 멀티 프로세싱, 멀티 프로그래밍의 역기능으로 페이지 부재가 너무 자주 일어나 프로세스가 실행에 보내는 시간보다 페이지 교체에 보내는 시간이 더 많게 되는 현상 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/Thrashing.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 발생원인 <br/>\
+- 리소스 부족 : CPU 성능 부족, 저용량 메모리 <br/>\
+- 부적절 페이지 교체 : 요구기반 페이지, 페이지 교체 문제 <br/>\
+- 과도한 멀티 프로그래밍 : 다중 프로세스, 할당 프레임 감소 <br/><br/>\
 # 해결방법 <br/>\
 - 우선순위 교환 알고리즘 <br/>\
-- 작업집합(Working-Set)모델 <br/>\
-- PFF(Page Fault Frequency) : 페이지 부재율 예측, 상한 넘으면 프레임 더 할당, 낮으면 일부 회수 <br/>\
-- 다중 프로그래밍 수 제한<br/>\
-- 프로그래밍 기법 : 적절한 자료구조 <br/><br/>\
-# 효과적인 Thrashing 설정 고려요소 <br/>\
-- Localicy<br/>\
-- 전역교체/지역교체<br/>\
-- Pre-paging<br/>\
-- Page Size<br/>\
-- Inverted Page Table<br/>\
-- 프로그램 구조<br/>\
-- 입출력 상호 잠금 <br/><br/>\
-<img src = "./img/Thrashing_1.jpg" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Thrashing_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Thrashing_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/Thrashing_4.png" style = "max-width:100%; hegiht:auto;">\
+- Working Set <br/>\
+- PFF(Page Fault Frequency) <br/>\
+- 다중 프로그래밍 제한 <br/>\
+- 적절한 자료구조 <br/><br/>\
+* ITPE 8회 관리 4교시 1번 \
+',
+
+// Working Set
+'# 정의 : 페이지 부재율 감소 / 특정 시간 / 프로그램 지역성 / 메모리 상주 스레싱 헤결 기법 <br/>\
+- 페이지 부재율을 감소하기 위해 특정 시간에 실행되는 프로그램에 지역성이 포함되는 페이지들의 집합을 계속 메모리에 상주시켜 스레싱을 해결하는 기법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/WorkingSet.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Reference Page : 메모리 공간 참조 페이지 <br/>\
+- Working Set Size : 프로세스 처리 시간 따라 크기 변화 <br/>\
+- Working Set Window : 메모리상 참조하는 고정된 페이지 수 <br/><br/>\
+* ITPE 8회 관리 4교시 1번\
+',
+
+// PFF
+'# 정의 : 페이지 부재 빈도 조절 방법 / 상한 프레임 할당 / 하한 일부 회수 <br/>\
+- Page Fault Frequency <br/>\
+- 페이지 부재 빈도를 조절하는 방법으로 페이지 부재 발생시에 상한을 넘으면 프레임을 더 할당, 하한 보다 낮으면 프레임 일부 회수하여 최적으로 프레임 수를 조정하는 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PFF.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Upper Bound : 프로세스 페이지 프레임 적은 상황 <br/>\
+- Lower bound : 프로세스 페이지 프레임 많아 메모리 낭비 상황 <br/><br/>\
+# Working Set, PFF 비교 <br/>\
+<img src = "./img/WorkingSetPFF.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 8회 관리 4교시 1번\
 ',
 
 // Cache Memory

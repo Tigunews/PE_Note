@@ -606,6 +606,11 @@ var answer = answer.concat(
 <font color = "red">* HMI(Human Machine Interface) : 사용자, 시스템간 통신 대시보드 <br/>\
 * PLC(Programmable Logic Controller) : 시퀀스 제어 + 수치 연산 제어장치 <br/>\
 * RTU(Remote Terminal Unit) : 공정에 설치된 센서와 직접 연결장치</font><br/><br/>\
+# 관련 표준, 문서 <br/>\
+- IEC 62443 : 산업 네트워크 및 시스템 보안 <br/>\
+- NIST CSF : 사이버보안 프레임 워크 <br/>\
+- ISO 27000 : ISMS 국제 표준 체계 <br/><br/>\
+* ITPE 8회 관리 4교시 5번\
 ',
   
 // Smart Factory
@@ -4978,6 +4983,13 @@ var answer = answer.concat(
 // 메타버스
 '# 정의 : Meta + Universe <br/>\
 - 정치, 경제, 사회, 문화 전반적 측면에서 현실과 비현실 모두 공존할 수 있는 생활형, 게임형 가상 세계 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MetaVerse.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 연결 : 정체성(아바타), 친구들(SNS) <br/>\
+- 편의성/이동성 : 어디서든(Global), 적은 마찰(공간 환경) <br/>\
+- 상호작용 : 시민의식(사회 규범), 몰입감(현실 동일시) <br/>\
+- 확장성 : 다양성(컨텐츠 제공), 경제(경제 요소) <br/><br/>\
 # 범주 <br/>\
 - 증강현실 : HUD, Wearable Computer <br/>\
 - 라이프로깅 : 소셜미디어, 유튜브 <br/>\
