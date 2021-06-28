@@ -181,6 +181,8 @@
 '사이버 레질리언스',
 'Reverse Turing Test',
 'Turing Completeness',
+'하인리히 법칙',
+'SOAR',
 );
 
 var answer = answer.concat(
@@ -3731,5 +3733,46 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Serpent : 이더리움 동작, Python 유사 <br/>\
 - LLL : Low-level Lisp-like Language, Assembely 유사 <br/><br/>\
 * 라이지움 90회 관리 1교시 4번\
+',
+
+// 하인리히 법칙
+'# 정의 : 1 : 29 : 300 <br/>\
+- 대형사고 1건이 일어나기 전에 그와 관련된 경미한 사고가 29번 발생하고, 이에 앞서 300건 이상의 사소한 징후가 나타나는 사고 전조 현상에 관한 법칙 <br/><br/>\
+# 재해예방 4원칙 <br/>\
+- 손실 우연의 법칙 <br/>\
+- 원인 연쇄의 법칙 <br/>\
+- 예방 가능의 원칙 <br/>\
+- 대책 강구의 원칙 <br/><br/>\
+# 보안 대응 모델 <br/>\
+- 1 번의 대형 사고 : CERT / 침해사고 분석 / 신속 조치, 복구, 원인 분석 <br/>\
+- 29 번의 작은 사고 : CERT, 보안관제 / 초동대응, 상세분석, 위협 헌팅 / 정확 분석, 신속 대응 <br/>\
+- 300번의 사소한 징후 : CERT, 보안관제 / 모니터링, 초동 분석, 취약점 점검, 모의 해킹 / 신속 탐지, 원인 제거 <br/><br/>\
+* ITPE 8회 관리 3교시 5번\
+',
+
+// SOAR 
+'# 정의 : 사이버 위협 대응 수준 자동 분류 / 표준화 업무 프로세스 / 차세대 보안 자동화 플랫폼 <br/>\
+- 다양한 사이버 위협에 대해, 대응 수준을 자동으로 분류하고 표준화된 업무 프로세스에 따라 보안 업무 담당자와 솔루션이 유기적으로 협력할 수 있도록 지원하는 차세대 보안 자동화 플랫폼 <br/><br/>\
+# Friend : SIEM, AI, EDR, EXR, SOAR <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SOAR.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요기능 <br/>\
+1. SOA <br/>\
+- Security Orchestration and Automation <br/>\
+- 기능 : 보안 위협 자동대응, 이기종 보안, 정책 반영 관리 <br/>\
+- 특징 : Play book, FW, IDS/IPS, EDR, Configuration 관리 <br/><br/>\
+2. TIP <br/>\
+- Threat Intelligence Platform <br/>\
+- 기능 : 위협대응 플랫폼(기존 Ticket 시스템), 사고대응 분석, 일련 과정 관리 <br/>\
+- 특징 : 보안 위협 처리 이상징후 분석, Tier 별 R&R, Incident Response <br/><br/>\
+3. SIRP <br/>\
+- Security Incident Response Platform <br/>\
+- 기능 : 보안위협요소 대응,관리, Thread Artifact, IoC, Intelligence <br/>\
+- 특징 : 위협 프로파일링, APT 공격 파악 <br/><br/>\
+# 도입시 고려사항 <br/>\
+- 업무 프로세스 명확화 : 정해진 업무프로세스 Workflow, 도입 전, 세부 업무 프로세스 정의 <br/>\
+- 자동화 Risk 고려 : 모든 업무 자동화 어려움, Workflow 반영 Risk <br/>\
+- 지속적 유지 관리 : 도입후 운영 충분한 대비 <br/><br/>\
+* ITPE 8회 관리 3교시 5번\
 ',
 );
