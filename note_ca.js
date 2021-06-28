@@ -4,6 +4,7 @@ var question = question.concat(
 'Unix OS',
 '[Unix OS]- File System',
 '[Unix OS]- Permission',
+'[Unix OS]- Linux ID',
 '[Unix OS]- Super Block',
 '[Unix OS]- i-node Block',
 '[Unix OS]- I/O Model',
@@ -203,6 +204,18 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 위치 : /etc/group <br/>\
 - 내용 : group list, 해딩 그룹 속한 user 표시 <br/>\
 - 종류 : Primary group (최초 소속), Supplementrary (나머지) \
+',
+
+// Linux ID 
+'# 종류 <br/>\
+- RUID(Real User ID) : 프로세스 실행시킨 사용자 UID <br/>\
+- RGID(Real Group ID) : 프로세스 실행시킨 사용자 GID <br/>\
+- EUID(Effective User ID) : 프로세스 실행 동안 부여 UID, 자원 접근 권한 판단용 <br/>\
+- EGID(Effective Group ID) : 프로세스 실행 동안 부여 GID, 자원 접근 권한 판단용 <br/>\
+- SUID(Set UID), SGID(Set GID) : 프로세스 실행 동안 해당 파일 소유자, 소유그룹 권한 자원 접근 권한 설정 <br/>\
+ㄴ chmod 4755 Filename, chmod u+s Filename <br/>\
+ㄴ chmod 2755 Filename, chmod g+s Filename <br/><br/>\
+* ITPE 8회 관리 1교시 8번\
 ',
 
 // Super Block

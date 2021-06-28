@@ -22,6 +22,7 @@ var question = question.concat(
 '[Layer3]- 라우팅',
 '[Layer3]- 거리벡터 라우팅',
 '[Layer3]- 링크스테이트 라우팅',
+'[Layer3]- IGMP',
 '[Layer4]- TCP',
 '[Layer4][TCP]- DTLS',
 '[Layer4][TCP]- TLS',
@@ -94,6 +95,7 @@ var question = question.concat(
 '[5G]- Open Lan',
 '[5G]- Network Slicing',
 '[5G]- Private 5G',
+'지능형 초연결망',
 '6G',
 '[6G]- 6G 추진 전략',
 '[6G]- Wifi 7',
@@ -545,6 +547,40 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - NW 환경 : 대규모 및 BGP의 Inter-AS 연결 <br/>\
 - 장점 : Coverage 빠름, Overhead 감소 <br/>\
 - 단점 : 라우팅 테이블 증가, CPU 부하 발생 \
+',
+
+// IGMP
+'# 정의 : 서브넷 멀티케스팅 / 멤버십 제어 / 3계층 프로토콜 <br/>\
+- Internet Group Management Protocol <br/>\
+- 서브넷(로컬 네트워크) 상의 멀티케스팅 멤버십 제어(그룹 관리)를 위한 3계층 프로토콜 <br/><br/>\
+# 동작 메커니즘 <br/>\
+1. 그룹 가입 (Joining) <br/>\
+<img src = "./img/IGMP_Joining.png" style = "max-width:100%; height:auto;"><br/>\
+- 호스트, 라우터 그룹 ID 목록 가짐 <br/>\
+- 호스트 그룹에 소속되는 프로세스 가짐 <br/>\
+- 그룹 가입 희망 프로세스 발생 <br/>\
+- Membership Report 메시지 전송 <br/><br/>\
+2. 멤버쉽 유지(Monitroing & Continuation) <br/>\
+<img src = "./img/IGMP_MonitoringContinuation.png" style = "max-width:100%; height:auto;"><br/>\
+- 멀티캐스트 라우터, 주기적 일반 질의 메시지 전송 <br/>\
+- 멤버십 유지 : Membership Report 회신 <br/>\
+- 멤버십 중단 : 응답 않음 <br/><br/>\
+3. 그룹 탈퇴 (Leaving) <br/>\
+<img src = "./img/IGMP_Leaving.png" style = "max-width:100%; height:auto;"><br/>\
+- 종료 : Leave Report 메시지 송신 <br/>\
+- 멀티캐스트 라우터 : 특별 질의 메시지 송신, 해당 그룹 탈퇴여부 결정 <br/><br/>\
+# 메시지 유형 <br/>\
+1. Query (0x11) <br/>\
+- General : 멤버십 상태 확인, 유지 여부 질의 <br/>\
+- Special : 멤버십 탈퇴 요청시 탈퇴 여부 결정 <br/><br/>\
+2. Membership Report (0x12, 16, 22) <br/>\
+- 멤버 가입 요청 전달, 가입 희망 Group ID 포함 메시지 전송 <br/><br/>\
+3. Leave Report (0x17) <br/>\
+- 멤버 탈퇴 요청 전달, 탈퇴 대상 Group ID 포함 메시지 전송 <br/><br/>\
+# 기타 기능 <br/>\
+- IGMP Snooping : 라우터, 호스트 사이 스위치 IGMP 메시지 듣도록하는 기능 (IPTV) <br/>\
+- IGMP Querier Election : 동일 LAN에 여러 멀티캐스트 라우터 존재시, 가장 낮은 주소 라우터 Querier 역할 집중 기능 <br/><br/>\
+* ITPE 8회 관리 1교시 9번\
 ',
   
 // TCP
@@ -2002,6 +2038,22 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 28GHz 대역(우선공급) : 이동통신 주파수 인접 (28.9~28.5GHz (600MHz폭) 공급 <br/>\
 - 6GHz 이하 대역(추후 검토) : 지역 공동사용 B2B 주파수 추가 확보방안 검토 <br/><br/>\
 * ITPE 합숙 124회 4일차 2교시 6번\
+',
+
+// 지능형 초연결망 
+'# 정의 : NW 기술 + SDx 기술 / 초연결 네트워크 <br/>\
+- 5G, IoT, Wi-Fi 네트워크 기술과 SDN/NFV 기반의 지능형기술을 기반으로 모든 사람과 사물을 신경망과 같이 유기적으로 구축하여 혁신적 서비스 창출을 지원하는 초연결 네트워크 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/InteligenceHyperConectivity.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- SDN : Control Plane, Data Plane, Open API, NW 제어 융복합 서비스 환경 <br/>\
+- NFV : Router, FW, Switch , NW Virtualization, 물리 -> 논리, 유연 제어, 상호 운용성 <br/>\
+- NW 지능 기술 : AI, 자율의사, 정책결정, 자동제어, 수동->자동, 자원 최적화 <br/>\
+- 초저지연 기술 : 민감형 통신, 지연시간 확정, QoS, Critical Service(Factory, 의료) <br/>\
+- 양자 암호 통신 : 양자 특성, 초고속 보안, QKD, 신뢰성 통신 <br/><br/>\
+# 사업 모델 <br/>\
+<img src = "./img/InteligenceHyperConectivityBM.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 8회 관리 1교시 10번\
 ',
   
 // 6G

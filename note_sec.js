@@ -45,6 +45,7 @@
 '[공격기법]- XSS',
 '[공격기법]- SSRF',
 '[공격기법]- DDoS',
+'[공격기법]- Race Condition',
 '[DDoS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
 '[DDoS]- TCP Traffic Flooding',
 '[DDoS]- HTTP Head/Option Spoofing Flooding',
@@ -989,6 +990,30 @@ var answer = answer.concat(
 <font color = "red">* KISA의 사이버 대피소등 외부 지원 서비스 활용</font><br/><br/>\
 * 114회 응용 3교시 3번 <br/>\
 * ITPE 2회 관리 2교시 4번\
+',
+
+// Race Condition 
+'# 정의 : 공유 자원 / 경쟁 상태 / 임시 파일 / 관리자 권한 탈취 공격 <br/>\
+- 공유 자원에 여러 개의 프로세스가 동시에 접근하기 위한 경쟁 상태에서 생성된 임시 파일을 통해 관리자 권한을 탈취하는 공격 기법 <br/><br/>\
+# 공격기법 <br/>\
+1. 정상 <br/>\
+<img src = "./img/RaceConditionNormal.png" style = "max-width: 100%; height: auto;"><br/>\
+- 프로그램 실행 <br/>\
+- SetUID 인한 프로세스 권한 Root 권한 상승 <br/>\
+- 프로그램 동작 <br/><br/>\
+2. 레이스 컨디션 공격 중 <br/>\
+<img src = "./img/RaceConditionAttack.png" style = "max-width: 100%; height: auto;"><br/>\
+- 악의적 프로그램 통한 프로세스 실행중 끼어듦 <br/>\
+- 심볼릭 링크 <br/>\
+- 주요 파일 내용 수정 등 공격 <br/><br/>\
+# 대응방안 <br/>\
+1. 프로그램 실행 전 <br/>\
+- 임시파일 생성 자제 <br/>\
+- umask 최하 022로 유지 <br/><br/>\
+2. 프로그램 실행 중 <br/>\
+- 생성한 임시파일에 링크 존재 여부 검사 <br/>\
+- 임시 파일 생성시 랜덤 이름 생성 <br/><br/>\
+* ITPE 8회 관리 1교시 8번\
 ',
   
 // DDOS - 스크러빙 센터, 컨텐츠 전송 네트워크 
