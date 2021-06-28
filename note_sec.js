@@ -262,7 +262,7 @@ var answer = answer.concat(
 
 // ATT and CK 
 '# 정의 : MITRE / 보안 프레임워크 / 실제 사이버 공격 기반 / 적대적 기술 및 정보 / 보안 매트릭스 <br/>\
-- Adversarial Tactics, Techniques & Common Knowledge Matrix
+- Adversarial Tactics, Techniques & Common Knowledge Matrix <br/>\
 - MITRE에서 제공하는 보안 프레임워크로서 실제 사이버공격에 대한 데이터를 기반으로 적대적인 전술 및 기술에 대한 정보를 쉽게 알아볼 수 있도록 만든 보안 매트릭스 <br/><br/>\
 # 모델 변화 <br/>\
 - Cyber Attack Lifecycle(FireEye Mandiant) : 공격방법 패턴화 <br/>\

@@ -401,6 +401,7 @@
 'ALM',
 'SW Visualization',
 'SW안전 확보 지침',
+'Integrated Development Equipment',
 );
 
 var answer = answer.concat(
@@ -6684,5 +6685,26 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 산업 활성화 <br/>\
 - 평가, 수준 따른 안전 활동 <br/><br/>\
 * ITPE 7회 관리 3교시 5번\
+',
+
+// Integrated Development Equipment
+'# 정의 : 코딩, 디버깅, 컴파일, 배포 / 하나의 프로그램 / 처리 환경 제공 소프트웨어 <br/>\
+- 코딩, 디버깅, 컴파일, 배포 등 프로그램 개발에 관련된 모든 작업을 하나의 프로그램 안에서 처리하는 환경을 제공하는 소프트웨어 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/IDE.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+- Eclipse : Java, C, C++, PHP, JSP / IBM, EClipse <br/>\
+- VS : Visual C, Basic, C++, C#, F# / MS <br/>\
+- Delphi : Delphi, C++ Builder, Object Pascal / 엠바카데로 테크놀러지 <br/>\
+- X Code : C, C++, Java, Pascal, C#, Perl, D, Swift / Apple <br/>\
+- NetBeans : Java, JS, C, C++, PHP, JSP, Node.js / Sun microsystems <br/>\
+- PyCharm : Python / JetBrain <br/>\
+- RStudio : R / R Studio Team <br/>\
+- Android Studio : Java, Kotlin / Google <br/><br/>\
+# Cloud IDE <br/>\
+- AWS Cloud9 IDE : Serverless App <br/>\
+- 구름 IDE : 협업 기능 제공 <br/>\
+- Eclipse Che : RESTful Web Service 제공, SDK, Doker <br/><br/>\
+* ITPE 8회 관리 1교시 13번\
 ',
 );
