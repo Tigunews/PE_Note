@@ -12,6 +12,10 @@ var question = question.concat(
 '[Unix OS][Synchronous I/O]- NonBlocking I/O',
 '[Unix OS][Synchronous I/O]- I/O Multiplexing',
 '[Unix OS]- Asynchronous I/O',
+'IO 장치 제어 방식',
+'[IO 장치 제어][CPU]- Programmed I/O',
+'[IO 장치 제어][CPU]- Interrupt Driven I/O',
+'[IO 장치 제어]- DMA',
 'Loader',
 'Dispatcher',
 '[Dispatcher]- 운영체제 문맥, 문맥교환',
@@ -52,7 +56,6 @@ var question = question.concat(
 '[Cache]- Directory Protocol',
 '[Cache]- Snoopy Protocol',
 '[Cache]- MESI',
-'DMA',
 'PCI Express',
 'DDR SDRAM',
 'FeRAM',
@@ -342,6 +345,100 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 성능 향상 <br/>\
 - Callback 처리로 프로그램 복잡도 상승 고려 <br/><br/>\
 * KPC 97회 응용 4교시 8번\
+',
+
+// I/O 장치 제어 방식
+'# 정의 : 중앙처리장치 제어, 주소지정, 주기억장치 접근 <br/>\
+# Overview <br/>\
+<img src = "./img/IO_Control.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 8회 응용 2교시 6번\
+',
+
+// Programmed I/O 
+'# 메커니즘 <br/>\
+1. 입력과정 <br/>\
+<img src = "./img/ProgrammedIOInsert.png" style = "max-width:100%; height:auto;"><br/>\
+- I/O Buffer -> Processor 내 레지스터 데이터 이동 <br/><br/>\
+2. 출력과정 <br/>\
+<img src = "./img/ProgrammedIOOutput.png" style = "max-width:100%; height:auto;"><br/>\
+- Processor 내 레지스터 -> I/O Buffer <br/><br/>\
+# 구성요소 <br/>\
+1. 상태 레지스터 Flag <br/>\
+<img src = "./img/ProgrammedIOFlag.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. I/O 명령 <br/>\
+- 제어 : 모듈 해야 할 동작 지정 <br/>\
+- 검사 : I/O 모듈, 주변장치 상태 검사 <br/>\
+- 읽기 : I/O 모듈 / 주변장치 -> 내부 버퍼 <br/>\
+- 쓰기 : 데이터 버스 -> 주변장치 <br/><br/>\
+3. I/O 주소지정 <br/>\
+- Memory-mapped I/O : I/O 장치,기억장치, 주소 공간 공유 / 별도 명령어 불필요 <br/>\
+- IO-mapped I/O : I/O장치,기억장치, 별도 주소 공간 / 별도 명령어 필요 <br/><br/>\
+* ITPE 8회 응용 2교시 6번\
+',
+
+// Interrupt Driven I/O
+'# 정의 : I/O 모듈 동작 수행 동안 / 다른 프로그램 처리 가능 방식 <br/>\
+- 프로세서로부터 I/O 명령을 받은 I/O 모듈이 동작을 수행하는 동안, 프로세서가 다른 프로그램을 처리할 수 있도록 하는 방식 <br/><br/>\
+# 처리 절차 <br/>\
+<img src = "./img/InterruptDrivenIOMechanishm.png" style = "max-width:100%; height:auto;"><br/>\
+- I/O 모듈, 프로세서에 완료 신호 알림 <br/>\
+- 인터럽트 신호 받은 후 원래 프로그램 수행 지속 <br/><br/>\
+# 설계 유형별 동작 메커니즘 <br/>\
+1. Multiple Interrupt Lines <br/>\
+<img src = "./img/InterruptDrivenIOMultiple.png" style = "max-width:100%; height:auto;"><br/>\
+- I/O 모듈, 요구선(Requst), 확인선(ACK) <br/>\
+- 요구선 우선순위 가짐 <br/><br/>\
+2. Software Poll <br/>\
+<img src = "./img/InterruptDrivenIOSWPoll.png" style = "max-width:100%; height:auto;"><br/>\
+- 우선순위 높은 제어기 부터 요구 여부 검사 후 요청 <br/><br/>\
+3. Daisy Chain <br/>\
+<img src = "./img/InterruptIODaisyChain.png" style = "max-width:100%; height:auto;"><br/>\
+- 하나의 인터럽트 요구선 Daisy Chain 형태 공유 <br/><br/>\
+4. Bus Arbitration(중재) <br/>\
+<img src = "./img/InterruptDrivenIOBusArbiter.png" style = "max-width:100%; height:auto;"><br/>\
+- I/O 모듈 버스 사용권 얻은 다음, 인터럽트 요구 <br/>\
+- 프로세서 확인 신호 보내어 응답 <br/><br/>\
+* ITPE 8회 응용 2교시 6번\
+',
+
+// DMA
+'# 정의 : 주변장치, 주기억장치 데이터 전송 장치 <br/>\
+- CPU를 통하지 않고 주변장치(I/O)와 주기억장치 사이의 데이터 전송을 담당하는 장치 <br/><br/>\
+# DMA 이전 방식 <br/>\
+- Programmed Driven I/O : CPU 상 실행되는 프로그램 의해 IO 제어 <br/>\
+- Interrupt Driven I/O : I/O Interface 주변 장치 상태 Check, CPU IO 요구 <br/><br/>\
+# 필요성 <br/>\
+- CPU 자원낭비 최소화 : Disk 위해 범용 프로세서 전송 제어 낭비 <br/>\
+- CPU 성능저하 개선 : 능동적 CPU 개입 필요, 오버헤드 발생 가능 <br/><br/>\
+# 특징 <br/>\
+- CPU Utilization 향상 : CPU 다른 작업 수행 가능 <br/>\
+- Multi Process 환경 유리 : 프로세스 CPU 작업 병렬화 <br/>\
+- Process 응답시간 향상 : 프로세스 대기 시간 감소 <br/><br/>\
+# 동작원리 <br/>\
+<img src = "./img/DMA_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 전송 모드 <br/>\
+1. Burst Mode(Block Mode) <br/>\
+- <font colro = "red">블록</font> 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
+- 고속 입출력 장치 사용 <br/>\
+<img src = "./img/BurstMode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Word Mode(Cycle Stealing) <br/>\
+- <font color = "red">워드</font> 단위, Memory Cycle 훔쳐서 수행(1Byte), CPU 보다 우선 <br/>\
+- 데이터 실시간 모니터링 I/O 장치 유리 <br/>\
+<img src = "./img/CycleStealingMode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Demand Trasnfer Mode <br/>\
+- <font color = "red">바이트</font> 단위, 단일 프로그램 채널 사용 <br/>\
+- DREQ / 프로그래밍 로딩,데이터 파일 유용, 상대적으로 긴 CPU Idle Time <br/>\
+<img src = "./img/DemandTransferMode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+4. Interleaved <br/>\
+- 프로세서가 버스 미사용 중일 때만 DMA에서 주기억장치로 데이터 전송 <br/>\
+<img src = "./img/Interleaved.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 연결 방식 <br/>\
+- 단일 버스 : CPU, RAM, I/O, DMAC 단일 버스 연결 / 1회 연결 2번 사용 <br/>\
+- 단일 버스 통합 방식 : 여러 I/O 가 DMA 연결 / 1회 연결 1번 사용 <br/>\
+- 입출력 버스 방식 : 시스템, 입출력 버스 분리, 다양한 속도 I/O 처리, DMAC가 복잡 <br/>\
+<font color = "red">* DMAC : Direct Memory Access Controller </font><br/><br/>\
+* ITPE 8회 응용 2교시 6번 <br/>\
+* 123회 응용 4교시 1번\
 ',
 
 // Loader 
@@ -1059,44 +1156,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 상세 설명 <br/>\
 <img src = "./img/MESI.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/MESI_ProtocolDetail.png" style = "max-width:100%; height:auto;">\
-',
-  
-// DMA
-'# 정의 : 주변장치, 주기억장치 데이터 전송 장치 <br/>\
-- CPU를 통하지 않고 주변장치(I/O)와 주기억장치 사이의 데이터 전송을 담당하는 장치 <br/><br/>\
-# DMA 이전 방식 <br/>\
-- Programmed Driven I/O : CPU 상 실행되는 프로그램 의해 IO 제어 <br/>\
-- Interrupt Driven I/O : I/O Interface 주변 장치 상태 Check, CPU IO 요구 <br/><br/>\
-# 필요성 <br/>\
-- CPU 자원낭비 최소화 : Disk 위해 범용 프로세서 전송 제어 낭비 <br/>\
-- CPU 성능저하 개선 : 능동적 CPU 개입 필요, 오버헤드 발생 가능 <br/><br/>\
-# 특징 <br/>\
-- CPU Utilization 향상 : CPU 다른 작업 수행 가능 <br/>\
-- Multi Process 환경 유리 : 프로세스 CPU 작업 병렬화 <br/>\
-- Process 응답시간 향상 : 프로세스 대기 시간 감소 <br/><br/>\
-# 동작원리 <br/>\
-<img src = "./img/DMA_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 동작 모드 <br/>\
-1. 전송 방식 <br/>\
-- Burst Mode(Block Mode) <br/>\
-- <font colro = "red">블록</font> 단위, 여러개 Word 지속 전송, 데이터 전송 마칠때 까지 버스 사용<br/>\
-- 고속 입출력 장치 사용 <br/>\
-<img src = "./img/BurstMode.png" style = "max-width:100%; height:auto;"><br/>\
-- Word Mode(Cycle Stealing) <br/>\
-- <font color = "red">워드</font> 단위, Memory Cycle 훔쳐서 수행(1Byte), CPU 보다 우선 <br/>\
-- 데이터 실시간 모니터링 I/O 장치 유리 <br/>\
-<img src = "./img/CycleStealingMode.png" style = "max-width:100%; height:auto;"><br/>\
-- Demand Trasnfer Mode <br/>\
-- <font color = "red">바이트</font> 단위, 단일 프로그램 채널 사용 <br/>\
-- DREQ / 프로그래밍 로딩,데이터 파일 유용, 상대적으로 긴 CPU Idle Time <br/>\
-<img src = "./img/DemandTransferMode.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 연결 방식 <br/>\
-- 단일 버스 : CPU, RAM, I/O, DMAC 단일 버스 연결 / 1회 연결 2번 사용 <br/>\
-- 단일 버스 통합 방식 : 여러 I/O 가 DMA 연결 / 1회 연결 1번 사용 <br/>\
-- 입출력 버스 방식 : 시스템, 입출력 버스 분리, 다양한 속도 I/O 처리, DMAC가 복잡 <br/>\
-<font color = "red">* DMAC : Direct Memory Access Controller </font><br/><br/>\
-* 123회 응용 4교시 1번\
-',
+', 
 
 // PCI Express
 '# 정의 : x1~x32 확장 가능 다수 레인 / 물리 계층 기반 / 고속 데이터전송 / 점대점 기기간 연결 프로토콜 <br/>\
