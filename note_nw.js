@@ -101,8 +101,9 @@ var question = question.concat(
 '[6G]- Wifi 7',
 'Wifi 6',
 'Wifi 6e',
-'재난 안전통신망',
-'공공무선 통신망',
+'재난 안전 통신망',
+'[재난 안전 통신망]- LTE-M',
+'[재난 안전 통신망]- LTE-R',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'eMTC',
@@ -2141,61 +2142,42 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - OFDMA를 활용한 초연결 특성 확보 <br/><br/>\
 * 123회 응용 1교시 7번 <br/>\
 ',
-
-// 재난안전통신망
-'# 정의 : 공공안전 재난 구조 (PPDR : Public Protection and Disaster Relief) 서비스를 제공하기 위해 사용되는 융합 통신망 기술 <br/>\
-- 소방 또는 의료 등의 공공안전 업무를 위한 통신 서비스를 제공하는 네트워크이며, 관련 기관의 종사자가 재난 관련 기관의 종사자가 재난 발생시 뿐만 아니라 일상적인 기관의 고유 업무를 수행하기 위하여 활용하는 특수 통신망 <br/>\
-- (TTA)화재, 홍수, 지진, 해일등 대형 재난 발생시 국가 차원의 신속하고 효율적인 재난 관리를 위해 재난 관련 기관에 적합한 무선 통신망을 구축하는 사업 <br/><br/>\
-# 요구조건 : 생존 신뢰성, 재난 대응성, 보안성, 상호운용성 및 운영 효율성 <br/><br/>\
-# 발전 방향 <br/>\
-- 단기(2017) : PS-LTE 기반 재난안전통신망 구축을 완료 <br/>\
-- 중기(2020) : 안정화 및 고도화 <br/>\
-- 장기(2024) : 차세대 재난 안전통신망 방안 (5G등) 수립 <br/><br/>\
-# 재난 안전 통신망 구축 사업<br/>\
-1. 범위 <br/>\
-- PS-LTE 기술방식의 전국 단일 자가망 구축<br/>\
-- 철도망(LTE-R)<br/>\
-- 해상망(LTE-M) 등 타 무선통신망과의 연계 <br/><br/>\
-2. 정책추진과제 <br/>\
-- 국제표준<br/>\
-- 품질강화(사전품질인증제도, 보안인증제도 도입)<br/>\
-- 재난IT산업 활성화(세계최초)<br/>\ 현행 무선망 SOP 보완(통합지휘용/자체업무용 분할) <br/><br/>\
-3. AS-IS <br/>\
-- TETRA(유럽) <br/>\
-- APCO-P25(미국) 통해 구축 <br/>\
-- 기타 UHF, VHF, TETRA, idEN, WiBro 등 다양한 규격의 무선통신 사용 <br/><br/>\
-4. To-Be <br/>\
-- 미래부 : 차세대 기술방식 선정, 주파수 공급지원 <br/>\
-- 행안부 : 구축사업 추진, PS-LTE 통신 방식, 전용 주파수 대역 활용 <br/><br/>\
-5. 기대효과 <br/>\
-- 재난 대응 시간 단축 <br/>\
-- 중복 투자 예방 <br/>\
-- 국내 LTE 설비 투자 증가로 고용 창출 <br/><br/>\
-6. 고려사항 <br/>\
-- 동일채널 간섭(CCI : Co-Channel Interference) <br/>\
-- 인접채널 간섭(ACI : Adjacent Channel Interference) <br/>\
-- 부처간 협업 및 예산 확보, 전략적 접근 <br/><br/>\
-* LTE-R, LTE-M : CCI => 기지국 하나 <br/><br/>\
-* UHD방송 : ACI => 필터 적용 <br/><br/>\
-* [2017.06] 공안전통신망포럼과 통신사, 철도 전문가가 수도권 일대에서 실시한 700MHz 전파 간섭 테스트에서 전파 간섭이 확인 <br/><br/>\
-- UHD 방송과 보호대역이 2MHz 폭에 불과한 다운링크(773~783MHz)의 경우, 재난망 통신 어려웠고, 철도망도 영향을 받음, 콜드롭 우려 <br/>\
-- 정부기술 기준필터 사용 불문 심각 <br/><br/>\
-* 대응현황 및 시사점 <br/>\
-- 미래창조 과학부 : 지상파 UHD기술 기준, 무선설비 기술기준 일부개정안 발표 but X <br/>\
-- 단말 전문가 : 고성능 필터 의한 최적화 한계 존재, 전파 출력조절, 보호 대역 확대 외 대안 없다 판단 <br/>\
-- 전파법 : 후순위 제공 서비스 주체가 전파 간섭 책임져야함. 지역마다 순서 달라 책임 주체 논의 필요\
-',
  
-// 공공무선 통신망
-'# 정의: 국민 편의 및 안전 확보 위안 LTE 기반 공공 무선통신망 <br/><br/>\
-# 개념도 <br/>\
+// 재난 안전 통신망
+'# 정의 : 공공안전 통신 / 그룹통신, 단말간 직접 통화 / 생존성 요구기능 지원 통신망 <br/>\
+- Public Safety - Long Term Evolution <br/>\
+- 공공안전 통신에 필요한 기능들을 수용한 기술 방식으로서, 그룹통신, 단말간 직접 통화, 망 생존성 등의 요구기능을 지원하는 통신망 <br/><br/>\
+# Overview <br/>\
 <img src = "./img/PublicWirelessCommunication.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# PS-LTE <br/>\
-<img src = "./img/PS-LTE_OverView.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# LTE-R <br/>\
-<img src = "./img/LTE-R_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# LTE-M <br/>\
-<img src = "./img/LTE-M_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 목적 <br/>\
+- 재난대응 능력 제고 : 통합적 재난 대응 <br/>\
+- 정확한 의사소통 : 멀티미디어 활용 <br/>\
+- 중복투자 해소 : 효율적 운영 관리 <br/>\
+- 단일 통신망 통합 : 골든 타임 확보 <br/>\
+- 재난안전통신망 활용 : 일상 재난 예방 <br/>\
+- 경제적 효율성 : 중복투자 방지 <br/><br/>\
+# 기술요소 <br/>\
+<img src = "./img/PS-LTE_OverView.png" style = "max-width:100%; height:auto;"><br/>\
+- MCPTT : 그룹통신 (PTT) <br/>\
+- RAN-Sharing : 무선통신망 통합/상호 기지국 공유 운영 <br/>\
+- All-IPv6 : 시스템 효율화, 확장성, IPv4 연계 <br/>\
+- eMBMS : 통화폭주  해소, LTE 기반 방송 기술, 재난시 상황 전파 <br/>\
+- 드론 영상 스트리밍 : 현장대응역량 강화 <br/>\
+- 확장가능 인프라 : 업그레이드 지속 확장 가능, 3GPP Rel. 15 core Upgrade <br/><br/>\
+# 기대효과 <br/>\
+- 정보관리 : 기관 다중 상황전파, 입체적 재난대응, 초동대응, 전달체계 간소화 <br/>\
+- 자원관리 : 현장 통합 지휘, 동원자원 탄력 배치, 실시간 동원자원 탐색/활용 <br/><br/>\
+* ITPE 8회 응용 3교시 6번 <br/>\
+* 120회 응용 1교시 3번\
+',
+
+// LTE-M
+'<img src = "./img/LTE-M_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 1교시 3번\
+',
+
+// LTE-R
+'<img src = "./img/LTE-R_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 응용 1교시 3번\
 ',
 
