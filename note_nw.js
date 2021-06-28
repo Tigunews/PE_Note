@@ -25,7 +25,7 @@ var question = question.concat(
 '[Layer3]- IGMP',
 '[Layer4]- TCP',
 '[Layer4][TCP]- DTLS',
-'[Layer4][TCP]- TLS',
+'[Layer4][TCP]- SSL/TLS',
 'DHCP',
 'DNS',
 'IP Tunneling',
@@ -635,39 +635,29 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 // [TCP-Protocol]- TLS
-'# 정의 <br/>\
+'# 정의 : 웹 브라우저, 서버 양단 통신 / TCP 전송 보안 채널 형성 / 네트워크 통신 보안 프로토콜 <br/>\
 - Transport Layer Security <br/>\
-- 컴퓨터 네트워크에 통신 보안을 제공하기 위해 설계된 암호 규약 <br/>\
-- SSL(Security Socket Layer)가 표준화 되면서 바뀐 이름 <br/><br/>\
-# 특징 <br/>\
-- 전송계층 종단간 보안과 데이터 무결성 확보 <br/>\
-- 웹브라우징, 전자메일, 인스턴트 메신저, VoIP 적용 <br/>\
-- 패킷 암호화로 인한 정보 탈취부분 강점 <br/>\
-- 기밀성 우선이므로 스니핑 공격 강점 <br/>\
-- 송신자간 데이터 교환 Event 약점 <br/>\
-- 개인정보유출, 기밀정보유출, DDoS, APT, 악성공격 무력화 <br/><br/>\
-# Layer <br/>\
-<img src = "./img/SSL_Layer.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-0. Stack <br/>\
-- 하위 레코드 계층 : 단편화, 압축, 무결성 보호, 암호화 <br/>\
-- 상위 계층 : Handshake 관련 프로토콜 <br/><br/>\
-1. Protocol (<font color = "red">HACAR</font>) <br/>\
+- 웹 브라우저와 서버 양단 통신시 응용 계층 및 TCP 전송계층 사이에서 보안 채널 형성하여 컴퓨터 네트워크에 통신 보안을 제공하는 프로토콜 <br/><br/>\
+# 개발 역사 <br/>\
+- SSL 2.0(1995.2) : 넷스케이프 SSL 규악 만듦<br/>\
+- SSL 3.0(1996) : 2.0 버전 보안결함 <br/>\
+- TLS 1.0(1999) : SSL 3.0 기반 표준화 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SSL_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 암호 알고리즘 <br/>\
+- 비대칭키 : DH/DHE-DSS/RSA, RSA, DH, Fortezza / 인증 보안 <br/>\
+- 대칭키 : RC4, RC5, IDEA, DES, 3DES, ChaCha20, Camellia / 기밀성 <br/>\
+- Hash 함수 : HMAC-SHA384, HMAc-md5, HMAC-SHA / 무결성 <br/><br/>\
+# Protocol Stack <br/>\
+<img src = "./img/SSL_Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Protocol (<font color = "red">HACAR</font>) <br/>\
 - Handshake : 암호 알고리즘 결정, 키분배 방법, 인증 <br/>\
 - Alert : Handshake 과정중 상대방 암호 방식 지원 불가 알람 <br/>\
 - Change Cipher Spec Protocol : 암호화 알고리즘, 보안 정책 조절 프로토콜 <br/>\
 - Record : 메시지 압축(캡슐), 구조화 > TCP Packet 변환 > Header 추가(세션/전송 사이) <br/><br/>\
 # 절차 <br/>\
-- 클라이언트, SSL 암호화 페이지 요청 <br/>\
-- 서버, 공개키 인증서와 함께 클라이언트에게 전송 <br/>\
-- 클라이언트, 인증서가 CA 유효성 확인 <br/>\
-- 클라이언트, Public Key 사용하여, (랜덤 대칭 암호화키,URL,HTTP Data) 전송<br/>\
-- 서버, Private Key 사용하여, (랜덤 대칭 암호화키,URL,HTTP Data) 복호화 <br/>\
-- 서버, 랜덤 대칭 암호화키 이용하여 암호화한 후 클라이언트에게 전송 <br/><br/>\
-# 개발 역사 <br/>\
-- SSL 2.0(1995.2) : 넷스케이프 SSL 규악 만듦<br/>\
-- SSL 3.0(1996) : 2.0 버전 보안결함 <br/>\
-- TLS 1.0(1999) : SSL 3.0 기반 표준화 \
+<img src = "./img/SSL_Process.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 8회 관리 3교시 1번\
 ',
 
 // DHCP

@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // ITPE 8회
-'데이터베이스 모델링', 'Fitting', '가설검정', 'AutoML', 'PMO', 'CPU Scheduling', '동시성제어', 'Race Condition', 'Linux ID', 'IGMP', '지능형 초연결망', 'IDPP', 'ATT and CK', 'Integrated Development Equipment', 'ESG', 'CBDC', 'Service Architecture', 'Graph Database', 'IO 장치 제어',
+'데이터베이스 모델링', 'Fitting', '가설검정', 'AutoML', 'PMO', 'CPU Scheduling', '동시성제어', 'Race Condition', 'Linux ID', 'IGMP', '지능형 초연결망', 'IDPP', 'ATT and CK', 'Integrated Development Equipment', 'ESG', 'CBDC', 'Service Architecture', 'Graph Database', 'IO 장치 제어', 'SSL', '혼동행렬', '가명',
 
 // 125회 추가
 'Super Block',

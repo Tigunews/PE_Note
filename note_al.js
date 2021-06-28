@@ -775,24 +775,20 @@ var answer = answer.concat(
 '# 정의 : 예측값 일치여부 행렬 분류 모델 평가 기법<br/>\
 - 오류분포표 <br/>\
 - 데이터 분석에서 잘못된 예측의 영향을 간편하게 파악하기 위해 예측된 값과 실제 값이 일치하는지 여부를 행렬을 분류하는 모델 평가 기법 <br/><br/>\
-# 암기 <br/>\
-- 행실열예 <br/>\
-- TP FP(1종)FN(2종) TN <br/><br/>\
-- Percision <br/>\
-- Accuracy <br/>\
-- SFFS <br/><br/>\
-# 구성 <br/>\
-- 행 : 실제값 <br/>\
-- 열 : 모델의 예측값 <br/>\
-- 예측값 : Positive / Negative <br/>\
-- 비교결과 : True / False(예측한 값과 실제 값의 비교 결과) <br/><br/>\
-<img src = "./img/ConfusionMatrix_1.png" style = "max-width:100%; hegiht:auto;"><br/>\
-<img src = "./img/ConfusionMatrix_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* FN(1종 오류) : 알파 위험, 오탐 <br/>\
-* FP(2종 오류) : 베타 위험, 미탐 <br/>\
+# 구성 (<font color = "red">예(PN) 실(TF) </font>)<br/>\
+<img src = "./img/ConfusionMatrix.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 성능평가 항목 <br/>\
+<img src = "./img/ConfusionMatrixList.png" style = "max-width:100%; hegiht:auto;"><br/>\
+<font color = "red">* FN(1종 오류) : 알파 위험, 오탐 / 코로나 음인데 양 <br/>\
+* FP(2종 오류) : 베타 위험, 미탐 / 코로나 양인데 음 <br/>\
 * 한 알고리즘의 분석 : 혼동 행렬 <br/>\
-* 두개 알고리즘 비교분석 : ROC Curve <br/><br/>\
-<img src = "./img/ConfusionMatrix_3.png" style = "max-width:100%; hegiht:auto;">\
+* 두개 알고리즘 비교분석 : ROC Curve(FP, TP Rate), AUC(ROC 밑면적) </font><br/><br/>\
+# 1,2종 오류 줄이는 방법 <br/>\
+- 1종 오류 : 임계치 높여, 구체적, 민감, 오류줄이고 품질 향상 <br/>\
+- 2종 오류 : 임계치 낮춤, 표본 수 늘림 <br/>\
+- 일반적 조치 : 1종 오류 최소화 임계치 맞춘 후, 표본 수 늘려 2종 오류 낮춤 <br/><br/>\
+<img src = "./img/ConfusionMatrix_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* ITPE 8회 관리 3교시 2번\
 ',
 
 // [기계학습]- 분류모델생성알고리즘
