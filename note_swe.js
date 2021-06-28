@@ -77,10 +77,11 @@
 '[설계단계][UML][Structure Diagram]- Class Diagram',
 '[설계단계]- Usecase Test',
 '[설계단계]- 모델기반 테스트',
-'[설계단계]- MSA',
-'[MSA]- EAI',
-'[MSA]- ESB',
-'[MSA]- Service Mesh',
+'[Service Architecture]- SOA',
+'[Service Architecture][SOA]- ESB',
+'[Service Architecture]- MSA',
+'[Service Architecture][MSA]- EAI',
+'[Service Architecture][MSA]- Service Mesh',
 'GraphQL',
 '[설계단계]- Shared Nothing 아키텍쳐',
 '[설계단계]- Breadcrumbs',
@@ -302,7 +303,6 @@
 '[방법론][객체지향]- Demeter\'s Law',
 '[방법론]- CBD',
 '[방법론][CBD]- RUP',
-'[방법론]- SOA',
 '[방법론]- Agile 방법론',
 '[방법론][Agile]- xp',
 '[방법론][Agile]- Scrum',
@@ -1726,6 +1726,36 @@ var answer = answer.concat(
 - 테스트 스크립트 \
 ',
 
+// SOA
+'# 정의 : Service Application 조각 / Loosely Coupled / Application 개발 아키텍처 <br/>\
+- Service Oriented Architecture <br/>\
+- Service라는 Application을 조각단위로 loosely-Coupled하게 연결하여 Application 개발하는 아키텍처 <br/><br/>\
+# 개요 <br/>\
+<img src = "./img/SOA_MSA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- 통신 : SOAP / 커뮤니케이션 Protocol, XML, Request Response Model <br/>\
+- 사용 : WSDL / XML Markup Language, Method Argument Call, Procedure <br/>\
+- 정의/탐색 : UDDI / 사용 가능 웹서비스 레지스트리 정의/탐색 <br/>\
+- 메시지 : XML / SOAP 메시지, publish, bind, find 지원 메시지 컨텐츠 묘사 <br/><br/>\
+* ITPE 8회 관리 1교시 3번\
+',
+
+// ESB
+'# 정의 : SOAP Web Service / 내/외부 통합,관리,사용 / SOA 지원 미들웨어 플랫폼 솔루션 <br/>\
+- Enterpriese Service Bus <br/>\
+- SOAP(XML/HTTP) Web Service 기술 이용, 내/외부 정보시스템 통합,관리, 사용 지원하는 SOA 지원 미들웨어 플랫폼 솔루션 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ESB.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 (<font color = "red">ISRE</font>)<br/>\
+- Interaction Link : 상호 메시지 <font color = "red">저장 및 복원</font> 기술 / 전송환경, 큐관리, 모니터링 <br/>\
+- SOAP : 서비스 통합 및 연결을 위한 <font color = "red">통신 표준화</font> 기술 / 서비스 요청 및 호출, 경로설정 <br/>\
+- Runner 기술 : 실행정보 교환 및 공통 환경 위한 <font color = "red">경로 설정</font> 기술 / 실행 환경 필요 정보 전달 <br/>\
+- ESB 패턴 : 일정 패턴 기반 <font color = "red">솔루션 전개</font> 기술 / 기반 솔루션 설계 및 개발 적용 <br/><br/>\
+* KPC 92회 관리 3교시 2번\
+',
+
 // MSA
 '# 정의 : 작은, 변경 조합 가능 아키텍처 <br/>\
 - 하나의 큰 어플리케이션을 여러개의 작은 마이크로 서비스 단위로 나누어 변경과 조합이 가능하도록 구성된 아키텍처 <br/><br/>\
@@ -1773,20 +1803,6 @@ var answer = answer.concat(
 - Messaging Bus : Middleware <br/>\
 - Hybrid : Hub&Spoke + Messaging Bus 혼합 <br/>\
 - Peer to Peer : 각 어플리케이션 Peer Seerver P2P <br/><br/>\
-* KPC 92회 관리 3교시 2번\
-',
- 
-// ESB
-'# 정의 : SOAP Web Service / 내/외부 통합,관리,사용 / SOA 지원 미들웨어 플랫폼 솔루션 <br/>\
-- Enterpriese Service Bus <br/>\
-- SOAP(XML/HTTP) Web Service 기술 이용, 내/외부 정보시스템 통합,관리, 사용 지원하는 SOA 지원 미들웨어 플랫폼 솔루션 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/ESB.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 (<font color = "red">ISRE</font>)<br/>\
-- Interaction Link : 상호 메시지 <font color = "red">저장 및 복원</font> 기술 / 전송환경, 큐관리, 모니터링 <br/>\
-- SOAP : 서비스 통합 및 연결을 위한 <font color = "red">통신 표준화</font> 기술 / 서비스 요청 및 호출, 경로설정 <br/>\
-- Runner 기술 : 실행정보 교환 및 공통 환경 위한 <font color = "red">경로 설정</font> 기술 / 실행 환경 필요 정보 전달 <br/>\
-- ESB 패턴 : 일정 패턴 기반 <font color = "red">솔루션 전개</font> 기술 / 기반 솔루션 설계 및 개발 적용 <br/><br/>\
 * KPC 92회 관리 3교시 2번\
 ',
  
@@ -5067,39 +5083,6 @@ P 히스토그램 : Data 분포 <br/>\
 # 지원워크플로우 : 형상/변경관리, 프로젝트관리, 환경 \
 ',
 
-// SOA
-'# 정의 : 비지니스 프로세스 기반 개발 방법론 / 서비스 조합 <br/>\
-- Service Oriented Architecture 서비스 기반 방법론(SOA) = 서비스 기반 아키텍처 <br/>\
-- 서비스를 조합하여 새로운 서비스를 생성하는 비즈니스 프로세스 기반의 개발 방법론<br/><br/>\
-# 암기 <br/>\
-- 특징(4) : ILMC <br/>\
-- 구성 : 브프컨리 <br/>\
-- 기술(4) : 교미호기등 <br/><br/>\
-# 특징 <br/>\
-- 프로세스 중심 <br/>\
-- 플랫폼 독립적 어플리케이션 통합 <br/>\
-- Loosely coupled <br/>\
-- 메시지 및 프로세스 상태관리 <br/>\
-- 현업과 재사용 <br/><br/>\
-# 구성 <br/>\
-- Service Broker <br/>\
-- Service Provider <br/>\
-- Service Consumer <br/>\
-- Service Repository <br/><br/>\
-# 기술 <br/>\
-- 데이터 교환(XML) <br/>\
-- 미들웨어 (ESB) <br/>\
-- 서비스호출(SOAP) <br/>\
-- 서비스 기록(WSDL) <br/>\
-- 서비스 등록 (UDDI) <br/><br/>\
-<img src = "./img/SOA_1.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/SOA_2.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/SOA_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/SOA_4.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/SOA_5.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 사례 : 구글맵 \
-',
- 
 // Agile 방법론
 '# 정의 : 사람 중심 효율적 시스템 개발 방법론 / 유연성 / 신속성<br/>\
 - 절차보다는 사람이 중심이 되어 변화에 유연하고 신속하게 적응하면서 효율적으로 시스템을 개발할 수 있는 방법론<br/><br/>\
