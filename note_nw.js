@@ -45,6 +45,7 @@ var question = question.concat(
 '[IPv6]- 패킷 단편화',
 '[IPv6]- ICMPv6',
 '[IPv6]- 보안취약성 및 대응방안',
+'VLSM',
 'Subnet',
 'Subnetting',
 'Supernetting',
@@ -1094,6 +1095,26 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 6to4 라우터 릴레이 보안 오용 / DDoS / 주소간 라우터 <br/>\
 - NAT-PT 박스에 대한 자원 고갈 / DDoS / 포티인증, 주소인증(SEND) 수행 <br/><br/>\
 * KPC 94회 4교시 6번\
+',
+
+// VLSM
+'# 정의 : 가변길이 / 네트워크 주소 낭비 / 설계 기법 <br/>\
+- Variable Length Subnet Mask <br/>\
+- 고정 길이의 서브넷 마스크를 적용하지 않고, 각 서브넷마다 가변 길이의 값을 적용하여 네트워크 주소의 낭비를 막는 네트워크 설계 기법 <br/><br/>\
+# 구성방식 (C Class 가정) <br/>\
+- NET ID(24) / SUBNET ID(가변길이 N) / HOST ID(8-N) <br/><br/>\
+# 효과 <br/>\
+- 인터넷 주소 절약 : 다양한 서브넷 마스크 사용 <br/>\
+- 라우팅 속도 개선 : 라우팅 테이블 감소, 빠른 패킷 전달 <br/>\
+- 브로드캐스팅 트래픽 감소 : 브로드캐스팅 범위 축소, 네트워크 트래픽 감소 <br/><br/>\
+# 절차 (<font color = "red">NW > Host > Host ID > 우선순위 > Subnet Mask > IP </font>)<br/>\
+- Network 분석 : 지사별 필요 Network 개수 식별 <br/>\
+- Host 개수 식별 : 지사별 필요 Host 개수 식별 <br/>\
+- Subnet 별 Host ID 개수 식별 : 2^n, 필요한 Host ID bit 수 계산 <br/>\
+- IP 부여 우선순위 결정 : 내림차순 <br/>\
+- Subnet Mask 계산 : Host 필요 개수 기반 계산 <br/>\
+- 사용 IP 결정 : 각 Subnet 별 사용가능 IP 범위 결정 <br/><br/>\
+* ITPE 8회 관리 4교시 3번\
 ',
 
 // Subnet
