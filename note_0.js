@@ -12,7 +12,7 @@ var this_week_question =
 '데이터베이스 모델링', 'Fitting', '가설검정', 'AutoML', 'PMO', 'CPU Scheduling', '동시성제어', 'Race Condition', 'Linux ID', 'IGMP', '지능형 초연결망', 'IDPP', 'ATT and CK', 'Integrated Development Equipment', 'ESG', 'CBDC', 'Service Architecture', 'Graph Database', 'IO 장치 제어', 'SSL', '혼동행렬', '가명', '공공SW사업 대기업 참여제한 제도', '하인리히 법칙', 'SOAR', 'Information Strategy Plan', '재난 안전 통신망', 'Thrashing', '메타버스', '산업제어시스템', 'ISA/IEC 62443', 'Docker', 'Kubernetes', 'UWB',
 
 // 125회 추가
-'Super Block', 'PPP', 'XSS', 'OAuth',
+'Super Block', 'PPP', 'XSS', 'OAuth', '회귀분석', '요구공학',
 
 // 13주차 추가
 'SAGA', 'FRAND',
