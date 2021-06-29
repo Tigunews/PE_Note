@@ -5004,7 +5004,8 @@ var answer = answer.concat(
 - 정치, 경제, 사회, 문화 전반적 측면에서 현실과 비현실 모두 공존할 수 있는 생활형, 게임형 가상 세계 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/MetaVerse.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 특징 <br/>\
+# 유형 <br/>\
+<img src = "./img/MetaVerseType.png" style = "max-width:100%; height:auto;"><br/>\
 - 연결 : 정체성(아바타), 친구들(SNS) <br/>\
 - 편의성/이동성 : 어디서든(Global), 적은 마찰(공간 환경) <br/>\
 - 상호작용 : 시민의식(사회 규범), 몰입감(현실 동일시) <br/>\
