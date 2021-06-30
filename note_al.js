@@ -2462,7 +2462,7 @@ var answer = answer.concat(
 <font color = "red">* ELMo : Embedding from Language Models <br/>\
 * BERT : Bidirectional Encoder Representations from Transformer <br/>\
 * GPT : Generative Pre-trained Transformer </font><br/><br/>\
-<hr width = "100%" color = "blue"  noshade/>
+<hr width = "100%" color = "blue"  noshade/>\
 # 정의 : 단어간 유사도, 중요도 파악 / 저차원 실수 벡터 맵핑 / 가깝게 배치 / 자연어 처리 모델링 기술 <br/>\
 - 단어간 유사도 및 중요도 파악을 위해 단어 저차원의 실수 벡터로 맵핑하여 의미적으로 비슷한 단어를 가깝게 배치하는 자연어 처리 모델링 기술 <br/><br/>\
 # 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\

@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 15주차
-'NLP',
+'NLP', '전처리',
 
 /*
 // ITPE 8회
