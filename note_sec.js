@@ -3761,6 +3761,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 
 // SOAR 
 '# 정의 : 사이버 위협 대응 수준 자동 분류 / 표준화 업무 프로세스 / 차세대 보안 자동화 플랫폼 <br/>\
+- Security Orchestration Automation and Response <br/>\
 - 다양한 사이버 위협에 대해, 대응 수준을 자동으로 분류하고 표준화된 업무 프로세스에 따라 보안 업무 담당자와 솔루션이 유기적으로 협력할 수 있도록 지원하는 차세대 보안 자동화 플랫폼 <br/><br/>\
 # Friend : SIEM, AI, EDR, EXR, SOAR <br/><br/>\
 # 개념도 <br/>\
