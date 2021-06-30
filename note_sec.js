@@ -272,9 +272,18 @@ var answer = answer.concat(
 - Cyber Kill Chain(Lockhead Martin) : 공격단계별 방어전략 <br/>\
 - ATT&CK Matrix(MITRE) : 공격패턴 프로파일링 <br/><br/>\
 # 구성요소 <br/>\
-- Tactics : 공격자 행동, 사이버 공격 단계, 공격기술 범주 <br/>\
-- Techiniques : 실제적 해킹 기술, Tactic별 목표 달성 구체 방법 제시 <br/>\
-- Matrix : Tatics, Technique 관계 시각화 표현 <br/><br/>\
+1. Tactics(전략) <br/>\
+- 특징 : 공격자 공격 목적, 공격단계 파악 <br/>\
+- 측면 : 공격(추가 공격), 대응(피해범위 산정) <br/>\
+- 활용 사례 : APT 공격 그룹, 공격 유형 식별 <br/><br/>\
+2. Technical(기술) <br/>\
+- 특징 : 공격 수행 위한 상세 공격 방법 명령 <br/>\
+- 측면 : 공격(공격 수행), 대응자(아티팩트 획득) <br/>\
+- 활용 사례 : 모의 침투(Penetrate Testing), 사후 분석(Incident Response) <br/><br/>\
+3. Procedure(전술) <br/>\
+- 특징 : 전략의 상세 수행 방안(Action) <br/>\
+- 측면 : 공격자(세부 수행 절차), 대응자(Kill chain 발견) <br/>\
+- 활용 사례 : 전략별 탐지 요소 전술, Artifact 분석 및 활용 <br/><br/>\
 # 버전 <br/>\
 - ATT&CK Matrix for Enterprise : Window, Mac, Linux, NW, Container <br/>\
 - ATT&CK Matrix for Mobile : Andorid, IOS <br/>\

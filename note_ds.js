@@ -571,10 +571,10 @@ var answer = answer.concat(
 - Intelligent Digital Power Plant <br/>\
 - 발전소에서 취득한 데이터를 IoT, 빅데이터 플랫폼 기술과 접목하여 디지털 공간에 형상화함으로써 보일러, 터빈 등의 발전설비를 보다 효율적으로 운전하고 정비할 수 있도록 하는 DT 기술 <br/><br/>\
 # 기술요소 <br/>\
-- 보일러, 터빈 등 플랜트 : 센서, IoT, EdgeDevice, 데이터 수집 <br/>\
-- 감시, 진단, 예측 : Data Science, Mointoring, 고장 진단,예측 <br/>\
-- Operation & Maintenance : DT, AR/VR, 자동화, 최적화 <br/>\
-- 자산성능 관리 : 위험도 기반 정비(RBM), 상태 기반 정비(CBM) <br/><br/>\
+- 수집 : (보일러, 터빈 등 플랜트) 센서, IoT, EdgeDevice, 데이터 수집 <br/>\
+- 감시 : Data Science, Mointoring, 고장 진단,예측 <br/>\
+- 운영 : DT, AR/VR, 자동화, 최적화 <br/>\
+- 관리 : 위험도 기반 정비(RBM), 상태 기반 정비(CBM) <br/><br/>\
 # 동향 <br/>\
 - SIMENS : MindSphere <br/>\
 - GE : Predix <br/>\

@@ -2434,7 +2434,36 @@ var answer = answer.concat(
 ',
   
 // 워드 임베딩
-'# 정의 : 단어간 유사도, 중요도 파악 / 저차원 실수 벡터 맵핑 / 가깝게 배치 / 자연어 처리 모델링 기술 <br/>\
+'# 정의 : 단어 특성 / 벡터화 / 유사도 계산 기법 <br/>\
+- 전체 단어들 간의 관계에 맞춰 해당 단어의 특성을 갖는 벡터로 바꿔주는 단어들 사이의 유사도 계산하는 기법  <br/><br/>\
+# 유형 <br/>\
+<img src = "./img/Embedding.png" style = "max-width:100%; height:auto;"><br/>\
+# 기술발전 측면 분류<br/>\
+1. 통계적 모델 <br/>\
+- TDM : 행렬 표현, 수치화 단어 비교, 수량 한계 <br/>\
+- TF-IDF : 문서내 출현 빈도, 문서 출현 역빈도<br/>\
+- One-Hot Encoding : 문자 -> 숫자 기본 방법, 유사도 파악 어려움 <br/><br/>\
+<font color = "red">* TDM : Term-Document Matrix <br/>\
+* TF-IDF : Term Frequency-Inverse Document Frequency </font><br/><br/>\
+2. N-gram 모델 <br/>\
+- CBOW : 앞뒤 단어 통한 유추, 컨텍스트에서 단어 평균 적용 Softmax <br/>\
+- Skip-gram : 입력 단어 통한 유추, 컨텍스트에서 단어 1:1 대응 Softmax <br/><br/>\
+3. NN 모델 <br/>\
+- Word2Vec : 단어 벡터 평면 배치, 신경망 연산, CBOW, skip-gram <br/>\
+- BERT : 딥러닝 모델 적용, 범용 언어 모델 <br/><br/>\
+# 임베딩 수준 측면 분류 <br/>\
+1. 단어 수준 임베딩 <br/>\
+- Word2Vec : CBOW + Skip-gram <br/>\
+- FastText : n-gram character 적용, 여러개 단어 잘라 벡터 표현 <br/>\
+- ELMo : 사전 훈련 언어 모델 사용, 양방향 적용 방법 <br/><br/>\
+2. 문장 수준 임베딩 <br/>\
+- BERT : 사전학습 모델, 성능 향상, 양방향, Transformer Decoder, 빈간 추론 <br/>\
+- GPT : 데이터셋, 매개변수, 단방향, Transformer Encoder, 문장 생성 <br/>\
+<font color = "red">* ELMo : Embedding from Language Models <br/>\
+* BERT : Bidirectional Encoder Representations from Transformer <br/>\
+* GPT : Generative Pre-trained Transformer </font><br/><br/>\
+<hr width = "100%" color = "blue"  noshade/>
+# 정의 : 단어간 유사도, 중요도 파악 / 저차원 실수 벡터 맵핑 / 가깝게 배치 / 자연어 처리 모델링 기술 <br/>\
 - 단어간 유사도 및 중요도 파악을 위해 단어 저차원의 실수 벡터로 맵핑하여 의미적으로 비슷한 단어를 가깝게 배치하는 자연어 처리 모델링 기술 <br/><br/>\
 # 종류 : 희소표현(Sparse Representation), 밀집표현(Dense Representation) <- 공간 낭비 해결위해 대표적으로 사용 <br/><br/>\
 # Dense Representation Embedding 유형 <br/>\
