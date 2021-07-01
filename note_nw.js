@@ -652,13 +652,27 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Hash 함수 : HMAC-SHA384, HMAc-md5, HMAC-SHA / 무결성 <br/><br/>\
 # Protocol Stack <br/>\
 <img src = "./img/SSL_Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Protocol (<font color = "red">HACAR</font>) <br/>\
+# Protocol (<font color = "red">HaCAR</font>) <br/>\
 - Handshake : 암호 알고리즘 결정, 키분배 방법, 인증 <br/>\
 - Alert : Handshake 과정중 상대방 암호 방식 지원 불가 알람 <br/>\
 - Change Cipher Spec Protocol : 암호화 알고리즘, 보안 정책 조절 프로토콜 <br/>\
 - Record : 메시지 압축(캡슐), 구조화 > TCP Packet 변환 > Header 추가(세션/전송 사이) <br/><br/>\
 # 절차 <br/>\
-<img src = "./img/SSL_Process.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SSL_Process.png" style = "max-width:100%; height:auto;"><br/>\
+1. Initial <br/>\
+- Client Hello : Client SSL Version, Client 생성 난수, 세션 식별자 ,Cipher Suit List <br/>\
+- Server Hello : Server SSL Version, Server 생성 난수, 세션 식별자, Cipher Suit 선택 <br/><br/>\
+2. Server 전송 <br/>\
+- Server Certified : 서버 인증서, 공개키 대한 정보 인증서 전달 <br/>\
+- Certificate Request : 서버에서 인증서 요청 <br/>\
+- Server Hello Done : 모두 전송 <br/><br/>\
+3. Client 전송 <br/>\
+- Client Certificate : 인증서 송수신 <br/>\
+- Client Key Exchange : 세션 키 생성용 Pre-master Secret을 서버 공개키로 암호화 전송 <br/>\
+- Client Finish : 서버에 Change Cipher Spec 전송 후 Finish <br/><br/>\
+4. Server 수신 <br/>\
+- Certificate Verify : 전자서명 발송, 서버 검증 <br/>\
+- Server Finish : Client에 Change Cipher Spec 전송하고 Finish <br/><br/>\
 * ITPE 8회 관리 3교시 1번\
 ',
 
