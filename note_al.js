@@ -38,6 +38,7 @@ var question = question.concat(
 '[AI][지도학습]- 성능검증',
 '[AI][지도학습][성능검증]- Cross Validation',
 '[AI][지도학습][성능검증]- 혼동행렬(오차행렬)',
+'[AI][지도학습][성능검증]- ROC Curve',
 '[AI][지도학습]- 분류모델생성알고리즘',
 '[AI][지도학습][AL]- ANN',
 '[AI]- DNN',
@@ -790,6 +791,20 @@ var answer = answer.concat(
 - 2종 오류 : 임계치 낮춤, 표본 수 늘림 <br/>\
 - 일반적 조치 : 1종 오류 최소화 임계치 맞춘 후, 표본 수 늘려 2종 오류 낮춤 <br/><br/>\
 <img src = "./img/ConfusionMatrix_3.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* ITPE 8회 관리 3교시 2번\
+',
+
+// ROC Curve
+'# 정의 : 임계값 / TPR, FPR / 분류모델 성능 그래프 <br/>\
+- Receiver Operating Characteristics Curve <br/>\
+- 모든 분류 임계값에서 참 양성 비율(TPR), 허위 양성 비율(FPR)의 매개 변수를 표시를 통해 분류 모델의 성능을 보여주는 그래프 <br/><br/>\
+<a href = "https://angeloyeo.github.io/2020/08/05/ROC.html">참고문헌</a><br/><br/>\
+# Graph <br/>\
+<img src = "./img/ROCCurve.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 특성 <br/>\
+- True Positive Rate, False Positive Rate : Threshold 의해 결정 <br/>\
+- ROC Curve 점 의미 : Threshold별 FTR, TPR 확인 <br/>\
+- ROC Curver 휜 정도 의미 : 클래스 구별 정도 <br/><br/>\
 * ITPE 8회 관리 3교시 2번\
 ',
 
