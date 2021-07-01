@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 15주차
-'NLP', '전처리', 'Vanishing Gradient', '혼동행렬', 'Cross Validation', 'ROC Curve', 
+'NLP', '전처리', 'Vanishing Gradient', '혼동행렬', 'Cross Validation', 'ROC Curve', '능동학습', '지식 증류', '통계',
 
 /*
 // ITPE 8회

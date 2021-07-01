@@ -701,7 +701,7 @@ var answer = answer.concat(
 - 초기 라벨링된 일부 데이터를 이용해 모델 학습한 이후, 추가적인 데이터 인위적 선별, 활용하는 기계학습 모델 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/ActiveLearningProcess.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/ActiveLearningProcessDetail.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ActiveLearningProcessDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
 1. 모델 기반 <br/>\
 - Uncertainty Sampling : 확신도 낮은 데이터 선별 <br/>\
