@@ -804,7 +804,7 @@ var answer = answer.concat(
 # 특성 <br/>\
 - True Positive Rate, False Positive Rate : Threshold 의해 결정 <br/>\
 - ROC Curve 점 의미 : Threshold별 FTR, TPR 확인 <br/>\
-- ROC Curver 휜 정도 의미 : 클래스 구별 정도 <br/><br/>\
+- ROC Curve 휜 정도 의미 : 클래스 구별 정도 <br/><br/>\
 * ITPE 8회 관리 3교시 2번\
 ',
 
