@@ -263,6 +263,7 @@ var question = question.concat(
 'SRE',
 '디지털 성숙도',
 'CDP',
+'STARLINK Project',
 );
 
 var answer = answer.concat(
@@ -5444,5 +5445,24 @@ var answer = answer.concat(
 - 데이터 활성화 : 페르소나, 예측/처방 분석, 개인맞춤/캠페인 <br/>\
 - 데이터 관리 : 데이터 접촉, 관리 <br/><br/>\
 * KPC 100회 1교시 10번\
+',
+
+// STARLINK Project
+'# 정의 : 일론머스크 / 스페이스X / 위성 인터넷 망 구축 프로젝트 <br/>\
+- 일론머스크의 민간우주기업 스페이스X가 자체적으로 시행하는 전세계 대상 위성 인터넷 망 구축 프로젝트 <br/><br/>\
+# 주요내용 <br/>\
+- 2020년대 중반까지 1만 2천여개의 통신위성 발사 <br/>\
+- 전세계 통신속도 1Gbps 초고속 인터넷 보급 계획 <br/>\
+- 저궤도 위성통신 사용 개도국 디지털 디바이드 해소 <br/><br/>\
+# 구성요소 <br/>\
+1. 공중 세그먼트 : 저궤도 위성, ISL <br/>\
+- OBP(Onboard Processing) : 위성 교환기와 같은 기능 제공 기술 <br/>\
+- ISL(Inter-Satelite Links) : 위성간의 정보전달 및 제공 <br/><br/>\
+2. 지상 세그먼트 : NMC Gateway(Baseband Router, Core Network), Feeder Link <br/>\
+- NMC(Network Management Center) : 전체 위성통신 시스템의 운용, 관리 및 제어 중심 <br/>\
+- Gateway : 안테나, 베이스 밴드 처리장치, 라우터 및 코어 네트워크로 구성 <br/><br/>\
+3. 사용자 세그먼트 : Spot Beam, Wide Beam <br/>\
+- Spot Beam : 대용량 정보 전송 요구 지역 <br/>\
+- Wide Beam : 저속 정보 전송 요구 지역 \
 ',
 );
