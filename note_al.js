@@ -650,6 +650,8 @@ var answer = answer.concat(
 <img src = "./img/ML_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 활용 <br/>\
 <img src = "./img/ML_Useage.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Flow <br/>\
+<img src = "./img/MLSheet.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
   
