@@ -2321,10 +2321,8 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 ',
 
 // 타당도
-'# 정의 : 내용 정확도 (중앙 분포)<br/>\
+'# 정의 : 내용 정확도 (중앙 분포) / <font color = "red">타내신조</font><br/>\
 - 해당 데이터가 가리키는 대상이 조사자가 알고자 하던 것과 일치하는 정도 <br/><br/>\
-# 암기 <br/>\
-- 타내 / 신일 <br/><br/>\
 # 저해요인 <br/>\
 - 성숙 효과 : 시간의 흐름별 변화 <br/>\
 - 특정 사건 영향 : 연구 의미와 영향 <br/>\
@@ -2340,7 +2338,6 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 // 신뢰도
 '# 정의 : 조사 일관성 (결합 정도)<br/>\
 - 검사도구가 오차 없이 정확하게 측정한 정도 <br/><br/>\
-# 암기 <br/>\
 # 속성 <br/>\
 - 안정성 : 한 가지 도구 측정 <br/>\
 - 동등성 : 측정 도구간 동등성 <br/>\
