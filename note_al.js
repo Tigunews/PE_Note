@@ -959,7 +959,7 @@ var answer = answer.concat(
 '# 정의 : Fully Connected Layer 제거 / Convolution Layer / 배치 정규화 / 안정적 학습 GAN <br/>\
 - Deep Convolution GAN <br/>\
 - GAN의 Fully Connected layer를 제거하고 Convolution Layer와 배치 정규화 구조를 사용하여 안정적인 학습이 가능한 GAN 알고리즘 <br/><br/>\
-# 개념도(FCRTI / ICLS) <br/>\
+# 개념도(<font color = "red">RTLS</font>) <br/>\
 <img src = "./img/DCGAN_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. 네트워크 구조 <br/>\
