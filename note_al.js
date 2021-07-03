@@ -933,14 +933,22 @@ var answer = answer.concat(
 - 판별 불가 모델 생성 : 확률분포 차이x -> 분류모델 학습 모델 반복 진행 <br/><br/>\
 4. 기초자료 <br/>\
 # 학습 원리 <br/>\
+<img src = "./img/GAN_LossFunction.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/GANDetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Real Images : 생성, 실제 비교 <br/><br/>\
 # 문제점 <br/>\
 - 모드 진동 : Generator와 Discriminator 번갈아 학습 <br/>\
 - 모드 붕괴 : Generator가 Discriminator 속이는 것에만 집중, 전체 데이터 분포 학습하지 못하고 일부만 학습하게 되는 현상 <br/><br/>\
 # GAN 활용 모델 <br/>\
-- Cycle GAN : 회화, 이미지 변환 기술 / 인공지능 자율학습<br/>\
-- Disco GAN : 이미지, 텍스트 매핑 / 객체간 특성 관계 파악<br/>\
+1. Generic GAN <br/>\
+- DCGAN : Discriminator, Generator CNN 적용 / Fake Image 생성 <br/>\
+- CGAN : Condition 추가 적용 / 특정 숫자 이미지 생성 <br/>\
+2. Text to Image GAN <br/>\
+- Stack GAN : 입력된 문장, 단어 해석 이미지 생성 <br/>\
+- Attn GAN(Attention) : 설명 관련 단어 집중 <br/><br/>\
+3. Image to Image GAN <br/>\
+- Cycle GAN : 다른 스타일 Image 변환 / 밤->낮, 모네풍->피카소풍 <br/>\
+- Disco GAN : 객체간 특성 관계 파악 / 가방 이미지, 유사한 느낌 신발 검색 <br/>\
 - Star GAN : 도메인 동시 변환 / 이미지 변환 특화<br/>\
 - Fusion GAN : 최소 패치 훈련 / 객체 -> 원하는 모양 <br/>\
 <img src = "./img/GAN_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
