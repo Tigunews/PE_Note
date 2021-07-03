@@ -1344,7 +1344,8 @@ var answer = answer.concat(
 # Efficient Net : Compound Scaling 통해 적은 파라미터수 가지고 정확성, 효율성 향상시킨 Image Classification Model <br/>\
 -> Efficient Det : Efficient Net을 Backbone으로 하고, BiFPN과 Compound Scaling을 조합하여 적은 파라미터수로 더욱 좋은 성능을 보여주는 Object Detection 모델 <br/>\
 -> Efficient Seg : Semantic Segmentation <br/><br/>\
-* FPN -> PANet -> Fully Connected -> BiFPN <br/><br/>\
+<font color = "red">* FPN -> PANet -> Fully Connected -> BiFPN <br/>\
+* Compound Scaling : Depth/Resolution 고정, Width 값 변화 테스트 </font><br/><br/>\
 * 123회 관리 1교시 3번 \
 ',
   
