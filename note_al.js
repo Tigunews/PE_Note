@@ -917,7 +917,7 @@ var answer = answer.concat(
 ',
 
 // GAN
-'# 정의 : 대립 통한 훈련학습 모델 <br/>\
+'# 정의 : Generator, Discriminator / 대립 과정 / 성능 강화 / 비지도 학습 모델 <br/>\
 - Generative Adversarial Network <br/>\
 - 서로 대립하는 Generator, Discriminator 두 개의 네트워크를 생성하여 대립 과정 통해 성능을 강화하는 비지도 학습 모델 <br/><br/>\
 # 개념도 <br/>\
@@ -927,7 +927,7 @@ var answer = answer.concat(
 - 생성자 : 샘플 Data 생성 <br/>\
 - 구별자 : 입력된 Data Fake, Real 판별<br/><br/>\
 2. 이론 <br/>\
-- 내쉬 균형 : 수학적 균형점 <br/><br/>\
+- 내쉬 균형 : 경쟁자 대응 따라 최선 선택시, 서로가 자신의 선택을 바꾸지 않음 <br/><br/>\
 3. 학습 설명 <br/>\
 - 반복 학습 : 확률 분포에 맞춰 반복<br/>\
 - 판별 불가 모델 생성 : 확률분포 차이x -> 분류모델 학습 모델 반복 진행 <br/><br/>\
