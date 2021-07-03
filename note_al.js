@@ -660,6 +660,11 @@ var answer = answer.concat(
 <img src = "./img/ML_Useage.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Flow <br/>\
 <img src = "./img/MLSheet.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동향 <br/>\
+- Pattern Recognition : Engineering Features <br/>\
+- ML&DL : LEarning Features & Engineering to Learn <br/>\
+- Meta-Learning : Learning to learn <br/>\
+- Artifical General Intelligence <br/><br/>\
 * 아이리포 23회 3교시 6번\
 ',
   
@@ -765,7 +770,10 @@ var answer = answer.concat(
 - 훈련 활용 : 정확도 향상, 데이터 부족 Underfitting 방지 <br/><br/>\
 2. 단점 : Iteration 횟수 증가, 분석 시간 증가 <br/><br/>\
 # 기본 알고리즘 <br/>\
+<img src = "./img/HoldOut.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - Hold Out Method : Training Set으로 훈련하고 빼놓았던 Validation Set으로 검증하는 기법 <br/><br/>\
+<font color = "red">* 중간에 훈련 데이터를 변경 가능 </font><br/>\
+* Parameter 구할 때 씀 <br/><br/>\
 1. Exhaustive CV <br/>\
 - Leave-p-Out CV(LpOCV) : nCp 개 가능한 만큼 반복 (n:전체, p:Validation Set 데이터 수) <br/>\
 - Leave-One-Out CV(LOOCV) : 전체 샘플 수 만큼 반복 (LpOCV p = 1경우) <br/>\
@@ -2491,7 +2499,7 @@ var answer = answer.concat(
 1. 단어 수준 임베딩 <br/>\
 - Word2Vec : CBOW + Skip-gram <br/>\
 - FastText : n-gram character 적용, 여러개 단어 잘라 벡터 표현 <br/>\
-- ELMo : 사전 훈련 언어 모델 사용, 양방향 적용 방법 <br/><br/>\
+- ELMo : 사전 훈련 언어 모델 사용, 양방향 적용 방법 (<font color = "red">Bank Account, River Bank</font>)<br/><br/>\
 2. 문장 수준 임베딩 <br/>\
 - BERT : 사전학습 모델, 성능 향상, 양방향, Transformer Decoder, 빈간 추론 <br/>\
 - GPT : 데이터셋, 매개변수, 단방향, Transformer Encoder, 문장 생성 <br/>\
@@ -2585,7 +2593,7 @@ var answer = answer.concat(
 - 양방향 속성 : Masked Language Model 사용 <br/>\
 - 다이나믹 임베딩 : 동일 단어 다른 임베딩, 중의성 해소 <br/>\
 - 활성화 함수 : LeRu 대신 GELU(Geussian Error Linear Units) 사용 <br/>\
-- Fine Tuning : Task의 Sate of the art 달성 <br/><br/>\
+- Fine Tuning : 기학습 모델 기반, 변형하여 Weight Update 방법 <br/><br/>\
 # 구조 <br/>\
 - Token Embedding : Char 단위 임베딩, Sub-Word 생성 <br/>\
 - Segment Embedding : 토큰 시킨 단어 다시 하나의 문장 생성 <br/>\
@@ -2606,6 +2614,7 @@ var answer = answer.concat(
 - 개발사 : Open API <br/>\
 - 프로세스 : few-shot 러닝(훈련-검증-테스트) 단계 <br/>\
 - 수행 task : 언어 관련 문제풀이, 작문, 번역, 웹코딩 <br/><br/>\
+<font color = "red">* Few-shot Learning : 적은 데이터 효율 학습, Training set(구분), Support Set(클래스), Query image(종류) </font><br/><br/>\
 * 123회 관리 4교시 4번\
 ',
 
