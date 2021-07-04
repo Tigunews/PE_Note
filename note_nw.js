@@ -901,7 +901,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - HTTP 연결 및 전송 지연을 최소화 하기 위해 TCP+TLS 조합 대신 UDP+TLS 조합을 이용하는 보안 및 향상된 성능을 제공하는 UDP 기반 전송 계층 프로토콜 <br/><br/>\
 # 스택구조 <br/>\
 <img src = "./img/HTTP3Stack.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 동작과정 (<font color = "red">CRCRSR CRSR CRRCRSR<br/>\
+# 동작과정 (<font color = "red">CRCRSR CRSR CRRCRSR</font>)<br/>\
 <img src = "./img/HTTP3ProtocolAction.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/HTTP3ProtocolConnection.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 1교시 4번\
