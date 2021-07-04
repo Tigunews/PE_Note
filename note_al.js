@@ -206,8 +206,10 @@ var answer = answer.concat(
 ',
   
 // Back Tracking
-'# 정의 : 후보해 / 충족 / 찾는 기법 <br/>\
-- 여러 후보해 중에서 특정 조건을 충족시키는 모든 해를 찾는 기법 <br/><br/>\
+'# 정의 : DFS, Pruning / 후보해 충족 / 모든 해 찾는 알고리즘 <br/>\
+- 깊이 우선 탐색(DFS)에 Pruning(가지치기) 기법을 이용하여 여러 후보해 중에서 특정 조건을 충족시키는 모든 해를 찾는 알고리즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BackTracking.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 사례 <br/>\
 <img src = "./img/BacktrackingExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 122회 응용 1교시 9번\
