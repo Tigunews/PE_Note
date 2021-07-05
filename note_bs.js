@@ -110,8 +110,12 @@ var answer = answer.concat(
 - 비전, 목표, 전략, Item <br/><br/>\
 - Need < Approach < Benefit < Competition <br/><br/>\
 - 국가 발전(<font color = "red">경산인</font>) : 경쟁력 조기 확보, 산업 육성, 특허 확보, 전문 인력 양성 <br/><br/>\
-# Lead 문구 <br/>\
-- 기업, 사회를 품다. ESG 경영 개요 \
+# 유형별 그룹핑 <br/>\
+- 정책문제 : PEST <br/>\
+- 사회문제 : 인기조프 <br/>\
+- 거버넌스 : EDM <br/>\
+- 전략 : 비전추세이 <br/>\
+- 미래성장 : 기술선순환 \
 ',
  
 // 국제 표준화 기구
