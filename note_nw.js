@@ -1869,6 +1869,28 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : 대한민국 퍼스트 무버 <br/>\
 - 차세대 초고속 저지연 이동통신 / 2017년 12월 3GPP 릴리즈 15 / 엄격 기준 ITU IMT-2020<br/><br/>\
 <img src = "./img/5G_2.jpg" style = "width:100%; height:auto;"><br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/5G_Overview.png" style = "width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 고속 <br/>\
+- 저지연 <br/>\
+- 대용량 <br/><br/>\
+# 주요기술 <br/>\
+1. eMBB <br/>\
+- 주파수 : 3.5GHz, 2.8GHz(mmWave) <br/>\
+- 직교분할 다중 전송 : 5G OFDM <br/>\
+- 3D Beamforming : 기지국, 단말간 수직, 수평 3D 빔 사용, 집중 조사 <br/>\
+- Massive MIMO : 동일 전파 자원 동시 서비스, 수십~수백개 안테나 기술 <br/>\
+- SA, NSA : 5G, LTE 망 동시 사용 <br/><br/>\
+2. URLLC <br/>\
+- Network Slicing : 네트워크 분할 서비스 <br/>\
+- MEC : 초저지연 서비스 <br/>\
+- SDN/NFV : 코어망 최적 운용 <br/><br/>\
+3. mMTC <br/>\
+- 수용용량 : 1Km2 10만 > 100만 <br/>\
+- 가변적 채널 대역폭 할당 : 15KHz 고정 OFDM 부반송파 2^n 비율 확장 <br/>\
+- eMTC : LTE-M, NB-IoT 장점 결합 <br/>\
+- NB-IoT : 150kbps 기반 IoT 전용 통신 기술 <br/><br/>\
 # 주파수 분류 <br/>\
 <img src = "./img/5GFR1FR2.png" style = "width:100%; height:auto;"><br/><br/>\
 * FR2 커버리지 극복방안 <br/>\
@@ -1970,7 +1992,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 
 // [5G 이동통신]- 5GX
 '# 정의 : 생활 혁신 / 5G / 산업,경제,일상 <br/>\
-- 차세대 네트워크인 5G가 산업,경제,일상 모든 영역에서 무한한 가능성을 열고, 생활 혁신을 이끈다는 의미 (SKT) <br/><br/>\
+- 차세대 네트워크인 5G가 산업,경제,일상 모든 영역에서 무한한 가능성을 열고, 생활 혁신을 이끈다는 의미 (SKT) \
 ',
 
 // [5G 이동통신]- Open Lan
