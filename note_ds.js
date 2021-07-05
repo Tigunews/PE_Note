@@ -5011,6 +5011,22 @@ var answer = answer.concat(
 - 편의성/이동성 : 어디서든(Global), 적은 마찰(공간 환경) <br/>\
 - 상호작용 : 시민의식(사회 규범), 몰입감(현실 동일시) <br/>\
 - 확장성 : 다양성(컨텐츠 제공), 경제(경제 요소) <br/><br/>\
+# 기술 <br/>\
+1. XR <br/>\
+- 데이터 생성, 획득 : Third Eye, Nreal, RealWear HMT-1 <br/>\
+- 표현 가시화 : Quadro RTX, Radeon ProRender Solution <br/>\
+- 컨텐츠 조작 : XR 컨텐츠, VIO(Visual Interial Odometry), Eye Tracker <br/><br/>\
+2. Data <br/>\
+- 데이터 수집 및 전처리 : HDFS, Sqoop, HUE, Drill, Hive, HBase, MongoDB <br/>\
+- Block Chain : Public, Private, Consortium <br/>\
+- 데이터 보호 : E2E 보안 기술(KMS, HSM) <br/><br/>\
+3. Network <br/>\
+- 초고속, 초연결성 : 밀도 높은 디지털 파일, 전송속도 <br/>\
+- 초저지연 : 5G 업로드, 다운로드 <br/>\
+- Gigabit Ethernet : AR 데이터 전송속도, 용량 <br/><br/>\
+4. AI <br/>\
+- 음성 및 감성처리 <br/>\
+- RNN, LSTM : 3D 오디오 보정 기술 <br/><br/>\
 # 범주 <br/>\
 - 증강현실 : HUD, Wearable Computer <br/>\
 - 라이프로깅 : 소셜미디어, 유튜브 <br/>\

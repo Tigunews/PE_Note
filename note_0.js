@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 15주차 추가
-'정형검증',
+'정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP',
 
 // 15주차
 'NLP', '전처리', 'Vanishing Gradient', '혼동행렬', 'Cross Validation', 'ROC Curve', '능동학습', '지식 증류', '통계', '자료구조', 'Efficient NET', 'NLP', '최단경로 알고리즘', 'Stack', '알고리즘 설계', 'GAN', 'One-Hot Encoding', 'Softmax', '한국판 AI 윤리기준', 'Gradient Descent', '정렬', 'DL FW', '신뢰도', '타당도', 'NER', 'BERT', 'GPT-3',

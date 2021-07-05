@@ -24,8 +24,8 @@ var question = question.concat(
 '[Layer3]- 링크스테이트 라우팅',
 '[Layer3]- IGMP',
 '[Layer4]- TCP',
-'[Layer4][TCP]- DTLS',
 '[Layer4][TCP]- SSL/TLS',
+'[Layer4][UDP]- DTLS',
 'DHCP',
 'DNS',
 'IP Tunneling',
@@ -611,31 +611,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * 라이지움 88회 관리 4교시 6번\
 ',
 
-// [TCP-Protocol]- DTLS
-'# 정의 : 데이터그램 전송 프로토콜 <br/>\
-- Datagram Transport Layer Security <br/>\
-- 데이터그램 형식의 콘텐츠를 애플리케이션끼리 주고받을 때 안전하게 전송할 수 있도록 고안된 통신 프로토콜 <br/><br/>\
-# 특징 <br/>\
-- 무결성, 인증, 정보은닉 제공 <br/>\
-- 양쪽 종단간 네트워크에서 전송중인 데이터 악성행위 방지 <br/>\
-- SSL(Secure Socket Layer), TLS(Transport Layer Security) 기술 토대로 만들어짐 <br/>\
-- TLS와 유사한 보안 강도 제공 <br/>\
-- 일반적으로 UDP를 사용하기 떄문에 패킷 재조합에 대한 로직 구현 난이도 존재 <br/><br/>\
-# TCP 프로토콜 암호화 동향 <br/>\
-- 과거 SSL / 현재 TLS <br/>\
-- 웹브라우징, 인스턴트 메시징, VoIP 사용 <br/><br/>\
-# 데이터 그램 <br/>\
-- Header + Payload <br/>\
-- 빠른 전송이 필요하지만 신뢰성 까지는 필요 없는 통신에 주로 사용 <br/>\
-- UDP(User Datagram Protocol), 대표적인 데이터그램 <br/><br/>\
-# 활용 사례 <br/>\
-- 오픈 소스에 포함되어 사용 (GnuTLS, OpenSSL DTLS1.2 포함) <br/>\
-- VPN 클라이언트 <br/>\
-- WebRTC 지원 브라우저 <br/>\
-- VOIP 서비스 <br/>\
-- 게임 스트리밍 클라이언트 \
-',
-
 // [TCP-Protocol]- TLS
 '# 정의 : 웹 브라우저, 서버 양단 통신 / TCP 전송 보안 채널 형성 / 네트워크 통신 보안 프로토콜 <br/>\
 - Transport Layer Security <br/>\
@@ -674,6 +649,33 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Certificate Verify : 전자서명 발송, 서버 검증 <br/>\
 - Server Finish : Client에 Change Cipher Spec 전송하고 Finish <br/><br/>\
 * ITPE 8회 관리 3교시 1번\
+',
+
+// DTLS
+'# 정의 : 데이터그램 전송 프로토콜 <br/>\
+- Datagram Transport Layer Security <br/>\
+- 데이터그램 형식의 콘텐츠를 애플리케이션끼리 주고받을 때 안전하게 전송할 수 있도록 고안된 통신 프로토콜 <br/><br/>\
+# 특징 <br/>\
+- 무결성, 인증, 정보은닉 제공 <br/>\
+- 양쪽 종단간 네트워크에서 전송중인 데이터 악성행위 방지 <br/>\
+- SSL(Secure Socket Layer), TLS(Transport Layer Security) 기술 토대로 만들어짐 <br/>\
+- TLS와 유사한 보안 강도 제공 <br/>\
+- 일반적으로 UDP를 사용하기 떄문에 패킷 재조합에 대한 로직 구현 난이도 존재 <br/><br/>\
+# Handshake <br/>\
+<img src = "./img/DTLS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# TCP 프로토콜 암호화 동향 <br/>\
+- 과거 SSL / 현재 TLS <br/>\
+- 웹브라우징, 인스턴트 메시징, VoIP 사용 <br/><br/>\
+# 데이터 그램 <br/>\
+- Header + Payload <br/>\
+- 빠른 전송이 필요하지만 신뢰성 까지는 필요 없는 통신에 주로 사용 <br/>\
+- UDP(User Datagram Protocol), 대표적인 데이터그램 <br/><br/>\
+# 활용 사례 <br/>\
+- 오픈 소스에 포함되어 사용 (GnuTLS, OpenSSL DTLS1.2 포함) <br/>\
+- VPN 클라이언트 <br/>\
+- WebRTC 지원 브라우저 <br/>\
+- VOIP 서비스 <br/>\
+- 게임 스트리밍 클라이언트 \
 ',
 
 // DHCP
