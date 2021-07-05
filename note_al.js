@@ -132,6 +132,8 @@ var question = question.concat(
 '[AI]- 음성비서',
 '[AI]- Pre-Crime',
 '[AI]- 지능형 로봇',
+'[AI]- Downstream Task',
+'[AI]- 초대규모 AI',
 '[AI]- NLP',
 '[AI][NLP]- NER',
 '[AI][NLP]- 워드 임베딩',
@@ -2413,6 +2415,49 @@ var answer = answer.concat(
 - 로봇운용 SW : 머신 비전 기반, 영상 분석, 인터랙티브 SW <br/>\
 - 센서기술 : 관성 측정, 액티브 비컨, 초음파, 시각, 촉각, 청각 <br/><br/>\
 * KPC 95회 응용 3교시 8번\
+',
+
+// Downstream Task
+'# 정의 : target task <br/>\
+- 미리 학습한 model이나 feature들을 supervised-learning task에 이용하는 학습 형태 <br/><br/>\
+# 유형 <br/>\
+- Fine tuing(미세조정) : Downstream task 데이터 <font color = "red">전체</font> 사용용, 모델 업데이트, Downstream task 수행 <br/>\
+- Zero-shot Learning : Downstream task 데이터 <font color = "red">0건</font> 사용, 백본 모델 바로 Downstream task 수행 <br/>\
+- One-shot Learning : Downstream task <font color = "red">1건</font> 사용, 모델 전체를 업데이트, Downstream task 수행 <br/>\
+- Few-shot Learning : Downstream task <font color = "red">몇 건</font> 사용, 업데이트, Downstream 수행 <br/><br/>\
+# Performance <br/>\
+<img src = "./img/DownstreamTask.png" style = "max-width:100%; height:auto;">\
+',
+
+// 초대규모 AI
+'# 정의 : 인공신경망 파라미터 / 수천억 이상 / 종합적 추론 가능 / 범용 AI 모델 <br/>\
+- 인공신경망의 파라미터를 수천억 이상 단위로 대폭 증가시켜 종합적 추론이 가능한 범용 AI 모델 <br/><br/>\
+# 경쟁력 확보 전략 <br/>\
+1. 컴퓨터 자원 (슈퍼 컴퓨터 지원 전략 마련)<br/>\
+- 학습시간 증가 : 슈퍼 컴퓨터 지원(민간 AI 학습) <br/>\
+- 고성능 자원 필요 : 추론검정 등 테스트 단계 컴퓨팅 자원 지원 <br/><br/>\
+2. 데이터 (상징적 초대규모 데이터 구축)<br/>\
+- 대규모 데이터, 성능 향상(Open AI) : 절대적 데이터 양 확대 지원 <br/>\
+- 데이터셋 라벨링 부담 : 모델 선정, 데이터 민관 협업 구축 <br/><br/>\
+3. 알고리즘/모델 (한국어 모델 평가체계 구축 지원) <br/>\
+- 연구(대형화), 서비스(경량화) : 대형화(연구계 추진), 경량화(조기 확보 사업화 기반 마련) <br/>\
+- 자연어 분야 성능평가(GLUE) 측정 : 한국어 자연어 이해분야 성능 평가 기준 필요 <br/><br/>\
+# 핵심 전략 <br/>\
+1. 슈퍼컴퓨터 지원 전략 마련 <br/>\
+- 초대규모 모델 인프라 지원 : 국가차원 인프라 지원 <br/>\
+- 지속가능한 지원 모델 선정 : 정부 주도 센터 건립 or 민간 클라우드 협업 <br/>\
+- 전방위적 컴퓨팅 자원 지원 : 학습 과정(현재), 추론 과정(추가) <br/><br/>\
+2. 대규모 데이터 셋 구축 <br/>\
+- 초대규모 데이터 구축 지원 : 정부 차원 데이터 구축 <br/>\
+- 수요 및 분야별 특성에 맞는 차등 구축 <br/>\
+- 데이터 연계 구축 : AI Hub + 연구용 연계 데이터셋 구축 <br/><br/>\
+3. 우리나라 전용 모델 성능 평가 체계 구축 지원 <br/>\
+- 국내 전용 평가 체계 필요 : GLUE, SuperGLUE 벤치마크 데이터셋 활용 평가 <br/>\
+- 보조금, 컴퓨팅 자원 지원 : 민간 주도 한국어 모델 벤치마크 데이터 셋 구축 <br/><br/>\
+# 사례 <br/>\
+- GPT-3(오픈 AI) : 수천억 단위 파라미터, 데이터 수 확장, 퓨샷러닝 기반 언어 모델 <br/>\
+- 하이퍼클로바(네이버) : GPT-3 대비 파라미터, 데이터 수 확장, 한국어 기반 언어 모델 <br/><br/>\
+* ITPE 합숙 124회 5일차 6번\
 ',
   
 // NLP
