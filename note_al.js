@@ -28,6 +28,8 @@ var question = question.concat(
 '[Tree]- B Tree',
 '[Tree]- B Plus Tree',
 '[Tree]- B Star Tree',
+'[Tree]- 2 3 Tree',
+'[Tree]- Red Black Tree',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
@@ -601,6 +603,63 @@ var answer = answer.concat(
 - 중복성 : 탐색키 중복성 없음 <br/>\
 - 노드키 이동기준 : 2/3 <br/>\
 - 노드 관리 : 리프 아닌 노드크기가 더 크고, 저장공간 관리 복잡\
+',
+
+// 2 3 Tree
+'# 정의 : 2,3 child / binary search tree <br/>\
+- Leaf 노드가 아닌 노드가 2개 또는 3개의 child를 가지는 노드로 이루어진 binary search tree <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/23Tree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Left subtree : 작은 값 <br/>\
+- Mid subtree : 중간 값 <br/>\
+- Right subtree : 큰 값 <br/><br/>\
+# 삽입 연산 <br/>\
+1. 일반 삽입 <br/>\
+<img src = "./img/23TreeInsert1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/23TreeInsert3.png" style = "max-width:100%; height:auto;"><br/>\
+- 항상 Leaf Node로 삽입 <br/>\
+- Leaf Node 2-Node라면, 3-Node로 만듦 <br/><br/>\
+2. Leaf Full <br/>\
+<img src = "./img/23TreeInsert2.png" style = "max-width:100%; height:auto;"><br/>\
+- Promote Middle <br/>\
+- 원노드 분리 <br/><br/>\
+# 삭제 연산 <br/>\
+<img src = "./img/23TreeDelete1.png" style = "max-width:100%; height:auto;"><br/>\
+1. 자매 노드 3 node 존재 <br/>\
+- 자매노드로 부터 빌려와 채우기 <br/>\
+- 부모 거쳐서 빌려옴 <br/>\
+- 자매노드 값 -> 부모 / 부모 -> 해당 자리 <br/><br/>\
+2. 자매 노드 3 node 미존재 <br/>\
+- 부모 노드 2 node화 <br/>\
+- key 조정 <br/><br/>\
+3. 부모 노드 3 node 미존재 <br/>\
+- 2 node 형태 리빌딩 <br/><br/>\
+4. 높이 변화 삭제 과정 <br/>\
+<img src = "./img/23TreeDelete2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 이진 탐색트리 비교 <br/>\
+<img src = "./img/BST_23Tree_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 문제점 <br/>\
+- 2-Node, 3-Node 비교 필요, 횟수 증가 <br/>\
+- 3-Node Null Pointer 공간 부담 \
+',
+
+// Red Black Tree
+'# 정의 : 자가 균형 이진 탐색 트리 / Red Black Marking <br/>\
+- 자가 균형 이진 탐색 트리로써 대표적으로 연관 배열 등을 구현하는 데 쓰이는 자료구조 <br/><br/>\
+# 특성 <br/>\
+- Worst-case Guarantees <br/>\
+- 실시간 처리 유용 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/RedBlackTree.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 조건 <br/>\
+- Root Proerty : 루트 노드의 색깔은 Black <br/>\
+- External Property : 모든 External node Black <br/>\
+- Internal Property : Red노드의 자식은 Black (No Double Red) <br/>\
+- Depth Property : 모든 리프 노드에서 Black Depth 는 같다 <br/><br/>\
+# 원리 <br/>\
+- Restructuring > Recoloring <br/>\
+<img src = "./img/RedBlackTreeInsert.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 인공지능 특이점
