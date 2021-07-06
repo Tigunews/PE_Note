@@ -8,13 +8,16 @@ var this_week_question =
 [
 '',
 
+// 16주차
+'Value Chain',
+
+/*
 // 15주차 추가
 '정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP', '초대규모 AI,', 'Downstream Task', '이동통신', '2 3 Tree', 'Red Black Tree',
 
 // 15주차
 'NLP', '전처리', 'Vanishing Gradient', '혼동행렬', 'Cross Validation', 'ROC Curve', '능동학습', '지식 증류', '통계', '자료구조', 'Efficient NET', 'NLP', '최단경로 알고리즘', 'Stack', '알고리즘 설계', 'GAN', 'One-Hot Encoding', 'Softmax', '한국판 AI 윤리기준', 'Gradient Descent', '정렬', 'DL FW', '신뢰도', '타당도', 'NER', 'BERT', 'GPT-3',
 
-/*
 // ITPE 8회
 '데이터베이스 모델링', 'Fitting', '가설검정', 'AutoML', 'PMO', 'CPU Scheduling', '동시성제어', 'Race Condition', 'Linux ID', 'IGMP', '지능형 초연결망', 'IDPP', 'ATT and CK', 'Integrated Development Equipment', 'ESG', 'CBDC', 'Service Architecture', 'Graph Database', 'IO 장치 제어', 'SSL', '혼동행렬', '가명', '공공SW사업 대기업 참여제한 제도', '하인리히 법칙', 'SOAR', 'Information Strategy Plan', '재난 안전 통신망', 'Thrashing', '메타버스', '산업제어시스템', 'ISA/IEC 62443', 'Docker', 'Kubernetes', 'UWB',
 
