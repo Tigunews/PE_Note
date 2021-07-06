@@ -111,9 +111,9 @@ var answer = answer.concat(
 - Need < Approach < Benefit < Competition <br/><br/>\
 - 국가 발전(<font color = "red">경산인</font>) : 경쟁력 조기 확보, 산업 육성, 특허 확보, 전문 인력 양성 <br/><br/>\
 # 유형별 그룹핑 <br/>\
-- 정책문제 : PEST <br/>\
+- 정책문제 : PEST(Political, Economic, Technological, Social) <br/>\
 - 사회문제 : 인기조프 <br/>\
-- 거버넌스 : EDM <br/>\
+- 거버넌스 : EDM(Evaluate, Direct, Monitoring) <br/>\
 - 전략 : 비전추세이 <br/>\
 - 미래성장 : 기술선순환 \
 ',
