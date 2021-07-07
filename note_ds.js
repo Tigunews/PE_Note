@@ -1171,6 +1171,8 @@ var answer = answer.concat(
 - 코로나 19로 인해 최악의 경기침체와 일자리 충격등에 직면한 상황에서, 위기를 극복하고 코로나 이후 글로벌 경제를 선도하기 위해 마련된 국가발전전략 <br/><br/>\
 # K-New Deal 추진체계 <br/>\
 <img src = "./img/KNewDealSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DigitalNewDealStudyMate1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DigitalNewDealStudyMate1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 3대 프로젝트 <br/>\
 - 디지털 뉴딜 : 데이터 댐, 지능형 정부, 스마트 의료 <br/>\
 - 그린 뉴딜 : 그린 리모델링, 그린 에너지, 친환경 미래 모빌리티 <br/>\
