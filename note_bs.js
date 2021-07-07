@@ -115,7 +115,8 @@ var answer = answer.concat(
 - 사회문제 : 인기조프 <br/>\
 - 거버넌스 : EDM(Evaluate, Direct, Monitoring) <br/>\
 - 전략 : 비전추세이 <br/>\
-- 미래성장 : 기술선순환 \
+- 미래성장 : 기술선순환 <br/><br/>\
+# 법 : 조,항,호,목 \
 ',
  
 // 국제 표준화 기구
