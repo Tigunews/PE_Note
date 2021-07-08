@@ -3501,8 +3501,8 @@ var answer = answer.concat(
 # 방법론 <br/>\
 - 구현환경 : Hybrid Cloud, Multi cloud <br/>\
 - 구현절차 : 빅뱅방식, 점진적 방식 <br/><br/>\
-# 절차 <br/>\
-- 전환목적 수립 : Biz 전략, 목표수집, 디지털 전환, Agile <br/>\
+# 절차 (<font color = "red">목환방백이</font>) <br/>\
+- 전환 목적 수립 : Biz 전략, 목표수집, 디지털 전환, Agile <br/>\
 - 전환 환경 선정 : Hybrid, Multi cloud 선정 / IT Alignment <br/>\
 - 전환 방식 선정 : Bigbang 방식, 점진적 방식 / 서비스 유형 <br/>\
 - 백업 계획 수립 : Rollback Planning <br/>\
