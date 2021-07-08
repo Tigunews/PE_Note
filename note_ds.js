@@ -2751,7 +2751,8 @@ var answer = answer.concat(
    
 // ISO 61508
 '# 정의 : 기능안전에 대한 국제 규격 <br/><br/>\
-<img src = "./img/IEC61508.png" style = "width:100%; height:auto;">\
+<img src = "./img/IEC61508.png" style = "width:100%; height:auto;"><br/>\
+* 항공 : DO 178C \
 ',
 
 // [ISO/IEC 61508]- SIL
