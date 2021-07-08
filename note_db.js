@@ -1037,14 +1037,23 @@ var answer = answer.concat(
 '# 정의 : Spatial Access Method <br/>\
 - 선, 면 등과 같은 크기를 갖는 다차원 데이터 저장 및 검색<br/><br/>\
 # 유형 <br/>\
-1. R-Tree <br/>\
-- 개념 : 다차원 공간 데이터 저장 색인 자료구조 <br/>\
-<img src = "./img/RTree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+1. R-Tree (동적 인덱스 구조) <br/>\
+- 개념 : B 트리 다차원 적용 검색지원 트리 <br/>\
+- 삽입 : 순차 Node 영역 삽입 <br/>\
+- 삭제 : 하위 노드 중복 MBR 중복 가능 삭제 <br/>\
+- 탐색 : 근접 이웃 영역 순차 탐색 <br/><br/>\
 2. R+ Tree <br/>\
-- 개념 : R Tree, K-D-B Tree 중간형태, 겹치는 데이터 여러 노드 중복 저장 색인 자료구조 <br/>\
-<img src = "./img/RPlusTree.png" style = "max-width:100%; height: auto;"><br/><br/>\
+- 개념 : 중간노드 MBR <font color = "red">중복 제거</font>, 하위노드 중복허용 R트리 변형 구조 <br/>\
+- 삽입 : MBR 중복제거 하위 중복 허용 <br/>\
+- 삭제 : 중보 구성, 서브트리 재구성 필요 <br/>\
+- 탐색 : 중복 제거 최소 영역 검색 <br/><br/>\
 3. R* Tree <br/>\
-- 개념 : MBR의 넓이와 다른 MBR 과 겹침 영역의 최소화하는 색인 자료구조 <br/><br/>\
+- 개념 : R트리 <font color = "red">삽입,삭제</font> 알고리즘 개선 영역 효율 적용 R트리 변형 구조 <br/><br/>\
+- 삽입 : 최소 면적, 메모리 효율 저장 <br/>\
+- 삭제 : 최소공간, 2차 휴리스틱 적용 <br/>\
+- 탐색 : 최적 영역, 메모리 효율 검색 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/RTree.png" style = "max-width:100%; height: auto;"><br/><br/>\
 * 124회 관리 1교시 9번\
 ',
 
