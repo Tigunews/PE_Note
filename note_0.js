@@ -9,7 +9,7 @@ var this_week_question =
 '',
 
 // 16주차
-'Value Chain',
+'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델',
 
 /*
 // 15주차 추가

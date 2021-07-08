@@ -1,7 +1,7 @@
 var question = question.concat(
 'Grouping Keyword',
-'국제 표준화 기구',
-'de facto standard',
+'[Standard]- 국제 표준화 기구',
+'[Standard]- de facto standard',
 'ITSM',
 '[ITSM]- SoW/SLA/SLM',
 '[ITSM]- SLA',
