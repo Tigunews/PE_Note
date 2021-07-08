@@ -3498,6 +3498,9 @@ var answer = answer.concat(
 // 클라우드 전환
 '# 정의 : 클라우드 도입 / 계획 수립 참조 / 절차 항목 제시 방법론 <br/>\
 - 클라우드 컨설턴트, 아키텍트 및 현업 담당자들이 클라우드 도입을 위한 계획을 수립시 참조할 수 있는 절차와 항목을 제시한 방법론 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/CloudTransferStudyMate1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/CloudTransferStudyMate2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 방법론 <br/>\
 - 구현환경 : Hybrid Cloud, Multi cloud <br/>\
 - 구현절차 : 빅뱅방식, 점진적 방식 <br/><br/>\
