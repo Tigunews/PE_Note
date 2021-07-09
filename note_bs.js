@@ -102,13 +102,13 @@ var question = question.concat(
 var answer = answer.concat(
 // Grouping Keyword
 '<img src = "./img/Grouping.png" style = "max-width:100%; height:auto;"><br/><br/>\
-- ABCD : Audience(대상), Behavior(행위), Condition(조건), Degree(기준) <br/><br/>\
-- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) <br/><br/>\
-- 기술,조직,전략,프로세스 <br/><br/>\
-- 4P : 제품(Product), 가격(Price), 유통(Place), 촉진(Promotion) <br/><br/>\
-- 비용, 접근성, 품질 <br/><br/>\
-- 비전, 목표, 전략, Item <br/><br/>\
-- Need < Approach < Benefit < Competition <br/><br/>\
+- ABCD : Audience(대상), Behavior(행위), Condition(조건), Degree(기준) <br/>\
+- PODB : Planner(기획자), Owner(관리자), Designer(설계자), Builder(개발자) <br/>\
+- 자기프조 : 자원, 기술, 프로세스, 조직 <br/>\
+- 4P : 제품(Product), 가격(Price), 유통(Place), 촉진(Promotion) <br/>\
+- 비용, 접근성, 품질 <br/>\
+- 비전, 목표, 전략, Item <br/>\
+- Need < Approach < Benefit < Competition <br/>\
 - 국가 발전(<font color = "red">경산인</font>) : 경쟁력 조기 확보, 산업 육성, 특허 확보, 전문 인력 양성 <br/><br/>\
 # 유형별 그룹핑 <br/>\
 - 정책문제 : PEST(Political, Economic, Technological, Social) <br/>\
