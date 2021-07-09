@@ -356,7 +356,6 @@
 '[정책][SW 진흥법]- 하도급 금지',
 '[정책][SW 진흥법]- SW 산업 분류',
 '[방법론]- UX 모델링',
-'[방법론][UX]- Design Thinking',
 '[방법론][UX]- 페르소나(Persona)',
 '[방법론]- 임베디드 개발 방법론',
 'Open SEED',
@@ -5952,13 +5951,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 * ILIFO 24회 1교시 1번\
 ',
 
-// Design Thinking
-'# 정의 : 창의적 문제해결 UX 기법 <br/>\
-- 현장과 지속적인 소통을 통해 수요를 파악하며 가능한 모든 대안을 상상, 발굴하고 이를 적용,개선하는 법을 반복함으로써 혁신적 결과를 도출하는 창의적 문제 해결기법 <br/><br/>\
-# 프로세스 <br/>\
-<img src = "./img/DesignThinking.png" style = "max-width:100%; height:auto;"><br/>\
-',
- 
 // 페르소나(Persona) 
 '# 정의 : 가상 인물 / 제품 서비스 사용 <br/>\
 - 어떤 제품이나 서비스를 사용할만한 목표인구 집단에 있는 다양한 사용자 유형들을 대표하는 가상의 인물<br/><br/>\

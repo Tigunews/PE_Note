@@ -4,6 +4,10 @@ var question =
 var answer = 
 [
 ];
+var memorization =
+[
+'', '정성적 위험분석', '정량적 위험분석',
+]
 var this_week_question =
 [
 '',

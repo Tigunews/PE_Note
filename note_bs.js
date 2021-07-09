@@ -1701,8 +1701,13 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 - 인간 중심 디자인 방법론 <br/>\
 - 공감 통한 문제 맥락 접근 <br/>\
 - 감수성과 비즈니스 전략적 사고의 통합 통한 문제 접근 <br/><br/>\
-# 프로세스 (공정아프테)<br/>\
-<img src = "./img/DesignThinkingProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 프로세스 (<font color = "red">공정아프테</font>)<br/>\
+<img src = "./img/DesignThinkingProcess.png" style = "max-width:100%; height:auto;"><br/>\
+- 공감 : 인터뷰, 관찰, 설문조사 / 관찰, 공감 과정, 문제점 발견 <br/>\
+- 정의 : 요구사항 정의, 의견조율 / 공감 결과 통한 문제 정의 <br/>\
+- 아이디어화 : 브레인 스토밍, 스케치, 시각화 / 문제점 파악 해결방법 과정 <br/>\
+- 시제품 : 프로토타잎이, 3D 프린팅 / 도출된 아이디어, 프로토타이핑 구현 <br/>\
+- 테스트 : 사용성 테스트, 반복적 테스트 / 프로토타이핑 테스트, 피드백 <br/><br/>\
 * 119회 관리 1교시\
 ',
  
