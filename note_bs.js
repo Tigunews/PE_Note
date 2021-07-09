@@ -116,7 +116,9 @@ var answer = answer.concat(
 - 거버넌스 : EDM(Evaluate, Direct, Monitoring) <br/>\
 - 전략 : 비전추세이 <br/>\
 - 미래성장 : 기술선순환 <br/><br/>\
-# 법 : 조,항,호,목 \
+# 목차 <br/>\
+<img src = "./img/WritingSkill.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 법 : 조,항,호,목 <br/><br/>\
 ',
  
 // 국제 표준화 기구
