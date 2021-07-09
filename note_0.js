@@ -10,9 +10,9 @@ var this_week_question =
 
 // 16주차
 'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델', 'DABOK', 'BABOK',
-
+/*
 // 15주차 추가
-'정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP', '초대규모 AI,', 'Downstream Task', '이동통신', '2 3 Tree', 'Red Black Tree', '발주', '5 Force',
+'정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP', '초대규모 AI', 'Downstream Task', '이동통신', '2 3 Tree', 'Red Black Tree', '발주', '5 Force',
 
 // 15주차
 'NLP', '전처리', 'Vanishing Gradient', '혼동행렬', 'Cross Validation', 'ROC Curve', '능동학습', '지식 증류', '통계', '자료구조', 'Efficient NET', 'NLP', '최단경로 알고리즘', 'Stack', '알고리즘 설계', 'GAN', 'One-Hot Encoding', 'Softmax', '한국판 AI 윤리기준', 'Gradient Descent', '정렬', 'DL FW', '신뢰도', '타당도', 'NER', 'BERT', 'GPT-3',
@@ -85,5 +85,5 @@ var this_week_question =
 
 // ITPE 7회 
 '데이터 댐', 'Solid - Social Linked Data','Cloud 보안','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','5G SA','5G NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay','클라우드 네이티브 컴퓨팅','DevOps','인공지능 성능 지표','IoU','CBDC','Living Lab','SOS Lab','SW안전 확보 지침','SWEBOK','DMBOK','BABOK','백투백', 'Fuzz',
-
+*/
 ];
