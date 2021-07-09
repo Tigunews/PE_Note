@@ -251,8 +251,8 @@ var answer = answer.concat(
 ',
  
 // Annual Reset
-'# 정의 : KPI / 차년도 계약 / 제시 지표 <br/>\
-- KPI 지표의 달성 결과에 따른 외주용영업체의 차년도 갱신(연장) 계약 조건으로 제시 지표 <br/><br/>\
+'# 정의 : KPI / 외주 용역, 차년도 계약 / 제시 지표 <br/>\
+- KPI 지표의 달성 결과에 따른 외주 용역업체의 차년도 갱신(연장) 계약 조건으로 제시 지표 <br/><br/>\
 # 적용 방법 <br/>\
 - 100% 이상시 다음연도 계약시 자동연장 가능 <br/>\
 - 유사 계약 시 가점 지표 혜택 적용 <br/><br/>\
@@ -272,14 +272,12 @@ var answer = answer.concat(
 '# 정의 : 프로세스 관리 활동 / 고객 신뢰 증진 및 서비스 향상 <br/>\
 - Service Level Management <br/>\
 - 고객과 합의된 품질 수준의 서비스가 제공되는 것을 보장함으로써 고객신뢰 증진 및 서비스 수준향상을 위한 프로세스 관리활동 <br/><br/>\
-# 암기 : SC, SLA, OLA, UC, SQ <br/><br/>\
-# 구조 : SOW -> SLA -> SLM <br/><br/>\
-# 구성  <br/>\
-- Service Catalog, SLA, OLA(내부부서간 합의서) <br/>\
-- UC : Underpinning Contract 외부협력업체간 계약 <br/>\
+# 구성 (<font color = "red">SUSMPR</font>) <br/>\
+- Service Catalog : SLA, OLA <br/>\
+- UC : Underpinning Contract 외부 협력업체간 계약 <br/>\
 - Service Quality : 서비스 수준 보장 위한 모든 내용 기술 <br/>\
 - SLM 엔진 : 지표별 측정치 산출, 보고서 작성 자동화, 서비스 모니터링 <br/>\
-- SIP(Service Improment Program) : 서비스 개선 위한 일련의 활동 <br/>\
+- SIP : 서비스 개선 위한 일련의 활동 <br/>\
 - Service Report <br/><br/>\
 # 기술요소 <br/>\
 - 서비스 카탈로그 관리도구 <br/>\

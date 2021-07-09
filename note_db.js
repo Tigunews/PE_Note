@@ -127,8 +127,7 @@
 '[Data Mining][Text]- 로봇 저널리즘',
 '[Data Mining]- 단어구름(Word Cloud)',
 '[Data Mining]- Co-Word Analysis',
-'[Data Mining]- 탐색적 데이터 분석(Exploratory Data Analysis)',
-'[Data Mining]- 확증적 데이터 분석(Confimatory Data Analysis)',
+'[Data Mining]- 데이터 분석 기술',
 '[Data Mining]- 토픽 모델링',
 '[Data Mining]- Opinion Mining',
 '[Data Mining]- System Dynamics',
@@ -2527,33 +2526,32 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 // Word Cloud
 '# 정의 : 시각적 표시 방법 / 메타데이터 / 태그 분석 / <br/>\
 - 메타데이터에서 얻어진 태그들을 분석하여 중요도나 인기도 등을 고려하여 시각적으로 늘어 놓아 웹사이트에 표시하는 방법 <br/><br/>\
-# 암기 <br/>\
-- 유형 : 문데 <br/>\
-- 도구 : 워A두 <br/><br/>\
 # 유형 <br/>\
 - 문서 구름 : Text Cloud - 문서 포함 단어의 시각적 표현 <br/>\
 - 데이터 구름 : Data Cloud - 단어대신 숫자 정보를 크기와 색깔로 표현 <br/><br/>\
-# 도구 : Wordle, ABCya, DoodleBuz\
+# 도구 : Wordle, ABCya, DoodleBuㅎ\
 ',
 
 // Co-Word Analysis
 '# 정의 : 내용 분석 기법 / 문장 / 단어 규칙 / 핵심개념 / 관계식별<br/>\
 - 문장 안에서 함께 사용되는 단어 규칙을 조사해서 문서의 주제와 관련된 핵심 개념이 무엇이고 이들의 관계가 어떤지 식별하는 내용 분석 기법 <br/><br/>\
-# 암기 <br/>\
-- 절차 : 수전동 <br/><br/>\
 # 절차 <br/>\
 1. 데이터 수집 <br/>\
 2. 데이터 전처리 과정 : 텍스트 마이닝, 불용어 제거, 품사 태깅, 주석 통해 제시된 명사구 선택 <br/>\
 3. 동시 출현 단어 분석 과정 \
 ',
 
-// Exploratory Data Analysis
-'# 정의 : 분석 기법 / 관찰, 가설 / 필요한 데이터 형태 추출 <br/>\
-- 관찰한 현상을 보고 가설을 설정하고 필요한 데이터의 형태를 추출하는 분석 기법',
-
-// Confimatory Data Analysis
-'# 정의 : 분석 기법 / 의사결정 / 수집, 분석, 활용 <br/>\
-- 의사결정을 하기 위해 목적에 적합한 데이터를 수집하고 분석하여 결과를 활용하는 분석기법',
+// 데이터 분석 기술
+'# 종류 <br/>\
+1. EDA(Exploratory Data Analysis) - 탐색적 데이터 분석 <br/>\
+- 정형, 비정형 데이터 정보 가공 x / 전체적 데이터 특성 분석 <br/><br/>\
+2. CDA(Confimatory Data Analysis) - 확증적 데이터 분석 <br/>\
+- EDA 기반 문제적 행위 구체적 가설 기반 분석 <br/><br/>\
+3. PDA(Predictive Data Analysis) - 예측 데이터 분석 <br/>\
+- 미래 상황 예측 초점 <br/><br/>\
+4. DDA(Descrpitive Data Analysis) - 묘사적 데이터 분석 <br/>\
+- 과거, 현재 발생 이벤트 요약 기술 \
+',
 
 // 토픽 모델링
 '# 정의 : 추론 모델 / 비정형 문서 집단 / 주제 찾기 알고리즘 / 맥락, 단어 이용 / 유사 의미 단어 클러스터링 <br/>\
@@ -2565,15 +2563,15 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 4. 알고리즘 적용 : 백터기반 or 확률 기반 <br/><br/>\
 # 알고리즘 유형 <br/>\
 1. 백터 기반 <br/>\
-- LSA(Latent Semantic-Analysis) : 고차원 데이터 공간에 대해 축 변경해 새로운 축을 찾아내는 가변량 통계 분석 방법 <br/>\
+- LSA(Latent Semantic-Analysis) : 고차원 데이터 공간에 대해 축 변경해 새로운 축을 찾아내는 가변량 통계 분석 방법 <br/><br/>\
 2. 확률 기반 <br/>\
-- pLSA(Probailistic LSA) : 데이터셋과 선별된 토픽 K간의 가장 잘 맵핑되는 토픽과 단어, 단어와 문서간의 조합 찾는 방법, 기존 LSA를 확률적 접근 <br/>\
-- LDA(Latent Dirichlet Allocation) : 주어진 문서 대해 각 문서에 어떤 주제들이 존재하는지에 대한 확률 모형\
+- pLSA(Probailistic LSA) : 데이터셋과 선별된 토픽 K간의 가장 잘 맵핑되는 토픽과 단어, 단어와 문서간의 <font color = "red">조합 찾는 방법</font>, 기존 LSA를 확률적 접근 <br/>\
+- LDA(Latent Dirichlet Allocation) : 주어진 문서 대해 각 문서에 <font color = "red">어떤 주제</font>들이 존재하는지에 대한 확률 모형\
 ',
   
 // Opinion Mining
 '# 정의 : Web 컨텐츠 Text / 의견, 성향 분석 / 마이닝 기법 <br/>\
-- Web 컨텐츠의 Text에 나타난 사람들의 의견, 성향등의 주관적인 평판, 경향, 감성 분석하는 자연어 처리 기술 <br/><br/>\
+- Web 컨텐츠의 Text에 나타난 사람들의 의견, 성향등의 주관적인 <font color = "red">평판, 경향, 감성</font> 분석하는 자연어 처리 기술 <br/><br/>\
 # 특징 <br/>\
 1. 문장추출 : 팩트와 의견 문장 구분 <br/>\
 2. 극성분류 : 의견이 들어간 문장을 긍정과 부정으로 구분 <br/>\
@@ -2630,7 +2628,13 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - Process Instances : 데이터 마이닝 위한 구체적 실행 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/CRISP_DM_Process.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/CRISP_DM_Detail.png" style = "max-width:100%; height:auto;">\
+- 비즈니스 이해 : 비즈니스 목표 명확 정의 / 업무 목적 파악, 상황 파악 <br/>\
+- 데이터 이해 : 해결하고자 하는 문제, 필요한 데이터 매칭 / 초기 데이터 수집, 품질 확인 <br/>\
+- 데이터 준비 : PreProcessing, 80% 시간 차지 / 선택, 정제, 통합, 분리 <br/>\
+- 모형 수립 : 데이터 모형 평가, 비교 / 테스트 설계(Cross Validation) <br/>\
+- 시험 및 평가 : 선정된 모형 비즈니스 목적 부합성 평가 / 모델 과정, 분석, 적용 평가 <br/>\
+- 적용 : 완성된 모델 업무 적용, 사후 관리 / 전개, 유지보수, 종료 <br/><br/>\
+* 111회 관리 1교시 11번\
 ',
   
 // 데이터 사이언스
