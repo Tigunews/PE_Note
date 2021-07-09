@@ -296,11 +296,11 @@ var answer = answer.concat(
 - 서비스 품질 : SLA 통한 체계적 관리, 시스템 가용성 유지, 신기술 활용, 최적 기술 유지 <br/>\
 - 비용 : 비용대비 고품질 IT 역량 확보, 통합 구매 및 관리 통한 비용절감, 인력,변화관리의 비용 최소화 <br/><br/>\
 # 장단점 <br/>\
-- 장점 : 비용절감, 전문인력 및 전물기술 활용, 정확한 비용 예측, 핵심역량 강화 <br/>\
+- 장점 : 비용절감, 전문인력 및 전문기술 활용, 정확한 비용 예측, 핵심역량 강화 <br/>\
 - 단점 : 비용증가 가능성, 우수인력 상실, 공급업체 종속 가능성, 통제력 상실, 보안유지 어려움 <br/><br/>\
 # 형태 1 <br/>\
 <img src = "./img/OutSourcingType.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 형태 2(토셀자코) <br/>\
+# 형태 2(<font color = "red">토셀자코</font>) <br/>\
 1. Total Outsourcing <br/>\
 - 정의 : IT 기능 전체 Single Vendor 위탁 <br/>\
 - 장점 : 업무 효율성 증대, 책임소재 명확 <br/>\
@@ -312,7 +312,7 @@ var answer = answer.concat(
 3. IT 자회사 Outsourcing <br/>\
 - 정의 : 전문 법인 설립 후에 위탁 서비스 <br/>\
 - 장점 : 기업문화, 의사소통 및 단결감 조성 <br/>\
-- 단점 : 관계성인한 비용 증가, 나태함 <br/><br/>\
+- 단점 : 관계성 비용 증가, 나태함 <br/><br/>\
 4. Co-Sourcing <br/>\
 - 정의 : 기획 총괄과 수행 분리하여 운영하는 형태 <br/>\
 - 장점 : 급변하는 환경에 적합, Total Outsourcing 문제점 해결 <br/>\
@@ -1770,7 +1770,7 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 <img src = "./img/ValueChain.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 역할 <br/>\
 - 기업 각 생산 활동 영역 비용, 부가가치 정교 분석 <br/>\
-- 비교 우위 확보 방안, Product/Serice 차별화 위한 방안 도출 <br/>\
+- 비교 우위 확보 방안, Product/Service 차별화 위한 방안 도출 <br/>\
 - 개별 기업 수행 활동 점검, 제반 활동 상호작용 체계적 분석 <br/>\
 - 기업 내부 역량, 외부 경쟁환경 차이(Gap) 분석 <br/><br/>\
 # 절차 <br/>\

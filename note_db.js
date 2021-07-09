@@ -638,10 +638,11 @@ var answer = answer.concat(
 // 정규화
 '# 정의 : 속성간 종속 관계 제거 / 이상현상 / 무손실 분해 규칙 <br/>\
 - 이상현상 야기하는 속성간 종속관계 제거하는 무손실 분해 규칙 <br/>\
-- 데이터 중복을 해소하기 위해서 릴레이션을 분해하는 과정 <br/>\
+- 정교화 : 무손실 분해 기법 / 정규형 : 해결된 상태 <br/><br/>\
+# 특징 <br/>\
 - 제1정규형 ~ 제5정규형, BCNF가 실무적으로 활용되며 나머지는 연구용<br/>\
 - 정규화는 논리적 설계 단계에서 수행 <br/><br/>\
-# 원칙(무중분) : 무손실분해, 중복성감소, 분리원칙 <br/><br/>\
+# 원칙(<font color = "red">무중분</font>) : 무손실분해, 중복성감소, 분리원칙 <br/><br/>\
 <img src="./img/DB_4.PNG" style = "max-width:100%; height:auto;"><br/>\
 # 종류 <br/>\
 <img src = "./img/DBNormalization.png" style = "max-width:100%; height:auto;"><br/><br/>\
