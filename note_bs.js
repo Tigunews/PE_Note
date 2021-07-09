@@ -188,7 +188,7 @@ var answer = answer.concat(
 '# 정의 : 사용자 공급자간 서비스 명시 문서<br/>\
 - Service Level Agreement <br/>\
 - 정보시스템 사용자 공급자 간 서비스 수준을 정량적으로 측정하여 상호 동의한 일정수준의 서비스를 명시한 문서<br/><br/>\
-# 구성 : WMOMR <br/>\
+# 구성 (<font color = "red">WMOMR</font>) <br/>\
 - SOW(Satement of Work) : 서비스 별 상세항목 업무 기술서 / 서비스, 대상 항목<br/>\
 - SLM(Service Level Metrics) : 서비스 수준 파악하기 위한 성과 지표 / 시스템 가동률 최소 98% <br/>\
 - SLO(Service Level Objectives) : 서비스 수준 관리지표별 목표치, 최소치 / 가용성 유지 99% <br/>\
@@ -243,10 +243,10 @@ var answer = answer.concat(
 - PDCA 개선 <br/>\
 - ITIL에서는 RACI 모델 제시 <br/>\
 <font color = "red">\
-- Responsibility : 실무자 <br/>\
-- Accountability : 의사 결정권자 <br/>\
-- Consulted : 업무수행 조언자 <br/>\
-- Informed : 결과통보 대상자 </font><br/><br/>\
+* Responsibility : 실무자 <br/>\
+* Accountability : 의사 결정권자 <br/>\
+* Consulted : 업무수행 조언자 <br/>\
+* Informed : 결과통보 대상자 </font><br/><br/>\
 * 123회 4교시 2번\
 ',
  
