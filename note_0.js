@@ -16,7 +16,7 @@ var this_week_question =
 'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델', 'DABOK', 'BABOK',
 /*
 // 15주차 추가
-'정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP', '초대규모 AI', 'Downstream Task', '이동통신', '2 3 Tree', 'Red Black Tree', '발주', '5 Force',
+'정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP', '초대규모 AI', 'Downstream Task', '이동통신', '2 3 Tree', 'Red Black Tree', '발주', '5 Force', 'FP',
 
 // 15주차
 'NLP', '전처리', 'Vanishing Gradient', '혼동행렬', 'Cross Validation', 'ROC Curve', '능동학습', '지식 증류', '통계', '자료구조', 'Efficient NET', 'NLP', '최단경로 알고리즘', 'Stack', '알고리즘 설계', 'GAN', 'One-Hot Encoding', 'Softmax', '한국판 AI 윤리기준', 'Gradient Descent', '정렬', 'DL FW', '신뢰도', '타당도', 'NER', 'BERT', 'GPT-3',
