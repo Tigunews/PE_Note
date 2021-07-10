@@ -4556,13 +4556,14 @@ P 히스토그램 : Data 분포 <br/>\
 ',
   
 // FRAND
-'# 정의 : 특허기술 권리자 / 특허 사용자 차별 x / 규칙 <br/>\
+'# 정의 : 표준 특허권자 / 특허 사용자 차별 x / 규칙 <br/>\
 - Fair, Reasonable And Non-Discriminatory Terms <br/>\
-- 공정하고 합리적이고 비차별적인을 줄인말로 표준이 된 특허기술의 권리자가 이 특허 사용자 중 일부를 차별할 수 없도록 하는 표준화 기구에서 정한 규칙(선언) <br/><br/>\
+- 표준 특허권자가 표준 특허를 누구에게나 공정하고 합리적이며 비차별적인 방식으로 제공 원칙 <br/><br/>\
 # 등장 배경 <br/>\
 - 반독점 행위 제재 <br/><br/>\
 # 표준 특허와의 관계 <br/>\
-<img src = "./img/FRAND_Patent.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/FRAND_Patent.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* 특허 Hold-Up : 특허권자 과도한 협상력 </font><br/><br/>\
 # 3원칙 <br/>\
 - FAIR : 라이선싱 조건, 반독과점/반경쟁법으로부터 나온 원칙 <br/>\
 - Reasonable : 라인선스 비용, 여러 라이선스 패키지 중 합리적 요율 적용 <br/>\

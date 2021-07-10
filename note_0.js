@@ -6,7 +6,7 @@ var answer =
 ];
 var memorization =
 [
-'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL',
+'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p',
 ]
 var this_week_question =
 [
