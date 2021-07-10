@@ -1490,7 +1490,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 <img src = "./img/GraphDBDirectModeling.png" style = "max-width: 100%; height: auto;"><br/>\
 - 직관적 모델링 : 현실반영 직관적 제공, 빠른 개발, 테스트, 수정, 이해 환경 지원 <br/><br/>\
 # 종류 <br/>\
-- Neo4j : GPL, Java, .Net, Python, Embeddign, REST / Java 기반 <br/>\
+- Neo4j : GPL, Java, .Net, Python, Embedding, REST / Java 기반 <br/>\
 - AllegroGraph : Eclipse, C#, C, Java, Python / RDF 저장, SPARQL 질의 <br/>\
 - Apach S2 Graph : Apache, HBase 기반 OLTP Graph DB / 카카오 개발 SNS 분석 <br/>\
 - JanusGraph : Apache, Java / 저장 및 순회 효율 설계 <br/><br/>\

@@ -3934,7 +3934,7 @@ var answer = answer.concat(
 - Consumer(Receiver) <br/><br/>\
 # 기능 <br/>\
 1. 데이터 수집 <br/>\
-- 비동기(Asynchronous) : Queue에 넣기 떄문에 나중에 처리 가능 <br/>\
+- 비동기(Asynchronous) : Queue에 넣기 때문에 나중에 처리 가능 <br/>\
 - 비동조(Decoupling) : Application과 분리 가능(Loosely Coupled) <br/>\
 - 탄력성(Resilience) : 일부가 실패시 전체 영향받지 않음 <br/><br/>\
 2. 데이터 처리 <br/>\
