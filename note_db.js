@@ -2535,7 +2535,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 # 유형 <br/>\
 - 문서 구름 : Text Cloud - 문서 포함 단어의 시각적 표현 <br/>\
 - 데이터 구름 : Data Cloud - 단어대신 숫자 정보를 크기와 색깔로 표현 <br/><br/>\
-# 도구 : Wordle, ABCya, DoodleBuㅎ\
+# 도구 : Wordle, ABCya, DoodleBu\
 ',
 
 // Co-Word Analysis
