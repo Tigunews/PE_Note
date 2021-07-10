@@ -2550,9 +2550,11 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 // 데이터 분석 기술
 '# 종류 <br/>\
 1. EDA(Exploratory Data Analysis) - 탐색적 데이터 분석 <br/>\
-- 정형, 비정형 데이터 정보 가공 x / 전체적 데이터 특성 분석 <br/><br/>\
+- 정형, 비정형 데이터 정보 가공 x / 전체적 데이터 특성 분석 <br/>\
+- 히스토그램, 상자수염그림, 산점도 <br/><br/>\
 2. CDA(Confimatory Data Analysis) - 확증적 데이터 분석 <br/>\
-- EDA 기반 문제적 행위 구체적 가설 기반 분석 <br/><br/>\
+- EDA 기반 문제적 행위 구체적 가설 기반 분석 <br/>\
+- t-test, 분산분석, 상관분석, 회귀분석 <br/><br/>\
 3. PDA(Predictive Data Analysis) - 예측 데이터 분석 <br/>\
 - 미래 상황 예측 초점 <br/><br/>\
 4. DDA(Descrpitive Data Analysis) - 묘사적 데이터 분석 <br/>\

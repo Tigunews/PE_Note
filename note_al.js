@@ -75,7 +75,7 @@ var question = question.concat(
 '[AI][AL]- R-CNN',
 '[AI][AL][R-CNN]- Fast RCNN',
 '[AI][AL][R-CNN]- Faster RCNN',
-'[AI][AL]- YOLO',
+'[AI][AL][R-CNN]- YOLO',
 '[AI][AL]- RNN',
 '[AI][AL][RNN]- BRNN',
 '[AI][AL]- LSTM',
@@ -134,7 +134,6 @@ var question = question.concat(
 '[AI]- 음성비서',
 '[AI]- Pre-Crime',
 '[AI]- 지능형 로봇',
-'[AI]- Downstream Task',
 '[AI]- 초대규모 AI',
 '[AI]- NLP',
 '[AI][NLP]- NER',
@@ -2081,7 +2080,7 @@ var answer = answer.concat(
 - 직접적 보상 요구 x <br/>\
 - 정책 직접적 설계 <br/><br/>\
 # 종류 <br/>\
-1. 행동복제(시출정학생) : 전문가를 통해 쌍으로 이뤄진 상태 및 동작 시퀀스 시연 궤적을 수집하여 정책을 지도하는 알고리즘 <br/>\
+1. 행동복제(<font color = "red">시출정학생</font>) : 전문가를 통해 쌍으로 이뤄진 상태 및 동작 시퀀스 시연 궤적을 수집하여 정책을 지도하는 알고리즘 <br/>\
 <img src = "./img/BehaviorCloning.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. 견습학습(IRL > RL) : 전문가의 시연으로부터 보상 함수를 만들고 계산된 보상 함수를 통해 최적의 정책을 학습하는 알고리즘 <br/>\
 <img src = "./img/ApprenticeshipLearning.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -2474,18 +2473,6 @@ var answer = answer.concat(
 - 로봇운용 SW : 머신 비전 기반, 영상 분석, 인터랙티브 SW <br/>\
 - 센서기술 : 관성 측정, 액티브 비컨, 초음파, 시각, 촉각, 청각 <br/><br/>\
 * KPC 95회 응용 3교시 8번\
-',
-
-// Downstream Task
-'# 정의 : target task <br/>\
-- 미리 학습한 model이나 feature들을 supervised-learning task에 이용하는 학습 형태 <br/><br/>\
-# 유형 <br/>\
-- Fine tuing(미세조정) : Downstream task 데이터 <font color = "red">전체</font> 사용용, 모델 업데이트, Downstream task 수행 <br/>\
-- Zero-shot Learning : Downstream task 데이터 <font color = "red">0건</font> 사용, 백본 모델 바로 Downstream task 수행 <br/>\
-- One-shot Learning : Downstream task <font color = "red">1건</font> 사용, 모델 전체를 업데이트, Downstream task 수행 <br/>\
-- Few-shot Learning : Downstream task <font color = "red">몇 건</font> 사용, 업데이트, Downstream 수행 <br/><br/>\
-# Performance <br/>\
-<img src = "./img/DownstreamTask.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 초대규모 AI

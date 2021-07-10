@@ -14,6 +14,7 @@ var question = question.concat(
 '[Smart Grid]- IDPP',
 '산업제어시스템',
 '[4차산업]- Smart Factory',
+'Smart Factory 보안',
 '[Smart Factory]- MESA 표준기능',
 '[Smart Factory]- ANSI/ISA 95',
 '[Smart Factory]- RAMI 4.0',
@@ -644,21 +645,26 @@ var answer = answer.concat(
 - Big Data : NoSQL, Hadoop, Spark, Storm 활용 데이터 처리 <br/><br/>\
 # 분류(<font color = "red">자최제모점</font>) <br/>\
 <img src = "./img/SmartFactory5Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 스마트공장 보안 감사 <br/>\
-- 면담조사 <br/>\
-- 문서검토 <br/>\
-- 현장조사 <br/>\
-- 재실시 <br/><br/>\
 # 고도화 방법론 제언 <br/>\
 <img src = "./img/SmartFactoryHighlevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 핵심 성과지표 <br/>\
 <img src = "./img/SmartFactoryIndex.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 보안 취약점 <br/>\
-<img src = "./img/SmartFactorySecWeak.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 보안 기술 <br/>\
-<img src = "./img/SmartFactorySecTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 124회 관리 1교시 3번 <br/>\
 * 120회 관리 2교시 5번\
+',
+
+// Smart factory 보안
+'# 보안 취약점 <br/>\
+<img src = "./img/SmartFactorySecWeak.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 고려사항 <br/>\
+<img src = "./img/SmartFactorySec.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Ransomware <br/>\
+<img src = "./img/SmartFactoryRansomware.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 스마트공장 보안 감사 <br/>\
+- 면담조사 <br/>\
+- 문서검토 <br/>\
+- 현장조사 <br/>\
+- 재실시 \
 ',
 
 // MESA 표준기능
