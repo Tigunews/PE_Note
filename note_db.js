@@ -678,10 +678,15 @@ var answer = answer.concat(
 - 1:N 자기참조 : 조직코드 - 상위 조직코드 <br/>\
 - N:M 자기참조 : 부품코드 - 상위 부품코드 <br/>\
 -> 대응방법 : 관계 엔티티 추가, PK 의한 방법, 부모 엔티티 속성 추가 <br/><br/>\
+# 암스트롱 공리 규칙 <br/>\
+<img src = "./img/Amstrong.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 암스트롱 공리, 정규화 <br/>\
+- 재귀 규칙 -> 완전함수 종속성 -> 1정규화 <br/>\
+- 부가 규칙 -> 부분함수 종속성 -> 2정규화 <br/>\
+- 이행 규칙 -> 이행함수 종속성 -> 3정규화 <br/><br/>\
 # 예시 : Relation = {A,B,C,G,H,I} FD = {A->B, A->C, CG->H, CG->I, B-H} <br/>\
 - 암스트롱 공리 적용 : A->BC , CG->HI, A->H, AG->H <br/>\
 - 함수폐포 : A+={A,B,C,H}<br/><br/>\
-<img src = "./img/암스트롱공리_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/암스트롱공리_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src= "./img/DB_7.PNG" style = "max-width:100%; height:auto;">\
 ',
@@ -1021,8 +1026,8 @@ var answer = answer.concat(
 1. k-d Tree <br/>\
 - 개념 : Binary Search Tree를 다차원 공간으로 Straightforward 하게 확장한 자료구조 <br/>\
 <img src = "./img/kdtree.png" style = "max-width:100%; height: auto;"><br/><br/>\
-2. k-d-b Tree <br/>\
-- 개념 : B-Tree와 k-b Tree 의 결합 <br/>\
+2. k-d-B Tree <br/>\
+- 개념 : B-Tree와 k-d Tree 의 결합 <br/>\
 <img src = "./img/kdbtree.png" style = "max-width:100%; height: auto;"><br/><br/>\
 3. Grid File <br/>\
 - 개념 : 전체 공간을 하나 이상의 격자(Grid)로 분할 <br/>\
@@ -2705,11 +2710,10 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 프랙티스 <br/>\
 - 거버넌스 <br/>\
 - 아키텍처 관리 <br/><br/>\
-2. 데이터 개발 (<font color = "red">모설통 보 DB</font>) <br/>\
+2. 데이터 개발 (<font color = "red">모보D</font>) <br/>\
 - 모델링, 설계, 통합 <br/>\
 - 보안 <br/>\
-- DW / BI(Business Inteligence) <br/>\
-- 참조 / 기준정보 <br/><br/>\
+- DW / BI(Business Inteligence) <br/><br/>\
 3. 데이터 관리와 통제(<font color = "red">저문메품</font>)<br/>\
 - 데이터 저장, 운영 <br/>\
 - 문서, 컨텐츠 관리 <br/>\
