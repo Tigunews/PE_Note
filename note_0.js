@@ -15,6 +15,9 @@ var this_week_question =
 // 16주차
 'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델', 'DMBOK', 'BABOK',
 /*
+// Mentor's Pick 
+'SD WAN','WAL','Join','MVCC', '토픽 모델링', '시각화', 'NewSQL', 'EM Clustering', 'DBSCAN', 'Living Lab', 'SOS Lab', '시빅(Civic) 해킹', 'COBIT 5.0', '가상융합 경제',
+
 // 15주차 추가
 '정형검증', 'PETs', '메타버스', '랜섬웨어', 'DTLS', 'BCP', '초대규모 AI', 'Downstream Task', '이동통신', '2 3 Tree', 'Red Black Tree', '발주', '5 Force', 'FP', 'Gartner',
 
@@ -77,9 +80,6 @@ var this_week_question =
 
 // 탐구 학습 
 '클라우드 네이티브 애플리케이션','12 Factors','저전력',
-
-// Mentor's Pick 
-'SD WAN','ARIES','Join','MVCC',
 
 // 암기 목록 
 'ISO/IEC 20889', '식별자', 'ISMS-P','ISA/IEC 62443','GDPR','Privacy By Design',
