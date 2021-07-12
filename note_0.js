@@ -12,6 +12,9 @@ var this_week_question =
 [
 '',
 
+// 16주차 추가
+'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제',
+
 // 16주차
 'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델', 'DMBOK', 'BABOK', '아키텍처 모델', 
 
