@@ -3288,18 +3288,18 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Public Cloud 환경에서 개인식별정보(PII : Personally Identifable Information)를 보호하기 위한 통제 국제표준 <br/><br/>\
 # 확장 구성 (<font color = "red">개동정수최 공정개참책 보규</font>)<br/>\
 - 기본구성 : 27017 동일 <br/>\
-- (1)개요 : 퍼블릭 클라우드 개인식별정보 보호 개요 <br/>\
-- (2)동의와 선택 : 고객의 지시 따라 처리할 것 <br/>\
-- (3)사용목적의 정당성 및 규격 : 목적외 사용금지, 명시적 동의 필요 <br/>\
-- (4)수집제한 : 수집 목적 명목화, 목적 외 수집 제한 <br/>\
-- (5)데이터 최소화 : 지정 기간 내 파기, 임시 파일 삭제 처리 <br/>\
-- (6)사용, 보유 및 공개 제한 : 법적 의무시 사전 고객 내용, 대상, 시간 고지 의무 <br/>\
-- (7)정확성과 품질 : 개인정보 수집/통제 정확성, 사용 품질 확보 위한 도구 마련 <br/>\
-- (8)개방성,투명성 : 계약 체결전 업체 신원 및 PII 처리 위치 공개 <br/>\
-- (9)개인 참여와 접근 : 클라우드 이용자 개인정보 액세스 권한 주장시 제공 준수 <br/>\
-- (10)책임 : PII 무단 접근, 손실 초래시 고객에게 즉시 고지 <br/>\
-- (11)정보보호 : 기밀 유지 의무, 하드 카피 작성 제한, 암호화 포함 접근 제한 조치 <br/>\
-- (12)개인정보 보호규정 : PII 반품, 양도, 삭제, 정책 보유, 고객에 대해 정책 정보 제공 <br/><br/>\
+- (1)개요 : <font color = "red">퍼블릭 클라우드</font> 개인식별정보(<font color = "red">PII</font>) 보호 개요 <br/>\
+- (2)동의와 선택 : <font color = "red">고객의 지시</font> 따라 처리할 것 <br/>\
+- (3)사용목적의 정당성 및 규격 : <font color = "red">목적외 사용금지</font>, 명시적 동의 필요 <br/>\
+- (4)수집제한 : 수집 목적 <font color = "red">명목화</font>, <font color = "red">목적 외</font> 수집 제한 <br/>\
+- (5)데이터 최소화 : 지정 기간 내 <font color = "red">파기</font>, 임시 파일 <font color = "red">삭제</font> 처리 <br/>\
+- (6)사용, 보유 및 공개 제한 : 법적 의무시 <font color = "red">사전</font> 고객 내용, 대상, 시간 <font color = "red">고지</font> 의무 <br/>\
+- (7)정확성과 품질 : 개인정보 <font color = "red">수집/통제 정확성</font>, 사용 품질 확보 위한 도구 마련 <br/>\
+- (8)개방성,투명성 : 계약 체결전 업체 신원 및 <font color = "red">PII 처리 위치</font> 공개 <br/>\
+- (9)개인 참여와 접근 : 클라우드 이용자 개인정보 <font color = "red">액세스 권한 주장</font>시 제공 준수 <br/>\
+- (10)책임 : PII 무단 접근, 손실 초래시 <font color = "red">고객에게 즉시 고지</font> <br/>\
+- (11)정보보호 : 기밀 유지 의무, 하드 카피 작성 제한, 암호화 포함 접근 <font color = "red">제한 조치</font> <br/>\
+- (12)개인정보 보호규정 : PII 반품, 양도, 삭제, 정책 보유, 고객에 대해 정책 <font color = "red">정보 제공</font> <br/><br/>\
 # Privacy Inforamation Security Ecosystem <br/>\
 <img src = "./img/PrivacyEcosystem.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 * ITPE 합숙 123회 5일차 관리 1교시 12번\
