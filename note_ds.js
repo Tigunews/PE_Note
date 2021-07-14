@@ -1275,9 +1275,10 @@ var answer = answer.concat(
 - 그린 뉴딜 : 그린 리모델링, 그린 에너지, 친환경 미래 모빌리티 <br/>\
 - 융복합 : 그린 스마트 스쿨, 디지털 트윈, SOC 디지털화, 스마트 그린산단 <br/><br/>\
 <hr width = "100%" color = "blue"  noshade/>\
-# 한국판 뉴딜 2.0 <br/>\
-0. Overview <br/>\
+[ 한국판 뉴딜 2.0 ] <br/>\
+# Overview <br/>\
 <img src = "./img/KNewDeal2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 변경점 <br/>\
 1. Digital NewDeal <br/>\
 <img src = "./img/KNewDeal2DN.png" style = "max-width:100%; height:auto;"><br/>\
 - 메타버스 : 개방형 플랫폼, 컨텐츠 제작 지원 <br/>\
@@ -1291,9 +1292,15 @@ var answer = answer.concat(
 <img src = "./img/KNewDeal2HN.png" style = "max-width:100%; height:auto;"><br/>\
 - 청년 정책 : 맞춤형 자산 형성, 전월세 부담 오나화, 국가장학금, 신산업분야 채용 <br/>\
 - 격차 해소 : 사회서비스원 설립, 돌봄강화, 문화활동비 지원 <br/><br/>\
-4. 대응방안 <br/>\
-- SW인재양성 및 육성 : 시스템 반도체, 바이오헬스, 미래차 <br/>\
-- 정책지원 : 맞ㅊ무형 자산 형성, 주거안전, 교육비 부담 완화 \
+# 후속조치 <br/>\
+- 재정투자 : 22년도 예산안에 30조원 이상 반영 <br/>\
+- 미래입법 : 기존과제 연내 입법, 추가과제 속도감 추진 <br/>\
+- 과제구체화 : 선제적 사업구조 개편 및 공정한 노동전환 <br/>\
+- 민간확산 : 국민 이해도 제고 위한 다각적 홍보, 국민참여 뉴딜펀드 1천억 추가조성 <br/><br/>\
+# 기대효과 <br/>\
+- 디지털 뉴딜 : 초연결, 초혁신 선도하는 똑똑한 나라 <br/>\
+- 그린 뉴딜 : 2050 넷제로를 기반으로 녹색전환 선도 그린강국 <br/>\
+- 휴먼 뉴딜 : 누구라도 희망찬 미래를 꿈꾸는 사람 중심 국가 \
 ',
   
 // 디지털 뉴딜
