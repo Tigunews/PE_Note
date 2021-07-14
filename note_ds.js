@@ -1274,7 +1274,7 @@ var answer = answer.concat(
 - 디지털 뉴딜 : 데이터 댐, 지능형 정부, 스마트 의료 <br/>\
 - 그린 뉴딜 : 그린 리모델링, 그린 에너지, 친환경 미래 모빌리티 <br/>\
 - 융복합 : 그린 스마트 스쿨, 디지털 트윈, SOC 디지털화, 스마트 그린산단 <br/><br/>\
-<hr width = "100%" color = "red"  noshade/>\
+<hr width = "100%" color = "blue"  noshade/>\
 # 한국판 뉴딜 2.0 <br/>\
 0. Overview <br/>\
 <img src = "./img/KNewDeal2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
