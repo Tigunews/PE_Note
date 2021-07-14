@@ -297,6 +297,7 @@
 '[방법론][객체지향]- 상속 합성',
 '[방법론][객체지향]- 객체 모델링',
 '[방법론][객체지향]- SOLID',
+'[방법론]- 패키지 설계',
 '[방법론][객체지향]- Inversion of Control',
 '[방법론][Inversion of Control]- Dependency Lookup',
 '[방법론][Inversion of Control]- Dependency Injection',
@@ -5008,6 +5009,29 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/DependancyInversion.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SOLID_ALL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * DRY(Don\'t Repeat Yourself)\
+',
+
+// 패키지 설계원리
+'# 종류 <br/>\
+1. REP <br/>\
+- Reuse / Release Equivalency Principle <br/>\
+- 재사용되는 요소 = 릴리즈(배포) 요소, 패키지 단위 <br/><br/>\
+2. CRP <br/>\
+- The Common Reuse Principle <br/>\
+- ISP의 패키지까지 확장 <br/><br/>\
+3. CCP <br/>\
+- The Common Closure Principle <br/>\
+- 패키지 클래스, 동일 유형 변경 닫혀있어야 함 <br/><br/>\
+4. ADP <br/>\
+- Acyclic Dependencies Principle <br/>\
+- 패키지간 의존성 구조, 비순환 구조 <br/><br/>\
+5. SDP <br/>\
+- Stable Dependencies Principle <br/>\
+- 패키지 최소한 자체, 안정적 패키지들에만 의존 <br/><br/>\
+6. SDP <br/>\
+- Stable Abstractions Principle <br/>\
+- 패키지가 점점 안정될 수록 추상화 <br/><br/>\
+* 아이리포 3회 관리 \
 ',
 
 // IOC

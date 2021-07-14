@@ -6,14 +6,14 @@ var answer =
 ];
 var memorization =
 [
-'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안',
+'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계원리',
 ]
 var this_week_question =
 [
 '',
 
 // 16주차 추가
-'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제', '데이터 댐', 'SW 사업 관리감독 항목', 'GDPR',
+'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제', '데이터 댐', 'SW 사업 관리감독 항목', 'GDPR', '패키지 설계원리',
 
 // 16주차
 'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델', 'DMBOK', 'BABOK', '아키텍처 모델', 
