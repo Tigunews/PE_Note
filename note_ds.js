@@ -1274,7 +1274,23 @@ var answer = answer.concat(
 - 디지털 뉴딜 : 데이터 댐, 지능형 정부, 스마트 의료 <br/>\
 - 그린 뉴딜 : 그린 리모델링, 그린 에너지, 친환경 미래 모빌리티 <br/>\
 - 융복합 : 그린 스마트 스쿨, 디지털 트윈, SOC 디지털화, 스마트 그린산단 <br/><br/>\
-* KPC 96회 관리 2교시 6번\
+<hr width = "100%" color = "red"  noshade/>
+# 한국판 뉴딜 2.0 <br/>\
+0. Overview <br/>\
+<img src = "./img/KNewDeal2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. Digital NewDeal <br/>\
+<img src = "./img/KNewDeal2DN.png" style = "max-width:100%; height:auto;"><br/>\
+- 메타버스 : 개방형 플랫폼, 컨텐츠 제작 지원 <br/>\
+- 사회문제 해결 : 5G, AI 로봇,서비스 융합 실증 <br/>\
+- 블록체인 : 다부처 융합 연계 추진 <br/>\
+- IoT : 지능형 IoT 서비스 발굴 및 적용 확산 <br/><br/>\
+2. Green NewDeal <br/>\
+<img src = "./img/KNewDeal2GN.png" style = "max-width:100%; height:auto;"><br/>\
+- 온실가스 측정 평가, 디지털 기반 자원 순환, 온실가스 감축 실천 <br/><br/>\
+3. Human NewDeal <br/>\
+<img src = "./img/KNewDeal2HN.png" style = "max-width:100%; height:auto;"><br/>\
+- 청년 정책 : 맞춤형 자산 형성, 전월세 부담 오나화, 국가장학금, 신산업분야 채용 <br/>\
+- 격차 해소 : 사회서비스원 설립, 돌봄강화, 문화활동비 지원\
 ',
   
 // 디지털 뉴딜
