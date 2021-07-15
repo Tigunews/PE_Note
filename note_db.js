@@ -1248,14 +1248,21 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - SQL문에서 요청하는 논리 조인을 옵티마이저가 자료 통계나 규칙에 맞게 가져오는 방법 <br/>\
 - 내부에서 일어나는 조인 <br/><br/>\
 1. Nested Loop Join <br/>\
+<img src = "./img/NestedRoopJoin.png" style = "max-width:100%; height:auto;"><br/>\
 - <font color = "red">가장 많이 사용</font>하는 기본 조인 방식 <br/>\
-- 선수행 범위가 중요, <font color = "red">후 수행 랜덤 엑세스</font> <br/><br/>\
+- 선수행 범위가 중요, <font color = "red">후 수행 랜덤 엑세스</font> <br/>\
+- 장점 : 좀은 범위 처리 유리 <br/>\
+- 단점 : Random Access 위주 <br/><br/>\
 2. Sort Merge Join <br/>\
+<img src = "./img/SortMergeJoin.png" style = "max-width:100%; height:auto;"><br/>\
 - <font color = "red">정렬 후</font> 조인 수행 방식 <br/>\
-- <font color = "red">조인은 효과적</font>, 정렬에 대한 부담 존재 <br/><br/>\
+- 장점 : 조인 대상 범위 넓을 시, 효율 <br/>\
+- 단점 : 연결고리 인덱스 미 존재 <br/><br/>\
 3. Hash Join <br/>\
+<img src = "./img/HashJoin.png" style = "max-width:100%; height:auto;"><br/>\
 - <font color = "red">해시함수</font> 기법 활용한 조인 방식 <br/>\
-- 일반적으로 <font color = "red">높은 성능</font> 수준 <br/><br/>\
+- 장점 : 대용량 처리시 랜덤액세스, 정렬부담 해결 <br/>\
+- 단점 : CBO 에서만 가능 <br/><br/>\
 4. Cartesion Join <br/>\
 - 전체 x 전체 또는 <font color = "red">M:M</font> 조인 방식 <br/>\
 - 일반적으로 <font color = "red">조인 순서 잘못된</font> 경우 발생 <br/><br/>\
@@ -1869,7 +1876,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 입력오류, 데이터 처리오류 등으로 특정 범위에서 벗어난 데이터 값 <br/><br/>\
 # 검출 (<font color = "red">VLNDC</font>)<br/>\
 - Variance : <font color = "red">정규분포표</font> 2.5% 이하 <br/>\
-- Likelihood : 확률변수의 표집값과 <font color = "red">일관</font>되는 정도 <br/>\
+- Likelihood : <font color = "red">베이즈 정리</font> 의해 세트 가지는 두가지 샘플(정상, 이상) <font color = "red">발생 확률 판별</font> <br/>\
 - NN(Nearest Neighbor) : 모든 <font color = "red">데이터 쌍</font>의 거리 계산 검증 <br/>\
 - Densitiy : 밀도에서 가장 <font color = "red">먼</font> 데이터 검출 <br/>\
 - Clustering : 여러 클러스터 구분, 클러스터 사이 <font color = "red">먼</font> 경우 이상값 판별 <br/><br/>\
