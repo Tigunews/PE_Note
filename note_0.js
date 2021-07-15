@@ -13,7 +13,7 @@ var this_week_question =
 '',
 
 // 16주차 추가
-'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제', '데이터 댐', 'SW 사업 관리감독 항목', 'GDPR', '패키지 설계원리',
+'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제', '데이터 댐', 'SW 사업 관리감독 항목', 'GDPR', '패키지 설계원리','R-CNN',
 
 // 16주차
 'Value Chain', '정규화', 'Design Thinking', 'NoSQL', '다차원 색인', '지능 정보화 기본법', 'DB Stakeholder', '메시지 큐잉', 'DQM', 'API Gateway', '아웃소싱', 'ITSM', '위험분석', 'Standard', 'FRAND', 'IT 투자', '군집분석', 'Data Mining', '다차원 모델링', 'ERD', '관계형 데이터 모델', 'DMBOK', 'BABOK', '아키텍처 모델', 
@@ -80,7 +80,7 @@ var this_week_question =
 'Data Warehouse','Data Lake','HOt Encoding','Softmax','AI 윤리','성능검증','머신러닝 파이프라인','Gradient Descent','정렬',
 
 // ITPE 6 
-'데이터베이스 트랜잭션', 'DaaS 인증','MC/DC','YOLO','Faster RCNN','랜섬웨어','표적형 랜섬웨어','XR','VPN','유전자 알고리즘','비대면 기술','PyTorch','마이데이터','한국판 AI 윤리기준','인공지능 규범 동향','바이오 인증','형상관리','마이데이터','성능 테스트','자기주권형 신원증명','Data Lake','Data Warehouse','IPv6','디지털 트윈','블록암호화','데이터 표준화','전송부호화','소프트웨어 아키텍처','ITIL','페어와이즈','MLOps','병렬 컴퓨팅','KANO Model',
+'데이터베이스 트랜잭션', 'DaaS 인증','MC/DC','R-CNN','랜섬웨어','표적형 랜섬웨어','XR','VPN','유전자 알고리즘','비대면 기술','PyTorch','마이데이터','한국판 AI 윤리기준','인공지능 규범 동향','바이오 인증','형상관리','마이데이터','성능 테스트','자기주권형 신원증명','Data Lake','Data Warehouse','IPv6','디지털 트윈','블록암호화','데이터 표준화','전송부호화','소프트웨어 아키텍처','ITIL','페어와이즈','MLOps','병렬 컴퓨팅','KANO Model',
 
 // 탐구 학습 
 '클라우드 네이티브 애플리케이션','12 Factors','저전력',
