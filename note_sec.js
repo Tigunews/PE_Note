@@ -3285,9 +3285,9 @@ EAL : 펑스매매세세포 <br/><br/>\
 ',
 
 // ISO/IEC 27018
-'# 정의 : Public Cloud / 개인식별정보 / 보호 / 통제 국제표준 <br/>\
-- Public Cloud 환경에서 개인식별정보(PII : Personally Identifable Information)를 보호하기 위한 통제 국제표준 <br/><br/>\
-# 확장 구성 (<font color = "red">개동정수최 공정개참책 보규</font>)<br/>\
+'# 정의 : Cloud / PII 보호 / 통제 국제표준 <br/>\
+- Cloud 환경에서 개인식별정보(PII : Personally Identifable Information)를 보호하기 위한 통제 국제표준 <br/><br/>\
+# 확장 구성 (<font color = "red">개동사수최 공정개참책 보규</font>)<br/>\
 - 기본구성 : 27017 동일 <br/>\
 - (1)개요 : <font color = "red">퍼블릭 클라우드</font> 개인식별정보(<font color = "red">PII</font>) 보호 개요 <br/>\
 - (2)동의와 선택 : <font color = "red">고객의 지시</font> 따라 처리할 것 <br/>\
@@ -3679,7 +3679,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/>\
 <font color = "red">* UEBA(User and Entity Behavior Analytics) : 사용자 및 개체 행동 분석 <br/>\
 * DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 </font><br/><br/>\
-# 구성요소 (<font color = "red">IMW EWS</font>)<br/>\
+# 구성요소 (<font color = "red">IMW ECN</font>)<br/>\
 1. 관리 측면 <br/>\
 - System Ingergrity : 시스템 통합, <font color = "red">보안관리 일원화</font> <br/>\
 - System Monitoring : 시스템 <font color = "red">이상 발생, 정상 동작</font> 여부 <br/>\
