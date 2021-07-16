@@ -2549,11 +2549,21 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 적용 위치 : 기업 본사/지사, 캠퍼스, 데이터 센터 <br/>\
 - 효과 : NW 기반 비즈니스 확대, 투자, 운영비용 절감 <br/><br/>\
 2. 기술 <br/>\
-- 응용 분야 : Cloud Orchestration <br/>\
-- 디바이스 : 상용 서버 위주 활용 <br/>\
-- 플랫폼 : OpenDaylight(스위치 밴더), ONOS(통신 사업자 요구) <br/>\
-- 프로토콜 : Openflow, OVSDB, NETCONF <br/>\
-- 표준화 기구 : ONF, OpenDaylight <br/><br/>\
+- OpenFlow : 스위치, 라우터 프로그램 지원 Open API <br/>\
+- CLI : NW 관리자 스위치/라우터 구성 I/F <br/>\
+- SNMP : 정보의 원격수정 관리 프로토콜 <br/>\
+- XMPP : XML 이용, 메시징 라우팅 스트리밍 프로토콜 <br/>\
+- Netconf : XML 이용, 기기 상태 구성 효울 접근 <br/>\
+- Open Stack : 클라우드 컴퓨팅 위한 오픈소스 소프트웨어 <br/>\
+- 가상화 S/W API : 하이퍼바이저, VM API <br/>\
+<font color = "red">* SNMP : Simple Network Management Protocol <br/>\
+* XMPP : Extensible Messageing and Presence Protocol </font><br/><br/>\
+3. 기능 <br/>\
+- 흐름제어 : 트래픽 흐름 정의, 경로 경유 정의 <br/>\
+- 네트워크 I/F 제공 : Program 통한 L/B, 접근제어 <br/>\
+- 보안 : Controller, Switch 간 SSL 통신 <br/>\
+- 가상화 : Multi-tenant 네트워크 생성, 운영 가상 네트워크 구현 <br/>\
+- 핵심구성 : Flow Table, Controller, OpenFlow Protocol(SSL) <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/SDN_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Network Slice <br/>\
