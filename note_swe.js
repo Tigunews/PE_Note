@@ -157,9 +157,9 @@
 '[시험단계]- 비버깅',
 '[시험단계]- IAST(Interactive Application Security Testing)',
 '[시험단계]- 백투백(back-to-back) 테스트',
+'[시험단계]- Cursory Test',
 '[시험단계]- 스모크(Smoke) 테스트',
 '[시험단계]- 새너티(Sanity) 테스트',
-'[시험단계]- Cursory Test',
 '[시험단계]- 콘콜릭(Concolic) 테스트',
 '[시험단계]- 퍼즈(Fuzz) 테스트',
 '[시험단계]- Shift-left Testing',
@@ -3016,8 +3016,16 @@ var answer = answer.concat(
 * ITPE 7회 관리 4교시 2번\
 ',
 
+// Cursory Test 
+'# 정의 : 개발자 / Positive Test Case / 기능, 단위 테스트 <br/>\
+- 개발자가 코딩후, 보통 Positive한 테스트 케이스로 기능 테스트 <br/><br/>\
+# Cursory, Sanity, Smoke Test 관계 <br/>\
+<img src = "./img/CursoryTestOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/CursoryTestOverview2.png" style = "max-width:100%; hegiht:auto;">\
+',
+
 // Smoke Testing
-'# 정의 : 제3자 테스트팀, 개발팀 내 테스트 팀 / 단위 모듈, 시스템 모듈 / 테스트 케이스 x 시행 <br/>\
+'# 정의 : 초기빌드 대상 / 테스트 가능 여부 / 주요기능 중심 수행 <br/>\
 - 본격적 테스트 수행전, 시스템/컴포/구축환경에서 테스트가 가능한지 여부를 판단, 간단 모듈/시스템 테스트 <br/><br/>\
 # 구성요소 <br/>\
 - 매뉴얼 : 시스템, 컴포넌트, SW 운영자 매뉴얼 / HW, SW 매뉴얼 <br/>\
@@ -3034,8 +3042,10 @@ var answer = answer.concat(
 ',
 
 // Sanity Testing
-'# 정의 : 개발팀, 개발자 / 테스트 케이스 x / 단위 모듈, 시스템 테스트 <br/>\
+'# 정의 : UAT 전, 전문 테스터 / 마무리 단계 빌드 대상 실행 <br/>\
 - 새로운 SW Version이 주요 테스팅 업무를 수행하기에 충분히 적합한가를 판단하기 위해 수행되는 테스트 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/CursoryTestOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 특징 <br/>\
 - 대상 : 일부 제한된 기능 대한 자세한 테스트 <br/>\
 - 형식 : non-script 형식 <br/>\
@@ -3043,14 +3053,6 @@ var answer = answer.concat(
 - Regression Test 하위 집합 <br/><br/>\
 # Keyword : 합리성(Rationality) 검증 / Unscripted 테스트 / 인수 테스트 전 / BAT <br/><br/>\
 * Sanity : 온전한 정신(상태), 분별 \
-',
-
-// Cursory Test 
-'# 정의 : 개발자 주체 / 테스트 케이스 x / 단위 모듈, 시스템 모듈 / 즉흥적 예비 테스트 <br/>\
-- 개발자가 테스트 주체가 되어 테스트 케이스 없이 주요한 단위 모듈이나 시스템 모듈을 즉흥적으로 여기저기 테스트하는 기법 <br/><br/>\
-# Cursory, Sanity, Smoke Test 관계 <br/>\
-<img src = "./img/CursoryTestOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-<img src = "./img/CursoryTestOverview2.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // Concolic Test
