@@ -44,8 +44,8 @@ var question = question.concat(
 '[메모리 관리][할당 기법]- 단편화',
 '[메모리 관리]- Page Fault',
 '메모리 인터리빙',
-'[커널 메모리 할당]- Buddy allocator',
 '[커널 메모리 할당]- Slab allocator',
+'[커널 메모리 할당]- Buddy allocator',
 '[Virtual Memory]- Mapping',
 '가상 메모리 페이지 교체 알고리즘',
 '[가상 메모리 페이지 교체 알고리즘]- 벨라디 변이(Belady\'s Anomaly)',
@@ -924,22 +924,41 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/MemoryInterleavingDataAccess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 92회 응용 1교시 16번\
 ',
-  
-// Buddy allocator
-'# 정의 : 메모리 공간 2의 지수 쪼갬 <br/>\
-- 물리적으로 연속된 메모리 공간을 2의 지수로 쪼개어 할당하는 커널 메모리 할당기법 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/BuddyAllocator.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 88회 응용 1교시 12번\
-',
-    
+   
 // Slab allocator
-'# 정의 : 물리적 연속 페이지 <br/>\
-- 물리적으로 연속된 페이지인 slab을 캐시를 통해 관리, 할당하는 커널 메모리 할당기법 <br/><br/>\
+'# 정의 : 페이지 / 메모리 풀 구조 / 미리 고정된 크기 할당 / 커널 사용 / 동적 메모리 할당자 <br/>\
+- 메모리 풀 구조를 지닌 미리 고정된 크기의 메모리 블록 할당하는 커널에서 사용하는 동적 메모리 할당자 <br/><br/>\
+# 유사 기술 <br/>\
+- Slab : 2008년 까지 Linux Kernel Memory 관리 Default <br/>\
+- Slub : 2008년 부터 임베디드 시스템, PC, 서버 Default <br/>\
+- Slob : 임베디드 리눅스 기반 커널 메모리 관리 위해 사용 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/SlabAllocator.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Cache_chain : 슬랩 캐시를 연결리스트로 연결 / 연결리스트 <br/>\
+- kmem_cache : 크기가 정해진 객체의 풀 관리 구조체 / 구조체 <br/>\
+- slabs_full : Object가 완전히 할당된 슬랩 / 구조체, 슬랩간 이동 <br/>\
+- slabs_partial : Object가 일부 할당된 슬랩 / 구조체, 슬랩간 이동 <br/>\
+- slabs_empty : Object가 할당되지 않거나 비어있는 슬랩 / 구조체, 슬랩간 이동 <br/>\
+- slab : 연속된 메모리 공간 할당 블록(최소단위) / 객체 할당 단위 <br/><br/>\
 # 비교 <br/>\
 <img src = "./img/BuddySlab.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 88회 응용 1교시 12번\
+',
+
+// Buddy allocator
+'# 정의 : 세그먼트 / 슬랩 할당자 하부구조 / 실제 물리 메모리 / 2^n 단위 / 할당자 <br/>\
+- 슬랩 할당자의 하부 구조이며 실제적 물리 메모리를 관리하는 계층의 할당자 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/BuddyAllocator.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 할당 방법 <br/>\
+- 요청 : 21kb 할당 요청 받는 경우 <br/>\
+- 분할 : 256 -> 128 *2 -> 64 *4 -> 32*8 분할 <br/>\
+- 할당 : 32kb Buddy 중 하나가 21kb에 할당 됨 <br/><br/>\
+# 구성요소 <br/>\
+- Page 구조체 : Page Frame 번호 인덱스 배열 구조 <br/>\
+- Zone 구조체 : 같은 특성 가진 특정 페이지 집합 / MOVEABLE(전용), NORMAL(1:1 매핑), HIGHMEM(Normal 초과시 사용 영역) <br/>\
+- pglist_date 구조체 : 시스템의 모든 노드(메모리 집합) 관리 리스트 / init_bootmem_core() 리스트 추가 <br/><br/>\
 * 라이지움 88회 응용 1교시 12번\
 ',
 
