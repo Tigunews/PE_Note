@@ -3045,7 +3045,7 @@ var answer = answer.concat(
 '# 정의 : UAT 전, 전문 테스터 / 마무리 단계 빌드 대상 실행 <br/>\
 - 새로운 SW Version이 주요 테스팅 업무를 수행하기에 충분히 적합한가를 판단하기 위해 수행되는 테스트 <br/><br/>\
 # Overview <br/>\
-<img src = "./img/CursoryTestOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/SanatiyTest.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 특징 <br/>\
 - 대상 : 일부 제한된 기능 대한 자세한 테스트 <br/>\
 - 형식 : non-script 형식 <br/>\
