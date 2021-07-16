@@ -3019,15 +3019,12 @@ var answer = answer.concat(
 // Smoke Testing
 '# 정의 : 시스템 테스트 / 테스트 수행전 / 테스트 가능 여부 판단 <br/>\
 - 본격적 테스트 수행전, 시스템/컴포/구축환경에서 테스트가 가능한지 여부를 판단, 간단 모듈/시스템 테스트 <br/><br/>\
-# 암기 <br/>\
-- 스-스, 세-레<br/><br/>\
-# Keyword <br/>\
-- 빌드 수용 테스트 (BAT) <br/>\
-- 빌드 검증 테스트 (BVT, Build Verification Test)<br/>\
-- 안전성(Stability) 검증 <br/>\
-- 스크립트 테스트 <br/>\
-- 회귀 테스트, 통합테스트 전 <br/>\
-- 전체 시스템 대상 <br/><br/>\
+# 구성요소 <br/>\
+- 매뉴얼 : 시스템, 컴포넌트, SW 운영자 매뉴얼 / HW, SW 매뉴얼 <br/>\
+- Build : 테스트 대상 되는 제품 빌드 / Daily Build <br/>\
+- Tester : 제3자 테스트팀 or 개발팀 내 테스트 팀 / QA <br/>\
+- Test 분석 정보 : 결과물, 빌드 완성도 낮을 경우 활용 정보 / 스모크 테스트 결함 보고서 <br/>\
+- 인프라 : 테스트 수행 위한 WH, SW 자원 / 서버, 솔루션 <br/><br/>\
 <img src = "./img/smoke.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
