@@ -3017,7 +3017,7 @@ var answer = answer.concat(
 ',
 
 // Smoke Testing
-'# 정의 : 시스템 테스트 / 테스트 수행전 / 테스트 가능 여부 판단 <br/>\
+'# 정의 : 제3자 테스트팀, 개발팀 내 테스트 팀 / 단위 모듈, 시스템 모듈 / 테스트 케이스 x 시행 <br/>\
 - 본격적 테스트 수행전, 시스템/컴포/구축환경에서 테스트가 가능한지 여부를 판단, 간단 모듈/시스템 테스트 <br/><br/>\
 # 구성요소 <br/>\
 - 매뉴얼 : 시스템, 컴포넌트, SW 운영자 매뉴얼 / HW, SW 매뉴얼 <br/>\
@@ -3025,18 +3025,32 @@ var answer = answer.concat(
 - Tester : 제3자 테스트팀 or 개발팀 내 테스트 팀 / QA <br/>\
 - Test 분석 정보 : 결과물, 빌드 완성도 낮을 경우 활용 정보 / 스모크 테스트 결함 보고서 <br/>\
 - 인프라 : 테스트 수행 위한 WH, SW 자원 / 서버, 솔루션 <br/><br/>\
+# 절차 <br/>\
+- 사전준비 : 스모크 테스트 수행 위한 시스템 환경 구성 / 시스템 구성도, 메뉴얼 <br/>\
+- Build : 스모크 테스트 대상 제품 빌드 / 프로그램, 패키지 <br/>\
+- 테스트 수행 : 주요 모듈, 시스템 간단 테스트 / 테스트 계획서 <br/>\
+- 결과 보고 : 테스트 수행 결과 보고 / 테스트 결과서 <br/><br/>\
 <img src = "./img/smoke.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // Sanity Testing
-'# 정의 : 사용자 관점 테스트 / 마무리 단계 / 추가 컴포넌트 / Side Effect / UAT / 테스터가 확인 <br/>\
-- 주로 마무리 단계의 안정빌드 대상으로 추가 컴포넌트에 의한 Side Effect는 없는지, 테스트 대상 빌드가 UAT(User Acceptance Testing, 사용자 인수 검사) 가 가능한 수준인지 여부를 테스터가 확인하는 사용자 관점 테스트 <br/><br/>\
+'# 정의 : 개발팀, 개발자 / 테스트 케이스 x / 단위 모듈, 시스템 테스트 <br/>\
+- 새로운 SW Version이 주요 테스팅 업무를 수행하기에 충분히 적합한가를 판단하기 위해 수행되는 테스트 <br/><br/>\
+# 특징 <br/>\
+- 대상 : 일부 제한된 기능 대한 자세한 테스트 <br/>\
+- 형식 : non-script 형식 <br/>\
+- 용도 : 최종 사용자 요구사항 만족 여부 증명 사용 <br/>\
+- Regression Test 하위 집합 <br/><br/>\
 # Keyword : 합리성(Rationality) 검증 / Unscripted 테스트 / 인수 테스트 전 / BAT <br/><br/>\
 * Sanity : 온전한 정신(상태), 분별 \
 ',
 
 // Cursory Test 
-'# 정의 : 개발자가 테스트 주체가 되어 테스트 케이스 없이 주요한 단위 모듈이나 시스템 모듈을 즉흥적으로 여기저기 테스트하는 기법 \
+'# 정의 : 개발자 주체 / 테스트 케이스 x / 단위 모듈, 시스템 모듈 / 즉흥적 예비 테스트 <br/>\
+- 개발자가 테스트 주체가 되어 테스트 케이스 없이 주요한 단위 모듈이나 시스템 모듈을 즉흥적으로 여기저기 테스트하는 기법 <br/><br/>\
+# Cursory, Sanity, Smoke Test 관계 <br/>\
+<img src = "./img/CursoryTestOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/CursoryTestOverview2.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // Concolic Test
