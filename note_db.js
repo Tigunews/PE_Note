@@ -2503,6 +2503,14 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 유의수준 설정 : a 영역 <br/>\
 - 검정통계량 산출 : t Value <br/>\
 - 기각/채택 판단 : |t| < 임계치 (채택) <br/><br/>\
+# 수식 <br/>\
+1. 유의수준 Z 분포값 <br/>\
+- P(Z<=1.645) = 0.95 (<font color = "red">일반</font>)<br/>\
+- P(Z<=1.96) = 0.975 <br/>\
+- P(Z<=2.326) = 0.99 (<font color = "red">연구</font>)<br/>\
+- P(Z<=2.576) = 0.995 <br/><br/>\
+2. 측정 Z Value <br/>\
+<img src = "./img/StatisticalHypothesisCalc.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 관계 <br/>\
 <img src = "./img/NullHypothesisGraph.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 사례 <br/>\
