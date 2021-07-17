@@ -1030,7 +1030,14 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 // [IPv6]- 헤더구성
 '# 헤더 구성 <br/>\
 <img src = "./img/IP_Header.png" style = "max-width:100%; height:auto;"><br/>\
-<font color = "red">기본헤더(40Byte) > 확장 헤더 > 상위 계층 라우터</font><br/><br/>\
+<font color = "red">기본헤더(40Byte) > 확장 헤더 > 상위 계층 라우터<br/>\
+* Identification(8) : 데이터그램 일련번호<br/>\
+* flags(3) : 분열 특성 <br/>\
+* Fragment Offset(13) : 조각나기 전 원래 데이터그램의 8바이트 단위 위치 <br/>\
+* Time to live(8) : IP 패킷 수명 <br/>\
+* Protocol(8) : 상위  계층 프로토콜 데이터 포함 (1-ICMP, 2-IGMP, 6-TCP, 8-EGP, 17-UDP, 89-OSPF<br/>\
+* Option : 가변길이 Bit <br/>\
+* Flow Label(20) : IP 연결지향적 프로토콜 사용 </font><br/><br/>\
 - 헤더길이 필드 제거 <br/>\
 - 서비스 유형 필드 -> 트래픽 클래스 필드 <br/>\
 - 식별, 플래그, 프래그먼트 옵셋 필드 제거 <br/>\
