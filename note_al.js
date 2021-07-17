@@ -1832,7 +1832,7 @@ var answer = answer.concat(
 - 기계학습 파이프라인에서 데이터의 특징 추출, 하이퍼파라미터 설정 등 소모적이고 반복적인 작업을 자동화하는 머신러닝 프로세스 <br/><br/>\
 # 매커니즘 <br/>\
 <img src = "./img/AutoMLMachanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 프로세스 <br/>\
+# 프로세스 (<font color = "red">피하신</font>)<br/>\
 - Feature Engineering Automation : <font color = "red">Raw Data</font>를 머신러닝 모델에 적합하게 변형 <br/>\
 - Hyper Parameter Optimization : 사용자 직접 설정 값, 훈련 제어 <font color = "red">파라미터</font> <br/>\
 - Neural Architecture Search : 가장 효과적 훈련할 수 있는 <font color = "red">신경망</font> 자동 탐색 방법 <br/><br/>\
