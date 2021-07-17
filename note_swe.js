@@ -3078,7 +3078,7 @@ var answer = answer.concat(
 - 테스트 실행 : 테스트 케이스 입력, 실행 <br/>\
 - 시스템 동작 모니터링 : 문제 발생시 로그 수집 <br/>\
 - 분류 및 해결 : 문제 발생 항목 점검, 원인 분석 및 코드 수정 <br/><br/>\
-# 테스팅 기법 (<font color = "red">대입케실시분</font>)<br/>\
+# 테스팅 기법 <br/>\
 - 블랙박스 퍼징 : <font color = "red">내부 분석 x</font> 무작위 입력값 <br/>\
 - 화이트 박스 퍼징 : <font color = "red">소스 코드</font> 기반 분석, 입력값 산출 <br/>\
 - 그레이 박스 퍼징 : 내부 구조 <font color = "red">일부</font>만 알고 입력값 산출 <br/><br/>\
