@@ -2624,12 +2624,18 @@ var answer = answer.concat(
 ',
   
 // TF-IDF
-'# 개념 <br/>\
-- TF-IDF : 핵심어 추출 및 검색 결과 순위 결정을 위해 <font color = "red">단어의 특정 문서 내 중요도</font>를 산출하는 통계적 가중치 알고리즘 <br/>\
-- TF : 단어의 문서 내 등장빈도 <br/>\
-- IDF : 단어 출현 문서 빈도수의 역수 <br/><br/>\
-# 산출기법 <br/>\
-<img src = "./img/TF_IDF.png" style = "max-width:100%; height:auto;"><br/><br/>\
+'# 개념 : TF, DF, IDF 수치화 / 통계적 단어 특성 추출 알고리즘 <br/>\
+- 여러 문서에서 단어의 중요도를 단어빈도 TF(Term Frequency), 문서빈도 DF(Document Frequency), 역문서 빈도 IDF(Inverse Document Frequency) 수치화 하고 이를 기반으로 단어의 중요도를 수치화 평가 하는 통계적 단어 특성 추출 알고리즘 <br/><br/>\
+# 구성요소 <br/>
+- TF : 문서 내부 단어 출현횟수 수치화 <br/>\
+- DF : 문서집합에서 특정단어 출현되는 문서 개수 <br/>\
+- IDF : 문서빈도 / 단어빈도 + 1 <br/>\
+- TF-IDF : TF * IDF <br/><br/>\
+# 예제 <br/>\
+<img src = "./img/TFIDFExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 산출식 <br/>\
+<img src = "./img/TFIDFCalc.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 89회 관리 1교시 8번 <br/>\
 * KPC 96회 관리 4교시 5번\
 ',
   
