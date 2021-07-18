@@ -73,7 +73,7 @@
 '[NoSQL]- Graph Database',
 '[빅데이터][NoSQL]- 데이터 모델링 패턴',
 '[빅데이터][NoSQL]- CAP 이론',
-'[빅데이터][NoSQL]- PACEL',
+'[빅데이터][NoSQL]- PACELC',
 '[빅데이터][NoSQL]- NoSQL RDBMS 비교',
 '[빅데이터][NoSQL]- BASE',
 '[NoSQL]- Spatial DB',
@@ -1588,9 +1588,9 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 '# NoSQL의 CAP 이론 <br/>\
 - 개념 : Consistency, Availability, Partition Tolerance의 3가지 특징을 가지고 있으며, 이중 두가지만 만족할 수 있다는 이론 <br/><br/>\
 # 속성 설명 <br/>\
-- Consistency(일관성) : 모든 사용자는 동시에 항상 같은 데이터를 조회 <br/>\
-- Availability(가용성) : 모든 사용자는 항상 Read/Write 할 수 있음 <br/>\
-- Partition Tolerance(부분 결함 허용) : 부분적 결함에도 시스템은 정상 동작해야 함 <br/><br/>\
+- Consistency(일관성) : 모든 요청은 최신 데이터 또는 에러 응답 받음 <br/>\
+- Availability(가용성) : 비동기화 서비스, SNS 서비스에 적합 <br/>\
+- Partition Tolerance(부분 결함 허용) : 노드간 통신이 실패하는 경우에도 시스템 정상 동작 보장 <br/><br/>\
 # 상세 설명 <br/>\
 <img src = "./img/CAP.png" style = "max-width: 100%; height: auto;"><br/>\
 - C+P : 데이터 발생, 변경시 수평적으로 확장된 클러스터내의 데이터 일관성을 즉각적으로 유지 (Couchbase, MongoDB, Appache HBase)<br/>\
@@ -1598,7 +1598,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - C+A : 데이터 발생, 변경시 수직적으로 확장된 시스템내에서 데이터 일관성을 즉각적으로 유지 (MySQL, Oracle)\
 ',
   
-// PACEL
+// PACELC
 '# 정의 : 장애, 정상 상황 고려 / CAP 한계 극복 / 분산 데이터베이스 시스템 분류 이론 <br/>\
 - 장애상황(Partition)과 정상상황(Else)을 모두 고려한 NoSQL 특성 설명 통한 CAP 이론의 한계점 극복, 분산 데이터베이스 시스템 분류 이론 <br/><br/>\
 # 유형 <br/>\
@@ -1618,7 +1618,8 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 4. PC / EC <br/>\
 - 장애 상황시 : Time Consistency 수준 보장 <br/>\
 - 정상 상황시 : 모든 노드 동일 메시지 보장 <br/>\
-- VoltDB, HBase \
+- VoltDB, HBase <br/><br/>\
+* ITPE 합숙 122회 3일차 2교시 4번\
 ',
 
 // [빅데이터][NoSQL]- NoSQL RDBMS 비교
