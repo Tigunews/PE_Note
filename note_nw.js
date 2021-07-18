@@ -679,7 +679,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 // DHCP
-'# 정의 : 일정 시간 유효 / 임대 개념 IP 할당 관리 / 프로토콜 <br/>\
+'# 정의 : 일정 시간 유효 / 임대 개념 IP 할당 관리 / 프로토콜(<font color = "red">RFC-2131</font>) <br/>\
 - 네트워크 관리자가 조직의 중앙에서 일정한 시간 동안만 유효하도록 하는 임대 개념의 IP 주소를 할당하고 관리할 수 있도록 해 주는 프로토콜 <br/><br/>\
 # 특징 <br/>\
 - Client/Server 방식 동작 <br/>\
@@ -689,15 +689,16 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Automatic Allocation : 클라이언트에게 영구적인 IP 할당 기법 <br/>\
 - Dynamic Allocation : 한정된 시간 할당 기법(재사용 자동) <br/>\
 - Manual Allocation : Client IP 네트워크 관리자 할당, DHCP 그 주소 할당 기법 <br/><br/>\
-# 동작절차 <br/>\
+# 동작절차 (<font color = "red">UDP 67 Port / UDP 68 Port</font>)<br/>\
 1. 할당(임대) 절차 (<font color = "red">DORA</font>) <br/>\
-- Discover : DHCP 서버 <font color = "red">찾기</font> 위한 메시지 브로드캐스팅 <br/>\
+- Discover(<font color = "red">BootP</font>) : DHCP 서버 <font color = "red">찾기</font> 위한 메시지 브로드캐스팅 <br/>\
 - Offer : DHCP 서버 <font color = "red">알림</font> 위한 메시지 브로드캐스팅 <br/>\
 - Request : 네트워크 <font color = "red">정보 요청</font> 위해 메시지 브로드캐스팅 <br/>\
 - Ack : Request 메시지 수신 후, <font color = "red">응답 메시지</font> 브로드캐스팅 <br/><br/>\
-2. 임대기간 연장 절차 (<font color = "red">RA</font>)<br/>\
+2. 임대기간 연장 절차 (<font color = "red">RA</font>) (1차 50%, 2차 85%)<br/>\
 - Request : IP Lease Time 절판시 유니캐스팅 <br/>\
-- Ack : 할당 단말 IP, Subnet, GW, DNS, Lease Time 등 포함 유니캐스팅 <br/><br/>\
+- Ack : Lease Pool <br/>\
+<font color = "red">* 연장 실패시 재할당 </font><br/><br/>\
 3. IP 주소 반납 절차 <br/>\
 - Release : 유니캐스팅 전달 <br/><br/>\
 * KPC 117회 대비 합숙 2일차 1교시 7번\
@@ -1513,7 +1514,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - WAVE MAC : 다수의 통신 채널의 코디네이션을 담당하는 물리 계층 <br/>\
 - WAVE PHY : 무선 데이터 프레임 송수신을 담당하는 물리 계층 <br/><br/>\
 # 통신 스펙 <br/>\
-1) 주파수 : 5.85 Ghz ~ 5.925 Ghz <br/>\
+1) 주파수 : 5.795 Ghz ~ 5.815 Ghz <br/>\
 2) 최대 주행 속도 : 200 Km/h <br/>\
 3) 최대 전송거리 : 1 Km <br/>\
 4) 최대 대역폭 : 27 Mbps / 54 Mpbs <br/><br/>\

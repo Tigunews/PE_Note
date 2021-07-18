@@ -13,7 +13,7 @@ var this_week_question =
 '',
 
 // 17주차 추가
-'갠드크랩',
+'갠드크랩', 'SCM',
 
 // 16주차 추가
 'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제', '데이터 댐', 'SW 사업 관리감독 항목', 'GDPR', '패키지 설계원리','R-CNN', 'Optimizer',

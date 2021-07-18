@@ -1610,7 +1610,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 2. PA / EC <br/>\
 - 장애 상황시 : 가용 노드만 반영, 복구시 전체 반영 <br/>\
 - 정상 상황시 : 모든 노드 동일 메시지 보장 <br/>\
-- Hazelcast IMDG <br/><br/>\
+- Hazelcast IMDG, Mongo DB <br/><br/>\
 3. PC / EL <br/>\
 - 장애 상황시 : Time Consistency 수준 보장 <br/>\
 - 정상 상황시 : Latency 우선 고려 <br/>\
