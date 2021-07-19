@@ -2621,7 +2621,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 1. 장비 측면 <br/>\
 - SD-WAN Controller : 액세스 노드 정책 설정, 토폴로지 관리 <br/>\
 - SD-WAN CPE : 오버레이 네트워크 생성 위한 라우팅 및 터널링 엔진 <br/><br/>\
-2. 기술 측면 <br/>\
+2. 기술 측면(<font color = "red">패듀어세</font>) <br/>\
 - Dynamic Path Switching : 성능 저하시 다른 경로 선택 <br/>\
 - Packet Duplication : 중요 패킷 경우 중복 전송 <br/>\
 - Link Aggregation : 물리적 여러 회선 -> 논리적 하나 회선 <br/>\
@@ -2636,7 +2636,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 2. Traffic Control <br/>\
 - Traffic Steering <br/>\
 - Dynamic Path Control(Switching) <br/>\
-- Tunnel Bounding (Packet Duplication <br/><br/>\
+- Tunnel Bounding (Packet Duplication) <br/><br/>\
 3. 보안 <br/>\
 - Zone Based Firewall <br/>\
 - 클라우드 보안 솔루션과 통합 <br/><br/>\
