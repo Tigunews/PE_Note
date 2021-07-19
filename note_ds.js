@@ -476,7 +476,7 @@ var answer = answer.concat(
 - DR(Demand Response)(DA) : <font color = "red">D</font>SEM(수요측 에너지 관리), <font color = "red">A</font>FDD(자동화된 오류검출과 진단) <br/>\
 <font color = "red">* EMS : Energy Management System <br/>\
 * SCADA : Supervisory Control And Data Acquisiton <br/>\
-* DAS : Distribution Automatino System <br/>\
+* DAS : Distribution Automation System <br/>\
 * DSEM : Demand Side Energy Management <br/>\
 * AFDD : Automated Fault Detection and Diagnotics </font><br/><br/>\
 2. 보안 및 지능화 측면 (<font color = "red">보자충</font>)<br/>\
