@@ -2314,17 +2314,21 @@ A10. 불충분한 로깅 및 모니터링 <br/>\
 '# 정의 : 개인정보 영향 선제 대응 절차 <br/>\
 - 개인정보를 활용하는 새로운 정보시스템의 도입 및 기존 정보시스템의 중요한 변경시, 시스템의 구축, 운영이 기업의 고객은 물론 국민의 프라이버시에 미칠 영향에 대하여 미리 조사,분석,평가하는 체계적인 절차 <br/><br/>\
 # 평가대상 <br/>\
-- 공공기관 : 개인정보 침해(대통령령 기준) <br/>\
+1. 공공기관 : 개인정보 침해(대통령령 기준) <br/>\
 - 민감정보/고유 식별처리 사업 : 5만명 이상 <br/>\
 - 개인정보파일 연계사업 : 50만명 이상 <br/>\
-- 개인정보파일 사업 : 100만명 이상, 시스템 변경분 <br/>\
-- 민감기관 <br/><br/>\
+- 개인정보파일 사업 : 100만명 이상, 시스템 변경분 <br/><br/>\
+2. 민간기관 : 자발적 신청 <br/><br/>\
 # 체계 <br/>\
 <img src = "./img/PIA.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
+# 수행 시기 <br/>\
+<img src = "./img/PIA_Process.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
 - 사전준비 : 예산확보, 평가기관 선정 <br/>\
 - 수행 : 영향평가서 작성 <br/>\
 - 이행 : 개선계획 반영, 점검 <br/><br/>\
+# ISO/IEC 29134 비교 <br/>\
+<img src = "./img/PIA_ISOIEC29134_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 흐름표 예시 <br/>\
 <img src = "./img/PIA_Practice.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 # 흐름도 예시 <br/>\
