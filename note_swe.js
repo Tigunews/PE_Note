@@ -4393,7 +4393,7 @@ P 히스토그램 : Data 분포 <br/>\
  
 // ISO/IEC 33000
 '# 정의 : 프로세스 능력 평가를 위한 프로세스 심사모델의 구성을 전체 Framework를 제공하는 ISO 국제 표준 <br/><br/>\
-# 구성 (<font color = "red">프프모 / 요 / 문공공프성 / 가 / 1 2 3 4 10 20 30 40 60 80 14 </font>)<br/>\
+# 구성 (<font color = "red">평측모 / 요 / 문공공프성 / 가 / 1 2 3 4 10 20 30 40 60 80 14 </font>)<br/>\
 <img src = "./img/ISOIEC33000Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 프로세스 수준 모델 <br/>\
 <img src = "./img/ISOIEC33000Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
