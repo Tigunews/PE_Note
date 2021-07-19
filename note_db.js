@@ -1938,7 +1938,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 목적 : 샘플링 오차 제거 <br/>\
 - 절차 : 신뢰성 검토 > 정밀도 검토 > 정확성 검토 <br/>\
 - 고려사항 : Error, Bias Trade Off 관계 <br/><br/>\
-# 주요기법 <br/>\
+# 주요기법 (<font color = "red">심시스클멀</font>) <br/>\
 - Simple Random Sampling : 임의 추출(복원, 비복원) <br/>\
 - Systematic Sampling : 시간, 공간적 일정 간격(매 5번째 추출) <br/>\
 - Stratified Random Sampling : 각 계층 원소 임의 추출(성별, 연령대별) <br/>\

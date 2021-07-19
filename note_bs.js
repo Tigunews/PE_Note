@@ -115,7 +115,8 @@ var answer = answer.concat(
 - 사회문제 : 인기조프 <br/>\
 - 거버넌스 : EDM(Evaluate, Direct, Monitoring) <br/>\
 - 전략 : 비전추세이 <br/>\
-- 미래성장 : 기술선순환 <br/><br/>\
+- 미래성장 : 기술선순환 <br/>\
+- 혁신(가성문접지개융) : 가치지향, 성장전략, 문제해결, 접근전략, 지속가능성, 개방성, 융합/협업 <br/><br/>\
 # 목차 <br/>\
 <img src = "./img/WritingSkill.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 법 : 조,항,호,목 <br/><br/>\
