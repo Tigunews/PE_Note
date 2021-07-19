@@ -1018,7 +1018,6 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 멀티캐스트 : 1:N 통신 <br/>\
 - 애니캐스트 : 1:1 통신(가장가까이 있는) <br/><br/>\
 # 확산 로드맵 : 확산기 (14~17), 성숙기 (18~22) <br/><br/>\
-# 구조 : version, Traffic Class, Flow Label, Payload, Length, Next Header, Hot Limit, Source Address, Destination, Address <br/><br/>\
 # IPv4 IPv6 비교 <br/>\
 <img src = "./img/IPv4_IPv6.png" style = "max-width:100%; height:auto;"><br/><br/>\
 - 효율적인 데이터 포맷 : 헤더 고정으로 인한 효율성 제고 <br/>\
@@ -1030,6 +1029,8 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 
 // [IPv6]- 헤더구성
 '# 헤더 구성 <br/>\
+<font color = "red">* IPv4 : 버랭토스랭 아플오 티프체 <br/>\
+* IPv6 : 버터플 플네홉 <br/>\
 <img src = "./img/IP_Header.png" style = "max-width:100%; height:auto;"><br/>\
 <font color = "red">기본헤더(40Byte) > 확장 헤더 > 상위 계층 라우터<br/>\
 * Identification(8) : 데이터그램 일련번호<br/>\
