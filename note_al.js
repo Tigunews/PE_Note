@@ -2626,7 +2626,7 @@ var answer = answer.concat(
 // TF-IDF
 '# 개념 : TF, DF, IDF 수치화 / 통계적 단어 특성 추출 알고리즘 <br/>\
 - 여러 문서에서 단어의 중요도를 단어빈도 TF(Term Frequency), 문서빈도 DF(Document Frequency), 역문서 빈도 IDF(Inverse Document Frequency) 수치화 하고 이를 기반으로 단어의 중요도를 수치화 평가 하는 통계적 단어 특성 추출 알고리즘 <br/><br/>\
-# 구성요소 <br/>
+# 구성요소 <br/>\
 - TF : 문서 내부 단어 출현횟수 수치화 <br/>\
 - DF : 문서집합에서 특정단어 출현되는 문서 개수 <br/>\
 - IDF : 문서빈도 / 단어빈도 + 1 <br/>\
