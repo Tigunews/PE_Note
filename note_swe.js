@@ -402,7 +402,7 @@
 'SW Visualization',
 'SW안전 확보 지침',
 'Integrated Development Equipment',
-'SW 사업 관리감독 항목',
+'SW사업 관리감독 항목',
 '[SW사업]- SW개발사업 적정 사업기간 산정',
 '[SW사업]- 상용SW직접구매(분리발주)',
 );
