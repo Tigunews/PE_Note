@@ -951,7 +951,7 @@ var answer = answer.concat(
 <img src = "./img/IPS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 특징 <br/>\
 - Active, Proactive 대응 <br/>\
-- 공격전 사전 차단 <br/>\
+- 공격전 사전 차단 <br/><br/>\
 # 탐지/차단 <br/>\
 - 목적 : 침입방지, 탐지 후 적극적 대응 <br/>\
 - 분석방법 : Rule DB 기반, 비정상 행위 방지 <br/>\
@@ -963,7 +963,7 @@ var answer = answer.concat(
 - 차단 방법 : 자체 차단 <br/><br/>\
 # 구축/운영 <br/>\
 - 대응 방법 : 자원 접근 차단(Unkown) <br/>\
-- 연결 방법 : In-lIne <br/>\
+- 연결 방법 : In-line <br/>\
 - 서비스 중단시 장애 극복 : FoD(Fail Over Device) 통한 장애 대응 <br/>\
 - 장점 : 모든 패킷 대해 자체 탐지, 차단, 보호 <br/>\
 - 단점 : Transparent Mode 운영, NAT등 방화벽 고유 기능지원 불가 <br/><br/>\
