@@ -1506,9 +1506,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // IEEE 802.11p
 '# 정의 : WAVE / 자동차 적용 무선 통신 표준 <br/>\
 - IEEE가 제정한 자동차에 적용할 수 있는 Wi-Fi/DRSC 기반의 V2X 표준, WAVE로도 불림 <br/><br/>\
-# 암기 : 물아인네멀 <br/><br/>\
+# Stack <br/>\
 <img src = "./img/WAVE_2.png" style = "width:100%; height:auto;"><br/><br/>\
-# 통신 스택 <br/>\
 - WSMP(Wave Short Message Protocol) : 안전한 통신 메시지 전달하는 전송 계층 <br/>\
 - TCP/UDP : 안전보다는 시급성이 필요한 메시지 전달하는 전송 계층 <br/>\
 - LLC(Logical Link Cotrol) : TCP/UDP, WSMP를 스위칭 위한 논리적 링크 제어하는 데이터 링크 계층 <br/>\
