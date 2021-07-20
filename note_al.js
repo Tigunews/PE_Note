@@ -2139,15 +2139,22 @@ var answer = answer.concat(
 - 자(NM) : NetAdapt(Budget 여러개,점진적), MNasNet(모바일, 정확 속도 균형) <br/><br/>\
 # 종류 (모합자)<br/>\
 1. 모델 구조 변경 기술 <br/>\
-- ResNet : Short Path 연결, 기울기 소실x, 계층을 깊이 개선 <br/>\
-- SqueezeNet : 합성곱 필터 감소, Fire Module 기법 <br/>\
-- DenseNet : ResNet 활용, Layer short path 극대화 <br/><br/>\
+<img src = "./img/ResNet.png" style = "max-width:100%; height:auto;"><br/>\
+- ResNet : Short Path 연결, 기울기 소실x, 계층을 깊이 개선(지름길) <br/>\
+<img src = "./img/SqueezeNet.png" style = "max-width:100%; height:auto;"><br/>\
+- SqueezeNet : 합성곱 필터 감소(3*3->1*1), Fire Module 기법 <br/>\
+<img src = "./img/DenseNet.png" style = "max-width:100%; height:auto;"><br/>\
+- DenseNet : Feature Map 더하기 -> 쌓기, 모든층 정보 취득 가능 <br/><br/>\
 2. 효율적 합성곱 필터 기술 <br/>\
-- MobileNet : 채널 감소, 깊이우선 분할 컨볼루션, 증류와 압축으로 파라미터 수 줄여서 작은 신경망 만드는 기술 <br/>\
-- ShuffleNet : 채널의 그룹 Shuffle, 측정 영역의 채널만 참여, 연산량 줄임 <br/><br/>\
+<img src = "./img/MobileNet.png" style = "max-width:100%; height:auto;"><br/>\
+- MobileNet : 채널별 개별 합성곱 표현 <br/>\
+<img src = "./img/ShuffleNet.png" style = "max-width:100%; height:auto;"><br/>\
+- ShuffleNet : 점별 합성곱시 특정 영역 채널 연산, 그룹 Shuffle <br/><br/>\
 3. 경량모델 자동탐색 기술 <br/>\
+<img src = "./img/NetAdapt.png" style = "max-width:100%; height:auto;"><br/>\
 - NetAdapt : Budget 여러개 나누어 일정만큼 만족하는 조건 점진적 탐색 방식 <br/>\
-- MNasNet : 모바일 환경 탐색, 속도 정보 명시적 포함, 정확도 속도 균형 탐색 <br/><br/>\
+<img src = "./img/MNasNET.png" style = "max-width:100%; height:auto;"><br/>\
+- MNasNet : Controller, Trainer, Reward, RL Pareto 최적 솔루션 <br/><br/>\
 * KPC 91회 2교시 2번\
 ',
 
