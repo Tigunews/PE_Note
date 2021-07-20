@@ -140,6 +140,7 @@ var question = question.concat(
 '[AI][NLP]- 워드 임베딩',
 '[AI][NLP]- TF-IDF',
 '[AI][NLP]- Word2Vec',
+'[AI][NLP]- Attention',
 '[AI][NLP]- Transformer',
 '[AI][NLP]- BERT',
 '[AI][NLP]- GPT-3',
@@ -2650,6 +2651,18 @@ var answer = answer.concat(
 # TF-IDF, Word2Vec 비교 <br/>\
 <img src = "./img/TF_IDF_Word2Vec.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 4교시 5번\
+',
+
+// Attention
+'# 정의 : Encoder, Decoder 사이 위치 / Embedding Vector 가중치 계산 / Decoder 확률 예측 성능향상 메커니즘 <br/>\
+- Encoder, Decoder 사이에 위치하여 Input Data 에 대해 Embedding Vector의 가중치를 계산하여 Decoder의 확률 예측 성능을 향상 시키는 메커니즘 <br/><br/>\
+# 메커니즘 <br/>\
+<img src = "./img/AttentionMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Softmax : 주어진 Sequence에서 집중할 Sequence 예측하는 확률값, 다음 Sequence 추측 <br/>\
+- tanh : 출력 범위 -1 ~ 1 Sigmoid 활성 함수 확장 형태 <br/>\
+- weight : Encoder의 Sequence 결정위한 가중치 <br/><br/>\
+* KPC 81회 관리 4교시 6번\
 ',
   
 // Transformer
