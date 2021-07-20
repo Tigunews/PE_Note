@@ -734,12 +734,14 @@ var answer = answer.concat(
 
 // 형태 보존 암호화
 '# 정의 : 일정 포맷 규칙 / 동일 포맷 유지 / 암호화 알고리즘 <br/>\
+- Format Preserving Encryption <br/>\
 - 일정한 포맷규칙이 있는 평문을 암호화한 암호문이 평문과 동일한 포맷이 유지되도록 암호화하는 알고리즘 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/FormatPreservingEncryption.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 특성 <br/>\
-- Tweak : 기밀성 제공 위한 추가 정보 정형화 <font color = "red">데이터 입력</font> <br/>\
-- Feistel Cipher : <font color = "red">Round Function</font> 반복 수행 블록 암호화 방식 <br/><br/>\
+# 특징 <br/>\
+- Tweak : 암호화가 필요한 데이터의 길이 조절 가능 <br/>\
+- Feistel Cipher : <font color = "red">Round Function</font> 반복 수행 블록 암호화 방식 <br/>\
+- 효율성 : AES 달리 솔루션 구축비용 낮추고, 성능 높일수 있음 <br/>\
 # 기술 유형 <br/>\
 - Prefix Cipher : <font color = "red">의사난수 가중치</font>, 매핑 테이블, 테이블 <font color = "red">크기 한계</font> <br/>\
 - Cycle-Walking Cipher : 원본 동일 결과까지 <font color = "red">반복</font>, <font color = "red">연산 부하</font> 문제, <font color = "red">종료 시간 예측 한계</font> <br/>\

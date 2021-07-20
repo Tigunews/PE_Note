@@ -1038,7 +1038,7 @@ var answer = answer.concat(
 ',
 
 // [자율주행자동차]- LDM
-'# 정의 : 동적 공간 데이터 저장소 <br/>\
+'# 정의 : 동적 공간 데이터 저장소 / <font color = "red">ISO/TR 17424:2015</font><br/>\
 - Local Dynamic Map <br/>\
 - 정보수집의 대상 범위내에 있는 고정 물체 또는 이동 물체에 관한 정적, 일시적, 동적 정보를 모두 관리할 수 있는 동적 공간 데이터 저장소 <br/><br/>\
 # 구성도 (<font color = "red">정밀 일시 일시 정적 / 동적 동적 정적 정적</font>)<br/>\
