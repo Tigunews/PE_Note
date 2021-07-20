@@ -76,7 +76,7 @@ var question = question.concat(
 '[측위기술]- IPS',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
-'[측위기술][GPS]- 위성항법 기술
+'[측위기술][GPS]- 위성항법기술',
 '[측위기술][GPS]- SBAS',
 '[측위기술]- RTLS',
 '라이파이(Li-Fi)',
