@@ -159,6 +159,7 @@ var question = question.concat(
 '[블록체인]- 영지식 증명(Zero-knowledge Proof)',
 '[블록체인] - 스마트계약(Smart Contract)',
 '[블록체인][Smart Contract]- Smart Contract Audit',
+'[블록체인]- 하이퍼레저 프로젝트',
 '[블록체인][하이퍼레저]- 하이퍼레저 패브릭',
 'CBDC',
 'MaaS',
@@ -3380,6 +3381,21 @@ var answer = answer.concat(
 - 감사 : 도구 이용한 자동화 및 수동 감사 수행 / 점검 결과서 <br/>\
 - 보고 : 보고서 작성 후 감사결과 고객에게 통보 / 감사 보고서 <br/><br/>\
 * 라이지움 88회 관리 1교시 12번\
+',
+
+// 하이퍼레저 프로젝트
+'# 정의 : 블록체인 및 플랫 폼 개발 / 리눅스 재단 오픈소스 프로젝트 / P2P 기반 분산원장 표준화 프로젝트 <br/>\
+- 블록체인 및 플랫폼을 개발하기 위한 리눅스 재단의 오픈소스 프로젝트로 차세대 트랜잭션 응용 프로그램 구축을 지원하는 P2P 기반 표준화 프로젝트 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/HyperledgerArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 멤버쉽 서비스 : 외부등록, 인증, 감사 <br/>\
+- 블록체인 서비스 : HTTP/2, P2P, Hash Algorithm <br/>\
+- 체인코드 서비스 : 보안 OS, Go, JAva, Node.s <br/>\
+- 기타 : REST API, Event <br/><br/>\
+# 하이퍼레저, 이더리움 비교 <br/><br/>\
+<img src = "./img/HyperledgerEtherumCompare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 117회 관리 1교시 2번\
 ',
   
 // 하이퍼레저 패브릭
