@@ -1757,10 +1757,13 @@ var answer = answer.concat(
 # 개념도 <br/>\
 <img src = "./img/SOA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
-- 통신 : SOAP / 커뮤니케이션 Protocol, XML, Request Response Model <br/>\
-- 사용 : WSDL / XML Markup Language, Method Argument Call, Procedure <br/>\
-- 정의/탐색 : UDDI / 사용 가능 웹서비스 레지스트리 정의/탐색 <br/>\
-- 메시지 : XML / SOAP 메시지, publish, bind, find 지원 메시지 컨텐츠 묘사 <br/><br/>\
+- SOAP : HTTP, HTTPS, SMTP 등 통해 XML 기반 메시지 네트워크상 교환 프로토콜 <br/>\
+- WSDL : 웹 서비스 기술언어 (서비스 제공장소, 메시지 포맷, 프로토콜 기재) <br/>\
+- UDDI :  웹 서비스 관련 정보 공개, 탐색 위한 표준 <br/>\
+- 메시지 : XML / SOAP 메시지, publish, bind, find 지원 메시지 컨텐츠 묘사 <br/>\
+<font color = "red">* SOAP : Simple Object Access Protocol <br/>\
+* WSDL : Web Services Description Language <br/>\
+* UDDI : Universal Description, Discovery and Integration </font><br/><br/>\
 # 특징 <br/>\
 - 목적 : 비즈니스 로직 재사용, 민첩성 확보 <br/>\
 - 조직 : 조직, 서비스 연관 관계 없음 <br/>\
