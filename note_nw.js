@@ -76,7 +76,8 @@ var question = question.concat(
 '[측위기술]- IPS',
 '[측위기술]- LDT',
 '[측위기술]- GPS',
-'[측위기술]- SBAS',
+'[측위기술][GPS]- 위성항법 기술
+'[측위기술][GPS]- SBAS',
 '[측위기술]- RTLS',
 '라이파이(Li-Fi)',
 'SON',
@@ -1712,6 +1713,36 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - D-GPS(Differential) : 일정영역별 측정 <br/>\
 - LAD-GPS(Local Area) : 좁은 영역 높은 정확도 <br/>\
 - WAD-GPS(Wide Area) : 지역적, 비용적 한계 극복 \
+',
+
+// 위성항법기술
+'# 정의 : GPS + 정밀전자지도 / 측위기술 / 위경도 파악 기술 <br/>\
+- GPS, 정밀전자지도와 구조적 기하학적 오류를 보정하는 보정시스템으로 이루어진 삼각측량 기법 등의 기술을 활용한 사물의 위경도 파악기술 <br/><br/>\
+# 구성요소 <br/>\
+- 위성항법 인프라 : GPS, 지상제어국, 정밀전자지도 <br/>\
+- 위성항법 보정 시스템 : 보정 정보생성기술, 무결성 정보 생성기술(SBAS, DGPS) <br/>\
+- 위성항법 측위기술 : 삼각 측량 (24개 위성중 3개 위성과의 거리) <br/><br/>\
+# 한계점 <br/>\
+1. 위성위치 오차 <br/>\
+- 구조적 오차 : 위성, 수신기간 측정된 거리 오차 <br/>\
+- 기하학적 오차 : 축위시 이용되는 위성 배치 상황 발생 오차 <br/>\
+- 선택적 이용성 오차 : 미국방성 정책적 판단 의한 고의 오차 <br/><br/>\
+2. 위성음영지역 <br/>\
+- 터널등 GPS 신호 음영 지역 <br/><br/>\
+3. 동적지도 불완전성 <br/>\
+- 동적지도 실시간 업데이트 한계 : V2X 통신 <br/><br/>\
+# 보완방안 <br/>\
+1. 위성오차 한계점 보완 <br/>\
+- Differencial GPS 기술 : 가까운 거리 GPS 수신기 곹옹 오차 상쇄 <br/>\
+- SBAS : GPS 오차 보정, 정지궤도 위성 통한 정확안 위치정보 전달 시스템 <br/><br/>\
+2, 위성음영지역 보완측면 <br/>\
+- GNSS RSE : 터널 및 지하차도 GNSS RSE 설치 V2I 기술 <br/>\
+- 관성항법시스템 : 차량의 움직임 관성센서 복합 계산, IMU, INS <br/>\
+<font color = "red">* IMU : Inertial Measurement Unit <br/>\
+* INS : Inertial Navigation System </font><br/><br/>\
+3. 동적지도 업데이트 보완 <br/>\
+- C-ITS 구축 및 이용 : V2X, V2I, V2P, V2C 이용 실시간 업데이트 <br/><br/>\
+* 116회대비 JUD 2교시 \
 ',
   
 // SBAS
