@@ -1612,18 +1612,22 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 // COBIT 5.0
 '# 정의 : 실행, 수준 진단 / 감사, 개선 / IT-Governance Framework <br/>\
 - IT 거버넌스 실행, 수준 진단 통해 IT 통제, 감사, 개선에 사용되는 IT 거버넌스 프레임워크 <br/><br/>\
-# 진화 과정(ACMIG) : Audit > Control > Management > IT Governance > Governance of Enterprise IT <br/><br/>\
+# 진화 과정(<font color = "red">ACMIG</font>) : Audit > Control > Management > IT Governance > Governance of Enterprise IT <br/><br/>\
 # 구성요소 <br/>\
-- EDM : Evaluate(평가), Direct(지휘), Monitor(모니터링) <br/>\
+1. IT Governance <br/>\
+- EDM : Evaluate(평가), Direct(지휘), Monitor(모니터링) <br/><br/>\
+2. IT Management <br/>\
 - APO : Align(연계), Plan(기획), Organize(조직화)<br/>\
 - BAI : Build(구축), Acquire(도입), Implement(구현)<br/>\
 - DSS : Deliver(제공), Service(서비스), Support(지원)<br/>\
 - MEA : Monitor(모니터링), Evaluate(평가), Assess(진단)<br/><br/>\
-# 원칙 (통이비인거) <br/>\
+# 거버넌스 및 관리 핵심영역 <br/>\
+<img src = "./img/COBIT5.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 5 원칙 (<font color = "red">통이비인거</font>) <br/>\
 - 통합 프레임워크 : Best Practice 연계 <br/>\
 - 이해관계자의 가치제고 지향 : 가치 창출 위해 존재 <br/>\
 - 비즈니스 초점 : 거버넌스, 매니지먼트 의사결정 연계 <br/>\
-- 인에이블러 기반 : Enabler 총체적 접근 방법 <br/>\
+- 인에이블러 기반(<font color = "red">원프조문정서인</font>) : 원칙/정책 및 프레임워크, 프로세스, 조직구조, 문화/윤리 및 행동, 정보, 서비스, 인력 <br/>\
 - 거버넌스와 관리 분리 : 다른 구조, 목적 <br/><br/>\
 # Enabler <br/>\
 - 원칙/정책/프레임워크 : IT 지침, 정책, 내부 규정 <br/>\
@@ -1633,8 +1637,6 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 - 정보 : 조직에 의해 생산되고 사용되는 모든 정보 <br/>\
 - 서비스/인프라/애플리케이션 : IT 관련 서비스를 제공하는데 활용되는 애플리케이션, 인프라 <br/>\
 - 인력/스킬/전문성 : 모든 활동 및 의사결정을 수행하는 인적 역량 <br/><br/>\
-# 핵심영역 <br/>\
-<img src = "./img/COBIT5.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 90회 관리 1교시 7번\
 ',
  
