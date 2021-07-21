@@ -1230,7 +1230,7 @@ var answer = answer.concat(
 # 구축 목표  <br/>\
 - 데이터 수집/활용 <br/>\
 - 공공 데이터 개방/연계 <br/><br/>\
-# 주요내용 <br/>\
+# 주요내용 (<font color = "red">수축활인</font>)<br/>\
 <img src = "./img/DataDamStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 후속 조치 사항 <br/>\
 - 데이터 표준화 및 품질 관리 : 가이드 라인 <br/>\
