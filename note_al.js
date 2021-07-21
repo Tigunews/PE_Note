@@ -2529,10 +2529,7 @@ var answer = answer.concat(
 <img src = "./img/NLP_Growth.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. NLU(<font color = "red">형구의담</font>) <br/>\
-- 형태소 분석(Morphological ANalysis) : 품사 정보 인식 <br/>\
-- 구문 분석(Syntax Analysis, Parsing) : 명사구, 동사구 등으로 그룹화, 그룹간 관계 분석 <br/>\
-- 의미 분석(Semantic Analysis) : 문장 성분간 의미관계 파악 <br/>\
-- 담론 분석(Disource Analysis) : 문맥 속에서 단어나 문장등에 어떤 의미 있는지 분석 <br/><br/>\
+<img src = "./img/NLU_Process.png" style = "max-width:100%; height:auto;"><br/><br/>\
 2. NLG(<font color = "red">담문어문형</font>) <br/>\
 - 담론 생성 : 질문답변 위한 상황적합한 자연어로 변환 <br/>\
 - 문장 계획 : 질문에 적합한 자연어 문법 계획 및 생성 <br/>\
