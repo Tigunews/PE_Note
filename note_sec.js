@@ -1114,8 +1114,8 @@ var answer = answer.concat(
 <img src = "./img/HTTPHeadOptionSpoofingFlooding.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 공격 기법 <br/>\
 - Slow HTTP <font color = "red">Post</font> DoS : <font color = "red">장기간</font> 걸쳐 분할 전송 <br/>\
-- Slow HTTP <font color = "red">Header</font> DoS(Slowloris) : <font color = "red">Header 속여</font> 지속 연결 <br/>\
-- Slow HTTP <font color = "red">Read</font> DoS : TCP <font color = "red">윈도우</font> 크기, <font color = "red">데이터 처리율</font> 감소 연결 <br/><br/>\
+- Slow HTTP <font color = "red">Header</font> DoS(Slowloris) : <font color = "red">Header 속여</font> 지속 연결 (rnrn -> rn)<br/>\
+- Slow HTTP <font color = "red">Read</font> DoS : <font color = "red">다수 좀비 PC</font>HTTP 데이터 송신 <br/><br/>\
 # 대응 방안 <br/>\
 - Slow HTTP Post DoS : <font color = "red">임계치</font>, Connection,Keepalive,RequestRead <font color = "red">Timeout</font> <br/>\
 - Slow HTTP Header DoS: <font color = "red">캐시</font> 서비스 대체, Content-Length 임계치 설정 <br/>\
