@@ -2525,6 +2525,7 @@ var answer = answer.concat(
 - NLG(Generation) : 다시 자연어로 변환 (NLP 일부분) <br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/NLP_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/NLP_Overview2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 발전과정 <br/>\
 <img src = "./img/NLP_Growth.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
@@ -2534,11 +2535,11 @@ var answer = answer.concat(
 - 의미 분석(Semantic Analysis) : 문장 성분간 의미 파악 / 사람(비행기)이 사과를 먹는다 <br/>\
 - 담론 분석(Disource Analysis) : 문맥 속에서 의미 분석 / 우승해서 울었다, 슬퍼서 울었다 <br/><br/>\
 2. NLG(<font color = "red">담문어문형</font>) <br/>\
-- 담론 생성 : 질문답변 위한 상황적합한 자연어로 변환 <br/>\
-- 문장 계획 : 질문에 적합한 자연어 문법 계획 및 생성 <br/>\
-- 어휘 선택 : 생성된 문장에서 구문(명사, 동사, 형용사 및 부사)을 선택 <br/>\
-- 문장 생성 : 구문 규칙 따라 올바른 문장 텍스트 생성 <br/>\
-- 형태 생성 : 문장 텍스트 상황 오류 검출, 최종 문장 확인 과정 <br/><br/>\
+- 담론 생성 : 질문답변 위한 상황적합한 자연어로 변환 / 자유 문장<br/>\
+- 문장 계획 : 질문에 적합한 자연어 문법 계획 및 생성 / 평서문, 요약문 등... <br/>\
+- 어휘 선택 : 생성된 문장에서 구문(명사, 동사, 형용사 및 부사)을 선택 / 구어체 문어체 <br/>\
+- 문장 생성 : 구문 규칙 따라 올바른 문장 텍스트 생성 / 1차 생성 <br/>\
+- 형태 생성 : 문장 텍스트 상황 오류 검출, 최종 문장 확인 과정 / 최종 확인 <br/><br/>\
 # 기술요소 <br/>\
 1. NLU <br/>\
 - One-Hot Vector Encoding : 단어를 벡터화 <br/>\
