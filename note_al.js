@@ -2529,7 +2529,10 @@ var answer = answer.concat(
 <img src = "./img/NLP_Growth.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. NLU(<font color = "red">형구의담</font>) <br/>\
-<img src = "./img/NLU_Process.png" style = "max-width:100%; height:auto;"><br/><br/>\
+- 형태소 분석(Morphological Analysis) : 형태소 인식 / 나는 날다 <br/>\
+- 구문 분석(Syntax Analysis, Parsing) : 품사 정보 분석 / 나(명사)는(전성어미) 날다(동사) <br/>\
+- 의미 분석(Semantic Analysis) : 문장 성분간 의미 파악 / 사람(비행기)이 사과를 먹는다 <br/>\
+- 담론 분석(Disource Analysis) : 문맥 속에서 의미 분석 / 우승해서 울었다, 슬퍼서 울었다 <br/><br/>\
 2. NLG(<font color = "red">담문어문형</font>) <br/>\
 - 담론 생성 : 질문답변 위한 상황적합한 자연어로 변환 <br/>\
 - 문장 계획 : 질문에 적합한 자연어 문법 계획 및 생성 <br/>\
