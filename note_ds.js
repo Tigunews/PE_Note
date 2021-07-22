@@ -30,6 +30,7 @@ var question = question.concat(
 '[4차산업]- Smart Hospital',
 '[4차산업]- Smart Car',
 '자율주행 자동차',
+'자율주행 자동차 보안',
 '[자율주행]- 트롤리 딜레마',
 '[자율주행]- 모랄머신',
 '[자율주행]- 군집주행 (Platooning)',
@@ -977,7 +978,8 @@ var answer = answer.concat(
   
 // 자율주행 자동차
 '# 정의 : 최첨단 자동차 / 상황인식 / 정보파악 / 기계제어 / 스스로 주행 <br/>\
-- 센서를 통한 상황인식, 전자제어장치 등에서 그 상황에 대한 정보를 파악,판단 기계장치들을 제어,스스로 주어진 목적지까지 주행하는 기능을 가진 최첨단 자동차 <br/><br/>\
+- 센서를 통한 상황인식, 전자제어장치 등에서 그 상황에 대한 정보를 파악,판단 기계장치들을 제어,스스로 주어진 목적지까지 주행하는 기능을 가진 최첨단 자동차 <br/>\
+<font color = "red">- 운전자 또는 승객의 조작 없이 자동차 스스로 운행이 가능한 자동차 (자동차 관리법 제2조 제1호의 3) </font><br/><br/>\
 # Overview <br/>\
 <img src = "./img/SelfDrivingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/SelfDriving.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -1014,6 +1016,56 @@ var answer = answer.concat(
 * 스마트더스트 c-its 연계 가능 <br/>\
 <img src = "./img/자율주행자동차_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 116회 응용 3교시 6번\
+',
+
+// 자율주행자동차 보안
+'# 내부 취약점 <br/>\
+1. IVN 취약점 <br/>\
+- CAN 통신 해킹 : 내부 통신 Controll Area Network 방해 및 위조 <br/>\
+- 차량자가진단 해킹 : OBD(On Board Diagnostics)해킹, MIL(Malfunction Indication Lamp) 오류 동작 <br/>\
+- 제어 메시지 주입 : 악의적 제어 메시지 주입 <br/>\
+- Packet 수집 : Packt 수집하여, 개인 정보, 차량 상태 정보 탈취<br/><br/>\
+2. 전장 시스템 취약점 <br/>\
+- ECU 소프트웨어 결함 : ECU 제작시 발생 오류, 보안 취약점 <br/>\
+- ECU 리버스 엔지니어링 : ECU 기술적 분석, 취약점 식별 공격 <br/>\
+- ECU 펌웨어 해킹 및 위변조 : ECU 펌웨어 해킹, 변조, 악성 스크립트 적재 <br/>\
+- 위장 ECU 장착 : 위장 ECU 탑재, Backdoor 이용 <br/><br/>\
+# 외부 취약점 <br/>\
+1. V2V 취약점 <br/>\
+- V2V 통신 도청 : 추적 위한 위치정보 수집 <br/>\
+- Replay Attack : MITM 유출된 암호, Pakcket 재사용 <br/>\
+- DDoS Attack : 차량 네트워크 리소스 소모, 서비스 및 정보 수집 불가 <br/><br/>\
+2. V2I 취약점 <br/>\
+- V2I 통신 감청 : 불법 도청 및 교통 정보 주입 <br/>\
+- 원격 해킹 : 원격 이모빌라이저 해킹, 시동 방해, 자동차 탈취 <br/>\
+- Fake 교통 정보 전송 : Fake RES(Road Side Equipment), RSU 기지국 설치 후 거짓 정보 제공 <br/><br/>\
+# 내부 보안 고려사항 <br/>\
+1. IVN 보안 고려사항 <br/>\
+- 스마트카 방화벽 : 내외부 네트워크 접근 제어 <br/>\
+- GPS 안티재밍 : GPS Jamming, Spoofing 공격 대응 <br/>\
+- CAN Open : 관리장치 모니터링, 통신 계층 메시지 분할 지원 <br/><br/>\
+2. 전장시스템 보안 고려 사항 <br/>\
+- 시큐어 부트 : 부팅시, 시그니처 키목록과 비교후 유효 항목만 부팅 설정 <br/>\
+- 시큐어 플래싱 : 원본 소프트웨어만 ECU 플래싱 가능, 조작 불가 설정 <br/>\
+- 접근 제어 : 사용자, 프로그램, 프로세스 등 허가된 주체만 자원 접근 설정 <br/><br/>\
+# 외부 보안 고려사항 <br/>\
+1. V2V 보안 고려사항 <br/>\
+- V2V 통신 암호화 : 비인가적 위치 정보 무단 수집 방지 <br/>\
+- PKI 기반 차량 상호인증 : CAMP 보안인증관리시스템(SCMS) 인증 체계 <br/>\
+- Anti DDoS : DDoS 공격 방지 위한 솔루션 도입 <br/><br/>\
+2. V2I 보안 고려사항 <br/>\
+- 운행 정보 암호화 : 대칭키, 비대칭키 활용 운행 정보 암호화 저장 <br/>\
+- V2I 통신 암호화 : WAVE, IEEE 1609.2 보안 메시지 규격, 보안 통신 처리 <br/>\
+- V2I 메시지 이증 : 전자서명 기술 적용 <br/><br/>\
+# 자율주행 자동차 보안 표준 <br/>\
+- IEEE 1609.2 : WAVe 통신 보안 통신 규격 <br/>\
+- IEEE 1616 : 자동차 EDR 표준 <br/>\
+- CAMP VSC3 : 프라이버시 보존 자동차 PKI 표준 <br/>\
+- ISO 14229 : 자동차 통합 진단 표준 <br/>\
+- ISO TC22 / SC31 WG2 : 자동차 진단 프로토콜 표준 <br/>\
+- ITU-T itsec - 2/3/4/5 : V2V, 접속 디바이스, 전장 침입 탐지 보안 가이드 <br/>\
+- ETSI-TS 102 : 지능형 교통시스템 보안 표준 <br/><br/>\
+* KPC 합숙 119회 3일차 2교시 1번 \
 ',
 
 // [자율주행자동차]- 트롤리 딜레마 
