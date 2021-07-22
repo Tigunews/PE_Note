@@ -1258,7 +1258,7 @@ var answer = answer.concat(
 - Cost Benefit Analysis Method <br/>\
 - ATAM 에서 부족한 경제적 평가 부분을 보강한 프로세스 <br/>\
 - 비용과 일정간의 관계를 파악하여 아키텍처 전략적 비용 측정 <br/><br/>\
-# 절차 (<font color = "red">시효이선</font>)<br/>\
+# 절차 (<font color = "red">결효이선</font>)<br/>\
 1. 시나리오 결정 <br/>\
 2. 효용-반응값 곡선 작성 <br/>\
 3. 아키턱체 접근법 전체 이익 계산 <br/>\
