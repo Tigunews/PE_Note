@@ -1222,7 +1222,7 @@ var answer = answer.concat(
 '# 정의 : 최초 정리 평가 방법 <br/>\
 - Software Architecture Analysis Method <br/>\
 - 최초로 정리된 평가방법, 다양한 수정가능성들의 관점에서 아키텍처 분석 <br/><br/>\
-# 절차 (<font color = "red">시아시간시종</font>)<br/>\
+# 절차 (<font color = "red">개아분간상종</font>)<br/>\
 1. 시나리오 개발 <br/>\
 2. 아키텍처 설명 <br/>\
 3. 시나리오 분류와 우선순위 결정 <br/>\
@@ -1240,7 +1240,7 @@ var answer = answer.concat(
 - 민감점 <br/>\
 - 절충점 <br/><br/>\
 # 절차 <br/>\
-1. 1차 평가 (<font color = "red">A비아아품아</font>)<br/>\
+1. 1차 평가 (<font color = "red">A동소식품분</font>)<br/>\
 - ATAM 소개 <br/>\
 - 비즈니스 동인 소개 <br/>\
 - 아키텍처 소개 <br/>\
