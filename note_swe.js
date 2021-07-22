@@ -6221,6 +6221,15 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 
 // 감리 계획서, 보고서 작성 원칙
 '# 작성 원칙 (<font color = "red">유간논명 완정객적준</font>) <br/>\
+- 유용성 : 목적 달성 정보제공 <br/>\
+- 간결성 : 간략 표현 <br/>\
+- 논리성 : 점검 결과 ~ 종합 의견 서로 연결 <br/>\
+- 명확성 : 이해하기 쉬움 <br/>\
+- 완전성 : 누락 없이 포함 <br/>\
+- 정확성 : 왜곡 없이 기술 <br/>\
+- 객관성 : 주관적 의견 배제 <br/>\
+- 적시성 : 사업 진척 시점 적절 필요 <br/>\
+- 준거성 : 관련 기준, 가이드 따라 작성 <br/><br/>\
 <img src = "./img/AuditWritePrinciple.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 2교시 5번\
 ',
