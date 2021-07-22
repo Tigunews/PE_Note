@@ -2611,8 +2611,6 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 // Text Mining 
 '# 비정형 데이터 / 단어 행렬 / 분석, 마이닝 / 의사결정 지원 분석기법 <br/>\
 - 다양한 문서 형태의 비정형 데이터를 가져와 문서의 단어별 행렬을 만들어 추가적인 분석이나 데이터 마이닝 기법을 적용하여 의사결정을 지원해주는 분석기법 <br/><br/>\
-# 아키텍처 <br/>\
-<img src = "./img/TextMiningArchitecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기능 <br/>\
 - 문서 요약 : 내용 추출, 요약 <br/>\
 - 문서 분류 : 키워드, 구조화 및 분류 지도 학습 <br/>\
@@ -2621,7 +2619,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 # 절차 <br/>\
 - 수집 : HTML Parsing, API <br/>\
 - 전처리 : Corpus(구조화), tm_map(문장 부호 제거), Stop word(무의미 단어 제거)<br/>\
-- 자연어 처리 : Stemming(공통 어간 단어 통합), KoNLP(한글 텍스트 단어 추출) <br/>\
+- 자연어 처리 : Stemming(형태소 분석), KoNLP(한글 텍스트 단어 추출) <br/>\
 - TDM 구축 : TermDocumentMatrix(행열 매트릭스), Dictonary(매트릭스 사전)  <br/>\
 - 분석 및 시각화 : Assortiation(단어간 연관성), Word Cloud(시각화), 감성 분석(오피니언 마이닝) <br/><br/>\
 # 활용 사례 : 개인 신용 측정, 자동 번영, 챗봇, 채용, 마켓 인텔리전스 <br/><br/>\
