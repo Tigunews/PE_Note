@@ -4369,7 +4369,7 @@ P 히스토그램 : Data 분포 <br/>\
 - 소프트웨어, 제품 및 서비스 개발 조직의 공정 및 관리 능력을 향상시키고, <font color = "red">생산성과 효율적 행동을 장려</font>할 수 있도록 고안된 프로세스이자 모델 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/CMMI2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성도 (PPGP / CCPLP)<br/>\
+# 구성도 <br/>\
 <img src = "./img/CMMI_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. Model <br/>\
@@ -4381,7 +4381,7 @@ P 히스토그램 : Data 분포 <br/>\
 - Explanatory PA Info. : 개별 프랙티스 요약 및 연관 프랙티스 정보 <br/>\
 - Practice Group : PA 내에서 프렉티스에 대해 구성된 구조로 성과 경로 개선 제공 <br/><br/>\
 3. Practice : 목표 충족을 위한 구체적이고 실질적인 활동 지침 <br/><br/>\
-# CMMI 심사 종류 (<font color = "red">BASE</font>)<br/>\
+# CMMI 심사 종류 (<font color = "red">공유재자</font>)<br/>\
 - Benchmark(공식/3년) : CMMI 심사 시스템(CAS)에서 무작위 추출, 입력 후 심사 진행 <br/>\
 - Sustainment(유지/2년) : 이전 심사 때와 동일한 조직, Sampling Factor 값 유지 여부 확인 <br/>\
 - Action Plan Reappraisal(재 심사) : 실패, 심사 목표 달성 확인, 60일 내 재심사, 동일 심사위원 진행 <br/>\
