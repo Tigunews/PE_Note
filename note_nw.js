@@ -1031,7 +1031,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 // [IPv6]- 헤더구성
 '# 헤더 구성 <br/>\
 <font color = "red">* IPv4 : 버랭토스랭 아플오 티프체 <br/>\
-* IPv6 : 버터플 플네홉 <br/>\
+* IPv6 : 버터플 플네홉 </font><br/>\
 <img src = "./img/IP_Header.png" style = "max-width:100%; height:auto;"><br/>\
 <font color = "red">기본헤더(40Byte) > 확장 헤더 > 상위 계층 라우터<br/>\
 * Identification(8) : 데이터그램 일련번호<br/>\
