@@ -1698,12 +1698,14 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // CPU Scheduling
 '# 정의 : Process CPU 할당 결정 작업<br/>\
 - Process 작업 수행을 위해 언제, 어느 Process에 CPU를 할당할 것인지를 결정하는 작업 <br/><br/>\
-# 평가기준 <br/>\
-1) CPU 사용률(CPU Utilization) : 전체 시간중 CPU 작업 처리시간 비중<br/>\
-2) 처리량(Throughput) : 단위 시간당 처리하는 프로세스 개수 <br/>\
-3) 응답시간(Response Time) : 대화식시스템에서 요청후 응답까지 시간 <br/>\
-4) 대기시간(Wating TIme) : 프로세스가 준비 큐 내에서 대기하는 시간<br/>\
-5) 반환시간(Turnarround Time) : 프로세스가 시작해서 끝날때까지 시간<br/><br/>\
+# 선택기준 <br/>\
+1. 시스템 관점 <br/>\
+- CPU 사용률(CPU Utilization) : 전체 시간중 CPU 작업 처리시간 비중<br/>\
+- 처리량(Throughput) : 단위 시간당 처리하는 프로세스 개수 <br/><br/>\
+2. 프로세스 관점 <br/>\
+- 응답시간(Response Time) : 대화식시스템에서 요청후 응답까지 시간 <br/>\
+- 대기시간(Wating TIme) : 프로세스가 준비 큐 내에서 대기하는 시간<br/>\
+- 반환시간(Turnarround Time) : 프로세스가 시작해서 끝날때까지 시간<br/><br/>\
 <img src = "./img/CPU_Scheduling_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CPU_Scheduling_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 비교 <br/>\
