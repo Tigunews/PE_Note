@@ -5031,7 +5031,7 @@ P 히스토그램 : Data 분포 <br/>\
 ',
 
 // 패키지 설계원리
-'# 종류 <br/>\
+'# 종류 (<font color = "red">RCAS</font>)<br/>\
 1. REP <br/>\
 - Reuse / Release Equivalency Principle <br/>\
 - 재사용되는 요소 = 릴리즈(배포) 요소, 패키지 단위 <br/><br/>\
@@ -5047,7 +5047,7 @@ P 히스토그램 : Data 분포 <br/>\
 5. SDP <br/>\
 - Stable Dependencies Principle <br/>\
 - 패키지 최소한 자체, 안정적 패키지들에만 의존 <br/><br/>\
-6. SDP <br/>\
+6. SAP <br/>\
 - Stable Abstractions Principle <br/>\
 - 패키지가 점점 안정될 수록 추상화 <br/><br/>\
 * 아이리포 3회 관리 \
