@@ -6,7 +6,7 @@ var answer =
 ];
 var memorization =
 [
-'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계', 'ISO/IEC 20889', '이상값', 'major state', '33000', '25000', 'IPv6', 'DHCP', '멀티 클라우드', '쿠버네티스', '12 Factors', 'Smart Grid', 'CMMI', 'SD WAN', '멀티 클라우드', '산업의 디지털 전환 및 지능화 촉진법', 'ASPICE', 'COBIT 5.0', 'Text Mining', '보고서 작성 원칙', '아키텍처 평가', '망분리',
+'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계', 'ISO/IEC 20889', '이상값', 'majorstate', '33000', '25000', 'IPv6', 'DHCP', '멀티 클라우드', '쿠버네티스', '12 Factors', 'Smart Grid', 'CMMI', 'SD WAN', '멀티 클라우드', '산업의 디지털 전환 및 지능화 촉진법', 'ASPICE', 'COBIT 5.0', 'Text Mining', '보고서 작성 원칙', '아키텍처 평가', '망분리',
 ]
 var this_week_question =
 [
