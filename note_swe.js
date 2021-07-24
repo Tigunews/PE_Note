@@ -1174,8 +1174,8 @@ var answer = answer.concat(
 ',
 
 // ISO/IEC/IEEE 42010
-'# 정의 : 아키텍처 설명 / 요구사항, 표준 용어 정의 <br/>\
-- 시스템, 소프트웨어 및 엔터프라이즈 아키텍처 설명에 대한 요구사항/표준 용어 정의 <br/><br/>\
+'# 정의 : 아키텍처 설명 / 요구사항, 표준 용어 정의 / 요소간 관계 표준 메타 모델 <br/>\
+- 시스템, 소프트웨어 및 엔터프라이즈 아키텍처 설명에 대한 요구사항/표준 용어 정의 요소간 관계 표준 메타 모델 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/ISOIECIEEE42010Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 중요성 <br/>\
@@ -1222,6 +1222,7 @@ var answer = answer.concat(
 '# 정의 : 최초 정리 평가 방법 <br/>\
 - Software Architecture Analysis Method <br/>\
 - 최초로 정리된 평가방법, 다양한 수정가능성들의 관점에서 아키텍처 분석 <br/><br/>\
+# 특징 : 변경용이성, 기능성 <br/><br/>\
 # 절차 (<font color = "red">개아분간상종</font>)<br/>\
 1. 시나리오 개발 <br/>\
 2. 아키텍처 설명 <br/>\
@@ -1235,10 +1236,7 @@ var answer = answer.concat(
 '# 정의 : 품질 속성 관계 분석 도구 <br/>\
 - Architecture Trade-Off Analysis Method <br/>\
 - 시나리오 기반의 모든 품질요소를 평가하고 품질 속성들이 서로 어떻게 Trade-Off 되는지까지 밝힘 <br/><br/>\
-# 특징 <br/>\
-- 위험/무위험 <br/>\
-- 민감점 <br/>\
-- 절충점 <br/><br/>\
+# 특징 : 품질, 속성 Trade Off <br/><br/>\
 # 절차 <br/>\
 1. 1차 평가 (<font color = "red">A동소식품분</font>)<br/>\
 - ATAM 소개 <br/>\
@@ -1280,6 +1278,7 @@ var answer = answer.concat(
 - Active Reviews for Intermediate Designs <br/>\
 - 완성되지 않은 부분 아키텍처를 아키텍처 설계 초기에 평가하는 방법 <br/><br/>\
 # 특징 <br/>\
+- 특정부분 품질요소 집중 <br/>\
 - ADR + ATAM \
 ',
 
