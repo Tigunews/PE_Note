@@ -1226,7 +1226,7 @@ var answer = answer.concat(
 ',
 
 // K뉴딜
-'# 정의 : 코로나 19 / 위기 극복 / 그롤벌 경제 선도 / 국가발전전략 <br/>\
+'# 정의 : 코로나 19 / 위기 극복 / 글로벌 경제 선도 / 국가발전전략 <br/>\
 - 코로나 19로 인해 최악의 경기침체와 일자리 충격등에 직면한 상황에서, 위기를 극복하고 코로나 이후 글로벌 경제를 선도하기 위해 마련된 국가발전전략 <br/><br/>\
 # K-New Deal 추진체계 <br/>\
 <img src = "./img/KNewDealSystem.png" style = "max-width:100%; height:auto;"><br/><br/>\
