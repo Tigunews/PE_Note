@@ -4029,8 +4029,19 @@ var answer = answer.concat(
 // 12 Factors
 '# 정의 : 클라우드 네이티브 애플리케이션 개발방법론 / <font color = "red">헤로쿠 기업</font><br/>\
 - 클라우드 플랫폼 모델 사용하는 기업들의 개발, 운영, 확장등을 관찰, 작성한 개발 방법론 <br/><br/>\
-# 상세 내용 (코종설B 빌무포동 폐환로관)<br/>\
-<img src = "./img/12Factors.png" style = "max-width:100%; height:auto;"><br/>\
+# 상세 내용 (<font colro = "red">코종설B 빌무포동 폐환로관</font>)<br/>\
+- 코드 베이스 : 1개 코드 베이스(Git,SVN), 동일 코드 배포 / Non-neogitable <br/>\
+- 종속성 : App 필요 라이브러리 Dependency Manifest 파일(Genfile, POM) 명시적 사용 / High <br/>\
+- 설정 : 코드로부터 분리된 공간 저장 (Sprint Cloud config) / Medium <br/>\
+- Backend Service : Config에 백엔드 서비스 URL 저장, 연결된 리소스 취급 / High <br/>\
+- Build, Release, Run : Build > Release > Run 단계 배포, 각 단계 분리 / Conceptual <br/>\
+- 무상태 프로세스 : App, 하나 이상 프로세스 실행, 극 프로세스 메모리 파일 공유 불가 / High <br/>\
+- PortBinding : 배포된 App 타 App 접근 가능, 포트 바인딩 통한 서비스 공개 / Medium <br/>\
+- 동시성 : App 수평 확장 가능 및 Process 의한 동시성 향상 가능 / Low <br/>\
+- 폐기가능 : 빠른 시작, 종료 통한 안정성 극대화 / Medium <br/>\
+- 환경 일치 : 개발, 스테이징, 프로덕션 환경 일치 유지 / Medium <br/>\
+- 로그 : Stream 취급, 별도 저장소 보관 / Low <br/>\
+- 관리 프로세스 : 관리/유지보수 작업 Release와 함께 실행, Admin 코드 App 코드와 함께 배포 / High <br/><br/>\
 <font color = "red">* 포트바인딩 : 응용 계층(소켓), 전송 계층(TCP) <br/>\
 * 무상태 프로세스 : 격리 </font><br/><br/>\
 * 15 Factors : API 우선, 관측, 인증과 권한 추가 \
