@@ -1239,6 +1239,10 @@ var answer = answer.concat(
 <hr width = "100%" color = "blue"  noshade/>\
 [ 한국판 뉴딜 2.0 ] <br/>\
 # Overview <br/>\
+<font color = "red"> - Digital NewDeal : D비초S <br/>\
+- Green NewDeal : 탄녹확색 <br/>\
+- Human NewDeal : 사고청격 <br/>\
+- 지역균형 NewDeal : 지지공 </font><br/><br/>\
 <img src = "./img/KNewDeal2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 변경점 <br/>\
 1. Digital NewDeal <br/>\
