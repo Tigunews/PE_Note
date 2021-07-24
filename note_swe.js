@@ -1210,6 +1210,7 @@ var answer = answer.concat(
 // [소프트웨어 아키텍처]- 아키텍처 평가
 '# 정의 : 요구 충족 여부 / 아키텍처 수준 평가 절차 <br/>\
 - 제시된 소프트웨어 아키텍처가 개발될 소프트웨어에 대해서 요구되는 품질 특성을 충족시킬 수 있는지 아키텍처 수준에서 평가하는 절차 <br/><br/>\
+# 배경 : 1(설계) : 10(개발) : 100(유지보수) <br/><br/>\
 # 유형(<font color = "red">시시수경</font>) <br/>\
 - 시나리오 기반 : 미리 정의된 Profile 의존 평가 (ATAM, SAAM, CBAM) <br/>\
 - 시뮬레이션 기반 : BMT <br/>\
@@ -1235,8 +1236,9 @@ var answer = answer.concat(
 // ATAM 
 '# 정의 : 품질 속성 관계 분석 도구 <br/>\
 - Architecture Trade-Off Analysis Method <br/>\
-- 시나리오 기반의 모든 품질요소를 평가하고 품질 속성들이 서로 어떻게 Trade-Off 되는지까지 밝힘 <br/><br/>\
-# 특징 : 품질, 속성 Trade Off <br/><br/>\
+- 아키텍처가 품질속성을 만족하는지 판단할 뿐 아니라 어떻게 상충하면서 상호작용하는지를 분석하는 아키텍처 평가방법 <br/><br/>\
+# 특징 : 품질속성 Trade Off <br/>\
+- 가용성, 보안성, 성능, 사용성, 변경가능성, 시험가능성 <br/><br/>\
 # 절차 <br/>\
 1. 1차 평가 (<font color = "red">A동소식품분</font>)<br/>\
 - ATAM 소개 <br/>\
@@ -1264,9 +1266,9 @@ var answer = answer.concat(
 ',
 
 // ADR
-'# 정의 : 응집도 평가 <br/>\
+'# 정의 : 검토자 실습 문제 풀이 / 응집도 높은 상세 평가 (사용하고 있는 모듈, 컴포넌트) <br/>\
 - Architectural Design Review <br/>\
-- SW 아키텍처 구성요소 간 응집도 평가 <br/><br/>\
+- 검토자의 실습문제 풀이에 기초한 SW 아키텍처 평가 기법, 아키텍처간의 응집도가 높은 상세 평가에 적용 <br/><br/>\
 # 특징 <br/>\
 - SW 품질과 상세 설계 적합성 검증 <br/>\
 - 모듈/컴포넌트 상세 설계 검토 <br/>\
@@ -1276,7 +1278,7 @@ var answer = answer.concat(
 // ARID
 '# 정의 : 완성되지 않은 부분 초기 평가 <br/>\
 - Active Reviews for Intermediate Designs <br/>\
-- 완성되지 않은 부분 아키텍처를 아키텍처 설계 초기에 평가하는 방법 <br/><br/>\
+- <font color = "red">완성되지 않은 부분(설계 진행 부분)</font> 아키텍처를 아키텍처 설계 초기에 평가하는 방법 <br/><br/>\
 # 특징 <br/>\
 - 특정부분 품질요소 집중 <br/>\
 - ADR + ATAM \
