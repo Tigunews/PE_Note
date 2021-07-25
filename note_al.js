@@ -145,7 +145,7 @@ var question = question.concat(
 '[AI][NLP]- BERT',
 '[AI][NLP]- GPT-3',
 '[AI]- 전이학습',
-'[AI]- Downstream Task',
+'[AI][비지도][자기지도]- Downstream Task',
 '[AI]- 추천 시스템',
 '[AI][정책]- AI 조달 가이드라인',
 '[AI]- Digital Cartel',
