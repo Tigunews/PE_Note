@@ -982,7 +982,9 @@ var answer = answer.concat(
 <font color = "red">- 운전자 또는 승객의 조작 없이 자동차 스스로 운행이 가능한 자동차 (자동차 관리법 제2조 제1호의 3) </font><br/><br/>\
 # Overview <br/>\
 <img src = "./img/SelfDrivingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/SelfDriving.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SelfDriving.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* HMI : Human Machine Interface <br/>\
+* MDM : Mobile Device Management </font><br/><br/>\
 # 기술요소 <br/>\
 1. 상황인지 <br/>\
 - 내외부상황인지 : Ultrasonic Wave, 스마트 카메라, 레이더, 라이다 <br/>\
