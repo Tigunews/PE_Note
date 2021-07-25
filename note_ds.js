@@ -3976,11 +3976,11 @@ var answer = answer.concat(
 - 탄력성 : 최소 비용, BCP(RTO/RPO)<br/>\
 - 다양성 : 최적 도구(Shadow IT 예방), Polyglot 환경(Cross Compiler) <br/><br/>\
 # 구성요소 <br/>\
-- Public Cloud : 다양한 클라우드 환경에서 변화하는 가상 장치가 조직과 연결 <br/>\
-- Private Cloud : 서비스 오케스트레이션과 함께 작동하는 분석, SDN 및 운영 관리 <br/>\
-- End to End Connectivity : 안전한 이더넷 코어 스위치 및 무선 액세스 <br/>\
-- Data Center : Leaf, Spine, Core 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
-- Campus and branch : sd-wan 라우팅, sd-branch 보안으로 액세스 <br/><br/>\
+- Public Cloud : 다양한 클라우드 환경에서 <font color = "red">변화하는 가상 장치</font>가 조직과 연결 <br/>\
+- Private Cloud : <font color = "red">서비스 오케스트레이션</font>과 함께 작동하는 분석, SDN 및 운영 관리 <br/>\
+- End to End Connectivity : 안전한 이더넷 코어 <font color = "red">스위치</font> 및 <font color = "red">무선 액세스</font> <br/>\
+- Data Center : <font color = "red">Spine-Leaf</font> 및 DCI 라우팅, 스위칭, 보안 및 관리를 기반으로 구축 <br/>\
+- Campus and branch : <font color = "red">SD-Wan</font> 라우팅, <font color = "red">SD-Branch</font> 보안으로 액세스 <br/><br/>\
 # 기술요소 <br/>\
 1. 컴퓨팅 자원 활용 <br/>\
 - 인프라 연동 : 단일 API, 인프라 연동 드라이버, 자원 관리, Scaleout <br/>\
