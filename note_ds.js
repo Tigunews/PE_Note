@@ -4034,7 +4034,7 @@ var answer = answer.concat(
 // 12 Factors
 '# 정의 : 클라우드 네이티브 애플리케이션 개발방법론 / <font color = "red">헤로쿠 기업</font><br/>\
 - 클라우드 플랫폼 모델 사용하는 기업들의 개발, 운영, 확장등을 관찰, 작성한 개발 방법론 <br/><br/>\
-# 상세 내용 (<font colro = "red">코종설B 빌무포동 폐환로관</font>)<br/>\
+# 상세 내용 (<font color = "red">코종설B 빌무포동 폐환로관</font>)<br/>\
 - 코드 베이스 : 1개 코드 베이스(Git,SVN), 동일 코드 배포 / Non-neogitable <br/>\
 - 종속성 : App 필요 라이브러리 Dependency Manifest 파일(Genfile, POM) 명시적 사용 / High <br/>\
 - 설정 : 코드로부터 분리된 공간 저장 (Sprint Cloud config) / Medium <br/>\
