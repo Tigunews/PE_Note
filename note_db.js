@@ -254,7 +254,7 @@ var answer = answer.concat(
   
 // Isolation Level
 '# 정의 : 타 트랜잭션 접근 가능 여부 정의 수준 <br/>\
-- 트랜잭션 실행 중 결과에 대한 다른 트랜잭션의 접근가능 여부를 정의한 수준 <br/>\
+- 트랜잭션 실행 중 결과에 대한 다른 트랜잭션의 접근가능 여부를 정의한 수준 <br/><br/>\
 # 특징 : ANSI/ISO Standard, ACID속성보장, Locking 기법 <br/><br/>\
 # level <br/>\
 1) Read Uncommitted : 처리중 데이터 허용 / Oracle 미지원<br/>\
