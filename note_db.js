@@ -1276,14 +1276,10 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 옵티마이저가 항상 최적화된 실행계획을 수립하는 것이 아닌 개발자가 힌트를 사용하여 원하는 실행계획으로 유도 하는 쿼리 조회 성능 향상기법 <br/><br/>\
 # Hint 사용 규칙 <br/>\
 <img src = "./img/Hint.png" style = "max-width:100%; height:auto;"><br/>\
-1. SQL 문 블록에서 첫 키워드 바로 뒤 힌트 주석 사용 <br/>\
-2. 명령문 블록 힌트 하나, 주석내 여러개 가능 <br/>\
-3. 명령문 블록에만 적용, 세션 레벨 매개변수보다 우선적용 <br/>\
-4. 명령문 블록 단위 <br/>\
-- 단순 SELECT, INSERT, UPDATE, DELETE <br/>\
-- 복합문 서브쿼리, 상위문 <br/>\
-- UNION, MINUS, INTERSECT 혼합 질의 일부 <br/>\
-5. 별칭 사용 경우 테이블 이름 아닌, 별칭 참조 <br/><br/>\
+- 위치 :  SQL 문 블록에서 첫 키워드 바로 뒤 힌트 주석 사용 <br/>\
+- 체계 : 명령문 블록 힌트 하나, 주석내 여러개 가능 <br/>\
+- 범위 :  명령문 블록에만 적용, 세션 레벨 매개변수보다 우선적용 <br/>\
+- 단위 : 단순 Query(SIUD), 복합문 서브쿼리, 상위문, 혼합질의 일부(Union ,Minus, Intersect), 별칭 Table <br/><br/>\
 # 유형 <br/>\
 1. +ALL_ROWS <br/>\
 - 목적 : 최소한 자원 사용 실행계획 <br/>\
@@ -1297,7 +1293,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 목적 : 해당 테이블 Full Table Scan 유도 <br/><br/>\
 5. INDEX-DESC(table_name, index_name) <br/>\
 - 인덱스 기준 정렬 <br/>\
-- 변화 : MAX 함수 등의 기능 대신하여 상용 설정 \
+- 변화 : MAX 함수 등의 기능 대신하여 사용 설정 \
 ',
 
 // 데이터 표준화 
