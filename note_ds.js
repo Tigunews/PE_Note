@@ -158,6 +158,7 @@ var question = question.concat(
 '[블록체인]- ICO',
 '[블록체인]- KYC',
 '[블록체인]- 영지식 증명(Zero-knowledge Proof)',
+'[블록체인][영지식 증명]- zk-SNARK',
 '[블록체인] - 스마트계약(Smart Contract)',
 '[블록체인][Smart Contract]- Smart Contract Audit',
 '[블록체인]- 하이퍼레저 프로젝트',
@@ -3386,6 +3387,17 @@ var answer = answer.concat(
 # 사례 <br/>\
 - 이더리움(zk-SNARKs, 제크캐시(Quorum, JP 모건)<br/>\
 - 코인플러그(메타디움, 부정거래 및 사기 행위)\
+',
+
+// zk-SNARK
+'# 정의 : 기존 영지식 증명 한계 극복 / Non-interactive + Succinct <br/>\
+- zero-knowledge Succinct Non-interactive ARguments of Knwledge <br/>\
+- 기존 비대화형(Non-interactive) 증명방식(예, 슈노기법)에서 소요시간이 적지 않은 단점을 개선한 간결함(Succinct)이 추가된 증명 방식 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/zkSNARK.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 특징 <br/>\
+- 비상호성 : 증명자와 검증자의 온라인 여부 관계 없이 증명 및 검증 가능 <br/>\
+- 간결성 : 증명 사이즈가 수 1/1000초 안에 검증, 소규모, 간결 \
 ',
 
 // Smart Contract
