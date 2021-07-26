@@ -6,14 +6,14 @@ var answer =
 ];
 var memorization =
 [
-'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계', 'ISO/IEC 20889', '이상값', 'majorstate', '33000', '25000', 'IPv6', 'DHCP', '멀티 클라우드', '쿠버네티스', '12 Factors', 'Smart Grid', 'CMMI', 'SD WAN', '멀티 클라우드', '산업의 디지털 전환 및 지능화 촉진법', 'ASPICE', 'COBIT 5.0', 'Text Mining', '보고서 작성 원칙', '아키텍처 평가', '망분리', 'Privacy By Design', '마이데이터', 'PIA', '자율주행 자동차',
+'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계', 'ISO/IEC 20889', '이상값', 'majorstate', '33000', '25000', 'IPv6', 'DHCP', '멀티 클라우드', '쿠버네티스', '12 Factors', 'Smart Grid', 'CMMI', 'SD WAN', '멀티 클라우드', '산업의 디지털 전환 및 지능화 촉진법', 'ASPICE', 'COBIT 5.0', 'Text Mining', '보고서 작성 원칙', '아키텍처 평가', '망분리', 'Privacy By Design', '마이데이터', 'PIA', '자율주행 자동차', 'DDD',
 ]
 var this_week_question =
 [
 '',
 
 // 17주차 추가
-'갠드크랩', 'SCM', '서버리스', 'PIA', '인공지능 학습용 데이터 품질관리 지표', 'Attention', 'GPS`', '산업의 디지털 전환 및 지능화 촉진법', 'ISO 11179',
+'갠드크랩', 'SCM', '서버리스', 'PIA', '인공지능 학습용 데이터 품질관리 지표', 'Attention', 'GPS`', '산업의 디지털 전환 및 지능화 촉진법', 'ISO 11179', 'DDD',
 
 // 16주차 추가
 'ISO 11179', 'TTAK.KO-10.0555', 'Data Mining', 'Hint', '데이터 경제', '구독 경제', '공유 경제', '데이터 댐', 'SW사업', 'GDPR', '패키지 설계원리','R-CNN', 'Optimizer',
