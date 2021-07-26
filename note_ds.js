@@ -329,7 +329,7 @@ var answer = answer.concat(
 - 자율항행 드론 : 도시 현황 모니터링, 재해 예방, 물류 지원 서비스 <br/><br/>\
 # 챌린지 사업, 정책 변화 <br/>\
 <img src = "./img/KoreaSmartChallenge.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 활성화 모델 <br/>\
+# 활성화 모델 (<font color = "red">오봄봇보</font>)<br/>\
 - OBM(Open Business Model) : 모든 사업자와 함게 구축 <br/>\
 - BOM(Build Operate Manage) : 구축,유지,제공 계약 월단위 지불 <br/>\
 - BOT(Build Operate Transfer) : 아웃소싱 후 직접 유지관리 <br/>\
