@@ -595,7 +595,7 @@ var answer = answer.concat(
 - 규모 보정계수 : 0.4057 x (loge(기능점수) - 7.1978)^2 + 0.8878 <br/>\
 -> <font color = "red">500</font>FP 미만시 <font color = "red">1.2800</font>, <font color = "red">3,000</font>FP 초과시 <font color = "red">1.1530</font> 적용 <br/><br/>\
 2. 애플리케이션 복잡도 (<font color = "red">연성운보</font>)<br/>\
-- 연계복잡성 수준 : 연계 기관당 관리의 복잡성 (<font color = "red'>1~2 연계 기관 0.94</font>)<br/>\
+- 연계복잡성 수준 : 연계 기관당 관리의 복잡성 (<font color = "red">1~2 연계 기관 0.94</font>)<br/>\
 - 성능요구 수준 : 응답시간 또는 처리율에 대한 사용자 요구수준 <br/>\
 - 운영환경 호환성 : 응용SW의 설치 운영 환경의 상이한 정도 <br/>\
 - 보안성 수준 : 시큐어코딩, 웹취약점점검, 암호화점검, 개인정보보호 등 요구 수준 <br/><br/>\
