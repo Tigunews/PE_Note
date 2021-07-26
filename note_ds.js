@@ -1885,6 +1885,8 @@ var answer = answer.concat(
 - 민원,분쟁사항 관리 <br/>\
 - 정기 협의체 운영 : 의견 조율<br/>\
 - 마이데이터 종합포털 운영 <br/><br/>\
+# 가이드 구성 <br/>\
+<img src = "./img/MyDataGuideline.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 120회 2교시 2번\
 ',
 
