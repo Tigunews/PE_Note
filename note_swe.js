@@ -582,8 +582,8 @@ var answer = answer.concat(
 2. 트랜잭션 기능 <br/>\
 - 기능유형 : EI, EO, EQ <br/>\
 - 복잡도 및 기여도 : DET, FTR(Table 수) <br/><br/>\
-# 개발비 산정절차 / 산출물 <br/>\
-<img src = "./img/SWE_1.png" style = "max-width:100%; height:auto;"><br/>\
+# 개발비 산정절차 / 산출물 (<font color = "red">사개보직소</font>)<br/>\
+<img src = "./img/FP_Process.png" style = "max-width:100%; height:auto;"><br/>\
 - 사전준비 : 업무, 요구사항 정의, 규모(FP), 산정방법(정통,간이) 결정 / 규모 산정 방법 <br/>\
 - 개발대상 SW 기능점수 산정 : 기능 식별, 복잡도 고려 산정 / 개발대상 SW 기능점수 <br/>\
 - 보정전 개발원가 산정 : FP * 단가 / 보정전 개발원가 <br/>\
@@ -595,7 +595,7 @@ var answer = answer.concat(
 - 규모 보정계수 : 0.4057 x (loge(기능점수) - 7.1978)^2 + 0.8878 <br/>\
 -> <font color = "red">500</font>FP 미만시 <font color = "red">1.2800</font>, <font color = "red">3,000</font>FP 초과시 <font color = "red">1.1530</font> 적용 <br/><br/>\
 2. 애플리케이션 복잡도 (<font color = "red">연성운보</font>)<br/>\
-- 연계복잡성 수준 : 연계 기관당 관리의 복잡성 <br/>\
+- 연계복잡성 수준 : 연계 기관당 관리의 복잡성 (<font color = "red'>1~2 연계 기관 0.94</font>)<br/>\
 - 성능요구 수준 : 응답시간 또는 처리율에 대한 사용자 요구수준 <br/>\
 - 운영환경 호환성 : 응용SW의 설치 운영 환경의 상이한 정도 <br/>\
 - 보안성 수준 : 시큐어코딩, 웹취약점점검, 암호화점검, 개인정보보호 등 요구 수준 <br/><br/>\
