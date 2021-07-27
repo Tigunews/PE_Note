@@ -2085,14 +2085,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 비용 : 구축비용(높음), 운영비용 (낮음) <br/>\
 - 성능 최적화 : 최적화 용이 <br/>\
 - 정보보안 : 높음 <br/><br/>\
-# 현황 <br/>\
-- 독일 : 제조업체 중심, 3.7~3.8GHz 대역 특화망 면허 공급 <br/>\
-- 일본 : 5G 지역확산 목적, 28.2~28.3GHz, 4.6~4.8GHz, 28.3~29.1GHz <br/>\
-- 영국 : 산업체 특화망 구축, 실내 커버리지 확대, 3.8~4.2GHz <br/>\
-- 국내 : 5G 특화망(B2B) 구축 주체 이통사만 허용, 시정 불투명, 실내용 장비 개발 지연 (실증,시범사업 수준) <br/><br/>\
-# 활용예시 <br/>\
-<img src = "./img/Private5GExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구축 유형 <br/>\
+<img src = "./img/Private5GStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 1. 독자적 구축 (물리적 분리) <br/>\
 - 투자장비 : 5G Core, MEC, 5G RAN 등 Full Set <br/>\
 - 주파수 : 비면허/면허 대역 <br/>\
@@ -2126,6 +2120,13 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/Private5GFrequency.png" style = "max-width:100%; height:auto;"><br/>\
 - 28GHz 대역(우선공급) : 이동통신 주파수 인접 (28.9~28.5GHz (600MHz폭) 공급 <br/>\
 - 6GHz 이하 대역(추후 검토) : 지역 공동사용 B2B 주파수 추가 확보방안 검토 <br/><br/>\
+# 현황 <br/>\
+- 독일 : 제조업체 중심, 3.7~3.8GHz 대역 특화망 면허 공급 <br/>\
+- 일본 : 5G 지역확산 목적, 28.2~28.3GHz, 4.6~4.8GHz, 28.3~29.1GHz <br/>\
+- 영국 : 산업체 특화망 구축, 실내 커버리지 확대, 3.8~4.2GHz <br/>\
+- 국내 : 5G 특화망(B2B) 구축 주체 이통사만 허용, 시정 불투명, 실내용 장비 개발 지연 (실증,시범사업 수준) <br/><br/>\
+# 활용예시 <br/>\
+<img src = "./img/Private5GExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 4일차 2교시 6번\
 ',
 
