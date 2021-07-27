@@ -4034,7 +4034,9 @@ P 히스토그램 : Data 분포 <br/>\
 6. Dependent (의지하는) <br/>\
 1. Dormant (휴면기의) <br/>\
 2. Discretionary (자유재량에 의한) <br/>\
-3. Demanding (요구가 많은) \
+3. Demanding (요구가 많은) <br/><br/>\
+<img src = "./img/StakeholderSalienceModelCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 125회 4일차 1교시 13번\
 ', 
 
 // 갈등관리
