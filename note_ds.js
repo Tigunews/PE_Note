@@ -5425,7 +5425,7 @@ var answer = answer.concat(
 - 메트로 지역 커뮤니티 클라우드 : 도시, 광역도시 지역 내 고객 대상 클라우드 <br/>\
 - 5G 모바일 엣지 클라우드 : 통신사 네트워크 내에서 제공되는 클라우드 <br/>\
 - 글로벌 네트워크 엣지 클라우드 : 네트워크 인프라의 라우터, 기지국, 허브 같은 곳에서 제공 클라우드 <br/><br/>\
-# 구성도 <br/>\
+# 구성도 (<font color = "red">코리에</font>)<br/>\
 <img src = "./img/DistributedCloudStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. 코어 계층 <br/>\
