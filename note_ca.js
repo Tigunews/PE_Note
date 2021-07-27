@@ -256,9 +256,9 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - Count : 파일의 바이트 수 <br/><br/>\
 2. Data block Pointer (Direct Indirect)<br/>\
 - Direct : 직접 데이터 블록을 가리키는 포인터로 구성, 12개 보인트 Array 96KB <br/>\
-- Single indirect : 데이터 블록을 가리키는 포인터로 구성 96KB ~ 16MB <br/>\
-- Dobule indirect : 2개의 레이어(인덱스 블록 포인터 / 실제 데이터 블록 포인터) 16MB~32GB <br/>\
-- Triple indirect : 3개의 레이어(1,2 다른 인덱스 블록 포인터 / 실제 데이터 블록 포인터) ~70TB <br/><br/>\
+- Single indirect : 데이터 블록을 가리키는 포인터로 구성 4MB <br/>\
+- Dobule indirect : 2개의 레이어(인덱스 블록 포인터 / 실제 데이터 블록 포인터) 4GB <br/>\
+- Triple indirect : 3개의 레이어(1,2 다른 인덱스 블록 포인터 / 실제 데이터 블록 포인터) ~4TB <br/><br/>\
 * 라이지움 86회 1교시 4번 \
 ',
   
