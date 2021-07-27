@@ -289,15 +289,15 @@ var answer = answer.concat(
 - ATT&CK Matrix(MITRE) : 공격패턴 프로파일링 <br/><br/>\
 # 구성요소 <br/>\
 1. Tactics(전략) <br/>\
-- 특징 : 공격자 공격 목적, 공격단계 파악 <br/>\
+- 특징 : 공격자 공격 <font color = "red">목적</font>, 공격<font color = "red">단계</font> 파악 <br/>\
 - 측면 : 공격(추가 공격), 대응(피해범위 산정) <br/>\
 - 활용 사례 : APT 공격 그룹, 공격 유형 식별 <br/><br/>\
 2. Technical(기술) <br/>\
-- 특징 : 공격 수행 위한 상세 공격 방법 명령 <br/>\
+- 특징 : 공격 수행 위한 상세 <font color = "red">공격 방법 명령</font> <br/>\
 - 측면 : 공격(공격 수행), 대응자(아티팩트 획득) <br/>\
 - 활용 사례 : 모의 침투(Penetrate Testing), 사후 분석(Incident Response) <br/><br/>\
 3. Procedure(전술) <br/>\
-- 특징 : 전략의 상세 수행 방안(Action) <br/>\
+- 특징 : 전략의 상세 <font color = "red">수행 방안</font>(Action) <br/>\
 - 측면 : 공격자(세부 수행 절차), 대응자(Kill chain 발견) <br/>\
 - 활용 사례 : 전략별 탐지 요소 전술, Artifact 분석 및 활용 <br/><br/>\
 # 버전 <br/>\
@@ -305,7 +305,7 @@ var answer = answer.concat(
 - ATT&CK Matrix for Mobile : Andorid, IOS <br/>\
 - ATT&CK Matrix for ICS : ICS <br/><br/>\
 # 14 Tactics <br/>\
-- Reconnaissance : 다른 시스템 위동 위한 탐구 단계 <br/>\
+- Reconnaissance : 다른 시스템 이동 위한 <font color = "red">탐구</font> 단계 <br/>\
 - Resource Development : 다른 시스템 이동 위한 계정 확보 단계 <br/>\
 - Initial Access : 네트워크 진입 위해 사용자 환경 정보 취득 목적 <br/>\
 - Execution : 악성 코드 실행 위한 활동 <br/>\
