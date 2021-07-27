@@ -1021,9 +1021,17 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 # 암기 <br/>\
 - 12301401234 -34 <br/>\
 - 참프부 <br/><br/>\
-# 대응 방법 : 페이지 교체 정책(OPT, LRU), 최적화 원칙 설계(Locality, PFF)<br/><br/>\
-<img src = "./img/Belady_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Belady_2.png" style = "max-width:100%; height:auto;">\
+<img src = "./img/Belady_1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/Belady_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 해결법 <br/>\
+1. 페이지 교체 정책 <br/>\
+- LRU : 가장 최근 참조 안된 페이지 <br/>\
+- OPT : 오랫동안 사용 않을 페이지 <br/><br/>\
+2. 최적화 설계 원칙 <br/>\
+- Locality : 시간/공간/순차적 지역성 홀용 - 일정기간 참조되는 페이지 집합 주기억 장치 유지 <br/>\
+- PFF(Page Fault Frequency) : 상/하한 프레임 개수 설정, 직접적 페이지 부재율 예측/조절 방법 <br/>\
+- Working Sset : Active 참조 Page 집합인 Working Set 정하여 주기억 장치 상주 방법 <br/><br/>\
+* ITPE 합숙 125회 2일차 1교시 4번\
 ',
 
 // [가상 메모리 페이지 교체 알고리즘]- 스레싱
