@@ -682,8 +682,8 @@ var answer = answer.concat(
 - 패스워드 입력 <br/>\
 - N번 만큼 반복 <br/>\
 - 일치 여부 확인 <br/><br/>\
-# 기술 사례 <br/>\
-- Digest = <fontcolor = "red">PBKDF2</font>(PRF, Password, Salt, c, DLen) <br/>\
+# 기술 사례 (<font color = "red">P패솔CD</font>)<br/>\
+- Digest = <font color = "red">PBKDF2</font>(PRF, Password, Salt, c, DLen) <br/>\
 - PRF : 난수(ex : HMAC) <br/>\
 - Password : 비밀번호 <br/>\
 - Salt : Random 난수 <br/>\
