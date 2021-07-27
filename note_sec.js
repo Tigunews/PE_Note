@@ -3,6 +3,7 @@
 '보안 Overview',
 '내외부 정보보안 위협',
 '공격 유형 Overview',
+'Cyber Kill Chain',
 'ATT and CK',
 '암호학',
 '[암호학]- Kerckhoff 원리',
@@ -263,6 +264,19 @@ var answer = answer.concat(
 - 사례 : IDS/IPS, FW, WAF, SIEM <br/><br/>\
 2. IoA (Indicators of Attack) <br/>\
 - 사례 : AI, 머신러닝, 위협헌팅(Threat Hunting)\
+',
+
+// Cyber Kill Chain
+'# 정의 : 프로세스 기반 분석 / 위협요소 파악 / 공격활동 완화 / 7단계 공격 분석 모델 <br/>\
+- 사이버 공격을 프로세스 기반으로 분석하여 각 단계에서 가해지는 위협 요소를 파악하고 공격활동을 완화하기 위해, 공격할 때 쓰는 방법을 7단계로 정의한 사이버 공격 분석 모델 <br/><br/>\
+# 세부항목 <br/>\
+- Reconnaissance(정찰) : 공격 모굪, 표적 조사/식별/선정 <br/>\
+- Weaponization(무기화) : 자동화 도구이용, 사이버 무기 준비 <br/>\
+- Delivery(전달) : 표적 시스템에 사이버 무기 유포 <br/>\
+- Exploitation(익스플로잇) : 표적시스템에 악성 프로그램 설치 <br/>\
+- C&C(Command and Control) : 표적시스템 원격조작 채널구축 <br/>\
+- Actions on Objectives(행동개시) : 정보수집/시스템 파괴 등 공격수행 <br/><br/>\
+* 111회 관리 1교시 11번\
 ',
 
 // ATT and CK 
