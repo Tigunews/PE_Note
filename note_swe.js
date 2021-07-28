@@ -4372,7 +4372,7 @@ P 히스토그램 : Data 분포 <br/>\
 - 소프트웨어, 제품 및 서비스 개발 조직의 공정 및 관리 능력을 향상시키고, <font color = "red">생산성과 효율적 행동을 장려</font>할 수 있도록 고안된 프로세스이자 모델 <br/><br/>\
 # Overview <br/>\
 <img src = "./img/CMMI2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성도 (<font color = "red">PC, Model (PA G P) <br/>\
+# 구성도 (<font color = "red">PC, Model (PA G P)</font>) <br/>\
 <img src = "./img/CMMI_Model.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 1. Model <br/>\
