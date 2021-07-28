@@ -72,7 +72,7 @@
 '[설계단계][UML]- UML 확장매커니즘',
 '[설계단계][UML]- Behavior Diagram',
 '[설계단계][UML][Behavior Diagram]- Activity Diagram',
-'[설계단계][UML][Behavior Diagram]- Statement Diagram',
+'[설계단계][UML][Behavior Diagram]- State Machine Diagram',
 '[설계단계][UML][Behavior Diagram]- Usecase Diagram',
 '[설계단계][UML][Interaction Diagram]- Sequence Diagram',
 '[설계단계][UML][Structure Diagram]- Class Diagram',
@@ -1538,7 +1538,7 @@ var answer = answer.concat(
 1. Logical View <br/>\
 - 개념 : 시스템 -> 사용자 제공 기능 구조적 구성요소 역할 분해, 관계 명시 View <br/>\
 - 관점 : End-User <br/>\
-- 표현 : Class, State Diagram <br/><br/>\
+- 표현 : Class, State Macine Diagram <br/><br/>\
 2. Process View <br/>\
 - 개념 : 프로세스간 통신, Run-Time 동작 표현 초점 View <br/>\
 - 관점 : System Integrators <br/>\
