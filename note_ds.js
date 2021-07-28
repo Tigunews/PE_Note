@@ -1263,7 +1263,7 @@ var answer = answer.concat(
 <font color = "red"> - Digital NewDeal : D비초S <br/>\
 - Green NewDeal : 탄도저녹 <br/>\
 - Human NewDeal : 사고청격 <br/>\
-- 지역균형 NewDeal : 지지공 </font><br/><br/>\
+- 지역균형 NewDeal : 재민제 </font><br/><br/>\
 <img src = "./img/KNewDeal2Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 변경점 <br/>\
 1. Digital NewDeal <br/>\
