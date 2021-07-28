@@ -1910,22 +1910,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/5G_2.jpg" style = "width:100%; height:auto;"><br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/5G_Overview.png" style = "width:100%; height:auto;"><br/><br/>\
-# 특징 <br/>\
-- 고속 <br/>\
-- 저지연 <br/>\
-- 대용량 <br/><br/>\
 # 주요기술 <br/>\
-1. eMBB <br/>\
+1. eMBB (초고속) <br/>\
 - 주파수 : 3.5GHz, 2.8GHz(mmWave) <br/>\
 - 직교분할 다중 전송 : 5G OFDM <br/>\
 - 3D Beamforming : 기지국, 단말간 수직, 수평 3D 빔 사용, 집중 조사 <br/>\
 - Massive MIMO : 동일 전파 자원 동시 서비스, 수십~수백개 안테나 기술 <br/>\
 - SA, NSA : 5G, LTE 망 동시 사용 <br/><br/>\
-2. URLLC <br/>\
+2. URLLC (초저지연, 고신뢰) <br/>\
 - Network Slicing : 네트워크 분할 서비스 <br/>\
 - MEC : 초저지연 서비스 <br/>\
 - SDN/NFV : 코어망 최적 운용 <br/><br/>\
-3. mMTC <br/>\
+3. mMTC (초연결) <br/>\
 - 수용용량 : 1Km2 10만 > 100만 <br/>\
 - 가변적 채널 대역폭 할당 : 15KHz 고정 OFDM 부반송파 2^n 비율 확장 <br/>\
 - eMTC : LTE-M, NB-IoT 장점 결합 <br/>\
