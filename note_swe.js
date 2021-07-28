@@ -4390,6 +4390,10 @@ P 히스토그램 : Data 분포 <br/>\
 - Evaluation(자체 심사) : 방침, 프로세스 모델 일치성 여부 점검 통한 개선 사항 식별 <br/>\
 - Action Plan Reappraisal(재 심사) : 실패, 심사 목표 달성 확인, 60일 내 재심사, 동일 심사위원 진행 <br/><br/>\
 # Process Category (D(생산), M(계획), E(제공), I(유지)) <br/>\
+- Doing : 고객 만족 솔루션 생산, 제공 / Ensuring Quality, Engineering and Developing Products <br/>\
+- Managing : 솔루션 이행 계획, 관리 / Plaaning and Managing Work, Managing Business Reslilience <br/>\
+- Enabling : 솔루션 이행 및 제공 지원 / Supporting Implementation, Managing Safety,Security  <br/>\
+- Improving : 성과 향상 유지 / Improving Performance, Building and Sustaining Capability <br/><br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 1.3 2.0 비교 <br/>\
 <img src = "./img/CMMI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
