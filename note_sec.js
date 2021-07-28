@@ -5,6 +5,7 @@
 '공격 유형 Overview',
 'Cyber Kill Chain',
 'ATT and CK',
+'STRIDE',
 '암호학',
 '[암호학]- Kerckhoff 원리',
 '[암호학]- 혼돈과 확산',
@@ -322,6 +323,17 @@ var answer = answer.concat(
 # CyberKill Chain 비교 <br/>\
 <img src = "./img/CyberKillChainATTandCK.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 * ITPE 8회 관리 1교시 12번\
+',
+
+// STRIDE
+'# 설명 <br/>\
+- Spoofing Identity(신원도용) : 인증 <br/>\
+- Tempering with data(데이터 변조) : 무결성 <br/>\
+- Repudiation(부인) : 부인 방지 <br/>\
+- Information Disclosure(정보 유출) : 기밀성 <br/>\
+- Denial of Service(서비스 거부) : 가용성 <br/>\
+- Elevation of Privilege(권한 상승) : 권한 부여 <br/><br/>\
+* ITPE 합숙 125회 4일차 2교시 1번\
 ',
   
 // 암호학
