@@ -4404,7 +4404,7 @@ P 히스토그램 : Data 분포 <br/>\
 - CA : Supporting Implementation, Managing Safety,Security <br/><br/>\
 4. Improving <br/>\
 - 설명 : 성과 향상 유지 <br/>\
-- 목표 : 효과적, 지속가능적 <br/>\
+- 목표 : 효과적, 지속 가능적 <br/>\
 - CA : Improving Performance, Building and Sustaining Capability <br/><br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 1.3 2.0 비교 <br/>\
