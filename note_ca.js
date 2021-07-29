@@ -2048,8 +2048,11 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // In-Memory Computing 
 '# 정의 : 어플리케이션을 구동하는 컴퓨터의 메인 메모리에 DB 데이터와 같은 주요 데이터를 저장하고 처리하는 컴퓨팅 기술 <br/><br/>\
 # 특징 : 메인메모리 DB구축, 직접 저장 관리, 디스크 관리 최소화 <br/><br/>\
+# 스택 <br/>\
+<img src = "./img/InMemoryComputing.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 기술요소 <br/>\
 <img src = "./img/InMemoryComputingTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 합숙 125회 관리 1교시 8번 <br/>\
 * 119회 4교시 6번\
 ',
     

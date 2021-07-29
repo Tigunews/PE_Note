@@ -23,6 +23,7 @@ var question = question.concat(
 '[Layer3]- 거리벡터 라우팅',
 '[Layer3]- 링크스테이트 라우팅',
 '[Layer3]- IGMP',
+'[Layer4]- 혼잡제어',
 '[Layer4]- TCP',
 '[Layer4][TCP]- SSL/TLS',
 '[Layer4][UDP]- DTLS',
@@ -584,6 +585,23 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - IGMP Snooping : 라우터, 호스트 사이 스위치 IGMP 메시지 듣도록하는 기능 (IPTV) <br/>\
 - IGMP Querier Election : 동일 LAN에 여러 멀티캐스트 라우터 존재시, 가장 낮은 주소 라우터 Querier 역할 집중 기능 <br/><br/>\
 * ITPE 8회 관리 1교시 9번\
+',
+
+// 혼잡제어
+'# 정의 : 유입 트래픽 / 용량 초과x / 유지 메커니즘 <br/>\
+- 네트워크로 유입되는 사용자 트래픽(데이터에 대한 표현)의 양이 네트워크 용량을 초과하지 않도록 유지시키는 메커니즘 <br/><br/>\
+# 메커니즘 <br/>\
+<img src = "./img/CongestionControl.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성 <br/>\
+- Slow Start : CNWD 크기 전송시마다 2배씩 증가, ACK 실패시 감소 <br/>\
+- Congestion Avoidance : ACK 수신시 마다 CNWD선형적으로 증가 전송 <br/>\
+- Fast Retransmission : 송신자에게 다음 수신알 Sequence Number 알려주고, 그 이후 Slow start <br/>\
+- Fast Recovery : Fast Retransmission 통해 손실 세그먼트 전송 후, Congestion Avoidance 수행 방식 <br/><br/>\
+# 알고리즘 분류 <br/>\
+- 손실기반 : 패킷 손실, 타임아웃, ACK 손실 발생 판단 / Tahoe, Reno <br/>\
+- 지연기반 : 측정한 RTT 값 늘어나는 경우 판단 / TCP Vegas, Fast TCP <br/>\
+- 하이브리드 : 손실 기반 혼잡 제어, 지연 기반 혼잡제어 융합 / CTCP(Compound), DCTCP(Data Center) <br/><br/>\
+* ITPE 합숙 125회 관리 1교시 13번\
 ',
   
 // TCP
