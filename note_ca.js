@@ -1279,6 +1279,11 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 장점 : 하드웨어 간단, 프로그래밍 편리 <br/>\
 - 단점 : 공유자원 경합, 시스템 크기 한계 <br/>\
 - 사례 : 공유-버스(30 이하), 크로스바 MIN(64 이하) <br/><br/>\
+# 관계 <br/>\
+- UMA : 단일 프로세서 처리 극복 <br/>\
+- NUMA : UMA 시스템 크기 극북 <br/>\
+- NORMA : 원격 기억장치 직접 접근 불가 <br/>\
+- COMA : 캐시 사용 <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
 ',
 
