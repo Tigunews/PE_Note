@@ -23,7 +23,7 @@ var question = question.concat(
 '[Layer3]- 거리벡터 라우팅',
 '[Layer3]- 링크스테이트 라우팅',
 '[Layer3]- IGMP',
-'[Layer3]- 혼잡제어',
+'[Layer4]- TCP 혼잡제어',
 '[Layer4]- TCP',
 '[Layer4][TCP]- SSL/TLS',
 '[Layer4][UDP]- DTLS',
