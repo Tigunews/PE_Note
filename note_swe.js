@@ -4397,7 +4397,7 @@ P 히스토그램 : Data 분포 <br/>\
 2. Managing <br/>\
 - 설명 : 솔루션 이행 계획, 관리 <br/>\
 - 목표 : 이슈 해결 <br/>\
-- CA : laaning and Managing Work, Managing Business Reslilience <br/><br/>\
+- CA : Plaaning and Managing Work, Managing Business Reslilience <br/><br/>\
 3. Enabling <br/>\
 - 설명 : 솔루션 이행 및 제공 지원 <br/>\
 - 목표 : 명확한 접근 방식 제공 <br/>\
