@@ -6,7 +6,7 @@ var answer =
 ];
 var memorization =
 [
-'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계', 'ISO/IEC 20889', '이상값', 'majorstate', '33000', '25000', 'IPv6', 'DHCP', '멀티 클라우드', '쿠버네티스', '12 Factors', 'Smart Grid', 'CMMI', 'SD WAN', '멀티 클라우드', '산업의 디지털 전환 및 지능화 촉진법', 'ASPICE', 'COBIT 5.0', 'Text Mining', '보고서 작성 원칙', '아키텍처 평가', '망분리', 'Privacy By Design', '마이데이터', 'PIA', '자율주행 자동차', '차세대 Healthcare Service', 'DDD', '보안이슈, 대응방안', 'TLS', 'Private 5G', '난독화', '디지털서비스 전문계약제도', 'ATT and CK', '블록암호화', 'BCP', '5G', 'FP', 'AutoML', '강화학습', '모방학습', '유전자 알고리즘', 'Smart Factory', 'PPP', '현저성 모델', 'STRIDE', '안티드론', 'Smart Contract', 'MVP', 'Gartner', 'In-Memory', '하이퍼레저', 'UX 모델링', 'SSL', 'ISO/IEC/IEEE 42010',
+'', '정성적 위험분석', '정량적 위험분석', '암스트롱 공리', 'Join', '뉴딜', 'ITIL', 'IEEE 802.11p', '데이터 댐', 'ISO/IEC 27018', 'Cloud 보안', 'IEEE/ISO/IEC 25010', '4 Plus 1 View', '패키지 설계', 'ISO/IEC 20889', '이상값', 'majorstate', '33000', '25000', 'IPv6', 'DHCP', '멀티 클라우드', '쿠버네티스', '12 Factors', 'Smart Grid', 'CMMI', 'SD WAN', '멀티 클라우드', '산업의 디지털 전환 및 지능화 촉진법', 'ASPICE', 'COBIT 5.0', 'Text Mining', '보고서 작성 원칙', '아키텍처 평가', '망분리', 'Privacy By Design', '마이데이터', 'PIA', '자율주행 자동차', '차세대 Healthcare Service', 'DDD', '보안이슈, 대응방안', 'TLS', 'Private 5G', '난독화', '디지털서비스 전문계약제도', 'ATT and CK', '블록암호화', 'BCP', '5G', 'FP', 'AutoML', '강화학습', '모방학습', '유전자 알고리즘', 'Smart Factory', 'PPP', '현저성 모델', 'STRIDE', '안티드론', 'Smart Contract', 'MVP', 'Gartner', 'In-Memory', '하이퍼레저', 'UX 모델링', 'SSL', 'ISO/IEC/IEEE 42010', 'ISO 12207',
 ]
 var this_week_question =
 [
