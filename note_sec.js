@@ -288,7 +288,7 @@ var answer = answer.concat(
 - Cyber Attack Lifecycle(FireEye Mandiant) : 공격방법 패턴화 <br/>\
 - Cyber Kill Chain(Lockhead Martin) : 공격단계별 방어전략 <br/>\
 - ATT&CK Matrix(MITRE) : 공격패턴 프로파일링 <br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">목방수</font>)<br/>\
 1. Tactics(전략) <br/>\
 - 특징 : 공격자 공격 <font color = "red">목적</font>, 공격<font color = "red">단계</font> 파악 <br/>\
 - 측면 : 공격(추가 공격), 대응(피해범위 산정) <br/>\
