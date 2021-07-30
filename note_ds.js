@@ -3767,7 +3767,7 @@ var answer = answer.concat(
 '# 정의 : 오픈 소스 기반 / 개발환경, 모니터링, 오토스케일링, 마켓플레이스 / 개방형 클라우드 플랫폼 <br/>\
 - 오픈소스 기반의 클라우드 서비스 개발환경과 통합 모니터링 환경, 오토스케일링, 마켓플레이스 제공 등의 기능이 추가된 개방형 클라우드 플랫폼 <br/><br/>\
 # 특징 : 오픈소스 기반, 아파치 라이선스 2.0 기반, Kubernetes, Cloud Foundry <br/><br/>\
-# 변천사 <br/>\
+# 변천사(<font color = "red">기운데쿠모오마</font>) <br/>\
 <img src = "./img/PaaSTA.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성도 <br/>\
 <img src = "./img/PaaSTA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
