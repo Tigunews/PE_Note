@@ -1610,7 +1610,7 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 ',
   
 // COBIT 5.0
-'# 정의 : 실행, 수준 진단 / 감사, 개선 / IT-Governance Framework <br/>\
+'# 정의 : 실행, 수준 진단 / 통제, 감사, 개선 / IT-Governance Framework <br/>\
 - IT 거버넌스 실행, 수준 진단 통해 IT 통제, 감사, 개선에 사용되는 IT 거버넌스 프레임워크 <br/><br/>\
 # 진화 과정(<font color = "red">ACMIG</font>) : Audit > Control > Management > IT Governance > Governance of Enterprise IT <br/><br/>\
 # 구성요소 <br/>\
