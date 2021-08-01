@@ -108,6 +108,7 @@
 '[구현단계]- MISRA-C, MISRA-C++',
 '[구현단계]- node.js',
 '[구현단계]- Javascript',
+'Java GUI',
 '[시험단계]- 테스트 7원칙',
 '[시험단계]- 테스트 유형',
 '[시험단계]- 테스트 절차',
@@ -2211,6 +2212,25 @@ var answer = answer.concat(
 - 학습성 : 개발난이도 낮음 <br/>\
 - 기능성 : 서버제어 <br/><br/>\
 # 고려사항 : 보안, 구현 제한성, 프로그래밍 오류, 암묵적 전역 \
+',
+
+// Java GUI
+'# 정의 : 메뉴, 화면 구성 / 편리 사용 인터페이스 <br/>\
+- 이미지 혹은 그래픽을 이용하여 메뉴, 화면을 구성하고 입력 도구를 이용해 사용자가 편리하게 사용하는 인터페이스 <br/><br/>\
+# 유형 <br/>\
+1. AWT(Abstract Window Toolkit) <br/>\
+- 개념 : OS의 컴포넌트를 그대로 사용 도구 <br/>\
+- 주요 컴포넌트 : Frame, Paneet, Applet, Dialog, Window <br/>\
+- 패키지 : java.awt <br/>\
+- 컴포넌트 : Heavy weight <br/>\
+- 특징 : 구현 쉬움, OS별 최소 Wrapper 재현, 일반 기능 직접 구현 <br/><br/>\
+2. SWING <br/>\
+- 개념 : AWT 기술 기반 확장, 순수 자바 언어 라이브러리 <br/>\
+- 주요 컴포넌트 : JFrame, JPanet, JApplet, JDialog, JWindow <br/>\
+- 패키지 : java.swing <br/>\
+- 컴포넌트 : Light weight <br/>\
+- 특징 : 운영체제간 버그 자동 해결, 스윙 GUI Component, 자바 2D API <br/><br/>\
+* 125회 관리 1교시 3번\
 ',
 
 // 테스트 7
