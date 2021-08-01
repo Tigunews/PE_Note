@@ -3807,7 +3807,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Continuous Monitoring : 지속적 위험 관리 <br/>\
 - DLP(Data Loss Prevention) : 데이터 암호화, 민감 데이터 관리 <br/>\
 - E-Mail Security : 악성 첨부파일, 스팸 정보보호 <br/>\
-- Ecryption : 데이터 암호화 <br/>\
+- Encryption : 데이터 암호화 <br/>\
 - IAM(Identity and Access Management) : 인증, 신원보증, 권한관리 <br/>\
 - Instrusion Management : 침입 시도 탐지 및 방지 <br/>\
 - Network Security : 네트워크 보안 <br/>\
@@ -3816,11 +3816,13 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Vulnerability Scanning : 취약점 검사 <br/>\
 - Web Security : 웹 트래픽, 웹 어플리케이션 보안 <br/><br/>\
 # 유형 <br/>\
-1. CSP <br/>\
-- 기존 클라우드 제공자가 안전한 서비스 제공 위한 보안 서비스 <br/>\
+1. CSP (Cloud Service Provider)<br/>\
+- 기존 클라우드 제공자 주체, 기본 보안 <br/>\
+- AWS, Azure <br/>\
 - IAM, DLP, IM, 암호화, 네트워크 보안 <br/><br/>\
-2. SSP <br/>\
-- 모든 시스템들에 대해 전문적인 보안 서비스 제공 위한 서비스 <br/>\
+2. SSP (Security Service Provider)<br/>\
+- 보안 전문 업체 주체, CSP보다 전문적 <br/>\
+- Fortinet, 팔토알토 <br/>\
 - Vulnerability Scanning, Web Security, Email Security, SIEM, Continous Monitoring <br/><br/>\
 # CASB 비교 <br/>\
 <img src = "./img/SECaaSCASB.png" style = "max-width:100%; height:auto;"><br/><br/>\
