@@ -3822,7 +3822,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 2. SSP <br/>\
 - 모든 시스템들에 대해 전문적인 보안 서비스 제공 위한 서비스 <br/>\
 - Vulnerability Scanning, Web Security, Email Security, SIEM, Continous Monitoring <br/><br/>\
-# CASB 비교
+# CASB 비교 <br/>\
 <img src = "./img/SECaaSCASB.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 1교시 1번\
 ',
