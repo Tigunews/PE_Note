@@ -1,5 +1,6 @@
 var question = question.concat(
 'Grouping Keyword',
+'MECE',
 '[Standard]- 국제 표준화 기구',
 '[Standard]- de facto standard',
 'ITSM',
@@ -120,6 +121,23 @@ var answer = answer.concat(
 # 목차 <br/>\
 <img src = "./img/WritingSkill.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 법 : 조,항,호,목 <br/><br/>\
+',
+
+// MECE
+'# 정의 : 중복 제거, 누락 제거 / 사고방식 <br/>\
+- Mutually Exclusive Collectively Exhastive <br/>\
+- 서로 중복되는 것이 없으며, 누락되는 것도 없이 문제의 전체를 파악하는 사고방식 <br/>\
+# 특징 <br/>\
+- 이해 증진 : 복잡한 문제 ㄷ나순화, 이해도 높임 <br/>\
+- 전체 파악 : 문제 빠짐 없이 파악, 놓치는 부분 없게 함 <br/>\
+- 중복 금지 : 동일 차원 개념상 중복 배제 <br/><br/>\
+# 구성요소 <br/>\
+- 초기가설 설정 : 일차적 팩트 조합으로 설정, 문제점 구조적 분할에서 시작 <br/>\
+- 핵심요인 파악 : 문제점 분석 및 핵심 요인 파악, 실행 가능 행동 지침 완성 <br/>\
+- 해결책 산출 및 제시 : 현 상태 실행 가능 해결책 제시, 지속적 탐문 <br/><br/>\
+# LISS 비교 <br/>\
+<img src = "./img/MECE_LISS_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 1교시 8번\
 ',
  
 // 국제 표준화 기구
