@@ -113,6 +113,7 @@ var question = question.concat(
 'Network Storage',
 '자가망 구축 가이드라인',
 'QoS',
+'[QoS]- WFQ',
 '[QoS]- 통합 서비스',
 '[QoS]- 차등 서비스',
 '[QoS][차등][Queuing]- Priority Queue',
@@ -2391,6 +2392,18 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - RED(Random Early Detction) : 혼잡 발생전 랜덤 패킷 폐기 <br/>\
 - WRED(Weighted RED) : 가중치 부여, RED 함수 적용 <br/><br/>\
 * KPC 121회 합숙 2일차 2교시 4번\
+',
+
+// WFQ
+'# 정의 : Fair Queuing 변현 / 특정 기준 가중치 / 같은 양 트래픽 가진 플로우간 차별 / 스케쥴링 기법 <br/>\
+- Weighted Fair Queuing <br/>\
+- 특정 기준에 따라 가중치를 정하여 같은 양의 트래픽을 가진 플로우 간에서도 차별을 두는 스케쥴링 기법 <br/><br/>\
+# 특징 <br/>\
+- 적은양 트래픽 우선 처리 : 많은양 트래픽 용량 공유, 대역폭 동일 나누거나 비례 분배 <br/>\
+- 구현 방식 의존적 가중치 결정 : TOS Field중 IP precedence 비트 사용하여 구현 <br/>\
+- 확장성 한계 : PQ 비슷한 특성, 고속 네트워크 환경 확장성 어려움 <br/><br/>\
+# 개념도 <br/>\
+* 125회 관리 1교시 10번\
 ',
  
 // 통합 서비스
