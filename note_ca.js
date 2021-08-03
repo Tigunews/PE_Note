@@ -62,10 +62,13 @@ var question = question.concat(
 'DDR SDRAM',
 'FeRAM',
 '병렬 컴퓨팅',
-'[병렬 컴퓨팅]- UMA',
-'[병렬 컴퓨팅]- NUMA',
-'[병렬 컴퓨팅]- NORMA',
-'[병렬 컴퓨팅]- COMA',
+'[병렬 컴퓨팅]- Flynn 분류',
+'[병렬 컴퓨팅]- 메모리 공유 분류',
+'[병렬 컴퓨팅][기억장치 액세스]- UMA',
+'[병렬 컴퓨팅][기억장치 액세스]- NUMA',
+'[병렬 컴퓨팅][기억장치 액세스]- NORMA',
+'[병렬 컴퓨팅][기억장치 액세스]- COMA',
+'[병렬 컴퓨팅]- 상호 연결망',
 'ARM',
 '분기 예측 기술',
 '[분기 예측]- 분기 방향 예측',
@@ -1250,11 +1253,19 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 // 병렬 컴퓨팅
 '# 정의 : 다수 프로세서 / 여러개 프로그램, 분할된 부분 / 분담 동시 처리 프로세스 <br/>\
 - 다수의 프로세서들을 이용하여 여러개의 프로그램들 혹은 프로그램의 분할된 부분들을 분담하여 동시에 처리하는 프로세스 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/ParallelProcessingComputingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 필요성 <br/>\
 - 프로세서 처리 속도 한계 <br/>\
 - 고성능 컴퓨터 요구 증대 <br/>\
 - 인터넷 사용자 증대 <br/>\
 - 딥러닝 기술 발전 <br/><br/>\
+# 병렬처리 단위 종류 <br/>\
+- Job Level : 독립적인 Job Program 단위로 병렬처리 <br/>\
+- Task Level : Job 분할 <br/>\
+- Process Level : Task 분할<br/>\
+- Variable Level : 독립 연산 변수 <br/>\
+- Bit Level : 가장 낮은 병렬 처리 <br/><br/>\
 # 구현 위한 조건 <br/>\
 1. 설계 부분 <br/>\
 - 많은 수 프로세서들로 하나의 시스템 구성 필요 <br/>\
@@ -1266,7 +1277,57 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 병렬처리가 순차처리 결과와 같아야 함 <br/>\
 - 병렬 프로그램 언어와 컴파일러 개발 <br/>\
 -> 문제 분할과 프로세스 간 통신 해결 필요, OpenCL, CUDA, OpenMP <br/><br/>\
+# 병렬 컴퓨팅 구성시 문제점 및 해결방안 (<font color = "red">분스동캐</font>)
+1. 분할 <br/>\
+- 문제점 : 태스크 단위 결정 문제 <br/>\
+- 해결방안 : Fine, Medium, Coarse, Very Coarse <br/><br/>\
+2. 스케줄링 <br/>\
+- 문제점 : 분할된 테스크 프로세서 배정 방법 문제 <br/>\
+- 해결방안 : 정적, 동적 <br/><br/>\
+3. 동기화 <br/>\
+- 문제점 : 공유 데이터 무결성 <br/>\
+- 해결방안 : 상호배제, 세마포어, 모니터 <br/><br/>\
+4. 캐시 메모리 관리 <br/>\
+- 문제점 : 여러 프로세서 하나의 버스 메모리 공유, 활용 문제 <br/>\
+- 해결방안 : 사상함수, 교체 알고리즘(FIFO,LFU,LRU), 쓰기 정책(Write Through,Back) <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
+',
+
+// Flynn 분류
+'# 정의 : 명령어 / 데이터 처리 / 병렬 컴퓨팅 체계  <br/>\
+- 가장 널리 사용되는 명령어와 데이터 처리로 분류한 병렬 컴퓨팅 체계 <br/><br/>\
+# 유형 <br/>\
+1. SISD(Single Instruction stream, Single Data stream) <br/>\
+<img src = "./img/SISD.png" style = "max-width:100%; height:auto;"><br/>\
+- 개념 : 한번에 하나씩 명령어, 데이터 순차적 처리 단일 프로세스 시스템 <br/>\
+- 특징 : 일반(폰노이만), 단일 명령-단일 흐름, 파이프라인 구조 사용, 시간적인 병렬처리 가능 <br/><br/>\
+2. SIMD(Single Instruction stream, Multiple Data stream) <br/>\
+<img src = "./img/SIMD.png" style = "max-width:100%; height:auto;"><br/>\
+- 개념 : 하나의 제어장치, 여러개 ALU 이루어진 배열 프로세스 <br/>\
+- 특징 : 단일 명령-다중 데이터, 제어,메모리(1:N), 스칼라,벡터 하드웨어 컴퓨터, 배열 처리기 <br/><br/>\
+3. MISD(Multiple Instruction stream, Single Data stream) <br/>\
+<img src = "./img/MISD.png" style = "max-width:100%; height:auto;"><br/>\
+- 개념 : 여러 개의 처리기, 하나의 데이터 스트림 명령어 실행 구조 <br/>\
+- 특징 : 다중 명령-단일 데이터, 이론적으로만 존재 <br/><br/>\
+4. MIMD(Multiple Instruction stream, Multiple Data stream) <br/>\
+<img src = "./img/MIMD.png" style = "max-width:100%; height:auto;"><br/>\
+- 개념 : 여러 개의 처리기, 서로 다른 명령어 데이터 처리 구조 <br/>\
+- 특징 : 다중 흐름-다중 데이터, LAN,컴퓨터,공유버스,다중포트, 처리기 독립 수행, 프로그램 작성 어려움 <br/><br/>\
+* 125회 관리 2교시 3번\
+',
+
+// 메모리 공유 분류
+'# 종류 <br/>\
+1. SMP(Shared Memory Processors) <br/>\
+- 두개 이상의 프로세서, 공유버스로 상호 연결 시스템 <br/>\
+- 장점 : 프로그래밍 쉬움(기존 단일 처리기 시스템과 동일) <br/>\
+- 단점 : 프로세서 수 제한, 버스공유 인한 트래픽 문제, 대기시간 존재 <br/>\
+<img src = "./img/SMP.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. DMP(Distributed Memory Processors) <br/>\
+- Loosely Coupled 구조, 각 프로세서 지역 기억장치 소유, 타 프로세서 통신 Message <br/>\
+- 장점 : 공유 자원 경합 감소 <br/>\
+- 단점 : 시스템 수 따라 오버헤드 증가, 통신 프로토콜 지연시간 증가 <br/><br/>\
+* 125회 관리 2교시 3번\
 ',
 
 // UMA 
@@ -1327,8 +1388,21 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 다른 캐시 대한 엑세스는 분산 캐시 디렉토리에 의해 지원 <br/>\
 - 초기 데이터들이 임의 캐시 저장, 실행 시간동안 데이터 사용할 프로세서의 캐시로 이동 <br/>\
 - 사례 : Data Diffusion Machine(DDM), KSR-1 <br/>\
-- Numa + Cache 일관성 = ccNUMA(Cache-Coherent NUMA) <br/><br/>\
+- NUMA + Cache 일관성 = ccNUMA(Cache-Coherent NUMA) <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
+',
+
+// 상호 연결망
+'# 정의 : 병렬처리 시스템 / 처리요소 / 기억장치 / 연결 네트워크 <br/>\
+- 병렬처리시스템에서 처리요소들과 기억장치들 사이를 연결하여 주는 네트워크 <br/><br/>\
+# 종류 <br/>\
+1. 정적 상호 연결망 <br/>\
+- 요소간 직접 연결, 고정 연결망 <br/>\
+- 종류 : 선형, 원형, 코달원형, Tree, Mesh, Torus(원형+Mesh) <br/><br/>\
+2. 동적 상호 연결망 <br/>\
+- 실행시간 동안 다양 변경 가능, 통신 패턴 상황 따라 필요 경로 설정 <br/>\
+- 종류 : 버스, 크로스바, 다단계 네트워크 <br/><br/>\
+* 125회 관리 2교시 3번\
 ',
 
 // ARM
