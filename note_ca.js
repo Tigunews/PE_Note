@@ -1277,7 +1277,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 병렬처리가 순차처리 결과와 같아야 함 <br/>\
 - 병렬 프로그램 언어와 컴파일러 개발 <br/>\
 -> 문제 분할과 프로세스 간 통신 해결 필요, OpenCL, CUDA, OpenMP <br/><br/>\
-# 병렬 컴퓨팅 구성시 문제점 및 해결방안 (<font color = "red">분스동캐</font>)
+# 병렬 컴퓨팅 구성시 문제점 및 해결방안 (<font color = "red">분스동캐</font>) <br/>\
 1. 분할 <br/>\
 - 문제점 : 태스크 단위 결정 문제 <br/>\
 - 해결방안 : Fine, Medium, Coarse, Very Coarse <br/><br/>\
