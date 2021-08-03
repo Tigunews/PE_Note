@@ -130,6 +130,7 @@ var question = question.concat(
 '[NW 가상화]- SDN',
 '[NW 가상화]- Open flow',
 '[NW 가상화]- SD WAN',
+'[NW 가상화]- SDR',
 'SASE',
 '유무선 전력전송',
 '망분리',
@@ -2094,27 +2095,15 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // Private 5G
 '# 정의 : 특정 지역 도입 서비스 / 특화 맞춤형 5G 네트워크 <br/>\
 - 특정지역(건물, 공장)등에 한해 사용가능한 5G망으로서, 해당지역에서 도입하고자 하는 서비스에 특화된 맞춤형 네트워크 <br/><br/>\
-# 구축, 운영방식 <br/>\
-1. 이통사 <br/>\
-- 비용 : 구축비용 (낮음), 운영비용 (높음) <br/>\
-- 성능 최적화 : 지원 어려움 <br/>\
-- 정보 보안 : 낮음 <br/><br/>\
-2. 수요기업, 제3자(SI,SW 기업 등) <br/>\
-- 비용 : 구축비용(높음), 운영비용 (낮음) <br/>\
-- 성능 최적화 : 최적화 용이 <br/>\
-- 정보보안 : 높음 <br/><br/>\
 # 구축 유형 <br/>\
 <img src = "./img/Private5GStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-1. 독자적 구축 (물리적 분리) <br/>\
-- 투자장비 : 5G Core, MEC, 5G RAN 등 Full Set <br/>\
-- 주파수 : 비면허/면허 대역 <br/>\
-- 장점 : 보안, 초저지연, 백홀 미사용 <br/>\
-- 단점 : 초기 구축비용, 운영 인력 <br/><br/>\
-2. 이통사 인프라 사용(NW Slicing) <br/>\
-- 투자장비 : 5G RAN 또는 일부, 나머지 선택적 <br/>\
-- 주파수 : 면허 대역 <br/>\
-- 장점 : 초기구축비용, 운영인력 필요 없음 <br/>\
-- 단점 : 백홀구축, 보안고려, Private 대비 지연 <br/><br/>\
+1. 독립형 <br/>\
+- 기업 자가 구축형 : 기업내 5G NW Full Set(gNB, UPF, 5GC, CP, UDM, MEC) 구축(Local 5G 주파수) <br/>\
+- 이통사 구축형 : 이통사 자기 면허 주파수 5G LAN 구축 <br/><br/>\
+2. 공유형 <br/>\
+- RAN Sharing : 물리(UPF, 5GC, CP, UDM, MEC) 논리(gNB) <br/>\
+- RAN and Control Sharing : 물리(UPF, MEC), 논리(gNB, 5GC, CP, UDM) <br/>\
+- End to End Network Slicing : 물리(gNB), 논리(gNB, UPF, 5GC, MEC, UDM) <br/><br/>\
 # 구축 주체, 도입 방식 <br/>\
 1. Type 1 <br/>\
 - 구축 주체 : 수요기업 <br/>\
@@ -2384,13 +2373,16 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 지터 : 최초 신호 왜곡 정도 / Dos, DDoS 대응, 전용선 <br/><br/>\
 # 요소 기술 <br/>\
 1. Queuing <br/>\
+<img src = "./img/FIFO_Queue.png" style = "max-width:100%; height:auto;"><br/>\
 - FIFO Queueing : 하나의 큐 모든 클래스 트래픽 저장 <br/>\
 - Priority Queueing : 여러개 FIFO 큐 사용, 다른 클래스 매핑 <br/>\
 - WRR(Weighted RR) : 가중치 부여 RR 방식 <br/>\
+<img src = "./img/WFQ.png" style = "max-width:100%; height:auto;"><br/>\
 - WFQ(Weighted Faire Queueing) : Priority 큐 변형, 가중치 부여 <br/><br/>\
 2. Buffer 관리 <br/>\
 - RED(Random Early Detction) : 혼잡 발생전 랜덤 패킷 폐기 <br/>\
 - WRED(Weighted RED) : 가중치 부여, RED 함수 적용 <br/><br/>\
+* 125회 관리 1교시 10번\
 * KPC 121회 합숙 2일차 2교시 4번\
 ',
 
@@ -2402,7 +2394,15 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 적은양 트래픽 우선 처리 : 많은양 트래픽 용량 공유, 대역폭 동일 나누거나 비례 분배 <br/>\
 - 구현 방식 의존적 가중치 결정 : TOS Field중 IP precedence 비트 사용하여 구현 <br/>\
 - 확장성 한계 : PQ 비슷한 특성, 고속 네트워크 환경 확장성 어려움 <br/><br/>\
-# 개념도 <br/>\
+# 메커니즘 <br/>\
+<img src = "./img/WFQ_Mecahnishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# WFQ 확장 <br/>\
+1. CBWFQ(Class-Base WFQ) <br/>\
+- 클래스 기준 큐 구분, 64개 큐잉 <br/>\
+<img src = "./img/CBWFQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. LLQ(Low Latency Queue) <br/>\
+- CBWFQ + Queuing 기법, 우선(PQ), 나머지(CBWFQ) <br/>\
+<img src = "./img/LLQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 1교시 10번\
 ',
  
@@ -2705,6 +2705,21 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # SD-WAN, SD-WAN 2.0 비교 <br/>\
 <img src = "./img/SDWANCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 4교시 1번\
+',
+
+// SDR
+'# 정의 : 소프트웨어 조작 / 셀룰러, PCS, 와이브로, 무선 LAN, 위성통신 / 하나 단말기 이용 통신 기술 <br/>\
+- 단말기나 칩 등 하드웨어를 바꾸지 않고 소프트웨어 조작만으로 셀룰러, PCS, 와이브로, 무선 LAN, 위성통신과 같은 다양한 무선 통신서비스를 하나의 단말기에서 이용할 수 있도록 하는 네트워크 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SDR.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 요소기술 <br/>\
+- 소자 : 변환(A/D,D/A), 광대역 RF, 디지털 IF, FPGA, DSP, SDR Processor <br/>\
+- 소프트웨어 : 소프트웨어구조(SCA), 미들웨어(VM, CORBA, JAVA), OS(RTOS), Description Langauge(UML, XML) <br/>\
+- 통신 : NW(HandOver, 탐지), 다운로드(OTA Download Protocol), 보안 및 인증 <br/>\
+- 시스템 기술 : 하드웨어 Abstraction, 하드웨어 플랫폼(SDR Test Bed, Smart Anthena), 소프트웨어 플랫폼 <br/><br/>\
+# SDR 기술진화 단계 비교 <br/>\
+<img src = "./img/SDR_Revolution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 1교시 12번\
 ',
 
 // SASE
