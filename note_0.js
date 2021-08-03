@@ -12,6 +12,10 @@ var this_week_question =
 [
 '',
 
+// 125회 관리
+'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan',
+
+/*
 // 17주차 추가
 '갠드크랩', 'SCM', '서버리스', 'PIA', '인공지능 학습용 데이터 품질관리 지표', 'Attention', 'GPS', '산업의 디지털 전환 및 지능화 촉진법', 'ISO 11179', 'DDD', 'Compuer Vision',
 
@@ -96,5 +100,5 @@ var this_week_question =
 
 // ITPE 7회 
 '데이터 댐', 'Solid - Social Linked Data','Cloud 보안','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','5G SA','5G NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay','클라우드 네이티브 컴퓨팅','DevOps','인공지능 성능 지표','IoU','CBDC','Living Lab','SOS Lab','SW안전 확보 지침','SWEBOK','DMBOK','BABOK','백투백', 'Fuzz',
-
+*/
 ];
