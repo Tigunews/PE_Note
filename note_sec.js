@@ -56,6 +56,7 @@
 '[공격기법]- DRDoS',
 'Secure Coding',
 '[Secure Coding]- TouchPoints 기법',
+'[Secure Coding]- TOCTOU',
 '크라임웨어(Crimeware)',
 '랜섬웨어',
 '[랜섬웨어]- RaaS',
@@ -1235,6 +1236,23 @@ var answer = answer.concat(
 - 보안운영(security operation) <br/><br/>\
 <img src = "./img/SevenTouch_1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/SevenTouch_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// TOCTOU
+'# 정의 <br/>\
+- Time Of Check, Time Of Use <br/>\
+- 멀티프로세스를 구현한 응용프로그램(병렬시스템)에서 자원(파일,소켓 등)을 사용하기 전 자원을 사용하는 시점과 사용하는 시점의 시간 및 상태를 부적절하게 관리해서 발생하는 보안 취약점 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/TOCTOU.png" style = "max-width:100%; height:auto;"><br/>\
+- Process A = 검사(TOC) 성공 : File Read Check 후 Context Switching <br/>\
+- Process B = 삭제(TOU) 성공 : File Delete 후 Context Switching <br/>\
+- Process A = 사용(TOU) 실패 : File Read 대상 존재 않음 <br/><br/>\
+# 보안 대책 <br/>\
+- 뮤텍스 : Locking, Unlocking <br/>\
+- 세마포어 : Counter <br/><br/>\
+# Code <br/>\
+<img src = "./img/TOCTOU_Code.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 2교시 4번\
 ',
   
 // 크라임웨어
