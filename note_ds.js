@@ -87,6 +87,7 @@ var question = question.concat(
 '[핀테크]- Zero Pay',
 '[마이데이터]- 데이터 주권 이슈',
 '[마이데이터]- PDS',
+'Open Platform',
 '아바커스 프로젝트(Project Abacus)',
 '오감기술',
 '멀티 모달',
@@ -2198,6 +2199,12 @@ var answer = answer.concat(
 - Cell : 데이터 주체 위한 데이터 저장소 / https://john.personium.example/ <br/>\
 - Box : 각 셀에 설치된 앱 별 데이터 저장소 / https://john.personium.example/schedule/ <br/><br/>\
 * ITPE 합숙 124회 3일차 1교시 2번\
+',
+
+// Open Platform
+'# 정의 <br/>\
+- 금융 <br/>\
+* 125회 관리 4교시 1번\
 ',
   
 // 아바커스 프로젝트
