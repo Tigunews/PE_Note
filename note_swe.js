@@ -6469,6 +6469,9 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 보고형태 : 발주자 협의 결정 <br/>\
 - 산출물 : 완료보고서 <br/><br/>\
 # 상주감리, PMO 비교 <br/>\
+1. 관계도 <br/>\
+<img src = "./img/PermanentSupervisionPMORelation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 비교 <br/>\
 <img src = "./img/AllDayAuditPMO.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 3일차 관리 1교시 11번\
 ',

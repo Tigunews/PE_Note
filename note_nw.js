@@ -2366,6 +2366,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 '# 정의 : 한정, 효율 사용 / 정책별 제어 / 종단간 품질 향상 기술 <br/>\
 - Quality of Service <br/>\
 - 한정된 네트워크 망의 대역폭을 효율적으로 사용하게 하고, 네트워크 트래픽을 정책 별로 제어하여 인턴세 종단간 서비스 품질을 향상 시키는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/QoSOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 주요 요소(<font color = "red">대지패지</font>) <br/>\
 - 대역폭 : 특정 App 할당 NW 자원량 / 확장, DWDM, MPEG4 <br/>\
 - 지연 : End-To-End 패킷 소요시간 / 라우팅 고속화, MPLS, CDN <br/>\
@@ -2382,7 +2384,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 2. Buffer 관리 <br/>\
 - RED(Random Early Detction) : 혼잡 발생전 랜덤 패킷 폐기 <br/>\
 - WRED(Weighted RED) : 가중치 부여, RED 함수 적용 <br/><br/>\
-* 125회 관리 1교시 10번\
+* 125회 관리 3교시 3번 <br/>\
+* 125회 관리 1교시 10번 <br/>\
 * KPC 121회 합숙 2일차 2교시 4번\
 ',
 
@@ -2403,6 +2406,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 2. LLQ(Low Latency Queue) <br/>\
 - CBWFQ + Queuing 기법, 우선(PQ), 나머지(CBWFQ) <br/>\
 <img src = "./img/LLQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 3교시 3번 <br/>\
 * 125회 관리 1교시 10번\
 ',
  
@@ -2418,6 +2422,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 3. 수신 호스트 RESV 메시지 전송 <br/>\
 4. 망 노드, 요구사항 가능여부 결정 <br/>\
 5. 불가능시, 수신자에게 전송후 종료 <br/><br/>\
+* 125회 관리 3교시 3번 <br/>\
 * KPC 94회 1교시 3번\
 ',
  
@@ -2428,6 +2433,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/차등서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 통합, 차등 서비스 비교 <br/>\
 <img src = "./img/통합차등비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 3교시 3번\
 ',
   
 // Priority Queue
