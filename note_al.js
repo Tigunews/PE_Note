@@ -3,6 +3,7 @@ var question = question.concat(
 '[자료구조]- 선형구조',
 '[선형]- Stack',
 '[선형]- Queue',
+'[선형]- Priority Queue',
 '[비선형]- Heap',
 '[알고리즘 설계]- Back Tracking',
 '[알고리즘 설계]- 분할과정복',
@@ -207,6 +208,16 @@ var answer = answer.concat(
 - Linkedlist 큐 : 연결리스트 사용 <br/><br/>\
 # DEQ (Double-Ended Queue) <br/>\
 <img src = "./img/DEQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 3교시 1번\
+',
+
+// Priority Queue
+'# 정의 : 우선순위 부여 / FIFO x / 자료구조 <br/>\
+- 데이터에 우선순위를 부여하여 FIFO 방식이 아닌, 우선순위가 높은 데이터가 먼저 나가는 자료구조 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PriorityQueue.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구현유형 <br/>\
+<img src = "./img/PriorityQueueType.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 3교시 1번\
 ',
 
