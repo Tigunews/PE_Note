@@ -103,6 +103,7 @@ var question = question.concat(
 '[Web 3.0]- React.js',
 '[Web 3.0]- REST',
 '[Web]- XML, JSON',
+'[JSON]- JWT',
 'Semantic Web',
 '웹 접근성',
 '[N Screen]- Responsive Web Design',
@@ -2374,6 +2375,37 @@ var answer = answer.concat(
 // XML, JSON
 '<img src = "./img/XML_JSON_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 관리 96회 3교시 3번\
+',
+
+// JWT
+'# 정의 : 선택적 서명, 암호화 / JSON / Claim 기반 Web Token <br/>\
+- 선택적 서명 및 선택적 암호화를 사용하여 데이터를 만들기 위한 인터넷 표준으로 JSON 포맷을 이용하여 사용자에 대한 속성을 저장하는 Claim 기반 Web Token <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/JWT.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성 <br/>\
+- Header : Type, Algorithm 지정 <br/>\
+- Payload : Claim 포함 (registered(이미 정해진), public(충돌 방지 이름), private(S/C 협의하) <br/>\
+- Signature : Header 인코딩값 + 정보의 Encoding -> 비밀키 해쉬 <br/><br/>\
+# 메커니즘 <br/>\
+<img src = "./img/JWT_Mechanishm.png" style = "max-width:100%; height:auto;"><br/>\
+1. Login : Id/PW 입력, Login 시도 <br/>\
+2. Access Token 발급 : Secret Key 통해 Access Token 발급 <br/>\
+3. JSON Web Token 전달 : API 요청시, Authorization header에 Access Token 추가 전송 <br/>\
+4. 사용자 정보 확인 : JWT Signature 체크하여 사용자 정보 확인 <br/>\
+5. 요청 응답 : 허용된 사용자일 경우 API 결과 전달 <br/><br/>\
+# 장단점 <br/>\
+1. 장점 <br/>\
+- 인증 저장소 불필요 : 인증정보 토큰 자체 저장 <br/>\
+- 분산 마이크로 서비스 환경 지원 : DB 의존성 낮음 <br/>\
+- 확장 용이 : 토큰 검증 CPU만 소요, I/O or 별도 NW 필요x -> 최신 웹 서버 하드웨어 확장 용이 <br/><br/>\
+2. 단점 <br/>\
+- 사용자 정보 수정 어려움 : 토큰 정보 수정 어려움 <br/>\
+- 토큰 사이즈 증가 : 필드 추가시 토큰 크기 증가 <br/>\
+- 데이터 트래픽 증가 : 인증 추가 인한 트래픽 증가 <br/><br/>\
+# 활용 방안 <br/>\
+- 회원 인증 : Token 기반 Login 기능 <br/>\
+- 정보 교환 : 안정성 정보 교환, 기밀성 확인 <br/><br/>\
+* 125회 관리 3교시 5번\
 ',
 
 // Semantic Web
