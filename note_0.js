@@ -13,7 +13,7 @@ var this_week_question =
 '',
 
 // 125회 관리
-'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '위험관리', '병렬 컴퓨팅',
+'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '위험관리', '병렬 컴퓨팅', 'TOCTOU', '동적 테스트',
 
 /*
 // 17주차 추가

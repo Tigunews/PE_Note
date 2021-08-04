@@ -2,6 +2,7 @@ var question = question.concat(
 '자료구조',
 '[자료구조]- 선형구조',
 '[선형]- Stack',
+'[선형]- Queue',
 '[비선형]- Heap',
 '[알고리즘 설계]- Back Tracking',
 '[알고리즘 설계]- 분할과정복',
@@ -186,6 +187,27 @@ var answer = answer.concat(
 # 연산 표기 방법 <br/>\
 <img src = "./img/Mid2End.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 96회 관리 3교시 6번\
+',
+
+// Queue
+'# 정의 : 선형 리스트 / Rear 삽입, Front 삭제 / 선입선출 자료구조 <br/>\
+- 선형 리스트의 한쪽에서는 삽입 작업이 이루어지고 다른 한쪽에서는 삭제 작업이 이루어지도록, 선입선출 자료구조 <br/><br/>\
+# 구성요소 <br/>\
+- Front : Queue 전단 <br/>\
+- Rear : Queue 후단 <br/>\
+- createQueue() : n개 원소 큐 생성 <br/>\
+- deleteQueue() : 큐 제거(메모리 해제) <br/>\
+- isFull() : 가득 차있는지 확인(배열만 해당) <br/>\
+- isEmpty() : 공백인지 확인 <br/>\
+- Enqueue : 후단 데이터 삽입 <br/>\
+- Dequeue : 전단 데이터 삭제 <br/><br/>\
+# 종류 <br/>\
+- 선형큐 : 배열 선형 사용 <br/>\
+- 순환큐 : 배열 순환 사용 <br/>\
+- Linkedlist 큐 : 연결리스트 사용 <br/><br/>\
+# DEQ (Double-Ended Queue) <br/>\
+<img src = "./img/DEQ.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 3교시 1번\
 ',
 
 // Heap
