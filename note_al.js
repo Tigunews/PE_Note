@@ -32,6 +32,7 @@ var question = question.concat(
 '[Tree]- B Star Tree',
 '[Tree]- 2 3 Tree',
 '[Tree]- Red Black Tree',
+'방향성 비순환 그래프',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
@@ -694,6 +695,33 @@ var answer = answer.concat(
 # 원리 <br/>\
 - Restructuring > Recoloring <br/>\
 <img src = "./img/RedBlackTreeInsert.png" style = "max-width:100%; height:auto;">\
+',
+
+// 방향성 비순환 그래프
+'# 정의 : 개별 요소 특정 방향 / 비순환 그래프 / DAG 알고리즘 적용, 블록체인 3.0 기반 기술 <br/>\
+- 개별 요소들이 특정한 방향을 향하고 있으며, 서로 순환하지 않는 구조로 짜여진 그래프<br/><br/>\
+# 특징 <br/>\
+- 유향 비순환 그래프 <br/>\
+- 여러개 트랜잭션 개별 요소들끼리 상호 연결 <br/>\
+- 몬테 카를로(MCMC; Markov Chain Monte Carlo) 알고리즘 사용 <br/><br/>\
+* 125회 관리 4교시 4번\
+',
+
+// 위상 정렬
+'# 개념 : 유향 그래프 실행순서 위배x / 모든 정점 나열 정렬 <br/>\
+- 유향 그래프 각 정점 실행 순서 위배하지 않으면서 모든 정점을 나열하는 정렬 <br/><br/>\
+# 구성요소 <br/>\
+- 정점 <br/>\
+- 간선 <br/>\
+- 진입차수 <br/>\
+- 위상순서 <br/><br/>\
+# 메커니즘 <br/>\
+- 진입차수 0 정점 선택 <br/>\
+- 선택된 정점과 부속된 모든 간선 삭제 <br/>\
+- 반복 <br/><br/>\
+# 사례 <br/>\
+<img src = "./img/TopologicalAlignment.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 4교시 4번\
 ',
   
 // 인공지능 특이점

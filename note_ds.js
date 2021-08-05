@@ -804,7 +804,6 @@ var answer = answer.concat(
 - Supervisiory Control And Data Acquisition <br/>\
 - 원자력, 전력, 가스 시설등의 원격지 플랜트 생산공정 정보를 중앙에서 감시,제어,관리 하는 시스템 <br/><br/>\
 # 구성요소 - Perdue 모형 (<font color = "red">EBIMABP</font>)<br/>\
-<img src = "./img/SCADA.png", style = "max-width:100%; height:auto;"><br/>\
 - 5 : Enterprise <br/>\
 - 4 : Business Planning, Logistics <br/>\
 - 3.5 : Industrial DMZ <br/>\
