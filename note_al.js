@@ -33,6 +33,7 @@ var question = question.concat(
 '[Tree]- 2 3 Tree',
 '[Tree]- Red Black Tree',
 '방향성 비순환 그래프',
+'위상 정렬',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
