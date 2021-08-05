@@ -50,6 +50,8 @@ var question = question.concat(
 'Subnet',
 'Subnetting',
 'Supernetting',
+'정보이론',
+'대역확산',
 '전송부호화',
 '[전송부호화]- 소스코딩',
 '[소스코딩]- 압축기술',
@@ -123,7 +125,6 @@ var question = question.concat(
 '[FTP]- SFTP',
 'Socket',
 'NOS',
-'대역확산',
 'NW 가상화',
 '[NW 가상화]- VPN',
 '[NW 가상화]- NFV',
@@ -1197,6 +1198,31 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - Class 초과 => CDIR <br/>\
 - Class 미만 => VLSM <br/>\
 - IP 할당 : 각 NW의 NW ID, Subnet Mask, Host ID, Host 수 도출\
+',
+
+// 정보이론
+'# 정의 : 많은 데이터 저장,통신 / 데이터 정량화 / 응용수학 분야 <br/>\
+- 최대한 많은 데이터를 매체에 저장하거나 채널을 통해 통신하기 위해 데이터를 정량화하는 응용수학의 분야 <br/><br/>\
+* 125회 관리 4교시 2번\
+',
+
+// 대역확산
+'# 정의 : 외부 전파 내성 / 넓은 주파수 변조 방식 <br/>\
+- 무선 채널에서 여러 신호가 경쟁하면서 공유할 때 외부의 전파 잡음에 강하도록 넓은 주파수 대역으로 분산시키는 일종의 변조 방식 <br/>\
+<font color = "red">* 샤논정리 : 어떤 정보원이 채널용량보다 작은 정보율을 가지고 있다면, 에러/잡음을 최소화할 수 있는 부호화 과정이 반드시 존재한다는 정리 </font><br/><br/>\
+# 유형 <br/>\
+<img src = "./img/SpreadSpectrumType.png" style = "max-width:100%; height:auto;"><br/>\
+- 직접확산 (Direct Sequence) : PN Code / CDMA (802.11b) <br/>\
+- 주파수도약 (Freqency Hopping) : +주파수합성기 / Bluetooth (802.15.1) <br/>\
+- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/><br/>\
+# 상세 설명 <br/>\
+1. DSSS <br/>\
+<img src = "./img/DSSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. FHSS <br/>\
+<img src = "./img/FHSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# DSSS, FHSS 비교 <br/>\
+<img src = "./img/DSFS.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 120회 응용 1교시 8번\
 ',
 
 // 전송부호화
@@ -2517,25 +2543,6 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 개방형 네트워킹 기술 구현 : 포워딩 기능과 제어 기능 분리 <br/>\
 - 소프트웨어 중심 네트워킹 기술 구현 : 개방형 인터페이스 제공 구조 <br/><br/>\
 * 120회 응용 1교시 6번\
-',
- 
-// 대역확산
-'# 정의 : 외부 전파 내성 / 넓은 주파수 변조 방식 <br/>\
-- 무선 채널에서 여러 신호가 경쟁하면서 공유할 때 외부의 전파 잡음에 강하도록 넓은 주파수 대역으로 분산시키는 일종의 변조 방식 <br/>\
-<font color = "red">* 샤논정리 : 어떤 정보원이 채널용량보다 작은 정보율을 가지고 있다면, 에러/잡음을 최소화할 수 있는 부호화 과정이 반드시 존재한다는 정리 </font><br/><br/>\
-# 유형 <br/>\
-<img src = "./img/SpreadSpectrumType.png" style = "max-width:100%; height:auto;"><br/>\
-- 직접확산 (Direct Sequence) : PN Code / CDMA (802.11b) <br/>\
-- 주파수도약 (Freqency Hopping) : +주파수합성기 / Bluetooth (802.15.1) <br/>\
-- 시간도약 (Time Hopping) : 랜덤한 Time Slot / 혼합 사용 <br/><br/>\
-# 상세 설명 <br/>\
-1. DSSS <br/>\
-<img src = "./img/DSSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. FHSS <br/>\
-<img src = "./img/FHSS.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# DSSS, FHSS 비교 <br/>\
-<img src = "./img/DSFS.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 120회 응용 1교시 8번\
 ',
   
 // NW 가상화
