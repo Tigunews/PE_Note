@@ -156,27 +156,32 @@ var answer = answer.concat(
 ',
   
 // Unix
-'# 정의 : 미국벨(Bell) 연구소에서 개발된 소프트웨어 개발용 운영체제 <br/><br/>\
-# 암기 <br/>\
-- 구조 : 하커쉘유 <br/>\
-- 파일시스템 : 부수아데 <br/><br/>\
+'# 정의 : 이식, 다중 사용자, 대화식 / 운영체제 <br/>\
+- 다양한 시스템 사이에 서로 이식할 수 있고, 멀티 태스킹과 다중 사용자를 지원하도록 설계된, 범용 다중 사용자 방식의 대화식, 시분할처리 시스템 운영 체제 <br/><br/>\
 # 특징 <br/>\
 - 대화식 운영<br/>\
 - 높은 이식성 : C언어로 개발됨 <br/>\
 - 계층적 구조 : / 부터 하위 파일까지 트리형 구조 <br/>\
 - 멀티 유저, 멀티 태스킹 <br/><br/>\
+# 핵심 컴포넌트 (<font color = "red">하커쉘유</font>) <br/>\
+- HW : Server, CPU, Memory, Disk <br/>\
+- Kernel : 핵심 기능 수행, 메모리 상주 하드웨어 운영 및 관리 <br/>\
+- Shell : 사용자, 운영체제 사이 인터페이스, 명령어 수행 <br/>\
+- File System : Dir, File 구성, 부수아데 <br/>\
+<img src = "./img/Unix_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # Boot Process <br/>\
 Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. Start<br/><br/>\
-<img src = "./img/Unix_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/Unix_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 분류 <br/>\
 <img src = "./img/Unix_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/LinuxUnixCompare.png" style = "max-width:100%; height:auto;">\
+# Linux 비교 <br/>\
+<img src = "./img/LinuxUnixCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 1교시 3번\
 ',
   
 // File System
 '# File System 구조 <br/>\
 <img src = "./img/Unix_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 표준 File System (부수아데) <br/>\
+# 표준 File System (<font color = "red">부수아데</font>) <br/>\
 - Boot Block : Bootstrap code <br/>\
 - Super Block : 파일 시스템 상태 <br/>\
 - i-node Block : 파일 위치 정보 <br/>\

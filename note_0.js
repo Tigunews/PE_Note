@@ -13,7 +13,10 @@ var this_week_question =
 '',
 
 // 125회 관리
-'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '위험관리', '병렬 컴퓨팅', 'TOCTOU', '동적 테스트', 'Queue', '상주감리', 'QoS', '인공지능 개인정보보호 자율점검표', 'JWT', 'IT 투자', 'Open Platform', '정보이론', '방향성 순환 그래프', '위상 정렬', '절차지향, 객체지향 비교',
+'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '위험관리', '병렬 컴퓨팅', 'TOCTOU', '동적 테스트', 'Queue', '상주감리', 'QoS', '인공지능 개인정보보호 자율점검표', 'JWT', 'IT 투자', 'Open Platform', '정보이론', '방향성 순환 그래프', '위상 정렬', '절차지향, 객체지향 비교', 'SCADA',
+
+// 125회 응용
+'WiFi 7', '엣지 컴퓨팅', 'Unix', 
 
 /*
 // 17주차 추가

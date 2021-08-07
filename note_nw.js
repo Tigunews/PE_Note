@@ -2243,6 +2243,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 <img src = "./img/Wifi67Compare2.png" style = "max-width:100%; height:auto;"><br/>\
 <font color = "red">* EHT : Extremely High Throughput <br/>\
 * HEW : High Efficiency WLAN </font><br/><br/>\
+* 125회 응용 1교시 1번 <br/>\
 * KPC 96회 응용 1교시 16번\
 ',
   
