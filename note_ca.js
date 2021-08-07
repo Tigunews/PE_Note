@@ -59,6 +59,8 @@ var question = question.concat(
 '[Cache]- Snoopy Protocol',
 '[Cache]- MESI',
 'PCI Express',
+'DRAM',
+'SRAM',
 'DDR SDRAM',
 'FeRAM',
 '병렬 컴퓨팅',
@@ -1237,6 +1239,34 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 * 123회 응용 1교시 2번\
 ',
 
+// DRAM
+'# 정의 : 비트, 축전1기(Capacitor) / RAM <br/>\
+- Dynamic RAM <br/>\
+- 임의 접근 기억장치의 한 종류로, 정보를 구성하는 개개의 비트를 각기 분리된 축전기(Capacitor)에 저장하는 기억장치 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SRAMDRAMOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 직접도 높기 때문, 주기억장치 사용 <br/>\
+- 전원 공급되더라도, 재충전 필요 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/DRAM_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# DRAM SRAM 비교 <br/>\
+<img src = "./img/DRAMSRAMCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 1교시 4번\
+',
+
+// SRAM
+'# 정의 : 장치 전원 공급 / 지속 보존 / RAM <br/>\
+- Static RAM <br/>\
+- 장치에 전원이 공급되는 한 그 내용이 계속 보존되는 임의 접근 기억 장치 <br/><br/>\
+# 특징 <br/>\
+- 충전 필요 없음 <br/>\
+- 구조 복잡, 소비전력 많이 필요 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/SRAM_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\D
+* 125회 응용 1교시 5번\
+',
+
 // DDR SDRAM
 '# 정의 : 상승 및 하강 에지 전송 / 클럭 주파수 증가 x / 전송속도 2배 향상 RAM <br/>\
 - SDRAM 대비 클럭 신호의 상승 및 하강 에지에서 데이터를 전송함으로써 클럭 주파수를 증가시키지 않고 전송속도를 2배 향상 시킨 RAM <br/><br/>\
@@ -1247,7 +1277,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 고속 트레이닝 기술 : R/W 회로 고속 상태 최적화 <br/>\
 - DFE(Decision Feedback Equalization) : 반사 잡음 제거 회로 기술 <br/>\
 - DLL(Delay Locked Loop) : D Ram 출력 데이터 외부 클럭 동기화 전송 회로 기술 <br/>\
-- DCC(Duty Cycle Correction) : 연속되는 클록, 데이터 신호의 High,Low Pulse 폭 5:5 회로 기술 <br/>\
+- DCC(Duty Cycle Correction) : 연속되는 클록, 데이터 신호의 High,Low Pulse 폭 5:5 회로 기술 <br/><br/>\
 * 123회 응용 1교시 1번\
 ',
 
