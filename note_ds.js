@@ -4305,30 +4305,31 @@ var answer = answer.concat(
 ',
   
 // 엣지 컴퓨팅
-'# 정의 : 네트워크 종단 컴퓨팅 모델 <br/>\
-- 클라우드나 중앙이 아닌 네트워크 종단(Edge)에서 컴퓨팅이 이루어지는 모델 <br/>\
-- 데이터가 생성되는 종단 기기 자체, 근처 기지국, 네트우크 장비에서 데이터가 처리 됨 <br/><br/>\
+'# 정의 : 저지연, 대역폭 절약 / 종단 연산, 스토리지 / 분산 컴퓨팅 패러다임 <br/>\
+- 응답 시간을 개선하고 대역폭을 절약하기 위해 필요한 곳에 연산과 데이터 스토리지를 도입하는 분산 컴퓨팅 패러다임 <br/><br/>\
 # 필요성 <br/>\
 - 신속성 : 저지연 <br/>\
 - 데이터 분산 : 부하 집중 방지 <br/>\
 - 개인정보보호 : 선별적 중앙 전달 <br/>\
 - 모바일 환경 : 기지국 직접 처리 <br/><br/>\
-# 컴퓨터 모델 변천사 <br/>\
-- 메인프레임(IBM) <br/>\
-- CS (HPE, DELL) <br/>\
-- Cloud (AWS, Google) : 중앙 집중형 <br/>\
-- Mobile : 스마트폰, IoT, Latency최소화 <br/><br/>\
-# 시장동향 <br/>\
-- Google Cloud IoT : TPU(Tensor Processing Unit)이용 연산 <br/>\
-- AWS Iot Greengrass : 농업,산업 / Linux, ARM/x86 호스팅 가능 <br/>\
-- MS Azure Iot Edge <br/>\
-1) Module : 개발자 고유 코드 실행 컨테이너 <br/>\
-2) Runtime : IoT Edge Device 실행, 배포된 모듈 관리 <br/>\
-- KT MEC <br/>\
-<img src = "./img/MEC_1.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-- GE Predix Edge <br/>\
-1) DCS(Device Certificate Service) : 디바이스 인증 담당 <br/>\
-2) UAA(User Account and Authorization) : 멀티 터넌트 ID 관리 서비스 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/EdgeComputingOverview.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/EdgeComputingOverview2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/EdgeComputingModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. Device <br/>\
+- Sensor : 현장 데이터 실시간 수집 <br/>\
+- Edge Gateway : 산업 데이터 최적화 게이트웨이 <br/>\
+- SDM(Machine) : 폭발방지기, 터빈, 의료 장비, 가로등, 기관차 등... <br/><br/>\
+2. Architecture <br/>\
+- Open Compute Project Router : 아키텍처 설계 공유, 엣지 컴퓨팅 위한 라우팅 설계 공유 <br/>\
+- Edge to Cloud : 컴퓨터 기능 Edge 배치, 효율적 네트워크 서비스 가능 구조 <br/>\
+- Micro Datacenter : 스토리지, 프로세싱, 네트워킹 등 안전한 컴퓨팅 인트라 환경 통합 제공 <br/><br/>\
+3. Algorithm <br/>\
+- 실시간 분석 : 수집 데이터 직접 분석, 결과 조치 수행 <br/>\
+- 빅데이터 분석 : 데이터, 분석적 통찰력 제공 <br/>\
+- 기계학습 : Edge 단 데이터 분석, 통찰력 제공 <br/><br/>\
 * 라이지움 86회 3교시 1번 \
 ',
 
