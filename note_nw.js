@@ -2239,6 +2239,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 하위 호환성 : IEEE 802.11 장비 지원 <br/><br/>\
 # Wifi 6 비교 <br/>\
 <img src = "./img/Wifi67.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/Wifi67Compare1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/Wifi67Compare2.png" style = "max-width:100%; height:auto;"><br/>\
 <font color = "red">* EHT : Extremely High Throughput <br/>\
 * HEW : High Efficiency WLAN </font><br/><br/>\
 * KPC 96회 응용 1교시 16번\
