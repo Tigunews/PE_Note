@@ -170,6 +170,7 @@
 'BEC(Business  E-mail Compromise)',
 '[CPU 보안]- 스펙터(Spectre)',
 '[CPU 보안]- Meltdown',
+'[시스템 보안]- Shell Code',
 '[시스템 보안]- Buffer Overflow',
 '[시스템 보안]- Race Condition',
 '[시스템 보안]- Format String',
@@ -3520,6 +3521,22 @@ EAL : 펑스매매세세포 <br/><br/>\
 - B.exe 악성코드 구동 통한 스니핑 <br/>\
 - 일반 사용자 작업정보 습득 <br/><br/>\
 * KPC 관리 114회 합숙 2일차 1교시 3번\
+',
+
+// Shell Code
+'# 정의 : 공격 대상 쉘 실행 / 소프트웨어 취약점 공격 / 실행 작은 규모 프로그램 <br/>\
+- 공격 대상 시스템의 명령어 쉘을 실행시킨다는 의미로 파생된 소프트웨어 취약점 통한 공격 이후 실행 될 작은 규모의 프로그램(Payload) <br/><br/>\
+# 동작방식 <br/>\
+<img src = "./img/ShellCodeMechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. 대상 따른 분류 <br/>\
+- Local Shell Code : 공격자 시스템 접근 권한 보유, Buffer Overflow <br/>\
+- Remote Shell Code : 네트워크상 취약점, TCP/IP 소켓 이용 <br/><br/>\
+2. 공격 방식 분류 <br/>\
+- Reverse Shell Code : 목표 시스템 -> 공격자 연결 요청, Connected Back <br/>\
+- Bind Shell Code : 목표 시스템 특정 포트 바인드 하여 시스템 연결 공격 <br/>\
+- Download & Execute Shell Code : DBD <br/><br/>\
+* 125회 응용 1교시 5번\
 ',
   
 // Buffer Overflow
