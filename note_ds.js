@@ -69,6 +69,7 @@ var question = question.concat(
 '[인증기술]- DID',
 '[인증기술]- GADI',
 '[인증기술]- 바이오정보 분산관리',
+'디바이스 DNA',
 'Solid - Social Linked Data',
 '앰비언트 커머스',
 '핀테크',
@@ -1790,6 +1791,23 @@ var answer = answer.concat(
 - 2019.08 ISO 국제표준화 대상 채택 <br/>\
 - 2022.08. 까지 바이오 인증 국제 표준안 마련후 ISO에서 최종 승인 획득 예정 <br/><br/>\
 * 120회 관리 2교시 1번\
+',
+
+// 디바이스 DNA
+'# 정의 : 디바이스 특징 / 디바이스 신원 확인 기술 <br/>\
+- 디바이스의 하드웨어적 행동적 특징을 자동화된 장치로 추출,저장하여 정확하고 편리하게 디바이스 신원을 확인하는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DeviceDNAOverview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 고려요소 <br/>\
+- 보편성 : 모든 디바이스 DNA 지님 <br/>\
+- 유일성 : 디바이스 마다 상이 <br/>\
+- 영구성 : 시간이 지나도 볼변 <br/>\
+- 측정성 : 간단 획득, 측정 요소 <br/>\
+- 성능성 : 정확도, 속도, 견고성 <br/>\
+- 우회성 : 복제 가능성 및 어려움 정도 <br/><br/>\
+# 디바이스 DNA 기술별 특성 <br/>\
+<img src = "./img/DeviceDNACompare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 125회 응용 1교시 13번\
 ',
 
 // Solid - Social Linked Data
