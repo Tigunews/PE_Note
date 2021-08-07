@@ -37,6 +37,7 @@ var question = question.concat(
 '[자율주행]- LDM',
 '[자율주행]- C-ITS',
 '[자율주행]- Lidar',
+'[자율주행]- Radar',
 '[자율주행]- ADAS',
 '[자율주행]- 자율운항 선박',
 '안티드론',
@@ -1128,6 +1129,7 @@ var answer = answer.concat(
   
 // Lidar
 '# 정의 : 레이저 송출 / 반사 시간 / 위치 좌표 측정 / 레이다 시스템 / 객체 탐지 기술<br/>\
+- Light Detection and Ranging <br/>\
 - 레이저를 송출하여 반사되어 돌아오는 시간을 측정, 반사체의 위치 좌표를 측정하는 레이다 시스템 <br/><br/>\
 # 특징 : 직진성, 고밀도, 3D 영상 촬영 <br/><br/>\
 # 개념도 <br/>\
@@ -1144,8 +1146,24 @@ var answer = answer.concat(
 - 회전형 : 360도 회전 <br/>\
 - 어레이형 : 어레이 구성, 시간차이 인식 <br/>\
 - STUD(Static Unitary Detector) : 고해상도 3차원 영상품질 낮은 비용 확보 <br/><br/>\
-# Lidar, Lader 비교 <br/>\
-<img src = "./img/LidarLaderCompare.png" style = "max-width:100%; height:auto;">\
+# Lidar, Radar 비교 <br/>\
+<img src = "./img/LidarLaderCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 1교시 7번\
+',
+
+// Radar
+'# 정의 : 전자기파 / 물체 인식 기술 <br/>\
+- Radio Detection and Ranging <br/>\
+- 마이크로파(극 초단파)정도의 전자기파를 물체에 반사시킨 후 반사 결과를 인식하여 물체와의 거리, 방향, 고도를 측정하는 기술 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/RADAR.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 송신기 : 레이다 신호 생성, 증폭 기능 수행 <br/>\
+- 안테나 : 전파신호 전기신호 전환 <br/>\
+- 수신기 : 신호처리 가능한 주파수 대역으로 변환 <br/>\
+- 신호처리기 : 레이다 주요한 기능, 성능 담당 <br/>\
+- 통제기 : 운용자, 운용시스템 요구 맞게 후속 가공 <br/><br/>\
+* 125회 응용 1교시 7번\
 ',
 
 // ADAS
