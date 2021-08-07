@@ -43,6 +43,7 @@
 'SW 보안 약점',
 'NAC',
 'WNAC',
+'TCP Wrapper',
 '[보안솔루션]- IDS',
 '[보안솔루션]- IPS',
 '[공격기법]- XSS',
@@ -952,6 +953,25 @@ var answer = answer.concat(
 - SE : System Engineering<br/>\
 - Wireless Network Access Control <br/>\
 - NW 접근방식에 무선 공격을 탐지할 수 있는 기능을 추가하여 비인가자의 접근을 차단하는 방법\
+',
+
+// TCP Wrapper
+'# 정의 : 네트워크 서비스 트래픽 제어, 모니터링 / UNIX 기반 방화벽 툴 <br/>\
+- 네트워크 서비스에 관련한 트래픽을 제어하고 모니터링 할 수 있는 UNIX 기반 방화벽 툴 <br/><br/>\
+# 특징 <br/>\
+- 네트워크 서비스 필터링 : finger, ftp, telnet, rlogin, rsh, exec, tftp, talk, cosmat <br/>\
+- TCP 서비스 제어 : /usr/sbin/tcpd 데몬 의한 제어 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/TCPWrapperOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 메커니즘 <br/>\
+- 클라이언트 접속요구 : Inetd 데몬 -> tcpd 데몬 <br/>\
+- 클라이언트 접근권한 확인 : Tcpd 데몬, 클라이언트 접근 권한 확인 <br/>\
+- 네트워크 서비스 제공 : 접근 허용 위한 TCP 서비스 정의 <br/><br/>\
+# 설정 <br/>\
+- /etc/hosts.allow : 네트워크 허용 TCP 서비스 정의 <br/>\
+- /etc/hosts.deny : 네트워크 접근 거부 위한 TCP 서비스 정의 <br/>\
+- Default : Allow <br/><br/>\
+* 125회 응용 1교시 9번\
 ',
 
 // IDS
