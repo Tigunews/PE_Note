@@ -2347,7 +2347,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 서비스 연속성 확보 : 중복 지역 간섭 최소화, 연속성 보장 <br/>\
 - 재난 피해 감소 : 통합망 통한 신속한 재난 통보 통한 인명, 재산 피해 감소 <br/>\
 - 주파수 활용 : 20Mhz 대역 공공안전망 주파수 대역 온전히 확보 <br/><br/>\
-# 기술방식 <ber/>\
+# 기술방식 <br/>\
 1. MORAN(Multi-Operator RAN) <br/>\
 - RAN 요소만 공유, 주파수 공유 x <br/>\
 <img src = "./img/MORAN.png" style = "max-width:100%; height:auto;"><br/><br/>\
