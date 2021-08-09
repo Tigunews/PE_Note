@@ -109,6 +109,7 @@ var question = question.concat(
 '재난 안전 통신망',
 '[재난 안전 통신망]- LTE-M',
 '[재난 안전 통신망]- LTE-R',
+'[재난 안전 통신망]- RAN Sharing',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'eMTC',
@@ -2330,6 +2331,33 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // LTE-R
 '<img src = "./img/LTE-R_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 120회 응용 1교시 3번\
+',
+
+// RAN Sharing
+'# 정의 : 서비스 커버리지 확장 / 사업자간 무선 Access 자원 / 공유 기술 <br/>\
+- 서비스 커버리지 확장에 대한 제약 사항을 극복하기 위해 사업자간 무선 Access 자원을 공유하는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/RANSharingOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 목적 <br/>\
+1. 망구성 측면 <br/>\
+- 최적화 망 구축 : 통합된 공공안전망 구성 <br/>\
+- 간섭 최소화 : PS-LTE, LTE-R, LTE-M 망간 간섭 최소화 <br/>\
+- 비용 절감 : 하나의 기지국, 여러 망 동시 활용 <br/><br/>\
+2. 망활용 측면 <br/>\
+- 서비스 연속성 확보 : 중복 지역 간섭 최소화, 연속성 보장 <br/>\
+- 재난 피해 감소 : 통합망 통한 신속한 재난 통보 통한 인명, 재산 피해 감소 <br/>\
+- 주파수 활용 : 20Mhz 대역 공공안전망 주파수 대역 온전히 확보 <br/><br/>\
+# 기술방식 <ber/>\
+1. MORAN(Multi-Operator RAN) <br/>\
+- RAN 요소만 공유, 주파수 공유 x <br/>\
+<img src = "./img/MORAN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. MOCN(Multi-Operator Core Network) <br/>\
+- RAN 요소 + 주파수 공유 <br/>\
+<img src = "./img/MOCN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. GWCN(Gateway Core Network) <br/>\
+- MOCN + NW 요소 공유 <br/>\
+<img src = "./img/GWCN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 2교시 5번\
 ',
 
 // 토르 네트워크
