@@ -585,6 +585,7 @@ var answer = answer.concat(
 <img src = "./img/ISP_EA_ISMP.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 비교 <br/>\
 <img src = "./img/EAITAISPISMPCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 2교시 3번 <br/>\
 * 125회 관리 2교시 1번 <br/>\
 * 119회 관리 4교시 3번\
 ',
