@@ -303,8 +303,14 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # LSB, MSB <br/>\
 - LSB : Least Significiant Bit <br/>\
 - MSB : Most Significiant Bit <br/><br/>\
-# 특징 : 해밍거리(Hamming Distance) = 송신 데이터와 수신 데이터의 각 대응 비트가 서로 다른 비트 수 <br/><br/>\
-* 오류비트 2비트까지 검출가능, 1만 수정가능\
+# 활용 사례 <br/>\
+1. 데이터 복구 <br/>\
+- SSD : ECC(Error Correction Code), SLC 구조의 NAND Flash 경우 활용 <br/><br/>\
+2. 암호화 <br/>\
+- 디지털 저작권 보호 : 데이터 은닉기법 <br/>\
+- QKD : CV-QKD(Continous Variable) <br/><br/>\
+<font color = "red">* 오류비트 2비트까지 검출가능, 1만 수정가능 </font><br/><br/>\
+* 125회 응용 2교시 2번\
 ',
 
 // 해밍거리
