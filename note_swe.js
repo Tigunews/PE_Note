@@ -4388,8 +4388,9 @@ P 히스토그램 : Data 분포 <br/>\
 - 예비심사(문서위주) <br/>\
 - 본심사(문서,인터뷰,실제활동) <br/><br/>\
 # 수행절차 : 평가준비 > 평가수행 > 평가결과보고 <br/><br/>\
-# 성숙도 (IMDMO, IPMDMO)<br/>\
+# 성숙도 (<font color = "red">IMDMO, IPMDMO</font>)<br/>\
 <img src = "./img/CMMI_Level.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 125회 응용 3교시 3번 <br/>\
 * 라이지움 87회 관리 2교시 1번\
 ',
  
@@ -4435,6 +4436,7 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/CMMI_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 1.3 2.0 비교 <br/>\
 <img src = "./img/CMMI_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 3교시 3번 <br/>\
 * ITPE 7회 2교시 6번 <br/>\
 * ITPE 2회 1교시 9번 <br/>\
 * KPC 97회 관리 4교시 3번\
