@@ -24,6 +24,7 @@ var question = question.concat(
 '[Layer3]- 거리벡터 라우팅',
 '[Layer3]- 링크스테이트 라우팅',
 '[Layer3]- IGMP',
+'Layer4',
 '[Layer4]- Service',
 '[Layer4]- TCP 혼잡제어',
 '[Layer4]- TCP',
@@ -615,6 +616,16 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * ITPE 8회 관리 1교시 9번\
 ',
 
+// Layer 4
+'# (TCP Layer4) 정의 : 프로세스 / 신뢰성 / 전송 계층 <br/>\
+- 프로세스간의 신뢰성 있는 데이터 전송을 담당하는 계층 <br/><br/>\
+# 프로토콜 <br/>\
+- TCP : 신뢰성 연결지향형 프로토콜 <br/>\
+- UDP : 비신뢰성 비연결형 프로토콜 <br/>\
+- SCTP : 연결지향, 혼잡제어, 순차적 메시지 전송 보장 프로토콜 <br/><br/>\
+* 125회 응용 3교시 2번 \
+',
+
 // Layer4 Service
 '<img src = "./img/TransportLayerService.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 응용 3교시 1번\
@@ -660,6 +671,9 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 3. TCP 유휴 세션종료 (Idle Connection) <br/>\
 <img src = "./img/IdleConnection.png" style = "max-width:100%; height:auto;"><br/>\
 - 기존 세션이 장기간 연결 유지할 경우, 반대편에서 세션 강제종료 <br/><br/>\
+# TCP UDP 비교 <br/>\
+<img src = "./img/TCPUDPCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 3교시 2번 <br/>\
 * 라이지움 88회 관리 4교시 6번\
 ',
 
