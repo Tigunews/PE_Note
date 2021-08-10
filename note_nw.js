@@ -9,8 +9,9 @@ var question = question.concat(
 '[Layer2][오류제어][BEC]- CRC',
 '[Layer2][오류제어][BEC]- Parity Check',
 '[Layer2][오류제어][BEC]- Check Sum',
-'[Layer2][흐름제어]- Sliding Window',
-'[Layer2][흐름제어]- Stop and Wait',
+'흐름제어',
+'[흐름제어]- Sliding Window',
+'[흐름제어]- Stop and Wait',
 '[Layer2][접근제어]- CSMA/CD',
 '[Layer2][접근제어]- CSMA/CA',
 '[Layer2]- Frame Relay',
@@ -23,6 +24,7 @@ var question = question.concat(
 '[Layer3]- 거리벡터 라우팅',
 '[Layer3]- 링크스테이트 라우팅',
 '[Layer3]- IGMP',
+'[Layer4]- Service',
 '[Layer4]- TCP 혼잡제어',
 '[Layer4]- TCP',
 '[Layer4][TCP]- SSL/TLS',
@@ -369,12 +371,25 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 <img src = "./img/CheckSum_2.png" style = "max-width:100%; height:auto;">\
 ',
 
+// 흐름제어
+'# 정의 : 송,수신 속도 차이 / 관리 기술 <br/>\
+- 더 빠른 송신자가 느린 수신자를 제압하지 못하도록 두 노드 간 데이터 전송 속도를 관리하는 기술 <br/><br/>\
+# 방식 <br/>\
+- Stop and Wait : 1개씩 수신, 프레임 전송 방식 <br/>\
+- Rate-based : 임계값 관리 흐름제어 <br/>\
+- Sliding Window : 여러개 프레임 동시 전송 기법 <br/><br/>\
+* 125회 응용 3교시 1번\
+',
+
 // Sliding Window
 '# 정의 : 일정한 윈도우 크기 이내에서 한번에 여러 패킷을 송신하고, 이들 패킷에 대하여 단지 한 번의 ACK 로써 수신 확인을 하며, 윈도우 크기를 변경시키며 흐름제어를 하는 기법 <br/><br/>\
 # 특징 <br/>\
 - 전송크기 : Window 크기 <br/>\
 - 장점 : 전송 효율 좋음 <br/>\
 - 단점 : 오류발생이 가능하므로 Go-Back-N, Selective 재전송등 해결방안 필요 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/SlidingWindow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 3교시 1번 <br/>\
 * 라이지움 87회 관리 3교시 6번\
 ',
  
@@ -384,6 +399,9 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 전송크기 : 1 Frame <br/>\
 - 장점 : 구현용이, 한 개의 버퍼만 필요 <br/>\
 - 단점 : 전송 효율이 떨어짐 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/StopAndWait.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 3교시 1번 <br/>\
 * 라이지움 87회 관리 3교시 6번\
 ',
  
@@ -597,10 +615,15 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 * ITPE 8회 관리 1교시 9번\
 ',
 
-// 혼잡제어
+// Layer4 Service
+'<img src = "./img/TransportLayerService.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 3교시 1번\
+',
+
+// TCP 혼잡제어
 '# 정의 : 유입 트래픽 / 용량 초과x / 유지 메커니즘 <br/>\
 - 네트워크로 유입되는 사용자 트래픽(데이터에 대한 표현)의 양이 네트워크 용량을 초과하지 않도록 유지시키는 메커니즘 <br/><br/>\
-# 메커니즘 <br/>\
+# 메커니즘 (<font color = "red">슬컨패패</font>)<br/>\
 <img src = "./img/CongestionControl.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성 <br/>\
 - Slow Start : CNWD 크기 전송시마다 2배씩 증가, ACK 실패시 감소 <br/>\
