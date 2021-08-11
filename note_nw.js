@@ -417,6 +417,23 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 특징 : 충돌시 일정시간 대기, 이더넷 기반 널리사용 <br/>\
 - 장점 : 간단, 견고, 대역폭 효율 <br/>\
 - 단점 : 부하시 지연시간 급증, 빈도 따른 충돌 발생 <br/><br/>\
+# 유형 <br/>\
+1. 1 Persistent <br/>\
+<img src = "./img/OnePersistent.png" style = "max-width:100%; height:auto;"><br/>\
+- 특징 : Idle 상태 즉시 프레임 전송 <br/>\
+- 장점 : 충돌 회피 <br/>\
+- 단점 : 충돌 확률 높음 <br/><br/>\
+2. P Persistent <br/>\
+<img src = "./img/PPersistent.png" style = "max-width:100%; height:auto;"><br/>\
+- 특징 : 1 Persistent, Non Persistent 장단점 상호 보완 <br/>\
+- 장점 : 충돌 위험 낮춤 <br/>\
+- 단점 : 회선 효율 저하 <br/><br/>\
+3. Non Persistent <br/>\
+<img src = "./img/NonPersistent.png" style = "max-width:100%; height:auto;"><br/>\
+- 특징 : 회선 감지 <br/>\
+- 장점 : 즉시 전송 <br/>\
+- 단점 : 회선 효율 저하 <br/><br/>\
+* 125회 응용 4교시 1번 <br/>\
 * 라이지움 87회 관리 3교시 6번\
 ',
  
