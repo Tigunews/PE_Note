@@ -16,7 +16,7 @@ var this_week_question =
 'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '위험관리', '병렬 컴퓨팅', 'TOCTOU', '동적 테스트', 'Queue', '상주감리', 'QoS', '인공지능 개인정보보호 자율점검표', 'JWT', 'IT 투자', 'Open Platform', '정보이론', '방향성 순환 그래프', '위상 정렬', '절차지향, 객체지향 비교', 'SCADA',
 
 // 125회 응용
-'WiFi 7', '엣지 컴퓨팅', 'Unix', 'DRAM', 'SRAM', 'Shell Code', 'RAID', 'Lidar', 'Radar', '안티드론', 'TCP Wrapper', '블록체인 트릴레마', 'Smart Factory', '25000', '디바이스 DNA', '망분리', '해밍코드', 'Information Strategy Master Plan', '기본점검표', 'RAN Sharing', 'DDoS', '흐름제어', 'Layer4', '혼잡제어', 'TCP', 'CMMI', '디지털 트윈', 'IaaS, PaaS, SaaS', 'OTT', 'CSMA',
+'WiFi 7', '엣지 컴퓨팅', 'Unix', 'DRAM', 'SRAM', 'Shell Code', 'RAID', 'Lidar', 'Radar', '안티드론', 'TCP Wrapper', '블록체인 트릴레마', 'Smart Factory', '25000', '디바이스 DNA', '망분리', '해밍코드', 'Information Strategy Master Plan', '기본점검표', 'RAN Sharing', 'DDoS', '흐름제어', 'Layer4', '혼잡제어', 'TCP', 'CMMI', '디지털 트윈', 'IaaS, PaaS, SaaS', 'OTT', 'CSMA', 'D2D',
 
 /*
 // 17주차 추가
