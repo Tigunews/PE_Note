@@ -113,6 +113,7 @@ var question = question.concat(
 '[재난 안전 통신망]- LTE-M',
 '[재난 안전 통신망]- LTE-R',
 '[재난 안전 통신망]- RAN Sharing',
+'D2D',
 '토르 네트워크(Tor Network)',
 '비지상네트워크(NTN, Non-Terrestrial Network)',
 'eMTC',
@@ -2412,6 +2413,50 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - MOCN + NW 요소 공유 <br/>\
 <img src = "./img/GWCN.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 응용 2교시 5번\
+',
+
+// D2D
+'# 정의 : 인프라 이용 x / 인접 단말간 트래픽 전달 / 분산 통신 기술 <br/>\
+- 인프라를 직접 이용하지 않고 인접한 단말 간 트래픽을 직접 전달하는 분산형 통신 기술 <br/><br/>\
+# 서비스 시나리오 <br/>\
+1. 상업용 서비스 <br/>\
+- 광고 : 단말간 탐색, D2D 사용자 알림 <br/>\
+- SNS : 관심사항 주변 전송 <br/>\
+- 게임 : 게임 정보 단말간 통신 <br/><br/>\
+2. 공공안전 서비스 <br/>\
+- 공공 안전 및 재난망 서비스 : 셀룰러 불가능 경우, 긴급 상황 인접 단말간 통신 <br/><br/>\
+# 통신 유형 <br/>\
+1. 단말 위치 <br/>\
+- Intra Cell : D2D 단말 모두 같은 셀 내 위치 <br/>\
+- Inter Cell : D2D 단말 다른 셀 위치 <br/><br/>\
+2. 기지국 제어 방법 <br/>\
+- Basic Mode D2D : 기지국 제어 받아 데이터 송수신 <br/>\
+- Relay Mode D2D : 하나의 단말이 릴레이 동작, 제어기능 수행 방식 <br/><br/>\
+3. 디바이스 네트워크 구성 <br/>\
+- 1:1 D2D : 단말 2대 1:1 통신 <br/>\
+- Group D2D : D2D 단말 네트워크 구성, 멀티캐스트 통한 데이터 송수신 <br/>\
+- Coordination D2D : 응용서버, 통신 장치 추가, 서비스 위한 수집, 전송 기능 수행 <br/><br/>\
+# 운용 시나리오 <br/>\
+1. In-Network Coverage Scenario <br/>\
+<img src = "./img/InNetworkCoverageScenario.png" style = "max-width:100%; height:auto;"><br/>\
+- 단말기 모두 기지국의 커버리지 내 존재 <br/><br/>\
+2. Out-Of-Network Coverage Scenario <br/>\
+<img src = "./img/OutOfNetworkCoverageScenario.png" style = "max-width:100%; height:auto;"><br/>\
+- 독립적 단말간 탐색 및 통신 수행 <br/><br/>\
+3. Partial Network Coverage Scenario <br/>\
+<img src = "./img/PartialNetworkCoverageScenario.png" style = "max-width:100%; height:auto;"><br/>\
+- 커버리지내 단말 : 동기 맞춰 D2D 통신 수행 <br/>\
+- 커버리지 외 단말 : 별도 동기 절차, 별개 시간/주파수 기준 따라 통신 수행 <br/><br/>\
+# 활용분야 <br/>\
+1. 통신 <br/>\
+- 시선 통신 : 모바일 메신져 결합, 새로운 형태 모바일 서비스 <br/><br/>\
+2. 모바일 디바이스 <br/>\
+- 스마트폰 자료 전송 : 스마트폰에서 디바이스로 자료 전송 <br/>\
+- 즉석 자료 공유 : 회의, 그룹 실시간 자료 공유 <br/><br/>\
+3. 무선 재난 통신 <br/>\
+- PS-LTE : 긴급재난시 통신 시스템 파괴시, 기지국 단독 중계 가능 기술 <br/>\
+- 위치기반 서비스 : D2D 셀룰러 네트워크 위치기반 자원 할당 기술 <br/><br/>\
+* 125회 응용 4교시 2번\
 ',
 
 // 토르 네트워크
