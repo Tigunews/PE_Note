@@ -3858,15 +3858,19 @@ EAL : 펑스매매세세포 <br/><br/>\
 '# 정의 : Infra 구매, 설치 x / 인터넷 통한 보안 서비스 기술 <br/>\
 - 인터넷 파일저장 서비스에 추가적인 S/W나 H/W 형태의 보안장비를 구매,설치하지 않고 인터넷을 통해 보안 서비스 받을 수 있도록 하는 보안기술 <br/><br/>\
 # 구성 <br/>\
-- BCDR : 비즈니스 연속성 및 재해복구 <br/>\
-- Continuous Monitoring : 지속적 위험 관리 <br/>\
-- DLP(Data Loss Prevention) : 데이터 암호화, 민감 데이터 관리 <br/>\
-- E-Mail Security : 악성 첨부파일, 스팸 정보보호 <br/>\
-- Encryption : 데이터 암호화 <br/>\
+1. 기밀성 <br/>\
 - IAM(Identity and Access Management) : 인증, 신원보증, 권한관리 <br/>\
 - Instrusion Management : 침입 시도 탐지 및 방지 <br/>\
-- Network Security : 네트워크 보안 <br/>\
-- Security Assessment : 거버넌스&리스크 관리, 컴플라이언스 감사 <br/>\
+- Network Security : 네트워크 보안 <br/><br/>\
+2. 무결성 <br/>\
+- DLP(Data Loss Prevention) : 데이터 암호화, 민감 데이터 관리 <br/>\
+- E-Mail Security : 악성 첨부파일, 스팸 정보보호 <br/><br/>\
+3. 가용성 <br/>\
+- BCDR : 비즈니스 연속성 및 재해복구 <br/>\
+- Continuous Monitoring : 지속적 위험 관리 <br/><br/>\
+4. 관리 <br/>\
+- Security Assessment : 거버넌스&리스크 관리, 컴플라이언스 감사 <br/><br/>\
+5. 기술 <br/>\
 - SIEM(Security Information and Event Management) : 실시간 로그, 보안 이벤트, 시스템 정보 수집 <br/>\
 - Vulnerability Scanning : 취약점 검사 <br/>\
 - Web Security : 웹 트래픽, 웹 어플리케이션 보안 <br/><br/>\
