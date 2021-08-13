@@ -2945,6 +2945,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 정의 : 선이 없는 전기 에너지의 전송을 지칭 <br/><br/>\
 # 종류 <br/>\
 <img src = "./img/WPT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 4교시 5번 <br/>\
 * KPC 93회 응용 4교시 8번\
 ',
   

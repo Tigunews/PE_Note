@@ -23,10 +23,12 @@ var question = question.concat(
 '[Smart Factory]- SCADA',
 '[Smart Factory]- 팝업팩토리(Pop-up Factory)',
 'Smart Pharm',
-'IoT Platform',
-'[IoT Platform]- oneM2M Mobius',
-'[IoT Platform]- OCF',
-'[IoT Platform]- OPC UA',
+'IoT',
+'[IoT-통신]- NB-IoT',
+'[IoT-서비스]- IoT Platform',
+'[IoT-서비스][IoT Platform]- oneM2M Mobius',
+'[IoT-서비스][IoT Platform]- OCF',
+'[IoT-서비스][IoT Platform]- OPC UA',
 '[4차산업]- Smart Hospital',
 '[4차산업]- Smart Car',
 '자율주행 자동차',
@@ -866,6 +868,42 @@ var answer = answer.concat(
 # 경쟁력 확보 방안 <br/>\
 <img src = "./img/SmartPharmVision.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 합숙 124회 4일차 2교시 5번\
+',
+
+// IoT
+'# 정의 : 애플리케이션, 네트워크, 데이터 공유 / 사물 지칭 기술 <br/>\
+- Internet of Things <br/>\
+- 인터넷에 연결되어 IoT 애플리케이션이나 네트워크에 연결된 장치, 또는 산업 장비등의 다른 사물들과 데이터를 공유할 수 있는 수많은 사물 지칭 기술 <br/><br/>\
+# 3대 핵심 기술 <br/>\
+<img src = "./img/IoTCoreTech.png", style = "max-width:100%; height:auto;"><br/>\
+- 센싱 기술 : 주변 환경 정보 얻는 기술 / 온,습,조도 센서, 원격 감지,레이더,영상 센서<br/>\
+- 유무선 통신 : IoT Device간, IoT Device와 G/W, 서버간 통신기술 / WiFi, 4G, BlueTooth, NB-IoT, Sigfox <br/>\
+- IoT 서비스 인터페이스 기술 : 응용 서비스 연동 기술 / 미들웨어, 오픈 플랫폼, 데이터 마이닝, 인터페이스 <br/><br/>\
+* 125회 응용 4교시 6번 \
+',
+
+// NB-IoT
+'# 정의 : 저전력 High Coverage / 면허 대역 / LPWA 네트워크 실형 / 저전력 무선통신기술 <br/>\
+- Narrow Band Internet of Things <br/>\
+- 저전력 High Coverage를 제공하고 면허대역을 통한 LPWA네트워크를 실현하기 위한 저전력 무선통신기술 <br/><br/>\
+# 주요 SPEC <br/>\
+- 커버리지 : ~15 Km <br/>\
+- 디바이스 : 5만개 이상 <br/>\
+- 표준 : 3GPP Release 13 <br/>\
+- 주파수 대역 : LTE 망 <br/>\
+- 대역폭 : 200 Khz <br/>\
+- 통신속도 : ~250 Kbps <br/><br/>\
+# 모드 <br/>\
+1. Stand Alone Mode <br/>\
+<img src = "./img/NB_IoT_StandAloone.png", style = "max-width:100%; height:auto;"><br/>\
+- NB-IoT를 위한 단독 서비스 주파수 사용 <br/><br/>\
+2. Guard-band Mode <br/>\
+<img src = "./img/NB_IoT_GuardBand.png", style = "max-width:100%; height:auto;"><br/>\
+- LTE 밴드들 사이에 정의되어 있는 가드 대역내 사용하지 않는 지원 블록 이용 <br/><br/>\
+3. In-Band Mode <br/>\
+<img src = "./img/NB_IoT_InBand.png", style = "max-width:100%; height:auto;"><br/>\
+- LTE 밴드 내에서 일부 자원블록으로 할당하여 이용 <br/><br/>\
+* 125회 응용 4교시 6번\
 ',
 
 // IoT Platform
