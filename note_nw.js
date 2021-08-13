@@ -9,6 +9,7 @@ var question = question.concat(
 '[Layer2][오류제어][BEC]- CRC',
 '[Layer2][오류제어][BEC]- Parity Check',
 '[Layer2][오류제어][BEC]- Check Sum',
+'[Layer2][오류제어][BEC]- ARQ',
 '흐름제어',
 '[흐름제어]- Sliding Window',
 '[흐름제어]- Stop and Wait',
@@ -295,6 +296,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 2. BEC <br/>\
 - (검출) Parity Check, Block Sum, CRC <br/>\
 - (재전송) Stop N Wait, Go Back N, Selective Repeat <br/><br/>\
+* 125회 응용 4교시 3번 <br/>\
 * 그리타\
 ',
   
@@ -371,6 +373,22 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 수신 측에서 같은 합을 해보아 오류를 검출하는 방식, 간단하나 워드 순서 바뀌는 오류 검출X, 점차 CRC로 대체중 <br/><br/>\
 <img src = "./img/CheckSum_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CheckSum_2.png" style = "max-width:100%; height:auto;">\
+',
+
+// ARQ
+'# 정의 : 송신측 동일 프레임 / 재전송 요구 방식 <br/>\
+- 수신측이 에러 발견시, 송신측에 동일한 프레임에 대한 재전송을 요구하는 방식 <br/><br/>\
+# 방식 <br/>\
+1. Stop-and-Wait ARQ <br/>\
+- 1개 프레임 수신, 에러 유무 파악 ACK, NAK 방식 <br/>\
+<img src = "./img/StopAndWait2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Go-Back-N ARQ <br/>\
+- 오류 발생(NAK) 프레임 포함, 이후 전송된 모든 프레임 재전송 방식 <br/>\
+<img src = "./img/GoBackN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Selective-Repeat ARQ <br/>\
+- 오류 발생(NAK) 프레임만 재전송 방식 <br/>\
+<img src = "./img/SelectiveRepeat.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 4교시 3번\
 ',
 
 // 흐름제어
