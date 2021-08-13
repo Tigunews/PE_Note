@@ -1,6 +1,7 @@
 var question = question.concat(
 'OS',
 '[OS]- Disk 할당 기법',
+'[OS]- Dual Mode',
 'Unix OS',
 '[Unix OS]- File System',
 '[Unix OS]- Permission',
@@ -155,6 +156,36 @@ var answer = answer.concat(
 # 기법들 간 관계 <br/>\
 <img src = "./img/DiskAllocation.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 응용 2교시 7번\
+',
+
+// Dual Mode
+'# 정의 : 운영체제 해킹 / 시스템 위협 방지 / 사용자, 커널 모드 / 보호 기법 <br/>\
+- 불법적인 명령을 통해 운영체제를 해킹하고 시스템의 위협을 방지하기 위해 사용자 모드와 커널 모드로 분류하여 운영체제를 보호하기 위한 기법 <br/><br/>\
+# 중요성 <br/>\
+1. 프로그램 <br/>\
+- 사용자/운영체제 보호 : 잘못된 사용자로부터 운영체제, 사용자 상호 보호 방법 제공 <br/>\
+- 특권명령 지정 : 나쁜 영향 가능성 일부 명령, 특권 명령 지정, 시스템적 보호 제공 <br/><br/>\
+2. 하드웨어 <br/>\
+- 입출력장치(I/O) 보호 : 사용자의 잘못된 입출력 명령어 제어 <br/>\
+- 메모리 보호 : 다른 사용자 메모리, 운영체제 영역 접근 방지 <br/>\
+- CPU 보호 : 한 사용자 CPU 독점 제어 <br/><br/>\
+# 구조 <br/>\
+<img src = "./img/DualMode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. User Mode <br/>\
+- 개념 : 제어권 사용자, 사용자 수준 코드 수행, 단순 사용자 프로그램 작동 코드 <br/>\
+- Mode Bit : 1 <br/>\
+- 시스템 데이터 제한 접근만 허용, 하드웨어 직접 접근 불가 <br/>\
+- 시스템 서비스 호출시 잠시 전환 <br/>\
+- 주어진 메모리 영역외 다른 프로세스, 커널 메모리 영역 접근 불가 <br/>\
+- Address Space 밖에 있는 Kernel Address Space 메모리 접근시 Exception Error <br/><br/>\
+2. Kernel Mode <br/>\
+- 개념 : 제어권 OS, OS 코드 수행, 특권 명령어 작동 모드 <br/>\
+- Mode Bit : 0 <br/>\
+- 사용자 모드에서 실행 불가능 <br/>\
+- 운영체제 코드, 디바이스 드라이버 등.. 커널 모드 코드 실행 <br/>\
+- 개별 유저 실행 불가 명령, 시스템 접근 권한 가지는 상태 <br/><br/>\
+* 125회 응용 4교시 4번\
 ',
   
 // Unix
@@ -1263,7 +1294,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 충전 필요 없음 <br/>\
 - 구조 복잡, 소비전력 많이 필요 <br/><br/>\
 # 아키텍처 <br/>\
-<img src = "./img/SRAM_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\D
+<img src = "./img/SRAM_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 응용 1교시 5번\
 ',
 
