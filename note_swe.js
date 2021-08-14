@@ -3905,12 +3905,12 @@ P 히스토그램 : Data 분포 <br/>\
 <img src = "./img/위험관리_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/위험관리_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/RiskAdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 대응방안 <br/>\
+# 대응방안 (<font color = "red">적극 -> 소극</font>)<br/>\
 1. 부정적 위험 대응 (<font color = "red">회전완수</font>)<br/>\
 - 에스컬레이션 : PM 권한 밖 / 보고 <br/>\
 - 회피 : 프로젝트 목표, 위험의 영향권 고립, 변경 / 중단, 계획 변경<br/>\
 - 전가 : 제3자 책임이동 / 보험, 조달 프로세스 <br/>\
-- 완화 : 수용가능까지 낮춤 / 테스트, 단순 프로세스 <br/>\
+- 완화 : 수용가능까지 낮춤 / (병행)테스트, 단순 프로세스 <br/>\
 - 수용 : 위험 제거, 전략 수립 불가 / 능동, 수동 수용 <br/><br/>\
 2. 긍정적 위험 대응 (<font color = "red">활공증수</font>)+<br/>\
 - 에스컬레이션 : PM 권한 밖 / 보고 <br/>\
