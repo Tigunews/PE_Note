@@ -806,7 +806,7 @@ var answer = answer.concat(
 
 // 동형암호
 '# 정의 : 복호화 없이 연산이 가능한 암호기술 <br/>\
-- 정보를 암호화한 상태에서 각종 연산을 했을 때, 그 결과가 암호화하지 않은 상태의 연산결과와 동일하게 나오는 4세대 암호체계 <br/>\
+- 정보를 암호화한 상태에서 각종 연산을 했을 때, 그 결과가 <font color = "red">암호화하지 않은 상태</font>의 연산결과와 동일하게 나오는 4세대 암호체계 <br/>\
 <font color = "red">* Password > 대칭키 > 비대칭키 > Non Key </font><br/><br/>\
 # 원리 <br/>\
 <img src = "./img/동형암호화.png" style = "max-width:100%; height:auto;"><br/><br/>\
