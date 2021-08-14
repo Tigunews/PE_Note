@@ -2153,10 +2153,12 @@ var answer = answer.concat(
 '# 정의 : 양자 알고리즘 대응 암호화 <br/>\
 - Post-Quantum Cryptography <br/>\
 - 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
-# 양자보안의 매커니즘(암광키) <br/>\
+# 양자보안의 매커니즘(<font color = "red">암광키</font>) <br/>\
 <img src = "./img/QuntaumCryptographyMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 양자보안 알고리즘 종류 <br/>\
+# 양자보안 알고리즘 종류 (<font color = "red">다코격아해</font>)<br/>\
 <img src = "./img/QuntaumCryptographyType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 알고리즘간 장단점 <br/>\
+<img src = "./img/PQC_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 95회 1교시 13번\
 ',
 
