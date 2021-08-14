@@ -816,7 +816,7 @@ var answer = answer.concat(
 - FHE : 완전동형암호 기술 / 식, 횟수 무제한 (+ * XOR)<br/><br/>\
 2. 설계원리 <br/>\
 - 부트스트래핑 : 복호화 Key 암호화 Key 재사용 <br/>\
-- 스쿼싱 : 노이즈 감소지원 조합 <br/><br/>\
+- 스쿼싱 : 노이즈 증가 감소, 평문 변형 않도록 구성 원리 <br/><br/>\
 3. 알고리즘 (<font color = "red">GDC</font>)<br/>\
 - GENO9 : <font color = "red">Idea Lattice</font> 기반 <br/>\
 - DGHV10 : <font color = "red">정수집합</font>에 GENO09 적용 <br/>\
