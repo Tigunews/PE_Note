@@ -67,11 +67,11 @@ var question = question.concat(
 '병렬 컴퓨팅',
 '[병렬 컴퓨팅]- Flynn 분류',
 '[병렬 컴퓨팅]- 기억장치 액세스 분류',
+'[병렬 컴퓨팅]- 상호 연결망',
 '[병렬 컴퓨팅][기억장치 액세스]- UMA',
 '[병렬 컴퓨팅][기억장치 액세스]- NUMA',
 '[병렬 컴퓨팅][기억장치 액세스]- NORMA',
 '[병렬 컴퓨팅][기억장치 액세스]- COMA',
-'[병렬 컴퓨팅]- 상호 연결망',
 'ARM',
 '분기 예측 기술',
 '[분기 예측]- 분기 방향 예측',
@@ -1396,7 +1396,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 * 125회 관리 2교시 3번\
 ',
 
-// 상호연결망
+// 상호 연결망
 '# 상호연결망 개념 : Processor, 깅거장치 / 연결 네트워크 <br/>\
 - 병렬처리 시스템에서 처리요소들과 기억장치들 사이를 연결하여 주는 네트워크 <br/><br/>\
 # 개념도 <br/>\
@@ -1475,19 +1475,6 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 사례 : Data Diffusion Machine(DDM), KSR-1 <br/>\
 - NUMA + Cache 일관성 = ccNUMA(Cache-Coherent NUMA) <br/><br/>\
 * ITPE 6회 관리 3교시 2번\
-',
-
-// 상호 연결망
-'# 정의 : 병렬처리 시스템 / 처리요소 / 기억장치 / 연결 네트워크 <br/>\
-- 병렬처리시스템에서 처리요소들과 기억장치들 사이를 연결하여 주는 네트워크 <br/><br/>\
-# 종류 <br/>\
-1. 정적 상호 연결망 <br/>\
-- 요소간 직접 연결, 고정 연결망 <br/>\
-- 종류 : 선형, 원형, 코달원형, Tree, Mesh, Torus(원형+Mesh) <br/><br/>\
-2. 동적 상호 연결망 <br/>\
-- 실행시간 동안 다양 변경 가능, 통신 패턴 상황 따라 필요 경로 설정 <br/>\
-- 종류 : 버스, 크로스바, 다단계 네트워크 <br/><br/>\
-* 125회 관리 2교시 3번\
 ',
 
 // ARM
