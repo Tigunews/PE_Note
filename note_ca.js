@@ -66,7 +66,7 @@ var question = question.concat(
 'FeRAM',
 '병렬 컴퓨팅',
 '[병렬 컴퓨팅]- Flynn 분류',
-'[병렬 컴퓨팅]- 메모리 공유 분류',
+'[병렬 컴퓨팅]- 기억장치 액세스 분류',
 '[병렬 컴퓨팅][기억장치 액세스]- UMA',
 '[병렬 컴퓨팅][기억장치 액세스]- NUMA',
 '[병렬 컴퓨팅][기억장치 액세스]- NORMA',
@@ -1382,7 +1382,7 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 * 125회 관리 2교시 3번\
 ',
 
-// 메모리 공유 분류
+// 기억장치 액세스 분류
 '# 종류 <br/>\
 1. SMP(Shared Memory Processors) <br/>\
 - 두개 이상의 프로세서, 공유버스로 상호 연결 시스템 <br/>\
@@ -1394,6 +1394,25 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 장점 : 공유 자원 경합 감소 <br/>\
 - 단점 : 시스템 수 따라 오버헤드 증가, 통신 프로토콜 지연시간 증가 <br/><br/>\
 * 125회 관리 2교시 3번\
+',
+
+// 상호연결망
+'# 상호연결망 개념 : Processor, 깅거장치 / 연결 네트워크 <br/>\
+- 병렬처리 시스템에서 처리요소들과 기억장치들 사이를 연결하여 주는 네트워크 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MemoryAccessModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 종류 <br/>\
+1. 정적 상호연결망 : 요소간 직접 연결 경로, 연결구조 고정 <br/>\
+- 1차원 토폴로지 : Linear <br/>\
+- 2차원 토폴로지 : Star, Ring, Tree, Mesh, Torous(Mesh 상하좌우 연결), Systolic(▨) <br/>\
+- 3차원 토폴로지 : 완전연결, 3차원 큐브 <br/><br/>\
+2. 동적 상호연결망 : 실행시간 동안 변경, 패턴, 상황 따라 경로 설정 연결망 <br/>\
+- 버스구조 : (단일)-캐시 o,x, 계층 버스 <br/>\
+- 크로스바 : 프로세서, 기억장치 완전 연결성 <br/>\
+- 다단 : 근원지, 목적지 사이 여러개 스위치 요소 <br/>\
+<img src = "./img/InterconnectionNetworkBus.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/InterconnectionCrossbarMultistage.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 2교시 3번 \
 ',
 
 // UMA 
