@@ -2603,6 +2603,9 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 통합 서비스
 '# 정의 : RSVP를 이용한 통합서비스 모델 <br/>\
 - 개별 종단간 개별 트래픽 흐름단위로 경로상의 라우터 자원을 미리 예약함으로써 종단간 QoS를 보장하는 모델<br/><br/>\
+# 특징 <br/>\
+- 확장성 불리, Flow 별 자원예약 -> 과부하 야기 <br/>\
+- 망전체 연결 정보 유지 필요 -> 소규모망 용도 <br/><br/>\
 # 구조 <br/>\
 * RSVP : Resource Reservation Protocol<br/>\
 <img src = "./img/통합서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
@@ -2612,6 +2615,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 3. 수신 호스트 RESV 메시지 전송 <br/>\
 4. 망 노드, 요구사항 가능여부 결정 <br/>\
 5. 불가능시, 수신자에게 전송후 종료 <br/><br/>\
+# IntServ DiffServ 연동방안 <br/>\
+<img src = "./img/ER_Router.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 3교시 3번 <br/>\
 * KPC 94회 1교시 3번\
 ',
@@ -2619,8 +2624,23 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 // 차등 서비스
 '# 정의 : DSCP 마킹 통한 서비스 차별화 모델 <br/>\
 - 패킷의 DS(Differentiated Service) 필드에 DSCP(DS Code Point)를 마킹하여 서비스 클래스별 PHB(Per Hop Behavior) 우선순위를 정하여 QoS를 보장하는 서비스 모델 <br/><br/>\
+# 특징 <br/>\
+- IntServ 확장성 문제 해결 <br/>\
+- 흐름 단위 차별화 서비스 <br/>\
+- Class 별 차별화 <br/>\
+- 확장성 우수, 대규모 네트워크 구조 활용 <br/><br/>\
+# 구성요소 <br/>\
+- Edge : 패킷 분류, 트래픽 조정 <br/>\
+- Core : 패킷 표시 정보 따라 단순 전달 기능 수행 <br/>\
+- DS 영역 : Edge간 QoS 제공, DiffServ 제공 영역 <br/><br/>\
 # 구조 <br/>\
 <img src = "./img/차등서비스.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 메커니즘 <br/>\
+- Packet Classifier : 어떤 PHB 할당 패킷 헤더 분석 <br/>\
+- DSCP : IPv4(ToS - 6bit Marking 2bit Blank), IPv6(Traffic Class) <br/>\
+- PHB : 일관된 행위 전달 (EF-Expedited, AF-Assured, BEF-Best Effort Forwarding)<br/>\
+<font color = "red">* DSCP : Differentiated Service Code Point <br/>\
+* PHB : Per-HOP-Behaviour </font><br/><br/>\
 # 통합, 차등 서비스 비교 <br/>\
 <img src = "./img/통합차등비교.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 3교시 3번\
