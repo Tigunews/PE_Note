@@ -2562,7 +2562,7 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 대역폭 : 특정 App 할당 NW 자원량 / 확장, DWDM, MPEG4 <br/>\
 - 지연 : End-To-End 패킷 소요시간 / 라우팅 고속화, MPLS, CDN <br/>\
 - 패킷 손실 : 전달 과정 중 유실, 간섭 / 혼잡, 회피, IPv6 <br/>\
-- 지터 : 최초 신호 왜곡 정도 / Dos, DDoS 대응, 전용선 <br/><br/>\
+- 지터 : 패킷 간격 불일치 현상 / Dos, DDoS 대응, 전용선 <br/><br/>\
 # 요소 기술 <br/>\
 1. Queuing <br/>\
 <img src = "./img/FIFO_Queue.png" style = "max-width:100%; height:auto;"><br/>\
