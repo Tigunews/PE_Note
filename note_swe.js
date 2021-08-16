@@ -6512,10 +6512,13 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 상주감리 종료시 상주감리 대한 완료보고 <br/>\
 - 보고형태 : 발주자 협의 결정 <br/>\
 - 산출물 : 완료보고서 <br/><br/>\
-# 상주감리, PMO 비교 <br/>\
+# 상주감리, PMO 관계 <br/>\
 1. 관계도 <br/>\
 <img src = "./img/PermanentSupervisionPMORelation.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 비교 <br/>\
+2. 관계 <br/>\
+- 감리의뢰(PMO->감리) : 정해진 주기, 산출물 감리 요청 <br/>\
+- 감리보고서 제출(감리->PMO) : 종료 시기, 품질(제품, 프로세스)관점 산출물 점검 <br/><br/>\
+# 비교 <br/>\
 <img src = "./img/AllDayAuditPMO.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 3교시 2번 <br/>\
 * ITPE 합숙 124회 3일차 관리 1교시 11번\
