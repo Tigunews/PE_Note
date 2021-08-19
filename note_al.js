@@ -33,7 +33,7 @@ var question = question.concat(
 '[Tree]- 2 3 Tree',
 '[Tree]- Red Black Tree',
 '방향성 비순환 그래프',
-'위상 정렬',
+'[방향성 비순환 그래프]- 위상 정렬',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
@@ -705,6 +705,11 @@ var answer = answer.concat(
 - 유향 비순환 그래프 <br/>\
 - 여러개 트랜잭션 개별 요소들끼리 상호 연결 <br/>\
 - 몬테 카를로(MCMC; Markov Chain Monte Carlo) 알고리즘 사용 <br/><br/>\
+# 활용 사례 <br/>\
+- 아이오타 : IoT 시대 M2M Application 위함 암호 화폐 <br/>\
+- 하이퍼캐시 : 비블록체인 사이드체인 제공, 상이한 블록체인간 자유 전달 암호 화폐 <br/>\
+- 로커스 체인 : PC, 모바일 환경 초당 수천 트랜잭션 처리 성능 블록체인 플랫폼 <br/>\
+- 해시그래프 : 연결 리스트 방식 -> 불특정 노드 가십(Gossip) 전달 방식 작동 알고리즘 <br/><br/>\
 * 125회 관리 4교시 4번\
 ',
 
@@ -715,13 +720,19 @@ var answer = answer.concat(
 - 정점 <br/>\
 - 간선 <br/>\
 - 진입차수 <br/>\
+- 진출차수 <br/>\
 - 위상순서 <br/><br/>\
 # 메커니즘 <br/>\
 - 진입차수 0 정점 선택 <br/>\
 - 선택된 정점과 부속된 모든 간선 삭제 <br/>\
 - 반복 <br/><br/>\
+# 수행방식 <br/>\
+- 깊이우선 탐색 <br/>\
+- 큐 이용 <br/><br/>\
 # 사례 <br/>\
 <img src = "./img/TopologicalAlignment.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+# 코드 <br/>\
+<img src = "./img/TopologicalAlignmentCode.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 4교시 4번\
 ',
   
