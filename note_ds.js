@@ -13,6 +13,7 @@ var question = question.concat(
 '[Smart Grid]- 인터미턴트 컴퓨팅',
 '[Smart Grid]- IDPP',
 '산업제어시스템',
+'[산업제어시스템]- Purdue Model',
 '[4차산업]- Smart Factory',
 'Smart Factory 보안',
 '[Smart Factory]- MESA 표준기능',
@@ -622,7 +623,34 @@ var answer = answer.concat(
 - IEC 62443 : 산업 네트워크 및 시스템 보안 <br/>\
 - NIST CSF : 사이버보안 프레임 워크 <br/>\
 - ISO 27000 : ISMS 국제 표준 체계 <br/><br/>\
+* 125회 관리 4교시 6번 <br/>\
 * ITPE 8회 관리 4교시 5번\
+',
+
+// Purdue Model
+'# 정의 : ISA-99 / PERA / ICS 보안 참조 모델 <br/>\
+- ISA-99에서 제정한 PERA에서 발생된 6개 계층으로 구성된 보안 아키텍처 구조 기반의 ICS 보안 참조 모델 <br/>\
+<font color = "red">* ISA : International Society of Automation <br/>\
+* PERA : Purde Enterprise Reference Architecture </font><br/><br/>\
+# 등장배경 <br/>\
+- ICS 사이버 공격 증가 : 미국 콜로니얼 파이프라인 랜섬웨어 공격 <br/>\
+- 스마트팩토리 확산 : 전통 OT망 전용 프로토콜 -> IT 망 연계 <br/><br/>\
+# 특징 <br/>\
+- 제조 보안 최적화 : SCADA, DCS, PLC, HMI 적용 <br/>\
+- NW 계층 기반 : 제조 IT, OT 망 기반 모델 <br/><br/>\
+# 계층 <br/>\
+<img src = "./img/PurdueModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 계층별 특징 <br/>\
+0. Process Zone : Sensor, Actuator, Pump, Robot <br/>\
+1. Basic Control Zone : Batch Control, Distribute Control, Continuous Process <br/>\
+2. Area Supervisory Control Zone : HMI, EWS 모니터링 및 관리 <br/>\
+3. Site Manufacturing Operation and Control : 시설 전체 제어, 모니터링, Domain Controller Server, Web Proxy Server, DB Server <br/>\
+IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
+4. Site Business Planning and Logistics Network : 생산정보 통계 보고, 주문 등 비즈니스 데이터 ICS/OT 시스템 분배 <br/>\
+5. Enterprise Network : ICS 네트워크와 연결 기반 공장 설비 상태, 재고, 수요 파악, 비즈니스 결정 필요한 데이터 제공 영역 <br/>\
+<font color = "red">* EWS : Engineering Workstation <br/>\
+* IMDZ : Industrial Demilitarized Zone </font><br/><br/>\
+* 125회 관리 4교시 6번\
 ',
   
 // Smart Factory
