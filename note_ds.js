@@ -686,6 +686,7 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 <img src = "./img/SmartFactoryHighlevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 핵심 성과지표 <br/>\
 <img src = "./img/SmartFactoryIndex.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 1교시 11번 <br/>\
 * 124회 관리 1교시 3번 <br/>\
 * 120회 관리 2교시 5번\
 ',
