@@ -680,8 +680,12 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - Cloud Based App : 클라우드 기반 데이터 처리 및 분석 통한 공정 설계 실행 <br/>\
 - AI : 머신러닝, 딥러닝 등을 통한 데이터 수집,학습,분석 <br/>\
 - Big Data : NoSQL, Hadoop, Spark, Storm 활용 데이터 처리 <br/><br/>\
-# 분류(<font color = "red">자최제모점</font>) <br/>\
-<img src = "./img/SmartFactory5Level.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 한국형 스마트팩토리 5단계 수준 (<font color = "red">자최제모점</font>) <br/>\
+5. 고도화(자율운영) : 전구간 자율 진행 / 인공지능, AR/VR, CPS <br/>\
+4. 중간2(최적화) : 시뮬레이션 통한 사전 대응 / 센서 제어기, 최적화 도구 <br/>\
+3. 중간1(제어) : 수집된 정보 분석, 제어 / 센서, 분석도구 <br/>\
+2. 기초(모니터링) : 실시간 모니터링 / 센서 <br/>\
+1. 점검(식별) : 부분적 표준화 및 데이터 관리 / 바코드, RFID <br/><br/>\
 # 고도화 방법론 제언 <br/>\
 <img src = "./img/SmartFactoryHighlevel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 핵심 성과지표 <br/>\
