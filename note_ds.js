@@ -4928,18 +4928,15 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - <font color = "red">ISO 23247 (제조업 Digital Twin 표준)</font><br/>\
 - 비즈니스 관점 : 물리적 객체 대한 디지털 복제 / 동적 성질 묘사 가상의 모델 <br/>\
 - 기술적 관점 : 물리적 사물 및 시스템의 동적 S/W 모델 / 센싱데이터 / 상태파악 / 변화 대응 / 운영 개선 / 가치부가 <br/><br/>\
-# 특징 <br/>\
-- 디지털정보종합 <br/>\
-- <font color = "red">디지털스레드</font> : 정보기반으로 서비스 활용 <br/>\
-- 가상시뮬레이션 <br/>\
-- 통합제어 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/DigitalTwin.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 진화 과정 (<font color = "red">M관모연자</font>) <br/>\
-<img src = "./img/DigitalTwinFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 발전 모델 <br/>\
-<img src = "./img/DigitalTwinEvolution.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술요소 <br/>\
+# 모델(<font color = "red">모관모연자</font>) <br/>\
+- 모사 DTW : 물리대상 디지털트윈 복제 <br/>\
+- 관제 DTW : 모니터링 및 관계분석 제어 <br/>\
+- 모의 DTW : 물리대상 최적화 <br/>\
++ 연합 DTWs : 상호연계 디지털 트윈 재구성 <br/>\
++ 자율 DTWs : 자율적 문제점 인지, 해결, 최적화 <br/><br/>\
+# 기술요소(<font color = "red">3분가연운</font>) <br/>\
 - 3D 모델링 : Unreal, Unity, 3,6-DOF, Sensor, 자동인식기술, AI, Simulation Modeling <br/>\
 - 분석 : 3D환경 및 알고리즘 분석, 빅데이터 분석 <br/>\
 - 가시화 : AR, VR, MR, XR, Infographics <br/>\
@@ -4951,20 +4948,7 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 자동차 : 성능분석, 맞춤형 경험 제공 <br/>\
 - 의료 : 개인화 의료서비스, 환자 모니터링 <br/>\
 - 스마트 시티 : 정책 검증, 재난 대비 <br/><br/>\
-# 운영환경 <br/>\
-1. SW측면 <br/>\
-- 수집,전달,저장,처리 기능 <br/>\
-- 모델링 및 튜닝 <br/>\
-- 런타임 엔진 및 연동 <br/>\
-- 2D/3D 그래픽스 <br/><br/>\
-2. 산업분야 운영HW 및 시스템 SW <br/>\
-- 클라우드 컴퓨팅 <br/>\
-- N/W 및 보안체계 <br/>\
-- IoT Edge 장치 <br/>\
-- 빅데이터 분석 인프라 <br/><br/>\
-# 모델링 절차 : 실제 모델 > 가상화 모델 > 가상화 모델 분석 > 오류 탐지 <br/><br/>\
-# 국내외 동향 <br/>\
-<img src = "./img/DigitalTwinCurrent.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 응용 3교시 4번 <br/>\
 * 라이지움 88회 관리 3교시 1번 <br/>\
 * 119회 관리 3교시 1번\
 ',

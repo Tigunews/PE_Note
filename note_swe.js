@@ -5865,11 +5865,21 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 개발과 운영이 분리되면서 오는 문제점(사후관리, 서비스등)을 해결하기 위해서, 개발과 운영을 하나의 조직으로 합쳐서 팀을 운영하는 문화이자 방법론 <br/><br/>\
 # 프로세스 <br/>\
 <img src = "./img/DevOpsPipeLine.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 도구 <br/>\
+# 구성요소 <br/>\
+1. 품질 <br/>\
+- 품질기준 : 시나리오기반 품질 속성 기술 <br/>\
+- 테스트 자동화 : XUnit, 단위 테스트 자동화 <br/><br/>\
+2. 프로세스 <br/>\
+- 사이클 타임 축소 : 기증의 흐름 지속적 향상 <br/>\
+- 완료시점 범위확장 : 완료시점 = 운영서버 정상동작 시점 <br/>\
+- 지속적 출시 : 지속적 통합처럼 운영서버 반영시 자동화 <br/>\
+- 릴리즈와 배포 분리 : 추상화된 브랜치, 기능토글(설정), 다크런칭(소스 사용자 배포), 블루그린(운영환경 신,구 분류) <br/><br/>\
+3. 도구 <br/>\
 - 소스 컨트롤 자동화 : Subversion, Github, GitLab, BitBucket <br/>\
 - 빌드/테스트 자동화 : Maven, Selenium, SoapUI, Find Bugs <br/>\
 - 배포 자동화 : JFrog Artifactory, docker <br/>\
 - 배포/운영 : Puppet, Chef, Ansible <br/><br/>\
+* 125회 관리 1교시 7번 <br/>\
 * ITPE 7회 관리 4교시 5번\
 ',
  
