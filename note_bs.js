@@ -887,7 +887,7 @@ var answer = answer.concat(
 - Prospective : 재무, 고객, 프로세스, 학습과 성장 <br/>\
 - CSF : 비전, 전략 성공 관리 요소 <br/>\
 - Strategy Map : BSC상 CSF간 인과관계, 조직 가치 창출 방법 <br/>\
-- KPI : CSF의 수준과 성공 여부 측정 및 고나리 방법 표현 지표 <br/>\
+- KPI : CSF의 수준과 성공 여부 측정 및 관리 방법 표현 지표 <br/>\
 - Target : 각 KPI 기간별 목표 수준 수치화 표현 <br/>\
 - Initiative : 기간별 KPI 목표 달성 위한 구체적인 활동 <br/><br/>\
 # 관점 (<font color = "red">재고내학</font>)<br/>\
