@@ -640,7 +640,7 @@ var answer = answer.concat(
 - NW 계층 기반 : 제조 IT, OT 망 기반 모델 <br/><br/>\
 # 계층 <br/>\
 <img src = "./img/PurdueModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 계층별 특징 <br/>\
+# 계층별 특징 (<font color = "red">PBSM I BE</font>)<br/>\
 0. Process Zone : Sensor, Actuator, Pump, Robot <br/>\
 1. Basic Control Zone : Batch Control, Distribute Control, Continuous Process <br/>\
 2. Area Supervisory Control Zone : HMI, EWS 모니터링 및 관리 <br/>\
