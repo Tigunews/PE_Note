@@ -397,6 +397,9 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 // 흐름제어
 '# 정의 : 송,수신 속도 차이 / 관리 기술 <br/>\
 - 더 빠른 송신자가 느린 수신자를 제압하지 못하도록 두 노드 간 데이터 전송 속도를 관리하는 기술 <br/><br/>\
+# 종류 <br/>\
+- 2계층 흐름제어 : 여러 통신 구분 기능, 데이터 대한 에러 탐지, 고치는 역할 / FEC, BEC <br/>\
+- 4계층 흐름제어 : 패킷 유실, 순서 바뀜 바로잡음 / Seq, ACK 기반 <br/><br/>\
 # 방식 <br/>\
 - Stop and Wait : 1개씩 수신, 프레임 전송 방식 <br/>\
 - Rate-based : 임계값 관리 흐름제어 <br/>\
