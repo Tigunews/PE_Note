@@ -1227,7 +1227,7 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 '# 정의 : 전자기파 / 물체 인식 기술 <br/>\
 - Radio Detection and Ranging <br/>\
 - 마이크로파(극 초단파)정도의 전자기파를 물체에 반사시킨 후 반사 결과를 인식하여 물체와의 거리, 방향, 고도를 측정하는 기술 <br/><br/>\
-# 구성도 <br/>\
+# 구성도(<font color = "red">송통신수</font>) <br/>\
 <img src = "./img/RADAR.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
 - 송신기 : 레이다 신호 생성, 증폭 기능 수행 <br/>\
