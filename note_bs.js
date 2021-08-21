@@ -883,7 +883,7 @@ var answer = answer.concat(
 - 의사소통 : 비전, 전략 명확한 인식, 보상 연결 <br/>\
 - 계획 및 목표 설정 : 이니셔티브 정렬, 자원 배분 연계 <br/>\
 - 전략적 피드백과 학습 : 제공 학습, 학습 촉진 <br/><br/>\
-# 구성요소 <br/>\
+# 구성요소 (<font color = "red">PC SKT I</font>) <br/>\
 - Prospective : 재무, 고객, 프로세스, 학습과 성장 <br/>\
 - CSF : 비전, 전략 성공 관리 요소 <br/>\
 - Strategy Map : BSC상 CSF간 인과관계, 조직 가치 창출 방법 <br/>\
