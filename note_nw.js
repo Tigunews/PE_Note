@@ -1293,7 +1293,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 개념도 <br/>\
 <img src = "./img/InfomrationTheory.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 핵심원리 <br/>\
-- 정보 성질 : 발생가능 확률, 정보가치 반비레 <br/>\
+- 정보 성질 : 발생가능 확률, 정보가치 반비례 <br/>\
 - 독립 성질 : 추가적 정보량 제공 (동전 2번 > 동전 1번) <br/>\
 - 메시지 성질 : 최적의 코드 디자인, 메시지 기대 길이 계산 기반 이론 <br/><br/>\
 # 엔트로피 <br/>\
