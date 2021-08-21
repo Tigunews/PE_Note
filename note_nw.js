@@ -681,7 +681,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 # 구성 <br/>\
 - Slow Start : CNWD 크기 전송시마다 2배씩 증가, ACK 실패시 감소 <br/>\
 - Congestion Avoidance : ACK 수신시 마다 CNWD선형적으로 증가 전송 <br/>\
-- Fast Retransmission : 송신자에게 다음 수신알 Sequence Number 알려주고, 그 이후 Slow start <br/>\
+- Fast Retransmission : 송신자에게 다음 수신할 Sequence Number 알려주고, 그 이후 Slow start <br/>\
 - Fast Recovery : Fast Retransmission 통해 손실 세그먼트 전송 후, Congestion Avoidance 수행 방식 <br/>\
 <font color = "red">* CNWD : Congestion Window </font><br/><br/>\
 # 알고리즘 분류 <br/>\
