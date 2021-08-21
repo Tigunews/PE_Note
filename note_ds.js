@@ -3861,21 +3861,40 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 ',
 
 // IaaS, PaaS, SaaS
-'# 개념도 (adr mov ssn)<br/>\
+'# 개념도 (<font color = "red">adr mov ssn</font>)<br/>\
 <img src = "./img/CloudType.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# IaaS <br/>\
+# IaaS(Host) <br/>\
+1. 아키텍처 <br/>\
+<img src = "./img/IaaS_Architecture.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 특징 <br/>\
 - 물리자원 가상화 : Infra 가상화 <br/>\
 - 높은 확장성 : 서비스 통한 리소스 확보 <br/>\
 - 비용 효율화 : 고정비용 제로 <br/><br/>\
-# PaaS <br/>\
+# PaaS(Build) <br/>\
+1. 주요기능 <br/>\
+- 런타임 : 실행 환경 제공 / DB, MQ, Hadoop - Middleware <br/>\
+- 격리 : 독립 공간 실행 기능 제공 / 가상머신, 컨테이너 <br/>\
+- 접근 : 외부 접근 위한 DNS 동적 연동 기술 / Scale in,Out <br/>\
+- 개발도구 : 개발 편이 위한 다양한 도구 구성 / CI 도구, 개발지원 도구 <br/><br/>\
+2. 특징 <br/>\
 - 유지관리 용이성 <br/>\
 - 개발 및 배포 효용성 : 필요 플랫폼만 사용하여 개발 및 배포 프로세스의 빠른 확보 <br/>\
 - 다중 엑세스 <br/><br/>\
-# SaaS <br/>\
+# SaaS(Consume) <br/>\
+1. 서비스 아키텍처 <br/>\
+- 서비스 운영관리 : 구독, 관리 Portal, Helpdesk <br/>\
+- Multi Tenancy  : App Management, Billing/Metering, Platform API, Security Management, Common Utility <br/>\
+<font color = "red">* Tenant : 소프트웨어 인스턴스에 대해 공통이 되는 특정 접근 권한을 공유하는 사용자 </font><br/><br/>\
+2. 특징 <br/>\
 - 물리자원 최소화 <br/>\
 - Time to market : 소프트웨어의 즉시 사용 가능 <br/>\
 - 유지보수 간소화 : 클라우드 제공업체를 통한 기술적 문제 지원 <br/><br/>\
-* 122회 4교시 1번\
+# 구축시 고려사항 <br/>\
+- 성능 : 가용률, 응답시간, 확장성 <br/>\
+- 신뢰성 : 서비스 회복 시간, 백업 주기 <br/>\
+- 고객 대응 : 고객 대응 체계, 고객 불만 처리체계 <br/><br/>\
+* 125회 응용 3교시 5번 <br/>\
+* 122회 관리 4교시 1번\
 ',
   
 // IaC
