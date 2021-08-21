@@ -649,7 +649,7 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 4. Site Business Planning and Logistics Network : 생산정보 통계 보고, 주문 등 비즈니스 데이터 ICS/OT 시스템 분배 <br/>\
 5. Enterprise Network : ICS 네트워크와 연결 기반 공장 설비 상태, 재고, 수요 파악, 비즈니스 결정 필요한 데이터 제공 영역 <br/>\
 <font color = "red">* EWS : Engineering Workstation <br/>\
-* IMDZ : Industrial Demilitarized Zone </font><br/><br/>\
+* IDMZ : Industrial Demilitarized Zone </font><br/><br/>\
 * 125회 관리 4교시 6번\
 ',
   
