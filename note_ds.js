@@ -641,13 +641,13 @@ var answer = answer.concat(
 # 계층 <br/>\
 <img src = "./img/PurdueModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 계층별 특징 (<font color = "red">PBSM I BE</font>)<br/>\
-0. Process Zone : Sensor, Actuator, Pump, Robot <br/>\
-1. Basic Control Zone : Batch Control, Distribute Control, Continuous Process <br/>\
-2. Area Supervisory Control Zone : HMI, EWS 모니터링 및 관리 <br/>\
+0. Process <font color = "red">Zone</font> : Sensor, Actuator, Pump, Robot <br/>\
+1. Basic Control <font color = "red">Zone</font> : Batch Control, Distribute Control, Continuous Process <br/>\
+2. Area Supervisory Control <font color = "red">Zone</font> : HMI, EWS 모니터링 및 관리 <br/>\
 3. Site Manufacturing Operation and Control : 시설 전체 제어, 모니터링, Domain Controller Server, Web Proxy Server, DB Server <br/>\
 IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
-4. Site Business Planning and Logistics Network : 생산정보 통계 보고, 주문 등 비즈니스 데이터 ICS/OT 시스템 분배 <br/>\
-5. Enterprise Network : ICS 네트워크와 연결 기반 공장 설비 상태, 재고, 수요 파악, 비즈니스 결정 필요한 데이터 제공 영역 <br/>\
+4. Site Business Planning and Logistics <font color = "red">Network</font> : 생산정보 통계 보고, 주문 등 비즈니스 데이터 ICS/OT 시스템 분배 <br/>\
+5. Enterprise <font color = "red">Network</font> : ICS 네트워크와 연결 기반 공장 설비 상태, 재고, 수요 파악, 비즈니스 결정 필요한 데이터 제공 영역 <br/>\
 <font color = "red">* EWS : Engineering Workstation <br/>\
 * IDMZ : Industrial Demilitarized Zone </font><br/><br/>\
 * 125회 관리 4교시 6번\
