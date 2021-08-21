@@ -1288,7 +1288,7 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 // 정보이론
-'# 정의 : 정보 수학적 정의 / 정보전송용량, 부호화, 예측 / 수학적 입장 연구 이론 <br/>\
+'# 정의 : 정보 수학적 정의 / 정보전송 용량, 부호화, 예측 / 수학적 입장 연구 이론 <br/>\
 - 정보에 수학적인 정의를 부여하고 통신의 정보전송용량, 정보의 부호화, 예측 등을 수학적인 입장에서 연구한 이론 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/InfomrationTheory.png" style = "max-width:100%; height:auto;"><br/><br/>\
