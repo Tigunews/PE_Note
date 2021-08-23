@@ -3894,6 +3894,8 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 성능 : 가용률, 응답시간, 확장성 <br/>\
 - 신뢰성 : 서비스 회복 시간, 백업 주기 <br/>\
 - 고객 대응 : 고객 대응 체계, 고객 불만 처리체계 <br/><br/>\
+# Model <br/>\
+<img src = "./img/CloudModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 응용 3교시 5번 <br/>\
 * 122회 관리 4교시 1번\
 ',
