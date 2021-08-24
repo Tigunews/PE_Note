@@ -17,11 +17,11 @@ var question = question.concat(
 'ISO 31000',
 'ITIL',
 '[ITIL]- SKMS',
-'Enterprise Arcitecture',
-'Information Strategy Plan',
-'Information Strategy Master Plan',
-'[Information Strategy Master Plan]- 정보시스템 구축사업 이행방안 수립절차',
-'[Information Strategy Master Plan]- 비용산정',
+'[정보화 사업]- Enterprise Arcitecture',
+'[정보화 사업]- Information Strategy Plan',
+'[정보화 사업]- Information Strategy Master Plan',
+'[정보화 사업][Information Strategy Master Plan]- 정보시스템 구축사업 이행방안 수립절차',
+'[정보화 사업][Information Strategy Master Plan]- 비용산정',
 '플랫폼 경제',
 '프로토콜 경제',
 '데이터 경제',
@@ -516,6 +516,10 @@ var answer = answer.concat(
 - INDEX : CSC Index 프레임워크 / 간단한 셀구조 표현, 명확, 이해 용이 / 유연성 부족, 관점별 접근 불가능 <br/><br/>\
 # EA Frameowrk <br/>\
 <img src = "./img/EA_Framework.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 범정부 활용 <br/>\
+- EA - 정보화 사업 자원관리 바탕으로 전자정부 성과관리 플랫폼으로 활용 / 행안부 <br/>\
+- ISP - 신규 정보시스템 구축사업 예산안 편성시 활용 / 기재부 <br/>\
+- ISMP - SW 사업 구축 전략 대한 지침 제공 / 지식경제부 <br/><br/>\
 * 119회 관리 4교시 3번\
 ',
  
