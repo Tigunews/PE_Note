@@ -388,7 +388,7 @@
 '[감리]- 상주감리',
 '[감리]- 기본점검표',
 'PMBOK 6th 주요개정 내용',
-'지식영역별 세부 프로세스 49개',
+'[PMBOK]- 지식영역별 세부 프로세스 49개',
 '발주 프로세스',
 '[발주]- 발주관리',
 '[발주]- RFI',
@@ -6579,7 +6579,9 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 <img src = "./img/PMBOK6_2_3.png" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/PMBOK6_2_4.png" style = "max-width:100%; height:auto;"><br/><br/>\
 3. 애자일 관련 내용. 비즈니스 문서, 조직구조 유형에 대한 내용 강화 <br/><br/>\
-4. 각 지식영역에 대해 최근 추세 및 실무 사례, 테일러링시 고려사항 애자일/적응형 환경을 위한 고려사항에 대한 설명 추가 \
+4. 각 지식영역에 대해 최근 추세 및 실무 사례, 테일러링시 고려사항 애자일/적응형 환경을 위한 고려사항에 대한 설명 추가 <br/><br/>\
+# PMBOK 6,7 비교 <br/>\
+<img src = "./img/PMBOK67.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 지식영역 세부프로세스 49개
