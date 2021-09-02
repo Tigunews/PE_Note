@@ -1,10 +1,11 @@
 ﻿var question = question.concat(
-'보안 아키텍처',
-'보안 Overview',
-'내외부 정보보안 위협',
-'공격 유형 Overview',
-'Cyber Kill Chain',
-'ATT and CK',
+'[개론]- 보안 아키텍처',
+'[개론]- 보안 Overview',
+'[개론]- 내외부 정보보안 위협',
+'[개론]- 공격 유형 Overview',
+'[개론]- 보안 약점, 취약점',
+'[개론]- Cyber Kill Chain',
+'[개론]- ATT and CK',
 'STRIDE',
 '암호학',
 '[암호학]- Kerckhoff 원리',
@@ -210,7 +211,14 @@ var answer = answer.concat(
 ',
 
 // 보안 Overview
-'# 목적 <br/>\
+'# 정의 : 위험의 총량을 줄이는 방법 <br/><br/>\
+# 구성요소 <br/>\
+- R = VAT - C <br/>\
+- V(Vulnerability) : 취약점 <br/>\
+- A(Asset) : 자산 <br/>\
+- T(Threat) : 위협 <br/>\
+- C(Contermeasure) : 보호대책 <br/><br/>\
+# 목적 <br/>\
 - 기밀성 : 인가된 사용자 <br/>\
 - 무결성 : 생성/변경/삭제 x <br/>\
 - 가용성 : 지체 없이 동작 <br/><br/>\
@@ -270,6 +278,10 @@ var answer = answer.concat(
 - 사례 : IDS/IPS, FW, WAF, SIEM <br/><br/>\
 2. IoA (Indicators of Attack) <br/>\
 - 사례 : AI, 머신러닝, 위협헌팅(Threat Hunting)\
+',
+
+// 보안 약점, 취약점
+'<img src = "./img/SecurityWeaknessVulunerability.png" style = "max-width: 100%; height: auto;">\
 ',
 
 // Cyber Kill Chain
