@@ -23,6 +23,15 @@
 '[블록암호화 운영모드]- OFB',
 '[블록암호화 운영모드]- CTR',
 '[암호학][스트림]- OTP',
+'[암호학]- PKI',
+'[암호학]- 2020 정부 전자서명법 개정',
+'[암호학]- 전자서명,전자봉투',
+'[암호학][전자서명,봉투]- 이중서명',
+'[암호학]- 양자암호통신',
+'[암호학][양자 보안]- QKD',
+'[암호학][양자 보안]- PQC',
+'[암호학]- 검색가능암호화',
+'[암호학][검색가능암호화]- PSES',
 '[암호학]- Base64',
 '[비대칭 암호]- 디피헬만 알고리즘',
 '[비대칭 암호]- ECC',
@@ -104,11 +113,6 @@
 '소프트웨어 개발보안 가이드',
 '클라우드 컴퓨팅 보안',
 'CVE',
-'[암호화 기술]- 양자암호통신',
-'[양자 보안]- QKD',
-'[양자 보안]- PQC',
-'검색가능암호화',
-'[검색가능암호화]- PSES',
 'PETs',
 'PPDM',
 'OWASP Top 10',
@@ -156,9 +160,6 @@
 '무자각 지속 인증(Implicity Continuous Authentication)',
 'GDPR',
 '[GDPR]- GDPR 적정성 평가',
-'2020 정부 전자서명법 개정',
-'전자서명,전자봉투',
-'[전자서명,봉투]- 이중서명',
 '개발보안 방법론',
 'Privacy By Design',
 'ISO/IEC 27017',
@@ -542,6 +543,170 @@ var answer = answer.concat(
 - 동기 방식 : 전달 행위 x, / 시간, 이벤트 방식 <br/><br/>\
 # 매커니즘 <br/>\
 <img src = "./img/OTP.png" style = "max-width: 100%; height: auto;">\
+',
+
+// PKI
+'# 정의 : 공개키 개인키 / 네트워크상 안전 / 비밀통신 구조 <br/>\
+- 인증기관에서 공개키와 개인키를 포함한 인증서를 발급받아 네트워크 상에서 안전하게 비밀통신을 가능케 하는 기반구조 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PKI_Structure.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 인증기관(CA) : 인증 정책 수립, 폐기, 목록관리, CRL 등록 및 인증 / 한국정보인증, KOSCOM, 금융 결제원 <br/>\
+- 등록기관(RA) : 사용자 신원 확인, 인증서 요구 승인, CA에 인증서 발급 요청 / 은행, 증권사 <br/>\
+- 검증기관(VA) : 유효성 검증/확인 주체 / 타 등록기관 <br/>\
+- CRL(정기적 검사) : 인증서 폐기 목록, 인증서 유효 점검 / 일괄 처리 목록 <br/>\
+- Directory : 인증서, 암호키에 대한 저장, 관리, 검색 / LDAP <br/>\
+- OCSP(실시간 검사) : 실시간 인증서 유효성 검증 / OCSP 서버 <br/>\
+- X.509 : CA가 발행한 공개키 인증서 표준 포맷 / 공인인증서  <br/>\
+<font color = "red">* CRL : Certificate Revocation List <br/>\
+* OCSP : Online Certification Status Protocol </font>\
+',
+
+// 2020 전자서명법 개정
+'# 공인인증서 연혁 <br/>\
+- 1999 : 정의 <br/>\
+- 2006 : 의무화 <br/>\
+- 2010 : 모바일 의무화 <br/>\
+- 2015 : 사용의무 폐지 <br/>\
+- 2020 : 공적효력 폐지 <br/><br/>\
+# 2020 전자서명법 개정 내용 (공수인가보)<br/>\
+1. 공인인증서 제도 페지 (2, 3) <br/>\
+- 공인,사설 인증서 구별 폐지 <br/>\
+- 공인인증서에 우월한 법적효력 폐지 <br/><br/>\
+2. 다양한 전자서명수단 이용활성화 (6)<br/>\
+- 의무 부여시 법률,대통령령,국회규칙 등 상위 법령 명시 <br/><br/>\
+3. 전자서명인증업무 운영 준수사실 인정제 도입 (7~11) <br/>\
+- 합리적 선택에 필요한 정보제공 위한 운영기준 고시 <br/><br/>\
+4. 전자서명 가입자 신원확인(14) <br/>\
+- 대통령령이 정한 방식의 신원 확인 절차 필수 <br/><br/>\
+5. 전자서명 가입자 및 이용자 보호 강화(15,20,22) <br/>\
+- 전자서명인증업무준칙 작성, 게시 (서비스 종류, 요금, 이용조건, 일종의 약관) <br/><br/>\
+# 사설 인증서 종류 <br/>\
+1. 카카오페이 <br/>\
+- PKI 구조 : 공인인증서와 동일한 구조 <br/>\
+- 블록체인 기술 적용 <br/><br/>\
+2. PASS <br/>\
+- 통신 3사 참여 <br/>\
+- 개인 휴대폰 이용 <br/><br/>\
+3. 뱅크사인 <br/>\
+- 은행연합회 <br/>\
+- 3년 유효기간 <br/><br/>\
+# 공인인증 생태계 동향 <br/>\
+- EU : 고급 전자서명의 기술적 요건을 규정하고 고급 전자서명에는 법령상 요구되는 서명의 효력을, 기타 전자서명에는 당사자간 서명 효력을 부여 <br/>\
+- 국내 : 혁신 금융 심사 위원회에서 SKT DID 관련 안건이 상정될 예정(2020.05.25.) <br/><br/>\
+* 122회 4교시 3번\
+',
+
+// 전자서명, 전자봉투
+'# 전자서명 : 서명자 확인 결합 정보<br/>\
+- 서명자를 확인하고 서명자가 당해 전자문서에 서명을 하였음을 나타는데 이용하기 위해 전자 문서에 첨부되거나 논리적으로 결합된 정보<br/><br/>\
+# 전자봉투 : 대칭키, 수신자 공개키 이용 비대칭 키 암호화 메시지<br/>\
+- 대칭키를 사용하여 문서의 내용을 암호화한 후 해당 키를 수신자의 공개키를 이용하여 비대칭키로 다시 암호화한 암호화 메시지 <br/><br/>\
+# 전자서명 생성과정 <br/><br/>\
+<img src = "./img/DigitalSignature.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/DigitalEnvelope.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 관련 동향 <br/>\
+- 정부는 공인인증서로 인한 사용자의 불편함을 해소하기 위해 전자서명간 차별을 폐지하는 전자서명법 전부개정법률 개정안 통과 (2020.05.)\
+',
+
+// 이중서명
+'# 정의 : 판매자 구매 정보만, 금융기관 결제 정보만<br/>\
+- SET(Secure Electronic Transaction)에서 고객의 프라이버시 보호 및 거래의 정당성 인증을 위해 고안된 전자서명 프로토콜 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DoubleAuthenticaiton.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 절차 <br/>\
+1. Sender <br/>\
+<img src = "./img/DoubleAuthenticaitonSender.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Receiver (<font color = "red">123 5423 // 복원 Hash 검증</font>)<br/>\
+<img src = "./img/DoubleAuthenticaitonReciver.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 82회 관리 2교시 6번\
+',
+
+// [암호화기술]- 양자암호통신
+'# 정의 : 양자 / 불확정성, 비복제성 / 암호화 통신 <br/>\
+- Quantum Cryptography Communication <br/>\
+- 단일광자의 양자역학 고유의 특성인 불확정성, 비복제성을 이용하여 암호통신의 핵심인 키 분배를 수행하여 도청이 불가능한 차세대 통신보안 기술<br/><br/>\
+# 양자 특징 <br/>\
+- 양자 중첩 (Quantum Superposition) : 0,1이 동시 존재하여 해석이 난해 / (1|0)<br/>\
+- 양자 얽힘 (Quantum Entanglement) : 거리와 무관한 특수 상관관계 / 1 ~ 1 <br/>\
+- 불확정성 (Uncertainty Principle) : 관측시 상태값 변화하여 해독 불가 / 1?0 <br/><br/>\
+# 양자 암호 통신 특징 : <br/>\
+- 보안성 : 데이터 네트워크와 보안적 분리된 환경 <br/>\
+- 효율성 : 전달효율 최대 보장 <br/>\
+- 투명성 : 필요한 양자키 쉽게 획득, 개방형 인터페이스 제공 <br/>\
+- 강건성 : 장애 관리 및 제어 요구사항 고려 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/QKD_Mechanishm.png" style = "max-width:100%; hegiht:auto;"><br/>\
+1. 기존 통신 : 송신자 암호화 > 정보 전달 > 수신자 복호화 <br/><br/>\
+2. 양자 암호 통신 <br/>\
+- 송수신자가 양자 주고 받음 <br/>\
+- 같은 암호키 동시 생성 <br/>\
+- 각자 보유한 QKD 기기 통한 양자 송수신 <br/>\
+- 양자 불확정성 통한 예측 불가능한 암호키 생성 <br/><br/>\
+# 구성요소 <br/>\
+- Qubits : 양자 통신 정보 최소 단위 <br/>\
+- 양자광학계 : 양자광원, 간섭계, 변조기(PM), 검출기(APD) <br/>\
+- QKD : 복제 불가능성, 파동함수 붕괴, Key 공유 <br/>\
+- 전자제어부 : 구동회로부, 신호처리부, 외부시스템 연계, 제어 회로부 <br/><br/>\
+# 동향 <br/>\
+1. 해외 <br/>\
+- 미국 : Google 큐비트 규모 양자 컴퓨터 발표 <br/>\
+- 유럽 : IDQ 양자 난수 생성기 공급, 특허 보유 <br/><br/>\
+2. 국내 <br/>\
+- SKT : 세계 1위 양자암호통신 기업 IDQ 인수 <br/>\
+- 한전 : 전력 전송구간 QKD 기술 보호 통신망 개통 <br/><br/>\
+# QKD 방식 비교 <br/>\
+<img src = "./img/QKDType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 117회 관리 1교시 3번 \
+',
+   
+// QKD
+'# 정의 : Quantum Key Distribution <br/>\
+- 양자역학에서 말하는 복제 불가능성 원리 및 파동함수 붕괴 현상을 이용해 두 사용자 간 암호 통신에 필요한 키를 서로 공유할 수 있도록 해주는 기술 <br/><br/>\
+# 특징 <br/>\
+- 도청 불가능 (물리적 자연현상) <br/>\
+- 광자 민감성 (통신 어려움) <br/>\
+- 중간자 공격 취약 (인증 기능x) <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/QKD_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 양자 광학계 : 양자광원, 간섭계, 변조기(PM), 검출기(APD) <br/>\
+- QRNG(Quantum Random Number Generator) : 양자난수발생기 <br/>\
+- 전자제어부 : 구동회로부, 신호처리부, 외부시스템과의 연결 인터페이스, 제어 회로부 <br/><br/>\
+# 키분배 프로토콜 (BB84 Protocol) <br/>\
+1. 편광 약속 후 전송 <br/>\
+2. 편광기저 랜덤하게 측정 수행 (100%/50%)<br/>\
+3. 각자의 기저 정보 기존 통신망 이용 공유 <br/>\
+4. 편광기저 같은 경우에 측정된 결과만 비밀키 생성 <br/><br/>\
+* 라이지움 87회 관리 2교시 6번\
+',
+   
+// PQC
+'# 정의 : 양자 알고리즘 대응 암호화 <br/>\
+- Post-Quantum Cryptography <br/>\
+- 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
+# 양자보안의 매커니즘(<font color = "red">암광키</font>) <br/>\
+<img src = "./img/QuntaumCryptographyMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 양자보안 알고리즘 종류 (<font color = "red">다코격아해</font>)<br/>\
+<img src = "./img/QuntaumCryptographyType.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 알고리즘간 장단점 <br/>\
+<img src = "./img/PQC_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 95회 1교시 13번\
+',
+
+// 검색가능암호화
+'# 정의 : 안정성 보장 검색 가능 암호 <br/>\
+- 기존의 암호 기술과 같이 암호화 된 정보에 대한 안정성을 보장하면서 동시에 특정 키워드를 포함하는 정보를 검색할 수 있도록 고안된 암호 기술 <br/><br/>\
+# 유형 <br/>\
+- 대칭 탐색가능 암호화 (Symmetric Searchable Encryption) <br/>\
+- 비대칭 탐색가능 암호화 (Asymmetric Searchable Encryption) <br/>\
+',
+
+// [검색가능암호화]- PKES
+'# 정의 : 공개키 검색가능 암호 시스템<br/>\
+- Public Key searchable Encryption System<br/>\
+- 공개키 암호 방식을 이용하여 사용자 이외의 다른 제공자가 암호문 및 인덱스를 생성할 수 있는 시스템 (TTA) <br/>\
+- 공개키 암호 시스템을 바탕으로 설계된 검색 가능 시스템으로 높은 안전성을 보장하고 대칭키 기반의 시스템이 제공하지 못하는 구간 검색, Conjunctive 검색 등 다양한 부가 기능을 구현하는 데 적합하지만 효율성이 떨어지는 단점이 있다.\
 ',
 
 // BASE64
@@ -2114,93 +2279,6 @@ var answer = answer.concat(
 -> MITRE Corporation CVE Editor와 Primary CNA 관리 수행, CVE Editorial Board에서 CVE 생성 프로세스 감독 \
 ',
    
-// [암호화기술]- 양자암호통신
-'# 정의 : 양자 / 불확정성, 비복제성 / 암호화 통신 <br/>\
-- Quantum Cryptography Communication <br/>\
-- 단일광자의 양자역학 고유의 특성인 불확정성, 비복제성을 이용하여 암호통신의 핵심인 키 분배를 수행하여 도청이 불가능한 차세대 통신보안 기술<br/><br/>\
-# 양자 특징 <br/>\
-- 양자 중첩 (Quantum Superposition) : 0,1이 동시 존재하여 해석이 난해 / (1|0)<br/>\
-- 양자 얽힘 (Quantum Entanglement) : 거리와 무관한 특수 상관관계 / 1 ~ 1 <br/>\
-- 불확정성 (Uncertainty Principle) : 관측시 상태값 변화하여 해독 불가 / 1?0 <br/><br/>\
-# 양자 암호 통신 특징 : <br/>\
-- 보안성 : 데이터 네트워크와 보안적 분리된 환경 <br/>\
-- 효율성 : 전달효율 최대 보장 <br/>\
-- 투명성 : 필요한 양자키 쉽게 획득, 개방형 인터페이스 제공 <br/>\
-- 강건성 : 장애 관리 및 제어 요구사항 고려 <br/><br/>\
-# 매커니즘 <br/>\
-<img src = "./img/QKD_Mechanishm.png" style = "max-width:100%; hegiht:auto;"><br/>\
-1. 기존 통신 : 송신자 암호화 > 정보 전달 > 수신자 복호화 <br/><br/>\
-2. 양자 암호 통신 <br/>\
-- 송수신자가 양자 주고 받음 <br/>\
-- 같은 암호키 동시 생성 <br/>\
-- 각자 보유한 QKD 기기 통한 양자 송수신 <br/>\
-- 양자 불확정성 통한 예측 불가능한 암호키 생성 <br/><br/>\
-# 구성요소 <br/>\
-- Qubits : 양자 통신 정보 최소 단위 <br/>\
-- 양자광학계 : 양자광원, 간섭계, 변조기(PM), 검출기(APD) <br/>\
-- QKD : 복제 불가능성, 파동함수 붕괴, Key 공유 <br/>\
-- 전자제어부 : 구동회로부, 신호처리부, 외부시스템 연계, 제어 회로부 <br/><br/>\
-# 동향 <br/>\
-1. 해외 <br/>\
-- 미국 : Google 큐비트 규모 양자 컴퓨터 발표 <br/>\
-- 유럽 : IDQ 양자 난수 생성기 공급, 특허 보유 <br/><br/>\
-2. 국내 <br/>\
-- SKT : 세계 1위 양자암호통신 기업 IDQ 인수 <br/>\
-- 한전 : 전력 전송구간 QKD 기술 보호 통신망 개통 <br/><br/>\
-# QKD 방식 비교 <br/>\
-<img src = "./img/QKDType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* 117회 관리 1교시 3번 \
-',
-   
-// QKD
-'# 정의 : Quantum Key Distribution <br/>\
-- 양자역학에서 말하는 복제 불가능성 원리 및 파동함수 붕괴 현상을 이용해 두 사용자 간 암호 통신에 필요한 키를 서로 공유할 수 있도록 해주는 기술 <br/><br/>\
-# 특징 <br/>\
-- 도청 불가능 (물리적 자연현상) <br/>\
-- 광자 민감성 (통신 어려움) <br/>\
-- 중간자 공격 취약 (인증 기능x) <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/QKD_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-- 양자 광학계 : 양자광원, 간섭계, 변조기(PM), 검출기(APD) <br/>\
-- QRNG(Quantum Random Number Generator) : 양자난수발생기 <br/>\
-- 전자제어부 : 구동회로부, 신호처리부, 외부시스템과의 연결 인터페이스, 제어 회로부 <br/><br/>\
-# 키분배 프로토콜 (BB84 Protocol) <br/>\
-1. 편광 약속 후 전송 <br/>\
-2. 편광기저 랜덤하게 측정 수행 (100%/50%)<br/>\
-3. 각자의 기저 정보 기존 통신망 이용 공유 <br/>\
-4. 편광기저 같은 경우에 측정된 결과만 비밀키 생성 <br/><br/>\
-* 라이지움 87회 관리 2교시 6번\
-',
-   
-// PQC
-'# 정의 : 양자 알고리즘 대응 암호화 <br/>\
-- Post-Quantum Cryptography <br/>\
-- 양자 컴퓨터의 보안 위협에 대응할 수 있는 암호 기술로, 양자 컴퓨터의 연산능력으로도 풀 수 없는 수학적 난제를 활용한 암호화 기술 <br/><br/>\
-# 양자보안의 매커니즘(<font color = "red">암광키</font>) <br/>\
-<img src = "./img/QuntaumCryptographyMechanism.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 양자보안 알고리즘 종류 (<font color = "red">다코격아해</font>)<br/>\
-<img src = "./img/QuntaumCryptographyType.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 알고리즘간 장단점 <br/>\
-<img src = "./img/PQC_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 95회 1교시 13번\
-',
-
-// 검색가능암호화
-'# 정의 : 안정성 보장 검색 가능 암호 <br/>\
-- 기존의 암호 기술과 같이 암호화 된 정보에 대한 안정성을 보장하면서 동시에 특정 키워드를 포함하는 정보를 검색할 수 있도록 고안된 암호 기술 <br/><br/>\
-# 유형 <br/>\
-- 대칭 탐색가능 암호화 (Symmetric Searchable Encryption) <br/>\
-- 비대칭 탐색가능 암호화 (Asymmetric Searchable Encryption) <br/>\
-',
-
-// [검색가능암호화]- PKES
-'# 정의 : 공개키 검색가능 암호 시스템<br/>\
-- Public Key searchable Encryption System<br/>\
-- 공개키 암호 방식을 이용하여 사용자 이외의 다른 제공자가 암호문 및 인덱스를 생성할 수 있는 시스템 (TTA) <br/>\
-- 공개키 암호 시스템을 바탕으로 설계된 검색 가능 시스템으로 높은 안전성을 보장하고 대칭키 기반의 시스템이 제공하지 못하는 구간 검색, Conjunctive 검색 등 다양한 부가 기능을 구현하는 데 적합하지만 효율성이 떨어지는 단점이 있다.\
-',
-
 // PETs
 '# 정의 : 프라이버시 침해 / 방어, 탐지 기술 <br/>\
 - Privacy Enhancing Technology <br/>\
@@ -3244,66 +3322,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 # 기대효과 <br/>\
 <img src = "./img/GDPR_Effect.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 97회 관리 1교시 4번\
-',
-
-// 2020 전자서명법 개정
-'# 공인인증서 연혁 <br/>\
-- 1999 : 정의 <br/>\
-- 2006 : 의무화 <br/>\
-- 2010 : 모바일 의무화 <br/>\
-- 2015 : 사용의무 폐지 <br/>\
-- 2020 : 공적효력 폐지 <br/><br/>\
-# 2020 전자서명법 개정 내용 (공수인가보)<br/>\
-1. 공인인증서 제도 페지 (2, 3) <br/>\
-- 공인,사설 인증서 구별 폐지 <br/>\
-- 공인인증서에 우월한 법적효력 폐지 <br/><br/>\
-2. 다양한 전자서명수단 이용활성화 (6)<br/>\
-- 의무 부여시 법률,대통령령,국회규칙 등 상위 법령 명시 <br/><br/>\
-3. 전자서명인증업무 운영 준수사실 인정제 도입 (7~11) <br/>\
-- 합리적 선택에 필요한 정보제공 위한 운영기준 고시 <br/><br/>\
-4. 전자서명 가입자 신원확인(14) <br/>\
-- 대통령령이 정한 방식의 신원 확인 절차 필수 <br/><br/>\
-5. 전자서명 가입자 및 이용자 보호 강화(15,20,22) <br/>\
-- 전자서명인증업무준칙 작성, 게시 (서비스 종류, 요금, 이용조건, 일종의 약관) <br/><br/>\
-# 사설 인증서 종류 <br/>\
-1. 카카오페이 <br/>\
-- PKI 구조 : 공인인증서와 동일한 구조 <br/>\
-- 블록체인 기술 적용 <br/><br/>\
-2. PASS <br/>\
-- 통신 3사 참여 <br/>\
-- 개인 휴대폰 이용 <br/><br/>\
-3. 뱅크사인 <br/>\
-- 은행연합회 <br/>\
-- 3년 유효기간 <br/><br/>\
-# 공인인증 생태계 동향 <br/>\
-- EU : 고급 전자서명의 기술적 요건을 규정하고 고급 전자서명에는 법령상 요구되는 서명의 효력을, 기타 전자서명에는 당사자간 서명 효력을 부여 <br/>\
-- 국내 : 혁신 금융 심사 위원회에서 SKT DID 관련 안건이 상정될 예정(2020.05.25.) <br/><br/>\
-* 122회 4교시 3번\
-',
-
-// 전자서명, 전자봉투
-'# 전자서명 : 서명자 확인 결합 정보<br/>\
-- 서명자를 확인하고 서명자가 당해 전자문서에 서명을 하였음을 나타는데 이용하기 위해 전자 문서에 첨부되거나 논리적으로 결합된 정보<br/><br/>\
-# 전자봉투 : 대칭키, 수신자 공개키 이용 비대칭 키 암호화 메시지<br/>\
-- 대칭키를 사용하여 문서의 내용을 암호화한 후 해당 키를 수신자의 공개키를 이용하여 비대칭키로 다시 암호화한 암호화 메시지 <br/><br/>\
-# 전자서명 생성과정 <br/><br/>\
-<img src = "./img/DigitalSignature.png" style = "max-width:100%; height:auto;"><br/><br/>\
-<img src = "./img/DigitalEnvelope.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 관련 동향 <br/>\
-- 정부는 공인인증서로 인한 사용자의 불편함을 해소하기 위해 전자서명간 차별을 폐지하는 전자서명법 전부개정법률 개정안 통과 (2020.05.)\
-',
-
-// 이중서명
-'# 정의 : 판매자 구매 정보만, 금융기관 결제 정보만<br/>\
-- SET(Secure Electronic Transaction)에서 고객의 프라이버시 보호 및 거래의 정당성 인증을 위해 고안된 전자서명 프로토콜 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/DoubleAuthenticaiton.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 절차 <br/>\
-1. Sender <br/>\
-<img src = "./img/DoubleAuthenticaitonSender.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. Receiver (<font color = "red">123 5423 // 복원 Hash 검증</font>)<br/>\
-<img src = "./img/DoubleAuthenticaitonReciver.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 82회 관리 2교시 6번\
 ',
 
 // 개발보안 방법론
