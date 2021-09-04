@@ -33,23 +33,27 @@
 '[암호학]- 검색가능암호화',
 '[암호학][검색가능암호화]- PSES',
 '[암호학]- Base64',
-'[비대칭 암호]- 디피헬만 알고리즘',
-'[비대칭 암호]- ECC',
-'[비대칭 암호][ECC]- ECDSA',
-'[단방향 암호]- Hash Function',
-'[단방향 암호][Hash Function]- Hash Algorithm',
-'[Hash Algorithm]- MDC',
-'[Hash Algorithm]- MAC',
-'[Hash Algorithm]- Hash Salt',
-'[Hash Algorithm]- Key Stretching',
-'경량 암호',
-'[경량 암호]- LSH 암호화',
-'[경량 암호]- LEA 암호화',
-'형태 보존 암호화',
-'순서 보존 암호화',
-'동형암호',
-'[동형암호]- 준 동형암호',
-'[동형암호]- 완전 동형암호',
+'[암호학][비대칭 암호]- 디피헬만 알고리즘',
+'[암호학][비대칭 암호]- ECC',
+'[암호학][비대칭 암호][ECC]- ECDSA',
+'[암호학][단방향 암호]- Hash Function',
+'[암호학][단방향 암호][Hash Function]- Hash Algorithm',
+'[암호학][Hash Algorithm]- MDC',
+'[암호학][Hash Algorithm]- MAC',
+'[암호학][Hash Algorithm]- Hash Salt',
+'[암호학][Hash Algorithm]- Key Stretching',
+'[암호학]경량 암호',
+'[암호학][경량 암호]- LSH 암호화',
+'[암호학][경량 암호]- LEA 암호화',
+'[암호학]형태 보존 암호화',
+'[암호학]순서 보존 암호화',
+'[암호학]동형암호',
+'[암호학][동형암호]- 준 동형암호',
+'[암호학][동형암호]- 완전 동형암호',
+'접근통제',
+'[접근통제]- MAC',
+'[접근통제]- DAC',
+'[접근통제]- RBAC',
 '보안이슈, 대응방안',
 'SW 보안 약점',
 'NAC',
@@ -166,7 +170,6 @@
 'ISO 27001',
 'ISO/IEC 27018',
 'SDP',
-'접근통제',
 '[DB 보안]- DB 보호 솔루션',
 '[DB 보안]- Bell LaPadula',
 '[DB 보안]- Biba',
@@ -1036,6 +1039,65 @@ var answer = answer.concat(
 - Fully Homomorhpic Encryption <br/>\
 - 암호화된 상태 그대로 원문 정보에 대한 연산이나 검색이 가능한 4세대 암호 (기본적인 준동형성에 모든 임의 논리 연산을 보존하는 준동형 암호) <br/><br/>\
 * IBM 연구원 Craig Gentry에 의해 2009년 개발 됨 \
+',
+
+// 접근통제
+'# 정의 : 주체, 객체 / 접근 절차, 메커니즘 <br/>\
+- 주체가 객체에 접근 시 이용하는 절차 및 메커니즘 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/AccessControl.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 정책 : MAC, DAC, RBAC <br/>\
+- 모델 : Biba, BLP, Clark-Wilson <br/>\
+- 메커니즘 : ACL, CL, SL <br/><br/>\
+# 메커니즘 <br/>\
+<img src = "./img/AccessControlMechanishm.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 원칙 <br/>\
+- 최소 권한 부여 : 업무 수행시 꼭 필요한 권한만 부여 <br/>\
+- 최대 권한 정책 : 데이터 공유의 장점으로 가용성 관리 <br/>\
+- 직무 분리 : 보안, 감사, 관리 등 직무의 권한 분리 \
+',
+
+// MAC
+'# 정의 : 극비, 비밀, 미분류 / 객체 보안등급 / 객체 인가등급 <br/>\
+- Mandatory Access Control <br/>\
+- 객체에는 보안등급을 부여하고, 주체에는 인가등급 부여하는 접근권한 보안 정책 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/MAC.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 동작 상세 <br/>\
+1. 동작원리 <br/>\
+- 상위 등급 주체 : 하위 등급 객체 Read 가능 <br/>\
+- 하위 등급 주체 : 상위 등급 객체 Write 가능 / 병사->장군 결재 <br/>\
+<font color = "red">* 반대 경우 제한 </font><br/><br/>\
+2. 방식 <br/>\
+- 규칙 기반 : MLP(자동화 강제 정책), CBP(타깃 집합, 다른 타깃과 분리된 범주) <br/>\
+- 관계 기반 : 시스템 관리자가 직접 통제하는 방식 <br/>\
+<font color = "red">* MLP : Multi Level Policy <br/>\
+* CBP : Component Based Policy </font>\
+',
+
+// DAC
+'# 정의 : 신분 근거 / 접근 제한 <br/>\
+- Discretionary Access Control <br/>\
+- 주체나 주체가 속해 있는 그룹의 신원(신분)에 근거하여 객체에 대한 접근을 제한하는 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/DAC.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 방식 <br/>\
+- 신원 기반 : 유닉스 시스템, ID 기반 통제 수행 <br/>\
+- 사용자 기반 : 객체 소유자가 접근 권한 설정 및 변경 수행 <br/>\
+- 혼합 : 신원 + 사용자 기반 동시 이용 \
+',
+
+// RBAC
+'# 정의 : 중앙관리자, 주체, 객체 상호 관계 통제 / 역할 기반 / 접근 허용 결정 방법 <br/>\
+- Role Based Access  Control <br/>\
+- 중앙관리자가 주체(사용자)와 객체(자료)의 상호관계를 통제하여, 조직 내에서 맡은 역할에 기초하여 자원에 대한 접근 허용 여부를 결정하는 방법 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/RBAC.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 원칙 <br/>\
+- 최소 권한 : 사용상 최소한의 권한 부여 <br/>\
+- 직무 분리 : 서로간의 역할 분리 이후, 강제 휴가 등 조치 통한 상호 감시 수행 <br/>\
+- 데이터 추상화 : 역할 따라 이해 가능한 명령어로 추상화 \
 ',
   
 // 보안이슈, 대응방안
@@ -3477,11 +3539,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - SDP : White List, ID 기반 동적 설정 <br/><br/>\
 * KPC 95회 1교시 2번\
 ',
-  
-// 접근 통제
-'<img src = "./img/AccessControl.png" style = "max-width: 100%; height: auto;">\
-',
-  
+   
 // DB 보호 솔루션
 '# 접근제어 시스템 <br/>\
 1. Agent : DB 서버 자체 설치 (접근 제어, 로깅) <br/>\
