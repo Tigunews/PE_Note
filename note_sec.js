@@ -24,7 +24,8 @@
 '[블록암호화 운영모드]- CTR',
 '[암호학][스트림]- OTP',
 '[암호학]- PKI',
-'[암호학]- 2020 정부 전자서명법 개정',
+'[암호학][PKI]- X.509',
+'[암호학][PKI]- 2020 정부 전자서명법 개정',
 '[암호학]- 전자서명,전자봉투',
 '[암호학][전자서명,봉투]- 이중서명',
 '[암호학]- 양자암호통신',
@@ -51,14 +52,20 @@
 '[암호학][동형암호]- 준 동형암호',
 '[암호학][동형암호]- 완전 동형암호',
 '접근통제',
-'[접근통제]- MAC',
-'[접근통제]- DAC',
-'[접근통제]- RBAC',
+'[접근통제][정책]- MAC',
+'[접근통제][정책]- DAC',
+'[접근통제][정책]- RBAC',
+'[접근통제][모델]- Bell LaPadula',
+'[접근통제][모델]- Biba',
+'[접근통제][모델]- Clark-Wilson',
+'[접근통제][네트워크]- TCP Wrapper',
+'[보안 솔루션]- 방화벽',
+'[보안 솔루션][방화벽]- 웹 방화벽',
+'[보안 솔루션][방화벽]- 차세대 방화벽',
 '보안이슈, 대응방안',
 'SW 보안 약점',
 'NAC',
 'WNAC',
-'TCP Wrapper',
 '[보안솔루션]- IDS',
 '[보안솔루션]- IPS',
 '[공격기법]- XSS',
@@ -158,8 +165,6 @@
 '코드서명 (코드사인, Codesign)',
 'WPA3',
 '커버로스(Kerberos)',
-'WAF',
-'X.509',
 '라이트 커맨드(Light Commands) 취약점',
 '무자각 지속 인증(Implicity Continuous Authentication)',
 'GDPR',
@@ -171,9 +176,6 @@
 'ISO/IEC 27018',
 'SDP',
 '[DB 보안]- DB 보호 솔루션',
-'[DB 보안]- Bell LaPadula',
-'[DB 보안]- Biba',
-'[DB 보안]- Clark-Wilson',
 'BEC(Business  E-mail Compromise)',
 '[CPU 보안]- 스펙터(Spectre)',
 '[CPU 보안]- Meltdown',
@@ -564,6 +566,11 @@ var answer = answer.concat(
 <font color = "red">* CRL : Certificate Revocation List <br/>\
 * OCSP : Online Certification Status Protocol </font>\
 ',
+
+// X.509
+'# 정의 : 공개키 기반 ITU-T 표준 <br/>\
+- 암호학에서 공개키 인증서와 인증 알고리즘의 표준 가운데 공개키 기반(PKI)의 ITU-T 표준<br/>\
+- X.509 시스템에서 CA는 X.500 규약에 따라 서로 구별되는 공개키를 가진 인증서를 발행',
 
 // 2020 전자서명법 개정
 '# 공인인증서 연혁 <br/>\
@@ -1099,6 +1106,112 @@ var answer = answer.concat(
 - 직무 분리 : 서로간의 역할 분리 이후, 강제 휴가 등 조치 통한 상호 감시 수행 <br/>\
 - 데이터 추상화 : 역할 따라 이해 가능한 명령어로 추상화 \
 ',
+
+// Bell-Lapadula
+'# 정의 : 기밀성 중점 모델 / MAC 기반 <br/>\
+- 정보를 극비, 비밀, 미분류로 분류하여, 접근 통제하는 모델 <br/><br/>\
+# 보안규칙 <br/>\
+<img src = "./img/NRUNWD.png" style = "max-width: 100%; height: auto;"><br/>\
+- 단순 보안 규칙 : No Read Up<br/>\
+- * Property Rule : No Write Down <br/>\
+- String * Property Rule : 동일 레벨에 대해서만 R/W 가능 <br/><br/>\
+* 아이리포 23회 1교시 8번 \
+',
+
+// Biba
+'# 정의 : Bell LaPadula + 불법 수정 방지 / 무결성 중점 모델 <br/>\
+- Bell LaPadula 모델에서 불법 수정 방지 내용을 추가로 정의한 접근 통제 모델 <br/><br/>\
+# 보안규칙 <br/>\
+<img src = "./img/NRDNWU.png" style = "max-width: 100%; height: auto;"><br/>\
+- 단순 무결성 규칙 : No Read-Down <br/>\
+- 스타 무결성 규칙(* Integrity Axiom) : No Write-Up <br/><br/>\
+* 아이리포 23회 1교시 8번\
+',
+
+// Clark and Wilson
+'# 정의 : 보안 접근 통제 모델 / 불법 수정 방지 / 금융, 회계 <br/>\
+- 무결성 중심 상업적 모델 <br/>\
+- 최초의 상업환경에 적합하게 개발된 불법 수정 방지를 위한 보안 접근 통제 모델, 금융자산의 관리, 회계등의 분야에 주로 적용 <br/><br/>\
+# 특징 <br/>\
+- 상업적 응용 보다, 현실적인 무결성 보호 접근 제어 모델 <br/>\
+- 무결성이 유지되도록 제한된 방식으로 데이터 조작 <br/>\
+- 사용자간 임무를 확실하게 분리 (인증하는 사람은 해당 거래 참여 불가)<br/><br/>\
+# 구성요소 <br/>\
+<img src = "./img/CW_Deetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Access Tripe : 주체, 객체, 프로그램 <br/><br/>\
+<img src = "./img/CW_Model.png" style = "max-width:100%; height:auto;">\
+',
+
+// TCP Wrapper
+'# 정의 : 네트워크 서비스 트래픽 제어, 모니터링 / UNIX 기반 방화벽 툴 <br/>\
+- 네트워크 서비스에 관련한 트래픽을 제어하고 모니터링 할 수 있는 UNIX 기반 방화벽 툴 <br/><br/>\
+# 특징 <br/>\
+- 네트워크 서비스 필터링 : finger, ftp, telnet, rlogin, rsh, exec, tftp, talk, cosmat <br/>\
+- TCP 서비스 제어 : /usr/sbin/tcpd 데몬 의한 제어 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/TCPWrapperOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 메커니즘 <br/>\
+- 클라이언트 접속요구(xinet.d) : Inetd 데몬 -> tcpd 데몬 <br/>\
+- 클라이언트 접근권한 확인(allow, deny) : Tcpd 데몬, 클라이언트 접근 권한 확인 <br/>\
+- 네트워크 서비스 제공 : 접근 허용 위한 TCP 서비스 정의 <br/><br/>\
+# 설정 <br/>\
+- /etc/hosts.allow : 네트워크 허용 TCP 서비스 정의 <br/>\
+- /etc/hosts.deny : 네트워크 접근 거부 위한 TCP 서비스 정의 <br/>\
+- Default : Allow <br/><br/>\
+* 125회 응용 1교시 9번\
+',
+
+// 방화벽
+'# 정의 : 불법 유출 방지 / 상호 영향 차단 / IP 주소, 포트기반 / 보안 시스템 <br/>\
+- 외부로부터의 불법 침입과 내부의 불법 정보 유출을 방지하고, 내/외부 네트워크의 상호간 영향을 차단하기 위한 보안 시스템 <br/><br/>\
+# 기능 <br/>\
+- 접근제어 : 송/수신자의 IP 주소, 프로토콜(TCP,UDP), 서비스 포트 패킷 필터링 <br/>\
+- 사용자 인증 : 트래픽에 대한 사용자 신분 증명 <br/>\
+- 감사 및 로그 : 트래픽에 대한 접속 정보/작업 내역 기록 <br/>\
+- Proxy 기능 : 네트워크 IP 주소 대체, 실제 IP 주소를 인터넷 상에서 은닉 <br/>\
+- 네트워크 주소 변환 : 내부, 외부 주소 변환 수행 <br/><br/>\
+# 구축 유형 <br/>\
+1. 네트워크 방식 : 네트워크 라인에 직접 연결 <br/>\
+- 스크리닝 라우터(Screening Router) <br/>\
+- 배스천 호스트(Bestion Host) <br/><br/>\
+2. 게이트웨이 방식 : 별도 관문 역할 수행 <br/>\
+- 이중 홈 게이트웨이(Dual-Homed Gateway) <br/>\
+- 스크린된 호스트 게이트웨이(Screened Host Gateway) <br/>\
+- 스크린된 서브넷 게이트웨이(Screened Subnet Gateway) \
+',
+
+// 웹 방화벽
+'# 정의 : 웹 트래픽 기반 / 악의적 코드, 공격 / 차단 방화벽 <br/>\
+- Web Application Firewall <br/>\
+- 웹 서버로 들어오는 웹 트래픽을 검사하여 악의적인 코드나 공격 유형이 포함된 웹 트래픽을 차단해 주는 방화벽 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/WAF.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 기능 <br/>\
+- 공격 차단 : SSL 복호화 통한 패킷의 페이로드 웹 공격 차단 <br/>\
+- 검사 방식 : 사용자 요청 의한 검사 방식 <br/>\
+- 검사 항목 : Buffer overflow, SQL Injection , XSS, 개인정보 검출 <br/><br/>\
+# 방화벽, 웹 방화벽 비교 <br/>\
+<img src = "./img/FW_WAF_Compare.png" style = "max-width: 100%; height: auto;">\
+',
+
+// 차세대 방화벽
+'# 정의 : 포트, 프로토콜 기반 / 애플리케이션 레벨 검사 / 침입 차단 / 앱 개별 관리 가능 방화벽 <br/>\
+- Next Generation Fire Wall <br/>\
+- 포트, 프로토콜을 검사하는 기존 방화벽뿐만 아니라 애플리케이션 레벨의 검사를 하고, 침입을 차단하는 앱 레벨의 개별 관리가 가능한 보안 솔루션 <br/><br/>\
+# 기술 흐름 <br/>\
+<img src = "./img/NGFW_Flow.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 주요 기능 <br/>\
+- 애플리케이션 식별 및 제어 : 애플리케이션과 사용자 인식, 컨텐츠와 성능 가시성 확보 <br/>\
+- 실시간 SSL 세션 해독 : SSL ㅌ오한 인증서 사용 여부 탐지/제어 <br/>\
+- 고성능 보안 기능 수행 : IPS, UTM 성능 지연 이슈 해결 <br/>\
+- 알려지지 않은 위협 대응 : 샌드박스 통한 별도 공간 분리 실행 통한 위협 대응 <br/>\
+- URL 필터링 : 트래픽 분석 통한 악성 URL 접근 방지 <br/>\
+- 기존 보안 기술 제공 : 안티파이러스 IPS, VPN 제공 <br/><br/>\
+# NGFW Application 기능 <br/>\
+- 애플리케이션 난독화 : LOL, ROL, XOR <br/>\
+- 애플리케이션 프로토콜 디코딩 : Send, Recv 기능 분리 <br/>\
+- 애플리케이션 통제 : 사용자별 분리 통한 애플리케이션 통제 가능 \
+',
   
 // 보안이슈, 대응방안
 '# 보안 이슈<br/>\
@@ -1204,25 +1317,6 @@ var answer = answer.concat(
 - SE : System Engineering<br/>\
 - Wireless Network Access Control <br/>\
 - NW 접근방식에 무선 공격을 탐지할 수 있는 기능을 추가하여 비인가자의 접근을 차단하는 방법\
-',
-
-// TCP Wrapper
-'# 정의 : 네트워크 서비스 트래픽 제어, 모니터링 / UNIX 기반 방화벽 툴 <br/>\
-- 네트워크 서비스에 관련한 트래픽을 제어하고 모니터링 할 수 있는 UNIX 기반 방화벽 툴 <br/><br/>\
-# 특징 <br/>\
-- 네트워크 서비스 필터링 : finger, ftp, telnet, rlogin, rsh, exec, tftp, talk, cosmat <br/>\
-- TCP 서비스 제어 : /usr/sbin/tcpd 데몬 의한 제어 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/TCPWrapperOverview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 메커니즘 <br/>\
-- 클라이언트 접속요구 : Inetd 데몬 -> tcpd 데몬 <br/>\
-- 클라이언트 접근권한 확인 : Tcpd 데몬, 클라이언트 접근 권한 확인 <br/>\
-- 네트워크 서비스 제공 : 접근 허용 위한 TCP 서비스 정의 <br/><br/>\
-# 설정 <br/>\
-- /etc/hosts.allow : 네트워크 허용 TCP 서비스 정의 <br/>\
-- /etc/hosts.deny : 네트워크 접근 거부 위한 TCP 서비스 정의 <br/>\
-- Default : Allow <br/><br/>\
-* 125회 응용 1교시 9번\
 ',
 
 // IDS
@@ -3272,16 +3366,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 * 라이지움 90회 응용 1교시 13번 \
 ',
 
-// WAF
-'# 정의 : 웹 공격 대응 역할 수행 장치<br/>\
-- Web Application Firewall <br/>\
-- 웹 방화벽(WAF)은 웹을 통한 외부의 침입이나 웹 공격을 탐지하고 대응하는 역할을 수행',
-
-// X.509
-'# 정의 : 공개키 기반 ITU-T 표준 <br/>\
-- 암호학에서 공개키 인증서와 인증 알고리즘의 표준 가운데 공개키 기반(PKI)의 ITU-T 표준<br/>\
-- X.509 시스템에서 CA는 X.500 규약에 따라 서로 구별되는 공개키를 가진 인증서를 발행',
-
 // 라이트 커맨드 취약점
 '# 정의 : IoT 스피커 빛 이용 원격 명령 삽입 취약점 <br/>\
 - 공격자가 음성기반의 IoT 스피커에 빛(레이저)을 이용하여 원격으로 명령을 삽입할 수 있는 취약점',
@@ -3558,42 +3642,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 <img src = "./img/DB_Solution4.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 # 암호화 방식 비교 <br/>\
 <img src = "./img/DB_Solution5.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-',
-  
-// Bell-Lapadula
-'# 정의 : 기밀성 중점 모델 / MAC 기반 <br/>\
-- 정보를 극비, 비밀, 미분류로 분류하여, 접근 통제하는 모델 <br/><br/>\
-# 보안규칙 <br/>\
-<img src = "./img/NRUNWD.png" style = "max-width: 100%; height: auto;"><br/>\
-- 단순 보안 규칙 : No Read Up<br/>\
-- * Property Rule : No Write Down <br/>\
-- String * Property Rule : 동일 레벨에 대해서만 R/W 가능 <br/><br/>\
-* 아이리포 23회 1교시 8번 \
-',
-
-// Biba
-'# 정의 : Bell LaPadula + 불법 수정 방지 / 무결성 중점 모델 <br/>\
-- Bell LaPadula 모델에서 불법 수정 방지 내용을 추가로 정의한 접근 통제 모델 <br/><br/>\
-# 보안규칙 <br/>\
-<img src = "./img/NRDNWU.png" style = "max-width: 100%; height: auto;"><br/>\
-- 단순 무결성 규칙 : No Read-Down <br/>\
-- 스타 무결성 규칙(* Integrity Axiom) : No Write-Up <br/><br/>\
-* 아이리포 23회 1교시 8번\
-',
-
-// Clark and Wilson
-'# 정의 : 보안 접근 통제 모델 / 불법 수정 방지 / 금융, 회계 <br/>\
-- 무결성 중심 상업적 모델 <br/>\
-- 최초의 상업환경에 적합하게 개발된 불법 수정 방지를 위한 보안 접근 통제 모델, 금융자산의 관리, 회계등의 분야에 주로 적용 <br/><br/>\
-# 특징 <br/>\
-- 상업적 응용 보다, 현실적인 무결성 보호 접근 제어 모델 <br/>\
-- 무결성이 유지되도록 제한된 방식으로 데이터 조작 <br/>\
-- 사용자간 임무를 확실하게 분리 (인증하는 사람은 해당 거래 참여 불가)<br/><br/>\
-# 구성요소 <br/>\
-<img src = "./img/CW_Deetail.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# Access Tripe : 주체, 객체, 프로그램 <br/><br/>\
-<img src = "./img/CW_Model.png" style = "max-width:100%; height:auto;">\
-',
+', 
   
 // BEC
 '# 정의 : CEO 사칭 공격 <br/>\
