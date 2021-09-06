@@ -1,6 +1,7 @@
 ﻿var question = question.concat(
 '[개론]- 보안 아키텍처',
 '[개론]- 보안 Overview',
+'보안이슈, 대응방안',
 '[개론]- 내외부 정보보안 위협',
 '[개론]- 공격 유형 Overview',
 '[개론]- 보안 약점, 취약점',
@@ -62,12 +63,12 @@
 '[보안 솔루션]- 방화벽',
 '[보안 솔루션][방화벽]- 웹 방화벽',
 '[보안 솔루션][방화벽]- 차세대 방화벽',
-'보안이슈, 대응방안',
-'SW 보안 약점',
+'[보안 솔루션]- Iptables',
+'[보안 솔루션]- IDS',
+'[보안 솔루션]- DPI',
+'[보안 솔루션][DPI]- IPS',
 'NAC',
 'WNAC',
-'[보안솔루션]- IDS',
-'[보안솔루션]- IPS',
 '[공격기법]- XSS',
 '[공격기법]- SSRF',
 '[공격기법]- DDoS',
@@ -260,6 +261,44 @@ var answer = answer.concat(
 * ACL : Access Control List <br/>\
 * CL : Capability List <br/>\
 * SL : Security List </font>\
+',
+
+// 보안이슈, 대응방안
+'# 보안 이슈<br/>\
+1. Device Level (센물위)<br/>\
+- 센서 신호 방해, 혼선 : 주파수 혼선 발생 <br/>\
+- 수집 데이터 위변조 및 삭제 : 데이터 변조, 재 암호화, 식별불가 <br/>\
+- 디바이스 물리적 침해 : 물리적 파괴, 전원 공급 차단, 동작 불능 <br/><br/>\
+2. Network Level (거위네)<br/>\
+- 네트워크 침해 : 정상 네트워크 방해, 능력 악화 제거 <br/>\
+- 전송 정보 위변조 : MITM(Man In The Middle), 정보 탈취, 인증/헤더 변경 <br/>\
+- 서비스 거부 공격 : 대역폭 소모, 자원 사용 불가 <br/><br/>\
+3. Data Process Level (불프불)<br/>\
+- 불법 접근 : 비 인가자 접근, 정보 탈취 <br/>\
+- 프라이버시 침해 : 사생활 데이터 노출 <br/>\
+- 불완전한 암호화 : 필수 암호화 수행x, 저수준 암호화 <br/><br/>\
+4. Application Level (개인위)<br/>\
+- 개인정보 노출 : 모바일, 대상 디바이스 저장된 정보 탈취 <br/>\
+- 인증정보 탈취 : 서비스 접근 위한 계정, 비밀번호 <br/>\
+- 서비스 데이터 위변조 : 수신 데이터 방해, 삭제, 위변조 <br/><br/>\
+# 대응 방안 <br/>\
+1. Device Level (경물펌)<br/>\
+- 경량 암호화 : HIGHT(High security and light weight), LEA <br/>\
+- 물리적 접근제어 : 접근 불가지역, 함체 <br/>\
+- 펌웨어 난독화/암호화 : 불법 펌웨어 업데이트 방지 <br/><br/>\
+2. Network Level (NDI)<br/>\
+- NAC(Network Access Control) : 접근 보안 정책, 접속 통제 <br/>\
+- DTLS/TLS : Packet 암호화, 비신뢰성 구간 보장 <br/>\
+- IPS/Anti-DDos : Dos 공격 방어 <br/><br/>\
+3. Data Process Level (인웹비)<br/>\
+- 인증/권한 관리 : PKI, 디바이스 인증기술 권한 <br/>\
+- 웹 방화벽 : SQL Injection, XSS 탐지, 위변조 방지 <br/>\
+- 개인정보 비식별화 : 재식별 방지 <br/><br/>\
+4. Application Level (암무컨)<br/>\
+- 전송/저장 정보 암호화 : DBMS 자체 암호화, OS 암호화 <br/>\
+- 무결성 검증 및 악성 코드 탐지 : 동적/정적 분석, 바이러스 탐지 <br/>\
+- 컨텐츠 서비스 보안 : 데이터 훼손, 탈취 방지, DRM 적용 <br/><br/>\
+* KPC 94회 2교시 1번\
 ',
   
 // 내/외부 정보보안 위협
@@ -1212,67 +1251,85 @@ var answer = answer.concat(
 - 애플리케이션 프로토콜 디코딩 : Send, Recv 기능 분리 <br/>\
 - 애플리케이션 통제 : 사용자별 분리 통한 애플리케이션 통제 가능 \
 ',
-  
-// 보안이슈, 대응방안
-'# 보안 이슈<br/>\
-1. Device Level (센물위)<br/>\
-- 센서 신호 방해, 혼선 : 주파수 혼선 발생 <br/>\
-- 수집 데이터 위변조 및 삭제 : 데이터 변조, 재 암호화, 식별불가 <br/>\
-- 디바이스 물리적 침해 : 물리적 파괴, 전원 공급 차단, 동작 불능 <br/><br/>\
-2. Network Level (거위네)<br/>\
-- 네트워크 침해 : 정상 네트워크 방해, 능력 악화 제거 <br/>\
-- 전송 정보 위변조 : MITM(Man In The Middle), 정보 탈취, 인증/헤더 변경 <br/>\
-- 서비스 거부 공격 : 대역폭 소모, 자원 사용 불가 <br/><br/>\
-3. Data Process Level (불프불)<br/>\
-- 불법 접근 : 비 인가자 접근, 정보 탈취 <br/>\
-- 프라이버시 침해 : 사생활 데이터 노출 <br/>\
-- 불완전한 암호화 : 필수 암호화 수행x, 저수준 암호화 <br/><br/>\
-4. Application Level (개인위)<br/>\
-- 개인정보 노출 : 모바일, 대상 디바이스 저장된 정보 탈취 <br/>\
-- 인증정보 탈취 : 서비스 접근 위한 계정, 비밀번호 <br/>\
-- 서비스 데이터 위변조 : 수신 데이터 방해, 삭제, 위변조 <br/><br/>\
-# 대응 방안 <br/>\
-1. Device Level (경물펌)<br/>\
-- 경량 암호화 : HIGHT(High security and light weight), LEA <br/>\
-- 물리적 접근제어 : 접근 불가지역, 함체 <br/>\
-- 펌웨어 난독화/암호화 : 불법 펌웨어 업데이트 방지 <br/><br/>\
-2. Network Level (NDI)<br/>\
-- NAC(Network Access Control) : 접근 보안 정책, 접속 통제 <br/>\
-- DTLS/TLS : Packet 암호화, 비신뢰성 구간 보장 <br/>\
-- IPS/Anti-DDos : Dos 공격 방어 <br/><br/>\
-3. Data Process Level (인웹비)<br/>\
-- 인증/권한 관리 : PKI, 디바이스 인증기술 권한 <br/>\
-- 웹 방화벽 : SQL Injection, XSS 탐지, 위변조 방지 <br/>\
-- 개인정보 비식별화 : 재식별 방지 <br/><br/>\
-4. Application Level (암무컨)<br/>\
-- 전송/저장 정보 암호화 : DBMS 자체 암호화, OS 암호화 <br/>\
-- 무결성 검증 및 악성 코드 탐지 : 동적/정적 분석, 바이러스 탐지 <br/>\
-- 컨텐츠 서비스 보안 : 데이터 훼손, 탈취 방지, DRM 적용 <br/><br/>\
-* KPC 94회 2교시 1번\
-',
-  
-// SW 보안 약점
-'# 유형별 약점 <br/>\
-1. 입력 데이터 검증 및 표현 <br/>\
-- SQL 삽입 <br/>\
-- 경로 조작 및 자원 삽입 <br/>\
-- XSS <br/>\
-- OS 명령어 삽입 <br/><br/>\
-2. 보안기능 <br/>\
-- 적절한 인증 없는 중요 기능 허용 <br/>\
-- 부적절한 인가 <br/>\
-- 중요 자원에 대한 잘못된 권한 설정 <br/>\
-- 취약한 암호화 알고리즘 사용 <br/><br/>\
-3. 에러처리 <br/>\
-- 오류메시지를 통한 정보 노출 <br/>\
-- 시스템 데이터 정보 노출 <br/>\
-- 오류 상황 대응 부재 <br/>\
-- 부적절한 예외처리 <br/><br/>\
-4. 세션 통제 <br/>\
-- 잘못된 세션에 의한 데이터 정보 노출 <br/><br/>\
-* 라이지움 87회 관리 4교시 2번\
+
+// Iptables
+'# 정의 : 리눅스 커널 / 넷필터, 패킷 필터 / 오픈 소스 형태 / 방화벽 <br/>\
+- 리눅스에서 설정 가능한 커널에서의 넷필터, 패킷 필터링 기능을 사용자 공간에서 제어하는 오픈소스 형태의 방화벽 <br/><br/>\
+# 명령어 종류 <br/>\
+- Table : 룰 테이블 <br/>\
+- Action : 규칙 추가 삭제 <br/>\
+- Chain : 실제 방향성 표시 <br/>\
+- Match : 조건 <br/>\
+- Target : 실제 패킷 처리 기준 \
 ',
 
+// IDS
+'# 정의 : 비인가 사용자 / 기무가 저해 / 실시간 탐지 시스템 <br/>\
+- Intrusion Detectgion System <br/>\
+- 비인가된 사용자가 자원의 무결성, 기밀성, 가용성을 저해하는 일련의 행동들과 보안 정책을 위반하는 행위, 즉 침입을 실시간으로 탐지하는 시스템 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/IDS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- Positive, Reactive 탐지 <br/>\
+- 선 패턴 등록 후 반응 <br/><br/>\
+# 탐지/차단 <br/>\
+- 목적 : 침입 여부 탐지 <br/>\
+- 방법 : 시그니처 DB 기반 패턴 매칭 (Known) <br/>\
+- 패킷 공격 : 첫번째 공격 방어 어려움 <br/>\
+- Zero Day Attack : 방어 곤란 <br/>\
+- One Way Attack : 탐지 <br/>\
+- DDoS, DoS 차단 : 탐지 <br/>\
+- Worm Virus : 탐지 <br/>\
+- 차단 방법 : Reset Signal, 방화벽 연동 <br/><br/>\
+# 구축/운영 <br/>\
+- 대응 방법 : 관리자 경고, 방화벽 Rule 변경 <br/>\
+- 연결 방법 : Mirror (TAP, Switch) <br/>\
+- 설치 위치 : 코어 네트워크 설치 <br/>\
+- 서비스 중단시 장애극복 : 무관 <br/>\
+- 장점 : 모든 패킷 자체 탐지 모듈 지원, 네트워크 이상경고 <br/>\
+- 단점 : 방화벽 연동 방어 통한 차단 가능 (독립적 제한) <br/><br/>\
+* 124회 관리 3교시 6번\
+',
+
+// DPI
+'# 정의 : OSI 7 Layer 전계층 / 패킷 내부 컨텐츠 파악 / 분석 기술 <br/>\
+- Deep Packet Inspeciton <br/>\
+- OSI 7 Layer 전 계층의 모든 프로토콜과 패킷 내부의 컨텐츠를 파악하여 해킹이나 침입 시도를 탐지하고 트래픽을 조정하기 위한 패킷 분석 기술 <br/><br/>\
+# 메커니즘 <br/>\
+<img src = "./img/DPI.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 주요기술 <br/>\
+- 패킷 재조합 : 재조합 애플리케이션 데이터 생성 / IP 조각모음, TCP재조립, 세션 분석 <br/>\
+- 트래픽 제어 : 트래픽 내용 확인하여 패킷 전달 기술 / 스우치 회로, 멀티-버스, 차단기능 <br/>\
+- 패턴 매칭 : 악성 패턴 찾아 행위 탐지 기술 / 오토마톤, 휴리스틱, 필터링 <br/>\
+- 하드웨어 성능 : 기존 소프트웨어 성능 이상 수행 위한 HW 기반 구현 기술 / FPGA, ASIC, NPU \
+',
+
+// IPS
+'# 정의 : 오탐, 미탐 문제 해결 / 시스템 <br/>\
+- Intrusino Prevention System <br/>\
+- 침입 시스템의 오판과 미탐의 문제 해결을 위해 등장한 정보 시스템 <br/><br/>\
+<img src = "./img/IPS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 특징 <br/>\
+- Active, Proactive 대응 <br/>\
+- 공격전 사전 차단 <br/><br/>\
+# 탐지/차단 <br/>\
+- 목적 : 침입방지, 탐지 후 적극적 대응 <br/>\
+- 분석방법 : Rule DB 기반, 비정상 행위 방지 <br/>\
+- 패킷공격 : 공격 방지 가능 <br/>\
+- One-Way Attack : 탐지/차단 <br/>\
+- DDoS, DoS 차단 : 탐지/차단 <br/>\
+- Zero-Day Attack : 일부 가능 <br/>\
+- Worm Virus : 탐지/차단 <br/>\
+- 차단 방법 : 자체 차단 <br/><br/>\
+# 구축/운영 <br/>\
+- 대응 방법 : 자원 접근 차단(Unkown) <br/>\
+- 연결 방법 : In-line <br/>\
+- 서비스 중단시 장애 극복 : FoD(Fail Over Device) 통한 장애 대응 <br/>\
+- 장점 : 모든 패킷 대해 자체 탐지, 차단, 보호 <br/>\
+- 단점 : Transparent Mode 운영, NAT등 방화벽 고유 기능지원 불가 <br/><br/>\
+* 124회 관리 3교시 6번\
+', 
+  
 // NAC
 '# 정의 : Endpoint NW 접근 시도 / 확인 / 차단 / 네트워크 접근제어 시스템 <br/>\
 - 사용자 Endpoint(PC, 노트북 등)의 NW 접근 시도시 사전 승인여부 및 보안 정책 준수 여부를 확인하고, NW 접속을 승인 또는 차단하는 네트워크 접근제어 시스템 <br/><br/>\
@@ -1317,60 +1374,6 @@ var answer = answer.concat(
 - SE : System Engineering<br/>\
 - Wireless Network Access Control <br/>\
 - NW 접근방식에 무선 공격을 탐지할 수 있는 기능을 추가하여 비인가자의 접근을 차단하는 방법\
-',
-
-// IDS
-'# 정의 : 비인가 사용자 / 기무가 저해 / 실시간 탐지 시스템 <br/>\
-- Intrusion Detectgion System <br/>\
-- 비인가된 사용자가 자원의 무결성, 기밀성, 가용성을 저해하는 일련의 행동들과 보안 정책을 위반하는 행위, 즉 침입을 실시간으로 탐지하는 시스템 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/IDS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 특징 <br/>\
-- Positive, Reactive 탐지 <br/>\
-- 선 패턴 등록 후 반응 <br/><br/>\
-# 탐지/차단 <br/>\
-- 목적 : 침입 여부 탐지 <br/>\
-- 방법 : 시그니처 DB 기반 패턴 매칭 (Known) <br/>\
-- 패킷 공격 : 첫번째 공격 방어 어려움 <br/>\
-- Zero Day Attack : 방어 곤란 <br/>\
-- One Way Attack : 탐지 <br/>\
-- DDoS, DoS 차단 : 탐지 <br/>\
-- Worm Virus : 탐지 <br/>\
-- 차단 방법 : Reset Signal, 방화벽 연동 <br/><br/>\
-# 구축/운영 <br/>\
-- 대응 방법 : 관리자 경고, 방화벽 Rule 변경 <br/>\
-- 연결 방법 : Mirror (TAP, Switch) <br/>\
-- 설치 위치 : 코어 네트워크 설치 <br/>\
-- 서비스 중단시 장애극복 : 무관 <br/>\
-- 장점 : 모든 패킷 자체 탐지 모듈 지원, 네트워크 이상경고 <br/>\
-- 단점 : 방화벽 연동 방어 통한 차단 가능 (독립적 제한) <br/><br/>\
-* 124회 관리 3교시 6번\
-',
-
-// IPS
-'# 정의 : 오탐, 미탐 문제 해결 / 시스템 <br/>\
-- Intrusino Prevention System <br/>\
-- 침입 시스템의 오판과 미탐의 문제 해결을 위해 등장한 정보 시스템 <br/><br/>\
-<img src = "./img/IPS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 특징 <br/>\
-- Active, Proactive 대응 <br/>\
-- 공격전 사전 차단 <br/><br/>\
-# 탐지/차단 <br/>\
-- 목적 : 침입방지, 탐지 후 적극적 대응 <br/>\
-- 분석방법 : Rule DB 기반, 비정상 행위 방지 <br/>\
-- 패킷공격 : 공격 방지 가능 <br/>\
-- One-Way Attack : 탐지/차단 <br/>\
-- DDoS, DoS 차단 : 탐지/차단 <br/>\
-- Zero-Day Attack : 일부 가능 <br/>\
-- Worm Virus : 탐지/차단 <br/>\
-- 차단 방법 : 자체 차단 <br/><br/>\
-# 구축/운영 <br/>\
-- 대응 방법 : 자원 접근 차단(Unkown) <br/>\
-- 연결 방법 : In-line <br/>\
-- 서비스 중단시 장애 극복 : FoD(Fail Over Device) 통한 장애 대응 <br/>\
-- 장점 : 모든 패킷 대해 자체 탐지, 차단, 보호 <br/>\
-- 단점 : Transparent Mode 운영, NAT등 방화벽 고유 기능지원 불가 <br/><br/>\
-* 124회 관리 3교시 6번\
 ',
   
 // XSS
