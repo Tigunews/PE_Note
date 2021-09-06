@@ -74,8 +74,20 @@
 '[보안 솔루션][기업보안]- SIEM',
 '[보안 솔루션][DB보안]- DB 암호화',
 '[보안 솔루션][DB보안]- DLP',
-'NAC',
-'WNAC',
+'[보안 솔루션][File보안]- DRM',
+'[보안 솔루션][기업보안]- EMM',
+'[보안 솔루션][기업보안]- NAC',
+'[보안 솔루션][NAC]- WNAC',
+'[보안 솔루션][Key보안]- HSM',
+'[보안 솔루션]- AAA',
+'[보안 솔루션][AAA]- RADIOUS',
+'[보안 솔루션][AAA]- DIAMETER',
+'[보안 솔루션][DIAMETER]- Kerberos',
+'[보안 솔루션][Kerberos]- SSO',
+'[보안 솔루션][SSO]- EAM',
+'[보안 솔루션][SSO]- IAM',
+'[보안 솔루션]- FIDO',
+'[보안 솔루션][FIDO]- UAF 기술 표준',
 '[공격기법]- XSS',
 '[공격기법]- SSRF',
 '[공격기법]- DDoS',
@@ -172,7 +184,6 @@
 'ISO/IEC 15408 ',
 '코드서명 (코드사인, Codesign)',
 'WPA3',
-'커버로스(Kerberos)',
 '라이트 커맨드(Light Commands) 취약점',
 '무자각 지속 인증(Implicity Continuous Authentication)',
 'GDPR',
@@ -190,9 +201,6 @@
 '[시스템 보안]- Buffer Overflow',
 '[시스템 보안]- Race Condition',
 '[시스템 보안]- Format String',
-'FIDO',
-'[FIDO]- UAF 기술 표준',
-'SSO',
 '[Android]- Deeplink',
 'Zero Trust 보안 모델',
 '재택,원격근무 정보보호 6대 실전 수칙',
@@ -1439,6 +1447,32 @@ var answer = answer.concat(
 - 네트워크 방식 : NW 트래픽 복제 하는 TAP 이용, 네트워크 구간 유출 분석 <br/>\
 <font color = "red">* TAP : Test Access Port </font>\
 ',
+
+// DRM
+'# 정의 : 컨텐츠 유통 전과정 / 권한 정보 / 통제 기술 <br/>\
+- Ditital Right Management <br/>\
+- 디지털 컨텐츠의 생성과 이용까지의 유통 전 과정에 걸쳐 안전하게 관리 및 보호하고, 부여된 권한 정보에 따라 이용을 통제하는 기술 <br/><br/>\
+# 동작원리 <br/>\
+<img src = "./img/DRM.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/DRM_Overview.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 방식 <br/>\
+- 서버 방식 : 데이터 암호후 서버 권한 문의 후 허용 <br/>\
+- 엔드포인트 방식 : 최초 컨텐츠 제작자 권한 부여, 사용시에 바로 확인 방식 \
+',
+
+// EMM
+'# 정의 : 모바일 / 기무가 / 프로세스 및 기술 <br/>\
+- Enterprise Mobility Management <br/>\
+- 모바일 장치, 무선 네트워크 및 기타 모바일 컴퓨팅 서비스를 중점 관리하여 모바일 기기의 기밀성, 무결성, 가용성을 보장하는 프로세스 및 기술 <br/><br/>\
+# 세부유형 <br/>\
+- MDM : 스마트폰, 테블릿, 휴대옹 컴퓨터 등 디바이스 관리 기술 <br/>\
+- MAM : 특정 앱에만 기업 보안 정책 시행 기술 <br/>\
+- MCM : 기업의 기밀 정보 등 컨텐츠 안전 공유/접근 기술 <br/>\
+<font color = "red">* MDM : Mobile Device Management <br/>\
+* MAM : Mobile Application Management <br/>\
+* MCM : Mobile content Management </font>\
+',
   
 // NAC
 '# 정의 : Endpoint NW 접근 시도 / 확인 / 차단 / 네트워크 접근제어 시스템 <br/>\
@@ -1484,6 +1518,169 @@ var answer = answer.concat(
 - SE : System Engineering<br/>\
 - Wireless Network Access Control <br/>\
 - NW 접근방식에 무선 공격을 탐지할 수 있는 기능을 추가하여 비인가자의 접근을 차단하는 방법\
+',
+
+// HSM
+'# 정의 : HW내 암호키 생성,저장 장비 / 보안 솔루션 <br/>\
+- Hardware Security Modules <br/>\
+- 하드웨어 내에서 암호화 키를 생성하고 저장하는 장비로서, 외부 반출이 되지 않도록 관리하는 별도의 안전한 공간을 제공하는 보안 솔루션 <br/><br/>\
+# 방식 <br/>\
+- 통신 방식 분류 : 유선(접촉), 무선(비접촉) <br/>\
+- 이용 매체 분류 : 스마트 카드, USB, USM <br/><br/>\
+# 인증 절차 <br/>\
+<img src = "./img/HSM.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 활용 사례 <br/>\
+- 조달청 전자입찰 시스템 : 지문 인식 시스템 활용, 보안 토큰 연동 <br/>\
+- 유심 스마트 인증 : USIM 칩 인증서 저장 및 관리 <br/>\
+- 스마트 지문 보안 토큰 : 조달청 입찰시 토큰 인증서 제시 \
+',
+
+// AAA
+'# 정의 : 인증 / 권한 / 과금 / 구현 서비스 <br/>\
+- Authentication, Authorization, Accounting <br/>\
+- 불법적 서비스 사용을 방지하기 위해 사용자를 인증, 권한 레벨 검증, 과금 기능을 제공하는 서비스, 프레임워크와 기술 <br/><br/>\
+# 구성요소 <br/>\
+- 인증 : 사전 발급된 출입증 증명 / PKI, PAP, 출입 카드 <br/>\
+- 허가 : 사전 허락 받은 행위 가능 / ACL, CL, SL <br/>\
+- 과금 : Payper user / AMI <br/>\
+- Protocol : RADIUS, DIAMETER, TACACS <br/>\
+<font color = "red">* PAP : Password Authentication Protocol <br/>\
+* RADIUS : Remote Authentication Dial-In User Service <br/>\
+* TACACS : Terminal Access Controller Access-control System </font>\
+',
+
+// RADIOUS
+'# 정의 : 본사 네트워크 접속 / 외부 사용자 인증 프로토콜 <br/>\
+- Remote Authentication Dial-In User Service <br/>\
+- 본사 네트워크에 접속할 때 보안을 위해 사용자 이름과 암호, 그리고 필요한 보호 조치를 통해 외부 사용자들을 인증하는 프로토콜 <br/><br/>\
+# 절차도 <br/>\
+<img src = "./img/RADIUS.png" style = "max-width: 100%; height: auto;"><br/>\
+<font color = "red">* RADIUS(비밀번호만 암호화) -> DIAMETER(패킷 페이로드 전체 암호화)</font>\
+',
+
+// DIAMETER
+'# 정의 : 다양한 망연동 / AAA 표준 프로토콜 <br/>\
+- IMT-2020, 와이어리스 등의 다양한 망이 연동되는 유/무선 이동통신, 인터넷에서 가입자에 대한 안전한 신뢰성 있는 인증, 권한 검증, 과금 등의 서비스를 제공하는 AAA표준 프로토콜 <br/><br/>\
+# 절차도 <br/>\
+<img src = "./img/DIAMETER.png" style = "max-width: 100%; height: auto;"><br/>\
+<font color = "red">* 인증 서버 분산 환경 AAA 메시지 이용 패킷 전체 암호 -> 공인망 사용 가능 </font><br/><br/>\
+# 종류 <br/>\
+- UDP : TACACS <br/>\
+- TCP : TACACS+ <br/>\
+- 분산환경 : Kerberos \
+',
+
+// Kerberos
+'# 정의 : 티켓 기반 NW 인증 프로토콜 <br/>\
+- MIT대 Athena Project에 의해 개발된 비밀키 방식에 의한 인증 시스템으로 서비스 요구를 인증하기 위한 대칭 암호기법에 바탕을 둔 티켓 기반한 네트워크 인증 포로토콜 <br/><br/>\
+# 특징 <br/>\
+- 인증 프로토콜 : Window AD 등 사용, 주요 인증 메커니즘 <br/>\
+- SSO 제공 : 분산 환경, SSO 제공 <br/>\
+- 키분배 센터 : Key Distribution Center 동작 <br/>\
+- 패스워드 추측 공격에 취약 <br/><br/>\
+# 구성요소 <br/>\
+1. Server <br/>\
+- AS(Autentication Server) : 인증서버, TGT 발행, SSO <br/>\
+- TGS(Ticket Granting Service) : TGT 기반 Ticket 발행 <br/>\
+- Application Server : Ticket 기반 이용 가능 App 서버, 표준x <br/><br/>\
+2. Ticket <br/>\
+- TGT(Ticket Granting Ticket) : AS 발행, TGS 접근 위한 티켓 <br/>\
+- SGT(Service Granting Ticket) : Service Ticket 불림, TGS 발행, 대상 시스템 접근 위한 티켓 <br/><br/>\
+# Ticket의 정보내용 <br/>\
+1. Client가 접속 하기를 원하는 서버의 ID <br/>\
+2. Client ID <br/>\
+3. Client의 Network Address <br/>\
+4. Client, Server가 Service 기간 동안 공유하는 Session Key <br/><br/>\
+# 활용 <br/>\
+- 클라우드 스토리지 사용자 인증 <br/>\
+- 네트워크 인증 시스템의 기반으로 빅데이터 환경에서의 인증 정책으로 사용됨 <br/><br/>\
+# 취약점 및 대응방안 <br/>\
+- SPOF : 이중화, HA, FT <br/>\
+- 재전송 공격 : Timestamp 기반 방지 <br/><br/>\
+<img src = "./img/Kerberos.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 90회 응용 1교시 13번 \
+',
+
+// SSO
+'# 정의 : Single Sign-On <br/>\
+- 최초 사이트 로그인 이후 별도의 추가 인증 절차 없이 연동 시스템에서 자동 로그인되는 보안 서비스 <br/><br/>\
+# 유형 <br/>\
+- Delegation : 인증 대행 방식 (창 좌표 기억 자동 값 입력) <br/>\
+- Propagation : 인증정보 전달 방식 <br/><br/>\
+# 프로토콜 종류 <br/>\
+- Kerberos : DES 알고리즘, Ticket 기반 <br/>\
+- Open ID : 사용자 아이디/패스워드 관리 편의성 개선 프로토콜 <br/>\
+- SAML : Assertion 정보 교환 기반 프로토콜 <br/>\
+- OAuth : Resource Owner, Server 근간, Acccess Token 기반 프로토콜 <br/><br/>\
+* 라이지움 89회 관리 2교시 6번\
+',
+
+// EAM
+'# 정의 : SSO + 권한관리 <br/>\
+- Enterprise/Extranet Access Management <br/>\
+- 각종 시스템 접근을 위한 사용자 인증 및 접근 권한 관리를 통합적으로 수행하며, 보안 정책 수립을 지원하는 통합 보안 관리 솔루션 <br/><br/>\
+# 메커니즘 <br/>\
+<img src = "./img/EAM.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# EAM SSO 비교 <br/>\
+- 관리적 측면 : 시스템 및 사용자 통합 권한 관리 수행 <br/>\
+- 기술적 측면 : SSO + 접근 권한 관리 및 자원 관리 \
+',
+
+// IAM
+'# 정의 : EAM + Provisioning + Audit <br/>\
+- Identity Access Management <br/>\
+- 조직이 필요로 하는 보안 정책을 수립하고 정책에 따라 자동으로 사용자의 계정과 권한을 관리하는 솔루션 <br/><br/>\
+# IAM 변화 <br/>\
+<img src = "./img/IAM.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구조도 <br/>\
+<img src = "./img/IAM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# IAM EAM SSO 비교 <br/>\
+<img src = "./img/IAM_EAM_SSO.png" style = "max-width:100%; height:auto;">\
+',
+
+// FIDO
+'# 정의 : ID/PW -> 다양한 생체 인식 기반 / 인증 시스템 <br/>\
+- Fast Identify Online <br/>\
+- 온라인 환경 생체 인식 기술 활용, 인증 프로토콜과 인증 수단 분리된 Fido Alliance 제안 인증 프로토콜 <br/><br/>\
+# 이력 <br/>\
+- 1.0 (2014.12.) : Device 저장, UAF, U2F <br/>\
+- 2.0 (2018.05.) : FIDO 1.0 플랫폼화 / 웹 확장, WebAuthn, CTAP <br/>\
+<font color = "red">* UAF(Universal Authentication Framework) : 지문, 음성, 얼굴인식 등 사용자 고유의 생체 정보 인식 <br/>\
+* U2F(Universal Second Factor) : 1차인증 후 1회성 보안키 동글 2차인증 <br/>\
+* CTAP(Client to Authenticator Protocol) : USB, NFC, BT 이용, 운영체제나 웹 브라우저 등과 인증자 연동 </font><br/><br/>\
+# 구성요소 (클클A인) <br/>\
+- FIDO Server : 키 등록 관리 검증 <br/>\
+- FIDO Client : 인증자 필터링, ASM RP Client 중계 <br/>\
+- ASM(Authenticator Specific Module) : Client 요청 인증자 전달 중계 <br/>\
+- 인증자 : 생체 인증, 사용자 단말 로컬 인증 <br/><br/>\
+# Fido 1.0, 2.0 구조비교 <br/>\
+<img src = "./img/FIDO_Struct.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 비교 <br/>\
+<img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 118회 관리 3교시 2번 \
+',
+
+// UAF 기술 표준
+'# 개념도 <br/>\
+<img src = "./img/U2FStandard.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술표준 <br/>\
+1. FIDO 공통 <br/>\
+(1) 아키텍처 : 사용 시나리오 <br/>\
+(8) 공통상수 : 공통 사용 상수 <br/>\
+(10) 보안참조 : 보안 분석 내용 <br/>\
+(11) 용어해설 : 용어 및 약어 <br/><br/>\
+2. UAF Protocol <br/>\
+(2) 프로토콜 : Message 규격, 절차 <br/>\
+(9) App ID, Facet : 기관 대표 ID, 서로다른 앱 하나 등록키 사용 <br/><br/>\
+3. FIDO User Device <br/>\
+(3) 응용 API : App FIDO 이용 <br/>\
+(4) 인증 API : 인증 장치 접근 표준화 방법 <br/>\
+(5) 인증 명령 : 다양한 형태 구현 <br/><br/>\
+4. 인증장치 Meta Data <br/>\
+(6) Meta Data : 인증방법, 명령어 정의 <br/>\
+(7) Meta Data Service : 서비스기관 메타 데이터 접근 <br/><br/>\
+* 118회 관리 3교시 2번\
 ',
   
 // XSS
@@ -3448,37 +3645,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 - Wi-Fi Protected Access <br/>\
 - 강력한 인증, 고강도 암호화, 복원력 유지를 지원하는 차세대 Wi-Fi 보안 프로토콜. WPA3에서는 KRACK의 문제를 방지하기 위해, 4-way handshake를 하기전에 Simultaneous Authentication of Equals(SAE)라는 절차를 추가하고 KRACK와 같은 공격을 방지 할 수 있다',
 
-// 커버로스
-'# 정의 : 티켓 기반 NW 인증 프로토콜 <br/>\
-- MIT대 Athena Project에 의해 개발된 비밀키 방식에 의한 인증 시스템으로 서비스 요구를 인증하기 위한 대칭 암호기법에 바탕을 둔 티켓 기반한 네트워크 인증 포로토콜 <br/><br/>\
-# 특징 <br/>\
-- 인증 프로토콜 : Window AD 등 사용, 주요 인증 메커니즘 <br/>\
-- SSO 제공 : 분산 환경, SSO 제공 <br/>\
-- 키분배 센터 : Key Distribution Center 동작 <br/>\
-- 패스워드 추측 공격에 취약 <br/><br/>\
-# 구성요소 <br/>\
-1. Server <br/>\
-- AS(Autentication Server) : 인증서버, TGT 발행, SSO <br/>\
-- TGS(Ticket Granting Service) : TGT 기반 Ticket 발행 <br/>\
-- Application Server : Ticket 기반 이용 가능 App 서버, 표준x <br/><br/>\
-2. Ticket <br/>\
-- TGT(Ticket Granting Ticket) : AS 발행, TGS 접근 위한 티켓 <br/>\
-- SGT(Service Granting Ticket) : Service Ticket 불림, TGS 발행, 대상 시스템 접근 위한 티켓 <br/><br/>\
-# Ticket의 정보내용 <br/>\
-1. Client가 접속 하기를 원하는 서버의 ID <br/>\
-2. Client ID <br/>\
-3. Client의 Network Address <br/>\
-4. Client, Server가 Service 기간 동안 공유하는 Session Key <br/><br/>\
-# 활용 <br/>\
-- 클라우드 스토리지 사용자 인증 <br/>\
-- 네트워크 인증 시스템의 기반으로 빅데이터 환경에서의 인증 정책으로 사용됨 <br/><br/>\
-# 취약점 및 대응방안 <br/>\
-- SPOF : 이중화, HA, FT <br/>\
-- 재전송 공격 : Timestamp 기반 방지 <br/><br/>\
-<img src = "./img/Kerberos.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 라이지움 90회 응용 1교시 13번 \
-',
-
 // 라이트 커맨드 취약점
 '# 정의 : IoT 스피커 빛 이용 원격 명령 삽입 취약점 <br/>\
 - 공격자가 음성기반의 IoT 스피커에 빛(레이저)을 이용하여 원격으로 명령을 삽입할 수 있는 취약점',
@@ -3861,66 +4027,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - 코드구현 : 포맷스트링 지정 : printf(), fprintf(), sprintf(), snprintf() 출력함수 명확히 구분 <br/>\
 - 시스템 방어 : 시스템 패치 : 컴파일단 포맷스트링 검사, 경고기능 OS 버전 패치 <br/><br/>\
 * KPC 90회 응용 2교시 2번\
-',
-  
-// FIDO
-'# 정의 : ID/PW -> 다양한 생체 인식 기반 / 인증 시스템 <br/>\
-- Fast Identify Online <br/>\
-- 온라인 환경 생체 인식 기술 활용, 인증 프로토콜과 인증 수단 분리된 Fido Alliance 제안 인증 프로토콜 <br/><br/>\
-# 이력 <br/>\
-- 1.0 (2014.12.) : Device 저장, UAF, U2F <br/>\
-- 2.0 (2018.05.) : FIDO 1.0 플랫폼화 / 웹 확장, WebAuthn, CTAP <br/>\
-<font color = "red">* UAF(Universal Authentication Framework) : 지문, 음성, 얼굴인식 등 사용자 고유의 생체 정보 인식 <br/>\
-* U2F(Universal Second Factor) : 1차인증 후 1회성 보안키 동글 2차인증 <br/>\
-* CTAP(Client to Authenticator Protocol) : USB, NFC, BT 이용, 운영체제나 웹 브라우저 등과 인증자 연동 </font><br/><br/>\
-# 구성요소 (클클A인) <br/>\
-- FIDO Server : 키 등록 관리 검증 <br/>\
-- FIDO Client : 인증자 필터링, ASM RP Client 중계 <br/>\
-- ASM(Authenticator Specific Module) : Client 요청 인증자 전달 중계 <br/>\
-- 인증자 : 생체 인증, 사용자 단말 로컬 인증 <br/><br/>\
-# Fido 1.0, 2.0 구조비교 <br/>\
-<img src = "./img/FIDO_Struct.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 비교 <br/>\
-<img src = "./img/FIDO_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/FIDO_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 118회 관리 3교시 2번 \
-',
-
-// UAF 기술 표준
-'# 개념도 <br/>\
-<img src = "./img/U2FStandard.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 기술표준 <br/>\
-1. FIDO 공통 <br/>\
-(1) 아키텍처 : 사용 시나리오 <br/>\
-(8) 공통상수 : 공통 사용 상수 <br/>\
-(10) 보안참조 : 보안 분석 내용 <br/>\
-(11) 용어해설 : 용어 및 약어 <br/><br/>\
-2. UAF Protocol <br/>\
-(2) 프로토콜 : Message 규격, 절차 <br/>\
-(9) App ID, Facet : 기관 대표 ID, 서로다른 앱 하나 등록키 사용 <br/><br/>\
-3. FIDO User Device <br/>\
-(3) 응용 API : App FIDO 이용 <br/>\
-(4) 인증 API : 인증 장치 접근 표준화 방법 <br/>\
-(5) 인증 명령 : 다양한 형태 구현 <br/><br/>\
-4. 인증장치 Meta Data <br/>\
-(6) Meta Data : 인증방법, 명령어 정의 <br/>\
-(7) Meta Data Service : 서비스기관 메타 데이터 접근 <br/><br/>\
-* 118회 관리 3교시 2번\
-',
-  
-// SSO
-'# 정의 : Single Sign-On <br/>\
-- 최초 사이트 로그인 이후 별도의 추가 인증 절차 없이 연동 시스템에서 자동 로그인되는 보안 서비스 <br/><br/>\
-# 유형 <br/>\
-- Delegation : 인증 대행 방식 (창 좌표 기억 자동 값 입력) <br/>\
-- Propagation : 인증정보 전달 방식 <br/><br/>\
-# 프로토콜 종류 <br/>\
-- Kerberos : DES 알고리즘, Ticket 기반 <br/>\
-- Open ID : 사용자 아이디/패스워드 관리 편의성 개선 프로토콜 <br/>\
-- SAML : Assertion 정보 교환 기반 프로토콜 <br/>\
-- OAuth : Resource Owner, Server 근간, Acccess Token 기반 프로토콜 <br/><br/>\
-* 라이지움 89회 관리 2교시 6번\
-',
+', 
   
 // DeepLink
 '# 정의 : 모바일 웹상에 있는 그림을 클릭할 경우 기기 내 관련 앱이나 사전에 정의된 특정 웹페이지가 실행되는 모바일 기술 <br/><br/>\
