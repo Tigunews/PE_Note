@@ -67,6 +67,11 @@
 '[보안 솔루션]- IDS',
 '[보안 솔루션]- DPI',
 '[보안 솔루션][DPI]- IPS',
+'[보안 솔루션][DPI]- WIPS',
+'[보안 솔루션][기업보안]- UTM',
+'[보안 솔루션][기업보안]- ESM',
+'[보안 솔루션][기업보안]- RMS',
+'[보안 솔루션][기업보안]- SIEM',
 'NAC',
 'WNAC',
 '[공격기법]- XSS',
@@ -1305,30 +1310,102 @@ var answer = answer.concat(
 ',
 
 // IPS
-'# 정의 : 오탐, 미탐 문제 해결 / 시스템 <br/>\
+'# 정의 : 비인가 사용자 / 기무가 / 행위 기반 / 실시간 탐지 시스템 <br/>\
 - Intrusino Prevention System <br/>\
-- 침입 시스템의 오판과 미탐의 문제 해결을 위해 등장한 정보 시스템 <br/><br/>\
+- 비인가된 사용자가 자원의 무결성, 기밀성, 가용성을 저해하는 일련의 행동과 보안 정책을 위반하는 행위를 실시간 탐지/차단 하는 시스템 <br/><br/>\
+# 개념도 <br/>\
 <img src = "./img/IPS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 특징 <br/>\
-- Active, Proactive 대응 <br/>\
-- 공격전 사전 차단 <br/><br/>\
-# 탐지/차단 <br/>\
-- 목적 : 침입방지, 탐지 후 적극적 대응 <br/>\
-- 분석방법 : Rule DB 기반, 비정상 행위 방지 <br/>\
-- 패킷공격 : 공격 방지 가능 <br/>\
-- One-Way Attack : 탐지/차단 <br/>\
-- DDoS, DoS 차단 : 탐지/차단 <br/>\
-- Zero-Day Attack : 일부 가능 <br/>\
-- Worm Virus : 탐지/차단 <br/>\
-- 차단 방법 : 자체 차단 <br/><br/>\
-# 구축/운영 <br/>\
-- 대응 방법 : 자원 접근 차단(Unkown) <br/>\
-- 연결 방법 : In-line <br/>\
-- 서비스 중단시 장애 극복 : FoD(Fail Over Device) 통한 장애 대응 <br/>\
-- 장점 : 모든 패킷 대해 자체 탐지, 차단, 보호 <br/>\
-- 단점 : Transparent Mode 운영, NAT등 방화벽 고유 기능지원 불가 <br/><br/>\
+# 방식 <br/>\
+- 직접연결 : In-line <br/>\
+- 복제 : TAP/SPAN <br/><br/>\
+# 주요기능 <br/>\
+- 실시간 분석 : 광대역 통신망 패킷 대한 분석 <br/>\
+- 실시간 자동 대응 : 침입 및 바이러스에 대해 상황별 대응 <br/>\
+- 미확인 공격 탐지 : Unkown 위협 탐지 <br/>\
+- 세션 행위 기반 탐지 <br/><br/>\
+# 유형 <br/>\
+1. 데이터 수집 방식 <br/>\
+- 호스트 방식(HIPS) : 서버에 직접 설치 <br/>\
+- 네트워크 방식(NIPS) : 네트워크 구간 설치 <br/><br/>\
+2. 탐지 방식 <br/>\
+- 오용 탐지(Misuse) : 악성코드 패턴 기반 탐지 <br/>\
+- 이상 탐지(Anomaly) : 사용자의 행동 패턴 통해 이상 발견 <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/IDSIPS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
 * 124회 관리 3교시 6번\
-', 
+',
+
+// WIPS
+'# 정의 : 무선 네트워크 환경 / 시스템 보호 / 특정 패턴 기반 / 탐지 및 방어 시스템 <br/>\
+- Wireless IPS <br/>\
+- 무선 네트워크 환경에서 외부의 침입으로부터 내부 시스템을 보호할 수 있도록 특정 패턴을 기반으로 공격자의 침입을 탐지 및 방어하는 시스템 <br/><br/>\
+# 메커니즘 <br/>\
+- 센서 데이터 수집 : IEEE 802.11 사용 2.4GHz, 5GHz 채널 동시 수집 <br/>\
+- 차단 신호 송부 : 위장(Spoofing) 하여 DeAuthentication 코드 전송 <br/>\
+- 차단 처리 : 무선 장비, 와이파이 장비 모두 정상적 데이터 인지, 자체적 세션 종료 유도 <br/><br/>\
+# 주요기능 <br/>\
+- 탐지 능력 : 위협 요소, 채널 모니터링 <br/>\
+- 자동화 사전 방어 : 네트워크 위협 적극적 방어 <br/>\
+- 위협 요소 위치 표시 : 지도에 위협 위치 표시하여 전달 <br/>\
+- Disable Rogue : Rouge(비인가) 장비 무력화 \
+',
+
+// UTM
+'# 정의 : FW, IPS, Anti-Virus / NW Apliance / 보안 솔루션 <br/>\
+- Unified Threat Management <br/>\
+- 새로운 위협에 대처할 수 있도록 방화벽, IPS, 안티바이러스 등 여러 보안 기능을 하나의 장비에 포함하는 네트워크 어플라이언스 형태의 보안 솔루션 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/UTM.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 기능 <br/>\
+- NW 보안 : FW, IDS/IPS <br/>\
+- 암호화 : VPN <br/>\
+- 컨텐츠 필터링 : Web Filter, Anti-Spam, Anti-Virus <br/>\
+- 통합관리 : 로그 관리 \
+',
+
+// ESM
+'# 정의 : 보안 제품 IF 표준화 / 중앙통합관리, 침입종합대응, 통합모니터링 / 관리 시스템 <br/>\
+- Enterprise Security Management <br/>\
+- 기업내의 각종 네트워크 보안 제품의 인터페이스를 표준화하여 중앙통합관리, 침입종합대응, 통합모니터링이 가능한 지능형 통합 보안 관리 시스템 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/ESM.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- 프로토콜(SNMP) : 네트워크 장비 정보 확인, 정보 수정 기능, 번호,문자 구성 형태 <br/>\
+- 정보해석(MIB) : SNMP 각 정보에 대한 설명 <br/>\
+- ESM 장비 : MIB 파일 받아 등록, 암호화,인증,커뮤니티 이용해 관리자 알림 <br/>\
+<font color = "red">* SNMP : Simple Network Management Protocol <br/>\
+* MIB : Management Information Base </font>\
+',
+
+// RMS
+'# 정의 : 보안, 자산의 중요도 연계 / 종합적 분석 / 보안 사고 사전 차단 솔루션 <br/>\
+- Risk Management System <br/>\
+- 보안 시스템과 주요 정보 시스템에서 발생하는 여러 종류의 위협과 취약점 정보를 해당 자산의 중요도와 연계해 종합적 분석하여 보안 사고를 사전에 차단하는 보안 솔루션 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/RMS.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 주요기능 <br/>\
+- 보안 기본 정책 관리 : 침입 탐지/차단 대한 관리 <br/>\
+- 위험 분석 : IT 자산에 대한 분석, 목록화 <br/>\
+- 자원/성능 모니터링 : 관련된 규칙 관리 <br/>\
+- 경보 및 리포팅 : 실시간 알림 <br/><br/>\
+# RMS, ESM 연계 <br/>\
+<img src = "./img/ESM_RMS.png" style = "max-width: 100%; height: auto;">\
+',
+
+// SIEM
+'# 정의 : 로그 / 빅데이터 기법 / 상관분석, 포렌식, 지능 위협 / 지능형 보안 시스템 <br/>\
+- Security Information and Event Management <br/>\
+- 서버 및 보안 시스템으로부터 생성되는 로그 데이터들을 빅데이터 기법을 활용하여 상관분석, 포렌식 기능 제공, 지능적 위협에 대한 조기 경고 모니터링이 가능한 지능형 보안 시스템 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/SIEM.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 주요기능 <br/>\
+- 로그 수집 : Agent, SNMP, syslog 서버로부터 로그 수집 과정 <br/>\
+- 로그 분류 : 누적 회수 등 유사 정보 기준 그룹화, 분류 과정 <br/>\
+- 로그 변환 : 표준 로그 형식 변환 과정 <br/>\
+- 로그 분석 : Time stamp, IP 주소 기준 연관성 분석 과정 <br/><br/>\
+# ESM SIEM 비교 <br/>\
+<img src = "./img/ESM_SIEM.png" style = "max-width: 100%; height: auto;">\
+',
   
 // NAC
 '# 정의 : Endpoint NW 접근 시도 / 확인 / 차단 / 네트워크 접근제어 시스템 <br/>\

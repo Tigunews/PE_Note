@@ -2800,15 +2800,29 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 
 // VPN
 '# 정의 : 터널 / 공중망, 사설망 / 네트워크 서비스<br/>\
+- Virtual Private Network <br/>\
 - 암호화된 터널을 통해 인터넷에 연결함으로써 공중망(인터넷망)을 사설망(전용회선)처럼 이용할 수 있는 네트워크 서비스 <br/><br/>\
-# 특징 <br/>\
-- 투명성 제공, 경제성, 커스터마이징 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/VPN.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구현 유형 <br/>\
+- LAN to LAN : 지정된 지점간 네트워크 VPN 방식 / HW VPN 장비, IPSEC <br/>\
+- LAN to Client : 개인 사용자, 기업 네트워크 연결 방식 / 출장지, 재택근무자, SSL <br/><br/>\
 # 기술요소 <br/>\
 - 터널링 : 패킷 가상경로 설정 <br/>\
 - 암호화 : 패킷 암호화, 기밀성 제공, 공개키 암호화 방식 <br/>\
 - 인증 : MAC, 해시함수 이용, 메시지 인증, 무결성 <br/>\
 - 접근 제어 : 패킷 필터링 통한 회선 접근 제어 <br/><br/>\
-# 구현 <br/>\
+# 계층별 프로토콜 <br/>\
+- 2계층 : MPLS, L2Fm PPTP, L2TP <br/>\
+- 3계층 : <font color = "red">IPSEC</font>, VTP(Frame Relay) <br/>\
+- 4~7계층 : <font color = "red">SSL VPN</font> <br/>\
+<font color = "red">* MPLS : Multi Protocol Label Switching <br/>\
+* L2F : Layer 2 Forwarding <br/>\
+* PPTP : Pointo Point Tunneling Protocol <br/>\
+* L2TP : layer 2 Tunneling Protocol <br/>\
+* IPSEC : IP Security Protocol <br/>\
+* VTP : Virtual Tunneling Protocol <br/>\
+* SSL : Secure Socket Layer </font><br/>\
 <img src = "./img/VPN_Type.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 6회 관리 1교시 7번\
 ',
