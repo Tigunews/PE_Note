@@ -72,6 +72,8 @@
 '[보안 솔루션][기업보안]- ESM',
 '[보안 솔루션][기업보안]- RMS',
 '[보안 솔루션][기업보안]- SIEM',
+'[보안 솔루션][DB보안]- DB 암호화',
+'[보안 솔루션][DB보안]- DLP',
 'NAC',
 'WNAC',
 '[공격기법]- XSS',
@@ -181,7 +183,6 @@
 'ISO 27001',
 'ISO/IEC 27018',
 'SDP',
-'[DB 보안]- DB 보호 솔루션',
 'BEC(Business  E-mail Compromise)',
 '[CPU 보안]- 스펙터(Spectre)',
 '[CPU 보안]- Meltdown',
@@ -1405,6 +1406,38 @@ var answer = answer.concat(
 - 로그 분석 : Time stamp, IP 주소 기준 연관성 분석 과정 <br/><br/>\
 # ESM SIEM 비교 <br/>\
 <img src = "./img/ESM_SIEM.png" style = "max-width: 100%; height: auto;">\
+',
+
+// DB 암호화
+'# 접근제어 시스템 <br/>\
+1. Agent : DB 서버 자체 설치 (접근 제어, 로깅) <br/>\
+2. Gate way <br/>\
+- Proxy : 모든 IP 경유 방식 <br/>\
+- In-Line : Server - Client Network 사이, 중소형 적절 <br/>\
+3. Snipping : Test Access Port 장비, 미러링 통한 패킷 분석 <br/><br/>\
+# DB 암호화 방식 <br/>\
+1. API <br/>\
+<img src = "./img/DB_Solution1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+2. Plug in <br/>\
+<img src = "./img/DB_Solution2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+3. TDE(Transfer Data Encryption) <br/>\
+<img src = "./img/DB_Solution3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+4. OS 암호화 <br/>\
+<img src = "./img/DB_Solution4.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 암호화 방식 비교 <br/>\
+<img src = "./img/DB_Solution5.png" style = "max-width: 100%; height: auto;">\
+',
+
+// DLP
+'# 정의 : 기업정보 / 데이터 유출 / 사전 방지 솔루션 <br/>\
+- Data Loss Prevention <br/>\
+- 기업 내부의 민감한 데이터, 지식재산, 사업 정보 및 고객 개인정보 등의 데이터 유출을 사전에 방지 하기 위한 데이터 유출 방지 솔루션 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/DLP.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 방식 <br/>\
+- 엔드포인트 방식 : 사용자 PC에 에이전트 설치, 사용자 행위 감시 <br/>\
+- 네트워크 방식 : NW 트래픽 복제 하는 TAP 이용, 네트워크 구간 유출 분석 <br/>\
+<font color = "red">* TAP : Test Access Port </font>\
 ',
   
 // NAC
@@ -3703,27 +3736,7 @@ EAL : 펑스매매세세포 <br/><br/>\
 - SDP : White List, ID 기반 동적 설정 <br/><br/>\
 * KPC 95회 1교시 2번\
 ',
-   
-// DB 보호 솔루션
-'# 접근제어 시스템 <br/>\
-1. Agent : DB 서버 자체 설치 (접근 제어, 로깅) <br/>\
-2. Gate way <br/>\
-- Proxy : 모든 IP 경유 방식 <br/>\
-- In-Line : Server - Client Network 사이, 중소형 적절 <br/>\
-3. Snipping : Test Access Port 장비, 미러링 통한 패킷 분석 <br/><br/>\
-# DB 암호화 방식 <br/>\
-1. API <br/>\
-<img src = "./img/DB_Solution1.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-2. Plug in <br/>\
-<img src = "./img/DB_Solution2.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-3. TDE(Transfer Data Encryption) <br/>\
-<img src = "./img/DB_Solution3.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-4. OS 암호화 <br/>\
-<img src = "./img/DB_Solution4.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-# 암호화 방식 비교 <br/>\
-<img src = "./img/DB_Solution5.png" style = "max-width: 100%; height: auto;"><br/><br/>\
-', 
-  
+     
 // BEC
 '# 정의 : CEO 사칭 공격 <br/>\
 - CEO 등 고위 경영진을 사칭하여 직원에게 자금을 요청하거나 잘못된 송금을 유도하는 공격 <br/><br/>\

@@ -1036,57 +1036,32 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 ',
 
 // IPSec
-'# 정의 : 인증헤더, 인증헤더 이용 IP 보안 프로토콜 <br/>\
-- TCP/IP 프로토콜 IP 계층에서 무결성과 인증을 보장하는 인증헤더(AH)와 기밀성을 보장하는 ESP를 이용한 IP 보안 프로토콜 (IPv6부터 기본 제공)<br/><br/>\
-# 특징 <br/>\
-- 접근제어 <br/>\
-- 무결성 <br/>\
-- 인증제어 <br/>\
-- 재전송 공격방지 <br/><br/>\
+'# 정의 : 종단간 3계층 / 무결성, 인증 보장 / IP 보안 프로토콜  <br/>\
+- IP Security Protocol <br/>\
+- 종단 노드 구간 또는 보안/터널 게이트웨이 구간에서 보안이 취약한 IP 계층의 무결성과 인증을 보장하는 IP 보안 프로토콜 <br/><br/>\
+# 동작 모드 <br/>\
+1. 터널 모드 <br/>\
+- 개념 : IP 패킷 전체 보호, 새로운 IP 헤더 추가 방식 <br/>\
+- 활용 : 두 라우터, 게이트웨이 같은 중개자 레벨 사용 방식 <br/>\
+<img src = "./img/IPSEC_Tunnel.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 전송 모드 <br/>\
+- 개념 : IP 헤더 대부분 그대로 이용, 나머지 부분만 보호 <br/>\
+- 활용 : 종단(사용자) 레벨에서 통신시 주로 사용 <br/>\
+<img src = "./img/IPSEC_Transport.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-1. IPSec 정책 <br/>\
-- SPD(Security Policy Database) : 패킷에 대한 보안 정책을 적용, 모든 트래픽 처리시에 참조 <br/>\
-- SAD(Security Authentication Database) : 미리 설정되어야 할 보안 요소 데이터 관리 <br/><br/>\
-2. 프로토콜 <br/>\
-- AH(Authentication Header) : IP 패킷을 인증하기 위해 필요한 정보를 포함하는 방법 <br/>\
-- ESP(Encapsulation Security Paylod) : 기밀성, 무결성 제공 / AH 기능에 추가기능 포함 프로토콜<br/><br/>\
-3. 키관리 매커니즘 <br/>\
-- IKE(Internet Key Exchange) : 보안 연관 생성하기 위한 프로토콜 / IPSec을 위한 SA(Security Association) 생성 <br/><br/>\
-4. Packet 인터셉터 <br/>\
-- PIM(Packet Interceptor Module) : TCP/IP 스택에서 패킷을 가로채서 IPSec Engine 입력으로 사용 <br/><br/>\
-5. IPSec 엔진 <br/>\
-- IEM(IPSec Engine Module) : 사용자 정의한 Rule 기반 동작, X.509 인증서 이용 암호화/복호화 서비스 수행 <br/><br/>\
-# VPN 적용 <br/>\
-1. 터널링 <br/>\
-- 개념 : Site to Site, Original IP 데이터 그램 전체 패킹, New IP 추가 <br/>\
-- 기술 : Packing UnPacking <br/><br/>\
-2. 캡슐화 <br/>\
-- 개념 : End to End, IP 헤더 제외한 Payload 암호화 패킹한 뒤 Original IP 정보 그대로 전송 <br/>\
-- Payload 암호화 패킹 <br/><br/>\
-3. 인증 <br/>\
-- 개념 : IPSec 보안연결 설정 위한 Key 교환 <br/>\
-- 기술 : SA(IKE,인증서), AH(MD5, SHA-1), ESP(RFC 2406) <br/><br/>\
-4. 암호화 <br/>\
-- 개념 : 암호화 알고리즘 활용하여 IP Packet 처리 <br/>\
-- 기술 : ESP(DES, 3DES, SEED, AES) <br/><br/>\
-# IPSec 장단점 <br/>\
-1. 장점 <br/>\
-- 모든 트래픽에 대한 보안 제공 <br/>\
-- 모든 트래픽의 IP 통과 제어 <br/>\
-- End User 에게 투명 <br/>\
-- 높은 보안수준 유지가능 <br/>\
-- 다양한 환경 적용, 독립적 운영 <br/>\
-- 다양한 인터넷 접속기술 활용 가능 <br/>\
-- 고객사 고유정책 반영 가능 <br/><br/>\
-2. 단점 <br/>\
-- 높은 초기도입 비용, 각 지사VPN 장비 필요 <br/>\
-- 트래픽 제어 및 QoS 기능 미약 <br/>\
-- 지속적인 관리비용 발생, 대규모 접속환경 미약 <br/>\
-- 개인적으로 사용하기엔 복잡함 <br/>\
-- 추가 Header 사용으로 Packet Fragmentation 증가, Throughput 저하 <br/>\
-- IP Traffic에 국한, Multi protocol 지원 애로 <br/><br/>\
-# 사례 <br/>\
-<img src = "./img/IPSec_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. 프로토콜 <br/>\
+- AH : 데이터 인증, 비 연결형 무결성 보장 <br/>\
+- ESP : 캡슐화 통한 기밀성 보장 프로토콜 <br/><br/>\
+2. 키관리 방식 <br/>\
+- IKE : 알고리즘을 이용한 공개 네트워크 키 교환 방식 <br/><br/>\
+3. 정책 <br/>\
+- SPD : 패킷에 대한 보안 정책 DB화 <br/>\
+- SAD : 실제 파라미터 저장 <br/>\
+<font color = "red">* AH : Autehntication Header <br/>\
+* ESP : Encapsulation Security Payload <br/>\
+* IKE : Internet Key Exchange <br/>\
+* SPD : Security Policy Database <br/>\
+* SAD : security Authentication Database </font><br/><br/>\
 * 정보관리 104회 2교시 3번 \
 ',
   
