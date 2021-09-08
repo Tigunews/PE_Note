@@ -115,7 +115,6 @@
 '[해킹]- 스니핑(Sniffing)',
 '[해킹]- 스푸핑(Spoofing)',
 '[해킹]- Session Hijacking',
-'[해킹]- 사이버 디셉션',
 '[해킹]- 워터링 홀 공격(Watering Hole Attack)',
 '[해킹]- 루트킷(Rootkit)',
 '[해킹]- 포맷 스트링 공격',
@@ -125,15 +124,25 @@
 '[해킹]- 베놈(VENOM) 취약점',
 '[해킹]- 크리덴셜 스터핑',
 '[해킹]- Atom Bombing',
-'[공격기법]- XSS',
-'[공격기법]- SSRF',
-'[공격기법]- DDoS',
+'[해킹]- OWASP Top 10',
+'[해킹][OWASP]- Injection',
+'[해킹][OWASP][Injection]- SQL Injection',
+'[해킹]- OWASP Mobile Top 10',
+'[해킹]- OWASP IoT Top 10',
+'[해킹]- XSS',
+'[해킹][XSS]- SSRF',
+'[해킹][XSS]- CSRF',
+'[해킹]- DDoS',
+'[해킹][DDoS]- 스크러빙 센터, CDN',
+'[해킹][DDoS]- TCP Traffic Flooding',
+'[해킹][DDoS]- HTTP Head/Option Spoofing Flooding',
+'[해킹][DDoS]- HashDoS',
+'[해킹]- DRDoS',
+'[해킹]- DNS 보안',
+'[해킹]- 허니팟',
+'[해킹]- 사이버 디셉션',
+'[해킹]- 템퍼 프루핑',
 '[공격기법]- Race Condition',
-'[DDoS]- 스크러빙 센터, 컨텐츠 전송 네트워크',
-'[DDoS]- TCP Traffic Flooding',
-'[DDoS]- HTTP Head/Option Spoofing Flooding',
-'[DDoS]- HashDoS',
-'[공격기법]- DRDoS',
 'Secure Coding',
 '[Secure Coding]- TouchPoints 기법',
 '[Secure Coding]- TOCTOU',
@@ -148,11 +157,6 @@
 'CVE',
 'PETs',
 'PPDM',
-'OWASP Top 10',
-'[OWASP]- Injection',
-'[OWASP][Injection]- SQL Injection',
-'OWASP Mobile Top 10',
-'OWASP IoT Top 10',
 '개인정보 영향평가(PIA)',
 '[PIA]- ISO/IEC 29134',
 'ISO 29151',
@@ -201,7 +205,6 @@
 '[CPU 보안]- Meltdown',
 '[시스템 보안]- Shell Code',
 '[시스템 보안]- Buffer Overflow',
-'[시스템 보안]- Race Condition',
 '[시스템 보안]- Format String',
 '[Android]- Deeplink',
 'Zero Trust 보안 모델',
@@ -2163,34 +2166,6 @@ var answer = answer.concat(
 - 리셋 탐지 : 예상치 못한 리셋시, 세션이 멈추거나 리셋 탐지 \
 ', 
 
-// 사이버 디셉션
-'# 정의 : 엔드포인트 위협 / 미끼, 함정 / 실시간 / 보안 기술 / <br/>\
-- NW, 엔드포인트 등에서 위협이 주변으로 확산되기 전에 미끼(Decoy)와 함정(Trap)을 이용해 실시간으로 유인, 탐지, 예방 하는 보안 기술 <br/><br/>\
-# 특징 <br/>\
-- 허니팟 : 공격자 유인 함정 <br/>\
-- 오탐 최소화 : 로그 데이터 활용, 오탐 최소화 <br/>\
-- 실시간성 : 즉시 일어나는 이벤트 처리 <br/><br/>\
-# 동작방식 <br/>\
-<img src = "./img/CyberDeception.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 <br/>\
-1. Decoy <br/>\
-- 쿠키 : 스크립트의 기록서 <br/>\
-- 서버접근정보 : IP, MAC, 접속시간, 접속기간 <br/>\
-- 로그인 정보 : 계정정보, 접근 경로, 권한 정보, 사용 명령어 <br/>\
-- 자동생성기술 : 방화벽, 유사 내부정보 활용 접근 포인트 생성 <br/><br/>\
-2. Trap <br/>\
-- Endpoint : Agent 정보, 방화벽, 경로별 정보 유도, USB, Port <br/>\
-- Network : 가상 유도 NW, 트래픽 생성, Access Control, 이메일 정보 <br/>\
-- OS : Root 정보, 사용자 인증, 접근제어 허가, 메모리 유도 <br/><br/>\
-3. Deception System <br/>\
-- NW 탐지 : 이상 접근, 미끼기반 모니터링, 랜섬웨어 확인, 현상 파악 <br/>\
-- 포렌식 : 정당성 확보 위한 근거 추출, 이상현상 대한 원인 분석 <br/>\
-- User Interface : 실시간 트래픽 모니터링, 포트, 다경로 시각화 수행 <br/><br/>\
-# 사이버디셉션, 허니팟 비교 <br/>\
-<img src = "./img/CyberDeceptionHonneyPot.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* ITPE 122회 대비 합숙 2일차 1교시 5번\
-',
-
 // Watering Hole Attack
 '# 정의 : 제로데이 취약점 악용 / Target / 해킹 방법 <br/>\
 - 특정 사이트에 미리 제로데이 취약점 등 악용하여 악성코드 심고 특정 Target 방문시 자동 감염하여 해킹하는 방법 <br/><br/>\
@@ -2330,7 +2305,152 @@ var answer = answer.concat(
 # 공격 형태 : MITB, 데스크탑 스크린샷 원격 실행, 브라우저 저장 암호화된 패스워드 접근 허용 <br/><br/>\
 # 대응 : 코드 인젝션 대응기법, 행위기반 보안\
 ',
-  
+
+// OWASP Top 10
+'# 정의 : 웹 취약점 대응방안 기술 가이드<br/>\
+- Open Web Application Security Project Top 10 RC(Release Candidate)2 - The Ten Most Critical Web Application Security Risks <br/>\
+- 공격 빈도 높으며 보안 영향 큰 10가지 취약점에 대한 대응방안 제공하는 기술 가이드 <br/><br/>\
+# 내용 <br/>\
+1. 인젝션(Injection) <br/>\
+- 개념 : 신뢰할 수 없는 데이터가 명령, 질의 문 전송 통한 오작동 유도 공격 <br/>\
+- 예시 : Blind SQL Injection, 매스 SQL <br/>\
+- 대응 : 데이터,명령어 분리, 입력값 공통 필터링 <br/><br/>\
+2. 취약한 인증(Broken Authentication) <br/>\
+- 개념 : 인증 및 세션 관리 암호키, 세션 토큰 노출 통한 권한 획득 <br/>\
+- 사례 : 세션 하이제킹 <br/>\
+- 대응 : 2Factor 인증, Admin 계정 인증, 강력한 비밀번호 <br/><br/>\
+3. 민감한 데이터 노출(Sensitive data exposure)<br/>\
+- 개념 : 금융 정보, 건강 정보, 개인 식별 정보 취약한 데이터 획득,변조 <br/>\
+- 예시 : 스니핑, MITM <br/>\
+- 대응 : 데이터 분류 및 통제, 암호화, Salt 기반 해시 <br/><br/>\
+4. XML 외부 개체(XML External entities, XXE) <br/>\
+- 개념 : 외부 개체 통한 내부 파일 공유, 원격 코드 실행 <br/>\
+- 사례 : 외부 참조 <br/>\
+- 대응 : 개발자 교육, 입력값 검증, JSON 처리, SOAP 1.2 이용 <br/><br/>\
+5. 취약한 접근 통제(Broken access control) <br/>\
+- 개념 : 작업 제한 미적용으로 다른 사용자 계정 접근 공격 <br/>\
+- 예시 : 직접 접근 <br/>\
+- 대응 : ACL 구성, 접근 제어 감사 <br/><br/>\
+6. 잘못된 보안 구성(Security misconfiguration)<br/>\
+- 개념 : 취약한 기본 설정, 에러 메시지 설정 실수 공격 <br/>\
+- 사례 : 에러 노출 <br/>\
+- 대응 : 안전한 설치, 불필요 기능 최소화 <br/><br/>\
+7. XSS(Cross site scripting) <br/>\
+- 개념 : 브라우저에서 스크립트 실행시 세션 탈취/변조 공격 <br/>\
+- 사례 : Reflected XSS, Stored XSS <br/>\
+- 대응 : XSS 자동 필터링 도구, 스마트 스크린, HTML & 인코딩 변환 <br/><br/>\
+8. 안전하지 않은 역직렬화(Insecure deserialization) <br/>\
+- 개념 : 원격 코드 실행, 권한 상승, 재생 공격등 비순차 공격 <br/>\
+- 사례 : 주입, 재생 공격 <br/>\
+- 대응 : 직렬화된 객체 미허용, 원시 데이터 유형만 허용 <br/><br/>\
+9. 알려진 취약점이 있는 구성요소(Using Components with known vulnerability) <br/>\
+- 개념 : 알려진 취약점 악용 공격 <br/>\
+- 예시 : CVE, CWE <br/>\
+- 대응방안 : 패치 관리 시스템, 불필요 기능 제거, 구성 변경 모니터링 <br/><br/>\
+10. 불필요한 로깅 및 모니터링(Insufficient logging and monitoring) <br/>\
+- 예시 : 개인사업자 사이트 <br/>\
+- 대응방안 : 통합 로그 관리 솔루션(ESM, SIEM, NMS) <br/><br/>\
+<img src = "./img/OWASP.PNG" style = "max-width:100%; height:auto;">\
+',
+
+// Injection
+'# 정의 : 보안 허점 / 악의적 명령 실행 / 비정상 조작 공격 기법 <br/>\
+- 응용 프로그램 보안상의 허점을 의도적으로 이용해, 악의적인 명령어를 실행되게 함으로써 정상적인 프로그램을 비정상적으로 조작하는 공격 기법 <br/><br/>\
+# 유형 <br/>\
+1. SQL Target <br/>\
+- SQL Injection : SQL Query / Blind, Timebased Injection<br/>\
+- Blind SQL Injection : Query 결과 따른 서버 <font color = "red">참,거짓 결과</font> 이용 공격 <br/>\
+- LDAP Injection : 웹 어플리케이션 악의적 LDAP 문법 이용 서버 의도 않는 동작 실행 / Error Based Injection<br/>\
+<font color = "red">* LDAP(Lightweight Directory Access Point) : TCP/IP위에서 디렉토리 서비스 조회, 수정 응용 프로토콜 </font><br/><br/>\
+2. Process Target <br/>\
+- DLL Injection : 다른 프로세스 주소 공간 내에서 DLL 강제 로드 코드 실행 <br/><br/>\
+# 대응방안 <br/>\
+1. 시큐어 코딩 단계 <br/>\
+- 입력값 유효성 검사 : 블랙, 화이트 리스트 방식 <br/>\
+- 동적 쿼리 사용 제한 : 정적 쿼리 사용, 매개변수화된 쿼리 사용 <br/>\
+- 오류 메시지 출력 제한 : DB 오류 출력 제한, 추상화 메시지 <br/><br/>\
+2. 공격 탐지 단계 <br/>\
+- SQL Injection 침입 확인 : DB 확인, Web Log 점검 <br/>\
+- SQL Injection 취약점 검사 툴 : 수동, 자동 점검 <br/><br/>\
+3. 대응 조치 단계 <br/>\
+- 백업본 이용 복구 : 백업 시점 이후 자료 유실 발생 <br/>\
+- 컬럼 단위 복구 : 악성 코드 문자열 SQL 적용, 제거 <br/>\
+- 일괄 스크립트 사용 복구 : 컬럼 단위 시간적 문제 해결 <br/><br/>\
+<hr width = "100%" color = "green"  noshade/>\
+# 대응방안 2 <br/>\
+1. 관리적 <br/>\
+- 보안 내재화 : Secure SDLC / Seven Touch Point, MS SDCL <br/>\
+- Security by Design : DevSecOps, DevTestOps <br/>\
+- 교육 : 인식함양, 기술교육, 보안 진단, 모의 침투 <br/><br/>\
+2. 기술적 <br/>\
+- Agent 강화 : 보안 솔루션(IDS/IPS, WAF), L7 Switch(NGFW), Framework Filtering <br/>\
+- Secure Coding : 입력값 필터링, Prepared Statement 함수 <br/>\
+- API/JS 필터 강화 : 검증된 API, Javascript 활용, Buy Bounding(공개 보안 진단) <br/><br/>\
+* 124회 관리 2교시 6번\
+',
+
+// SQL Injection
+'# 정의 : SQL을 이용한 주입 공격 <br/>\
+- 웹 어플리케이션의 SQL 입력값을 변조하여 비정상적인 데이터베이스 접근을 시도하거나 원하는 정보를 탈취하는 해킹기법 <br/><br/>\
+# 공격기법 <br/>\
+1. 인증우회 <br/>\
+<img src = "./img/SQLInjection_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 권한획득 <br/>\
+<img src = "./img/SQLInjection_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 오류분석 <br/>\
+- 웹 어플리케이션에서 발생하는 에러메시지를 분석 <br/>\
+- 데이터베이스 열람 및 시스템 명령어 수행을 위한 자료로 활용 <br/><br/>\
+4. 정보열람 <br/>\
+- Error-Based Injection, Blind SQL Injection 등의 기법 활용하여 데이터베이스 조회, 테이블 생성 등 데이터베이스 조작가능 <br/>\
+- Error-Based Injection : 화면에 노출된 DB 에러 메시지를 이용한 공격 방식 <br/>\
+- Blind SQL Injection : 쿼리조건에 따른 결과화면의 차이를 이용한 공격 방식 <br/><br/>\
+# 방어기법 <br/>\
+1. 바인딩 변수 <br/>\
+- 어플리케이션에서 제공하는 바인딩 매개변수를 명시적으로 지정 사용 <br/>\
+- Java의 경우 PreparedStatement Class 활용 <br/>\
+- 데이터베이스의 StoredProcedure 사용 <br/><br/>\
+2. 입력값 체크 <br/>\
+- 자바스크립트 등의 클라이언트 스크립트를 활용하여 입력값 체크 <br/>\
+- SQL Injection 발생시킬 수 있는 위험한 문자 포함 여부 확인 <br/>\
+( \', --, ;, % 등 체크 )<br/><br/>\
+3. 필터링 <br/>\
+- Request, Response에 대해 공통적으로 적용되는 기능을 구현하여 SQL Injection 유발 값에 대한 필터링 \
+',
+
+// OWASP Mobile Top 10
+'# 정의 : 모바일 보안 기술 가이드 <br/>\
+- 모바일 취약점 중 공격 빈도가 높으며, 보안상 큰 영향을 줄 수 있는 10가지 취약점에 대한 대응 방안을 제공하는 웹 보안 기술 가이드<br/><br/>\
+# 암기 : 서저전누인암인의세바 <br/><br/>\
+# 상세내역 <br/>\
+- M1. 서버사이드에서 발생할 수 있는 취약점 : 대부분의 앱이 서버와 통신으로 이루어지고 개발시 하이브리드 앱으로 많이 개발되기 때문에 클라이언트에서 파라미터 값 변조를 통한 웹에서 발생할 수 있는 취약점들이 도출될 수 있음 <br/>\
+- M2. 중요정보들이 스마트폰 내에 저장되는 경우 : 스마트폰 분실 혹은 공격자에 의한 권한 탈취시 해당 중요정보들 또한 공격자에게 전달됨 <br/>\
+- M3. 민감한 정보 평문 전송 : 개인정보 혹은 중요정보들이 네트워크상에서 평문으로 정송될 때 발생 <br/>\
+- M4. 의도하지 않은 데이터 누출 : 타 앱에서 접근 가능한 데이터 영역에 민감한 정보를 저장시 발생할 수 있는 리스크 <br/>\
+- M5. 인증 및 인가 검증 미흡 : 클라이언트 내부에서 인증시 우회 가능하기 떄문에 인증 검증을 서버사이드에서 인증 절차를 확인해야 함 <br/>\
+- M6. 취약한 암호화 : 개발시 암호화 기술에 대한 적정성 여부를 판단하여 적용해야 함 <br/>\
+- M7. 클라이언트 사이드 인젝션 : 클라이언트에서 발생할 수 있는 인젝션 공격 <br/>\
+- M8. 신뢰할 수 없는 입력 값에 의한 보안 의사결정 : 프로세스간 통신시 발생할 수 있는 취약점 <br/>\
+- M9. 부적절한 세션 관리 : 서버에서 부여받은 세션 관리 <br/>\
+- M10. 바이너리 보호 미흡 : 앱과 서버통신시 앱에 대한 무결성 검증이 필요\
+',
+
+// OWASP IoT Top 10
+'# 정의 : IoT 보안 활성화 프로젝트 <br/>\
+- 사물의 인터넷과 관련된 보안 문제를 이해하고 구축 할 때 더 나은 보안 결정을 내릴 수있는 상황에서 사용자를 활성화하기 위한 프로젝트<br/><br/>\
+# 암기 : I-웹인네암개클모구펌물 <br/><br/>\
+# 구성 <br/>\
+1. 안전하지 않은 웹 인터페이스 <br/>\
+2. 부족 인증 / 권한부여 <br/>\
+3. 안전하지 않은 네트워크 서비스 <br/>\
+4. 전송 암호화의 부족 <br/>\
+5. 개인 정보보호에 대한 우려 <br/>\
+6. 안전하지 않은 클라우드 인터페이스 <br/>\
+7. 안전하지 않은 모바일 인터페이스 <br/>\
+8. 불충분한 보안 구성 가능 <br/>\
+9. 안전하지 않은 소프트웨어 / 펌웨어 <br/>\
+10. 빈약한 물리적 보안 \
+',
+ 
 // XSS
 '# 정의 : Web Script 게시물 기반 공격 기법 <br/>\
 - 웹기반 게시판 등에 등록된 Scrpit 게시물을 조회한 사용자를 대상으로 공격하는 기법 <br/>\
@@ -2385,9 +2505,30 @@ var answer = answer.concat(
 * KPC 97회 관리 1교시 9번\
 ',
 
+// CSRF
+'# 정의 : 악성 스크립트 포함 / 게시물 등록 / 공격 <br/>\
+- Cross-Site Request Foregery <br/>\
+- 사용자의 쿠키 값이나 세션 정보를 의도한 사이트로 보내거나 특정한 동작을 유발하는 스크립트를 글에 삽입하여 게시물을 클릭하면 원하는 동작을 실행하게 하는 공격 <br/><br/>\
+# 절차 <br/>\
+<img src = "./img/CSRF_Process.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 대응방안 <br/>\
+- 쿠키 미사용 <br/>\
+- 특수문자 제한 <br/>\
+- Tag 변환 <br/>\
+- replaceall() 스크립트 금지 <br/>\
+- 스마트 스크린 <br/>\
+- CSRF 토큰 사용 <br/>\
+- OTP 인증 <br/>\
+- 추가 인증 <br/>\
+- 리퍼러(Referer) 체크 \
+',
+
 // DDoS
 '# 개념 : 좀비 클라이언트 / 자원 고갈 / 시스템 거부 유발 <br/>\
-- 대량의 좀비 클라이언트의 악성 프로그램을 통해 목표 시스템의 자원을 고갈하여 시스템 거부(DoS)를 유발하는 공격기법 <br/><br/>\
+- Denial Of Service <br/>\
+- Distributed Denial of Service <br/>\
+- DoS : 서버가 불능에 빠지도록 자원을 고갈시키는 공격 <br/>\
+- DDoS : 대량의 좀비 클라이언트의 악성 프로그램을 통해 목표 시스템의 자원을 고갈하여 시스템 거부(DoS)를 유발하는 공격기법 <br/><br/>\
 # 주요 공격 유형 <br/>\
 <img src = "./img/DDoSType.png" style = "max-width: 100%; height: auto;"><br/>\
 - SYN Flood : 대량 SYN 패킷 서버 전달 / 대기큐 가득 <br/>\
@@ -2402,30 +2543,6 @@ var answer = answer.concat(
 <font color = "red">* KISA의 사이버 대피소등 외부 지원 서비스 활용</font><br/><br/>\
 * 114회 응용 3교시 3번 <br/>\
 * ITPE 2회 관리 2교시 4번\
-',
-
-// Race Condition 
-'# 정의 : 공유 자원 / 경쟁 상태 / 임시 파일 / 관리자 권한 탈취 공격 <br/>\
-- 공유 자원에 여러 개의 프로세스가 동시에 접근하기 위한 경쟁 상태에서 생성된 임시 파일을 통해 관리자 권한을 탈취하는 공격 기법 <br/><br/>\
-# 공격기법 <br/>\
-1. 정상 <br/>\
-<img src = "./img/RaceConditionNormal.png" style = "max-width: 100%; height: auto;"><br/>\
-- 프로그램 실행 <br/>\
-- SetUID 인한 프로세스 권한 Root 권한 상승 <br/>\
-- 프로그램 동작 <br/><br/>\
-2. 레이스 컨디션 공격 중 <br/>\
-<img src = "./img/RaceConditionAttack.png" style = "max-width: 100%; height: auto;"><br/>\
-- 악의적 프로그램 통한 프로세스 실행중 끼어듦 <br/>\
-- 심볼릭 링크 <br/>\
-- 주요 파일 내용 수정 등 공격 <br/><br/>\
-# 대응방안 <br/>\
-1. 프로그램 실행 전 <br/>\
-- 임시파일 생성 자제 <br/>\
-- umask 최하 022로 유지 <br/><br/>\
-2. 프로그램 실행 중 <br/>\
-- 생성한 임시파일에 링크 존재 여부 검사 <br/>\
-- 임시 파일 생성시 랜덤 이름 생성 <br/><br/>\
-* ITPE 8회 관리 1교시 8번\
 ',
   
 // DDOS - 스크러빙 센터, 컨텐츠 전송 네트워크 
@@ -2505,6 +2622,136 @@ var answer = answer.concat(
 - DNS 반사 및 증폭 공격 : 공격자, DNS 시스템 악용 / 많은양 트래픽 전송 공격 기법 <br/>\
 - CLDAP 반사 및 증폭 공격 : 공격자, 대상 IP 주소 도용 -> LDAP 서버로 CLDAP 요청 (UDP 389) <br/><br/>\
 * ITPE 2회 관리 2교시 4번\
+',
+
+// DNS 보안 
+'# 취약점 <br/>\
+1. Protocol 측면 <br/>\
+- UDP 특성상 IP 변조 쉬움 <br/>\
+- 외부 노출된 인터페이스 <br/>\
+- DNS 변경 불가 <br/>\
+- UDP 53 Port 이용으로 Flooding 가능 <br/><br/>\
+2. Server 측면 <br/>\
+- 처리 가능한 커리 수 한정적 <br/>\
+- SPOF <br/>\
+- 정상, 비정상 구분 필터링 불가 <br/><br/>\
+# 공격 방식 <br/>\
+1. Porotocol 측면 <br/>\
+- DNS 캐시 포이즈닝 : 잘못된 주소 레코드 침투 <br/>\
+- DNS 랜덤 도메인 : 무작위로 생성된 하위 도메인 추가 질의 <br/>\
+- DNS 터널링 : UDP 53번 포트 다른 프로토콜 터널링 수행 <br/><br/>\
+2. Server 측면 <br/>\
+- DNS 증폭 : 요청보다 큰 크기의 응답 제작 <br/>\
+- 봇넷 공격 : 감염된 여러 장비에 DDoS 공격 사용 <br/>\
+- DNS 취약점 공격 : 오픈소스 기반 DNS 공격 <br/>,br/>\
+# 대응방안 <br/>\
+1. Protocol 측면 <br/>\
+- 스크러빙 센터 : 분산된 DNS 서버 운영 <br/>\
+- DNSSEC : 외부 DDoS 대응 서비스 연계 하여 다층 필터링, 전자 서명 기술 이용 <br/><br/>\
+2. Server 측면 <br/>\
+- 블랙홀 라우팅 : 공격자 IP 식별시 직접 차단 <br/>\
+- 비율제한 : 정해진 임계치 이상 요청 차단 <br/>\
+- 블랙리스트 : 웹 로그 분석하여 실시간 ACL \
+',
+
+// 허니팟
+'# 정의 : 공격자 유인 / Fake System <br/>\
+- 공격자를 유인하려는 의도로, 실제 서비스는 실행되지 않고 해당 서비스를 이용할 수 있는 것처럼 꾸며 놓은 컴퓨터 시스템 <br/><br/>\
+# 동작 원리 <br/>\
+<img src = "./img/HonneyPotPorcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+- PMS : 실시간 공격 분석, 방화벽 포트 차단 <br/>\
+- 샌드박스 : 악성 코드 정보 수집 <br/>\
+- 차단 시그니처 : 샌드박스 정보 기반 생성 정보 <br/><br/>\
+# 종류 <br/>\
+- 서버 허니팟 : 서버 위주 <br/>\
+- 클라이언트 허니팟 : 사용자 위주 <br/>\
+- 액티브 허니팟 : 단순 Wait -> 능동적 실제 방문 \
+',
+
+// 사이버 디셉션
+'# 정의 : 엔드포인트 위협 / 미끼, 함정 / 실시간 / 보안 기술 / <br/>\
+- NW, 엔드포인트 등에서 위협이 주변으로 확산되기 전에 미끼(Decoy)와 함정(Trap)을 이용해 실시간으로 유인, 탐지, 예방 하는 보안 기술 <br/><br/>\
+# 특징 <br/>\
+- 허니팟 : 공격자 유인 함정 <br/>\
+- 오탐 최소화 : 로그 데이터 활용, 오탐 최소화 <br/>\
+- 실시간성 : 즉시 일어나는 이벤트 처리 <br/><br/>\
+# 동작방식 <br/>\
+<img src = "./img/CyberDeception.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 <br/>\
+1. Decoy <br/>\
+- 쿠키 : 스크립트의 기록서 <br/>\
+- 서버접근정보 : IP, MAC, 접속시간, 접속기간 <br/>\
+- 로그인 정보 : 계정정보, 접근 경로, 권한 정보, 사용 명령어 <br/>\
+- 자동생성기술 : 방화벽, 유사 내부정보 활용 접근 포인트 생성 <br/><br/>\
+2. Trap <br/>\
+- Endpoint : Agent 정보, 방화벽, 경로별 정보 유도, USB, Port <br/>\
+- Network : 가상 유도 NW, 트래픽 생성, Access Control, 이메일 정보 <br/>\
+- OS : Root 정보, 사용자 인증, 접근제어 허가, 메모리 유도 <br/><br/>\
+3. Deception System <br/>\
+- NW 탐지 : 이상 접근, 미끼기반 모니터링, 랜섬웨어 확인, 현상 파악 <br/>\
+- 포렌식 : 정당성 확보 위한 근거 추출, 이상현상 대한 원인 분석 <br/>\
+- User Interface : 실시간 트래픽 모니터링, 포트, 다경로 시각화 수행 <br/><br/>\
+# 사이버디셉션, 허니팟 비교 <br/>\
+<img src = "./img/CyberDeceptionHonneyPot.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 122회 대비 합숙 2일차 1교시 5번\
+',
+
+// 템퍼 프루핑
+'# 정의 : 소프트웨어 위/변조 탐지 시스템 <br/>\
+- 템퍼링(부정조작) 검출 시스템을 통하여 소프트웨어에 적용된 위/변조를 감지하고 소프트웨어가 오작동하도록 만드는 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/TemperProofing.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요기술 <br/>\
+1. 생성 <br/>\
+- 해시 함수 : 일정 크기 문자열 생성 <br/>\
+- 핑거프린트 : 배포시 이용자 정보 추가 <br/>\
+- 워터마킹 : 저작물 별도 표시 추가 변조 방지 <br/><br/>\
+2. 외부 공격 방어 <br/>\
+- 소프트웨어 원본 비교 : 메시지 다이제스트 비교 <br/>\
+- 프로그램 체킹 : 수행 시점 프로그램 동적 내용 비교 <br/>\
+- 실행코드 난독화 : 암호화 및 난독화 구현 \
+',
+
+// Race Condition 
+'# 정의 : 공유 자원 / 경쟁 상태 / 임시 파일 / 관리자 권한 탈취 공격 <br/>\
+- 공유 자원에 여러 개의 프로세스가 동시에 접근하기 위한 경쟁 상태에서 생성된 임시 파일을 통해 관리자 권한을 탈취하는 공격 기법 <br/><br/>\
+# 공격기법 <br/>\
+1. 정상 <br/>\
+<img src = "./img/RaceConditionNormal.png" style = "max-width: 100%; height: auto;"><br/>\
+- 프로그램 실행 <br/>\
+- SetUID 인한 프로세스 권한 Root 권한 상승 <br/>\
+- 프로그램 동작 <br/><br/>\
+2. 레이스 컨디션 공격 중 <br/>\
+<img src = "./img/RaceConditionAttack.png" style = "max-width: 100%; height: auto;"><br/>\
+- 악의적 프로그램 통한 프로세스 실행중 끼어듦 <br/>\
+- 심볼릭 링크 <br/>\
+- 주요 파일 내용 수정 등 공격 <br/><br/>\
+# 대응방안 <br/>\
+1. 프로그램 실행 전 <br/>\
+- 임시파일 생성 자제 <br/>\
+- umask 최하 022로 유지 <br/><br/>\
+2. 프로그램 실행 중 <br/>\
+- 생성한 임시파일에 링크 존재 여부 검사 <br/>\
+- 임시 파일 생성시 랜덤 이름 생성 <br/><br/>\
+# 공격 절차 <br/>\
+1. 일반 권한 <br/>\
+- 프로그램 실행 <br/>\
+- SetUID로 인한 프로세스 권한 상승 <br/><br/>\
+2. 관리자 권한 <br/>\
+- 임시파일 이름의 심볼릭 링크 수행 <br/>\
+- 목표 파일 변경 <br/>\
+- 프로그램 동작 및 임시파일 처리 <br/>\
+- 프로그램 종료 <br/><br/>\
+# 대응 방안 <br/>\
+1. 컴파일시 방어 <br/>\
+- 심볼릭 링크 체크 코드파일 추가 : 외부 파일 코드 컴파일시 S_ISLINK() 함수 구현 <br/><br/>\
+2. 시스템 설정 방어 <br/>\
+- 권한여부 체크 : 임시 파일 접근전, 심볼릭 링크 설정 및 권한에 대한 검사 추가 <br/>\
+- 임시파일 생성 제어 : OS 설정을 통해 임시파일 생성 못하도록 제어 <br/>\
+- UMASK 설정 : 최하 022 정도로 유지하여 임시로 생성한 파일이 공격자에 의해 악의적 삭제 방지 <br/><br/>\
+* KPC 90회 응용 2교시 2번 <br/>\
+* ITPE 8회 관리 1교시 8번\
 ',
   
 // Secure Coding
@@ -2812,182 +3059,6 @@ var answer = answer.concat(
 # 기법 : K랜압기분 <br/>\
 <img src = "./img/PPDM_Detail.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 관리 4교시 5번\
-',
-
-// OWASP Top 10
-'# 정의 : 웹 취약점 대응방안 기술 가이드<br/>\
-- Open Web Application Security Project Top 10 RC(Release Candidate)2 - The Ten Most Critical Web Application Security Risks <br/>\
-- 공격 빈도 높으며 보안 영향 큰 10가지 취약점에 대한 대응방안 제공하는 기술 가이드 <br/><br/>\
-# 암기 <br/>\
-- I취X,직구노,접C알R => 2017 <br/>\
-- I취X,접구노,공C알A<br/>\
-- 아이비자싸까 <br/>\
-- IBXASSACCA => 2017 RC2 IBSXBSCIUI 인 비스X비스 시위 <br/><br/>\
-# RC1 <br/>\
-A1 : Injection <br/>\
-1. 개념 : DBMS에서 의도치 않은 결과 반환 <br/>\
-2. 대응방안 <br/>\
-- Static SQL 권장 <br/>\
-- 특수문자 입력 차단 <br/>\
-- SQL 서버 에러메시지 미표시 <br/>\
-- 일반사용자권한 프로시저 접근 차단 <br/><br/>\
-A2 : 취약한 인증과 세션관리 <br/>\
-1. 개념 : 인증, 세션관리 관련 애플리케이션 비정상 동작으로 패스워드, 키, 세션토큰, 사용자도용 취약 발생 <br/>\
-2. 대응방안 <br/>\
-- admin 사용자 기본 credential 사용하여 제공,배포 행위 금지 <br/>\
-- 최신 해시 함수 사용 (Argon2, PBKDF2) <br/><br/>\
-A3 : XSS <br/>\
-1. 개념 : 스크립트 기반 공격기법 <br/>\
-2. 대응방안 <br/>\
-- 스크립트 문자열 입력 방지 <br/>\
-- HTML Tag White List 정책 사용 <br/><br/>\
-A4 : Broken Access Control (RC2 제외) <br/>\
-- 내부적 처리 Object(File, Dir, DB Key) 접근 통제 부족 취약점 <br/><br/>\
-A5 : 보안상 잘못된 구성 <br/>\
-1. 개념 : Default 값 불안전인한 조치 <br/>\
-2. 대응방안 <br/>\
-- 애플리케이션, 프레임워크, WAS, DB서버, 플랫폼의 보안설정 적절, 최적화된 값 유지 <br/>\
-- 최신 업데이트 유지 <br/><br/>\
-A6 : 중요정보노츨 <br/>\
-1. 개념 : WAS에서 암호화 미실시로 인한 유출 <br/>\
-2. 대응방안 <br/>\
-- 관리적 : 불필요한 민감 정보 저장x, 저장된 정보 빠른 시간에 파기 <br/>\
-- 기술적 : 데이터 전송시 SSL 적용등 보안조치 필요 <br/><br/>\
-A7 : 불충분한 공격방어<br/>\
-1. 개념 : API 공격에 대한 탐지,예방,대응 기본기능 부족 <br/>\
-2. 대응방안 <br/>\
-- 신속한 패치 배포 <br/><br/>\
-A8 : CSRF(Cross-Site Request Forgery) (RC2 제외)<br/>\
-- 인지 못하는 상황 / 의도와 무관하게 / 공격자가 의도한 행위 요청 <br/><br/>\
-A9 : 알려진 취약한 컴포넌트 사용<br/>\
-1. 개념 : 슈퍼유저 권한으로 운영되는 취약한 라이브러리, 프레임워크, 기타 SW 모듈로 인한 데이터 유실 및 서버 권한획득과 같은 취약점 존재 <br/>\
-2. 대응방안 <br/>\
-- 컴포넌트 버전, 의존성 식별 <br/>\
-- 공개된 정보 모니터, 보안 메일링, 최신 상태로 유지 <br/>\
-- 컴포넌트 사용자에 대한 보안정책 구축 <br/><br/>\
-A10. 보호되지 않은 API (RC2 제외) <br/>\
-- API 포함 Application의 취약점 존재 <br/><br/>\
-# RC2 변경 사항 <br/>\
-A4 : XXE (XML External Entity) <br/>\
-1. 개념 : XML을 파싱하는 과정에서 Entity 속성 이용한 공격 <br/>\
--> Apache Struct2 취약점 <br/>\
--> 외부엔티티 : 파일 URL 처리기, SMB 파일공유(패치이전), 내부포트 검색, 원격 코드 실행 <br/>\
-2. 대응방안 <br/>\
-- OWASP XXE Prevention Cheat Sheet 사용 -> XML 파서에서 XML 외부 개체 및 DTD 처리 비활성화 <br/>\
-- White Listing 구현 <br/><br/>\
-A8. 안전하지 않은 역직렬화 <br/>\
-0. 역직렬화 개념 : 파일에 쓰인 객체를 어플리케이션이 로드하여 사용할 수 있도록 도와줌 <br/>\
-1. 개념 : 역직렬화 과정중 권한 상승 가능한 객체 생성, 전달 과정 악이용 <br/>\
-2. 대응방안 <br/>\
-- Serialization 객체 신뢰성 보장 이용 <br/>\
-- 변조 방지를 위한 Serialzation된 객체 무결성 검사, 암호화 구현 <br/><br/>\
-A10. 불충분한 로깅 및 모니터링 <br/>\
-1. 개념 : 불충분한 로깅 및 모니터링으로 인한 취약점 <br/>\
-2. 대응방안 <br/>\
-- 충분한 사용자 컨텍스트로 로그인, 접근 통제, 입력 검증 실패 기록 <br/>\
-- 효과적인 모니터링 및 경고 <br/><br/>\
-<img src = "./img/OWASP.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
-* [2017]A4+A7 -> A4통합, A10삭제, 공격 방어취약점(A7) 추가, 취약한 API 추가 <br/>\
-* [2017.10] RC(Release Candidate) 2 공객 : OWASP TOP 10 2017 RC1의 다음 단계이자 최종 정식버전의 바로 전 단계로 피드백을 받기 위해 미리 공개하는 버전 <br/>\
-* OOXML(Office Open XML) : MS Office에서 XML 사용이 가능한 문서\
-',
-
-// Injection
-'# 정의 : 보안 허점 / 악의적 명령 실행 / 비정상 조작 공격 기법 <br/>\
-- 응용 프로그램 보안상의 허점을 의도적으로 이용해, 악의적인 명령어를 실행되게 함으로써 정상적인 프로그램을 비정상적으로 조작하는 공격 기법 <br/><br/>\
-# 유형 <br/>\
-1. SQL Target <br/>\
-- SQL Injection : SQL Query / Blind, Timebased Injection<br/>\
-- Blind SQL Injection : Query 결과 따른 서버 <font color = "red">참,거짓 결과</font> 이용 공격 <br/>\
-- LDAP Injection : 웹 어플리케이션 악의적 LDAP 문법 이용 서버 의도 않는 동작 실행 / Error Based Injection<br/>\
-<font color = "red">* LDAP(Lightweight Directory Access Point) : TCP/IP위에서 디렉토리 서비스 조회, 수정 응용 프로토콜 </font><br/><br/>\
-2. Process Target <br/>\
-- DLL Injection : 다른 프로세스 주소 공간 내에서 DLL 강제 로드 코드 실행 <br/><br/>\
-# 대응방안 <br/>\
-1. 시큐어 코딩 단계 <br/>\
-- 입력값 유효성 검사 : 블랙, 화이트 리스트 방식 <br/>\
-- 동적 쿼리 사용 제한 : 정적 쿼리 사용, 매개변수화된 쿼리 사용 <br/>\
-- 오류 메시지 출력 제한 : DB 오류 출력 제한, 추상화 메시지 <br/><br/>\
-2. 공격 탐지 단계 <br/>\
-- SQL Injection 침입 확인 : DB 확인, Web Log 점검 <br/>\
-- SQL Injection 취약점 검사 툴 : 수동, 자동 점검 <br/><br/>\
-3. 대응 조치 단계 <br/>\
-- 백업본 이용 복구 : 백업 시점 이후 자료 유실 발생 <br/>\
-- 컬럼 단위 복구 : 악성 코드 문자열 SQL 적용, 제거 <br/>\
-- 일괄 스크립트 사용 복구 : 컬럼 단위 시간적 문제 해결 <br/><br/>\
-<hr width = "100%" color = "green"  noshade/>\
-# 대응방안 2 <br/>\
-1. 관리적 <br/>\
-- 보안 내재화 : Secure SDLC / Seven Touch Point, MS SDCL <br/>\
-- Security by Design : DevSecOps, DevTestOps <br/>\
-- 교육 : 인식함양, 기술교육, 보안 진단, 모의 침투 <br/><br/>\
-2. 기술적 <br/>\
-- Agent 강화 : 보안 솔루션(IDS/IPS, WAF), L7 Switch(NGFW), Framework Filtering <br/>\
-- Secure Coding : 입력값 필터링, Prepared Statement 함수 <br/>\
-- API/JS 필터 강화 : 검증된 API, Javascript 활용, Buy Bounding(공개 보안 진단) <br/><br/>\
-* 124회 관리 2교시 6번\
-',
-
-// SQL Injection
-'# 정의 : SQL을 이용한 주입 공격 <br/>\
-- 웹 어플리케이션의 SQL 입력값을 변조하여 비정상적인 데이터베이스 접근을 시도하거나 원하는 정보를 탈취하는 해킹기법 <br/><br/>\
-# 공격기법 <br/>\
-1. 인증우회 <br/>\
-<img src = "./img/SQLInjection_1.png" style = "max-width:100%; height:auto;"><br/><br/>\
-2. 권한획득 <br/>\
-<img src = "./img/SQLInjection_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
-3. 오류분석 <br/>\
-- 웹 어플리케이션에서 발생하는 에러메시지를 분석 <br/>\
-- 데이터베이스 열람 및 시스템 명령어 수행을 위한 자료로 활용 <br/><br/>\
-4. 정보열람 <br/>\
-- Error-Based Injection, Blind SQL Injection 등의 기법 활용하여 데이터베이스 조회, 테이블 생성 등 데이터베이스 조작가능 <br/>\
-- Error-Based Injection : 화면에 노출된 DB 에러 메시지를 이용한 공격 방식 <br/>\
-- Blind SQL Injection : 쿼리조건에 따른 결과화면의 차이를 이용한 공격 방식 <br/><br/>\
-# 방어기법 <br/>\
-1. 바인딩 변수 <br/>\
-- 어플리케이션에서 제공하는 바인딩 매개변수를 명시적으로 지정 사용 <br/>\
-- Java의 경우 PreparedStatement Class 활용 <br/>\
-- 데이터베이스의 StoredProcedure 사용 <br/><br/>\
-2. 입력값 체크 <br/>\
-- 자바스크립트 등의 클라이언트 스크립트를 활용하여 입력값 체크 <br/>\
-- SQL Injection 발생시킬 수 있는 위험한 문자 포함 여부 확인 <br/>\
-( \', --, ;, % 등 체크 )<br/><br/>\
-3. 필터링 <br/>\
-- Request, Response에 대해 공통적으로 적용되는 기능을 구현하여 SQL Injection 유발 값에 대한 필터링 \
-',
-
-// OWASP Mobile Top 10
-'# 정의 : 모바일 보안 기술 가이드 <br/>\
-- 모바일 취약점 중 공격 빈도가 높으며, 보안상 큰 영향을 줄 수 있는 10가지 취약점에 대한 대응 방안을 제공하는 웹 보안 기술 가이드<br/><br/>\
-# 암기 : 서저전누인암인의세바 <br/><br/>\
-# 상세내역 <br/>\
-- M1. 서버사이드에서 발생할 수 있는 취약점 : 대부분의 앱이 서버와 통신으로 이루어지고 개발시 하이브리드 앱으로 많이 개발되기 때문에 클라이언트에서 파라미터 값 변조를 통한 웹에서 발생할 수 있는 취약점들이 도출될 수 있음 <br/>\
-- M2. 중요정보들이 스마트폰 내에 저장되는 경우 : 스마트폰 분실 혹은 공격자에 의한 권한 탈취시 해당 중요정보들 또한 공격자에게 전달됨 <br/>\
-- M3. 민감한 정보 평문 전송 : 개인정보 혹은 중요정보들이 네트워크상에서 평문으로 정송될 때 발생 <br/>\
-- M4. 의도하지 않은 데이터 누출 : 타 앱에서 접근 가능한 데이터 영역에 민감한 정보를 저장시 발생할 수 있는 리스크 <br/>\
-- M5. 인증 및 인가 검증 미흡 : 클라이언트 내부에서 인증시 우회 가능하기 떄문에 인증 검증을 서버사이드에서 인증 절차를 확인해야 함 <br/>\
-- M6. 취약한 암호화 : 개발시 암호화 기술에 대한 적정성 여부를 판단하여 적용해야 함 <br/>\
-- M7. 클라이언트 사이드 인젝션 : 클라이언트에서 발생할 수 있는 인젝션 공격 <br/>\
-- M8. 신뢰할 수 없는 입력 값에 의한 보안 의사결정 : 프로세스간 통신시 발생할 수 있는 취약점 <br/>\
-- M9. 부적절한 세션 관리 : 서버에서 부여받은 세션 관리 <br/>\
-- M10. 바이너리 보호 미흡 : 앱과 서버통신시 앱에 대한 무결성 검증이 필요\
-',
-
-// OWASP IoT Top 10
-'# 정의 : IoT 보안 활성화 프로젝트 <br/>\
-- 사물의 인터넷과 관련된 보안 문제를 이해하고 구축 할 때 더 나은 보안 결정을 내릴 수있는 상황에서 사용자를 활성화하기 위한 프로젝트<br/><br/>\
-# 암기 : I-웹인네암개클모구펌물 <br/><br/>\
-# 구성 <br/>\
-1. 안전하지 않은 웹 인터페이스 <br/>\
-2. 부족 인증 / 권한부여 <br/>\
-3. 안전하지 않은 네트워크 서비스 <br/>\
-4. 전송 암호화의 부족 <br/>\
-5. 개인 정보보호에 대한 우려 <br/>\
-6. 안전하지 않은 클라우드 인터페이스 <br/>\
-7. 안전하지 않은 모바일 인터페이스 <br/>\
-8. 불충분한 보안 구성 가능 <br/>\
-9. 안전하지 않은 소프트웨어 / 펌웨어 <br/>\
-10. 빈약한 물리적 보안 \
 ',
 
 // 개인정보 영향평가(PIA)
@@ -4026,28 +4097,6 @@ EAL : 펑스매매세세포 <br/><br/>\
 - NO Execure : 데이터 실행시간 방어, <font color = "red">AMD NX</font>(Never eXecute bit), <font color = "red">MS DEP</font>(Data Execution Prevention), Intel eXecution Disable(XD) 등은 세그먼트에서 실행방지 <br/>\
 - ASLR(Address Space Layout Randomization) : 각 프로세스의 내부 스택이 <font color = "red">임의의 다른 곳</font>에 위치하도록 변경 <br/>\
 - NOP Sled : 스택 버퍼 맨 끝부분 쉘코드 위치, 버퍼 앞 부분에 <font color = "red">의도적으로 NOP</font>(No Operation) 기계어 연속 배치 <br/><br/>\
-* KPC 90회 응용 2교시 2번\
-',
-  
-// Race Condition
-'# 정의 : 임시 파일 / 심볼릭 링크 <br/>\
-- 실행되는 프로세스가 임시파일을 만드는 경우 끼어들어 임시파일을 목적파일로 연결(심볼릭 링크)하여 악의적 행위를 하는 공격 <br/><br/>\
-# 공격 절차 <br/>\
-1. 일반 권한 <br/>\
-- 프로그램 실행 <br/>\
-- SetUID로 인한 프로세스 권한 상승 <br/><br/>\
-2. 관리자 권한 <br/>\
-- 임시파일 이름의 심볼릭 링크 수행 <br/>\
-- 목표 파일 변경 <br/>\
-- 프로그램 동작 및 임시파일 처리 <br/>\
-- 프로그램 종료 <br/><br/>\
-# 대응 방안 <br/>\
-1. 컴파일시 방어 <br/>\
-- 심볼릭 링크 체크 코드파일 추가 : 외부 파일 코드 컴파일시 S_ISLINK() 함수 구현 <br/><br/>\
-2. 시스템 설정 방어 <br/>\
-- 권한여부 체크 : 임시 파일 접근전, 심볼릭 링크 설정 및 권한에 대한 검사 추가 <br/>\
-- 임시파일 생성 제어 : OS 설정을 통해 임시파일 생성 못하도록 제어 <br/>\
-- UMASK 설정 : 최하 022 정도로 유지하여 임시로 생성한 파일이 공격자에 의해 악의적 삭제 방지 <br/><br/>\
 * KPC 90회 응용 2교시 2번\
 ',
   
