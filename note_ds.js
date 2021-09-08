@@ -72,6 +72,8 @@ var question = question.concat(
 '[인증기술]- DID',
 '[인증기술]- GADI',
 '[인증기술]- 바이오정보 분산관리',
+'[인증기술]- 전자 여권',
+'[인증기술]- 비대면 실명 인증',
 '디바이스 DNA',
 'Solid - Social Linked Data',
 '앰비언트 커머스',
@@ -90,6 +92,7 @@ var question = question.concat(
 '[핀테크]- API',
 '[핀테크]- QR코드 기반 결제',
 '[핀테크]- Zero Pay',
+'[핀테크]- 스마트 지갑',
 '[마이데이터]- 데이터 주권 이슈',
 '[마이데이터]- PDS',
 '아바커스 프로젝트(Project Abacus)',
@@ -1864,6 +1867,35 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 * 120회 관리 2교시 1번\
 ',
 
+// 전자 여권
+'# 정의 <br/>\
+- 신청인의 신원 정보를 비접촉식 스마트 카드 기능을 가진 IC 칩에 추가하여 바이오 정보(안면, 지문, 홍채)를 탑재한 여권 <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/ElectricPassport.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 보안 기술 <br/>\
+- 인증 수준 : CC EAL5+ <br/>\
+- PA : 여권 정보 위/변조 적합성 확인 가능 비밀키 저장 기술 <br/>\
+- AA : 직접적 특정 정보 칩에 보내 공개키 복호화 통해 비교, 복제 여부 체크 판독 기술 <br/>\
+- BAC : 여권 저장 데이터 불법적 Read 방지 통신 기술 <br/>\
+- EAC : 복제 방지 및 직접,간접 접근 통제 기술 <br/>\
+<font color = "red">* PA : Passive Authentication <br/>\
+* AA : Active Autnetication <br/>\
+* BAC : Basic Access Control <br/>\
+* EAC : Extended Access Control </font>\
+',
+
+// 비대면 실명 인증
+'# 정의 : 비대면 환경 / 은행 업무 / 본인 확인 방법 <br/>\
+- 비대면 환경에서의 금융 계좌 개설 또는 모바일 지급 결제시 고객이 직접 은행에 가지 않아도 본인임을 확인할 수 있는 방법 <br/><br/>\
+# 금융위 권고 인증 방법 <br/>\
+- 실명확인증표 사본 제출 <br/>\
+- 영상 통화 <br/>\
+- 접근 매체 전달 시 확인 <br/>\
+- 기존 계좌 활용 <br/>\
+- 타 기관 확인 결과 활용 <br/>\
+- 다수의 개인정보 검증 \
+',
+
 // 디바이스 DNA
 '# 정의 : 디바이스 특징 / 디바이스 신원 확인 기술 <br/>\
 - 디바이스의 하드웨어적 행동적 특징을 자동화된 장치로 추출,저장하여 정확하고 편리하게 디바이스 신원을 확인하는 기술 <br/><br/>\
@@ -2286,6 +2318,19 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 가맹점주 CRM 지원 <br/>\
 - 제로페이 결제 데이터 활용 유도 <br/><br/>\
 * ITPE 7회 관리 3교시 4번\
+',
+
+// 스마트 지갑
+'# 정의 : 인증, 지불 매체 / 관리 체계 관리 / 보호 시스템 <br/>\
+- 인증, 지불 매체를 일관된 관리 체계로 관리하며, 개인화 서비스 구성 및 개인 프라이버시를 보호하는 시스템 <br/><br/>\
+# 매커니즘 <br/>\
+<img src = "./img/SmartWallet.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 기술요소 <br/>\
+- NFC : 저전력 데이터 무선 통신 <br/>\
+- MST : 마그네틱 카드 자기장 기술 <br/>\
+- 비콘 : 소지 자체가 본인에 대한 증명 및 결제 가능 기술 <br/>\
+<font color = "red">* NFC : Near Field Communication <br/>\
+* MST : Magnetic Secure Transmission </font>\
 ',
 
 // 데이터 주권 이슈

@@ -47,7 +47,7 @@
 '[암호학][경량 암호]- LEA 암호화',
 '[암호학]형태 보존 암호화',
 '[암호학]순서 보존 암호화',
-'[암호학]동형암호',
+'[암호학]- 동형암호',
 '[암호학][동형암호]- 준 동형암호',
 '[암호학][동형암호]- 완전 동형암호',
 '접근통제',
@@ -176,6 +176,12 @@
 '[보안활동]- CWE',
 '[보안활동]- 버그 바운티',
 '[보안활동]- ISO/IEC 15408 (CC 인증)',
+'[융합보안]- TEE',
+'[융합보안]- Secure Boot',
+'[융합보안][Cloud 보안]- SECaaS',
+'[융합보안][Cloud 보안]- CWPP',
+'[융합보안][Cloud 보안]- CSPM',
+'[융합보안][Cloud 보안]- CASB',
 '[공격기법]- Race Condition',
 'Secure Coding',
 '[Secure Coding]- TouchPoints 기법',
@@ -216,10 +222,6 @@
 'Zero Trust 보안 모델',
 '재택,원격근무 정보보호 6대 실전 수칙',
 'CDR',
-'[Cloud 보안]- CWPP',
-'[Cloud 보안]- CSPM',
-'[Cloud 보안]- CASB',
-'[Cloud 보안]- SECaaS',
 '사이버 레질리언스',
 'Reverse Turing Test',
 'Turing Completeness',
@@ -3434,6 +3436,135 @@ var answer = answer.concat(
 <font color = "red">* 일반적인 네트워크 보안장비 = EAL 4 일반적 </font>\
 ',
 
+// TEE
+'# 정의 : AP 칩 적용 보안 / OS 분리 안전 영역 / Secure OS 구동 기술 <br/>\
+- Trusted Execution Envirnment <br/>\
+- AP 칩에 적용된 보안 영역으로, AP 칩 안에 안드로이드 OS와는 분리된 안전 영역에 별도로 보안 OS를 구동시키는 기술 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/TEE.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# 구성요소 <br/>\
+- Monitor Mode : Normal World, Secure World 사이 모드 변경 <br/>\
+- Kernel Mode : 모든 시스템 메모리와 모든 CPU 명령어에 접근 허가된 프로세스 실행 <br/>\
+- User Mode : 하드웨어를 직접 접근할 수 없는 사용자 앱만 실행 \
+',
+
+// Secure Boot
+'# 정의 : 순차적 무결성 점검 / 단계적 부팅 기술 <br/>\
+- CPU, 부트로더, 커널, RootFS 순서로 각각의 시그니처,무결성 정보를 확인하며, 이미지에 변조가 없다면 정상적으로 부팅이 완료될 수 있도록 하는 기술 <br/><br/>\
+# 동작 원리 <br/>\
+<img src = "./img/SecureBoot.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+# IoT 보안 단계 <br/>\
+- 디바이스 레벨 : Secure Boot, ASLR(BOF 방지) <br/>\
+- 게이트웨이 레벨 : Secure OS, TEE <br/>\
+- 네트워크 레벨 : SSL/TLS 암호화, 접근 통제 <br/>\
+- 최종 서비스 : ACL, DB 암호화, 다중 방어 체계\
+',
+
+// SECaaS
+'# 정의 : Infra 구매, 설치 x / 인터넷 통한 보안 서비스 기술 <br/>\
+- 인터넷 파일저장 서비스에 추가적인 S/W나 H/W 형태의 보안장비를 구매,설치하지 않고 인터넷을 통해 보안 서비스 받을 수 있도록 하는 보안기술 <br/><br/>\
+# 구성 <br/>\
+1. 기밀성 <br/>\
+- IAM(Identity and Access Management) : 인증, 신원보증, 권한관리 <br/>\
+- Instrusion Management : 침입 시도 탐지 및 방지 <br/>\
+- Network Security : 네트워크 보안 <br/><br/>\
+2. 무결성 <br/>\
+- DLP(Data Loss Prevention) : 데이터 암호화, 민감 데이터 관리 <br/>\
+- E-Mail Security : 악성 첨부파일, 스팸 정보보호 <br/><br/>\
+3. 가용성 <br/>\
+- BCDR : 비즈니스 연속성 및 재해복구 <br/>\
+- Continuous Monitoring : 지속적 위험 관리 <br/><br/>\
+4. 관리 <br/>\
+- Security Assessment : 거버넌스&리스크 관리, 컴플라이언스 감사 <br/><br/>\
+5. 기술 <br/>\
+- SIEM(Security Information and Event Management) : 실시간 로그, 보안 이벤트, 시스템 정보 수집 <br/>\
+- Vulnerability Scanning : 취약점 검사 <br/>\
+- Web Security : 웹 트래픽, 웹 어플리케이션 보안 <br/><br/>\
+# 유형 <br/>\
+1. CSP (Cloud Service Provider)<br/>\
+- 기존 클라우드 제공자 주체, 기본 보안 <br/>\
+- AWS, Azure <br/>\
+- IAM, DLP, IM, 암호화, 네트워크 보안 <br/><br/>\
+2. SSP (Security Service Provider)<br/>\
+- 보안 전문 업체 주체, CSP보다 전문적 <br/>\
+- Fortinet, 팔토알토 <br/>\
+- Vulnerability Scanning, Web Security, Email Security, SIEM, Continous Monitoring <br/><br/>\
+# CASB 비교 <br/>\
+<img src = "./img/SECaaSCASB.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 125회 관리 1교시 1번\
+',
+
+// CWPP
+'# 정의 : 가상머신, 컨테이너 / 서버 워크로드 / 보안 솔루션 <br/>\
+- Cloud Workload Protection Platform <br/>\
+- 가상머신, 컨테이너 등 서버 워크로드의 가시성 및 공격 방어를 위한 에이전트를 바탕으로 한 보안 솔루션 <br/><br/>\
+# Cloud 보안 개요 <br/>\
+<img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* UEBA(User and Entity Behavior Analytics) : 사용자 및 개체 행동 분석 <br/>\
+* DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 </font><br/><br/>\
+# 구성요소 (<font color = "red">IMW ECN</font>)<br/>\
+1. 관리 측면 <br/>\
+- System Ingergrity : 시스템 통합, <font color = "red">보안관리 일원화</font> <br/>\
+- System Monitoring : 시스템 <font color = "red">이상 발생, 정상 동작</font> 여부 <br/>\
+- Application Whitelisting : 현재 승인, 사용중인 어플리케이션 <font color = "red">기준 준수 확인</font> <br/><br/>\
+2. 기술 측면 <br/>\
+- Exploit Protection : 자체 <font color = "red">취약점</font> 방어 <br/>\
+- Workload Configuration : <font color = "red">서버 워크로드 설정</font> 통한 대응 <br/>\
+- Network Segmentation : <font color = "red">네트워크 분할</font> 통한 위협 대응 <br/><br/>\
+# 전체 Framework <br/>\
+<img src = "./img/CloudSecurityFramework.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 122회 합숙 1일차 2교시 1번 \
+',
+
+// CSPM
+'# 정의 : 컴플라이언스, 정책 / 클라우드 인프라 위협요소 / 예방, 탐지, 대응, 예측 / 지속적 관리 솔루션 <br/>\
+- Cloud Security Posture Management <br/>\
+- 컴플라이언스 또는 기업 보안 정책에 따라 클라우드 인프라의 위협 요소를 예방, 탐지, 대응 및 예측하여 클라우드 위험을 지속적으로 관리하는 솔루션 <br/><br/>\
+# 핵심 기능 <br/>\
+- 지속성 : 지속적 변화 환경 체크 <br/>\
+- 가시성 : 통합, Dashboard <br/>\
+- 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 구성요소 (<font color = "red">COP DRT</font>) <br/>\
+1. 관리 측면 <br/>\
+- Compliance Assesment : <font color = "red">이슈 관리 평가</font> <br/>\
+- Operational Monitoring : PaaS, SaaS <font color = "red">운영 데이터</font> 모니터링 <br/>\
+- Policy Enforcement : <font color = "red">기업 요구 정책</font> 적용 수행 <br/><br/>\
+2. 기술 측면 <br/>\
+- DevSecOps Integration : <font color = "red">내부 Cloud</font> 활용 DevSecOps 완성 <br/>\
+- Risk Identification : <font color = "red">발생 가능</font> 주요 위험 식별 및 관리 <br/>\
+- Threat Protection : <font color = "red">내/외부</font> 위협 요소 제거 <br/><br/>\
+# CSPM, CASB, CWPP 비교 <br/>\
+<img src = "./img/CSPM_CASB_CWPP_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 7회 관리 1교시 4번 \
+',
+
+// CASB
+'# 정의 : 이용자, 서비스 사이 / 독립적 보안 SW <br/>\
+- Cloud Access Security Broker <br/>\
+- 클라우드 서비스 이용자와 클라우드 서비스 사이에 위치하여 독립적으로 보안 기능 수행하는 SW <br/><br/>\
+# 구성도 <br/>\
+<img src = "./img/CASB_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 핵심기능 <br/>\
+- 서비스 검색 및 위험 평가 : Risk Assesment <br/>\
+- 암호화 : 기밀성, 가용성 보장 <br/>\
+- 접근 통제 : 정책, 모델, 매커니즘 <br/>\
+- 데이터 손실 방지 : 데이터 유출 방지 <br/>\
+- 로깅 및 감사 : 추적 및 무결성 보장 <br/>\
+- 이상 탐지 : 행위적 침해 대응 <br/><br/>\
+# 유형 (<font color = "red">AAPP</font>) <br/>\
+1. SW형 <br/>\
+- Agent CASB : 서비스 사용자 단말기 설치 <br/>\
+- API CASB : 서비스앱 개발사 직접 적용 <br/><br/>\
+2. HW형 <br/>\
+- Private CASB : Outbound Traffic Check 위치 <br/>\
+- Public CASB : Cloud Servie Platform 내부 <br/><br/>\
+# 유형별 비교 <br/>\
+<img src = "./img/CASB_Type_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* KPC 118회 합숙 4일차 1교시 3번 \
+',
+
 // Race Condition 
 '# 정의 : 공유 자원 / 경쟁 상태 / 임시 파일 / 관리자 권한 탈취 공격 <br/>\
 - 공유 자원에 여러 개의 프로세스가 동시에 접근하기 위한 경쟁 상태에서 생성된 임시 파일을 통해 관리자 권한을 탈취하는 공격 기법 <br/><br/>\
@@ -4286,111 +4417,6 @@ var answer = answer.concat(
 - 제거 : 별도 임베디드(글꼴, 실행파일) 제거 / 정확한 구조 파악 / 컨텐츠 손실 <br/>\
 - 전환 : 파일을 다른 형식으로 전환 / 쉬운 조치 / 변환 과정 비용 <br/><br/>\
 * 121회 관리 1교시 10번\
-',
-
-// CWPP
-'# 정의 : 가상머신, 컨테이너 / 서버 워크로드 / 보안 솔루션 <br/>\
-- Cloud Workload Protection Platform <br/>\
-- 가상머신, 컨테이너 등 서버 워크로드의 가시성 및 공격 방어를 위한 에이전트를 바탕으로 한 보안 솔루션 <br/><br/>\
-# Cloud 보안 개요 <br/>\
-<img src = "./img/CloudSecurityOverview.png" style = "max-width:100%; height:auto;"><br/>\
-<font color = "red">* UEBA(User and Entity Behavior Analytics) : 사용자 및 개체 행동 분석 <br/>\
-* DLP(Data loss prevention SW) : 데이터 손실 방지 소프트웨어 </font><br/><br/>\
-# 구성요소 (<font color = "red">IMW ECN</font>)<br/>\
-1. 관리 측면 <br/>\
-- System Ingergrity : 시스템 통합, <font color = "red">보안관리 일원화</font> <br/>\
-- System Monitoring : 시스템 <font color = "red">이상 발생, 정상 동작</font> 여부 <br/>\
-- Application Whitelisting : 현재 승인, 사용중인 어플리케이션 <font color = "red">기준 준수 확인</font> <br/><br/>\
-2. 기술 측면 <br/>\
-- Exploit Protection : 자체 <font color = "red">취약점</font> 방어 <br/>\
-- Workload Configuration : <font color = "red">서버 워크로드 설정</font> 통한 대응 <br/>\
-- Network Segmentation : <font color = "red">네트워크 분할</font> 통한 위협 대응 <br/><br/>\
-# 전체 Framework <br/>\
-<img src = "./img/CloudSecurityFramework.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* ITPE 122회 합숙 1일차 2교시 1번 \
-',
-
-// CSPM
-'# 정의 : 컴플라이언스, 정책 / 클라우드 인프라 위협요소 / 예방, 탐지, 대응, 예측 / 지속적 관리 솔루션 <br/>\
-- Cloud Security Posture Management <br/>\
-- 컴플라이언스 또는 기업 보안 정책에 따라 클라우드 인프라의 위협 요소를 예방, 탐지, 대응 및 예측하여 클라우드 위험을 지속적으로 관리하는 솔루션 <br/><br/>\
-# 핵심 기능 <br/>\
-- 지속성 : 지속적 변화 환경 체크 <br/>\
-- 가시성 : 통합, Dashboard <br/>\
-- 신속성 : 위반 발생시, 자동 대응 <br/><br/>\
-# 개념도 <br/>\
-<img src = "./img/CSPM_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 구성요소 (<font color = "red">COP DRT</font>) <br/>\
-1. 관리 측면 <br/>\
-- Compliance Assesment : <font color = "red">이슈 관리 평가</font> <br/>\
-- Operational Monitoring : PaaS, SaaS <font color = "red">운영 데이터</font> 모니터링 <br/>\
-- Policy Enforcement : <font color = "red">기업 요구 정책</font> 적용 수행 <br/><br/>\
-2. 기술 측면 <br/>\
-- DevSecOps Integration : <font color = "red">내부 Cloud</font> 활용 DevSecOps 완성 <br/>\
-- Risk Identification : <font color = "red">발생 가능</font> 주요 위험 식별 및 관리 <br/>\
-- Threat Protection : <font color = "red">내/외부</font> 위협 요소 제거 <br/><br/>\
-# CSPM, CASB, CWPP 비교 <br/>\
-<img src = "./img/CSPM_CASB_CWPP_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* ITPE 7회 관리 1교시 4번 \
-',
-
-// CASB
-'# 정의 : 이용자, 서비스 사이 / 독립적 보안 SW <br/>\
-- Cloud Access Security Broker <br/>\
-- 클라우드 서비스 이용자와 클라우드 서비스 사이에 위치하여 독립적으로 보안 기능 수행하는 SW <br/><br/>\
-# 구성도 <br/>\
-<img src = "./img/CASB_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 핵심기능 <br/>\
-- 서비스 검색 및 위험 평가 : Risk Assesment <br/>\
-- 암호화 : 기밀성, 가용성 보장 <br/>\
-- 접근 통제 : 정책, 모델, 매커니즘 <br/>\
-- 데이터 손실 방지 : 데이터 유출 방지 <br/>\
-- 로깅 및 감사 : 추적 및 무결성 보장 <br/>\
-- 이상 탐지 : 행위적 침해 대응 <br/><br/>\
-# 유형 (<font color = "red">AAPP</font>) <br/>\
-1. SW형 <br/>\
-- Agent CASB : 서비스 사용자 단말기 설치 <br/>\
-- API CASB : 서비스앱 개발사 직접 적용 <br/><br/>\
-2. HW형 <br/>\
-- Private CASB : Outbound Traffic Check 위치 <br/>\
-- Public CASB : Cloud Servie Platform 내부 <br/><br/>\
-# 유형별 비교 <br/>\
-<img src = "./img/CASB_Type_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* KPC 118회 합숙 4일차 1교시 3번 \
-',
-
-// SECaaS
-'# 정의 : Infra 구매, 설치 x / 인터넷 통한 보안 서비스 기술 <br/>\
-- 인터넷 파일저장 서비스에 추가적인 S/W나 H/W 형태의 보안장비를 구매,설치하지 않고 인터넷을 통해 보안 서비스 받을 수 있도록 하는 보안기술 <br/><br/>\
-# 구성 <br/>\
-1. 기밀성 <br/>\
-- IAM(Identity and Access Management) : 인증, 신원보증, 권한관리 <br/>\
-- Instrusion Management : 침입 시도 탐지 및 방지 <br/>\
-- Network Security : 네트워크 보안 <br/><br/>\
-2. 무결성 <br/>\
-- DLP(Data Loss Prevention) : 데이터 암호화, 민감 데이터 관리 <br/>\
-- E-Mail Security : 악성 첨부파일, 스팸 정보보호 <br/><br/>\
-3. 가용성 <br/>\
-- BCDR : 비즈니스 연속성 및 재해복구 <br/>\
-- Continuous Monitoring : 지속적 위험 관리 <br/><br/>\
-4. 관리 <br/>\
-- Security Assessment : 거버넌스&리스크 관리, 컴플라이언스 감사 <br/><br/>\
-5. 기술 <br/>\
-- SIEM(Security Information and Event Management) : 실시간 로그, 보안 이벤트, 시스템 정보 수집 <br/>\
-- Vulnerability Scanning : 취약점 검사 <br/>\
-- Web Security : 웹 트래픽, 웹 어플리케이션 보안 <br/><br/>\
-# 유형 <br/>\
-1. CSP (Cloud Service Provider)<br/>\
-- 기존 클라우드 제공자 주체, 기본 보안 <br/>\
-- AWS, Azure <br/>\
-- IAM, DLP, IM, 암호화, 네트워크 보안 <br/><br/>\
-2. SSP (Security Service Provider)<br/>\
-- 보안 전문 업체 주체, CSP보다 전문적 <br/>\
-- Fortinet, 팔토알토 <br/>\
-- Vulnerability Scanning, Web Security, Email Security, SIEM, Continous Monitoring <br/><br/>\
-# CASB 비교 <br/>\
-<img src = "./img/SECaaSCASB.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 125회 관리 1교시 1번\
 ',
 
 // 사이버 레질리언스
