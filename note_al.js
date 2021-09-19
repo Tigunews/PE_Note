@@ -19,8 +19,8 @@ var question = question.concat(
 '[정렬 알고리즘]- Quick sort',
 '최단경로 알고리즘',
 '[최단경로 알고리즘]- 다익스트라(Dijkstra) 알고리즘',
-'[최단경로 알고리즘]- 플로이드(Floyd) 알고리즘',
 '[최단경로 알고리즘]- 벨만-포드(Bellman-Ford algorithm) 알고리즘',
+'[최단경로 알고리즘]- 플로이드(Floyd) 알고리즘',
 '[최단경로 알고리즘]- A* 알고리즘',
 '최소신장트리',
 '[최소신장트리]- 크루스칼(Kruskal) 알고리즘',
@@ -443,24 +443,46 @@ var answer = answer.concat(
 # 특징 <br/>\
 - 시작 정점에서 다른 모든 정점으로의 최단 거리<br/>\
 - 기반이론 : Greedy 알고리즘(최소비용의 인접 정점 선택) <br/>\
-- 시간복잡도 : O(n^2) <br/><br/>\
+- 시간복잡도 : O(VE)<br/><br/>\
 # 절차 <br/>\
-1. 거리값 설정 : d값 계산, 무한대 표시 <br/>\
-2. 방문상태 설정 : 최단경로 정점 선택 <br/>\
-3. 반복 <br/>\
-4. 완료 <br/><br/>\
+- 초기화 : 모든 정점 경로 길이 무한대 설정 <br/>\
+- 추가 : 시작 정점 길이 0으로 초기화 후 최단 경로 추가 <br/>\
+- 갱신 : 추가된 정점의 인접 정점에 대한 경로, 최단 경로 갱신 <br/>\
+- 비교 : 이전 경로 길이와 비교 후 수정 or 무시 <br/>\
+- 반복 : 그래프 내 모든 정점 최단 경로 완성시 까지 반복 <br/><br/>\
+# 다익스트라 알고리즘 한계 <br/>\
+<img src = "./img/DijkstraLimit.png" style = "max-width:100%; height:auto;"><br/>\
+- 경로1) A-B-C 경로2) A-C <br/>\
+- 기존 다익스트라 알고리즘은 A-C 로 경로 확정 <br/>\
+- 다익스트라 알고리즘 구현 조건이 양수 가중치 전제이기 때문 <br/><br/>\
 # 활용 <br/>\
-- 네트워크 라우팅 경로 설계 : 링크스테이트 라우팅<br/>\
+- 네트워크 라우팅 경로 설계 : <font color = "red">링크스테이트 라우팅</font><br/>\
 - OSPF(Open Shortest Path First) 라우팅 프로토콜 <br/>\
 - 지능형 교통 분야 (GIS) <br/><br/>\
 # 고려사항 <br/>\
 - 최선 경로 여부 <br/>\
 - 수행시간 분석 : 입력자료의 상태에 따라 수행시간의 편차가 큼 <br/>\
 -> 해결책 : 알고리즘 평가시 최악,평균,최선 등으로 구분하여 수행능력을 분석<br/><br/>\
-* GAS -> VAS <br/>\
-<img src = "./img/Dijkstra.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 코드 <br/>\
+<img src = "./img/Dijkstra.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* GAS -> VAS </font><br/><br/>\
+# 사례 <br/>\
 <img src = "./img/Dijkstra_0.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 선택 정점에서 주변 노드의 비용 모드 재계산 후 최소 비용 노드 선택<br/><br/>\
+* 123회 관리 4교시 6번\
+',
+
+// [최단경로 알고리즘]- 벨만포드 알고리즘
+'# 정의 : 가중치가 음수이더라도 최단 경로를 구할 수 있는 알고리즘<br/><br/>\
+# 특징 <br/>\
+- 시작 정점에서 다른 모든 정점으로의 최단거리 <br/>\
+- 간선의 가중치 음수 허용 <br/>\
+- 시간복잡도 : O(N^2) <br/><br/>\
+# 활용 <br/>\
+- 네트워크 라우팅경로 설계 : <font color = "red">거리벡터 라우팅</font> <br/><br/>\
+# 코드 <br/>\
+<img src = "./img/BellmanFordCode.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 사례 <br/>\
+<img src = "./img/BellmanFordeExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 관리 4교시 6번\
 ',
 
@@ -472,14 +494,6 @@ var answer = answer.concat(
 - 시간복잡도 : O(n^3)<br/><br/>\
 # 소스코드 <br/>\
 <img src = "./img/Floyd.png" style = "max-width:100%; height:auto;"><br/><br/>\
-* 123회 관리 4교시 6번\
-',
-
-// [최단경로 알고리즘]- 벨만포드 알고리즘
-'# 정의 : 가중치가 음수이더라도 최단 경로를 구할 수 있는 알고리즘<br/><br/>\
-# 특징 : 시작 정점에서 다른 모든 정점으로의 최단거리, 간선의 가중치 음수 허용 <br/>\
-- 시간복잡도 : O(VE) v = 정점, e = 간선 <br/>\
-- 활용 : 네트워크 라우팅경로 설계(거리벡터 라우팅) <br/><br/>\
 * 123회 관리 4교시 6번\
 ',
 
