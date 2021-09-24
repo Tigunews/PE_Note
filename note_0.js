@@ -12,13 +12,16 @@ var this_week_question =
 [
 '',
 
+// 125회 면접
+'HL7',
+
+/*
 // 125회 관리
 'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '프로젝트 위험관리', '프로젝트 위험요소', '병렬 컴퓨팅', 'TOCTOU', 'EMP', '동적 테스트', 'Queue', '상주감리', 'QoS', '인공지능 개인정보보호 자율점검표', 'JWT', 'IT 투자', 'BSC', '핀테크 오픈플랫폼', 'Open API', '정보이론', '방향성 비순환 그래프', '절차지향, 객체지향 비교', 'Purdue Model',
 
 // 125회 응용
 'WiFi 7', '엣지 컴퓨팅', 'Unix', 'DRAM', 'SRAM', 'Shell Code', 'RAID', 'Lidar', 'Radar', '안티드론', 'TCP Wrapper', '블록체인 트릴레마', 'Smart Factory', '25000', '디바이스 DNA', '망분리', '해밍코드', 'Information Strategy Master Plan', '기본점검표', 'RAN Sharing', 'DDoS', '흐름제어', 'Layer4', '혼잡제어', 'TCP', 'CMMI', '디지털 트윈', 'IaaS, PaaS, SaaS', 'OTT', 'CSMA', 'D2D', '오류제어', 'Dual Mode', '유무선 전력전송', 'IoT',
 
-/*
 // 17주차 추가
 '갠드크랩', 'SCM', '서버리스', 'PIA', '인공지능 학습용 데이터 품질관리 지표', 'Attention', 'GPS', '산업의 디지털 전환 및 지능화 촉진법', 'ISO 11179', 'DDD', 'Compuer Vision',
 
