@@ -64,6 +64,7 @@ var question = question.concat(
 '[의료기술]- 차세대 Healthcare service',
 '[의료기술]- HL7',
 '[의료기술]- HL7 CDA',
+'[의료기술]- HL7 FHIR',
 '기능성 게임',
 'OTT(Over the top)',
 '[OTT]- 웹인증 API',
@@ -1713,6 +1714,17 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 # 설계 순서 <br/>\
 - 추출 : 임상정보 교환시 활용하 문서 항목 CDA 패턴 정의 <br/>\
 - 설계 : CDA 구조로 XML 스키마 설계 \
+',
+
+// HL7 FHIR
+'# 정의 : 다양한 의료 환경 / 전자적 교환 / 최신 국제 표준 <br/>\
+- Fast Healthcare Interoperability Resources <br/>\
+- 클라우드, 모바일, IoT 등 다양한 의료 환경에 대응하기 위해 의료정보의 전자적 교환을 위한 최신 국제 표준 <br/><br/>\
+# 특징 <br/>\
+- 구현성 : 라이브러리 제공 통한 빠르고 쉽게 구현 <br/>\
+- 공개성 : 공개표준으로 누구나 무료로 사용 가능 <br/>\
+- 호환성 : 기존 HL7, CDA 등과 공존하면서 서로 보완 <br/>\
+- 표준 : XML, JSON, HTTP, Atom, OAuth 웹 표준 기반 \
 ',
 
 // 기능성 게임
