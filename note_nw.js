@@ -2264,7 +2264,16 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 # 주파수 공급대역 <br/>\
 <img src = "./img/Private5GFrequency.png" style = "max-width:100%; height:auto;"><br/>\
 - 28GHz 대역(우선공급) : 이동통신 주파수 인접 (28.9~28.5GHz (600MHz폭) 공급 <br/>\
-- 6GHz 이하 대역(추후 검토) : 지역 공동사용 B2B 주파수 추가 확보방안 검토 <br/><br/>\
+- 6GHz 이하 대역(추후 검토) : 지역 공동사용 B2B 주파수 추가 확보방안 검토 <br/>\
+- 4.7GHz 대역 : 100MHz 폭 <br/><br/>\
+# 적용 <br/>\
+1. 신청 이용 <br/>\
+- 기간 통신 사업자로 등록해 주파수 사용 <br/>\
+- 자가망 용도로 사용 <br/>\
+<font color = "red">* 기간 통신 사업자 : 전기통신회선설비를 설치하고, 그 전기통신회선설비를 이용하여 기간통신역무를 제공하는 사업 </font><br/><br/>\
+2. 기간통신 사업자 비용 납부 <br/>\
+- 기간 통신 사업자 등록시 주파수 할당대가 부가 대상 <br/>\
+- 자가망 용도 사용시 : 전파 사용료만 납부 (주파수 관리 비용 세금) <br/><br/>\
 # 현황 <br/>\
 - 독일 : 제조업체 중심, 3.7~3.8GHz 대역 특화망 면허 공급 <br/>\
 - 일본 : 5G 지역확산 목적, 28.2~28.3GHz, 4.6~4.8GHz, 28.3~29.1GHz <br/>\
@@ -2272,6 +2281,14 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 국내 : 5G 특화망(B2B) 구축 주체 이통사만 허용, 시정 불투명, 실내용 장비 개발 지연 (실증,시범사업 수준) <br/><br/>\
 # 활용예시 <br/>\
 <img src = "./img/Private5GExample.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 사례 <br/>\
+1. 국내 <br/>\
+- 한전 : 유선망, 한전공대 <br/>\
+- 네이버 : 제2사옥, 핵심 인프라 준비 <br/><br/>\
+2. 해외 <br/>\
+- 독일 : 무선액세스 공유 모델 확립 <br/>\
+- 일본 : 28.2~28.3GHz, 4.6~4.8GHz, 28.3~29.1GHz 분배 <br/>\
+- 영국 : 1.8GHz, 2.3GHz, 3.8~4.2GHz 공유주파수 대역 지정 <br/><br/>\
 * ITPE 합숙 124회 4일차 2교시 6번\
 ',
 
@@ -2296,7 +2313,8 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 5G의 20Gbps보다 5배 빠른 1Tbps 최대 전송 용량과 10배 우수한 1Gbps 사용자 체감 속도 등을 지원하는 차세대 이동 통신 기술 <br/><br/>\
 # KPI / 전략과제 (<font color = "red">성대공정지현</font>)<br/>\
 <img src = "./img/5G6G_GraphicCompare.png" style = "max-width:100%; height:auto;"><br/>\
-<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/5G6G.png" style = "max-width:100%; height:auto;"><br/>\
+<font color = "red">* 초지능 : 동적 AI/ML 기반 네이티브 무선 I/F </font><br/><br/>\
 # 주요기술 <br/>\
 - 주파수 기술 : THz, OFDM(New Waveform), 스펙트럼 공유(AI 동적공유) <br/>\
 - NW 토폴로지 기술 : 지상/비지상 NW, IAB(Integration of Access and Backhaul) <br/>\
@@ -2312,6 +2330,13 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 초지능 : 자율주행, 스마트 시티 / 초엣지 모빌리티, 초지능 로봇 <br/><br/>\
 # 6G 핵심기술개발 주요내용 <br/>\
 <img src = "./img/6GCoreTech.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# Nokia Bell Labs - Six Key Technologis for 6G <br/>\
+- AI Native Air Interface <br/>\
+- New Spectrum Technologies <br/>\
+- Network as a Sensor <br/>\
+- Security and Trust <br/>\
+- Extreme Connectivity <br/>\
+- RAN-Core Convergence & Specialization <br/><br/>\
 * ITPE 7회 1교시 8번\
 ',
 
