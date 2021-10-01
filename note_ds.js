@@ -63,6 +63,7 @@ var question = question.concat(
 '[의료기술]- ISO 25237',
 '[의료기술]- 의료 AI',
 '[의료기술]- 차세대 Healthcare service',
+'[의료기술]- EMR 표준프레임워크',
 '[의료기술]- HL7',
 '[의료기술]- HL7 CDA',
 '[의료기술]- HL7 FHIR',
@@ -1696,6 +1697,15 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - AI : 책임 소재 > XAI <br/><br/>\
 # 흐름 <br/>\
 <img src = "./img/HealthcareFlow.png" style = "max-width:100%; hegiht:auto;">\
+',
+
+// EMR 표준프레임워크
+'# 정의 : EMR App Solution 개발 / 구체적 기능, 부분 설계, 구현 / 재사용가능 / 현업화 제공 / SW 환경 <br/>\
+- EMR 소프트웨어 어플리케이션이나 솔루션의 개발을 수월하게 하기 위해 소프트웨어의 구체적 기능들에 해당하는 부분의 설계와 구현을 재사용 가능하도록 현업화된 형태로 제공하는 소프트웨어 환경 <br/><br/>\
+# 구성요소 <br/>\
+- 표준 서식 : FHIR, CDS, 리소스 프로파일링,정의 <br/>\
+- 표준 기능 : 입력 표준화면 설계, 엔진, 인터페이스 <br/>\
+- 표준 용어 : KCD-7, EDI 코드, 용어 매핑, K-TAS \
 ',
 
 // HL7
