@@ -3924,6 +3924,7 @@ var answer = answer.concat(
 '# 정의 : 개인정보 수집 및 관리에 대한 국제사회의 합의 반영한 국제기준 <br/><br/>\
 # 내용 (<font color = "red">수집 - 수정목이 / 활용 - 안공개책</font>) <br/>\
 <img src = "./img/OECDPrivacy8.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/OECDPrivacy8_2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 4교시 5번\
 ',
 
