@@ -2766,6 +2766,10 @@ var answer = answer.concat(
 - 개인정보의 처리 및 보호에 관한 사항을 정함으로써 개인의 자유와 권리를 보호하고, 나아가 개인의 존엄과 가치를 구현함을 목적으로 하는 법 <br/><br/>\
 # 21년 개정사항 <br/>\
 <img src = "./img/PrivacyProtectRule2021.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개정 이유 <br/>\
+- 국민 권리 실질적 강화 : 개인정보 전송요구권, 자동화된 결정 설명 요구 및 거부 권리 <br/>\
+- 법,제도 이해 합리화 : 개인정보 처리방침 평가제도 도입, 동일행위-동일규제 원칙 <br/>\
+- 글로벌 시대 제도 정비 : 동등 수준 이전 가능, 기업 차원 책임부담 중심 전환 <br/><br/>\
 # 개인정보 전송요구권(이동권)에 관한 국내외 입법례 <br/>\
 <img src = "./img/PrivacyTransferRuleExample.png" style = "max-width:100%; height:auto;">\
 ',
