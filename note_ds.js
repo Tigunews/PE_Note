@@ -1584,8 +1584,10 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 // 의료기술 
 '# 기술종류 <br/>\
 <img src = "./img/MediTech.png" style = "max-width: 100%; height: auto;"><br/>\
+<font color = "red">* EHR(Electronic Health Record) : 환자 관리 시스템 <br/>\
+* HIS(Hospital Information System) : 병원 내 부서간 정보 관리 시스템 <br/>\
 * IHE : Integrating the Healthcare Enterprise <br/>\
-* HL7 : Health Level 7\
+* HL7 : Health Level 7</font>\
 ',
   
 // [의료기술]- IEC 62304
