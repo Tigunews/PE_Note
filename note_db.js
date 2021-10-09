@@ -32,6 +32,8 @@
 '관계대수',
 '관계해석',
 '이벤트 소싱(Event Sourcing)',
+'OLTP, OLAP',
+'OLAP',
 '다차원 모델링',
 '[다차원 모델링]- 스타 스키마',
 '[SNA]- 중심성(Centrality)',
@@ -736,6 +738,25 @@ var answer = answer.concat(
 // Event Sourcing
 '# 정의 : 이벤트 / 데이터 저장 기법 <br/>\
 - 순차적으로 발생하는 이벤트를 모두 저장하는 데이터 저장 기법\
+',
+
+// OLTP, OLAP
+'# 간단 비교 <br/>\
+<img src = "./img/OLTP_OLAP_Simple_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 통합 아키텍처 <br/>\
+<img src = "./img/OLTP_OLAP_Architecture_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기능비교 <br/>\
+<img src = "./img/OLTP_OLAP_Funtional_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 데이터 비교 <br/>\
+<img src = "./img/OLTP_OLAP_Data_Compare.png" style = "max-width:100%; height:auto;">\
+',
+
+// OLAP
+'# 종류 <br/>\
+- MOLAP(Multimensinal) : 다차원 데이터베이스 기반 OLAP <br/>\
+- ROLAP(Relational) : 관계형 데이터베이스 기반 OLAP <br/>\
+- DOLAP(Desktop) : 저장, 프로세싱이 모두 클라이언트에서 실행 <br/>\
+- HOLAP(Hybrid) : 다차원 + 관계형 사용 가능 \
 ',
 
 // 다차원 모델링
