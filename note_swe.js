@@ -4942,7 +4942,7 @@ P 히스토그램 : Data 분포 <br/>\
 # Over view <br/>\
 <img src = "./img/SW개발방법론.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 # 상세 설명 <br/>\
-<img src = "./img/SWDevType.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+<img src = "./img/SWDevType.png" style = "max-width:100%; hegiht:auto;">\
 ',
 
 // 구조적 방법론
@@ -5250,8 +5250,20 @@ P 히스토그램 : Data 분포 <br/>\
 - 관리 용이성 : 독립적인 컴포넌트 단위의 관리로 복잡성 최소 <br/>\
 - 사용자 중심 <br/><br/>\
 # 절차 <br/>\
-- 컴포넌트 개발(CD) : usecase로 컴포넌트 식별하고 개발, 저장소 저장 <br/>\
-- 컴포넌트조립(CBSD) : 기존 컴포넌트를 조립하여 SW 개발 <br/><br/>\
+1. 요구파악 <br/>\
+- 요구사항 이해 : 요구사항 기술서, 용어사전, 개념 모델 <br/>\
+- 요구사항 정의 : Usecase Model <br/><br/>\
+2. 분석 및 설계 <br/>\
+- 요구사항 분석 : 객체 모델, UI 설계서 <br/>\
+- 아키텍처 정의 : 아키텍처 기술서 <br/>\
+- 컴포넌트 설계 : 인터페이스 명세서, 컴포넌트 명세서 <br/>\
+- 데이터베이스 설계 : ERD, DB 설계서 <br/><br/>\
+3. 구현 <br/>\
+- 개발표준 정의 : 명명규칙, 코딩규칙, 프로그래밍 가이드 <br/>\
+- 코드 구현 : 전용 Compiler <br/><br/>\
+4. 테스트 <br/>\
+- 테스트 계획 : 테스트 계획서 <br/>\
+- 테스트 수행/보고 : 컴포넌트/통합/인수 테스트 보고서 <br/><br/>\
 # 종류 <br/>\
 - UP(Unified Process) : UML 기반 아키텍처 중심, 2차원 구조(동적,정적) <br/>\
 - 마르미III : 한국형 CBD, 분석강조, 미니프로젝트 반복, 프로토타입 후 진행 <br/>\
