@@ -74,6 +74,7 @@ var question = question.concat(
 '[AI][Clustering][AL]- K-means',
 '[AI][Clustering][AL]- SOM',
 '[AI][AL]- MCTS',
+'[AI]- Object Detection',
 '[AI][AL]- CNN',
 '[AI][CNN]- Efficient NET, DET',
 '[AI][AL]- R-CNN',
@@ -1481,6 +1482,21 @@ var answer = answer.concat(
 - 확장 : 경로 예측 후 해당 지점에서 게임 트리 확장 <br/>\
 - 시뮬레이션 : 시뮬레이션 종료 까지 임의 경로 예측 <br/>\
 - 역전파 : 노드 가치 역전파, 승산 가능성 예측 \
+',
+
+// Object Detection
+'# Overview <br/>\
+<img src = "./img/ObjectDetectionOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 유형<br/>\
+1. 2-Stage : Localization + Classfication 순차적 해결 <br/>\
+- Region Proposlas : 위치 제안 <br/>\
+- Feature Extractor : 각각의 위치 대한 Feature 추출 <br/>\
+- Classification + Regression(바운딩 박스 예측 문제) : 분류 및 정확히 조정 <br/><br/>\
+2. 1-Stage : Localization + Classification 한번에 해결 <br/>\
+- Feature Extractor <br/>\
+- Classification + Regreesion <br/><br/>\
+# 2-Stage 방식 예시 <br/>\
+<img src = "./img/2StageType.png" style = "max-width:100%; height:auto;">\
 ',
   
 // [딥러닝]- CNN 

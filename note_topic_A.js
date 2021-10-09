@@ -519,4 +519,16 @@ DRS 구축 절차는 업무 영향 분석, 복구 전략 수립, 복구 계획 �
 'API Gateway, Container, API Server 입니다. <br/>\
 API Gateway는 LoadBalancing, Container는 환경,인프라 가상화 단위, API Server 는 서비스의 개별 배포/관리를 담당합니다.\
 ',
+
+'CNN 은 전체 Image에서 FeatureMap을 추출하는 기술이고, R-CNN 은 Region 내에서 FeatureMap을 추출하는 기술입니다. <br/>\
+CNN의 속도 한계를 위해 R-CNN 방법이 등장하였으며, 위와 같은 2-Stage 기술은 Fast R-CNN, Faster R-CNN으로 발전하게 됩니다.\
+',
+
+'규제 샌드박스는 신기술, 신서비스의 시장 진출 위한 시장 진출 기회를 제공하거나 실증 테스트 허용 제도 입니다.\
+',
+
+'FTP 보안의 종류는 계층에 따라 FTPS와 SFTP가 존재합니다. <br/>\
+FTPS 는 OSI 7Layer 의 4계층인 전송계층의 SSL을 활용한 보안이고, <br/>\
+SFTP 는 OSI 7Layer 의 5계층인 세션계층인 SSH를 활용한 보안입니다.\
+',
 ];
