@@ -78,6 +78,7 @@
 '[설계단계][UML][Structure Diagram]- Class Diagram',
 '[설계단계]- Usecase Test',
 '[설계단계]- 모델기반 테스트',
+'[Service Architecture]- Monolithic',
 '[Service Architecture]- SOA',
 '[Service Architecture][SOA]- ESB',
 '[Service Architecture]- MSA',
@@ -1750,6 +1751,15 @@ var answer = answer.concat(
 - 테스트 베이시스 <br/>\
 - 테스트 절차 <br/>\
 - 테스트 스크립트 \
+',
+
+// Monolithic 
+'# 정의 <br/>\
+- 기존의 전통적인 웹 시스템 개발 스타일로, 하나의 애플리케이션 내에 모든 서비스 내포 구조 <br/>\
+# 개념도 <br/>\
+<img src = "./img/Monolithic_MSA_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# MSA, Monolithic 비교 <br/>\
+<img src = "./img/Monolithic_MSA.png" style = "max-width:100%; height:auto;">\
 ',
 
 // SOA
