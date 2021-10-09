@@ -4621,7 +4621,16 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 # 상용 솔루션 <br/>\
 - Cloud Data Fusion : ETL/ELT 데이터 파이프라인 효율적 구축, 관리 데이터 통합 서비스 <br/>\
 - Dataflow : 스트리밍 및 일괄 처리 데이터 처리 제공 <br/>\
-- Dataproc : 빠르고, 간단, 안전하게 오픈소스 데이터 분석 처리 \
+- Dataproc : 빠르고, 간단, 안전하게 오픈소스 데이터 분석 처리 <br/><br/>\
+# ETL ELT 비교 <br/>\
+<img src = "./img/ETL_ELT_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 개발시 정의 사항 <br/>\
+- 요구사항 : 고객 요구사항 수용 <br/>\
+- 업무의 흐름 : 전체 관점 설계 <br/>\
+- 매핑 정의 : 데이터 생성 로직 구성 <br/>\
+- 예외 데이터 처리 : NULL, 미매핑, Miss Data <br/>\
+- 적재 방법 : 적재 로직, 선,후행 작업 <br/>\
+- 범위 및 주기 : 배치 주기, 추출 로직, 추출 범위 \
 ',
   
 // 엣지 컴퓨팅
