@@ -2435,7 +2435,11 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - All-IPv6 : 시스템 효율화, 확장성, IPv4 연계 <br/>\
 - eMBMS : 통화폭주  해소, LTE 기반 방송 기술, 재난시 상황 전파 <br/>\
 - 드론 영상 스트리밍 : 현장대응역량 강화 <br/>\
-- 확장가능 인프라 : 업그레이드 지속 확장 가능, 3GPP Rel. 15 core Upgrade <br/><br/>\
+- 확장가능 인프라 : 업그레이드 지속 확장 가능, 3GPP Rel. 15 core Upgrade <br/>\
+<font color = "red">* D2D : Device To Device <br/>\
+* GCSE : Group Communication Service Enabler <br/>\
+* IOPS : Isolated Operation for Public Safety <br/>\
+* MCPTT : Misson Ciritical Push To Talk </font><br/><br/>\
 # 기대효과 <br/>\
 - 정보관리 : 기관 다중 상황전파, 입체적 재난대응, 초동대응, 전달체계 간소화 <br/>\
 - 자원관리 : 현장 통합 지휘, 동원자원 탄력 배치, 실시간 동원자원 탐색/활용 <br/><br/>\
