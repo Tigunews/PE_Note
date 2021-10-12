@@ -63,11 +63,9 @@ ISAC은 의료이외에도 정보통신 ISAC, 금융 ISAC등 다양한 분야가
 이를 활용하여 암 빅데이터 센터 플랫폼에서는 본원, 문서 저장소, 국립 암센터 빅데이터 플랫폼간 연계 구축을 마련하였습니다. \
 ',
 
-'EAI 는 Enterprise Application Integration 으로 Point to Point 혹은 Hub and Spoke 토폴로지로 Adapter를 이용하여 기업 어플리케이션을 연동하는 방식을 말합니다. <br/>\
-구성요소로는 Adapter, EAI Platform, Message Queuing, Data Format Transformation 이 존재합니다.<br/>\
-ESB 는 SOAP Web Service 기술을 이용하여 내/외부 정보 시스템 통합,관리,사용을 지원하는 SOA 지원 미들웨어 플랫폼 솔루션입니다. <br/>\
-구성요소로는 Interaction Link, SOAP, Runner 기술, ESB 패턴이 있습니다. <br/>\
-두 기술간의 관계는 EAI 의 이기종 통합대상이 많아지자 시스템을 분리하여 표준화 하기 위해 등장한 기술이 ESB로, 기술적 전후 관계 입니다.\
+'우선 EAI와 ESB는 이기종 통합대상이 많아짐에 따른 기술적 전후 관계입니다. <br/>\
+개념비교입니다. EAI는 Adapter를 이용한 어플리케이션 연동방식을 말하고, ESB는 SOAP 기술 이용한 미들웨어 플랫폼 솔루션을 말합니다. <br/>\
+기술비교입니다. EAI는 EAI Platform, MQ, Data Format Transformation이 존재하고, ESB는 Interaction Link, SOAP, Runner 기술, ESB 패턴이 존재합니다. \
 ',
 
 'SOA는 서비스 지향 설계 방식으로 서비스 단위로 개발을하고, 개발된 서비스들을 공유함으로써 재사용성을 늘리고 유연성을 확보하는 아키텍처입니다. <br/>\
@@ -400,7 +398,8 @@ EAI 는 Adapter 기반의 연동 솔루션이고, ESB 는 HTTP, XML 과같은 �
 ',
 
 '데이터 값, 데이터 구조, 데이터 관리 프로세스를 대상으로 CIO, DA, Modeler, DBA, User 관점으로 데이터 관리 및 개선활동 하였습니다.<br/>\
-성숙도 모델은 DQM3 를 활용하였고, 5단계인 최적화 단계를 목표로 관리하였습니다.\
+성숙도 모델은 DQM3 를 활용하였고, 5단계인 최적화 단계를 목표로 관리하였습니다. <br/>\
+DQM을 하기 위해 사용한 솔루션은 국내 민간 솔루션인 SDQ를 사용하였습니다.\
 ',
 
 'DQM을 위해 비투엔사의 SDQ(Smart Data Quality) 솔루션을 활용하였습니다.\
@@ -505,10 +504,21 @@ JSON을 전송하는 프로토콜은 REST 이고, SOAP의 전송 대상은 XML �
 Active Learning 기법을 위해 큐레이터로 의료인이 참여하여 최적화된 레이블 데이터를 반복 학습하여 데이터 셋 오류를 최소화 할 수 있습니다.\
 ',
 
-'\
+'WBS를 실제상황에 맞춰 변경하였고, 총괄PM과 합의하여 최종 결정 후 변경하였습니다. \
 ',
 
 '1단계 사전검토, 2단계 비식별 조치, 3단계 적정성 평가, 4단계 사후 관리가 있습니다. <br/>\
 제가 참여한 암 빅데이터 플랫폼에서의 비식별 처리는 전송대상에 대한 사전검토를 실시하고, 가명,총계,삭제처리 중심으로 비식별조치를 실시, 비식별조치 가이드라인을 근거로 적정성 평가, 이후 상위 기관인 암 빅데이터 플랫폼 센터에 데이터를 전달함으로써 해당 기관에서 사후 관리를 이관하였습니다.\
+',
+
+'실제값과 예측값의 Positive Negative 결과에 따라 나뉩니다. <br/>\
+실제값과 예측값을 순서로 Positive Positive 일 경우 TP <br/>\
+Positive Negative 일경우 FP <br/>\
+Negative Positife 일경우 FN <br/>\
+Negative Negative 일경우 TN 입니다.\
+',
+
+'주요 성능 지표는 Accuracy, Precsion, Recall 이 있습니다. <br/>\
+Accuracy 는 맞게 검출한 비율을 나타내고, Precision 은 예측한것에 대한 양성 비율을 나타내고, Recall은 실제 값중 양성 비율을 나타냅니다. \
 ',
 ];
