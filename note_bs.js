@@ -101,6 +101,7 @@ var question = question.concat(
 '[대기행렬]- 대기행렬 시스템',
 'Value Chain',
 'MVP',
+'디지털세',
 );
 
 var answer = answer.concat(
@@ -1945,5 +1946,22 @@ A(10) 개선 : 부적합 <font color = "red">시정조치</font>, 개선 <br/>\
 - MMR : <font color = "red">MMF의 모든</font> 기능 제공 <br/>\
 - MMP : <font color = "red">MMR의 최초</font> 버전 <br/><Br/>\
 * ITPE 합숙 124회 2일차 관리 1교시 2번\
+',
+
+// 디지털세
+'# 정의 : 글로벌 IT 기업 세금 부과 <br/>\
+- 특정 국가 내 고정사업장 유무와 상관없이 매출을 발생시키는 글로벌 IT 기업들에 대한 세금 부과 위한 조세 <br/><br/>\
+# 특징 <br/>\
+- 구글세 <br/>\
+- 전통적인 제조업, IT 산업간 과세 형평성 해결 목적 <br/><br/>\
+# OECD 합의안 <br/>\
+1. 필라1(과세권 배분) <br/>\
+- 대상 : 연매출액 200억 유로 및 이익율 10% 이상 충족 글로벌 다국적 기업 <br/>\
+- 금액 : 초과이익 대한 배분율 25% <br/>\
+<img src = "./img/DigitalTaxPillar1.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 필라2(글로벌 최저한세) <br/>\
+- 대상 : 최저한세율 부과중인 자회사 보유 기업 <br/>\
+- 금액 : 최저한 세율 15% <br/>\
+<img src = "./img/DigitalTaxPillar2.png" style = "max-width:100%; height:auto;">\
 ',
 );
