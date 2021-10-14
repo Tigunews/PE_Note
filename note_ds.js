@@ -1461,6 +1461,8 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 데이터 표준화 및 품질 관리 : 가이드 라인 <br/>\
 - 디지털 전문 계약 제도 도입 : 디지털 서비스 전문위 <br/>\
 - AI 법제/윤리 기반 마련 : 지능정보 기본법 <br/><br/>\
+# AI + X Project (2021) <br/>\
+<img src = "./img/AIXProject.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 7회 관리 1교시 1번 <br/>\
 * KPC 96회 관리 1교시 9번 <br/>\
 * 라이지움 87회 관리 1교시 3번\
