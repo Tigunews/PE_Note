@@ -57,6 +57,7 @@ var question = question.concat(
 '[디지털 사이니지(Digital Signage)] - 오픈스크린',
 '[디지털 사이니지(Digital Signage)] - 오픈스크린 프로젝트',
 '의료기술',
+'[의료기술]- DICOM',
 '[의료기술]- ISO 62304',
 '[의료기술]- ISO 14971',
 '[의료기술]- ISO 13485',
@@ -1590,6 +1591,16 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 * HIS(Hospital Information System) : 병원 내 부서간 정보 관리 시스템 <br/>\
 * IHE : Integrating the Healthcare Enterprise <br/>\
 * HL7 : Health Level 7</font>\
+',
+
+// DICOM
+'# 정의 : 의료용 디지털 영상 및 통신 표준<br/>\
+- Digital Imaging and Communication in Medicine <br/>\
+- 미국방사선의회와 미국전기공업회에서 발표하는 의료용 기기에서 디지털 영상표현과 통신에 사용되는 여러가지 표준 총칭 <br/><br/>\
+# 버전 <br/>\
+- DICOM 1.0 : 최초 의료영상 전송 표준 <br/>\
+- DICOM 2.0 : 점대점 통신, 명령어 메시지 집합, 데이터 사전 정의 <br/>\
+- DICOM 3.0 : 네트워크 기반 환경 , 표준안 확장, 문제점 수정, 국제적 협력 조성 \
 ',
   
 // [의료기술]- IEC 62304
