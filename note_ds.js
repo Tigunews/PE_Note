@@ -12,6 +12,7 @@ var question = question.concat(
 '[Smart Grid]- Micro Grid',
 '[Smart Grid]- 인터미턴트 컴퓨팅',
 '[Smart Grid]- IDPP',
+'[Smart Grid]- VPP',
 '산업제어시스템',
 '[산업제어시스템]- Purdue Model',
 '[4차산업]- Smart Factory',
@@ -603,6 +604,14 @@ var answer = answer.concat(
 - GE : Predix <br/>\
 - MHPS : Tomoni <br/><br/>\
 * IPTE 8회 관리 1교시 11번\
+',
+
+// VPP
+'# 정의 <br/>\
+- Virtual Power Plant <br/>\
+- 분산자원 연계시스템으로 발전소 내 흩어져 있는 분산자원 데이터 연동 발전기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/VPP.png" style = "max-width:100%; height:auto;">\
 ',
 
 // 산업제어시스템
