@@ -1600,7 +1600,13 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 <font color = "red">* EHR(Electronic Health Record) : 환자 관리 시스템 <br/>\
 * HIS(Hospital Information System) : 병원 내 부서간 정보 관리 시스템 <br/>\
 * IHE : Integrating the Healthcare Enterprise <br/>\
-* HL7 : Health Level 7</font>\
+* HL7 : Health Level 7</font><br/><br/>\
+# 발전동향 <br/>\
+- AMR(Automated) : 의사 종이챠트 > 의무기록실에서 컴퓨터 기록 <br/>\
+- CMR(Computerized) : 종이챠트 진료 > 인덱스 구성 이미지 저장 <br/>\
+- EMR(Electronic) : 병원내 진료 정보 데이터베이스 관리 <br/>\
+- EPR(Electronic Patient) : 진료정보 공유 프로토콜 탑재 <br/>\
+- EHR(Health) : 발생환자 + 건강 정보 포함 \
 ',
 
 // DICOM
@@ -4647,10 +4653,10 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 # 비전 및 목표 <br/>\
 <img src = "./img/G-Cloud_Vision.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
-- Private Cloud : 정부통합전산센터 직접 구축,운영 <br/>\
-- 표준화 : 공개 SW 기반 운영환경 표준화, 벤더 종속성 탈피, 일관성 시스템 <br/>\
-- 보안 : 클라우드 전용 보안환경 추가 제공, 네트워크 가상화, SW기반의 보안 솔루션 <br/>\
-- 범용 : x86서버 규격, 범용 HW, 공개 SW <br/><br/>\
+- 경제성 : 고품질, 가성비 <br/>\
+- 보안성 : G-Cloud 전용 IPS (CC EAL4), FW(CC EAL 4) 기본제공 <br/>\
+- 지역성 : Private Zone 에 정보 수용 <br/>\
+- 연계성 : 물리서버, G-Cloud 연동하여 Hybrid Cloud 구성가능\
 ',
 
 // ETL
