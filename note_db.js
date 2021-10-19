@@ -69,6 +69,7 @@
 'ERD',
 '관계형 데이터 모델',
 '연결함정',
+'빅데이터',
 '[빅데이터]- Edge Analytics',
 '[빅데이터]- R-HIVE',
 '[빅데이터]- NoSQL',
@@ -1514,6 +1515,26 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 예시 <br/>\
 <img src = "./img/CrashTrap.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 90회 응용 1교시 11번\
+',
+
+// 빅데이터
+'# 정의 <br/>\
+- 다량의 Volume과 고속의 Velocity 다양한 Variety 데이터 <br/><br/>\
+# 3V -> 5V <br/>\
+- Volume : 수십 TB <br/>\
+- Velocity : Memory Streaming, Realtime <br/>\
+- Variety : 정형, 비정형 <br/>\
+- Value <br/>\
+- Veracity(정확성) <br/><br/>\
+# Life Cycle <br/>\
+- 데이터 생성 : 다양성 <br/>\
+- 데이터 저장 : 대량, 저렴<br/>\
+- 데이터 활용 : 기술,진단,예측,사전대응,최적화 분석<br/><br/>\
+# 사용 사례 <br/>\
+- 제품 개발 : 고객 수요 예측 <br/>\
+- 예측적 유지보수 : 비정형 데이터 통한 잠재적 문제 분석 <br/>\
+- 고객 경험 : 고객 데이터 수집, 맞춤형 제공 <br/>\
+- 머신 러닝 : 프로그래밍 -> 머신 훈련 \
 ',
 
 // [빅데이터]- Edge Analytics
