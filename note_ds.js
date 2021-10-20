@@ -1305,6 +1305,7 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 
 // UAM
 '# 정의 : 수직 이착륙, 개인항공기, 모빌리티 / 하늘 이동통로 / 미래 교통 체계 <br/>\
+- Urban Air Mobility <br/>\
 - 수직 이착륙(V-TOL)이 가능한 개인항공기(PAV)와 목적 기반 모빌리티(PVB)를 이용하는 하늘을 이동 통로로 활용하는 미래의 도시 교통 체계 <br/>\
 <font color = "red">* eVTOL : electric Vertical Take Off & Landing </font><br/><br/>\
 # 산업 생태계 측면 구성도 <br/>\
