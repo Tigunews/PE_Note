@@ -1605,11 +1605,12 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 * IHE : Integrating the Healthcare Enterprise <br/>\
 * HL7 : Health Level 7</font><br/><br/>\
 # 발전동향 <br/>\
-- AMR(Automated) : 의사 종이챠트 > 의무기록실에서 컴퓨터 기록 <br/>\
-- CMR(Computerized) : 종이챠트 진료 > 인덱스 구성 이미지 저장 <br/>\
-- EMR(Electronic) : 병원내 진료 정보 데이터베이스 관리 <br/>\
-- EPR(Electronic Patient) : 진료정보 공유 프로토콜 탑재 <br/>\
-- EHR(Health) : 발생환자 + 건강 정보 포함 \
+- 1980년대 : EDI 보험 청구 전산화 <br/>\
+- 2000년대 초반 : OCS 위주 병원 시스템 <br/>\
+- 2000년대 후반 : OCS + EMR + PACS <br/>\
+- 2010년대 초반 : 전사적 전산화를 위한 HIS <br/>\
+- 2010년대 후반 : OS 종속성 탈피 방향 발전 <br/>\
+- 현재 : 원격의료, PHR 등 환자 중심 의료시스템 체계 발전 \
 ',
 
 // DICOM
