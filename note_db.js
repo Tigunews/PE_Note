@@ -966,6 +966,13 @@ var answer = answer.concat(
 <img src = "./img/DQ_AdminProcess.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 암기 <br/>\
 <img src = "./img/DataFrameworkSummury.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 품질 기준 <br/>\
+- 정확성 <br/>\
+- 일관성 <br/>\
+- 유용성 <br/>\
+- 접근성 <br/>\
+- 적시성 <br/>\
+- 보안성 <br/><br/>\
 * 124회 관리 2교시 5번 <br/>\
 * 123회 관리 3교시 2번\
 ',
