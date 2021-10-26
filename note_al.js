@@ -2117,12 +2117,10 @@ var answer = answer.concat(
 - 확인 : print(type(a)) -> class \'str\' <br/>\
 - 검사 : if(str(type(a)) == class \'str\' ... <br/><br/>\
 # 활용 분야 <br/>\
-1. 개발 분야 <br/>\
-- 수치 연산 프로그래밍 : NumPy <br/>\
-- 데이터베이스 프로그래밍 : Pickle 모듈 <br/><br/>\
-2. 분석 분야 <br/>\
-- 데이터 분석 : Panda 모듈 분석 <br/>\
-- 사물 인터넷 : 라즈베리 파이 제어 도구 <br/><br/>\
+- 과학/수학 : Numpy, Pandas, Matplotlib, SciPy <br/>\
+- 기계학습 : Tensorflow, Keras, Scikit-Learn <br/>\
+- Web 개발 : Django, Pyramid, Flask, web2py <br/>\
+- 게임 프로그래밍 : PyGame, Pyglet, PyOpenGL <br/><br/>\
 # R언어 Python 비교 <br/>\
 <img src = "./img/R_Python_Comapre1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/R_Python_Comapre2.png" style = "max-width:100%; height:auto;"><br/><br/>\
