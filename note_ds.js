@@ -49,7 +49,8 @@ var question = question.concat(
 '[정책]- 데이터 거버넌스',
 '[정책]- K뉴딜',
 '[정책][뉴딜]- 디지털 뉴딜',
-'[정책][디지털뉴딜]- 데이터 댐',
+'[정책][디지털 뉴딜]- 데이터 댐',
+'[정책][디지털 뉴딜][데이터 댐]- AI 바우처',
 '[정책][뉴딜]- 그린 뉴딜',
 '[정책][뉴딜]- SoC 디지털화',
 '[정책]- 지능 정보화 기본법',
@@ -64,6 +65,7 @@ var question = question.concat(
 '[의료기술]- ISO 13485',
 '[의료기술]- ISO 25237',
 '[의료기술]- 의료 AI',
+'[의료기술][의료 AI]- AI 응급의료시스템',
 '[의료기술]- 차세대 Healthcare service',
 '[의료기술]- EMR 표준프레임워크',
 '[의료기술]- HL7',
@@ -1481,6 +1483,15 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 * KPC 96회 관리 1교시 9번 <br/>\
 * 라이지움 87회 관리 1교시 3번\
 ',
+
+// AI 바우처
+'# 개요 <br/>\
+<img src = "./img/AI_Voucher_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 사례 <br/>\
+- 교통(오버 플로우) : 시각 장애인 교통 정보 제공 <br/>\
+- 의료(캔티스) : 체액 데이터, 인공지능 활용한 치매 조기진단 <br/>\
+- 유통(딥브레인 AI) : 유통 분야 8개 디지털 휴먼과제, 인공지능 공급기업 과제 수행 \
+',
   
 // 그린 뉴딜
 '# 정의 : 친환경 / 산업 육성 / 에너지 구조 조정 / 고용, 노동 / 국가발전 전략 <br/>\
@@ -1704,6 +1715,13 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 <img src = "./img/MediAIProcessExample.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 <img src = "./img/MediAISubject.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * KPC 95회 관리 4교시 5번\
+',
+
+// AI 응급의료시스템
+'# 개념도 <br/>\
+<img src = "./img/ER_AI_Overview.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 데이터 흐름 <br/>\
+<img src = "./img/ER_AI_Dataflow.png" style = "max-width:100%; hegiht:auto;">\
 ',
   
 // 차세대 Healthcare Service

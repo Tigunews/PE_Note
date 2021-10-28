@@ -306,6 +306,7 @@
 '[방법론][Inversion of Control]- Dependency Injection',
 '[방법론][객체지향]- Overriding, Overloading',
 '[방법론][객체지향]- Demeter\'s Law',
+'[방법론]- 함수형 언어',
 '[방법론]- CBD',
 '[방법론][CBD]- RUP',
 '[방법론]- Agile 방법론',
@@ -395,7 +396,6 @@
 '[발주]- RFP',
 '[발주]- 분할발주, 단계별발주',
 '난독화',
-'함수형 언어',
 '로우코드',
 '민간투자형 SW 사업(PPP)',
 '정보시스템 운영 성과관리',
@@ -5233,6 +5233,27 @@ P 히스토그램 : Data 분포 <br/>\
 5. 메소드의 스코프안에서 객체가 접근 가능한 전역변수 \
 ',
 
+ 
+// 함수형 언어
+'# 정의 : 가독성, 유지보수 / 함수 사용 언어 <br/>\
+- 가독성 우수, 유지보수가 용이한 소프트웨어를 만들기 위해 최대한 효과적으로 함수를 사용하는 언어 <br/><br/>\
+# Overview <br/>\
+<img src = "./img/FunctionalLanguageOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 특징 <br/>\
+- 순수 함수 : 반환 값 이외 외부 영향 없는 함수 <br/>\
+- 불변성 : 외부에서 데이터 수정 x <br/>\
+- 일급 함수(데이터형 함수) : 데이터처럼 변수에 할당 가능 함수 <br/>\
+- 고차 함수 : 함수를 인수로 받거나 반환하는 함수 <br/>\
+- 대규모 프로그래밍 : 깔끔하고 탄력적인 대규모 시스템 대상 <br/><br/>\
+# 종류 <br/>\
+- Scala : JVM 동작 함수형 언어 / Spark <br/>\
+- Clojure : JVM 동작 LISP 계역 함수형 언어 / Storm <br/>\
+- F# : .NET 함수형 언어 / Deep Learning <br/>\
+- Haskell : 개방형 표준 순수 함수형 언어 / Embedded <br/><br/>\
+# 비교 <br/>\
+<img src = "./img/CommandFunction.png" style = "max-width:100%; height:auto;">\
+',
+
 // CBD
 '# 정의 : 소프트웨어 민첩성(생산성 확보)과 품질향상을 위한 방법론 <br/>\
 - 기 개개발된 SW 컴포넌트를 조립, 새로운 시스템을 구축하는 방식으로 객체지향의 단점인 SW 재사용성을 극대화한 개발방법론 <br/><br/>\
@@ -6736,18 +6757,6 @@ GP(Generative Programming) : 상세한 Feature 모델 바탕으로 프로그램 
 - 예방 난독화 : 방법 봉쇄<br/><br/>\
 # 적용사례 <br/>\
 <img src = "./img/Obfuscation.png" style = "max-width:100%; height:auto;">\
-',
-  
-// 함수형 언어
-'# 개념 : 함수가 First Class 대상인 언어 <br/>\
-- 명령형 언어의 부작용을 제거하기 위해 참조 투명성을 제공하는 수학적 Pure 함수의 모듈화를 이용한 프로그래밍을 지원하는 언어 <br/>\
-<img src = "./img/FunctionalLanguageOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
-# 필요성 <br/>\
-- 수학적 추상화 : 모듈의 재사용성 강화 <br/>\
-- 최적화 : 이전 계산 활용 <br/>\
-- 병렬화 : 경쟁 상태, DeadLock 해결 <br/><br/>\
-# 비교 <br/>\
-<img src = "./img/CommandFunction.png" style = "max-width:100%; height:auto;">\
 ',
   
 // 로우코드
