@@ -123,6 +123,8 @@ var question = question.concat(
 '유한 오토마타',
 '엑사스케일 컴퓨팅 시스템',
 'Thunderbolt Interface',
+'무어의 법칙',
+'베조스의 법칙',
 );
 
 var answer = answer.concat(
@@ -2358,5 +2360,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 범용성 제공 : 썬더볼트 3에서 USB C(Type-C) 지원 <br/>\
 - 라이선스 개방 : 썬더볼트 프로토콜 규격 공개, 무료 라이선스 전환(18년) <br/><br/>\
 * 117회 응용 1교시 11번\
+',
+
+// 무어의 법칙
+'# 정의 <br/>\
+- Moore\'s Law <br/>\
+- 인텔의 공동 설립자인 고든 무어가 1965년에 발표한, 반도체 집적회로의 성능이 24개월마다 2배로 증가한다는 법칙 \
+',
+
+// 베조스의 법칙
+'# 정의 <br/>\
+- 아마존 창업자 베조스의 이름을 딴, 클라우드 경쟁이 치열해지면서 클라우드 가격 하락 법칙 \
 ',
 );
