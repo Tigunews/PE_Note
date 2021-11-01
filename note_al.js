@@ -34,6 +34,7 @@ var question = question.concat(
 '[Tree]- Red Black Tree',
 '방향성 비순환 그래프',
 '[방향성 비순환 그래프]- 위상 정렬',
+'[AI]- AI Flow',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
@@ -124,7 +125,6 @@ var question = question.concat(
 '[AI]- 모라벡의 역설(Moravec\'s Paradox)',
 '[AI]- 인공지능 서비스 플랫폼',
 '[AI]- 인공지능 소프트웨어 보안 취약성',
-'[AI]- AI Flow',
 '[AI]- XAI',
 '[AI][지식표현]- 생성규칙',
 '[AI][지식표현]- 의미망',
@@ -751,6 +751,18 @@ var answer = answer.concat(
 <img src = "./img/TopologicalAlignmentCode.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 4교시 4번\
 ',
+
+// [AI]- AI Flow
+'<img src = "./img/AI_Flow.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
+# Top Down 방식 <br/>\
+1. Perception(1958) : 뇌의 신경활동 수식 모델화, 컴퓨터에게 처리시키는 초보적 뉴럴 네트워크 <br/>\
+2. 기호처리 방식(1960) : 규칙이나 수식을 프로그램화, 사고 논리등 사람이 행하는 정보처리 수행 <br/>\
+3. 룰베이스 접근방식(1980) : 전문가의 지식이나 노하우를 규칙화하여 컴퓨터에게 처리 수행하게 함 <br/><br/>\
+# Bottom Up  방식 <br/>\
+1. 통계,확률론적 접근(2000) : 방대한 데이터 베이스 이론에 근거한 통계적 수법으로 스스로 규칙을 생성하고 정보 처리 <br/>\
+2. 뇌 과학적 접근(2006) : 뇌 과학의 연구 성과를 도입하여 보다 뇌의 신경활동을 충실히 재현 <br/><br/>\
+* 라이지움 86회 4교시 1번 \
+',
   
 // 인공지능 특이점
 '# 정의 : 인공지능 > 인간 시점 <br/>\
@@ -1018,7 +1030,7 @@ var answer = answer.concat(
   
 // [딥러닝]- DNN
 '# 정의 : 여러개 은닉층 인공신경망 <br/>\
-- 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) <br/><br/>\
+- 입력층(Input Layer)과 출력층(Output Lyaer)사이에 여러개의 은닉층 (Hidden Layer)들로 이뤄진 인공신경망 (Artifical Neural Network, ANN) \
 ',
   
 // SVM
@@ -1743,6 +1755,16 @@ var answer = answer.concat(
 2. 활성함수 개선 측면 <br/>\
 - ReLU 함수 활용 : 미분값 보존, x > 0일 경우 역전파 값 상수(1) 유지 <br/>\
 - Leaky ReLU 활용 : 음의 값 활용, ReLU의 0 이하 값 손실, "Dying ReLU" 문제 개선 <br/><br/>\
+# 해결 배경 <br/>\
+1. HW 측면 <br/>\
+- 빅데이터 시대 : 양질의 훈련 데이터 확보, 훈련 데이터 활용 용이 <br/>\
+- 컴퓨터 저렴화 : GPU 유행으로 인한 가격대비 컴퓨터 계산 능력 향상 <br/>\
+- 클라우드 컴퓨팅 보편화 : 훈련 데이터 저장, 조작 용이 <br/><br/>\
+2. SW 측면 <br/>\
+- 훈련 수준 증가 : 훈련 데이터 전처리, Drop-Out <br/>\
+- 활성화 함수 전환 : Sigmoid, Hyper tangent -> RELU <br/>\
+- 툴 보편화 : 인공신경회로망의 하이퍼 파라미터 최적화 툴 보편화(DataRobot, Sage Maker) <br/>\
+- 특성 이해 : 통계,머신러닝, 인공신경망 적용 특성 이해 증가 <br/><br/>\
 * KPC 92회 관리 3교시 5번\
 ',
   
@@ -2344,18 +2366,6 @@ var answer = answer.concat(
 * 120회 응용 3교시 4번\
 ',
 
-// [AI]- AI Flow
-'<img src = "./img/AI_Flow.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
-# Top Down 방식 <br/>\
-1. Perception(1958) : 뇌의 신경활동 수식 모델화, 컴퓨터에게 처리시키는 초보적 뉴럴 네트워크 <br/>\
-2. 기호처리 방식(1960) : 규칙이나 수식을 프로그램화, 사고 논리등 사람이 행하는 정보처리 수행 <br/>\
-3. 룰베이스 접근방식(1980) : 전문가의 지식이나 노하우를 규칙화하여 컴퓨터에게 처리 수행하게 함 <br/><br/>\
-# Bottom Up  방식 <br/>\
-1. 통계,확률론적 접근(2000) : 방대한 데이터 베이스 이론에 근거한 통계적 수법으로 스스로 규칙을 생성하고 정보 처리 <br/>\
-2. 뇌 과학적 접근(2006) : 뇌 과학의 연구 성과를 도입하여 보다 뇌의 신경활동을 충실히 재현 <br/><br/>\
-* 라이지움 86회 4교시 1번 \
-',
-  
 // [AI]- XAI
 '# 정의 : 설명가능한 Ai <br/>\
 - 사용자가 인공지능 시스템의 동작과 최종 결과를 이해 가능하도록 설명 해주는 기술(금융보안원 정의) <br/><br/>\
