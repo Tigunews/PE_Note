@@ -2097,7 +2097,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 ',
 
 // 통계 관련 데이터
-'# 통계 관련 데이터 종류 (원마매메)<br/>\
+'# 통계 관련 데이터 종류 (<font color = "red">원마매메</font>)<br/>\
 - 원본 데이터 : 조사오류 등이 걸러지기 <font color = "red">이전</font> 단계의 개별 자료 <br/>\
 - 마이크로 데이터 : 입력된 통계조사 자료의 <font color = "red">오류를 수정</font>한 자료 <br/>\
 - 매크로 데이터 : 마이크로데이터를 <font color = "red">임의의 기준</font>에 따라 집계한 자료 <br/>\
