@@ -3505,6 +3505,7 @@ var answer = answer.concat(
 - Vulnerability Scanning, Web Security, Email Security, SIEM, Continous Monitoring <br/><br/>\
 # CASB 비교 <br/>\
 <img src = "./img/SECaaSCASB.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/SECaaSCASB1.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 1교시 1번\
 ',
 
