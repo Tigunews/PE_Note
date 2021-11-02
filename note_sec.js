@@ -2825,6 +2825,7 @@ var answer = answer.concat(
 - 해결방안 : 동질집합, 전체 데이터 분포 차이 <font color = "red">T 이하</font><br/>\
 <img src = "./img/PrivacyProtectionModelT.png" style = "max-width:100%; height:auto;"><br/>\
 * Data 쏠리지 않게 분포하는 것이 핵심 <br/><br/>\
+<img src = "./img/PrivacyProtectionModelAll.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 아이리포 23회 관리 3교시 2번\
 ',
 
