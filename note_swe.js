@@ -2946,18 +2946,14 @@ var answer = answer.concat(
 ',
 
 // 위험기반 테스트
-'# 정의 : 테스트 전략 / 우선순위 / 자원 집중 <br/>\
-- 비즈니스/기술상 위협 정량 측정하여 우선순위 높은부분 테스팅 자원집중, 전체영향 줄이는 테스트 전략<br/><br/>\
-# 암기 <br/>\
-- 절차(4) : 식분대전추 <br/>\
-- Risk Mtrix 영역(4) : 스타, 쓰타, 이타, 에프타 <br/>\
-- 발장 : 엄강집기 <br/><br/>\
+'# 정의 : 자원 한정 / 위험도 높은 부분 / 극대화 테스트 <br/>\
+- 테스트 자원이 한정된 환경에서, 위험도 높은 부분을 집중 테스트하여 효과성을 극대화한 테스트 기법<br/><br/>\
 # 절차 <br/>\
-- 위험식별 : 위험아이템, 카테고리 <br/>\
-- 분석 : 위험/영향 Matrix <br/>\
-- 리스크대응 계획 : 완화 방안 <br/>\
-- 테스팅 전략 수립 : Master Test Plan <br/>\
-- 리스크 추적 : 위험추적/관리대장 <br/><br/>\
+- 위험식별 : 위험아이템, 카테고리 / Risk item<br/>\
+- 분석 : 위험/영향 Matrix / PI Metric <br/>\
+- 리스크 대응 계획 : 완화 방안 / 위험 대응 목록 <br/>\
+- 테스팅 전략 수립 : Master Test Plan / 마스터 테스트 계획서 <br/>\
+- 리스크 추적 : 위험추적/관리대장 / 위험 관리 대장 <br/><br/>\
 # 효율화 방안 <br/>\
 - 단계별 테스팅 <br/>\
 - 선택과 집중 <br/>\
@@ -2966,8 +2962,9 @@ var answer = answer.concat(
 - 기술중심 테스트 <br/>\
 - 테스트 자원 집중 분배 <br/><br/>\
 # 리스크 매트릭스 : Y-발생가능성(Likelihood), X-장애영향(Impact)<br/>\
-- 상상 : STA(엄격한 Server Test Area) 재테스팅 3회, Full Regession Test <br/>\
-- 상하 : SSTA(강한 Strong Test Area) 재테스팅 2회, Full Regession Test <br/>\
+<img src = "./img/RBT.png", style = "max-width:100%; height:auto;"><br/>\
+- 상상 : STA(엄격한 Severe Test Area) 재테스팅 3회, Full Regession Test <br/>\
+- 상하 : STTA(강한 Strong Test Area) 재테스팅 2회, Full Regession Test <br/>\
 - 하상 : ITA(집중 Intensive Test Area) 재테스팅 1회, Partial Regession Test <br/>\
 - 하하 : FTA(기본 Fundamental Test Area) 재테스팅 1회, 확인 테스트 <br/><br/>\
 # 유사 개념 <br/>\
@@ -2975,7 +2972,6 @@ var answer = answer.concat(
 - 확인 테스트 : 수정 결과 확인 <br/>\
 - 회귀 테스트 : 영향테스트 <br/><br/>\
 * 제품리스크 = 가능성 * 손실 <br/><br/>\
-<img src = "./img/RBT.png", style = "max-width:100%; height:auto;"><br/><br/>\
 * ITPE 9회 관리 1교시 10번\
 ',
 
@@ -3504,55 +3500,32 @@ var answer = answer.concat(
 ',
   
 // 일정관리
-'# 정의 : SW 품질 준수 일련 활동 / 계획, 수립, 일정중심 통제 <br/>\
-- 일정계획 수립, 일정 중심 통제 수행하여 SW 품질 준수하는 일련 활동<br/><br/>\
-# 절차 <br/>\
-1. 일정관리 계획 수립 <br/>\
-- T : 분석기법, 미팅 <br/>\
-- O : 일정관리계획서 <br/><br/>\
-2. 활동 정의 <br/>\
-- T : 분할, 연동계획 <br/>\
-- O : 활동목록, 마일스톤 목록 <br/><br/>\
-3. 활동 순서 배열 <br/>\
-- T : 선후행도형법, 의존관계 설정 <br/>\
-- O : 플젝일정 NW Diagram, 플젝문서 갱신 <br/><br/>\
-4. 활동 자원 선정 <br/>\
-- T : 대안분석, SW대가산정, PMS <br/>\
-- O : 일정 기준선, 플젝 일정 <br/><br/>\
-5. 일정 통제 <br/>\
-- T : 성과검토, PMS, 자원최적화 <br/>\
-- O : 작업성과 정보 <br/><br/>\
-# Activity 순서 배열 <br/>\
-- PDM(Precedent Diagramming Method) : 선후행도표, AON <br/>\
-- ADM(Arrorw DM) : 화살도형법, AOA <br/>\
-- 의존관계 : FS(Finish to Start), FF, SS, SF) <br/>\
-- 선도 및 지연 : 선도 Lead, 지연 Lag <br/><br/>\
-# 기간 산정 기법 <br/>\
-- 유모3점-경험기반 : 유사산정, 전문가판단 <br/>\
-- 산술/통계 : 모수산정(과거 실적 기반 함수식 생성), PERT(3점 추정), CPM(1점 추정) <br/><br/>\
-# 일정 추정 기법(6) <br/>\
-- PERT(비관치, 가능치, 낙관치3점추정, 액티비티 수행기간 산정에 확률반영)<br/>\
-- CPM<br/>\
-- Critical Path<br/>\
-- CCM<br/>\
-- CCPM<br/>\
-- WBS<br/>\
-- 간트차트 <br/><br/>\
-# 자원 최적화 기법 <br/>\
-- 자원 평준화(Resource Leveling) : 가용자원 한계내 여유일정, 순서 조정 <br/>\
-- 자원 스무딩(Resource Smoothing) : 정해진 자원 한도 내 일정 모델 활동 조정, Free Float와 Total Float 안에서만 지연 <br/><br/>\
-# 일정 단축 기법 <br/>\
-- Crashing : CP 상 Activity 추가자원 투입, 공정압축법, Cost증가, Risk 증가 <br/>\
-- Fast Tracking : CP상 순차 진행 계획 병행 추진, 공정중첩 단축법, 재작업 위험 증가, Risk 증가 <br/>\
+'# 정의 : 프로젝트 성공 / 개발 기간 / 단계별 관리 / 프로젝트 지식 영역 <br/>\
+- 프로젝트의 성공적 완수/납기 위해, 개발 기간 단계별로 관리하는 프로젝트 지식 영역 <br/><br/>\
+# 절차 (T/O) <br/>\
+- 계획 수립 : 분석 기법, 미팅 / 일정관리 계획서 <br/>\
+- 활동 정의 : 분할, 연동계획 / 활동 목록, 마일스톤 목록 <br/>\
+- 활동 순서 배열 : 선후행도형법, 의존관계 설정 / NW Diagram, 문서 갱신 <br/>\
+- 활동 자원 선정 : 대안분석, SW대가산정, PMS / 일정 기준선, 일정 <br/>\
+- 일정 통제 : 성과 검토, PMS, 자원최적화 / 작업성과 정보 <br/><br/>\
+# 일정 지연원인 <br/>\
+- 계획 단계 : 불확실한 업무 범위, 비현실적 일정 계획, 미흡한 요구분석 <br/>\
+- 분석/설계 단계 : 무리한 일정 축소, 기존 시스템 분석 미흡 <br/>\
+- 개발 단계 : 전문가 부족, 의사소통 부족 <br/>\
+- 테스트/이행 단계 : 테스트 오류 과다, 재작업 과다 <br/><br/>\
+# 주공정 기법 <br/>\
+- CPM : 프로젝트 최소 기간 결정 <br/>\
+- CCM : 자원 제약 고려, 여유시간 관리 <br/><br/>\
+# 자원 관리 기법 <br/>\
+1. 자원 최적화 기법 <br/>\
+- Resource Leveling : CP 변경 가능, Total Float 0인 활동 적용, 과도한 작업시간 조정 <br/>\
+- Resource Smoothing : CP 변경 x, Free Float 과 Total Float 내인 활동 적용, 자원 사용 고르게 분배 <br/><br/>\
+2. 일정 단축 기법 <br/>\
+- Crashing : CP상 Activity 추가자원 투입, 공정 압축법, Cost 증가, Risk 증가 <br/>\
+- Fast Tracing : CP 상 순차 진행 계획 병행 추진, 공정 중첩 단축법, 재작업 위험 증가, Risk 증가 <br/>\
 - Re-Estimation : CP상 불확실성 여유일정 변경 <br/>\
-- What-If 시나리오 : 일정 영향 Factor 기준 분석/대안 시뮬레이션 <br/><br/>\
-* PMS : Project Mgmt SW <br/>\
-* 대안 분석 : 고급개발자1 vs 초급개발자5<br/>\
-* 3점 산정 : (낙관치 + (평균치*4) + 비관치) / 6<br/>\
-* 예비분석 <br/>\
-- Contigency Reservers : 우발적 예비-사전파악 위험버퍼<br/>\
-- Management Reservers : 관리적 예비비-일정기준선 포함x, 사전파악x, 위험 버퍼 <br/><br/>\
-* 고려사항 : PODB \
+- What-IF 시나리오 : 일정 영향 Factor 기준 분석/대안 시뮬레이션 <br/><br/>\
+* ITPE 9회 관리 1교시 13번\
 ',
   
 // 3점 산정

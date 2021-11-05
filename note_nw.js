@@ -22,8 +22,9 @@ var question = question.concat(
 '[Layer3]- 패킷교환',
 '[Layer3]- 패킷데이터 네트워크 계층 오류',
 '[Layer3]- 라우팅',
-'[Layer3]- 거리벡터 라우팅',
-'[Layer3]- 링크스테이트 라우팅',
+'[Layer3][라우팅]- 라우팅 프로토콜 매트릭',
+'[Layer3][라우팅]- 거리벡터 라우팅',
+'[Layer3][라우팅]- 링크스테이트 라우팅',
 '[Layer3]- IGMP',
 'Layer4',
 '[Layer4]- Service',
@@ -575,6 +576,33 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 유형 : 거리벡터 라우팅 (Hop기반), 링크스테이트 라우팅(오류 경로 반영) \
 ',
 
+// 라우팅 프로토콜 매트릭
+'# 정의 <br/>\
+- Routing Protocol Metric <br/>\
+- 라우터가 목적지까지의 다중 경로 중, 최적 경로를 선택하기 위한 기준 변수 <br/><br/>\
+# 라우터 경로 결정 요소 <br/>\
+- Prefix Length : 목적지 주소와 가장 일치하는 경로 선택 <br/>\
+- Administrative Distance : 라우터 관리자가 설정한 값 <br/>\
+- Metric : 경로에 대한 측정치 <br/><br/>\
+# 경로선정 메커니즘 <br/>\
+- Hop : 거쳐가는 라우팅 개수 <br/>\
+- Bandwidth : 통신 대역폭 <br/><br/>\
+# 유형 <br/>\
+- 트래픽 기반 : 대역폭, 지연, 지터, 큐 길이, 패킷손상 비율, 패킷 재정렬 비율 <br/>\
+- 무선 기반 : 신호 세기, MTM <br/>\
+- 토폴로지 기반 : 이웃 노드 수, 노드에 대한 경로 수, 홉 수 <br/>\
+- 이동성 기반 : 지리적 거리, 노드의 이동 속도 <br/>\
+- 기타 : MTU, 노드의 자원 <br/>\
+<font color = "red">* MTM : Medium Time Metric <br/>\
+* MTU : Maximum Transmission Unit </font><br/><br/>\
+# 라우팅 프로토콜 별 활용 메트릭 <br/>\
+- RIP, RIPv2 : Hop Count <br/>\
+- IGRP, EIGRP : 대역폭, 지연, 신뢰도, 부하, MTU <br/>\
+- OSPF : Cost(참조 대역폭/인터페이스 대역폭) <br/>\
+- ISIS : Cost, 링크마다 기본 메트릭 값(10) 적용 <br/><br/>\
+* ITPE 9회 응용 1교시 13번\
+',
+
 // 거리벡터 라우팅
 '# 정의 : 일정 시간 / 라우팅 정보 교환 / 최적 경로 설정 라우팅 방식 <br/>\
 - 각 라우터가 인접한 라우터와 경로교환을 주기적 갱신정보로 라우팅 경로 결정 기법 <br/><br/>\
@@ -1052,16 +1080,23 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 1. 프로토콜 <br/>\
 - AH : 데이터 인증, 비 연결형 무결성 보장 <br/>\
 - ESP : 캡슐화 통한 기밀성 보장 프로토콜 <br/><br/>\
-2. 키관리 방식 <br/>\
-- IKE : 알고리즘을 이용한 공개 네트워크 키 교환 방식 <br/><br/>\
-3. 정책 <br/>\
+2. 동작 모드 <br/>\
+- 전송 모드 : Payload에 무결성/기밀성 제공 <br/>\
+- 터널 모드 : IP 패킷 전체에 무결성/기밀성 제공 <br/><br/>\
+3. 키관리 방식 <br/>\
+- IKE : 알고리즘을 이용한 공개 네트워크 키 교환 방식 <br/>\
+- ISAKMP : SA의 생성, 수정, 삭제 절차 정의 <br/><br/>\
+4. 정책 <br/>\
+- SP : 송수신 IP 패킷의 폐기, 통과 등 IPsec 처리 정책 <br/>\
 - SPD : 패킷에 대한 보안 정책 DB화 <br/>\
-- SAD : 실제 파라미터 저장 <br/>\
+- SA : IPsec 장비간 프로토콜(AH, ESP)의 파라미터(알고리즘, 모드, 키) 정의 <br/>\
+- SAD : 실제 파라미터 저장 <br/><br/>\
 <font color = "red">* AH : Autehntication Header <br/>\
 * ESP : Encapsulation Security Payload <br/>\
 * IKE : Internet Key Exchange <br/>\
 * SPD : Security Policy Database <br/>\
-* SAD : security Authentication Database </font><br/><br/>\
+* SAD : Security Authentication Database </font><br/>\
+* SA : Security Associations <br/>\
 * 정보관리 104회 2교시 3번 \
 ',
   

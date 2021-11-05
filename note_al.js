@@ -63,7 +63,8 @@ var question = question.concat(
 '[AI][Classifier][AL]- Perceptron',
 '[AI][Classifier][AL]- Activation Function',
 '[AI]- Feed Forward Neural',
-'[AI][Classifier][AL]- Backpropagation',
+'[AI][Classifier][AL]- Back Propagation',
+'[AI][Back Propagation]- Chain Rule',
 '[AI][Classifier][AL]- Gradient Descent',
 '[AI][Classifier][AL]- Optimizer',
 '[AI]- 비용함수, 손실함수',
@@ -1284,7 +1285,7 @@ var answer = answer.concat(
 * 라이지움 86회 1교시 6번 \
 ',
   
-// Backpropagation
+// Back Propagation
 '# 정의 : 경사하강 관찰 / 가중치 이동 <br/>\
 - 가중치들 각각에 대해 별도의 경사하강을 관찰하고, 누적오차 감소에 가장 큰 기여를 하는 가중치 한 개 값을 이동시키는 방법을 반복하여 해를 찾아가는 알고리즘 <br/><br/>\
 # 특징 : 지도 학습을 이용, 출력층의 오차를 역전파하여 은닉층을 학습함으로써 다층 퍼셉트론 문제 해결 <br/><br/>\
@@ -1298,6 +1299,24 @@ var answer = answer.concat(
 - 해결방안 : ReLU사용 (min max 조정) <br/><br/>\
 <img src = "./img/역전파AL.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 119회 응용 2번\
+',
+
+// Chain Rule
+'# 정의 : 역전파, 손실함수, 편미분 / 가중치 기여도 / 최적 기울기 / 수학적 원리<br/>\
+- 역전파 과정에서 출력 값인 손실함수(MSE)를 편미분하여, 각 가중치의 기여도를 도출하여 최적의 기울기를 얻기 위한 수학적 원리 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/ChainingRuleOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 인공신경망 학습 절차 <br/>\
+1. Forward Propagation <br/>\
+- 출력값 계산 : 입력값 + 파라미터 연산값 -> 활성화 함수로 연산 -> 다음 계층 전달 <br/><br/>\
+2. Back Propagation <br/>\
+- 손실함수(MSE) 계산 : 가중치, 입력값, 편차 이용 오차의 제곱 계산 <br/>\
+- 편미분(<font color = "red">Chain Rule 적용</font>) : MSE 값을 개별 가중치로 편미분 -> 가중치별 기여도 도출 <br/>\
+- 파라미터(가중치, 편차) 조정 : 편미분 값 적용하여 가중치 조정, 최소 기울기 가지는 가중치, 편차 도출 <br/><br/>\
+# 기울기 소실/폭주 해결방안 <br/>\
+- 기울기 소실 : ReLU, Leaky ReLU 활성화 함수 사용 <br/>\
+- 기울기 폭주 : Gradient Clipping(일정 임계치 초과시 기울기 절삭) <br/><br/>\
+* ITPE 9회 관리 1교시 12번\
 ',
 
 // Gradient Descent
