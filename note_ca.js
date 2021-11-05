@@ -102,7 +102,7 @@ var question = question.concat(
 'Disk 스케줄링',
 '[Disk 스케줄링]- 알고리즘 유형',
 '리소스 동기화',
-'[리소스 동기화]- Race Codition',
+'[리소스 동기화]- Race Condition',
 '[리소스 동기화]- 상호배제',
 '[리소스 동기화][상호배제]- 세마포어, 모니터',
 '[리소스 동기화][상호배제]- Swap Test & Set()',
