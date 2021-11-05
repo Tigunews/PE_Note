@@ -182,6 +182,7 @@
 '[보안활동]- ISO/IEC 15408 (CC 인증)',
 '[융합보안]- TEE',
 '[융합보안]- Secure Boot',
+'[융합보안][Cloud 보안]- SRM',
 '[융합보안][Cloud 보안]- SECaaS',
 '[융합보안][Cloud 보안]- CWPP',
 '[융합보안][Cloud 보안]- CSPM',
@@ -3538,6 +3539,21 @@ var answer = answer.concat(
 - 게이트웨이 레벨 : Secure OS, TEE <br/>\
 - 네트워크 레벨 : SSL/TLS 암호화, 접근 통제 <br/>\
 - 최종 서비스 : ACL, DB 암호화, 다중 방어 체계\
+',
+
+// SRM
+'# 정의 : 클라우드 제공자, 사용자 / 영역별 보안 / 책임 분담 모델 <br/>\
+- Shared Responsibility Model <br/>\
+- 클라우드 서비스 제공자(CSP)와 사용자가 클라우드 영역별 보안에 대한 책임을 분담하는 모델 <br/><br/>\
+# 책임 영역 <br/>\
+<img src = "./img/SRM_Area.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 장단점 <br/>\
+- 장점 : 책임분산, IT 규제 준수, 비즈니스 집중 <br/>\
+- 단점 : 경계 모호, 보안 이슈 발생 가능성 존재 <br/><br/>\
+# 향후 전망 <br/>\
+- SECaaS <br/>\
+- CASB <br/><br/>\
+* ITPE 9회 관리 2교시 5번\
 ',
 
 // SECaaS

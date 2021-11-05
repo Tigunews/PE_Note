@@ -5,10 +5,12 @@ var question = question.concat(
 '[선형]- Queue',
 '[선형]- Priority Queue',
 '[비선형]- Heap',
+'[알고리즘 설계]- 최적해 알고리즘',
 '[알고리즘 설계]- Back Tracking',
-'[알고리즘 설계]- 분할과정복',
-'[알고리즘 설계]- Greedy',
-'[알고리즘 설계]- 동적계획법',
+'[알고리즘 설계][최적해]- 분할과정복',
+'[알고리즘 설계][최적해]- Greedy',
+'[알고리즘 설계][최적해]- 동적계획법',
+'[알고리즘 설계][최적해]- Beam Search',
 '트라이(Trie)',
 '정렬 알고리즘',
 '[정렬 알고리즘]- Selection sort',
@@ -245,6 +247,14 @@ var answer = answer.concat(
 - 단점 : 데이터 구조 따른 효율 저하 <br/><br/>\
 * 124회 관리 3교시 2번\
 ',
+
+// 최적해 알고리즘
+'# 정의 : 제약사항 고려 / 최적 해 / 알고리즘 <br/>\
+- 문제에 주어진 상황과 시간, 공간 복잡도 등 제약사항을 고려하여 최적의 해를 찾는 알고리즘 <br/><br/>\
+# 종류 <br/>\
+<img src = "./img/OptimalSolution.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 9회 관리 2교시 4번\
+',
   
 // Back Tracking
 '# 정의 : DFS, Pruning / 후보해 충족 / 모든 해 찾는 알고리즘 <br/>\
@@ -283,8 +293,10 @@ var answer = answer.concat(
 - 거스름돈 계산 <br/>\
 - 크루스칼 <br/>\
 - 허프만 코딩 <br/>\
-- 다익스트라 <br/><br/>\
-<img src = "./img/coincount.png" style = "max-width:100%; height:auto;"><br/>\
+- 다익스트라 <br/>\
+<font colro = "red">- 인공지능 : 확률 기반 최적해 선택 (빠른 처리) </font><br/><br/>\
+# 코드 사례(동전 거스름돈) <br/>\
+<img src = "./img/coincount.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 라이지움 86회 4교시 4번\
 ',
 
@@ -299,7 +311,24 @@ var answer = answer.concat(
 - 피보나치 수열 <br/><br/>\
 * 라이지움 86회 4교시 4번\
 ',
-  
+
+// Beam Search 
+'# 정의 : Beam Size 개 / Greedy A 알고리즘 최적해 미보장 / 알고리즘 <br/>\
+- 여러 경우 중 하나를 결정하지 않고 Beam Size(K개) 만큼 가장 가능도가 높은 후보군으로 선택하여 Greedy A 알고리즘의 최적해 미보장 단점을 보완한 최적해 알고리즘 <br/><br/>\
+# 특징 <br/>\
+- 최적해 미보장 보완 : 다양성 통한 근사값 도출 <br/>\
+- 부분 구조 한계 극복 : 선택 전후 관계 영향 없이 최적해 도출 가능 <br/>\
+- 자연어 생성 적합 : Sequence 문장 생성시 단어간 관계 확률 기반 최적해 도출 적합 <br/><br/>\
+# 절차 <br/>\
+- 문제 정의 : 문제 조건 확인, 제약 사항 확인 <br/>\
+- 최초 K개 해 선택 : 최초 해 선택, 현재 상태 최적화 기준 K개 확인 <br/>\
+- 부분 해 확장 : 새로운 부분해 집합 제약조건 여부, 확률 기반 Score 도출 <br/>\
+- K개 해 선택 : 확률 높은 K개 Sequence 선택, 다른 후보 삭제 및 반복 <br/>\
+- 최종 해 선택 : 확률 점수 기반 해 선택 <br/><br/>\
+# 사례 <br/>\
+<font color = "red">- 인공지능 : Seq2Seq 디코딩 방식</font><br/><br/>\
+* ITPE 9회 관리 2교시 4번 <br/>\
+',  
 
 // Trie
 '# 정의 : 키값 직접 표현 않는 자료구조<br/>\
@@ -2270,6 +2299,7 @@ var answer = answer.concat(
 2. 해외 <br/>\
 - 텐서플로(Mobile, MNasNet, Sqeeze / 양자화 경량화) <br/>\
 - NVIDIA(GPGPU, 고속 GPU 상호연결) <br/><br/>\
+* ITPE 9회 관리 2교시 1번 <br/>\
 * KPC 91회 2교시 2번\
 ',
 
