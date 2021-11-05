@@ -1,6 +1,7 @@
 var question = question.concat(
 'Grouping Keyword',
 'MECE',
+'Trade-Off',
 '[Standard]- 국제 표준화 기구',
 '[Standard]- de facto standard',
 'ITSM',
@@ -137,6 +138,26 @@ var answer = answer.concat(
 # LISS 비교 <br/>\
 <img src = "./img/MECE_LISS_Compare.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 1교시 8번\
+',
+
+// Trade-Off
+'# 정의 : 한정된 환경 / 달성, 희생 관계 <br/>\
+- 자원이 한정된 환경에서 하나의 목표를 달성할 때 다른 하나의 목표가 희생되는 관계 <br/><br/>\
+# ICT 분야 유형 <br/>\
+- SWE : 시간,비용 / 비용,품질 <br/>\
+- DB : 빅데이터,개인정보보호 / 무결성,성능 <br/>\
+- DS : 전환,보안 / 속도,정확성 <br/>\
+- 통계 : 편차,분산 / 1차 오류,2차 오류 <br/>\
+- 보안 : FAR, FRR <br/>\
+- NW : 노이즈,대역폭 / 전력,대역폭 <br/><br/>\
+# Trade-Off 관계 개선 위한 경영전략 <br/>\
+- 하이브리드 경쟁 전략(Outpacing) : 비용 최소화, 품질과 이익 극대화, 양립 어려운 속성 확보 <br/>\
+- 존속적  혁신 : 기존 제품 지속적 개선 <br/>\
+- 파괴적 혁신 : 기술 혁신, 가격 파괴 등, 기존 시장 파괴하여 새로운 시장 창출 <br/>\
+- 빅뱅 파괴 : 모든 속성 만족, 특이점, 팽창&폭발, 빅크런치, 엔트로피 단계 <br/>\
+- 개방형 혁신 : 내외부 기술, 비즈니스 모델, 아이디어 활용 기술 혁신 전략 <br/>\
+- 마이클포터의 경쟁 전략 : 원가우위 전략, 차별화 전략, 집중화 전략 <br/><br/>\
+* ITPE 9회 1교시 1번\
 ',
  
 // 국제 표준화 기구

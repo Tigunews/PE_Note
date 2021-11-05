@@ -145,6 +145,7 @@
 '반정형 데이터',
 'RAID',
 'DMBOK',
+'CDC',
 );
 
 var answer = answer.concat(
@@ -368,8 +369,9 @@ var answer = answer.concat(
 1) Ti 이후 생성된 트랜잭션이 데이터 갱신 <br/>\
 2) Write 연산 거부, Ti 롤백 <br/><br/>\
 - Timestamp(Ti) >= R-Timestamp(X) or W-Timestamp(X) <br/>\
-1) Write 연산 실행, W-Timestamp 갱신 <br/><br/>\
-* Thomas 기록규칙 활용, 사용하지 않는 연산에 대한 불필요한 롤백 처리 제한을 통한 성능 향상 가능 <br/><br/>\
+1) Write 연산 실행, W-Timestamp 갱신 <br/>\
+<font color = "red">* Thomas 기록규칙 활용, 사용하지 않는 연산에 대한 불필요한 롤백 처리 제한을 통한 성능 향상 가능 </font><br/><br/>\
+* ITPE 9회 1교시 6번 <br/>\
 * KPC 94회 4교시 5번\
 ',
 
@@ -2927,5 +2929,32 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 메타 데이터 관리 <br/>\
 - 데이터 품질 <br/><br/>\
 * ITPE 7회 관리 3교시 6번\
+',
+
+// CDC
+'# 정의 : 데이터 변경 관리 / 실시간 전달 자동화 기술 <br/>\
+- Change Data Capture <br/>\
+- 데이터베이스의 변경 데이터를 식별&캡처하여, 목표 시스템(운영 및 분석시스템 등) 으로 실시간 전달하는 자동화 기술 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/CDC_Overview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 기술요소 <br/>\
+1. 구현방식 <br/>\
+- Push : 변경 사항 주기적 전송 (소스 -> 타겟)  <br/>\
+- Pull : 데이터 주기적 다운로드 (소스 -> 타겟) <br/><br/>\
+2. 구현 기술 <br/>\
+- Timestamps on rows : 마지막 변경 시간 기록 <br/>\
+- Version Numbers on Rows : 변경된 각 행 버전 번호 표시 <br/>\
+- Status indicators on Rows : 타임스탬프 및 버전 관리 보완 위한 기술 <br/>\
+- Triggers on Tables : Publish, Scribe 패턴 방식 <br/>\
+- Event Programming : 데이터 변경 식별 기능 애플리케이션 구현 <br/>\
+- Log Scanners : Tx 로그 관리 <br/><br/>\
+# 구현시 고려사항 <br/>\
+- 암호화 데이터 처리 가능 여부 : 동기화 시 복호화 필요성 <br/>\
+- 상호운용성 : 이기종 DBMS 간 로그 추출 적재 가능 여부 <br/>\
+- 구성 환경 : 1:1, 1:N, M:N 구현 가능성 <br/>\
+- 대량 데이터 처리 성능 : 동기화 지연 발생, 대량 데이터 테이블과 일반 테이블 분리 운영 <br/>\
+- 테이블 구조 변경 연계 : 구조 변경시 데이터 동기화 문제 발생 <br/>\
+- 양방향 동기화 : 동기화 시점 차이, 운영 이슈로 데이터 처리시 데이터 무결성 훼손 <br/><br/>\
+* ITPE 9회 1교시 5번\
 ',
 );
