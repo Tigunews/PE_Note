@@ -151,7 +151,7 @@
 '[시험단계]- Record and Replay',
 '[시험단계]- 테스트 오라클',
 '[시험단계]- 회귀 테스트',
-'[시험단계]- 리스크기반 테스트(RBT)',
+'[시험단계]- 위험기반 테스트(RBT)',
 '[시험단계]- 소프트웨어 보안 테스팅',
 '[시험단계]- A/B 테스팅',
 '[시험단계]- 지각 테스팅',
@@ -2975,7 +2975,8 @@ var answer = answer.concat(
 - 확인 테스트 : 수정 결과 확인 <br/>\
 - 회귀 테스트 : 영향테스트 <br/><br/>\
 * 제품리스크 = 가능성 * 손실 <br/><br/>\
-<img src = "./img/RBT.png", style = "max-width:100%; height:auto;">\
+<img src = "./img/RBT.png", style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 9회 관리 1교시 10번\
 ',
 
 // 소프트웨어 보안 테스팅
