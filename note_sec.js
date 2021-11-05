@@ -622,7 +622,7 @@ var answer = answer.concat(
 '# 정의 : 디지털 도장 전자서명 방법 <br/>\
 - 개발회사에서 인터넷 상으로 소프트웨어를 배포하는 경우 사용자에게 신뢰할 만한 프로그램임을 알리기 위해 소프트웨어를 인증기관에서 디지털 도장을 받도록 하는 전자서명 방법<br/><br/>\
 # 매커니즘 <br/>\
-<img src = "./img/CodesignFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
+<img src = "./img/CodeSignFlow.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 절차 <br/>\
 1. 배포기관(코드서명 생성) <br/>\
 - 코드서명 인증서 발급 : 인증기관(CA)로부터 인증 및 인증서 발급 <br/>\
