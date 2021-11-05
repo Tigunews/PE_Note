@@ -2328,6 +2328,7 @@ var answer = answer.concat(
 - NetAdapt : Budget 여러개 나누어 일정만큼 만족하는 조건 점진적 탐색 방식 <br/>\
 <img src = "./img/MNasNET.png" style = "max-width:100%; height:auto;"><br/>\
 - MNasNet : Controller, Trainer, Reward, RL Pareto 최적 솔루션 <br/><br/>\
+* ITPE 9회 관리 2교시 1번 <br/>\
 * KPC 91회 2교시 2번\
 ',
 
@@ -2342,6 +2343,7 @@ var answer = answer.concat(
 - 앙상블 기법 : 학습된 다수의 큰 네트워크 -> 작은 하나의 네트워크에 지식 전달 <br/><br/>\
 3. 하드웨어 가속화 기술 <br/>\
 - TPU, VPU, GPU : 벡터/행렬 연산 병렬 처리 연산 전용 하드웨어 기술 <br/><br/>\
+* ITPE 9회 2교시 1번 <br/>\
 * KPC 91회 2교시 2번\
 ',
   
