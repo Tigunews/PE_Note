@@ -3877,7 +3877,7 @@ var answer = answer.concat(
 // RASP
 '# 정의 : 애플리케이션 지속 감시 / 보안 확인 / 자가진단 소프트웨어 <br/>\
 - Runtime Application Self-Protection <br/>\
-- 실행 중인 애플리케이션과 결합되거나 해당 런타임 환경과 통합되어 애플리케이션에 대한 호출을 지속적으로 감시하여 보안을 호가인하는 자가진단 소프트웨어 <br/><br/>\
+- 실행 중인 애플리케이션과 결합되거나 해당 런타임 환경과 통합되어 애플리케이션에 대한 호출을 지속적으로 감시하여 보안을 확인하는 자가진단 소프트웨어 <br/><br/>\
 # 구성 방식 <br/>\
 <img src = "./img/RASP_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 동작 방식 <br/>\
