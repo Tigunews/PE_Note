@@ -195,6 +195,7 @@
 '멀버타이징(Mulvertising)',
 '소프트웨어 개발보안 가이드',
 '클라우드 컴퓨팅 보안',
+'RASP',
 'PETs',
 'PPDM',
 'ISO 29151',
@@ -3871,6 +3872,20 @@ var answer = answer.concat(
 <img src = "./img/CloudSec_1.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CloudSec_2.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/CloudSec_3.png" style = "max-width:100%; height:auto;">\
+',
+
+// RASP
+'# 정의 : 애플리케이션 지속 감시 / 보안 확인 / 자가진단 소프트웨어 <br/>\
+- Runtime Application Self-Protection <br/>\
+- 실행 중인 애플리케이션과 결합되거나 해당 런타임 환경과 통합되어 애플리케이션에 대한 호출을 지속적으로 감시하여 보안을 호가인하는 자가진단 소프트웨어 <br/><br/>\
+# 구성 방식 <br/>\
+<img src = "./img/RASP_Structure.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 동작 방식 <br/>\
+<img src = "./img/RASP_Mechanishm.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# WAF, RASP 비교 <br/>\
+<img src = "./img/WAF_RASP_Compare1.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/WAF_RASP_Compare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 9회 관리 3교시 3번\
 ',
    
 // PETs

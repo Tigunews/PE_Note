@@ -543,9 +543,13 @@ var answer = answer.concat(
 - MDMS (Meter Data Management System) : 미터링 데이터 관리 <br/>\
 - CIS (Customer Information System) : 고객이 관리와 과금의 주체가 되는 시스템 <br/><br/>\
 2. 통신시스템 <br/>\
-- WAN (Wide Area Network) : CDMA, 광통신망 등 공중망 사용 <br/>\
-- NAN (Neighborhood Area Network) : 중계기와 미터 사이의 영역 <br/>\
-- HAN (Home Arae Network) : 수용가 내부 통신 네트워크 (PLC, ZigBee)\
+- WAN : 광통신망, 유선NW, CDMA, LTE/5G, Wibro <br/>\
+- NAN : PLC, IEEE 802.11s(Wi-Fi Mesh), IEEE 802.15.4g(Wi-SUN), LTE/5G <br/>\
+- HAN : PLC, Zigbee, Wi-Fi <br/>\
+<font color = "red">* WAN : Wide Area Network <br/>\
+* NAN : Neighborhood Area Network <br/>\
+* HAN : Home Area Network </font><br/><br/>\
+* ITPE 9회 관리 3교시 4번\
 ',
   
 // 스마트 그리드 보안

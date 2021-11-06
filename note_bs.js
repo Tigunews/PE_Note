@@ -1,5 +1,6 @@
 var question = question.concat(
 'Grouping Keyword',
+'경영환경 분석',
 'MECE',
 'Trade-Off',
 '[Standard]- 국제 표준화 기구',
@@ -121,6 +122,24 @@ var answer = answer.concat(
 # 목차 <br/>\
 <img src = "./img/WritingSkill.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 법 : 조,항,호,목 <br/><br/>\
+',
+
+// 경영환경 분석
+'# 거시적 관점 (PEST) <br/>\
+- 정치 : 정치풍토, 시스템, 입법 동향 <br/>\
+- 경제 : 경제 성장률, 금리, 환율, 인플레이션 <br/>\
+- 사회 : 코로나, 전통, 관습 문화, 생활양식, 인구분포도, 종교, 가치관, 신념 <br/>\
+- 기술 : 정보기술, 기술발전, 빅데이터, AI 기술, 4차 산업혁명 <br/><br/>\
+# 미시적 관점 (3C) <br/>\
+- Company : 기획, 설계/디자인, 연구, 개발, 인력, 영업 마케팅 <br/>\
+- Competetior : Market share, 매출, 이익 규모, 핵심 경쟁력 <br/>\
+- Customoer : 고객 특성 분석, 시장 성장률, 시장 성숙도 <br/><br/>\
+# 복합적 관점 (SWOT) <br/>\
+- Strength <br/>\
+- Weakness <br/>\
+- Opportunity <br/>\
+- Threat <br/><br/>\
+* ITPE 9회 관리 3교시 5번 \
 ',
 
 // MECE
