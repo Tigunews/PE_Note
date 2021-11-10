@@ -51,7 +51,7 @@ var question = question.concat(
 '[IPv6]- 패킷 단편화',
 '[IPv6]- ICMPv6',
 '[IPv6]- 보안취약성 및 대응방안',
-'NAT'
+'NAT',
 'VLSM',
 'Subnet',
 'Subnetting',
