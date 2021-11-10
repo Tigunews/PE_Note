@@ -142,6 +142,7 @@
 '[Data Mining]- Opinion Mining',
 '[Data Mining]- System Dynamics',
 '[Data Mining]- CRISP-DM',
+'[Data Mining]- SEMMA',
 '데이터 사이언스',
 '반정형 데이터',
 'RAID',
@@ -2872,6 +2873,18 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 시험 및 평가 : 선정된 모형 비즈니스 목적 부합성 평가 / 모델 과정, 분석, 적용 평가 <br/>\
 - 적용 : 완성된 모델 업무 적용, 사후 관리 / 전개, 유지보수, 종료 <br/><br/>\
 * 111회 관리 1교시 11번\
+',
+
+// SEMMA
+'# 정의 <br/>\
+- SAS 기업에서 개발한 데이터 마이닝 표준 가이드로서 Sample, Explore, Modify, Modeling, Assessment 의 단계로 구성되어 있으며 각 프로세스를 순차적으로 실행하는 데이터 마이닝 방법론 <br/><br/>\
+# 프로세스 <br/>\
+- Sampling : 분석 데이터 생성, 모델 평가 데이터 준비 / 통계적 추출, 조건 추출 <br/>\
+- Explore : 분석 데이터 탐색, 오류 데이터 검색, 비즈니스 이해 / 그래프, 통계, 클러스터링 <br/>\
+- Modify : 분석 데이터 수정, 변환, 데이터 정보 표현 극대화 / 수량화, 표준화, 변환, 그룹화 <br/>\
+- Modeling : 모델 구축, 패턴 발견, 모델링과 알고리즘 적용 / Neural Network, Decision Tree <br/>\
+- Assessment : 모델 평가 및 검증,피드백, 모델간 비교 Next Step 결정 / Report, Review <br/><br/>\
+* ITPE 9회 4교시 2번\
 ',
   
 // 데이터 사이언스

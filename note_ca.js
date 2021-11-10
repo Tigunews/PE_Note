@@ -10,7 +10,7 @@ var question = question.concat(
 '[Unix OS]- i-node Block',
 '[Unix OS]- I/O Model',
 '[Unix OS][Synchronous I/O]- Blocking I/O',
-'[Unix OS][Synchronous I/O]- NonBlocking I/O',
+'[Unix OS][Synchronous I/O]- NonBlocking O',
 '[Unix OS][Synchronous I/O]- I/O Multiplexing',
 '[Unix OS]- Asynchronous I/O',
 'IO 장치 제어 방식',
@@ -2072,11 +2072,17 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 - 엄격한 교대 : 자원 체킹<br/>\
 - 바쁜대기 <br/>\
 - 잠자기 깨우기 : Sleep(s), Wait(s) -> P(s), V(s) <br/><br/>\
-* 구현기법 <br/>\
-- 데커 (최초방법, 다음 무조건 나) <br/>\
-- 피터슨 (다음 너 먼저) <br/>\
-- 램포트베이커리 (분산처리환경, 번호표) <br/><br/>\
-<img src = "./img/상호배제.png" style = "max-width:100%; height:auto;">\
+# 구현기법 <br/>\
+1. 하드웨어 <br/>\
+- Test and Set : 원자적 수행, 단일 Word 검사 <br/>\
+- Swap : 다중 Word 검사 <br/>\
+- 인터럽트 금지 : 인터럽트 차단 <br/><br/>\
+2. 소프트웨어 <br/>\
+- 데커 알고리즘 : Boolean Flag(사용의사), Turn 설정 <br/>\
+- 피터슨 알고리즘 : Flag True(의사표시), Turn 양보 <br/>\
+- 램포트 베이커리 알고리즘 : 번호표 기반, 분산처리 환경 <br/><br/>\
+<img src = "./img/상호배제.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 9회 관리 4교시 1번\
 ',
 
 // 세마포어, 모니터

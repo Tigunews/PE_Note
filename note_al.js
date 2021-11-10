@@ -40,6 +40,7 @@ var question = question.concat(
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
 '[AI]- 기계학습',
+'[AI]- 패턴인식',
 '[AI]- 지도학습',
 '[AI]- Clustering',
 '[AI]- 능동학습',
@@ -861,6 +862,30 @@ var answer = answer.concat(
 - Meta-Learning : Learning to learn <br/>\
 - Artifical General Intelligence <br/><br/>\
 * 아이리포 23회 3교시 6번\
+',
+
+// 패턴 인식
+'# 정의 : 계산 가능 / 인식 문제 / 인공지능 분야 <br/>\
+- 계산이 가능한 기계적인 장치가 어떤 대상을 인식하는 문제를 다루는 인공지능의 한 분야 <br/><br/>\
+# 개념도 <br/>\
+<img src = "./img/PatternRecognizationOverview.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 프로세스 <br/>\
+- 관측 : 대상 패턴 취득, 전기적 신호 변환 / Sampling, Quantization <br/>\
+- 전처리 : 입력 데이터 가공 / 잡은 제거, 세션화(불필요 화소 제거) <br/>\
+- 분할 : 대상, 배경, 다른 패턴과 분리 과정 / 고립된 패턴 분리, 연속적 패턴 분리 <br/>\
+- 정규화 : 표준화된 형태로 패턴 변환 / 크기, 진폭, 위치 정규화 <br/>\
+- 특징 추출 : 구분 가능한 데이터 추출 / 획 특징 추출 등 <br/>\
+- 식별 : 패턴 결과 분류 / 결정이론적 방법, 언어 이론적 방법 <br/><br/>\
+# 식별 접근방법 <br/>\
+1. 결정 이론적 접근방법 <br/>\
+- 통계적 분포 이용, 인식 확률 통계적 방법 <br/>\
+<img src = "./img/DecisionTheoretic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. 언어이론적 접근방법 <br/>\
+- 구조적 유사성 조사, 특성 파악, 구조적 패턴 방법 <br/>\
+<img src = "./img/Linguistic.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. 비교 <br/>\
+<img src = "./img/DecisionLinguinishCompare.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 9회 관리 4교시 3번\
 ',
   
 // 지도학습

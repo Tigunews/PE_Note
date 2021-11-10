@@ -51,6 +51,7 @@ var question = question.concat(
 '[IPv6]- 패킷 단편화',
 '[IPv6]- ICMPv6',
 '[IPv6]- 보안취약성 및 대응방안',
+'NAT'
 'VLSM',
 'Subnet',
 'Subnetting',
@@ -1239,6 +1240,41 @@ T.CONNECT.Request(Called address, Calling address, ... user data) <br/>\
 - 6to4 라우터 릴레이 보안 오용 / DDoS / 주소간 라우터 <br/>\
 - NAT-PT 박스에 대한 자원 고갈 / DDoS / 포티인증, 주소인증(SEND) 수행 <br/><br/>\
 * KPC 94회 4교시 6번\
+',
+
+// NAT
+'# 정의 : 주소 고갈 / 내부, 외부 / 주소연동 기술 <br/>\
+- Network Address Translation <br/>\
+- IPv4 주소 고갈 문제와 보안성 향상 위해 내부 사설 주소와 외부 공인 주소 연동하는 네트워크 기술 <br/><br/>\
+# 구성유형 <br/>\
+1. Static NAT <br/>\
+- 1:1 매핑 변환 방식 <br/>\
+- 해킹 취약 <br/>\
+<img src = "./img/StaticNAT.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Dynamic NAT <br/>\
+- 내부 사설 IP가 정해진 공이 IP Pool 내에서 자동 매핑 <br/>\
+- N : M 매핑 <br/>\
+- 외부 IP가 내부 IP보다 적은 경우 <br/>\
+<img src = "./img/DynamicNAT.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Port Address Translation <br/>\
+- 내부의 사설 IP 여러개, 공인 IP 1개로 매핑 <br/>\
+- 1:N 매핑 <br/>\
+- 외부 IP가 내부 IP보다 적은 경우 사용 <br/>\
+<img src = "./img/PortAddressTranslation.png" style = "max-width:100%; height:auto;"><br/><br/>\
+# 주요 기능 <br/>\
+1. IP Masquerading (위장) <br/>\
+- 대표 공인 IP 사용 <br/>\
+- IP 계층 상 변환, 위장 효과 <br/>\
+<img src = "./img/IP_Masquerading.png" style = "max-width:100%; height:auto;"><br/><br/>\
+2. Port Forwarding <br/>\
+- 도착 Port 정보로 내부 사설 IP 식별 <br/>\
+- 내부망, 외부망 트랜스포트 계층에서 각각 별도 연결 가능 <br/>\
+<img src = "./img/PortForwarding.png" style = "max-width:100%; height:auto;"><br/><br/>\
+3. Load Balancing <br/>\
+- 내부 사설망 내 특정서버 부하 집중 방지 역할 <br/>\
+- 각 포트별로 트래픽 균형 연결 가능 <br/>\
+<img src = "./img/LoadBalancing.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* ITPE 9회 관리 4교시 4번\
 ',
 
 // VLSM

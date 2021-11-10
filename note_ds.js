@@ -41,6 +41,7 @@ var question = question.concat(
 '[자율주행]- 군집주행 (Platooning)',
 '[자율주행]- LDM',
 '[자율주행]- C-ITS',
+'[자율주행][C-ITS]- ITS Station',
 '[자율주행]- Lidar',
 '[자율주행]- Radar',
 '[자율주행]- ADAS',
@@ -1235,14 +1236,37 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 # 구성도 <br/>\
 <img src = "./img/CITS.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성요소 <br/>\
-- V2C(Center) : 교통정보 센터 <br/>\
-- V2R(Roadside) = V2I : 하이패스, 텔레메틱스 <br/>\
-- V2V(Vehicle) : 주변 차량 정보<br/>\
-- V2P(Personal Device) = V2N(Nomadic Device) : 휴대 단말, 차량 진단 및 제어 서비스 <br/>\
-- V2G(Grid) : 전기자동차 충천관련 통신범주 <br/>\
-- IVN(In-Vehicle Network) : 차량 내부의 차량 게이트웨이 통한 외부와 통신 <br/>\
-- DSRC(Dedicated Short-range Radio Communication) : 차량간 메시지 안전 전송 <br/>\
-- WAVE(IEEE 802.11.p) : 차량간 고속통신 지원 \
+- ITS Station : 차량단말기(OBU), 노변 기지국(RSU), 센터 시스템, 개인 단말기 <br/>\
+- 통신 : V2X, WAVE, DSRC <br/>\
+- 도로 인프라 : 스카트 톨링, 돌발상황 검지기, 보행자 검지기, 도로 기상정보 시스템 <br/><br/>\
+* ITPE 9회 관리 4교시 5번\
+',
+
+// ITS Station
+'# 정의 : ISO 21217 / C-ITS 애플리케이션 / 추상적 아키텍처 <br/>\
+- ISO 21217 표준에 따라 차량에 설치된 탑재 장치, 도로에 설치된 기지국 및 서비스 센터 내의 트래픽 제어/관리 시스템, 휴대용 단말 등을 포함하는 C-ITS 애플리케이션 서비스를 위한 추상적 아키텍처 <br/><br/>\
+# 구성요소 <br/>\
+1. 아키텍처  <br/>\
+- Applications : 도로 상황, 신호 정보, 보행자 정보 <br/>\
+- Facilities : 세션관리, 정보관리, 애플리케이션 API <br/>\
+- Network & Transport : ITS 로컬 네트워크, ITS 정보 전송, TCP/UDP <br/>\
+- Access : 스테이션 내외부 I/F <br/>\
+- Management : 규제 관리, 애플리케이션 관리, 스테이션 관리 <br/>\
+- Security : 방화벽, 침입탐지, 인증, 프로파일 관리, 키 관리 <br/><br/>\
+2. C-ITS 시스템 <br/>\
+- Personal ITS Station : 보행자 스마트 폰 앱, 모빌리티 디바이스 <br/>\
+- Central ITS Station : 중앙 C-ITS 센터 탑재 시스템 <br/>\
+- Veheicle ITS Station : 차량 단말(OBD) 탑재, 차량제어기와 센터 통신 <br/>\
+- Roadside ITS Station : 도로 인프라(검지기, 신호 제어기) 정보 전송 <br/><br/>\
+# 서비스 <br/>\
+- 협력형 교통 관리 ; 위치기반 차량데이터 수집, 교통정보 제공 <br/>\
+- 전자지불 : Smart Tolling, Free-Flow Tolling <br/>\
+- 안전운전 지원 : 위험구간 정보, 차량 추돌 방지, 노면 기상정보, 도로 작업구간 주행 지원 <br/>\
+- 교차로 통행 지원 : 교차로 신호 위반 경고, 우회전 안전 운행 <br/>\
+- 대중교통 : 버스 운행 관리 <br/>\
+- 교통 약자 포호 : 옐로우 버스 운행, 스쿨 존 속도, 보행자 충돌 방지 경고 <br/>\
+- 긴급 상황 지원 : 긴급 차량 접근 경고, 차량 긴급상황 경고 <br/><br/>\
+* ITPE 9회 관리 4교시 5번\
 ',
   
 // Lidar
