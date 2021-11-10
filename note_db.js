@@ -2872,6 +2872,7 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 - 모형 수립 : 데이터 모형 평가, 비교 / 테스트 설계(Cross Validation) <br/>\
 - 시험 및 평가 : 선정된 모형 비즈니스 목적 부합성 평가 / 모델 과정, 분석, 적용 평가 <br/>\
 - 적용 : 완성된 모델 업무 적용, 사후 관리 / 전개, 유지보수, 종료 <br/><br/>\
+* ITPE 9회 관리 4교시 1번\
 * 111회 관리 1교시 11번\
 ',
 
