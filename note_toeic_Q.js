@@ -1,5 +1,4 @@
-var question =
-[
+var question = question.concat(
 // Part 2
 '이것은 직원 휴게실 사진입니다.',
 '이것은 야외시장 사진입니다.',
@@ -61,4 +60,4 @@ var question =
 '매우 친해 보이다',
 '매우 집중해 보이다',
 '매우 중요해 보이다',
-];
+);

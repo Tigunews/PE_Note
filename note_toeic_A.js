@@ -1,11 +1,10 @@
-var answer = 
-[
+var answer = answer.concat(
 'This is a picture of a break room.',
 'This is a picture of a outdoork market.',
 'This is a picture of a pier / dock.',
 'This is a picture of a construction site.',
 'This is a picture of a (famous) tourist attraction.<br/>\
-This picture shows a (famous) tourist attraction.\',
+This picture shows a (famous) tourist attraction.',
 'There are deserts in the display case.',
 'There is a trash bin under the lamppost.',
 'There is a customer at the counter.',
@@ -61,4 +60,4 @@ This picture shows a (famous) tourist attraction.\',
 'look very friendly',
 'look very focused',
 'look very important',
-];
+);
