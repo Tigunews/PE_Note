@@ -4,7 +4,8 @@ var answer =
 'This is a picture of a outdoork market.',
 'This is a picture of a pier / dock.',
 'This is a picture of a construction site.',
-'This is a picture of a (famous) tourist attraction.',
+'This is a picture of a (famous) tourist attraction.<br/>\
+This picture shows a (famous) tourist attraction.\',
 'There are deserts in the display case.',
 'There is a trash bin under the lamppost.',
 'There is a customer at the counter.',
