@@ -154,4 +154,8 @@ This picture shows a (famous) tourist attraction.',
 'A bus is approaching the bus stop. (the platform)',
 'Some people are standing in line to get on the bus',
 'One of the man in line is holding a green plastic bag and another man behind him is standing up from a bench',
+'I see a big picture on the bus shelter.',
+'I think it is an advertisement for famous brand sungalss',
+'Many trees are planted around the bus shelter and there is a white building (standing) in the background',
+'This place is not crowded with many people and it doesn't look like a big city',
 );
