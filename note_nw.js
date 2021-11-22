@@ -2306,10 +2306,10 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 특정지역(건물, 공장)등에 한해 사용가능한 5G망으로서, 해당지역에서 도입하고자 하는 서비스에 특화된 맞춤형 네트워크 <br/><br/>\
 # 구축 유형 <br/>\
 <img src = "./img/Private5GStructure.png" style = "max-width:100%; height:auto;"><br/><br/>\
-1. 독립형(기간사업자) <br/>\
-- 기업 자가 구축형 : 기업내 5G NW Full Set(gNB, UPF, 5GC, CP, UDM, MEC) 구축(Local 5G 주파수) <br/>\
-- 이통사 구축형 : 이통사 자기 면허 주파수 5G LAN 구축 <br/><br/>\
-2. 공유형(자가망) <br/>\
+1. 독립형 <br/>\
+- 기업 자가 구축형(자가망) : 기업내 5G NW Full Set(gNB, UPF, 5GC, CP, UDM, MEC) 구축(Local 5G 주파수) <br/>\
+- 이통사 구축형(기간통신사업자) : 이통사 자기 면허 주파수 5G LAN 구축 <br/><br/>\
+2. 공유형 <br/>\
 - RAN Sharing : 물리(UPF, 5GC, CP, UDM, MEC) 논리(gNB) <br/>\
 - RAN and Control Sharing : 물리(UPF, MEC), 논리(gNB, 5GC, CP, UDM) <br/>\
 - End to End Network Slicing : 물리(gNB), 논리(gNB, UPF, 5GC, MEC, UDM) <br/><br/>\
