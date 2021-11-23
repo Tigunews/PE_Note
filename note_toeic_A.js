@@ -232,7 +232,7 @@ This picture shows a (famous) tourist attraction.',
 'This is a picture of an office/ a lobby',
 'There are four people sitting around a table',
 'All of them are wearing suits',
-'They seem to be having a meeting (= It seems like they're having a meeting)',
+'They seem to be having a meeting (= It seems like they\'re having a meeting)',
 'The two men on the lfet are looking at a sort of a document',
 'The two women on the right are looking at something together with their legs crossed',
 'Behind those 4 people, there is a big white pole (=pillar) and some empty green chairs',
@@ -255,12 +255,12 @@ This picture shows a (famous) tourist attraction.',
 'Next to him, a man on a bike is passing by and a black car is turning around the corner',
 'Some cars are waiting for people to cross the street',
 'This place looks very crowded with many people and cars',
-'This convenince store is (just) around the corner'
+'This convenince store is (just) around the corner',
 'Christmas is just around the corner',
 
 // Part 4
 'It will (=is going to) be held at Bristol Convetion Center, and it will start at 9 in the morning on November 3rd',
-'I think so, There will(=is going to) be a lunch break from noon to 2 P.M. so it won't be a problem to make a phone call then',
+'I think so, There will(=is going to) be a lunch break from noon to 2 P.M. so it won\'t be a problem to make a phone call then',
 'Sure / Of course / Absolutely / Certainly ! <br/>\
 First, he will (=is going to) lead a worshop on Private Water Coaching from 2 to 3 P.M.',
 'Then, he will (=is going to) give a presentation on Programs for Restoring Muscles from 4 to 5 P.M.',
