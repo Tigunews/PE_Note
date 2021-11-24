@@ -1,6 +1,6 @@
 var answer = answer.concat(
 'This is a picture of a break room.',
-'This is a picture of a outdoork market.',
+'This is a picture of a outdoor market.',
 'This is a picture of a pier / dock.',
 'This is a picture of a construction site.',
 'This is a picture of a (famous) tourist attraction.<br/>\
