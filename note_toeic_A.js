@@ -304,7 +304,7 @@ First, he will (=is going to) lead a worshop on Private Water Coaching from 2 to
 'It is 20 dollars for each class (= per class)',
 'I\'m arfaid not. Well, we have classes only on weekdays. (=There are classes only on weekdays = There are no classes on weekends)',
 'Absolutely! There are two classes during your lunch break.',
-'The first one is aeobics on Mondays(=very Monday) from 12 to 1 P.M., and it is going to be led by Barbara Berners',
+'The first one is aerobics on Mondays(=very Monday) from 12 to 1 P.M., and it is going to be led by Barbara Berners',
 'Also, ther is a Yoga class led by Chris Stark on Wednesday at the same time',
 'He got (=earned = recived) his Bachelor\'s dgree in culinary arts from Boston University in 2013',
 'Yes, I think so. Well, according to his resume(= it sayss here on his resume that), he has a certifgication in banking and pasrty',
