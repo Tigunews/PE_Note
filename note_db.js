@@ -37,7 +37,6 @@
 '다차원 모델링',
 '[다차원 모델링]- 스타 스키마',
 '[SNA]- 중심성(Centrality)',
-'CKAN(Comprehensive Knowledge Archive Network)',
 '[DB Stakeholder]- DA',
 '[DB Stakeholder]- DBA',
 '[DB Stakeholder]- Data Scientist',
@@ -89,6 +88,8 @@
 '[빅데이터]- ISO 20547',
 '[빅데이터]- BigData 분석 방법론',
 '[빅데이터]- DCAT',
+'[빅데이터]- DCATv2',
+'[DCAT]- CKAN',
 '[빅데이터]- 데이터 플래그십',
 '[빅데이터]- 단순 대치법',
 '[빅데이터]- 결측값',
@@ -873,35 +874,6 @@ var answer = answer.concat(
 <img src = "./img/Centrality_1.PNG" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/Centrality_2.PNG" style = "max-width:100%; height:auto;"><br/><br/>\
 <img src = "./img/Centrality.png" style = "max-width:100%; height:auto;">\
-',
-
-// CKAN
-'# 정의 : 컨텐츠 관리, 시각화, API 추출 / 타 오픈 소스 결합 / 데이터 플랫폼 <br/>\
-- Comprehensive Knowledge Archive Network <br/>\
-- OKF, 오픈소스 기반 데이터 플랫폼 Open Knowledge Foundation <br/>\
-- 컨텐츠 관리, 시각화, API 추출 등의 특화된 기능을 Drupal과 같은 타 오픈 소스와 결합하여 단점을 극복한 오픈 소스 기반 데이터 플랫폼 <br/><br/>\
-# 암기 <br/>\
-- 구성(3) : RAD <br/>\
-- 기술(8) : WACM HVDG <br/><br/>\
-# 구성 <br/>\
-- RDF 링크데이터 변환 <br/>\
-- Action API <br/>\
-- DCAT와 Doublin Core <br/><br/>\
-# 기술요소 <br/>\
-- Web Interface API <br/>\
-- Data Catalog <br/>\
-- MetaData <br/>\
-- Version History <br/>\
-- Data Storage <br/>\
-- Geo Spatial <br/><br/>\
-# 주요기능 <br/>\
-- Dataset Mgmt <br/>\
-- Resource Mgmt <br/>\
-- User Mgmt <br/>\
-- Search <br/>\
-- Harvesting(CKAN Instance Dataset 가져옴) <br/>\
-- Geo Spatial<br/><br/>\
-* 1.6버전까지 LOD 지원위해 RDF-Extention 설치, 2012년 10월 1.7버전 부터 코어에 RDF 지원\
 ',
 
 // DA
@@ -1892,6 +1864,49 @@ FROM <font color = "red">TABLE_A</font> A, <font color = "red">TABLE_A</font> B 
 # 유통 플랫폼 연계 <br/>\
 <img src = "./img/OpenDataPlatformReferenceModel_CirculationModel.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * KPC 94회 3교시 3번\
+',
+
+// DCATv2
+'# 정의 : 데이터 카탈로그 간 상호운용성 / 표준 모델, 데이터속성 표현 / RDF Vocabulary <br/>\
+- 웹에 공개된 데이터 카탈로그 간의 상호운용이 용이하도록 설계된 카탈로구 표준 모델과 데이터 속성을 표현하는 RDF Vocabulary <br/><br/>\
+# 특징 <br/>\
+- 공통 특징 : 상호 운용성, 탐색 성능 <br/>\
+- 고유 특징 : 데이터 서비스 분리, 자원 클래스 속성 상속, 자원 간 관계 표현, 문서화 지침 제공 <br/><br/>\
+# 구성요소 <br/>\
+- Resource : 기본/공통 정보(메타 데이터) <br/>\
+- DataService : 데이터 서비스 상품(Open API, SparQL, Endpoint Attribute 정보) <br/>\
+- Dataset : 데이터 상품(Resource 클래스 상속, 데이터 셋 설명) <br/>\
+- Distribution : 유통정보(저장 형식, 포맷) <br/>\
+- ConceptScheme : 플랫폼별 분류체계(계층적 카테고리) <br/>\
+- Concept : 플랫폼별 분류체계 관리 속성 <br/>\
+- Agent : 제공기관 정보 <br/>\
+- Catalog : 서비스 세부 내역(Dataset, DataService 목록, 속성 정보) <br/><br/>\
+# 작성 예시 <br/>\
+<img src = "./img/DCATv2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 93회 관리 1교시 13번\
+',
+
+// CKAN
+'# 정의 : 컨텐츠 관리, 시각화, API 추출 / 타 오픈 소스 결합 / 데이터 플랫폼 <br/>\
+- Comprehensive Knowledge Archive Network <br/>\
+- OKF, 오픈소스 기반 데이터 플랫폼 Open Knowledge Foundation <br/>\
+- 컨텐츠 관리, 시각화, API 추출 등의 특화된 기능을 Drupal과 같은 타 오픈 소스와 결합하여 단점을 극복한 오픈 소스 기반 데이터 플랫폼 <br/><br/>\
+# 구성 <br/>\
+- RDF 링크데이터 변환 <br/>\
+- Action API <br/>\
+- DCAT와 Doublin Core <br/><br/>\
+# 기술요소 <br/>\
+- Web Interface API <br/>\
+- Data Catalog <br/>\
+- MetaData <br/>\
+- Version History <br/>\
+- Data Storage <br/>\
+- Geo Spatial <br/><br/>\
+# 주요기능 <br/>\
+- 데이터 등록, 검색 관리 <br/>\
+- 데이터 정도, 지도기반 시각화 <br/>\
+- DCAT 표준기반 하베스팅 제공(배포, 검색, 수집) <br/>\
+<font color = "red">* 1.6버전까지 LOD 지원위해 RDF-Extention 설치, 2012년 10월 1.7버전 부터 코어에 RDF 지원</font>\
 ',
   
 // 데이터 플래그십

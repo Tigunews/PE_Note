@@ -75,6 +75,7 @@ var question = question.concat(
 '[의료기술]- HL7 FHIR',
 '[의료기술]- 의료 마이데이터',
 '[의료기술]- 마이헬스웨이 플랫폼',
+'[의료기술]- EMR 인증제',
 '기능성 게임',
 'OTT(Over the top)',
 '[OTT]- 웹인증 API',
@@ -89,7 +90,6 @@ var question = question.concat(
 '[인증기술]- 비대면 실명 인증',
 '[인증기술]- 생체정보 보호 가이드라인',
 '디바이스 DNA',
-'Solid - Social Linked Data',
 '앰비언트 커머스',
 '핀테크',
 '[핀테크]- 서비스',
@@ -128,6 +128,7 @@ var question = question.concat(
 '[JSON]- JWT',
 'Semantic Web',
 '웹 접근성',
+'[웹 접근성]- Universal Design',
 '[N Screen]- Responsive Web Design',
 '[N Screen]- Adaptive Web Design',
 '시선통신기술(Line of Sight Communications)',
@@ -237,6 +238,7 @@ var question = question.concat(
 'HTML 5',
 '[공공데이터]- Open Data Platform',
 '[공공데이터][Open Data]- LOD',
+'[LOD]- Solid Project',
 'Data Warehouse',
 '[공공데이터]- Data Lake',
 '[공공데이터][Data Lake]- Data Catalogs',
@@ -296,6 +298,9 @@ var question = question.concat(
 '디지털 성숙도',
 'CDP',
 'STARLINK Project',
+'인앱결제방지법(전기통신사업법 개정안)',
+'AEI',
+'Copilot',
 );
 
 var answer = answer.concat(
@@ -1894,6 +1899,21 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 의료분야 마이데이터 도입기반 마련 : 법,제도 개선, 민관협업 거버넌스 구축, 대국민 소통 전략 마련 \
 ',
 
+// EMR 인증제
+'# 정의 : 전자의무기록시스템 / 표준화 / 인증 <br/>\
+- 환자 안전과 진료 연속성 지원을 목적으로 국내 전자의무기록시스템에 대한 국가적 표준과 적합성 검증을 통해 업체의 표준 제품 개발을 유도하여 시스템의 상호호환성 확보 등 품질 향상으로 의료소비자에게 양질의 의료 서비스를 제공될 수 있도록 하기 위한 제도 <br/><br/>\
+# 인증기준 <br/>\
+- 기능성 <br/>\
+- 보안성 <br/>\
+- 상호운용성 <br/><br/>\
+# 주요분야 <br/>\
+- 환자 정보관리 <br/>\
+- 처방 정보관리 <br/>\
+- 의무 기록관리 <br/>\
+- 진료정보제공 및 연계 <br/><br/>\
+* 라이지움 93회 관리 1교시 12번\
+',
+
 // 기능성 게임
 '# 정의 : 순기능 확장 게임 <br/>\
 - 기존의 게임이 가지고 있던 단순한 재미 요소 이외에, <font color = "red">교육, 학습, 훈련, 치료</font> 등의 특별한 목적을 접목시켜 게임이 가지는 순기능을 더욱 확장시킨 형태의 게임 (TTA)<br/><br/>\
@@ -2166,27 +2186,6 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 # 디바이스 DNA 기술별 특성 <br/>\
 <img src = "./img/DeviceDNACompare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
 * 125회 응용 1교시 13번\
-',
-
-// Solid - Social Linked Data
-'# 정의 : 팀 버너스리 / 웹 사용자 탈중앙화 구축 / 오픈소스 프로젝트 <br/>\
-- 팀 버너스리에 의해 만들어진 웹 사용자 스스로 자신의 데이터를 통제할 수 있는 웹을 구축하기 위한 오픈 소스 프로젝트 <br/><br/>\
-# Solid Project Architecture <br/>\
-<img src = "./img/SolidProjectArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-# 세부 요소 <br/>\
-1. 구성요소 <br/>\
-- Pod : 개별정보 DB<br/>\
-- IPS : Pod 인증 수행<br/>\
-- WAC : ACL <br/><br/>\
-2. 기술요소 <br/>\
-- RDF : Solid Data Model<br/>\
-- WebID : 공용 ID <br/>\
-- WebID-TLS : 신원 확인 매커니즘 <br/>\
-- WOAF Vocabulary : WebID, ACL 사용 언어 <br/>\
-- LDP(Linked Data Platform) : 웹 리소스 HTTP 작업 집합 <br/><br/>\
-# Pod Architecture <br/>\
-<img src = "./img/PodArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
-* IPTE 7회 1교시 관리 2번\
 ',
   
 // 앰비언트 커머스
@@ -2855,6 +2854,29 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 문법 준수 : 마크업 언어 열고 닫음, 중첩 관계 및 속성 선언 오류x <br/>\
 - 웹, 애플리케이션 접근성 : 컨텐츠 포함된 웹 App은 접근성 보유 필요 <br/><br/>\
 * ITPE 합숙 124회 4일차 1교시 12번\
+',
+
+// Universal Design
+'# 정의 : Design for People <br/>\
+- 연령과 성별, 국정(언어), 장애의 유무 등과 같은 개인의 능력과 개성의 차이와 관계 없이 처음부터 누구에게나 공평하고 사용하기 편리한 제품, 건축/환경, 서비스 등의 구현을 위한 디자인<br/><br/>\
+# 원칙 <br/>\
+- Equitable : 차별감, 불안감, 열등감 x<br/>\
+- Flexibility in use : 서두르거나, 다양한 생활 환경, 자유롭게 활용 <br/>\
+- Simple and Intuitive : 직감적, 간결성, 피드백 존재 <br/>\
+- Perceptive information : 정보 구조 간단, 복수 전달 통한 정보 입수 <br/>\
+- Tolerance for error : 사고 방지, 잘못된 명령어 내성 <br/>\
+- Low physical effort : 무의미 반복동작, 힘 들이지 않는, 자연스러움 <br/>\
+- Size and space for approach and sue : 이동,수납 용이, 다양한 신체조건 사용자와 도우미 함께 사용 가능 <br/><br/>\
+# 목적 <br/>\
+- Body fit <br/>\
+- Cmfort <br/>\
+- Awareness <br/>\
+- Understanding <br/>\
+- Wellness <br/>\
+- Social Integration <br/>\
+- Personalization <br/>\
+- Culturl Appropriateness <br/><br/>\
+* 라이지움 93회 관리 1교시 7번\
 ',
 
 // Responsive Web Design
@@ -4675,14 +4697,16 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 
 // Kafka
 '# 정의 : 데이터 스트림 실시간 관리 오픈소스 시스템 (링크드인 개발, 아파치 오픈소스)<br/>\
-- 웹사이트, 애플리케이션, 센서 등에서 취합한 데이터 스트림을 실시간으로 관리하기 위한 오픈소스 시스템 <br/><br/>\
+- 웹사이트, 애플리케이션, 센서 등에서 취합한 데이터 스트림을 실시간으로 관리하기 위한 오픈소스 시스템 <br/>\
+- 원천 시스템으로부터 대규모 트랜잭션 데이터가 발생했을 때, 데이터를 버퍼링 하면서 목적지 시스템에 안정적으로 전송하기 위한 MOM 시스템 <br/><br/>\
 <img src = "./img/Kafka.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 특징 <br/>\
 - 확장성 : Scale-out 가능 <br/>\
 - 영속성 : 수신한 데이터 디스크 유지 <br/>\
 - 유연성 : 시스템 연결 허브역할 <br/>\
 - 신뢰성 : 메시지 전달 보증 <br/><br/>\
-# 구성요소 (BMPCT) <br/>\
+# 구성요소 (<font color = "red">CBMPCT</font>) <br/>\
+- Cluster : 메시지 저장, 이중화 <br/>\
 - Broker : Producer, Consumer간 메시지 관리 <br/>\
 - Message : 데이터 최소 단위 <br/>\
 - Producer : 메시지 생성 프로세스 <br/>\
@@ -4693,6 +4717,7 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - Kafka Streams : 로그 수집 <br/>\
 - Event Sourcing : CQRS <br/>\
 -> CQRS (Command and Query Responsibility Segregation) : 명령과 조회의 책임 분리 <br/><br/>\
+* 라이지움 93회 관리 1교시 9번 <br/>\
 * 123회 관리 3교시 1번 <br/>\
 * KPC 95회 1교시 15번\
 ',
@@ -5107,6 +5132,30 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 국내 : 공공 Wifi 정보, 국가서지 <br/><br/>\
 * 라이지움 88회 관리 2교시 3번 <br/>\
 * 122회 1교시 3번\
+',
+
+// Solid - Social Linked Data
+'# 정의 : 팀 버너스리 / 웹 사용자 탈중앙화 구축 / 오픈소스 프로젝트 <br/>\
+- 팀 버너스리에 의해 만들어진 웹 사용자 스스로 자신의 데이터를 통제할 수 있는 웹을 구축하기 위한 오픈 소스 프로젝트 <br/><br/>\
+# Solid Project Architecture <br/>\
+<img src = "./img/SolidProjectArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 세부 요소 <br/>\
+1. 구성요소 <br/>\
+- Pod : 개별정보 DB<br/>\
+- IPS : Pod 인증 수행<br/>\
+- WAC : ACL <br/><br/>\
+2. 기술요소 <br/>\
+- RDF : Solid Data Model<br/>\
+- WebID : 공용 ID <br/>\
+- WebID-TLS : 신원 확인 매커니즘 <br/>\
+- WOAF Vocabulary : WebID, ACL 사용 언어 <br/>\
+- LDP(Linked Data Platform) : 웹 리소스 HTTP 작업 집합 <br/><br/>\
+# Pod Architecture <br/>\
+<img src = "./img/PodArchitecture.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+# 기존 모델과 비교 <br/>\
+<img src = "./img/PodSolidCompare.png" style = "max-width:100%; hegiht:auto;"><br/><br/>\
+* 라이지움 93회 관리 1교시 5번 <br/>\
+* IPTE 7회 관리 1교시 2번\
 ',
   
 // Data Warehouse
@@ -5870,6 +5919,12 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 - 디지털 휴먼의 성장 <br/>\
 - 다양한 IP와 협력하는 메타버스 <br/>\
 - NFT와 결합하는 메타버스 <br/><br/>\
+# 사례 <br/>\
+- 대학 : UI버클리 졸업식 / 마인크래프트 <br/>\
+- 정부 : 2020년 청와대 어린이날 행사 / 마인크래프트 <br/>\
+- 선거 : 조 바이든 선거캠프 / 동물의 숲 <br/>\
+- 콘서트 : 드래비스캇 콘서트 / 포트나이트 <br/><br/>\
+* 라이지움 93회 관리 1교시 11번 <br/>\
 * 125회 관리 1교시 <br/>\
 * 123회 관리 2교시 3번\
 ',
@@ -6318,5 +6373,57 @@ IDMZ : IT, OT 정보 공유 계층, 중계/분리 역할 <br/>\
 3. 사용자 세그먼트 : Spot Beam, Wide Beam <br/>\
 - Spot Beam : 대용량 정보 전송 요구 지역 <br/>\
 - Wide Beam : 저속 정보 전송 요구 지역 \
+',
+
+// 인앱결제방지법 (전기통신사업법 개정안)
+'# 내용 <br/>\
+- 개요 : 이용자의 피해 예방, 권익보호 (제22조의9 제1항 - 신설) <br/>\
+- 정부개입 가능성 : 앱 마켓사업자의 운영 실태 조사 실시 가능 (제22조의9 제2항 - 신설) <br/>\
+- 분쟁조정 확장 : 앱 마켓에서의 이용요금 결제, 결제 취소, 환급 관련 (제45조의2 제1항 제6호 - 신설) <br/>\
+- <font color = "red">모바일 컨텐츠 사업자 보호(핵심)</font><br/>\
+- 결제 방식 강제 행위 (제50조 제1항 제9호) <br/>\
+- 컨텐츠 심사 부당 지연 행위 (제50조 제1항 제10호) <br/>\
+- 컨텐츠 부당 삭제 행위 (제50조 제1항 제11호) <br/><br/>\
+# 찬반 이슈 <br/>\
+<img src = "./img/InAppPayRule.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 93회 관리 1교시 1번\
+',
+
+// AEI
+'# 정의 <br/>\
+- Artifical Emotional Intelligence <br/>\
+- 감성지능과 인공지능의 결합으로, 인공지능이 스스로 가지고 있는 감정을 통해 사람처럼 자신과 타인의 감정을 구별하고 새로운 사고와 행동을 결정하는 감정의 근거를 도출하는 기술 <br/><br/>\
+# 구성 <br/>\
+- 자기 인식 능력(자신->타인) : 타인에게 미치는 영향 분명히 이해하는 능력 <br/>\
+- 자기 관리 능력(자신->자신) : 성취 지향성, 적응력, 정서적 자기 통제력, 긍정적 관점 <br/>\
+- 관계 관리 능력(자신<->타인) : 갈등 관리, 코칭 및 멘토링, 영향력, 리더쉽, 팀워크 <br/>\
+- 타인 인식 능력(타인->자신) : 타인 감성/시각 인지, 반응, 대처 <br/><br/>\
+# 기술요소 <br/>\
+- 감정 인식 : SVM, KM, HMM, LSTM, RNN, 멀티모달 프로파일링 <br/>\
+- 감정 생성 : 딥러닝 기반 감정 합성 기술 <br/>\
+- 감정 증강 : 양방향 감정 입/출력 플랫폼, 감정 유발 기계 학습 <br/><br/>\
+# 활용 <br/>\
+- 자동차 : 생체 정보인식, 자율주행 센서, 오감기반 신경 자극 <br/>\
+- 로봇 : 행동, 언어적 교감 중심 <br/>\
+- 헬스케어 : 심층적 인간 감정 자극 및 치료 <br/><br/>\
+* 라이지움 93회 관리 1교시 3번\
+',
+
+// Copilot
+'# 정의 : 함수, Decription / 자동 코드 생성 / OpenAI, Codex 기반 도구 <br/>\
+- Github 에서 발표한 입력 파라미터를 포함한 함수와 그에 관한 Description 만 넣으면 자동으로 코드를 생성해주는 OpenAI의 Codex를 기반한 도구 <br/><br/>\
+# 작동 방법 <br/>\
+- 주석을 코드로 변환 : 요구사항, 기능 논리 설명 주석 -> 코드로 변환 <br/>\
+- 반복 코드 자동 완성 : 상용구 및 반복 코드 패턴, 예제필요 <br/><br/>\
+# 기술요소 <br/>\
+- Visual Studio Code : 코드 편집기, IDE, VS Code -> GitHub Copilot 서비스 전송 <br/>\
+- 지원 언어 : Python, Ruby, TypeScript, JavaScript, Go <br/>\
+- Codex : OpenAI, GitHub 훈련된 AI 시스템 <br/><br/>\
+# 한계 <br/>\
+- Parroting : 앵무새, Training Data 텍스트 그대로 리턴 <br/>\
+- 보안 취약성 : Public 코드 학습 위주, Insecure 코드, 버그 포함 가능성 <br/>\
+- 라이선스 : GPL라이선스 코드 학습, GPL 라이선스 의무 모호 <br/>\
+- 정확성 : 단순 매칭 위주, 정확성 체크 불가 <br/><br/>\
+* 라이지움 93회 관리 1교시 10번\
 ',
 );

@@ -145,6 +145,7 @@
 '[해킹]- 사이버 디셉션',
 '[해킹]- 공급망 공격',
 '[해킹]- 템퍼 프루핑',
+'[해킹]- Row Hammer 공격',
 '[법률]- 데이터 3법',
 '[법률]- 개인정보보호법',
 '[법률][개인정보]- 정보유형',
@@ -583,8 +584,25 @@ var answer = answer.concat(
 
 // X.509
 '# 정의 : 공개키 기반 ITU-T 표준 <br/>\
-- 암호학에서 공개키 인증서와 인증 알고리즘의 표준 가운데 공개키 기반(PKI)의 ITU-T 표준<br/>\
-- X.509 시스템에서 CA는 X.500 규약에 따라 서로 구별되는 공개키를 가진 인증서를 발행',
+- 암호학에서 공개키 인증서와 인증 알고리즘의 표준 가운데 공개키 기반(PKI)의 ITU-T 표준 <br/><br/>\
+# 구성요소 <br/>\
+(1) Version : X.509 정의 <br/>\
+(1) Serial Number : CA 부여 인증번호 <br/>\
+(1) Signature Algorithm Identifier : 알고리즘, 식별자 <br/>\
+(1) Issuer Name : 인증서 발행자 <br/>\
+(1) Validity Period : 유효 기간 <br/>\
+(1) Subject Name : 사용자 이름 <br/>\
+(1) Public key Information : 공개키 알고리즘 <br/>\
+(2) Issuer Unique ID : 중복 이름 구별자 <br/>\
+(2) Subject Unique ID : 사용자 구별자 <br/>\
+(3) Extensions : 인증서 추가 정보 <br/>\
+- Signature : 서명값 <br/><br/>\
+# 확장영역 <br/>\
+- 키와 정잭 정보 <br/>\
+- 사용자와 ㅂ라행자 속성 <br/>\
+- 인증 경로 제약 조건 <br/><br/>\
+* 라이지움 93회 응용 1교시 11번 \
+',
 
 // 2020 전자서명법 개정
 '# 공인인증서 연혁 <br/>\
@@ -2785,6 +2803,26 @@ var answer = answer.concat(
 - 실행코드 난독화 : 암호화 및 난독화 구현 \
 ',
 
+// Row Hammer 공격 
+'# 정의 : DRAM cell 밀집도 / 인접한 row 비트 플립 발생 / HW 설계 결함 활용 공격 방식 <br/>\
+- DRAM의 cell 밀집도가 높아지면서 하나의 row에 반복적인 접근을 할 때 인접한 메모리 row에 비트 플립이 발생한다는 하드웨어 설계 결함을 활용한 공격 방식 <br/><br/>\
+# 공격원리 <br/>\
+<img src = "./img/RowHammerAttack.png" style = "max-width:100%; height:auto;"><br/><br/>\
+1. Bit Flip 유발 <br/>\
+- 접근 : 특정 Row 에 대하여 Hammering(악의적 반복접근) <br/>\
+- 현상 : Bit Flip 발생 <br/>\
+- 추론 : 비트 플립 관찰하여 가까운 열에 있는 비트 값 추론 <br/>\
+<font color = "red">* Bit Flip : 0이여야 할 데이터가 1로 혹은 그 반대로 의도하지 않게 변경되는 메모리 에러 </font><br/><br/>\
+2. 공격 <br/>\
+- 탈취 : 암호키, 커널의 페이지테이블, 시스템 탈취 공격 수행 <br/>\
+- 공격 : 매우 빠르게 Read, 인접 Row 통해 공격 <br/>\
+- SW 버그 없는 경우에도 발생 <br/>\
+- DDR3 취약, DDR4 도 버그 가짐 <br/><br/>\
+# 해결방안 <br/>\
+- 기존 메모리 > ECC 메모리 > ECCploit 공격으로 ECC 무력화 기법 등장 <br/><br/>\
+* 라이지움 93회 응용 1교시 12번\
+',
+
 // 데이터 3법 
 '# 개념 : 개인정보를 데이터로 활용할 수 있도록 개인정보 보호법, 정보통신망법, 신용정보법 개정안 <br/><br/>\
 # Overview <br/>\
@@ -3525,18 +3563,25 @@ var answer = answer.concat(
 - Common Criteria <br/>\
 - 정보보호 시스템의 보안 기능 요구사항과 보증 요구사항 평가를 위해 공통으로 제공되는 국제 평가 기준 <br/><br/>\
 # 구성요소 <br/>\
+- 패키지 : 컴포넌트 집합 <br/>\
+- EAL : 평가 보증 수준 등급 <br/>\
 - TOE : 인증 및 평가의 직접적 대상 보안제품 <br/>\
 - PP : 사용자의 보안 요구 표현 위한 공통 평가 기준 <br/>\
 - ST : 특정 제품의 보안 기능 표현한 평가 기준 자료 <br/>\
 <font color = "red">* TOE : Target of Evaluation <br/>\
+* EAL : Evaluation Assurance Level <br/>\
 * PP : Protection Profile <br/>\
 * ST : Security Target </font><br/><br/>\
-# 주요 내용 <br/>\
-- 보안 기능 요구사항 : 제품 구현시 필요한 요구사항 평가 <br/>\
-- 보안 보증 요구사항 : 등급에 부합함 증명 수단 <br/><br/>\
+# 문서 구성 <br/>\
+- ISO/IEC 15408-1 : 소개 및 일반적 평가 모델 <br/>\
+- ISO/IEC 15408-2 : 보안 기능 구성요소 <br/>\
+- ISO/IEC 15408-3 : 보안 보증 구성요소 <br/><br/>\
 # 평가 등급 <br/>\
 <img src = "./img/CC.png" style = "max-width: 100%; height: auto;"><br/>\
-<font color = "red">* 일반적인 네트워크 보안장비 = EAL 4 일반적 </font>\
+<font color = "red">* 일반적인 네트워크 보안장비 = EAL 4 일반적 </font><br/><br/>\
+# 보안제품 평가 종류 비교 <br/>\
+<img src = "./img/CC_Compare.png" style = "max-width: 100%; height: auto;"><br/><br/>\
+* 라이지움 93회 관리 1교시 4번\
 ',
 
 // TEE

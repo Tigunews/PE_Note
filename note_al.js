@@ -2908,9 +2908,8 @@ var answer = answer.concat(
 - RNN + Attention 모델 : 인코더 결과물 재참조, 연관 단어 집중, 품질 향상, RNN사용 여전히 느림 <br/>\
 - Transformer 등장 : RNN 구조 탈피, Self-Attention 매커니즘, 병렬처리 가능 <br/><br/>\
 # 특징 <br/>\
-- 2017년 구글 "All you need is Attention" <br/>\
-- RNN 보다 우수 <br/>\
-- BERT GPT 기반 <br/><br/>\
+- Seq2Seq 고도화 : RNN 셀의 마지막 Hidden State만 사용하는 Seq2Seq 모델 극복 <br/>\
+- Attention 기반 : 매 시점 Hidden State 다시 한 번 참고 <br/><br/>\
 # 개념도 <br/>\
 <img src = "./img/Transformer.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 구성도 <br/>\
@@ -2928,6 +2927,13 @@ var answer = answer.concat(
 4. 출력 <br/>\
 - Linear Layer : 디코더 출력 벡터화 Fully Connected <br/>\
 - Softmax : 출력단어 예측 <br/><br/>\
+# 유형 <br/>\
+- 언어이해(인코더 강화, 입력문장 이해) : BERT <br/>\
+- 언어생성(디코더 강화, 출력문장 생성) : GPT-1, GPT-2 <br/>\
+- 언어이해생성(인코더, 디코더 강화) : T5(Text-To-Text Transfer Transformer) <br/>\
+- 초대형 언어생성 모델(초대형 디코더) : GPT-3 <br/>\
+<font color = "red">* GPT : Generative Pre-Trained Transformer </font><br/><br/>\
+* 라이지움 93회 관리 1교시 2번 <br/>\
 * ITPE 7회 관리 3교시 3번 <br/>\
 * 123회 관리 4교시 4번\
 ',

@@ -87,6 +87,7 @@ var question = question.concat(
 'Nano Qplus',
 'Flash Memory',
 'NAND Flash Memory',
+'ECC Memory',
 'eMMC',
 'UFS',
 'MoS',
@@ -1760,6 +1761,16 @@ Power On-> Boot PROM -> Boot Program -> Init kernel -> Run Init Process -> SVC. 
 <img src = "./img/NANDFlashTypeCopmare1.png" style = "max-width:100%; height:auto;"><br/>\
 <img src = "./img/NANDFlashTypeCopmare2.png" style = "max-width:100%; height:auto;"><br/><br/>\
 * 123회 응용 2교시 2번\
+',
+
+// ECC Memory
+'# 정의 : 외부적 환경 발생 오류 감지, 수정 / Data bit 옆 추가 비트 / 오류 탐지 메모리 <br/>\
+- Error Correction Code Memory <br/>\
+- 본래 외부적 환경의 요인으로 인해 발생할 수 있는 오류를 감지하고 수정해줄 수 있도록 원래 data bit 옆에 추가적인 비트(Parity Bit, Control Bit)를 추가하여 오류를 탐지할 수 있게 하는 메모리 <br/><br/>\
+# 아키텍처 <br/>\
+<img src = "./img/ECC_Memory.png" style = "max-width:100%; height:auto;"><br/>\
+<img src = "./img/ECC_Memory2.png" style = "max-width:100%; height:auto;"><br/><br/>\
+* 라이지움 93회 응용 1교시 12번\
 ',
 
 // eMMC

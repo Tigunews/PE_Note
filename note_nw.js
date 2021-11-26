@@ -90,6 +90,7 @@ var question = question.concat(
 '[측위기술]- GPS',
 '[측위기술][GPS]- 위성항법기술',
 '[측위기술][GPS]- SBAS',
+'[측위기술]- 차량위치 측위',
 '[측위기술]- RTLS',
 '라이파이(Li-Fi)',
 'SON',
@@ -1980,6 +1981,27 @@ IEEE 802.11ai: fast initial link setup, secure link setup within 100ms',
 - 기존의 GPS 오차(17~37m)를 1m 이내로 보정하여 항공기에 정밀 위치 정보를 제공하는 위성 기반 항법 시스템 <br/><br/>\
 # DGPS 비교 <br/>\
 <img src = "./img/SBAS_DGPS.png" style = "max-width:100%; height:auto;">\
+',
+
+// 차량위치 측위 기술
+'# 유형 <br/>\
+- 위성기반 : GNSS 단독, GNSS 기반 추가 기지국 활용 <br/>\
+- 복합기반 : GNSS, 차량센서 정보간 결합 <br/>\
+<font color = "red"> GNSS : Global Navigation Satellite System </font><br/><br/>\
+# 기술요소 <br/>\
+1. 위성기반 <br/>\
+- GNSS : 위성 사용 전통적 측위 기술 <br/>\
+- DGPS : 별도 기지국 설치, 보정정보, 융합 측정 <br/>\
+- RTK : 기준국 반송, 위상 보정치 이용, 실시간 정밀 측정 <br/><br/>\
+2. 복합기반 <br/>\
+- 디지털지도 + Dead-Reckoning : 관성 측정 장치, 주행 거리계 융합 <br/>\
+- Opportunistic Navigation 위한 5G : SDR 5G 신호, 속도 추정 <br/>\
+- Usign Low-Cost Onboard Sensors : 저비용 기반 센서 융합, 제어장치, 주행 기록계, 관성 장치, Wheel Slip Detection 센서 등 <br/>\
+- Radar and INS/GNSS : INS, RTK GNSS, 주행 기록계, HD 멥 통합 <br/>\
+<font color = "red">* DGPS : Differential GPS <br/>\
+* RTK(Real Time Kinematic) : 실시간 이동 측위 <br/>\
+* INS(Inertial Navigation System) : 관성 네비게이션 시스템 </font><br/><br/>\
+* 라이지움 93회 관리 1교시 8번\
 ',
  
 // RTLS
