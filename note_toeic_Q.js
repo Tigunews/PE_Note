@@ -82,7 +82,7 @@ var question = question.concat(
 '스마트폰 내장 카메라가 우수하므로 대체 가능하다고 생각',
 '품질이 좋으므로 더 지불할 만한 가치가 있음',
 '인터넷 조사 후 후기가 좋은 제품 선택',
-'When you shop for electronics, how do youi decide what do buy?',
+'When you shop for electronics, how do you decide what do buy?',
 '또한, 나는 결정하기 전에 가능한 많은 리뷰를 읽으려고 합니다.',
 'Other than making phone calls or texting, what do you do with your phone?',
 '또한 주말에는, 넷플릭스로 영화를 봅니다.',
