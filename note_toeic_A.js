@@ -102,8 +102,29 @@ var answer = answer.concat(
 'Yes, I have bought a lot of e-books instead of paper books becuase they are cheaper than paper books',
 'What I like best about reading e-book is that they can be stored on my phone and I can read them anytime',
 'Also I don\'t need to worry about carrying heavy paper books',
-
-
+'From my school, I get to the nearest place that serves breakfast on foot <br/>\
+(= I walk to the nearest place that serves breakfast) ',
+'There is a nice brunch restaruant near my school(work place). It\'s only about a 10 minute walk (to get there)',
+'Yes, I often buy coffe while I am at scool/work.',
+'That\'s because I sometimes get sleepy after lunch and I can stay awake with some coffe/caffeine',
+'(Well, I don\'t know the exact number, but) <br/>\
+I guess more than five hundered thousand travelers visit my city every year.',
+'That\'s because there are a lot of famous tourist attractions in my city',
+'There is an official website. And you can find information about my city there',
+'There is an official website where you can find information about my city (in advance)',
+'Also, there are several tourist information centers in downtown area',
+'I work out at the gym every (other) day. And I try to work out at least an hour and a half each time I go there',
+'I usually walk fast on a treadmill.',
+'Also, I do resistance training for an hour to stay in good shape',
+'It was last summer. I took an English conversation class and I really had a lot of fun with the teacher and classmates',
+'The subject I (really) liked in school (= my favorit subject in school) was Korean History',
+'The teacher was so inspiring and engaging',
+'I guess my favorite room in my home is the living room',
+'That\'s because, it\'s not that big, but we have a nice comfortable sofa to sit on',
+'Also, my family can gather around together and have quality family time there',
+'I read more now than I did in the past. (I read less in the past than I do now)',
+'That\'s because, I have to do more reading for my position at school / work',
+'(I mean,) I used to read novels for pleasure, but now I have to read a lot of news or thesis related articles',
 
 // Part 2
 'This is a picture of a break room.',
