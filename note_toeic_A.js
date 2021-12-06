@@ -178,7 +178,7 @@ var answer = answer.concat(
 'I usually work out at the park.',
 'That\'s because I like to get some fresh air and enjoy the beautiful nature (while exercising)',
 'No, I\'ve never read a book in a cafe.',
-'That\'s vecause it is hard for me to focus on reading (in such a place with some noise)',
+'That\'s because it is hard for me to focus on reading (in such a place with some noise)',
 'I like to read in a quiet room or library',
 'fun to see interesting items that I can\'t find at retail stores',
 'They have a large selection of items that come in different sizes and colors',
