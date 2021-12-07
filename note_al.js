@@ -787,6 +787,8 @@ var answer = answer.concat(
 // AIaaS
 '# 정의 : AI 사용 / API 엔진, 어플리케이션, ML FW / 클라우드 구현 제공 서비스 <br/>\
 - AI 학습, 모델링, 데이터 가공/분석 등 인공지능 사용을 위해 인공지능 API 엔진 및 어플리케이션, 머신러닝 프레임워크 등의 기능을 클라우드로 구현하여 제공하는 서비스 <br/><br/>\
+# 서비스 범위 및 역할 <br/>\
+<img src = "./img/AIaaSRange.png" style = "max-width:100%; height:auto;"><br/><br/>\
 # 서비스 유형 <br/>\
 1. 인공지능 기능 측면 <br/>\
 - 인공지능 API 엔진 서비스 : APP 에서 사용 I/F 제공 <br/>\
