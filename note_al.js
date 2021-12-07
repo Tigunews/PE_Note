@@ -36,6 +36,7 @@ var question = question.concat(
 '[Tree]- Red Black Tree',
 '방향성 비순환 그래프',
 '[방향성 비순환 그래프]- 위상 정렬',
+'[AI]- AIaaS',
 '[AI]- AI Flow',
 '[AI]- 인공지능 특이점',
 '[AI]- 인공지능 데이터 평가',
@@ -781,6 +782,36 @@ var answer = answer.concat(
 # 코드 <br/>\
 <img src = "./img/TopologicalAlignmentCode.jpg" style = "max-width:100%; height:auto;"><br/><br/>\
 * 125회 관리 4교시 4번\
+',
+
+// AIaaS
+'# 정의 : AI 사용 / API 엔진, 어플리케이션, ML FW / 클라우드 구현 제공 서비스 <br/>\
+- AI 학습, 모델링, 데이터 가공/분석 등 인공지능 사용을 위해 인공지능 API 엔진 및 어플리케이션, 머신러닝 프레임워크 등의 기능을 클라우드로 구현하여 제공하는 서비스 <br/><br/>\
+# 서비스 유형 <br/>\
+1. 인공지능 기능 측면 <br/>\
+- 인공지능 API 엔진 서비스 : APP 에서 사용 I/F 제공 <br/>\
+- ML FW 서비스 : 수집, 전처리, 패턴분석, 빅데이터 분석 서비스 <br/>\
+- AI App 서비스 : 다양한 인공지능 엔진 조합, AI SW 제공, 맞춤형 AI 모델, 템플릿 <br/><br/>\
+2. 클라우드 서비스 측면 <br/>\
+- IaaS : AI HW 인프라 서비스 (GPU, NPU, 오토스케일링) <br/>\
+- PaaS : 학습모델 개발 환경 서비스(모델 학습, Feature Eng, 학습/검증) <br/>\
+- SaaS : API 서비스 (AI SW 연동 API 제공, API/SDK 서비스 생성,연계) <br/><br/>\
+# 장단점 <br/>\
+1. 장점 <br/>\
+- 비즈니스 : 핵심 비즈니스 집중 가능(KPI) <br/>\
+- 투자 : AI 운영 투명성 유지 및 투자 위험 감소(비즈니스 영향도) <br/><br/>\
+2. 단점 <br/>\
+- 보안 : 데이터/모델 보안성 감소(공개망 저장, 블랙박스 형태) <br/>\
+- 데이터 : 크라우드 기반 데이터 활용 제한(Region 별, 유형별 사용불가) <br/><br/>\
+# 고려사항 <br/>\
+1. 단점보완 측면 <br/>\
+- 보안 : 처리 흐름 URI 추적, 외부 서비스 VM 격리, XAI 반영 <br/>\
+- 법률 : 마스터 데이터 별도 관리, 데이터 온톨로지/리터러시, 관련법 준수 <br/><br/>\
+2. 경쟁력 강화 측면 <br/>\
+- 국가 : 산업 혁신 위한 융합 프로젝트 강화(All AIaas) <br/>\
+- 기업 : 단독 개발 > 협업 Alliance 체계 강화 <br/>\
+<font color = "red">* 활용 분야 : 금융, 공공, 의료, IT 산업, 비대면, 자동화, Big Tech 기업</font><br/><br/>\
+* KPC 98회 관리 2교시형 2번\
 ',
 
 // [AI]- AI Flow
