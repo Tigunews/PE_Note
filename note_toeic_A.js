@@ -1,5 +1,14 @@
 var answer = answer.concat(
 
+'I think they want to choose which food do you want',
+'The wall is surrounded by orange color',
+'And overall it seems like a typical restaurant',
+'She is looking for food, she wants to eat',
+'This picture seems to be taken at some kind of an event',
+'He is also holding a dish, and he also seems to be deciding which food he would like to take',
+'So I guess the two people will get the food they want from this event',
+'She is holding a dish, and she seems to be choosing which food to eat',
+
 // Part 6
 'do house chores',
 'intrests',
