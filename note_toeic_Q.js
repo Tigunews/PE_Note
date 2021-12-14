@@ -8,6 +8,11 @@ var question = question.concat(
 '그도 역시 접시를 들고 있고 어떤 음식을 먹을까 결정하고 있는 것처럼 보입니다.',
 '따라서 두 사람은 이 행사에서 원하는 음식을 먹을 것 같습니다.',
 '그녀는 접시를 들고 있고 어떤 음식을 먹을지 고르려는 것 같습니다.',
+'How often do you go out to see musicans perform live, and when was the last time you saw a performance?',
+'How often do you go out to see musicans perform live, and when was the last time you saw a performance?',
+'가격도 꽤 저렴해서 마음에 들 겁니다.',
+'그러니 티켓을 구입해 보도록 하세요',
+'Where can I buy tickets to local concerts, and are they very expensive?',
 
 // Part 6
 '집안일을 하다',

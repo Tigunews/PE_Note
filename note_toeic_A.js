@@ -8,6 +8,11 @@ var answer = answer.concat(
 'He is also holding a dish, and he also seems to be deciding which food he would like to take',
 'So I guess the two people will get the food they want from this event',
 'She is holding a dish, and she seems to be choosing which food to eat',
+'I often go out to see musicians, about twice a week',
+'I go out to see musicians perform live, at least once a year. The last time I went was last summer',
+'The price is quite reasonable, and you can love it',
+'So you can try to buy tickets',
+'You can buy local conert tickets online. I guess they are pretty expensive, because they tent to be about a hundred and ten tounsand won',
 
 // Part 6
 'do house chores',
