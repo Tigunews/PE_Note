@@ -13,6 +13,9 @@ var answer = answer.concat(
 'The price is quite reasonable, and you can love it',
 'So you can try to buy tickets',
 'You can buy local conert tickets online. I guess they are pretty expensive, because they tent to be about a hundred and ten tounsand won',
+'It will last one hour',
+'Sonia Pinto will bel giving a lecture from eleven to noon ans also from three to four P.M.',
+'At eleven A.M., she\'ll be giving a lecture about small business adverising tips',
 
 // Part 6
 'do house chores',

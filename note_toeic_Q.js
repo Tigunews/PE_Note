@@ -13,6 +13,9 @@ var question = question.concat(
 '가격도 꽤 저렴해서 마음에 들 겁니다.',
 '그러니 티켓을 구입해 보도록 하세요',
 'Where can I buy tickets to local concerts, and are they very expensive?',
+'1시간 동안 진행됩니다.',
+'소냐 핀토는 11시부터 정오까지, 그리고 오후 3시부터 4시에도 강연을 합니다.',
+'오전 11시에는 소규모 자영업 광고 기법에 관해 강연할 예정입니다.',
 
 // Part 6
 '집안일을 하다',
