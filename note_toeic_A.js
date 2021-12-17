@@ -374,7 +374,7 @@ var answer = answer.concat(
 'look up the recipes on the Internet',
 'have a sandwich for lunch and cookies for dessert',
 'After trying a new restaurant, I share my review on soncial media',
-'feel elss bored',
+'feel less bored',
 'If I get a job in 2 or 3 years, I\'ll find a place near my company',
 'picke up from the dumpsters behind my apartment building',
 'The last time I cooked was last Friday, and I made some side dishes.',
