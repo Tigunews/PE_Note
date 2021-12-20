@@ -335,7 +335,7 @@ var answer = answer.concat(
 'Adavnces in technology have had a negative impact on the environment',
 'More and more people have becom addicted to technology',
 'I think the best way to get news is by using the Internet',
-'I can read news articles on my mobile phone anywhere if tehre\'s an Internet connection',
+'I can read news articles on my mobile phone anywhere if there\'s an Internet connection',
 'It is the fastest, the most convenient way to learn aobut current affaris',
 'Many people write comments on online articles, and these help me see both suides of the story',
 'I prefer to shop online',
