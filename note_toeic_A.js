@@ -102,7 +102,7 @@ var answer = answer.concat(
 'Only a few students registered for the class',
 'School uniforms give students a sense of belonging',
 'Please call me back as soon as possible',
-'Sometimes, customers ae disappointed at our service',
+'Sometimes, customers are disappointed at our service',
 'Please feel free to ask me (at) any time',
 'Due to our tight budget, we will reduce travel expenses',
 'All employees have to pass through the security desk',
