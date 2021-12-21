@@ -1,6 +1,8 @@
 var question = question.concat(
 'Grouping Keyword',
 '경영환경 분석',
+'파레토 법칙',
+'롱테일 법칙',
 'MECE',
 'Trade-Off',
 '[Standard]- 국제 표준화 기구',
@@ -141,6 +143,19 @@ var answer = answer.concat(
 - Opportunity <br/>\
 - Threat <br/><br/>\
 * ITPE 9회 관리 3교시 5번 \
+',
+
+// 파레토 법칙
+'# 정의 <br/>\
+* ITPE 126회 FR 4일차 1교시 8번\
+',
+
+// 롱테일 법칙
+'# 정의 : 반 파레토 법칙 <br/>\
+- 80%의 비핵심 다수가 20%의 핵심 소수보다 더 뛰어난 가치를 창출한다는 이론 <br/><br/>\
+# 사례 <br/>\
+- 서점의 재고 <br/>\
+* ITPE 126회 FR 4일차 1교시 8번\
 ',
 
 // MECE
