@@ -1,4 +1,13 @@
 var answer = answer.concat(
+'I don\'t think that schools should schedule time each day for students to participate in outdoor activities',
+'Of course, students need outdoor activities',
+'Many outdoor activites are healthy, and they can help relieve stress',
+'However, there are some disadvantages of having these activities evrery day',
+'First, not every student is eager to participate in outdoor activities.',
+'Some students are not good at sports and feel stressed when they have to take part in outdoor activities',
+'Secondly, if students participate in outdoor activites every day, they will probably use up their energy and then feel exhuasted',
+'So, the outdoor activites may distract students from their studies and even cause injuries',
+'Therfore, I don\'t think that schools should require students to participate in outdoor activities each day',
 'This is a picture of four people in a waiting area',
 'Two people on the right are sitting in armchairs and talking on the phone',
 'There are both wearing glasses',
