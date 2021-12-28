@@ -4,7 +4,7 @@ var answer = answer.concat(
 'Sure, Alan Forrester will lead two sessions at the conference',
 'First, he will give a lecture titled "Know Your Audience" at 10 A.M. on May 16th.',
 'Second, he will lead a workshop on "branding Strategies" at 3:30 P.M. on May 17th',
-'If I had a job interview, I\'d bring ina portfolio of my work',
+'If I had a job interview, I\'d bring in a portfolio of my work',
 'I think it\'s better to show my work samples rather than try to describe them',
 'I\'d prefer a job interview in person',
 'I think body language and facial expressions play an important role in communication.',
