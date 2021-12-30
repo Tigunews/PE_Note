@@ -710,7 +710,7 @@ I guess more than five hundered thousand travelers visit my city every year.',
 'Also, I can read them anytime and anywhere with my smartphone <br/>\
 So, I think the best device for reading e-books is a smartphone',
 'If you were going to take a friend out for lunch, I would recommend (taking him / her to) one of the most famous Italian restaurants near my workplace/school',
-'That\'s because, for me, I love the place in that the food is really good and the price is quite reasonable (Alos, I love the cozy atmosphere)',
+'That\'s because, for me, I love the place in that the food is really good and the price is quite reasonable (Also, I love the cozy atmosphere)',
 'except that',
 'I really like that girl except that she is always splurging on something',
 'It\'s really har to pick just one because there are so many popular tourit attractions in my city. But, if I had to choose one, xxx would be the most popular place to visit.',
