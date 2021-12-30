@@ -4,7 +4,7 @@ var question = question.concat(
 '물론이죠. Alan Forrester는 회의에서 2개 세션을 이끌 예정입니다.',
 '첫 번째로, 5월 16일 오전 10시에 "청중을 알자"라는 제목의 강연을 합니다.',
 '두 번째로, 5월 17일 오후 3시 30분에 "브랜딩 전략"에 관한 워크숍을 진행합니다.',
-'If you had a job interview, what would you take with you beside youre resume?',
+'If you had a job interview, what would you take with you beside your resume?',
 '내가 한 직업에 대해 설명하려고 하는 것보다 샘플을 보여 주는 것이 낫다고 생각합니다.',
 'If you had a choice between a job interview over the phone or in person, which would you prefer? Why?',
 '몸짓과 얼굴 표정이 의사소통에 중요한 역할을 한다고 생각합니다.',
