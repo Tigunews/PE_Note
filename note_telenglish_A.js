@@ -17,4 +17,8 @@ var answer = answer.concat(
 'We went on our honeymoon to Gyeongju and Busan',
 'I didn\'t live in Jeju Island, I just went for sightseeing',
 'Halla Mountain is easy to climb because it has a gentle slope, but the course is very long',
+'I have never been to Canada or Mexico <br/>\
+I\'ve never set foot in Canada or Mexico\',
+'My trip to Thailand is very secure',
+'I didn\'t visit Hawaii',
 );
