@@ -21,4 +21,7 @@ var answer = answer.concat(
 I\'ve never set foot in Canada or Mexico',
 'My trip to Thailand is very secure',
 'I didn\'t visit Hawaii',
+'Domestic travel is about once every two months. Now, I plan to travel abroad at least once every two years.',
+'I worry about safety when traveling.',
+'I can't remember exactly, but it was a very good memory.',
 );
