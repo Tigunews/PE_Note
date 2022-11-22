@@ -1,4 +1,16 @@
 var answer = answer.concat(
+'They have a hard time moving in the plane. <br/><br/>\
+They have a struggle moving in the plane.',
+'shoulders are heavy.',
+'I was planning to go next year, but it seems difficult because I expecting a baby.',
+'I took a knife to cut the fruit.',
+'I accidentally got on a plane with a knife.',
+'설날 means the first day of the new year in the lunar calendar.',
+'I don\'t have a winter vacation.',
+'It was because the distances of the destinations were a bit far.',
+'I traveled for a total of 4 days, 2 days in Gyeongju and 2 days in Busan, and moved from place to place every day.',
+'I had a domestic travel.',
+'Yes I saw the video.',
 'When we notified them about our honeymoon, they prepared wine for us.',
 'I\'ve tired both over the phone and online. I prefer online because it\'s cheap.',
 'But after calling serveral times, the guesthouse owner canceled it for free.',
