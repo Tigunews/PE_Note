@@ -1,4 +1,16 @@
 var answer = answer.concat(
+'I can enjoy enough delicious food within the corporate card limit.',
+'Corporate cards have a limit of thrity thousand won per person.',
+'Eating out with my boss is a little inconvenient, but essential for my work life.',
+'I reserve a lunch restaurant for a meal with my boss.',
+'I\'d like to reserve a table at your restaurant next Sunday night.',
+'I usually reserve by phone.',
+'It is paid for by the company.',
+'I have been working for my current company for about eight years.',
+'I prefer to be an employee than have my own business.',
+'Receiving a salary is more stable than running a business.',
+'He wants to book for next Sunday.',
+'I haven\'nt thought of running my own restaurant.',
 'They have a hard time moving in the plane. <br/><br/>\
 They have a struggle moving in the plane.',
 'shoulders are heavy.',
