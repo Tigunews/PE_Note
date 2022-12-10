@@ -1,4 +1,61 @@
 var answer = answer.concat(
+'If you can make good deals that beneift your company, your company will make a profit',
+'Business leaders need to be good negotiators to make deals.',
+'Also, being a good negotiator is important for the success of the company.',
+'You have to negotiate employees\' salaries to get the emploees you want at the price you can afford.',
+'First of all, negotiation is necessary when hiring employees.',
+'First, there will be apresentation on ancient Chinese architecutre on Augst 2nd from 10 to 11 A.M.',
+'I\'m sorry, but you have the wrong information. It is scheduled for 1 P.M.',
+'1. first <br/>\
+2. second <br/>\
+3. third <br/>\
+4. fourth <br/>\
+5. fifth <br/>\
+6. sixth <br/>\
+7. seventh <br/>\
+8. eighth <br/>\
+9. ninth <br/>\
+10. tenth <br/>\
+11. eleventh <br/>\
+12. twelfth <br/>\
+13. thirteenth <br/>\
+14. fourteenth <br/>\
+15. fifteenth <br/>\
+16. sixteenth <br/>\
+17. seventeenth <br/>\
+18. eighteenth <br/>\
+19. nineteenth <br/>\
+20. twentieth <br/>\
+21. twenty-first <br/>\
+22. twenty-second <br/>\
+23. twenty-third <br/>\
+24. twenty-fourth <br/>\
+25. twenty-fifth <br/>\
+26. twenty-sixth <br/>\
+27. twenty-seventh <br/>\
+28. twenty-eighth <br/>\
+29. twenty-ninth <br/>\
+30. thirtieth <br/>\
+31. thrity-first',
+'Second, we have similar testes in using apps.',
+'I think most advertisements are exaggerated.',
+'First, I can get honest opinions from them.',
+'Because I study foreign languages on my smartphone.',
+'I would be more likely to buy an app for entertainment because I like playing mobile phone games.',
+'I use mobile apps regulary. It\'s because they are very helpful to my work.',
+'It doesn\'t seem to be raining much.',
+'In the background of the picture, I can see many buildings.',
+'A man on the left is holding a large umbrella.',
+'In the foreground of the picture, some people are looking at the stage.',
+'I think they are preparing for a musical performance.',
+'In the middle of the picture, some people are standing on a stage.',
+'I think this picture was taken on the street.',
+'In the background of the picture, I can see a variety of products displayed on the shelves.',
+'Behind them, some people are standing in a row.',
+'On the left side of the picture, a woman is handing over a credit card to the cashier.',
+'He is wearing a red vest.',
+'On the right side of the picture, a man is reaching for some groceries to put them in the paper bag.',
+'There are several people in this picture.',
 'This picture shows four people in a park',
 'Two women are sitting on a bench in the middle and their bikes are leaning aginst the bench',
 'One of them is wearing a bike helmet and the other woman has her helmet on the bench',
