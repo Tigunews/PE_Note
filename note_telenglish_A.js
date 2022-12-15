@@ -1,4 +1,15 @@
 var answer = answer.concat(
+I gave solutions to my customers.<br/>\
+I provided my clients solutions.',
+'Those shoes were cheap, not expensive.<br/>\
+Those shoes were not pricey; they were inexpensive.',
+'I prefer to buy in an offline shop.',
+'If I bought shoes in an offline shop, I think it would only take one or two days.',
+'I use to buy masks and other necessities online.',
+'I bought shoes on internet.',
+'I want their diffuser, but it is not for sale; anyway, when I can afford it, I wish to go ther again.',
+'There are amenity-minded employees who are accommodating, and the design is very cool; furthermore, the place has a cozy smell.',
+'The Paradise Hotel in Busan was the best hotel.',
 'I don\'t pack well because I don\'t like the garbage that comes from delivery food.',
 'Because I can eat fresh food right away.',
 'I don\'t order appetizers or desserts seperately.',
