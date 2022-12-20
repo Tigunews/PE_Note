@@ -1,4 +1,5 @@
 var answer = answer.concat(
+'I opt for 6 a.m. since I want to evate traffic congestion.',
 I gave solutions to my customers.<br/>\
 I provided my clients solutions.',
 'Those shoes were cheap, not expensive.<br/>\
