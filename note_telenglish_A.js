@@ -1,6 +1,9 @@
 var answer = answer.concat(
+'I think being a punctual person is very important.',
+'It is also a good habit to pack your luggage in advance if possible.',
+'Of course. I hate the thought of being late for work.',
 'I opt for 6 a.m. since I want to evate traffic congestion.',
-I gave solutions to my customers.<br/>\
+'I gave solutions to my customers.<br/>\
 I provided my clients solutions.',
 'Those shoes were cheap, not expensive.<br/>\
 Those shoes were not pricey; they were inexpensive.',
