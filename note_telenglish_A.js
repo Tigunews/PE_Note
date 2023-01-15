@@ -1,4 +1,9 @@
 var answer = answer.concat(
+'Much money is required on taking care of pets.<br/>\
+Pet care costs a lot of money.',
+'I feel like I am in a good mood when I have pets at home.',
+'It is good fight back loneliness.',
+'I haven\'t had any experience owning a pet cat or dog.',
 'I go shopping once a month on average.',
 'Quality is more essential than quantity.',
 'I\'m not good at fashion',
