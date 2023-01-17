@@ -1,4 +1,18 @@
 var answer = answer.concat(
+'It was very impressive.',
+'Paper books makes me focous on reading more.<br/>\
+Paper books encourage me to read more.',
+'I usually read at lunch time.',
+'When I haven\'t enough money I living uncanny condition.',
+'The Harry Potter series was adapted into a movie.',
+'I don\'t eat breakfast.',
+'There are three rooms in my house.',
+'I don\'t have to worry about the noise.',
+'Seoul has the best facilities on Korea.',
+'Global warming is a serious phenomenon.',
+'The employees are hardworking.',
+'I haven\'t been there.',
+'I want to live in the USA,',
 'Much money is required on taking care of pets.<br/>\
 Pet care costs a lot of money.',
 'I feel like I am in a good mood when I have pets at home.',
