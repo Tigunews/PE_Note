@@ -1,4 +1,5 @@
 var answer = answer.concat(
+'One out of every four.',
 'I didn\'t find out, but it\'s in the article.',
 'E-masks are significantly more expensive than regular masks.',
 'I think this is a bit puzzling.',
