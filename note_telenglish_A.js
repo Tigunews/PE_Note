@@ -1,4 +1,17 @@
 var answer = answer.concat(
+'I didn\'t find out, but it\'s in the article.',
+'E-masks are significantly more expensive than regular masks.',
+'I think this is a bit puzzling.',
+'I\'m still learning, so I\'m not very good at it.',
+'Since the corona virus has been around for a long time, I think masks are no longer needed.',
+'Wearing a mask protexts against viruses as well as fine dust.',
+'In my country, it is still necessary to wear face masks whenever you are inside an establishment.',
+'It is hard to be close to people.',
+'My workplace also requires us to wear a mask.',
+'I don\'t agree with wearing a mask until now.<br/>\
+I am currently opposed to the use of masks.',
+'It is the best course of action for preventing viruses.<br/>\
+It is the most effective strategy for avoding viruses.',
 'It was very impressive.',
 'Paper books makes me focous on reading more.<br/>\
 Paper books encourage me to read more.',
