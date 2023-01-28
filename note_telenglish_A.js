@@ -1,4 +1,5 @@
 var answer = answer.concat(
+'Koreans make up the majority of visitors to this country.',
 'Where I live, there are many buses and subways.',
 'If you come to Gwangju, I would like to intrudouce you to the city.',
 'Gwangju is a city that is not well known to foreigners, but I was surprised to know.',
