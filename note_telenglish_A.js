@@ -1,4 +1,13 @@
 var answer = answer.concat(
+'I have no talent for acting.',
+'I know myself well.',
+'Hapiness is living a normal life.',
+'Because there is no insurance for pets in Korea, medical expenses are expensive.',
+'Our company has numerous screens.',
+'Almost everyone wishes for longevity and happiness.',
+'The dog died because of a car accident.',
+'It made me feel terrible inside.',
+'When I was young, I got a small dog.',
 'Koreans make up the majority of visitors to this country.',
 'Where I live, there are many buses and subways.',
 'If you come to Gwangju, I would like to intrudouce you to the city.',
