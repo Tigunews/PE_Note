@@ -1,4 +1,17 @@
 var answer = answer.concat(
+'I don\'t go hiking, but I often go to restaurants or cafes at the foot of the mountain.',
+'Because the tourist attraction is closet to home.',
+'I swim once every 2days.',
+'These days, I\'m lazy, so I haven\'t climbed the mountain.',
+'Climbing this mountain takes about 5~6 hours.',
+'Nowdays, pamphlets are very beautiful.<br/>\
+Advertisements today are highly attractive.',
+'The Avengers\' story of collecting scatterd stones.',
+'I think about two or three years ago I climbed the mountain in my country.',
+'Nowdays, I don\'t climb mountains.',
+'The spot is one of 100 tourist spots in my country.',
+'Phamplet is contains tourist spot with public transportation and foreign languagues.',
+'Some attractions have been selected six consencutive times since that list was launched.',
 'Those who go high education people more easily get a chance to good company.',
 'After listening to the opinions of my school teachers and parents, I decided on my major.',
 'I hope that the entrance test will disappear and be replaced with a more creative curriculum.',
