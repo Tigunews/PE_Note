@@ -1,4 +1,13 @@
 var answer = answer.concat(
+'I think it\'s all due to the abnormal atmosphere which causes very huge hurricanes and earthquakes.',
+'Many people are saving water.',
+'We started doing that in November last year.',
+'Decrease the water pressure.',
+'The city government recommended the people to use or consume smaller amount of water.',
+'I try to reduce my outdoor activities.',
+'One of the concern of people in our country is drought.',
+'The problems of the Earth has been revealed now days.',
+'I think global warming is serious nowdays.',
 'I don\'t go hiking, but I often go to restaurants or cafes at the foot of the mountain.',
 'Because the tourist attraction is closet to home.',
 'I swim once every 2days.',
