@@ -1,4 +1,13 @@
 var answer = answer.concat(
+'I can experience and learn various cultures aborad.',
+'The end of the pandemic has caused a surge in travel.',
+'We have to ramp up the airlines in my country, so I can easily go abroad.',
+'I haven\'t been to those countries yet.',
+'I just want to see the beautiful beaches abroad.',
+'I want to visit a country that has beautiful beaches.',
+'But flight company\'s economic condition still not good before pandemic.',
+'Most people fly to Japan since it\'s close to Korea.',
+'The reason for this phenomenon is the easing of social distancing rules.',
 'I think it\'s all due to the abnormal atmosphere which causes very huge hurricanes and earthquakes.',
 'Many people are saving water.',
 'We started doing that in November last year.',
