@@ -1,4 +1,12 @@
 var answer = answer.concat(
+'Children\'s rights should be prioritized over parental rights to educate tehir children.',
+'However, the committe conclude that the application contained excessive functions.',
+'Recently, applications for violating children\'s rights were issued.',
+'I\'m not on the same page with this opinion.',
+'I\'ve been working for a public company for a year.',
+'I think respecting children\'s basic right is very important.',
+'Public companies are subject to almost all laws.',
+'Many children have their own smartphones nowdays.',
 'I can experience and learn various cultures aborad.',
 'The end of the pandemic has caused a surge in travel.',
 'We have to ramp up the airlines in my country, so I can easily go abroad.',
