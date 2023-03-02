@@ -1,4 +1,10 @@
 var answer = answer.concat(
+'I recently adjusted to a new workplace.',
+'All creatures are beautiful.',
+'Many cats can be seen on the street or our neighborhood.',
+'Scientists conduct animal research to gather information.',
+'Conserving water is important for the citizens.<br/>\
+Conserving water is very crucial for the citizens.',
 'Children\'s rights should be prioritized over parental rights to educate tehir children.',
 'However, the committe conclude that the application contained excessive functions.',
 'Recently, applications for violating children\'s rights were issued.',
