@@ -1,4 +1,5 @@
 var answer = answer.concat(
+'Education is seen as the key to success in Korean society.',
 'Legally easy, culturally difficult.',
 'There is no end to living while comparing.',
 'The primary thing to take into account before tying the knot is their intent.',
