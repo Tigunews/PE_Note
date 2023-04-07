@@ -11,7 +11,11 @@ var memorization =
 var this_week_question =
 [
 '',
+  
+// 129회 통신
+'비상방송', '지능형 홈네트워크',
 
+/*
 // 125회 관리
 'SECaaS', 'Java GUI', '자료구조', '메타버스', 'DevOps', 'MECE', 'PQC', 'WFQ', 'Private 5G', 'SDR', '형상관리', 'Information Strategy Master Plan', 'EVM', '프로젝트 위험관리', '프로젝트 위험요소', '병렬 컴퓨팅', 'TOCTOU', 'EMP', '동적 테스트', 'Queue', '상주감리', 'QoS', '인공지능 개인정보보호 자율점검표', 'JWT', 'IT 투자', 'BSC', '핀테크 오픈플랫폼', 'Open API', '정보이론', '방향성 비순환 그래프', '절차지향, 객체지향 비교', 'Purdue Model',
 
@@ -102,4 +106,5 @@ var this_week_question =
 
 // ITPE 7회 
 '데이터 댐', 'Solid - Social Linked Data','Cloud 보안','OKR','KAMP','Computer Vision','6G','Digital Cartel','ISO 22301','회귀 분석','상관 분석','정규화','21년 개정사항','감리 계획서, 보고서 작성 원칙','이동통신 역사','5G SA','5G NSA','6G 추진 전략','클라우드 포렌식','Activation Function','Transformer','망분리','망연계','Zero Pay','클라우드 네이티브 컴퓨팅','DevOps','인공지능 성능 지표','IoU','CBDC','Living Lab','SOS Lab','SW안전 확보 지침','SWEBOK','DMBOK','BABOK','백투백', 'Fuzz',
+*/
 ];
